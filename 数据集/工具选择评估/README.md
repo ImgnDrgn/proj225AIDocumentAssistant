@@ -16,7 +16,7 @@
 ### 测试文档1：[深度云打印.md](01_软件wiki/00_GUI软件/01_deepin开发的软件/深度云打印.md)
 1. 生成数据集
    
-   生成json文件见[测试1](数据集/工具选择评估/测试1)
+   生成json文件见[测试1](https://github.com/ImgnDrgn/proj225AIDocumentAssistant/tree/4f52e8b4208c00ad2b963de108872cad22280531/%E6%95%B0%E6%8D%AE%E9%9B%86/%E5%B7%A5%E5%85%B7%E9%80%89%E6%8B%A9%E8%AF%84%E4%BC%B0/%E6%B5%8B%E8%AF%951)
    
 2. 评估
 
@@ -113,17 +113,19 @@
 ### 测试文档2：[显卡.md](02_硬件wiki/00_硬件知识/05_显卡/显卡.md)
 1. 生成数据集
 
-
+生成的json见[测试2](https://github.com/ImgnDrgn/proj225AIDocumentAssistant/tree/4f52e8b4208c00ad2b963de108872cad22280531/%E6%95%B0%E6%8D%AE%E9%9B%86/%E5%B7%A5%E5%85%B7%E9%80%89%E6%8B%A9%E8%AF%84%E4%BC%B0/%E6%B5%8B%E8%AF%952)
  
-3. 评估
+2. 评估
+
+**由于元宝Hunyuan模型在测试1中表现相对较差，已经将其淘汰**
 
 总览
-|              | 豆包 | DeepSeek | 元宝DeepSeek | 元宝Hunyuan |
-|:---:         |:---: |:---:     |:---:         |:---:        |
-| 是否符合格式 |||||
-|问题总数      |||||
-|context数     |||||
-|有效问题数    |||||
+|              | 豆包               | DeepSeek            | 元宝DeepSeek        |
+|:---:         |:---:                |:---:                |:---:               |
+| 是否符合格式 | 无version有data有id | 无version有data有id | 无version有data有id |
+|问题总数      |45                   |22                  |21                   |
+|context数     |10                   |9                   |8                    |
+|有效问题数    ||||
 
 问题列表
 
