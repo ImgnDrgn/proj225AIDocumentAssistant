@@ -1,4 +1,4 @@
-<img width="762" height="861" alt="image" src="https://github.com/user-attachments/assets/09499c3e-957e-41b6-930f-82830197c715" /># 工具选择评估
+# 工具选择评估
 * 本目录用于记录在选择将wiki转成SQuAD格式数据集的工具涉及的相关内容
 * 采用SQuAD1.0的格式，2.0中增加的无法回答的问题对于我们的使用场景不是必须的
 
