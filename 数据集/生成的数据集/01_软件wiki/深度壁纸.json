@@ -1,0 +1,105 @@
+{
+  "version": "1.1",
+  "data": [
+    {
+      "title": "深度壁纸",
+      "paragraphs": [
+        {
+          "context": "壁纸，又名电脑壁纸或桌面背景，是在桌面上可以随意个性化的图片。随着电脑技术的发展，从黑白屏到彩屏，电脑的待机桌面不再由单一的颜色所组成，而是可以用一张图片来替换，这张壁纸便称之为电脑壁纸。电脑壁纸是电脑屏幕所使用的背景图片，可以根据大小和分辨率来做相应调整。电脑壁纸让我们的电脑看起来更好看，更漂亮和更有个性。",
+          "qas": [
+            {
+              "id": "1-5-1",
+              "question": "壁纸有哪些别名？",
+              "answers": [
+                {
+                  "text": "电脑壁纸或桌面背景",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "1-5-2",
+              "question": "壁纸的基本定义是什么？",
+              "answers": [
+                {
+                  "text": "在桌面上可以随意个性化的图片",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "1-5-3",
+              "question": "电脑壁纸的发展历史是怎样的？",
+              "answers": [
+                {
+                  "text": "从黑白屏到彩屏，电脑的待机桌面不再由单一的颜色所组成，而是可以用一张图片来替换",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "id": "1-5-4",
+              "question": "电脑壁纸的正式定义是什么？",
+              "answers": [
+                {
+                  "text": "电脑屏幕所使用的背景图片，可以根据大小和分辨率来做相应调整",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "id": "1-5-5",
+              "question": "电脑壁纸的主要作用是什么？",
+              "answers": [
+                {
+                  "text": "让我们的电脑看起来更好看，更漂亮和更有个性",
+                  "answer_start": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置方法请参考[深度桌面环境帮助手册-设置壁纸](https://wiki.deepin.org/zh/01_deepin%E9%85%8D%E5%A5%97%E7%94%9F%E6%80%81/01_deepin%E5%85%A5%E9%97%A8/%E6%B7%B1%E5%BA%A6%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83)",
+          "qas": [
+            {
+              "id": "1-5-6",
+              "question": "如何设置深度壁纸？",
+              "answers": [
+                {
+                  "text": "请参考[深度桌面环境帮助手册-设置壁纸](https://wiki.deepin.org/zh/01_deepin%E9%85%8D%E5%A5%97%E7%94%9F%E6%80%81/01_deepin%E5%85%A5%E9%97%A8/%E6%B7%B1%E5%BA%A6%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83)",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统默认壁纸目录：/usr/share/backgrounds\n深度桌面环境壁纸目录：/usr/share/personalization/themes/Deepin/wallpapers",
+          "qas": [
+            {
+              "id": "1-5-7",
+              "question": "系统默认壁纸目录的路径是什么？",
+              "answers": [
+                {
+                  "text": "/usr/share/backgrounds",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "1-5-8",
+              "question": "深度桌面环境壁纸目录的路径是什么？",
+              "answers": [
+                {
+                  "text": "/usr/share/personalization/themes/Deepin/wallpapers",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
