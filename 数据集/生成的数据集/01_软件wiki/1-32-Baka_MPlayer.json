@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Baka_MPlayer",
+      "paragraphs": [
+        {
+          "context": "Baka MPlayer是一个多媒体播放器，它拥有强大的内部解码器，支持本地AVI、MKV等视频，还支持在线流媒体播放、具有智能的播放列表，硬件加速播放，同时界面整洁，操作简单。",
+          "qas": [
+            {
+              "question": "Baka MPlayer是什么类型的软件？",
+              "id": "1-32-1",
+              "answers": [
+                {
+                  "text": "多媒体播放器",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "Baka MPlayer有哪些功能特点？",
+              "id": "1-32-2",
+              "answers": [
+                {
+                  "text": "拥有强大的内部解码器，支持本地AVI、MKV等视频，还支持在线流媒体播放、具有智能的播放列表，硬件加速播放，同时界面整洁，操作简单。",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "Baka MPlayer支持哪些本地视频格式？",
+              "id": "1-32-3",
+              "answers": [
+                {
+                  "text": "AVI、MKV等",
+                  "answer_start": 50
+                }
+              ]
+            },
+            {
+              "question": "Baka MPlayer是否支持在线流媒体播放？",
+              "id": "1-32-4",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install baka-mplayer",
+          "qas": [
+            {
+              "question": "如何安装Baka MPlayer？",
+              "id": "1-32-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install baka-mplayer",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove baka-mplayer",
+          "qas": [
+            {
+              "question": "如何卸载Baka MPlayer？",
+              "id": "1-32-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove baka-mplayer",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/b/baka-mplayer/",
+          "qas": [
+            {
+              "question": "Baka MPlayer的仓库地址是什么？",
+              "id": "1-32-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/b/baka-mplayer/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Amarok",
+      "paragraphs": [
+        {
+          "context": "Amarok是一款音乐播放器，有着非常漂亮的外观和强大的播放功能，同时也有很好的中文tag支持，并且可以在播放的时候最小化到托盘。",
+          "qas": [
+            {
+              "question": "Amarok是什么？",
+              "id": "1-30-1",
+              "answers": [
+                {
+                  "text": "一款音乐播放器",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "Amarok有哪些特点？",
+              "id": "1-30-2",
+              "answers": [
+                {
+                  "text": "有着非常漂亮的外观和强大的播放功能，同时也有很好的中文tag支持，并且可以在播放的时候最小化到托盘。",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "Amarok对中文tag的支持如何？",
+              "id": "1-30-3",
+              "answers": [
+                {
+                  "text": "有很好的中文tag支持",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "Amarok在播放时可以怎样操作？",
+              "id": "1-30-4",
+              "answers": [
+                {
+                  "text": "可以在播放的时候最小化到托盘",
+                  "answer_start": 80
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装：sudo apt-get install amarok",
+          "qas": [
+            {
+              "question": "如何安装Amarok？",
+              "id": "1-30-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install amarok",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载：sudo apt-get remove amarok",
+          "qas": [
+            {
+              "question": "怎样卸载Amarok？",
+              "id": "1-30-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove amarok",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址：http://packages.deepin.com/deepin/pool/main/a/amarok/",
+          "qas": [
+            {
+              "question": "Amarok的仓库地址是什么？",
+              "id": "1-30-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/a/amarok/",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

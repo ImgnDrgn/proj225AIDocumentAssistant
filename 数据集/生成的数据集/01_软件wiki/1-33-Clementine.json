@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "title": "Clementine",
+      "paragraphs": [
+        {
+          "context": "Clementine是一个音乐播放器和媒体库管理器，它具有搜索并播放媒体库、收听电台、标签式播放列表、转换音频格式、发现和下载 Podcast 播客、远程控制等功能。",
+          "qas": [
+            {
+              "question": "Clementine是什么？",
+              "id": "1-33-1",
+              "answers": [
+                {
+                  "text": "一个音乐播放器和媒体库管理器",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "Clementine具有哪些功能？",
+              "id": "1-33-2",
+              "answers": [
+                {
+                  "text": "搜索并播放媒体库、收听电台、标签式播放列表、转换音频格式、发现和下载 Podcast 播客、远程控制等",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install clementine",
+          "qas": [
+            {
+              "question": "如何安装Clementine？",
+              "id": "1-33-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install clementine",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove clementine",
+          "qas": [
+            {
+              "question": "如何卸载Clementine？",
+              "id": "1-33-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove clementine",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/c/clementine/",
+          "qas": [
+            {
+              "question": "Clementine的仓库地址是什么？",
+              "id": "1-33-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/c/clementine/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

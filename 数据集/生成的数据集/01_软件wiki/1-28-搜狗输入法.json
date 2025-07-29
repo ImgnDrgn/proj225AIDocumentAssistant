@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "搜狗输入法",
+      "paragraphs": [
+        {
+          "context": "搜狗输入法是一款流行的中文输入法，它具有模糊拼音、云端输入、自动纠错、多彩皮肤、长词联想、简繁切换等功能。",
+          "qas": [
+            {
+              "question": "搜狗输入法是什么类型的软件？",
+              "id": "1-28-1",
+              "answers": [
+                {
+                  "text": "中文输入法",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "搜狗输入法有哪些功能？",
+              "id": "1-28-2",
+              "answers": [
+                {
+                  "text": "模糊拼音、云端输入、自动纠错、多彩皮肤、长词联想、简繁切换等",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装：sudo apt-get install sogoupinyin",
+          "qas": [
+            {
+              "question": "如何安装搜狗输入法？",
+              "id": "1-28-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install sogoupinyin",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载：sudo apt-get remove sogoupinyin",
+          "qas": [
+            {
+              "question": "怎样卸载搜狗输入法？",
+              "id": "1-28-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove sogoupinyin",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址：http://packages.deepin.com/deepin/pool/non-free/s/sogoupinyin/",
+          "qas": [
+            {
+              "question": "搜狗输入法的仓库地址是什么？",
+              "id": "1-28-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/s/sogoupinyin/",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "常见问题：解决搜狗输入法Ubuntu 14.04下黑块状态条 http://log4think.com/sogou-linux-input-black-statusbar/",
+          "qas": [
+            {
+              "question": "搜狗输入法在Ubuntu 14.04下有什么常见问题？",
+              "id": "1-28-6",
+              "answers": [
+                {
+                  "text": "黑块状态条",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "在哪里可以找到解决搜狗输入法Ubuntu 14.04下黑块状态条的方法？",
+              "id": "1-28-7",
+              "answers": [
+                {
+                  "text": "http://log4think.com/sogou-linux-input-black-statusbar/",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
