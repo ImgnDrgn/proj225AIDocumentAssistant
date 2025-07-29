@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "Gnome_Terminal",
+      "paragraphs": [
+        {
+          "context": "title: Gnome_Terminal\ndescription: Gnome Terminal是一个终端仿真器，所有设置都存储在配置文件中，可以通过菜单栏进行设置，同时可以通过命令来执行操作。\n安装: `sudo apt-get install gnome-terminal`\n卸载: `sudo apt-get remove gnome-terminal`\n仓库地址: [http://packages.deepin.com/deepin/pool/main/g/gnome-terminal/](http://packages.deepin.com/deepin/pool/main/g/gnome-terminal/)",
+          "qas": [
+            {
+              "id": "1-20-1",
+              "question": "Gnome Terminal是什么类型的应用程序？",
+              "answers": [
+                {
+                  "text": "终端仿真器",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "1-20-2",
+              "question": "Gnome Terminal的配置文件存储在哪里？",
+              "answers": [
+                {
+                  "text": "存储在配置文件中",
+                  "answer_start": 46
+                }
+              ]
+            },
+            {
+              "id": "1-20-3",
+              "question": "如何对Gnome Terminal进行设置？",
+              "answers": [
+                {
+                  "text": "可以通过菜单栏进行设置，同时可以通过命令来执行操作",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "id": "1-20-4",
+              "question": "如何安装Gnome Terminal？",
+              "answers": [
+                {
+                  "text": "`sudo apt-get install gnome-terminal`",
+                  "answer_start": 109
+                }
+              ]
+            },
+            {
+              "id": "1-20-5",
+              "question": "卸载Gnome Terminal的命令是什么？",
+              "answers": [
+                {
+                  "text": "`sudo apt-get remove gnome-terminal`",
+                  "answer_start": 153
+                }
+              ]
+            },
+            {
+              "id": "1-20-6",
+              "question": "在哪里可以找到Gnome Terminal的安装包？",
+              "answers": [
+                {
+                  "text": "[http://packages.deepin.com/deepin/pool/main/g/gnome-terminal/](http://packages.deepin.com/deepin/pool/main/g/gnome-terminal/)",
+                  "answer_start": 193
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

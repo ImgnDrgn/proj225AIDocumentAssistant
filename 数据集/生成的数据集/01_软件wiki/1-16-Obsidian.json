@@ -1,0 +1,210 @@
+{
+  "title": "Obsidian",
+  "paragraphs": [
+    {
+      "context": "Obsidian是一个强大的知识库笔记软件，建立在本地Markdown文件的文件夹之上。传统笔记法使用文件夹和标签管理笔记，在笔记增加到一定数量后，笔记被发现的几率就会大大减小，阻碍创意或者灵感的产生。与传统笔记法不同，Obsidian采取卡片笔记的方式，在笔记中插入相互关联的索引，将笔记编织成网，将笔记加入知识循环中，有利于我们对知识进行二次加工。Obsidian可以安装丰富的来自社区的主题和插件，通过不同主题和插件的搭配，可以打造独属于你的最佳知识库管理软件。",
+      "qas": [
+        {
+          "id": "1-16-1",
+          "question": "Obsidian是什么类型的软件？",
+          "answers": [
+            {
+              "text": "强大的知识库笔记软件",
+              "answer_start": 3
+            }
+          ]
+        },
+        {
+          "id": "1-16-2",
+          "question": "Obsidian建立在什么基础之上？",
+          "answers": [
+            {
+              "text": "本地Markdown文件的文件夹",
+              "answer_start": 17
+            }
+          ]
+        },
+        {
+          "id": "1-16-3",
+          "question": "传统笔记法的主要缺点是什么？",
+          "answers": [
+            {
+              "text": "在笔记增加到一定数量后，笔记被发现的几率就会大大减小，阻碍创意或者灵感的产生",
+              "answer_start": 42
+            }
+          ]
+        },
+        {
+          "id": "1-16-4",
+          "question": "Obsidian如何管理笔记？",
+          "answers": [
+            {
+              "text": "采取卡片笔记的方式，在笔记中插入相互关联的索引，将笔记编织成网，将笔记加入知识循环中",
+              "answer_start": 87
+            }
+          ]
+        },
+        {
+          "id": "1-16-5",
+          "question": "Obsidian如何扩展功能？",
+          "answers": [
+            {
+              "text": "安装丰富的来自社区的主题和插件，通过不同主题和插件的搭配",
+              "answer_start": 206
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "[Obsidian官网](https://obsidian.md/)提供了.deb和.AppImage格式的安装包，可以直接下载安装使用。",
+      "qas": [
+        {
+          "id": "1-16-6",
+          "question": "Obsidian提供哪些格式的安装包？",
+          "answers": [
+            {
+              "text": ".deb和.AppImage",
+              "answer_start": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "使用Obsidian需要选择保存Markdown文档的文件夹，Obsidian会自动在文件夹内生成一个.obsidian的文件夹，文档的索引、安装的主题和插件等信息都保存在此文件夹下，不会对Markdown文档进行修改。你可以在Obsidian中创建、删除、修改Markdown文档，也可以选择第三方编辑器进行编辑。免费版只支持在本地使用，多设备同步和将笔记发布到网页需要购买官方的服务。",
+      "qas": [
+        {
+          "id": "1-16-7",
+          "question": "使用Obsidian的第一步操作是什么？",
+          "answers": [
+            {
+              "text": "选择保存Markdown文档的文件夹",
+              "answer_start": 6
+            }
+          ]
+        },
+        {
+          "id": "1-16-8",
+          "question": "Obsidian自动生成什么文件夹？",
+          "answers": [
+            {
+              "text": ".obsidian",
+              "answer_start": 54
+            }
+          ]
+        },
+        {
+          "id": "1-16-9",
+          "question": ".obsidian文件夹的作用是什么？",
+          "answers": [
+            {
+              "text": "保存文档的索引、安装的主题和插件等信息",
+              "answer_start": 72
+            }
+          ]
+        },
+        {
+          "id": "1-16-10",
+          "question": "在Obsidian中如何编辑Markdown文档？",
+          "answers": [
+            {
+              "text": "可以创建、删除、修改，也可以选择第三方编辑器进行编辑",
+              "answer_start": 121
+            }
+          ]
+        },
+        {
+          "id": "1-16-11",
+          "question": "免费版Obsidian有哪些功能限制？",
+          "answers": [
+            {
+              "text": "只支持在本地使用，多设备同步和将笔记发布到网页需要购买官方的服务",
+              "answer_start": 175
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Obsidian并不完全使用Markdown语法，比如[[  ]]双中括号用于创建双向链接，在不支持的编辑器中，如Typora，可能不能正常显示。Obsidian暂时没有官方的网页剪藏插件，但可以通过第三方浏览器插件，如简悦，实现网页的标注剪藏。",
+      "qas": [
+        {
+          "id": "1-16-12",
+          "question": "Obsidian的语法有什么特点？",
+          "answers": [
+            {
+              "text": "并不完全使用Markdown语法，比如[[  ]]双中括号用于创建双向链接",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "id": "1-16-13",
+          "question": "[[  ]]双中括号在Obsidian中的作用是什么？",
+          "answers": [
+            {
+              "text": "创建双向链接",
+              "answer_start": 42
+            }
+          ]
+        },
+        {
+          "id": "1-16-14",
+          "question": "Obsidian有官方的网页剪藏插件吗？",
+          "answers": [
+            {
+              "text": "暂时没有",
+              "answer_start": 92
+            }
+          ]
+        },
+        {
+          "id": "1-16-15",
+          "question": "如何实现Obsidian的网页剪藏功能？",
+          "answers": [
+            {
+              "text": "通过第三方浏览器插件，如简悦",
+              "answer_start": 115
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "相关链接：[Obsidian官网](https://obsidian.md/)、[Obsidian中文论坛](https://forum-zh.obsidian.md/)、[自动同步简悦的稍后读到Obsidian](https://zhuanlan.zhihu.com/p/521932257)",
+      "qas": [
+        {
+          "id": "1-16-16",
+          "question": "Obsidian官网链接是什么？",
+          "answers": [
+            {
+              "text": "https://obsidian.md/",
+              "answer_start": 28
+            }
+          ]
+        },
+        {
+          "id": "1-16-17",
+          "question": "Obsidian中文论坛链接是什么？",
+          "answers": [
+            {
+              "text": "https://forum-zh.obsidian.md/",
+              "answer_start": 59
+            }
+          ]
+        },
+        {
+          "id": "1-16-18",
+          "question": "简悦同步到Obsidian的教程链接是什么？",
+          "answers": [
+            {
+              "text": "https://zhuanlan.zhihu.com/p/521932257",
+              "answer_start": 106
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
