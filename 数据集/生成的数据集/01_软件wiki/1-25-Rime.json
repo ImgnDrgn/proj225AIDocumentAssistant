@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Rime",
+      "paragraphs": [
+        {
+          "context": "Rime是一款输入法引擎软件，是由佛振开发的一款优秀输入法软件。之所以称之为引擎，是因为，除了自带的几款输入法，你可以根据自已的需要来改造甚至是打造自己的输入法，音码、形码、并击输入等等方案都能支持。也有人用它来制作方言（粤语、吴误）或少数民族文字输入（藏文、维吾尔文等等）。如果你觉得你的输入法还差点意思，你可以考虑试试Rime来DIY下你的输入法",
+          "qas": [
+            {
+              "question": "Rime是什么软件？",
+              "id": "1-25-1",
+              "answers": [
+                {
+                  "text": "Rime是一款输入法引擎软件，是由佛振开发的一款优秀输入法软件。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "为什么Rime被称为引擎？",
+              "id": "1-25-2",
+              "answers": [
+                {
+                  "text": "因为除了自带的几款输入法，你可以根据自已的需要来改造甚至是打造自己的输入法，音码、形码、并击输入等等方案都能支持。也有人用它来制作方言（粤语、吴误）或少数民族文字输入（藏文、维吾尔文等等）。",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "Rime支持哪些输入方案？",
+              "id": "1-25-3",
+              "answers": [
+                {
+                  "text": "音码、形码、并击输入等等方案",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "question": "有人用Rime制作什么？",
+              "id": "1-25-4",
+              "answers": [
+                {
+                  "text": "方言（粤语、吴误）或少数民族文字输入（藏文、维吾尔文等等）",
+                  "answer_start": 145
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Rime是跨平台的，Linux平台下是叫“中州韵”。有基于Fcitx和ibus两种版本。Fcitx版的安装命令是apt install fcitx-rime",
+          "qas": [
+            {
+              "question": "Rime是否跨平台？",
+              "id": "1-25-5",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "Linux平台下Rime叫什么？",
+              "id": "1-25-6",
+              "answers": [
+                {
+                  "text": "中州韵",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "Linux平台下Rime有基于哪些版本？",
+              "id": "1-25-7",
+              "answers": [
+                {
+                  "text": "Fcitx和ibus两种版本",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "Fcitx版Rime的安装命令是什么？",
+              "id": "1-25-8",
+              "answers": [
+                {
+                  "text": "apt install fcitx-rime",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

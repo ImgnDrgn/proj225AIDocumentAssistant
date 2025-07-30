@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "Psensor",
+      "paragraphs": [
+        {
+          "context": "PSensor是一款监控硬件温度的工具，支持监控主板、CPU、GPU、硬盘、风扇转速等硬件温度，同时支持使用桌面通知系统高温报警。",
+          "qas": [
+            {
+              "question": "PSensor是什么工具？",
+              "id": "1-23-1",
+              "answers": [
+                {
+                  "text": "一款监控硬件温度的工具",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "PSensor支持监控哪些硬件的温度？",
+              "id": "1-23-2",
+              "answers": [
+                {
+                  "text": "主板、CPU、GPU、硬盘、风扇转速等",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "PSensor是否支持高温报警功能？",
+              "id": "1-23-3",
+              "answers": [
+                {
+                  "text": "支持，使用桌面通知系统高温报警",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install psensor",
+          "qas": [
+            {
+              "question": "如何安装Psensor？",
+              "id": "1-23-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install psensor",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove psensor",
+          "qas": [
+            {
+              "question": "怎样卸载Psensor？",
+              "id": "1-23-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove psensor",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/p/psensor/",
+          "qas": [
+            {
+              "question": "Psensor的仓库地址是什么？",
+              "id": "1-23-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/p/psensor/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
