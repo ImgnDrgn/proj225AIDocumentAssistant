@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "title": "Spotify",
+      "paragraphs": [
+        {
+          "context": "Spotify是一种专有的P2P音乐流媒体服务，允许用户收听点播曲目或专辑。Spotify可以提供800万首的正版音乐的免费点播。“Spotify热”正在全球各地蔓延开来，通过Spotify您不需要花费一分钱，便可以在线收听到海量的正版音乐。",
+          "qas": [
+            {
+              "question": "Spotify属于什么类型的服务？",
+              "id": "1-40-1",
+              "answers": [
+                {
+                  "text": "专有的P2P音乐流媒体服务",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "用户可以通过Spotify做什么？",
+              "id": "1-40-2",
+              "answers": [
+                {
+                  "text": "收听点播曲目或专辑",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "question": "Spotify能提供多少首正版音乐的免费点播？",
+              "id": "1-40-3",
+              "answers": [
+                {
+                  "text": "800万首",
+                  "answer_start": 49
+                }
+              ]
+            },
+            {
+              "question": "“Spotify热”在哪些区域蔓延？",
+              "id": "1-40-4",
+              "answers": [
+                {
+                  "text": "全球各地",
+                  "answer_start": 90
+                }
+              ]
+            },
+            {
+              "question": "通过Spotify收听正版音乐是否需要付费？",
+              "id": "1-40-5",
+              "answers": [
+                {
+                  "text": "不需要花费一分钱",
+                  "answer_start": 104
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Spotify的命令是：sudo apt-get install spotify-client",
+          "qas": [
+            {
+              "question": "安装Spotify的命令是什么？",
+              "id": "1-40-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get install spotify-client",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Spotify的命令是：sudo apt-get remove spotify-client",
+          "qas": [
+            {
+              "question": "卸载Spotify的命令是什么？",
+              "id": "1-40-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove spotify-client",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Spotify的仓库地址是：http://packages.deepin.com/deepin/pool/non-free/s/spotify-client/",
+          "qas": [
+            {
+              "question": "Spotify的仓库地址是什么？",
+              "id": "1-40-8",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/s/spotify-client/",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Spotify的相关链接包括维基百科。",
+          "qas": [
+            {
+              "question": "Spotify的相关链接包含什么？",
+              "id": "1-40-9",
+              "answers": [
+                {
+                  "text": "维基百科",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

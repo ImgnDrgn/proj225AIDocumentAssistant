@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "Soundnode_App-已合并",
+      "paragraphs": [
+        {
+          "context": "Soundnode App是一款音乐播放器应用，除了简洁的播放界面和常用的播放功能之外，还具有搜索本地新歌曲、通过各种方式播放歌曲、将歌曲并保存到你喜欢的播放列表、关注/取消关注的用户等功能。",
+          "qas": [
+            {
+              "id": "1-39-1",
+              "question": "Soundnode App是什么类型的应用？",
+              "answers": [
+                {
+                  "text": "音乐播放器应用",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "1-39-2",
+              "question": "Soundnode App的基本播放功能包括什么？",
+              "answers": [
+                {
+                  "text": "简洁的播放界面和常用的播放功能",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "1-39-3",
+              "question": "Soundnode App提供哪些额外功能？",
+              "answers": [
+                {
+                  "text": "搜索本地新歌曲、通过各种方式播放歌曲、将歌曲并保存到你喜欢的播放列表、关注/取消关注的用户等功能",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install soundnode",
+          "qas": [
+            {
+              "id": "1-39-4",
+              "question": "如何安装Soundnode App？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install soundnode",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove soundnode",
+          "qas": [
+            {
+              "id": "1-39-5",
+              "question": "如何卸载Soundnode App？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove soundnode",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/s/soundnode/",
+          "qas": [
+            {
+              "id": "1-39-6",
+              "question": "Soundnode App的软件仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/soundnode/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

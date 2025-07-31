@@ -1,0 +1,134 @@
+{
+  "data": [
+    {
+      "title": "gxine",
+      "paragraphs": [
+        {
+          "context": "gxine是一个基于gtk2的libxine免费的媒体播放器，支持 CDs, DVDs 和 VCDs，支持多媒体文件格式包括：AVI, MOV, WMV, 和 MP3等，支持直接从互联网上播放视频。",
+          "qas": [
+            {
+              "id": "1-33-1",
+              "question": "gxine是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "基于gtk2的libxine免费的媒体播放器",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "1-33-2",
+              "question": "gxine支持播放哪些物理介质？",
+              "answers": [
+                {
+                  "text": "CDs, DVDs 和 VCDs",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "1-33-3",
+              "question": "gxine支持哪些多媒体文件格式？",
+              "answers": [
+                {
+                  "text": "AVI, MOV, WMV, 和 MP3等",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "id": "1-33-8",
+              "question": "gxine是基于什么的媒体播放器？",
+              "answers": [
+                {
+                  "text": "gtk2 的 libxine",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "1-33-9",
+              "question": "gxine是否支持直接从互联网上播放视频？",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 104
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装gxine的命令是：sudo apt-get install gxine。卸载gxine的命令是：sudo apt-get remove gxine。插件安装命令：sudo apt-get install gxineplugin。插件卸载命令：sudo apt-get remove gxineplugin。",
+          "qas": [
+            {
+              "id": "1-33-4",
+              "question": "如何安装gxine？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gxine",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "1-33-5",
+              "question": "卸载gxine插件需要输入什么命令？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gxineplugin",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "1-33-10",
+              "question": "卸载gxine的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gxine",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "1-33-11",
+              "question": "安装gxine插件的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gxineplugin",
+                  "answer_start": 60
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址：http://packages.deepin.com/deepin/pool/main/g/gxine/。官方网站：https://www.linuxtv.org/wiki/index.php/Gxine。",
+          "qas": [
+            {
+              "id": "1-33-6",
+              "question": "在哪里可以找到gxine的安装包？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gxine/",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "1-33-7",
+              "question": "gxine的官方网站是什么？",
+              "answers": [
+                {
+                  "text": "https://www.linuxtv.org/wiki/index.php/Gxine",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

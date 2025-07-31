@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "Parole",
+      "paragraphs": [
+        {
+          "context": "Parole是一个基于GStreamer多媒体框架的多媒体播放器，支持播放本地文件，DVD/CD和网络串流。",
+          "qas": [
+            {
+              "id": "1-35-1",
+              "question": "Parole是什么？",
+              "answers": [
+                {
+                  "text": "基于GStreamer多媒体框架的多媒体播放器",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "1-35-2",
+              "question": "Parole基于什么框架？",
+              "answers": [
+                {
+                  "text": "GStreamer多媒体框架",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "1-35-3",
+              "question": "Parole支持播放哪些内容？",
+              "answers": [
+                {
+                  "text": "本地文件，DVD/CD和网络串流",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Parole的命令是：sudo apt-get install parole",
+          "qas": [
+            {
+              "id": "1-35-4",
+              "question": "安装Parole的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install parole",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Parole的命令是：sudo apt-get remove parole",
+          "qas": [
+            {
+              "id": "1-35-5",
+              "question": "卸载Parole的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove parole",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Parole的仓库地址为：http://packages.deepin.com/deepin/pool/main/p/parole/",
+          "qas": [
+            {
+              "id": "1-35-6",
+              "question": "Parole的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/p/parole/",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Parole的官方网站链接是：https://docs.xfce.org/apps/parole/start",
+          "qas": [
+            {
+              "id": "1-35-7",
+              "question": "Parole的官方网站是什么？",
+              "answers": [
+                {
+                  "text": "https://docs.xfce.org/apps/parole/start",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

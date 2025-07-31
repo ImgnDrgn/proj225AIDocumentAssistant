@@ -1,0 +1,60 @@
+{
+  "title": "Pulseaudio的可视化管理工具 pavucontrol",
+  "paragraphs": [
+    {
+      "context": "pavucontrol是Pulseaudio的可视化管理工具，能够单独调节每个软件的音量大小。安装该工具的命令为sudo apt install pavucontrol，在命令行中输入pavucontrol即可启动。",
+      "qas": [
+        {
+          "id": "1-36-1",
+          "question": "Pulseaudio的可视化管理工具名称是什么？",
+          "answers": [
+            {
+              "text": "pavucontrol",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "id": "1-36-2",
+          "question": "pavucontrol是什么类型的工具？",
+          "answers": [
+            {
+              "text": "Pulseaudio的可视化管理工具",
+              "answer_start": 11
+            }
+          ]
+        },
+        {
+          "id": "1-36-3",
+          "question": "pavucontrol的主要功能是什么？",
+          "answers": [
+            {
+              "text": "单独调节每个软件的音量大小",
+              "answer_start": 35
+            }
+          ]
+        },
+        {
+          "id": "1-36-4",
+          "question": "如何安装pavucontrol？",
+          "answers": [
+            {
+              "text": "sudo apt install pavucontrol",
+              "answer_start": 62
+            }
+          ]
+        },
+        {
+          "id": "1-36-5",
+          "question": "如何启动pavucontrol？",
+          "answers": [
+            {
+              "text": "在命令行中输入pavucontrol",
+              "answer_start": 93
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

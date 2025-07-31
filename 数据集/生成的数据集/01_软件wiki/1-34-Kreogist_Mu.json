@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "Kreogist_Mu",
+      "paragraphs": [
+        {
+          "context": "Kreogist Mu是一个音乐管理中心，支持播放WAV、MP3、AAC、M4A等有损或无损音乐格式，读取WMA、FLAC、WAV等格式的标签信息。还支持导入导出iTunes等格式的播放列表，同时还具有无缝语言切换、歌曲预览等功能。",
+          "qas": [
+            {
+              "id": "1-34-1",
+              "question": "Kreogist Mu是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "音乐管理中心",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "1-34-2",
+              "question": "Kreogist Mu支持播放哪些音乐格式？",
+              "answers": [
+                {
+                  "text": "WAV、MP3、AAC、M4A等有损或无损音乐格式",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "1-34-3",
+              "question": "Kreogist Mu能读取哪些格式的标签信息？",
+              "answers": [
+                {
+                  "text": "WMA、FLAC、WAV等格式",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "id": "1-34-4",
+              "question": "Kreogist Mu支持导入导出哪种格式的播放列表？",
+              "answers": [
+                {
+                  "text": "iTunes等格式",
+                  "answer_start": 82
+                }
+              ]
+            },
+            {
+              "id": "1-34-5",
+              "question": "Kreogist Mu具有哪些功能？",
+              "answers": [
+                {
+                  "text": "无缝语言切换、歌曲预览等功能",
+                  "answer_start": 102
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install mu",
+          "qas": [
+            {
+              "id": "1-34-6",
+              "question": "安装Kreogist Mu的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install mu",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove mu",
+          "qas": [
+            {
+              "id": "1-34-7",
+              "question": "卸载Kreogist Mu的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove mu",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/m/mu/",
+          "qas": [
+            {
+              "id": "1-34-8",
+              "question": "Kreogist Mu的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/m/mu/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
