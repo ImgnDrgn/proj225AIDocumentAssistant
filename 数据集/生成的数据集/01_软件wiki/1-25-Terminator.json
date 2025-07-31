@@ -8,7 +8,7 @@
           "qas": [
             {
               "question": "Terminator是什么类型的工具？",
-              "id": "1-26-1",
+              "id": "1-25-1",
               "answers": [
                 {
                   "text": "跨平台的终端工具",
@@ -18,7 +18,7 @@
             },
             {
               "question": "Terminator能将界面分割成什么形状？",
-              "id": "1-26-2",
+              "id": "1-25-2",
               "answers": [
                 {
                   "text": "网格状",
@@ -28,7 +28,7 @@
             },
             {
               "question": "Terminator可以通过什么方式调整界面布局和配置喜好？",
-              "id": "1-26-3",
+              "id": "1-25-3",
               "answers": [
                 {
                   "text": "可视化界面",
@@ -43,7 +43,7 @@
           "qas": [
             {
               "question": "安装Terminator的命令是什么？",
-              "id": "1-26-4",
+              "id": "1-25-4",
               "answers": [
                 {
                   "text": "sudo apt-get install terminator",
@@ -58,7 +58,7 @@
           "qas": [
             {
               "question": "卸载Terminator的命令是什么？",
-              "id": "1-26-5",
+              "id": "1-25-5",
               "answers": [
                 {
                   "text": "sudo apt-get remove terminator",
@@ -73,7 +73,7 @@
           "qas": [
             {
               "question": "Terminator的仓库地址是什么？",
-              "id": "1-26-6",
+              "id": "1-25-6",
               "answers": [
                 {
                   "text": "http://packages.deepin.com/deepin/pool/main/t/terminator/",
