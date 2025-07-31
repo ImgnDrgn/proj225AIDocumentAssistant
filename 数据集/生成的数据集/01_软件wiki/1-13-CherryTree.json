@@ -8,7 +8,7 @@
           "qas": [
             {
               "question": "CherryTree是什么软件？",
-              "id": "1-14-1",
+              "id": "1-13-1",
               "answers": [
                 {
                   "text": "一个支持无限层级分类的笔记软件",
@@ -18,7 +18,7 @@
             },
             {
               "question": "CherryTree支持哪些功能？",
-              "id": "1-14-2",
+              "id": "1-13-2",
               "answers": [
                 {
                   "text": "支持富文本、多级标题、列表、嵌入图片等常用功能，同时还具有嵌入表格、嵌入代码框、导入和导出等功能",
@@ -33,7 +33,7 @@
           "qas": [
             {
               "question": "如何安装CherryTree？",
-              "id": "1-14-3",
+              "id": "1-13-3",
               "answers": [
                 {
                   "text": "sudo apt-get install cherrytree",
@@ -48,7 +48,7 @@
           "qas": [
             {
               "question": "如何卸载CherryTree？",
-              "id": "1-14-4",
+              "id": "1-13-4",
               "answers": [
                 {
                   "text": "sudo apt-get remove cherrytree",
@@ -63,7 +63,7 @@
           "qas": [
             {
               "question": "CherryTree的仓库地址是什么？",
-              "id": "1-14-5",
+              "id": "1-13-5",
               "answers": [
                 {
                   "text": "http://packages.deepin.com/deepin/pool/main/c/cherrytree/",
