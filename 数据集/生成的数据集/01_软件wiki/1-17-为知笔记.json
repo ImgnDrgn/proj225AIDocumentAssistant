@@ -7,7 +7,7 @@
           "context": "为知笔记是一款云服务笔记软件，同时它可以资料共享、沟通协作，还能帮您记录生活、工作点点滴滴，其中工作笔记和团队协作为重点关注方向。",
           "qas": [
             {
-              "id": "1-18-1",
+              "id": "1-17-1",
               "question": "为知笔记是什么类型的软件？",
               "answers": [
                 {
@@ -17,7 +17,7 @@
               ]
             },
             {
-              "id": "1-18-2",
+              "id": "1-17-2",
               "question": "为知笔记可以实现哪些功能？",
               "answers": [
                 {
@@ -27,7 +27,7 @@
               ]
             },
             {
-              "id": "1-18-3",
+              "id": "1-17-3",
               "question": "为知笔记的重点关注方向是什么？",
               "answers": [
                 {
@@ -42,7 +42,7 @@
           "context": "安装为知笔记的命令是sudo apt-get install wiznote，卸载的命令是sudo apt-get remove wiznote。",
           "qas": [
             {
-              "id": "1-18-4",
+              "id": "1-17-4",
               "question": "安装为知笔记的命令是什么？",
               "answers": [
                 {
@@ -52,7 +52,7 @@
               ]
             },
             {
-              "id": "1-18-5",
+              "id": "1-17-5",
               "question": "卸载为知笔记的命令是什么？",
               "answers": [
                 {
@@ -67,7 +67,7 @@
           "context": "为知笔记的仓库地址是http://packages.deepin.com/deepin/pool/main/w/wiznote/。",
           "qas": [
             {
-              "id": "1-18-6",
+              "id": "1-17-6",
               "question": "为知笔记的仓库地址是什么？",
               "answers": [
                 {
