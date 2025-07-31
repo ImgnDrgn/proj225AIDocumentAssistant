@@ -8,7 +8,7 @@
           "qas": [
             {
               "question": "Leanote是什么类型的应用？",
-              "id": "1-15-1",
+              "id": "1-14-1",
               "answers": [
                 {
                   "text": "在线的云笔记应用",
@@ -18,7 +18,7 @@
             },
             {
               "question": "Leanote支持哪些功能？",
-              "id": "1-15-2",
+              "id": "1-14-2",
               "answers": [
                 {
                   "text": "支持 Markdown，程序代码高亮，多人协作，笔记历史记录，可以直接将笔记发布为博客、工作日志，支持创建多笔记本、标签、共享，还有免打扰的写作模式。",
@@ -33,7 +33,7 @@
           "qas": [
             {
               "question": "如何安装Leanote？",
-              "id": "1-15-3",
+              "id": "1-14-3",
               "answers": [
                 {
                   "text": "sudo apt-get install leanote",
@@ -48,7 +48,7 @@
           "qas": [
             {
               "question": "怎样卸载Leanote？",
-              "id": "1-15-4",
+              "id": "1-14-4",
               "answers": [
                 {
                   "text": "sudo apt-get remove leanote",
@@ -63,7 +63,7 @@
           "qas": [
             {
               "question": "Leanote的仓库地址是什么？",
-              "id": "1-15-5",
+              "id": "1-14-5",
               "answers": [
                 {
                   "text": "http://packages.deepin.com/deepin/pool/main/l/leanote/",
