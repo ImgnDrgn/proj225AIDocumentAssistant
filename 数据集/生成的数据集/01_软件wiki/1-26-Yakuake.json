@@ -7,7 +7,7 @@
           "context": "Yakuake是一款下拉式终端仿真器，它与Guake在功能上非常相似。它具有从屏幕顶端弹出，标准标签式界面、可配置终端大小和动画速度等功能。",
           "qas": [
             {
-              "id": "1-27-1",
+              "id": "1-26-1",
               "question": "Yakuake是什么类型的应用程序？",
               "answers": [
                 {
@@ -17,7 +17,7 @@
               ]
             },
             {
-              "id": "1-27-2",
+              "id": "1-26-2",
               "question": "Yakuake与哪款软件功能相似？",
               "answers": [
                 {
@@ -27,7 +27,7 @@
               ]
             },
             {
-              "id": "1-27-3",
+              "id": "1-26-3",
               "question": "Yakuake有哪些主要功能？",
               "answers": [
                 {
@@ -42,7 +42,7 @@
           "context": "安装Yakuake可以使用命令：sudo apt-get install yakuake",
           "qas": [
             {
-              "id": "1-27-4",
+              "id": "1-26-4",
               "question": "如何安装Yakuake？",
               "answers": [
                 {
@@ -57,7 +57,7 @@
           "context": "卸载Yakuake可以使用命令：sudo apt-get remove yakuake",
           "qas": [
             {
-              "id": "1-27-5",
+              "id": "1-26-5",
               "question": "如何卸载Yakuake？",
               "answers": [
                 {
@@ -72,7 +72,7 @@
           "context": "Yakuake的仓库地址是：http://packages.deepin.com/deepin/pool/main/y/yakuake/",
           "qas": [
             {
-              "id": "1-27-6",
+              "id": "1-26-6",
               "question": "Yakuake的仓库地址是什么？",
               "answers": [
                 {
