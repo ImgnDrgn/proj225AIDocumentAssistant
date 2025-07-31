@@ -8,7 +8,7 @@
           "qas": [
             {
               "question": "系统监视器的英文名称是什么？",
-              "id": "1-29-1",
+              "id": "1-28-1",
               "answers": [
                 {
                   "text": "gnome-system-monitor",
@@ -18,7 +18,7 @@
             },
             {
               "question": "系统监视器是开源的吗？",
-              "id": "1-29-2",
+              "id": "1-28-2",
               "answers": [
                 {
                   "text": "是",
@@ -28,7 +28,7 @@
             },
             {
               "question": "系统监视器能监控Linux操作系统的哪些内容？",
-              "id": "1-29-3",
+              "id": "1-28-3",
               "answers": [
                 {
                   "text": "运行的进程、资源和文件系统",
@@ -43,7 +43,7 @@
           "qas": [
             {
               "question": "如何安装系统监视器？",
-              "id": "1-29-4",
+              "id": "1-28-4",
               "answers": [
                 {
                   "text": "sudo apt-get install gnome-system-monitor",
@@ -58,7 +58,7 @@
           "qas": [
             {
               "question": "怎样卸载系统监视器？",
-              "id": "1-29-5",
+              "id": "1-28-5",
               "answers": [
                 {
                   "text": "sudo apt-get remove gnome-system-monitor",
@@ -73,7 +73,7 @@
           "qas": [
             {
               "question": "系统监视器的仓库地址是什么？",
-              "id": "1-29-6",
+              "id": "1-28-6",
               "answers": [
                 {
                   "text": "http://packages.deepin.com/deepin/pool/main/g/gnome-system-monitor/",
