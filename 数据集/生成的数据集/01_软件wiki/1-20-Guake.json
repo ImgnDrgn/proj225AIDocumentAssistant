@@ -7,7 +7,7 @@
           "context": "Guake是一个下拉式的终端程序。支持快捷键、标签、背景透明等功能，可以使用快捷键控制终端程序的呼出及隐藏。",
           "qas": [
             {
-              "id": "1-21-1",
+              "id": "1-20-1",
               "question": "Guake是什么类型的程序？",
               "answers": [
                 {
@@ -17,7 +17,7 @@
               ]
             },
             {
-              "id": "1-21-2",
+              "id": "1-20-2",
               "question": "Guake支持哪些功能？",
               "answers": [
                 {
@@ -32,7 +32,7 @@
           "context": "安装Guake的命令是sudo apt-get install guake。",
           "qas": [
             {
-              "id": "1-21-3",
+              "id": "1-20-3",
               "question": "如何安装Guake？",
               "answers": [
                 {
@@ -47,7 +47,7 @@
           "context": "卸载Guake的命令是sudo apt-get remove guake。",
           "qas": [
             {
-              "id": "1-21-4",
+              "id": "1-20-4",
               "question": "如何卸载Guake？",
               "answers": [
                 {
@@ -62,7 +62,7 @@
           "context": "Guake的仓库地址是http://packages.deepin.com/deepin/pool/main/g/guake/。",
           "qas": [
             {
-              "id": "1-21-5",
+              "id": "1-20-5",
               "question": "Guake的仓库地址是什么？",
               "answers": [
                 {
