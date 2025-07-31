@@ -8,7 +8,7 @@
           "qas": [
             {
               "question": "搜狗输入法是什么类型的软件？",
-              "id": "1-28-1",
+              "id": "1-27-1",
               "answers": [
                 {
                   "text": "中文输入法",
@@ -18,7 +18,7 @@
             },
             {
               "question": "搜狗输入法有哪些功能？",
-              "id": "1-28-2",
+              "id": "1-27-2",
               "answers": [
                 {
                   "text": "模糊拼音、云端输入、自动纠错、多彩皮肤、长词联想、简繁切换等",
@@ -33,7 +33,7 @@
           "qas": [
             {
               "question": "如何安装搜狗输入法？",
-              "id": "1-28-3",
+              "id": "1-27-3",
               "answers": [
                 {
                   "text": "sudo apt-get install sogoupinyin",
@@ -48,7 +48,7 @@
           "qas": [
             {
               "question": "怎样卸载搜狗输入法？",
-              "id": "1-28-4",
+              "id": "1-27-4",
               "answers": [
                 {
                   "text": "sudo apt-get remove sogoupinyin",
@@ -63,7 +63,7 @@
           "qas": [
             {
               "question": "搜狗输入法的仓库地址是什么？",
-              "id": "1-28-5",
+              "id": "1-27-5",
               "answers": [
                 {
                   "text": "http://packages.deepin.com/deepin/pool/non-free/s/sogoupinyin/",
@@ -78,7 +78,7 @@
           "qas": [
             {
               "question": "搜狗输入法在Ubuntu 14.04下有什么常见问题？",
-              "id": "1-28-6",
+              "id": "1-27-6",
               "answers": [
                 {
                   "text": "黑块状态条",
@@ -88,7 +88,7 @@
             },
             {
               "question": "在哪里可以找到解决搜狗输入法Ubuntu 14.04下黑块状态条的方法？",
-              "id": "1-28-7",
+              "id": "1-27-7",
               "answers": [
                 {
                   "text": "http://log4think.com/sogou-linux-input-black-statusbar/",
