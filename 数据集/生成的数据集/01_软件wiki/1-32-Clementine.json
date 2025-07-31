@@ -8,7 +8,7 @@
           "qas": [
             {
               "question": "Clementine是什么？",
-              "id": "1-33-1",
+              "id": "1-32-1",
               "answers": [
                 {
                   "text": "一个音乐播放器和媒体库管理器",
@@ -18,7 +18,7 @@
             },
             {
               "question": "Clementine具有哪些功能？",
-              "id": "1-33-2",
+              "id": "1-32-2",
               "answers": [
                 {
                   "text": "搜索并播放媒体库、收听电台、标签式播放列表、转换音频格式、发现和下载 Podcast 播客、远程控制等",
@@ -33,7 +33,7 @@
           "qas": [
             {
               "question": "如何安装Clementine？",
-              "id": "1-33-3",
+              "id": "1-32-3",
               "answers": [
                 {
                   "text": "sudo apt-get install clementine",
@@ -48,7 +48,7 @@
           "qas": [
             {
               "question": "如何卸载Clementine？",
-              "id": "1-33-4",
+              "id": "1-32-4",
               "answers": [
                 {
                   "text": "sudo apt-get remove clementine",
@@ -63,7 +63,7 @@
           "qas": [
             {
               "question": "Clementine的仓库地址是什么？",
-              "id": "1-33-5",
+              "id": "1-32-5",
               "answers": [
                 {
                   "text": "http://packages.deepin.com/deepin/pool/main/c/clementine/",
