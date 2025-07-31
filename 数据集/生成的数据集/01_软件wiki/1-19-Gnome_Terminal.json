@@ -7,7 +7,7 @@
           "context": "title: Gnome_Terminal\ndescription: Gnome Terminal是一个终端仿真器，所有设置都存储在配置文件中，可以通过菜单栏进行设置，同时可以通过命令来执行操作。\n安装: `sudo apt-get install gnome-terminal`\n卸载: `sudo apt-get remove gnome-terminal`\n仓库地址: [http://packages.deepin.com/deepin/pool/main/g/gnome-terminal/](http://packages.deepin.com/deepin/pool/main/g/gnome-terminal/)",
           "qas": [
             {
-              "id": "1-20-1",
+              "id": "1-19-1",
               "question": "Gnome Terminal是什么类型的应用程序？",
               "answers": [
                 {
@@ -17,7 +17,7 @@
               ]
             },
             {
-              "id": "1-20-2",
+              "id": "1-19-2",
               "question": "Gnome Terminal的配置文件存储在哪里？",
               "answers": [
                 {
@@ -27,7 +27,7 @@
               ]
             },
             {
-              "id": "1-20-3",
+              "id": "1-19-3",
               "question": "如何对Gnome Terminal进行设置？",
               "answers": [
                 {
@@ -37,7 +37,7 @@
               ]
             },
             {
-              "id": "1-20-4",
+              "id": "1-19-4",
               "question": "如何安装Gnome Terminal？",
               "answers": [
                 {
@@ -47,7 +47,7 @@
               ]
             },
             {
-              "id": "1-20-5",
+              "id": "1-19-5",
               "question": "卸载Gnome Terminal的命令是什么？",
               "answers": [
                 {
@@ -57,7 +57,7 @@
               ]
             },
             {
-              "id": "1-20-6",
+              "id": "1-19-6",
               "question": "在哪里可以找到Gnome Terminal的安装包？",
               "answers": [
                 {
