@@ -8,7 +8,7 @@
           "qas": [
             {
               "question": "Konsole是什么？",
-              "id": "1-22-1",
+              "id": "1-21-1",
               "answers": [
                 {
                   "text": "一个终端模拟器",
@@ -18,7 +18,7 @@
             },
             {
               "question": "Konsole具有哪些功能？",
-              "id": "1-22-2",
+              "id": "1-21-2",
               "answers": [
                 {
                   "text": "分割检视模式、可定制配色方案、可定制键盘操作方式、调整透明度、多页签显示、内部搜索等功能。",
@@ -33,7 +33,7 @@
           "qas": [
             {
               "question": "如何安装Konsole？",
-              "id": "1-22-3",
+              "id": "1-21-3",
               "answers": [
                 {
                   "text": "sudo apt-get install konsole",
@@ -48,7 +48,7 @@
           "qas": [
             {
               "question": "如何卸载Konsole？",
-              "id": "1-22-4",
+              "id": "1-21-4",
               "answers": [
                 {
                   "text": "sudo apt-get remove konsole",
@@ -63,7 +63,7 @@
           "qas": [
             {
               "question": "Konsole的仓库地址是什么？",
-              "id": "1-22-5",
+              "id": "1-21-5",
               "answers": [
                 {
                   "text": "http://packages.deepin.com/deepin/pool/main/k/konsole/",
