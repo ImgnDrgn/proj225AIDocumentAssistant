@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Midori-已合并",
+      "paragraphs": [
+        {
+          "context": "Midori是一个轻量级的网页浏览器，它全面整合GTK+2和GTK+3，还使用和Safari一样的WebKit引擎，具有分页浏览、会话管理、书签收藏、搜索、用户脚本和样式支持、扩展等功能。",
+          "qas": [
+            {
+              "question": "Midori是什么类型的软件？",
+              "id": "1-56-1",
+              "answers": [
+                {
+                  "text": "轻量级的网页浏览器",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "Midori整合了哪些工具？",
+              "id": "1-56-2",
+              "answers": [
+                {
+                  "text": "GTK+2和GTK+3",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "Midori使用的引擎与哪个浏览器相同？",
+              "id": "1-56-3",
+              "answers": [
+                {
+                  "text": "Safari",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "question": "Midori具有哪些功能？",
+              "id": "1-56-4",
+              "answers": [
+                {
+                  "text": "分页浏览、会话管理、书签收藏、搜索、用户脚本和样式支持、扩展等功能",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装命令：sudo apt-get install midori",
+          "qas": [
+            {
+              "question": "如何安装Midori？",
+              "id": "1-56-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install midori",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载命令：sudo apt-get remove midori",
+          "qas": [
+            {
+              "question": "怎样卸载Midori？",
+              "id": "1-56-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove midori",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址：http://packages.deepin.com/deepin/pool/main/m/midori/",
+          "qas": [
+            {
+              "question": "Midori的仓库地址是什么？",
+              "id": "1-56-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/m/midori/",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "title": "Opera",
+      "paragraphs": [
+        {
+          "context": "Opera是一款网络浏览器，它具有网络同步，密码管理、会话管理、鼠标手势、键盘快捷键、内置搜索引擎、智能弹出式广告拦截、网址的过滤和主题皮肤、插件扩展等功能。",
+          "qas": [
+            {
+              "question": "Opera是什么？",
+              "id": "1-58-1",
+              "answers": [
+                {
+                  "text": "一款网络浏览器",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "Opera具有哪些功能？",
+              "id": "1-58-2",
+              "answers": [
+                {
+                  "text": "网络同步，密码管理、会话管理、鼠标手势、键盘快捷键、内置搜索引擎、智能弹出式广告拦截、网址的过滤和主题皮肤、插件扩展等功能",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install opera-stable      (稳定版)",
+          "qas": [
+            {
+              "question": "如何安装Opera稳定版？",
+              "id": "1-58-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install opera-stable",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install opera-developer   (开发者版本)",
+          "qas": [
+            {
+              "question": "安装Opera开发者版本的命令是什么？",
+              "id": "1-58-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install opera-developer",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove opera-stable        (稳定版)",
+          "qas": [
+            {
+              "question": "怎样卸载Opera稳定版？",
+              "id": "1-58-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove opera-stable",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove opera-developer   (开发者版本)",
+          "qas": [
+            {
+              "question": "卸载Opera开发者版本使用什么命令？",
+              "id": "1-58-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove opera-developer",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/non-free/o/opera-stable/",
+          "qas": [
+            {
+              "question": "Opera稳定版的仓库地址是什么？",
+              "id": "1-58-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/o/opera-stable/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/non-free/o/opera-developer/",
+          "qas": [
+            {
+              "question": "Opera开发者版本的仓库地址在哪里？",
+              "id": "1-58-8",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/o/opera-developer/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

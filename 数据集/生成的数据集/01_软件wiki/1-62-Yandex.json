@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Yandex",
+      "paragraphs": [
+        {
+          "context": "Yandex是一款免费的浏览器，来自自俄罗斯最大的搜索引擎Yandex，在国外拥有众多的用户，具有界面简洁、浏览速度快、集成快速搜索、涡轮加速等功能，在网速缓慢的情况下，加快网页的加载速度。",
+          "qas": [
+            {
+              "question": "Yandex是什么类型的软件？",
+              "id": "1-62-1",
+              "answers": [
+                {
+                  "text": "免费的浏览器",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "Yandex来自哪个公司？",
+              "id": "1-62-2",
+              "answers": [
+                {
+                  "text": "俄罗斯最大的搜索引擎Yandex",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "Yandex在哪些地区拥有众多用户？",
+              "id": "1-62-3",
+              "answers": [
+                {
+                  "text": "国外",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "Yandex具有哪些功能？",
+              "id": "1-62-4",
+              "answers": [
+                {
+                  "text": "界面简洁、浏览速度快、集成快速搜索、涡轮加速等功能，在网速缓慢的情况下，加快网页的加载速度",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install yandex-browser-beta",
+          "qas": [
+            {
+              "question": "如何安装Yandex浏览器？",
+              "id": "1-62-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install yandex-browser-beta",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove yandex-browser-beta",
+          "qas": [
+            {
+              "question": "如何卸载Yandex浏览器？",
+              "id": "1-62-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove yandex-browser-beta",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/y/yandex-browser-beta/",
+          "qas": [
+            {
+              "question": "Yandex浏览器的仓库地址是什么？",
+              "id": "1-62-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/y/yandex-browser-beta/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

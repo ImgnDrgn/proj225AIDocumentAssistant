@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "title": "Nextcloud",
+      "paragraphs": [
+        {
+          "context": "Nextcloud是一套用于创建网络硬盘的客户端－服务器软件。其功能与百度网盘相近，但Nextcloud是自由及开放源代码软件，每个人都可以在私人服务器上部署Nextcloud。与百度网盘、阿里云盘等专有服务相比，Nextcloud的开放架构让用户可以利用应用程序的方式在服务器上新增额外的功能，并让用户可以完全完全掌控自己的数据。",
+          "qas": [
+            {
+              "question": "Nextcloud是什么类型的软件？",
+              "id": "1-57-1",
+              "answers": [
+                {
+                  "text": "用于创建网络硬盘的客户端－服务器软件",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "Nextcloud的功能与什么相近？",
+              "id": "1-57-2",
+              "answers": [
+                {
+                  "text": "百度网盘",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "Nextcloud与百度网盘等专有服务相比有什么特点？",
+              "id": "1-57-3",
+              "answers": [
+                {
+                  "text": "Nextcloud是自由及开放源代码软件，每个人都可以在私人服务器上部署，开放架构让用户可以利用应用程序的方式在服务器上新增额外的功能，并让用户可以完全掌控自己的数据",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装（客户端）：sudo apt install nextcloud-desktop",
+          "qas": [
+            {
+              "question": "如何安装Nextcloud客户端？",
+              "id": "1-57-4",
+              "answers": [
+                {
+                  "text": "sudo apt install nextcloud-desktop",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载（客户端）：sudo apt remove --purge nextcloud-desktop",
+          "qas": [
+            {
+              "question": "如何卸载Nextcloud客户端？",
+              "id": "1-57-5",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge nextcloud-desktop",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "服务器端 Nextcloud 配置：请参考 https://nextcloud.com/install/#instructions-server 若使用 Docker 方式部署（推荐），请参考 https://github.com/nextcloud/all-in-one",
+          "qas": [
+            {
+              "question": "服务器端Nextcloud配置可以参考哪个链接？",
+              "id": "1-57-6",
+              "answers": [
+                {
+                  "text": "https://nextcloud.com/install/#instructions-server",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "推荐用什么方式部署服务器端Nextcloud？",
+              "id": "1-57-7",
+              "answers": [
+                {
+                  "text": "Docker方式",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "Docker方式部署服务器端Nextcloud参考哪个链接？",
+              "id": "1-57-8",
+              "answers": [
+                {
+                  "text": "https://github.com/nextcloud/all-in-one",
+                  "answer_start": 104
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址（客户端）：http://packages.deepin.com/deepin/pool/main/n/nextcloud-desktop/",
+          "qas": [
+            {
+              "question": "Nextcloud客户端的仓库地址是什么？",
+              "id": "1-57-9",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/n/nextcloud-desktop/",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "相关链接：维基百科：https://zh.wikipedia.org/zh-cn/Nextcloud Nextcloud 官网：https://nextcloud.com/",
+          "qas": [
+            {
+              "question": "Nextcloud的维基百科链接是什么？",
+              "id": "1-57-10",
+              "answers": [
+                {
+                  "text": "https://zh.wikipedia.org/zh-cn/Nextcloud",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "question": "Nextcloud的官网链接是什么？",
+              "id": "1-57-11",
+              "answers": [
+                {
+                  "text": "https://nextcloud.com/",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

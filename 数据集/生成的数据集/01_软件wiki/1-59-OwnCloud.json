@@ -1,0 +1,139 @@
+{
+  "data": [
+    {
+      "title": "OwnCloud",
+      "paragraphs": [
+        {
+          "context": "ownCloud 是一个来自 KDE 社区开发的免费软件，提供私人的 Web 服务。当前主要功能包括文件管理（内建文件分享）、音乐、日历、联系人等等，可在 PC 和服务器上运行。简单来说就是一个基于 Php 的自建网盘。基本上是私人使用这样，因为直到现在开发版本也没有暴露注册功能。",
+          "qas": [
+            {
+              "question": "ownCloud 是由哪个社区开发的？",
+              "id": "1-59-1",
+              "answers": [
+                {
+                  "text": "KDE 社区",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "ownCloud 属于什么类型的软件？",
+              "id": "1-59-2",
+              "answers": [
+                {
+                  "text": "免费软件",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "ownCloud 提供什么类型的服务？",
+              "id": "1-59-3",
+              "answers": [
+                {
+                  "text": "私人的 Web 服务",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "ownCloud 的主要功能有哪些？",
+              "id": "1-59-4",
+              "answers": [
+                {
+                  "text": "文件管理（内建文件分享）、音乐、日历、联系人等等",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "question": "ownCloud 可以在哪些设备上运行？",
+              "id": "1-59-5",
+              "answers": [
+                {
+                  "text": "PC 和服务器",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "question": "ownCloud 是基于什么开发的自建网盘？",
+              "id": "1-59-6",
+              "answers": [
+                {
+                  "text": "Php",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "question": "ownCloud 主要适合什么场景使用？",
+              "id": "1-59-7",
+              "answers": [
+                {
+                  "text": "私人使用",
+                  "answer_start": 130
+                }
+              ]
+            },
+            {
+              "question": "ownCloud 开发版本有暴露注册功能吗？",
+              "id": "1-59-8",
+              "answers": [
+                {
+                  "text": "没有",
+                  "answer_start": 152
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装：sudo apt-get install owncloud",
+          "qas": [
+            {
+              "question": "如何安装 ownCloud？",
+              "id": "1-59-9",
+              "answers": [
+                {
+                  "text": "sudo apt-get install owncloud",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载：sudo apt-get remove owncloud",
+          "qas": [
+            {
+              "question": "如何卸载 ownCloud？",
+              "id": "1-59-10",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove owncloud",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址：[http://packages.deepin.com/deepin/pool/main/o/owncloud/](http://packages.deepin.com/deepin/pool/main/o/owncloud/)",
+          "qas": [
+            {
+              "question": "ownCloud 的仓库地址是什么？",
+              "id": "1-59-11",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/o/owncloud/",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

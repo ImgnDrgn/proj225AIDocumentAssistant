@@ -1,0 +1,139 @@
+{
+  "data": [
+    {
+      "title": "Vivaldi",
+      "paragraphs": [
+        {
+          "context": "Vivaldi是一款极速浏览器，支持英语、日语、法语、俄语等近10种语言。Vivaldi浏览器的布局与Opera浏览器非常相似，拥有不少Opera的功能，例如快速拨号界面、滑鼠手势等。另外，Vivaldi允许用户在屏幕截图上添加笔记。",
+          "qas": [
+            {
+              "question": "Vivaldi是什么类型的软件？",
+              "id": "1-61-1",
+              "answers": [
+                {
+                  "text": "极速浏览器",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "Vivaldi支持哪些语言？",
+              "id": "1-61-2",
+              "answers": [
+                {
+                  "text": "英语、日语、法语、俄语等近10种语言",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "Vivaldi浏览器的布局与哪款浏览器相似？",
+              "id": "1-61-3",
+              "answers": [
+                {
+                  "text": "Opera浏览器",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "question": "Vivaldi拥有哪些Opera的哪些功能？",
+              "id": "1-61-4",
+              "answers": [
+                {
+                  "text": "快速拨号界面、滑鼠手势等",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "question": "Vivaldi允许用户在什么上添加笔记？",
+              "id": "1-61-5",
+              "answers": [
+                {
+                  "text": "屏幕截图",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install vivaldi-stable\nsudo apt-get install vivaldi-beta",
+          "qas": [
+            {
+              "question": "安装Vivaldi稳定版的命令是什么？",
+              "id": "1-61-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get install vivaldi-stable",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "安装Vivaldi测试版的命令是什么？",
+              "id": "1-61-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get install vivaldi-beta",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove vivaldi-stable\nsudo apt-get remove vivaldi-beta",
+          "qas": [
+            {
+              "question": "卸载Vivaldi稳定版的命令是什么？",
+              "id": "1-61-8",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove vivaldi-stable",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "卸载Vivaldi测试版的命令是什么？",
+              "id": "1-61-9",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove vivaldi-beta",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/v/vivaldi-stable/\nhttp://packages.deepin.com/deepin/pool/main/v/vivaldi-beta/",
+          "qas": [
+            {
+              "question": "Vivaldi稳定版的仓库地址是什么？",
+              "id": "1-61-10",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/v/vivaldi-stable/",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Vivaldi测试版的仓库地址是什么？",
+              "id": "1-61-11",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/v/vivaldi-beta/",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
