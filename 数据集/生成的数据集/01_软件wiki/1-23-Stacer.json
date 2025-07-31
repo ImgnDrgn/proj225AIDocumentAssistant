@@ -8,7 +8,7 @@
           "qas": [
             {
               "question": "Stacer 是什么类型的软件？",
-              "id": "1-24-1",
+              "id": "1-23-1",
               "answers": [
                 {
                   "text": "开源的系统优化、应用程序监视软件",
@@ -18,7 +18,7 @@
             },
             {
               "question": "Stacer 拥有哪些功能？",
-              "id": "1-24-2",
+              "id": "1-23-2",
               "answers": [
                 {
                   "text": "管理启动项、清理垃圾、服务管理、进程管理、卸载软件、资源管理等功能",
@@ -33,7 +33,7 @@
           "qas": [
             {
               "question": "如何安装 Stacer？",
-              "id": "1-24-3",
+              "id": "1-23-3",
               "answers": [
                 {
                   "text": "sudo apt install com.github.stacer",
@@ -48,7 +48,7 @@
           "qas": [
             {
               "question": "如何卸载 Stacer？",
-              "id": "1-24-4",
+              "id": "1-23-4",
               "answers": [
                 {
                   "text": "sudo apt remove --purge com.github.stacer",
@@ -63,7 +63,7 @@
           "qas": [
             {
               "question": "Stacer 的仓库地址是什么？",
-              "id": "1-24-5",
+              "id": "1-23-5",
               "answers": [
                 {
                   "text": "http://packages.deepin.com/deepin/pool/main/s/stacer/",
@@ -78,7 +78,7 @@
           "qas": [
             {
               "question": "Stacer 的官方网站是什么？",
-              "id": "1-24-6",
+              "id": "1-23-6",
               "answers": [
                 {
                   "text": "https://oguzhaninan.github.io/Stacer-Web/",
