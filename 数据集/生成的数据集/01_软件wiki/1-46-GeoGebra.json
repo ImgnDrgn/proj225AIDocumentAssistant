@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "GeoGebra",
+      "paragraphs": [
+        {
+          "context": "GeoGebra是一个动态数学应用，包含了几何、代数、表格、图形、统计和微积分。这些绘图元素均可在创建后直接在屏幕或使用命令动态改变，还可以完成大量初高等数学中的绘图工作，提供各级教育使用。",
+          "qas": [
+            {
+              "question": "GeoGebra是什么类型的应用？",
+              "id": "1-46-1",
+              "answers": [
+                {
+                  "text": "动态数学应用",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "GeoGebra包含哪些内容？",
+              "id": "1-46-2",
+              "answers": [
+                {
+                  "text": "几何、代数、表格、图形、统计和微积分",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "GeoGebra的绘图元素创建后可以怎样操作？",
+              "id": "1-46-3",
+              "answers": [
+                {
+                  "text": "直接在屏幕或使用命令动态改变",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "question": "GeoGebra能完成哪些工作？",
+              "id": "1-46-4",
+              "answers": [
+                {
+                  "text": "大量初高等数学中的绘图工作",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "question": "GeoGebra提供给哪些群体使用？",
+              "id": "1-46-5",
+              "answers": [
+                {
+                  "text": "各级教育群体",
+                  "answer_start": 119
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install geogebra",
+          "qas": [
+            {
+              "question": "安装GeoGebra的命令是什么？",
+              "id": "1-46-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get install geogebra",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove geogebra",
+          "qas": [
+            {
+              "question": "卸载GeoGebra的命令是什么？",
+              "id": "1-46-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove geogebra",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/g/geogebra/",
+          "qas": [
+            {
+              "question": "GeoGebra的仓库地址是什么？",
+              "id": "1-46-8",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/geogebra/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

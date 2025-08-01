@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "title": "xine",
+      "paragraphs": [
+        {
+          "context": "Xine 是一个免费的媒体播放器，支持 CDs, DVDs 和 VCDs，支持多媒体文件格式包括：AVI, MOV, WMV, 和 MP3等，支持直接从互联网上播放视频。",
+          "qas": [
+            {
+              "question": "Xine是什么类型的软件？",
+              "id": "1-43-1",
+              "answers": [
+                {
+                  "text": "免费的媒体播放器",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "Xine支持哪些光盘类型？",
+              "id": "1-43-2",
+              "answers": [
+                {
+                  "text": "CDs, DVDs 和 VCDs",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "Xine支持哪些多媒体文件格式？",
+              "id": "1-43-3",
+              "answers": [
+                {
+                  "text": "AVI, MOV, WMV, 和 MP3等",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "question": "Xine能否直接从互联网上播放视频？",
+              "id": "1-43-4",
+              "answers": [
+                {
+                  "text": "支持直接从互联网上播放视频。",
+                  "answer_start": 81
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装命令：sudo apt-get install xine-ui",
+          "qas": [
+            {
+              "question": "如何安装xine？",
+              "id": "1-43-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install xine-ui",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载命令：sudo apt-get remove xine-ui",
+          "qas": [
+            {
+              "question": "怎样卸载xine？",
+              "id": "1-43-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove xine-ui",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址：http://packages.deepin.com/deepin/pool/main/x/xine-ui/",
+          "qas": [
+            {
+              "question": "xine的仓库地址是什么？",
+              "id": "1-43-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/x/xine-ui/",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "官方网站：https://sourceforge.net/projects/xine/ , http://xinehq.de/",
+          "qas": [
+            {
+              "question": "xine的官方网站有哪些？",
+              "id": "1-43-8",
+              "answers": [
+                {
+                  "text": "https://sourceforge.net/projects/xine/ , http://xinehq.de/",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

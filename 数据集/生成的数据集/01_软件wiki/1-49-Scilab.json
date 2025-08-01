@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "Scilab",
+      "paragraphs": [
+        {
+          "context": "Scilab是一个为工程和科学应用量身定做的数值计算软件，已经广泛应用于教育和工业环境中。Scilab拥有成百可以与许多程序语言进行交互的数学函数、精巧高级的数据结构、高水平的程序设计语言和解释器等。",
+          "qas": [
+            {
+              "question": "Scilab是什么类型的软件？",
+              "id": "1-49-1",
+              "answers": [
+                {
+                  "text": "为工程和科学应用量身定做的数值计算软件",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "Scilab广泛应用于哪些环境？",
+              "id": "1-49-2",
+              "answers": [
+                {
+                  "text": "教育和工业环境",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "question": "Scilab拥有哪些特点？",
+              "id": "1-49-3",
+              "answers": [
+                {
+                  "text": "成百可以与许多程序语言进行交互的数学函数、精巧高级的数据结构、高水平的程序设计语言和解释器等",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install scilab",
+          "qas": [
+            {
+              "question": "安装Scilab的命令是什么？",
+              "id": "1-49-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install scilab",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove scilab",
+          "qas": [
+            {
+              "question": "卸载Scilab的命令是什么？",
+              "id": "1-49-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove scilab",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/s/scilab/",
+          "qas": [
+            {
+              "question": "Scilab的仓库地址是什么？",
+              "id": "1-49-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/scilab/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "data": [
+    {
+      "title": "MATLAB",
+      "paragraphs": [
+        {
+          "context": "MATLAB是一个编程和数值计算平台，数百万工程师和科学家用MATLAB来分析数据、开发算法和创建模型。",
+          "qas": [
+            {
+              "question": "MATLAB是什么？",
+              "id": "1-48-1",
+              "answers": [
+                {
+                  "text": "一个编程和数值计算平台",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "工程师和科学家用MATLAB做什么？",
+              "id": "1-48-2",
+              "answers": [
+                {
+                  "text": "分析数据、开发算法和创建模型",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进入 MATLAB 官网 https://ww2.mathworks.cn/products/matlab.html 用高校的 EDU 邮箱注册 MathWorks 账户、获取许可证后，点击“获取 MATLAB“。然后点击安装 MATLAB。点击下载 Linux 版本。下载完成后，在压缩包所在的文件夹，右击->在终端中打开执行下面命令解压：unzip -X -K matlab_R2022a_glnxa64.zip（这里用的是R2022a版本，所以文件名是matlab_R2022a_glnxa64.zip。请根据实际情况修改文件名）注意：不要右击解压压缩包！！否则可能会遇到无法安装的问题。等待解压完成后，执行下面命令安装：./install。打开 MATLAB 安装程序后，登录 MathWorks 账户，接受协议。选择许可证，点击下一步。默认安装目录会提示无权限安装，此时需要修改安装目录如果遇此情况，建议安装到~/MATLAB/2022a/。点击下一步，然后选择需要的产品进行安装。等待安装完成之后，按Ctrl+Alt+T打开终端，执行~/MATLAB/R2022a/bin/matlab即可打开 MATLAB。",
+          "qas": [
+            {
+              "question": "获取MATLAB的第一步是什么？",
+              "id": "1-48-3",
+              "answers": [
+                {
+                  "text": "进入 MATLAB 官网 https://ww2.mathworks.cn/products/matlab.html 用高校的 EDU 邮箱注册 MathWorks 账户、获取许可证",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Linux版本的MATLAB压缩包如何解压？",
+              "id": "1-48-4",
+              "answers": [
+                {
+                  "text": "在压缩包所在的文件夹，右击->在终端中打开执行下面命令解压：unzip -X -K matlab_R2022a_glnxa64.zip（请根据实际版本修改文件名）",
+                  "answer_start": 177
+                }
+              ]
+            },
+            {
+              "question": "为什么不能右击解压MATLAB压缩包？",
+              "id": "1-48-5",
+              "answers": [
+                {
+                  "text": "可能会遇到无法安装的问题",
+                  "answer_start": 345
+                }
+              ]
+            },
+            {
+              "question": "解压完成后如何安装MATLAB？",
+              "id": "1-48-6",
+              "answers": [
+                {
+                  "text": "执行下面命令安装：./install。打开 MATLAB 安装程序后，登录 MathWorks 账户，接受协议。选择许可证，点击下一步。修改安装目录（建议安装到~/MATLAB/2022a/），点击下一步，然后选择需要的产品进行安装。",
+                  "answer_start": 382
+                }
+              ]
+            },
+            {
+              "question": "安装完成后如何打开MATLAB？",
+              "id": "1-48-7",
+              "answers": [
+                {
+                  "text": "按Ctrl+Alt+T打开终端，执行~/MATLAB/R2022a/bin/matlab",
+                  "answer_start": 597
+                }
+              ]
+            },
+            {
+              "question": "默认安装目录无权限时，建议安装到哪里？",
+              "id": "1-48-8",
+              "answers": [
+                {
+                  "text": "~/MATLAB/2022a/",
+                  "answer_start": 546
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除 MATLAB 安装文件夹即可。如果你是安装在 ~/MATLAB/2022a，执行下面命令即可：rm -rf ~/MATLAB/2022a",
+          "qas": [
+            {
+              "question": "如何卸载MATLAB？",
+              "id": "1-48-9",
+              "answers": [
+                {
+                  "text": "删除 MATLAB 安装文件夹即可。如果安装在 ~/MATLAB/2022a，执行命令：rm -rf ~/MATLAB/2022a",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在桌面上右击->新建文档->文本文档，将文件名改为 MATLAB.desktop 并打开将下面内容粘贴到文档内，并保存：#!/usr/bin/env xdg-open[Desktop Entry]Version=R2022aType=ApplicationTerminal=falseMimeType=text/x-matlabExec=/home/你的用户名/MATLAB/R2022a/bin/matlab -desktopName=MATLABIcon=matlabCategories=Development;Math;ScienceComment=Scientific computing environmentStartupNotify=true注意：需要将“你的用户名”替换成自己账户的用户名。可通过在终端执行whoami查看当前用户名。",
+          "qas": [
+            {
+              "question": "如何创建MATLAB桌面入口？",
+              "id": "1-48-10",
+              "answers": [
+                {
+                  "text": "在桌面上右击->新建文档->文本文档，将文件名改为 MATLAB.desktop 并打开，将指定内容粘贴到文档内并保存（需将“你的用户名”替换成自己账户的用户名，可通过在终端执行whoami查看）",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "创建MATLAB.desktop文件时，如何获取自己的用户名？",
+              "id": "1-48-11",
+              "answers": [
+                {
+                  "text": "通过在终端执行whoami查看当前用户名",
+                  "answer_start": 452
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开MATLAB后，在MATLAB的命令行窗口，执行如下命令：s = settings;s.matlab.desktop.DisplayScaleFactor s.matlab.desktop.DisplayScaleFactor.PersonalValue = 2 然后重启MATLAB即可解决。",
+          "qas": [
+            {
+              "question": "在高分辨率屏幕上MATLAB文字显示太小怎么办？",
+              "id": "1-48-12",
+              "answers": [
+                {
+                  "text": "打开MATLAB后，在MATLAB的命令行窗口，执行如下命令：s = settings;s.matlab.desktop.DisplayScaleFactor s.matlab.desktop.DisplayScaleFactor.PersonalValue = 2 然后重启MATLAB即可解决。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在终端执行下面命令安装openjdk：sudo apt install openjdk-8-jre 然后执行下面命令，切换到Root用户：sudo -i 修改全局环境变量：echo export MATLAB_JAVA=/usr/lib/jvm/java-8-openjdk-amd64/jre >> /etc/profile 然后重启电脑。",
+          "qas": [
+            {
+              "question": "MATLAB字体渲染不正常如何解决？",
+              "id": "1-48-13",
+              "answers": [
+                {
+                  "text": "在终端执行下面命令安装openjdk：sudo apt install openjdk-8-jre 然后执行下面命令，切换到Root用户：sudo -i 修改全局环境变量：echo export MATLAB_JAVA=/usr/lib/jvm/java-8-openjdk-amd64/jre >> /etc/profile 然后重启电脑。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "解决MATLAB字体渲染问题时，需要安装什么软件？",
+              "id": "1-48-14",
+              "answers": [
+                {
+                  "text": "openjdk-8-jre",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "解决MATLAB字体渲染问题时，如何切换到Root用户？",
+              "id": "1-48-15",
+              "answers": [
+                {
+                  "text": "执行命令：sudo -i",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "维基百科：https://zh.wikipedia.org/zh-cn/MATLAB MATLAB 官方网站：https://ww2.mathworks.cn/products/matlab.html ArchWiki MATLAB 页面：https://wiki.archlinux.org/title/MATLAB_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)",
+          "qas": [
+            {
+              "question": "MATLAB的官方网站是什么？",
+              "id": "1-48-16",
+              "answers": [
+                {
+                  "text": "https://ww2.mathworks.cn/products/matlab.html",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "哪里可以找到MATLAB的维基百科页面？",
+              "id": "1-48-17",
+              "answers": [
+                {
+                  "text": "https://zh.wikipedia.org/zh-cn/MATLAB",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "ArchWiki上的MATLAB页面链接是什么？",
+              "id": "1-48-18",
+              "answers": [
+                {
+                  "text": "https://wiki.archlinux.org/title/MATLAB_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)",
+                  "answer_start": 80
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
