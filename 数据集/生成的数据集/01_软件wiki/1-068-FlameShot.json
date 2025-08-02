@@ -1,0 +1,80 @@
+{
+  "title": "FlameShot",
+  "paragraphs": [
+    {
+      "context": "Flameshot 是一个免费、开源的截图软件，拥有选择捕获区域、移动和调整捕获窗口大小、使用常用绘图工具（铅笔、直线、矩形、圆形、模糊、撤消/重做）进行编辑，以及选择输出方式（复制到剪贴板、保存到磁盘、上传到Imgur、使用其他程序打开）等多种功能。安装命令为：sudo apt install flameshot。卸载命令为：sudo apt remove --purge flameshot。仓库地址是http://packages.deepin.com/deepin/pool/main/f/flameshot/。官方网站是https://flameshot.org/。",
+      "qas": [
+        {
+          "id": "1-68-1",
+          "question": "Flameshot是什么类型的软件？",
+          "answers": [
+            {
+              "text": "免费、开源的截图软件",
+              "answer_start": 13
+            }
+          ]
+        },
+        {
+          "id": "1-68-2",
+          "question": "Flameshot 是否开源？",
+          "answers": [
+            {
+              "text": "免费、开源",
+              "answer_start": 13
+            }
+          ]
+        },
+        {
+          "id": "1-68-3",
+          "question": "Flameshot 的主要功能有哪些？",
+          "answers": [
+            {
+              "text": "选择捕获区域、移动和调整捕获窗口大小、使用常用绘图工具（铅笔、直线、矩形、圆形、模糊、撤消/重做）进行编辑，以及选择输出方式（复制到剪贴板、保存到磁盘、上传到Imgur、使用其他程序打开）等多种功能",
+              "answer_start": 28
+            }
+          ]
+        },
+        {
+          "id": "1-68-4",
+          "question": "安装Flameshot的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt install flameshot",
+              "answer_start": 196
+            }
+          ]
+        },
+        {
+          "id": "1-68-5",
+          "question": "卸载Flameshot的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt remove --purge flameshot",
+              "answer_start": 229
+            }
+          ]
+        },
+        {
+          "id": "1-68-6",
+          "question": "Flameshot的仓库地址在哪里？",
+          "answers": [
+            {
+              "text": "http://packages.deepin.com/deepin/pool/main/f/flameshot/",
+              "answer_start": 268
+            }
+          ]
+        },
+        {
+          "id": "1-68-7",
+          "question": "Flameshot的官方网站是什么？",
+          "answers": [
+            {
+              "text": "https://flameshot.org/",
+              "answer_start": 323
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

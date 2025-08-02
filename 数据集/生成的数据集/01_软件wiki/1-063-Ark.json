@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "Ark",
+      "paragraphs": [
+        {
+          "context": "Ark是kde桌面环境下的一款解压/压缩应用，支持7zip、arj、rar、zip、bzip2、tar、gzip和RPM等格式，能够智能检测密码保护的arj、zip、rar压缩包，内置文件查看器，执行效率高。安装命令为sudo apt-get install ark，卸载命令为sudo apt-get remove ark，仓库地址是http://packages.deepin.com/deepin/pool/main/a/ark/",
+          "qas": [
+            {
+              "id": "1-63-1",
+              "question": "Ark属于哪个桌面环境下的应用？",
+              "answers": [
+                {
+                  "text": "kde桌面环境",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "1-63-2",
+              "question": "Ark是什么类型的应用？",
+              "answers": [
+                {
+                  "text": "解压/压缩应用",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "1-63-3",
+              "question": "Ark支持哪些压缩格式？",
+              "answers": [
+                {
+                  "text": "7zip、arj、rar、zip、bzip2、tar、gzip和RPM等格式",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "1-63-4",
+              "question": "Ark能智能检测哪些密码保护的压缩包？",
+              "answers": [
+                {
+                  "text": "arj、zip、rar压缩包",
+                  "answer_start": 84
+                }
+              ]
+            },
+            {
+              "id": "1-63-5",
+              "question": "Ark内置了什么工具？",
+              "answers": [
+                {
+                  "text": "文件查看器",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "id": "1-63-6",
+              "question": "Ark的执行效率怎么样？",
+              "answers": [
+                {
+                  "text": "执行效率高",
+                  "answer_start": 109
+                }
+              ]
+            },
+            {
+              "id": "1-63-7",
+              "question": "安装Ark的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install ark",
+                  "answer_start": 120
+                }
+              ]
+            },
+            {
+              "id": "1-63-8",
+              "question": "卸载Ark的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove ark",
+                  "answer_start": 150
+                }
+              ]
+            },
+            {
+              "id": "1-63-9",
+              "question": "Ark的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/a/ark/",
+                  "answer_start": 179
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

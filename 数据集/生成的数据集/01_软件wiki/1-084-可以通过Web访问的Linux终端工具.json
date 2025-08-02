@@ -1,0 +1,303 @@
+{
+  "data": [
+    {
+      "title": "可以通过Web访问的Linux终端工具",
+      "paragraphs": [
+        {
+          "context": "rtty 由客户端和服务端组成。客户端采用纯C实现，服务端采用 GO 语言实现，前端界面采用 vue 实现。使用 rtty 可以在任何地方通过 Web 访问您的设备的终端，通过 设备ID 来区分您的不同的设备。rtty 非常适合远程维护 Linux设备。",
+          "qas": [
+            {
+              "id": "1-84-1",
+              "question": "rtty由哪些部分组成？",
+              "answers": [
+                {
+                  "text": "客户端和服务端",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "1-84-2",
+              "question": "rtty的客户端、服务端、前端界面分别用什么语言实现？",
+              "answers": [
+                {
+                  "text": "客户端采用纯C实现，服务端采用GO语言实现，前端界面采用vue实现",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "1-84-3",
+              "question": "如何区分rtty连接的不同设备？",
+              "answers": [
+                {
+                  "text": "通过设备ID",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "1-84-4",
+              "question": "rtty适合什么场景？",
+              "answers": [
+                {
+                  "text": "远程维护Linux设备",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "- 客户端 C 语言实现，非常小，适合嵌入式 Linux - 不支持 SSL：rtty(32K) + libev(56K) - 支持 SSL：+ libmbedtls(88K) + libmbedcrypto(241K) + libmbedx509(48k) - 远程批量执行命令 - 支持SSL: openssl、mbedtls、CyaSSl(wolfssl) - SSL 双向认证(mTLS) - 非常方便的上传和下载文件 - 根据 设备ID 访问不同的设备 - 支持 HTTP 代理 访问您的设备的 Web - 基于 Xterm.js 的全功能终端 - 部署简单，使用方便",
+          "qas": [
+            {
+              "id": "1-84-5",
+              "question": "rtty客户端有什么特点？",
+              "answers": [
+                {
+                  "text": "C语言实现，非常小，适合嵌入式Linux",
+                  "answer_start": 2
+                }
+              ]
+            },
+            {
+              "id": "1-84-6",
+              "question": "rtty不支持SSL时包含哪些组件及其大小？",
+              "answers": [
+                {
+                  "text": "rtty(32K) + libev(56K)",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "1-84-7",
+              "question": "rtty支持哪些SSL库？",
+              "answers": [
+                {
+                  "text": "openssl、mbedtls、CyaSSl(wolfssl)",
+                  "answer_start": 186
+                }
+              ]
+            },
+            {
+              "id": "1-84-8",
+              "question": "rtty是否支持SSL双向认证？",
+              "answers": [
+                {
+                  "text": "支持SSL双向认证(mTLS)",
+                  "answer_start": 225
+                }
+              ]
+            },
+            {
+              "id": "1-84-9",
+              "question": "rtty支持哪些文件操作？",
+              "answers": [
+                {
+                  "text": "非常方便的上传和下载文件",
+                  "answer_start": 250
+                }
+              ]
+            },
+            {
+              "id": "1-84-10",
+              "question": "rtty的终端基于什么实现？",
+              "answers": [
+                {
+                  "text": "Xterm.js",
+                  "answer_start": 332
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "部署服务端的安装依赖命令：Ubuntu、Debian使用“sudo apt install -y libev-dev libssl-dev”；ArchLinux使用“sudo pacman -S --noconfirm libev openssl”；Centos使用“sudo yum install -y libev-devel openssl-devel”。",
+          "qas": [
+            {
+              "id": "1-84-11",
+              "question": "在Ubuntu或Debian上安装rtty服务端依赖需要执行什么命令？",
+              "answers": [
+                {
+                  "text": "sudo apt install -y libev-dev libssl-dev",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "1-84-12",
+              "question": "在ArchLinux上安装rtty服务端依赖的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo pacman -S --noconfirm libev openssl",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "id": "1-84-13",
+              "question": "Centos系统安装rtty服务端依赖的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo yum install -y libev-devel openssl-devel",
+                  "answer_start": 127
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "克隆rtty代码的命令：git clone --recursive https://github.com/zhaojh329/rtty.git。编译步骤：cd rtty && mkdir build && cd build；cmake .. && make install。",
+          "qas": [
+            {
+              "id": "1-84-14",
+              "question": "如何克隆rtty的代码？",
+              "answers": [
+                {
+                  "text": "git clone --recursive https://github.com/zhaojh329/rtty.git",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "1-84-15",
+              "question": "rtty的编译步骤是什么？",
+              "answers": [
+                {
+                  "text": "cd rtty && mkdir build && cd build；cmake .. && make install",
+                  "answer_start": 69
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启动rtty客户端的参数设置命令：sudo rtty -I 'My-device-ID' -h 'your-server' -p 5912 -a -v -d 'My Device Description'。生成token的命令：rttys token，设置密码后会得到token。使用token启动服务端：rttys -t [token值]。",
+          "qas": [
+            {
+              "id": "1-84-16",
+              "question": "启动rtty客户端时，如何设置设备ID？",
+              "answers": [
+                {
+                  "text": "使用参数-I 'My-device-ID'",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "1-84-17",
+              "question": "如何生成rtty的token？",
+              "answers": [
+                {
+                  "text": "执行命令rttys token，设置密码后会得到token",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "id": "1-84-18",
+              "question": "如何使用生成的rtty token启动服务端？",
+              "answers": [
+                {
+                  "text": "rttys -t [token值]",
+                  "answer_start": 145
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过浏览器访问rtty服务端：使用Web浏览器访问http://your-server-host:5913，点击连接按钮；或直接连接设备（需服务端配置设备白名单），URL格式为http://your-server-host:5913/connect/devid（如devid1、devid2）。",
+          "qas": [
+            {
+              "id": "1-84-19",
+              "question": "如何通过浏览器访问rtty服务端？",
+              "answers": [
+                {
+                  "text": "使用Web浏览器访问http://your-server-host:5913，点击连接按钮",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "1-84-20",
+              "question": "无需Web登录直接连接设备的URL格式是什么？",
+              "answers": [
+                {
+                  "text": "http://your-server-host:5913/connect/devid（如devid1、devid2）",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件传输命令：从本地传输文件到远程设备用rtty -R；从远程设备传输文件到本地用rtty -S [文件名]（如rtty -S test.txt）。rtty开源地址：https://github.com/zhaojh329/rtty。",
+          "qas": [
+            {
+              "id": "1-84-21",
+              "question": "如何从本地传输文件到远程设备？",
+              "answers": [
+                {
+                  "text": "使用命令rtty -R",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "1-84-22",
+              "question": "从远程设备传输文件到本地的命令是什么？",
+              "answers": [
+                {
+                  "text": "rtty -S [文件名]（如rtty -S test.txt）",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "id": "1-84-23",
+              "question": "rtty的开源地址是什么？",
+              "answers": [
+                {
+                  "text": "https://github.com/zhaojh329/rtty",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "rtty是客户端-服务端架构的Linux终端Web访问工具。客户端使用C语言实现，服务端采用GO语言，前端使用Vue开发。它通过设备ID区分设备，支持远程维护。特性包括：客户端极简（无SSL版仅32K+libev56K）；支持SSL/mTLS（需mbedtls/crypto/x509库）；支持批量命令执行、文件传输（rtty -R/S）、HTTP代理和Xterm.js终端。服务端部署步骤：1) 安装系统依赖（apt/pacman/yum） 2) git克隆代码 3) cmake编译 4) 配置连接参数（需设备ID） 5) 生成访问令牌（rttys token） 6) 使用令牌启动（rttys -t）。访问地址：http://server:5913 或直连 /connect/devid",
+          "qas": [
+            {
+              "id": "1-84-24",
+              "question": "rtty的客户端使用什么语言实现？",
+              "answers": [
+                {
+                  "text": "C语言",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "id": "1-84-25",
+              "question": "部署时需要先安装什么？",
+              "answers": [
+                {
+                  "text": "系统依赖（apt/pacman/yum）",
+                  "answer_start": 295
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "rtty支持SSL双向认证(mTLS)和主流加密库（OpenSSL/mbedtls/CyaSSl）。访问方式：1) Web登录后手动连接 2) 直连设备（需白名单）：/connect/devid1。文件传输方向：从本地到远程用 -R，反向下载用 -S filename。项目开源地址：https://github.com/zhaojh329/rtty",
+          "qas": []
+        }
+      ]
+    }
+  ]
+}

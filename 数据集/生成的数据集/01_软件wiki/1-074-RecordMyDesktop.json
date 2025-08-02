@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "RecordMyDesktop",
+      "paragraphs": [
+        {
+          "context": "recordMyDesktop是一个桌面视频录制软件，可以录制全屏、窗口，指定区域，还可以录制音频，同时通过设置参数控制将视频生成ogg格式。安装命令为`sudo apt-get install recordmydesktop`。卸载命令为`sudo apt-get remove recordmydesktop`。其仓库地址为http://packages.deepin.com/deepin/pool/main/r/recordmydesktop/。",
+          "qas": [
+            {
+              "question": "recordMyDesktop是什么类型的软件？",
+              "id": "1-74-1",
+              "answers": [
+                {
+                  "text": "桌面视频录制软件",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "recordMyDesktop能录制哪些内容？",
+              "id": "1-74-2",
+              "answers": [
+                {
+                  "text": "全屏、窗口，指定区域，还可以录制音频",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "RecordMyDesktop支持音频录制吗?",
+              "id": "1-74-3",
+              "answers": [
+                {
+                  "text": "可以录制音频",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "recordMyDesktop可生成什么格式的视频？",
+              "id": "1-74-4",
+              "answers": [
+                {
+                  "text": "ogg格式",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "question": "安装recordMyDesktop的命令是什么？",
+              "id": "1-74-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install recordmydesktop",
+                  "answer_start": 78
+                }
+              ]
+            },
+            {
+              "question": "卸载recordMyDesktop的命令是什么？",
+              "id": "1-74-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove recordmydesktop",
+                  "answer_start": 122
+                }
+              ]
+            },
+            {
+              "question": "recordMyDesktop的仓库地址是什么？",
+              "id": "1-74-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/r/recordmydesktop/",
+                  "answer_start": 165
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

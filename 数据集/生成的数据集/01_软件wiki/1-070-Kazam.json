@@ -1,0 +1,80 @@
+{
+  "title": "Kazam",
+  "paragraphs": [
+    {
+      "context": "Kazam是一款简易的桌面屏幕录制工具，它可以录制视频、录制声音、截屏，支持全屏、窗口、指定区域操作，还能上传录制好的视频到YouTube及VideoBin视频分享网站。安装命令为`sudo apt-get install kazam`，卸载命令为`sudo apt-get remove kazam`，仓库地址为http://packages.deepin.com/deepin/pool/main/k/kazam/。",
+      "qas": [
+        {
+          "id": "1-70-1",
+          "question": "Kazam是什么类型的工具？",
+          "answers": [
+            {
+              "text": "简易的桌面屏幕录制工具",
+              "answer_start": 6
+            }
+          ]
+        },
+        {
+          "id": "1-70-2",
+          "question": "Kazam能进行哪些录制相关操作？",
+          "answers": [
+            {
+              "text": "录制视频、录制声音、截屏",
+              "answer_start": 22
+            }
+          ]
+        },
+        {
+          "id": "1-70-3",
+          "question": "Kazam支持哪些操作范围？",
+          "answers": [
+            {
+              "text": "全屏、窗口、指定区域",
+              "answer_start": 40
+            }
+          ]
+        },
+        {
+          "id": "1-70-4",
+          "question": "Kazam可以将录制的视频上传到哪些网站？",
+          "answers": [
+            {
+              "text": "YouTube及VideoBin视频分享网站",
+              "answer_start": 61
+            }
+          ]
+        },
+        {
+          "id": "1-70-5",
+          "question": "安装Kazam的命令是什么？",
+          "answers": [
+            {
+              "text": "`sudo apt-get install kazam`",
+              "answer_start": 96
+            }
+          ]
+        },
+        {
+          "id": "1-70-6",
+          "question": "卸载Kazam的命令是什么？",
+          "answers": [
+            {
+              "text": "`sudo apt-get remove kazam`",
+              "answer_start": 122
+            }
+          ]
+        },
+        {
+          "id": "1-70-7",
+          "question": "Kazam的仓库地址是什么？",
+          "answers": [
+            {
+              "text": "http://packages.deepin.com/deepin/pool/main/k/kazam/",
+              "answer_start": 150
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

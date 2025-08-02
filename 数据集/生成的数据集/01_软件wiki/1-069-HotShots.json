@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "HotShots",
+      "paragraphs": [
+        {
+          "context": "HotShots是一款易于使用的屏幕捕获工具，允许用户全屏捕捉，部分捕捉，以及窗口截图。HotShots能够将截图按照预设值保存为 PNG, BMP, PBM等格式。同时，HotShots内置了强大的注释功能，能够对已截图片进行直线、圆、文字、箭头、折线、高光等图示注释。",
+          "qas": [
+            {
+              "question": "HotShots是什么工具？",
+              "id": "1-69-1",
+              "answers": [
+                {
+                  "text": "一款易于使用的屏幕捕获工具",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "HotShots支持哪些截图方式？",
+              "id": "1-69-2",
+              "answers": [
+                {
+                  "text": "全屏捕捉，部分捕捉，以及窗口截图",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "HotShots可将截图保存为哪些格式？",
+              "id": "1-69-3",
+              "answers": [
+                {
+                  "text": "PNG, BMP, PBM等格式",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "question": "HotShots的注释功能可对截图进行哪些图示注释？",
+              "id": "1-69-4",
+              "answers": [
+                {
+                  "text": "直线、圆、文字、箭头、折线、高光等图示注释",
+                  "answer_start": 114
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install hotshots",
+          "qas": [
+            {
+              "question": "如何安装HotShots？",
+              "id": "1-69-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install hotshots",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove hotshots",
+          "qas": [
+            {
+              "question": "如何卸载HotShots？",
+              "id": "1-69-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove hotshots",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/h/hotshots/",
+          "qas": [
+            {
+              "question": "HotShots的仓库地址是什么？",
+              "id": "1-69-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/h/hotshots/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

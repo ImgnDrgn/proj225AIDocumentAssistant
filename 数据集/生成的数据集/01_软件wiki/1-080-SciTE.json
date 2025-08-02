@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "SciTE",
+      "paragraphs": [
+        {
+          "context": "SciTE是一款免费开源的编辑器，支持C、C++、PHP、C#、Perl、Html、CSS、java、Ruby等语言的语法高亮显示，还可以导出PDF/HTML/RTF/XML/LaTex等类型文件。在Linux系统中，安装SciTE的命令是sudo apt-get install scite，卸载命令是sudo apt-get remove scite。其仓库地址为http://packages.deepin.com/deepin/pool/main/s/scite/。",
+          "qas": [
+            {
+              "id": "1-80-1",
+              "question": "SciTE是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "一款免费开源的编辑器",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "1-80-2",
+              "question": "SciTE支持哪些语言的语法高亮显示？",
+              "answers": [
+                {
+                  "text": "C、C++、PHP、C#、Perl、Html、CSS、java、Ruby等语言",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "1-80-3",
+              "question": "SciTE可以导出哪些类型的文件？",
+              "answers": [
+                {
+                  "text": "PDF/HTML/RTF/XML/LaTex等类型文件",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "id": "1-80-4",
+              "question": "在Linux系统中，安装SciTE的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install scite",
+                  "answer_start": 120
+                }
+              ]
+            },
+            {
+              "id": "1-80-5",
+              "question": "卸载SciTE的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove scite",
+                  "answer_start": 151
+                }
+              ]
+            },
+            {
+              "id": "1-80-6",
+              "question": "SciTE的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/scite/",
+                  "answer_start": 182
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

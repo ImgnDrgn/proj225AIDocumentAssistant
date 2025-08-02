@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "Xarchiver",
+      "paragraphs": [
+        {
+          "context": "Xarchiver是一款解压/压缩应用，支持 7zip、arj、rar、zip、bzip2、tar、gzip 和 RPM 等格式，能够智能检测密码保护的 arj、zip、rar 压缩包，内置文件查看器，执行效率高。",
+          "qas": [
+            {
+              "id": "1-67-1",
+              "question": "Xarchiver属于什么类型的应用？",
+              "answers": [
+                {
+                  "text": "解压/压缩应用",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "1-67-2",
+              "question": "Xarchiver支持哪些压缩格式？",
+              "answers": [
+                {
+                  "text": "7zip、arj、rar、zip、bzip2、tar、gzip 和 RPM 等格式",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "1-67-3",
+              "question": "Xarchiver能智能检测哪些密码保护的压缩包？",
+              "answers": [
+                {
+                  "text": "arj、zip、rar 压缩包",
+                  "answer_start": 69
+                }
+              ]
+            },
+            {
+              "id": "1-67-4",
+              "question": "Xarchiver是否有内置功能？若有，是什么？",
+              "answers": [
+                {
+                  "text": "有，内置文件查看器",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "1-67-5",
+              "question": "Xarchiver的执行效率怎么样？",
+              "answers": [
+                {
+                  "text": "执行效率高",
+                  "answer_start": 96
+                }
+              ]
+            },
+            {
+              "id": "1-67-6",
+              "question": "Xarchiver有哪些功能？",
+              "answers": [
+                {
+                  "text": "能够智能检测密码保护的 arj、zip、rar 压缩包，内置文件查看器，执行效率高",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install xarchiver",
+          "qas": [
+            {
+              "id": "1-67-7",
+              "question": "安装Xarchiver的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install xarchiver",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove xarchiver",
+          "qas": [
+            {
+              "id": "1-67-8",
+              "question": "卸载Xarchiver的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove xarchiver",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/x/xarchiver/",
+          "qas": [
+            {
+              "id": "1-67-9",
+              "question": "Xarchiver的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/x/xarchiver/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

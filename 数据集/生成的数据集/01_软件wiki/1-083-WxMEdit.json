@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "WxMEdit",
+      "paragraphs": [
+        {
+          "context": "wxMEdit是一个跨平台的文本/十六进制编辑器，它具有书签管理、语法高亮显示、编码识别和转换、自动换行、字数统计及自动更新等功能，以及在文本列模式下和十六进制下支持各种编码。安装命令为sudo apt-get install wxmedit，卸载命令为sudo apt-get remove wxmedit，仓库地址为http://packages.deepin.com/deepin/pool/main/w/wxmedit。",
+          "qas": [
+            {
+              "id": "1-83-1",
+              "question": "wxMEdit是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "跨平台的文本/十六进制编辑器",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "1-83-2",
+              "question": "wxMEdit具有哪些功能？",
+              "answers": [
+                {
+                  "text": "书签管理、语法高亮显示、编码识别和转换、自动换行、字数统计及自动更新等功能，以及在文本列模式下和十六进制下支持各种编码",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "1-83-3",
+              "question": "安装wxMEdit的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install wxmedit",
+                  "answer_start": 93
+                }
+              ]
+            },
+            {
+              "id": "1-83-4",
+              "question": "卸载wxMEdit的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove wxmedit",
+                  "answer_start": 127
+                }
+              ]
+            },
+            {
+              "id": "1-83-5",
+              "question": "wxMEdit的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/w/wxmedit",
+                  "answer_start": 160
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

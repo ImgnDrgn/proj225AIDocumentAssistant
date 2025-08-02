@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "QElectroTech",
+      "paragraphs": [
+        {
+          "context": "QElectroTech是一款电路图绘制软件，旨在帮助您设计电气原理图。qelectrotech已经内置了多种电气电路的图像标志，您可以通过拖拉的方式来放置图标，简单且直观。使用qelectrotech来绘制电路图，将使电路设计的质量和效率得到大大提高。安装命令为：sudo apt-get install qelectrotech。卸载命令为：sudo apt-get remove qelectrotech。仓库地址为：http://packages.deepin.com/deepin/pool/main/q/qelectrotech/",
+          "qas": [
+            {
+              "id": "1-79-1",
+              "question": "QElectroTech是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "一款电路图绘制软件，旨在帮助您设计电气原理图",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "1-79-2",
+              "question": "QElectroTech的主要功能是什么？",
+              "answers": [
+                {
+                  "text": "设计电气原理图",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "1-79-3",
+              "question": "QElectroTech内置了什么内容？",
+              "answers": [
+                {
+                  "text": "多种电气电路的图像标志",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "id": "1-79-4",
+              "question": "如何放置QElectroTech中的图标？",
+              "answers": [
+                {
+                  "text": "通过拖拉的方式",
+                  "answer_start": 69
+                }
+              ]
+            },
+            {
+              "id": "1-79-5",
+              "question": "使用QElectroTech绘制电路图有什么好处？",
+              "answers": [
+                {
+                  "text": "将使电路设计的质量和效率得到大大提高",
+                  "answer_start": 93
+                }
+              ]
+            },
+            {
+              "id": "1-79-6",
+              "question": "安装QElectroTech的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install qelectrotech",
+                  "answer_start": 133
+                }
+              ]
+            },
+            {
+              "id": "1-79-7",
+              "question": "卸载QElectroTech的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove qelectrotech",
+                  "answer_start": 174
+                }
+              ]
+            },
+            {
+              "id": "1-79-8",
+              "question": "QElectroTech的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/q/qelectrotech/",
+                  "answer_start": 214
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
