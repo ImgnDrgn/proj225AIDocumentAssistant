@@ -1,0 +1,349 @@
+{
+  "data": [
+    {
+      "title": "如何通过本地环境进行deb包的构建",
+      "paragraphs": [
+        {
+          "context": "deb包类似于windows平台下的install安装文件，是debain系统下用来安装程序的一个文件",
+          "qas": [
+            {
+              "question": "deb包是什么？",
+              "id": "3-147-1",
+              "answers": [
+                {
+                  "text": "类似于windows平台下的install安装文件，是debain系统下用来安装程序的一个文件",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "环境下载：1.首先配置下 apt源(新人文档3.1) 2.执行 sudo apt update 更新一下列表 3.执行 sudo apt install dh-make",
+          "qas": [
+            {
+              "question": "构建deb包前如何配置环境？",
+              "id": "3-147-2",
+              "answers": [
+                {
+                  "text": "1.首先配置下 apt源(新人文档3.1) 2.执行 sudo apt update 更新一下列表 3.执行 sudo apt install dh-make",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "生成debian目录：在要打包的目录下输入命令：dh_make -c gpl --native --single --packagename test_1.0.0 --email minkush@example.com，可创建debian文件夹",
+          "qas": [
+            {
+              "question": "如何生成debian目录？",
+              "id": "3-147-3",
+              "answers": [
+                {
+                  "text": "在要打包的目录下输入命令：dh_make -c gpl --native --single --packagename test_1.0.0 --email minkush@example.com",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dh_make参数：-c 设置LINCENSE类型；--native 本地构建，不生成.orig归档文件；--single 设置包为二进制类型；--packagename 设置包名称；--email 填写构建者邮箱",
+          "qas": [
+            {
+              "question": "--native参数的作用是什么？",
+              "id": "3-147-4",
+              "answers": [
+                {
+                  "text": "本地构建，不生成.orig归档文件，同时在版本号上不会再在debian更新时在其后缀上加的 -1参数",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "--packagename参数的作用是什么？",
+              "id": "3-147-5",
+              "answers": [
+                {
+                  "text": "设置包的名称，建议同文件夹的名字相同加上版本号",
+                  "answer_start": 88
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "changelog文件格式：包名 (版本号) 分配; 紧急程度=低；日志部分前面有2个空格+*+空格；尾部为 空格 -- 维护者姓名 <邮箱> 时间",
+          "qas": [
+            {
+              "question": "changelog文件的标题行格式是什么？",
+              "id": "3-147-6",
+              "answers": [
+                {
+                  "text": "包名 (版本号) 分配; 紧急程度=低",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "changelog文件的日志部分格式有什么要求？",
+              "id": "3-147-7",
+              "answers": [
+                {
+                  "text": "前面必须有2个空格 外加一个*号 再加一个空格 开始写日志内容，如果有多行日志，新行必须保持和前面的格式对齐",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "compat文件：定义debhelper的兼容级别，兼容旧版本可echo 9 > compat，不推荐低于9",
+          "qas": [
+            {
+              "question": "compat文件的作用是什么？",
+              "id": "3-147-8",
+              "answers": [
+                {
+                  "text": "定义debhelper的兼容级别",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "control文件：第1–7行是源代码包控制信息，第9–13行是二进制包控制信息，包含名称、分类、优先级等",
+          "qas": [
+            {
+              "question": "control文件中哪几行是源代码包的控制信息？",
+              "id": "3-147-9",
+              "answers": [
+                {
+                  "text": "第 1–7 行",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "control文件中哪几行是二进制包的控制信息？",
+              "id": "3-147-10",
+              "answers": [
+                {
+                  "text": "第 9–13 行",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "control文件的Section分类包含main (自由软件)、non-free (非自由软件)、contrib (依赖于非自由软件的自由软件)",
+          "qas": [
+            {
+              "question": "control文件的Section分类有哪些？",
+              "id": "3-147-11",
+              "answers": [
+                {
+                  "text": "main (自由软件)、non-free (非自由软件)以及 contrib (依赖于非自由软件的自由软件)",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "control文件的Priority中optional适用于与优先级为required、important或standard的软件包不冲突的新软件包",
+          "qas": [
+            {
+              "question": "control文件中Priority为optional的适用情况是什么？",
+              "id": "3-147-12",
+              "answers": [
+                {
+                  "text": "适用于与优先级为 required、important 或 standard 的软件包不冲突的新软件包",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "control文件的Build-Depends：使用dh命令打包的软件包必须包含debhelper (>=9)，其他依赖用,隔开",
+          "qas": [
+            {
+              "question": "使用dh命令打包的软件包在Build-Depends中必须包含什么？",
+              "id": "3-147-13",
+              "answers": [
+                {
+                  "text": "debhelper (>=9)",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "control文件的Architecture：any适用于编译型语言程序，依赖具体体系结构；all适用于文本等，独立于体系结构",
+          "qas": [
+            {
+              "question": "control文件中Architecture为any的适用情况是什么？",
+              "id": "3-147-14",
+              "answers": [
+                {
+                  "text": "一般而言，包含 编译型语言编写的程序 生成的二进制包依赖于具体的体系结构",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Architecture为all的适用情况是什么？",
+              "id": "3-147-15",
+              "answers": [
+                {
+                  "text": "一般而言，包含 文本、图像、或解释型语言脚本 生成的二进制包独立于体系结构",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "copyright文件：存放LICENSE文件，使用-c gpl命令会自动生成",
+          "qas": [
+            {
+              "question": "copyright文件的作用是什么？",
+              "id": "3-147-16",
+              "answers": [
+                {
+                  "text": "存放LICENSE文件",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "manpage文件：是man命令调用的帮助手册，最终文件名应为程序名，以.1为第一个后缀",
+          "qas": [
+            {
+              "question": "manpage文件是什么？",
+              "id": "3-147-17",
+              "answers": [
+                {
+                  "text": "是man命令调用的帮助手册",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "{pre,post}{inst,rm}是shell脚本，preinst是安装前执行，prerm是删除前执行，postinst是安装后执行，postrm是删除后执行",
+          "qas": [
+            {
+              "question": "preinst文件的作用是什么？",
+              "id": "3-147-18",
+              "answers": [
+                {
+                  "text": "安装前执行",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "postrm文件的作用是什么？",
+              "id": "3-147-19",
+              "answers": [
+                {
+                  "text": "删除后执行",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "source/format文件选项：3.0 (native)用于Debian本土软件；3.0 (quilt)用于其他所有软件",
+          "qas": [
+            {
+              "question": "source/format文件有哪些选项？",
+              "id": "3-147-20",
+              "answers": [
+                {
+                  "text": "3.0 (native) - Debian 本土軟件或者 3.0 (quilt) - 其他所有軟體",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "patches/*目录含*.patch和series文件，*.patch是git生成的补丁包，series文件记录所有*.patch文件",
+          "qas": [
+            {
+              "question": "patches/*目录下有哪些文件？",
+              "id": "3-147-21",
+              "answers": [
+                {
+                  "text": "*.patch 是使用git生成补丁包的形式；series文件中记录了所有的*.patch文件",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "*.install文件：类似cmake的install函数，将文件拷贝到指定目录，源文件地址是debian文件夹同级目录",
+          "qas": [
+            {
+              "question": "*.install文件的作用是什么？",
+              "id": "3-147-22",
+              "answers": [
+                {
+                  "text": "将目录中的文件在安装过程中拷贝到指定的目录",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "构建deb包：执行sudo apt install devscripts，在项目目录下执行debuild --no-lintian -b -us -uc -nc -j4",
+          "qas": [
+            {
+              "question": "如何构建deb包？",
+              "id": "3-147-23",
+              "answers": [
+                {
+                  "text": "1. 执行构建包 sudo apt install devscripts 2. 在项目目录下执行 debuild --no-lintian -b -us -uc -nc -j4",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "debuild命令中--no--lintian的作用是什么？",
+              "id": "3-147-24",
+              "answers": [
+                {
+                  "text": "代表不进行静态检查",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "question": "-j4参数的作用是什么？",
+              "id": "3-147-25",
+              "answers": [
+                {
+                  "text": "利用4核心编译",
+                  "answer_start": 96
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

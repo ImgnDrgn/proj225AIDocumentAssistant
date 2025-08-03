@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "如何自定义禁用鼠标中键",
+      "paragraphs": [
+        {
+          "context": "鼠标中键有粘贴功能，用户常误触导致粘贴，需禁用。",
+          "qas": [
+            {
+              "question": "用户为什么想要禁用鼠标中键？",
+              "id": "3-145-1",
+              "answers": [
+                {
+                  "text": "鼠标中键有粘贴的功能，用户在使用过程中经常会触碰到中键从而导致粘贴。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "禁用中键粘贴且开启侧键复制粘贴：xmodmap -e \"pointer = 1 25 3 4 5 6 7 2\"。",
+          "qas": [
+            {
+              "question": "如何在禁用中键粘贴的同时开启侧键复制粘贴功能？",
+              "id": "3-145-2",
+              "answers": [
+                {
+                  "text": "xmodmap -e \"pointer = 1 25 3 4 5 6 7 2\"",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仅禁用中键粘贴命令：xmodmap -e \"pointer = 1 25 3 4 5 6 7 8\"。",
+          "qas": [
+            {
+              "question": "仅禁用中键粘贴的命令是什么？",
+              "id": "3-145-3",
+              "answers": [
+                {
+                  "text": "xmodmap -e \"pointer = 1 25 3 4 5 6 7 8\"",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "恢复中键功能命令：xmodmap -e \"pointer = 1 2 3 4 5 6 7 8\"。",
+          "qas": [
+            {
+              "question": "如何恢复鼠标中键功能？",
+              "id": "3-145-4",
+              "answers": [
+                {
+                  "text": "xmodmap -e \"pointer = 1 2 3 4 5 6 7 8\"",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "xmodmap修改按键映射，pointer表鼠标，前三个参数对应鼠标左、中、右按键。",
+          "qas": [
+            {
+              "question": "xmodmap命令的作用是什么？",
+              "id": "3-145-5",
+              "answers": [
+                {
+                  "text": "修改按键映射",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "pointer参数代表什么？",
+              "id": "3-145-6",
+              "answers": [
+                {
+                  "text": "鼠标",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "pointer参数的前三个数值分别对应鼠标的哪些按键？",
+              "id": "3-145-7",
+              "answers": [
+                {
+                  "text": "左、中、右按键",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "左手操作鼠标可交换左右键：xmodmap -e \"pointer = 3 2 1 4 5 6 7 8\"。",
+          "qas": [
+            {
+              "question": "习惯左手操作鼠标，如何交换左右按键功能？",
+              "id": "3-145-8",
+              "answers": [
+                {
+                  "text": "xmodmap -e \"pointer = 3 2 1 4 5 6 7 8\"",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

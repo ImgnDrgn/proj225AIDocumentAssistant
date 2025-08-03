@@ -1,0 +1,199 @@
+{
+  "data": [
+    {
+      "title": "如何清理文件管理器的搜索历史记录",
+      "paragraphs": [
+        {
+          "context": "文件管理器的搜索历史在关闭文件管理器之后保存在了文件，地址是~/.config/deepin/dde-file-manager/dde-file-manager.obtusely.json当中。那么要清除文件管理器的搜索历史也就是把dde-file-manager.obtusely.json这个文件中的相关文本删除，只不过有个前提是在打开这个文件之前先得把文件管理器关闭。",
+          "qas": [
+            {
+              "question": "文件管理器的搜索历史保存在哪个文件中？",
+              "id": "3-144-1",
+              "answers": [
+                {
+                  "text": "~/.config/deepin/dde-file-manager/dde-file-manager.obtusely.json",
+                  "answer_start": 44
+                }
+              ]
+            },
+            {
+              "question": "清除文件管理器的搜索历史的前提是什么？",
+              "id": "3-144-2",
+              "answers": [
+                {
+                  "text": "在打开这个文件之前先得把文件管理器关闭",
+                  "answer_start": 162
+                }
+              ]
+            },
+            {
+              "question": "如何清除文件管理器的搜索历史？",
+              "id": "3-144-3",
+              "answers": [
+                {
+                  "text": "把dde-file-manager.obtusely.json这个文件中的相关文本删除，且在打开这个文件之前先得把文件管理器关闭",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "先说下我的系统和软件版本：1. OS：Deepin 20.6版本 2. 文件管理器，命令行中dde-file-manager -v显示版本为 5.6.4",
+          "qas": [
+            {
+              "question": "文中提到的操作系统版本是什么？",
+              "id": "3-144-4",
+              "answers": [
+                {
+                  "text": "Deepin 20.6版本",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "文中文件管理器的版本是多少？",
+              "id": "3-144-5",
+              "answers": [
+                {
+                  "text": "5.6.4",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "如何查看文件管理器的版本？",
+              "id": "3-144-6",
+              "answers": [
+                {
+                  "text": "在命令行中输入dde-file-manager -v",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开dde-file-manager.obtusely.json文件后，如有有搜索历史记录的话，是出现在如下图所示的位置的，图片显示的是有2条记录：把图片中红色箭头指向的两行删除，再保存文件就可以了，重新打开文件管理器，就没有搜索历史记录了。",
+          "qas": [
+            {
+              "question": "Solution1中清理搜索历史记录的具体操作是什么？",
+              "id": "3-144-7",
+              "answers": [
+                {
+                  "text": "打开dde-file-manager.obtusely.json文件，把红色箭头指向的包含搜索历史记录的两行删除，再保存文件，重新打开文件管理器",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "另外，写了一个sh脚本文件，可放在任意目录下面，然后在该目录下打开终端，在终端中执行此脚本就可以清除上述搜索历史记录，更省事一点，例如：sh脚本文件名称：del_file_search_cache_simple.sh",
+          "qas": [
+            {
+              "question": "Solution2中使用什么来清理搜索历史记录？",
+              "id": "3-144-8",
+              "answers": [
+                {
+                  "text": "sh脚本文件",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "Solution2中的sh脚本文件名称是什么？",
+              "id": "3-144-9",
+              "answers": [
+                {
+                  "text": "del_file_search_cache_simple.sh",
+                  "answer_start": 140
+                }
+              ]
+            },
+            {
+              "question": "如何执行Solution2中的sh脚本文件？",
+              "id": "3-144-10",
+              "answers": [
+                {
+                  "text": "把脚本文件放在任意目录下面，然后在该目录下打开终端，在终端中执行此脚本",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "直接资源管理器搜索dde-file-manager.obtusely.json这个文件，然后用自带的编辑器打开，手动删除里面不想保留的记录，然后Ctrl+s退出即可。",
+          "qas": [
+            {
+              "question": "结语中提到的清理搜索历史记录的方法是什么？",
+              "id": "3-144-11",
+              "answers": [
+                {
+                  "text": "直接资源管理器搜索dde-file-manager.obtusely.json这个文件，然后用自带的编辑器打开，手动删除里面不想保留的记录，然后Ctrl+s退出",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "echo \"检查、删除文件管理器的搜索栏的搜索历史缓存：\" startline=0 del_st=0 endline=0 del_end=0 linecount=0 restart=0 filepath=~/.config/deepin/dde-file-manager/dde-file-manager.obtusely.json if [ ! -f  \"${filepath}\" ];then echo \"\" echo \"文件${filepath}不存在。\" echo \"已退出检查。\" else while read line do linecount=$(expr ${linecount} + 1) if [ \"${line}\" == \"\\\"SearchHistroy\\\": [\" ]; then startline=${linecount} del_st=$(expr ${linecount} + 1) fi if [ \"${line}\" == \"]\" ]; then endline=${linecount} del_end=$(expr ${linecount} - 1) fi done < ${filepath} del_is=0 del_is=$(expr ${endline} - ${startline} - 1) if [ ${del_is} -gt 0 ]; then sed -i ${del_st},${del_end}d ${filepath} echo \"已删除 ${del_is} 条搜索记录缓存！\" restart=1 else echo \"没有检查到搜索记录缓存。\" echo \"小提醒：执行本脚本前，请关闭文件管理器。\" fi echo \"检查完成！\" if [ ${restart} -eq 1 ];then echo \"现在可以重新打开文件管理器使用了。\" echo \"\" fi fi",
+          "qas": [
+            {
+              "question": "脚本中文件路径变量filepath的值是什么？",
+              "id": "3-144-12",
+              "answers": [
+                {
+                  "text": "~/.config/deepin/dde-file-manager/dde-file-manager.obtusely.json",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "question": "当文件不存在时，脚本会输出什么信息？",
+              "id": "3-144-13",
+              "answers": [
+                {
+                  "text": "文件${filepath}不存在。已退出检查。",
+                  "answer_start": 192
+                }
+              ]
+            },
+            {
+              "question": "脚本中如何判断是否有搜索记录缓存？",
+              "id": "3-144-14",
+              "answers": [
+                {
+                  "text": "通过计算del_is=$(expr ${endline} - ${startline} - 1)，若del_is大于0则有搜索记录缓存",
+                  "answer_start": 542
+                }
+              ]
+            },
+            {
+              "question": "当有搜索记录缓存时，脚本会进行什么操作？",
+              "id": "3-144-15",
+              "answers": [
+                {
+                  "text": "使用sed -i ${del_st},${del_end}d ${filepath}删除记录，输出“已删除 ${del_is} 条搜索记录缓存！”，并将restart设为1，最后提示可以重新打开文件管理器",
+                  "answer_start": 575
+                }
+              ]
+            },
+            {
+              "question": "当没有搜索记录缓存时，脚本会输出什么？",
+              "id": "3-144-16",
+              "answers": [
+                {
+                  "text": "没有检查到搜索记录缓存。小提醒：执行本脚本前，请关闭文件管理器。检查完成！",
+                  "answer_start": 683
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "data": [
+    {
+      "title": "常见网络存储服务搭建方法",
+      "paragraphs": [
+        {
+          "context": "Samba是在Linux系统上实现SMB协议的免费软件，由服务器及客户端程序构成，为局域网内不同计算机提供文件及打印机等资源共享服务。",
+          "qas": [
+            {
+              "question": "Samba是什么？",
+              "id": "3-151-1",
+              "answers": [
+                {
+                  "text": "Samba是在Linux系统上实现SMB协议的一个免费软件，由服务器及客户端程序构成，为局域网内的不同计算机之间提供文件及打印机等资源的共享服务。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Samba服务的命令为sudo apt-get install samba-common samba。",
+          "qas": [
+            {
+              "question": "如何安装Samba服务？",
+              "id": "3-151-2",
+              "answers": [
+                {
+                  "text": "sudo apt-get install samba-common samba",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建Samba共享文件夹可使用sudo mkdir /opt/share命令。",
+          "qas": [
+            {
+              "question": "怎样创建Samba共享文件夹？",
+              "id": "3-151-3",
+              "answers": [
+                {
+                  "text": "sudo mkdir /opt/share",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Samba配置文件smb.conf分为全局设置和共享定义两部分，绝对路径在/etc/samba/smb.conf。",
+          "qas": [
+            {
+              "question": "Samba配置文件smb.conf分为哪几部分？",
+              "id": "3-151-4",
+              "answers": [
+                {
+                  "text": "全局设置（GIobal Settings）和共享定义（Share Definitions）",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "Samba配置文件smb.conf的绝对路径是什么？",
+              "id": "3-151-5",
+              "answers": [
+                {
+                  "text": "/etc/samba/smb.conf",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Samba全局设置中，workgroup用于设置Windows中显示的工作组，server string是服务器说明，建议将编码设为UTF-8，即unix charset = UTF-8，对不认识Unicode的Windows系统用dos charset = cp936，security字段常用share和user验证方式，user方式需设置security = user。",
+          "qas": [
+            {
+              "question": "Samba全局设置中workgroup的作用是什么？",
+              "id": "3-151-6",
+              "answers": [
+                {
+                  "text": "用于设置在windows中显示的工作组",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "Samba中建议的编码设置是什么？",
+              "id": "3-151-7",
+              "answers": [
+                {
+                  "text": "将Samba服务器的编码设置为UTF-8，即unix charset = UTF-8；对不认识的Unicode的Windows系统使用GBK编码，即dos charset = cp936",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "question": "Samba的user验证方式需要设置什么？",
+              "id": "3-151-8",
+              "answers": [
+                {
+                  "text": "security = user",
+                  "answer_start": 196
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Samba共享设置可在smb.conf末尾添加[share]等配置，其中comment是描述，path指定路径，public、writeable、browseable、guest ok分别控制可见性、可写性和匿名访问。",
+          "qas": [
+            {
+              "question": "Samba共享设置中comment字段的作用是什么？",
+              "id": "3-151-9",
+              "answers": [
+                {
+                  "text": "用于设置这个共享目录的描述",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "Samba共享设置中path字段的作用是什么？",
+              "id": "3-151-10",
+              "answers": [
+                {
+                  "text": "指定了共享目录的路径",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加Samba用户可先用sudo useradd smbuser新增用户，再用sudo smbpasswd -a smbuser创建共享密码，修改用户口令用带-U参数的smbpasswd命令，用户可通过-r参数在本地修改服务器上自己的口令。",
+          "qas": [
+            {
+              "question": "如何新增Samba用户并创建共享密码？",
+              "id": "3-151-11",
+              "answers": [
+                {
+                  "text": "sudo useradd smbuser 新增用户，sudo smbpasswd -a smbuser 创建共享密码",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "用户如何在本地修改服务器上自己的Samba口令？",
+              "id": "3-151-12",
+              "answers": [
+                {
+                  "text": "使用-r参数，命令为smbpasswd -r smbserver -U smbuser",
+                  "answer_start": 120
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "赋予smbuser对Samba共享目录写权限，需将writeable设为yes，若目录本身不可写，还需执行sudo chown smbuser:smbuser /opt/share。",
+          "qas": [
+            {
+              "question": "如何赋予smbuser对Samba共享目录的写权限？",
+              "id": "3-151-13",
+              "answers": [
+                {
+                  "text": "将writeable设为yes，若目录本身不可写，执行sudo chown smbuser:smbuser /opt/share",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Samba服务启动用service smbd start，停止用service smbd stop，重启用service smbd restart，查看状态用service smbd status。",
+          "qas": [
+            {
+              "question": "如何启动Samba服务？",
+              "id": "3-151-14",
+              "answers": [
+                {
+                  "text": "service smbd start",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "如何查看Samba服务状态？",
+              "id": "3-151-15",
+              "answers": [
+                {
+                  "text": "service smbd status",
+                  "answer_start": 81
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Samba常见问题：修改配置文件后服务无法启动可能是参数后有特殊字符；多重连接报错可先断开连接再登录；防火墙问题可修改limits.conf后重启；无法写入可能需调整权限。",
+          "qas": [
+            {
+              "question": "修改Samba配置文件后服务无法启动可能的原因是什么？",
+              "id": "3-151-16",
+              "answers": [
+                {
+                  "text": "参数后面有一些看不见的字符",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "Samba出现多重连接报错如何解决？",
+              "id": "3-151-17",
+              "answers": [
+                {
+                  "text": "先断开现有的samba连接：cmd命令行下执行net use * /del /X，再重新选择要使用的目录，使用对应的用户名进行登录",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "vsftpd是Linux上安全好用的ftp服务，配置文件为vsftpd.conf，路径在/etc/vsftpd.conf。",
+          "qas": [
+            {
+              "question": "vsftpd是什么？",
+              "id": "3-151-18",
+              "answers": [
+                {
+                  "text": "vsftpd 是Linus上非常安全好用的ftp服务",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "vsftpd的配置文件路径是什么？",
+              "id": "3-151-19",
+              "answers": [
+                {
+                  "text": "/etc/vsftpd.conf",
+                  "answer_start": 46
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装vsftpd用sudo apt install vsftpd，若找不到安装包可先执行sudo apt update。",
+          "qas": [
+            {
+              "question": "如何安装vsftpd？",
+              "id": "3-151-20",
+              "answers": [
+                {
+                  "text": "sudo apt install vsftpd，若找不到安装包可先执行sudo apt update",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "vsftpd服务启动用service vsftpd start，停止用service vsftpd stop，重启用service vsftpd restart，查看状态用service vsftpd status。",
+          "qas": [
+            {
+              "question": "如何重启vsftpd服务？",
+              "id": "3-151-21",
+              "answers": [
+                {
+                  "text": "service vsftpd restart",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "vsftpd建议关闭匿名登录，使用本地用户登录，实际可用配置项包括listen=YES、anonymous_enable=NO、local_enable=YES等。",
+          "qas": [
+            {
+              "question": "vsftpd建议的登录方式是什么？",
+              "id": "3-151-22",
+              "answers": [
+                {
+                  "text": "关闭匿名登录，使用本地用户登录",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SFTP服务端群组配置：sudo groupadd sftp创建群组，sudo useradd -g sftp -s /bin/false mysftp新增用户，sudo passwd mysftp设置密码。",
+          "qas": [
+            {
+              "question": "SFTP服务端如何创建群组和新增用户？",
+              "id": "3-151-23",
+              "answers": [
+                {
+                  "text": "sudo groupadd sftp创建群组，sudo useradd -g sftp -s /bin/false mysftp新增用户",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SFTP服务端共享目录设置：sudo mkdir -p /data/sftp/mysftp创建目录，sudo usermod -d /data/sftp/mysftp mysftp修改用户目录。",
+          "qas": [
+            {
+              "question": "SFTP服务端如何设置共享目录？",
+              "id": "3-151-24",
+              "answers": [
+                {
+                  "text": "sudo mkdir -p /data/sftp/mysftp创建目录，sudo usermod -d /data/sftp/mysftp mysftp修改用户目录",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SFTP服务端配置文件修改：注释Subsystem sftp /usr/libexec/openssh/sftp-server，添加Subsystem sftp internal-sftp等内容。",
+          "qas": [
+            {
+              "question": "SFTP服务端配置文件需要修改哪些内容？",
+              "id": "3-151-25",
+              "answers": [
+                {
+                  "text": "注释Subsystem sftp /usr/libexec/openssh/sftp-server，添加Subsystem sftp internal-sftp、Match Group sftp、ChrootDirectory /data/sftp/%u、ForceCommand internal-sftp、AllowTcpForwarding no、X11Forwarding no",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SFTP服务端目录授权：sudo chown root:sftp /data/sftp/mysftp，sudo chmod 755 /data/sftp/mysftp，创建upload目录并授权。",
+          "qas": [
+            {
+              "question": "SFTP服务端如何进行目录授权？",
+              "id": "3-151-26",
+              "answers": [
+                {
+                  "text": "sudo chown root:sftp /data/sftp/mysftp，sudo chmod 755 /data/sftp/mysftp，创建upload目录并执行sudo chown mysftp:sftp /data/sftp/mysftp/upload和sudo chmod 755 /data/sftp/mysftp/upload",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SFTP服务端重启服务用sudo systemctl restart sshd.service，若服务不存在先启用ssh.service。",
+          "qas": [
+            {
+              "question": "如何重启SFTP服务端服务？",
+              "id": "3-151-27",
+              "answers": [
+                {
+                  "text": "sudo systemctl restart sshd.service，若服务不存在先执行systemctl enable ssh.service",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SFTP客户端访问：进入文件管理器，输入sftp://服务器IP，输入账号密码即可。",
+          "qas": [
+            {
+              "question": "SFTP客户端如何访问服务器？",
+              "id": "3-151-28",
+              "answers": [
+                {
+                  "text": "进入文件管理器或我的电脑，输入sftp：//服务器IP（根据实际服务端IP输入），并键入账号密码",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NFS服务端安装工具用sudo apt-get install nfs-kernel-server，创建共享文件夹并设置权限。",
+          "qas": [
+            {
+              "question": "NFS服务端如何安装工具？",
+              "id": "3-151-29",
+              "answers": [
+                {
+                  "text": "sudo apt-get install nfs-kernel-server",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NFS服务端修改配置文件/etc/exports，配置项包括共享路径、IP限制和权限等，如/home/deepin-server/nfs 10.20.*(rw)。",
+          "qas": [
+            {
+              "question": "NFS服务端的配置文件是什么？",
+              "id": "3-151-30",
+              "answers": [
+                {
+                  "text": "/etc/exports",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NFS服务端启动服务用systemctl start rpcbind nfs-server，查看状态确认服务在running态。",
+          "qas": [
+            {
+              "question": "如何启动NFS服务端服务？",
+              "id": "3-151-31",
+              "answers": [
+                {
+                  "text": "systemctl start rpcbind nfs-server",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NFS客户端安装用sudo apt-get install nfs-common，查看服务端共享信息用showmount -e 服务器IP。",
+          "qas": [
+            {
+              "question": "NFS客户端如何安装？",
+              "id": "3-151-32",
+              "answers": [
+                {
+                  "text": "sudo apt-get install nfs-common",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NFS客户端创建挂载目录，用sudo mount -t nfs 服务端IP:共享路径 本地目录进行挂载，可配置开机自动挂载。",
+          "qas": [
+            {
+              "question": "NFS客户端如何进行挂载操作？",
+              "id": "3-151-33",
+              "answers": [
+                {
+                  "text": "创建挂载目录后，用sudo mount -t nfs 服务端IP:共享路径 本地目录进行挂载",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
