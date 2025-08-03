@@ -1,0 +1,60 @@
+{
+  "title": "Lynx",
+  "paragraphs": [
+    {
+      "context": "Lynx是一个纯文本网页浏览器。安装命令为：sudo apt-get install lynx。卸载命令为：sudo apt-get remove lynx。仓库地址是http://packages.deepin.com/deepin/pool/main/l/lynx/。相关链接中，官方网站为https://lynx.browser.org/，还有维基百科链接。",
+      "qas": [
+        {
+          "id": "1-89-1",
+          "question": "Lynx是什么类型的网页浏览器？",
+          "answers": [
+            {
+              "text": "纯文本网页浏览器",
+              "answer_start": 7
+            }
+          ]
+        },
+        {
+          "id": "1-89-2",
+          "question": "安装Lynx的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt-get install lynx",
+              "answer_start": 22
+            }
+          ]
+        },
+        {
+          "id": "1-89-3",
+          "question": "卸载Lynx的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt-get remove lynx",
+              "answer_start": 54
+            }
+          ]
+        },
+        {
+          "id": "1-89-4",
+          "question": "Lynx的仓库地址是什么？",
+          "answers": [
+            {
+              "text": "http://packages.deepin.com/deepin/pool/main/l/lynx/",
+              "answer_start": 80
+            }
+          ]
+        },
+        {
+          "id": "1-89-5",
+          "question": "Lynx的官方网站是什么？",
+          "answers": [
+            {
+              "text": "https://lynx.browser.org/",
+              "answer_start": 133
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

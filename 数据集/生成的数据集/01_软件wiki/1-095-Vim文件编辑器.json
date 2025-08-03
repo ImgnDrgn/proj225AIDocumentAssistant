@@ -1,0 +1,474 @@
+{
+  "data": [
+    {
+      "title": "Vim文件编辑器",
+      "paragraphs": [
+        {
+          "context": "vim 是 vi 的一个升级版本，gvim 算是 vim 的一个 GUI 版本，或者说是 vim 的一个升级版本。vim 兼容 vi 的所有指令，并且有更多的优势，同时，vim 还拥有众多的插件，与 emacs 一样，虽然本身只是一个编辑器，但是通过插件的拓展可以实现许多高级的应用，如不同语言的语法高亮、语法补全甚至是游戏等，当然，在这方面 vim 或许还不能如 emacs，毕竟 emacs 号称是一个操作系统。",
+          "qas": [
+            {
+              "id": "1-95-1",
+              "question": "vim和vi是什么关系？",
+              "answers": [
+                {
+                  "text": "vim 是 vi 的一个升级版本",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "1-95-2",
+              "question": "gvim是什么？",
+              "answers": [
+                {
+                  "text": "gvim 算是 vim 的一个 GUI 版本，或者说是 vim 的一个升级版本",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "1-95-3",
+              "question": "vim是否兼容vi的所有指令？",
+              "answers": [
+                {
+                  "text": "vim 兼容 vi 的所有指令",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "id": "1-95-4",
+              "question": "vim有哪些优势？",
+              "answers": [
+                {
+                  "text": "有更多的优势，同时，vim 还拥有众多的插件，通过插件的拓展可以实现许多高级的应用，如不同语言的语法高亮、语法补全甚至是游戏等",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "id": "1-95-5",
+              "question": "vim相比emacs的优势差距在哪里？",
+              "answers": [
+                {
+                  "text": "vim 或许还不能如 emacs，毕竟 emacs 号称是一个操作系统",
+                  "answer_start": 156
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进入 vim 后（正常模式），按下 i 键进行打几个字。然后按下 Esc 键退出编辑（插入）模式，回到正常模式。在正常模式下，h 键为光标左移，l 键为光标右移，j 键为光标下移一行，k 键为光标上移一行。再次按下 i 键，进入编辑模式。更多应用及命令请自行研究。在正常模式下，输入 \" :help\" 打开帮助文档。",
+          "qas": [
+            {
+              "id": "1-95-6",
+              "question": "如何在vim的正常模式下进入编辑模式？",
+              "answers": [
+                {
+                  "text": "按下 i 键",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "1-95-7",
+              "question": "在vim中，按哪个键可以退出编辑模式回到正常模式？",
+              "answers": [
+                {
+                  "text": "Esc 键",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "1-95-8",
+              "question": "vim正常模式下，h键的功能是什么？",
+              "answers": [
+                {
+                  "text": "光标左移",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "id": "1-95-9",
+              "question": "vim正常模式下，l键的功能是什么？",
+              "answers": [
+                {
+                  "text": "光标右移",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "1-95-10",
+              "question": "vim正常模式下，j键的功能是什么？",
+              "answers": [
+                {
+                  "text": "光标下移一行",
+                  "answer_start": 97
+                }
+              ]
+            },
+            {
+              "id": "1-95-11",
+              "question": "vim正常模式下，k键的功能是什么？",
+              "answers": [
+                {
+                  "text": "光标上移一行",
+                  "answer_start": 112
+                }
+              ]
+            },
+            {
+              "id": "1-95-12",
+              "question": "如何在vim的正常模式下打开帮助文档？",
+              "answers": [
+                {
+                  "text": "输入 \" :help\"",
+                  "answer_start": 165
+                }
+              ]
+            },
+            {
+              "id": "1-95-13",
+              "question": "在正常模式下移动光标的按键分别是什么？",
+              "answers": [
+                {
+                  "text": "h 键为光标左移，l 键为光标右移，j 键为光标下移一行，k 键为光标上移一行",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在 /home/user/ 下新建一个 .vimrc 文件并进入编辑，这里是一个简单的配置：```\" 剪贴板 set clipboard=unnamed \" 显示行号 set number \" 开启语法高亮 syntax on \" 显示标尺 set ruler \" 打开折叠 set foldenable \" 打开自动缩进 set autoindent \" C 语言缩进 set cindent \" 缩进为 4 个空格 set shiftwidth=4 \" tab 键相当于 4 个空格 set tabstop=4```",
+          "qas": [
+            {
+              "id": "1-95-14",
+              "question": "vim的配置文件.vimrc通常在哪个路径下？",
+              "answers": [
+                {
+                  "text": "/home/user/",
+                  "answer_start": 1
+                }
+              ]
+            },
+            {
+              "id": "1-95-15",
+              "question": "在.vimrc中，如何设置剪贴板？",
+              "answers": [
+                {
+                  "text": "set clipboard=unnamed",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "1-95-16",
+              "question": "在.vimrc中，如何设置显示行号？",
+              "answers": [
+                {
+                  "text": "set number",
+                  "answer_start": 77
+                }
+              ]
+            },
+            {
+              "id": "1-95-17",
+              "question": "在.vimrc中，如何开启语法高亮？",
+              "answers": [
+                {
+                  "text": "syntax on",
+                  "answer_start": 96
+                }
+              ]
+            },
+            {
+              "id": "1-95-18",
+              "question": "在.vimrc中，如何设置显示标尺？",
+              "answers": [
+                {
+                  "text": "set ruler",
+                  "answer_start": 113
+                }
+              ]
+            },
+            {
+              "id": "1-95-19",
+              "question": "在.vimrc中，如何打开折叠功能？",
+              "answers": [
+                {
+                  "text": "set foldenable",
+                  "answer_start": 130
+                }
+              ]
+            },
+            {
+              "id": "1-95-20",
+              "question": "在.vimrc中，如何打开自动缩进？",
+              "answers": [
+                {
+                  "text": "set autoindent",
+                  "answer_start": 151
+                }
+              ]
+            },
+            {
+              "id": "1-95-21",
+              "question": "在.vimrc中，如何设置C语言缩进？",
+              "answers": [
+                {
+                  "text": "set cindent",
+                  "answer_start": 172
+                }
+              ]
+            },
+            {
+              "id": "1-95-22",
+              "question": "在.vimrc中，如何设置缩进为4个空格？",
+              "answers": [
+                {
+                  "text": "set shiftwidth=4",
+                  "answer_start": 191
+                }
+              ]
+            },
+            {
+              "id": "1-95-23",
+              "question": "在.vimrc中，如何设置tab键相当于4个空格？",
+              "answers": [
+                {
+                  "text": "set tabstop=4",
+                  "answer_start": 216
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "除了通过 Vundle 安装语法补全 YouCompleteMe，也可以自己手动编译安装，这里有另外一种更加简单的方法。```# 试试这个命令，看是否已经安装 vim-addons $ vim-addons # 如果没有安装 vim-addons，则需安装 vim-addon-manager $ sudo apt-get install vim-addon-manager # 开始安装 YouCompleteMe $ sudo apt-get install vim-youcompleteme # 将 YCM 加入 addons 管理器中 $ vim-addons install youcompleteme```结束，新建一个 main.c 并进行编辑试试。需要说明的是，安装了 YCM 后 vim 的开启速度会慢那么 1s。",
+          "qas": [
+            {
+              "id": "1-95-24",
+              "question": "如何检查是否已经安装vim-addons？",
+              "answers": [
+                {
+                  "text": "运行命令 $ vim-addons",
+                  "answer_start": 87
+                }
+              ]
+            },
+            {
+              "id": "1-95-25",
+              "question": "如果没有安装vim-addons，需要安装什么？",
+              "answers": [
+                {
+                  "text": "vim-addon-manager",
+                  "answer_start": 128
+                }
+              ]
+            },
+            {
+              "id": "1-95-26",
+              "question": "安装vim-addon-manager的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install vim-addon-manager",
+                  "answer_start": 147
+                }
+              ]
+            },
+            {
+              "id": "1-95-27",
+              "question": "安装YouCompleteMe的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install vim-youcompleteme",
+                  "answer_start": 195
+                }
+              ]
+            },
+            {
+              "id": "1-95-28",
+              "question": "如何将YCM加入addons管理器中？",
+              "answers": [
+                {
+                  "text": "vim-addons install youcompleteme",
+                  "answer_start": 243
+                }
+              ]
+            },
+            {
+              "id": "1-95-29",
+              "question": "安装YCM后，vim的开启速度有什么变化？",
+              "answers": [
+                {
+                  "text": "会慢那么 1s",
+                  "answer_start": 301
+                }
+              ]
+            },
+            {
+              "id": "1-95-30",
+              "question": "安装YCM前需要检查什么？",
+              "answers": [
+                {
+                  "text": "vim-addons 是否安装",
+                  "answer_start": 87
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装gvim```sudo apt-get install vim-gtk3```",
+          "qas": [
+            {
+              "id": "1-95-31",
+              "question": "安装gvim的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install vim-gtk3",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "将gvim添加到启动器创建 `/usr/share/applications/gvim.desktop`文件并加入以下内容：```[Desktop Entry] Name=Gvim Exec=gvim Icon=vim-gtk Terminal=false X-MultipleArgs=false Type=Application Encoding=UTF-8 Categories=Application;Utility;Dictionary; StartupNotify=false```创建desktop文件参考wiki：[https://wiki.deepin.org/wiki/Desktop_Entry_文件](https://wiki.deepin.org/wiki/Desktop_Entry_文件)",
+          "qas": [
+            {
+              "id": "1-95-32",
+              "question": "如何将gvim添加到启动器？",
+              "answers": [
+                {
+                  "text": "创建 `/usr/share/applications/gvim.desktop`文件并加入指定内容",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "1-95-33",
+              "question": "添加gvim到启动器需要创建的文件路径是什么？",
+              "answers": [
+                {
+                  "text": "/usr/share/applications/gvim.desktop",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "1-95-34",
+              "question": "gvim.desktop文件中，Name字段的值是什么？",
+              "answers": [
+                {
+                  "text": "Gvim",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "id": "1-95-35",
+              "question": "gvim.desktop文件中，Exec字段的值是什么？",
+              "answers": [
+                {
+                  "text": "gvim",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "id": "1-95-36",
+              "question": "gvim.desktop文件中，Icon字段的值是什么？",
+              "answers": [
+                {
+                  "text": "vim-gtk",
+                  "answer_start": 83
+                }
+              ]
+            },
+            {
+              "id": "1-95-37",
+              "question": "桌面文件中设置程序名称的字段是什么？",
+              "answers": [
+                {
+                  "text": "Name",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装vim中文帮助文档从这里下载压缩包 vimcdoc-2.1.0.tar.gz [https://sourceforge.net/projects/vimcdoc/](https://sourceforge.net/projects/vimcdoc/)解压后```mkdir ~/.vim cd vimcdoc-2.1.0 ./vimcdoc.sh -i```这样就安装好了，再进入vim后，`:help`出来应该就是中文的了。",
+          "qas": [
+            {
+              "id": "1-95-38",
+              "question": "安装vim中文帮助文档需要下载什么压缩包？",
+              "answers": [
+                {
+                  "text": "vimcdoc-2.1.0.tar.gz",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "1-95-39",
+              "question": "vim中文帮助文档的压缩包可以从哪里下载？",
+              "answers": [
+                {
+                  "text": "[https://sourceforge.net/projects/vimcdoc/](https://sourceforge.net/projects/vimcdoc/)",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "id": "1-95-40",
+              "question": "解压vim中文帮助文档压缩包后，第一步操作是什么？",
+              "answers": [
+                {
+                  "text": "mkdir ~/.vim",
+                  "answer_start": 101
+                }
+              ]
+            },
+            {
+              "id": "1-95-41",
+              "question": "解压vim中文帮助文档压缩包后，如何进入对应的目录？",
+              "answers": [
+                {
+                  "text": "cd vimcdoc-2.1.0",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "id": "1-95-42",
+              "question": "安装vim中文帮助文档的脚本命令是什么？",
+              "answers": [
+                {
+                  "text": "./vimcdoc.sh -i",
+                  "answer_start": 137
+                }
+              ]
+            },
+            {
+              "id": "1-95-43",
+              "question": "安装好vim中文帮助文档后，如何验证？",
+              "answers": [
+                {
+                  "text": "进入vim后，输入`:help`，显示中文内容",
+                  "answer_start": 155
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

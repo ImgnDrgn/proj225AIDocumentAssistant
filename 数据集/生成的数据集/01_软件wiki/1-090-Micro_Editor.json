@@ -1,0 +1,229 @@
+{
+  "data": [
+    {
+      "title": "Micro-Editor",
+      "paragraphs": [
+        {
+          "context": "Micro-Editor是一个基于终端的文本编辑器，旨在易于使用和直观，同时还利用了现代终端的功能。它是一个单一的、包含电池的、静态的二进制文件，没有依赖关系；您可以立即下载并使用它！顾名思义，micro 旨在通过易于安装和使用来成为 nano/vim 编辑器的继承者。对于喜欢在终端中工作的人或经常通过 SSH 编辑文件的人来说，它努力成为一名全职编辑器。",
+          "qas": [
+            {
+              "question": "Micro-Editor是基于什么的文本编辑器？",
+              "id": "1-90-1",
+              "answers": [
+                {
+                  "text": "终端",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "Micro-Editor的文件特性是什么？",
+              "id": "1-90-2",
+              "answers": [
+                {
+                  "text": "单一的、包含电池的、静态的二进制文件，没有依赖关系",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "Micro旨在成为哪些编辑器的继承者？",
+              "id": "1-90-3",
+              "answers": [
+                {
+                  "text": "nano/vim",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "question": "Micro-Editor的主要设计目标是什么？",
+              "id": "1-90-4",
+              "answers": [
+                {
+                  "text": "易于使用和直观，同时还利用了现代终端的功能",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装命令：`curl https://getmic.ro | bash`",
+          "qas": [
+            {
+              "question": "如何安装Micro-Editor？",
+              "id": "1-90-5",
+              "answers": [
+                {
+                  "text": "`curl https://getmic.ro | bash`",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载命令：`rm micro`",
+          "qas": [
+            {
+              "question": "如何卸载Micro-Editor？",
+              "id": "1-90-6",
+              "answers": [
+                {
+                  "text": "`rm micro`",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "从源头构建需Go 1.16+且启用Go模块，步骤：`git clone https://github.com/zyedidia/micro`、`cd micro`、`make build`、`sudo mv micro /usr/local/bin`（可选）。",
+          "qas": [
+            {
+              "question": "从源头构建Micro需要什么条件？",
+              "id": "1-90-7",
+              "answers": [
+                {
+                  "text": "Go 1.16+且启用Go模块",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "从源头构建Micro的克隆命令是什么？",
+              "id": "1-90-8",
+              "answers": [
+                {
+                  "text": "`git clone https://github.com/zyedidia/micro`",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "`sudo mv micro /usr/local/bin`是必须的吗？",
+              "id": "1-90-9",
+              "answers": [
+                {
+                  "text": "不是，是可选的",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "question": "请写出完整的源码构建命令序列",
+              "id": "1-90-10",
+              "answers": [
+                {
+                  "text": "`git clone https://github.com/zyedidia/micro`、`cd micro`、`make build`、`sudo mv micro /usr/local/bin`（可选）",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Micro支持超过75种语言，并有7种默认配色方案可供选择；支持16、256和真彩色主题。Micro易于使用，高度可定制（使用JSON配置键绑定，Lua编写插件）。支持Sublime风格多光标、插件系统（Lua编写）、鼠标操作（单击拖动选择、双击选词、三击选行），并能在编辑器中运行交互式shell。",
+          "qas": [
+            {
+              "question": "Micro支持多少种语言？",
+              "id": "1-90-11",
+              "answers": [
+                {
+                  "text": "超过75种",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "Micro有几种默认配色方案？",
+              "id": "1-90-12",
+              "answers": [
+                {
+                  "text": "7种",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "Micro支持什么类型的配色方案？",
+              "id": "1-90-13",
+              "answers": [
+                {
+                  "text": "16、256和真彩色主题",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "插件系统使用什么语言编写？",
+              "id": "1-90-14",
+              "answers": [
+                {
+                  "text": "Lua",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "question": "如何配置Micro-Editor的键绑定？",
+              "id": "1-90-15",
+              "answers": [
+                {
+                  "text": "使用JSON配置",
+                  "answer_start": 55
+                }
+              ]
+            },
+            {
+              "question": "鼠标支持包括哪些具体操作？",
+              "id": "1-90-16",
+              "answers": [
+                {
+                  "text": "单击拖动选择、双击选词、三击选行",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "终端仿真器功能是什么？",
+              "id": "1-90-17",
+              "answers": [
+                {
+                  "text": "在编辑器中运行交互式shell",
+                  "answer_start": 105
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "相关链接：[官方主页](https://micro-editor.github.io/)、[源码地址](https://github.com/zyedidia/micro/)",
+          "qas": [
+            {
+              "question": "Micro的官方主页是什么？",
+              "id": "1-90-18",
+              "answers": [
+                {
+                  "text": "https://micro-editor.github.io/",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "Micro的源码地址是什么？",
+              "id": "1-90-19",
+              "answers": [
+                {
+                  "text": "https://github.com/zyedidia/micro/",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

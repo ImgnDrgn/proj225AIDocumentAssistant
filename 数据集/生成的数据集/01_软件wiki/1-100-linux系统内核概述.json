@@ -1,0 +1,364 @@
+{
+  "data": [
+    {
+      "title": "Linux系统内核概述",
+      "paragraphs": [
+        {
+          "context": "Linux 内核是一种开源的类 Unix 操作系统宏内核。Linux 内核是 Linux 操作系统的主要组件，也是计算机硬件与其进程之间的核心接口。它负责两者之间的通信，还要尽可能高效地管理资源。内核的用途主要有以下4项工作：内存管理（追踪记录有多少内存存储了什么以及存储在哪里）、进程管理（确定哪些进程可以使用中央处理器、何时使用以及持续多长时间）、设备驱动程序（充当硬件与进程之间的调解程序/解释程序）、系统调用和安全防护（从流程接受服务请求）。",
+          "qas": [
+            {
+              "question": "Linux内核属于什么类型的操作系统内核？",
+              "id": "1-100-1",
+              "answers": [
+                {
+                  "text": "开源的类 Unix 操作系统宏内核",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Linux内核在操作系统中扮演什么角色？",
+              "id": "1-100-2",
+              "answers": [
+                {
+                  "text": "是Linux操作系统的主要组件，也是计算机硬件与其进程之间的核心接口，负责两者之间的通信，还需高效管理资源",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "Linux内核的主要工作有哪四项？",
+              "id": "1-100-3",
+              "answers": [
+                {
+                  "text": "内存管理、进程管理、设备驱动程序、系统调用和安全防护",
+                  "answer_start": 146
+                }
+              ]
+            },
+            {
+              "question": "内存管理的具体作用是什么？",
+              "id": "1-100-4",
+              "answers": [
+                {
+                  "text": "追踪记录有多少内存存储了什么以及存储在哪里",
+                  "answer_start": 182
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux 内核采用单内核体系设计，但充分借鉴了微内核设计体系的优点，为内核引入模块化机制。其重要组成部分包括：kernel（内核核心，一般为bzImage，通常在/boot目录下，名称为vmlinuz-VERSION-RELEASE）、kernel object（内核对象，一般放置于/lib/modules/VERSION-RELEASE/，[ ]表示不编译进内核，[M]表示编译为模块文件，[*]表示编译进内核）、辅助文件(ramdisk)如initrd和initramfs。",
+          "qas": [
+            {
+              "question": "Linux内核的体系设计有什么特点？",
+              "id": "1-100-5",
+              "answers": [
+                {
+                  "text": "单内核体系设计，但充分借鉴了微内核设计体系的优点，为内核引入模块化机制",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Linux内核的核心部分（kernel）通常位于哪个目录？",
+              "id": "1-100-6",
+              "answers": [
+                {
+                  "text": "/boot",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "question": "kernel object中，[M]表示什么含义？",
+              "id": "1-100-7",
+              "answers": [
+                {
+                  "text": "编译为模块文件",
+                  "answer_start": 207
+                }
+              ]
+            },
+            {
+              "question": "Linux内核的辅助文件（ramdisk）包括哪些？",
+              "id": "1-100-8",
+              "answers": [
+                {
+                  "text": "initrd和initramfs",
+                  "answer_start": 245
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "uname命令的使用格式为uname [OPTION]...，参数包括：-n显示节点名称、-r显示VERSION-RELEASE、-s内核名称、-v内核版本、-m硬件名称、-i硬件平台、-p处理器类型、-o操作系统。例如，uname -m输出i686，uname -r输出2.6.32-573.22.1.el6.i686。",
+          "qas": [
+            {
+              "question": "uname命令的使用格式是什么？",
+              "id": "1-100-9",
+              "answers": [
+                {
+                  "text": "uname [OPTION]...",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "uname -r参数的作用是什么？",
+              "id": "1-100-10",
+              "answers": [
+                {
+                  "text": "显示VERSION-RELEASE",
+                  "answer_start": 49
+                }
+              ]
+            },
+            {
+              "question": "要查看硬件名称，应使用uname的哪个参数？",
+              "id": "1-100-11",
+              "answers": [
+                {
+                  "text": "-m",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsmod命令用于显示内核已装载的模块，内容来自/proc/modules文件。常用lsmod | grep -i 模块名查询特定模块。其输出字段含义：第1列是模块名称，第2列是模块大小，第3列是依赖模块个数，第4列是依赖模块内容。例如，lsmod | grep ext4可查询ext4模块信息。",
+          "qas": [
+            {
+              "question": "lsmod命令的作用是什么？",
+              "id": "1-100-12",
+              "answers": [
+                {
+                  "text": "显示内核已装载的模块",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "lsmod命令显示的内容来自哪个文件？",
+              "id": "1-100-13",
+              "answers": [
+                {
+                  "text": "/proc/modules",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "如何查询系统是否加载了ext4模块？",
+              "id": "1-100-14",
+              "answers": [
+                {
+                  "text": "lsmod | grep ext4",
+                  "answer_start": 116
+                }
+              ]
+            },
+            {
+              "question": "lsmod输出的第2列表示什么？",
+              "id": "1-100-15",
+              "answers": [
+                {
+                  "text": "模块的大小",
+                  "answer_start": 74
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "modinfo命令用于显示模块的详细描述信息，可查询未安装模块，默认格式为fieldname : value。选项包括：-n只显示模块文件路径、-p显示模块参数、-a显示作者、-d显示描述、-l显示许可证。例如，modinfo ext4可查看ext4模块信息，输出包含filename、license等。",
+          "qas": [
+            {
+              "question": "modinfo命令的用途是什么？",
+              "id": "1-100-16",
+              "answers": [
+                {
+                  "text": "显示模块的详细描述信息",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "modinfo的哪个选项可以只显示模块文件路径？",
+              "id": "1-100-17",
+              "answers": [
+                {
+                  "text": "-n",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "要查看模块的作者信息，应使用modinfo的哪个参数？",
+              "id": "1-100-18",
+              "answers": [
+                {
+                  "text": "-a",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "modprobe命令用于装载或卸载内核模块，配置文件为/etc/modprobe.conf和/etc/modprobe.d/*.conf，需依赖modules.dep文件（由depmod生成）。选项包括：-r删除模块、-v显示操作信息、-n调试模式、-i忽略install和remove。例如，modprobe -r 模块名可卸载模块。",
+          "qas": [
+            {
+              "question": "modprobe命令的主要功能是什么？",
+              "id": "1-100-19",
+              "answers": [
+                {
+                  "text": "装载或卸载内核模块",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "modprobe的配置文件有哪些？",
+              "id": "1-100-20",
+              "answers": [
+                {
+                  "text": "/etc/modprobe.conf和/etc/modprobe.d/*.conf",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "如何使用modprobe卸载一个内核模块？",
+              "id": "1-100-21",
+              "answers": [
+                {
+                  "text": "modprobe -r 模块名",
+                  "answer_start": 127
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/proc目录是proc伪文件系统，内核通过它输出内部状态信息、统计信息及可配置参数。sysctl命令用于查看或设置/proc/sys下的参数，默认配置文件为/etc/sysctl.conf。修改参数方式：sysctl -w parameter=VALUE或echo VALUE > /proc/sys/path/to/parameter。例如，sysctl -w kernel.hostname=xxx可修改主机名。",
+          "qas": [
+            {
+              "question": "/proc目录对应的是什么文件系统？",
+              "id": "1-100-22",
+              "answers": [
+                {
+                  "text": "proc伪文件系统",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "sysctl命令的默认配置文件是什么？",
+              "id": "1-100-23",
+              "answers": [
+                {
+                  "text": "/etc/sysctl.conf",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "修改/proc/sys下参数的方式有哪些？",
+              "id": "1-100-24",
+              "answers": [
+                {
+                  "text": "sysctl -w parameter=VALUE或echo VALUE > /proc/sys/path/to/parameter",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/sys目录是sysfs伪文件系统，输出内核识别的硬件属性及设定信息，部分参数可修改。udev是用户空间设备管理器，通过/sys信息动态创建设备文件，规则文件位于/etc/udev/rules.d及/usr/lib/udev/rules.d。ramdisk文件可通过mkinitrd或dracut命令制作，例如mkinitrd /boot/initramfs-$(uname -r).img $(uname -r)。",
+          "qas": [
+            {
+              "question": "/sys目录对应的文件系统是什么？",
+              "id": "1-100-25",
+              "answers": [
+                {
+                  "text": "sysfs伪文件系统",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "udev的作用是什么？",
+              "id": "1-100-26",
+              "answers": [
+                {
+                  "text": "用户空间设备管理器，通过/sys信息动态创建设备文件",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "制作ramdisk文件的命令有哪些？",
+              "id": "1-100-27",
+              "answers": [
+                {
+                  "text": "mkinitrd或dracut",
+                  "answer_start": 165
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编译内核的前提包括：准备开发环境（如Server Platform Development、Development Tools包组）、获取硬件信息（通过lscpu、lspci等）、获取内核源码（www.kernel.org）。配置选项命令有make config、make menuconfig等；编译用make [-j #]；安装用make modules_install和make install。",
+          "qas": [
+            {
+              "question": "编译内核需要准备哪些开发环境包组？",
+              "id": "1-100-28",
+              "answers": [
+                {
+                  "text": "Server Platform Development、Development Tools",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "获取硬件信息可使用哪些命令？",
+              "id": "1-100-29",
+              "answers": [
+                {
+                  "text": "lscpu、lspci等",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "配置内核选项的命令有哪些？",
+              "id": "1-100-30",
+              "answers": [
+                {
+                  "text": "make config、make menuconfig等",
+                  "answer_start": 136
+                }
+              ]
+            },
+            {
+              "question": "内核编译完成后，安装命令是什么？",
+              "id": "1-100-31",
+              "answers": [
+                {
+                  "text": "make modules_install和make install",
+                  "answer_start": 175
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

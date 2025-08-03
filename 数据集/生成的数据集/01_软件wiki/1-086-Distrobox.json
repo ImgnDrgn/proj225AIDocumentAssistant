@@ -1,0 +1,260 @@
+{
+  "title": "Distrobox",
+  "paragraphs": [
+    {
+      "context": "deepin v23 起，deepin 发行版仓库中的所有软件包就均由 deepin 社区中维护软件包的贡献者们一同维护了，即所谓的“根发行版”或者说“根社区”。这对广大普通用户意味着两件事：直接从 Debian 软件包仓库下载并安装软件包会有更大概率搞坏 deepin 系统；仅为 Debian 或 Ubuntu 等 deb 系发行版适配的第三方应用更大概率无法直接在 deepin 上使用了。其实即便 v23 之前，我们也是从不推荐用户混源的，同是 deb 系的不同发行版的混源仿佛是个非常常见的错误用法。",
+      "qas": [
+        {
+          "id": "1-86-1",
+          "question": "deepin v23起，发行版仓库中的软件包由谁维护？",
+          "answers": [
+            {
+              "text": "deepin 社区中维护软件包的贡献者们一同维护",
+              "answer_start": 23
+            }
+          ]
+        },
+        {
+          "id": "1-86-2",
+          "question": "deepin v23对普通用户而言意味着哪两件事？",
+          "answers": [
+            {
+              "text": "直接从 Debian 软件包仓库下载并安装软件包会有更大概率搞坏 deepin 系统；仅为 Debian 或 Ubuntu 等 deb 系发行版适配的第三方应用更大概率无法直接在 deepin 上使用了",
+              "answer_start": 85
+            }
+          ]
+        },
+        {
+          "id": "1-86-3",
+          "question": "v23之前是否推荐用户混源？",
+          "answers": [
+            {
+              "text": "不推荐",
+              "answer_start": 278
+            }
+          ]
+        },
+        {
+          "id": "1-86-4",
+          "question": "v23前混源操作被称为什么？",
+          "answers": [
+            {
+              "text": "同是 deb 系的不同发行版的混源仿佛是个非常常见的错误用法",
+              "answer_start": 283
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Distrobox 是一个 Podman/Docker 的 wrapper 脚本，它帮助你能够快速创建并启动一个 Linux 发行版环境的容器，并帮你做好这个容器与系统的集成，使你可以方便的访问主系统以及容器内的文件与网络、使用这个容器内的图形应用等。你可以使用 distrobox 工具来轻松在 deepin v23 下安装包括 Debian 与 Ubuntu 在内的其它发行版作为“子系统”，并在其环境内安装与使用这些发行版所提供的软件包与工具。",
+      "qas": [
+        {
+          "id": "1-86-5",
+          "question": "Distrobox本质上是什么？",
+          "answers": [
+            {
+              "text": "一个 Podman/Docker 的 wrapper 脚本",
+              "answer_start": 13
+            }
+          ]
+        },
+        {
+          "id": "1-86-6",
+          "question": "Distrobox能帮助用户做什么？",
+          "answers": [
+            {
+              "text": "快速创建并启动一个 Linux 发行版环境的容器，并做好容器与系统的集成，方便访问主系统及容器内的文件与网络、使用容器内的图形应用等",
+              "answer_start": 47
+            }
+          ]
+        },
+        {
+          "id": "1-86-7",
+          "question": "在deepin v23下使用Distrobox可以安装哪些发行版作为“子系统”？",
+          "answers": [
+            {
+              "text": "包括 Debian 与 Ubuntu 在内的其它发行版",
+              "answer_start": 247
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Distrobox 在 deepin v23 下的安装：distrobox 软件包本身已经在 deepin v23 仓库中默认提供了，你只需通过下述命令安装即可：sudo apt install distrobox。安装后，就可以使用 distrobox 命令了。",
+      "qas": [
+        {
+          "id": "1-86-8",
+          "question": "在deepin v23中如何安装distrobox？",
+          "answers": [
+            {
+              "text": "通过命令sudo apt install distrobox安装",
+              "answer_start": 86
+            }
+          ]
+        },
+        {
+          "id": "1-86-9",
+          "question": "distrobox软件包在deepin v23仓库中是否默认提供？",
+          "answers": [
+            {
+              "text": "是",
+              "answer_start": 35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "创建一个名为 ubuntu 的“子系统”，使用 docker hub 上的 ubuntu 22.04 作为基础镜像的命令是：distrobox create ubuntu --image docker.io/library/ubuntu:22.04。创建完毕后，通过distrobox enter ubuntu进入容器。首次进入会有初始化过程，较慢。初始化完毕后，终端提示符主机名称变化，标志进入环境。退出环境用exit，可再次通过distrobox enter ubuntu进入。",
+      "qas": [
+        {
+          "id": "1-86-10",
+          "question": "创建名为ubuntu的子系统，使用ubuntu 22.04作为基础镜像的命令是什么？",
+          "answers": [
+            {
+              "text": "distrobox create ubuntu --image docker.io/library/ubuntu:22.04",
+              "answer_start": 72
+            }
+          ]
+        },
+        {
+          "id": "1-86-11",
+          "question": "如何进入名为ubuntu的Distrobox子系统？",
+          "answers": [
+            {
+              "text": "distrobox enter ubuntu",
+              "answer_start": 147
+            }
+          ]
+        },
+        {
+          "id": "1-86-12",
+          "question": "首次进入ubuntu子系统时为什么较慢？",
+          "answers": [
+            {
+              "text": "因为会有一个初始化的过程，帮你安装一些软件包并进行一些配置，以便后续更方便使用",
+              "answer_start": 172
+            }
+          ]
+        },
+        {
+          "id": "1-86-13",
+          "question": "如何判断已进入ubuntu子系统环境？",
+          "answers": [
+            {
+              "text": "终端的提示符中，主机名称发生了变化",
+              "answer_start": 253
+            }
+          ]
+        },
+        {
+          "id": "1-86-14",
+          "question": "如何退出Distrobox的子系统环境？",
+          "answers": [
+            {
+              "text": "exit",
+              "answer_start": 299
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "进入Distrobox的“子系统”内后，可以像使用宿主系统一样访问网络、用户目录下的文件，启动图形应用。在Ubuntu“子系统”中，可以使用apt与snap安装Ubuntu的软件包，以及安装专为Ubuntu所提供的deb二进制包，不必担心影响宿主deepin系统的稳定性。",
+      "qas": [
+        {
+          "id": "1-86-15",
+          "question": "进入Distrobox子系统后，可以像宿主系统一样访问哪些内容？",
+          "answers": [
+            {
+              "text": "网络、用户目录下的文件，以及启动图形应用",
+              "answer_start": 30
+            }
+          ]
+        },
+        {
+          "id": "1-86-16",
+          "question": "在Ubuntu子系统中可以使用哪些工具安装软件包？",
+          "answers": [
+            {
+              "text": "apt与snap，以及安装专为Ubuntu所提供的deb二进制包",
+              "answer_start": 110
+            }
+          ]
+        },
+        {
+          "id": "1-86-17",
+          "question": "在Ubuntu子系统中安装软件包会影响宿主deepin系统的稳定性吗？",
+          "answers": [
+            {
+              "text": "不会",
+              "answer_start": 209
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Distrobox 能运行 Ubuntu 子系统，还可以安装包括 Debian、Arch Linux、Fedora、openSUSE 等“子系统”。支持的完整兼容列表参见：https://github.com/89luca89/distrobox/blob/main/docs/compatibility.md#containers-distros。deepin v23 所提供的 deepin v20 兼容方案（DCM）正是基于 Distrobox 的。在v23上创建deepin v20子系统的命令：distrobox create deepin-v20 --image docker.io/linuxdeepin/apricot。",
+      "qas": [
+        {
+          "id": "1-86-18",
+          "question": "除了Ubuntu，Distrobox还可以安装哪些发行版的子系统？",
+          "answers": [
+            {
+              "text": "包括 Debian、Arch Linux、Fedora、openSUSE 等",
+              "answer_start": 41
+            }
+          ]
+        },
+        {
+          "id": "1-86-19",
+          "question": "哪里可以查看Distrobox支持的完整兼容列表？",
+          "answers": [
+            {
+              "text": "https://github.com/89luca89/distrobox/blob/main/docs/compatibility.md#containers-distros",
+              "answer_start": 95
+            }
+          ]
+        },
+        {
+          "id": "1-86-20",
+          "question": "deepin v23提供的deepin v20兼容方案（DCM）基于什么？",
+          "answers": [
+            {
+              "text": "Distrobox",
+              "answer_start": 215
+            }
+          ]
+        },
+        {
+          "id": "1-86-21",
+          "question": "在v23上创建deepin v20子系统的命令是什么？",
+          "answers": [
+            {
+              "text": "distrobox create deepin-v20 --image docker.io/linuxdeepin/apricot",
+              "answer_start": 265
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Distrobox 不仅仅能运行 Ubuntu 子系统，你还可以通过它来安装包括 Debian、Arch Linux、Fedora、openSUSE 等“子系统”！关于 distrobox 所支持的完整的兼容列表，可以参见官方给出的这个列表：https://github.com/89luca89/distrobox/blob/main/docs/compatibility.md#containers-distros 事实上，deepin v23 所提供的 deepin v20 兼容方案（DCM）正是基于 Distrobox 的。",
+      "qas": [
+        {
+          "id": "1-86-22",
+          "question": "deepin v20 兼容方案基于什么技术？",
+          "answers": [
+            {
+              "text": "基于 Distrobox",
+              "answer_start": 214
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

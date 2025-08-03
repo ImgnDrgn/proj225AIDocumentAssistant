@@ -1,0 +1,339 @@
+{
+  "data": [
+    {
+      "title": "minicom",
+      "paragraphs": [
+        {
+          "context": "minicom 是一个串口通信工具，就像 Windows 下的超级终端。可用来与串口设备通信，如调试交换机和 Modem 等",
+          "qas": [
+            {
+              "id": "1-91-1",
+              "question": "minicom是什么工具？",
+              "answers": [
+                {
+                  "text": "一个串口通信工具",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "1-91-2",
+              "question": "minicom类似Windows下的什么工具？",
+              "answers": [
+                {
+                  "text": "超级终端",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "1-91-3",
+              "question": "minicom可用于与哪些串口设备通信？",
+              "answers": [
+                {
+                  "text": "交换机和 Modem 等",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开深度终端输入 `sudo apt install minicom && sudo minicom`",
+          "qas": [
+            {
+              "id": "1-91-4",
+              "question": "如何在深度终端中安装并启动minicom？",
+              "answers": [
+                {
+                  "text": "输入 `sudo apt install minicom && sudo minicom`",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装好配置`sudo minicom -s`进去把端口设置下波特率等",
+          "qas": [
+            {
+              "id": "1-91-5",
+              "question": "安装minicom后，用什么命令进入配置界面设置端口和波特率？",
+              "answers": [
+                {
+                  "text": "sudo minicom -s",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "第一次运行minicom，启动minicom要以root权限登录系统，需要进行minicom的设置，输入下了命令#minicom –s，显示的屏幕如下所示,按上下光标键进行上下移动选择，我们要对串行端口进行设置，因此选中Serial port setup,然后回车：[configuration]配置│ Filenames and paths │//文件名和路径│ File transfer protocols│//文件传输协议│ Serial port setup │//串行端口设置│ Modem and dialing │//调制解调器和拨号│ Screen and keyboard │//屏幕和键盘│ Save setup as dfl │//设置保存到│ Save setup as.. │//储存设定为│ Exit │//退出│ Exit from Minicom │//退出minicom",
+          "qas": [
+            {
+              "id": "1-91-6",
+              "question": "第一次运行minicom需要什么权限？",
+              "answers": [
+                {
+                  "text": "root权限",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "1-91-7",
+              "question": "输入什么命令可以进入minicom的设置界面？",
+              "answers": [
+                {
+                  "text": "minicom –s",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "id": "1-91-8",
+              "question": "在minicom的配置界面中，哪个选项用于设置串行端口？",
+              "answers": [
+                {
+                  "text": "Serial port setup",
+                  "answer_start": 146
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "选中设置串行端口，点击回车后，弹出设置的界面如下：点击‖A‖设置串行设置为/dev/ttyS0,这表示使用串口1（com1）,如果是/dev/ttyS1则表示使用串口2(com 2).按‖E‖键进入设置‖bps/par/Bits‖（波特率）界面，如下图所示。再按‖I‖以设置波特率为115200，点‖F‖键硬件流控制设置为NO，回车最终的设置结果如下，然后回车返回到串口设置主菜单中│A-Serial Device（串口设备）/dev/ttyS0 │B-Lockfile Location（锁文件位置）: /var/lock │C-Callin Program（调入程序）│D-Callout Program（调出程序）│E-Bps/Par/Bits（）: 115200 8N1 │F-Hardware Flow Control（硬件数据流控制） No │G-Software Flow Control（软件数据流控制） No Change which setting? （改变这些设置）然后选中‖Save setup as dfl‖，按回车键保存刚才的设置。如下图所示：在选中‖EXit‖退出设置模式，刚才的设置保存到‖/etc/minirc.dfl‖，接着进入初始化模式。",
+          "qas": [
+            {
+              "id": "1-91-9",
+              "question": "在串行端口设置界面中，按哪个键可以设置串行设备？",
+              "answers": [
+                {
+                  "text": "‖A‖",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "id": "1-91-10",
+              "question": "/dev/ttyS0表示使用哪个串口？",
+              "answers": [
+                {
+                  "text": "串口1（com1）",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "id": "1-91-11",
+              "question": "按哪个键可以进入波特率设置界面？",
+              "answers": [
+                {
+                  "text": "‖E‖键",
+                  "answer_start": 105
+                }
+              ]
+            },
+            {
+              "id": "1-91-12",
+              "question": "如何将波特率设置为115200？",
+              "answers": [
+                {
+                  "text": "按‖I‖",
+                  "answer_start": 145
+                }
+              ]
+            },
+            {
+              "id": "1-91-13",
+              "question": "硬件流控制应设置为多少？",
+              "answers": [
+                {
+                  "text": "No",
+                  "answer_start": 182
+                }
+              ]
+            },
+            {
+              "id": "1-91-14",
+              "question": "设置完成后，选中哪个选项可以保存设置为默认？",
+              "answers": [
+                {
+                  "text": "Save setup as dfl",
+                  "answer_start": 437
+                }
+              ]
+            },
+            {
+              "id": "1-91-15",
+              "question": "minicom的设置保存到哪个文件中？",
+              "answers": [
+                {
+                  "text": "/etc/minirc.dfl",
+                  "answer_start": 515
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "或可以这样设置，打开终端输入minicom后，初始化进入minicom的欢迎界面，这里提示按‖Ctrl+A‖,再按‖Z‖键进入主配置目录 按下‖O‖键,并选择串口配置选项进行配置。接下来的配置是一样的。解析一下minicom命令摘要，命令将被执行当你按下Ctrl+D ,Key是对应的―字母‖键。“D”键：拨号目录“S”键：发送文件，上传文件有几种方式：zmodem,ymodem、xmodem、kermit、ascii “P”键：通信参数。对波特率进行设置。“L”键：捕捉开关。“F”键：发送中断。“T”键:终端设置。A-终端仿真：VT102终端B-Backspace键发送：DEL键C-状态一致：启动D-换行延迟（毫秒）:0 “W”键：换行开关“G”键：运行脚本“R”键：接收文件“A”键:添加一个换行符“H”键：挂断“M”键：初始化调制解调器“K”键：运行kermit进行刷屏“E”键：切换本地回显开关“C”键:清除屏幕“O”键：配置minicom “J”键:暂停minicom “X”键：退出和复位“Q”键:退出没有复位“I”键：光标模式“Z”键：帮助屏幕“B”键：滚动返回",
+          "qas": [
+            {
+              "id": "1-91-16",
+              "question": "除了用minicom -s，还有什么方式进入配置目录？",
+              "answers": [
+                {
+                  "text": "打开终端输入minicom后，按‖Ctrl+A‖,再按‖Z‖键进入主配置目录 按下‖O‖键",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "1-91-17",
+              "question": "minicom中，按哪个键可以发送文件？",
+              "answers": [
+                {
+                  "text": "“S”键",
+                  "answer_start": 185
+                }
+              ]
+            },
+            {
+              "id": "1-91-18",
+              "question": "minicom中发送文件有哪些方式？",
+              "answers": [
+                {
+                  "text": "zmodem,ymodem、xmodem、kermit、ascii",
+                  "answer_start": 207
+                }
+              ]
+            },
+            {
+              "id": "1-91-19",
+              "question": "按哪个键可以设置通信参数（波特率）？",
+              "answers": [
+                {
+                  "text": "“P”键",
+                  "answer_start": 251
+                }
+              ]
+            },
+            {
+              "id": "1-91-20",
+              "question": "按哪个键可以接收文件？",
+              "answers": [
+                {
+                  "text": "“R”键",
+                  "answer_start": 345
+                }
+              ]
+            },
+            {
+              "id": "1-91-21",
+              "question": "按哪个键可以配置minicom？",
+              "answers": [
+                {
+                  "text": "“O”键",
+                  "answer_start": 432
+                }
+              ]
+            },
+            {
+              "id": "1-91-22",
+              "question": "按哪个键可以退出并复位minicom？",
+              "answers": [
+                {
+                  "text": "“X”键",
+                  "answer_start": 467
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Minicom Advanced Systems 是一家 Intel 创投公司（Intel CapitalPortfolio），是针对带外服务器管理领域的数字和模拟KVM解决方案领商。另外，Minicom 同时也是针对数字告示领域的音视频和串口信号分配系统主导厂商。Minicom 公司成立于1987年，总部位于以色列耶路撒冷，拥有一座3600平米的办公大楼，包括研发、市场、销售和物流等部门。此外Minicom 在欧洲和美国具有区域总部，英国、意大利、法国和德国和中国具有销售支持队伍。在2005年，Minicom 收购了 Replicom公司，作为专注于IP技术的研发中心。历经20年的发展以及遍及全球50多个国家的业务，Minicom 的产品已经销售到上千个数据中心，无论小公司还是大型跨国企业。 Linux下的Minicom的功能与下的超级终端功能相似，适于在通过超级终端对设备的管理以及对嵌入操作系统的升级。",
+          "qas": [
+            {
+              "id": "1-91-23",
+              "question": "Minicom Advanced Systems属于哪家公司的创投公司？",
+              "answers": [
+                {
+                  "text": "Intel",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "1-91-24",
+              "question": "Minicom在带外服务器管理领域提供什么解决方案？",
+              "answers": [
+                {
+                  "text": "数字和模拟KVM解决方案",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "id": "1-91-25",
+              "question": "Minicom公司成立于哪一年？",
+              "answers": [
+                {
+                  "text": "1987年",
+                  "answer_start": 173
+                }
+              ]
+            },
+            {
+              "id": "1-91-26",
+              "question": "Minicom的总部位于哪里？",
+              "answers": [
+                {
+                  "text": "以色列耶路撒冷",
+                  "answer_start": 189
+                }
+              ]
+            },
+            {
+              "id": "1-91-27",
+              "question": "Minicom在2005年收购了哪家公司？",
+              "answers": [
+                {
+                  "text": "Replicom公司",
+                  "answer_start": 352
+                }
+              ]
+            },
+            {
+              "id": "1-91-28",
+              "question": "Minicom的业务遍及多少个国家？",
+              "answers": [
+                {
+                  "text": "50多个",
+                  "answer_start": 410
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装好配置 sudo minicom -s 进去把端口设置下波特率等",
+          "qas": [
+            {
+              "id": "1-91-29",
+              "question": "串口设置主要配置哪些参数？",
+              "answers": [
+                {
+                  "text": "端口设置下波特率等",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
