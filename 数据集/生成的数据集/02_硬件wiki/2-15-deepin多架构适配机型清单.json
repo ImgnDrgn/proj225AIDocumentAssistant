@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "title": "deepin多架构适配机型清单",
+      "paragraphs": [
+        {
+          "context": "RISC-V 设备适配\n\n以下是所有支持或曾有计划支持的 RISC-V 设备列表。\n\ndeepin 的 RISC-V 设备适配基线是：\n\n核心支持 rv64gc\n支持基本显示输出和键盘鼠标输入",
+          "qas": [
+            {
+              "question": "deepin的RISC-V设备适配基线有哪些要求？",
+              "id": "2-15-1",
+              "answers": [
+                {
+                  "text": "核心支持 rv64gc\n支持基本显示输出和键盘鼠标输入",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "这个段落是关于哪类设备的？",
+              "id": "2-15-2",
+              "answers": [
+                {
+                  "text": "支持或曾有计划支持的 RISC-V 设备",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "关于镜像\n\n除非明确说明，镜像的默认用户为：\n\nroot: deepin\n无普通用户\n\n除非明确说明，镜像将在第一次启动时进入安装器配置界面以引导创建用户",
+          "qas": [
+            {
+              "question": "镜像的默认root用户是什么？",
+              "id": "2-15-3",
+              "answers": [
+                {
+                  "text": "root: deepin",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "镜像是否有默认的普通用户？",
+              "id": "2-15-4",
+              "answers": [
+                {
+                  "text": "无普通用户",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "镜像第一次启动时会做什么？",
+              "id": "2-15-5",
+              "answers": [
+                {
+                  "text": "进入安装器配置界面以引导创建用户",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "支持设备列表\n\n见 https://deepin-community.github.io/sig-deepin-ports/matrix",
+          "qas": [
+            {
+              "question": "在哪里可以找到支持的RISC-V设备列表？",
+              "id": "2-15-6",
+              "answers": [
+                {
+                  "text": "https://deepin-community.github.io/sig-deepin-ports/matrix",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "计划支持但尚未有设备\n\n- MilkV Meles\n- MilkV Jupiter\n- Pine64 Star64\n- LicheeBook 4A\n- LicheeConsole 4A\n- LicheePadMax 4A\n- LicheePocket 4A",
+          "qas": [
+            {
+              "question": "列出所有计划支持但尚未有设备的型号。",
+              "id": "2-15-7",
+              "answers": [
+                {
+                  "text": "MilkV Meles\n- MilkV Jupiter\n- Pine64 Star64\n- LicheeBook 4A\n- LicheeConsole 4A\n- LicheePadMax 4A\n- LicheePocket 4A",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "不计划支持的设备\n\n- MilkV Duo (性能弱)\n- MilkV Duo S (性能弱)\n- LicheePad 4A (不适合桌面)",
+          "qas": [
+            {
+              "question": "为什么不计划支持MilkV Duo设备？",
+              "id": "2-15-8",
+              "answers": [
+                {
+                  "text": "性能弱",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "为什么不计划支持LicheePad 4A设备？",
+              "id": "2-15-9",
+              "answers": [
+                {
+                  "text": "不适合桌面",
+                  "answer_start": 58
+                }
+              ]
+            },
+            {
+              "question": "列出所有不计划支持的设备及其原因。",
+              "id": "2-15-10",
+              "answers": [
+                {
+                  "text": "MilkV Duo (性能弱)\n- MilkV Duo S (性能弱)\n- LicheePad 4A (不适合桌面)",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Loongarch 设备适配\n\n参考 deepin 版本发布日志。",
+          "qas": [
+            {
+              "question": "关于Loongarch设备适配，应参考什么？",
+              "id": "2-15-11",
+              "answers": [
+                {
+                  "text": "参考 deepin 版本发布日志",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

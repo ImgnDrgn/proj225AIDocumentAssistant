@@ -1,0 +1,564 @@
+{
+  "data": [
+    {
+      "title": "声卡",
+      "paragraphs": [
+        {
+          "context": "声卡 (Sound Card)也叫音频卡：声卡是多媒体技术中最基本的组成部分，是实现声波/数字信号相互转换的一种硬件。声卡的基本功能是把来自话筒、磁带、光盘的原始声音信号加以转换，输出到耳机、扬声器、扩音机、录音机等声响设备，或通过音乐设备数字接口(MIDI)使乐器发出美妙的声音。",
+          "qas": [
+            {
+              "id": "2-14-1",
+              "question": "声卡又叫什么？",
+              "answers": [
+                {
+                  "text": "音频卡",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "2-14-2",
+              "question": "声卡在多媒体技术中是什么角色？",
+              "answers": [
+                {
+                  "text": "最基本的组成部分",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "2-14-3",
+              "question": "声卡能实现什么转换？",
+              "answers": [
+                {
+                  "text": "声波/数字信号相互转换",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "2-14-4",
+              "question": "声卡的基本功能包括将原始声音信号转换后输出到哪些设备？",
+              "answers": [
+                {
+                  "text": "耳机、扬声器、扩音机、录音机等声响设备",
+                  "answer_start": 93
+                }
+              ]
+            },
+            {
+              "id": "2-14-5",
+              "question": "声卡如何使乐器发出声音？",
+              "answers": [
+                {
+                  "text": "通过音乐设备数字接口(MIDI)",
+                  "answer_start": 114
+                }
+              ]
+            },
+            {
+              "id": "2-14-6",
+              "question": "声卡的主要功能是什么？",
+              "answers": [
+                {
+                  "text": "把来自话筒、磁带、光盘的原始声音信号加以转换，输出到耳机、扬声器、扩音机、录音机等声响设备，或通过音乐设备数字接口(MIDI)使乐器发出美妙的声音",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "id": "2-14-7",
+              "question": "声卡如何输出声音信号？",
+              "answers": [
+                {
+                  "text": "输出到耳机、扬声器、扩音机、录音机等声响设备，或通过音乐设备数字接口(MIDI)使乐器发出美妙的声音",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "目前Linux下声卡系统主要有以下两种：1.高级Linux声音体系(ALSA) 高级Linux声音体系（英语：Advanced Linux Sound Architecture，缩写为ALSA）是Linux内核中，为声卡提供的驱动组件，以替代原先的OSS（开放声音系统）。一部分的目的是支持声卡的自动配置，以及完美的处理系统中的多个声音设备，这些目的大多都已达到。另一个声音框架JACK使用ALSA提供低延迟的专业级音频编辑和混音能力。2.开放声音系统(OSS) 开放声音系统（Open Sound System，OSS）是一个在 Unix 操作系统上用于发出和取得声音的接口。它是基于标准的 Unix 设备（即 POSIX 的读、写、ioctl 等）。",
+          "qas": [
+            {
+              "id": "2-14-8",
+              "question": "Linux下主要的声卡系统有哪两种？",
+              "answers": [
+                {
+                  "text": "高级Linux声音体系(ALSA)和开放声音系统(OSS)",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "2-14-9",
+              "question": "ALSA的全称是什么？",
+              "answers": [
+                {
+                  "text": "Advanced Linux Sound Architecture",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "id": "2-14-10",
+              "question": "ALSA的全称和缩写是什么？",
+              "answers": [
+                {
+                  "text": "高级Linux声音体系（英语：Advanced Linux Sound Architecture，缩写为ALSA）",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "id": "2-14-11",
+              "question": "ALSA在Linux内核中是什么角色？",
+              "answers": [
+                {
+                  "text": "为声卡提供的驱动组件，以替代原先的OSS（开放声音系统）",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "id": "2-14-12",
+              "question": "ALSA的部分目的是什么？",
+              "answers": [
+                {
+                  "text": "支持声卡的自动配置，以及完美的处理系统中的多个声音设备",
+                  "answer_start": 156
+                }
+              ]
+            },
+            {
+              "id": "2-14-13",
+              "question": "JACK如何利用ALSA？",
+              "answers": [
+                {
+                  "text": "使用ALSA提供低延迟的专业级音频编辑和混音能力",
+                  "answer_start": 225
+                }
+              ]
+            },
+            {
+              "id": "2-14-14",
+              "question": "OSS的全称是什么？",
+              "answers": [
+                {
+                  "text": "Open Sound System",
+                  "answer_start": 307
+                }
+              ]
+            },
+            {
+              "id": "2-14-15",
+              "question": "OSS是用于什么的接口？",
+              "answers": [
+                {
+                  "text": "在Unix操作系统上用于发出和取得声音",
+                  "answer_start": 332
+                }
+              ]
+            },
+            {
+              "id": "2-14-16",
+              "question": "OSS基于什么？",
+              "answers": [
+                {
+                  "text": "标准的 Unix 设备（即 POSIX 的读、写、ioctl 等）",
+                  "answer_start": 385
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令查询，终端执行：lspci | grep Audio   ##列出当前声卡信息",
+          "qas": [
+            {
+              "id": "2-14-17",
+              "question": "在终端中执行什么命令可以列出当前声卡信息？",
+              "answers": [
+                {
+                  "text": "lspci | grep Audio",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "2-14-18",
+              "question": "什么命令用于列出声卡信息？",
+              "answers": [
+                {
+                  "text": "lspci | grep Audio",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "2-14-19",
+              "question": "执行lspci | grep Audio的目的是什么？",
+              "answers": [
+                {
+                  "text": "列出当前声卡信息",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如果声卡出现问题，可以重装声卡相关模块和软件包解决问题。首先终端执行：sudo apt-get --purge remove alsa-base alsa-utils ##卸载声卡相关模块和软件包和对应配置文件。然后终端执行：sudo apt-get install alsa-base alsa-utils  ##安装声卡相关模块和软件包。",
+          "qas": [
+            {
+              "id": "2-14-20",
+              "question": "声卡出现问题时，一个解决方法是什么？",
+              "answers": [
+                {
+                  "text": "重装声卡相关模块和软件包解决问题",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "2-14-21",
+              "question": "声卡出现问题时，重装相关模块和软件包的第一步是什么？",
+              "answers": [
+                {
+                  "text": "终端执行：sudo apt-get --purge remove alsa-base alsa-utils",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "2-14-22",
+              "question": "卸载声卡相关模块和软件包及对应配置文件的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get --purge remove alsa-base alsa-utils",
+                  "answer_start": 46
+                }
+              ]
+            },
+            {
+              "id": "2-14-23",
+              "question": "卸载声卡模块的命令作用是什么？",
+              "answers": [
+                {
+                  "text": "卸载声卡相关模块和软件包和对应配置文件",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "id": "2-14-24",
+              "question": "安装声卡相关模块和软件包的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install alsa-base alsa-utils",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "id": "2-14-25",
+              "question": "重装声卡驱动的完整步骤是什么？",
+              "answers": [
+                {
+                  "text": "首先终端执行：sudo apt-get --purge remove alsa-base alsa-utils 卸载，然后 sudo apt-get install alsa-base alsa-utils 安装",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置声卡的方式也多，本条目使用alsamixer进行设置。终端执行：alsamixer。语法：alsamixer [options]。选项：-h，-help显示帮助信息。-c <card number or idenfication>指定需要设置的声卡，默认为0。-D <device identification>选择需要控制的调节器。-g设置界面颜色。-s最小化界面窗口。进入alsamixer界面后，可以使用下面快捷键进行控制：左右箭头或n，p用来选择通道。上下箭头或+，-同时调整选定通道的左右声道的音量。B，=设置左右声道音量相同。M静音当前通道。<，>分别对左，右声道静音。空格选择录音源，在选定的通道上按空格，可以标记此通道为录音源，此操作仅限输入设备。插入键或;，删除键或'分别选定左右通道。-L刷新屏幕。PageUp增大5格音量。PageDown减小5格音量。End设置音量为0。分别调整左，右或整个通道的音量。Q，W，E增大左，右，通道的音量。Z，X，C减小左，右，通道的音量。alt-q，ESC退出。没有声音，只有呲啦呲啦的噪音，查看PCM值是不是已经都到底，变成了0了，适当调高即可。无论音量大与小，都会时不时出现爆音，查看PCM值过是否高，过高就会出现爆音，调低PCM值即可。当音量调节较大时候，发现有很多的噪音，调节一下Front，把Mic适当降低一点，或者直接改成零即可。",
+          "qas": [
+            {
+              "id": "2-14-26",
+              "question": "本文使用什么工具设置声卡？",
+              "answers": [
+                {
+                  "text": "alsamixer",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "2-14-27",
+              "question": "在终端中如何启动alsamixer？",
+              "answers": [
+                {
+                  "text": "执行命令：alsamixer",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "2-14-28",
+              "question": "alsamixer的语法是什么？",
+              "answers": [
+                {
+                  "text": "alsamixer [options]",
+                  "answer_start": 55
+                }
+              ]
+            },
+            {
+              "id": "2-14-29",
+              "question": "alsamixer中，哪个选项可以显示帮助信息？",
+              "answers": [
+                {
+                  "text": "-h, -help",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "id": "2-14-30",
+              "question": "alsamixer中，-c选项的作用是什么？",
+              "answers": [
+                {
+                  "text": "指定需要设置的声卡，默认为0",
+                  "answer_start": 90
+                }
+              ]
+            },
+            {
+              "id": "2-14-31",
+              "question": "alsamixer中，-D选项的作用是什么？",
+              "answers": [
+                {
+                  "text": "选择需要控制的调节器",
+                  "answer_start": 135
+                }
+              ]
+            },
+            {
+              "id": "2-14-32",
+              "question": "alsamixer中，-g选项的作用是什么？",
+              "answers": [
+                {
+                  "text": "设置界面颜色",
+                  "answer_start": 162
+                }
+              ]
+            },
+            {
+              "id": "2-14-33",
+              "question": "alsamixer中，-s选项的作用是什么？",
+              "answers": [
+                {
+                  "text": "最小化界面窗口",
+                  "answer_start": 173
+                }
+              ]
+            },
+            {
+              "id": "2-14-34",
+              "question": "在alsamixer界面中，用什么快捷键选择通道？",
+              "answers": [
+                {
+                  "text": "左右箭头或n,p",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "2-14-35",
+              "question": "在alsamixer界面中，如何同时调整选定通道的左右声道音量？",
+              "answers": [
+                {
+                  "text": "上下箭头或+,-",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "id": "2-14-36",
+              "question": "在alsamixer界面中，哪个快捷键可以设置左右声道音量相同？",
+              "answers": [
+                {
+                  "text": "B,= ",
+                  "answer_start": 89
+                }
+              ]
+            },
+            {
+              "id": "2-14-37",
+              "question": "在alsamixer界面中，如何静音当前通道？",
+              "answers": [
+                {
+                  "text": "按M键",
+                  "answer_start": 101
+                }
+              ]
+            },
+            {
+              "id": "2-14-38",
+              "question": "在alsamixer界面中，如何分别对左、右声道静音？",
+              "answers": [
+                {
+                  "text": "<,>分别对左,右声道静音",
+                  "answer_start": 112
+                }
+              ]
+            },
+            {
+              "id": "2-14-39",
+              "question": "在alsamixer界面中，如何选择录音源？",
+              "answers": [
+                {
+                  "text": "在选定的通道上按空格，此操作仅限输入设备",
+                  "answer_start": 135
+                }
+              ]
+            },
+            {
+              "id": "2-14-40",
+              "question": "在alsamixer界面中，哪个快捷键可以刷新屏幕？",
+              "answers": [
+                {
+                  "text": "-L",
+                  "answer_start": 215
+                }
+              ]
+            },
+            {
+              "id": "2-14-41",
+              "question": "在alsamixer界面中，如何增大5格音量？",
+              "answers": [
+                {
+                  "text": "PageUp",
+                  "answer_start": 223
+                }
+              ]
+            },
+            {
+              "id": "2-14-42",
+              "question": "在alsamixer界面中，如何减小5格音量？",
+              "answers": [
+                {
+                  "text": "PageDown",
+                  "answer_start": 240
+                }
+              ]
+            },
+            {
+              "id": "2-14-43",
+              "question": "在alsamixer界面中，如何设置音量为0？",
+              "answers": [
+                {
+                  "text": "End",
+                  "answer_start": 258
+                }
+              ]
+            },
+            {
+              "id": "2-14-44",
+              "question": "在alsamixer界面中，用什么快捷键增大左、右、通道的音量？",
+              "answers": [
+                {
+                  "text": "Q,W,E",
+                  "answer_start": 285
+                }
+              ]
+            },
+            {
+              "id": "2-14-45",
+              "question": "在alsamixer界面中，用什么快捷键减小左、右、通道的音量？",
+              "answers": [
+                {
+                  "text": "Z,X,C",
+                  "answer_start": 310
+                }
+              ]
+            },
+            {
+              "id": "2-14-46",
+              "question": "在alsamixer界面中，如何退出？",
+              "answers": [
+                {
+                  "text": "alt-q,ESC",
+                  "answer_start": 335
+                }
+              ]
+            },
+            {
+              "id": "2-14-47",
+              "question": "没有声音，只有呲啦呲啦的噪音，可能是什么原因，如何解决？",
+              "answers": [
+                {
+                  "text": "可能是PCM值已经都到底，变成了0，适当调高即可",
+                  "answer_start": 362
+                }
+              ]
+            },
+            {
+              "id": "2-14-48",
+              "question": "无论音量大小都时不时出现爆音，可能是什么原因，如何解决？",
+              "answers": [
+                {
+                  "text": "可能是PCM值过高，调低PCM值即可",
+                  "answer_start": 432
+                }
+              ]
+            },
+            {
+              "id": "2-14-49",
+              "question": "音量调节较大时有很多噪音，如何解决？",
+              "answers": [
+                {
+                  "text": "调节一下Front，把Mic适当降低一点，或者直接改成零即可",
+                  "answer_start": 501
+                }
+              ]
+            },
+            {
+              "id": "2-14-50",
+              "question": "没有声音只有噪音时，可能原因是什么？",
+              "answers": [
+                {
+                  "text": "PCM值是不是已经都到底，变成了0了",
+                  "answer_start": 518
+                }
+              ]
+            },
+            {
+              "id": "2-14-51",
+              "question": "没有声音只有噪音时，如何解决？",
+              "answers": [
+                {
+                  "text": "适当调高PCM值即可",
+                  "answer_start": 550
+                }
+              ]
+            },
+            {
+              "id": "2-14-52",
+              "question": "出现爆音的可能原因是什么？",
+              "answers": [
+                {
+                  "text": "PCM值过是否高，过高就会出现爆音",
+                  "answer_start": 579
+                }
+              ]
+            },
+            {
+              "id": "2-14-53",
+              "question": "如何解决爆音问题？",
+              "answers": [
+                {
+                  "text": "调低PCM值即可",
+                  "answer_start": 609
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

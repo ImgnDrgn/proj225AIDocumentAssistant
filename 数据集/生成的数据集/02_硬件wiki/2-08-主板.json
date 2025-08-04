@@ -1,0 +1,239 @@
+{
+  "data": [
+    {
+      "title": "主板",
+      "paragraphs": [
+        {
+          "context": "主板（英语：Motherboard, Mainboard，简称Mobo）；又称主机板、系统板、逻辑板、母板、底板等，是构成复杂电子系统例如电子计算机的中心或者主电路板。",
+          "qas": [
+            {
+              "id": "2-8-1",
+              "question": "主板的英语名称有哪些？",
+              "answers": [
+                {
+                  "text": "Motherboard, Mainboard",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "2-8-2",
+              "question": "主板的简称是什么？",
+              "answers": [
+                {
+                  "text": "Mobo",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "2-8-3",
+              "question": "主板又称为什么？",
+              "answers": [
+                {
+                  "text": "主机板、系统板、逻辑板、母板、底板等",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "2-8-4",
+              "question": "主板是什么？",
+              "answers": [
+                {
+                  "text": "构成复杂电子系统例如电子计算机的中心或者主电路板",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "2-8-5",
+              "question": "主板的英文名称是什么？",
+              "answers": [
+                {
+                  "text": "Motherboard, Mainboard，简称Mobo",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "中央处理器（CPU）插槽（用来固定中央处理器）、存储器插槽、南桥、北桥",
+          "qas": [
+            {
+              "id": "2-8-6",
+              "question": "主板的构成部分有哪些？",
+              "answers": [
+                {
+                  "text": "中央处理器（CPU）插槽、存储器插槽、南桥、北桥",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "2-8-7",
+              "question": "中央处理器插槽的作用是什么？",
+              "answers": [
+                {
+                  "text": "用来固定中央处理器",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "目前主板固件一般有以下两种:1. 基本输入输出系统(BIOS) BIOS（Basic Input/Output System的缩写、中文：基本输出输入系统），是加载在电脑硬件系统上的最基本的软件代码。2. 统一可扩展固件接口(EFI) 统一可扩展固件接口（英语：Unified Extensible Firmware Interface，简称UEFI）是一种个人电脑系统规格，用来定义操作系统与系统软件之间的软件界面，为替代BIOS的升级方案。可扩展固件接口负责加电自检（POST）、连系操作系统以及提供连接操作系统与硬件的接口。统一可扩展固件接口(UEFI)最初是由英特尔开发，它原名为可扩展固件接口（英语：Extensible Firmware Interface，简称EFI）。现时由统一可扩展固件接口论坛（UEFI论坛）来推广与发展。",
+          "qas": [
+            {
+              "id": "2-8-8",
+              "question": "主板固件一般有哪两种？",
+              "answers": [
+                {
+                  "text": "基本输入输出系统(BIOS)、统一可扩展固件接口(EFI)",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "2-8-9",
+              "question": "BIOS的全称是什么？",
+              "answers": [
+                {
+                  "text": "Basic Input/Output System",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "id": "2-8-10",
+              "question": "BIOS是什么？",
+              "answers": [
+                {
+                  "text": "加载在电脑硬件系统上的最基本的软件代码",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "id": "2-8-11",
+              "question": "BIOS的中文名称是什么？",
+              "answers": [
+                {
+                  "text": "基本输出输入系统",
+                  "answer_start": 87
+                }
+              ]
+            },
+            {
+              "id": "2-8-12",
+              "question": "UEFI的全称是什么？",
+              "answers": [
+                {
+                  "text": "Unified Extensible Firmware Interface",
+                  "answer_start": 166
+                }
+              ]
+            },
+            {
+              "id": "2-8-13",
+              "question": "UEFI的作用是什么？",
+              "answers": [
+                {
+                  "text": "定义操作系统与系统软件之间的软件界面，为替代BIOS的升级方案；负责加电自检（POST）、连系操作系统以及提供连接操作系统与硬件的接口",
+                  "answer_start": 210
+                }
+              ]
+            },
+            {
+              "id": "2-8-14",
+              "question": "UEFI是什么？",
+              "answers": [
+                {
+                  "text": "一种个人电脑系统规格，用来定义操作系统与系统软件之间的软件界面，为替代BIOS的升级方案",
+                  "answer_start": 210
+                }
+              ]
+            },
+            {
+              "id": "2-8-15",
+              "question": "UEFI负责哪些功能？",
+              "answers": [
+                {
+                  "text": "负责加电自检（POST）、连系操作系统以及提供连接操作系统与硬件的接口",
+                  "answer_start": 271
+                }
+              ]
+            },
+            {
+              "id": "2-8-16",
+              "question": "UEFI最初由谁开发？",
+              "answers": [
+                {
+                  "text": "英特尔",
+                  "answer_start": 336
+                }
+              ]
+            },
+            {
+              "id": "2-8-17",
+              "question": "UEFI的原名叫什么？",
+              "answers": [
+                {
+                  "text": "可扩展固件接口（英语：Extensible Firmware Interface，简称EFI）",
+                  "answer_start": 351
+                }
+              ]
+            },
+            {
+              "id": "2-8-18",
+              "question": "谁负责推广与发展UEFI？",
+              "answers": [
+                {
+                  "text": "统一可扩展固件接口论坛（UEFI论坛）",
+                  "answer_start": 435
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "终端执行：dmidecode | grep -i 'serial number' ##查看主板信息 cat /proc/pci ##通过/proc文件查看主板信息",
+          "qas": [
+            {
+              "id": "2-8-19",
+              "question": "在终端如何查看主板信息？",
+              "answers": [
+                {
+                  "text": "dmidecode | grep -i 'serial number'",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "2-8-20",
+              "question": "如何查看主板序列号？",
+              "answers": [
+                {
+                  "text": "dmidecode | grep -i 'serial number'",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "2-8-21",
+              "question": "通过/proc文件查看主板信息的命令是什么？",
+              "answers": [
+                {
+                  "text": "cat /proc/pci",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

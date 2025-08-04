@@ -1,0 +1,729 @@
+{
+  "data": [
+    {
+      "title": "指令集及架构",
+      "paragraphs": [
+        {
+          "context": "在之前CPU页面简单讲过关于处理器的指令集以及架构，接下来我们详细了解一下几种常见的处理器架构。",
+          "qas": [
+            {
+              "id": "2-5-1",
+              "question": "简介部分提到接下来会详细了解什么？",
+              "answers": [
+                {
+                  "text": "几种常见的处理器架构",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "2-5-2",
+              "question": "这一部分的主要目的是什么？",
+              "answers": [
+                {
+                  "text": "详细了解一下几种常见的处理器架构",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "x86是目前个人计算机的主流处理器架构，泛指一系列基于Intel 8086且向后兼容的中央处理器指令集架构。最早的8086处理器于1978年由Intel推出，为16位微处理器。x86 架构于1978年推出的Intel 8086中央处理器中首度出现，它是从Intel 8008处理器中发展而来的，而8008则是发展自Intel 4004的。8086在三年后为IBM PC所选用，之后x86便成为了个人电脑的标准平台，成为了历来最成功的CPU架构。8086是16位处理器；直到1985年32位的80386的开发，这个架构都维持是16位。接着一系列的处理器表示了32位架构的细微改进，推出了数种的扩展，直到2003年AMD对于这个架构发展了64位的扩展，并命名为AMD64。后来英特尔也推出了与之兼容的处理器，并命名为Intel 64。两者一般被统称为x86-64或x64，开创了x86的64位时代。",
+          "qas": [
+            {
+              "id": "2-5-3",
+              "question": "x86架构基于什么且向后兼容？",
+              "answers": [
+                {
+                  "text": "Intel 8086",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "id": "2-5-4",
+              "question": "最早的8086处理器是哪一年由谁推出的？",
+              "answers": [
+                {
+                  "text": "1978年，Intel",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "id": "2-5-5",
+              "question": "8086处理器是多少位的？",
+              "answers": [
+                {
+                  "text": "16位",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "id": "2-5-6",
+              "question": "x86架构是从哪款处理器发展而来的？",
+              "answers": [
+                {
+                  "text": "Intel 8008（8008发展自Intel 4004）",
+                  "answer_start": 145
+                }
+              ]
+            },
+            {
+              "id": "2-5-7",
+              "question": "哪款32位处理器在1985年开发，使x86架构从16位过渡到32位？",
+              "answers": [
+                {
+                  "text": "80386",
+                  "answer_start": 310
+                }
+              ]
+            },
+            {
+              "id": "2-5-8",
+              "question": "AMD在2003年对x86架构发展的64位扩展叫什么？",
+              "answers": [
+                {
+                  "text": "AMD64",
+                  "answer_start": 425
+                }
+              ]
+            },
+            {
+              "id": "2-5-9",
+              "question": "Intel推出的与AMD64兼容的64位处理器命名为什么？",
+              "answers": [
+                {
+                  "text": "Intel 64",
+                  "answer_start": 465
+                }
+              ]
+            },
+            {
+              "id": "2-5-10",
+              "question": "AMD64和Intel 64统称为什么？",
+              "answers": [
+                {
+                  "text": "x86-64或x64",
+                  "answer_start": 492
+                }
+              ]
+            },
+            {
+              "id": "2-5-11",
+              "question": "x86架构的定义是什么？",
+              "answers": [
+                {
+                  "text": "一系列基于Intel 8086且向后兼容的中央处理器指令集架构",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在2022年的今天，x86处理器主要用于个人计算机，服务器以及超级计算机，其拥有超强的运算能力以及稳定性。然而，与各种精简指令集架构相比，x86处理器存在着能耗高，发热量大等问题。",
+          "qas": [
+            {
+              "id": "2-5-12",
+              "question": "2022年x86处理器主要用于哪些设备？",
+              "answers": [
+                {
+                  "text": "个人计算机，服务器以及超级计算机",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "2-5-13",
+              "question": "x86处理器的优点是什么？",
+              "answers": [
+                {
+                  "text": "超强的运算能力以及稳定性",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "2-5-14",
+              "question": "与精简指令集架构相比，x86处理器的缺点是什么？",
+              "answers": [
+                {
+                  "text": "能耗高，发热量大",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ARM架构是一个精简指令集（RISC）处理器架构，其广泛地使用在许多嵌入式系统设计。由于节能的特点，其在其他领域上也有很多作为。ARM处理器非常适用于移动通信领域，符合其主要设计目标为低成本、高性能、低耗电的特性。另一方面，超级计算机消耗大量电能，ARM同样被视作更高效的选择。",
+          "qas": [
+            {
+              "id": "2-5-15",
+              "question": "ARM架构属于什么类型的指令集架构？",
+              "answers": [
+                {
+                  "text": "精简指令集（RISC）",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "2-5-16",
+              "question": "ARM架构广泛用于什么系统设计？",
+              "answers": [
+                {
+                  "text": "许多嵌入式系统",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "2-5-17",
+              "question": "ARM处理器的主要设计目标是什么？",
+              "answers": [
+                {
+                  "text": "低成本、高性能、低耗电",
+                  "answer_start": 118
+                }
+              ]
+            },
+            {
+              "id": "2-5-18",
+              "question": "为什么ARM被视作超级计算机的更高效选择？",
+              "answers": [
+                {
+                  "text": "超级计算机消耗大量电能，而ARM具有节能的特点",
+                  "answer_start": 156
+                }
+              ]
+            },
+            {
+              "id": "2-5-19",
+              "question": "ARM架构为什么适合超级计算机？",
+              "answers": [
+                {
+                  "text": "被视作更高效的选择",
+                  "answer_start": 109
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ARM架构版本从ARMv3到ARMv7支持32位空间和32位算数运算，大部分架构的指令为定长32位（Thumb）指令集支持变长的指令集，提供对32位和16位指令集的支持），而2011年发布的ARMv8-A架构添加了对64位空间和64位算术运算的支持，同时也更新了32位定长指令集。",
+          "qas": [
+            {
+              "id": "2-5-20",
+              "question": "ARMv3到ARMv7支持多少位的空间和算数运算？",
+              "answers": [
+                {
+                  "text": "32位",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "2-5-21",
+              "question": "ARMv3到ARMv7大部分架构的指令是多少位定长的？",
+              "answers": [
+                {
+                  "text": "32位",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "id": "2-5-22",
+              "question": "Thumb指令集有什么特点？",
+              "answers": [
+                {
+                  "text": "支持变长的指令集，提供对32位和16位指令集的支持",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "id": "2-5-23",
+              "question": "哪一年发布的ARMv8-A架构添加了对64位的支持？",
+              "answers": [
+                {
+                  "text": "2011年",
+                  "answer_start": 156
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ARMv9架构发布，ARM正式开始弃用32位架构，但是仍保留了32位程序兼容性。ARM64已经与aarch64已经合并，他们为同一架构（一般Apple公司称之为ARM64，GNU/Linux称之为aarch64）",
+          "qas": [
+            {
+              "id": "2-5-24",
+              "question": "ARMv9架构发布后，ARM对32位架构采取了什么措施？",
+              "answers": [
+                {
+                  "text": "正式开始弃用32位架构，但仍保留了32位程序兼容性",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "2-5-25",
+              "question": "ARM64与aarch64是什么关系？",
+              "answers": [
+                {
+                  "text": "已经合并，为同一架构",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "id": "2-5-26",
+              "question": "Apple公司和GNU/Linux分别如何称呼ARM64与aarch64合并后的架构？",
+              "answers": [
+                {
+                  "text": "Apple公司称之为ARM64，GNU/Linux称之为aarch64",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "id": "2-5-27",
+              "question": "ARM64在GNU/Linux系统中通常被称为什么？",
+              "answers": [
+                {
+                  "text": "aarch64",
+                  "answer_start": 267
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MIPS（Microprocessor without Interlocked Pipeline Stages），是一种采取精简指令集（RISC）的指令集架构（ISA），由美国MIPS计算机系统公司开发，现为美普思科技。MIPS广泛被使用在许多电子产品、网络设备、个人娱乐设备与商业设备上。最早的MIPS架构是32位，最新的版本已经变成64位。2021年3月，MIPS宣布MIPS架构的开发已经结束，因为该公司正在向RISC-V过渡。",
+          "qas": [
+            {
+              "id": "2-5-28",
+              "question": "MIPS的全称是什么？",
+              "answers": [
+                {
+                  "text": "Microprocessor without Interlocked Pipeline Stages",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "2-5-29",
+              "question": "MIPS属于什么类型的指令集架构？",
+              "answers": [
+                {
+                  "text": "精简指令集（RISC）",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "id": "2-5-30",
+              "question": "MIPS是由哪家公司开发的？",
+              "answers": [
+                {
+                  "text": "美国MIPS计算机系统公司（现为美普思科技）",
+                  "answer_start": 84
+                }
+              ]
+            },
+            {
+              "id": "2-5-31",
+              "question": "MIPS广泛应用于哪些设备？",
+              "answers": [
+                {
+                  "text": "许多电子产品、网络设备、个人娱乐设备与商业设备",
+                  "answer_start": 135
+                }
+              ]
+            },
+            {
+              "id": "2-5-32",
+              "question": "最早的MIPS架构是多少位的？",
+              "answers": [
+                {
+                  "text": "32位",
+                  "answer_start": 199
+                }
+              ]
+            },
+            {
+              "id": "2-5-33",
+              "question": "MIPS架构的开发在什么时候宣布结束？",
+              "answers": [
+                {
+                  "text": "2021年3月",
+                  "answer_start": 232
+                }
+              ]
+            },
+            {
+              "id": "2-5-34",
+              "question": "MIPS公司结束MIPS架构开发后向什么过渡？",
+              "answers": [
+                {
+                  "text": "RISC-V",
+                  "answer_start": 291
+                }
+              ]
+            },
+            {
+              "id": "2-5-35",
+              "question": "MIPS架构最初和最新的版本分别是多少位？",
+              "answers": [
+                {
+                  "text": "最早的MIPS架构是32位，最新的版本已经变成64位",
+                  "answer_start": 94
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "RISC-V（发音为“risk-five”）是一个基于精简指令集（RISC）原则的开源指令集架构（ISA），简易解释为开源软件运动相对应的一种“开源硬件”。该项目2010年始于加州大学柏克莱分校，但许多贡献者是该大学以外的志愿者和行业工作者。与大多数指令集相比，RISC-V指令集可以自由地用于任何目的，允许任何人设计、制造和销售RISC-V芯片和软件而不必支付给任何公司专利费。虽然这不是第一个开源指令集，但它具有重要意义，因为其设计使其适用于现代计算设备（如仓库规模云计算机、高端移动电话和微小嵌入式系统）。设计者考虑到了这些用途中的性能与功率效率。该指令集还具有众多支持的软件，这解决了新指令集通常的弱点。",
+          "qas": [
+            {
+              "id": "2-5-36",
+              "question": "RISC-V的发音是什么？",
+              "answers": [
+                {
+                  "text": "risk-five",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "2-5-37",
+              "question": "RISC-V是基于什么原则的指令集架构？",
+              "answers": [
+                {
+                  "text": "精简指令集（RISC）",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "id": "2-5-38",
+              "question": "RISC-V被称为与开源软件运动相对应的什么？",
+              "answers": [
+                {
+                  "text": "开源硬件",
+                  "answer_start": 99
+                }
+              ]
+            },
+            {
+              "id": "2-5-39",
+              "question": "RISC-V项目始于哪一年，哪个机构？",
+              "answers": [
+                {
+                  "text": "2010年，加州大学柏克莱分校",
+                  "answer_start": 123
+                }
+              ]
+            },
+            {
+              "id": "2-5-40",
+              "question": "与大多数指令集相比，RISC-V的使用有什么特点？",
+              "answers": [
+                {
+                  "text": "可以自由地用于任何目的，允许任何人设计、制造和销售RISC-V芯片和软件而不必支付给任何公司专利费",
+                  "answer_start": 196
+                }
+              ]
+            },
+            {
+              "id": "2-5-41",
+              "question": "RISC-V适用于哪些现代计算设备？",
+              "answers": [
+                {
+                  "text": "仓库规模云计算机、高端移动电话和微小嵌入式系统",
+                  "answer_start": 342
+                }
+              ]
+            },
+            {
+              "id": "2-5-42",
+              "question": "设计者在RISC-V设计中考虑了哪些因素？",
+              "answers": [
+                {
+                  "text": "这些用途中的性能与功率效率",
+                  "answer_start": 415
+                }
+              ]
+            },
+            {
+              "id": "2-5-43",
+              "question": "RISC-V具有众多支持的软件解决了新指令集的什么弱点？",
+              "answers": [
+                {
+                  "text": "新指令集通常的弱点",
+                  "answer_start": 483
+                }
+              ]
+            },
+            {
+              "id": "2-5-44",
+              "question": "RISC-V项目的起始时间和地点是？",
+              "answers": [
+                {
+                  "text": "2010年始于加州大学柏克莱分校",
+                  "answer_start": 69
+                }
+              ]
+            },
+            {
+              "id": "2-5-45",
+              "question": "RISC-V指令集的开源特性包括什么？",
+              "answers": [
+                {
+                  "text": "允许任何人设计、制造和销售RISC-V芯片和软件而不必支付给任何公司专利费",
+                  "answer_start": 124
+                }
+              ]
+            },
+            {
+              "id": "2-5-46",
+              "question": "RISC-V设计考虑的关键因素是什么？",
+              "answers": [
+                {
+                  "text": "性能与功率效率",
+                  "answer_start": 250
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "目前，Deepin适配了多个RISC-V开发板，VisionFive2，SG2042以及LicheePi 4A",
+          "qas": [
+            {
+              "id": "2-5-47",
+              "question": "目前Deepin适配了哪些RISC-V开发板？",
+              "answers": [
+                {
+                  "text": "VisionFive2，SG2042以及LicheePi 4A",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LoongArch，简称LA，是一个龙芯中科研发的指令集架构。该架构包含了架构翻译（Architecture Translate）的指令子集，可在软硬配合下高效率翻译诸如x86-64、ARM架构、MIPS架构、RISC-V架构等指令集架构。龙芯目前支持运行 Debian、Deepin、Gentoo、UOS 等多种 Linux 发行版。",
+          "qas": [
+            {
+              "id": "2-5-48",
+              "question": "LoongArch的简称是什么？",
+              "answers": [
+                {
+                  "text": "LA",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "2-5-49",
+              "question": "LoongArch是由哪家公司研发的？",
+              "answers": [
+                {
+                  "text": "龙芯中科",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "2-5-50",
+              "question": "LoongArch包含的架构翻译指令子集有什么作用？",
+              "answers": [
+                {
+                  "text": "可在软硬配合下高效率翻译诸如x86-64、ARM架构、MIPS架构、RISC-V架构等指令集架构",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "id": "2-5-51",
+              "question": "龙芯目前支持运行哪些Linux发行版？",
+              "answers": [
+                {
+                  "text": "Debian、Deepin、Gentoo、UOS等多种",
+                  "answer_start": 186
+                }
+              ]
+            },
+            {
+              "id": "2-5-52",
+              "question": "LoongArch架构的翻译功能支持哪些指令集？",
+              "answers": [
+                {
+                  "text": "x86-64、ARM架构、MIPS架构、RISC-V架构",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Alpha是64位的RISC微处理器，支持VMS操作系统、Linux和BSD。最初由DEC公司制造，并被用于DEC自己的工作站和服务器中。作为VAX的后续被开发，支援VMS操作系统，如Digital UNIX。不久之后开放源代码的操作系统也可以在其上运行，如Linux。微软起初也支持这款处理器，但是从Windows 2000 beta3开始放弃了对Alpha的支持。",
+          "qas": [
+            {
+              "id": "2-5-53",
+              "question": "Alpha是多少位的微处理器？",
+              "answers": [
+                {
+                  "text": "64位",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "2-5-54",
+              "question": "Alpha属于什么类型的微处理器？",
+              "answers": [
+                {
+                  "text": "RISC",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "2-5-55",
+              "question": "Alpha支持哪些操作系统？",
+              "answers": [
+                {
+                  "text": "VMS操作系统、Linux和BSD",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "2-5-56",
+              "question": "Alpha最初由哪家公司制造？",
+              "answers": [
+                {
+                  "text": "DEC公司",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "id": "2-5-57",
+              "question": "Alpha最初被用于DEC的哪些设备中？",
+              "answers": [
+                {
+                  "text": "自己的工作站和服务器",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "id": "2-5-58",
+              "question": "Alpha是作为哪款处理器的后续被开发的？",
+              "answers": [
+                {
+                  "text": "VAX",
+                  "answer_start": 107
+                }
+              ]
+            },
+            {
+              "id": "2-5-59",
+              "question": "微软从哪个系统版本开始放弃对Alpha的支持？",
+              "answers": [
+                {
+                  "text": "Windows 2000 beta3",
+                  "answer_start": 226
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "目前，我国自主研发的神威·太湖之光超级计算机中使用的40960个神威26010处理器就是申威基于Alpha指令集研发的。申威原本属于Alpha阵营，指令集是基于Alpha进行扩展的。申威的技术来源是于DEC的Alpha 21164。目前Alpha已经被束之高阁，指令集和微结构都已经不再更新，技术专利过期。申威是目前Alpha阵营中仅存的硕果，拥有自主扩展指令和发展路线的自主权。",
+          "qas": [
+            {
+              "id": "2-5-60",
+              "question": "神威·太湖之光超级计算机中使用的处理器是什么？",
+              "answers": [
+                {
+                  "text": "40960个神威26010处理器",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "2-5-61",
+              "question": "神威26010处理器是基于什么指令集研发的？",
+              "answers": [
+                {
+                  "text": "Alpha指令集",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "id": "2-5-62",
+              "question": "申威原本属于哪个阵营？",
+              "answers": [
+                {
+                  "text": "Alpha阵营",
+                  "answer_start": 87
+                }
+              ]
+            },
+            {
+              "id": "2-5-63",
+              "question": "申威的技术来源是什么？",
+              "answers": [
+                {
+                  "text": "DEC的Alpha 21164",
+                  "answer_start": 127
+                }
+              ]
+            },
+            {
+              "id": "2-5-64",
+              "question": "目前Alpha的状态如何？",
+              "answers": [
+                {
+                  "text": "已经被束之高阁，指令集和微结构都已经不再更新，技术专利过期",
+                  "answer_start": 159
+                }
+              ]
+            },
+            {
+              "id": "2-5-65",
+              "question": "申威在Alpha阵营中的地位如何？",
+              "answers": [
+                {
+                  "text": "是目前Alpha阵营中仅存的硕果，拥有自主扩展指令和发展路线的自主权",
+                  "answer_start": 240
+                }
+              ]
+            },
+            {
+              "id": "2-5-66",
+              "question": "神威·太湖之光超级计算机使用了哪种基于Alpha的处理器？",
+              "answers": [
+                {
+                  "text": "40960个神威26010处理器",
+                  "answer_start": 149
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

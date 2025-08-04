@@ -1,0 +1,269 @@
+{
+  "data": [
+    {
+      "title": "deepin适配机型清单",
+      "paragraphs": [
+        {
+          "context": "昂达适配的机型为：台式机ONDA H110P PRO@Intel(R) Celeron(TM) G3900。",
+          "qas": [
+            {
+              "id": "2-16-1",
+              "question": "昂达有哪些适配的机型？",
+              "answers": [
+                {
+                  "text": "台式机ONDA H110P PRO@Intel(R) Celeron(TM) G3900",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "2-16-2",
+              "question": "ONDA H110P PRO@Intel(R) Celeron(TM) G3900是什么类型的设备？",
+              "answers": [
+                {
+                  "text": "台式机",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "2-16-3",
+              "question": "ONDA H110P PRO@Intel(R) Celeron(TM) G3900属于哪个品牌？",
+              "answers": [
+                {
+                  "text": "昂达",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "戴尔适配的机型包括：笔记本Dell Latitude E7240@Intel Core i5-4210U、Dell Inspiron N5110@Intel Core i5-2450M、Dell System Inspiron N4110@Intel Core i3-2330M，台式机Dell Precision Tower 3620@Intel(R) Core(TM) i3-6100、Dell Vostro 3902@Intel(R) Pentium(R) CPU G3220。",
+          "qas": [
+            {
+              "id": "2-16-4",
+              "question": "戴尔有哪些适配的笔记本机型？",
+              "answers": [
+                {
+                  "text": "Dell Latitude E7240@Intel Core i5-4210U、Dell Inspiron N5110@Intel Core i5-2450M、Dell System Inspiron N4110@Intel Core i3-2330M",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "2-16-5",
+              "question": "戴尔有哪些适配的台式机机型？",
+              "answers": [
+                {
+                  "text": "Dell Precision Tower 3620@Intel(R) Core(TM) i3-6100、Dell Vostro 3902@Intel(R) Pentium(R) CPU G3220",
+                  "answer_start": 99
+                }
+              ]
+            },
+            {
+              "id": "2-16-6",
+              "question": "Dell Latitude E7240@Intel Core i5-4210U属于哪种设备类型？",
+              "answers": [
+                {
+                  "text": "笔记本",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "东芝适配的机型包括：笔记本Toshiba Satellite L510@Intel Core i3-330M、Toshiba Satellite C40-A@Intel Core i3-3110M、TOSHIBA PSC6GQ-00W005@Intel Core i3-2328M。",
+          "qas": [
+            {
+              "id": "2-16-7",
+              "question": "东芝适配的机型类型是什么？",
+              "answers": [
+                {
+                  "text": "笔记本",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "2-16-8",
+              "question": "Toshiba Satellite L510@Intel Core i3-330M属于哪个品牌？",
+              "answers": [
+                {
+                  "text": "东芝",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "富士通适配的机型为：笔记本FUJITSU FJNB26C@Intel Core i5-3230M。",
+          "qas": [
+            {
+              "id": "2-16-9",
+              "question": "富士通有哪些适配机型？",
+              "answers": [
+                {
+                  "text": "笔记本FUJITSU FJNB26C@Intel Core i5-3230M",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "红米适配的机型为：笔记本Timi TM1607@Intel Core m3-7Y30。",
+          "qas": [
+            {
+              "id": "2-16-10",
+              "question": "红米适配的机型是什么？",
+              "answers": [
+                {
+                  "text": "笔记本Timi TM1607@Intel Core m3-7Y30",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "宏碁适配的机型包括：笔记本Acer Aspire E1-570G@Intel(R) Core(TM) i3-3217U CPU、Acer Aspire 4752@Intel Core i3-2330M、Acer Aspire 4750@Intel Core i5-2430M。",
+          "qas": [
+            {
+              "id": "2-16-11",
+              "question": "宏碁有哪些适配的笔记本机型？",
+              "answers": [
+                {
+                  "text": "Acer Aspire E1-570G@Intel(R) Core(TM) i3-3217U CPU、Acer Aspire 4752@Intel Core i3-2330M、Acer Aspire 4750@Intel Core i5-2430M",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "华硕适配的机型包括：笔记本Asus X455LF Series@Intel Core i3-4005U、Asus X550JD Series Notebook@Intel Core i7-4710HQ、Asus X555LI Series Notebook@Intel Core i5-5200U。",
+          "qas": [
+            {
+              "id": "2-16-12",
+              "question": "华硕适配的机型类型是什么？",
+              "answers": [
+                {
+                  "text": "笔记本",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "惠普适配的机型包括：笔记本HP 348 G3@Intel Core i3-6100U、HP ProBook 430 G1@Intel Core i5-4200U，台式机HP Pavilion Desktop PC 570-p0xx@Intel(R) Celeron(R) CPU G3900。",
+          "qas": [
+            {
+              "id": "2-16-13",
+              "question": "惠普有哪些适配的台式机机型？",
+              "answers": [
+                {
+                  "text": "HP Pavilion Desktop PC 570-p0xx@Intel(R) Celeron(R) CPU G3900",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "联想适配的机型包括：笔记本Lenovo 20243@Intel Core i3-4030U、Lenovo ThinkPad Edge E530@Intel Core i5-3320M，台式机Lenovo YangTian R4910d@Intel Pentium G3220。",
+          "qas": [
+            {
+              "id": "2-16-14",
+              "question": "联想有哪些适配的笔记本机型？",
+              "answers": [
+                {
+                  "text": "Lenovo 20243@Intel Core i3-4030U、Lenovo ThinkPad Edge E530@Intel Core i5-3320M",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ONDA H110P PRO@Intel(R) Celeron(TM) G3900 的品牌是 昂达，机型是 台式机。 Dell Latitude E7240@Intel Core i5-4210U 的品牌是 戴尔，机型是 笔记本。 Dell Inspiron N5110@Intel Core i5-2450M 的品牌是 戴尔，机型是 笔记本。 Dell System Inspiron N4110@Intel Core i3-2330M 的品牌是 戴尔，机型是 笔记本。 Dell Inspiron N4050@Intel Core i3-2330M CPU 的品牌是 戴尔，机型是 笔记本。",
+          "qas": [
+            {
+              "id": "2-16-15",
+              "question": "Dell Latitude E7240@Intel Core i5-4210U 的品牌是什么？",
+              "answers": [
+                {
+                  "text": "戴尔",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "2-16-16",
+              "question": "Dell Inspiron N5110@Intel Core i5-2450M 的品牌是什么？",
+              "answers": [
+                {
+                  "text": "戴尔",
+                  "answer_start": 125
+                }
+              ]
+            },
+            {
+              "id": "2-16-17",
+              "question": "Dell Inspiron N5110@Intel Core i5-2450M 机型是什么？",
+              "answers": [
+                {
+                  "text": "笔记本",
+                  "answer_start": 132
+                }
+              ]
+            },
+            {
+              "id": "2-16-18",
+              "question": "Dell System Inspiron N4110@Intel Core i3-2330M 的品牌是什么？",
+              "answers": [
+                {
+                  "text": "戴尔",
+                  "answer_start": 164
+                }
+              ]
+            },
+            {
+              "id": "2-16-19",
+              "question": "Dell System Inspiron N4110@Intel Core i3-2330M 机型是什么？",
+              "answers": [
+                {
+                  "text": "笔记本",
+                  "answer_start": 171
+                }
+              ]
+            },
+            {
+              "id": "2-16-20",
+              "question": "Dell Inspiron N4050@Intel Core i3-2330M CPU 的品牌是什么？",
+              "answers": [
+                {
+                  "text": "戴尔",
+                  "answer_start": 203
+                }
+              ]
+            },
+            {
+              "id": "2-16-21",
+              "question": "Dell Inspiron N4050@Intel Core i3-2330M CPU 机型是什么？",
+              "answers": [
+                {
+                  "text": "笔记本",
+                  "answer_start": 210
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

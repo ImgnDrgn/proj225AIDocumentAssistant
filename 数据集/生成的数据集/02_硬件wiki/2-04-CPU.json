@@ -1,0 +1,269 @@
+{
+  "data": [
+    {
+      "title": "CPU",
+      "paragraphs": [
+        {
+          "context": "CPU是整个计算机的运算大脑，是计算机最重要的部分之一。",
+          "qas": [
+            {
+              "id": "2-4-1",
+              "question": "CPU在计算机中被比喻为什么？",
+              "answers": [
+                {
+                  "text": "整个计算机的运算大脑",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "2-4-2",
+              "question": "CPU在计算机中处于什么地位？",
+              "answers": [
+                {
+                  "text": "是计算机最重要的部分之一",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "2-4-3",
+              "question": "什么是CPU？",
+              "answers": [
+                {
+                  "text": "是整个计算机的运算大脑，是计算机最重要的部分之一",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CPU架构可以理解为CPU的规范，不同的架构使用不同的指令集。指令集分为两种，一种是CISC复杂指令集，一种是RISC精简指令集，两种指令集各有优势。目前CPU的主流架构有PC端的x86，MIPS，移动端的ARM，RISC-V以及我国自研LoongArch架构。x86处理器是个人计算机以及服务器上最常见的架构，同时也是大多数Linux发行版支持的架构，deepin提供x86_64（AMD64）镜像下载。ARM处理器主要用于移动端，网络设施以及低功耗设备。目前市场主流的智能手机和路由器普遍采用ARM处理器，知名开源硬件树莓派同样使用了ARM处理器。目前，许多Linux发行版和软件提供ARM版本下载。LoongArch处理器是我国自主研发的CPU架构，目前已经得到很多主流开源社区的支持，Linux kernel 5.19已经初步支持龙芯架构。RISC-V处理器近年来迅速发展，许多RISC-V处理器出现在市场。",
+          "qas": [
+            {
+              "id": "2-4-4",
+              "question": "CPU架构可以理解为什么？",
+              "answers": [
+                {
+                  "text": "CPU的规范",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "2-4-5",
+              "question": "指令集分为哪两种类型？",
+              "answers": [
+                {
+                  "text": "CISC复杂指令集和RISC精简指令集",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "2-4-6",
+              "question": "目前CPU的主流架构有哪些？",
+              "answers": [
+                {
+                  "text": "PC端的x86，MIPS，移动端的ARM，RISC-V以及我国自研LoongArch架构",
+                  "answer_start": 74
+                }
+              ]
+            },
+            {
+              "id": "2-4-7",
+              "question": "x86处理器主要用于哪些设备？",
+              "answers": [
+                {
+                  "text": "个人计算机以及服务器",
+                  "answer_start": 139
+                }
+              ]
+            },
+            {
+              "id": "2-4-8",
+              "question": "deepin提供哪种架构的镜像下载？",
+              "answers": [
+                {
+                  "text": "x86_64（AMD64）",
+                  "answer_start": 168
+                }
+              ]
+            },
+            {
+              "id": "2-4-9",
+              "question": "哪些Linux发行版支持x86架构？",
+              "answers": [
+                {
+                  "text": "大多数Linux发行版支持的架构，deepin提供x86_64（AMD64）镜像下载",
+                  "answer_start": 153
+                }
+              ]
+            },
+            {
+              "id": "2-4-10",
+              "question": "ARM处理器主要应用在哪些设备上？",
+              "answers": [
+                {
+                  "text": "移动端，网络设施以及低功耗设备",
+                  "answer_start": 242
+                }
+              ]
+            },
+            {
+              "id": "2-4-11",
+              "question": "树莓派使用哪种处理器架构？",
+              "answers": [
+                {
+                  "text": "ARM",
+                  "answer_start": 305
+                }
+              ]
+            },
+            {
+              "id": "2-4-12",
+              "question": "什么知名硬件使用了ARM处理器？",
+              "answers": [
+                {
+                  "text": "知名开源硬件树莓派",
+                  "answer_start": 297
+                }
+              ]
+            },
+            {
+              "id": "2-4-13",
+              "question": "支持ARM架构的软件包括什么？",
+              "answers": [
+                {
+                  "text": "许多Linux发行版和软件提供ARM版本下载",
+                  "answer_start": 343
+                }
+              ]
+            },
+            {
+              "id": "2-4-14",
+              "question": "LoongArch处理器是哪国自主研发的？",
+              "answers": [
+                {
+                  "text": "我国自主研发的CPU架构",
+                  "answer_start": 402
+                }
+              ]
+            },
+            {
+              "id": "2-4-15",
+              "question": "Linux kernel从哪个版本支持LoongArch？",
+              "answers": [
+                {
+                  "text": "Linux kernel 5.19已经初步支持龙芯架构",
+                  "answer_start": 444
+                }
+              ]
+            },
+            {
+              "id": "2-4-16",
+              "question": "RISC-V处理器的发展现状如何？",
+              "answers": [
+                {
+                  "text": "近年来迅速发展，许多RISC-V处理器出现在市场",
+                  "answer_start": 488
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "中断其实就是由硬件或软件所发送的一种称为IRQ（中断请求）的信号。中断允许让设备，如键盘，串口卡，并口等设备表明它们需要CPU。一旦CPU接收了中断请求，CPU就会暂时停止执行正在运行的程序，并且调用一个称为中断处理器或中断服务程序（interrupt service routine）的特定程序。",
+          "qas": [
+            {
+              "id": "2-4-17",
+              "question": "什么是中断？",
+              "answers": [
+                {
+                  "text": "由硬件或软件所发送的一种称为IRQ（中断请求）的信号",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "2-4-18",
+              "question": "哪些设备可以通过中断表明需要CPU？",
+              "answers": [
+                {
+                  "text": "键盘，串口卡，并口等设备",
+                  "answer_start": 55
+                }
+              ]
+            },
+            {
+              "id": "2-4-19",
+              "question": "中断允许设备做什么？",
+              "answers": [
+                {
+                  "text": "表明它们需要CPU",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "id": "2-4-20",
+              "question": "当CPU接收中断请求时会发生什么？",
+              "answers": [
+                {
+                  "text": "暂时停止执行正在运行的程序，并且调用一个称为中断处理器或中断服务程序（interrupt service routine）的特定程序",
+                  "answer_start": 98
+                }
+              ]
+            },
+            {
+              "id": "2-4-21",
+              "question": "中断请求的缩写是什么？",
+              "answers": [
+                {
+                  "text": "IRQ",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CPU参数一般是由处理器厂商对用户提供的有关于处理器的详细信息，如核心数、主频、电压等。",
+          "qas": [
+            {
+              "id": "2-4-22",
+              "question": "CPU参数由谁提供给用户？",
+              "answers": [
+                {
+                  "text": "处理器厂商",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "2-4-23",
+              "question": "CPU参数是什么？",
+              "answers": [
+                {
+                  "text": "由处理器厂商对用户提供的有关于处理器的详细信息",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "2-4-24",
+              "question": "CPU参数包含哪些示例信息？",
+              "answers": [
+                {
+                  "text": "核心数、主频、电压等",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
