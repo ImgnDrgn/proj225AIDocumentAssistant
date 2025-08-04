@@ -1,0 +1,524 @@
+{
+  "data": [
+    {
+      "title": "Linux的文件系统及文件缓存知识点整理",
+      "paragraphs": [
+        {
+          "context": "文件系统要有严格的组织形式，使得文件能够以块为单位进行存储。文件系统中也要有索引区，用来方便查找一个文件分成的多个块都存放在了什么位置。如果文件系统中有的文件是热点文件，近期经常被读取和写入，文件系统应该有缓存层。文件应该用文件夹的形式组织起来，方便管理和查询。Linux内核要在自己的内存里面维护一套数据结构，来保存哪些文件被哪些进程打开和使用。",
+          "qas": [
+            {
+              "question": "文件系统中索引区的作用是什么？",
+              "id": "3-54-1",
+              "answers": [
+                {
+                  "text": "用来方便查找一个文件分成的多个块都存放在了什么位置。",
+                  "answer_start": 49
+                }
+              ]
+            },
+            {
+              "question": "为什么文件系统需要缓存层？",
+              "id": "3-54-2",
+              "answers": [
+                {
+                  "text": "如果文件系统中有的文件是热点文件，近期经常被读取和写入，文件系统应该有缓存层。",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "question": "Linux内核在内存中维护数据结构的目的是什么？",
+              "id": "3-54-3",
+              "answers": [
+                {
+                  "text": "保存哪些文件被哪些进程打开和使用。",
+                  "answer_start": 201
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "硬盘分成相同大小的单元，我们称为块（Block）。一块的大小是扇区大小的整数倍，默认是4K。在格式化的时候，这个值是可以设定的。一大块硬盘被分成了一个个小的块，用来存放文件的数据部分。这样一来，如果我们像存放一个文件，就不用给他分配一块连续的空间了。我们可以分散成一个个小块进行存放。这样就灵活得多，也比较容易添加、删除和插入数据。",
+          "qas": [
+            {
+              "question": "什么是块（Block）？",
+              "id": "3-54-4",
+              "answers": [
+                {
+                  "text": "硬盘分成相同大小的单元，我们称为块（Block）。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "块的默认大小是多少？",
+              "id": "3-54-5",
+              "answers": [
+                {
+                  "text": "4K",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "块的大小在什么时候可以设定？",
+              "id": "3-54-6",
+              "answers": [
+                {
+                  "text": "在格式化的时候，这个值是可以设定的。",
+                  "answer_start": 60
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "inode就是文件索引的意思，我们每个文件都会对应一个inode；一个文件夹就是一个文件，也对应一个inode。inode里面有文件的读写权限i_mode，属于哪个用户i_uid，哪个组i_gid，大小是多少i_size_io，占用多少个块i_blocks_io，i_atime是access time，是最近一次访问文件的时间；i_ctime是change time，是最近一次更改inode的时间；i_mtime是modify time，是最近一次更改文件的时间等。",
+          "qas": [
+            {
+              "question": "什么是inode？",
+              "id": "3-54-7",
+              "answers": [
+                {
+                  "text": "inode就是文件索引的意思，我们每个文件都会对应一个inode；一个文件夹就是一个文件，也对应一个inode。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "inode中的i_atime表示什么？",
+              "id": "3-54-8",
+              "answers": [
+                {
+                  "text": "最近一次访问文件的时间",
+                  "answer_start": 196
+                }
+              ]
+            },
+            {
+              "question": "i_ctime和i_mtime的区别是什么？",
+              "id": "3-54-9",
+              "answers": [
+                {
+                  "text": "i_ctime是change time，是最近一次更改inode的时间；i_mtime是modify time，是最近一次更改文件的时间。",
+                  "answer_start": 223
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在ext2和ext3中，其中前12项直接保存了块的位置，也就是说，我们可以通过i_block[0-11]，直接得到保存文件内容的块。但是，如果一个文件比较大，12块放不下。当我们用到i_block[12]的时候，就不能直接放数据块的位置了，要不然i_block很快就会用完了。那么可以让i_block[12]指向一个块，这个块里面不放数据块，而是放数据块的位置，这个块我们称为间接块。如果文件再大一些，i_block[13]会指向一个块，我们可以用二次间接块。二次间接块里面存放了间接块的位置，间接块里面存放了数据块的位置，数据块里面存放的是真正的数据。如果文件再大点，那么i_block[14]同理。",
+          "qas": [
+            {
+              "question": "在ext2和ext3中，i_block[0-11]的作用是什么？",
+              "id": "3-54-10",
+              "answers": [
+                {
+                  "text": "直接保存了块的位置，我们可以通过i_block[0-11]，直接得到保存文件内容的块。",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "什么是间接块？",
+              "id": "3-54-11",
+              "answers": [
+                {
+                  "text": "i_block[12]指向的一个块，这个块里面不放数据块，而是放数据块的位置，这个块我们称为间接块。",
+                  "answer_start": 167
+                }
+              ]
+            },
+            {
+              "question": "二次间接块的结构是怎样的？",
+              "id": "3-54-12",
+              "answers": [
+                {
+                  "text": "二次间接块里面存放了间接块的位置，间接块里面存放了数据块的位置，数据块里面存放的是真正的数据。",
+                  "answer_start": 265
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "为了解决这个问题，ext4做了一定的改变。它引入了一个新的概念，叫作Extents。比方说，一个文件大小为128M，如果使用4k大小的块进行存储，需要32k个块。如果按照ext2或者ext3那样散着放，数量太大了。但是Extents可以用于存放连续的块，也就是说，我们可以把128M放在一个Extents里面。这样的话，对大文件的读写性能提高了，文件碎片也减少了。",
+          "qas": [
+            {
+              "question": "ext4引入Extents的目的是什么？",
+              "id": "3-54-13",
+              "answers": [
+                {
+                  "text": "解决ext2和ext3中对大文件访问速度慢的问题，提高对大文件的读写性能，减少文件碎片。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Extents的作用是什么？",
+              "id": "3-54-14",
+              "answers": [
+                {
+                  "text": "Extents可以用于存放连续的块。",
+                  "answer_start": 190
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "inode的位图大小为4k，每一位对应一个inode。如果是1，表示这个inode已经被用了；如果是0，则表示没被用。block的位图同理。在Linux操作系统里面，想要创建一个新文件，会调用open函数，并且参数会有O_CREAT。这表示当文件找不到的时候，我们就需要创建一个。那么open函数的调用过程大致是：要打开一个文件，先要根据路径找到文件夹。如果发现文件夹下面没有这个文件，同时又设置了O_CREAT，就说明我们要在这个文件夹下面创建一个文件。创建一个文件，那么就需要创建一个inode，那么就会从文件系统里面读取inode位图，然后找到下一个为0的inode，就是空闲的inode。对于block位图，在写入文件的时候，也会有这个过程。",
+          "qas": [
+            {
+              "question": "inode位图中1和0分别表示什么？",
+              "id": "3-54-15",
+              "answers": [
+                {
+                  "text": "如果是1，表示这个inode已经被用了；如果是0，则表示没被用。",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "创建新文件时，如何找到空闲的inode？",
+              "id": "3-54-16",
+              "answers": [
+                {
+                  "text": "从文件系统里面读取inode位图，然后找到下一个为0的inode，就是空闲的inode。",
+                  "answer_start": 310
+                }
+              ]
+            },
+            {
+              "question": "open函数中O_CREAT参数的作用是什么？",
+              "id": "3-54-17",
+              "answers": [
+                {
+                  "text": "表示当文件找不到的时候，我们就需要创建一个。",
+                  "answer_start": 141
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件系统的格式 数据块的位图是放在一个块里面的，共4k。每位表示一个数据块，共可以表示4 * 1024 * 8 = 32768个数据块。如果每个数据块也是按默认的4K，最大可以表示空间为32768 * 4K = 128M，那么显然是不够的。这个时候就需要用到块组，数据结构为ext4_group_desc，这里面对于一个块组里的inode位图bg_inode_bitmap_lo、块位图bg_block_bitmap_lo、inode列表bg_inode_table_lo，都有相应的成员变量。",
+          "qas": [
+            {
+              "question": "数据块的位图能表示多少个数据块？",
+              "id": "3-54-18",
+              "answers": [
+                {
+                  "text": "32768个",
+                  "answer_start": 84
+                }
+              ]
+            },
+            {
+              "question": "为什么需要块组？",
+              "id": "3-54-19",
+              "answers": [
+                {
+                  "text": "数据块的位图最大可表示128M空间，显然不够，所以需要用到块组。",
+                  "answer_start": 107
+                }
+              ]
+            },
+            {
+              "question": "ext4_group_desc数据结构包含哪些与块组相关的成员变量？",
+              "id": "3-54-20",
+              "answers": [
+                {
+                  "text": "inode位图bg_inode_bitmap_lo、块位图bg_block_bitmap_lo、inode列表bg_inode_table_lo。",
+                  "answer_start": 185
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "我们还需要有一个数据结构，对整个文件系统的情况进行描述，这个就是超级块ext4_super_block。里面有整个文件系统一共有多少inode，s_inodes_count；一共有多少块，s_blocks_count_lo，每个块组有多少inode，s_inodes_per_group，每个块组有多少块，s_blocks_per_group等。这些都是这类的全局信息。默认情况下，超级块和块组描述符表都有副本保存在每一个块组里面。防止这些数据丢失了，导致整个文件系统都打不开了。",
+          "qas": [
+            {
+              "question": "什么是超级块ext4_super_block？",
+              "id": "3-54-21",
+              "answers": [
+                {
+                  "text": "对整个文件系统的情况进行描述的数据结构。",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "超级块ext4_super_block包含哪些全局信息？",
+              "id": "3-54-22",
+              "answers": [
+                {
+                  "text": "整个文件系统一共有多少inode，s_inodes_count；一共有多少块，s_blocks_count_lo，每个块组有多少inode，s_inodes_per_group，每个块组有多少块，s_blocks_per_group等。",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "question": "超级块和块组描述符表有副本保存在每一个块组里面的目的是什么？",
+              "id": "3-54-23",
+              "answers": [
+                {
+                  "text": "防止这些数据丢失了，导致整个文件系统都打不开了。",
+                  "answer_start": 275
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "由于如果每个块组里面都保存一份完整的块组描述符表，一方面方面很浪费空间；另一个方面，由于一个块组最大128M，而块组描述符表里面有多少项，这就限制了有多少个块组，128M * 块组的总数目是整个文件系统的大小，就被限制住了。因此引入Meta Block Groups特性。首先，块组描述符表不会保存所有块组的描述符了，而是将块组分成多个组，我们称为元块组（Meta Block Group）。每个元块组里面的块组描述符表仅仅包括自己的，一个元块组包含64个块组，这样一个元块组中的块组描述符表最多64项。",
+          "qas": [
+            {
+              "question": "引入Meta Block Groups特性的原因是什么？",
+              "id": "3-54-24",
+              "answers": [
+                {
+                  "text": "如果每个块组里面都保存一份完整的块组描述符表，一方面很浪费空间；另一个方面，由于一个块组最大128M，而块组描述符表里面有多少项，这就限制了有多少个块组，整个文件系统的大小就被限制住了。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "什么是元块组（Meta Block Group）？",
+              "id": "3-54-25",
+              "answers": [
+                {
+                  "text": "将块组分成多个组，每个元块组里面的块组描述符表仅仅包括自己的，一个元块组包含64个块组。",
+                  "answer_start": 236
+                }
+              ]
+            },
+            {
+              "question": "一个元块组中的块组描述符表最多有多少项？",
+              "id": "3-54-26",
+              "answers": [
+                {
+                  "text": "64项",
+                  "answer_start": 345
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "其实目录本身也是个文件，也有inode。inode里面也是指向一些块。和普通文件不同的是，普通文件的块里面保存的是文件数据，而目录文件的块里面保存的是目录里面一项一项的文件信息。这些信息我们称为ext4_dir_entry。在目录文件的块中，最简单的保存格式是列表，每一项都会保存这个目录的下一级的文件的文件名和对应的inode，通过这个inode，就能找到真正的文件。第一项是“.”，表示当前目录，第二项是“…”，表示上一级目录，接下来就是一项一项的文件名和inode。",
+          "qas": [
+            {
+              "question": "目录文件与普通文件的块有什么不同？",
+              "id": "3-54-27",
+              "answers": [
+                {
+                  "text": "普通文件的块里面保存的是文件数据，而目录文件的块里面保存的是目录里面一项一项的文件信息。",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "question": "目录文件的块中最简单的保存格式是什么？",
+              "id": "3-54-28",
+              "answers": [
+                {
+                  "text": "列表，每一项都会保存这个目录的下一级的文件的文件名和对应的inode。",
+                  "answer_start": 165
+                }
+              ]
+            },
+            {
+              "question": "目录文件块中第一项和第二项分别表示什么？",
+              "id": "3-54-29",
+              "answers": [
+                {
+                  "text": "第一项是“.”，表示当前目录，第二项是“…”，表示上一级目录。",
+                  "answer_start": 261
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ext4文件系统层对于ext4文件系统来讲，内核定义了一个ext4_file_operations。const struct file_operations ext4_file_operations = {...... .read_iter  = ext4_file_read_iter, .write_iter  = ext4_file_write_iter,......} ext4_file_read_iter会调用generic_file_read_iter，ext4_file_write_iter会调用__generic_file_write_iter。",
+          "qas": [
+            {
+              "question": "ext4_file_operations中与读写相关的成员变量是什么？",
+              "id": "3-54-30",
+              "answers": [
+                {
+                  "text": ".read_iter  = ext4_file_read_iter, .write_iter  = ext4_file_write_iter",
+                  "answer_start": 106
+                }
+              ]
+            },
+            {
+              "question": "ext4_file_read_iter会调用哪个函数？",
+              "id": "3-54-31",
+              "answers": [
+                {
+                  "text": "generic_file_read_iter",
+                  "answer_start": 163
+                }
+              ]
+            },
+            {
+              "question": "ext4_file_write_iter会调用哪个函数？",
+              "id": "3-54-32",
+              "answers": [
+                {
+                  "text": "__generic_file_write_iter",
+                  "answer_start": 198
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "generic_file_read_iter和__generic_file_write_iter有相似的逻辑，就是要区分是否用缓存。因此，根据是否使用内存做缓存，我们可以把文件的I/O操作分为两种类型。第一种类型是缓存I/O。大多数文件系统的默认I/O操作都是缓存I/O。对于读操作来讲，操作系统会先检查，内核的缓冲区有没有需要的数据。如果已经缓存了，那就直接从缓存中返回；否则从磁盘中读取，然后缓存在操作系统的缓存中。对于写操作来讲，操作系统会先将数据从用户空间复制到内核空间的缓存中。这时对用户程序来说，写操作就已经完成。至于什么时候再写到磁盘中由操作系统决定，除非显式地调用了sync同步命令。第二种类型是直接IO，就是应用程序直接访问磁盘数据，而不经过内核缓冲区，从而减少了在内核缓存和用户程序之间数据复制。",
+          "qas": [
+            {
+              "question": "文件的I/O操作分为哪两种类型？",
+              "id": "3-54-33",
+              "answers": [
+                {
+                  "text": "缓存I/O和直接IO。",
+                  "answer_start": 121
+                }
+              ]
+            },
+            {
+              "question": "缓存I/O的读操作过程是怎样的？",
+              "id": "3-54-34",
+              "answers": [
+                {
+                  "text": "操作系统会先检查，内核的缓冲区有没有需要的数据。如果已经缓存了，那就直接从缓存中返回；否则从磁盘中读取，然后缓存在操作系统的缓存中。",
+                  "answer_start": 180
+                }
+              ]
+            },
+            {
+              "question": "什么是直接IO？",
+              "id": "3-54-35",
+              "answers": [
+                {
+                  "text": "应用程序直接访问磁盘数据，而不经过内核缓冲区，从而减少了在内核缓存和用户程序之间数据复制。",
+                  "answer_start": 465
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "带缓存的写入操作我们先来看带缓存写入的函数generic_perform_write。ssize_t generic_perform_write(struct file *file, struct iov_iter *i, loff_t pos) { struct address_space *mapping = file->f_mapping; const struct address_space_operations *a_ops = mapping->a_ops; do { struct page *page; unsigned long offset;  /* Offset into pagecache page */ unsigned long bytes;  /* Bytes to write to page */ status = a_ops->write_begin(file, mapping, pos, bytes, flags, &page, &fsdata); copied = iov_iter_copy_from_user_atomic(page, i, offset, bytes); flush_dcache_page(page); status = a_ops->write_end(file, mapping, pos, bytes, copied, page, fsdata); pos += copied; written += copied; balance_dirty_pages_ratelimited(mapping); } while (iov_iter_count(i)); } 循环中主要做了这几件事：对于每一页，先调用address_space的write_begin做一些准备；调用iov_iter_copy_from_user_atomic，将写入的内容从用户态拷贝到内核态的页中；调用address_space的write_end完成写操作；调用balance_dirty_pages_ratelimited，看脏页是否太多，需要写回硬盘。所谓脏页，就是写入到缓存，但是还没有写入到硬盘的页面。",
+          "qas": [
+            {
+              "question": "带缓存写入的函数是什么？",
+              "id": "3-54-36",
+              "answers": [
+                {
+                  "text": "generic_perform_write",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "generic_perform_write循环中主要做了哪几件事？",
+              "id": "3-54-37",
+              "answers": [
+                {
+                  "text": "对于每一页，先调用address_space的write_begin做一些准备；调用iov_iter_copy_from_user_atomic，将写入的内容从用户态拷贝到内核态的页中；调用address_space的write_end完成写操作；调用balance_dirty_pages_ratelimited，看脏页是否太多，需要写回硬盘。",
+                  "answer_start": 502
+                }
+              ]
+            },
+            {
+              "question": "什么是脏页？",
+              "id": "3-54-38",
+              "answers": [
+                {
+                  "text": "写入到缓存，但是还没有写入到硬盘的页面。",
+                  "answer_start": 775
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "对于第一步，调用的是ext4_write_begin来说，主要做两件事：第一做日志相关的工作。ext4是一种日志文件系统，是为了防止突然断电的时候的数据丢失，引入了日志（Journal）模式。日志文件系统比非日志文件系统多了一个Journal区域。文件在ext4中分两部分存储，一部分是文件的元数据，另一部分是数据。元数据和数据的操作日志Journal也是分开管理的。你可以在挂载ext4的时候，选择Journal模式。这种模式在将数据写入文件系统前，必须等待元数据和数据的日志已经落盘才能发挥作用。这样性能比较差，但是最安全。另一种模式是order模式。这个模式不记录数据的日志，只记录元数据的日志，但是在写元数据的日志前，必须先确保数据已经落盘。这个折中，是默认模式。还有一种模式是writeback，不记录数据的日志，仅记录元数据的日志，并且不保证数据比元数据先落盘。这个性能最好，但是最不安全。第二调用grab_cache_page_write_begin来，得到应该写入的缓存页。",
+          "qas": [
+            {
+              "question": "ext4_write_begin主要做哪两件事？",
+              "id": "3-54-39",
+              "answers": [
+                {
+                  "text": "第一做日志相关的工作；第二调用grab_cache_page_write_begin来，得到应该写入的缓存页。",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "ext4的日志模式有哪几种？",
+              "id": "3-54-40",
+              "answers": [
+                {
+                  "text": "Journal模式、order模式、writeback模式。",
+                  "answer_start": 156
+                }
+              ]
+            },
+            {
+              "question": "ext4的默认日志模式是什么？",
+              "id": "3-54-41",
+              "answers": [
+                {
+                  "text": "order模式",
+                  "answer_start": 432
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "带缓存的读操作看带缓存的读，对应的是函数generic_file_buffered_read。static ssize_t generic_file_buffered_read(struct kiocb *iocb, struct iov_iter *iter, ssize_t written) { struct file *filp = iocb->ki_filp; struct address_space *mapping = filp->f_mapping; struct inode *inode = mapping->host; for (;;) { struct page *page; pgoff_t end_index; loff_t isize; page = find_get_page(mapping, index); if (!page) { if (iocb->ki_flags & IOCB_NOWAIT) goto would_block; page_cache_sync_readahead(mapping, ra, filp, index, last_index - index); page = find_get_page(mapping, index); if (unlikely(page == NULL)) goto no_cached_page; } if (PageReadahead(page)) { page_cache_async_readahead(mapping, ra, filp, page, index, last_index - index); } /* * Ok, we have the page, and it's up-to-date, so * now we can copy it to user space... */ ret = copy_page_to_iter(page, offset, nr, iter); } } 在generic_file_buffered_read函数中，我们需要先找到page cache里面是否有缓存页。如果没有找到，不但读取这一页，还要进行预读，这需要在page_cache_sync_readahead函数中实现。预读完了以后，再试一把查找缓存页。如果第一次找缓存页就找到了，我们还是要判断，是不是应该继续预读；如果需要，就调用page_cache_async_readahead发起一个异步预读。最后，copy_page_to_iter会将内容从内核缓存页拷贝到用户内存空间。",
+          "qas": [
+            {
+              "question": "带缓存的读操作对应的函数是什么？",
+              "id": "3-54-42",
+              "answers": [
+                {
+                  "text": "generic_file_buffered_read",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "在generic_file_buffered_read函数中，如果没有找到缓存页会怎么做？",
+              "id": "3-54-43",
+              "answers": [
+                {
+                  "text": "不但读取这一页，还要进行预读，这需要在page_cache_sync_readahead函数中实现。预读完了以后，再试一把查找缓存页。",
+                  "answer_start": 638
+                }
+              ]
+            },
+            {
+              "question": "在generic_file_buffered_read函数中，找到缓存页后可能会进行什么操作？",
+              "id": "3-54-44",
+              "answers": [
+                {
+                  "text": "判断是不是应该继续预读；如果需要，就调用page_cache_async_readahead发起一个异步预读。最后，copy_page_to_iter会将内容从内核缓存页拷贝到用户内存空间。",
+                  "answer_start": 757
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

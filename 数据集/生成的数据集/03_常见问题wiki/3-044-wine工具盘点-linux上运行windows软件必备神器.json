@@ -1,0 +1,374 @@
+{
+  "data": [
+    {
+      "title": "wine工具盘点-linux上运行windows软件必备神器",
+      "paragraphs": [
+        {
+          "context": "官网：https://www.winehq.org/ 教程1：https://www.bilibili.com/video/BV1Kv411e7oM?share_source=copy_web 教程2：https://www.bilibili.com/video/BV1X5411H7BP?share_source=copy_web 建议：原版wine学学就好，平时用后面几款工具更好。",
+          "qas": [
+            {
+              "question": "wine原版的官网是什么？",
+              "id": "3-44-1",
+              "answers": [
+                {
+                  "text": "https://www.winehq.org/",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "关于wine原版有哪些教程？",
+              "id": "3-44-2",
+              "answers": [
+                {
+                  "text": "https://www.bilibili.com/video/BV1Kv411e7oM?share_source=copy_web、https://www.bilibili.com/video/BV1X5411H7BP?share_source=copy_web",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "对于wine原版有什么使用建议？",
+              "id": "3-44-3",
+              "answers": [
+                {
+                  "text": "原版wine学学就好，平时用后面几款工具更好。",
+                  "answer_start": 147
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "deepin-wine",
+      "paragraphs": [
+        {
+          "context": "Deepin/UOS系统自带 教程1：https://www.bilibili.com/video/BV1Tu411i7UH/ 教程2：https://bbs.deepin.org/post/190801",
+          "qas": [
+            {
+              "question": "deepin-wine在哪些系统中是自带的？",
+              "id": "3-44-4",
+              "answers": [
+                {
+                  "text": "Deepin/UOS系统",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "deepin-wine的教程有哪些？",
+              "id": "3-44-5",
+              "answers": [
+                {
+                  "text": "https://www.bilibili.com/video/BV1Tu411i7UH/、https://bbs.deepin.org/post/190801",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "playonlinux",
+      "paragraphs": [
+        {
+          "context": "官网：https://www.playonlinux.com/en 下载链接：[官网版](https://www.playonlinux.com/script_files/PlayOnLinux/4.3.4/PlayOnLinux_4.3.4.deb) 教程1：https://bbs.deepin.org/post/189460 教程2：https://www.bilibili.com/video/BV1ii4y1876g?share_source=copy_web",
+          "qas": [
+            {
+              "question": "playonlinux的官网是什么？",
+              "id": "3-44-6",
+              "answers": [
+                {
+                  "text": "https://www.playonlinux.com/en",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "playonlinux的官网版下载链接是什么？",
+              "id": "3-44-7",
+              "answers": [
+                {
+                  "text": "https://www.playonlinux.com/script_files/PlayOnLinux/4.3.4/PlayOnLinux_4.3.4.deb",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "question": "playonlinux有哪些教程？",
+              "id": "3-44-8",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/post/189460、https://www.bilibili.com/video/BV1ii4y1876g?share_source=copy_web",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lutris/wine游戏助手",
+      "paragraphs": [
+        {
+          "context": "官网（国际）：https://lutris.net/ 国内版网址：https://winegame.net/games Gitee项目地址：[gitee.com/winegame/lutris](https://gitee.com/winegame/lutris) 下载链接：[Deepin商店版（wine游戏助手）](https://d.store.deepinos.org.cn/store/games/net.winegame.client/net.winegame.client_0.5.9.3_amd64.deb) 简述：免费的 教程：https://hu60.cn/q.php/bbs.topic.94926.html",
+          "qas": [
+            {
+              "question": "Lutris的国际版官网是什么？",
+              "id": "3-44-9",
+              "answers": [
+                {
+                  "text": "https://lutris.net/",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "wine游戏助手的国内版网址是什么？",
+              "id": "3-44-10",
+              "answers": [
+                {
+                  "text": "https://winegame.net/games",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "question": "Lutris的Gitee项目地址是什么？",
+              "id": "3-44-11",
+              "answers": [
+                {
+                  "text": "https://gitee.com/winegame/lutris",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "question": "wine游戏助手的Deepin商店版下载链接是什么？",
+              "id": "3-44-12",
+              "answers": [
+                {
+                  "text": "https://d.store.deepinos.org.cn/store/games/net.winegame.client/net.winegame.client_0.5.9.3_amd64.deb",
+                  "answer_start": 171
+                }
+              ]
+            },
+            {
+              "question": "Lutris/wine游戏助手是免费的吗？",
+              "id": "3-44-13",
+              "answers": [
+                {
+                  "text": "是免费的",
+                  "answer_start": 305
+                }
+              ]
+            },
+            {
+              "question": "Lutris/wine游戏助手的教程链接是什么？",
+              "id": "3-44-14",
+              "answers": [
+                {
+                  "text": "https://hu60.cn/q.php/bbs.topic.94926.html",
+                  "answer_start": 321
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Proton",
+      "paragraphs": [
+        {
+          "context": "ProtonDB社区网址：https://www.protondb.com/explore 教程：https://zhuanlan.zhihu.com/p/378551767?ivk_sa=1024320u",
+          "qas": [
+            {
+              "question": "ProtonDB社区的网址是什么？",
+              "id": "3-44-15",
+              "answers": [
+                {
+                  "text": "https://www.protondb.com/explore",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "Proton的教程链接是什么？",
+              "id": "3-44-16",
+              "answers": [
+                {
+                  "text": "https://zhuanlan.zhihu.com/p/378551767?ivk_sa=1024320u",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "crossover",
+      "paragraphs": [
+        {
+          "context": "官网（国际）：https://www.codeweavers.com/ 国内版网址：https://www.crossoverchina.com/ 下载链接：（1）[crossover-deepin专版（版本：17，免费）](https://d.store.deepinos.org.cn/store/others/crossover-deepin/crossover-deepin_17.1.0-1_i386.deb) （2）[中文收费版（版本：21）](https://cpv2.mairuan.com/crossoverchina.com/trial/Linux/crossover-21.2.0-1.deb) 教程：https://bbs.deepin.org/post/236789",
+          "qas": [
+            {
+              "question": "crossover的国际版官网是什么？",
+              "id": "3-44-17",
+              "answers": [
+                {
+                  "text": "https://www.codeweavers.com/",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "crossover的国内版网址是什么？",
+              "id": "3-44-18",
+              "answers": [
+                {
+                  "text": "https://www.crossoverchina.com/",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "crossover-deepin专版（版本17）的下载链接是什么？",
+              "id": "3-44-19",
+              "answers": [
+                {
+                  "text": "https://d.store.deepinos.org.cn/store/others/crossover-deepin/crossover-deepin_17.1.0-1_i386.deb",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "question": "crossover中文收费版（版本21）的下载链接是什么？",
+              "id": "3-44-20",
+              "answers": [
+                {
+                  "text": "https://cpv2.mairuan.com/crossoverchina.com/trial/Linux/crossover-21.2.0-1.deb",
+                  "answer_start": 217
+                }
+              ]
+            },
+            {
+              "question": "crossover的教程链接是什么？",
+              "id": "3-44-21",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/post/236789",
+                  "answer_start": 340
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Vek",
+      "paragraphs": [
+        {
+          "context": "官网：https://jacklee02.gitee.io/vek/ Gitee项目地址:https://gitee.com/JackLee02/vekGame 下载链接：[星火应用商店版](https://d.store.deepinos.org.cn/store/games/org.sea-group.raa/org.sea-group.raa_1.0.2.5_amd64.deb) 教程：https://jacklee02.gitee.io/vek/",
+          "qas": [
+            {
+              "question": "Vek的官网是什么？",
+              "id": "3-44-22",
+              "answers": [
+                {
+                  "text": "https://jacklee02.gitee.io/vek/",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "Vek的Gitee项目地址是什么？",
+              "id": "3-44-23",
+              "answers": [
+                {
+                  "text": "https://gitee.com/JackLee02/vekGame",
+                  "answer_start": 43
+                }
+              ]
+            },
+            {
+              "question": "Vek的星火应用商店版下载链接是什么？",
+              "id": "3-44-24",
+              "answers": [
+                {
+                  "text": "https://d.store.deepinos.org.cn/store/games/org.sea-group.raa/org.sea-group.raa_1.0.2.5_amd64.deb",
+                  "answer_start": 98
+                }
+              ]
+            },
+            {
+              "question": "Vek的教程链接是什么？",
+              "id": "3-44-25",
+              "answers": [
+                {
+                  "text": "https://jacklee02.gitee.io/vek/",
+                  "answer_start": 227
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wine 运行器",
+      "paragraphs": [
+        {
+          "context": "官网：https://gitee.com/gfdgd-xi/deep-wine-runner Gitee项目地址:https://gitee.com/gfdgd-xi/deep-wine-runner 下载链接：https://gitee.com/gfdgd-xi/deep-wine-runner/releases 教程：https://gitee.com/gfdgd-xi/deep-wine-runner#%E5%AF%B9%E4%BA%8E-deepinuosamd64-%E5%B9%B3%E5%8F%B0%E5%B0%8F%E7%99%BD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E8%AF%A5%E7%A8%8B%E5%BA%8F",
+          "qas": [
+            {
+              "question": "Wine 运行器的官网是什么？",
+              "id": "3-44-26",
+              "answers": [
+                {
+                  "text": "https://gitee.com/gfdgd-xi/deep-wine-runner",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "Wine 运行器的Gitee项目地址是什么？",
+              "id": "3-44-27",
+              "answers": [
+                {
+                  "text": "https://gitee.com/gfdgd-xi/deep-wine-runner",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "Wine 运行器的下载链接是什么？",
+              "id": "3-44-28",
+              "answers": [
+                {
+                  "text": "https://gitee.com/gfdgd-xi/deep-wine-runner/releases",
+                  "answer_start": 108
+                }
+              ]
+            },
+            {
+              "question": "Wine 运行器的教程链接是什么？",
+              "id": "3-44-29",
+              "answers": [
+                {
+                  "text": "https://gitee.com/gfdgd-xi/deep-wine-runner#%E5%AF%B9%E4%BA%8E-deepinuosamd64-%E5%B9%B3%E5%8F%B0%E5%B0%8F%E7%99%BD%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E8%AF%A5%E7%A8%8B%E5%BA%8F",
+                  "answer_start": 158
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

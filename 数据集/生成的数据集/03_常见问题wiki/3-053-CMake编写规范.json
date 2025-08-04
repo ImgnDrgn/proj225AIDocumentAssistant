@@ -1,0 +1,214 @@
+{
+  "data": [
+    {
+      "title": "CMake编写规范",
+      "paragraphs": [
+        {
+          "context": "CMake函数及关键字遵循小写，如cmake_minimum_required(VERSION 3.1)、project(dde-file-manager-lib)中的cmake_minimum_required、project。",
+          "qas": [
+            {
+              "question": "CMake函数及关键字应遵循什么大小写规则？",
+              "id": "3-53-1",
+              "answers": [
+                {
+                  "text": "小写",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "请举例说明遵循小写规则的CMake函数或关键字。",
+              "id": "3-53-2",
+              "answers": [
+                {
+                  "text": "cmake_minimum_required、project",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CMake变量大写，例如set(DFM_LIB_LOG_DIR \"${CMAKE_CURRENT_SOURCE_DIR}/log\")中的DFM_LIB_LOG_DIR等变量。",
+          "qas": [
+            {
+              "question": "CMake变量应遵循什么大小写规则？",
+              "id": "3-53-3",
+              "answers": [
+                {
+                  "text": "大写",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "question": "请举例说明大写的CMake变量。",
+              "id": "3-53-4",
+              "answers": [
+                {
+                  "text": "DFM_LIB_LOG_DIR",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在变量赋值中应当体现字符串和变量的区别，如message(\"message output 3DPARTY_DOCTOTEXT_SRC \" ${3DPARTY_DOCTOTEXT_SRC})中\"message output 3DPARTY_MOZILLA_SRC \"与${3DPARTY_MOZILLA_SRC}的区别。",
+          "qas": [
+            {
+              "question": "在变量赋值中应注意什么？",
+              "id": "3-53-5",
+              "answers": [
+                {
+                  "text": "体现字符串和变量的区别",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "请举例说明变量赋值中字符串和变量的区别。",
+              "id": "3-53-6",
+              "answers": [
+                {
+                  "text": "\"message output 3DPARTY_MOZILLA_SRC \"与${3DPARTY_MOZILLA_SRC}",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "多个变量或文件出现在一行应当换行，例如add_library (${PROJECT_NAME} SHARED下的多个变量分行列出。",
+          "qas": [
+            {
+              "question": "多个变量或文件出现在一行时应如何处理？",
+              "id": "3-53-7",
+              "answers": [
+                {
+                  "text": "应当换行",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "请举例说明多个变量或文件换行的情况。",
+              "id": "3-53-8",
+              "answers": [
+                {
+                  "text": "add_library (${PROJECT_NAME} SHARED下的多个变量分行列出",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "优先使用CMake自带宏标识路径，如set(DFM_LIB_LOG_DIR \"${CMAKE_CURRENT_SOURCE_DIR}/log\")中广泛使用的CMAKE_CURRENT_SOURCE_DIR。",
+          "qas": [
+            {
+              "question": "标识路径时优先使用什么？",
+              "id": "3-53-9",
+              "answers": [
+                {
+                  "text": "CMake自带宏",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "请举例说明用于标识路径的CMake自带宏。",
+              "id": "3-53-10",
+              "answers": [
+                {
+                  "text": "CMAKE_CURRENT_SOURCE_DIR",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "引用Qt应当多次使用find_package()函数，如find_package(Qt5 COMPONENTS Core REQUIRED)、find_package(Qt5 COMPONENTS Gui REQUIRED)等。",
+          "qas": [
+            {
+              "question": "引用Qt时应使用什么函数？",
+              "id": "3-53-11",
+              "answers": [
+                {
+                  "text": "find_package()",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "请举例说明引用Qt时使用find_package()函数的情况。",
+              "id": "3-53-12",
+              "answers": [
+                {
+                  "text": "find_package(Qt5 COMPONENTS Core REQUIRED)、find_package(Qt5 COMPONENTS Gui REQUIRED)",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如有相关复杂的配置和生涩的CMake语法，应当存在详尽的注释，如#Should You check package version，if want control the any package version. used old pkg-config对find_package(PkgConfig REQUIRED)的解释。",
+          "qas": [
+            {
+              "question": "对于复杂的配置和生涩的CMake语法应做什么处理？",
+              "id": "3-53-13",
+              "answers": [
+                {
+                  "text": "应当存在详尽的注释",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "请举例说明带有注释的复杂配置或生涩语法。",
+              "id": "3-53-14",
+              "answers": [
+                {
+                  "text": "#Should You check package version，if want control the any package version. used old pkg-config 与 find_package(PkgConfig REQUIRED)",
+                  "answer_start": 58
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如为通用库文件与接口文件或者应当编写PackageConfig.cmake。",
+          "qas": [
+            {
+              "question": "通用库文件与接口文件应当编写什么？",
+              "id": "3-53-15",
+              "answers": [
+                {
+                  "text": "PackageConfig.cmake",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "应当遵守CMake常用编写逻辑：首先CMake和环境配置，其次设置生成目标，最后设置安装路径。",
+          "qas": [
+            {
+              "question": "CMake常用编写逻辑的步骤是什么？",
+              "id": "3-53-16",
+              "answers": [
+                {
+                  "text": "首先CMake和环境配置，其次设置生成目标，最后设置安装路径。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

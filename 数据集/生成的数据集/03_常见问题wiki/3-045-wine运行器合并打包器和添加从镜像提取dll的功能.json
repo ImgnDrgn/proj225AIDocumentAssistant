@@ -1,0 +1,274 @@
+{
+  "data": [
+    {
+      "title": "wine运行器合并打包器和添加从镜像提取dll的功能",
+      "paragraphs": [
+        {
+          "context": "一个图形化了以下命令的程序：WINEPREFIX=容器路径 wine（wine的路径） 可执行文件路径",
+          "qas": [
+            {
+              "question": "该程序图形化了哪个命令？",
+              "id": "3-45-1",
+              "answers": [
+                {
+                  "text": "WINEPREFIX=容器路径 wine（wine的路径） 可执行文件路径",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打包器可以方便的把您的 wine 容器打包成 deb 包供他人使用，程序创建的 deb 构建临时文件夹目录树包含DEBIAN、opt等目录，其中DEBIAN下有control文件，opt下有apps，apps下有XXX，XXX下有entries、files、info，entries下有applications和icons等。",
+          "qas": [
+            {
+              "question": "打包器的作用是什么？",
+              "id": "3-45-2",
+              "answers": [
+                {
+                  "text": "方便的把您的 wine 容器打包成 deb 包供他人使用",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "程序创建的deb构建临时文件夹中DEBIAN目录下有什么文件？",
+              "id": "3-45-3",
+              "answers": [
+                {
+                  "text": "control",
+                  "answer_start": 78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "该程序是使用 Python3 的 tkinter 构建的，测试平台包括deepin 20.6 1030；UOS 家庭版 21；Ubuntu 22.04",
+          "qas": [
+            {
+              "question": "该程序是用什么构建的？",
+              "id": "3-45-4",
+              "answers": [
+                {
+                  "text": "Python3 的 tkinter",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "该程序的测试平台有哪些？",
+              "id": "3-45-5",
+              "answers": [
+                {
+                  "text": "deepin 20.6 1030；UOS 家庭版 21；Ubuntu 22.04",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更新日志：1、添加并翻新了 deepin-wine5 打包器，改为 wine 打包器，支持常见 wine 的打包；2、新增 Visual Studio C++ 的安装程序；3、新增从系统安装镜像提取 DLL 到 wine 容器的功能（当前只支持 Windows XP 和 Windows Server 2003 的官方安装镜像）；4、修复了安装星火应用商店的 wine 运行器右键可执行文件打开方式没有 wine 运行器选项的问题；5、新增脚本，优化 deepin terminal 调用本程序脚本显示不佳的问题",
+          "qas": [
+            {
+              "question": "更新日志中第1条内容是什么？",
+              "id": "3-45-6",
+              "answers": [
+                {
+                  "text": "添加并翻新了 deepin-wine5 打包器，改为 wine 打包器，支持常见 wine 的打包",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "更新日志中新增了什么安装程序？",
+              "id": "3-45-7",
+              "answers": [
+                {
+                  "text": "Visual Studio C++ 的安装程序",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "question": "从系统安装镜像提取DLL到wine容器的功能支持哪些系统的官方安装镜像？",
+              "id": "3-45-8",
+              "answers": [
+                {
+                  "text": "Windows XP 和 Windows Server 2003",
+                  "answer_start": 139
+                }
+              ]
+            },
+            {
+              "question": "更新日志中第4条修复了什么问题？",
+              "id": "3-45-9",
+              "answers": [
+                {
+                  "text": "安装星火应用商店的 wine 运行器右键可执行文件打开方式没有 wine 运行器选项的问题",
+                  "answer_start": 215
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行器使用说明：1、使用终端运行该程序，可以看到 wine 以及程序本身的提示和报错;2、wine 32 位和 64 位的容器互不兼容;3、所有的 wine 和 winetricks 均需要自行安装（可以从 菜单栏=>程序 里面进行安装）;4、本程序支持带参数运行 wine 程序（之前版本也可以），只需要按以下格式即可：exe路径\\' 参数 （单引号需要输入）;5、wine 容器如果没有指定，则会默认为 ~/.wine",
+          "qas": [
+            {
+              "question": "如何看到wine以及程序本身的提示和报错？",
+              "id": "3-45-10",
+              "answers": [
+                {
+                  "text": "使用终端运行该程序",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "wine 32位和64位的容器是否兼容？",
+              "id": "3-45-11",
+              "answers": [
+                {
+                  "text": "互不兼容",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "wine和winetricks需要如何安装？",
+              "id": "3-45-12",
+              "answers": [
+                {
+                  "text": "自行安装，可以从菜单栏=>程序里面进行安装",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "question": "本程序支持带参数运行wine程序的格式是什么？",
+              "id": "3-45-13",
+              "answers": [
+                {
+                  "text": "exe路径\\' 参数 \\'（单引号需要输入）",
+                  "answer_start": 157
+                }
+              ]
+            },
+            {
+              "question": "wine容器如果没有指定，默认路径是什么？",
+              "id": "3-45-14",
+              "answers": [
+                {
+                  "text": "~/.wine",
+                  "answer_start": 235
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打包器使用说明：1、deb 打包软件包名要求：软件包名只能含有小写字母(a-z)、数字(0-9)、加号(+)和减号(-)、以及点号(.)，软件包名最短长度两个字符；它必须以字母开头;2、如果要填写路径，有“浏览……”按钮的是要填本计算机对应文件的路径，否则就是填写安装到其他计算机使用的路径;3、输入 wine 的容器路径时最后面请不要输入“/”;4、输入可执行文件的运行路径时是以“C:/XXX/XXX.exe”的格式进行输入，默认是以 C： 为开头，不用“\\”做命令的分隔，而是用“/”;5、.desktop 的图标只支持 PNG 格式和 SVG 格式，其他格式无法显示图标",
+          "qas": [
+            {
+              "question": "deb打包软件包名有什么要求？",
+              "id": "3-45-15",
+              "answers": [
+                {
+                  "text": "只能含有小写字母(a-z)、数字(0-9)、加号(+)和减号(-)、以及点号(.)，软件包名最短长度两个字符；它必须以字母开头",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "填写路径时，有“浏览……”按钮和没有该按钮的分别需要填写什么路径？",
+              "id": "3-45-16",
+              "answers": [
+                {
+                  "text": "有“浏览……”按钮的是要填本计算机对应文件的路径，否则就是填写安装到其他计算机使用的路径",
+                  "answer_start": 156
+                }
+              ]
+            },
+            {
+              "question": "输入wine的容器路径时需要注意什么？",
+              "id": "3-45-17",
+              "answers": [
+                {
+                  "text": "最后面请不要输入“/”",
+                  "answer_start": 275
+                }
+              ]
+            },
+            {
+              "question": "输入可执行文件的运行路径格式是什么？",
+              "id": "3-45-18",
+              "answers": [
+                {
+                  "text": "以“C:/XXX/XXX.exe”的格式进行输入，默认是以 C： 为开头，不用“\\”做命令的分隔，而是用“/”",
+                  "answer_start": 302
+                }
+              ]
+            },
+            {
+              "question": ".desktop的图标支持哪些格式？",
+              "id": "3-45-19",
+              "answers": [
+                {
+                  "text": "PNG 格式和 SVG 格式",
+                  "answer_start": 432
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载链接：Gitee：https://gitee.com/gfdgd-xi/deep-wine-runner；Github：https://github.com/gfdgd-xi/deep-wine-runner；Gitlink：https://www.gitlink.org.cn/gfdgd_xi/deep-wine-runner；蓝奏云：https://gfdgdxi.lanzouj.com/b01nz7y3e，密码:7oii；星火应用商店：spk://store/tools/spark-deepin-wine-runner",
+          "qas": [
+            {
+              "question": "该程序在Gitee上的下载链接是什么？",
+              "id": "3-45-20",
+              "answers": [
+                {
+                  "text": "https://gitee.com/gfdgd-xi/deep-wine-runner",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "该程序在Github上的下载链接是什么？",
+              "id": "3-45-21",
+              "answers": [
+                {
+                  "text": "https://github.com/gfdgd-xi/deep-wine-runner",
+                  "answer_start": 46
+                }
+              ]
+            },
+            {
+              "question": "该程序在蓝奏云的下载链接及密码是什么？",
+              "id": "3-45-22",
+              "answers": [
+                {
+                  "text": "https://gfdgdxi.lanzouj.com/b01nz7y3e，密码:7oii",
+                  "answer_start": 135
+                }
+              ]
+            },
+            {
+              "question": "该程序在星火应用商店的下载链接是什么？",
+              "id": "3-45-23",
+              "answers": [
+                {
+                  "text": "spk://store/tools/spark-deepin-wine-runner",
+                  "answer_start": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
