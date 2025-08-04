@@ -1,0 +1,65 @@
+{
+  "data": [
+    {
+      "title": "文件管理器常见问题",
+      "paragraphs": [
+        {
+          "context": "深度文件管理器中新建、修改目录内容不及时刷新时，可按下快捷键【Ctrl+Alt+T】打开终端，执行命令 sudo sysctl -a | grep fs.inotify.max_user_watches 查看当前监控数，再执行命令 sudo sysctl -w fs/inotify/max_user_watches=10000 修改目录内容。系统音效存放路径为“/usr/share/sounds/deepin/stereo”，可通过 cd /usr/share/sounds/deepin/stereo 进入，按文件名替换音效。强制清除回收站可按下快捷键【Ctrl+Alt+T】打开终端，执行命令 rm -rf ~/.local/share/Trash/files 。其他设备获取deepin共享文件夹内容需设置共享文件夹：选择要共享的文件夹，右键选择【共享文件夹】，在【共享管理】选项下勾选【共享文件夹】，设置权限，允许匿名访问。deepin和Windows10文件共享需在同一局域网，在deepin桌面建文件夹（如deepin共享文件夹）并建文件，右键点击文件夹选属性设置共享及权限，查看deepin IP（如192.168.1.15），在win10运行中输入IP（\192.168.1.15），输入deepin用户和密码。deepin查看windows共享文件：打开计算机-网络邻居-windows网络，搜索IP，用指令smb://IP地址/共享文件名称，输入用户名密码，WIN10输入IP后无需共享文件名（smb://IP地址）。deepin系统间查看共享文件：打开计算机-网络邻居-windows网络，搜索IP，用指令smb://IP地址，输入用户名密码。无法拷贝或新建文件到数据盘，在所属文件页打开终端，执行sudo chmod -R 777 /data 解锁。离线安装deb包有依赖问题，联网安装出现依赖时，保持/var/cache/apt/archives无deb包，执行apt-get install -f ，再拷贝相关deb包。vim编辑文档选中不能复制，修改/usr/share/vim/vim81/defaults.vim文件第79行参数为set mouse-=a 。修改文件扩展名：方法一右键文件选“属性”修改；方法二进入目录右键“在终端中打开”，执行mv filename.txt filename.sh 。主目录被误删（如/home/user），无法进DDE桌面但可进shell，Ctrl+Alt+F2进入tty2登陆，执行sudo mkdir /home/user 和sudo chown user:user /home/user 重建并设置权限。Deepin回收站无法清空：切换到root（su -），执行chown -R 用户名 /home/用户名/.local/share/Trash ，退出su（exit），执行chmod -R +w /home/用户名/.local/share/Trash ，再清空。Windows复制长文件名到deepin失败，修改文件名长度到200字符以内。UOS系统更改文件后缀名：文件管理器-设置-隐藏文件-重命名隐藏扩展名，去掉勾选。个别硬盘无法查看序列号，用sudo lshw -C disk 查看serial，常用硬盘会显示。",
+          "qas": [
+            {
+              "id": "3-60-1",
+              "question": "深度文件管理器中新建、修改目录内容不及时刷新该如何解决？",
+              "answers": [
+                {
+                  "text": "1. 按下快捷键【Ctrl+Alt+T】打开终端，执行命令 `sudo sysctl -a | grep fs.inotify.max_user_watches` 查看当前监控数。2. 执行命令 `sudo sysctl -w fs/inotify/max_user_watches=10000` 修改目录内容。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-60-2",
+              "question": "系统音效的存放路径是什么？如何进入该路径？",
+              "answers": [
+                {
+                  "text": "系统音效存放路径为“/usr/share/sounds/deepin/stereo”。可通过命令 `cd /usr/share/sounds/deepin/stereo` 进入该路径。",
+                  "answer_start": 179
+                }
+              ]
+            },
+            {
+              "id": "3-60-3",
+              "question": "如何强制清除回收站内容？",
+              "answers": [
+                {
+                  "text": "按下快捷键【Ctrl+Alt+T】打开终端，执行命令 `rm -rf ~/.local/share/Trash/files `强制清除回收站内容。",
+                  "answer_start": 316
+                }
+              ]
+            },
+            {
+              "id": "3-60-4",
+              "question": "其他设备如何获取deepin共享文件夹内容？",
+              "answers": [
+                {
+                  "text": "1. 选择一个要共享的文件夹，右键选择【共享文件夹】。2. 在【共享管理】选项下，勾选【共享此文件夹】，根据需要设置权限，匿名访问选择【允许】。",
+                  "answer_start": 435
+                }
+              ]
+            },
+            {
+              "id": "3-60-5",
+              "question": "deepin和Windows10如何实现文件共享？",
+              "answers": [
+                {
+                  "text": "前提条件是两台电脑在同一个局域网内。1. 在deepin操作系统里的桌面建立一个文件夹，例如：deepin共享文件夹，并且在文件夹中随便建一个文件；2. 再右键点击该文件夹，点击属性，设置共享管理及权限管理；3. 点击右下角网络连接，查看deepin系统的IP地址（如192.168.1.15）；4. 回到win10中，通过win r键，打开运行，然后输入IP地址：\\192.168.1.15 ，输入deepin操作系统用户和登录密码即可。",
+                  "answer_start": 579
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+    

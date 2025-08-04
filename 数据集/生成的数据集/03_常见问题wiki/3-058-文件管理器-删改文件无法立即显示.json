@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "title": "文件管理器-删改文件无法立即显示",
+      "paragraphs": [
+        {
+          "context": "在文件管理器使用过程中，新增、删除或重命名文件后无法立即显示修改，需离开再返回当前路径（刷新）才能看到，这是由于用户环境中其他程序监听文件，导致文件管理器使用inotify时触发系统监听上限。解决方法：在终端用命令新建文件sudo vi /etc/sysctl.d/watches.conf，输入fs.inotify.max_user_watches = 10485760，保存后注销重新登录即可。inotify允许程序监视文件更改，每个监视的文件需内核资源，Linux内核限制每个用户注册的文件观察程序数量，Ubuntu 20.04 LTS默认每个实例8192个。64位系统上每个inotify watch消耗约1kB内核内存，不交换到磁盘且不计入工作区内存限制。与inotify相关的内核调优选项有fs.inotify.max_queued_events（等待传送的事件数上限）、fs.inotify.max_user_instances（每个用户最大实例数）、fs.inotify.max_user_watches（最大文件和文件夹监视数）。可运行sysctl fs.inotify.{max_queued_events,max_user_instances,max_user_watches}查看设置值。识别消耗inotify watches的程序可使用inotify-consumers脚本，显示程序名称及注册的watches数量，也可用strace监视inotify_add_watch系统调用。解决文件观察程序限制可减少注册数量或增加限制，建议先减少，如排除不常更改的文件（如node_modules），许多工具提供配置设置。增加限制可修改sysctl配置文件或在Kubernetes集群应用DaemonSet，创建/etc/sysctl.d/watches.conf文件设置fs.inotify.max_user_watches = 10485760，DaemonSet会在每个Linux节点运行，新节点加入时也会部署，删除DaemonSet可用kubectl delete命令，设置会持续到节点重启或被其他程序修改。",
+          "qas": [
+            {
+              "id": "3-58-1",
+              "question": "文件管理器中文件删改后无法立即显示的原因是什么？",
+              "answers": [
+                {
+                  "text": "这是由于用户使用环境中有其它程序也在监听文件，文件管理器使用inotify时触发系统的监听上限导致的。",
+                  "answer_start": 78
+                }
+              ]
+            },
+            {
+              "id": "3-58-2",
+              "question": "如何通过终端命令解决文件管理器删改文件不立即显示的问题？",
+              "answers": [
+                {
+                  "text": "在终端使用命令新建文件sudo vi /etc/sysctl.d/watches.conf，输入fs.inotify.max_user_watches = 10485760，保存成功后注销用户，重新登录就可以正常使用啦。",
+                  "answer_start": 157
+                }
+              ]
+            },
+            {
+              "id": "3-58-3",
+              "question": "inotify的作用是什么？",
+              "answers": [
+                {
+                  "text": "inotify允许程序监视文件的更改，以便每当用户或程序修改文件时它们都会收到事件。",
+                  "answer_start": 296
+                }
+              ]
+            },
+            {
+              "id": "3-58-4",
+              "question": "Ubuntu 20.04 LTS上inotify的默认限制是多少？",
+              "answers": [
+                {
+                  "text": "在 Ubuntu 20.04 LTS 上，默认限制是每个实例 8,192 个手表。",
+                  "answer_start": 385
+                }
+              ]
+            },
+            {
+              "id": "3-58-5",
+              "question": "64位系统上每个inotify watch消耗多少内核内存？",
+              "answers": [
+                {
+                  "text": "在 64 位系统上，inotify程序注册的每个 watch 将消耗大约 1 kB 的内核内存",
+                  "answer_start": 435
+                }
+              ]
+            },
+            {
+              "id": "3-58-6",
+              "question": "与inotify相关的内核调优选项有哪些？",
+              "answers": [
+                {
+                  "text": "fs.inotify.max_queued_events: 等待传送到程序的文件通知事件数的上限；fs.inotify.max_user_instances：每个用户的最大inotify实例数（使用的程序inotify通常会创建一个实例，因此此限制不太可能导致问题）；fs.inotify.max_user_watches：程序可以监视更改的最大文件和文件夹数",
+                  "answer_start": 521
+                }
+              ]
+            },
+            {
+              "id": "3-58-7",
+              "question": "如何查看inotify相关的内核设置值？",
+              "answers": [
+                {
+                  "text": "要查看适用于您的工作区的这些设置的值，请运行：sysctl fs.inotify.{max_queued_events,max_user_instances,max_user_watches}",
+                  "answer_start": 695
+                }
+              ]
+            },
+            {
+              "id": "3-58-8",
+              "question": "如何识别消耗inotify watches的程序？",
+              "answers": [
+                {
+                  "text": "要识别消耗inotify watches 的程序，您可以使用总结/proc文件系统中可用信息的脚本，例如 inotify-consumers。要查看工具跟踪更改的特定文件，您可以使用它strace 来监视inotify_add_watch系统调用的调用",
+                  "answer_start": 835
+                }
+              ]
+            },
+            {
+              "id": "3-58-9",
+              "question": "解决文件观察程序限制有哪些方法？",
+              "answers": [
+                {
+                  "text": "如果遇到文件观察程序限制，您可以执行以下两项操作之一：减少文件观察者注册的数量；增加最大文件观察者限制",
+                  "answer_start": 1015
+                }
+              ]
+            },
+            {
+              "id": "3-58-10",
+              "question": "在Kubernetes集群中如何增加inotify的最大文件监视数？",
+              "answers": [
+                {
+                  "text": "您可以使用以下 DaemonSet kubectl apply：[DaemonSet配置内容]，这个 DaemonSet 将确保相应的 pod在集群中的每个Linux 节点上运行。当新节点加入集群时，例如在自动缩放事件期间，DaemonSet 将确保 pod 也在新节点上运行。",
+                  "answer_start": 1289
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
