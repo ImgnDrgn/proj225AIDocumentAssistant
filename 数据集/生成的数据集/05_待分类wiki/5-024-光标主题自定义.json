@@ -1,0 +1,164 @@
+{
+  "data": [
+    {
+      "title": "光标主题自定义",
+      "paragraphs": [
+        {
+          "context": "深度操作系统默认桌面环境下可安装鼠标主题。",
+          "qas": [
+            {
+              "question": "在哪个系统环境下可以安装鼠标主题？",
+              "id": "5-24-1",
+              "answers": [
+                {
+                  "text": "深度操作系统默认桌面环境下",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "便捷安装鼠标主题：下载deb后缀的主题文件，打开控制中心——个性化——鼠标设置。",
+          "qas": [
+            {
+              "question": "便捷安装鼠标主题的步骤是什么？",
+              "id": "5-24-2",
+              "answers": [
+                {
+                  "text": "下载deb后缀的主题文件，打开控制中心——个性化——鼠标设置。",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "便捷安装的鼠标主题文件通常是什么后缀名？",
+              "id": "5-24-3",
+              "answers": [
+                {
+                  "text": "deb",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "为所有用户手动安装鼠标主题：用sudo dde-file-manager /usr/share/icons打开目录，复制主题文件，进入/usr/share/icons/default/删除子文件，新建index.theme，内容为Inherits=主题文件夹名，最后在控制中心设置。",
+          "qas": [
+            {
+              "question": "为所有用户手动安装鼠标主题时，如何打开主题目录？",
+              "id": "5-24-4",
+              "answers": [
+                {
+                  "text": "终端执行：sudo dde-file-manager /usr/share/icons",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "为所有用户手动安装时，新建的index.theme文件内容是什么？",
+              "id": "5-24-5",
+              "answers": [
+                {
+                  "text": "Inherits=鼠标主题的文件夹名",
+                  "answer_start": 121
+                }
+              ]
+            },
+            {
+              "question": "为所有用户手动安装后，在哪里设置鼠标主题？",
+              "id": "5-24-6",
+              "answers": [
+                {
+                  "text": "控制中心——个性化——鼠标",
+                  "answer_start": 165
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "为当前用户安装鼠标主题（推荐，无需root）：下载主题文件，解压至~/.icons文件夹，在控制中心切换。",
+          "qas": [
+            {
+              "question": "为当前用户安装鼠标主题需要root权限吗？",
+              "id": "5-24-7",
+              "answers": [
+                {
+                  "text": "不需要",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "为当前用户安装鼠标主题时，主题文件解压到哪里？",
+              "id": "5-24-8",
+              "answers": [
+                {
+                  "text": "~/.icons文件夹",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "鼠标主题文件的特征：包含cursors文件夹和index.theme文件。",
+          "qas": [
+            {
+              "question": "如何确定一个文件是鼠标主题文件？",
+              "id": "5-24-9",
+              "answers": [
+                {
+                  "text": "包含cursors文件夹和index.theme文件",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载鼠标主题：用sudo dde-file-manager /usr/share/icons打开目录，删除不需要的主题文件。",
+          "qas": [
+            {
+              "question": "如何卸载鼠标主题？",
+              "id": "5-24-10",
+              "answers": [
+                {
+                  "text": "打开带Root权限的文件管理器进入/usr/share/icons目录，删除不需要的鼠标主题相关文件。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "鼠标主题资源可在https://www.gnome-look.org/browse/cat/107/ord/top/下载，国内访问可能慢。",
+          "qas": [
+            {
+              "question": "哪里可以下载鼠标主题资源？",
+              "id": "5-24-11",
+              "answers": [
+                {
+                  "text": "https://www.gnome-look.org/browse/cat/107/ord/top/",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "国内访问鼠标主题资源下载网站可能会有什么情况？",
+              "id": "5-24-12",
+              "answers": [
+                {
+                  "text": "比较慢",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

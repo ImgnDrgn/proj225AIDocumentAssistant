@@ -1,0 +1,214 @@
+{
+  "data": [
+    {
+      "title": "用apt-fast加速软件包下载",
+      "paragraphs": [
+        {
+          "context": "apt-fast是一款命令行工具，能够通过多线程下载软件包来提升下载应用和更新的速度。",
+          "qas": [
+            {
+              "question": "apt-fast是什么工具？",
+              "id": "5-26-1",
+              "answers": [
+                {
+                  "text": "apt-fast是一款命令行工具，能够通过多线程下载软件包来提升下载应用和更新的速度。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装软件包的命令：sudo apt install [软件包名]，输入后终端会列出将要安装的软件包并询问是否执行，输入Y并回车。",
+          "qas": [
+            {
+              "question": "安装软件包的命令是什么？",
+              "id": "5-26-2",
+              "answers": [
+                {
+                  "text": "sudo apt install [软件包名]",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "执行安装软件包命令后该如何操作？",
+              "id": "5-26-3",
+              "answers": [
+                {
+                  "text": "终端会列出将要安装的软件包并询问是否执行，输入Y并回车。",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "不知道软件包名时，可输入命令apt search --names-only [关键词]查询，关键词需短而准确。",
+          "qas": [
+            {
+              "question": "不知道软件包名时如何查询？",
+              "id": "5-26-4",
+              "answers": [
+                {
+                  "text": "输入命令apt search --names-only [关键词]查询，关键词需短而准确。",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更新系统和软件的命令：sudo apt update && sudo apt full-upgrade，终端会列出相关信息并询问是否执行，输入Y并回车。",
+          "qas": [
+            {
+              "question": "更新系统和软件的命令是什么？",
+              "id": "5-26-5",
+              "answers": [
+                {
+                  "text": "sudo apt update && sudo apt full-upgrade",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "执行更新系统和软件命令后该如何操作？",
+              "id": "5-26-6",
+              "answers": [
+                {
+                  "text": "终端会列出相关信息并询问是否执行，输入Y并回车。",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "执行带sudo的命令时需输入密码，密码不显示，输完按回车；跳过确认操作可在命令末尾加 -y；按Ctrl+C可终止命令运行。",
+          "qas": [
+            {
+              "question": "执行带sudo的命令时输入密码有什么特点？",
+              "id": "5-26-7",
+              "answers": [
+                {
+                  "text": "密码不显示，输完按回车。",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "如何跳过更改软件包前的确认操作？",
+              "id": "5-26-8",
+              "answers": [
+                {
+                  "text": "在命令的末尾加上 -y（注意空格）。",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "执行命令时如何终止运行？",
+              "id": "5-26-9",
+              "answers": [
+                {
+                  "text": "按Ctrl+C终止运行。",
+                  "answer_start": 69
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统若有星火应用商店，可直接用sudo apt install apt-fast安装apt-fast，但非最新版本。",
+          "qas": [
+            {
+              "question": "系统有星火应用商店时如何安装apt-fast？",
+              "id": "5-26-10",
+              "answers": [
+                {
+                  "text": "直接在终端执行命令 sudo apt install apt-fast 来安装它，但安装的apt-fast不是最新版本。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装apt-fast的步骤之一：进入/etc/apt/source.list.d/文件夹，以管理员身份打开，新建apt-fast.list文件。",
+          "qas": [
+            {
+              "question": "安装apt-fast时如何新建apt-fast.list文件？",
+              "id": "5-26-11",
+              "answers": [
+                {
+                  "text": "进入系统盘的/etc/apt/source.list.d/ 文件夹。右击窗口内空白处，点击“以管理员身份打开”，输入密码。待弹出新窗口后，在文件夹中新建一个任意格式的文件，将它的名称和后缀全部删除，改成 apt-fast.list 。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt-fast.list文件需写入：deb http://ppa.launchpad.net/apt-fast/stable/ubuntu focal main 和 deb-src http://ppa.launchpad.net/apt-fast/stable/ubuntu focal main。",
+          "qas": [
+            {
+              "question": "apt-fast.list文件中需要写入什么内容？",
+              "id": "5-26-12",
+              "answers": [
+                {
+                  "text": "deb http://ppa.launchpad.net/apt-fast/stable/ubuntu focal main deb-src http://ppa.launchpad.net/apt-fast/stable/ubuntu focal main",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装apt-fast需在终端依次执行：apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A2166B8DE8BDC3367D1901C11EE2FF37CA8DA16B、sudo apt update、sudo apt install apt-fast。",
+          "qas": [
+            {
+              "question": "安装apt-fast时在终端需要依次执行哪些命令？",
+              "id": "5-26-13",
+              "answers": [
+                {
+                  "text": "apt-key adv --keyserver keyserver.ubuntu.com --recv-keys A2166B8DE8BDC3367D1901C11EE2FF37CA8DA16B、sudo apt update、sudo apt install apt-fast",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装apt-fast时有3项设定，第1项选择apt，第2项和第3项按个人习惯选择。",
+          "qas": [
+            {
+              "question": "安装apt-fast时的设定有什么要求？",
+              "id": "5-26-14",
+              "answers": [
+                {
+                  "text": "第1项选择apt，第2项和第3项按个人习惯选择。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用apt-fast时，将命令中的apt替换成apt-fast即可，一般用于下载软件包或更新时。",
+          "qas": [
+            {
+              "question": "如何使用apt-fast？",
+              "id": "5-26-15",
+              "answers": [
+                {
+                  "text": "把命令中的 apt替换成 apt-fast再执行。一般只在下载软件包或更新时用到apt-fast。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

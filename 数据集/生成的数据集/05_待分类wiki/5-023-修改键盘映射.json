@@ -1,0 +1,144 @@
+{
+  "data": [
+    {
+      "title": "修改键盘映射",
+      "paragraphs": [
+        {
+          "context": "可借助gsettings命令调整系统键盘映射，适应不同用户需求。",
+          "qas": [
+            {
+              "question": "可以借助什么命令调整系统键盘映射？",
+              "id": "5-23-1",
+              "answers": [
+                {
+                  "text": "gsettings",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看所有键盘映射可用命令：localectl list-x11-keymap-options。",
+          "qas": [
+            {
+              "question": "查看所有键盘映射的命令是什么？",
+              "id": "5-23-2",
+              "answers": [
+                {
+                  "text": "localectl list-x11-keymap-options",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看与CapsLock键有关的映射可用命令：localectl list-x11-keymap-options | grep caps:。",
+          "qas": [
+            {
+              "question": "如何查看与CapsLock键有关的映射？",
+              "id": "5-23-3",
+              "answers": [
+                {
+                  "text": "localectl list-x11-keymap-options | grep caps:",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "取消按下CapsLock时的osd提示框：gsettings set com.deepin.dde.keybinding.mediakey capslock '[]'。",
+          "qas": [
+            {
+              "question": "如何取消按下CapsLock时的osd提示框？",
+              "id": "5-23-4",
+              "answers": [
+                {
+                  "text": "gsettings set com.deepin.dde.keybinding.mediakey capslock '[]'",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "交换CapsLock与Esc键：gsettings set com.deepin.dde.keyboard layout-options '[\"caps:swapescape\"]'。",
+          "qas": [
+            {
+              "question": "怎样交换CapsLock与Esc键？",
+              "id": "5-23-5",
+              "answers": [
+                {
+                  "text": "gsettings set com.deepin.dde.keyboard layout-options '[\"caps:swapescape\"]'",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "禁用CapsLock键：gsettings set com.deepin.dde.keyboard layout-options '[\"caps:none\"]'。",
+          "qas": [
+            {
+              "question": "如何禁用CapsLock键？",
+              "id": "5-23-6",
+              "answers": [
+                {
+                  "text": "gsettings set com.deepin.dde.keyboard layout-options '[\"caps:none\"]'",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "单独恢复CapsLock键原设置：gsettings reset com.deepin.dde.keybinding.mediakey capslock；gsettings reset com.deepin.dde.keyboard layout-options。",
+          "qas": [
+            {
+              "question": "如何单独恢复CapsLock键的原先设置？",
+              "id": "5-23-7",
+              "answers": [
+                {
+                  "text": "gsettings reset com.deepin.dde.keybinding.mediakey capslock；gsettings reset com.deepin.dde.keyboard layout-options",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "恢复整个键盘布局默认设置：gsettings reset-recursively com.deepin.dde.keybinding.mediakey；gsettings reset-recursively com.deepin.dde.keyboard。",
+          "qas": [
+            {
+              "question": "怎样使整个键盘的布局恢复为默认设置？",
+              "id": "5-23-8",
+              "answers": [
+                {
+                  "text": "gsettings reset-recursively com.deepin.dde.keybinding.mediakey；gsettings reset-recursively com.deepin.dde.keyboard",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改键盘映射的命令会立即生效，无需重启系统。",
+          "qas": [
+            {
+              "question": "修改键盘映射的命令生效需要重启系统吗？",
+              "id": "5-23-9",
+              "answers": [
+                {
+                  "text": "不需要",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

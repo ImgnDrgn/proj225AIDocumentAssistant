@@ -1,0 +1,459 @@
+{
+  "data": [
+    {
+      "title": "Deepin安装相关信息",
+      "paragraphs": [
+        {
+          "context": "BIOS是开机时第一个被执行的程序，又名固件，储存在主板上的一块闪存中，与硬盘独立。",
+          "qas": [
+            {
+              "question": "BIOS是什么？",
+              "id": "5-17-1",
+              "answers": [
+                {
+                  "text": "开机时第一个被执行的程序，又名固件。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "BIOS储存在哪里？",
+              "id": "5-17-2",
+              "answers": [
+                {
+                  "text": "主板上的一块闪存中。",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "传统BIOS引导中，BIOS会按启动顺序加载磁盘前512字节即主引导记录，前440字节包含第一启动阶段代码，后续代码存于磁盘，最后启动引导器通过链式引导或直接加载内核启动操作系统。",
+          "qas": [
+            {
+              "question": "传统BIOS引导中，BIOS会加载磁盘的什么部分？",
+              "id": "5-17-3",
+              "answers": [
+                {
+                  "text": "磁盘的前512字节，即主引导记录。",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "主引导记录的前440字节包含什么？",
+              "id": "5-17-4",
+              "answers": [
+                {
+                  "text": "某个启动引导器，像GRUB、Syslinux和LILO之类的第一启动阶段代码。",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI能读取分区表，支持文件系统，无MBR的440字节限制，依赖EFI系统分区中的文件，该分区一般格式化为FAT32或FAT16。",
+          "qas": [
+            {
+              "question": "UEFI与BIOS相比有什么不同？",
+              "id": "5-17-5",
+              "answers": [
+                {
+                  "text": "UEFI能读取分区表，支持文件系统，无MBR的440字节限制，依赖EFI系统分区中的文件。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "EFI系统分区一般格式化为哪种文件系统？",
+              "id": "5-17-6",
+              "answers": [
+                {
+                  "text": "FAT32或比较非主流的FAT16。",
+                  "answer_start": 73
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI多重引导中，每个操作系统可维护自己EFI系统分区中的文件，运行不同UEFI程序即可，避免依赖chainloading机制。",
+          "qas": [
+            {
+              "question": "UEFI的多重引导是如何实现的？",
+              "id": "5-17-7",
+              "answers": [
+                {
+                  "text": "每个操作系统或者提供者都可以维护自己的EFI系统分区中的文件，同时不影响其他系统，运行不同的UEFI程序，对应于特定操作系统的引导程序。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI引导过程：系统开机上电自检，UEFI固件加载并初始化硬件，读取引导管理器确定加载哪个UEFI应用，按启动项目加载，已启动的UEFI应用可启动其他应用或内核及initramfs。",
+          "qas": [
+            {
+              "question": "UEFI引导的第一步是什么？",
+              "id": "5-17-8",
+              "answers": [
+                {
+                  "text": "系统开机 - 上电自检（Power On Self Test 或 POST）。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "UEFI固件在引导过程中做什么？",
+              "id": "5-17-9",
+              "answers": [
+                {
+                  "text": "UEFI固件被加载，并由它初始化启动要用的硬件，读取其引导管理器以确定从何处加载哪个UEFI应用，按照引导管理器中的启动项目，加载UEFI应用。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NTLDR是微软Windows NT系列操作系统（包括Windows XP和Windows Server 2003）的引导程序，由NTLDR和boot.ini组成，必须放在系统分区。",
+          "qas": [
+            {
+              "question": "NTLDR是什么系统的引导程序？",
+              "id": "5-17-10",
+              "answers": [
+                {
+                  "text": "微软的Windows NT系列操作系统（包括Windows XP和Windows Server 2003）。",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "NTLDR由哪些文件组成？",
+              "id": "5-17-11",
+              "answers": [
+                {
+                  "text": "NTLDR和boot.ini。",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "bootmgr是从Windows Vista开始引进的开机管理程序，替换NTLDR，传统BIOS查找引导分区下的bootmgr文件，UEFI则是bootmgr.efi文件，读取BCD内的引导数据。",
+          "qas": [
+            {
+              "question": "bootmgr是从哪个系统开始引进的？",
+              "id": "5-17-12",
+              "answers": [
+                {
+                  "text": "Windows Vista。",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "UEFI模式下，bootmgr对应的文件是什么？",
+              "id": "5-17-13",
+              "answers": [
+                {
+                  "text": "bootmgr.efi文件。",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GNU GRUB是多启动规范的实现，允许用户在多个操作系统中选择，可选择不同内核并传递启动参数，有GRUB Legacy和GRUB2版本。",
+          "qas": [
+            {
+              "question": "GNU GRUB的作用是什么？",
+              "id": "5-17-14",
+              "answers": [
+                {
+                  "text": "允许用户可以在计算机内同时拥有多个操作系统，并在计算机启动时选择希望运行的操作系统，可用于选择操作系统分区上的不同内核，也可用于向这些内核传递启动参数。",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "GRUB有哪些版本？",
+              "id": "5-17-15",
+              "answers": [
+                {
+                  "text": "GRUB Legacy（版本号0.97或更低）和GRUB2（版本号0.98或更高）。",
+                  "answer_start": 127
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "vmlinux是未压缩、静态链接、不可引导的Linux内核中间文件，vmlinuz是压缩、可引导的，实际是zImage或bzImage，目前桌面系统vmlinuz即bzImage。",
+          "qas": [
+            {
+              "question": "vmlinux是什么？",
+              "id": "5-17-16",
+              "answers": [
+                {
+                  "text": "一个非压缩的，静态链接的，可执行的，不能bootable的Linux kernel文件，是用来生成vmlinuz的中间步骤。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "目前Linux桌面系统的vmlinuz实际上是什么？",
+              "id": "5-17-17",
+              "answers": [
+                {
+                  "text": "bzImage kernel 文件。",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "initrd是由bootloader初始化的内存盘，2.4及以前内核只支持image-initrd，核心文件是/linuxrc；2.6及以后支持两种，目前发行版几乎用cpio-initrd，核心文件是/init。",
+          "qas": [
+            {
+              "question": "initrd是什么？",
+              "id": "5-17-18",
+              "answers": [
+                {
+                  "text": "由bootloader初始化的内存盘。",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "2.6及以后的内核支持的initrd格式有哪些？",
+              "id": "5-17-19",
+              "answers": [
+                {
+                  "text": "image-initrd及cpio-initrd。",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin安装环境要求：处理器Intel Pentium IV 2GHz或更快，内存至少2G（4G以上推荐），硬盘至少10GB空闲空间。",
+          "qas": [
+            {
+              "question": "安装Deepin对处理器有什么要求？",
+              "id": "5-17-20",
+              "answers": [
+                {
+                  "text": "Intel Pentium IV 2GHz 或更快的处理器。",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "安装Deepin推荐的内存大小是多少？",
+              "id": "5-17-21",
+              "answers": [
+                {
+                  "text": "4G 以上。",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载Deepin镜像后需校验，Windows用certutil.exe -hashfile命令，Linux用md5sum命令，确认MD5值与下载页一致。",
+          "qas": [
+            {
+              "question": "Windows系统中如何校验Deepin镜像的MD5值？",
+              "id": "5-17-22",
+              "answers": [
+                {
+                  "text": "在CMD中使用命令行：certutil.exe -hashfile deepin-xx-xx.iso md5。",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "Linux系统中校验Deepin镜像MD5值的命令是什么？",
+              "id": "5-17-23",
+              "answers": [
+                {
+                  "text": "md5sum deepin-xx-xx.iso。",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "制作Deepin启动U盘用深度启动盘软件，需提前转移数据，建议格式化为FAT32，容量不小于2G，制作中不要触碰U盘。",
+          "qas": [
+            {
+              "question": "制作Deepin启动U盘使用什么工具？",
+              "id": "5-17-24",
+              "answers": [
+                {
+                  "text": "深度科技团队开发的深度启动盘软件制作工具。",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "制作Deepin启动U盘对U盘容量有什么要求？",
+              "id": "5-17-25",
+              "answers": [
+                {
+                  "text": "不得小于2G。",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "全新安装Deepin单系统，需留出至少20G未分配空间或空白分区，已有数据需备份或调整分区。",
+          "qas": [
+            {
+              "question": "全新安装Deepin单系统需要留出多少空间？",
+              "id": "5-17-26",
+              "answers": [
+                {
+                  "text": "至少20G的未分配空间或空白分区。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Windows和Deepin双系统应先装Windows，再装Deepin，因Windows安装会重写分区表，需保证20G以上未分配空间。",
+          "qas": [
+            {
+              "question": "安装Windows和Deepin双系统的正确顺序是什么？",
+              "id": "5-17-27",
+              "answers": [
+                {
+                  "text": "先安装windows，再安装deepin。",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进入BIOS设置启动项，台式机一般按Delete键，笔记本一般按F2、F10或F12键。",
+          "qas": [
+            {
+              "question": "台式机如何进入BIOS设置界面？",
+              "id": "5-17-28",
+              "answers": [
+                {
+                  "text": "按Delete键。",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "笔记本进入BIOS设置界面通常按哪些键？",
+              "id": "5-17-29",
+              "answers": [
+                {
+                  "text": "F2 或 F10 或 F12 键。",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin安装中，/根分区必选EXT4格式，最少10G；/home推荐EXT4，最少10G；swap交换分区可选，4G内存以下分配2G，以上可不分配。",
+          "qas": [
+            {
+              "question": "Deepin安装中，/根分区的推荐文件系统是什么？",
+              "id": "5-17-30",
+              "answers": [
+                {
+                  "text": "EXT4。",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "Deepin安装时，4G内存以上的电脑swap分区如何分配？",
+              "id": "5-17-31",
+              "answers": [
+                {
+                  "text": "可不分配。",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进入Live环境可通过系统修复光盘或U盘启动计算机，进入chroot环境需先挂载相关分区再执行sudo chroot /tmp/mnt命令。",
+          "qas": [
+            {
+              "question": "如何进入Live桌面环境？",
+              "id": "5-17-32",
+              "answers": [
+                {
+                  "text": "使用系统修复光盘或U盘启动计算机即可进入 Live 桌面环境。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "进入chroot环境的命令是什么？",
+              "id": "5-17-33",
+              "answers": [
+                {
+                  "text": "sudo chroot /tmp/mnt。",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "传统BIOS下修复GRUB引导，在chroot环境用grub-install --boot-directory=/boot /dev/sda和update-grub命令。",
+          "qas": [
+            {
+              "question": "传统BIOS下如何修复GRUB引导？",
+              "id": "5-17-34",
+              "answers": [
+                {
+                  "text": "在chroot环境下操作，执行命令：grub-install --boot-directory=/boot /dev/sda 和 update-grub。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI模式下修复GRUB引导，在chroot环境用grub-install --boot-directory=/boot --efi-directory=/boot/efi和update-grub命令。",
+          "qas": [
+            {
+              "question": "UEFI模式下修复GRUB引导的命令是什么？",
+              "id": "5-17-35",
+              "answers": [
+                {
+                  "text": "grub-install --boot-directory=/boot --efi-directory=/boot/efi 和 update-grub。",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

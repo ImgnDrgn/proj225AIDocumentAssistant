@@ -1,0 +1,179 @@
+{
+  "data": [
+    {
+      "title": "Deepin移植",
+      "paragraphs": [
+        {
+          "context": "深度操作系统是注重易用体验和美观设计的Linux发行版，有深度商店等特色应用，支持30多种语言，下载量达5000万次，全球关注度前20名。",
+          "qas": [
+            {
+              "question": "深度操作系统是哪种类型的系统？",
+              "id": "5-20-1",
+              "answers": [
+                {
+                  "text": "Linux发行版",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "深度操作系统有哪些特色应用？",
+              "id": "5-20-2",
+              "answers": [
+                {
+                  "text": "深度商店、深度文件管理器、深度终端、深度看图等",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "深度操作系统支持多少种语言？",
+              "id": "5-20-3",
+              "answers": [
+                {
+                  "text": "30多种",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "深度操作系统累计下载量是多少？",
+              "id": "5-20-4",
+              "answers": [
+                {
+                  "text": "5000万次",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "question": "深度操作系统在全球关注度排行榜的名次如何？",
+              "id": "5-20-5",
+              "answers": [
+                {
+                  "text": "前20名",
+                  "answer_start": 78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "部分主流Linux发行版集成深度桌面环境和应用，社区爱好者协助移植到不同发行版。",
+          "qas": [
+            {
+              "question": "哪些Linux发行版集成了深度桌面环境和应用？",
+              "id": "5-20-6",
+              "answers": [
+                {
+                  "text": "部分主流Linux发行版",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "是谁协助将深度桌面环境和应用移植到不同发行版的？",
+              "id": "5-20-7",
+              "answers": [
+                {
+                  "text": "全球的社区爱好者",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度系统可下载的发行版包括Archlinux、Manjaro、ubuntu、Gentoo、Fedora、SparkyLinux、Puppy Linux。",
+          "qas": [
+            {
+              "question": "可以下载深度系统的Archlinux在哪里找到？",
+              "id": "5-20-8",
+              "answers": [
+                {
+                  "text": "https://www.archlinux.org/packages/?sort=&q=deepin",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "Manjaro的深度系统下载链接是什么？",
+              "id": "5-20-9",
+              "answers": [
+                {
+                  "text": "https://manjaro.org/category/community-editions/deepin",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "ubuntu的深度系统可以在哪里获取？",
+              "id": "5-20-10",
+              "answers": [
+                {
+                  "text": "https://launchpad.net/~leaeasy/+archive/ubuntu/dde",
+                  "answer_start": 106
+                }
+              ]
+            },
+            {
+              "question": "Gentoo的深度系统相关资源在哪个网站？",
+              "id": "5-20-11",
+              "answers": [
+                {
+                  "text": "https://github.com/zhtengw/deepin-overlay",
+                  "answer_start": 147
+                }
+              ]
+            },
+            {
+              "question": "Fedora的深度系统可以从哪里找到？",
+              "id": "5-20-12",
+              "answers": [
+                {
+                  "text": "https://github.com/FZUG/repo/tree/master/rpms/deepin_project",
+                  "answer_start": 185
+                }
+              ]
+            },
+            {
+              "question": "SparkyLinux的深度桌面环境相关内容在哪里查看？",
+              "id": "5-20-13",
+              "answers": [
+                {
+                  "text": "https://sparkylinux.org/deepin-desktop-environment",
+                  "answer_start": 257
+                }
+              ]
+            },
+            {
+              "question": "Puppy Linux的深度系统相关讨论在哪个页面？",
+              "id": "5-20-14",
+              "answers": [
+                {
+                  "text": "http://murga-linux.com/puppy/viewtopic.php?t=109317",
+                  "answer_start": 315
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度桌面移植的相关链接是https://www.deepin.org/dde/desktop-transplantation/。",
+          "qas": [
+            {
+              "question": "深度桌面移植的相关链接是什么？",
+              "id": "5-20-15",
+              "answers": [
+                {
+                  "text": "https://www.deepin.org/dde/desktop-transplantation/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
