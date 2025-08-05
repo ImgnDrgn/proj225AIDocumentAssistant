@@ -1,0 +1,174 @@
+{
+  "data": [
+    {
+      "title": "修复或添加windows启动项",
+      "paragraphs": [
+        {
+          "context": "使用U盘安装linux（ubuntu、deepin）后，windows系统启动/引导项丢失，可恢复win7启动/引导项。",
+          "qas": [
+            {
+              "question": "什么情况下可能导致windows系统启动项丢失？",
+              "id": "4-6-1",
+              "answers": [
+                {
+                  "text": "使用U盘安装linux（ubuntu、deepin）后",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修复windows启动项需计算机、windows、linux（ubuntu、deepin）。",
+          "qas": [
+            {
+              "question": "修复windows启动项需要哪些工具和原料？",
+              "id": "4-6-2",
+              "answers": [
+                {
+                  "text": "计算机、windows、linux（ubuntu、deepin）",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修复步骤第一步：终端输入sudo gedit /boot/grub/grub.cfg，回车输密码打开grub.cfg文件。",
+          "qas": [
+            {
+              "question": "修复windows启动项的第一步是什么？",
+              "id": "4-6-3",
+              "answers": [
+                {
+                  "text": "在终端中输入：sudo gedit /boot/grub/grub.cfg，回车，然后输入密码，打开grub.cfg文件。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "第二步用特定代码替代### BEGIN /etc/grub.d/40_custom ###和### END /etc/grub.d/40_custom ###之间原有代码。",
+          "qas": [
+            {
+              "question": "修复windows启动项的第二步是什么？",
+              "id": "4-6-4",
+              "answers": [
+                {
+                  "text": "用特定代码替代### BEGIN /etc/grub.d/40_custom ###和### END /etc/grub.d/40_custom ###之间原有的代码。",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "替代代码为：menuentry \"Windows 7\" {insmod part_msdos insmod ntfs set root='(hd0,msdos1)' chainloader +1}",
+          "qas": [
+            {
+              "question": "修复windows启动项时，用于替代的代码是什么？",
+              "id": "4-6-5",
+              "answers": [
+                {
+                  "text": "menuentry \"Windows 7\" {insmod part_msdos insmod ntfs set root='(hd0,msdos1)' chainloader +1}",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "set root='(hd0,msdos1)'中的'(hd0,msdos1)'是windows系统所在分区。",
+          "qas": [
+            {
+              "question": "set root='(hd0,msdos1)'中的'(hd0,msdos1)'指的是什么？",
+              "id": "4-6-6",
+              "answers": [
+                {
+                  "text": "windows系统所在分区",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "该方法适用于添加windows7和window10开机引导项，windows8未测试。",
+          "qas": [
+            {
+              "question": "文中提到的修复启动项方法适用于哪些windows系统？",
+              "id": "4-6-7",
+              "answers": [
+                {
+                  "text": "windows7和window10",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "文中提到的修复启动项方法对windows8是否测试过？",
+              "id": "4-6-8",
+              "answers": [
+                {
+                  "text": "没有测试过",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "menuentry \"Windows 7\"{里的Windows 7是开机引导项中的名字，可替换。",
+          "qas": [
+            {
+              "question": "menuentry \"Windows 7\"{里的Windows 7代表什么？",
+              "id": "4-6-9",
+              "answers": [
+                {
+                  "text": "出现在开机引导/启动项中的名字",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "menuentry \"Windows 7\"{里的Windows 7可以修改吗？",
+              "id": "4-6-10",
+              "answers": [
+                {
+                  "text": "可以用你喜欢的名字替换",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "注意事项：注意windows系统所在分区，方法仅在ubuntu和deepin下测试过。",
+          "qas": [
+            {
+              "question": "修复windows启动项有哪些注意事项？",
+              "id": "4-6-11",
+              "answers": [
+                {
+                  "text": "注意你的windows系统所在分区！该方法仅在ubuntu和deepin下测试过！",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "文中的修复启动项方法在哪些系统下测试过？",
+              "id": "4-6-12",
+              "answers": [
+                {
+                  "text": "ubuntu和deepin",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
