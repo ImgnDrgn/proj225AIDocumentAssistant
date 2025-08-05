@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "EyeOfGnome",
+      "paragraphs": [
+        {
+          "context": "EyeOfGnome是一款图像查看器软件，支持多种图片格式，有放大/缩小等功能。",
+          "qas": [
+            {
+              "question": "EyeOfGnome是什么软件？",
+              "id": "5-28-1",
+              "answers": [
+                {
+                  "text": "一款图像查看器软件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "EyeOfGnome支持哪些功能？",
+              "id": "5-28-2",
+              "answers": [
+                {
+                  "text": "放大/缩小、幻灯片显示、全屏、缩略图等功能",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "EyeOfGnome支持哪些图片格式？",
+              "id": "5-28-3",
+              "answers": [
+                {
+                  "text": "BMP、GIF、JPG、PNG、SVG、TIFF等",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装EyeOfGnome的命令是sudo apt-get install eog。",
+          "qas": [
+            {
+              "question": "如何安装EyeOfGnome？",
+              "id": "5-28-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install eog",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载EyeOfGnome的命令是sudo apt-get remove eog。",
+          "qas": [
+            {
+              "question": "怎样卸载EyeOfGnome？",
+              "id": "5-28-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove eog",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "EyeOfGnome的仓库地址是http://packages.deepin.com/deepin/pool/main/e/eog/。",
+          "qas": [
+            {
+              "question": "EyeOfGnome的仓库地址是什么？",
+              "id": "5-28-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/e/eog/",
+                  "answer_start": 28
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

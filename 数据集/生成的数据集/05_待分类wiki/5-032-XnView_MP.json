@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "XnView_MP",
+      "paragraphs": [
+        {
+          "context": "XnView MP是一款图像查看工具，支持150种图片格式，有查看、浏览、幻灯显示等功能，自带30多面滤镜，可批量转换文件格式、创建缩略图、生成网页、制作GIF，小巧实用。",
+          "qas": [
+            {
+              "question": "XnView MP是什么类型的工具？",
+              "id": "5-32-1",
+              "answers": [
+                {
+                  "text": "图像查看工具",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "XnView MP支持多少种图片格式？",
+              "id": "5-32-2",
+              "answers": [
+                {
+                  "text": "150种",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "XnView MP有哪些基本功能？",
+              "id": "5-32-3",
+              "answers": [
+                {
+                  "text": "查看、浏览、幻灯显示",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "XnView MP自带多少面滤镜？",
+              "id": "5-32-4",
+              "answers": [
+                {
+                  "text": "30多面",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "question": "XnView MP可以批量转换文件格式吗？",
+              "id": "5-32-5",
+              "answers": [
+                {
+                  "text": "可以",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "question": "XnView MP能制作GIF吗？",
+              "id": "5-32-6",
+              "answers": [
+                {
+                  "text": "能",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装XnView MP的命令是sudo apt-get install xnview。",
+          "qas": [
+            {
+              "question": "如何安装XnView MP？",
+              "id": "5-32-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get install xnview",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载XnView MP的命令是sudo apt-get remove xnview。",
+          "qas": [
+            {
+              "question": "如何卸载XnView MP？",
+              "id": "5-32-8",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove xnview",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "XnView MP的仓库地址是http://packages.deepin.com/deepin/pool/main/x/xnview/。",
+          "qas": [
+            {
+              "question": "XnView MP的仓库地址是什么？",
+              "id": "5-32-9",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/x/xnview/",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

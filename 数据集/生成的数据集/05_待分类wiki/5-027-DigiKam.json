@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "DigiKam",
+      "paragraphs": [
+        {
+          "context": "digiKam是一款跨平台的数字照片管理软件，支持大多数图像格式，可按日期、时间或标签整理图片，能添加标题和评语、编辑、预览、扩展等。",
+          "qas": [
+            {
+              "question": "digiKam是什么类型的软件？",
+              "id": "5-27-1",
+              "answers": [
+                {
+                  "text": "跨平台的数字照片管理软件",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "digiKam支持大多数图像格式吗？",
+              "id": "5-27-2",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "question": "digiKam可以按哪些方式整理图片？",
+              "id": "5-27-3",
+              "answers": [
+                {
+                  "text": "日期、时间或标签",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "digiKam能对图像进行哪些操作？",
+              "id": "5-27-4",
+              "answers": [
+                {
+                  "text": "添加标题和评语、编辑、预览、扩展等",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装digiKam的命令是sudo apt-get install digikam。",
+          "qas": [
+            {
+              "question": "如何安装digiKam？",
+              "id": "5-27-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install digikam",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载digiKam的命令是sudo apt-get remove digikam。",
+          "qas": [
+            {
+              "question": "如何卸载digiKam？",
+              "id": "5-27-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove digikam",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "digiKam的仓库地址是http://packages.deepin.com/deepin/pool/main/d/digikam/。",
+          "qas": [
+            {
+              "question": "digiKam的仓库地址是什么？",
+              "id": "5-27-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/d/digikam/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

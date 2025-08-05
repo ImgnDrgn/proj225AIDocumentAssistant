@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "Deepin OpenSymbol",
+      "paragraphs": [
+        {
+          "context": "Deepin OpenSymbol是深度科技团队在Wingdings系列字体内容上重新绘制的一系列符号字体，含常用速记、手势、箭头、星形等符号。",
+          "qas": [
+            {
+              "question": "Deepin OpenSymbol是什么？",
+              "id": "5-34-1",
+              "answers": [
+                {
+                  "text": "深度科技团队在Wingdings系列字体内容上重新绘制的一系列符号字体，含常用速记、手势、箭头、星形等符号。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Deepin OpenSymbol包含哪些类型的符号？",
+              "id": "5-34-2",
+              "answers": [
+                {
+                  "text": "常用的速记符号、手势符号、箭头符号、星形符号以及世界通用的一些常用符号。",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Deepin OpenSymbol的命令是sudo apt-get install ttf-deepin-opensymbol。",
+          "qas": [
+            {
+              "question": "如何安装Deepin OpenSymbol？",
+              "id": "5-34-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install ttf-deepin-opensymbol",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Deepin OpenSymbol的命令是sudo apt-get remove ttf-deepin-opensymbol。",
+          "qas": [
+            {
+              "question": "如何卸载Deepin OpenSymbol？",
+              "id": "5-34-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove ttf-deepin-opensymbol",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin OpenSymbol的仓库地址是http://packages.deepin.com/deepin/pool/main/t/ttf-deepin-opensymbol/。",
+          "qas": [
+            {
+              "question": "Deepin OpenSymbol的仓库地址是什么？",
+              "id": "5-34-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/t/ttf-deepin-opensymbol/",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin OpenSymbol的官方介绍可参考https://www.deepin.org/original/deepin-opensymbol/。",
+          "qas": [
+            {
+              "question": "哪里可以找到Deepin OpenSymbol的官方介绍？",
+              "id": "5-34-6",
+              "answers": [
+                {
+                  "text": "https://www.deepin.org/original/deepin-opensymbol/",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
