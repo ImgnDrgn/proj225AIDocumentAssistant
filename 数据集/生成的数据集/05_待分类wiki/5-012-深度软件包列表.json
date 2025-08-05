@@ -1,0 +1,384 @@
+{
+  "data": [
+    {
+      "title": "深度软件包列表",
+      "paragraphs": [
+        {
+          "context": "移植DDE前需了解需移植的软件包数量并按重要性安排工作。",
+          "qas": [
+            {
+              "question": "移植DDE前需要了解什么？",
+              "id": "5-12-1",
+              "answers": [
+                {
+                  "text": "需移植的软件包数量并按重要性安排工作",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包列表包含deepin-camera、deepin-music、deepin-manual等。",
+          "qas": [
+            {
+              "question": "软件包列表中包含哪些软件？",
+              "id": "5-12-2",
+              "answers": [
+                {
+                  "text": "deepin-camera、deepin-music、deepin-manual等",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包列表中有deepin-gtk-theme。",
+          "qas": [
+            {
+              "question": "软件包列表中是否有deepin-gtk-theme？",
+              "id": "5-12-3",
+              "answers": [
+                {
+                  "text": "有",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包列表包含qt5platform-plugins。",
+          "qas": [
+            {
+              "question": "qt5platform-plugins是否在软件包列表中？",
+              "id": "5-12-4",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包列表中有deepin-font-manager。",
+          "qas": [
+            {
+              "question": "软件包列表包含deepin-font-manager吗？",
+              "id": "5-12-5",
+              "answers": [
+                {
+                  "text": "包含",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dtkcommon是软件包列表中的一个软件包。",
+          "qas": [
+            {
+              "question": "dtkcommon在软件包列表中吗？",
+              "id": "5-12-6",
+              "answers": [
+                {
+                  "text": "在",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包列表包含dtkcore、dtkwidget、dtkgui。",
+          "qas": [
+            {
+              "question": "哪些dtk相关软件包在列表中？",
+              "id": "5-12-7",
+              "answers": [
+                {
+                  "text": "dtkcore、dtkwidget、dtkgui",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包列表中有dtkdeclarative。",
+          "qas": [
+            {
+              "question": "dtkdeclarative是否属于需要移植的软件包？",
+              "id": "5-12-8",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "qt5integration在软件包列表中。",
+          "qas": [
+            {
+              "question": "qt5integration在软件包列表里吗？",
+              "id": "5-12-9",
+              "answers": [
+                {
+                  "text": "在",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包列表包含deepin-anything。",
+          "qas": [
+            {
+              "question": "deepin-anything是否需要移植？",
+              "id": "5-12-10",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包列表中有deepin-system-monitor。",
+          "qas": [
+            {
+              "question": "软件包列表包含deepin-system-monitor吗？",
+              "id": "5-12-11",
+              "answers": [
+                {
+                  "text": "包含",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "gio-qt是软件包列表中的软件包。",
+          "qas": [
+            {
+              "question": "gio-qt在需要移植的软件包列表中吗？",
+              "id": "5-12-12",
+              "answers": [
+                {
+                  "text": "在",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包列表包含udisks2-qt5。",
+          "qas": [
+            {
+              "question": "udisks2-qt5是否在软件包列表中？",
+              "id": "5-12-13",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包列表中有deepin-face。",
+          "qas": [
+            {
+              "question": "deepin-face属于需要移植的软件包吗？",
+              "id": "5-12-14",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包列表包含deepin-calculator。",
+          "qas": [
+            {
+              "question": "软件包列表里有deepin-calculator吗？",
+              "id": "5-12-15",
+              "answers": [
+                {
+                  "text": "有",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin-terminal在软件包列表中。",
+          "qas": [
+            {
+              "question": "deepin-terminal是否需要移植？",
+              "id": "5-12-16",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包列表包含dde-file-manager。",
+          "qas": [
+            {
+              "question": "dde-file-manager在软件包列表中吗？",
+              "id": "5-12-17",
+              "answers": [
+                {
+                  "text": "在",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包列表中有dde-control-center。",
+          "qas": [
+            {
+              "question": "dde-control-center是否属于需要移植的软件包？",
+              "id": "5-12-18",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包分类信息参考https://wiki.deepin.org/zh/%E5%BC%80%E5%8F%91%E8%80%85%E6%8C%87%E5%8D%97/DDE%E6%A1%8C%E9%9D%A2%E7%A7%BB%E6%A4%8D/%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%88%86%E7%B1%BB%E4%B8%8E%E7%AE%80%E4%BB%8B。",
+          "qas": [
+            {
+              "question": "软件包分类信息可以参考哪里？",
+              "id": "5-12-19",
+              "answers": [
+                {
+                  "text": "https://wiki.deepin.org/zh/%E5%BC%80%E5%8F%91%E8%80%85%E6%8C%87%E5%8D%97/DDE%E6%A1%8C%E9%9D%A2%E7%A7%BB%E6%A4%8D/%E8%BD%AF%E4%BB%B6%E5%8C%85%E5%88%86%E7%B1%BB%E4%B8%8E%E7%AE%80%E4%BB%8B",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包列表包含deepin-screen-recorder。",
+          "qas": [
+            {
+              "question": "deepin-screen-recorder在软件包列表中吗？",
+              "id": "5-12-20",
+              "answers": [
+                {
+                  "text": "在",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dareader是软件包列表中的软件包。",
+          "qas": [
+            {
+              "question": "dareader是否需要移植？",
+              "id": "5-12-21",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包列表包含dde-daemon。",
+          "qas": [
+            {
+              "question": "dde-daemon在软件包列表里吗？",
+              "id": "5-12-22",
+              "answers": [
+                {
+                  "text": "在",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包列表中有dde-session-shell。",
+          "qas": [
+            {
+              "question": "dde-session-shell属于需要移植的软件包吗？",
+              "id": "5-12-23",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dde-session-ui在软件包列表中。",
+          "qas": [
+            {
+              "question": "dde-session-ui是否需要移植？",
+              "id": "5-12-24",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包列表包含deepin-desktop-schemas。",
+          "qas": [
+            {
+              "question": "deepin-desktop-schemas在软件包列表中吗？",
+              "id": "5-12-25",
+              "answers": [
+                {
+                  "text": "在",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "data": [
+    {
+      "title": "DDE桌面环境软件包分类与简介",
+      "paragraphs": [
+        {
+          "context": "dtk是基于Qt开发的通用开发框架，所有dde桌面软件均使用dtk开发，打包dtk是移植dde的第一步且必要。",
+          "qas": [
+            {
+              "question": "dtk是什么？",
+              "id": "5-14-1",
+              "answers": [
+                {
+                  "text": "基于Qt开发的一整套简单且实用的通用开发框架",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "打包dtk在移植dde中处于什么地位？",
+              "id": "5-14-2",
+              "answers": [
+                {
+                  "text": "是移植dde的第一步且必要的一步",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编译dde桌面软件后界面显示异常，需qt5integration（Qt platform theme）和qt5platform-plugins（Qt platform plugin）两个QT5插件。",
+          "qas": [
+            {
+              "question": "编译dde桌面软件后界面显示异常，可能缺少哪些库？",
+              "id": "5-14-3",
+              "answers": [
+                {
+                  "text": "qt5integration、qt5platform-plugins",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "qt5integration是什么类型的库？",
+              "id": "5-14-4",
+              "answers": [
+                {
+                  "text": "Qt platform theme",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "qt5platform-plugins编译时可用\"CONFIG+=DISABLE_WAYLAND\"参数禁用wayland；目标系统qt版本过新致编译报错，可从新版qt源码拷贝libqt5xcbqpa-dev向上游提交。",
+          "qas": [
+            {
+              "question": "如何禁用qt5platform-plugins的wayland？",
+              "id": "5-14-5",
+              "answers": [
+                {
+                  "text": "编译时使用\"CONFIG+=DISABLE_WAYLAND\"参数",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "目标系统qt版本过新导致qt5platform-plugins编译报错怎么办？",
+              "id": "5-14-6",
+              "answers": [
+                {
+                  "text": "从新版qt的源码中拷贝一份libqt5xcbqpa-dev向上游提交",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "qt插件需安装到特殊路径让qt找到，如\"/usr/lib/x86_64-linux-gnu/qt5/plugins\"，目标发行版路径特殊时可设置QT_PLUGIN_PATH环境变量。",
+          "qas": [
+            {
+              "question": "qt插件通常安装到哪个路径？",
+              "id": "5-14-7",
+              "answers": [
+                {
+                  "text": "/usr/lib/x86_64-linux-gnu/qt5/plugins",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "目标发行版路径特殊时，如何让qt找到插件？",
+              "id": "5-14-8",
+              "answers": [
+                {
+                  "text": "设置QT_PLUGIN_PATH环境变量",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dde-qt-dbus-factory统一存放dde使用的自动生成的Qt DBus代码，是多个项目的依赖，应尽早移植。编译提示缺少libdframeworkdbus时指此库。",
+          "qas": [
+            {
+              "question": "dde-qt-dbus-factory的作用是什么？",
+              "id": "5-14-9",
+              "answers": [
+                {
+                  "text": "统一存放dde使用到的自动生成的Qt DBus代码",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "编译提示缺少libdframeworkdbus时指的是什么库？",
+              "id": "5-14-10",
+              "answers": [
+                {
+                  "text": "dde-qt-dbus-factory",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "应用软件为非必要移植，可选，包括deepin-draw、deepin-calculator、deepin-boot-maker等。",
+          "qas": [
+            {
+              "question": "应用软件在移植中的性质是什么？",
+              "id": "5-14-11",
+              "answers": [
+                {
+                  "text": "非必要移植，可选",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "列举几个可选移植的应用软件。",
+              "id": "5-14-12",
+              "answers": [
+                {
+                  "text": "deepin-draw、deepin-calculator、deepin-boot-maker",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin-terminal改字体可能要dde-daemon移植好，可先打包；deepin-picker实时更新需要dde-daemon；deepin-music播放音乐可能要等dde-daemon移植好。",
+          "qas": [
+            {
+              "question": "哪些应用软件的部分功能依赖dde-daemon？",
+              "id": "5-14-13",
+              "answers": [
+                {
+                  "text": "deepin-terminal（改字体）、deepin-picker（实时更新）、deepin-music（播放音乐）",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin-screen-recorder目前cmake有点问题，请使用qmake构建；deepin-system-monitor可使用编译参数“-DUSE_DEEPIN_WAYLAND=OFF”禁用wayland。",
+          "qas": [
+            {
+              "question": "deepin-screen-recorder目前构建有什么问题？如何解决？",
+              "id": "5-14-14",
+              "answers": [
+                {
+                  "text": "cmake有点问题，请使用qmake构建",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何禁用deepin-system-monitor的wayland？",
+              "id": "5-14-15",
+              "answers": [
+                {
+                  "text": "使用编译参数“-DUSE_DEEPIN_WAYLAND=OFF”",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dde-control-center大多数组件可拆卸，可参考Arch禁用一些UOS/Deepin特有功能；dde-network-core是控制中心网络组件所需。",
+          "qas": [
+            {
+              "question": "如何处理dde-control-center中的UOS/Deepin特有功能？",
+              "id": "5-14-16",
+              "answers": [
+                {
+                  "text": "参考Arch禁用一些UOS/Deepin特有功能",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "控制中心的网络组件需要哪个包？",
+              "id": "5-14-17",
+              "answers": [
+                {
+                  "text": "dde-network-core",
+                  "answer_start": 77
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dde-session-ui包括dde-shutdown等系统ui组件，后期必须移植；dde-session-shell包括lightdm-deepin-greeter等，后期必须移植，其src/libdde-auth/deepinauthframework.cpp写死用common-auth（仅debian系特有），需更换，否则锁屏无法解锁。",
+          "qas": [
+            {
+              "question": "dde-session-ui包含哪些内容？移植优先级如何？",
+              "id": "5-14-18",
+              "answers": [
+                {
+                  "text": "包括dde-shutdown等系统ui组件，后期必须移植",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "dde-session-shell移植时可能遇到什么问题？如何解决？",
+              "id": "5-14-19",
+              "answers": [
+                {
+                  "text": "src/libdde-auth/deepinauthframework.cpp写死了用common-auth（仅debian系特有），需要更换，不然锁屏无法解锁",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin-clone、dde-device-formatter等移植优先级低；deepin-plymouth、dde-network-utils（已废弃，用networkmanager-qt）、dde-printer一般不移植。",
+          "qas": [
+            {
+              "question": "哪些软件包移植优先级低？",
+              "id": "5-14-20",
+              "answers": [
+                {
+                  "text": "deepin-clone、dde-device-formatter",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "哪些软件包一般不移植？",
+              "id": "5-14-21",
+              "answers": [
+                {
+                  "text": "deepin-plymouth、dde-network-utils、dde-printer",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "dde-network-utils已废弃，应使用什么替代？",
+              "id": "5-14-22",
+              "answers": [
+                {
+                  "text": "networkmanager-qt",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GO语言包中，deepin-pw-check是验证密码有效性的工具，dde-control-center需要；go-lib和go-dbus-factory打包是复制源码，构建依赖软件包时加进GOPATH。",
+          "qas": [
+            {
+              "question": "deepin-pw-check的作用是什么？哪个软件需要它？",
+              "id": "5-14-23",
+              "answers": [
+                {
+                  "text": "验证密码有效性的工具，dde-control-center需要",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "go-lib和go-dbus-factory如何打包及使用？",
+              "id": "5-14-24",
+              "answers": [
+                {
+                  "text": "打包就是复制下源码，构建依赖它的软件包时把它加进GOPATH里",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dde-daemon是dde桌面守护进程，非常重要且关键，中后期必须移植；startdde是移植的最后一步，提供startdde命令调起dde服务和应用。",
+          "qas": [
+            {
+              "question": "dde-daemon在dde中的地位及移植时机？",
+              "id": "5-14-25",
+              "answers": [
+                {
+                  "text": "是dde桌面守护进程，非常重要且关键的应用，中后期必须移植",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "startdde在移植中的作用及位置？",
+              "id": "5-14-26",
+              "answers": [
+                {
+                  "text": "是移植的最后一步，提供startdde命令可以相继调起dde服务和应用",
+                  "answer_start": 69
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin-desktop-schemas有大量dde需要的gsettings schemas文件，移植dde所必须；deepin-network-proxy、lastore-daemon等GO语言包不移植。",
+          "qas": [
+            {
+              "question": "deepin-desktop-schemas对移植dde有何重要性？",
+              "id": "5-14-27",
+              "answers": [
+                {
+                  "text": "有大量dde需要的gsettings schemas文件，移植dde所必须",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "哪些GO语言包不移植？",
+              "id": "5-14-28",
+              "answers": [
+                {
+                  "text": "deepin-network-proxy、lastore-daemon",
+                  "answer_start": 78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Artwork/杂项包括dde-account-faces（本地帐户头像）、deepin-icon-theme（图标主题）等；deepin-wallpapers含非自由许可证，拆包需关注相关讨论。",
+          "qas": [
+            {
+              "question": "dde-account-faces是什么？",
+              "id": "5-14-29",
+              "answers": [
+                {
+                  "text": "本地帐户头像，仅仅是几个icons",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "deepin-wallpapers在拆包时需注意什么？",
+              "id": "5-14-30",
+              "answers": [
+                {
+                  "text": "包含非自由许可证，拆包请关注https://github.com/orgs/linuxdeepin/discussions/3340",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin-desktop-base需要移植，其中distribution.info文件可自行修改，distribution目录有三个系统logo文件，仓库其他文件可参考Arch打包。",
+          "qas": [
+            {
+              "question": "deepin-desktop-base是否需要移植？其中的distribution.info文件如何处理？",
+              "id": "5-14-31",
+              "answers": [
+                {
+                  "text": "需要移植，其中的distribution.info文件可以自行修改",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dde-kwin代替deepin-kwin（已过时，不要移植），请使用kde官方kwin打包5.5.11-deepin的tag。",
+          "qas": [
+            {
+              "question": "deepin-kwin是否需要移植？为什么？",
+              "id": "5-14-32",
+              "answers": [
+                {
+                  "text": "不要移植，已被dde-kwin代替，且deepin上代码已经过时",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "dde-kwin应使用什么版本打包？",
+              "id": "5-14-33",
+              "answers": [
+                {
+                  "text": "kde官方kwin打包5.5.11-deepin的tag",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

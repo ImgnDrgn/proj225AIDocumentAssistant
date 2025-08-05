@@ -1,0 +1,174 @@
+{
+  "data": [
+    {
+      "title": "Deepin Community Live CD Install 新版本",
+      "paragraphs": [
+        {
+          "context": "Deepin Community Live CD 简称为 DCLC，该镜像同时拥有原 DCLC 功能和系统安装功能，预装软件及配置以简化安装后操作，不修改 deepin 系统信息，非下游发行版，仅为定制镜像。Live CD 模式下用户默认密码：123456，root 密码：123456，安装到本地不受此影响。",
+          "qas": [
+            {
+              "question": "DCLC 是什么的简称？",
+              "id": "5-16-1",
+              "answers": [
+                {
+                  "text": "Deepin Community Live CD",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "该定制镜像是否修改 deepin 系统信息？",
+              "id": "5-16-2",
+              "answers": [
+                {
+                  "text": "不修改任何有关 deepin 的系统信息",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "question": "Live CD 模式下的用户默认密码是什么？",
+              "id": "5-16-3",
+              "answers": [
+                {
+                  "text": "123456",
+                  "answer_start": 175
+                }
+              ]
+            },
+            {
+              "question": "该镜像属于 deepin 的下游发行版吗？",
+              "id": "5-16-4",
+              "answers": [
+                {
+                  "text": "不是 deepin 的下游发行版，只是一个定制的镜像",
+                  "answer_start": 142
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更新内容包括：跟进系统版本为 20.8；更新预装的星火应用商店（4.0.1）和 Wine 运行器（3.0.0.1-uos）版本；开始选择性安装 UEngine 安卓环境和 UEngine 运行器（可通过断网或体验模式下添加自定义脚本修改）。",
+          "qas": [
+            {
+              "question": "此次更新跟进的系统版本是多少？",
+              "id": "5-16-5",
+              "answers": [
+                {
+                  "text": "20.8",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "更新后的星火应用商店版本号是多少？",
+              "id": "5-16-6",
+              "answers": [
+                {
+                  "text": "4.0.1",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "question": "若不想安装 UEngine 安卓环境和运行器，可通过什么方式修改？",
+              "id": "5-16-7",
+              "answers": [
+                {
+                  "text": "断网或在体验模式下打开添加自定义脚本进行修改",
+                  "answer_start": 116
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "预装软件有星火应用商店、Wine 运行器、QQ（Wine）、微信（Wine）、WPS Office、钉钉、Todesk、TimeShift、udom 工具箱、deepin 全家桶、UOS 远程协助、rdp 远程桌面连接工具、搜狗输入法、deepin wine6 stable 等，其中部分软件仅存在于 Live CD 环境下。",
+          "qas": [
+            {
+              "question": "预装的办公软件有哪些？",
+              "id": "5-16-8",
+              "answers": [
+                {
+                  "text": "WPS Office",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "预装的远程相关工具包含什么？",
+              "id": "5-16-9",
+              "answers": [
+                {
+                  "text": "Todesk、UOS 远程协助、rdp 远程桌面连接工具",
+                  "answer_start": 82
+                }
+              ]
+            },
+            {
+              "question": "是否所有预装软件都会安装到本地？",
+              "id": "5-16-10",
+              "answers": [
+                {
+                  "text": "不是，部分软件仅存在于 Live CD 环境下，将不会安装到本地",
+                  "answer_start": 177
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "提示：断网安装不会安装 WPS、QQ、微信这三个体积大的软件；体验模式可当 Live CD 用。",
+          "qas": [
+            {
+              "question": "断网安装不会安装哪些软件？",
+              "id": "5-16-11",
+              "answers": [
+                {
+                  "text": "WPS、QQ、微信",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "体验模式有什么用途？",
+              "id": "5-16-12",
+              "answers": [
+                {
+                  "text": "可以当 Live CD 用",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载链接包括鹤川云盘、123 云盘、迅雷云盘（提取码：5mgs）、百度网盘（提取码：ejr7）、备用链接及程序论坛。",
+          "qas": [
+            {
+              "question": "迅雷云盘的提取码是什么？",
+              "id": "5-16-13",
+              "answers": [
+                {
+                  "text": "5mgs",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "question": "百度网盘的提取码是多少？",
+              "id": "5-16-14",
+              "answers": [
+                {
+                  "text": "ejr7",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

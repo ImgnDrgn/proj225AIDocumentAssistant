@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "title": "环境搭建",
+      "paragraphs": [
+        {
+          "context": "搭建移植环境需先准备好移植目标发行版系统，演示使用openkylin 1.0，建议用debian系发行版练习。",
+          "qas": [
+            {
+              "question": "搭建移植环境首先需要准备什么？",
+              "id": "5-13-1",
+              "answers": [
+                {
+                  "text": "移植目标发行版系统",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "question": "演示中使用的移植目标发行版系统是什么？",
+              "id": "5-13-2",
+              "answers": [
+                {
+                  "text": "openkylin 1.0",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "建议用什么系的发行版进行移植练习？",
+              "id": "5-13-3",
+              "answers": [
+                {
+                  "text": "debian系",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "question": "搭建移植环境的目的是什么？",
+              "id": "5-13-4",
+              "answers": [
+                {
+                  "text": "为移植做好准备，搭建好源码编译环境",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

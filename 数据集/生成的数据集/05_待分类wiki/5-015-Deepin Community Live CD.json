@@ -1,0 +1,234 @@
+{
+  "data": [
+    {
+      "title": "Deepin Community Live CD",
+      "paragraphs": [
+        {
+          "context": "deepin 发布的 Live CD 有点古老，功能有少许不全，在部分新电脑是无法启动，对 ventoy 兼容性不是很好，故制作此社区版 Live CD。",
+          "qas": [
+            {
+              "question": "制作社区版 Deepin Live CD 的原因是什么？",
+              "id": "5-15-1",
+              "answers": [
+                {
+                  "text": "deepin 发布的 Live CD 有点古老，功能有少许不全，在部分新电脑是无法启动，对 ventoy 兼容性不是很好。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "此 Live CD 基于 deepin 20.8 和原 Live CD 2.0 制作，1.2.1 及以前版本使用特定方案打包，支持 Ventoy 在 Legacy 和 UEFT 模式运行，有常用驱动。",
+          "qas": [
+            {
+              "question": "社区版 Deepin Live CD 基于什么制作？",
+              "id": "5-15-2",
+              "answers": [
+                {
+                  "text": "deepin 20.8 和原 Live CD 2.0",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "社区版 Deepin Live CD 1.2.1 及以前版本使用什么方案打包？",
+              "id": "5-15-3",
+              "answers": [
+                {
+                  "text": "参考https://bbs.deepin.org/post/166409作者@xchngg的方案",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "社区版 Deepin Live CD 对 Ventoy 的兼容性如何？",
+              "id": "5-15-4",
+              "answers": [
+                {
+                  "text": "测试 Ventoy 在 Legacy 和 UEFT 模式下均可运行此 Live CD",
+                  "answer_start": 74
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "install、full 用户密码（包括root密码）为：123456；tiny、mini root 密码未知。",
+          "qas": [
+            {
+              "question": "install 版和 full 版的用户密码（包括root密码）是什么？",
+              "id": "5-15-5",
+              "answers": [
+                {
+                  "text": "123456",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "tiny 版和 mini 版的 root 密码已知吗？",
+              "id": "5-15-6",
+              "answers": [
+                {
+                  "text": "未知",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打包所带程序包括远程协助、TestDisk、ukoapp、deepin 修复工具、CPU-G/CPU-X、GParted等。",
+          "qas": [
+            {
+              "question": "社区版 Deepin Live CD 打包带有哪些程序？",
+              "id": "5-15-7",
+              "answers": [
+                {
+                  "text": "远程协助、TestDisk、ukoapp、deepin 修复工具、CPU-G/CPU-X、GParted等",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Mini 版更新：更新 QQ For Linux 至镜像封装时最高版本。",
+          "qas": [
+            {
+              "question": "Mini 版有什么更新内容？",
+              "id": "5-15-8",
+              "answers": [
+                {
+                  "text": "更新 QQ For Linux 至镜像封装时最高版本",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Full-15.11 版更新：更新 QQ For Linux 至镜像封装时最高版本；更新部分 apt 源内更新内容。",
+          "qas": [
+            {
+              "question": "Full-15.11 版有哪些更新？",
+              "id": "5-15-9",
+              "answers": [
+                {
+                  "text": "1. 更新 QQ For Linux 至镜像封装时最高版本；2. 更新了部分 apt 源内更新内容",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Full 版更新：更新 QQ For Linux 至镜像封装时最高版本；跟进 Deepin 20.8 更新内容。",
+          "qas": [
+            {
+              "question": "Full 版的更新内容是什么？",
+              "id": "5-15-10",
+              "answers": [
+                {
+                  "text": "1. 更新 QQ For Linux 至镜像封装时最高版本；2. 跟进 Deepin 20.8 更新内容",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "tiny 版：在原版 Live CD 升级了内核，无多的更新和重新打包，适用于应急等场景，目前只更新到 1.2.0 版本。",
+          "qas": [
+            {
+              "question": "tiny 版有什么特点？",
+              "id": "5-15-11",
+              "answers": [
+                {
+                  "text": "在原版 Live CD 升级了内核，没有多的更新，也没有重新打包（所以壁纸也没有换），适用于应急或者空间、网速以及对功能要求不高且电脑配置较低以及语言非简体中文的用户，目前只更新到 1.2.0 版本",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mini 版：在 tiny 版本基础上，更新并预装部分应用，1.1.0-mini 新预装 vim、timeshift，升级浏览器，适用于特定用户。",
+          "qas": [
+            {
+              "question": "mini 版在 tiny 版基础上有什么变化？",
+              "id": "5-15-12",
+              "answers": [
+                {
+                  "text": "更新并预装了部分原来没有的应用，1.1.0-mini 新预装了 vim、timeshift，将 lights-firefox 升级为 firefox",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "full 版：基于 deepin 20.8 打包，功能完整、预装程序多，无法选择语言，建议优先使用。",
+          "qas": [
+            {
+              "question": "full 版的特点是什么？",
+              "id": "5-15-13",
+              "answers": [
+                {
+                  "text": "基于 deepin 20.8 打包，功能较为完整、预装程序也比较多，但无法选择语言（即不能和 tiny、mini 版本一样启动选择语言）",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "install 版：基于 deepin 20.8 打包，功能完整，支持官方安装向导，有维护和安装功能，1.7.0 版待发布。",
+          "qas": [
+            {
+              "question": "install 版的定位是什么？",
+              "id": "5-15-14",
+              "answers": [
+                {
+                  "text": "社区定制的系统安装镜像，同时有 Live CD 的维护功能和系统安装功能",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "15.11 版：基于 deepin 15.11 制作，功能比 full 版少，因底层较老。",
+          "qas": [
+            {
+              "question": "15.11 版基于什么制作？",
+              "id": "5-15-15",
+              "answers": [
+                {
+                  "text": "deepin 15.11",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载链接包括鹤川云盘、123云盘、百度网盘、和彩云及备用链接。",
+          "qas": [
+            {
+              "question": "社区版 Deepin Live CD 可以从哪些地方下载？",
+              "id": "5-15-16",
+              "answers": [
+                {
+                  "text": "鹤川云盘：https://pan.hechuanyun.xyz/s/Weua；123云盘：https://www.123pan.com/s/pDSKVv-yRpWv；百度网盘：链接: https://pan.baidu.com/s/1n5J8M8iqfI-kMbmHfR-x9w 提取码: ejr7；和彩云：链接: https://caiyun.139.com/m/i?0r5CLA9upgtMT 提取码:nEy6；备用1：http://gfdgdxi.free.idcfengye.com/DeepinCommunityLiveCD/1.7.0/",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

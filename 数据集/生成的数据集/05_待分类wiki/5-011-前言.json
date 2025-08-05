@@ -1,0 +1,184 @@
+{
+  "data": [
+    {
+      "title": "前言",
+      "paragraphs": [
+        {
+          "context": "这一章详细讲解如何将 DDE 移植到其它发行版，移植工作费精神，建议组织人员或参与现有移植小组。",
+          "qas": [
+            {
+              "question": "这一章主要讲解什么内容？",
+              "id": "5-11-1",
+              "answers": [
+                {
+                  "text": "如何将 DDE 移植到其它发行版",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "为什么建议组织人员或参与现有移植小组进行DDE移植？",
+              "id": "5-11-2",
+              "answers": [
+                {
+                  "text": "移植工作是很费精神的",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "当前有两个与 DDE 移植相关的小组：dde-porting 移植小组和 OpenDDE openkylin 兴趣小组。",
+          "qas": [
+            {
+              "question": "当前有哪些与DDE移植相关的小组？",
+              "id": "5-11-3",
+              "answers": [
+                {
+                  "text": "dde-porting 移植小组和 OpenDDE openkylin 兴趣小组",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dde-porting 移植小组是 deepin 开源社区的兴趣小组，参与将 DDE 移植到 Arch Linux，Fedora，NixOS，Debian，Ubuntu 等多个发行版，相关 patch 贡献回 linuxdeepin 主线代码。",
+          "qas": [
+            {
+              "question": "dde-porting 移植小组属于哪个社区？",
+              "id": "5-11-4",
+              "answers": [
+                {
+                  "text": "deepin 开源社区",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "dde-porting 移植小组参与将DDE移植到哪些发行版？",
+              "id": "5-11-5",
+              "answers": [
+                {
+                  "text": "Arch Linux，Fedora，NixOS，Debian，Ubuntu 等多个发行版",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "question": "dde-porting 移植小组的相关patch会贡献到哪里？",
+              "id": "5-11-6",
+              "answers": [
+                {
+                  "text": "linuxdeepin 下的主线代码之中",
+                  "answer_start": 114
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dde-porting 移植小组相关代码以 Pull Request 形式提交到 linuxdeepin 原始仓库上游，可参考现有 Pull Request 了解 patch，鼓励向 linuxdeepin 仓库贡献代码，仓库地址https://github.com/linuxdeepin。",
+          "qas": [
+            {
+              "question": "dde-porting 移植小组的相关代码以什么形式提交？",
+              "id": "5-11-7",
+              "answers": [
+                {
+                  "text": "Pull Request 形式",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "可以在哪里参考dde-porting移植小组现有的patch？",
+              "id": "5-11-8",
+              "answers": [
+                {
+                  "text": "现有的 Pull Request",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "question": "linuxdeepin的仓库地址是什么？",
+              "id": "5-11-9",
+              "answers": [
+                {
+                  "text": "https://github.com/linuxdeepin",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "希望参与 Arch Linux，Fedora，NixOS 等发行版的移植或获取帮助，可与 dde-porting 移植组联系，联系地址https://github.com/deepin-community/SIG/tree/master/sig/dde-porting#%E8%AE%A8%E8%AE%BA%E6%B8%A0%E9%81%93。",
+          "qas": [
+            {
+              "question": "如何参与Arch Linux等发行版的DDE移植或获取帮助？",
+              "id": "5-11-10",
+              "answers": [
+                {
+                  "text": "与 dde-porting 移植组获得联系，联系地址https://github.com/deepin-community/SIG/tree/master/sig/dde-porting#%E8%AE%A8%E8%AE%BA%E6%B8%A0%E9%81%93",
+                  "answer_start": 46
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "OpenDDE openkylin兴趣小组由Deepin社区开发者及openkylin爱好者组建，是最初提出将DDE移植到openkylin的成员，将移植过程记录在wiki方便他人移植。",
+          "qas": [
+            {
+              "question": "OpenDDE openkylin兴趣小组由哪些人组建？",
+              "id": "5-11-11",
+              "answers": [
+                {
+                  "text": "Deepin社区开发者以及openkylin爱好者",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "OpenDDE openkylin兴趣小组最初提出了什么？",
+              "id": "5-11-12",
+              "answers": [
+                {
+                  "text": "将DDE移植到openkylin",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "question": "OpenDDE openkylin兴趣小组为什么将移植过程记录在wiki？",
+              "id": "5-11-13",
+              "answers": [
+                {
+                  "text": "方便大家进行桌面移植，将DDE桌面移植到更多发行版上",
+                  "answer_start": 95
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "参与 OpenDDE 可访问https://gitee.com/openkylin/community/tree/master/sig/OpenDDE。",
+          "qas": [
+            {
+              "question": "如何参与OpenDDE？",
+              "id": "5-11-14",
+              "answers": [
+                {
+                  "text": "访问https://gitee.com/openkylin/community/tree/master/sig/OpenDDE",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
