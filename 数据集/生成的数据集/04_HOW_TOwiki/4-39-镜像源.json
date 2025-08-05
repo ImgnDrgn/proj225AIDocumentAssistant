@@ -1,0 +1,309 @@
+{
+  "data": [
+    {
+      "title": "镜像源",
+      "paragraphs": [
+        {
+          "context": "官方ISO仓库地址为http://cdimage.deepin.com/",
+          "qas": [
+            {
+              "question": "官方ISO仓库的地址是什么？",
+              "id": "4-39-1",
+              "answers": [
+                {
+                  "text": "http://cdimage.deepin.com/",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "淡江大学（台湾）提供的ISO仓库http地址为http://ftp.tku.edu.tw/Linux/Deepin/deepin-cd/",
+          "qas": [
+            {
+              "question": "淡江大学（台湾）提供的ISO仓库http地址是什么？",
+              "id": "4-39-2",
+              "answers": [
+                {
+                  "text": "http://ftp.tku.edu.tw/Linux/Deepin/deepin-cd/",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "华为云的ISO仓库https地址为https://mirrors.huaweicloud.com/deepin-cd/",
+          "qas": [
+            {
+              "question": "华为云的ISO仓库https地址是什么？",
+              "id": "4-39-3",
+              "answers": [
+                {
+                  "text": "https://mirrors.huaweicloud.com/deepin-cd/",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "阿里云的ISO仓库http地址为http://mirrors.aliyun.com/deepin-cd",
+          "qas": [
+            {
+              "question": "阿里云的ISO仓库http地址是什么？",
+              "id": "4-39-4",
+              "answers": [
+                {
+                  "text": "http://mirrors.aliyun.com/deepin-cd",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "网易的ISO仓库http地址为http://mirrors.163.com/deepin-cd/",
+          "qas": [
+            {
+              "question": "网易的ISO仓库http地址是什么？",
+              "id": "4-39-5",
+              "answers": [
+                {
+                  "text": "http://mirrors.163.com/deepin-cd/",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "清华大学的ISO仓库http地址为http://mirrors.tuna.tsinghua.edu.cn/deepin-cd/",
+          "qas": [
+            {
+              "question": "清华大学的ISO仓库http地址是什么？",
+              "id": "4-39-6",
+              "answers": [
+                {
+                  "text": "http://mirrors.tuna.tsinghua.edu.cn/deepin-cd/",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "比利时Belnet的ISO仓库http地址为http://ftp.belnet.be/mirror/deepin-cd/",
+          "qas": [
+            {
+              "question": "比利时Belnet的ISO仓库http地址是什么？",
+              "id": "4-39-7",
+              "answers": [
+                {
+                  "text": "http://ftp.belnet.be/mirror/deepin-cd/",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "巴西Federal University of Parana (UFPR)的ISO仓库https地址为https://deepin.c3sl.ufpr.br/deepin-cd",
+          "qas": [
+            {
+              "question": "巴西Federal University of Parana (UFPR)的ISO仓库https地址是什么？",
+              "id": "4-39-8",
+              "answers": [
+                {
+                  "text": "https://deepin.c3sl.ufpr.br/deepin-cd",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "保加利亚Netix Ltd的ISO仓库rsync地址为https://mirrors.netix.net/deepin-cd/",
+          "qas": [
+            {
+              "question": "保加利亚Netix Ltd的ISO仓库rsync地址是什么？",
+              "id": "4-39-9",
+              "answers": [
+                {
+                  "text": "https://mirrors.netix.net/deepin-cd/",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件仓库同步命令为rsync -av --delete-after rsync.deepin.com::deepin/ /var/www/deepin/",
+          "qas": [
+            {
+              "question": "软件仓库的同步命令是什么？",
+              "id": "4-39-10",
+              "answers": [
+                {
+                  "text": "rsync -av --delete-after rsync.deepin.com::deepin/ /var/www/deepin/",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ISO仓库同步命令为rsync -av --delete-after rsync.deepin.com::releases/ /var/www/deepin-cd/",
+          "qas": [
+            {
+              "question": "ISO仓库的同步命令是什么？",
+              "id": "4-39-11",
+              "answers": [
+                {
+                  "text": "rsync -av --delete-after rsync.deepin.com::releases/ /var/www/deepin-cd/",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件仓库所需大小为400GB",
+          "qas": [
+            {
+              "question": "软件仓库所需大小是多少？",
+              "id": "4-39-12",
+              "answers": [
+                {
+                  "text": "400GB",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ISO仓库所需大小为60GB",
+          "qas": [
+            {
+              "question": "ISO仓库所需大小是多少？",
+              "id": "4-39-13",
+              "answers": [
+                {
+                  "text": "60GB",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "中国科学技术大学的ISO仓库https地址为https://mirrors.ustc.edu.cn/deepin-cd/releases/",
+          "qas": [
+            {
+              "question": "中国科学技术大学的ISO仓库https地址是什么？",
+              "id": "4-39-14",
+              "answers": [
+                {
+                  "text": "https://mirrors.ustc.edu.cn/deepin-cd/releases/",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "德国FAU Erlangen-Nürnberg的ISO仓库ftp地址为ftp://ftp.fau.de/deepin/",
+          "qas": [
+            {
+              "question": "德国FAU Erlangen-Nürnberg的ISO仓库ftp地址是什么？",
+              "id": "4-39-15",
+              "answers": [
+                {
+                  "text": "ftp://ftp.fau.de/deepin/",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "日本JAIST的ISO仓库rsync地址为http://ftp.jaist.ac.jp/pub/Linux/deepin-cd/",
+          "qas": [
+            {
+              "question": "日本JAIST的ISO仓库rsync地址是什么？",
+              "id": "4-39-16",
+              "answers": [
+                {
+                  "text": "http://ftp.jaist.ac.jp/pub/Linux/deepin-cd/",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "英国Bytemark Hosting的ISO仓库ftp地址为ftp://mirror.bytemark.co.uk/linuxdeepin/releases/",
+          "qas": [
+            {
+              "question": "英国Bytemark Hosting的ISO仓库ftp地址是什么？",
+              "id": "4-39-17",
+              "answers": [
+                {
+                  "text": "ftp://mirror.bytemark.co.uk/linuxdeepin/releases/",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "美国Linux Kernel Archives的ISO仓库rsync地址为https://mirrors.kernel.org/deepin",
+          "qas": [
+            {
+              "question": "美国Linux Kernel Archives的ISO仓库rsync地址是什么？",
+              "id": "4-39-18",
+              "answers": [
+                {
+                  "text": "https://mirrors.kernel.org/deepin",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "乌拉圭Centro Universitario Regional del Este的ISO仓库https地址为https://deepin.repo.cure.edu.uy/isos/",
+          "qas": [
+            {
+              "question": "乌拉圭Centro Universitario Regional del Este的ISO仓库https地址是什么？",
+              "id": "4-39-19",
+              "answers": [
+                {
+                  "text": "https://deepin.repo.cure.edu.uy/isos/",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "反馈建议和意见可发送至support@deepin.com",
+          "qas": [
+            {
+              "question": "反馈建议和意见可以发送到哪个邮箱？",
+              "id": "4-39-20",
+              "answers": [
+                {
+                  "text": "support@deepin.com",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

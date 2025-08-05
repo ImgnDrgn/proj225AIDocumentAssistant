@@ -1,0 +1,324 @@
+{
+  "data": [
+    {
+      "title": "软件源替换教程",
+      "paragraphs": [
+        {
+          "context": "软件源是Linux系统免费的应用程序安装仓库，分软件仓库（二进制包和源代码）和ISO仓库（发行版ISO文件）。",
+          "qas": [
+            {
+              "question": "软件源是什么？",
+              "id": "4-38-1",
+              "answers": [
+                {
+                  "text": "Linux系统免费的应用程序安装仓库",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "软件源按类型分有哪些？",
+              "id": "4-38-2",
+              "answers": [
+                {
+                  "text": "软件仓库：各类软件的二进制包和源代码；ISO仓库：发行版的ISO文件",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度操作系统官方软件源地址：http://packages.deepin.com/，其中pool/目录存已发布版软件包，project/存开发人员资源。",
+          "qas": [
+            {
+              "question": "深度操作系统官方软件源地址是什么？",
+              "id": "4-38-3",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "深度操作系统官方软件源中pool/目录存放什么？",
+              "id": "4-38-4",
+              "answers": [
+                {
+                  "text": "所有已发布版的软件包",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "question": "project/目录存放什么资源？",
+              "id": "4-38-5",
+              "answers": [
+                {
+                  "text": "开发人员所使用的资源",
+                  "answer_start": 90
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度操作系统软件源配置文件为/etc/apt/sources.list，含软件源地址描述信息，软件获取需联网。",
+          "qas": [
+            {
+              "question": "深度操作系统的软件源配置文件是什么？",
+              "id": "4-38-6",
+              "answers": [
+                {
+                  "text": "/etc/apt/sources.list",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "软件源配置文件里包含什么？",
+              "id": "4-38-7",
+              "answers": [
+                {
+                  "text": "所用的软件源地址的描述信息",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度操作系统用apt-get命令管理软件，基于Ren Hat的多数Linux用yum，少数有自己的包管理系统。",
+          "qas": [
+            {
+              "question": "深度操作系统使用什么命令管理软件？",
+              "id": "4-38-8",
+              "answers": [
+                {
+                  "text": "apt-get",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "基于Ren Hat的多数Linux使用什么命令管理软件？",
+              "id": "4-38-9",
+              "answers": [
+                {
+                  "text": "yum",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "终端执行sudo gedit /etc/apt/sources.list可查看当前系统的源文件。",
+          "qas": [
+            {
+              "question": "如何查看当前系统的源文件？",
+              "id": "4-38-10",
+              "answers": [
+                {
+                  "text": "终端执行sudo gedit /etc/apt/sources.list",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度操作系统15默认软件源：deb [by-hash=force] http://packages.deepin.com/deepin stable main contrib non-free，#deb-src开头为注释的源码包地址。",
+          "qas": [
+            {
+              "question": "深度操作系统15的默认软件源是什么？",
+              "id": "4-38-11",
+              "answers": [
+                {
+                  "text": "deb [by-hash=force] http://packages.deepin.com/deepin stable main contrib non-free",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "#deb-src开头的行表示什么？",
+              "id": "4-38-12",
+              "answers": [
+                {
+                  "text": "注释的源码包地址",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deb表示二进制软件包，deb-src表示源码包，含源程序编码等。",
+          "qas": [
+            {
+              "question": "deb表示什么类型的文件？",
+              "id": "4-38-13",
+              "answers": [
+                {
+                  "text": "二进制软件包，即通常使用的已编译好的软件包",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "deb-src表示什么？",
+              "id": "4-38-14",
+              "answers": [
+                {
+                  "text": "源码包，源码包包含源程序编码、Debian控制文件(.dsc)和“Debian化”该程序所做更改的记录文件diff.gz",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改软件源方法：1.控制中心—系统信息—设置—更新源（更改）选择；2.终端sudo edit /etc/apt/sources.list手工修改，改后需sudo apt-get update刷新。",
+          "qas": [
+            {
+              "question": "修改软件源的方法有哪些？",
+              "id": "4-38-15",
+              "answers": [
+                {
+                  "text": "1. 运行控制中心——系统信息——设置——更新源（更改），选择喜欢的软件源。2. 手工修改源配置文件，终端执行：sudo edit  /etc/apt/sources.list",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "修改软件源配置文件后需要做什么？",
+              "id": "4-38-16",
+              "answers": [
+                {
+                  "text": "刷新软件源列表，终端执行：sudo apt-get update",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "同步软件仓库用rsync -av --delete-after rsync.deepin.com::deepin/ /var/www/deepin/，大小约330GB；同步ISO仓库用rsync -av --delete-after rsync.deepin.com::releases/ /var/www/deepin-cd/，约520GB。",
+          "qas": [
+            {
+              "question": "同步软件仓库的命令是什么？",
+              "id": "4-38-17",
+              "answers": [
+                {
+                  "text": "rsync -av --delete-after rsync.deepin.com::deepin/ /var/www/deepin/",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "软件仓库的大小约为多少？",
+              "id": "4-38-18",
+              "answers": [
+                {
+                  "text": "330 GB",
+                  "answer_start": 82
+                }
+              ]
+            },
+            {
+              "question": "同步ISO仓库的命令是什么？",
+              "id": "4-38-19",
+              "answers": [
+                {
+                  "text": "rsync -av --delete-after rsync.deepin.com::releases/ /var/www/deepin-cd/",
+                  "answer_start": 93
+                }
+              ]
+            },
+            {
+              "question": "ISO仓库的大小约为多少？",
+              "id": "4-38-20",
+              "answers": [
+                {
+                  "text": "520 GB",
+                  "answer_start": 175
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "同步软件源备注：可移/var/www/路径到服务器根目录；添加每天cron任务保持最新；优先同步软件仓库再ISO仓库；不存放其他文件；意见反馈至support@deepin.org。",
+          "qas": [
+            {
+              "question": "同步软件源时，/var/www/路径可以如何处理？",
+              "id": "4-38-21",
+              "answers": [
+                {
+                  "text": "可以将地址中/var/www/路径移到服务器的根目录下",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "如何确保提供的深度操作系统镜像源长期保持最新？",
+              "id": "4-38-22",
+              "answers": [
+                {
+                  "text": "添加一个每天运行的cron任务",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "question": "同步深度操作系统的仓库有什么建议顺序？",
+              "id": "4-38-23",
+              "answers": [
+                {
+                  "text": "优先同步深度操作系统的软件仓库，然后同步深度操作系统的ISO仓库",
+                  "answer_start": 99
+                }
+              ]
+            },
+            {
+              "question": "深度操作系统镜像源相关目录中能否存放其他文件？",
+              "id": "4-38-24",
+              "answers": [
+                {
+                  "text": "不要在深度操作系统镜像源相关的目录中存放其他文件（例如非官方的软件包），以避免造成误会",
+                  "answer_start": 165
+                }
+              ]
+            },
+            {
+              "question": "有建议和意见时，反馈至哪里？",
+              "id": "4-38-25",
+              "answers": [
+                {
+                  "text": "support@deepin.org",
+                  "answer_start": 273
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "相关链接：[深度操作系统镜像源页面](http://www.deepin.org/mirror.html)",
+          "qas": [
+            {
+              "question": "深度操作系统镜像源页面的链接是什么？",
+              "id": "4-38-26",
+              "answers": [
+                {
+                  "text": "http://www.deepin.org/mirror.html",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
