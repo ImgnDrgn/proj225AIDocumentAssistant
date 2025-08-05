@@ -1,0 +1,494 @@
+{
+  "data": [
+    {
+      "title": "软件源",
+      "paragraphs": [
+        {
+          "context": "官方软件仓库地址为https://community-packages.deepin.com/deepin/",
+          "qas": [
+            {
+              "question": "官方软件仓库的地址是什么？",
+              "id": "4-37-1",
+              "answers": [
+                {
+                  "text": "https://community-packages.deepin.com/deepin/",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "中国淡江大学（台湾）提供的软件仓库http地址为http://ftp.tku.edu.tw/Linux/Deepin/deepin/",
+          "qas": [
+            {
+              "question": "中国淡江大学（台湾）的软件仓库http地址是什么？",
+              "id": "4-37-2",
+              "answers": [
+                {
+                  "text": "http://ftp.tku.edu.tw/Linux/Deepin/deepin/",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "华为云的软件仓库https地址是https://mirrors.huaweicloud.com/deepin/",
+          "qas": [
+            {
+              "question": "华为云的软件仓库https地址是什么？",
+              "id": "4-37-3",
+              "answers": [
+                {
+                  "text": "https://mirrors.huaweicloud.com/deepin/",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "阿里云的软件仓库http地址为http://mirrors.aliyun.com/deepin",
+          "qas": [
+            {
+              "question": "阿里云的软件仓库http地址是什么？",
+              "id": "4-37-4",
+              "answers": [
+                {
+                  "text": "http://mirrors.aliyun.com/deepin",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "网易的软件仓库http地址是http://mirrors.163.com/deepin/",
+          "qas": [
+            {
+              "question": "网易的软件仓库http地址是什么？",
+              "id": "4-37-5",
+              "answers": [
+                {
+                  "text": "http://mirrors.163.com/deepin/",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "搜狐的软件仓库http地址为http://mirrors.sohu.com/deepin",
+          "qas": [
+            {
+              "question": "搜狐的软件仓库http地址是什么？",
+              "id": "4-37-6",
+              "answers": [
+                {
+                  "text": "http://mirrors.sohu.com/deepin",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "清华大学的软件仓库http地址是http://mirrors.tuna.tsinghua.edu.cn/deepin/",
+          "qas": [
+            {
+              "question": "清华大学的软件仓库http地址是什么？",
+              "id": "4-37-7",
+              "answers": [
+                {
+                  "text": "http://mirrors.tuna.tsinghua.edu.cn/deepin/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "浙江大学的软件仓库http地址为http://mirrors.zju.edu.cn/deepin/",
+          "qas": [
+            {
+              "question": "浙江大学的软件仓库http地址是什么？",
+              "id": "4-37-8",
+              "answers": [
+                {
+                  "text": "http://mirrors.zju.edu.cn/deepin/",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "兰州大学提供https和ftp两种软件仓库地址，分别是https://mirror.lzu.edu.cn/deepin/和ftp://mirror.lzu.edu.cn/deepin/",
+          "qas": [
+            {
+              "question": "兰州大学的软件仓库https地址是什么？",
+              "id": "4-37-9",
+              "answers": [
+                {
+                  "text": "https://mirror.lzu.edu.cn/deepin/",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "兰州大学的软件仓库ftp地址是什么？",
+              "id": "4-37-10",
+              "answers": [
+                {
+                  "text": "ftp://mirror.lzu.edu.cn/deepin/",
+                  "answer_start": 64
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "中国科学技术大学的软件仓库http地址是http://mirrors.ustc.edu.cn/deepin/",
+          "qas": [
+            {
+              "question": "中国科学技术大学的软件仓库http地址是什么？",
+              "id": "4-37-11",
+              "answers": [
+                {
+                  "text": "http://mirrors.ustc.edu.cn/deepin/",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "中国互联网络信息中心的软件仓库https地址为https://mirrors.cnnic.cn/deepin/",
+          "qas": [
+            {
+              "question": "中国互联网络信息中心的软件仓库https地址是什么？",
+              "id": "4-37-12",
+              "answers": [
+                {
+                  "text": "https://mirrors.cnnic.cn/deepin/",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "北京外国语大学的软件仓库http地址是http://mirrors.bfsu.edu.cn/deepin/",
+          "qas": [
+            {
+              "question": "北京外国语大学的软件仓库http地址是什么？",
+              "id": "4-37-13",
+              "answers": [
+                {
+                  "text": "http://mirrors.bfsu.edu.cn/deepin/",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "上海交通大学有http和ftp两种软件仓库地址，分别是http://ftp.sjtu.edu.cn/deepin/和ftp://ftp.sjtu.edu.cn/deepin/",
+          "qas": [
+            {
+              "question": "上海交通大学的软件仓库http地址是什么？",
+              "id": "4-37-14",
+              "answers": [
+                {
+                  "text": "http://ftp.sjtu.edu.cn/deepin/",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "上海交通大学的软件仓库ftp地址是什么？",
+              "id": "4-37-15",
+              "answers": [
+                {
+                  "text": "ftp://ftp.sjtu.edu.cn/deepin/",
+                  "answer_start": 64
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "华中科技大学的软件仓库http地址为http://mirrors.hust.edu.cn/deepin/",
+          "qas": [
+            {
+              "question": "华中科技大学的软件仓库http地址是什么？",
+              "id": "4-37-16",
+              "answers": [
+                {
+                  "text": "http://mirrors.hust.edu.cn/deepin/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "南京大学提供http和https两种软件仓库地址，分别是http://mirrors.nju.edu.cn/deepin/和https://mirrors.nju.edu.cn/deepin/",
+          "qas": [
+            {
+              "question": "南京大学的软件仓库http地址是什么？",
+              "id": "4-37-17",
+              "answers": [
+                {
+                  "text": "http://mirrors.nju.edu.cn/deepin/",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "question": "南京大学的软件仓库https地址是什么？",
+              "id": "4-37-18",
+              "answers": [
+                {
+                  "text": "https://mirrors.nju.edu.cn/deepin/",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "哈尔滨工业大学有http和httpv4两种软件仓库地址，分别是http://mirrors.hit.edu.cn/deepin/和http://mirrors4.hit.edu.cn/deepin",
+          "qas": [
+            {
+              "question": "哈尔滨工业大学的软件仓库http地址是什么？",
+              "id": "4-37-19",
+              "answers": [
+                {
+                  "text": "http://mirrors.hit.edu.cn/deepin/",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "哈尔滨工业大学的软件仓库httpv4地址是什么？",
+              "id": "4-37-20",
+              "answers": [
+                {
+                  "text": "http://mirrors4.hit.edu.cn/deepin",
+                  "answer_start": 64
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "吉林大学提供http和https两种软件仓库地址，分别是http://mirrors.jlu.edu.cn/deepin/和https://mirrors.jlu.edu.cn/deepin/",
+          "qas": [
+            {
+              "question": "吉林大学的软件仓库http地址是什么？",
+              "id": "4-37-21",
+              "answers": [
+                {
+                  "text": "http://mirrors.jlu.edu.cn/deepin/",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "question": "吉林大学的软件仓库https地址是什么？",
+              "id": "4-37-22",
+              "answers": [
+                {
+                  "text": "https://mirrors.jlu.edu.cn/deepin/",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "比利时Belnet的软件仓库http地址为http://ftp.belnet.be/mirror/deepin/",
+          "qas": [
+            {
+              "question": "比利时Belnet的软件仓库http地址是什么？",
+              "id": "4-37-23",
+              "answers": [
+                {
+                  "text": "http://ftp.belnet.be/mirror/deepin/",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "巴西Federal University of Parana (UFPR)有http和https两种软件仓库地址，分别是http://deepin.c3sl.ufpr.br/deepin/和https://deepin.c3sl.ufpr.br/deepin/",
+          "qas": [
+            {
+              "question": "巴西Federal University of Parana (UFPR)的软件仓库http地址是什么？",
+              "id": "4-37-24",
+              "answers": [
+                {
+                  "text": "http://deepin.c3sl.ufpr.br/deepin/",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "question": "巴西Federal University of Parana (UFPR)的软件仓库https地址是什么？",
+              "id": "4-37-25",
+              "answers": [
+                {
+                  "text": "https://deepin.c3sl.ufpr.br/deepin/",
+                  "answer_start": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件仓库同步命令为rsync -av --delete-after rsync.deepin.com::deepin/ /var/www/deepin/，所需大小400GB",
+          "qas": [
+            {
+              "question": "软件仓库的同步命令是什么？",
+              "id": "4-37-26",
+              "answers": [
+                {
+                  "text": "rsync -av --delete-after rsync.deepin.com::deepin/ /var/www/deepin/",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "同步软件仓库需要多大空间？",
+              "id": "4-37-27",
+              "answers": [
+                {
+                  "text": "400GB",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ISO仓库同步命令为rsync -av --delete-after rsync.deepin.com::releases/ /var/www/deepin-cd/，所需大小60GB",
+          "qas": [
+            {
+              "question": "ISO仓库的同步命令是什么？",
+              "id": "4-37-28",
+              "answers": [
+                {
+                  "text": "rsync -av --delete-after rsync.deepin.com::releases/ /var/www/deepin-cd/",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "同步ISO仓库需要多大空间？",
+              "id": "4-37-29",
+              "answers": [
+                {
+                  "text": "60GB",
+                  "answer_start": 84
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "提供镜像源建议优先同步软件仓库，再同步ISO仓库",
+          "qas": [
+            {
+              "question": "提供镜像源时建议优先同步什么仓库？",
+              "id": "4-37-30",
+              "answers": [
+                {
+                  "text": "软件仓库",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "提供镜像源可将/var/www/路径移到服务器根目录下",
+          "qas": [
+            {
+              "question": "提供镜像源时/var/www/路径可以移到哪里？",
+              "id": "4-37-31",
+              "answers": [
+                {
+                  "text": "服务器的根目录下",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "提供镜像源建议添加每天运行的cron任务以保持最新",
+          "qas": [
+            {
+              "question": "为保持镜像源最新，建议添加什么任务？",
+              "id": "4-37-32",
+              "answers": [
+                {
+                  "text": "每天运行的cron任务",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "镜像源相关目录不要存放其他文件，避免误会",
+          "qas": [
+            {
+              "question": "镜像源相关目录中可以存放非官方软件包吗？",
+              "id": "4-37-33",
+              "answers": [
+                {
+                  "text": "不可以，避免造成误会",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "有建议和意见可反馈至support@deepin.com",
+          "qas": [
+            {
+              "question": "有建议和意见可以反馈到哪里？",
+              "id": "4-37-34",
+              "answers": [
+                {
+                  "text": "support@deepin.com",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "可到wiki:软件源添加或提交仓库",
+          "qas": [
+            {
+              "question": "在哪里可以添加或提交仓库？",
+              "id": "4-37-35",
+              "answers": [
+                {
+                  "text": "wiki:软件源",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
