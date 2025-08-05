@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "title": "Cairo-Dock",
+      "paragraphs": [
+        {
+          "context": "Cairo-Dock是一个Dock类软件，支持OpenGL、提供动画及视觉效果的插件、新的Applet、重写配置面板、新增主题等功能。",
+          "qas": [
+            {
+              "question": "Cairo-Dock是什么类型的软件？",
+              "id": "5-6-1",
+              "answers": [
+                {
+                  "text": "Dock类软件",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "Cairo-Dock支持哪些功能？",
+              "id": "5-6-2",
+              "answers": [
+                {
+                  "text": "支持OpenGL、提供动画及视觉效果的插件、新的Applet、重写配置面板、新增主题等功能。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Cairo-Dock的命令是sudo apt-get install cairo-dock。",
+          "qas": [
+            {
+              "question": "如何安装Cairo-Dock？",
+              "id": "5-6-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install cairo-dock",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Cairo-Dock的命令是sudo apt-get remove cairo-dock。",
+          "qas": [
+            {
+              "question": "怎样卸载Cairo-Dock？",
+              "id": "5-6-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove cairo-dock",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Cairo-Dock的仓库地址是http://packages.deepin.com/deepin/pool/main/c/cairo-dock/。",
+          "qas": [
+            {
+              "question": "Cairo-Dock的仓库地址是什么？",
+              "id": "5-6-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/c/cairo-dock/",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
