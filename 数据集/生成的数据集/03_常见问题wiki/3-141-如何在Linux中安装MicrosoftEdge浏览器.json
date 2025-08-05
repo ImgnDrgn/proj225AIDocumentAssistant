@@ -1,0 +1,209 @@
+{
+  "data": [
+    {
+      "title": "如何在Linux中安装MicrosoftEdge浏览器",
+      "paragraphs": [
+        {
+          "context": "Edge浏览器最初发布于Windows 10，后支持Mac OS、X Box和Android，Linux开发版供开发者测试使用。",
+          "qas": [
+            {
+              "question": "Edge浏览器最初在哪个系统上发布？",
+              "id": "3-141-1",
+              "answers": [
+                {
+                  "text": "Windows 10",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "Linux上的Edge开发版主要供谁使用？",
+              "id": "3-141-2",
+              "answers": [
+                {
+                  "text": "想要在Linux上构建和测试其站点和应用程序的开发人员",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "目前Linux版Edge仅支持本地账户，无法使用Microsoft等网络账户登录。",
+          "qas": [
+            {
+              "question": "目前Linux版Edge支持网络账户登录吗？",
+              "id": "3-141-3",
+              "answers": [
+                {
+                  "text": "不支持，目前尚无法使用网络账户登录，仅支持本地帐户。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在Linux上安装Microsoft Edge有两种方法：从官网下载安装包、使用包管理器安装。",
+          "qas": [
+            {
+              "question": "在Linux上安装Microsoft Edge有几种方法？",
+              "id": "3-141-4",
+              "answers": [
+                {
+                  "text": "两种",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "在Linux上安装Microsoft Edge的方法有哪些？",
+              "id": "3-141-5",
+              "answers": [
+                {
+                  "text": "从Microsoft Edge网站下载安装包；使用包管理器安装。",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Ubuntu/Deepin系统用.deb文件安装Edge：wget下载deb包，再sudo dpkg -i安装。",
+          "qas": [
+            {
+              "question": "在Ubuntu系统中用.deb文件安装Edge的第一步是什么？",
+              "id": "3-141-6",
+              "answers": [
+                {
+                  "text": "wget https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-dev/microsoft-edge-dev_89.0.767.0-1_amd64.deb",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "Ubuntu系统中安装下载好的Edge deb包用什么命令？",
+              "id": "3-141-7",
+              "answers": [
+                {
+                  "text": "sudo dpkg -i microsoft-edge-*.deb",
+                  "answer_start": 117
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Fedora/OpenSUSE系统用.rpm文件安装Edge：wget下载rpm包，再rpm -ivh安装。",
+          "qas": [
+            {
+              "question": "Fedora系统中用.rpm文件安装Edge需要下载什么包？",
+              "id": "3-141-8",
+              "answers": [
+                {
+                  "text": "microsoft-edge-dev-89.0.767.0-1.x86_64.rpm",
+                  "answer_start": 44
+                }
+              ]
+            },
+            {
+              "question": "OpenSUSE系统中安装下载好的Edge rpm包用什么命令？",
+              "id": "3-141-9",
+              "answers": [
+                {
+                  "text": "rpm -ivh microsoft-edge-*.rpm",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Ubuntu/Deepin用包管理器安装Edge：导入密钥，添加源，更新，安装microsoft-edge-dev。",
+          "qas": [
+            {
+              "question": "Ubuntu系统用包管理器安装Edge时，如何导入密钥？",
+              "id": "3-141-10",
+              "answers": [
+                {
+                  "text": "curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg；sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "Ubuntu系统用包管理器安装Edge的最后一步命令是什么？",
+              "id": "3-141-11",
+              "answers": [
+                {
+                  "text": "sudo apt install microsoft-edge-dev",
+                  "answer_start": 262
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Fedora用包管理器安装Edge：导入密钥，添加源，重命名repo文件，dnf安装。",
+          "qas": [
+            {
+              "question": "Fedora系统用包管理器安装Edge时，如何添加源？",
+              "id": "3-141-12",
+              "answers": [
+                {
+                  "text": "dnf config-manager --add-repo https://packages.microsoft.com/yumrepos/edge",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "Fedora系统用包管理器安装Edge用什么命令？",
+              "id": "3-141-13",
+              "answers": [
+                {
+                  "text": "dnf install microsoft-edge-dev",
+                  "answer_start": 138
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "OpenSUSE用包管理器安装Edge：导入密钥，添加源，刷新，zypper安装。",
+          "qas": [
+            {
+              "question": "OpenSUSE系统用包管理器安装Edge时，如何添加源？",
+              "id": "3-141-14",
+              "answers": [
+                {
+                  "text": "sudo zypper ar https://packages.microsoft.com/yumrepos/edge microsoft-edge-dev",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "OpenSUSE系统用包管理器安装Edge前需要刷新吗？",
+              "id": "3-141-15",
+              "answers": [
+                {
+                  "text": "需要，执行sudo zypper refresh",
+                  "answer_start": 116
+                }
+              ]
+            },
+            {
+              "question": "OpenSUSE系统用包管理器安装Edge用什么命令？",
+              "id": "3-141-16",
+              "answers": [
+                {
+                  "text": "sudo zypper install microsoft-edge-dev",
+                  "answer_start": 142
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

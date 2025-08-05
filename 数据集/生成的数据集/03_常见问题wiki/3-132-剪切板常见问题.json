@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "剪切板常见问题",
+      "paragraphs": [
+        {
+          "context": "剪切板出现重复图片，很大几率是后端处理导致系统剪切板所有权转变，收到多次数据改变信号，相同数据显示多次。",
+          "qas": [
+            {
+              "question": "剪切板出现重复图片的可能原因是什么？",
+              "id": "3-132-1",
+              "answers": [
+                {
+                  "text": "后端处理导致系统剪切板所有权转变，然后收到多次数据改变信号，相同的数据显示多次。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "分析剪切板重复图片问题，可进入/home/tmr/.cache/deepin/dde-clipboardloader目录，记当前日志位置，触发截图，查看FROM_DEEPIN_CLIPBOARD_MANAGER字符串打印次数，正常应打印两次，一次截图只打印一次则是后端问题，该字段用于前端过滤重复数据。",
+          "qas": [
+            {
+              "question": "如何分析剪切板重复图片问题？",
+              "id": "3-132-2",
+              "answers": [
+                {
+                  "text": "进入/home/tmr/.cache/deepin/dde-clipboardloader目录，记住当前日志位置，触发截图，查看FROM_DEEPIN_CLIPBOARD_MANAGER字符串打印次数，正常情况都会打印两次，如果一次截图只打印了一次，说明是后端问题。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "FROM_DEEPIN_CLIPBOARD_MANAGER字符串的作用是什么？",
+              "id": "3-132-3",
+              "answers": [
+                {
+                  "text": "用于前端进行过滤重复数据。",
+                  "answer_start": 196
+                }
+              ]
+            },
+            {
+              "question": "分析剪切板重复图片问题时，FROM_DEEPIN_CLIPBOARD_MANAGER字符串正常应打印几次？",
+              "id": "3-132-4",
+              "answers": [
+                {
+                  "text": "两次",
+                  "answer_start": 156
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "剪切板各类数据异常问题包括图片异常、图标异常、文本丢失、文件缺失。",
+          "qas": [
+            {
+              "question": "剪切板各类数据异常问题有哪些表现？",
+              "id": "3-132-5",
+              "answers": [
+                {
+                  "text": "图片异常、图标异常、文本丢失、文件缺失。",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "分析剪切板数据异常问题，可在ClipboardLoader::doWork()函数中打印所有收到的系统剪切板数据，查看各字段是否异常，是否为空、是否缺失，不同数据类型有不同字段。",
+          "qas": [
+            {
+              "question": "如何分析剪切板各类数据异常问题？",
+              "id": "3-132-6",
+              "answers": [
+                {
+                  "text": "在ClipboardLoader::doWork()函数中打印所有收到的系统剪切板数据，查看各字段是否异常，是否为空、是否缺失。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "剪切板数据类型不同，包含字段不同，文本、文件、图片等有img、text、timestamp、html等字段。",
+          "qas": [
+            {
+              "question": "剪切板不同数据类型有哪些常见字段？",
+              "id": "3-132-7",
+              "answers": [
+                {
+                  "text": "img、text、timestamp、html等。",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打印系统剪切板数据的代码为：const QMimeData *mimeData = m_board->mimeData();for (int i = 0; i < mimeData->formats().size(); ++i) {qDebug()<<\"format:\"<<mimeData->formats()[i]<<\", data:\" <<mimeData->data(mimeData->formats()[i]);}",
+          "qas": [
+            {
+              "question": "用于打印系统剪切板数据的代码是什么？",
+              "id": "3-132-8",
+              "answers": [
+                {
+                  "text": "const QMimeData *mimeData = m_board->mimeData();for (int i = 0; i < mimeData->formats().size(); ++i) {qDebug()<<\"format:\"<<mimeData->formats()[i]<<\", data:\" <<mimeData->data(mimeData->formats()[i]);}",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

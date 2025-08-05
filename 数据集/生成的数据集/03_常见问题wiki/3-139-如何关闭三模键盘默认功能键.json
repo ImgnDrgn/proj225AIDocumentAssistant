@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "如何关闭三模键盘默认功能键",
+      "paragraphs": [
+        {
+          "context": "三模键盘默认有功能键，可通过特定命令关闭。",
+          "qas": [
+            {
+              "question": "三模键盘默认有功能键吗？",
+              "id": "3-139-1",
+              "answers": [
+                {
+                  "text": "有",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "三模键盘的默认功能键可以关闭吗？",
+              "id": "3-139-2",
+              "answers": [
+                {
+                  "text": "可以通过特定命令关闭",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "关闭三模键盘默认功能键的第一个命令是echo options hid_apple fnmode=2 | sudo tee -a /etc/modprobe.d/hid_apple.conf。",
+          "qas": [
+            {
+              "question": "关闭三模键盘默认功能键的第一个命令是什么？",
+              "id": "3-139-3",
+              "answers": [
+                {
+                  "text": "echo options hid_apple fnmode=2 | sudo tee -a /etc/modprobe.d/hid_apple.conf",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "关闭三模键盘默认功能键的第二个命令是sudo update-initramfs -u -k all。",
+          "qas": [
+            {
+              "question": "关闭三模键盘默认功能键的第二个命令是什么？",
+              "id": "3-139-4",
+              "answers": [
+                {
+                  "text": "sudo update-initramfs -u -k all",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "关闭三模键盘默认功能键需执行两个命令，分别是echo options hid_apple fnmode=2 | sudo tee -a /etc/modprobe.d/hid_apple.conf和sudo update-initramfs -u -k all。",
+          "qas": [
+            {
+              "question": "关闭三模键盘默认功能键需要执行几个命令？",
+              "id": "3-139-5",
+              "answers": [
+                {
+                  "text": "两个",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "question": "关闭三模键盘默认功能键需要执行哪些命令？",
+              "id": "3-139-6",
+              "answers": [
+                {
+                  "text": "echo options hid_apple fnmode=2 | sudo tee -a /etc/modprobe.d/hid_apple.conf和sudo update-initramfs -u -k all",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "title": "在Deepin自带的安卓模拟器uengine中安装apk的方法",
+      "paragraphs": [
+        {
+          "context": "在Deepin的uengine中安装apk使用命令：uengine install --apk=绝对路径，$PWD表示当前路径。",
+          "qas": [
+            {
+              "question": "在Deepin的uengine中安装apk用什么命令？",
+              "id": "3-134-1",
+              "answers": [
+                {
+                  "text": "uengine install --apk=绝对路径",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "$PWD在安装apk的命令中表示什么？",
+              "id": "3-134-2",
+              "answers": [
+                {
+                  "text": "当前路径",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若uengine命令不存在或安卓环境未启动，需先在系统应用商店安装安卓应用，无“手机应用”分类则检查更新并重启。",
+          "qas": [
+            {
+              "question": "uengine命令不存在时该怎么办？",
+              "id": "3-134-3",
+              "answers": [
+                {
+                  "text": "先在系统应用商店安装安卓应用，无“手机应用”分类则检查更新并重启。",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "应用商店没有“手机应用”分类该如何处理？",
+              "id": "3-134-4",
+              "answers": [
+                {
+                  "text": "打开“控制中心”检查更新，安装更新并重启。",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启动装好的apk使用命令：uengine launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity。",
+          "qas": [
+            {
+              "question": "如何启动在uengine中装好的apk？",
+              "id": "3-134-5",
+              "answers": [
+                {
+                  "text": "使用命令：uengine launch --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行安卓应用需deepin/UOS官方源里的5.10内核，其他内核可能导致安卓容器无法启动。",
+          "qas": [
+            {
+              "question": "运行安卓应用需要什么内核？",
+              "id": "3-134-6",
+              "answers": [
+                {
+                  "text": "deepin/UOS官方源里的5.10内核",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "使用其他内核可能会有什么问题？",
+              "id": "3-134-7",
+              "answers": [
+                {
+                  "text": "可能导致安卓容器无法正常启动。",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin/UOS的uengine是开源安卓应用容器anbox的修改版，anbox使用GPL-3许可。",
+          "qas": [
+            {
+              "question": "uengine与anbox是什么关系？",
+              "id": "3-134-8",
+              "answers": [
+                {
+                  "text": "deepin/UOS的uengine是开源安卓应用容器anbox的修改版。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "anbox使用什么许可？",
+              "id": "3-134-9",
+              "answers": [
+                {
+                  "text": "GPL-3",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "可用该方法安装微信32位版apk，能运行在平板模式，实现手机电脑同时登陆。",
+          "qas": [
+            {
+              "question": "该方法可安装什么版本的微信？",
+              "id": "3-134-10",
+              "answers": [
+                {
+                  "text": "微信32位版apk",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "在uengine中运行的微信能实现什么功能？",
+              "id": "3-134-11",
+              "answers": [
+                {
+                  "text": "运行在平板模式，手机电脑同时登陆。",
+                  "answer_start": 28
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

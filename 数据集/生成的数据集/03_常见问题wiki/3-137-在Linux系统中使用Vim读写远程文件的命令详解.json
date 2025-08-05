@@ -1,0 +1,234 @@
+{
+  "data": [
+    {
+      "title": "在Linux系统中使用Vim读写远程文件的命令详解",
+      "paragraphs": [
+        {
+          "context": "ulimit命令可查看用户层面的系统资源限制，其配置与/etc/security/limits.conf及/etc/security/limits.d目录文件相关，后者按字母顺序读取可覆盖前者相同或更具体设置。",
+          "qas": [
+            {
+              "question": "哪个命令可以查看用户层面的系统资源限制？",
+              "id": "3-137-1",
+              "answers": [
+                {
+                  "text": "ulimit",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "/etc/security/limits.d目录中的配置文件有什么特点？",
+              "id": "3-137-2",
+              "answers": [
+                {
+                  "text": "按字母顺序阅读，在相同或更具体情况下可覆盖/etc/security/limits.conf的设置",
+                  "answer_start": 77
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ulimit -a可查看所有资源上限，关注的有：-s栈大小8MB，-u进程上限3万多，-n文件描述符上限1024。ulimit -Ha和ulimit -Sa分别查看硬限制和软限制，硬限制由root设置，非root可降低但不能增加，软限制非root可增到硬限制。",
+          "qas": [
+            {
+              "question": "如何查看所有资源上限？",
+              "id": "3-137-3",
+              "answers": [
+                {
+                  "text": "ulimit -a",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "ulimit -s表示什么，默认值是多少？",
+              "id": "3-137-4",
+              "answers": [
+                {
+                  "text": "栈大小，8MB",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "硬限制和软限制有何不同？",
+              "id": "3-137-5",
+              "answers": [
+                {
+                  "text": "硬限制由root设置，非root可降低但不能增加；软限制非root可增到硬限制",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ulimit -n 1024可临时修改文件描述符限制，仅当前shell生效。修改/etc/security/limits.conf可永久生效，需重启。",
+          "qas": [
+            {
+              "question": "如何临时修改文件描述符限制？",
+              "id": "3-137-6",
+              "answers": [
+                {
+                  "text": "ulimit -n 1024",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "怎样永久修改资源上限？",
+              "id": "3-137-7",
+              "answers": [
+                {
+                  "text": "修改/etc/security/limits.conf，需重启",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改文件描述符上限实验：在/etc/security/limits.conf添加配置，重启后生效。测试打开10240个临时文件，修改前默认1024时最多打开1001个，修改后可打开10217个，因程序自身打开一些文件等。",
+          "qas": [
+            {
+              "question": "修改文件描述符上限的实验中，修改前后的最大打开数量分别是多少？",
+              "id": "3-137-8",
+              "answers": [
+                {
+                  "text": "修改前1001个，修改后10217个",
+                  "answer_start": 74
+                }
+              ]
+            },
+            {
+              "question": "为什么打开的文件描述符总数不是刚好设置的值？",
+              "id": "3-137-9",
+              "answers": [
+                {
+                  "text": "程序自身打开了一些文件或是加载了一些动态库, stdin/stdout/stderr, 以及/etc/ld.so.cache等",
+                  "answer_start": 121
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改栈空间上限实验：在/etc/security/limits.conf添加配置，C程序测试栈帧，调至临界值程序发生段错误，调整后进程栈空间约8192000B附近。",
+          "qas": [
+            {
+              "question": "修改栈空间上限的实验中，栈调到临界值会发生什么？",
+              "id": "3-137-10",
+              "answers": [
+                {
+                  "text": "程序发生段错误",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "question": "调整后一个进程的栈空间大概在多少？",
+              "id": "3-137-11",
+              "answers": [
+                {
+                  "text": "8192000B附近",
+                  "answer_start": 93
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统层面资源限制：单个进程打开文件句柄数上限10亿，pid上限400多万，file-max（内核级最大FD）600万，系统全局总线程数限制6万，单个程序内存映射空间数量6万。",
+          "qas": [
+            {
+              "question": "系统层面单个进程打开文件句柄数上限是多少？",
+              "id": "3-137-12",
+              "answers": [
+                {
+                  "text": "10亿",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "系统全局的总线程数限制是多少？",
+              "id": "3-137-13",
+              "answers": [
+                {
+                  "text": "6万",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "file-max的上限是多少？",
+              "id": "3-137-14",
+              "answers": [
+                {
+                  "text": "600万",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "redis打开时会将文件描述符上限从1024调整到10032以适应更多网络连接，源码中通过setrlimit(RLIMIT_NOFILE,&limit)临时调整。",
+          "qas": [
+            {
+              "question": "redis为什么要调整文件描述符上限？",
+              "id": "3-137-15",
+              "answers": [
+                {
+                  "text": "适应更多的网络连接",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "question": "redis源码中用什么API调整资源上限？",
+              "id": "3-137-16",
+              "answers": [
+                {
+                  "text": "setrlimit(RLIMIT_NOFILE,&limit)",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "prlimit是与ulimit类似的命令。",
+          "qas": [
+            {
+              "question": "prlimit与哪个命令类似？",
+              "id": "3-137-17",
+              "answers": [
+                {
+                  "text": "ulimit",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux限制资源上限是为了充分利用机器，发挥性能，避免资源闲置浪费。",
+          "qas": [
+            {
+              "question": "Linux为什么要限制资源上限？",
+              "id": "3-137-18",
+              "answers": [
+                {
+                  "text": "充分利用机器，发挥性能，避免资源闲置浪费",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
