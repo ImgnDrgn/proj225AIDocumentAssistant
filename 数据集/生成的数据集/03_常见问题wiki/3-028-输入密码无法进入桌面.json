@@ -1,0 +1,134 @@
+{
+  "data": [
+    {
+      "title": "输入密码无法进入桌面",
+      "paragraphs": [
+        {
+          "context": "输入密码认证后, 无法进入桌面, 又弹出到输入密码界面。这种情况一般都是startdde启动失败。切换tty2, 查询startdde进程: ps -ef |grep startdde。输入该命令后, 假如没有startdde进程运行的相关信息,就表示startdde启动失败。此时大概率是deepin-desktop-schemas版本与dde-daemon不匹配。在tty2输入命令：export DISPLAY=:0。执行/usr/bin/startdde: /usr/bin/startdde。一般启动startdde后，在最上面一点会报出具体哪个接口错误。从其他机器拷贝与startdde版本匹配的deepin-desktop-schemas, 然后进行安装，可以使用scp远程将对应的deepin-desktop-schemas的deb包拷贝到指定机器。如果无法拿到新版本的deepin-desktop-schemas的deb包, 可以将startdde降级; 通过apt policy startdde, 查询startdde的版本信息, 可以使用命令安装其他版本: sudo apt install startdde=xxx",
+          "qas": [
+            {
+              "id": "3-28-1",
+              "question": "输入密码后无法进入桌面的主要根因是什么？",
+              "answers": [
+                {
+                  "text": "startdde启动失败",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "3-28-2",
+              "question": "如何检测startdde是否启动失败？",
+              "answers": [
+                {
+                  "text": "切换tty2, 查询startdde进程: ps -ef |grep startdde",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "3-28-3",
+              "question": "检测命令运行后没有startdde信息说明什么？",
+              "answers": [
+                {
+                  "text": "startdde启动失败",
+                  "answer_start": 132
+                }
+              ]
+            },
+            {
+              "id": "3-28-4",
+              "question": "startdde启动失败可能由什么引起？",
+              "answers": [
+                {
+                  "text": "deepin-desktop-schemas版本与dde-daemon不匹配",
+                  "answer_start": 153
+                }
+              ]
+            },
+            {
+              "id": "3-28-5",
+              "question": "确认错误的第一步操作是什么？",
+              "answers": [
+                {
+                  "text": "在tty2输入命令：export DISPLAY=:0",
+                  "answer_start": 205
+                }
+              ]
+            },
+            {
+              "id": "3-28-6",
+              "question": "确认错误的第二步操作是什么？",
+              "answers": [
+                {
+                  "text": "执行/usr/bin/startdde: /usr/bin/startdde",
+                  "answer_start": 234
+                }
+              ]
+            },
+            {
+              "id": "3-28-7",
+              "question": "启动startdde后在哪里查看错误信息？",
+              "answers": [
+                {
+                  "text": "在最上面一点会报出具体哪个接口错误",
+                  "answer_start": 271
+                }
+              ]
+            },
+            {
+              "id": "3-28-8",
+              "question": "如何获取匹配的deepin-desktop-schemas？",
+              "answers": [
+                {
+                  "text": "从其他机器拷贝，可以使用scp远程将对应的deepin-desktop-schemas的deb包拷贝到指定机器",
+                  "answer_start": 297
+                }
+              ]
+            },
+            {
+              "id": "3-28-9",
+              "question": "无法获取新版deepin-desktop-schemas时怎么办？",
+              "answers": [
+                {
+                  "text": "将startdde降级; 通过apt policy startdde, 查询startdde的版本信息, 可以使用命令安装其他版本: sudo apt install startdde=xxx",
+                  "answer_start": 373
+                }
+              ]
+            },
+            {
+              "id": "3-28-10",
+              "question": "如何确认startdde启动失败的具体接口错误信息？",
+              "answers": [
+                {
+                  "text": "在tty2输入命令：export DISPLAY=:0。执行/usr/bin/startdde: /usr/bin/startdde。一般启动startdde后，在最上面一点会报出具体哪个接口错误",
+                  "answer_start": 205
+                }
+              ]
+            },
+            {
+              "id": "3-28-11",
+              "question": "startdde启动失败时，有哪些修改方法？",
+              "answers": [
+                {
+                  "text": "从其他机器拷贝与startdde版本匹配的deepin-desktop-schemas, 然后进行安装（可以使用scp远程将对应的deepin-desktop-schemas的deb包拷贝到指定机器）。如果无法拿到新版本的deepin-desktop-schemas的deb包, 可以将startdde降级; 通过apt policy startdde, 查询startdde的版本信息, 可以使用命令安装其他版本: sudo apt install startdde=xxx",
+                  "answer_start": 297
+                }
+              ]
+            },
+            {
+              "id": "3-28-12",
+              "question": "如何远程拷贝deepin-desktop-schemas的deb包到指定机器？",
+              "answers": [
+                {
+                  "text": "使用scp远程将对应的deepin-desktop-schemas的deb包拷贝到指定机器",
+                  "answer_start": 330
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

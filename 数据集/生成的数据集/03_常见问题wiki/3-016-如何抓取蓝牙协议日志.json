@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "如何抓取蓝牙（HCI）协议日志",
+      "paragraphs": [
+        {
+          "context": "安装抓取蓝牙HCI日志工具的命令为：sudo apt-get install bluez-hcidump。",
+          "qas": [
+            {
+              "question": "安装抓取蓝牙HCI日志工具需要执行什么命令？",
+              "id": "3-16-1",
+              "answers": [
+                {
+                  "text": "sudo apt-get install bluez-hcidump",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置bluetoothd为debug需打开/etc/systemd/system/bluetooth.target.wants/bluetooth.server，在ExecStart行（如ExecStart=/usr/lib/bluetooth/bluetoothd）加上-d，之后执行systemctl restart bluetooth.service重启服务。",
+          "qas": [
+            {
+              "question": "设置bluetoothd为debug需要修改哪个文件？",
+              "id": "3-16-2",
+              "answers": [
+                {
+                  "text": "/etc/systemd/system/bluetooth.target.wants/bluetooth.server",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "设置bluetoothd为debug时，ExecStart行需要做什么修改？",
+              "id": "3-16-3",
+              "answers": [
+                {
+                  "text": "加上-d",
+                  "answer_start": 104
+                }
+              ]
+            },
+            {
+              "question": "修改bluetoothd设置后，如何重启服务？",
+              "id": "3-16-4",
+              "answers": [
+                {
+                  "text": "systemctl restart bluetooth.service",
+                  "answer_start": 120
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行工具抓取日志的命令包括：sudo hcidump -w /tmp/sony1.log 和 sudo journalctl -f /usr/lib/bluetooth/bluetoothd > /tmp/sony.txt。",
+          "qas": [
+            {
+              "question": "使用hcidump工具抓取蓝牙日志的命令是什么？",
+              "id": "3-16-5",
+              "answers": [
+                {
+                  "text": "sudo hcidump -w /tmp/sony1.log",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "如何通过journalctl抓取bluetoothd的日志并保存？",
+              "id": "3-16-6",
+              "answers": [
+                {
+                  "text": "sudo journalctl -f /usr/lib/bluetooth/bluetoothd > /tmp/sony.txt",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若使用蓝牙过程中出现异常，需要抓取日志提交开发人员分析。安装抓取蓝牙HCI日志工具：sudo apt-get install bluez-hcidump",
+          "qas": [
+            {
+              "question": "在什么情况下需要抓取蓝牙协议日志？",
+              "id": "3-16-7",
+              "answers": [
+                {
+                  "text": "若使用蓝牙过程中出现异常，需要抓取日志提交开发人员分析",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

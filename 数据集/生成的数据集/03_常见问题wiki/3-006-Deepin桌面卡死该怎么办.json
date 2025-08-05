@@ -1,0 +1,259 @@
+{
+  "data": [
+    {
+      "title": "Deepin桌面卡死该怎么办",
+      "paragraphs": [
+        {
+          "context": "全屏游戏卡死无法退出时，Deepin/UOS可以利用虚拟桌面功能，按 ⊞ + → 切换到第二虚拟桌面，然后在这里打开系统监视器，结束卡死的进程。",
+          "qas": [
+            {
+              "id": "3-6-1",
+              "question": "全屏游戏卡死无法退出时，Deepin/UOS有什么解决方法？",
+              "answers": [
+                {
+                  "text": "利用虚拟桌面功能，按 ⊞ + → 切换到第二虚拟桌面，然后在这里打开系统监视器，结束卡死的进程",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "3-6-2",
+              "question": "全屏游戏卡死时如何切换到第二虚拟桌面？",
+              "answers": [
+                {
+                  "text": "⊞ + →",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "3-6-3",
+              "question": "在第二虚拟桌面需要打开什么程序来结束进程？",
+              "answers": [
+                {
+                  "text": "系统监视器",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如果是整个桌面卡死，首先尝试：按 Ctrl + Alt + F2，进入tty2；按 Ctrl + Alt + F1，回到桌面，可能会要求重新登录，卡死缓解。注意：按 Ctrl + Alt + F1 回到桌面仅适用于 UOS/Deepin 的 LightDM 登录器，其他发行版或登录器可能需要按 Ctrl + Alt + F7 或者 Ctrl + Alt + F6 等，你可以逐一尝试 F1 到 F7。",
+          "qas": [
+            {
+              "id": "3-6-4",
+              "question": "整个桌面卡死时，首先可以尝试哪些操作？",
+              "answers": [
+                {
+                  "text": "按 Ctrl + Alt + F2，进入tty2；按 Ctrl + Alt + F1，回到桌面，可能会要求重新登录，卡死缓解",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "3-6-5",
+              "question": "除了UOS/Deepin的LightDM登录器，其他发行版或登录器回到桌面可能需要按哪些快捷键？",
+              "answers": [
+                {
+                  "text": "Ctrl + Alt + F7 或者 Ctrl + Alt + F6 等，可以逐一尝试 F1 到 F7",
+                  "answer_start": 135
+                }
+              ]
+            },
+            {
+              "id": "3-6-6",
+              "question": "桌面卡死时进入tty2的快捷键是什么？",
+              "answers": [
+                {
+                  "text": "Ctrl + Alt + F2",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "3-6-7",
+              "question": "此方法适用于哪些登录器？",
+              "answers": [
+                {
+                  "text": "UOS/Deepin的LightDM登录器",
+                  "answer_start": 97
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如果没有缓解：按 Ctrl + Alt + F2，进入tty2；输入用户名，回车；输入密码，回车；输入以下命令回车：killall kwin_x11；按 Ctrl + Alt + F1，回到桌面，可能会要求重新登录，卡死缓解。注意：killall kwin_x11 仅适用于UOS/Deepin的DDE桌面环境，其他发行版或桌面环境需要把 kwin_x11 更换为各自采用的桌面合成器。",
+          "qas": [
+            {
+              "id": "3-6-8",
+              "question": "整个桌面卡死，第一步尝试后没有缓解，接下来该怎么做？",
+              "answers": [
+                {
+                  "text": "按 Ctrl + Alt + F2，进入tty2；输入用户名，回车；输入密码，回车；输入命令 killall kwin_x11 回车；按 Ctrl + Alt + F1，回到桌面，可能会要求重新登录，卡死缓解",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "3-6-9",
+              "question": "killall kwin_x11 适用于哪些环境？其他环境需要如何调整？",
+              "answers": [
+                {
+                  "text": "仅适用于UOS/Deepin的DDE桌面环境，其他发行版或桌面环境需要把 kwin_x11 更换为各自采用的桌面合成器",
+                  "answer_start": 179
+                }
+              ]
+            },
+            {
+              "id": "3-6-10",
+              "question": "针对DDE桌面环境应执行什么命令？",
+              "answers": [
+                {
+                  "text": "killall kwin_x11",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "id": "3-6-11",
+              "question": "此命令在非Deepin系统需如何调整？",
+              "answers": [
+                {
+                  "text": "替换为各自采用的桌面合成器",
+                  "answer_start": 199
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如果没有缓解：按 Ctrl + Alt + F2，进入tty2，然后执行命令：ps ux | less；找到引起卡死的进程id，比如1234，然后执行以下命令：kill -9 1234；如果想使用进程名称，也可以，比如：killall -9 TIM.exe；注意进程名称区分大小写！Linux中的大部分名称都区分大小写。然后按 Ctrl + Alt + F1，回到桌面，可能会要求重新登录，卡死缓解。",
+          "qas": [
+            {
+              "id": "3-6-12",
+              "question": "执行killall kwin_x11后桌面卡死仍未缓解，该如何处理？",
+              "answers": [
+                {
+                  "text": "按 Ctrl + Alt + F2，进入tty2，执行命令 ps ux | less；找到进程id后执行 kill -9 进程id，或用进程名称执行 killall -9 进程名称；然后按 Ctrl + Alt + F1 回到桌面，可能会要求重新登录，卡死缓解",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "3-6-13",
+              "question": "使用进程名称结束进程时需要注意什么？",
+              "answers": [
+                {
+                  "text": "进程名称区分大小写！Linux中的大部分名称都区分大小写",
+                  "answer_start": 216
+                }
+              ]
+            },
+            {
+              "id": "3-6-14",
+              "question": "如何查找引起卡死的进程？",
+              "answers": [
+                {
+                  "text": "ps ux | less",
+                  "answer_start": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如果还是没有缓解：按 Ctrl + Alt + F2，进入tty2，执行以下命令：sudo systemctl restart lightdm；按 Ctrl + Alt + F1，回到桌面，会要求重新登录，所有应用程序，卡死缓解。",
+          "qas": [
+            {
+              "id": "3-6-15",
+              "question": "通过结束特定进程后桌面仍卡死，接下来可以尝试什么操作？",
+              "answers": [
+                {
+                  "text": "按 Ctrl + Alt + F2，进入tty2，执行命令 sudo systemctl restart lightdm；按 Ctrl + Alt + F1，回到桌面，会要求重新登录，所有应用程序，卡死缓解",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "3-6-16",
+              "question": "重启lightdm服务的完整命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo systemctl restart lightdm",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如果还是没有缓解：按 Ctrl + Alt + F2，进入tty2；按 Ctrl + Alt + Delete 这会重启。",
+          "qas": [
+            {
+              "id": "3-6-17",
+              "question": "执行sudo systemctl restart lightdm后桌面仍卡死，该怎么做？",
+              "answers": [
+                {
+                  "text": "按 Ctrl + Alt + F2，进入tty2；按 Ctrl + Alt + Delete 这会重启",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "3-6-18",
+              "question": "tty2中强制重启的快捷键是什么？",
+              "answers": [
+                {
+                  "text": "Ctrl + Alt + Delete",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如果连按 Ctrl + Alt + F2 都没有反应，无法进入tty2，还可以这样：按住 Alt 和 PrtSc / SysRq 键（截图键），然后再按以下键可以重启：S U B。也就是依次按下三组快捷键：Alt + SysRq + S；Alt + SysRq + U；Alt + SysRq + B；就可以重启，对系统没有损害。上述重启方法对deb系有效（包括UOS/Deepin），对rpm系无效，除非你手动设置内核参数kernel.sysrq=1。",
+          "qas": [
+            {
+              "id": "3-6-19",
+              "question": "无法按Ctrl + Alt + F2进入tty2时，如何重启系统？",
+              "answers": [
+                {
+                  "text": "按住 Alt 和 SysRq 键，依次按 S、U、B，即依次按下 Alt + SysRq + S；Alt + SysRq + U；Alt + SysRq + B 可以重启",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "id": "3-6-20",
+              "question": "上述通过Alt + SysRq组合键的重启方法对哪些系统有效？对rpm系如何生效？",
+              "answers": [
+                {
+                  "text": "对deb系有效（包括UOS/Deepin），对rpm系无效，除非手动设置内核参数kernel.sysrq=1",
+                  "answer_start": 247
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "除了未开启SysRq功能之外（某些发行版默认没开），如果连 Alt + SysRq + B 也没用，按下后系统无法重启，说明内核可能已经崩溃了。你只能用传统手段强制重启或者强制关机了。",
+          "qas": [
+            {
+              "id": "3-6-21",
+              "question": "如果Alt + SysRq + B也无法重启系统，可能是什么原因，该怎么做？",
+              "answers": [
+                {
+                  "text": "可能内核已经崩溃了，只能用传统手段强制重启或者强制关机",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

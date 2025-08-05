@@ -1,0 +1,219 @@
+{
+  "data": [
+    {
+      "title": "任务栏网络图标状态异常",
+      "paragraphs": [
+        {
+          "context": "当网络出现感叹号时并提示‘已连接网络但无法访问互联网’，但本身可以上网，可能是公司联通性检测的网站不稳定造成的，可以切换到其他的网址。在有感叹号的时候，可以尝试终端执行一下这个命令：curl http://packages.deepin.com/misc/check_network_status.txt。正常状态时截图为：[图片]。若出现以上截图中情况，但是网络图标仍异常则：1. 终端中输入命令：sudo vim /etc/NetworkManager/NetworkManager.conf 。配置文件内容如下：[main] plugins=ifupdown,keyfile [ifupdown] managed=true [device] wifi.scan-rand-mac-address=no [connectivity] uri=http://packages.deepin.com/misc/check_network_status.txt 2. 可以把 connectivity 下的 uri 替换为以下网址：http://connectivity-check.ubuntu.com/或http://network-test.debian.org/nm。3. 然后重启 network-manager，终端中输入命令systemctl restart NetworkManager。",
+          "qas": [
+            {
+              "id": "3-9-1",
+              "question": "网络图标出现感叹号时提示什么信息？",
+              "answers": [
+                {
+                  "text": "已连接网络但无法访问互联网",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "3-9-2",
+              "question": "实际可以上网但图标异常的可能原因是什么？",
+              "answers": [
+                {
+                  "text": "公司联通性检测的网站不稳定",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "id": "3-9-3",
+              "question": "网络图标有感叹号时，可在终端执行什么命令？",
+              "answers": [
+                {
+                  "text": "curl http://packages.deepin.com/misc/check_network_status.txt",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "id": "3-9-4",
+              "question": "需要执行什么命令来检查网络状态？",
+              "answers": [
+                {
+                  "text": "curl http://packages.deepin.com/misc/check_network_status.txt",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "id": "3-9-5",
+              "question": "若网络图标异常，需要编辑哪个配置文件？",
+              "answers": [
+                {
+                  "text": "/etc/NetworkManager/NetworkManager.conf",
+                  "answer_start": 217
+                }
+              ]
+            },
+            {
+              "id": "3-9-6",
+              "question": "修改哪个配置文件的uri参数？",
+              "answers": [
+                {
+                  "text": "/etc/NetworkManager/NetworkManager.conf",
+                  "answer_start": 217
+                }
+              ]
+            },
+            {
+              "id": "3-9-7",
+              "question": "编辑配置文件时，使用什么终端命令？",
+              "answers": [
+                {
+                  "text": "sudo vim /etc/NetworkManager/NetworkManager.conf",
+                  "answer_start": 208
+                }
+              ]
+            },
+            {
+              "id": "3-9-8",
+              "question": "配置文件中[connectivity]下的uri可以替换为哪些网址？",
+              "answers": [
+                {
+                  "text": "http://connectivity-check.ubuntu.com/或http://network-test.debian.org/nm",
+                  "answer_start": 470
+                }
+              ]
+            },
+            {
+              "id": "3-9-9",
+              "question": "可替换的检测网址有哪些？",
+              "answers": [
+                {
+                  "text": "http://connectivity-check.ubuntu.com/或http://network-test.debian.org/nm",
+                  "answer_start": 470
+                }
+              ]
+            },
+            {
+              "id": "3-9-10",
+              "question": "修改配置文件后，如何重启network-manager？",
+              "answers": [
+                {
+                  "text": "systemctl restart NetworkManager",
+                  "answer_start": 548
+                }
+              ]
+            },
+            {
+              "id": "3-9-11",
+              "question": "完成配置后需要重启什么服务？",
+              "answers": [
+                {
+                  "text": "systemctl restart NetworkManager",
+                  "answer_start": 548
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "获取log前的操作：1. 先修改一下配置文件：# 先编辑如下文件，修改第13行内容 sudo vim /lib/systemd/system/NetworkManager.service # 改成如下内容：ExecStart=/usr/sbin/NetworkManager --no-daemon --log-level=TRACE （也就是增加--log-level=TRACE 参数）2. 修改之前截图：[图片]3. 修改之后截图：[图片]4. 重启系统，获取日志：sudo journalctl -b 0 > ~/Desktop/info.log 。执行上述命令后，会在桌面生成一个info.log的日志文件，到时候把这个文件提供出来就可以啦。当然执行的时候，确保是该问题复现的。",
+          "qas": [
+            {
+              "id": "3-9-12",
+              "question": "获取log前，需要修改哪个配置文件？",
+              "answers": [
+                {
+                  "text": "/lib/systemd/system/NetworkManager.service",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "3-9-13",
+              "question": "需要修改哪个服务的配置文件？",
+              "answers": [
+                {
+                  "text": "/lib/systemd/system/NetworkManager.service",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "3-9-14",
+              "question": "修改该配置文件使用什么终端命令？",
+              "answers": [
+                {
+                  "text": "sudo vim /lib/systemd/system/NetworkManager.service",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "3-9-15",
+              "question": "配置文件第13行需要改成什么内容？",
+              "answers": [
+                {
+                  "text": "ExecStart=/usr/sbin/NetworkManager --no-daemon --log-level=TRACE",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "id": "3-9-16",
+              "question": "在配置文件中需添加什么参数？",
+              "answers": [
+                {
+                  "text": "--log-level=TRACE",
+                  "answer_start": 124
+                }
+              ]
+            },
+            {
+              "id": "3-9-17",
+              "question": "修改配置文件后，获取日志前需要做什么？",
+              "answers": [
+                {
+                  "text": "重启系统",
+                  "answer_start": 154
+                }
+              ]
+            },
+            {
+              "id": "3-9-18",
+              "question": "获取日志的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo journalctl -b 0 > ~/Desktop/info.log",
+                  "answer_start": 168
+                }
+              ]
+            },
+            {
+              "id": "3-9-19",
+              "question": "执行获取日志的命令后，日志文件生成在什么位置？",
+              "answers": [
+                {
+                  "text": "桌面",
+                  "answer_start": 202
+                }
+              ]
+            },
+            {
+              "id": "3-9-20",
+              "question": "生成的日志文件名称是什么？",
+              "answers": [
+                {
+                  "text": "info.log",
+                  "answer_start": 199
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

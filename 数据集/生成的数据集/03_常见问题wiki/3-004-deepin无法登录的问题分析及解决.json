@@ -1,0 +1,234 @@
+{
+  "data": [
+    {
+      "title": "deepin无法登录的问题分析及解决",
+      "paragraphs": [
+        {
+          "context": "常见情况是从dde-daemon升级到新的deepin-authenticate认证框架之后需要重启来完成认证框架的启动和关闭。查看/etc/pam.d/common-auth下面的文件是否包含deepin-authenticate的字样，表示文件已经被替换为了新的认证框架配置文件。如果已经安装deepin-authenticate但是/etc/pam.d/common-auth下面的配置文件是dde-daemon覆盖的将导致无法登陆。查看/var/log/authinfo.log中给出的信息。快速解决办法:切换到tty,然后重新安装deepin-authenticate 即  sudo apt reinstall deepin-authenticate。",
+          "qas": [
+            {
+              "id": "3-4-1",
+              "question": "从dde-daemon升级到deepin-authenticate认证框架后，为什么可能无法登录？",
+              "answers": [
+                {
+                  "text": "需要重启来完成认证框架的启动和关闭，若已安装deepin-authenticate但/etc/pam.d/common-auth的配置文件被dde-daemon覆盖将导致无法登录",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "id": "3-4-2",
+              "question": "如何验证认证框架配置文件已更新？",
+              "answers": [
+                {
+                  "text": "查看/etc/pam.d/common-auth下面的文件是否包含deepin-authenticate的字样",
+                  "answer_start": 58
+                }
+              ]
+            },
+            {
+              "id": "3-4-3",
+              "question": "dde-daemon覆盖配置文件会导致什么结果？",
+              "answers": [
+                {
+                  "text": "将导致无法登陆",
+                  "answer_start": 170
+                }
+              ]
+            },
+            {
+              "id": "3-4-4",
+              "question": "应该检查哪个日志文件获取认证信息？",
+              "answers": [
+                {
+                  "text": "查看/var/log/authinfo.log中给出的信息",
+                  "answer_start": 192
+                }
+              ]
+            },
+            {
+              "id": "3-4-5",
+              "question": "快速解决认证问题的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt reinstall deepin-authenticate",
+                  "answer_start": 239
+                }
+              ]
+            },
+            {
+              "id": "3-4-6",
+              "question": "升级到deepin-authenticate后需要什么操作才能正常启动框架？",
+              "answers": [
+                {
+                  "text": "重启来完成认证框架的启动和关闭",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin-desktop-schemas安装过程中出现异常，导致配置没有跑完。查看`vim ~/.xsession-errors`中报错“com.deepin.dde.display”缺少”color-template-mode“。通过`gsettings list-keys com.deepin.dde.display`发现列出来的方法正好缺少上面报错的那个”color-template-mode“。搜索“com.deepin.dde.display”发现在startdde中定义的，查看startdde版本是否正确。用`dpkg -S com.deepin.dde.display.gschema.xml`查看这个属于deepin-desktop-schemas。用`apt policy deepin-desktop-schemas`查看版本是否正确。查看`vim com.deepin.dde.display.gschema.xml`文件内容是否正确。用`sudo glib-compile-schemas /usr/share/glib-2.0/schemas/`将「/usr/share/glib-2.0/schemas/」里面的「*.gschema.xml」编译成「/usr/share/glib-2.0/schemas/gschemas.compiled」，再用gsettings list-keys，就正常了。",
+          "qas": [
+            {
+              "id": "3-4-7",
+              "question": "deepin-desktop-schemas安装异常时，~/.xsession-errors中会出现什么报错？",
+              "answers": [
+                {
+                  "text": "“com.deepin.dde.display”缺少”color-template-mode“",
+                  "answer_start": 94
+                }
+              ]
+            },
+            {
+              "id": "3-4-8",
+              "question": "如何确认“com.deepin.dde.display”是否缺少“color-template-mode”？",
+              "answers": [
+                {
+                  "text": "通过gsettings list-keys com.deepin.dde.display",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "id": "3-4-9",
+              "question": "“com.deepin.dde.display”配置属于哪个软件包？",
+              "answers": [
+                {
+                  "text": "deepin-desktop-schemas",
+                  "answer_start": 245
+                }
+              ]
+            },
+            {
+              "id": "3-4-10",
+              "question": "如何解决deepin-desktop-schemas安装异常导致的配置问题？",
+              "answers": [
+                {
+                  "text": "用`sudo glib-compile-schemas /usr/share/glib-2.0/schemas/`将/usr/share/glib-2.0/schemas/里面的*.gschema.xml编译成/usr/share/glib-2.0/schemas/gschemas.compiled，再用gsettings list-keys，就正常了",
+                  "answer_start": 389
+                }
+              ]
+            },
+            {
+              "id": "3-4-11",
+              "question": "deepin-desktop-schemas安装异常会引发什么后果？",
+              "answers": [
+                {
+                  "text": "导致配置没有跑完",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "3-4-12",
+              "question": "如何确认com.deepin.dde.display.gschema.xml的所属包？",
+              "answers": [
+                {
+                  "text": "用`dpkg -S com.deepin.dde.display.gschema.xml`查看这个属于deepin-desktop-schemas",
+                  "answer_start": 245
+                }
+              ]
+            },
+            {
+              "id": "3-4-13",
+              "question": "修复schemas配置的编译命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo glib-compile-schemas /usr/share/glib-2.0/schemas/",
+                  "answer_start": 389
+                }
+              ]
+            },
+            {
+              "id": "3-4-14",
+              "question": "编译后需要执行什么操作验证修复？",
+              "answers": [
+                {
+                  "text": "再用gsettings list-keys",
+                  "answer_start": 492
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "此问题在登陆界面已经认证成功，开启x11 session失败导致无法进入桌面环境。具体需要查看当前登陆用户目录下的～/.xsession-errors。具体查看的内容是看startdde是否拉起dde-desktop, dde-dock等基础桌面环境。经常出现的问题是：更新后startdde被卸载导致无法进入桌面环境，需要重新安装startdde。另一种情况是startdde调用的gsettings文件不存在，导致startdde退出从而无法进入桌面环境。",
+          "qas": [
+            {
+              "id": "3-4-15",
+              "question": "登陆界面关闭后马上又显示的原因是什么？",
+              "answers": [
+                {
+                  "text": "开启x11 session失败导致无法进入桌面环境",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "3-4-16",
+              "question": "遇到登陆界面关闭后马上又显示的问题，需要查看哪个文件？",
+              "answers": [
+                {
+                  "text": "查看当前登陆用户目录下的～/.xsession-errors",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "id": "3-4-17",
+              "question": "在.xsession-errors中需要重点关注什么？",
+              "answers": [
+                {
+                  "text": "看startdde是否拉起dde-desktop, dde-dock等基础桌面环境",
+                  "answer_start": 81
+                }
+              ]
+            },
+            {
+              "id": "3-4-18",
+              "question": "更新后startdde被卸载会导致什么问题？",
+              "answers": [
+                {
+                  "text": "导致无法进入桌面环境，需要重新安装startdde",
+                  "answer_start": 155
+                }
+              ]
+            },
+            {
+              "id": "3-4-19",
+              "question": "startdde被卸载会导致什么现象？",
+              "answers": [
+                {
+                  "text": "导致无法进入桌面环境",
+                  "answer_start": 155
+                }
+              ]
+            },
+            {
+              "id": "3-4-20",
+              "question": "gsettings文件缺失会引发什么后果？",
+              "answers": [
+                {
+                  "text": "导致startdde退出从而无法进入桌面环境",
+                  "answer_start": 197
+                }
+              ]
+            },
+            {
+              "id": "3-4-21",
+              "question": "除了startdde被卸载，还有什么情况会导致登陆界面关闭后马上又显示？",
+              "answers": [
+                {
+                  "text": "startdde调用的gsettings文件不存在，导致startdde退出从而无法进入桌面环境",
+                  "answer_start": 197
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

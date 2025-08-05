@@ -1,0 +1,144 @@
+{
+  "data": [
+    {
+      "title": "deepin桌面卡死如何处理",
+      "paragraphs": [
+        {
+          "context": "桌面卡死可能出现的情况有：1. 桌面环境卡死；2. Xorg 卡死；3. 启用某个进程导致（如打开wine qq）。解决方法：Ctrl + Alt + T 启用终端（Terminal）；若终端无法启用，使用 Ctrl + Alt + Fn(主要针对笔记本) + F2/F3/F4/F5/F6 进入tty界面，需输入帐户、密码。对于桌面环境卡死，执行命令：sudo systemctl restart lightdm。对于 Xorg 卡死，执行命令：sudo killall Xorg。对于某个特定进程导致桌面卡死，可输入命令top查看进程CPU占用率，CPU占用100%的进程异常，需杀死该进程，执行命令：kill -9 PID（PID为进程号），然后使用快捷键Ctrl + Alt + F1回到图形界面。若以上方法无法解决，也可以直接使用重启命令：reboot。",
+          "qas": [
+            {
+              "id": "3-5-1",
+              "question": "deepin桌面卡死可能有哪些情况？",
+              "answers": [
+                {
+                  "text": "1. 桌面环境卡死；2. Xorg 卡死；3. 启用某个进程导致（如打开wine qq）",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "3-5-2",
+              "question": "打开wine qq可能导致什么类型的卡死？",
+              "answers": [
+                {
+                  "text": "启用某个进程导致",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "3-5-3",
+              "question": "deepin桌面卡死时，如何启用终端？",
+              "answers": [
+                {
+                  "text": "Ctrl + Alt + T",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "id": "3-5-4",
+              "question": "若终端无法启用，如何进入tty界面？",
+              "answers": [
+                {
+                  "text": "使用 Ctrl + Alt + Fn(主要针对笔记本) + F2/F3/F4/F5/F6 进入tty界面，需输入帐户、密码",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "id": "3-5-5",
+              "question": "进入tty界面需要什么凭证？",
+              "answers": [
+                {
+                  "text": "需输入帐户、密码",
+                  "answer_start": 138
+                }
+              ]
+            },
+            {
+              "id": "3-5-6",
+              "question": "桌面环境卡死时，执行什么命令重启桌面环境？",
+              "answers": [
+                {
+                  "text": "sudo systemctl restart lightdm",
+                  "answer_start": 200
+                }
+              ]
+            },
+            {
+              "id": "3-5-7",
+              "question": "Xorg卡死时，执行什么命令结束Xorg？",
+              "answers": [
+                {
+                  "text": "sudo killall Xorg",
+                  "answer_start": 257
+                }
+              ]
+            },
+            {
+              "id": "3-5-8",
+              "question": "Xorg卡死时需要结束哪个进程？",
+              "answers": [
+                {
+                  "text": "Xorg",
+                  "answer_start": 235
+                }
+              ]
+            },
+            {
+              "id": "3-5-9",
+              "question": "某个特定进程导致桌面卡死时，如何找到异常进程？",
+              "answers": [
+                {
+                  "text": "输入命令top查看进程CPU占用率，CPU占用100%的进程异常",
+                  "answer_start": 292
+                }
+              ]
+            },
+            {
+              "id": "3-5-10",
+              "question": "CPU占用率达到多少的进程需要被杀死？",
+              "answers": [
+                {
+                  "text": "100%",
+                  "answer_start": 330
+                }
+              ]
+            },
+            {
+              "id": "3-5-11",
+              "question": "找到异常进程后，用什么命令杀死该进程？",
+              "answers": [
+                {
+                  "text": "kill -9 PID（PID为进程号）",
+                  "answer_start": 396
+                }
+              ]
+            },
+            {
+              "id": "3-5-12",
+              "question": "杀死异常进程后，如何回到图形界面？",
+              "answers": [
+                {
+                  "text": "使用快捷键Ctrl + Alt + F1",
+                  "answer_start": 429
+                }
+              ]
+            },
+            {
+              "id": "3-5-13",
+              "question": "若以上方法无法解决，可使用什么命令？",
+              "answers": [
+                {
+                  "text": "reboot",
+                  "answer_start": 504
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

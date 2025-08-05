@@ -1,0 +1,389 @@
+{
+  "data": [
+    {
+      "title": "如何在ALT Linux上安装DDE桌面环境",
+      "paragraphs": [
+        {
+          "context": "ALT Workstation: Operating system and application suite designed for workplace at both office and home.",
+          "qas": [
+            {
+              "question": "ALT Workstation是什么？",
+              "id": "3-12-1",
+              "answers": [
+                {
+                  "text": "为办公室和家庭工作场所设计的操作系统和应用套件。",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ALT KWorkstation: Operating system with Plasma desktop and application suite designed for workplace at both office and home.",
+          "qas": [
+            {
+              "question": "ALT KWorkstation的特点是什么？",
+              "id": "3-12-2",
+              "answers": [
+                {
+                  "text": "带有Plasma桌面的操作系统和应用套件，为办公室和家庭工作场所设计。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ALT Server: Operating system and services to bring up and control enterprise IT infrastructure.",
+          "qas": [
+            {
+              "question": "ALT Server的作用是什么？",
+              "id": "3-12-3",
+              "answers": [
+                {
+                  "text": "用于建立和控制企业IT基础设施的操作系统和服务。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ALT Virtualization 11: Operating system for enterprise virtualization.",
+          "qas": [
+            {
+              "question": "ALT Virtualization 11是什么？",
+              "id": "3-12-4",
+              "answers": [
+                {
+                  "text": "用于企业虚拟化的操作系统。",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ALT Education: Operating system for all kinds of educational institutions from preschool to high school which provides integration of both students' and teacher's workplaces.",
+          "qas": [
+            {
+              "question": "ALT Education适用于哪些机构？",
+              "id": "3-12-5",
+              "answers": [
+                {
+                  "text": "适用于从学前到高中的各类教育机构，提供学生和教师工作场所的整合。",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Simply Linux: Operating system for everyone. Easy to use and lightweight, functional and secure.",
+          "qas": [
+            {
+              "question": "Simply Linux的特点是什么？",
+              "id": "3-12-6",
+              "answers": [
+                {
+                  "text": "面向所有人的操作系统，易于使用、轻量、功能丰富且安全。",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Starter kits: Starter kits are freely distributable images based on the stable ALT repository and designed for experienced users and developers of derivative solutions.",
+          "qas": [
+            {
+              "question": "Starter kits是什么？",
+              "id": "3-12-7",
+              "answers": [
+                {
+                  "text": "基于稳定的ALT仓库的可自由分发镜像，为有经验的用户和衍生解决方案的开发者设计。",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "The regular image builds are intended to aid those interested in ALT Sisyphus and the current state of Linux desktop environments (at least as packaged there). These are not the fully fledged properly tailored distributions but rather targeted technology demos that can happen to be useful either (the release manager's current laptop is installed using one of those -- did I mention these are installable LiveCDs?).",
+          "qas": [
+            {
+              "question": "Regular镜像的用途是什么？",
+              "id": "3-12-8",
+              "answers": [
+                {
+                  "text": "旨在帮助对ALT Sisyphus和Linux桌面环境现状感兴趣的人，不是成熟的定制发行版，而是有针对性的技术演示，且是可安装的LiveCD。",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Please note that regular images are built using the unstable development repository (think debian testing).",
+          "qas": [
+            {
+              "question": "Regular镜像基于什么仓库？",
+              "id": "3-12-9",
+              "answers": [
+                {
+                  "text": "不稳定的开发仓库（类似debian testing）。",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "On May 22, 2024, the latest images were builded on i586, after which they were moved to the archive: https://nightly.altlinux.org/sisyphus/archive/ There are no plans to resume building i586 images on Sisyphus.",
+          "qas": [
+            {
+              "question": "i586架构的Regular镜像现状如何？",
+              "id": "3-12-10",
+              "answers": [
+                {
+                  "text": "2024年5月22日，i586的最新镜像被构建后移至归档，没有在Sisyphus上恢复构建i586镜像的计划。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Please refer to aarch64 (nee ARMv8), mipsel (MIPS32) and riscv64 (RV64GC) specific pages for more information on running the images in QEMU and on corresponding hardware.",
+          "qas": [
+            {
+              "question": "non-x86架构的Regular镜像有哪些？",
+              "id": "3-12-11",
+              "answers": [
+                {
+                  "text": "aarch64（即ARMv8）、mipsel（MIPS32）和riscv64（RV64GC）。",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "main Gnome: x86_64: iso , rootfs ; aarch64: iso, rootfs KDE: x86_64: iso , rootfs; aarch64: iso, rootfs LXQt: x86_64: iso, rootfs; aarch64: iso ,rootfs; riscv64: rootfs Xfce: x86_64: iso , rootfs; aarch64: iso,rootfs, riscv64: rootfs",
+          "qas": [
+            {
+              "question": "Regular镜像main类别包括哪些桌面环境和架构？",
+              "id": "3-12-12",
+              "answers": [
+                {
+                  "text": "Gnome（x86_64、aarch64）、KDE（x86_64、aarch64）、LXQt（x86_64、aarch64、riscv64）、Xfce（x86_64、aarch64、riscv64），提供iso和rootfs。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "auxiliary Cinnamon: x86_64, aarch64 Enlightenment[1] : x86_64 IceWM: x86_64 MATE: x86_64; aarch64: iso; riscv64: rootfs",
+          "qas": [
+            {
+              "question": "Regular镜像auxiliary类别包括哪些？",
+              "id": "3-12-13",
+              "answers": [
+                {
+                  "text": "Cinnamon（x86_64、aarch64）、Enlightenment（x86_64）、IceWM（x86_64）、MATE（x86_64；aarch64: iso；riscv64: rootfs）。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "experimental GNUstep: x86_64",
+          "qas": [
+            {
+              "question": "Regular镜像experimental类别有什么？",
+              "id": "3-12-14",
+              "answers": [
+                {
+                  "text": "GNUstep（x86_64）。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "archived KDE4: i586, x86_64 (1.5 Gb) 20180418 TDE: i586, x86_64 (~750Mb) 20170111 WindowMaker (sysvinit): i586, x86_64 20200115 LXDE: i586, x86_64 20230913 IceWM (sysvinit): i586, x86_64 20240103 GNUstep (sysvinit): i586, x86_64 20240103",
+          "qas": [
+            {
+              "question": "Regular镜像archived类别有哪些？",
+              "id": "3-12-15",
+              "answers": [
+                {
+                  "text": "KDE4（i586、x86_64，20180418）、TDE（i586、x86_64，20170111）、WindowMaker (sysvinit)（i586、x86_64，20200115）、LXDE（i586、x86_64，20230913）、IceWM (sysvinit)（i586、x86_64，20240103）、GNUstep (sysvinit)（i586、x86_64，20240103）。",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "non-desktop rescue: x86_64 , aarch64 jeos[2] : x86_64: iso, img; aarch64: iso,rootfs; riscv64: rootfs",
+          "qas": [
+            {
+              "question": "Regular镜像non-desktop类别包括什么？",
+              "id": "3-12-16",
+              "answers": [
+                {
+                  "text": "rescue（x86_64、aarch64）、jeos（x86_64: iso、img；aarch64: iso、rootfs；riscv64: rootfs）。",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "The images are autobuilt weekly (on Wednesdays, Moscow time) but we can release updated ones manually as often as daily.",
+          "qas": [
+            {
+              "question": "Regular镜像的构建频率是怎样的？",
+              "id": "3-12-17",
+              "answers": [
+                {
+                  "text": "每周自动构建（莫斯科时间周三），但可以手动更新，频率可达每天。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "<table><tr><th>Starterkits</th><th>Regular</th></tr><tr><td>quarterly</td><td>weekly</td></tr><tr><td>stable</td><td>current</td></tr><tr><td>rescue, livecd, installer, server, vm</td><td>rescue, livecd, jeos</td></tr></table>",
+          "qas": [
+            {
+              "question": "Starterkits和Regular有什么区别？",
+              "id": "3-12-18",
+              "answers": [
+                {
+                  "text": "Starterkits为季度更新、稳定版本，包含rescue、livecd、installer、server、vm；Regular为每周更新、当前版本，包含rescue、livecd、jeos。",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "正式版下载地址：https://getalt.org\nSisyphus 版下载地址：https://en.altlinux.org/Regular\nSisyphus 是由 ALT Linux 团队开发和维护免费和开源软件存储库，适合作为发行版 LiveCD 构建的基础。 Sisyphus 中的软件往往比较新但不保证稳定性。\nAlt Worstation 10 暂时还不能使用 DDE，推荐使用 Sisyphus 版本尝鲜。",
+          "qas": [
+            {
+              "question": "ALT Linux 正式版在哪里下载？",
+              "id": "3-12-19",
+              "answers": [
+                {
+                  "text": "https://getalt.org",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "Sisyphus 版的下载地址是什么？",
+              "id": "3-12-20",
+              "answers": [
+                {
+                  "text": "https://en.altlinux.org/Regular",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "question": "Sisyphus 存储库由哪个团队维护？",
+              "id": "3-12-21",
+              "answers": [
+                {
+                  "text": "ALT Linux 团队",
+                  "answer_start": 104
+                }
+              ]
+            },
+            {
+              "question": "Sisyphus 版本的软件有什么特点？",
+              "id": "3-12-22",
+              "answers": [
+                {
+                  "text": "比较新但不保证稳定性",
+                  "answer_start": 195
+                }
+              ]
+            },
+            {
+              "question": "哪个ALT Linux版本不能使用DDE？",
+              "id": "3-12-23",
+              "answers": [
+                {
+                  "text": "Alt Worstation 10",
+                  "answer_start": 220
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ALT Linux 是一个使用 apt-get/rpm 进行包管理，首次安装推荐更新系统和仓库。\n```bash\napt-get update\napt-get dist-upgrade\n```\n安装完整 DDE 组件：\n```bash\napt-get install deepin-full\n```\n重启后可以选择进入 DDE",
+          "qas": [
+            {
+              "question": "ALT Linux使用什么包管理工具？",
+              "id": "3-12-24",
+              "answers": [
+                {
+                  "text": "apt-get/rpm",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "首次安装DDE前推荐执行什么操作？",
+              "id": "3-12-25",
+              "answers": [
+                {
+                  "text": "更新系统和仓库",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "更新系统的完整命令是什么？",
+              "id": "3-12-26",
+              "answers": [
+                {
+                  "text": "apt-get update\napt-get dist-upgrade",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "安装完整DDE组件的命令是什么？",
+              "id": "3-12-27",
+              "answers": [
+                {
+                  "text": "apt-get install deepin-full",
+                  "answer_start": 145
+                }
+              ]
+            },
+            {
+              "question": "安装完成后需要执行什么操作才能进入DDE？",
+              "id": "3-12-28",
+              "answers": [
+                {
+                  "text": "重启",
+                  "answer_start": 186
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

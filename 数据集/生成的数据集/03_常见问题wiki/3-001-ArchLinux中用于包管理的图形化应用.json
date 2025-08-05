@@ -1,0 +1,599 @@
+{
+  "data": [
+    {
+      "title": "ArchLinux中用于包管理的图形化应用",
+      "paragraphs": [
+        {
+          "context": "Arch Linux中用于包管理的图形化应用\n安装Arch Linux有一些挑战性。这就是为什么有几个基于Arch的发行版通过提供图形化的安装程序使事情变得简单。即使你设法安装了Arch Linux，你也会注意到它严重依赖命令行。如果你需要安装应用或更新系统，那么必须打开终端。是的！Arch Linux没有软件中心。我知道，这让很多人感到震惊。如果你对使用命令行管理应用感到不舒服，你可以安装一个GUI工具。这有助于在舒适的图形化界面中搜索包以及安装和删除它们。",
+          "qas": [
+            {
+              "id": "3-1-1",
+              "question": "为什么安装Arch Linux具有挑战性？",
+              "answers": [
+                {
+                  "text": "安装Arch Linux有一些挑战性",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "3-1-2",
+              "question": "Arch Linux缺失什么功能让用户震惊？",
+              "answers": [
+                {
+                  "text": "Arch Linux没有软件中心",
+                  "answer_start": 113
+                }
+              ]
+            },
+            {
+              "id": "3-1-3",
+              "question": "图形化GUI工具的主要作用是什么？",
+              "answers": [
+                {
+                  "text": "在舒适的图形化界面中搜索包以及安装和删除它们",
+                  "answer_start": 194
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Apper 是一个精简的 Qt5 应用，它使用 PackageKit 进行包管理，它还支持 AppStream 和自动更新。但是，没有 AUR 支持。要从官方仓库安装它，请使用以下命令：sudo pacman -Syu apper",
+          "qas": [
+            {
+              "id": "3-1-4",
+              "question": "Apper基于什么技术构建？",
+              "answers": [
+                {
+                  "text": "Qt5",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "3-1-5",
+              "question": "Apper使用什么进行包管理？",
+              "answers": [
+                {
+                  "text": "PackageKit",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "3-1-6",
+              "question": "Apper支持哪些功能？",
+              "answers": [
+                {
+                  "text": "AppStream 和自动更新",
+                  "answer_start": 46
+                }
+              ]
+            },
+            {
+              "id": "3-1-7",
+              "question": "Apper是否支持AUR？",
+              "answers": [
+                {
+                  "text": "没有 AUR 支持",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "id": "3-1-8",
+              "question": "如何安装Apper？",
+              "answers": [
+                {
+                  "text": "sudo pacman -Syu apper",
+                  "answer_start": 97
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度应用商店是使用 DTK（QT5）构建的深度桌面环境的应用商店，它使用 PackageKit 进行包管理，支持 AppStream，同时提供系统更新通知。 没有 AUR 支持。要安装它，请使用以下命令：sudo pacman -Syu deepin-store",
+          "qas": [
+            {
+              "id": "3-1-9",
+              "question": "深度应用商店基于什么构建？",
+              "answers": [
+                {
+                  "text": "DTK（QT5）",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "3-1-10",
+              "question": "深度应用商店属于哪个桌面环境？",
+              "answers": [
+                {
+                  "text": "深度桌面环境",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "3-1-11",
+              "question": "深度应用商店使用什么进行包管理？",
+              "answers": [
+                {
+                  "text": "PackageKit",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "3-1-12",
+              "question": "深度应用商店是否支持AUR？",
+              "answers": [
+                {
+                  "text": "没有 AUR 支持",
+                  "answer_start": 99
+                }
+              ]
+            },
+            {
+              "id": "3-1-13",
+              "question": "深度应用商店的安装命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo pacman -Syu deepin-store",
+                  "answer_start": 130
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "发现应用不需要为 KDE Plasma 用户介绍。它是一个使用 PackageKit 的基于 Qt 的应用管理器，支持 AppStream、Flatpak 和固件更新。要在发现应用中安装 Flatpak 和固件更新，需要分别安装 flatpak 和 fwupd 包。它没有 AUR 支持。sudo pacman -Syu discover packagekit-qt5",
+          "qas": [
+            {
+              "id": "3-1-14",
+              "question": "KDE发现应用基于什么技术？",
+              "answers": [
+                {
+                  "text": "Qt",
+                  "answer_start": 43
+                }
+              ]
+            },
+            {
+              "id": "3-1-15",
+              "question": "KDE发现应用支持哪些功能？",
+              "answers": [
+                {
+                  "text": "AppStream、Flatpak 和固件更新",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "id": "3-1-16",
+              "question": "要使用KDE发现应用的Flatpak和固件更新需安装什么包？",
+              "answers": [
+                {
+                  "text": "flatpak 和 fwupd 包",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "id": "3-1-17",
+              "question": "KDE发现应用是否支持AUR？",
+              "answers": [
+                {
+                  "text": "没有 AUR 支持",
+                  "answer_start": 140
+                }
+              ]
+            },
+            {
+              "id": "3-1-18",
+              "question": "KDE发现应用的安装命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo pacman -Syu discover packagekit-qt5",
+                  "answer_start": 157
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GNOME PackageKit 是一个使用 PackageKit 技术的 GTK3 包管理器，支持 AppStream。不幸的是，没有 AUR 支持。要从官方仓库安装它，请使用以下命令：sudo pacman -Syu gnome-packagekit",
+          "qas": [
+            {
+              "id": "3-1-19",
+              "question": "GNOME PackageKit基于什么技术？",
+              "answers": [
+                {
+                  "text": "PackageKit 技术、GTK3",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "3-1-20",
+              "question": "GNOME PackageKit支持什么功能？",
+              "answers": [
+                {
+                  "text": "AppStream",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "id": "3-1-21",
+              "question": "GNOME PackageKit是否支持AUR？",
+              "answers": [
+                {
+                  "text": "没有 AUR 支持",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "id": "3-1-22",
+              "question": "如何安装GNOME PackageKit？",
+              "answers": [
+                {
+                  "text": "sudo pacman -Syu gnome-packagekit",
+                  "answer_start": 106
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GNOME 软件(Software) 应用不需要向 GNOME 桌面用户介绍。它是使用 PackageKit 技术的 GTK4 应用管理器，支持 AppStream、Flatpak 和固件更新。它没有 AUR 支持。要安装来自 GNOME 软件应用的 Flatpak 和固件更新，需要分别安装 flatpak 和 fwupd 包。安装它使用：sudo pacman -Syu gnome-software-packagekit-plugin gnome-software",
+          "qas": [
+            {
+              "id": "3-1-23",
+              "question": "GNOME软件应用基于什么技术？",
+              "answers": [
+                {
+                  "text": "PackageKit 技术、GTK4",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "3-1-24",
+              "question": "GNOME软件应用支持哪些功能？",
+              "answers": [
+                {
+                  "text": "AppStream、Flatpak 和固件更新",
+                  "answer_start": 70
+                }
+              ]
+            },
+            {
+              "id": "3-1-25",
+              "question": "GNOME软件应用是否支持AUR？",
+              "answers": [
+                {
+                  "text": "没有 AUR 支持",
+                  "answer_start": 107
+                }
+              ]
+            },
+            {
+              "id": "3-1-26",
+              "question": "要使用GNOME软件应用的Flatpak和固件更新需安装什么？",
+              "answers": [
+                {
+                  "text": "flatpak 和 fwupd 包",
+                  "answer_start": 161
+                }
+              ]
+            },
+            {
+              "id": "3-1-27",
+              "question": "GNOME软件应用的安装命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo pacman -Syu gnome-software-packagekit-plugin gnome-software",
+                  "answer_start": 198
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "tkPacman 是用 Tcl 编写的 Tk pacman 封装。界面类似于 Synaptic 包管理器。由于没有 GTK/Qt 依赖，它非常轻量级，因为它使用 Tcl/Tk GUI 工具包。它不支持 AUR，这很讽刺，因为你需要从 AUR安装它。你需要事先安装一个 AUR 助手，如 yay。yay -Syu tkpacman",
+          "qas": [
+            {
+              "id": "3-1-28",
+              "question": "tkPacman是用什么语言编写的？",
+              "answers": [
+                {
+                  "text": "Tcl",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "3-1-29",
+              "question": "tkPacman的界面类似于什么？",
+              "answers": [
+                {
+                  "text": "Synaptic 包管理器",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "id": "3-1-30",
+              "question": "tkPacman为什么轻量级？",
+              "answers": [
+                {
+                  "text": "没有 GTK/Qt 依赖，使用 Tcl/Tk GUI 工具包",
+                  "answer_start": 58
+                }
+              ]
+            },
+            {
+              "id": "3-1-31",
+              "question": "tkPacman是否支持AUR？",
+              "answers": [
+                {
+                  "text": "不支持 AUR",
+                  "answer_start": 114
+                }
+              ]
+            },
+            {
+              "id": "3-1-32",
+              "question": "如何安装tkPacman？",
+              "answers": [
+                {
+                  "text": "yay -Syu tkpacman",
+                  "answer_start": 203
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Octopi 可以认为是 tkPacman 的更好看的表亲。它使用 Qt5 和 Alpm，还支持 Appstream 和 AUR（通过 yay）。你还可以获得桌面通知、仓库编辑器和缓存清理器。它的界面类似于 Synaptic 包管理器。要从 AUR 安装它，请使用以下命令。yay -Syu octopi",
+          "qas": [
+            {
+              "id": "3-1-33",
+              "question": "Octopi使用什么技术？",
+              "answers": [
+                {
+                  "text": "Qt5 和 Alpm",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "id": "3-1-34",
+              "question": "Octopi支持哪些功能？",
+              "answers": [
+                {
+                  "text": "Appstream、AUR（通过 yay）、桌面通知、仓库编辑器和缓存清理器",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "3-1-35",
+              "question": "Octopi的界面类似于什么？",
+              "answers": [
+                {
+                  "text": "Synaptic 包管理器",
+                  "answer_start": 126
+                }
+              ]
+            },
+            {
+              "id": "3-1-36",
+              "question": "如何安装Octopi？",
+              "answers": [
+                {
+                  "text": "yay -Syu octopi",
+                  "answer_start": 165
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Pamac 是 Manjaro Linux 的图形包管理器。它基于 GTK3 和 Alpm，支持 AUR、Appstream、Flatpak 和 Snap。Pamac 还支持自动下载更新和降级软件包。它是 Arch Linux 衍生版中使用最广泛的应用。但因为 DDoS AUR gitlab.manjaro.org而臭名昭著。在 Arch Linux 上安装 Pamac有几种方法。最简单的方法是使用 AUR 助手。yay -Syu pamac-aur",
+          "qas": [
+            {
+              "id": "3-1-37",
+              "question": "Pamac是哪个Linux的图形包管理器？",
+              "answers": [
+                {
+                  "text": "Manjaro Linux",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "3-1-38",
+              "question": "Pamac基于什么技术？",
+              "answers": [
+                {
+                  "text": "GTK3 和 Alpm",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "3-1-39",
+              "question": "Pamac支持哪些功能？",
+              "answers": [
+                {
+                  "text": "AUR、Appstream、Flatpak、Snap、自动下载更新和降级软件包",
+                  "answer_start": 55
+                }
+              ]
+            },
+            {
+              "id": "3-1-40",
+              "question": "Pamac为什么臭名昭著？",
+              "answers": [
+                {
+                  "text": "因为 DDoS AUR gitlab.manjaro.org",
+                  "answer_start": 133
+                }
+              ]
+            },
+            {
+              "id": "3-1-41",
+              "question": "如何在Arch Linux上安装Pamac？",
+              "answers": [
+                {
+                  "text": "yay -Syu pamac-aur",
+                  "answer_start": 211
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "要删除任何上面图形化包管理器以及依赖项和配置文件，请使用以下命令将packagename替换为要删除的包的名称。sudo pacman -Rns packagename。这样看来，Arch Linux 也可以在不接触终端的情况下使用合适的工具。还有一些其他应用程序也使用终端用户界面（TUI）。一些例子pcurses、cylon、pacseek和yup但是，这篇文章只讨论那些有适当的GUI的软件。注意： PackageKit默认打开系统权限，因而不推荐用于一般用途。因为如果用户属于 wheel组，更新或安装任何软件都不需要密码。",
+          "qas": [
+            {
+              "id": "3-1-42",
+              "question": "如何删除图形化包管理器及其依赖项和配置文件？",
+              "answers": [
+                {
+                  "text": "sudo pacman -Rns packagename（将packagename替换为要删除的包的名称）",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "3-1-43",
+              "question": "文章中提到的使用TUI的应用例子有哪些？",
+              "answers": [
+                {
+                  "text": "pcurses、cylon、pacseek和yup",
+                  "answer_start": 177
+                }
+              ]
+            },
+            {
+              "id": "3-1-44",
+              "question": "为什么不推荐使用PackageKit？",
+              "answers": [
+                {
+                  "text": "PackageKit默认打开系统权限，因而不推荐用于一般用途。因为如果用户属于 wheel组，更新或安装任何软件都不需要密码",
+                  "answer_start": 226
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Arch Linux中用于包管理的图形化应用\n1、Apper。Apper是一个精简的Qt5应用，它使用PackageKit进行包管理，它还支持AppStream和自动更新。但是，没有AUR支持。要从官方仓库安装它，请使用以下命令：`sudo pacman -Syu apper`",
+          "qas": []
+        },
+        {
+          "context": "Arch Linux中用于包管理的图形化应用\n2、深度应用商店。深度应用商店是使用DTK（QT5）构建的深度桌面环境的应用商店，它使用PackageKit进行包管理，支持AppStream，同时提供系统更新通知。没有AUR支持。要安装它，请使用以下命令：`sudo pacman -Syu deepin-store`",
+          "qas": []
+        },
+        {
+          "context": "Arch Linux中用于包管理的图形化应用\n3、KDE发现应用。发现应用不需要为KDE Plasma用户介绍。它是一个使用PackageKit的基于Qt的应用管理器，支持AppStream、Flatpak和固件更新。要在发现应用中安装Flatpak和固件更新，需要分别安装flatpak和fwupd包。它没有AUR支持。`sudo pacman -Syu discover packagekit-qt5`",
+          "qas": [
+            {
+              "id": "3-1-45",
+              "question": "KDE发现应用支持哪些扩展技术？",
+              "answers": [
+                {
+                  "text": "AppStream、Flatpak和固件更新",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "id": "3-1-46",
+              "question": "安装发现应用需要什么额外组件？",
+              "answers": [
+                {
+                  "text": "需要分别安装flatpak和fwupd包",
+                  "answer_start": 98
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Arch Linux中用于包管理的图形化应用\n44、GNOME PackageKit。GNOME PackageKit是一个使用PackageKit技术的GTK3包管理器，支持AppStream。不幸的是，没有AUR支持。要从官方仓库安装它，请使用以下命令：`sudo pacman -Syu gnome-packagekit`",
+          "qas": [
+            {
+              "id": "3-1-47",
+              "question": "GNOME PackageKit使用什么GUI工具包？",
+              "answers": [
+                {
+                  "text": "GTK3",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Arch Linux中用于包管理的图形化应用\n5、GNOME软件应用。GNOME软件(Software)应用是使用PackageKit技术的GTK4应用管理器，支持AppStream、Flatpak和固件更新。它没有AUR支持。要安装来自GNOME软件应用的Flatpak和固件更新，需要分别安装flatpak和fwupd包。安装它使用：`sudo pacman -Syu gnome-software-packagekit-plugin gnome-software`",
+          "qas": []
+        },
+        {
+          "context": "Arch Linux中用于包管理的图形化应用\n6、tkPacman。它是用Tcl编写的Tk pacman封装。界面类似于Synaptic包管理器。由于没有GTK/Qt依赖，它非常轻量级，因为它使用Tcl/Tk GUI工具包。它不支持AUR，这很讽刺，因为你需要从AUR安装它。你需要事先安装一个AUR助手，如yay。`yay -Syu tkpacman`",
+          "qas": [
+            {
+              "id": "3-1-48",
+              "question": "安装tkPacman的前提条件是什么？",
+              "answers": [
+                {
+                  "text": "需要事先安装一个AUR助手，如yay",
+                  "answer_start": 143
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Arch Linux中用于包管理的图形化应用\n7、Octopi。它使用Qt5和Alpm，还支持Appstream和AUR（通过yay）。你还可以获得桌面通知、仓库编辑器和缓存清理器。它的界面类似于Synaptic包管理器。要从AUR安装它，请使用以下命令：`yay -Syu octopi`",
+          "qas": [
+            {
+              "id": "3-1-49",
+              "question": "Octopi通过什么支持AUR？",
+              "answers": [
+                {
+                  "text": "通过yay",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "id": "3-1-50",
+              "question": "Octopi提供哪些额外功能？",
+              "answers": [
+                {
+                  "text": "桌面通知、仓库编辑器和缓存清理器",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Arch Linux中用于包管理的图形化应用\n8、Pamac。Pacam是Manjaro Linux的图形包管理器。它基于GTK3和Alpm，支持AUR、Appstream、Flatpak和Snap。Pamac还支持自动下载更新和降级软件包。它是Arch Linux衍生版中使用最广泛的应用。在Arch Linux上安装Pamac：`yay -Syu pamac-aur`",
+          "qas": []
+        },
+        {
+          "context": "Arch Linux中用于包管理的图形化应用\n要删除任何上面图形化包管理器，请使用：`sudo pacman -Rns packagename`。PackageKit默认打开系统权限，因而不推荐用于一般用途。因为如果用户属于wheel组，更新或安装任何软件都不需要密码。你看到了在Arch Linux上使用图形化软件中心的几种选择。",
+          "qas": []
+        }
+      ]
+    }
+  ]
+}

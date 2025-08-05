@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "title": "触控板的常见问题及解决方法",
+      "paragraphs": [
+        {
+          "context": "解决系统触摸板不生效或不能使用的问题，可按以下步骤操作：1. 在终端执行sudo apt-get install xinput命令安装程序；2. 下载脚本链接: https://pan.baidu.com/s/1kWUbM67 密码: e8za；3. 在脚本目录执行python3 xinput_detail.py命令，最后把输出的信息反馈到社区，等待解决。",
+          "qas": [
+            {
+              "question": "如何解决系统触摸板不生效或不能使用的问题？",
+              "id": "3-27-1",
+              "answers": [
+                {
+                  "text": "1. 在终端执行sudo apt-get install xinput命令安装程序；2. 下载脚本链接: https://pan.baidu.com/s/1kWUbM67 密码: e8za；3. 在脚本目录执行python3 xinput_detail.py命令，最后把输出的信息反馈到社区，等待解决。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "禁用触摸板的方法：一般机型可在终端执行命令：sudo modprobe psmouse（启用触摸板）、sudo rmmod psmouse（禁用触摸板）；ThinkPad之类含有摇杆的机型，可使用命令仅禁用触摸板而保留摇杆：synclient TouchpadOff=1（禁用触摸板）、synclient TouchpadOff=0（恢复触摸板）。",
+          "qas": [
+            {
+              "question": "如何禁用触摸板？",
+              "id": "3-27-2",
+              "answers": [
+                {
+                  "text": "一般机型可在终端执行命令：sudo modprobe psmouse（启用触摸板）、sudo rmmod psmouse（禁用触摸板）；ThinkPad之类含有摇杆的机型，可使用命令仅禁用触摸板而保留摇杆：synclient TouchpadOff=1（禁用触摸板）、synclient TouchpadOff=0（恢复触摸板）。",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置触摸板为自然滚动方式的方法：方法一：1. 打开控制中心，选择【鼠标】，进入鼠标设置界面。2. 选择【鼠标】，并打开【自然滚动】按钮。方法二：1. 在家目录下新建或者修改 .Xmodmap 文件，在终端中执行命令：gedit ~/.Xmodmap；2. 添加或者修改内容为: pointer = 1 2 3 5 4 7 6 8 9 10 11 12；3. 注销当前用户再登录即可生效。",
+          "qas": [
+            {
+              "question": "如何设置触摸板为自然滚动方式？",
+              "id": "3-27-3",
+              "answers": [
+                {
+                  "text": "方法一：1. 打开控制中心，选择【鼠标】，进入鼠标设置界面。2. 选择【鼠标】，并打开【自然滚动】按钮。方法二：1. 在家目录下新建或者修改 .Xmodmap 文件，在终端中执行命令：gedit ~/.Xmodmap；2. 添加或者修改内容为: pointer = 1 2 3 5 4 7 6 8 9 10 11 12；3. 注销当前用户再登录即可生效。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置触摸板为边缘滚动与双指滚动的方法：在 xf86-input-libinput 驱动下，双指垂直滚动与边缘滚动只能二选一，谁后设置的谁生效；在 xf86-input-synaptics 下两者可以同时开启。相关命令：gsettings set com.deepin.dde.touchpad edge-scroll-enabled true（开启边缘滚动）；gsettings set com.deepin.dde.touchpad vert-scroll-enabled true（开启双指垂直滚动）；gsettings set com.deepin.dde.touchpad horiz-scroll-enabled true（开启双指水平滚动）。",
+          "qas": [
+            {
+              "question": "如何设置触摸板为边缘滚动与双指滚动？",
+              "id": "3-27-4",
+              "answers": [
+                {
+                  "text": "在 xf86-input-libinput 驱动下，双指垂直滚动与边缘滚动只能二选一，谁后设置的谁生效；在 xf86-input-synaptics 下两者可以同时开启。相关命令：gsettings set com.deepin.dde.touchpad edge-scroll-enabled true（开启边缘滚动）；gsettings set com.deepin.dde.touchpad vert-scroll-enabled true（开启双指垂直滚动）；gsettings set com.deepin.dde.touchpad horiz-scroll-enabled true（开启双指水平滚动）。",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

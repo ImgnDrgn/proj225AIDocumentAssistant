@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "电量不足,请接入电源",
+      "paragraphs": [
+        {
+          "context": "电量不足,请接入电源。但插入电源后无法恢复正常。这个时候可能需要手动关闭dde-lowpower进程。按下Ctrl Alt F2切换到tty2。输入用户名回车，密码回车，登录成功后执行。pkill dde-lowpower。最后按Ctrl Alt F1返回桌面环境即可恢复正常。",
+          "qas": [
+            {
+              "id": "3-25-1",
+              "question": "电量不足接入电源后无法恢复正常，可能需要做什么？",
+              "answers": [
+                {
+                  "text": "手动关闭dde-lowpower进程",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "3-25-2",
+              "question": "出现什么提示时可能需要手动关闭dde-lowpower进程？",
+              "answers": [
+                {
+                  "text": "电量不足,请接入电源。但插入电源后无法恢复正常",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-25-3",
+              "question": "如何切换到tty2界面？",
+              "answers": [
+                {
+                  "text": "按下Ctrl Alt F2",
+                  "answer_start": 43
+                }
+              ]
+            },
+            {
+              "id": "3-25-4",
+              "question": "登录tty2需要输入什么？",
+              "answers": [
+                {
+                  "text": "用户名和密码",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "id": "3-25-5",
+              "question": "登录成功后需要执行什么命令？",
+              "answers": [
+                {
+                  "text": "pkill dde-lowpower",
+                  "answer_start": 96
+                }
+              ]
+            },
+            {
+              "id": "3-25-6",
+              "question": "执行命令后如何返回桌面环境？",
+              "answers": [
+                {
+                  "text": "按Ctrl Alt F1",
+                  "answer_start": 120
+                }
+              ]
+            },
+            {
+              "id": "3-25-7",
+              "question": "整个操作过程的目的是什么？",
+              "answers": [
+                {
+                  "text": "恢复正常",
+                  "answer_start": 138
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

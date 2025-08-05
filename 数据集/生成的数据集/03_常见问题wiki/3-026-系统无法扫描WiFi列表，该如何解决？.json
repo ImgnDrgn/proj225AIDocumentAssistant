@@ -1,0 +1,154 @@
+{
+  "data": [
+    {
+      "title": "系统无法扫描WiFi列表，该如何解决？",
+      "paragraphs": [
+        {
+          "context": "系统无法扫描WiFi列表，该如何解决？该问题一般是未安装网卡驱动导致的。解决方法如下：1. 在终端中执行命令重启无线网卡服务：systemctl restart network-manager.service。2. 若没有网卡驱动，需安装无线网卡驱动，可执行命令查看无线网卡型号：lspci | grep -i ethernet。3. 若是Realtek无线网卡，可访问https://github.com/lwfinger/rtlwifi_new获取对应型号的驱动并下载；其他型号需自行查找。4. 解压缩下载的驱动文件，找到rtlwifi_new-master文件夹。5. 进入该文件夹，右键选择【在终端中打开】，输入命令：make；sudo make install；sudo modprobe <无线网卡型号>。6. 重启系统。本篇wiki原文链接：https://www.deepinos.org/d/102-deepin。参考论坛帖子：https://bbs.deepin.org/forum.php?mod=viewthread&tid=153154。",
+          "qas": [
+            {
+              "id": "3-26-1",
+              "question": "系统无法扫描WiFi列表的常见原因是什么？",
+              "answers": [
+                {
+                  "text": "未安装网卡驱动",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "3-26-2",
+              "question": "如果没有网卡驱动应该怎么做？",
+              "answers": [
+                {
+                  "text": "安装无线网卡驱动",
+                  "answer_start": 87
+                }
+              ]
+            },
+            {
+              "id": "3-26-3",
+              "question": "如何重启无线网卡服务？",
+              "answers": [
+                {
+                  "text": "在终端中执行命令重启无线网卡服务：systemctl restart network-manager.service",
+                  "answer_start": 111
+                }
+              ]
+            },
+            {
+              "id": "3-26-4",
+              "question": "重启无线网卡服务的命令是什么？",
+              "answers": [
+                {
+                  "text": "systemctl restart network-manager.service",
+                  "answer_start": 138
+                }
+              ]
+            },
+            {
+              "id": "3-26-5",
+              "question": "如何查看无线网卡型号？",
+              "answers": [
+                {
+                  "text": "执行命令查看无线网卡型号：lspci | grep -i ethernet",
+                  "answer_start": 189
+                }
+              ]
+            },
+            {
+              "id": "3-26-6",
+              "question": "查看无线网卡型号的命令是什么？",
+              "answers": [
+                {
+                  "text": "lspci | grep -i ethernet",
+                  "answer_start": 202
+                }
+              ]
+            },
+            {
+              "id": "3-26-7",
+              "question": "Realtek无线网卡的驱动从哪里获取？",
+              "answers": [
+                {
+                  "text": "https://github.com/lwfinger/rtlwifi_new",
+                  "answer_start": 263
+                }
+              ]
+            },
+            {
+              "id": "3-26-8",
+              "question": "非Realtek无线网卡的驱动如何获取？",
+              "answers": [
+                {
+                  "text": "自行查找",
+                  "answer_start": 329
+                }
+              ]
+            },
+            {
+              "id": "3-26-9",
+              "question": "如何准备安装驱动的文件夹？",
+              "answers": [
+                {
+                  "text": "解压缩下载的驱动文件，找到rtlwifi_new-master文件夹",
+                  "answer_start": 357
+                }
+              ]
+            },
+            {
+              "id": "3-26-10",
+              "question": "安装驱动的命令序列是什么？",
+              "answers": [
+                {
+                  "text": "make；sudo make install；sudo modprobe <无线网卡型号>",
+                  "answer_start": 426
+                }
+              ]
+            },
+            {
+              "id": "3-26-11",
+              "question": "安装驱动的第一个命令是什么？",
+              "answers": [
+                {
+                  "text": "make",
+                  "answer_start": 426
+                }
+              ]
+            },
+            {
+              "id": "3-26-12",
+              "question": "安装完无线网卡驱动后需要做什么？",
+              "answers": [
+                {
+                  "text": "重启系统",
+                  "answer_start": 477
+                }
+              ]
+            },
+            {
+              "id": "3-26-13",
+              "question": "本文的原始链接是什么？",
+              "answers": [
+                {
+                  "text": "https://www.deepinos.org/d/102-deepin",
+                  "answer_start": 495
+                }
+              ]
+            },
+            {
+              "id": "3-26-14",
+              "question": "参考的论坛帖子链接是什么？",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/forum.php?mod=viewthread&tid=153154",
+                  "answer_start": 536
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

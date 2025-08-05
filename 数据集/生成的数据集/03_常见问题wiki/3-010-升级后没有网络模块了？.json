@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "升级后没有网络模块了？",
+      "paragraphs": [
+        {
+          "context": "遇到过部分用户在使用终端升级后，发现控制中心的网络模块没有了，目前发现的有几点原因，以下提供一种可能的解决方法。",
+          "qas": [
+            {
+              "id": "3-10-1",
+              "question": "部分用户发现控制中心的网络模块没有了，可能发生在什么操作之后？",
+              "answers": [
+                {
+                  "text": "使用终端升级后",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "可能用户通过终端升级时使用的命令是：sudo apt upgrade 通过终端用此命令升级时，在处理部分推荐依赖时，不会做处理，从而可能导致部分推荐依赖模块不会被升级，从而还会被处理掉，导致一些功能模块的包没有了，也就影响了部分功能了。",
+          "qas": [
+            {
+              "id": "3-10-2",
+              "question": "使用sudo apt upgrade命令升级可能导致网络模块消失的原因是什么？",
+              "answers": [
+                {
+                  "text": "在处理部分推荐依赖时，不会做处理，从而可能导致部分推荐依赖模块不会被升级，从而还会被处理掉，导致一些功能模块的包没有了",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "id": "3-10-3",
+              "question": "可能导致网络模块消失的终端升级命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt upgrade",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "- 升级时还是推荐通过控制中心来升级，控制中心会处理这类推荐依赖，不会造成这种升级后将部分功能包给干没了的情况；- 终端升级时，也尽量使用：sudo apt dist-upgrade 命令来处理升级，相比sudo apt upgrade 此命令会处理更多的事情，或许更稳当一些（当然，这其中的机理还没细研究，需要大佬给予一些科普）",
+          "qas": [
+            {
+              "id": "3-10-4",
+              "question": "推荐的升级方法有哪些？",
+              "answers": [
+                {
+                  "text": "1. 通过控制中心来升级，控制中心会处理这类推荐依赖；2. 终端升级时使用sudo apt dist-upgrade命令",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-10-5",
+              "question": "终端升级时，相比sudo apt upgrade更稳当的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt dist-upgrade",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "3-10-6",
+              "question": "为什么控制中心升级更可靠？",
+              "answers": [
+                {
+                  "text": "控制中心会处理这类推荐依赖，不会造成这种升级后将部分功能包给干没了的情况",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如果出现了升级后，图标没有的情况，大家也可以试试如下办法时候可行：安装如下包后，重启试试是否有效：sudo apt install dde-network-dialog",
+          "qas": [
+            {
+              "id": "3-10-7",
+              "question": "升级后网络模块图标没有了，可行的解决办法是什么？",
+              "answers": [
+                {
+                  "text": "安装dde-network-dialog包后重启，命令为sudo apt install dde-network-dialog",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "3-10-8",
+              "question": "安装哪个包可能解决升级后网络模块图标的问题？",
+              "answers": [
+                {
+                  "text": "dde-network-dialog",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "id": "3-10-9",
+              "question": "修复网络模块缺失的具体命令行操作是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt install dde-network-dialog",
+                  "answer_start": 58
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

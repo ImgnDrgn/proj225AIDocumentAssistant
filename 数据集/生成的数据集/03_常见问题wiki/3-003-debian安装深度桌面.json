@@ -1,0 +1,334 @@
+{
+  "data": [
+    {
+      "title": "debian安装深度桌面",
+      "paragraphs": [
+        {
+          "context": "debian镜像下载地址：https://www.debian.org/download。镜像安装步骤：1、在引导界面选择Graphical install（图形化安装），进入安装过程。2、选择语言界面，选择中文。3、区域选择，选择中国。4、主机名，填写debian。5、域名可不填，直接下一步。6、设置root密码为root，超级管理员账户。",
+          "qas": [
+            {
+              "question": "debian镜像的下载地址是什么？",
+              "id": "3-3-1",
+              "answers": [
+                {
+                  "text": "https://www.debian.org/download",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "引导界面应选择什么进行图形化安装？",
+              "id": "3-3-2",
+              "answers": [
+                {
+                  "text": "Graphical install",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "安装时语言界面选择什么？",
+              "id": "3-3-3",
+              "answers": [
+                {
+                  "text": "中文",
+                  "answer_start": 87
+                }
+              ]
+            },
+            {
+              "question": "区域选择应选什么？",
+              "id": "3-3-4",
+              "answers": [
+                {
+                  "text": "中国",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "question": "主机名应填写什么？",
+              "id": "3-3-5",
+              "answers": [
+                {
+                  "text": "debian",
+                  "answer_start": 118
+                }
+              ]
+            },
+            {
+              "question": "root密码设置为多少？",
+              "id": "3-3-6",
+              "answers": [
+                {
+                  "text": "root",
+                  "answer_start": 145
+                }
+              ]
+            },
+            {
+              "question": "在设置域名时，推荐的操作是什么？",
+              "id": "3-3-7",
+              "answers": [
+                {
+                  "text": "可不填，直接下一步",
+                  "answer_start": 133
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "镜像安装步骤：7、建立新用户，这个只是个昵称，不是登录时的用户名，可以根据自己喜好填。8、接下来就是设置登录时的用户名了，设置时要多注意，并且一定要记住。9、设置用户密码。10、接下来该磁盘分区了，有空闲分区的话推荐使用安装程序进行自动分区，当然也可以手动分区。11、自动分区的话如果是新手推荐“将所有文件放在同一个分区中”，有经验的就根据自己喜好调整。12、手动分区的话一定要记住挂载/根目录，否则会报错。",
+          "qas": [
+            {
+              "question": "建立的新用户是登录时的用户名吗？",
+              "id": "3-3-8",
+              "answers": [
+                {
+                  "text": "不是，只是个昵称",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "设置登录时的用户名需要注意什么？",
+              "id": "3-3-9",
+              "answers": [
+                {
+                  "text": "要多注意，并且一定要记住",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "镜像安装步骤：13、Swap分区（交换分区）推荐大小为物理内存的两倍，比如实际内存为2G，swap给上4G就行。14、完成调整后保存分区表即可。15、需要注意的是需要记住挂载 根目录/ 的分区号，方便后面安装grub。16、选择软件包进行安装，建议全不选，需要的后面会手动安装，在此时安装的桌面环境话会连接安全服务器更新内核，速度会非常慢。17、安装完成后就是配置Grub了，如果不想用Grub替换MBR，就选手动输入。18、然后输入前面配置的挂载根目录/的文件系统，比如前面用的是/sda1，这里就输入/dev/sda1。（不用特殊处理，直接忽略，按默认继续）",
+          "qas": [
+            {
+              "question": "磁盘分区有空闲分区时推荐用什么方式分区？",
+              "id": "3-3-10",
+              "answers": [
+                {
+                  "text": "安装程序进行自动分区",
+                  "answer_start": 130
+                }
+              ]
+            },
+            {
+              "question": "新手自动分区推荐将所有文件放在哪里？",
+              "id": "3-3-11",
+              "answers": [
+                {
+                  "text": "同一个分区中",
+                  "answer_start": 215
+                }
+              ]
+            },
+            {
+              "question": "手动分区必须记住挂载什么目录？",
+              "id": "3-3-12",
+              "answers": [
+                {
+                  "text": "/根目录",
+                  "answer_start": 284
+                }
+              ]
+            },
+            {
+              "question": "Swap分区的推荐大小是多少？",
+              "id": "3-3-13",
+              "answers": [
+                {
+                  "text": "物理内存的两倍",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "分区调整完成后需要做什么？",
+              "id": "3-3-14",
+              "answers": [
+                {
+                  "text": "保存分区表",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "question": "为什么要记住挂载根目录/的分区号？",
+              "id": "3-3-15",
+              "answers": [
+                {
+                  "text": "方便后面安装grub",
+                  "answer_start": 125
+                }
+              ]
+            },
+            {
+              "question": "选择软件包安装时建议怎么做？",
+              "id": "3-3-16",
+              "answers": [
+                {
+                  "text": "全不选，需要的后面会手动安装",
+                  "answer_start": 163
+                }
+              ]
+            },
+            {
+              "question": "不想用Grub替换MBR时该怎么做？",
+              "id": "3-3-17",
+              "answers": [
+                {
+                  "text": "手动输入",
+                  "answer_start": 253
+                }
+              ]
+            },
+            {
+              "question": "在磁盘分区后，需要记住什么以方便安装grub？",
+              "id": "3-3-18",
+              "answers": [
+                {
+                  "text": "挂载根目录/的分区号",
+                  "answer_start": 125
+                }
+              ]
+            },
+            {
+              "question": "在选择软件包安装时，为什么建议全不选？",
+              "id": "3-3-19",
+              "answers": [
+                {
+                  "text": "在此时安装的桌面环境话会连接安全服务器更新内核，速度会非常慢",
+                  "answer_start": 163
+                }
+              ]
+            },
+            {
+              "question": "在配置Grub时，输入什么来指定挂载根目录的文件系统？",
+              "id": "3-3-20",
+              "answers": [
+                {
+                  "text": "/dev/sda1",
+                  "answer_start": 298
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "镜像安装步骤：19、安装完成后，拔掉启动U盘，直接点继续。20、直接按回车进入Debian，等系统加载完如果出现登录界面就说明启动成功了。21、在login后输入root，password后输入设置的超级管理员密码，以超级管理员权限进入系统。",
+          "qas": [
+            {
+              "question": "安装完成后需要拔掉什么？",
+              "id": "3-3-21",
+              "answers": [
+                {
+                  "text": "启动U盘",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "如何进入Debian系统？",
+              "id": "3-3-22",
+              "answers": [
+                {
+                  "text": "直接按回车",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "question": "系统启动成功的标志是什么？",
+              "id": "3-3-23",
+              "answers": [
+                {
+                  "text": "出现登录界面",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "以超级管理员权限登录时，login后应输入什么？",
+              "id": "3-3-24",
+              "answers": [
+                {
+                  "text": "root",
+                  "answer_start": 121
+                }
+              ]
+            },
+            {
+              "question": "在password后，需要输入什么密码？",
+              "id": "3-3-25",
+              "answers": [
+                {
+                  "text": "设置的超级管理员密码",
+                  "answer_start": 132
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装DDE桌面环境：使用命令 ```sudo vi /etc/apt/sources.list.d/deepin-git.list```添加以下内容: deb [trusted=yes arch=amd64] https://deepin-community.github.io/debian-sid-dde-deps-repo sid main deb [trusted=yes arch=amd64] https://deepin-community.github.io/debian-sid-dde-repo sid main。添加成功后执行：sudo apt update、sudo apt install startdde、sudo apt install deepin-desktop-environment-core、sudo systemctl enable lightdm。安装完成后重启,登录进入DDE桌面环境。",
+          "qas": [
+            {
+              "question": "安装DDE桌面环境时，使用什么命令添加源文件？",
+              "id": "3-3-26",
+              "answers": [
+                {
+                  "text": "sudo vi /etc/apt/sources.list.d/deepin-git.list",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "添加的源内容包含哪些？",
+              "id": "3-3-27",
+              "answers": [
+                {
+                  "text": "deb [trusted=yes arch=amd64] https://deepin-community.github.io/debian-sid-dde-deps-repo sid main、deb [trusted=yes arch=amd64] https://deepin-community.github.io/debian-sid-dde-repo sid main",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "question": "添加源成功后需要执行哪些命令？",
+              "id": "3-3-28",
+              "answers": [
+                {
+                  "text": "sudo apt update、sudo apt install startdde、sudo apt install deepin-desktop-environment-core、sudo systemctl enable lightdm",
+                  "answer_start": 265
+                }
+              ]
+            },
+            {
+              "question": "安装DDE完成后需要做什么才能进入桌面环境？",
+              "id": "3-3-29",
+              "answers": [
+                {
+                  "text": "重启，登录",
+                  "answer_start": 445
+                }
+              ]
+            },
+            {
+              "question": "安装过程中，哪个命令用于启用lightdm？",
+              "id": "3-3-30",
+              "answers": [
+                {
+                  "text": "sudo systemctl enable lightdm",
+                  "answer_start": 418
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

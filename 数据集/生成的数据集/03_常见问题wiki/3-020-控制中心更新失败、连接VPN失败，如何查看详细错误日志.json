@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "title": "控制中心更新失败、连接VPN失败，如何查看详细错误日志",
+      "paragraphs": [
+        {
+          "context": "控制中心更新失败,查看log\n终端输入命令: cat ~/.cache/deepin/dde-control-center/dde-control-center.log\n搜索UpdateFailed关键字, 就能看到具体升级失败的原因。\n特别说明：可能在控制中心会存在多个错误信息, 最好是先删除上面的日志, 再重启控制中心(必须要重启,才能生成新的dde-control-center.log), 这样就能保证只有一个UpdateFailed; 假如不想删除dde-control-center.log, 则可以根据时间去查看UpdateFailed出现的信息。",
+          "qas": [
+            {
+              "id": "3-20-1",
+              "question": "控制中心更新失败时，终端需要输入什么命令查看日志？",
+              "answers": [
+                {
+                  "text": "cat ~/.cache/deepin/dde-control-center/dde-control-center.log",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "3-20-2",
+              "question": "在控制中心日志中搜索什么关键字查看更新失败原因？",
+              "answers": [
+                {
+                  "text": "UpdateFailed",
+                  "answer_start": 91
+                }
+              ]
+            },
+            {
+              "id": "3-20-3",
+              "question": "如何保证日志中只有一个UpdateFailed信息？",
+              "answers": [
+                {
+                  "text": "先删除上面的日志, 再重启控制中心(必须要重启,才能生成新的dde-control-center.log)",
+                  "answer_start": 171
+                }
+              ]
+            },
+            {
+              "id": "3-20-4",
+              "question": "不想删除dde-control-center.log时，可以根据什么查看UpdateFailed出现的信息？",
+              "answers": [
+                {
+                  "text": "时间",
+                  "answer_start": 235
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "连接VPN失败\n终端输入命令: sudo journalctl -b -f -u NetworkManage",
+          "qas": [
+            {
+              "id": "3-20-5",
+              "question": "连接VPN失败时，终端需要输入什么命令查看错误日志？",
+              "answers": [
+                {
+                  "text": "sudo journalctl -b -f -u NetworkManage",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

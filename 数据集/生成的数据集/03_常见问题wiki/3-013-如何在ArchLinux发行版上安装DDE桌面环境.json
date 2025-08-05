@@ -1,0 +1,489 @@
+{
+  "data": [
+    {
+      "title": "如何在ArchLinux发行版上安装DDE桌面环境",
+      "paragraphs": [
+        {
+          "context": "Arch Linux 是一个独立开发的 x86-64 通用 GNU/Linux 发行版，其用途广泛，足以适应任何角色。开发侧重于简单、极简主义和代码优雅。Arch 是作为一个最小的基础系统安装的，由用户配置，通过仅安装其独特目的所需或所需的东西来组装他们自己的理想环境。官方没有提供 GUI 配置实用程序，大多数系统配置是通过编辑简单的文本文件从 shell 执行的。Arch 努力保持领先，通常提供大多数软件的最新稳定版本。Arch Linux 使用自己的 Pacman 包管理器，它将简单的二进制包与易于使用的包构建系统结合在一起。这允许用户轻松管理和自定义包，从官方 Arch 软件到用户自己的个人包，再到来自 3rd 方来源的包。存储库系统还允许用户轻松构建和维护自己的自定义构建脚本、包和存储库，从而鼓励社区发展和贡献。最小的 Arch 基础包集位于精简的 [core] 存储库中。此外，官方的 [extra]、[community]、[testing] 仓库提供了数千个高质量的包来满足您的软件需求。Arch 还提供 Arch Linux 用户存储库 (AUR)，其中包含超过 49,000 个构建脚本，用于使用 Arch Linux makepkg 应用程序从源代码编译可安装包。Arch Linux 使用“滚动发布”系统，允许一次性安装和永久软件升级。通常不需要将 Arch Linux 系统从一个“版本”重新安装或升级到下一个“版本”。通过发出一个命令，Arch 系统就可以保持最新状态并处于最前沿。Arch 努力使其软件包尽可能接近原始上游软件。补丁仅在必要时应用，以确保应用程序与安装在最新 Arch 系统上的其他软件包一起正确编译和运行。Arch Linux 是一个多功能且简单的发行版，旨在满足有能力的 Linux® 用户的需求。它功能强大且易于管理，使其成为服务器和工作站的理想发行版。把它带到你喜欢的任何方向。",
+          "qas": [
+            {
+              "id": "3-13-1",
+              "question": "Arch Linux 是什么？",
+              "answers": [
+                {
+                  "text": "Arch Linux 是一个独立开发的 x86-64 通用 GNU/Linux 发行版，其用途广泛，足以适应任何角色。开发侧重于简单、极简主义和代码优雅。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-13-2",
+              "question": "Arch Linux 使用什么包管理器？",
+              "answers": [
+                {
+                  "text": "Pacman",
+                  "answer_start": 338
+                }
+              ]
+            },
+            {
+              "id": "3-13-3",
+              "question": "Arch Linux 有哪些存储库？",
+              "answers": [
+                {
+                  "text": "最小的 Arch 基础包集位于精简的 [core] 存储库中。此外，官方的 [extra]、[community]、[testing] 仓库提供了数千个高质量的包来满足您的软件需求。Arch 还提供 Arch Linux 用户存储库 (AUR)",
+                  "answer_start": 518
+                }
+              ]
+            },
+            {
+              "id": "3-13-4",
+              "question": "Arch Linux 采用什么发布系统？",
+              "answers": [
+                {
+                  "text": "滚动发布系统，允许一次性安装和永久软件升级",
+                  "answer_start": 785
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "官网镜像下载地址 https://archlinux.org/releng/releases/",
+          "qas": [
+            {
+              "id": "3-13-5",
+              "question": "Arch Linux 的官网镜像下载地址是什么？",
+              "answers": [
+                {
+                  "text": "https://archlinux.org/releng/releases/",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "注意事项 - 安装 ArchLinux 需要联网; - mount 挂载是将 硬盘里分区 挂载到 live 环境 - chroot 是在 live 环境 和 安装到磁盘的系统 之间切换 - 设置了分区表之后, 还需要格式化 - 没有网络,需要安装 NetworkManager 和 执行 dhcpcd(实体机需要） - 磁盘的分区表有两种方式 uefi + gpt + efi 或 legacy + mbr - 安装启动器有：grub(bios 启动) 或 grub + efibootmgr(EFI 启动)",
+          "qas": [
+            {
+              "id": "3-13-6",
+              "question": "安装 ArchLinux 需要联网吗？",
+              "answers": [
+                {
+                  "text": "需要",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "3-13-7",
+              "question": "mount 挂载的作用是什么？",
+              "answers": [
+                {
+                  "text": "将硬盘里分区挂载到 live 环境",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "id": "3-13-8",
+              "question": "chroot 的作用是什么？",
+              "answers": [
+                {
+                  "text": "在 live 环境 和 安装到磁盘的系统 之间切换",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "id": "3-13-9",
+              "question": "磁盘的分区表有哪两种方式？",
+              "answers": [
+                {
+                  "text": "uefi + gpt + efi 或 legacy + mbr",
+                  "answer_start": 167
+                }
+              ]
+            },
+            {
+              "id": "3-13-10",
+              "question": "ArchLinux 的安装启动器有哪些？",
+              "answers": [
+                {
+                  "text": "grub(bios 启动) 或 grub + efibootmgr(EFI 启动)",
+                  "answer_start": 209
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装思路梳理 1. 清空一个 磁盘 2. 对 磁盘 设置 分区表 3. 对 子分区 选择适合的 TYPE； 4. 选用各自的 文件类型 格式化 子分区 ； 5. 下载 archLinu_xxxxx.iso 镜像 6. 设置第一启动项 7. 开机自动进入 live 环境 8. 将 磁盘 挂载 9. 换源 10. 安装 基本包（含内核等） 11. 配置 fstab 后，chroot 切换操作权 12. 安装 必须软件包 ，设置 Locale 13. 设置 root 密码，和新建一个用户 14. 安装引导 grub 15. 退出和重启系统 16. 开启 NetworkManager 服务自动联网 17. 安装桌面环境 DDE 19. 详细的个性化配置 20. 享受 ArchLinux 的快乐",
+          "qas": [
+            {
+              "id": "3-13-11",
+              "question": "安装 ArchLinux 思路的第 10 步是什么？",
+              "answers": [
+                {
+                  "text": "安装 基本包（含内核等）",
+                  "answer_start": 196
+                }
+              ]
+            },
+            {
+              "id": "3-13-12",
+              "question": "安装 ArchLinux 思路中，安装桌面环境 DDE 是第几步？",
+              "answers": [
+                {
+                  "text": "17 步",
+                  "answer_start": 375
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "1.在VMware里面新建系统: - 选择自定义(高级)，因为 VM 对 ArchLinux 没有直接支持； 选择 Linux(L) 时候选择选用 Linux 5.x 的内核版本 - 挂载 iso 镜像 - 设置为 EFI 方式启动",
+          "qas": [
+            {
+              "id": "3-13-13",
+              "question": "在 VMware 里新建 ArchLinux 系统时，应选择哪个内核版本？",
+              "answers": [
+                {
+                  "text": "Linux 5.x 的内核版本",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "id": "3-13-14",
+              "question": "在 VMware 里新建 ArchLinux 系统时，启动方式应设置为哪种？",
+              "answers": [
+                {
+                  "text": "EFI 方式",
+                  "answer_start": 155
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "2. 更新系统时区 timedatectl set-ntp true",
+          "qas": [
+            {
+              "id": "3-13-15",
+              "question": "如何更新 ArchLinux 的系统时区？",
+              "answers": [
+                {
+                  "text": "timedatectl set-ntp true",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "3. 磁盘分区 输入以下命令： cfdisk # 选择底部 gpt ，回车 # 选择 NEW ，回车，输入 1G，类型选择 EFI SYstem 格式 # 选择 NEW ，回车，输入 4G，类型选择 Linux swap 格式 # 选择 NEW ，回车，剩下的 35G，类型选择 默认 Linux filesystem 格式 # 选择 Write ， 输入 yes，回车 表示写入保存 # 选择 Quit ，退出 EFI分区格式化 mkfs.fat -F32 /dev/sda1 mkfs.ext4 /dev/sda3 创建swap分区： mkswap /dev/sda2 swapon /dev/sda2 挂载分区： mount /dev/sda3 /mnt mkdir -p /mnt/boot/efi mount /dev/sda1 /mnt/boot/efi 查看磁盘分区情况 lsblk -f",
+          "qas": [
+            {
+              "id": "3-13-16",
+              "question": "磁盘分区时使用什么命令？",
+              "answers": [
+                {
+                  "text": "cfdisk",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "3-13-17",
+              "question": "如何格式化 EFI 分区？",
+              "answers": [
+                {
+                  "text": "mkfs.fat -F32 /dev/sda1",
+                  "answer_start": 244
+                }
+              ]
+            },
+            {
+              "id": "3-13-18",
+              "question": "如何创建并启用 swap 分区？",
+              "answers": [
+                {
+                  "text": "mkswap /dev/sda2 swapon /dev/sda2",
+                  "answer_start": 297
+                }
+              ]
+            },
+            {
+              "id": "3-13-19",
+              "question": "如何查看磁盘分区情况？",
+              "answers": [
+                {
+                  "text": "lsblk -f",
+                  "answer_start": 475
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "4.更新为国内镜像源 reflector --country China --age 72 --sort rate --protocol https --save /etc/pacman.d/mirrorlist 将最新的镜像源更新为国内的，保存在/etc/pacman.d/mirrorlist目录下 也可以手动替换到“/etc/pacman.d/mirrorlistg”中 Server = https://mirrors.bfsu.edu.cn/archlinux/$repo/os/$arch",
+          "qas": [
+            {
+              "id": "3-13-20",
+              "question": "如何使用 reflector 更新为国内镜像源？",
+              "answers": [
+                {
+                  "text": "reflector --country China --age 72 --sort rate --protocol https --save /etc/pacman.d/mirrorlist",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "5.安装 Arch Linux 安装普通内核的命令：pacstrap /mnt base linux linux-headers linux-firmware base-devel",
+          "qas": [
+            {
+              "id": "3-13-21",
+              "question": "安装普通内核的命令是什么？",
+              "answers": [
+                {
+                  "text": "pacstrap /mnt base linux linux-headers linux-firmware base-devel",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "6.写入分区表： genfstab -U /mnt >> /mnt/etc/fstab",
+          "qas": [
+            {
+              "id": "3-13-22",
+              "question": "如何写入分区表？",
+              "answers": [
+                {
+                  "text": "genfstab -U /mnt >> /mnt/etc/fstab",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "7.进入新系统 arch-chroot /mnt",
+          "qas": [
+            {
+              "id": "3-13-23",
+              "question": "如何进入新安装的 Arch Linux 系统？",
+              "answers": [
+                {
+                  "text": "arch-chroot /mnt",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "8.安装DDE深度桌面环境 1. 安装编辑器、字体、网络管理 pacman -S vim sudo vim ttf-dejavu networkmanager 2. 安装DDE基础和额外组件 pacman -S lightdm xorg-server deepin-kwin deepin deepin-extra",
+          "qas": [
+            {
+              "id": "3-13-24",
+              "question": "安装 DDE 前需要安装哪些编辑器、字体和网络管理工具？",
+              "answers": [
+                {
+                  "text": "vim、sudo、ttf-dejavu、networkmanager",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "3-13-25",
+              "question": "安装 DDE 基础和额外组件的命令是什么？",
+              "answers": [
+                {
+                  "text": "pacman -S lightdm xorg-server deepin-kwin deepin deepin-extra",
+                  "answer_start": 125
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "9.设置时区时间和语言 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime hwclock --systohc locale-gen echo LANG=en_US.UTF-8 >> /etc/locale.conf",
+          "qas": [
+            {
+              "id": "3-13-26",
+              "question": "如何设置时区为上海？",
+              "answers": [
+                {
+                  "text": "ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "3-13-27",
+              "question": "如何生成 locale？",
+              "answers": [
+                {
+                  "text": "locale-gen",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "10.设置root用户密码 输入“passwd”，再输入密码，密码不会显示",
+          "qas": [
+            {
+              "id": "3-13-28",
+              "question": "如何设置 root 用户的密码？",
+              "answers": [
+                {
+                  "text": "输入“passwd”，再输入密码",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "11.创建新用户 执行如下命令：useradd -m -G wheel -s /bin/bash free 设置密码：passwd free 提权，修改 /etc/sudoers文件，删除wheel组前面的注释（#）即可",
+          "qas": [
+            {
+              "id": "3-13-29",
+              "question": "创建新用户 free 的命令是什么？",
+              "answers": [
+                {
+                  "text": "useradd -m -G wheel -s /bin/bash free",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "3-13-30",
+              "question": "如何给 wheel 组提权？",
+              "answers": [
+                {
+                  "text": "修改 /etc/sudoers文件，删除wheel组前面的注释（#）",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "12.安装grub EFI 启动方式, 需安装 grub 和 efibootmgr pacman -S grub efibootmgr 然后，还需要将其安装到EFI分区当中： grub-install --recheck /dev/ 生成一个grub的配置文件 grub-mkconfig -o /boot/grub/grub.cfg",
+          "qas": [
+            {
+              "id": "3-13-31",
+              "question": "EFI 启动方式下，安装 grub 需要哪些包？",
+              "answers": [
+                {
+                  "text": "grub 和 efibootmgr",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "3-13-32",
+              "question": "如何生成 grub 的配置文件？",
+              "answers": [
+                {
+                  "text": "grub-mkconfig -o /boot/grub/grub.cfg",
+                  "answer_start": 175
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "13.重启系统 exit umount -R /mnt reboot",
+          "qas": [
+            {
+              "id": "3-13-33",
+              "question": "如何重启系统？",
+              "answers": [
+                {
+                  "text": "exit umount -R /mnt reboot",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "14.启动服务 systemctl enable --now NetworkManager systemctl enable --now lightdm",
+          "qas": [
+            {
+              "id": "3-13-34",
+              "question": "如何启动并设置 NetworkManager 服务开机自启？",
+              "answers": [
+                {
+                  "text": "systemctl enable --now NetworkManager",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "3-13-35",
+              "question": "如何启动并设置 lightdm 服务开机自启？",
+              "answers": [
+                {
+                  "text": "systemctl enable --now lightdm",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建用户时需特别注意：\n执行如下命令，很坑的的一点，如果安装深度环境 DDE 的话，必须要新建用户\n`useradd -m -G wheel -s /bin/bash free`\n-m：创建用户主目录\n-G：将用户加到wheel组中\n-s：指定默认登录shell路径",
+          "qas": [
+            {
+              "id": "3-13-36",
+              "question": "为什么安装DDE必须新建用户？",
+              "answers": [
+                {
+                  "text": "如果安装深度环境 DDE 的话，必须要新建用户",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "3-13-37",
+              "question": "-G 参数的作用是什么？",
+              "answers": [
+                {
+                  "text": "将用户加到wheel组中，之后可以给这个组执行sudo命令的权限",
+                  "answer_start": 151
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启动DDE服务：\n`systemctl enable --now lightdm`\n这将启动lightdm显示管理器，提供图形登录界面",
+          "qas": [
+            {
+              "id": "3-13-38",
+              "question": "lightdm的作用是什么？",
+              "answers": [
+                {
+                  "text": "启动lightdm显示管理器，提供图形登录界面",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
