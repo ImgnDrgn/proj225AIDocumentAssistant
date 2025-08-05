@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "title": "求助问题归集",
+      "paragraphs": [
+        {
+          "context": "sudo命令反应缓慢，可在/etc/hosts中添加127.0.0.1与本机计算机名称。",
+          "qas": [
+            {
+              "question": "sudo命令反应缓慢该如何解决？",
+              "id": "3-159-1",
+              "answers": [
+                {
+                  "text": "在/etc/hosts中添加127.0.0.1与本机计算机名称。",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "解决sudo命令反应缓慢需要修改哪个文件？",
+              "id": "3-159-2",
+              "answers": [
+                {
+                  "text": "/etc/hosts",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "question": "在/etc/hosts中添加什么可以解决sudo命令反应缓慢？",
+              "id": "3-159-3",
+              "answers": [
+                {
+                  "text": "127.0.0.1与本机计算机名称",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

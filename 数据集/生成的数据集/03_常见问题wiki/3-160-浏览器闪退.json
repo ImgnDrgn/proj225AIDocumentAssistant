@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "浏览器闪退",
+      "paragraphs": [
+        {
+          "context": "查看浏览器版本，确认是否有候选版本：apt policy uos-browser-stable",
+          "qas": [
+            {
+              "question": "如何查看浏览器版本并确认是否有候选版本？",
+              "id": "3-160-1",
+              "answers": [
+                {
+                  "text": "apt policy uos-browser-stable",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如果已经是最新版本，可删除~/.config/uosbrowser/Default目录再尝试",
+          "qas": [
+            {
+              "question": "浏览器已是最新版本仍闪退，可采取什么措施？",
+              "id": "3-160-2",
+              "answers": [
+                {
+                  "text": "删除~/.config/uosbrowser/Default目录再尝试",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "浏览器是最新版本时，需要删除哪个目录来尝试解决闪退问题？",
+              "id": "3-160-3",
+              "answers": [
+                {
+                  "text": "~/.config/uosbrowser/Default",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "输入命令uos-browser --no-sandbox可解决浏览器闪退问题",
+          "qas": [
+            {
+              "question": "输入什么命令可以解决浏览器闪退问题？",
+              "id": "3-160-4",
+              "answers": [
+                {
+                  "text": "uos-browser --no-sandbox",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

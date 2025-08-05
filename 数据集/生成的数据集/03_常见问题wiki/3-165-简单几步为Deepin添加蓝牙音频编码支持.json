@@ -1,0 +1,189 @@
+{
+  "data": [
+    {
+      "title": "简单几步为Deepin添加蓝牙音频编码支持",
+      "paragraphs": [
+        {
+          "context": "UOS的蓝牙音频（A2DP）默认只支持SBC音频编码，音质一般。很多蓝牙耳机支持LDAC、aptX HD、aptX、AAC等高音质编码，可自行添加。",
+          "qas": [
+            {
+              "question": "UOS的蓝牙音频（A2DP）默认支持哪种编码？",
+              "id": "3-165-1",
+              "answers": [
+                {
+                  "text": "SBC音频编码",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "哪些高音质蓝牙音频编码可自行添加支持？",
+              "id": "3-165-2",
+              "answers": [
+                {
+                  "text": "LDAC、aptX HD、aptX、AAC",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "方案来自开源项目，原文适用于Ubuntu，改为适用于UOS 20，可能适用于Deepin v20（未测试）。",
+          "qas": [
+            {
+              "question": "该添加蓝牙音频编码支持的方案来自哪里？",
+              "id": "3-165-3",
+              "answers": [
+                {
+                  "text": "开源项目",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "原文方案适用于哪个系统？",
+              "id": "3-165-4",
+              "answers": [
+                {
+                  "text": "Ubuntu",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "修改后的方案适用于哪些系统？",
+              "id": "3-165-5",
+              "answers": [
+                {
+                  "text": "UOS 20，可能适用于Deepin v20（未测试）",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装步骤1：仅UOS需要，Deepin不需要，打开开发者模式（“控制中心 > 通用 > 开发者模式”）。",
+          "qas": [
+            {
+              "question": "安装步骤中，仅UOS需要而Deepin不需要的操作是什么？",
+              "id": "3-165-6",
+              "answers": [
+                {
+                  "text": "打开开发者模式（“控制中心 > 通用 > 开发者模式”）",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "UOS如何打开开发者模式？",
+              "id": "3-165-7",
+              "answers": [
+                {
+                  "text": "控制中心 > 通用 > 开发者模式",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装步骤2：打开终端，输入命令添加蓝牙音频编码器软件源：echo 'deb http://ppa.launchpad.net/eh5/pulseaudio-a2dp/ubuntu bionic main' | sudo tee /etc/apt/sources.list.d/pulseaudio-a2dp.list，提示输入开机密码。",
+          "qas": [
+            {
+              "question": "如何添加蓝牙音频编码器软件源？",
+              "id": "3-165-8",
+              "answers": [
+                {
+                  "text": "打开终端，输入命令：echo 'deb http://ppa.launchpad.net/eh5/pulseaudio-a2dp/ubuntu bionic main' | sudo tee /etc/apt/sources.list.d/pulseaudio-a2dp.list",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "输入添加软件源的命令后会提示什么？",
+              "id": "3-165-9",
+              "answers": [
+                {
+                  "text": "输入密码（开机密码）",
+                  "answer_start": 173
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "后续步骤：信任软件源（sudo apt-key adv --keyserver keyserver.ubuntu.com --recv A45582EC25E9D8E6）、更新软件列表（sudo apt update）、升级蓝牙音频组件（sudo apt upgrade -y）、安装支持多种编码的组件（sudo apt install -y pulseaudio libavcodec58 libldac pulseaudio-modules-bt pavucontrol）。",
+          "qas": [
+            {
+              "question": "如何信任刚添加的软件源？",
+              "id": "3-165-10",
+              "answers": [
+                {
+                  "text": "sudo apt-key adv --keyserver keyserver.ubuntu.com --recv A45582EC25E9D8E6",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "更新软件列表的命令是什么？",
+              "id": "3-165-11",
+              "answers": [
+                {
+                  "text": "sudo apt update",
+                  "answer_start": 87
+                }
+              ]
+            },
+            {
+              "question": "升级现有蓝牙音频组件的命令是什么？",
+              "id": "3-165-12",
+              "answers": [
+                {
+                  "text": "sudo apt upgrade -y",
+                  "answer_start": 107
+                }
+              ]
+            },
+            {
+              "question": "安装支持LDAC等编码的音频组件的命令是什么？",
+              "id": "3-165-13",
+              "answers": [
+                {
+                  "text": "sudo apt install -y pulseaudio libavcodec58 libldac pulseaudio-modules-bt pavucontrol",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ppa.launchpad.net服务器在国外，可能导致下载慢或报错，需自行解决。",
+          "qas": [
+            {
+              "question": "ppa.launchpad.net服务器位于哪里？",
+              "id": "3-165-14",
+              "answers": [
+                {
+                  "text": "国外",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "服务器在国外可能导致什么问题？",
+              "id": "3-165-15",
+              "answers": [
+                {
+                  "text": "下载文件速度很慢，或者命令报错（比如“部分索引文件下载失败”）",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
