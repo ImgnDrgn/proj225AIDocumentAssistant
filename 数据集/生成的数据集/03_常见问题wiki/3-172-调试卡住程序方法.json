@@ -1,0 +1,164 @@
+{
+  "data": [
+    {
+      "title": "调试卡住程序方法",
+      "paragraphs": [
+        {
+          "context": "调试卡住程序方法针对进程卡住但未退出的情况。",
+          "qas": [
+            {
+              "question": "调试卡住程序方法适用于哪种情况？",
+              "id": "3-172-1",
+              "answers": [
+                {
+                  "text": "进程卡住但未退出的情况",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "程序卡死具有偶然性，现场难保留，复现方式不固定，日志难分析原因。",
+          "qas": [
+            {
+              "question": "程序卡死有哪些特点？",
+              "id": "3-172-2",
+              "answers": [
+                {
+                  "text": "具有偶然性，现场不好保留，没有太固定复现方式，从日志中也基本无法分析出卡死的原因",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "gcore工具可获取运行中进程的内存地址、寄存器、堆栈信息即core文件。",
+          "qas": [
+            {
+              "question": "gcore工具的作用是什么？",
+              "id": "3-172-3",
+              "answers": [
+                {
+                  "text": "对正在运行的进程获取其内存地址信息、寄存器信息、堆栈信息(内存快照)即core文件",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "core文件按ELF格式组成，只有执行视图，有Program Headers，无Section Heders。",
+          "qas": [
+            {
+              "question": "core文件按什么格式组成？",
+              "id": "3-172-4",
+              "answers": [
+                {
+                  "text": "ELF格式",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "core文件有Section Heders吗？",
+              "id": "3-172-5",
+              "answers": [
+                {
+                  "text": "没有",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux不保存core文件中代码段（RX属性）内容，只保存地址信息；线程、寄存器等辅助信息在PT_NOTE类型Segment段中。",
+          "qas": [
+            {
+              "question": "Linux对core文件中代码段（RX属性）做了什么处理？",
+              "id": "3-172-6",
+              "answers": [
+                {
+                  "text": "不保存其内容，只保存代码段的地址信息",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "core文件中线程信息、寄存器信息等辅助信息保存在哪里？",
+              "id": "3-172-7",
+              "answers": [
+                {
+                  "text": "类型为PT_NOTE的Segment段中",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载gdb用命令：sudo apt install gdb；获取core文件用：gcore pid(进程号)。",
+          "qas": [
+            {
+              "question": "如何下载gdb？",
+              "id": "3-172-8",
+              "answers": [
+                {
+                  "text": "sudo apt install gdb",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "获取core文件的命令是什么？",
+              "id": "3-172-9",
+              "answers": [
+                {
+                  "text": "gcore pid(进程号)",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "输入gcore + pid提示报错，可切换root用户，若鉴定故障，修改root密码：sudo passwd root，再输入echo 0 > /proc/sys/kernel/yama/ptrace_scope。",
+          "qas": [
+            {
+              "question": "输入gcore + pid提示报错时，如何解决？",
+              "id": "3-172-10",
+              "answers": [
+                {
+                  "text": "1. 切换root用户：使用命令su；2. 若提示鉴定故障，可以修改root用户密码：sudo passwd root 后操作；3. 输入命令echo 0 > /proc/sys/kernel/yama/ptrace_scope，即可使用命令gcore + pid(进程号)获取core文件",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "修改root用户密码的命令是什么？",
+              "id": "3-172-11",
+              "answers": [
+                {
+                  "text": "sudo passwd root",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "question": "切换root用户使用什么命令？",
+              "id": "3-172-12",
+              "answers": [
+                {
+                  "text": "su",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

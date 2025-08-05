@@ -1,0 +1,214 @@
+{
+  "data": [
+    {
+      "title": "自动更换壁纸",
+      "paragraphs": [
+        {
+          "context": "自动更换壁纸通过DBus调用com.deepin.daemon.Appearance服务的SetWallpaperSlideShow方法实现。",
+          "qas": [
+            {
+              "question": "自动更换壁纸是通过调用哪个DBus方法实现的？",
+              "id": "3-168-1",
+              "answers": [
+                {
+                  "text": "com.deepin.daemon.Appearance服务的SetWallpaperSlideShow方法",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DBus服务名：com.deepin.daemon.Appearance；地址：/com/deepin/daemon/Appearance；接口：com.deepin.daemon.Appearance。",
+          "qas": [
+            {
+              "question": "自动更换壁纸相关的DBus服务名是什么？",
+              "id": "3-168-2",
+              "answers": [
+                {
+                  "text": "com.deepin.daemon.Appearance",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "自动更换壁纸相关的DBus地址是什么？",
+              "id": "3-168-3",
+              "answers": [
+                {
+                  "text": "/com/deepin/daemon/Appearance",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "question": "自动更换壁纸相关的DBus接口是什么？",
+              "id": "3-168-4",
+              "answers": [
+                {
+                  "text": "com.deepin.daemon.Appearance",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SetWallpaperSlideShow方法参数：monitorName为显示器名字，如“HDMI-0”；wallpaperSlideShow为更换时间，取值有\"\"（关闭）、\"30\"（30秒）等。",
+          "qas": [
+            {
+              "question": "SetWallpaperSlideShow方法的monitorName参数表示什么？",
+              "id": "3-168-5",
+              "answers": [
+                {
+                  "text": "显示器名字，如“HDMI-0”",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "wallpaperSlideShow参数取什么值表示关闭自动更换壁纸？",
+              "id": "3-168-6",
+              "answers": [
+                {
+                  "text": "\"\"",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "question": "wallpaperSlideShow参数取\"30\"表示什么？",
+              "id": "3-168-7",
+              "answers": [
+                {
+                  "text": "30秒",
+                  "answer_start": 82
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "显示器名称可从com.deepin.daemon.Display服务列表中/com/deepin/daemon/Display/Monitor_×的com.deepin.daemon.Display.Monitor接口中的\"Name\"属性获取。",
+          "qas": [
+            {
+              "question": "如何获取显示器名称？",
+              "id": "3-168-8",
+              "answers": [
+                {
+                  "text": "从com.deepin.daemon.Display服务列表中/com/deepin/daemon/Display/Monitor_×的com.deepin.daemon.Display.Monitor接口中的\"Name\"属性获取",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Qt代码中，通过QDBusInterface调用SetWallpaperSlideShow方法，传入monitorName和wallpaperSlideShow参数实现设置。",
+          "qas": [
+            {
+              "question": "Qt代码中如何调用SetWallpaperSlideShow方法？",
+              "id": "3-168-9",
+              "answers": [
+                {
+                  "text": "通过QDBusInterface调用，传入monitorName和wallpaperSlideShow参数",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令：为HDMI-0设置每30秒换壁纸：qdbus com.deepin.daemon.Appearance /com/deepin/daemon/Appearance com.deepin.daemon.Appearance.SetWallpaperSlideShow \"HDMI-0\" \"30\"。",
+          "qas": [
+            {
+              "question": "用命令如何为HDMI-0设置每30秒自动更换壁纸？",
+              "id": "3-168-10",
+              "answers": [
+                {
+                  "text": "qdbus com.deepin.daemon.Appearance /com/deepin/daemon/Appearance com.deepin.daemon.Appearance.SetWallpaperSlideShow \"HDMI-0\" \"30\"",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令：关闭HDMI-0自动换壁纸：qdbus com.deepin.daemon.Appearance /com/deepin/daemon/Appearance com.deepin.daemon.Appearance.SetWallpaperSlideShow \"HDMI-0\" \"\"。",
+          "qas": [
+            {
+              "question": "用命令如何关闭HDMI-0的自动更换壁纸功能？",
+              "id": "3-168-11",
+              "answers": [
+                {
+                  "text": "qdbus com.deepin.daemon.Appearance /com/deepin/daemon/Appearance com.deepin.daemon.Appearance.SetWallpaperSlideShow \"HDMI-0\" \"\"",
+                  "answer_start": 28
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "wallpaperSlideShow取值包括\"60\"（1分钟）、\"300\"（5分钟）、\"600\"（10分钟）、\"900\"（15分钟）等。",
+          "qas": [
+            {
+              "question": "wallpaperSlideShow参数取\"60\"表示什么？",
+              "id": "3-168-12",
+              "answers": [
+                {
+                  "text": "1分钟",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "表示10分钟的wallpaperSlideShow参数值是什么？",
+              "id": "3-168-13",
+              "answers": [
+                {
+                  "text": "\"600\"",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "wallpaperSlideShow取值还有\"1800\"（30分钟）、\"3600\"（1小时）、\"login\"（登录时）、\"wakeup\"（唤醒时）。",
+          "qas": [
+            {
+              "question": "wallpaperSlideShow参数取\"3600\"表示什么？",
+              "id": "3-168-14",
+              "answers": [
+                {
+                  "text": "1小时",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "表示登录时更换壁纸的wallpaperSlideShow参数值是什么？",
+              "id": "3-168-15",
+              "answers": [
+                {
+                  "text": "\"login\"",
+                  "answer_start": 44
+                }
+              ]
+            },
+            {
+              "question": "wallpaperSlideShow参数取\"wakeup\"表示什么？",
+              "id": "3-168-16",
+              "answers": [
+                {
+                  "text": "唤醒时",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

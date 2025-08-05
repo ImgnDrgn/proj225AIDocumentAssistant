@@ -1,0 +1,229 @@
+{
+  "data": [
+    {
+      "title": "获取文件管理器日志",
+      "paragraphs": [
+        {
+          "context": "文件管理器server的日志路径为~/.cache/deepin/dde-file-manager-server",
+          "qas": [
+            {
+              "question": "文件管理器server的日志路径是什么？",
+              "id": "3-170-1",
+              "answers": [
+                {
+                  "text": "~/.cache/deepin/dde-file-manager-server",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件管理器的日志路径是~/.cache/deepin/dde-file-manager/dde-file-manager.log",
+          "qas": [
+            {
+              "question": "文件管理器的日志路径在哪里？",
+              "id": "3-170-2",
+              "answers": [
+                {
+                  "text": "~/.cache/deepin/dde-file-manager/dde-file-manager.log",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件管理器卡住但进程未崩溃时，可参考wiki《调试卡住程序方法》获取core文件",
+          "qas": [
+            {
+              "question": "文件管理器卡住但进程未崩溃时，如何获取core文件？",
+              "id": "3-170-3",
+              "answers": [
+                {
+                  "text": "参考wiki《调试卡住程序方法》",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件管理器崩溃时，需安装systemd-coredump工具获取coredump日志，路径为/var/lib/systemd/coredump",
+          "qas": [
+            {
+              "question": "文件管理器崩溃时，应安装什么工具获取coredump日志？",
+              "id": "3-170-4",
+              "answers": [
+                {
+                  "text": "systemd-coredump",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "question": "文件管理器崩溃时，coredump日志的路径在哪里？",
+              "id": "3-170-5",
+              "answers": [
+                {
+                  "text": "/var/lib/systemd/coredump",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "拷贝coredump日志到桌面的命令为sudo cp + xxx.zst /home/用户名/Desktop，之后需用sudo chmod 777 + xxx.zst修改权限",
+          "qas": [
+            {
+              "question": "如何将coredump日志拷贝到桌面？",
+              "id": "3-170-6",
+              "answers": [
+                {
+                  "text": "sudo cp + xxx.zst /home/用户名/Desktop",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "拷贝coredump日志到桌面后，如何修改其权限？",
+              "id": "3-170-7",
+              "answers": [
+                {
+                  "text": "sudo chmod 777 + xxx.zst",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解压coredump日志需先安装zstd包，命令为sudo apt install zstd，再用zstd -d + xxx.zst解压",
+          "qas": [
+            {
+              "question": "解压coredump日志前需要安装什么包？",
+              "id": "3-170-8",
+              "answers": [
+                {
+                  "text": "zstd包",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "安装zstd包的命令是什么？",
+              "id": "3-170-9",
+              "answers": [
+                {
+                  "text": "sudo apt install zstd",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "如何解压coredump日志？",
+              "id": "3-170-10",
+              "answers": [
+                {
+                  "text": "zstd -d + xxx.zst",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "本地查看解压至桌面的coredump日志需安装gdb包，命令为sudo apt install gdb",
+          "qas": [
+            {
+              "question": "本地查看解压后的coredump日志需要安装什么包？",
+              "id": "3-170-11",
+              "answers": [
+                {
+                  "text": "gdb包",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "安装gdb包的命令是什么？",
+              "id": "3-170-12",
+              "answers": [
+                {
+                  "text": "sudo apt install gdb",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用gdb查看解压后的coredump日志文件的命令为gdb dde-file-manager ./+解压后的coredump日志文件",
+          "qas": [
+            {
+              "question": "如何用gdb查看解压后的coredump日志文件？",
+              "id": "3-170-13",
+              "answers": [
+                {
+                  "text": "gdb dde-file-manager ./+解压后的coredump日志文件",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看崩溃日志对应进程pid的命令是coredumpctl list -r",
+          "qas": [
+            {
+              "question": "如何查看崩溃日志对应的崩溃进程的pid？",
+              "id": "3-170-14",
+              "answers": [
+                {
+                  "text": "coredumpctl list -r",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "将coredump日志输出为文本文件的命令为coredumpctl gdb + pid | tee ./log，在gdb调试时输入bt获取流程日志，输入q退出保存",
+          "qas": [
+            {
+              "question": "如何将coredump日志输出为文本文件？",
+              "id": "3-170-15",
+              "answers": [
+                {
+                  "text": "coredumpctl gdb + pid | tee ./log，在gdb调试时输入bt获取流程日志，输入q退出保存",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "在gdb调试coredump日志时，如何获取调试流程日志？",
+              "id": "3-170-16",
+              "answers": [
+                {
+                  "text": "输入bt",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "question": "在gdb调试完成后，如何保存日志并退出？",
+              "id": "3-170-17",
+              "answers": [
+                {
+                  "text": "输入q退出即可保存",
+                  "answer_start": 90
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
