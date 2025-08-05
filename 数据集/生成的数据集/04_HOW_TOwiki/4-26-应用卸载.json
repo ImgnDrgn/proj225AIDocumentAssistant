@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "应用卸载",
+      "paragraphs": [
+        {
+          "context": "从启动器卸载应用：打开启动器，右击要卸载应用的图标，点击“卸载”。启动器卸载仅对部分应用有效。",
+          "qas": [
+            {
+              "question": "如何从启动器卸载应用？",
+              "id": "4-26-1",
+              "answers": [
+                {
+                  "text": "打开启动器，右击要卸载应用的图标，点击“卸载”。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "启动器卸载应用有什么限制？",
+              "id": "4-26-2",
+              "answers": [
+                {
+                  "text": "仅对部分应用有效。",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "从深度应用商店卸载应用：打开应用商店，切换到“应用管理”页面，点击要卸载应用右侧的“卸载”。",
+          "qas": [
+            {
+              "question": "如何从深度应用商店卸载应用？",
+              "id": "4-26-3",
+              "answers": [
+                {
+                  "text": "打开应用商店，切换到“应用管理”页面，点击要卸载应用右侧的“卸载”。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用命令卸载应用：打开终端，执行sudo dpkg -r [软件包名]或sudo apt remove [软件包名]，确认无系统关键程序后输入Y确认，再执行sudo apt autoremove删除无用依赖。",
+          "qas": [
+            {
+              "question": "使用命令卸载应用的第一步是什么？",
+              "id": "4-26-4",
+              "answers": [
+                {
+                  "text": "打开终端。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "卸载应用可以使用哪些命令？",
+              "id": "4-26-5",
+              "answers": [
+                {
+                  "text": "sudo dpkg -r [软件包名] 或 sudo apt remove [软件包名]",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "执行卸载命令前需要确认什么？",
+              "id": "4-26-6",
+              "answers": [
+                {
+                  "text": "确认将会卸载的软件中没有系统关键程序。",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "确认卸载后需要输入什么？",
+              "id": "4-26-7",
+              "answers": [
+                {
+                  "text": "Y",
+                  "answer_start": 107
+                }
+              ]
+            },
+            {
+              "question": "如何删除卸载应用后不再需要的依赖？",
+              "id": "4-26-8",
+              "answers": [
+                {
+                  "text": "执行命令 sudo apt autoremove。",
+                  "answer_start": 113
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

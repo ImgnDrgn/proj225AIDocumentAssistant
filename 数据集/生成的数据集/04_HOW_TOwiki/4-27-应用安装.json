@@ -1,0 +1,219 @@
+{
+  "data": [
+    {
+      "title": "应用安装",
+      "paragraphs": [
+        {
+          "context": "本页面主要讲述如何在 deepin 上安装应用软件。",
+          "qas": [
+            {
+              "question": "本页面主要讲述什么内容？",
+              "id": "4-27-1",
+              "answers": [
+                {
+                  "text": "如何在 deepin 上安装应用软件。",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin 内置深度商店, 里面中收录了大量热门 Linux 应用、Wine 应用，支持一键下载和自动安装。",
+          "qas": [
+            {
+              "question": "deepin 内置的应用商店叫什么？",
+              "id": "4-27-2",
+              "answers": [
+                {
+                  "text": "深度商店",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "深度商店支持什么功能？",
+              "id": "4-27-3",
+              "answers": [
+                {
+                  "text": "一键下载和自动安装",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "星火应用商店是一款由社区爱好者维护，致力于丰富 Linux 生态的第三方应用商店。商店中收录了大量最新版本的 Linux 应用和开箱即用的 Wine 应用。",
+          "qas": [
+            {
+              "question": "星火应用商店是由谁维护的？",
+              "id": "4-27-4",
+              "answers": [
+                {
+                  "text": "社区爱好者",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "星火应用商店致力于什么？",
+              "id": "4-27-5",
+              "answers": [
+                {
+                  "text": "丰富 Linux 生态",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "星火商店仓库地址：https://gitee.com/deepin-community-store/spark-store",
+          "qas": [
+            {
+              "question": "星火商店的仓库地址是什么？",
+              "id": "4-27-6",
+              "answers": [
+                {
+                  "text": "https://gitee.com/deepin-community-store/spark-store",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "很多 Linux 应用的官网提供了下载地址。访问这些网站，下载适用于 x86 架构的 64 位（或标有 amd64）deb 包。",
+          "qas": [
+            {
+              "question": "从官网下载 Linux 应用时，应选择什么架构的 deb 包？",
+              "id": "4-27-7",
+              "answers": [
+                {
+                  "text": "x86 架构的 64 位（或标有 amd64）",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载完成后，双击 deb 包打开，使用深度软件包管理器进行安装。或是在安装包目录下执行命令安装。",
+          "qas": [
+            {
+              "question": "下载 deb 包后，除了命令安装还有什么安装方式？",
+              "id": "4-27-8",
+              "answers": [
+                {
+                  "text": "双击 deb 包打开，使用深度软件包管理器进行安装。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在安装包目录下执行如下命令，可查看详细安装信息：sudo dpkg -i 文件名；sudo apt install -f 或 sudo apt install ./文件名.deb",
+          "qas": [
+            {
+              "question": "在安装包目录下执行哪些命令可查看详细安装信息？",
+              "id": "4-27-9",
+              "answers": [
+                {
+                  "text": "sudo dpkg -i 文件名；sudo apt install -f 或 sudo apt install ./文件名.deb",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开终端，执行命令 sudo apt install 软件包名 安装软件，将软件包名替换为要安装软件的软件包名。",
+          "qas": [
+            {
+              "question": "使用命令从源获取软件的安装命令是什么？",
+              "id": "4-27-10",
+              "answers": [
+                {
+                  "text": "sudo apt install 软件包名",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如果不知道要安装软件的软件包名，可使用命令 apt search --names-only [关键词] 搜索。",
+          "qas": [
+            {
+              "question": "不知道软件包名时，用什么命令搜索？",
+              "id": "4-27-11",
+              "answers": [
+                {
+                  "text": "apt search --names-only [关键词]",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "新立得软件包管理器是一款图形界面的deb包管理器，相当于终端里的apt命令。",
+          "qas": [
+            {
+              "question": "新立得软件包管理器是什么类型的工具？",
+              "id": "4-27-12",
+              "answers": [
+                {
+                  "text": "图形界面的deb包管理器",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "新立得软件包管理器相当于终端里的什么命令？",
+              "id": "4-27-13",
+              "answers": [
+                {
+                  "text": "apt命令",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "终端执行命令 sudo apt install synaptic 安装新立得。",
+          "qas": [
+            {
+              "question": "安装新立得的终端命令是什么？",
+              "id": "4-27-14",
+              "answers": [
+                {
+                  "text": "sudo apt install synaptic",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开新立得软件包管理器，在要安装的软件包上右击，点击“标记以安装”。点击“应用”后开始安装软件。",
+          "qas": [
+            {
+              "question": "使用新立得安装软件的步骤是什么？",
+              "id": "4-27-15",
+              "answers": [
+                {
+                  "text": "打开新立得软件包管理器，在要安装的软件包上右击，点击“标记以安装”。点击“应用”后开始安装软件。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
