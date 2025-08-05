@@ -1,0 +1,154 @@
+{
+  "data": [
+    {
+      "title": "KVM详解（二）——KVM安装部署",
+      "paragraphs": [
+        {
+          "context": "为了进行KVM的安装，我们首先进行一些硬件上的配置。我们使用Vmware的虚拟机，配置2个G的内存，同时新加一块30G的硬盘，以供KVM的虚拟机安装使用，然后再给虚拟机设置4个处理器，同时，打开处理器的虚拟化引擎，在虚拟化Intel、虚拟化CPU和虚拟化IOMMU等选项上打上勾。上述配置完成后，我们执行命令：cat /proc/cpuinfo | grep vmx。注意：如果您的计算机是AMD的CPU，则应该执行命令：cat /proc/cpuinfo | grep svm。可以看出，现在，我们的虚拟机CPU已经支持虚拟化了。此外，为了之后KVM的运行，我们最好还要安装Linux的图形化页面，安装过程请见文章Linux桌面图形化安装详解，在该文章已经有了详细介绍，在今天就不过多赘述了。",
+          "qas": [
+            {
+              "id": "3-68-1",
+              "question": "KVM安装前的硬件配置包括哪些内容？",
+              "answers": [
+                {
+                  "text": "使用Vmware的虚拟机，配置2个G的内存，同时新加一块30G的硬盘，给虚拟机设置4个处理器，打开处理器的虚拟化引擎，在虚拟化Intel、虚拟化CPU和虚拟化IOMMU等选项上打上勾",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "3-68-2",
+              "question": "如何检查Intel CPU是否支持虚拟化？",
+              "answers": [
+                {
+                  "text": "执行命令：cat /proc/cpuinfo | grep vmx",
+                  "answer_start": 176
+                }
+              ]
+            },
+            {
+              "id": "3-68-3",
+              "question": "AMD CPU检查虚拟化支持的命令是什么？",
+              "answers": [
+                {
+                  "text": "cat /proc/cpuinfo | grep svm",
+                  "answer_start": 275
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "接下来，我们开始进行KVM的安装。执行命令：yum install qemu-kvm virt-manager libvert libguestfs-tools virt-install libvert-python。上述6个软件作用如下：1、qemu-kvm：KVM的主程序，KVM的虚拟化模块。2、virt-manager：KVM的图形化管理工具。3、libvert：虚拟化服务。4、libguestfs-tools：虚拟机的系统管理工具。5、virt-install：安装虚拟机的使用工具，内含一些实用命令，如virt-clone等。6、libvert-python：python调用libvert虚拟化服务的api接口库文件。在上述软件安装完毕后，我们执行命令：systemctl start libvirtd 即可开启KVM虚拟化服务。执行命令：lsmod | grep kvm 可查看相关模块。执行命令：virt-manager 即可打开KVM的虚拟系统管理器了。",
+          "qas": [
+            {
+              "id": "3-68-4",
+              "question": "安装KVM需要执行什么命令？",
+              "answers": [
+                {
+                  "text": "yum install qemu-kvm virt-manager libvert libguestfs-tools virt-install libvert-python",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "3-68-5",
+              "question": "qemu-kvm软件的作用是什么？",
+              "answers": [
+                {
+                  "text": "KVM的主程序，KVM的虚拟化模块",
+                  "answer_start": 132
+                }
+              ]
+            },
+            {
+              "id": "3-68-6",
+              "question": "如何开启KVM虚拟化服务？",
+              "answers": [
+                {
+                  "text": "执行命令：systemctl start libvirtd",
+                  "answer_start": 459
+                }
+              ]
+            },
+            {
+              "id": "3-68-7",
+              "question": "打开KVM虚拟系统管理器的命令是什么？",
+              "answers": [
+                {
+                  "text": "virt-manager",
+                  "answer_start": 552
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在KVM安装完毕后，我们进行网络桥接功能的设置，以方便我们的KVM虚拟机在创建后，可以通过桥接的方式来进行上网。KVM的虚拟机已经默认支持使用NAT的方式来进行上网，如果我们不进行这部分的配置，那么我们的KVM虚拟机也可以通过NAT的方式来上网，但是不能通过桥接的方式来上网。首先，我们备份一下我们的网卡文件（我的是/etc/sysconfig/network-scripts/ifcfg-ens32，其他设备的也在该目录下，但是文件名可能略有差异）。我们打开我们的网卡文件，删除有关IP地址、子网掩码、网关、DNS等的配置，之后，在最底下添加如下配置：BRIDGE=\"br0\"。之后，我们在网卡目录下创建名为“ifcfg-br0”的网卡文件，其内容（IP地址和子网掩码相关配置请根据虚拟机网络实际填写）如下：DEVICE=\"br0\"，NM_CONTROLLERD=\"yes\"，ONBOOT=\"yes\"，TYPE=\"Bridge\"，BOOTPROTO=none，IPADDR=192.168.136.15，NETMASK=255.255.255.0，GATEWAY=192.168.136.254，DNS1=114.114.114.114。在上面所有配置完成后，执行命令：systemctl restart network。注意，在上述命令执行前，请确保上述配置的正确性，否则我们的设备有断网的风险。网络重启后，我们执行命令：ifconfig 查看结果。我们来检测一下桥接网络，执行命令：brctl show。这样，我们的虚拟机桥接网络就配置完成了。",
+          "qas": [
+            {
+              "id": "3-68-8",
+              "question": "KVM虚拟机默认的上网方式是什么？",
+              "answers": [
+                {
+                  "text": "NAT",
+                  "answer_start": 147
+                }
+              ]
+            },
+            {
+              "id": "3-68-9",
+              "question": "配置网络桥接时，需要备份的网卡文件路径在哪里？",
+              "answers": [
+                {
+                  "text": "/etc/sysconfig/network-scripts/ifcfg-ens32（其他设备的也在该目录下，文件名可能略有差异）",
+                  "answer_start": 232
+                }
+              ]
+            },
+            {
+              "id": "3-68-10",
+              "question": "在原有网卡文件中需要添加什么配置？",
+              "answers": [
+                {
+                  "text": "BRIDGE=\"br0\"",
+                  "answer_start": 407
+                }
+              ]
+            },
+            {
+              "id": "3-68-11",
+              "question": "创建的桥接网卡文件名称是什么？",
+              "answers": [
+                {
+                  "text": "ifcfg-br0",
+                  "answer_start": 442
+                }
+              ]
+            },
+            {
+              "id": "3-68-12",
+              "question": "网络配置完成后需要执行什么命令重启网络？",
+              "answers": [
+                {
+                  "text": "systemctl restart network",
+                  "answer_start": 785
+                }
+              ]
+            },
+            {
+              "id": "3-68-13",
+              "question": "如何检测桥接网络是否配置成功？",
+              "answers": [
+                {
+                  "text": "执行命令：brctl show",
+                  "answer_start": 927
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "title": "deepin下用VirtualBox空间不足启动错误NS_ERROR_FAILURE",
+      "paragraphs": [
+        {
+          "context": "在deepin系统中使用VirtualBox时，可能会遇到启动错误NS_ERROR_FAILURE (0x80004005)。该错误的发生原因（仅个人情况而言）可能是由于某些项目的win文件占满了磁盘空间，比如本机虚拟机文件夹放在home分区，而home分区划分较小，在安装了centos-7并备份后，想再安装win10时，虚拟机自动暂停并提示空间不足，强制退出2-3次后就出现了该错误。解决方法如下：找到VirtualBox或桌面上的VirtualBox快捷方式，右键点击–>属性–>修改权限（具体可参考相关截图）；另外，按照错误信息中的Location找到VirtualBox.xml文件，将其删除，再次打开VirtualBox即可恢复正常，vagrant up也能正常运行。",
+          "qas": [
+            {
+              "id": "3-63-1",
+              "question": "在deepin系统中使用VirtualBox时遇到的NS_ERROR_FAILURE错误代码是什么？",
+              "answers": [
+                {
+                  "text": "0x80004005",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "3-63-2",
+              "question": "个人情况下，deepin系统中VirtualBox出现NS_ERROR_FAILURE错误的原因是什么？",
+              "answers": [
+                {
+                  "text": "某些项目的win文件占满了磁盘空间，本机虚拟机文件夹放在home分区，而home分区划分较小，在安装了centos-7并备份后，想再安装win10时，虚拟机自动暂停并提示空间不足，强制退出2-3次后出现该错误",
+                  "answer_start": 84
+                }
+              ]
+            },
+            {
+              "id": "3-63-3",
+              "question": "解决deepin下VirtualBox的NS_ERROR_FAILURE错误，除了修改权限还有什么方法？",
+              "answers": [
+                {
+                  "text": "按照错误信息中的Location找到VirtualBox.xml文件，将其删除，再次打开VirtualBox即可恢复正常",
+                  "answer_start": 407
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

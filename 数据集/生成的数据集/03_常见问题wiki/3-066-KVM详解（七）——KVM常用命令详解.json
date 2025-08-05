@@ -1,0 +1,156 @@
+{
+  "data": [
+    {
+      "title": "KVM详解（七）——KVM常用命令详解",
+      "paragraphs": [
+        {
+          "context": "本文以centos7-1、centos7-2虚拟机为例，向大家介绍常见的KVM命令如下：1、虚拟机查看：执行命令virsh list可以查看已经打开的虚拟机。执行命令virsh list --all可以查看所有虚拟机（包括已经打开的和未打开的）。执行命令virsh version可以查看virsh的版本。2、虚拟机启动与关闭：执行命令virsh start centos7-1可以打开该虚拟机。执行命令virsh shutdown centos7-1可以关闭该虚拟机。执行命令virsh destroy centos7-1可以强制性关闭该虚拟机，相当于强行断电，当虚拟机无法正常关闭时常使用这种方法。3、虚拟机配置文件导出：执行命令virsh dumpxml centos7-2 > /tmp/centos7-2.xml可以将该虚拟机的配置文件导出到/tmp/目录下，并命名为centos7-2.xml。4、虚拟机挂起与恢复：执行命令virsh suspend centos7-1可以挂起该虚拟机。执行命令virsh resume centos7-1可以恢复该虚拟机。5、虚拟机会话链接：执行命令virsh console centos7-1可以与centos7-1打开一个控制台窗口终端。6、虚拟机克隆：有关虚拟机克隆等相关理论和命令，请参考其他文章。7、虚拟机撤销与恢复：执行命令virsh undefine centos7-2可以将该虚拟机从虚拟机管理器中移除，该虚拟机的配置文件会随之删除，但是该虚拟机磁盘文件并没有删除，因此该虚拟机还可以恢复，但是前提是该虚拟机的配置文件已经进行了导出和备份。执行命令virsh define /tmp/centos7-2.xml即可对删除的虚拟机进行恢复。8、虚拟机自启动与自启动撤销：执行命令virsh autostart centos7-1可以使得该虚拟机在开始时自启动。执行命令virsh autostart --disable centos7-1可以取消掉该虚拟机开机时自启动的设置。9、虚拟机镜像格式转换：有关虚拟机镜像格式的原理及转换命令，请参考其他文章。10、虚拟机快照：有关虚拟机快照的创建、查看、恢复和删除等操作，请参考其他文章。",
+          "qas": [
+            {
+              "id": "3-66-1",
+              "question": "如何查看已经打开的KVM虚拟机？",
+              "answers": [
+                {
+                  "text": "执行命令：virsh list",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "3-66-2",
+              "question": "查看所有KVM虚拟机（包括打开和未打开的）用什么命令？",
+              "answers": [
+                {
+                  "text": "virsh list --all",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "id": "3-66-3",
+              "question": "怎样查看virsh的版本？",
+              "answers": [
+                {
+                  "text": "执行命令：virsh version",
+                  "answer_start": 114
+                }
+              ]
+            },
+            {
+              "id": "3-66-4",
+              "question": "启动名为centos7-1的虚拟机使用什么命令？",
+              "answers": [
+                {
+                  "text": "virsh start centos7-1",
+                  "answer_start": 162
+                }
+              ]
+            },
+            {
+              "id": "3-66-5",
+              "question": "如何正常关闭centos7-1虚拟机？",
+              "answers": [
+                {
+                  "text": "执行命令：virsh shutdown centos7-1",
+                  "answer_start": 195
+                }
+              ]
+            },
+            {
+              "id": "3-66-6",
+              "question": "强制关闭centos7-1虚拟机的命令是什么？",
+              "answers": [
+                {
+                  "text": "virsh destroy centos7-1",
+                  "answer_start": 238
+                }
+              ]
+            },
+            {
+              "id": "3-66-7",
+              "question": "如何导出centos7-2的配置文件到/tmp目录下并命名为centos7-2.xml？",
+              "answers": [
+                {
+                  "text": "执行命令：virsh dumpxml centos7-2 > /tmp/centos7-2.xml",
+                  "answer_start": 325
+                }
+              ]
+            },
+            {
+              "id": "3-66-8",
+              "question": "挂起centos7-1虚拟机用什么命令？",
+              "answers": [
+                {
+                  "text": "virsh suspend centos7-1",
+                  "answer_start": 410
+                }
+              ]
+            },
+            {
+              "id": "3-66-9",
+              "question": "恢复被挂起的centos7-1虚拟机使用什么命令？",
+              "answers": [
+                {
+                  "text": "virsh resume centos7-1",
+                  "answer_start": 445
+                }
+              ]
+            },
+            {
+              "id": "3-66-10",
+              "question": "怎样与centos7-1打开控制台窗口终端？",
+              "answers": [
+                {
+                  "text": "执行命令：virsh console centos7-1",
+                  "answer_start": 480
+                }
+              ]
+            },
+            {
+              "id": "3-66-11",
+              "question": "从虚拟机管理器中移除centos7-2虚拟机的命令是什么？",
+              "answers": [
+                {
+                  "text": "virsh undefine centos7-2",
+                  "answer_start": 542
+                }
+              ]
+            },
+            {
+              "id": "3-66-12",
+              "answer_start": 635,
+              "answers": [
+                {
+                  "text": "virsh define /tmp/centos7-2.xml",
+                  "answer_start": 635
+                }
+              ],
+              "id": "3-66-12",
+              "question": "如何恢复已删除的centos7-2虚拟机（假设配置文件已备份到/tmp/centos7-2.xml）？"
+            },
+            {
+              "id": "3-66-13",
+              "question": "如何设置centos7-1虚拟机开机自启动？",
+              "answers": [
+                {
+                  "text": "执行命令：virsh autostart centos7-1",
+                  "answer_start": 689
+                }
+              ]
+            },
+            {
+              "id": "3-66-14",
+              "question": "取消centos7-1虚拟机开机自启动的命令是什么？",
+              "answers": [
+                {
+                  "text": "virsh autostart --disable centos7-1",
+                  "answer_start": 732
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
