@@ -1,0 +1,234 @@
+{
+  "data": [
+    {
+      "title": "用llvm编译linux内核",
+      "paragraphs": [
+        {
+          "context": "llvm是一个编译器框架，用llvm编译内核需llvm9默认支持。",
+          "qas": [
+            {
+              "question": "用llvm编译linux内核需要哪个版本的llvm默认支持？",
+              "id": "4-16-1",
+              "answers": [
+                {
+                  "text": "llvm9",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LLVM项目子项目有LLVM、clang、libc、libcxx、libcxxabi、libunwind、compiler-rt、lld、lldb、clang-tools-extra等。",
+          "qas": [
+            {
+              "question": "LLVM项目包含哪些子项目？",
+              "id": "4-16-2",
+              "answers": [
+                {
+                  "text": "LLVM、clang、libc、libcxx、libcxxabi、libunwind、compiler-rt、lld、lldb、clang-tools-extra等",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编译LLVM前期准备需安装llvm-6.0、clang-6.0、lld-6.0，创建软链接，安装cmake和ninja-build。",
+          "qas": [
+            {
+              "question": "编译LLVM前期需要安装哪些工具？",
+              "id": "4-16-3",
+              "answers": [
+                {
+                  "text": "llvm-6.0、clang-6.0、lld-6.0、cmake、ninja-build",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LLVM源代码可从http://releases.llvm.org/9.0.0/llvm-9.0.0.src.tar.xz下载，也可从清华大学开源镜像站获取。",
+          "qas": [
+            {
+              "question": "哪里可以下载LLVM源代码？",
+              "id": "4-16-4",
+              "answers": [
+                {
+                  "text": "http://releases.llvm.org/9.0.0/llvm-9.0.0.src.tar.xz、清华大学开源镜像站",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "构建llvm基础时，cmake命令可指定-G Ninja、CMAKE_BUILD_TYPE=Release等参数，用ninja -j 4构建，sudo ninja install安装。",
+          "qas": [
+            {
+              "question": "构建llvm基础时，如何指定构建工具和构建类型？",
+              "id": "4-16-5",
+              "answers": [
+                {
+                  "text": "cmake命令中用-G Ninja指定构建工具为Ninja，-DCMAKE_BUILD_TYPE=Release指定构建类型为Release",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CMAKE_BUILD_TYPE的取值有Release、Debug、RelWithDebInfo、MinSizeRel。",
+          "qas": [
+            {
+              "question": "CMAKE_BUILD_TYPE有哪些取值？",
+              "id": "4-16-6",
+              "answers": [
+                {
+                  "text": "Release、Debug、RelWithDebInfo、MinSizeRel",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "构建clang时，cmake命令需指定-LLVM_PATH=../llvm-9.0.0.src/，然后ninja构建并安装。",
+          "qas": [
+            {
+              "question": "构建clang时，cmake命令需要指定什么路径？",
+              "id": "4-16-7",
+              "answers": [
+                {
+                  "text": "../llvm-9.0.0.src/",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "构建lld时，cmake命令需指定相关参数，之后用ninja构建和安装。",
+          "qas": [
+            {
+              "question": "构建lld的步骤是什么？",
+              "id": "4-16-8",
+              "answers": [
+                {
+                  "text": "cmake命令指定相关参数，之后用ninja构建和安装",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "动态链接库由ldconfig配置，默认跟踪/usr/lib、/lib，可通过/etc/ld.so.conf等文件增加目录，sudo ldconfig更新缓存。",
+          "qas": [
+            {
+              "question": "如何更新动态链接库缓存？",
+              "id": "4-16-9",
+              "answers": [
+                {
+                  "text": "sudo ldconfig",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "不想编译llvm可直接用apt包，先获取apt源秘钥，再配置apt source。",
+          "qas": [
+            {
+              "question": "不想编译llvm时，如何获取相关包？",
+              "id": "4-16-10",
+              "answers": [
+                {
+                  "text": "直接用apt包，先获取apt源秘钥，再配置apt source",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "内核编译可修改cc和c++命令链接到clang和clang++，用sudo make CC=clang xconfig设置配置，make deb-pkg CC=clang -j4编译。",
+          "qas": [
+            {
+              "question": "内核编译时如何指定编译器？",
+              "id": "4-16-11",
+              "answers": [
+                {
+                  "text": "修改cc命令链接到clang，c++命令链接到clang++，或使用CC=clang参数",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编译内核时可设置CC=clang、CXX=clang++、AS=llvm-as等环境变量指定相关工具。",
+          "qas": [
+            {
+              "question": "编译内核时，哪些环境变量可用于指定相关工具？",
+              "id": "4-16-12",
+              "answers": [
+                {
+                  "text": "CC=clang、CXX=clang++、AS=llvm-as、LD=ld.lld、CPP、AR=llvm-ar、NM=llvm-nm、STRIP=llvm-strip、OBJCOPY=llvm-objcopy、OBJDUMP=llvm-objdump、OBJSIZE=llvm-size",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LLVM的libc++依赖libc++abi，libc++abi依赖libunwind。",
+          "qas": [
+            {
+              "question": "LLVM的libc++依赖什么？",
+              "id": "4-16-13",
+              "answers": [
+                {
+                  "text": "libc++abi",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GNU的libstdc++依赖libsupc++，libsupc++依赖libgcc_s。",
+          "qas": [
+            {
+              "question": "GNU的libstdc++依赖什么？",
+              "id": "4-16-14",
+              "answers": [
+                {
+                  "text": "libsupc++",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "验证LLVM源代码签名需导入公钥hans-gpg-key.asc，用pgp --verify命令。",
+          "qas": [
+            {
+              "question": "如何验证LLVM源代码签名？",
+              "id": "4-16-15",
+              "answers": [
+                {
+                  "text": "导入公钥hans-gpg-key.asc，用pgp --verify命令",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

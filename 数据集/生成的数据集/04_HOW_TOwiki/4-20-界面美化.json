@@ -1,0 +1,134 @@
+{
+  "data": [
+    {
+      "title": "界面美化",
+      "paragraphs": [
+        {
+          "context": "DDE内置个性化设置详见深度桌面环境#桌面美化。",
+          "qas": [
+            {
+              "question": "DDE内置的个性化设置在哪里可以查看详情？",
+              "id": "4-20-1",
+              "answers": [
+                {
+                  "text": "深度桌面环境#桌面美化",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DDE Dock有许多开发者开发的插件，详见DDE-Dock插件。",
+          "qas": [
+            {
+              "question": "哪里可以了解DDE Dock的插件信息？",
+              "id": "4-20-2",
+              "answers": [
+                {
+                  "text": "DDE-Dock插件",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Fantacene可在DDE环境下使用动态壁纸，也能导入Wallpaper Engine内的壁纸，详见Fantacene。",
+          "qas": [
+            {
+              "question": "Fantacene有什么功能？",
+              "id": "4-20-3",
+              "answers": [
+                {
+                  "text": "在DDE环境下使用动态壁纸，也能导入Wallpaper Engine内的壁纸",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "哪里可以了解Fantacene的详情？",
+              "id": "4-20-4",
+              "answers": [
+                {
+                  "text": "Fantacene",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "第三方工具dde-top-panel提供顶栏，可实现类似kde的全局菜单，详见相关论坛和Github仓库。",
+          "qas": [
+            {
+              "question": "dde-top-panel能实现什么功能？",
+              "id": "4-20-5",
+              "answers": [
+                {
+                  "text": "提供一个顶栏，并可以实现类似kde的全局菜单",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Chameleon可将窗口菜单集成到标题栏，帮助解决大额头问题，详见相关论坛和Github仓库。",
+          "qas": [
+            {
+              "question": "Chameleon的作用是什么？",
+              "id": "4-20-6",
+              "answers": [
+                {
+                  "text": "将窗口菜单集成到标题栏，帮助解决大额头问题",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度论坛用户柚子移植了CutefishOS的第三方圆角适配工具，详见相关论坛。",
+          "qas": [
+            {
+              "question": "谁移植了CutefishOS的第三方圆角适配工具？",
+              "id": "4-20-7",
+              "answers": [
+                {
+                  "text": "深度论坛用户柚子",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度论坛用户柚子开发了Oh-my-dde系统美化管理工具，已上架官方商店。",
+          "qas": [
+            {
+              "question": "Oh-my-dde是谁开发的？",
+              "id": "4-20-8",
+              "answers": [
+                {
+                  "text": "深度论坛用户柚子",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Oh-my-dde是否上架官方商店？",
+              "id": "4-20-9",
+              "answers": [
+                {
+                  "text": "是，已上架官方商店",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "data": [
+    {
+      "title": "deepin中的office",
+      "paragraphs": [
+        {
+          "context": "WPS是金山公司使用QT开发的Office软件，是免费的专有软件，Linux版本现阶段无广告，格式兼容良好，可作为MS Office替代品。",
+          "qas": [
+            {
+              "question": "WPS是由哪家公司开发的？",
+              "id": "4-23-1",
+              "answers": [
+                {
+                  "text": "金山公司",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "question": "WPS使用什么开发的？",
+              "id": "4-23-2",
+              "answers": [
+                {
+                  "text": "QT",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "WPS属于什么类型的软件？",
+              "id": "4-23-3",
+              "answers": [
+                {
+                  "text": "免费的专有软件",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "Linux版本的WPS有广告吗？",
+              "id": "4-23-4",
+              "answers": [
+                {
+                  "text": "现阶段没有广告",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LibreOffice是自由软件，是OpenOffice的分支，功能丰富，兼容性一般，官网为https://www.libreoffice.org/。",
+          "qas": [
+            {
+              "question": "LibreOffice是什么类型的软件？",
+              "id": "4-23-5",
+              "answers": [
+                {
+                  "text": "自由软件",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "LibreOffice是哪个软件的分支？",
+              "id": "4-23-6",
+              "answers": [
+                {
+                  "text": "OpenOffice",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "LibreOffice的官网是什么？",
+              "id": "4-23-7",
+              "answers": [
+                {
+                  "text": "https://www.libreoffice.org/",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "OnlyOffice是自由软件，界面设计现代化，功能较少，官网为https://www.onlyoffice.com/。",
+          "qas": [
+            {
+              "question": "OnlyOffice是什么类型的软件？",
+              "id": "4-23-8",
+              "answers": [
+                {
+                  "text": "自由软件",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "OnlyOffice的界面设计如何？",
+              "id": "4-23-9",
+              "answers": [
+                {
+                  "text": "现代化",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "OnlyOffice的官网是什么？",
+              "id": "4-23-10",
+              "answers": [
+                {
+                  "text": "https://www.onlyoffice.com/",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "O20是新项目，目前仅有O20.Word，可通过Flatpak安装，命令为flatpak install flathub io.gitlab.o20.word，官网为https://abstractsoftware.gitlab.io/。",
+          "qas": [
+            {
+              "question": "O20目前有哪些软件？",
+              "id": "4-23-11",
+              "answers": [
+                {
+                  "text": "仅有O20.Word一个软件",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "如何安装O20.Word？",
+              "id": "4-23-12",
+              "answers": [
+                {
+                  "text": "通过Flatpak安装，命令为flatpak install flathub io.gitlab.o20.word",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "O20的官网是什么？",
+              "id": "4-23-13",
+              "answers": [
+                {
+                  "text": "https://abstractsoftware.gitlab.io/",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Apache OpenOffice是自由软件，历史悠久，持续开发但已不活跃，官网为http://www.openoffice.org/。",
+          "qas": [
+            {
+              "question": "Apache OpenOffice是什么类型的软件？",
+              "id": "4-23-14",
+              "answers": [
+                {
+                  "text": "自由软件",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "Apache OpenOffice的开发状态如何？",
+              "id": "4-23-15",
+              "answers": [
+                {
+                  "text": "持续开发但已不活跃",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "question": "Apache OpenOffice的官网是什么？",
+              "id": "4-23-16",
+              "answers": [
+                {
+                  "text": "http://www.openoffice.org/",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Microsoft Office是付费专有软件，本身不提供Linux版本，可使用wine运行，官网为https://www.microsoft.com/zh-cn/microsoft-365/microsoft-office，深度商店有打包好的wine版本。",
+          "qas": [
+            {
+              "question": "Microsoft Office是什么类型的软件？",
+              "id": "4-23-17",
+              "answers": [
+                {
+                  "text": "付费专有软件",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "Microsoft Office有Linux版本吗？",
+              "id": "4-23-18",
+              "answers": [
+                {
+                  "text": "本身不提供Linux版本",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "如何在Linux上运行Microsoft Office？",
+              "id": "4-23-19",
+              "answers": [
+                {
+                  "text": "使用wine运行",
+                  "answer_start": 50
+                }
+              ]
+            },
+            {
+              "question": "深度商店有Microsoft Office的相关版本吗？",
+              "id": "4-23-20",
+              "answers": [
+                {
+                  "text": "有打包好的wine版本",
+                  "answer_start": 125
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Microsoft Office Web是Microsoft提供的免费Web版Office软件，官网为https://www.microsoft.com/zh-cn/microsoft-365/free-office-online-for-the-web。",
+          "qas": [
+            {
+              "question": "Microsoft Office Web是免费的吗？",
+              "id": "4-23-21",
+              "answers": [
+                {
+                  "text": "是免费的",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "Microsoft Office Web是什么类型的软件？",
+              "id": "4-23-22",
+              "answers": [
+                {
+                  "text": "Web版Office软件",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "Microsoft Office Web的官网是什么？",
+              "id": "4-23-23",
+              "answers": [
+                {
+                  "text": "https://www.microsoft.com/zh-cn/microsoft-365/free-office-online-for-the-web",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "石墨Office是支持多种主流Office文件处理能力的国产正版Office办公软件，软件包名为com.shimo.desktop.main，商店上架了Linux版本，官网未提供安装包下载。",
+          "qas": [
+            {
+              "question": "石墨Office支持处理哪些文件？",
+              "id": "4-23-24",
+              "answers": [
+                {
+                  "text": "多种主流Office文件",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "石墨Office的软件包名是什么？",
+              "id": "4-23-25",
+              "answers": [
+                {
+                  "text": "com.shimo.desktop.main",
+                  "answer_start": 44
+                }
+              ]
+            },
+            {
+              "question": "石墨Office的Linux版本在哪里可以找到？",
+              "id": "4-23-26",
+              "answers": [
+                {
+                  "text": "商店上架了Linux版本",
+                  "answer_start": 70
+                }
+              ]
+            },
+            {
+              "question": "石墨文档官网提供Linux版本安装包下载吗？",
+              "id": "4-23-27",
+              "answers": [
+                {
+                  "text": "未提供安装包下载",
+                  "answer_start": 91
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "data": [
+    {
+      "title": "自定义主题",
+      "paragraphs": [
+        {
+          "context": "可前往https://www.gnome-look.org/、https://www.opendesktop.org等网站下载主题文件，格式多为tar.gz或zip，需解压。",
+          "qas": [
+            {
+              "question": "在哪里可以下载主题文件？",
+              "id": "4-22-1",
+              "answers": [
+                {
+                  "text": "https://www.gnome-look.org/、https://www.opendesktop.org等网站",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "question": "主题文件常见格式有哪些？",
+              "id": "4-22-2",
+              "answers": [
+                {
+                  "text": "tar.gz或zip",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GTK主题需包含gtk-2.0、gtk-3.0、metacity-1目录及index.theme文件，缺一不可。",
+          "qas": [
+            {
+              "question": "GTK主题必须包含哪些部分？",
+              "id": "4-22-3",
+              "answers": [
+                {
+                  "text": "gtk-2.0、gtk-3.0、metacity-1目录及index.theme文件",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "所有用户可用的GTK主题，需复制主题目录到/usr/share/themes（管理员身份），注销后在控制中心-个性化-窗口主题选择。",
+          "qas": [
+            {
+              "question": "如何让所有用户使用GTK主题？",
+              "id": "4-22-4",
+              "answers": [
+                {
+                  "text": "复制主题目录到/usr/share/themes（管理员身份），注销后在控制中心-个性化-窗口主题选择。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "个人使用的GTK主题，复制到主目录的.local/share/themes，注销后在控制中心-个性化-窗口主题选择。",
+          "qas": [
+            {
+              "question": "个人使用GTK主题应放在哪里？",
+              "id": "4-22-5",
+              "answers": [
+                {
+                  "text": "主目录的.local/share/themes",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "图标主题除index.theme文件外，其他目录非必要。",
+          "qas": [
+            {
+              "question": "图标主题的必要文件是什么？",
+              "id": "4-22-6",
+              "answers": [
+                {
+                  "text": "index.theme文件",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "所有用户可用的图标主题，复制到/usr/share/icons（管理员身份），注销后在控制中心-个性化-图标主题选择。",
+          "qas": [
+            {
+              "question": "所有用户使用的图标主题放在哪个目录？",
+              "id": "4-22-7",
+              "answers": [
+                {
+                  "text": "/usr/share/icons",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "个人使用的图标主题，复制到主目录的.local/share/icons，注销后在控制中心-个性化-图标主题选择。",
+          "qas": [
+            {
+              "question": "个人使用的图标主题如何生效？",
+              "id": "4-22-8",
+              "answers": [
+                {
+                  "text": "复制到主目录的.local/share/icons，注销后在控制中心-个性化-图标主题选择。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "光标主题包含cursors文件夹和cursor.theme文件。",
+          "qas": [
+            {
+              "question": "光标主题的目录结构包含什么？",
+              "id": "4-22-9",
+              "answers": [
+                {
+                  "text": "cursors文件夹和cursor.theme文件",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "所有用户可用的光标主题，复制到/usr/share/icons（管理员身份），注销后在控制中心-个性化-光标主题选择。",
+          "qas": [
+            {
+              "question": "所有用户使用的光标主题应如何操作？",
+              "id": "4-22-10",
+              "answers": [
+                {
+                  "text": "复制到/usr/share/icons（管理员身份），注销后在控制中心-个性化-光标主题选择。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "个人使用的光标主题，复制到主目录的.local/share/icons，注销后在控制中心-个性化-光标主题选择。",
+          "qas": [
+            {
+              "question": "个人使用光标主题的生效步骤是什么？",
+              "id": "4-22-11",
+              "answers": [
+                {
+                  "text": "复制到主目录的.local/share/icons，注销后在控制中心-个性化-光标主题选择。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
