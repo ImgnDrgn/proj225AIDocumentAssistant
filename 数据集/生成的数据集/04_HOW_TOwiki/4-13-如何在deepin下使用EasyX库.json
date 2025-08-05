@@ -1,0 +1,249 @@
+{
+  "data": [
+    {
+      "title": "如何在deepin下使用EasyX库",
+      "paragraphs": [
+        {
+          "context": "EasyX是针对C++的图形库，能帮助C/C++开发者快速上手图形设计，在VS上完美使用，2022年6月10日提供适配MinGW的库文件，开始支持MinGW编译器。",
+          "qas": [
+            {
+              "question": "EasyX是什么？",
+              "id": "4-13-1",
+              "answers": [
+                {
+                  "text": "EasyX是针对C++的图形库，能帮助C/C++开发者快速上手图形设计。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "EasyX何时开始支持MinGW编译器？",
+              "id": "4-13-2",
+              "answers": [
+                {
+                  "text": "2022年6月10日",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CLion是JetBrains出品的跨平台C/C++集成开发环境，基于IntelliJ设计，能在GNU/Linux、OS X和Windows上开发。",
+          "qas": [
+            {
+              "question": "CLion是什么？",
+              "id": "4-13-3",
+              "answers": [
+                {
+                  "text": "CLion是JetBrains出品的跨平台C/C++集成开发环境，基于IntelliJ设计，能在GNU/Linux、OS X和Windows上开发。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Debian系GNU/Linux发行版安装MinGW命令：sudo apt-get update；sudo apt-get install mingw-w64。",
+          "qas": [
+            {
+              "question": "Debian系GNU/Linux发行版如何安装MinGW？",
+              "id": "4-13-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get update；sudo apt-get install mingw-w64。",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MinGW是适用于Windows的极简主义GNU，是Windows特定头文件和GNU工具集导入库的集合，能在GNU/Linux和Windows生成本地Windows程序，MinGW-w64可编译32位和64位可执行文件。",
+          "qas": [
+            {
+              "question": "MinGW是什么？",
+              "id": "4-13-5",
+              "answers": [
+                {
+                  "text": "MinGW是适用于Windows的极简主义GNU，是Windows特定头文件和GNU工具集导入库的集合，能在GNU/Linux和Windows生成本地Windows程序。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "MinGW-w64与旧版MinGW的区别是什么？",
+              "id": "4-13-6",
+              "answers": [
+                {
+                  "text": "MinGW-w64可编译32位和64位可执行文件，旧版MinGW只能编译32位可执行文件。",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CLion中设置MinGW工具链：点击“+”创建新工具链，命名为“mingw”，设置C/C++编译器为x86_64-w64-mingw32-gcc和x86_64-w64-mingw32-g++。",
+          "qas": [
+            {
+              "question": "如何在CLion中设置MinGW工具链？",
+              "id": "4-13-7",
+              "answers": [
+                {
+                  "text": "点击“+”创建新工具链，命名为“mingw”，设置C/C++编译器为x86_64-w64-mingw32-gcc和x86_64-w64-mingw32-g++。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CLion中创建新CMake：点击“+”，修改文件名，修改工具链为之前构建的MinGW工具链。",
+          "qas": [
+            {
+              "question": "在CLion中如何创建新的CMake并关联MinGW工具链？",
+              "id": "4-13-8",
+              "answers": [
+                {
+                  "text": "点击“+”，修改文件名，修改工具链为之前构建的MinGW工具链。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CMakeLists.txt原生内容包含cmake_minimum_required、project、set、add_executable等命令，分别用于设置最低cmake版本、项目名、C++标准、生成可执行文件。",
+          "qas": [
+            {
+              "question": "CMakeLists.txt原生内容中的project命令作用是什么？",
+              "id": "4-13-9",
+              "answers": [
+                {
+                  "text": "设置项目名，后续许多命令会使用该参数。",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在Test项目目录下创建bin、include、lib、src文件夹，分别用于存放可执行文件、头文件、库文件、源文件。",
+          "qas": [
+            {
+              "question": "Test项目目录下创建的bin文件夹用于存放什么？",
+              "id": "4-13-10",
+              "answers": [
+                {
+                  "text": "cmake编译源代码生成的可执行文件。",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "Test项目目录下的lib文件夹用途是什么？",
+              "id": "4-13-11",
+              "answers": [
+                {
+                  "text": "存放库文件，比如libeasyx.a静态链接库。",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "easyx4mingw_20220901.zip包含include、lib32、lib64、lib-for-devcpp_5.4.0文件夹及readme.txt，将easyx.h和graphics.h拷贝到项目include目录，对应位数的libeasyx.a拷贝到lib目录完成安装。",
+          "qas": [
+            {
+              "question": "如何安装EasyX库？",
+              "id": "4-13-12",
+              "answers": [
+                {
+                  "text": "将easyx.h和graphics.h拷贝到项目include目录，对应位数的libeasyx.a拷贝到lib目录。",
+                  "answer_start": 107
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CMakeLists配置中，set(CMAKE_EXE_LINKER_FLAGS ...)让cmake采用静态编译；SET(EXECUTABLE_OUTPUT_PATH ...)设置可执行文件存放目录；link_directories指定库文件目录；target_link_libraries链接库文件。",
+          "qas": [
+            {
+              "question": "CMakeLists配置中，set(CMAKE_EXE_LINKER_FLAGS ...)的作用是什么？",
+              "id": "4-13-13",
+              "answers": [
+                {
+                  "text": "让cmake采用静态编译。",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "CMakeLists中如何指定库文件目录？",
+              "id": "4-13-14",
+              "answers": [
+                {
+                  "text": "使用link_directories命令。",
+                  "answer_start": 132
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用EasyX库的示例代码中，initgraph初始化画布，setcolor设置线条颜色，fillcircle绘制填充圆，getch暂停，closegraph关闭图形界面。",
+          "qas": [
+            {
+              "question": "示例代码中initgraph的作用是什么？",
+              "id": "4-13-15",
+              "answers": [
+                {
+                  "text": "初始化画布。",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "示例代码中用什么函数绘制填充圆？",
+              "id": "4-13-16",
+              "answers": [
+                {
+                  "text": "fillcircle",
+                  "answer_start": 82
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在Deepin系统中，可用wine运行生成的Test.exe文件，Debian系可通过sudo apt update && sudo apt install wine安装wine。",
+          "qas": [
+            {
+              "question": "在Deepin系统中如何运行生成的Test.exe文件？",
+              "id": "4-13-17",
+              "answers": [
+                {
+                  "text": "用wine运行。",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "Debian系如何安装wine？",
+              "id": "4-13-18",
+              "answers": [
+                {
+                  "text": "sudo apt update && sudo apt install wine",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "data": [
+    {
+      "title": "deepin-IDE 中的调试技术",
+      "paragraphs": [
+        {
+          "context": "deepin-IDE 的调试功能选用 DAP（Debug Adapter Protocol ）调试适配协议实现，整体架构围绕该协议搭建。",
+          "qas": [
+            {
+              "question": "deepin-IDE 的调试功能基于什么协议实现？",
+              "id": "4-8-1",
+              "answers": [
+                {
+                  "text": "DAP（Debug Adapter Protocol ）调试适配协议",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DAP 即调试适配协议，是对多种调试器进行抽象统一的适配层，将原有 IDE 和调试工具直接交互的模式更改为和 DAP 进行交互。",
+          "qas": [
+            {
+              "question": "什么是 DAP 协议？",
+              "id": "4-8-2",
+              "answers": [
+                {
+                  "text": "DAP 即调试适配协议，是对多种调试器进行抽象统一的适配层，将原有 IDE 和调试工具直接交互的模式更改为和 DAP 进行交互。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DAP 思想和 LSP(语言服务器协议)、BSP(构建服务器协议)类似，都是通过协议统一相同功能在不同工具间的差异性。",
+          "qas": [
+            {
+              "question": "DAP 与哪些协议思想类似？",
+              "id": "4-8-3",
+              "answers": [
+                {
+                  "text": "LSP(语言服务器协议)、BSP(构建服务器协议)",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开发工具与调试器交互有单会话模式和多会话模式。单会话模式下，开发工具启动调试适配器作为单独进程，通过标准 std 接口通信，会话结束适配器终止。",
+          "qas": [
+            {
+              "question": "开发工具与调试器交互的单会话模式有什么特点？",
+              "id": "4-8-4",
+              "answers": [
+                {
+                  "text": "开发工具启动调试适配器作为单独进程，通过标准 std 接口通信，会话结束适配器终止。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "多会话模式下，开发工具不启动调试适配器，假定其已运行并在特定端口侦听，每个会话在特定端口启动新通信会话，结束时断开连接。",
+          "qas": [
+            {
+              "question": "多会话模式下开发工具如何与调试适配器交互？",
+              "id": "4-8-5",
+              "answers": [
+                {
+                  "text": "开发工具不启动调试适配器，假定其已运行并在特定端口侦听，每个会话在特定端口启动新通信会话，结束时断开连接。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DAP 基础协议含头和内容，类似 HTTP，头部和内容用“\r\n”分割。协议头必须有 Content-Length 字段，记录内容长度，单位字节，用 ASCII 编码。",
+          "qas": [
+            {
+              "question": "DAP 基础协议的头部有什么要求？",
+              "id": "4-8-6",
+              "answers": [
+                {
+                  "text": "必须有 Content-Length 字段，记录内容长度，单位字节，用 ASCII 编码。",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DAP 内容部分是实际传输数据，用 JSON 格式描述请求、响应和事件，采用 utf-8 编码。",
+          "qas": [
+            {
+              "question": "DAP 协议内容部分有什么特点？",
+              "id": "4-8-7",
+              "answers": [
+                {
+                  "text": "用 JSON 格式描述请求、响应和事件，采用 utf-8 编码。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin-IDE 调试功能结合 cppdap + debugmanager 实现。cppdap 是基于 C++ 的 SDK，实现 DAP 全量协议。",
+          "qas": [
+            {
+              "question": "deepin-IDE 调试功能由什么结合实现？",
+              "id": "4-8-8",
+              "answers": [
+                {
+                  "text": "cppdap + debugmanager",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cppdap 实现通信功能（服务端 TCP 监听、客户端 TCP 连接等）、DAP 协议封装及串行化/解串行化、提供注册回调处理事件和请求。",
+          "qas": [
+            {
+              "question": "cppdap 能实现哪些功能？",
+              "id": "4-8-9",
+              "answers": [
+                {
+                  "text": "通信功能（服务端 TCP 监听、客户端 TCP 连接等）、DAP 协议封装及串行化/解串行化、提供注册回调处理事件和请求。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin-IDE 客户端包含业务模块、事件模块、DAP 模块和界面4个部分，负责与 DAP 服务端交互、转换数据显示及响应界面事件。",
+          "qas": [
+            {
+              "question": "deepin-IDE 客户端包含哪些部分？",
+              "id": "4-8-10",
+              "answers": [
+                {
+                  "text": "业务模块、事件模块、DAP 模块和界面4个部分",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "客户端业务模块含插件类、调试参数、调试管理类等，插件类负责插件加载等，调试管理类组合事件、DAP、界面模块。",
+          "qas": [
+            {
+              "question": "客户端业务模块包含什么？",
+              "id": "4-8-11",
+              "answers": [
+                {
+                  "text": "插件类、调试参数、调试管理类等",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "客户端事件模块有事件发送和接收子模块，处理页面跳转、添加/移除断点等事件。",
+          "qas": [
+            {
+              "question": "客户端事件模块包含什么子模块？",
+              "id": "4-8-12",
+              "answers": [
+                {
+                  "text": "事件发送和事件接收",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "客户端 DAP 模块基于 cppdap 开发，分三层：底层封装原始 DAP 协议，中间层简化接口，上层整合调试功能。",
+          "qas": [
+            {
+              "question": "客户端 DAP 模块的层级结构是怎样的？",
+              "id": "4-8-13",
+              "answers": [
+                {
+                  "text": "底层封装原始 DAP 协议，中间层简化接口，上层整合调试功能。",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "客户端界面模块有堆栈界面、变量界面、断点列表、异步对话框等，用于展示 DAP 数据。",
+          "qas": [
+            {
+              "question": "客户端界面模块包含哪些部分？",
+              "id": "4-8-14",
+              "answers": [
+                {
+                  "text": "堆栈界面、变量界面、断点列表、异步对话框等",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin-IDE 服务端基于 cppdap 实现命令收发，通过进程调用与 gdb 交互，实现调试程序的启动、暂停、退出等。",
+          "qas": [
+            {
+              "question": "deepin-IDE 服务端有什么功能？",
+              "id": "4-8-15",
+              "answers": [
+                {
+                  "text": "基于 cppdap 实现命令收发，通过进程调用与 gdb 交互，实现调试程序的启动、暂停、退出等。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

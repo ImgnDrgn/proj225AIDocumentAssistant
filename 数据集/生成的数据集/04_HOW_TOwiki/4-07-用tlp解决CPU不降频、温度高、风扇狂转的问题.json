@@ -1,0 +1,269 @@
+{
+  "data": [
+    {
+      "title": "用tlp解决CPU不降频、温度高、风扇狂转的问题",
+      "paragraphs": [
+        {
+          "context": "本文针对英特尔CPU，通过调整CPU scaling governor解决相关问题，其他CPU可研究tlp配置文件。",
+          "qas": [
+            {
+              "question": "本文主要针对哪种CPU？",
+              "id": "4-7-1",
+              "answers": [
+                {
+                  "text": "英特尔CPU",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "解决问题主要调整什么？",
+              "id": "4-7-2",
+              "answers": [
+                {
+                  "text": "CPU scaling governor",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "步骤1需确保CPU使用Intel P-state，输入命令`cat /sys/devices/system/cpu/intel_pstate/status`查看状态。",
+          "qas": [
+            {
+              "question": "步骤1的目的是什么？",
+              "id": "4-7-3",
+              "answers": [
+                {
+                  "text": "确保CPU使用Intel P-state",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "如何查看Intel P-state状态？",
+              "id": "4-7-4",
+              "answers": [
+                {
+                  "text": "输入命令`cat /sys/devices/system/cpu/intel_pstate/status`",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若Intel P-state状态非active，需在grub添加intel_pstate，编辑/etc/default/grub，在GRUB_CMDLINE_LINUX_DEFAULT后加intel_pstate=force，保存后执行`sudo update-grub2`重启。",
+          "qas": [
+            {
+              "question": "Intel P-state状态非active时，第一步操作是什么？",
+              "id": "4-7-5",
+              "answers": [
+                {
+                  "text": "在grub添加intel_pstate，编辑/etc/default/grub，在GRUB_CMDLINE_LINUX_DEFAULT后加intel_pstate=force",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "question": "编辑grub文件后需执行什么命令？",
+              "id": "4-7-6",
+              "answers": [
+                {
+                  "text": "sudo update-grub2",
+                  "answer_start": 156
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若重启后Intel P-state仍非active，创建含特定命令的txt文件，设为可运行程序，在~/.config/autostart创建.desktop文件使其开机自启。",
+          "qas": [
+            {
+              "question": "重启后Intel P-state仍非active怎么办？",
+              "id": "4-7-7",
+              "answers": [
+                {
+                  "text": "创建含特定命令的txt文件，设为可运行程序，在~/.config/autostart创建.desktop文件使其开机自启",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "question": ".desktop文件应放在哪里？",
+              "id": "4-7-8",
+              "answers": [
+                {
+                  "text": "~/.config/autostart",
+                  "answer_start": 88
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "步骤2：安装tlp，终端输入`sudo apt install tlp`",
+          "qas": [
+            {
+              "question": "如何安装tlp？",
+              "id": "4-7-9",
+              "answers": [
+                {
+                  "text": "终端输入`sudo apt install tlp`",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "步骤3：修改tlp参数，编辑/etc/default/tlp，设置CPU_SCALING_GOVERNOR等参数，保存文件。",
+          "qas": [
+            {
+              "question": "步骤3需要编辑哪个文件？",
+              "id": "4-7-10",
+              "answers": [
+                {
+                  "text": "/etc/default/tlp",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "需要设置哪些类型的参数？",
+              "id": "4-7-11",
+              "answers": [
+                {
+                  "text": "CPU_SCALING_GOVERNOR等参数",
+                  "answer_start": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "tlp参数设置：CPU_SCALING_GOVERNOR_ON_AC=powersave，CPU_SCALING_GOVERNOR_ON_BAT=powersave等。",
+          "qas": [
+            {
+              "question": "插电时CPU_SCALING_GOVERNOR设为多少？",
+              "id": "4-7-12",
+              "answers": [
+                {
+                  "text": "powersave",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "不插电时CPU_SCALING_GOVERNOR设为多少？",
+              "id": "4-7-13",
+              "answers": [
+                {
+                  "text": "powersave",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "步骤4：运行tlp，终端输入`sudo tlp start`",
+          "qas": [
+            {
+              "question": "如何运行tlp？",
+              "id": "4-7-14",
+              "answers": [
+                {
+                  "text": "终端输入`sudo tlp start`",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "不建议禁用Intel P-state，会阉割睿频，限制CPU频率。",
+          "qas": [
+            {
+              "question": "为什么不建议禁用Intel P-state？",
+              "id": "4-7-15",
+              "answers": [
+                {
+                  "text": "会阉割睿频，限制CPU频率",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统自带laptop-mode-tools，与tlp性质相同，安装tlp后建议卸载它，由tlp接管电源管理。",
+          "qas": [
+            {
+              "question": "laptop-mode-tools与tlp是什么关系？",
+              "id": "4-7-16",
+              "answers": [
+                {
+                  "text": "性质相同",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "安装tlp后对laptop-mode-tools应如何处理？",
+              "id": "4-7-17",
+              "answers": [
+                {
+                  "text": "建议卸载，由tlp接管电源管理",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "tlp设置原则：不插电选最省电，插电选第二高性能，设置后运行sudo tlp start重载。",
+          "qas": [
+            {
+              "question": "tlp设置的基本原则是什么？",
+              "id": "4-7-18",
+              "answers": [
+                {
+                  "text": "不插电选最省电，插电选第二高性能",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "保存tlp设置后如何重载？",
+              "id": "4-7-19",
+              "answers": [
+                {
+                  "text": "运行sudo tlp start",
+                  "answer_start": 46
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "给CPU施压的简单方法：终端输入`time echo “scale=5000; 4*a(1)” | bc -l -q`计算圆周率。",
+          "qas": [
+            {
+              "question": "如何简单给CPU施加压力？",
+              "id": "4-7-20",
+              "answers": [
+                {
+                  "text": "终端输入`time echo “scale=5000; 4*a(1)” | bc -l -q`计算圆周率",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
