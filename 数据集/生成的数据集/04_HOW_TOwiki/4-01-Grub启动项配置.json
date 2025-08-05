@@ -1,0 +1,229 @@
+{
+  "data": [
+    {
+      "title": "Grub启动项配置",
+      "paragraphs": [
+        {
+          "context": "grub是一个引导管理程序，全称GRand Unified Bootloader，可在多个操作系统共存时选择引导哪个系统，能引导Linux、Windows等多种系统。",
+          "qas": [
+            {
+              "question": "grub的全称是什么？",
+              "id": "4-1-1",
+              "answers": [
+                {
+                  "text": "GRand Unified Bootloader",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "grub的主要作用是什么？",
+              "id": "4-1-2",
+              "answers": [
+                {
+                  "text": "在多个操作系统共存时选择引导哪个系统",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "grub支持大硬盘、定制开机画面、菜单式选择等特点，其命令行功能强大，支持历史功能，通过/boot/grub/grub.cfg加载内核启动系统。",
+          "qas": [
+            {
+              "question": "grub有哪些特点？",
+              "id": "4-1-3",
+              "answers": [
+                {
+                  "text": "支持大硬盘、定制开机画面、菜单式选择等",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "grub通过哪个文件加载内核启动系统？",
+              "id": "4-1-4",
+              "answers": [
+                {
+                  "text": "/boot/grub/grub.cfg",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "制作grub启动盘需先确定grub已安装，进入/boot/grub目录，用dd命令将stage1和stage2写入软盘，也可用mkbootdisk命令，需指定内核版本号。",
+          "qas": [
+            {
+              "question": "制作grub启动盘的前提是什么？",
+              "id": "4-1-5",
+              "answers": [
+                {
+                  "text": "确定grub已经安装",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "用dd命令制作grub启动盘需要哪些步骤？",
+              "id": "4-1-6",
+              "answers": [
+                {
+                  "text": "进入/boot/grub目录，放入软盘，执行#dd if=stage1 of=/dev/fd0 bs=512 count=1和#dd if=stage2 of=/dev/fd0 bs=512 seek=1",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GRUB启动时载入/boot/grub/grub.cfg，修改/etc/default/grub或/etc/grub.d/文件后需重新生成主配置文件，指令为update-grub或grub-mkconfig。",
+          "qas": [
+            {
+              "question": "GRUB启动时载入哪个配置文件？",
+              "id": "4-1-7",
+              "answers": [
+                {
+                  "text": "/boot/grub/grub.cfg",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "修改哪些文件后需要重新生成grub主配置文件？",
+              "id": "4-1-8",
+              "answers": [
+                {
+                  "text": "/etc/default/grub 或者 /etc/grub.d/ 中的文件",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "question": "重新生成grub配置文件的指令是什么？",
+              "id": "4-1-9",
+              "answers": [
+                {
+                  "text": "update-grub或grub-mkconfig",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/etc/grub.d里的脚本有00_header、05_debian_theme等，数字决定执行顺序，如想将windows启动项放第一个，可改35_os-prober前数字为5到10之间。",
+          "qas": [
+            {
+              "question": "/etc/grub.d里脚本前的数字有什么作用？",
+              "id": "4-1-10",
+              "answers": [
+                {
+                  "text": "对文件排列执行的顺序进行排序",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "如何将windows启动项调到第一个？",
+              "id": "4-1-11",
+              "answers": [
+                {
+                  "text": "把35_os-prober前面那个数字改成5到10的数字，比如06、07、08、09",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更改grub字体可用grub-mkfont工具，从ttc字体制作pf2字体，放入$prefix/fonts目录，修改grub.cfg中gfxterm_font和loadfont相关行，推荐等宽中文字体。",
+          "qas": [
+            {
+              "question": "用什么工具可以更改grub的字体？",
+              "id": "4-1-12",
+              "answers": [
+                {
+                  "text": "grub-mkfont",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "制作好的grub字体文件应放到哪个目录？",
+              "id": "4-1-13",
+              "answers": [
+                {
+                  "text": "$prefix/fonts",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "替换grub背景图需替换/boot/grub/themes/deepin/background.jpg，重新生成cfg配置文件，否则重启后失效。",
+          "qas": [
+            {
+              "question": "如何替换grub的背景图？",
+              "id": "4-1-14",
+              "answers": [
+                {
+                  "text": "替换 /boot/grub/themes/deepin/background.jpg ,重新生成cfg配置文件",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "去除grub默认选项框需修改/boot/grub/themes/deepin/theme.txt，注释menu_pixmap_style = \"menu_*.png\"，重新生成cfg配置文件。",
+          "qas": [
+            {
+              "question": "如何去除grub默认的选项框？",
+              "id": "4-1-15",
+              "answers": [
+                {
+                  "text": "修改 /boot/grub/themes/deepin/theme.txt，将 menu_pixmap_style = \"menu_*.png\" 用 # 注释掉，重新生成cfg配置文件",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改grub等待时间可直接改/boot/grub/grub.cfg中set timeout的值，或在/etc/default/grub文件内放入GRUB_TIMEOUT=xxxx。",
+          "qas": [
+            {
+              "question": "修改grub等待时间有哪些方法？",
+              "id": "4-1-16",
+              "answers": [
+                {
+                  "text": "1. 直接修改/boot/grub/grub.cfg中set timeout的值；2. 在/etc/default/grub文件内放入键值：GRUB_TIMEOUT=xxxx",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改grub启动项菜单名称可改grub.cfg文件里顶格写的menuentry字段后单引号内容，修改完需更新cfg文件。",
+          "qas": [
+            {
+              "question": "如何修改grub启动项菜单名称？",
+              "id": "4-1-17",
+              "answers": [
+                {
+                  "text": "修改grub.cfg文件里顶格写的menuentry字段后单引号内容，修改完记得更新cfg文件",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
