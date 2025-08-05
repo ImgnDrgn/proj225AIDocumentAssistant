@@ -1,0 +1,329 @@
+{
+  "data": [
+    {
+      "title": "deepin下调试coredump文件",
+      "paragraphs": [
+        {
+          "context": "Core Dump指程序异常终止或崩溃时，将内存内容拷贝到磁盘文件的技术。",
+          "qas": [
+            {
+              "question": "什么是Core Dump？",
+              "id": "4-14-1",
+              "answers": [
+                {
+                  "text": "程序异常终止或崩溃时，将内存内容拷贝到磁盘文件的技术。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "终端输入ulimit -c可检查当前系统的Core dump策略，输出0表示默认关闭。",
+          "qas": [
+            {
+              "question": "如何检查当前系统的Core dump策略？",
+              "id": "4-14-2",
+              "answers": [
+                {
+                  "text": "在终端中输入ulimit -c",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "ulimit -c输出0表示什么？",
+              "id": "4-14-3",
+              "answers": [
+                {
+                  "text": "默认关闭core dump",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "临时开启Core Dump：终端输入ulimit -c unlimited，仅对当前终端有效。",
+          "qas": [
+            {
+              "question": "如何临时开启Core Dump？",
+              "id": "4-14-4",
+              "answers": [
+                {
+                  "text": "在终端内输入ulimit -c unlimited",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "临时开启Core Dump的命令对哪些环境有效？",
+              "id": "4-14-5",
+              "answers": [
+                {
+                  "text": "当前的终端环境",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "永久开启Core Dump方法一：修改/etc/security/limits.conf，最后加* soft core unlimited。",
+          "qas": [
+            {
+              "question": "永久开启Core Dump的方法一是什么？",
+              "id": "4-14-6",
+              "answers": [
+                {
+                  "text": "修改 /etc/security/limits.conf 在最后增加一行：* soft core unlimited",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "永久开启Core Dump方法二：在/etc/profile中加入ulimit -c unlimited，需重启系统。",
+          "qas": [
+            {
+              "question": "永久开启Core Dump的方法二是什么？",
+              "id": "4-14-7",
+              "answers": [
+                {
+                  "text": "在 /etc/profile 中加入如下命令：ulimit -c unlimited",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "永久开启Core Dump方法三：在~/.bashrc添加ulimit -c unlimited，执行source ~/.bashrc生效，仅对当前用户有效。",
+          "qas": [
+            {
+              "question": "永久开启Core Dump的方法三是什么？",
+              "id": "4-14-8",
+              "answers": [
+                {
+                  "text": "在 ~/.bashrc 中添加如下命令：ulimit -c unlimited，然后执行source ~/.bashrc让修改立刻生效",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "方法三开启Core Dump对哪些用户有效？",
+              "id": "4-14-9",
+              "answers": [
+                {
+                  "text": "当前用户",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "测试需安装build-essential和gdb，命令：sudo apt update && sudo apt install build-essential gdb。",
+          "qas": [
+            {
+              "question": "进行Core Dump测试需要安装哪些工具？",
+              "id": "4-14-10",
+              "answers": [
+                {
+                  "text": "build-essential 和 gdb",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "安装测试所需工具的命令是什么？",
+              "id": "4-14-11",
+              "answers": [
+                {
+                  "text": "sudo apt update && sudo apt install build-essential gdb",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编译测试程序命令：gcc main.c -g -o test，需在main.c所在目录执行，-g方便调试。",
+          "qas": [
+            {
+              "question": "编译main.c生成可执行程序test的命令是什么？",
+              "id": "4-14-12",
+              "answers": [
+                {
+                  "text": "gcc main.c -g -o test",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "编译时加入-g的作用是什么？",
+              "id": "4-14-13",
+              "answers": [
+                {
+                  "text": "方便调试",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "调试core文件用gdb，语法：gdb [程序] [core文件]，例子：gdb ./test core。",
+          "qas": [
+            {
+              "question": "使用gdb调试core文件的语法是什么？",
+              "id": "4-14-14",
+              "answers": [
+                {
+                  "text": "gdb [程序] [生成的core dump文件]",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "调试test程序生成的core文件的命令是什么？",
+              "id": "4-14-15",
+              "answers": [
+                {
+                  "text": "gdb ./test core",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在gdb中输入bt可查看backstrace，定位core dump发生的位置。",
+          "qas": [
+            {
+              "question": "在gdb中如何查看backstrace以定位core dump位置？",
+              "id": "4-14-16",
+              "answers": [
+                {
+                  "text": "输入bt",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "临时让core文件带pid扩展名：sudo bash -c \"echo 1 > /proc/sys/kernel/core_uses_pid\"。",
+          "qas": [
+            {
+              "question": "如何临时让core文件带有进程号扩展名？",
+              "id": "4-14-17",
+              "answers": [
+                {
+                  "text": "sudo bash -c \"echo 1 > /proc/sys/kernel/core_uses_pid\"",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "core_uses_pid为0时core文件统一命名为core，为1时带pid扩展名（core.xxxx）。",
+          "qas": [
+            {
+              "question": "core_uses_pid为0表示什么？",
+              "id": "4-14-18",
+              "answers": [
+                {
+                  "text": "生成的core 文件统一命名为core",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "core_uses_pid为1表示什么？",
+              "id": "4-14-19",
+              "answers": [
+                {
+                  "text": "添加进程号 (pid) 作为扩展名 （格式为core.xxxx）",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "永久修改core文件路径和命名：修改/etc/sysctl.conf，添加kernel.core_pattern和kernel.core_uses_pid，执行sysctl -p /etc/sysctl.conf生效。",
+          "qas": [
+            {
+              "question": "如何永久修改core文件的路径和命名？",
+              "id": "4-14-20",
+              "answers": [
+                {
+                  "text": "修改 /etc/sysctl.conf 文件，修改（如果不存在就添加）如下两个变量：kernel.core_pattern = /var/core/core_%e_%p；kernel.core_uses_pid=0，执行sysctl -p /etc/sysctl.conf让更改生效",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "core文件参数%p是进程号，%u是用户号，%g是组号，%s是信号，%t是时间戳，%h是主机名，%e是程序名。",
+          "qas": [
+            {
+              "question": "core文件参数%p表示什么？",
+              "id": "4-14-21",
+              "answers": [
+                {
+                  "text": "添加进程号 pid",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "core文件参数%e表示什么？",
+              "id": "4-14-22",
+              "answers": [
+                {
+                  "text": "添加程序名",
+                  "answer_start": 90
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "永久限制core文件大小：修改/etc/security/limits.conf，加* soft core limit（单位KB），需重启。",
+          "qas": [
+            {
+              "question": "如何永久限制core文件的大小？",
+              "id": "4-14-23",
+              "answers": [
+                {
+                  "text": "修改 /etc/security/limits.conf 文件，添加（或者修改）一行：* soft core limit（上面的limit改成需要的大小，单位是KB），需要重启系统让更改生效",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "临时限制core文件大小：终端输入ulimit -c limit（单位KB）。",
+          "qas": [
+            {
+              "question": "如何临时限制core文件的大小？",
+              "id": "4-14-24",
+              "answers": [
+                {
+                  "text": "在终端输入命令：ulimit -c limit（上面的limit改成需要的大小，单位是KB）",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
