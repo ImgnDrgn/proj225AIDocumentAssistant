@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "title": "vmkfstools命令",
+      "paragraphs": [
+        {
+          "context": "vmkfstools是虚拟磁盘工具，被比作虚拟磁盘中的瑞士军刀，可用于复制、转换、重命名、输入、输出和调整虚拟磁盘文件的大小。",
+          "qas": [
+            {
+              "question": "vmkfstools被比作什么？",
+              "id": "3-121-1",
+              "answers": [
+                {
+                  "text": "虚拟磁盘中的瑞士军刀",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "vmkfstools可用于哪些操作？",
+              "id": "3-121-2",
+              "answers": [
+                {
+                  "text": "复制、转换、重命名、输入、输出和调整虚拟磁盘文件的大小",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "vmkfstools的语法格式为：vmkfstools [参数]。",
+          "qas": [
+            {
+              "question": "vmkfstools的语法格式是什么？",
+              "id": "3-121-3",
+              "answers": [
+                {
+                  "text": "vmkfstools [参数]",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "vmkfstools常用参数有：-i 原vmdk磁盘名，-d 目标磁盘的格式。",
+          "qas": [
+            {
+              "question": "vmkfstools中参数-i表示什么？",
+              "id": "3-121-4",
+              "answers": [
+                {
+                  "text": "原vmdk磁盘名",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "vmkfstools中参数-d的含义是什么？",
+              "id": "3-121-5",
+              "answers": [
+                {
+                  "text": "目标磁盘的格式",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更改虚拟磁盘(vmdk)大小的命令为：vmkfstools -X 40g converter-one.vmdk。",
+          "qas": [
+            {
+              "question": "如何更改虚拟磁盘(vmdk)的大小为40g，磁盘名为converter-one.vmdk？",
+              "id": "3-121-6",
+              "answers": [
+                {
+                  "text": "vmkfstools -X 40g converter-one.vmdk",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "精简置备转换至厚置备置零的命令：vmkfstools --inflatedisk /vmfs/volumes/DatastoreName/VMName/VMName.vmdk。",
+          "qas": [
+            {
+              "question": "如何将精简置备转换至厚置备置零？",
+              "id": "3-121-7",
+              "answers": [
+                {
+                  "text": "vmkfstools --inflatedisk /vmfs/volumes/DatastoreName/VMName/VMName.vmdk",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "厚置备延迟置零转换至厚置备置零的命令：vmkfstools --eagerzero /vmfs/volumes/DatastoreName/VMName/VMName.vmdk。",
+          "qas": [
+            {
+              "question": "厚置备延迟置零转换至厚置备置零的命令是什么？",
+              "id": "3-121-8",
+              "answers": [
+                {
+                  "text": "vmkfstools --eagerzero /vmfs/volumes/DatastoreName/VMName/VMName.vmdk",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "登陆ESXI调整虚拟磁盘大小的命令：vmkfstools -X 40g converter-two.vmdk。",
+          "qas": [
+            {
+              "question": "登陆ESXI后，如何调整虚拟磁盘converter-two.vmdk的大小为40g？",
+              "id": "3-121-9",
+              "answers": [
+                {
+                  "text": "vmkfstools -X 40g converter-two.vmdk",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建虚拟磁盘文件的命令：vmkfstools -C --createfs vmfs3。",
+          "qas": [
+            {
+              "question": "如何创建虚拟磁盘文件？",
+              "id": "3-121-10",
+              "answers": [
+                {
+                  "text": "vmkfstools -C --createfs vmfs3",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
