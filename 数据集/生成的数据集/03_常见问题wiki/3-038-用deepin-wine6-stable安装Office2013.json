@@ -1,0 +1,359 @@
+{
+  "data": [
+    {
+      "title": "6-用deepin-wine6-stable安装Office2013",
+      "paragraphs": [
+        {
+          "context": "注：建立deepin-wine6-stable环境：新装的系统需要安装一款应用商店里使用deepin-wine6-stable运行的wine应用（如wine版微信、wine版QQ），并运行一下。（系统会自动建立deepin-wine6-stable环境）",
+          "qas": [
+            {
+              "id": "3-38-1",
+              "question": "新装系统如何建立deepin-wine6-stable环境？",
+              "answers": [
+                {
+                  "text": "需要安装一款应用商店里使用deepin-wine6-stable运行的wine应用（如wine版微信、wine版QQ），并运行一下",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "3-38-2",
+              "question": "建立deepin-wine6-stable环境需要安装哪些类型的应用？",
+              "answers": [
+                {
+                  "text": "应用商店里使用deepin-wine6-stable运行的wine应用（如wine版微信、wine版QQ）",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "id": "3-38-3",
+              "question": "系统会自动建立deepin-wine6-stable环境的前提是什么？",
+              "answers": [
+                {
+                  "text": "新装的系统安装一款应用商店里使用deepin-wine6-stable运行的wine应用（如wine版微信、wine版QQ），并运行一下",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "3-38-4",
+              "question": "系统会自动执行什么操作？",
+              "answers": [
+                {
+                  "text": "系统会自动建立deepin-wine6-stable环境",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "一、下载Microsoft Office 2013安装镜像并解压 以下教学所用Microsoft Office 2013安装镜像（cn_office_professional_plus_2013_x86_x64_dvd_1149708.iso）从[MSDN网站下载](https://msdn.itellyou.cn/)。 Microsoft Office2013安装镜像iso文件放在下载文件夹（~/Downloads） 右键解压",
+          "qas": [
+            {
+              "id": "3-38-5",
+              "question": "文中使用的Microsoft Office 2013安装镜像从哪里下载？",
+              "answers": [
+                {
+                  "text": "MSDN网站",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "id": "3-38-6",
+              "question": "Microsoft Office2013安装镜像iso文件应放在哪个文件夹？",
+              "answers": [
+                {
+                  "text": "下载文件夹（~/Downloads）",
+                  "answer_start": 156
+                }
+              ]
+            },
+            {
+              "id": "3-38-7",
+              "question": "如何解压Microsoft Office2013安装镜像iso文件？",
+              "answers": [
+                {
+                  "text": "右键解压",
+                  "answer_start": 189
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "二、新建容器 新建一个32位的windows7容器（容器名为Deepin-Office） 终端命令： ```bash WINEARCH=win32 WINEPREFIX=~/.deepinwine/Deepin-Office deepin-wine6-stable winecfg ``` 上述命令结构解析： 1. `WINEARCH=`后面写win32，即表示新建一个32位的容器，如果写win64，即表示新建一个64位的容器。（目前wine对32位程序支持较好，若无特殊情况，建议新建32位容器） 2. `WINEPREFIX=`是指定的容器路径 3. `deepin-wine6-stable`是你使用的wine 4. `winecfg`是调出wine设置 注意：不同字段之间有一个空格（英文输入法），下同。 容器新建好后，就会在~/.deepinwine下多一个Deepin-Office的文件夹，这个文件夹就是模拟的windows系统环境，被称为wine容器",
+          "qas": [
+            {
+              "id": "3-38-8",
+              "question": "新建的容器名称是什么？",
+              "answers": [
+                {
+                  "text": "Deepin-Office",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "3-38-9",
+              "question": "新建32位windows7容器的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "WINEARCH=win32 WINEPREFIX=~/.deepinwine/Deepin-Office deepin-wine6-stable winecfg",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "id": "3-38-10",
+              "question": "`WINEARCH=win32`表示什么意思？",
+              "answers": [
+                {
+                  "text": "新建一个32位的容器",
+                  "answer_start": 194
+                }
+              ]
+            },
+            {
+              "id": "3-38-11",
+              "question": "`WINEPREFIX=`在命令中的作用是什么？",
+              "answers": [
+                {
+                  "text": "指定的容器路径",
+                  "answer_start": 307
+                }
+              ]
+            },
+            {
+              "id": "3-38-12",
+              "question": "容器新建好后，在哪个路径下会出现Deepin-Office文件夹？",
+              "answers": [
+                {
+                  "text": "~/.deepinwine",
+                  "answer_start": 466
+                }
+              ]
+            },
+            {
+              "id": "3-38-13",
+              "question": "如何新建32位容器？",
+              "answers": [
+                {
+                  "text": "`WINEARCH=`后面写win32",
+                  "answer_start": 183
+                }
+              ]
+            },
+            {
+              "id": "3-38-14",
+              "question": "建议新建什么类型的容器？为什么？",
+              "answers": [
+                {
+                  "text": "建议新建32位容器，因为目前wine对32位程序支持较好",
+                  "answer_start": 222
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "三、安装Microsoft Office 2013 终端命令： ```bash WINEPREFIX=~/.deepinwine/Deepin-Office deepin-wine6-stable ~/Downloads/cn_office_professional_plus_2013_x86_x64_dvd_1149708/setup.exe ``` 上述命令结构解析： 1. `WINEPREFIX=`是指定的容器路径 2. `deepin-wine6-stable`是你使用的wine 3. 最后接你要运行的exe程序的路径 弹出Office的安装引导界面后，按提示操作安装即可。",
+          "qas": [
+            {
+              "id": "3-38-15",
+              "question": "安装Microsoft Office 2013的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "WINEPREFIX=~/.deepinwine/Deepin-Office deepin-wine6-stable ~/Downloads/cn_office_professional_plus_2013_x86_x64_dvd_1149708/setup.exe",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "3-38-16",
+              "question": "安装命令中最后接的是什么？",
+              "answers": [
+                {
+                  "text": "你要运行的exe程序的路径",
+                  "answer_start": 275
+                }
+              ]
+            },
+            {
+              "id": "3-38-17",
+              "question": "弹出Office安装引导界面后应如何操作？",
+              "answers": [
+                {
+                  "text": "按提示操作安装即可",
+                  "answer_start": 307
+                }
+              ]
+            },
+            {
+              "id": "3-38-18",
+              "question": "命令中`WINEPREFIX=`的作用是什么？",
+              "answers": [
+                {
+                  "text": "是指定的容器路径",
+                  "answer_start": 188
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "四、测试运行 终端命令： ```bash WINEPREFIX=~/.deepinwine/Deepin-Office deepin-wine6-stable \"c:/Program Files/Microsoft Office/Office15/WINWORD.EXE\" ``` 上述命令结构解析： 1. `WINEPREFIX=`是指定的容器路径 2. `deepin-wine6-stable`是你使用的wine 3. 最后接英文双引号，双引号内是你要运行的exe程序在容器drive_c（即模拟的c盘）中的路径，这里测试的Word",
+          "qas": [
+            {
+              "id": "3-38-19",
+              "question": "测试运行Word的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "WINEPREFIX=~/.deepinwine/Deepin-Office deepin-wine6-stable \"c:/Program Files/Microsoft Office/Office15/WINWORD.EXE\"",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "id": "3-38-20",
+              "question": "测试运行命令中，双引号内的路径表示什么？",
+              "answers": [
+                {
+                  "text": "你要运行的exe程序在容器drive_c（即模拟的c盘）中的路径",
+                  "answer_start": 285
+                }
+              ]
+            },
+            {
+              "id": "3-38-21",
+              "question": "测试运行的是Office中的哪个程序？",
+              "answers": [
+                {
+                  "text": "Word",
+                  "answer_start": 375
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "五、制作桌面图标 以Access的图标为例，Word、Excel、PowerPoint的图标制作方法一样，就不一一介绍了。 在桌面新建一个txt文件，命名为MSACCESS.txt，复制以下内容到txt文件里： ```ini [Desktop Entry] Categories=Application Exec=sh -c 'WINEPREFIX=/home/$USER/.deepinwine/Deepin-Office deepin-wine6-stable \"c:/Program Files/Microsoft Office/Office15/MSACCESS.EXE\"' Icon=1F9D_MSACCESS.0 MimeType= Name=Access StartupNotify=true Type=Application X-Deepin-Vendor=user-custom ``` 保存退出txt，右键重命名，把这个txt文件的后缀改为desktop 注： Exec= ————sh -c 'WINEPREFIX=容器路径 deepin-wine6-stable \"exe主程序路径在虚拟C盘里的路径\"' Icon= ————指图标路径，如果图标在~/.local/share/icons/hicolor文件夹（及其子文件夹），就不用写完整路径，只需要写图标文件的文件名（不写文加后缀）。使用deepin-wine6-stable安装的exe程序，deepin-wine6-stable会将exe程序的图标文件放到~/.local/share/icons/hicolor的子文件夹里，是系统随机命名的。你只需要在hicolor文件夹搜索就可以找到了，然后把搜索出的文件名填到Icon=这一栏即可。（注意，上面的Icon=后面的文件名需要你自己改的） Name= ————图标文件显示的名称，这里填Access 特别说明，Exec=后面不能用`~`来代替`/home/$USER`",
+          "qas": [
+            {
+              "id": "3-38-22",
+              "question": "以Access为例，制作桌面图标的第一步是什么？",
+              "answers": [
+                {
+                  "text": "在桌面新建一个txt文件，命名为MSACCESS.txt",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "3-38-23",
+              "question": "MSACCESS.txt文件的后缀需要改成什么？",
+              "answers": [
+                {
+                  "text": "desktop",
+                  "answer_start": 445
+                }
+              ]
+            },
+            {
+              "id": "3-38-24",
+              "question": "Exec=字段的内容格式是什么？",
+              "answers": [
+                {
+                  "text": "sh -c 'WINEPREFIX=容器路径 deepin-wine6-stable \"exe主程序路径在虚拟C盘里的路径\"'",
+                  "answer_start": 483
+                }
+              ]
+            },
+            {
+              "id": "3-38-25",
+              "question": "Icon=字段中，若图标在~/.local/share/icons/hicolor文件夹，需要填写什么？",
+              "answers": [
+                {
+                  "text": "图标文件的文件名（不写文加后缀）",
+                  "answer_start": 617
+                }
+              ]
+            },
+            {
+              "id": "3-38-26",
+              "question": "Name=字段填写的是什么？",
+              "answers": [
+                {
+                  "text": "图标文件显示的名称，这里填Access",
+                  "answer_start": 921
+                }
+              ]
+            },
+            {
+              "id": "3-38-27",
+              "question": "Exec=后面能否用`~`代替`/home/$USER`？",
+              "answers": [
+                {
+                  "text": "不能",
+                  "answer_start": 974
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "六、双击运行桌面图标测试一下 成功运行",
+          "qas": [
+            {
+              "id": "3-38-28",
+              "question": "制作完桌面图标后如何测试？",
+              "answers": [
+                {
+                  "text": "双击运行桌面图标",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "3-38-29",
+              "question": "双击桌面图标测试的结果是什么？",
+              "answers": [
+                {
+                  "text": "成功运行",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "七、字体问题 为了一劳永逸解决wine应用字体显示乱码、方块、显示不出等问题，建议你安装星火应用商店里的“Win字体”",
+          "qas": [
+            {
+              "id": "3-38-30",
+              "question": "如何解决wine应用字体显示乱码、方块、显示不出等问题？",
+              "answers": [
+                {
+                  "text": "安装星火应用商店里的“Win字体”",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "3-38-31",
+              "question": "建议安装的字体来自哪里？",
+              "answers": [
+                {
+                  "text": "星火应用商店",
+                  "answer_start": 64
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

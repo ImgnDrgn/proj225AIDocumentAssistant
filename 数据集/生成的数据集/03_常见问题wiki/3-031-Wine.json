@@ -1,0 +1,394 @@
+{
+  "data": [
+    {
+      "title": "Wine",
+      "paragraphs": [
+        {
+          "context": "Wine（“Wine Is Not an Emulator” 的首字母缩写）是一个能够在多种 POSIX-compliant 操作系统（诸如 Linux，macOS 及 BSD 等）上运行 Windows 应用的兼容层。Wine 不是像虚拟机或者模拟器一样模仿内部的 Windows 逻辑，而是将 Windows API 调用翻译成为动态的 POSIX 调用，免除了性能和其他一些行为的内存占用，让你能够干净地集合 Windows 应用到你的桌面。",
+          "qas": [
+            {
+              "question": "Wine的全称是什么？",
+              "id": "3-31-1",
+              "answers": [
+                {
+                  "text": "Wine Is Not an Emulator",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "Wine是什么类型的软件？",
+              "id": "3-31-2",
+              "answers": [
+                {
+                  "text": "一个能够在多种 POSIX-compliant 操作系统上运行 Windows 应用的兼容层",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "Wine与虚拟机或模拟器的区别是什么？",
+              "id": "3-31-3",
+              "answers": [
+                {
+                  "text": "Wine 不是像虚拟机或者模拟器一样模仿内部的 Windows 逻辑，而是将 Windows API 调用翻译成为动态的 POSIX 调用",
+                  "answer_start": 111
+                }
+              ]
+            },
+            {
+              "question": "Wine支持哪些操作系统？",
+              "id": "3-31-4",
+              "answers": [
+                {
+                  "text": "Linux，macOS 及 BSD 等 POSIX-compliant 操作系统",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "question": "Wine 是什么？",
+              "id": "3-31-5",
+              "answers": [
+                {
+                  "text": "一个能够在多种 POSIX-compliant 操作系统（诸如 Linux，macOS 及 BSD 等）上运行 Windows 应用的兼容层",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "question": "Wine 如何工作？",
+              "id": "3-31-6",
+              "answers": [
+                {
+                  "text": "将 Windows API 调用翻译成为动态的 POSIX 调用",
+                  "answer_start": 99
+                }
+              ]
+            },
+            {
+              "question": "Wine 的主要优势是什么？",
+              "id": "3-31-7",
+              "answers": [
+                {
+                  "text": "免除了性能和其他一些行为的内存占用，让你能够干净地集合 Windows 应用到你的桌面",
+                  "answer_start": 142
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "默认情况下，Wine 将使用位于 `~/.wine/` 的默认容器。另见：[深度论坛：[新手教程] Deepin用wine安装的Windows软件目录在哪?](https://bbs.deepin.org/zh/post/227183)",
+          "qas": [
+            {
+              "question": "默认情况下，Wine使用的默认容器位于哪里？",
+              "id": "3-31-8",
+              "answers": [
+                {
+                  "text": "`~/.wine/`",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "Wine 的默认容器位于什么路径？",
+              "id": "3-31-9",
+              "answers": [
+                {
+                  "text": "~/.wine/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置 `WINEPREFIX` 变量可以改变使用的 Wine 容器的位置。如 `env WINEPREFIX=~/.wine/wineqq/ wine \"C:\\\\pcqq2021.exe\"` 将在位于 `~/.wine/wineqq/` 目录下的容器中启动 `C:\\pcqq2021.exe` 程序。",
+          "qas": [
+            {
+              "question": "如何改变Wine容器的位置？",
+              "id": "3-31-10",
+              "answers": [
+                {
+                  "text": "设置 `WINEPREFIX` 变量",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "举例说明如何使用WINEPREFIX变量启动程序？",
+              "id": "3-31-11",
+              "answers": [
+                {
+                  "text": "`env WINEPREFIX=~/.wine/wineqq/ wine \"C:\\\\pcqq2021.exe\"`（该命令在位于 `~/.wine/wineqq/` 目录下的容器中启动 `C:\\pcqq2021.exe` 程序）",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "在特定容器中启动程序的命令示例是什么？",
+              "id": "3-31-12",
+              "answers": [
+                {
+                  "text": "env WINEPREFIX=~/.wine/wineqq/ wine \"C:\\\\pcqq2021.exe\"",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin-Wine适配知识库：https://docs.qq.com/mind/DWFBpbmpjd0RtV2Z0",
+          "qas": [
+            {
+              "question": "Deepin-Wine适配知识库的链接是什么？",
+              "id": "3-31-13",
+              "answers": [
+                {
+                  "text": "https://docs.qq.com/mind/DWFBpbmpjd0RtV2Z0",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "为 Wine 程序添加快捷键，详见：[[新手教程] wine程序添加快捷键（通用）](https://bbs.deepin.org/zh/post/219312)",
+          "qas": [
+            {
+              "question": "哪里可以找到为Wine程序添加快捷键的详细方法？",
+              "id": "3-31-14",
+              "answers": [
+                {
+                  "text": "[[新手教程] wine程序添加快捷键（通用）](https://bbs.deepin.org/zh/post/219312)",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "关于为 Wine 程序添加快捷键的教程在哪里？",
+              "id": "3-31-15",
+              "answers": [
+                {
+                  "text": "详见：[[新手教程] wine程序添加快捷键（通用）](https://bbs.deepin.org/zh/post/219312)",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "*.desktop 文件创建，参见：[深度论坛：[新手教程] exe文件怎么打开运行](https://bbs.deepin.org/post/231651)",
+          "qas": [
+            {
+              "question": "关于*.desktop文件创建可以参考哪个链接？",
+              "id": "3-31-16",
+              "answers": [
+                {
+                  "text": "[深度论坛：[新手教程] exe文件怎么打开运行](https://bbs.deepin.org/post/231651)",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "关于创建 *.desktop 文件的教程链接是什么？",
+              "id": "3-31-17",
+              "answers": [
+                {
+                  "text": "参见：[深度论坛：[新手教程] exe文件怎么打开运行](https://bbs.deepin.org/post/231651)",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Winetricks 是一个帮助用户调整 Wine 设置、下载安装 Wine 所需的 Windows 组件的应用程序。执行命令安装：```sudo apt install winetricks``` 仓库地址为：https://github.com/Winetricks/winetricks",
+          "qas": [
+            {
+              "question": "Winetricks的功能是什么？",
+              "id": "3-31-18",
+              "answers": [
+                {
+                  "text": "帮助用户调整 Wine 设置、下载安装 Wine 所需的 Windows 组件",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "question": "如何安装Winetricks？",
+              "id": "3-31-19",
+              "answers": [
+                {
+                  "text": "执行命令```sudo apt install winetricks```",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "question": "Winetricks的仓库地址是什么？",
+              "id": "3-31-20",
+              "answers": [
+                {
+                  "text": "https://github.com/Winetricks/winetricks",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "question": "如何安装 Winetricks？",
+              "id": "3-31-21",
+              "answers": [
+                {
+                  "text": "执行命令安装：sudo apt install winetricks",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "wine 运行器是 gfdgd xi 使用 Python3 的 tkinter 制作的 wine 运行工具。可以在不打开终端的情况下选取 Wine 版本、选择容器、运行应用的工具。是对如下命令的简易封装：```WINEPREFIX=容器路径 wine（wine的路径） 可执行文件路径``` 仓库地址为：https://gitee.com/gfdgd-xi/deep-wine-runner",
+          "qas": [
+            {
+              "question": "wine运行器是谁制作的？使用什么工具制作的？",
+              "id": "3-31-22",
+              "answers": [
+                {
+                  "text": "gfdgd xi 使用 Python3 的 tkinter 制作的",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "wine运行器的功能是什么？",
+              "id": "3-31-23",
+              "answers": [
+                {
+                  "text": "可以在不打开终端的情况下选取 Wine 版本、选择容器、运行应用",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "wine运行器封装的命令是什么？",
+              "id": "3-31-24",
+              "answers": [
+                {
+                  "text": "```WINEPREFIX=容器路径 wine（wine的路径） 可执行文件路径```",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "question": "wine运行器的仓库地址是什么？",
+              "id": "3-31-25",
+              "answers": [
+                {
+                  "text": "https://gitee.com/gfdgd-xi/deep-wine-runner",
+                  "answer_start": 185
+                }
+              ]
+            },
+            {
+              "question": "wine 运行器是什么？",
+              "id": "3-31-26",
+              "answers": [
+                {
+                  "text": "gfdgd xi 使用 Python3 的 tkinter 制作的 wine 运行工具",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "wine 运行器封装了什么命令？",
+              "id": "3-31-27",
+              "answers": [
+                {
+                  "text": "WINEPREFIX=容器路径 wine（wine的路径） 可执行文件路径",
+                  "answer_start": 98
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如果终端执行遇到```Traceback (most recent call last):  File \"/usr/bin/deepin-wine-runner\", line 19, in <module>    import ttkthemesModuleNotFoundError: No module named 'ttkthemes'```执行：```sudo apt install python3-pip``````sudo pip3 install ttkthemes```",
+          "qas": [
+            {
+              "question": "执行wine运行器遇到\"ModuleNotFoundError: No module named 'ttkthemes'\"错误时，如何解决？",
+              "id": "3-31-28",
+              "answers": [
+                {
+                  "text": "执行：```sudo apt install python3-pip``````sudo pip3 install ttkthemes```",
+                  "answer_start": 192
+                }
+              ]
+            },
+            {
+              "question": "如何解决 ttkthemes 模块缺失问题？",
+              "id": "3-31-29",
+              "answers": [
+                {
+                  "text": "执行：sudo apt install python3-pip sudo pip3 install ttkthemes",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Vek，参见：[Vek](http://old.deepin.wiki/index.php?title=Vek)",
+          "qas": [
+            {
+              "question": "关于Vek可以参考哪里？",
+              "id": "3-31-30",
+              "answers": [
+                {
+                  "text": "[Vek](http://old.deepin.wiki/index.php?title=Vek)",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "关于 Vek 的参考信息在哪里？",
+              "id": "3-31-31",
+              "answers": [
+                {
+                  "text": "参见：Vek",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "请参阅：- https://wiki.archlinux.org/title/Wine - https://wiki.winehq.org/Main_Page",
+          "qas": [
+            {
+              "question": "关于Wine有哪些推荐的参考链接？",
+              "id": "3-31-32",
+              "answers": [
+                {
+                  "text": "https://wiki.archlinux.org/title/Wine 和 https://wiki.winehq.org/Main_Page",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "相关参考链接有哪些？",
+              "id": "3-31-33",
+              "answers": [
+                {
+                  "text": "- https://wiki.archlinux.org/title/Wine - https://wiki.winehq.org/Main_Page",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
