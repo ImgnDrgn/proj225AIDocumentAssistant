@@ -1,0 +1,234 @@
+{
+  "data": [
+    {
+      "title": "Linux下UEFI引导相关知识",
+      "paragraphs": [
+        {
+          "context": "CSM是UEFI的兼容性支持模块，用于兼容老BIOS，应关闭，否则可能出现问题。",
+          "qas": [
+            {
+              "question": "什么是CSM？为什么应关闭？",
+              "id": "3-94-1",
+              "answers": [
+                {
+                  "text": "CSM是UEFI的兼容性支持模块，用于兼容老BIOS，应关闭，否则可能出现问题。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI相比BIOS的关键改进：无512字节引导扇区限制，无MBR的4个分区及活动分区限制，可从不限大小的文件启动。",
+          "qas": [
+            {
+              "question": "UEFI相比BIOS有哪些关键改进？",
+              "id": "3-94-2",
+              "answers": [
+                {
+                  "text": "无512字节引导扇区限制，无MBR的4个分区及活动分区限制，可从不限大小的文件启动。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI启动步骤：1.主板读取设备引导文件；2.若无，读取bootx64.efi；3.若无，通过网络读取PXE服务器引导；4.若无，启动efi shell（若有）。",
+          "qas": [
+            {
+              "question": "UEFI的启动步骤是什么？",
+              "id": "3-94-3",
+              "answers": [
+                {
+                  "text": "1.主板读取设备引导文件；2.若无，读取bootx64.efi；3.若无，通过网络读取PXE服务器引导；4.若无，启动efi shell（若有）。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Windows支持UEFI的版本从Win7开始，且需选择64位版本。",
+          "qas": [
+            {
+              "question": "Windows从哪个版本开始支持UEFI？有什么位数要求？",
+              "id": "3-94-4",
+              "answers": [
+                {
+                  "text": "从Win7开始，需选择64位版本。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "bcdboot.exe可设定主板引导菜单，复制引导文件到ESP引导区，是推荐工具。",
+          "qas": [
+            {
+              "question": "bcdboot.exe的作用是什么？",
+              "id": "3-94-5",
+              "answers": [
+                {
+                  "text": "可设定主板引导菜单，复制引导文件到ESP引导区。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "转换磁盘为GPT格式可使用diskpart工具：进入diskpart，list disk选中目标磁盘，执行convert gpt。",
+          "qas": [
+            {
+              "question": "如何用diskpart将磁盘转换为GPT格式？",
+              "id": "3-94-6",
+              "answers": [
+                {
+                  "text": "进入diskpart，list disk选中目标磁盘，执行convert gpt。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ESP分区是存放引导文件的专门分区，格式为fat格式，供UEFI识别引导文件。",
+          "qas": [
+            {
+              "question": "ESP分区的作用和格式是什么？",
+              "id": "3-94-7",
+              "answers": [
+                {
+                  "text": "是存放引导文件的专门分区，格式为fat格式。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "bcdboot命令基本格式：bcdboot 系统 /l 语言 /s esp分区 /f UEFI，可复制引导文件并配置。",
+          "qas": [
+            {
+              "question": "bcdboot命令的基本格式是什么？",
+              "id": "3-94-8",
+              "answers": [
+                {
+                  "text": "bcdboot 系统 /l 语言 /s esp分区 /f UEFI",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux安装时需设置UEFI启动，关闭CSM和安全启动，磁盘分区表为GPT格式。",
+          "qas": [
+            {
+              "question": "Linux以UEFI方式安装需要哪些设置？",
+              "id": "3-94-9",
+              "answers": [
+                {
+                  "text": "设置UEFI启动，关闭CSM和安全启动，磁盘分区表为GPT格式。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI shell的常用命令：ls列出文件、cd进入目录、help查看帮助、reset重启系统。",
+          "qas": [
+            {
+              "question": "UEFI shell有哪些常用命令？",
+              "id": "3-94-10",
+              "answers": [
+                {
+                  "text": "ls列出文件、cd进入目录、help查看帮助、reset重启系统。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GRUB的主文件夹包括/boot/grub/、/etc/grub.d/、/etc/default/grub/等。",
+          "qas": [
+            {
+              "question": "GRUB的主文件夹有哪些？",
+              "id": "3-94-11",
+              "answers": [
+                {
+                  "text": "/boot/grub/、/etc/grub.d/、/etc/default/grub/",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "grub-install命令用于安装GRUB，--target参数可指定镜像类型，如x86_64-efi。",
+          "qas": [
+            {
+              "question": "grub-install命令的作用是什么？--target参数有什么用？",
+              "id": "3-94-12",
+              "answers": [
+                {
+                  "text": "用于安装GRUB，--target参数可指定镜像类型，如x86_64-efi。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "update-grub实际是调用grub-mkconfig更新/boot/grub/grub.cfg配置文件。",
+          "qas": [
+            {
+              "question": "update-grub的作用是什么？",
+              "id": "3-94-13",
+              "answers": [
+                {
+                  "text": "调用grub-mkconfig更新/boot/grub/grub.cfg配置文件。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI引导Windows的关键文件：bootmgfw.efi（核心引导程序）、bcd（引导菜单文件）。",
+          "qas": [
+            {
+              "question": "UEFI引导Windows的关键文件有哪些？",
+              "id": "3-94-14",
+              "answers": [
+                {
+                  "text": "bootmgfw.efi（核心引导程序）、bcd（引导菜单文件）。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "BOOTICE是一款bcd菜单编辑工具，版本1.3.4 x64可修改主板引导菜单。",
+          "qas": [
+            {
+              "question": "BOOTICE是什么工具？有什么功能？",
+              "id": "3-94-15",
+              "answers": [
+                {
+                  "text": "是一款bcd菜单编辑工具，版本1.3.4 x64可修改主板引导菜单。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

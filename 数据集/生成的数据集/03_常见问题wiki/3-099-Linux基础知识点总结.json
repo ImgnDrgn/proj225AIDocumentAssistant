@@ -1,0 +1,529 @@
+{
+  "data": [
+    {
+      "title": "Linux基础知识点总结",
+      "paragraphs": [
+        {
+          "context": "操作系统简称OS，是硬件基础上的第一层软件，是硬件和其它软件沟通的桥梁，控制其他程序运行，管理系统资源，提供基本计算功能和服务程序。",
+          "qas": [
+            {
+              "question": "什么是操作系统？",
+              "id": "3-99-1",
+              "answers": [
+                {
+                  "text": "操作系统简称OS，是硬件基础上的第一层软件，是硬件和其它软件沟通的桥梁。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "操作系统的作用是什么？",
+              "id": "3-99-2",
+              "answers": [
+                {
+                  "text": "控制其他程序运行，管理系统资源，提供基本计算功能和服务程序。",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux系统内核由Linus Torvalds维护，提供硬件抽象层等核心功能；Linux发行套件是内核与常用软件的集合，即我们常说的Linux操作系统。",
+          "qas": [
+            {
+              "question": "Linux系统内核与发行套件的区别是什么？",
+              "id": "3-99-3",
+              "answers": [
+                {
+                  "text": "Linux系统内核由Linus Torvalds维护，提供硬件抽象层等核心功能；Linux发行套件是内核与常用软件的集合。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux相比Windows具有稳定高效、免费、漏洞少且易修补、多任务多用户、安全的权限策略、适合嵌入式系统、相对不耗资源等特点。",
+          "qas": [
+            {
+              "question": "Linux相比Windows有哪些特点？",
+              "id": "3-99-4",
+              "answers": [
+                {
+                  "text": "稳定高效、免费、漏洞少且易修补、多任务多用户、安全的权限策略、适合嵌入式系统、相对不耗资源。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "常见Linux系统种类有红帽企业版RHEL、Fedora、CentOS、Deepin、Debian、Ubuntu等。",
+          "qas": [
+            {
+              "question": "常见的Linux系统种类有哪些？",
+              "id": "3-99-5",
+              "answers": [
+                {
+                  "text": "红帽企业版RHEL、Fedora、CentOS、Deepin、Debian、Ubuntu等。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过执行ssh root@121.42.11.34命令，输入服务器密码可登录远程服务器，黑色面板是终端即Shell。",
+          "qas": [
+            {
+              "question": "如何通过终端连接阿里云服务器？",
+              "id": "3-99-6",
+              "answers": [
+                {
+                  "text": "执行ssh root@服务器IP命令，输入服务器密码。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Shell是用户与内核交互的对话界面，是命令解释器，支持变量等语法，也是提供小工具的工具箱。常见Shell有sh、bash、csh、tcsh、ksh、zsh、fish，其中bash最常用。",
+          "qas": [
+            {
+              "question": "什么是Shell？",
+              "id": "3-99-7",
+              "answers": [
+                {
+                  "text": "Shell是用户与内核交互的对话界面，是命令解释器，也是提供小工具的工具箱。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "常见的Shell有哪些？",
+              "id": "3-99-8",
+              "answers": [
+                {
+                  "text": "sh、bash、csh、tcsh、ksh、zsh、fish。",
+                  "answer_start": 77
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "echo $SHELL可查看当前使用的Shell，cat /etc/shells可查看系统安装的所有Shell种类。",
+          "qas": [
+            {
+              "question": "如何查看当前正在使用的Shell？",
+              "id": "3-99-9",
+              "answers": [
+                {
+                  "text": "执行echo $SHELL命令。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何查看系统安装的所有Shell种类？",
+              "id": "3-99-10",
+              "answers": [
+                {
+                  "text": "执行cat /etc/shells命令。",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "pwd命令用于显示当前目录的路径，如[root@iZm5e8dsxce9ufaic7hi3uZ ~]# pwd输出/root。",
+          "qas": [
+            {
+              "question": "pwd命令的作用是什么？",
+              "id": "3-99-11",
+              "answers": [
+                {
+                  "text": "显示当前目录的路径。",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ls命令用于列出文件和目录，-a显示所有包括隐藏的，-l显示详细列表，-h适合人类阅读，-t按修改时间排序，-i显示inode。",
+          "qas": [
+            {
+              "question": "ls命令的作用是什么？",
+              "id": "3-99-12",
+              "answers": [
+                {
+                  "text": "列出文件和目录。",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "ls -a参数的作用是什么？",
+              "id": "3-99-13",
+              "answers": [
+                {
+                  "text": "显示所有文件和目录包括隐藏的。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cd命令用于切换目录，cd /跳转到根目录，cd ~跳转到家目录，cd ..跳转到上级目录，cd无参数也回到家目录。",
+          "qas": [
+            {
+              "question": "cd ~的作用是什么？",
+              "id": "3-99-14",
+              "answers": [
+                {
+                  "text": "跳转到家目录。",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "如何跳转到上级目录？",
+              "id": "3-99-15",
+              "answers": [
+                {
+                  "text": "执行cd ..命令。",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cat命令一次性显示文件所有内容，适合小文件；head显示文件开头几行，默认10行，-n指定行数；tail显示结尾几行，-f实时查看更新。",
+          "qas": [
+            {
+              "question": "cat命令适合查看什么样的文件？",
+              "id": "3-99-16",
+              "answers": [
+                {
+                  "text": "小的文件。",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "tail -f参数的作用是什么？",
+              "id": "3-99-17",
+              "answers": [
+                {
+                  "text": "每过1秒检查文件是否有更新内容，可通过-s指定间隔时间。",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "touch命令用于创建文件，如touch new_file；mkdir创建目录，-p递归创建目录结构，如mkdir -p one/two/three。",
+          "qas": [
+            {
+              "question": "如何创建一个文件？",
+              "id": "3-99-18",
+              "answers": [
+                {
+                  "text": "使用touch命令，如touch new_file。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "mkdir -p的作用是什么？",
+              "id": "3-99-19",
+              "answers": [
+                {
+                  "text": "递归创建目录结构。",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cp拷贝文件和目录，-r递归拷贝目录；mv移动或重命名文件/目录，如mv file new_file是重命名。",
+          "qas": [
+            {
+              "question": "如何递归拷贝一整个目录？",
+              "id": "3-99-20",
+              "answers": [
+                {
+                  "text": "使用cp -r命令。",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "mv命令可以实现什么功能？",
+              "id": "3-99-21",
+              "answers": [
+                {
+                  "text": "移动或重命名文件/目录。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "rm删除文件和目录，-i确认删除，-f强制删除，-r递归删除文件夹，著名操作rm -rf。",
+          "qas": [
+            {
+              "question": "rm -f参数的作用是什么？",
+              "id": "3-99-22",
+              "answers": [
+                {
+                  "text": "文件强制删除。",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "如何递归删除文件夹？",
+              "id": "3-99-23",
+              "answers": [
+                {
+                  "text": "使用rm -r命令。",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ln创建链接，硬链接使两文件共享inode，ln file1 file2；软链接类似快捷方式，ln -s file1 file2。",
+          "qas": [
+            {
+              "question": "如何创建硬链接？",
+              "id": "3-99-24",
+              "answers": [
+                {
+                  "text": "使用ln命令，如ln file1 file2。",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "软链接的创建命令是什么？",
+              "id": "3-99-25",
+              "answers": [
+                {
+                  "text": "ln -s file1 file2。",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "useradd添加新用户，如useradd lion；passwd修改密码，如passwd lion，需root权限。",
+          "qas": [
+            {
+              "question": "如何添加新用户？",
+              "id": "3-99-26",
+              "answers": [
+                {
+                  "text": "使用useradd命令，如useradd lion。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "修改用户密码使用什么命令？",
+              "id": "3-99-27",
+              "answers": [
+                {
+                  "text": "passwd命令，如passwd lion。",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "chmod修改文件权限，数字表示中r=4、w=2、x=1，如chmod 640 file.txt表示所有者rw、群组r、其他无权限。",
+          "qas": [
+            {
+              "question": "chmod 640表示什么权限？",
+              "id": "3-99-28",
+              "answers": [
+                {
+                  "text": "所有者具有rw权限，群组用户具有r权限，其它用户没有权限。",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "权限数字中r、w、x分别对应的值是多少？",
+              "id": "3-99-29",
+              "answers": [
+                {
+                  "text": "r=4、w=2、x=1。",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "locate搜索含关键字的文件目录，需先yum install mlocate安装，updatedb更新数据库，如locate file.txt。",
+          "qas": [
+            {
+              "question": "使用locate命令前需要做什么？",
+              "id": "3-99-30",
+              "answers": [
+                {
+                  "text": "安装mlocate（yum install mlocate）并更新数据库（updatedb）。",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "find用于查找文件，格式为find <何处> <何物> <做什么>，如find /var/log -name \"syslog\"在指定目录查syslog。",
+          "qas": [
+            {
+              "question": "find命令的基本格式是什么？",
+              "id": "3-99-31",
+              "answers": [
+                {
+                  "text": "find <何处> <何物> <做什么>。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "yum是CentOS默认包管理工具，yum install安装软件，yum remove删除，yum update更新，切换阿里云源需备份原repo、下载新repo、生成缓存。",
+          "qas": [
+            {
+              "question": "yum install命令的作用是什么？",
+              "id": "3-99-32",
+              "answers": [
+                {
+                  "text": "安装软件包。",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "question": "如何切换CentOS软件源为阿里云镜像？",
+              "id": "3-99-33",
+              "answers": [
+                {
+                  "text": "备份原repo文件，下载阿里云repo文件，生成缓存。",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "man命令查手册，man 3 rand查第三部分rand函数，man ls查ls用法；command --help快速查简要信息。",
+          "qas": [
+            {
+              "question": "如何使用man命令查看ls的用法手册？",
+              "id": "3-99-34",
+              "answers": [
+                {
+                  "text": "执行man ls命令。",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "command --help的作用是什么？",
+              "id": "3-99-35",
+              "answers": [
+                {
+                  "text": "快速查询命令的简要信息。",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "grep在文件中查找关键字并显示所在行，-i忽略大小写，-n显示行号，-r递归查找，如grep path /etc/profile。",
+          "qas": [
+            {
+              "question": "grep命令的作用是什么？",
+              "id": "3-99-36",
+              "answers": [
+                {
+                  "text": "在文件中查找关键字，并显示关键字所在行。",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": ">输出重定向到新文件，会覆盖已有文件；>>追加到文件末尾；|管道将一个命令输出作为另一个输入，如cut ... | sort ...。",
+          "qas": [
+            {
+              "question": ">和>>的区别是什么？",
+              "id": "3-99-37",
+              "answers": [
+                {
+                  "text": ">重定向到新文件，会覆盖已有文件；>>追加到文件末尾。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "管道|的作用是什么？",
+              "id": "3-99-38",
+              "answers": [
+                {
+                  "text": "将一个命令的输出作为另外一个命令的输入。",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "w命令显示当前登录用户及活动，包括时间、系统运行时间、负载等；ps显示进程快照，ps -ef列出所有进程；top显示动态进程列表。",
+          "qas": [
+            {
+              "question": "w命令能显示哪些信息？",
+              "id": "3-99-39",
+              "answers": [
+                {
+                  "text": "当前登录用户及活动，包括时间、系统运行时间、负载等。",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "如何列出所有进程？",
+              "id": "3-99-40",
+              "answers": [
+                {
+                  "text": "使用ps -ef命令。",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

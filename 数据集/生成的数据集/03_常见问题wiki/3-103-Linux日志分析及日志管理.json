@@ -1,0 +1,394 @@
+{
+  "data": [
+    {
+      "title": "Linux日志分析及日志管理",
+      "paragraphs": [
+        {
+          "context": "Linux系统中，日志记录系统中内核、服务和其它应用程序等的运行信息，解决问题时可帮助快速定位问题。日志由syslog守护进程处理，其配置文件位于/etc/syslog或/etc/syslogd或/etc/rsyslog.d，默认配置文件为/etc/syslog.conf或rsyslog.conf。",
+          "qas": [
+            {
+              "question": "Linux系统中日志记录了哪些内容？",
+              "id": "3-103-1",
+              "answers": [
+                {
+                  "text": "系统中包括内核、服务和其它应用程序等在内的运行信息。",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "处理Linux日志的守护进程是什么？",
+              "id": "3-103-2",
+              "answers": [
+                {
+                  "text": "syslog",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "syslog的默认配置文件是什么？",
+              "id": "3-103-3",
+              "answers": [
+                {
+                  "text": "/etc/syslog.conf或rsyslog.conf",
+                  "answer_start": 132
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UOS系统日志分为应用日志和系统日志。应用日志目录多为~/.cache/deepin/，如影院日志在~/.cache/deepin/deepin_movie/deepin-movie.log；部分在/var/log/，如uos应用商店日志在/var/log/lastore/daemon.log。",
+          "qas": [
+            {
+              "question": "UOS系统日志分为哪两类？",
+              "id": "3-103-4",
+              "answers": [
+                {
+                  "text": "应用日志和系统日志",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "UOS影院的日志位于哪个路径？",
+              "id": "3-103-5",
+              "answers": [
+                {
+                  "text": "~/.cache/deepin/deepin_movie/deepin-movie.log",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "uos应用商店的日志存放在哪里？",
+              "id": "3-103-6",
+              "answers": [
+                {
+                  "text": "/var/log/lastore/daemon.log",
+                  "answer_start": 107
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看应用日志可用cat/more/less/tail/head等命令，如用less结合grep查看错误日志：less ~/.cache/deepin/deepin-movie/deepin-movie.log |grep Error；用tail -f实时监控：tail -f ~/.cache/deepin/deepin-movie/deepin-movie.log。",
+          "qas": [
+            {
+              "question": "查看应用日志可以使用哪些命令？",
+              "id": "3-103-7",
+              "answers": [
+                {
+                  "text": "cat/more/less/tail/head等命令",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "如何查看UOS影院的错误日志？",
+              "id": "3-103-8",
+              "answers": [
+                {
+                  "text": "less ~/.cache/deepin/deepin-movie/deepin-movie.log |grep Error",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "怎样实时监控UOS影院的日志？",
+              "id": "3-103-9",
+              "answers": [
+                {
+                  "text": "tail -f ~/.cache/deepin/deepin-movie/deepin-movie.log",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux系统日志类型包括auth（用户认证日志）、authpriv（类似auth，仅特定用户查看）、console（系统控制台消息）、cron（计划任务日志）等。",
+          "qas": [
+            {
+              "question": "记录用户认证相关日志的类型是什么？",
+              "id": "3-103-10",
+              "answers": [
+                {
+                  "text": "auth",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "与auth类似但仅特定用户可查看的日志类型是什么？",
+              "id": "3-103-11",
+              "answers": [
+                {
+                  "text": "authpriv",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "系统定期执行计划任务产生的日志属于哪种类型？",
+              "id": "3-103-12",
+              "answers": [
+                {
+                  "text": "cron",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux日志级别数值越小优先级越高，0为emerg（紧急情况，系统不可用），1为alert（需立即修复），2为crit（危险情况），3为err（一般错误），4为warning（警告）等。",
+          "qas": [
+            {
+              "question": "Linux日志级别中数值与优先级的关系是什么？",
+              "id": "3-103-13",
+              "answers": [
+                {
+                  "text": "数值越小，优先级越高",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "优先级最高的日志级别是什么？其含义是什么？",
+              "id": "3-103-14",
+              "answers": [
+                {
+                  "text": "emerg，紧急情况，系统不可用",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "表示一般错误消息的日志级别是哪个？数值是多少？",
+              "id": "3-103-15",
+              "answers": [
+                {
+                  "text": "err，3",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "rsyslog.conf配置文件基本格式为“服务名称[连接符号]日志等级 日志记录位置”，如user.err /var/log/user.err。连接符号“.”表示记录当前等级及更高等级日志，“.=”表示只记录所需等级，“.!”表示除该等级外都记录。",
+          "qas": [
+            {
+              "question": "rsyslog.conf配置文件的基本格式是什么？",
+              "id": "3-103-16",
+              "answers": [
+                {
+                  "text": "服务名称[连接符号]日志等级 日志记录位置",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "连接符号“.”在rsyslog.conf中有什么含义？",
+              "id": "3-103-17",
+              "answers": [
+                {
+                  "text": "表示只记录比当前等级（包含该等级）高的日志",
+                  "answer_start": 81
+                }
+              ]
+            },
+            {
+              "question": "如何配置只记录err等级的日志？",
+              "id": "3-103-18",
+              "answers": [
+                {
+                  "text": "使用“.=”连接符号，如*.=err /var/log/err",
+                  "answer_start": 129
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改rsyslog.conf后需重启rsyslog服务，命令有sudo service rsyslog restart、/etc/init.d/rsyslog restart、systemctl restart rsyslog。查看服务状态可用chkconfig --list rsyslog或systemctl status rsyslog。",
+          "qas": [
+            {
+              "question": "修改rsyslog.conf配置文件后如何使其生效？",
+              "id": "3-103-19",
+              "answers": [
+                {
+                  "text": "重启rsyslog服务",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "重启rsyslog服务的命令有哪些？",
+              "id": "3-103-20",
+              "answers": [
+                {
+                  "text": "sudo service rsyslog restart、/etc/init.d/rsyslog restart、systemctl restart rsyslog",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "如何查看rsyslog服务的状态？",
+              "id": "3-103-21",
+              "answers": [
+                {
+                  "text": "chkconfig --list rsyslog或systemctl status rsyslog",
+                  "answer_start": 132
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "logrotate用于日志轮替，配置文件为/etc/logrotate.conf。dateext参数注释时，日志轮替会改名，如user日志第一次转存为user.1，第二次user.1改为user.2等，到一定规则压缩为user.x.gz；开放则用日期作为后缀，如user-20200628。",
+          "qas": [
+            {
+              "question": "用于日志轮替的工具是什么？",
+              "id": "3-103-22",
+              "answers": [
+                {
+                  "text": "logrotate",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "logrotate的配置文件是什么？",
+              "id": "3-103-23",
+              "answers": [
+                {
+                  "text": "/etc/logrotate.conf",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "当dateext参数被注释时，日志轮替如何命名？",
+              "id": "3-103-24",
+              "answers": [
+                {
+                  "text": "日志文件会自动改名，如user日志第一次转存为user.1，第二次user.1改为user.2等，到一定规则压缩为user.x.gz(x: 1、2、3、4...)",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "自定义日志轮替有两种方法：直接修改/etc/logrotate.conf写入轮替策略；在/etc/logrotate.d/目录新建轮替文件写入规则，推荐后者。logrotate依赖系统定时任务，/etc/cron.daily/目录有logrotate文件，也可用logrotate命令直接轮替，如logrotate -f /etc/logrotate.d/logfile。",
+          "qas": [
+            {
+              "question": "自定义日志文件加入轮替的方法有哪些？",
+              "id": "3-103-25",
+              "answers": [
+                {
+                  "text": "1. 直接修改/etc/logrotate.conf 配置文件中写入该日志的轮替策略；2. 在 /etc/logrotate.d/目录中新建立该日志的轮替文件，在该轮替文件中写入正确的轮替规则。",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "推荐哪种自定义日志轮替的方法？为什么？",
+              "id": "3-103-26",
+              "answers": [
+                {
+                  "text": "在/etc/logrotate.d/目录中新建立该日志的轮替文件，因为系统中需要轮替的日志非常多，如果全部直接写入/etc/logrotate.conf配置文件，可管理性差，不利于维护。",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "question": "如何用命令直接实现日志轮替？举个例子。",
+              "id": "3-103-27",
+              "answers": [
+                {
+                  "text": "logrotate [选项] 配置文件名，如logrotate -f /etc/logrotate.d/logfile",
+                  "answer_start": 228
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/var/log/messages包含整体系统信息及系统启动日志，还有mail、cron等内容；/var/log/dmesg含内核缓冲信息，系统启动时硬件信息可用dmesg查看；/var/log/auth.log含系统授权信息。",
+          "qas": [
+            {
+              "question": "/var/log/messages包含哪些内容？",
+              "id": "3-103-28",
+              "answers": [
+                {
+                  "text": "包括整体系统信息，其中也包含系统启动期间的日志。此外，mail，cron，daemon，kern和auth等内容也记录在var/log/messages日志中",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "哪个日志文件包含内核缓冲信息？如何查看系统启动时的硬件信息？",
+              "id": "3-103-29",
+              "answers": [
+                {
+                  "text": "/var/log/dmesg，用dmesg命令查看",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "/var/log/auth.log记录什么信息？",
+              "id": "3-103-30",
+              "answers": [
+                {
+                  "text": "包含系统授权信息，包括用户登录和使用的权限机制等",
+                  "answer_start": 145
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "journalctl工具用于检索systemd日志，包括内核、系统及服务日志。不带选项显示全部日志，--no-pager不分页输出，-b查看本次启动日志，-f实时滚动显示最新日志。",
+          "qas": [
+            {
+              "question": "journalctl工具的作用是什么？",
+              "id": "3-103-31",
+              "answers": [
+                {
+                  "text": "用于检索 systemd 日志，提取由 systemd-journal 服务搜集的日志，主要包括内核/系统日志、服务日志",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "如何用journalctl不分页输出日志？",
+              "id": "3-103-32",
+              "answers": [
+                {
+                  "text": "journalctl --no-pager",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "journalctl如何查看本次启动的日志？如何实时滚动显示最新日志？",
+              "id": "3-103-33",
+              "answers": [
+                {
+                  "text": "查看本次启动的日志：journalctl -b；实时滚动显示最新日志：journalctl -f",
+                  "answer_start": 88
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

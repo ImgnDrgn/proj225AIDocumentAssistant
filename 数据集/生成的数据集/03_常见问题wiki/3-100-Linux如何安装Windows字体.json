@@ -1,0 +1,234 @@
+{
+  "data": [
+    {
+      "title": "Linux如何安装Windows字体",
+      "paragraphs": [
+        {
+          "context": "安装WPS Office后，因字体版权限制无Windows字体，需在Linux安装。",
+          "qas": [
+            {
+              "question": "为什么需要在Linux上安装Windows字体？",
+              "id": "3-100-1",
+              "answers": [
+                {
+                  "text": "安装WPS Office后，因字体版权限制无Windows字体",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "可下载从Win10 LTSC2019 ISO提取的7z格式字体包，夸克网盘链接：https://pan.quark.cn/s/5e9bdc9c638a（提取码：ccBP），百度网盘链接：https://pan.baidu.com/s/1tKd_jYkwee-gUbIy_I-7jw（提取码：a4f4）。",
+          "qas": [
+            {
+              "question": "不想自己提取Windows字体时，可在哪里下载现成的字体包？",
+              "id": "3-100-2",
+              "answers": [
+                {
+                  "text": "夸克网盘链接：https://pan.quark.cn/s/5e9bdc9c638a（提取码：ccBP），百度网盘链接：https://pan.baidu.com/s/1tKd_jYkwee-gUbIy_I-7jw（提取码：a4f4）",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "现成的Windows字体包来自哪里？",
+              "id": "3-100-3",
+              "answers": [
+                {
+                  "text": "Win10 LTSC2019 ISO",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Win10镜像可从https://next.itellyou.cn/下载，需挂载镜像，先执行sudo mkdir /mnt/iso创建挂载点，再用sudo mount -o loop 镜像路径 /mnt/iso挂载。",
+          "qas": [
+            {
+              "question": "哪里可以下载Win10镜像？",
+              "id": "3-100-4",
+              "answers": [
+                {
+                  "text": "https://next.itellyou.cn/",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "挂载Win10镜像前需要创建哪个挂载点？",
+              "id": "3-100-5",
+              "answers": [
+                {
+                  "text": "/mnt/iso",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "挂载Win10镜像的命令是什么？",
+              "id": "3-100-6",
+              "answers": [
+                {
+                  "text": "sudo mount -o loop 镜像路径 /mnt/iso",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "question": "挂载命令中-o loop参数的作用是什么？",
+              "id": "3-100-7",
+              "answers": [
+                {
+                  "text": "将一个文件作为硬盘分区挂载",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "挂载后需安装wimlib/wimtools，命令为sudo apt update和sudo apt install wimtools，再创建Win10Fonts文件夹，用sudo wimextract命令解压install.wim或install.esd中的Fonts文件夹。",
+          "qas": [
+            {
+              "question": "解压Win10镜像中的Fonts文件夹前需要安装什么工具？",
+              "id": "3-100-8",
+              "answers": [
+                {
+                  "text": "wimlib/wimtools",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "安装wimlib/wimtools的命令是什么？",
+              "id": "3-100-9",
+              "answers": [
+                {
+                  "text": "sudo apt update和sudo apt install wimtools",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "question": "用于临时放置字体的文件夹叫什么？",
+              "id": "3-100-10",
+              "answers": [
+                {
+                  "text": "Win10Fonts",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "question": "解压install.wim中的Fonts文件夹的命令是什么？",
+              "id": "3-100-11",
+              "answers": [
+                {
+                  "text": "sudo wimextract /mnt/iso/sources/install.wim 1 /Windows/Fonts --dest-dir=Win10Fonts",
+                  "answer_start": 104
+                }
+              ]
+            },
+            {
+              "question": "解压install.esd中的Fonts文件夹的命令是什么？",
+              "id": "3-100-12",
+              "answers": [
+                {
+                  "text": "sudo wimextract /mnt/iso/sources/install.esd 1 /Windows/Fonts --dest-dir=Win10Fonts",
+                  "answer_start": 185
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Win10字体需在系统字体目录建Win10Fonts文件夹，命令sudo mkdir /usr/share/fonts/Win10Fonts，复制ttf、ttc字体，改权限为644，刷新缓存用sudo fc-cache -fv。",
+          "qas": [
+            {
+              "question": "系统字体目录中存放Win10字体的文件夹路径是什么？",
+              "id": "3-100-13",
+              "answers": [
+                {
+                  "text": "/usr/share/fonts/Win10Fonts",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "question": "创建系统字体目录中Win10字体文件夹的命令是什么？",
+              "id": "3-100-14",
+              "answers": [
+                {
+                  "text": "sudo mkdir /usr/share/fonts/Win10Fonts",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "需要复制到系统字体目录的字体文件格式有哪些？",
+              "id": "3-100-15",
+              "answers": [
+                {
+                  "text": "ttf、ttc",
+                  "answer_start": 100
+                }
+              ]
+            },
+            {
+              "question": "复制ttf字体到系统字体目录的命令是什么？",
+              "id": "3-100-16",
+              "answers": [
+                {
+                  "text": "sudo cp -r Win10Fonts/*.ttf /usr/share/fonts/Win10Fonts/",
+                  "answer_start": 108
+                }
+              ]
+            },
+            {
+              "question": "复制ttc字体到系统字体目录的命令是什么？",
+              "id": "3-100-17",
+              "answers": [
+                {
+                  "text": "sudo cp -r Win10Fonts/*.ttc /usr/share/fonts/Win10Fonts/",
+                  "answer_start": 165
+                }
+              ]
+            },
+            {
+              "question": "安装后字体文件的权限应设置为多少？",
+              "id": "3-100-18",
+              "answers": [
+                {
+                  "text": "644",
+                  "answer_start": 221
+                }
+              ]
+            },
+            {
+              "question": "更改字体文件权限的命令是什么？",
+              "id": "3-100-19",
+              "answers": [
+                {
+                  "text": "sudo chmod 644 /usr/share/fonts/Win10Fonts/*",
+                  "answer_start": 205
+                }
+              ]
+            },
+            {
+              "question": "刷新字体缓存的命令是什么？",
+              "id": "3-100-20",
+              "answers": [
+                {
+                  "text": "sudo fc-cache -fv",
+                  "answer_start": 261
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

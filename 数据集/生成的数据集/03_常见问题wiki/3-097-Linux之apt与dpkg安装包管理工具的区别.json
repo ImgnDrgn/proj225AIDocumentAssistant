@@ -1,0 +1,244 @@
+{
+  "data": [
+    {
+      "title": "Linux之apt与dpkg安装包管理工具的区别",
+      "paragraphs": [
+        {
+          "context": "apt与dpkg均为ubuntu的包管理工具。dpkg侧重本地软件管理，apt基于dpkg，侧重重于远程包的下载和依赖管理，是dpkg的前端。",
+          "qas": [
+            {
+              "question": "apt与dpkg是什么？",
+              "id": "3-97-1",
+              "answers": [
+                {
+                  "text": "均为ubuntu下面的包管理工具",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "dpkg侧重于什么？",
+              "id": "3-97-2",
+              "answers": [
+                {
+                  "text": "本地软件的管理",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "apt与dpkg的关系是什么？",
+              "id": "3-97-3",
+              "answers": [
+                {
+                  "text": "apt基于dpkg，侧重于远程包的下载和依赖管理，相当于dpkg的前端",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpkg仅用于安装本地软件包，安装时不安装依赖包，不解决依赖问题，命令为sudo dpkg -i <package_name>.deb。",
+          "qas": [
+            {
+              "question": "dpkg用于安装什么样的软件包？",
+              "id": "3-97-4",
+              "answers": [
+                {
+                  "text": "本地的软件包",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "dpkg安装软件包时会处理依赖问题吗？",
+              "id": "3-97-5",
+              "answers": [
+                {
+                  "text": "不会安装依赖包，不解决依赖问题",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "使用dpkg安装软件包的命令是什么？",
+              "id": "3-97-6",
+              "answers": [
+                {
+                  "text": "sudo dpkg -i <package_name>.deb",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt默认从远程仓库搜索包、下载并安装，会自动安装依赖包并解决依赖问题，命令为sudo apt install <package_name>。",
+          "qas": [
+            {
+              "question": "apt默认从哪里搜索包？",
+              "id": "3-97-7",
+              "answers": [
+                {
+                  "text": "远程仓库",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "apt安装软件包时会处理依赖吗？",
+              "id": "3-97-8",
+              "answers": [
+                {
+                  "text": "会自动安装依赖包，并解决依赖问题",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "apt安装远程仓库软件包的命令是什么？",
+              "id": "3-97-9",
+              "answers": [
+                {
+                  "text": "sudo apt install <package_name>",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt从本地安装需在包名前指定路径，命令为sudo apt install <path>/<package_name>.deb。",
+          "qas": [
+            {
+              "question": "apt如何从本地安装软件包？",
+              "id": "3-97-10",
+              "answers": [
+                {
+                  "text": "在包名前指定路径，使用命令sudo apt install <path>/<package_name>.deb",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpkg查看指定包的版本、架构和描述信息的命令为dpkg -l <package_name>或dpkg --list <package_name>。",
+          "qas": [
+            {
+              "question": "如何用dpkg查看指定包的版本、架构和描述信息？",
+              "id": "3-97-11",
+              "answers": [
+                {
+                  "text": "dpkg -l <package_name> 或 dpkg --list <package_name>",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpkg列出所有已安装的包及其版本、架构和描述信息的命令为dpkg -l，相当于apt list --installed。",
+          "qas": [
+            {
+              "question": "dpkg列出所有已安装包信息的命令是什么？",
+              "id": "3-97-12",
+              "answers": [
+                {
+                  "text": "dpkg -l",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "与dpkg -l功能相当的apt命令是什么？",
+              "id": "3-97-13",
+              "answers": [
+                {
+                  "text": "apt list --installed",
+                  "answer_start": 58
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpkg查看包的安装路径的命令为dpkg -L <package_name>。",
+          "qas": [
+            {
+              "question": "如何用dpkg查看包的安装路径？",
+              "id": "3-97-14",
+              "answers": [
+                {
+                  "text": "dpkg -L <package_name>",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpkg查看包是否安装的命令为dpkg -s <package_name>或dpkg --status <package_name>。",
+          "qas": [
+            {
+              "question": "如何用dpkg查看包是否安装？",
+              "id": "3-97-15",
+              "answers": [
+                {
+                  "text": "dpkg -s <package_name> 或 dpkg --status <package_name>",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt更新包信息的命令为sudo apt update。",
+          "qas": [
+            {
+              "question": "apt更新包信息的命令是什么？",
+              "id": "3-97-16",
+              "answers": [
+                {
+                  "text": "sudo apt update",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt根据包信息升级包的命令为sudo apt upgrade。",
+          "qas": [
+            {
+              "question": "apt升级包的命令是什么？",
+              "id": "3-97-17",
+              "answers": [
+                {
+                  "text": "sudo apt upgrade",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt删除不再需要的依赖包的命令为sudo apt autoremove。",
+          "qas": [
+            {
+              "question": "apt删除不再需要的依赖包的命令是什么？",
+              "id": "3-97-18",
+              "answers": [
+                {
+                  "text": "sudo apt autoremove",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

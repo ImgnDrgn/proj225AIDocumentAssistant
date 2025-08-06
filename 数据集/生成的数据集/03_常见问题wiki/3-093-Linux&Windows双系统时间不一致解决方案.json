@@ -1,0 +1,179 @@
+{
+  "data": [
+    {
+      "title": "Linux&Windows双系统时间不一致解决方案",
+      "paragraphs": [
+        {
+          "context": "Windows直接把CMOS时间认定为当前显示时间，不根据时区转换，调整时区会修改CMOS时间。",
+          "qas": [
+            {
+              "question": "Windows如何处理CMOS时间和显示时间的关系？",
+              "id": "3-93-1",
+              "answers": [
+                {
+                  "text": "直接把CMOS时间认定为当前显示时间，不根据时区转换",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Windows调整时区会对CMOS时间产生什么影响？",
+              "id": "3-93-2",
+              "answers": [
+                {
+                  "text": "调整时区会修改CMOS时间",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux以CMOS时间为格林威治标准时间，根据系统时区确定显示时间，如时区为GMT+08:00、CMOS时间03:00时，显示时间为11:00。",
+          "qas": [
+            {
+              "question": "Linux如何根据CMOS时间和时区确定显示时间？",
+              "id": "3-93-3",
+              "answers": [
+                {
+                  "text": "以CMOS时间为格林威治标准时间，根据系统时区确定显示时间",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "当时区为GMT+08:00、CMOS时间为03:00时，Linux的显示时间是多少？",
+              "id": "3-93-4",
+              "answers": [
+                {
+                  "text": "11:00",
+                  "answer_start": 82
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解决双系统时间不一致有两个办法：让Windows启用UTC；让Ubuntu禁用UTC，推荐第二种。",
+          "qas": [
+            {
+              "question": "解决Linux&Windows双系统时间不一致的办法有哪些？",
+              "id": "3-93-5",
+              "answers": [
+                {
+                  "text": "让Windows启用UTC；让Ubuntu禁用UTC",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "推荐哪种解决双系统时间不一致的办法？",
+              "id": "3-93-6",
+              "answers": [
+                {
+                  "text": "让Ubuntu禁用UTC",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Windows下启用UTC：Win+R打开运行，输入regedit启动注册表编辑器，找到HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Control/TimeZoneInformation/，添加REG_DWORD类型键值RealTimeIsUniversal，值为1，重启生效。",
+          "qas": [
+            {
+              "question": "如何在Windows下启用UTC？",
+              "id": "3-93-7",
+              "answers": [
+                {
+                  "text": "Win+R打开运行，输入regedit启动注册表编辑器，找到HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Control/TimeZoneInformation/，添加REG_DWORD类型键值RealTimeIsUniversal，值为1，重启生效。",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "在Windows启用UTC时，需添加的键值类型是什么？",
+              "id": "3-93-8",
+              "answers": [
+                {
+                  "text": "REG_DWORD",
+                  "answer_start": 134
+                }
+              ]
+            },
+            {
+              "question": "Windows下启用UTC添加的键值名称和值分别是什么？",
+              "id": "3-93-9",
+              "answers": [
+                {
+                  "text": "名称为RealTimeIsUniversal，值为1",
+                  "answer_start": 146
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Ubuntu下关闭UTC：Ctrl+Alt+T调出终端，输入sudo vim /etc/default/rcS，找到UTC=yes改成UTC=no，保存即生效。",
+          "qas": [
+            {
+              "question": "如何在Ubuntu下关闭UTC？",
+              "id": "3-93-10",
+              "answers": [
+                {
+                  "text": "Ctrl+Alt+T调出终端，输入sudo vim /etc/default/rcS，找到UTC=yes改成UTC=no，保存即生效。",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "在Ubuntu关闭UTC时，终端输入的命令是什么？",
+              "id": "3-93-11",
+              "answers": [
+                {
+                  "text": "sudo vim /etc/default/rcS",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "Ubuntu下关闭UTC需要修改哪一行内容？",
+              "id": "3-93-12",
+              "answers": [
+                {
+                  "text": "将UTC=yes改成UTC=no",
+                  "answer_start": 73
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "推荐在Linux下打开终端，输入timedatectl set-local-rtc 1，再输入timedatectl解决时间问题。",
+          "qas": [
+            {
+              "question": "推荐在Linux下用什么命令解决双系统时间问题？",
+              "id": "3-93-13",
+              "answers": [
+                {
+                  "text": "先输入timedatectl set-local-rtc 1，再输入timedatectl",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "Linux下解决时间问题的第一个推荐命令是什么？",
+              "id": "3-93-14",
+              "answers": [
+                {
+                  "text": "timedatectl set-local-rtc 1",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
