@@ -1,0 +1,239 @@
+{
+  "data": [
+    {
+      "title": "Coredump工具使用与日志导出",
+      "paragraphs": [
+        {
+          "context": "安装Coredump工具：打开终端，输入命令：sudo apt install systemd-coredump。配置正确源可成功安装。",
+          "qas": [
+            {
+              "question": "如何安装Coredump工具？",
+              "id": "3-81-1",
+              "answers": [
+                {
+                  "text": "打开终端，输入命令：sudo apt install systemd-coredump。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Coredump失败，依赖不够时，根据提示安装依赖；找不到安装包，可执行sudo apt update后安装，或添加源地址到/etc/apt/sources.list。",
+          "qas": [
+            {
+              "question": "安装Coredump遇到依赖不够怎么办？",
+              "id": "3-81-2",
+              "answers": [
+                {
+                  "text": "根据提示安装提示的依赖。",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "找不到systemd-coredump安装包时，有哪些解决方案？",
+              "id": "3-81-3",
+              "answers": [
+                {
+                  "text": "1. 执行命令：sudo apt update 之后安装，重启电脑，再安装 systemd-coredump。2. 在配置文件/etc/apt/sources.list下添加新的源地址，保存后再次执行安装命令，或者更新后重启再执行安装。",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开启Coredump：执行ulimit -c，结果为0则未开启，执行ulimit -c unlimited开启，再次查询为unlimited则成功。",
+          "qas": [
+            {
+              "question": "如何判断Coredump是否开启？",
+              "id": "3-81-4",
+              "answers": [
+                {
+                  "text": "执行命令：ulimit -c，结果出现0则没有开启成功，出现unlimited则成功开启。",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "如何开启Coredump？",
+              "id": "3-81-5",
+              "answers": [
+                {
+                  "text": "执行命令ulimit -c unlimited。",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开启Coredump不顺利时，可修改/etc/profile、用户的~/.bashrc或~/.bash_profile、/etc/security/limits.conf文件，修改后需使配置生效。",
+          "qas": [
+            {
+              "question": "输入ulimit -c unlimited后查询结果还是0，该如何处理？",
+              "id": "3-81-6",
+              "answers": [
+                {
+                  "text": "进入到 /etc/profile 或者 /etc/security/limits.conf 文件中进行配置，或修改此用户的 ~/.bashrc 或者 ~/.bash_profile 文件，修改后需要执行命令让配置生效。",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "修改/etc/profile文件开启Coredump的方法是什么？",
+              "id": "3-81-7",
+              "answers": [
+                {
+                  "text": "找到ulimit -S -c 0 > /dev/null 2>&1，将0改为unlimited；若没有，在文档最后加上ulimit -c unlimited或ulimit -S -c unlimited > /dev/null 2>&1，然后执行source /etc/profile使配置生效。",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "获取Coredump日志：用coredumpctl或coredumpctl list查看，日志路径为/var/lib/systemd/coredump，是压缩文件需解压。",
+          "qas": [
+            {
+              "question": "如何查看Coredump日志？",
+              "id": "3-81-8",
+              "answers": [
+                {
+                  "text": "打开终端输入命令：coredumpctl 或者 coredumpctl list。",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "Coredump日志的存储路径是什么？",
+              "id": "3-81-9",
+              "answers": [
+                {
+                  "text": "/var/lib/systemd/coredump",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用gdb查看Coredump日志：执行coredumpctl gdb pid，打开后执行bt查看详细信息。",
+          "qas": [
+            {
+              "question": "如何用gdb查看Coredump日志的详细信息？",
+              "id": "3-81-10",
+              "answers": [
+                {
+                  "text": "打开终端命令：coredumpctl gdb pid，执行后，再执行命令bt。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "coredump是程序异常退出时产生的包含内存、寄存器状态等信息的文件，可用于定位问题。",
+          "qas": [
+            {
+              "question": "什么是coredump？",
+              "id": "3-81-11",
+              "answers": [
+                {
+                  "text": "程序由于各种异常或者bug导致在运行过程中异常退出或者终止，并且在满足一定条件下会产生的一个包含了程序运行时的内存，寄存器状态，堆栈指针，内存管理信息还有各种函数调用堆栈信息等的文件。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ulimit -c用于设置最大的core文件大小，ulimit -c unlimited表示对生成的core文件大小不限制。",
+          "qas": [
+            {
+              "question": "ulimit -c的作用是什么？",
+              "id": "3-81-12",
+              "answers": [
+                {
+                  "text": "设置最大的 core 文件的大小，以 blocks 为单位。",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "ulimit -c unlimited表示什么？",
+              "id": "3-81-13",
+              "answers": [
+                {
+                  "text": "对生成的 core 文件的大小不进行限制。",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "造成程序coredump的原因包括内存访问越界、多线程使用不安全函数、数据未加锁保护、非法指针、堆栈溢出等。",
+          "qas": [
+            {
+              "question": "造成程序coredump的原因有哪些？",
+              "id": "3-81-14",
+              "answers": [
+                {
+                  "text": "1. 内存访问越界；2. 多线程程序使用了线程不安全的函数；3. 多线程读写的数据未加锁保护；4. 非法指针；5. 堆栈溢出。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "内存访问越界包括数组访问越界、字符串无结束符、使用不安全字符串操作函数等。",
+          "qas": [
+            {
+              "question": "内存访问越界有哪些情况？",
+              "id": "3-81-15",
+              "answers": [
+                {
+                  "text": "a) 由于使用错误的下标，导致数组访问越界。b) 搜索字符串时，依靠字符串结束符来判断字符串是否结束，但是字符串没有正常的使用结束符。c) 使用strcpy等字符串操作函数，将目标字符串读/写爆。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "防止字符串操作越界应使用strncpy, strlcpy等函数。",
+          "qas": [
+            {
+              "question": "为防止字符串操作越界，应使用哪些函数？",
+              "id": "3-81-16",
+              "answers": [
+                {
+                  "text": "strncpy, strlcpy, strncat, strlcat, snprintf, strncmp, strncasecmp等函数。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "非法指针导致coredump包括使用空指针、随意转换指针。",
+          "qas": [
+            {
+              "question": "哪些非法指针操作会导致coredump？",
+              "id": "3-81-17",
+              "answers": [
+                {
+                  "text": "a) 使用空指针；b) 随意使用指针转换。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

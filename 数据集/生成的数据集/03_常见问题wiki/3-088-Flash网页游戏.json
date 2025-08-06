@@ -1,0 +1,129 @@
+{
+  "data": [
+    {
+      "title": "Flash网页游戏",
+      "paragraphs": [
+        {
+          "context": "在deepin系统中安装flash插件可通过终端执行命令：sudo apt install browser-plugin-freshplayer-pepperflash。",
+          "qas": [
+            {
+              "question": "在deepin系统中如何安装flash插件？",
+              "id": "3-88-1",
+              "answers": [
+                {
+                  "text": "通过终端执行命令：sudo apt install browser-plugin-freshplayer-pepperflash。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在deepin系统中，可安装firefox-esr浏览器来支持flash，安装命令为sudo apt install firefox-esr。",
+          "qas": [
+            {
+              "question": "在deepin系统中推荐安装什么浏览器支持flash？",
+              "id": "3-88-2",
+              "answers": [
+                {
+                  "text": "firefox-esr浏览器",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "如何安装支持flash的firefox-esr浏览器？",
+              "id": "3-88-3",
+              "answers": [
+                {
+                  "text": "执行命令：sudo apt install firefox-esr。",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "赛尔号的swf文件地址是https://seer.61.com/Client.swf。",
+          "qas": [
+            {
+              "question": "赛尔号的swf文件地址是什么？",
+              "id": "3-88-4",
+              "answers": [
+                {
+                  "text": "https://seer.61.com/Client.swf",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "功夫派的swf文件地址是http://gf.61.com/Client.swf。",
+          "qas": [
+            {
+              "question": "功夫派的swf文件地址是什么？",
+              "id": "3-88-5",
+              "answers": [
+                {
+                  "text": "http://gf.61.com/Client.swf",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "4399很多flash页游直接打开会提示下载指定浏览器，需直接访问swf的url地址进行游戏，可按F12在开发者模式搜索.swf查找。",
+          "qas": [
+            {
+              "question": "为什么4399很多flash页游不能直接打开？",
+              "id": "3-88-6",
+              "answers": [
+                {
+                  "text": "会提示下载指定浏览器",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "4399的flash页游无法直接打开时该怎么办？",
+              "id": "3-88-7",
+              "answers": [
+                {
+                  "text": "直接访问swf的url地址进行游戏，可按F12在开发者模式搜索.swf查找。",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "如何找到4399 flash页游的swf文件地址？",
+              "id": "3-88-8",
+              "answers": [
+                {
+                  "text": "按F12在开发者模式搜索.swf查找。",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开终端的快捷键是Ctrl Alt T。",
+          "qas": [
+            {
+              "question": "打开终端的快捷键是什么？",
+              "id": "3-88-9",
+              "answers": [
+                {
+                  "text": "Ctrl Alt T",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,404 @@
+{
+  "data": [
+    {
+      "title": "deepin系统配置与技巧汇总",
+      "paragraphs": [
+        {
+          "context": "Super+S切换工作区，Super键就是WIN键。该快捷键最初由Ubuntu引入，Deepin的工作区仅横向排列一行，缺少多行自适应。",
+          "qas": [
+            {
+              "question": "Deepin系统中Super+S的功能是什么？",
+              "id": "3-86-1",
+              "answers": [
+                {
+                  "text": "切换工作区",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Super键指的是什么键？",
+              "id": "3-86-2",
+              "answers": [
+                {
+                  "text": "WIN键",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Super+W显示当前工作区窗口；Super+A显示所有工作区窗口；Super启动器；Super+D显示桌面；Super+E打开文件管理器；Super+L锁屏。",
+          "qas": [
+            {
+              "question": "如何在Deepin系统中显示当前工作区的窗口？",
+              "id": "3-86-3",
+              "answers": [
+                {
+                  "text": "Super+W",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Deepin系统中启动器的快捷键是什么？",
+              "id": "3-86-4",
+              "answers": [
+                {
+                  "text": "Super",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "按什么快捷键可以在Deepin系统中锁屏？",
+              "id": "3-86-5",
+              "answers": [
+                {
+                  "text": "Super+L",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin启动器搜索支持拼音，打开启动器后输入“xk”会显示“显卡驱动管理器”，支持简拼、全拼和模糊匹配。",
+          "qas": [
+            {
+              "question": "Deepin启动器的搜索功能支持什么输入方式？",
+              "id": "3-86-6",
+              "answers": [
+                {
+                  "text": "拼音（简拼、全拼），支持模糊匹配",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在控制中心-鼠标中打开“自然滚动”选项，可让笔记本触控板双指滚动体验与手机、macOS、Win10一致。",
+          "qas": [
+            {
+              "question": "如何在Deepin系统中设置与macOS、Win10一致的滚动体验？",
+              "id": "3-86-7",
+              "answers": [
+                {
+                  "text": "控制中心-鼠标：打开“自然滚动”选项",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Chrome可右键标题栏去掉“使用系统标题栏和边框”；VSCode在“文件-首选项-设置-窗口-Title Bar Style”选“custom”，以使用自定义标题栏。",
+          "qas": [
+            {
+              "question": "Deepin系统中如何让Chrome使用自定义标题栏？",
+              "id": "3-86-8",
+              "answers": [
+                {
+                  "text": "在标题栏右键，去掉“使用系统标题栏和边框”",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "VSCode在Deepin系统中怎样设置自定义标题栏？",
+              "id": "3-86-9",
+              "answers": [
+                {
+                  "text": "在“文件-首选项-设置-窗口-Title Bar Style”中选择“custom”",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "从应用商店安装Timeshift制作系统快照，位置选/和/home外分区，用户建议包含当前用户隐藏文件，筛选列表排除在前添加在后，首次快照耗时久，后续用软链接提速。",
+          "qas": [
+            {
+              "question": "Deepin系统中用什么工具制作系统快照？",
+              "id": "3-86-10",
+              "answers": [
+                {
+                  "text": "Timeshift",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "制作系统快照时，存储位置建议选在哪里？",
+              "id": "3-86-11",
+              "answers": [
+                {
+                  "text": "/和/home之外的分区，推荐“数据盘”",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "APT命令：apt search查找软件；sudo apt install --reinstall重新安装；sudo apt install -f安装并修复依赖；sudo apt purge卸载并清配置；apt list看版本；apt list --installed列所有已安装软件。",
+          "qas": [
+            {
+              "question": "如何用APT命令重新安装软件？",
+              "id": "3-86-12",
+              "answers": [
+                {
+                  "text": "sudo apt install --reinstall package-name",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "哪个APT命令可以卸载软件并清除系统配置？",
+              "id": "3-86-13",
+              "answers": [
+                {
+                  "text": "sudo apt purge package-name",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "which 命令可查命令路径，如which deepin-editor输出/usr/bin/deepin-editor；dpkg -S 路径可查所属软件包，如dpkg -S /usr/bin/deepin-editor显示所属deepin-editor。",
+          "qas": [
+            {
+              "question": "如何查找命令所在路径？",
+              "id": "3-86-14",
+              "answers": [
+                {
+                  "text": "使用which命令，如which deepin-editor",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "怎样查询一个文件所属的软件包？",
+              "id": "3-86-15",
+              "answers": [
+                {
+                  "text": "使用dpkg -S 路径，如dpkg -S /usr/bin/deepin-editor",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统假死或黑屏时，按Ctrl+Alt+SysRq+B（SysRq即Print Screen键）可安全重启，有Fn键可能需同时按，Alt+SysRq+B也有效。",
+          "qas": [
+            {
+              "question": "Deepin系统假死后如何安全重启？",
+              "id": "3-86-16",
+              "answers": [
+                {
+                  "text": "同时按住Ctrl+Alt+SysRq+B（SysRq就是Print Screen键），有Fn功能键的可能需要同时按住Fn功能键，Alt+SysRq+B也可达到效果",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更换主机名：sudo deepin-editor /etc/hostname，替换新主机名后重启电脑。",
+          "qas": [
+            {
+              "question": "如何在Deepin系统中更换主机名？",
+              "id": "3-86-17",
+              "answers": [
+                {
+                  "text": "sudo deepin-editor /etc/hostname，替换成新的主机名，重启电脑",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进程命令：pgrep XXX查进程ID；ps -ef |grep XXX显进程及命令行；pkill XXX杀掉进程；killall XXX全杀；sudo netstat -tulpn | grep :21查端口。",
+          "qas": [
+            {
+              "question": "用什么命令可以查询进程ID？",
+              "id": "3-86-18",
+              "answers": [
+                {
+                  "text": "pgrep XXX",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "如何杀掉所有名为XXX的进程？",
+              "id": "3-86-19",
+              "answers": [
+                {
+                  "text": "killall XXX",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "制作USB启动盘命令：sudo dd if=/path/to/iso of=/path/to/USB，加status=progress显示进度。",
+          "qas": [
+            {
+              "question": "Deepin系统中制作USB启动盘的命令是什么？",
+              "id": "3-86-20",
+              "answers": [
+                {
+                  "text": "sudo dd if=/path/to/the/downloaded/iso of=/path/to/the/USB/device",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "如何让制作USB启动盘的命令显示进度？",
+              "id": "3-86-21",
+              "answers": [
+                {
+                  "text": "sudo dd if=/path/to/the/downloaded/iso of=/path/to/the/USB/device status=progress",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Live模式修复GRUB引导：终端执行sudo -i && fdisk -l找sdaX，再mount /dev/sdaX /mnt等绑定目录，chroot /mnt后update-grub、grub-install /dev/sda。",
+          "qas": [
+            {
+              "question": "在Live模式下如何修复GRUB引导？",
+              "id": "3-86-22",
+              "answers": [
+                {
+                  "text": "打开Terminal，或者进入Shell，执行“sudo -i && fdisk -l”找到系统安装分区sdaX，然后按顺序执行：mount /dev/sdaX /mnt；mount --bind /dev /mnt/dev；mount --bind /proc /mnt/proc；mount --bind /sys /mnt/sys；chroot /mnt；update-grub；grub-install /dev/sda；exit",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行Windows绿色软件：进入目录右键“在终端中打开”，执行deepin-wine 软件.exe。大型软件建议用独立容器，如拷贝容器后用WINEPREFIX安装。",
+          "qas": [
+            {
+              "question": "如何在Deepin系统中运行Windows绿色软件？",
+              "id": "3-86-23",
+              "answers": [
+                {
+                  "text": "进入绿色软件所在目录，右键“在终端中打开”，执行：deepin-wine Windows绿色软件.exe",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "硬盘克隆：推荐Clonezilla，dd命令备用，备份用sudo dd if=/dev/sda1 of=~/elf.bak status=progress，还原则交换if和of，可压缩备份与还原。",
+          "qas": [
+            {
+              "question": "Deepin系统中推荐用什么工具进行硬盘或分区克隆？",
+              "id": "3-86-24",
+              "answers": [
+                {
+                  "text": "Clonezilla（再生龙）",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "备份MBR：sudo dd if=/dev/sdX of=/path/to/mbr bs=512 count=1；还原MBR：sudo dd if=/path/to/mbr of=/dev/sdX bs=512 count=1；备份分区表用sudo sfdisk -d /dev/sdX > /path/to/fqb。",
+          "qas": [
+            {
+              "question": "如何备份MBR？",
+              "id": "3-86-25",
+              "answers": [
+                {
+                  "text": "sudo dd if=/dev/sdX of=/path/to/mbr bs=512 count=1",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "备份分区表的命令是什么？",
+              "id": "3-86-26",
+              "answers": [
+                {
+                  "text": "sudo sfdisk -d /dev/sdX > /path/to/fqb",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开机画面卡死或黑屏，在grub引导菜单按e编辑，在“splash quiet”后加acpi_osi=! acpi=\"windows 2009\"，F10启动，也可试nomodeset或nouveau.modeset=0。",
+          "qas": [
+            {
+              "question": "Deepin系统开机画面卡死或黑屏时，可在grub引导菜单添加什么参数尝试解决？",
+              "id": "3-86-27",
+              "answers": [
+                {
+                  "text": "acpi_osi=! acpi=\"windows 2009\"、nomodeset、nouveau.modeset=0",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "关闭错误报警蜂鸣：临时用sudo rmmod pcspkr；永久可在~/.profile加相关内容，或在/etc/modprobe.d/blacklist.conf加blacklist pcspkr。",
+          "qas": [
+            {
+              "question": "如何临时关闭Deepin系统的错误报警蜂鸣声？",
+              "id": "3-86-28",
+              "answers": [
+                {
+                  "text": "sudo rmmod pcspkr",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "测试显卡性能：终端执行vblank_mode=0 glxgears，FPS达3000以上说明驱动正常，NVIDIA闭源驱动需在配置程序取消垂直同步。",
+          "qas": [
+            {
+              "question": "如何在Deepin系统中测试显卡性能？",
+              "id": "3-86-29",
+              "answers": [
+                {
+                  "text": "在终端执行FPS测试命令：vblank_mode=0 glxgears",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "显卡驱动正常工作时，vblank_mode=0 glxgears命令的FPS一般能达到多少？",
+              "id": "3-86-30",
+              "answers": [
+                {
+                  "text": "3000以上",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,659 @@
+{
+  "data": [
+    {
+      "title": "Linux命令总结",
+      "paragraphs": [
+        {
+          "context": "uname -m 显示机器的处理器架构；uname -r 显示正在使用的内核版本。",
+          "qas": [
+            {
+              "question": "如何显示机器的处理器架构？",
+              "id": "3-79-1",
+              "answers": [
+                {
+                  "text": "uname -m",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "哪个命令可以显示正在使用的内核版本？",
+              "id": "3-79-2",
+              "answers": [
+                {
+                  "text": "uname -r",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "shutdown -h now 关闭系统；reboot 重启系统。",
+          "qas": [
+            {
+              "question": "立即关闭系统的命令是什么？",
+              "id": "3-79-3",
+              "answers": [
+                {
+                  "text": "shutdown -h now",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "重启系统可以使用哪个命令？",
+              "id": "3-79-4",
+              "answers": [
+                {
+                  "text": "reboot",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cd /home 进入 '/home' 目录；cd .. 返回上一级目录。",
+          "qas": [
+            {
+              "question": "如何进入 '/home' 目录？",
+              "id": "3-79-5",
+              "answers": [
+                {
+                  "text": "cd /home",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "返回上一级目录的命令是什么？",
+              "id": "3-79-6",
+              "answers": [
+                {
+                  "text": "cd ..",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ls -a 显示隐藏文件；ls -l 显示文件和目录的详细资料。",
+          "qas": [
+            {
+              "question": "哪个命令可以显示隐藏文件？",
+              "id": "3-79-7",
+              "answers": [
+                {
+                  "text": "ls -a",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何显示文件和目录的详细资料？",
+              "id": "3-79-8",
+              "answers": [
+                {
+                  "text": "ls -l",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mkdir dir1 创建一个叫做 'dir1' 的目录；rmdir dir1 删除一个叫做 'dir1' 的目录（仅空目录）。",
+          "qas": [
+            {
+              "question": "创建名为 'dir1' 的目录用什么命令？",
+              "id": "3-79-9",
+              "answers": [
+                {
+                  "text": "mkdir dir1",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "rmdir dir1 可以删除什么样的目录？",
+              "id": "3-79-10",
+              "answers": [
+                {
+                  "text": "空目录",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cp file1 file2 复制一个文件；mv dir1 new_dir 重命名/移动一个目录。",
+          "qas": [
+            {
+              "question": "复制文件 file1 到 file2 用什么命令？",
+              "id": "3-79-11",
+              "answers": [
+                {
+                  "text": "cp file1 file2",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何重命名目录 dir1 为 new_dir？",
+              "id": "3-79-12",
+              "answers": [
+                {
+                  "text": "mv dir1 new_dir",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "find / -name file1 从 '/' 开始搜索文件和目录；whereis halt 显示一个二进制文件、源码或man的位置。",
+          "qas": [
+            {
+              "question": "从根目录开始搜索文件 file1 用什么命令？",
+              "id": "3-79-13",
+              "answers": [
+                {
+                  "text": "find / -name file1",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "whereis halt 命令的作用是什么？",
+              "id": "3-79-14",
+              "answers": [
+                {
+                  "text": "显示一个二进制文件、源码或man的位置。",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mount /dev/hda2 /mnt/hda2 挂载hda2盘；umount /dev/hda2 卸载hda2盘。",
+          "qas": [
+            {
+              "question": "如何挂载hda2盘到 /mnt/hda2 目录？",
+              "id": "3-79-15",
+              "answers": [
+                {
+                  "text": "mount /dev/hda2 /mnt/hda2",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "卸载hda2盘的命令是什么？",
+              "id": "3-79-16",
+              "answers": [
+                {
+                  "text": "umount /dev/hda2",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "df -h 显示已经挂载的分区列表；du -sh dir1 估算目录 'dir1' 已使用的磁盘空间。",
+          "qas": [
+            {
+              "question": "哪个命令可以显示已挂载的分区列表？",
+              "id": "3-79-17",
+              "answers": [
+                {
+                  "text": "df -h",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何估算目录 'dir1' 使用的磁盘空间？",
+              "id": "3-79-18",
+              "answers": [
+                {
+                  "text": "du -sh dir1",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "groupadd group_name 创建一个新用户组；useradd user1 创建一个新用户。",
+          "qas": [
+            {
+              "question": "创建新用户组 group_name 用什么命令？",
+              "id": "3-79-19",
+              "answers": [
+                {
+                  "text": "groupadd group_name",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "创建新用户 user1 的命令是什么？",
+              "id": "3-79-20",
+              "answers": [
+                {
+                  "text": "useradd user1",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "chmod ugo+rwx directory1 设置目录所有人、群组及其他人的读写执行权限；chown user1 file1 改变文件的所有人属性。",
+          "qas": [
+            {
+              "question": "如何给目录 directory1 设置所有人、群组及其他人的读写执行权限？",
+              "id": "3-79-21",
+              "answers": [
+                {
+                  "text": "chmod ugo+rwx directory1",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "改变文件 file1 的所有人为 user1 用什么命令？",
+              "id": "3-79-22",
+              "answers": [
+                {
+                  "text": "chown user1 file1",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "chattr +i file1 设置文件为不可变；lsattr 显示文件的特殊属性。",
+          "qas": [
+            {
+              "question": "如何设置文件 file1 为不可变？",
+              "id": "3-79-23",
+              "answers": [
+                {
+                  "text": "chattr +i file1",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "哪个命令可以显示文件的特殊属性？",
+              "id": "3-79-24",
+              "answers": [
+                {
+                  "text": "lsattr",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "gzip file1 压缩文件；gunzip file1.gz 解压文件。",
+          "qas": [
+            {
+              "question": "压缩文件 file1 用什么命令？",
+              "id": "3-79-25",
+              "answers": [
+                {
+                  "text": "gzip file1",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "解压 file1.gz 文件的命令是什么？",
+              "id": "3-79-26",
+              "answers": [
+                {
+                  "text": "gunzip file1.gz",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "tar -cvf archive.tar file1 创建非压缩tarball；tar -xvf archive.tar 释放tar包。",
+          "qas": [
+            {
+              "question": "创建包含 file1 的非压缩tar包 archive.tar 用什么命令？",
+              "id": "3-79-27",
+              "answers": [
+                {
+                  "text": "tar -cvf archive.tar file1",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何释放 archive.tar 包？",
+              "id": "3-79-28",
+              "answers": [
+                {
+                  "text": "tar -xvf archive.tar",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "rpm -ivh package.rpm 安装rpm包；rpm -e package_name 删除rpm包。",
+          "qas": [
+            {
+              "question": "安装 rpm 包 package.rpm 用什么命令？",
+              "id": "3-79-29",
+              "answers": [
+                {
+                  "text": "rpm -ivh package.rpm",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "删除 rpm 包 package_name 的命令是什么？",
+              "id": "3-79-30",
+              "answers": [
+                {
+                  "text": "rpm -e package_name",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "yum install package_name 下载并安装rpm包；yum remove package_name 删除rpm包。",
+          "qas": [
+            {
+              "question": "用 yum 安装 package_name 包的命令是什么？",
+              "id": "3-79-31",
+              "answers": [
+                {
+                  "text": "yum install package_name",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "yum 如何删除 package_name 包？",
+              "id": "3-79-32",
+              "answers": [
+                {
+                  "text": "yum remove package_name",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpkg -i package.deb 安装deb包；apt-get install package_name 安装deb包。",
+          "qas": [
+            {
+              "question": "安装 deb 包 package.deb 用什么命令？",
+              "id": "3-79-33",
+              "answers": [
+                {
+                  "text": "dpkg -i package.deb",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "apt-get 安装 package_name 包的命令是什么？",
+              "id": "3-79-34",
+              "answers": [
+                {
+                  "text": "apt-get install package_name",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cat file1 正向查看文件内容；tac file1 反向查看文件内容。",
+          "qas": [
+            {
+              "question": "正向查看文件 file1 内容用什么命令？",
+              "id": "3-79-35",
+              "answers": [
+                {
+                  "text": "cat file1",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "反向查看文件 file1 内容的命令是什么？",
+              "id": "3-79-36",
+              "answers": [
+                {
+                  "text": "tac file1",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "head -2 file1 查看文件前两行；tail -2 file1 查看文件最后两行。",
+          "qas": [
+            {
+              "question": "查看文件 file1 前两行用什么命令？",
+              "id": "3-79-37",
+              "answers": [
+                {
+                  "text": "head -2 file1",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何查看文件 file1 的最后两行？",
+              "id": "3-79-38",
+              "answers": [
+                {
+                  "text": "tail -2 file1",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "grep Aug /var/log/messages 在文件中查找关键词\"Aug\"；sed 's/stringa1/stringa2/g' example.txt 替换文件中的字符串。",
+          "qas": [
+            {
+              "question": "在 /var/log/messages 文件中查找关键词\"Aug\"用什么命令？",
+              "id": "3-79-39",
+              "answers": [
+                {
+                  "text": "grep Aug /var/log/messages",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何将 example.txt 文件中的 stringa1 替换为 stringa2？",
+              "id": "3-79-40",
+              "answers": [
+                {
+                  "text": "sed 's/stringa1/stringa2/g' example.txt",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dos2unix filedos.txt fileunix.txt 转换文件格式从MSDOS到UNIX；unix2dos fileunix.txt filedos.txt 转换格式从UNIX到MSDOS。",
+          "qas": [
+            {
+              "question": "将MSDOS格式文件 filedos.txt 转换为UNIX格式 fileunix.txt 用什么命令？",
+              "id": "3-79-41",
+              "answers": [
+                {
+                  "text": "dos2unix filedos.txt fileunix.txt",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "UNIX格式文件转换为MSDOS格式的命令是什么？",
+              "id": "3-79-42",
+              "answers": [
+                {
+                  "text": "unix2dos fileunix.txt filedos.txt",
+                  "answer_start": 46
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fsck /dev/hda1 检查修复hda1磁盘文件系统；mkfs /dev/hda1 在hda1分区创建文件系统。",
+          "qas": [
+            {
+              "question": "检查并修复 hda1 磁盘文件系统用什么命令？",
+              "id": "3-79-43",
+              "answers": [
+                {
+                  "text": "fsck /dev/hda1",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "在 hda1 分区创建文件系统的命令是什么？",
+              "id": "3-79-44",
+              "answers": [
+                {
+                  "text": "mkfs /dev/hda1",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mkswap /dev/hda3 创建swap文件系统；swapon /dev/hda3 启用swap文件系统。",
+          "qas": [
+            {
+              "question": "如何在 hda3 分区创建 swap 文件系统？",
+              "id": "3-79-45",
+              "answers": [
+                {
+                  "text": "mkswap /dev/hda3",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "启用 hda3 分区的 swap 文件系统用什么命令？",
+              "id": "3-79-46",
+              "answers": [
+                {
+                  "text": "swapon /dev/hda3",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ifconfig eth0 显示以太网卡配置；ifup eth0 启用eth0网络设备。",
+          "qas": [
+            {
+              "question": "显示以太网卡 eth0 配置的命令是什么？",
+              "id": "3-79-47",
+              "answers": [
+                {
+                  "text": "ifconfig eth0",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何启用 eth0 网络设备？",
+              "id": "3-79-48",
+              "answers": [
+                {
+                  "text": "ifup eth0",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "hostname 显示系统主机名；host www.example.com 解析主机名与IP。",
+          "qas": [
+            {
+              "question": "显示系统主机名用什么命令？",
+              "id": "3-79-49",
+              "answers": [
+                {
+                  "text": "hostname",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "解析 www.example.com 的主机名与IP用什么命令？",
+              "id": "3-79-50",
+              "answers": [
+                {
+                  "text": "host www.example.com",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "vim 中 :q 退出编辑器；:w 保存当前修改。",
+          "qas": [
+            {
+              "question": "在 vim 中如何退出编辑器？",
+              "id": "3-79-51",
+              "answers": [
+                {
+                  "text": ":q",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "vim 中保存当前修改的命令是什么？",
+              "id": "3-79-52",
+              "answers": [
+                {
+                  "text": ":w",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

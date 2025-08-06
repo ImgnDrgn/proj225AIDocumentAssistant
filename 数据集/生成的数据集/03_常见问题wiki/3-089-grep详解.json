@@ -1,0 +1,374 @@
+{
+  "data": [
+    {
+      "title": "grep详解",
+      "paragraphs": [
+        {
+          "context": "grep全拼为Global search REgular expression and Print out the line，是文本搜索工具，根据用户指定的“模式”对目标文本逐行匹配检查，打印匹配到的行。",
+          "qas": [
+            {
+              "question": "grep的全拼是什么？",
+              "id": "3-89-1",
+              "answers": [
+                {
+                  "text": "Global search REgular expression and Print out the line",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "grep的作用是什么？",
+              "id": "3-89-2",
+              "answers": [
+                {
+                  "text": "根据用户指定的“模式”对目标文本逐行进行匹配检查，打印匹配到的行",
+                  "answer_start": 64
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "模式是由正则表达式的元字符及文本字符编写的过滤条件，grep的匹配模式可以是普通文字符号或正则表达式。",
+          "qas": [
+            {
+              "question": "什么是模式？",
+              "id": "3-89-3",
+              "answers": [
+                {
+                  "text": "由正则表达式的元字符及文本字符所编写出的过滤条件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "grep的匹配模式可以是什么？",
+              "id": "3-89-4",
+              "answers": [
+                {
+                  "text": "普通的文字符号，也可以是正则表达式",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用grep -i可不区分大小写，-n可显示匹配行和行号，可用于输出以I开头的行。",
+          "qas": [
+            {
+              "question": "grep中哪个参数代表不区分大小写？",
+              "id": "3-89-5",
+              "answers": [
+                {
+                  "text": "-i",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "grep中-n参数的作用是什么？",
+              "id": "3-89-6",
+              "answers": [
+                {
+                  "text": "显示匹配行和行号",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "输出以.结尾的行时，.需用\\转义，因.在正则中有特殊含义，代表匹配任意一个字符。",
+          "qas": [
+            {
+              "question": "输出以.结尾的行时，为什么要用\\转义？",
+              "id": "3-89-7",
+              "answers": [
+                {
+                  "text": "因为.在这里有着特殊含义，grep会把它当做正则表达式来处理（.代表的含义是匹配任意一个字符）",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "在正则表达式中，.代表什么含义？",
+              "id": "3-89-8",
+              "answers": [
+                {
+                  "text": "匹配任意一个字符",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux平台下所有文件的结尾都有$符，可用cat -A查看文件，^$组合符代表空行。",
+          "qas": [
+            {
+              "question": "Linux平台下文件的结尾有什么符号？",
+              "id": "3-89-9",
+              "answers": [
+                {
+                  "text": "$符",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "用什么命令可以查看文件中结尾的$符？",
+              "id": "3-89-10",
+              "answers": [
+                {
+                  "text": "cat -A",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "^$组合符代表什么意思？",
+              "id": "3-89-11",
+              "answers": [
+                {
+                  "text": "空行",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "“.”点表示任意一个字符，有且只有一个，不包含空行；“*”表示找出前一个字符0次或一次以上。",
+          "qas": [
+            {
+              "question": "“.”点符号表示什么？",
+              "id": "3-89-12",
+              "answers": [
+                {
+                  "text": "任意一个字符，有且只有一个，不包含空行",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "“*”符号表示什么？",
+              "id": "3-89-13",
+              "answers": [
+                {
+                  "text": "找出前一个字符0次或一次以上",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "“.*”组合符表示所有内容，包括空行；^.*t符含义为以任意内容开头，直到t结束。",
+          "qas": [
+            {
+              "question": "“.*”组合符表示什么？",
+              "id": "3-89-14",
+              "answers": [
+                {
+                  "text": "所有内容，包括空行",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "^.*t符的含义是什么？",
+              "id": "3-89-15",
+              "answers": [
+                {
+                  "text": "以任意内容开头，直到t结束",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "[abc]中括号表达式表示匹配中括号中任意一个字符，a或b或c；[a-z]匹配所有小写单个字母，[A-Z]匹配所有单个大写字母，[a-zA-Z]匹配所有的单个大小写字母，[0-9]匹配所有单个数字，[a-zA-Z0-9]匹配所有数字和字母。",
+          "qas": [
+            {
+              "question": "[abc]表示什么意思？",
+              "id": "3-89-16",
+              "answers": [
+                {
+                  "text": "匹配中括号中任意一个字符，a或b或c",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "[a-z]的作用是什么？",
+              "id": "3-89-17",
+              "answers": [
+                {
+                  "text": "匹配所有小写单个字母",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "[0-9]能匹配什么？",
+              "id": "3-89-18",
+              "answers": [
+                {
+                  "text": "所有单个数字",
+                  "answer_start": 118
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "grep的-o选项可只显示被匹配到的关键字，-c只统计匹配的行数。",
+          "qas": [
+            {
+              "question": "grep中-o选项的作用是什么？",
+              "id": "3-89-19",
+              "answers": [
+                {
+                  "text": "只显示被匹配到的关键字",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "哪个参数可以只统计匹配的行数？",
+              "id": "3-89-20",
+              "answers": [
+                {
+                  "text": "-c",
+                  "answer_start": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "[^abc]或[^a-c]中，^在中括号第一位表示排除，即排除字符a、b、c。",
+          "qas": [
+            {
+              "question": "[^abc]中^的含义是什么？",
+              "id": "3-89-21",
+              "answers": [
+                {
+                  "text": "排除，排除字符a、b、c",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "扩展正则表达式使用grep -E实践，egrep已弃用；+号表示匹配前一个字符1次或多次，需用grep -E。",
+          "qas": [
+            {
+              "question": "如何进行扩展正则表达式的grep实践？",
+              "id": "3-89-22",
+              "answers": [
+                {
+                  "text": "使用grep -E",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "egrep的现状如何？",
+              "id": "3-89-23",
+              "answers": [
+                {
+                  "text": "官网已经弃用了",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "+号表示什么？",
+              "id": "3-89-24",
+              "answers": [
+                {
+                  "text": "匹配前一个字符1次或多次",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "?符匹配前一个字符0次或1次；竖线|在正则中是或者的意思；小括号()将一个或多个字符捆绑在一起当作整体处理。",
+          "qas": [
+            {
+              "question": "?符的作用是什么？",
+              "id": "3-89-25",
+              "answers": [
+                {
+                  "text": "匹配前一个字符0次或1次",
+                  "answer_start": 1
+                }
+              ]
+            },
+            {
+              "question": "竖线|在正则中表示什么意思？",
+              "id": "3-89-26",
+              "answers": [
+                {
+                  "text": "或者",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "小括号()的作用是什么？",
+              "id": "3-89-27",
+              "answers": [
+                {
+                  "text": "将一个或多个字符捆绑在一起，当作一个整体进行处理",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "{n,m}匹配前一个字符至少n次，最多m次；{n,}匹配前一个字符至少n次，无上限；{,m}匹配前一个字符最多m次，可以没有。",
+          "qas": [
+            {
+              "question": "{n,m}表示什么？",
+              "id": "3-89-28",
+              "answers": [
+                {
+                  "text": "匹配前一个字符至少n次，最多m次",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "{n,}的含义是什么？",
+              "id": "3-89-29",
+              "answers": [
+                {
+                  "text": "匹配前一个字符至少n次，没有上限",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "{,m}能匹配什么情况？",
+              "id": "3-89-30",
+              "answers": [
+                {
+                  "text": "匹配前一个字符最多m次，可以没有",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

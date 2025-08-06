@@ -1,0 +1,334 @@
+{
+  "data": [
+    {
+      "title": "deepin入门资源",
+      "paragraphs": [
+        {
+          "context": "统信UOS家庭版新手安装锦囊可参考：https://bbs.chinauos.com/post/8738",
+          "qas": [
+            {
+              "question": "统信UOS家庭版的新手安装锦囊在哪里可以找到？",
+              "id": "3-83-1",
+              "answers": [
+                {
+                  "text": "https://bbs.chinauos.com/post/8738",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "写给deepin小白的入门教程：https://bbs.deepin.org.cn/post/209755",
+          "qas": [
+            {
+              "question": "deepin小白的入门教程链接是什么？",
+              "id": "3-83-2",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org.cn/post/209755",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "deepin知识汇总",
+      "paragraphs": [
+        {
+          "context": "深度易经项目地址：https://github.com/bubifengyun/deepin-bible",
+          "qas": [
+            {
+              "question": "深度易经的项目地址是什么？",
+              "id": "3-83-3",
+              "answers": [
+                {
+                  "text": "https://github.com/bubifengyun/deepin-bible",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "统信软件知识分享平台：https://faq.uniontech.com/",
+          "qas": [
+            {
+              "question": "统信软件的知识分享平台网址是多少？",
+              "id": "3-83-4",
+              "answers": [
+                {
+                  "text": "https://faq.uniontech.com/",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "deepin系统安装",
+      "paragraphs": [
+        {
+          "context": "deepin官方安装教程：https://www.deepin.org/zh/installation/",
+          "qas": [
+            {
+              "question": "deepin的官方安装教程在哪里？",
+              "id": "3-83-5",
+              "answers": [
+                {
+                  "text": "https://www.deepin.org/zh/installation/",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "win10下Deepin双系统安装小白教程：https://bbs.deepin.org/zh/post/197659",
+          "qas": [
+            {
+              "question": "win10下Deepin双系统安装的小白教程链接是什么？",
+              "id": "3-83-6",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/zh/post/197659",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在VMware安装deepin需启用“增强型键盘”为“必需”",
+          "qas": [
+            {
+              "question": "在VMware中安装deepin需要设置什么？",
+              "id": "3-83-7",
+              "answers": [
+                {
+                  "text": "启用“增强型键盘”为“必需”",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "deepin系统引导和启动",
+      "paragraphs": [
+        {
+          "context": "Grub进入命令行解决方法：https://bbs.deepin.org/zh/post/210805",
+          "qas": [
+            {
+              "question": "Grub进入命令行的解决方法在哪里？",
+              "id": "3-83-8",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/zh/post/210805",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "手动修改Grub默认启动项：https://www.yuque.com/pzm9012/ct5ume/zhpci6ez8l85tohh",
+          "qas": [
+            {
+              "question": "如何手动修改Grub默认启动项？",
+              "id": "3-83-9",
+              "answers": [
+                {
+                  "text": "参考链接：https://www.yuque.com/pzm9012/ct5ume/zhpci6ez8l85tohh",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "deepin系统内核",
+      "paragraphs": [
+        {
+          "context": "双内核使用说明：https://bbs.deepin.org/zh/post/216952",
+          "qas": [
+            {
+              "question": "deepin双内核的使用说明在哪里？",
+              "id": "3-83-10",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/zh/post/216952",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "5条命令安装最新Linux kernel（Xanmod版）：https://bbs.deepin.org/post/240628",
+          "qas": [
+            {
+              "question": "如何用5条命令安装最新Xanmod版Linux kernel？",
+              "id": "3-83-11",
+              "answers": [
+                {
+                  "text": "参考链接：https://bbs.deepin.org/post/240628",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "deepin桌面环境",
+      "paragraphs": [
+        {
+          "context": "在Linux中创建应用图标：https://bbs.deepin.org/zh/post/225323",
+          "qas": [
+            {
+              "question": "如何在Linux中创建应用图标？",
+              "id": "3-83-12",
+              "answers": [
+                {
+                  "text": "参考链接：https://bbs.deepin.org/zh/post/225323",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin设置分辨率为1920x1080：https://www.jianshu.com/p/89a1bf1905d8",
+          "qas": [
+            {
+              "question": "如何在Deepin中设置分辨率为1920x1080？",
+              "id": "3-83-13",
+              "answers": [
+                {
+                  "text": "https://www.jianshu.com/p/89a1bf1905d8",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "deepin系统配置",
+      "paragraphs": [
+        {
+          "context": "设置/校准系统时间的2种方法：https://bbs.deepin.org/post/260998",
+          "qas": [
+            {
+              "question": "设置或校准deepin系统时间的方法在哪里？",
+              "id": "3-83-14",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/post/260998",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "取消鼠标滚轮按下粘贴功能：https://bbs.deepin.org/post/265518",
+          "qas": [
+            {
+              "question": "如何取消deepin中鼠标滚轮按下的粘贴功能？",
+              "id": "3-83-15",
+              "answers": [
+                {
+                  "text": "参考链接：https://bbs.deepin.org/post/265518",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "deepin应用及包管理",
+      "paragraphs": [
+        {
+          "context": "GUI软件包管理器可通过sudo apt install synaptic安装",
+          "qas": [
+            {
+              "question": "如何安装deepin的GUI软件包管理器？",
+              "id": "3-83-16",
+              "answers": [
+                {
+                  "text": "sudo apt install synaptic",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除卸载残留的应用配置：https://bbs.deepin.org/zh/post/227702",
+          "qas": [
+            {
+              "question": "如何删除deepin中卸载残留的应用配置？",
+              "id": "3-83-17",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/zh/post/227702",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "deepin输入法",
+      "paragraphs": [
+        {
+          "context": "Deepin 20.3上使用Fcitx5的方法：https://bbs.deepin.org/post/224852",
+          "qas": [
+            {
+              "question": "在Deepin 20.3上如何使用Fcitx5？",
+              "id": "3-83-18",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/post/224852",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fcitx5输入法使用技巧及简约皮肤：https://bbs.deepin.org/zh/post/223743",
+          "qas": [
+            {
+              "question": "fcitx5输入法的使用技巧和简约皮肤在哪里？",
+              "id": "3-83-19",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/zh/post/223743",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
