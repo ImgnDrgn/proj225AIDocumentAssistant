@@ -1,0 +1,139 @@
+{
+  "data": [
+    {
+      "title": "rfkill命令",
+      "paragraphs": [
+        {
+          "context": "rfkill命令用于管理系统中的蓝牙和WIFI设备，是内核级别的管理工具，可打开或关闭蓝牙和WIFI功能。",
+          "qas": [
+            {
+              "question": "rfkill命令的功能是什么？",
+              "id": "3-116-1",
+              "answers": [
+                {
+                  "text": "管理系统中的蓝牙和WIFI设备，可打开或关闭蓝牙和WIFI功能。",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "rfkill命令属于什么级别的管理工具？",
+              "id": "3-116-2",
+              "answers": [
+                {
+                  "text": "内核级别",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "rfkill命令的语法格式为：rfkill [参数] 设备名。",
+          "qas": [
+            {
+              "question": "rfkill命令的语法格式是什么？",
+              "id": "3-116-3",
+              "answers": [
+                {
+                  "text": "rfkill [参数] 设备名",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "rfkill命令常用参数有list（列出可用设备）、block（关闭设备）、unblock（打开设备）。",
+          "qas": [
+            {
+              "question": "rfkill命令的常用参数有哪些？",
+              "id": "3-116-4",
+              "answers": [
+                {
+                  "text": "list、block、unblock",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "list参数的作用是什么？",
+              "id": "3-116-5",
+              "answers": [
+                {
+                  "text": "列出可用设备",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "block参数的功能是什么？",
+              "id": "3-116-6",
+              "answers": [
+                {
+                  "text": "关闭设备",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "question": "unblock参数有什么作用？",
+              "id": "3-116-7",
+              "answers": [
+                {
+                  "text": "打开设备",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用rfkill list命令可显示系统中已有的WIFI和蓝牙设备信息。",
+          "qas": [
+            {
+              "question": "如何显示系统中已有的WIFI和蓝牙设备信息？",
+              "id": "3-116-8",
+              "answers": [
+                {
+                  "text": "使用rfkill list命令",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "关闭指定编码的设备可使用命令：rfkill block 设备编码。",
+          "qas": [
+            {
+              "question": "如何关闭指定编码的设备？",
+              "id": "3-116-9",
+              "answers": [
+                {
+                  "text": "使用命令：rfkill block 设备编码",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开指定编码的设备可使用命令：rfkill unblock 设备编码。",
+          "qas": [
+            {
+              "question": "如何打开指定编码的设备？",
+              "id": "3-116-10",
+              "answers": [
+                {
+                  "text": "使用命令：rfkill unblock 设备编码",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

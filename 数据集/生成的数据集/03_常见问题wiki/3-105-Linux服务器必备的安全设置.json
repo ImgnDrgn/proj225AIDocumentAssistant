@@ -1,0 +1,274 @@
+{
+  "data": [
+    {
+      "title": "Linux服务器必备的安全设置",
+      "paragraphs": [
+        {
+          "context": "修改SSH登陆配置需编辑/etc/ssh/sshd_config，可更改端口、禁用版本1协议、禁止root登录和空密码登陆，修改后重启sshd服务。",
+          "qas": [
+            {
+              "question": "修改SSH登陆配置需要编辑哪个文件？",
+              "id": "3-105-1",
+              "answers": [
+                {
+                  "text": "/etc/ssh/sshd_config",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "更改SSH端口后，防火墙和阿里云服务器需要做什么设置？",
+              "id": "3-105-2",
+              "answers": [
+                {
+                  "text": "防火墙要开放配置好的端口号，阿里云服务器需要去后台配置开发相应的端口。",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "为什么要禁用SSH版本1协议？",
+              "id": "3-105-3",
+              "answers": [
+                {
+                  "text": "因为其设计缺陷，很容易使密码被黑掉。",
+                  "answer_start": 118
+                }
+              ]
+            },
+            {
+              "question": "PermitRootLogin设置为no的含义是什么？",
+              "id": "3-105-4",
+              "answers": [
+                {
+                  "text": "不允许Root直接登录，需要用普通帐号登录后用su切换。",
+                  "answer_start": 156
+                }
+              ]
+            },
+            {
+              "question": "修改SSH配置后如何使其生效？",
+              "id": "3-105-5",
+              "answers": [
+                {
+                  "text": "重启sshd服务，命令为service sshd restart。",
+                  "answer_start": 229
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "禁止系统响应ping请求的命令是echo “1”> /proc/sys/net/ipv4/icmp_echo_ignore_all，默认值为0。",
+          "qas": [
+            {
+              "question": "如何禁止系统响应ping请求？",
+              "id": "3-105-6",
+              "answers": [
+                {
+                  "text": "执行命令echo “1”> /proc/sys/net/ipv4/icmp_echo_ignore_all。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "禁止系统响应ping请求的命令中，默认值是多少？",
+              "id": "3-105-7",
+              "answers": [
+                {
+                  "text": "0",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户管理可查看用户和组列表、当前登录用户及登录历史，需删除多余用户和组，还可修改相关文件权限。",
+          "qas": [
+            {
+              "question": "查看用户列表的命令是什么？",
+              "id": "3-105-8",
+              "answers": [
+                {
+                  "text": "cat /etc/passwd",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "查看组列表的命令是什么？",
+              "id": "3-105-9",
+              "answers": [
+                {
+                  "text": "cat /etc/group",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "查看当前登陆用户的命令是什么？",
+              "id": "3-105-10",
+              "answers": [
+                {
+                  "text": "who",
+                  "answer_start": 58
+                }
+              ]
+            },
+            {
+              "question": "查看用户登陆历史记录的命令是什么？",
+              "id": "3-105-11",
+              "answers": [
+                {
+                  "text": "last",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "question": "需要删除的多余用户有哪些？",
+              "id": "3-105-12",
+              "answers": [
+                {
+                  "text": "sync、shutdown、halt、uucp、operator、games、gopher",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "question": "需要删除的多余用户组有哪些？",
+              "id": "3-105-13",
+              "answers": [
+                {
+                  "text": "adm、lp、games、dip",
+                  "answer_start": 145
+                }
+              ]
+            },
+            {
+              "question": "提高用户和组相关文件安全性的命令是什么？",
+              "id": "3-105-14",
+              "answers": [
+                {
+                  "text": "chattr +i /etc/passwd、chattr +i /etc/shadow、chattr +i /etc/group、chattr +i /etc/gshadow",
+                  "answer_start": 185
+                }
+              ]
+            },
+            {
+              "question": "文件的i属性有什么作用？",
+              "id": "3-105-15",
+              "answers": [
+                {
+                  "text": "不允许对这个文件进行修改、删除或重命名，设定连结也无法写入或新增数据，只有root才能设定。",
+                  "answer_start": 296
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建新用户用adduser username，改密码用passwd username。修改sudoers文件需先加写权限，改后收回。",
+          "qas": [
+            {
+              "question": "创建新用户的命令是什么？",
+              "id": "3-105-16",
+              "answers": [
+                {
+                  "text": "adduser username",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "更改用户密码的命令是什么？",
+              "id": "3-105-17",
+              "answers": [
+                {
+                  "text": "passwd username",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "修改sudoers文件前需要做什么？",
+              "id": "3-105-18",
+              "answers": [
+                {
+                  "text": "添加写权限，命令为chmod -v u+w /etc/sudoers。",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "修改sudoers文件后需要做什么？",
+              "id": "3-105-19",
+              "answers": [
+                {
+                  "text": "收回写权限，命令为chmod -v u-w /etc/sudoers。",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "赋予root权限有三种方法：修改sudoers文件去掉wheel组注释并改用户组；在sudoers文件root行下加用户行；修改/etc/passwd文件用户ID为0。",
+          "qas": [
+            {
+              "question": "赋予root权限的方法一是什么？",
+              "id": "3-105-20",
+              "answers": [
+                {
+                  "text": "修改/etc/sudoers文件，去掉%wheel ALL=(ALL) ALL前的注释，然后用usermod -g root uusama修改用户属于root组。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "赋予root权限的推荐方法是什么？",
+              "id": "3-105-21",
+              "answers": [
+                {
+                  "text": "修改/etc/sudoers文件，在root ALL=(ALL) ALL行下添加uusama ALL=(ALL) ALL。",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "question": "方法三中如何赋予用户root权限？",
+              "id": "3-105-22",
+              "answers": [
+                {
+                  "text": "修改/etc/passwd文件，把用户ID修改为0。",
+                  "answer_start": 190
+                }
+              ]
+            },
+            {
+              "question": "用方法一赋予权限后，如何获得root权限？",
+              "id": "3-105-23",
+              "answers": [
+                {
+                  "text": "用该帐号登录，然后用命令su –。",
+                  "answer_start": 80
+                }
+              ]
+            },
+            {
+              "question": "用方法二赋予权限后，如何获得root权限？",
+              "id": "3-105-24",
+              "answers": [
+                {
+                  "text": "用该帐号登录，然后用命令sudo -s。",
+                  "answer_start": 170
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

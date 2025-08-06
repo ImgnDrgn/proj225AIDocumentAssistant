@@ -1,0 +1,354 @@
+{
+  "data": [
+    {
+      "title": "lsof命令",
+      "paragraphs": [
+        {
+          "context": "lsof(list open files)是查看进程打开的文件的工具，可查看进程打开的文件、目录及监听的端口等socket信息。",
+          "qas": [
+            {
+              "question": "lsof命令的全称是什么？其作用是什么？",
+              "id": "3-112-1",
+              "answers": [
+                {
+                  "text": "lsof全称list open files，是查看进程打开的文件的工具，可查看进程打开的文件、目录及监听的端口等socket信息。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsof常用选项中，-a指示其它选项之间为与的关系。",
+          "qas": [
+            {
+              "question": "lsof命令中，-a选项的作用是什么？",
+              "id": "3-112-2",
+              "answers": [
+                {
+                  "text": "指示其它选项之间为与的关系。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsof的-c <进程名>选项用于输出指定进程所打开的文件。",
+          "qas": [
+            {
+              "question": "如何用lsof输出指定进程打开的文件？",
+              "id": "3-112-3",
+              "answers": [
+                {
+                  "text": "使用-c <进程名>选项，即lsof -c <进程名>。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsof的-d <文件描述符>选项可列出占用该文件号的进程。",
+          "qas": [
+            {
+              "question": "哪个lsof选项可以列出占用指定文件描述符的进程？",
+              "id": "3-112-4",
+              "answers": [
+                {
+                  "text": "-d <文件描述符>",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsof中，+d <目录>输出目录及目录下被打开的文件和目录(不递归)；+D <目录>递归输出目录及目录下被打开的文件和目录。",
+          "qas": [
+            {
+              "question": "lsof中，+d和+D选项的区别是什么？",
+              "id": "3-112-5",
+              "answers": [
+                {
+                  "text": "+d <目录>不递归，输出目录及目录下被打开的文件和目录；+D <目录>递归输出目录及目录下被打开的文件和目录。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsof的-i <条件>选项用于输出符合条件与网络相关的文件。",
+          "qas": [
+            {
+              "question": "lsof中哪个选项用于输出与网络相关的文件？",
+              "id": "3-112-6",
+              "answers": [
+                {
+                  "text": "-i <条件>",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsof的-n选项表示不解析主机名，-P选项表示不解析端口号。",
+          "qas": [
+            {
+              "question": "lsof中，-n和-P选项分别有什么作用？",
+              "id": "3-112-7",
+              "answers": [
+                {
+                  "text": "-n不解析主机名，-P不解析端口号。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsof的-p <进程号>选项用于输出指定PID的进程所打开的文件。",
+          "qas": [
+            {
+              "question": "如何用lsof查看指定PID的进程打开的文件？",
+              "id": "3-112-8",
+              "answers": [
+                {
+                  "text": "使用-p <进程号>选项，即lsof -p <进程号>。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsof的-t选项只输出PID。",
+          "qas": [
+            {
+              "question": "lsof中哪个选项只输出进程的PID？",
+              "id": "3-112-9",
+              "answers": [
+                {
+                  "text": "-t",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsof的-u选项用于输出指定用户打开的文件。",
+          "qas": [
+            {
+              "question": "如何用lsof查看指定用户打开的文件？",
+              "id": "3-112-10",
+              "answers": [
+                {
+                  "text": "使用-u选项，即lsof -u <用户名或user ID>。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsof输出中，COMMAND列表示程序的名称，PID列是进程标识符，USER列是进程所有者。",
+          "qas": [
+            {
+              "question": "lsof输出中，COMMAND、PID、USER列分别表示什么？",
+              "id": "3-112-11",
+              "answers": [
+                {
+                  "text": "COMMAND表示程序的名称，PID是进程标识符，USER是进程所有者。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsof输出的FD列是文件描述符，其中cwd表示当前工作目录，rtd表示根目录，txt表示程序的可执行文件，mem表示内存映射文件。",
+          "qas": [
+            {
+              "question": "lsof输出的FD列中，cwd、rtd、txt、mem分别表示什么？",
+              "id": "3-112-12",
+              "answers": [
+                {
+                  "text": "cwd表示当前工作目录，rtd表示根目录，txt表示程序的可执行文件，mem表示内存映射文件。",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsof输出的TYPE列中，REG和DIR分别表示普通文件和目录，CHR和BLK表示字符和块设备，unix、fifo和IPv4/IPv6表示UNIX domain套接字、FIFO队列和相应版本的IP套接字。",
+          "qas": [
+            {
+              "question": "lsof输出的TYPE列中，REG、DIR、CHR、BLK分别表示什么？",
+              "id": "3-112-13",
+              "answers": [
+                {
+                  "text": "REG表示普通文件，DIR表示目录，CHR表示字符设备，BLK表示块设备。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看哪些进程打开了某个文件，可直接指定文件的名称作为lsof的参数，如sudo lsof /bin/bash。",
+          "qas": [
+            {
+              "question": "如何查看哪些进程打开了某个文件？",
+              "id": "3-112-14",
+              "answers": [
+                {
+                  "text": "直接指定文件的名称作为lsof的参数，如sudo lsof <文件名>。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用lsof组合多个选项时，默认是或的关系，添加-a选项可变为与的关系，如sudo lsof -a -p $$ -d0,1,2。",
+          "qas": [
+            {
+              "question": "lsof中多个选项默认是什么关系？如何改为与的关系？",
+              "id": "3-112-15",
+              "answers": [
+                {
+                  "text": "默认是或的关系，添加-a选项可改为与的关系。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsof的-c选项可匹配进程程序名称，支持多个-c选项（或关系）、取反（^前缀）和正则表达式，如sudo lsof -c cr、sudo lsof -c ^cr、sudo lsof -c /cr[ao]/.",
+          "qas": [
+            {
+              "question": "lsof的-c选项有哪些特性？",
+              "id": "3-112-16",
+              "answers": [
+                {
+                  "text": "可匹配进程程序名称，支持多个-c选项（或关系）、取反（^前缀）和正则表达式。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsof的-i选项查看网络相关文件，参数格式为[46][protocol][@hostname|hostaddr][:service|port]，46表示IP版本，protocol如TCP/UDP等。",
+          "qas": [
+            {
+              "question": "lsof的-i选项参数格式包含哪些部分？",
+              "id": "3-112-17",
+              "answers": [
+                {
+                  "text": "[46][protocol][@hostname|hostaddr][:service|port]，其中46表示IP版本，protocol如TCP/UDP等。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用lsof查看22号端口相关文件的命令是sudo lsof -i:22。",
+          "qas": [
+            {
+              "question": "如何用lsof查看与22号端口相关的文件？",
+              "id": "3-112-18",
+              "answers": [
+                {
+                  "text": "sudo lsof -i:22",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsof的-U选项输出打开的UNIX domain socket文件，如sudo lsof -a -c sshd -U查看sshd打开的相关文件。",
+          "qas": [
+            {
+              "question": "哪个lsof选项用于输出打开的UNIX domain socket文件？",
+              "id": "3-112-19",
+              "answers": [
+                {
+                  "text": "-U",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "杀掉某个用户打开文件的所有进程，可用命令kill -9 $(lsof -t -u <用户名>)，其中-t选项只输出PID。",
+          "qas": [
+            {
+              "question": "如何杀掉某个用户打开文件的所有进程？",
+              "id": "3-112-20",
+              "answers": [
+                {
+                  "text": "使用命令kill -9 $(lsof -t -u <用户名>)。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "统计系统打开的文件总数，可用命令sudo lsof -P -n | wc -l，-P和-n用于提升速度。",
+          "qas": [
+            {
+              "question": "如何统计系统打开的文件总数？",
+              "id": "3-112-21",
+              "answers": [
+                {
+                  "text": "使用命令sudo lsof -P -n | wc -l。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "恢复被误删但被进程打开的文件，可通过访问进程的文件描述符（/proc/PID/fd/），用IO重定向重建文件，如恢复/var/log/syslog可执行sudo sh -c 'cat /proc/1141/fd/7 > /var/log/syslog'。",
+          "qas": [
+            {
+              "question": "如何恢复被误删但被进程打开的文件？",
+              "id": "3-112-22",
+              "answers": [
+                {
+                  "text": "通过访问进程的文件描述符（/proc/PID/fd/），用IO重定向重建文件，如sudo sh -c 'cat /proc/PID/fd/FD > 文件名'。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsof的-h选项显示帮助信息，-v选项显示版本信息。",
+          "qas": [
+            {
+              "question": "lsof中，查看帮助信息和版本信息分别用什么选项？",
+              "id": "3-112-23",
+              "answers": [
+                {
+                  "text": "-h选项显示帮助信息，-v选项显示版本信息。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

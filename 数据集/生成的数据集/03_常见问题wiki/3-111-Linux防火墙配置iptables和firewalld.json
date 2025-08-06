@@ -1,0 +1,414 @@
+{
+  "data": [
+    {
+      "title": "Linux防火墙配置iptables和firewalld",
+      "paragraphs": [
+        {
+          "context": "防火墙根据系统管理员设定的规则控制数据包进出，保护内网安全，Linux主要有iptables和firewalld两种。",
+          "qas": [
+            {
+              "question": "Linux系统的防火墙主要有哪两种类型？",
+              "id": "3-111-1",
+              "answers": [
+                {
+                  "text": "iptables和firewalld",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "防火墙的主要作用是什么？",
+              "id": "3-111-2",
+              "answers": [
+                {
+                  "text": "根据系统管理员设定的规则控制数据包的进出，保护内网的安全",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptables是早期Linux默认静态防火墙，配置文件在/etc/sysconfig/iptables，工作在网络层，用链式规则，仅过滤互联网数据包，需命令行配置，默认允许所有，修改规则需全部刷新。",
+          "qas": [
+            {
+              "question": "iptables的配置文件位于哪里？",
+              "id": "3-111-3",
+              "answers": [
+                {
+                  "text": "/etc/sysconfig/iptables",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "iptables主要工作在哪个网络层？",
+              "id": "3-111-4",
+              "answers": [
+                {
+                  "text": "网络层",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "question": "iptables默认对数据包的处理策略是什么？",
+              "id": "3-111-5",
+              "answers": [
+                {
+                  "text": "允许所有",
+                  "answer_start": 112
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "firewalld是动态防火墙，取代iptables，配置文件在/usr/lib/firewalld和/etc/firewalld，工作在网络层，有区域概念，可过滤内网数据包，支持命令行和图形化配置，默认拒绝所有，可动态修改规则。",
+          "qas": [
+            {
+              "question": "firewalld的配置文件位于哪些目录？",
+              "id": "3-111-6",
+              "answers": [
+                {
+                  "text": "/usr/lib/firewalld和/etc/firewalld",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "firewalld相比iptables新增了什么概念？",
+              "id": "3-111-7",
+              "answers": [
+                {
+                  "text": "区域概念",
+                  "answer_start": 77
+                }
+              ]
+            },
+            {
+              "question": "firewalld默认对数据包的处理策略是什么？",
+              "id": "3-111-8",
+              "answers": [
+                {
+                  "text": "拒绝所有",
+                  "answer_start": 139
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptables和firewalld是防火墙管理程序，真正执行者是内核的netfilter，不建议同时使用。",
+          "qas": [
+            {
+              "question": "Linux防火墙真正的执行者是什么？",
+              "id": "3-111-9",
+              "answers": [
+                {
+                  "text": "位于内核的netfilter",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "配置防火墙时，iptables和firewalld是否建议同时使用？",
+              "id": "3-111-10",
+              "answers": [
+                {
+                  "text": "不建议，建议只使用其中一种",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptables有raw、mangle、nat、filter表，优先级由高到低。raw表控制状态追踪；mangle表修改数据包；nat表负责地址转换；filter表过滤数据包。",
+          "qas": [
+            {
+              "question": "iptables包含哪些表？",
+              "id": "3-111-11",
+              "answers": [
+                {
+                  "text": "raw、mangle、nat、filter表",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "iptables中负责地址转换功能的表是什么？",
+              "id": "3-111-12",
+              "answers": [
+                {
+                  "text": "nat表",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "question": "iptables中负责过滤数据包的表是什么？",
+              "id": "3-111-13",
+              "answers": [
+                {
+                  "text": "filter表",
+                  "answer_start": 81
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptables规则链有INPUT（处理入站数据包）、OUTPUT（处理出站数据包）、PREROUTING（路由前处理）、POSTROUTING（路由后处理）、FORWARD（处理转发数据包）。",
+          "qas": [
+            {
+              "question": "处理入站数据包的iptables规则链是什么？",
+              "id": "3-111-14",
+              "answers": [
+                {
+                  "text": "INPUT",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "处理转发数据包的iptables规则链是什么？",
+              "id": "3-111-15",
+              "answers": [
+                {
+                  "text": "FORWARD",
+                  "answer_start": 146
+                }
+              ]
+            },
+            {
+              "question": "在进行路由选择前处理数据包的规则链是什么？",
+              "id": "3-111-16",
+              "answers": [
+                {
+                  "text": "PREROUTING",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptables控制类型：ACCEPT（允许通过）、DROP（丢弃无回应）、REJECT（拒绝有回应）、SNAT（改源地址）、DNAT（改目的地址）、MASQUERADE（伪装公网IP）、LOG（记录日志）。",
+          "qas": [
+            {
+              "question": "iptables中允许数据包通过的控制类型是什么？",
+              "id": "3-111-17",
+              "answers": [
+                {
+                  "text": "ACCEPT",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "iptables中丢弃数据包且不给对方回应的控制类型是什么？",
+              "id": "3-111-18",
+              "answers": [
+                {
+                  "text": "DROP",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "iptables中用于修改数据包源地址的控制类型是什么？",
+              "id": "3-111-19",
+              "answers": [
+                {
+                  "text": "SNAT",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptables命令：-nL -t nat查看nat表规则；-P设置默认策略，如iptables -P INPUT DROP；-I插入规则，-A追加规则，-D删除规则，-F清空策略。",
+          "qas": [
+            {
+              "question": "如何查看iptables的nat表规则？",
+              "id": "3-111-20",
+              "answers": [
+                {
+                  "text": "iptables -nL -t nat",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "如何将iptables的INPUT规则链默认策略设为拒绝？",
+              "id": "3-111-21",
+              "answers": [
+                {
+                  "text": "iptables -P INPUT DROP",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "iptables中用于清空已有策略的命令选项是什么？",
+              "id": "3-111-22",
+              "answers": [
+                {
+                  "text": "-F",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "firewalld区域：trusted（允许所有）、public（默认，允许ssh等）、external（允许ssh，转发IPv4地址伪装）、block（拒绝所有传入有回应）、drop（丢弃所有传入无回应）。",
+          "qas": [
+            {
+              "question": "firewalld的默认区域是什么？",
+              "id": "3-111-23",
+              "answers": [
+                {
+                  "text": "public",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "firewalld中允许所有流量的区域是什么？",
+              "id": "3-111-24",
+              "answers": [
+                {
+                  "text": "trusted",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "firewalld中丢弃所有传入流量且无回应的区域是什么？",
+              "id": "3-111-25",
+              "answers": [
+                {
+                  "text": "drop",
+                  "answer_start": 126
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "firewall-cmd命令：--get-zones查可用区域；--get-default-zone查默认区域；--set-default-zone=trusted设默认区域；--zone=drop --add-source=192.168.20.0/24绑定子网与区域。",
+          "qas": [
+            {
+              "question": "如何查询firewalld的可用区域？",
+              "id": "3-111-26",
+              "answers": [
+                {
+                  "text": "firewall-cmd --get-zones",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "如何设置firewalld的默认区域为trusted？",
+              "id": "3-111-27",
+              "answers": [
+                {
+                  "text": "firewall-cmd --set-default-zone=trusted",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "question": "如何将192.168.20.0/24子网与firewalld的drop区域绑定？",
+              "id": "3-111-28",
+              "answers": [
+                {
+                  "text": "firewall-cmd --zone=drop --add-source=192.168.20.0/24",
+                  "answer_start": 104
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "firewalld配置端口/服务：--zone=public --add-service http允许http；--add-port=123/tcp允许tcp 123端口；--list-all显示当前区域信息。",
+          "qas": [
+            {
+              "question": "如何允许firewalld的public区域通过http协议？",
+              "id": "3-111-29",
+              "answers": [
+                {
+                  "text": "firewall-cmd --zone=public --add-service http",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "如何允许firewalld通过tcp的123端口？",
+              "id": "3-111-30",
+              "answers": [
+                {
+                  "text": "firewall-cmd --add-port=123/tcp",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "question": "如何显示firewalld当前区域的信息？",
+              "id": "3-111-31",
+              "answers": [
+                {
+                  "text": "firewall-cmd --list-all",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "firewalld端口映射：--permanent --zone=public --add-forward-port=port=888:proto=tcp:toport=22:toaddr=192.168.10.1可配置。",
+          "qas": [
+            {
+              "question": "如何配置firewalld将192.168.10.1的tcp 22端口转为888端口？",
+              "id": "3-111-32",
+              "answers": [
+                {
+                  "text": "firewall-cmd --permanent --zone=public --add-forward-port=port=888:proto=tcp:toport=22:toaddr=192.168.10.1",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "firewalld富规则优先级最高，用--add-rich-rule添加，可按源目地址、端口限制，如允许192.168.100.1访问22端口。",
+          "qas": [
+            {
+              "question": "firewalld中富规则的优先级如何？",
+              "id": "3-111-33",
+              "answers": [
+                {
+                  "text": "优先级最高",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "如何添加firewalld的富规则？",
+              "id": "3-111-34",
+              "answers": [
+                {
+                  "text": "使用--add-rich-rule选项",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

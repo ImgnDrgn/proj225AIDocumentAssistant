@@ -1,0 +1,279 @@
+{
+  "data": [
+    {
+      "title": "Linux查看进程占用网速和流量使用情况",
+      "paragraphs": [
+        {
+          "context": "Linux查看进程占用网速和流量使用情况可使用vnstat、iftop、nethogs（推荐），都需额外安装，用yum或apt-get。",
+          "qas": [
+            {
+              "question": "Linux下查看进程占用网速和流量有哪些命令？",
+              "id": "3-106-1",
+              "answers": [
+                {
+                  "text": "vnstat、iftop、nethogs（推荐）",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "使用vnstat、iftop、nethogs需要安装吗？",
+              "id": "3-106-2",
+              "answers": [
+                {
+                  "text": "都需要额外安装软件，使用yum或apt-get",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "vnstat可查看接口统计报告，命令vnstat -i eth0 -l显示实时流量情况，ctrl+c结束后显示监控期间流量统计结果，其他用法看--help。",
+          "qas": [
+            {
+              "question": "vnstat的作用是什么？",
+              "id": "3-106-3",
+              "answers": [
+                {
+                  "text": "查看接口统计报告",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "如何用vnstat查看实时流量情况？",
+              "id": "3-106-4",
+              "answers": [
+                {
+                  "text": "vnstat -i eth0 -l",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "vnstat如何结束实时流量监控并查看统计结果？",
+              "id": "3-106-5",
+              "answers": [
+                {
+                  "text": "ctrl+c结束后，会显示监控期间的流量统计结果",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "vnstat的其他用法在哪里查看？",
+              "id": "3-106-6",
+              "answers": [
+                {
+                  "text": "--help",
+                  "answer_start": 81
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iftop可监控网卡实时流量（可指定网段）、反向解析IP、显示端口信息等。-i设定监测网卡，如iftop -i eth1；-B以bytes为单位显示流量；-n使host信息默认显示IP；-N使端口信息默认显示端口号。",
+          "qas": [
+            {
+              "question": "iftop有什么功能？",
+              "id": "3-106-7",
+              "answers": [
+                {
+                  "text": "监控网卡的实时流量（可以指定网段）、反向解析IP、显示端口信息等",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "如何用iftop设定监测的网卡为eth1？",
+              "id": "3-106-8",
+              "answers": [
+                {
+                  "text": "iftop -i eth1",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "question": "iftop中以bytes为单位显示流量用什么参数？",
+              "id": "3-106-9",
+              "answers": [
+                {
+                  "text": "-B",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "question": "iftop中使host信息默认直接显示IP的参数是什么？",
+              "id": "3-106-10",
+              "answers": [
+                {
+                  "text": "-n",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "question": "iftop中使端口信息默认直接显示端口号的参数是什么？",
+              "id": "3-106-11",
+              "answers": [
+                {
+                  "text": "-N",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iftop交互命令：按n切换显示本机IP或主机名；按s切换是否显示本机host信息；按d切换是否显示远端目标主机host信息；按t切换显示格式；按N切换显示端口号或服务名称；按S切换是否显示本机端口信息；按D切换是否显示远端目标主机端口信息；按p切换是否显示端口信息。",
+          "qas": [
+            {
+              "question": "iftop中按n有什么作用？",
+              "id": "3-106-12",
+              "answers": [
+                {
+                  "text": "切换显示本机的IP或主机名",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "iftop中按s的功能是什么？",
+              "id": "3-106-13",
+              "answers": [
+                {
+                  "text": "切换是否显示本机的host信息",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "question": "iftop中按d可以做什么？",
+              "id": "3-106-14",
+              "answers": [
+                {
+                  "text": "切换是否显示远端目标主机的host信息",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "question": "iftop中按t的作用是什么？",
+              "id": "3-106-15",
+              "answers": [
+                {
+                  "text": "切换显示格式为2行/1行/只显示发送流量/只显示接收流量",
+                  "answer_start": 104
+                }
+              ]
+            },
+            {
+              "question": "iftop中按N能实现什么？",
+              "id": "3-106-16",
+              "answers": [
+                {
+                  "text": "切换显示端口号或端口服务名称",
+                  "answer_start": 143
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nethogs按进程实时统计网络带宽利用率（推荐）。命令：nethogs -d 5设置5秒刷新一次；nethogs eth0监视eth0带宽；nethogs eth0 eth1同时监视eth0和eth1。",
+          "qas": [
+            {
+              "question": "nethogs的作用是什么？",
+              "id": "3-106-17",
+              "answers": [
+                {
+                  "text": "按进程实时统计网络带宽利用率",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "如何用nethogs设置5秒钟刷新一次？",
+              "id": "3-106-18",
+              "answers": [
+                {
+                  "text": "nethogs -d 5",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "怎样用nethogs监视eth0网络带宽？",
+              "id": "3-106-19",
+              "answers": [
+                {
+                  "text": "nethogs eth0",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "question": "如何同时监视eth0和eth1接口的网络带宽？",
+              "id": "3-106-20",
+              "answers": [
+                {
+                  "text": "nethogs eth0 eth1",
+                  "answer_start": 80
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nethogs交互命令（键盘快捷键）：m修改单位；r按流量排序；s按发送流量排序；q退出命令提示符。",
+          "qas": [
+            {
+              "question": "nethogs中按m有什么作用？",
+              "id": "3-106-21",
+              "answers": [
+                {
+                  "text": "修改单位",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "nethogs中按r的功能是什么？",
+              "id": "3-106-22",
+              "answers": [
+                {
+                  "text": "按流量排序",
+                  "answer_start": 44
+                }
+              ]
+            },
+            {
+              "question": "nethogs中按s可以做什么？",
+              "id": "3-106-23",
+              "answers": [
+                {
+                  "text": "按发送流量排序",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "question": "nethogs中按q的作用是什么？",
+              "id": "3-106-24",
+              "answers": [
+                {
+                  "text": "退出命令提示符",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "data": [
+    {
+      "title": "man帮助文档",
+      "paragraphs": [
+        {
+          "context": "man是man-db工具和man-pages帮助文档的统称，man-pages有多种语言版本，中文是man-pages-zh_cn包（arch linux中）。",
+          "qas": [
+            {
+              "question": "man帮助系统包含什么？",
+              "id": "3-113-1",
+              "answers": [
+                {
+                  "text": "man-db工具和man-pages帮助文档",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "arch linux中中文的man-pages包是什么？",
+              "id": "3-113-2",
+              "answers": [
+                {
+                  "text": "man-pages-zh_cn",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "man使用方式为man 分类 条目，如man 2 exit查看exit条目的第二册内容。",
+          "qas": [
+            {
+              "question": "man的使用方式是什么？",
+              "id": "3-113-3",
+              "answers": [
+                {
+                  "text": "man 分类 条目",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "man 2 exit表示什么？",
+              "id": "3-113-4",
+              "answers": [
+                {
+                  "text": "查看exit条目的第二册内容",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "man分类：1.程序；2.系统调用；3.库调用；4.特殊文件；5.文件格式；6.游戏；7.杂项；8.系统管理命令；9.内核例程；10.要查看条目有哪些手册用man -f exit。",
+          "qas": [
+            {
+              "question": "man分类中1对应的内容是什么？",
+              "id": "3-113-5",
+              "answers": [
+                {
+                  "text": "程序",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "如何查看一个条目有哪些手册？",
+              "id": "3-113-6",
+              "answers": [
+                {
+                  "text": "man -f exit",
+                  "answer_start": 105
+                }
+              ]
+            },
+            {
+              "question": "man分类中8对应的内容是什么？",
+              "id": "3-113-7",
+              "answers": [
+                {
+                  "text": "系统管理命令",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "man选项k：搜索条目和概要中的关键字；f：显示条目所有手册的简短说明；w：显示帮助文档的路径；l：针对文档文件操作；P：格式化工具，默认是less；H：使用浏览器打开，环境变量BROWSER可指定浏览器。",
+          "qas": [
+            {
+              "question": "man的哪个选项用于搜索条目和概要中的关键字？",
+              "id": "3-113-8",
+              "answers": [
+                {
+                  "text": "k",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "man的f选项有什么作用？",
+              "id": "3-113-9",
+              "answers": [
+                {
+                  "text": "显示该条目的所有手册的简短说明",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "question": "man的H选项的作用是什么？",
+              "id": "3-113-10",
+              "answers": [
+                {
+                  "text": "使用浏览器打开，环境变量BROWSER可指定浏览器",
+                  "answer_start": 153
+                }
+              ]
+            },
+            {
+              "question": "man的P选项默认的格式化工具是什么？",
+              "id": "3-113-11",
+              "answers": [
+                {
+                  "text": "less",
+                  "answer_start": 142
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置BROWSER环境变量：export BROWSER=/opt/microsoft/msedge-dev/msedge，用man -H sh &在后台使用浏览器打开帮助。",
+          "qas": [
+            {
+              "question": "如何设置BROWSER环境变量为微软edge-dev浏览器？",
+              "id": "3-113-12",
+              "answers": [
+                {
+                  "text": "export BROWSER=/opt/microsoft/msedge-dev/msedge",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "怎样在后台用浏览器打开sh的帮助？",
+              "id": "3-113-13",
+              "answers": [
+                {
+                  "text": "man -H sh &",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用khelpcenter打开帮助：khelpcenter man:sh &，其搜索是man -k，可用正则表达式减少匹配数量。",
+          "qas": [
+            {
+              "question": "如何用khelpcenter打开sh的帮助？",
+              "id": "3-113-14",
+              "answers": [
+                {
+                  "text": "khelpcenter man:sh &",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "khelpcenter的搜索基于什么？",
+              "id": "3-113-15",
+              "answers": [
+                {
+                  "text": "man -k",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "man搜索使用：man -k man在概要找，匹配多；man -f man在条目找，精准；man -k \"^man$\"等价man -f man。",
+          "qas": [
+            {
+              "question": "man -k man的搜索范围是什么？",
+              "id": "3-113-16",
+              "answers": [
+                {
+                  "text": "概要里面",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "哪个命令等价于man -f man？",
+              "id": "3-113-17",
+              "answers": [
+                {
+                  "text": "man -k \"^man$\"",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "info是多页面帮助系统，比man复杂更新，文档数量比man少，info --subnodes -o ls.txt ls将info ls输出到ls.txt。",
+          "qas": [
+            {
+              "question": "info帮助系统与man相比有什么特点？",
+              "id": "3-113-18",
+              "answers": [
+                {
+                  "text": "多页面，比man更复杂更新，文档数量没有man多",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "如何将info ls的内容输出到ls.txt？",
+              "id": "3-113-19",
+              "answers": [
+                {
+                  "text": "info --subnodes -o ls.txt ls",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "khelpcenter不能正确识别中文man pages，解决方法：sudo ln -s /usr/share/man/zh_CN /usr/share/man/Chinese。",
+          "qas": [
+            {
+              "question": "khelpcenter存在什么bug？",
+              "id": "3-113-20",
+              "answers": [
+                {
+                  "text": "不能正确识别中文 man pages",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "如何解决khelpcenter不能正确识别中文man pages的问题？",
+              "id": "3-113-21",
+              "answers": [
+                {
+                  "text": "sudo ln -s /usr/share/man/zh_CN /usr/share/man/Chinese",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

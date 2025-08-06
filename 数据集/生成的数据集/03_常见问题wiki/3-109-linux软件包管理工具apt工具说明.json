@@ -1,0 +1,395 @@
+
+{
+  "data": [
+    {
+      "title": "linux软件包管理工具apt工具说明",
+      "paragraphs": [
+        {
+          "context": "搜索软件包使用命令：apt-cache search package",
+          "qas": [
+            {
+              "question": "如何搜索软件包？",
+              "id": "3-109-1",
+              "answers": [
+                {
+                  "text": "apt-cache search package",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看二进制包基本信息的命令是：apt-cache showpkg package",
+          "qas": [
+            {
+              "question": "查看二进制包基本信息用什么命令？",
+              "id": "3-109-2",
+              "answers": [
+                {
+                  "text": "apt-cache showpkg package",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看二进制包详细信息使用apt-cache show package，会列出软件包详细信息及用途描述，若系统中已安装该包且有新版本，会一并列出。",
+          "qas": [
+            {
+              "question": "如何查看二进制包的详细信息？",
+              "id": "3-109-3",
+              "answers": [
+                {
+                  "text": "apt-cache show package",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "查看二进制包详细信息时，若系统中已安装该包且有新版本会怎样？",
+              "id": "3-109-4",
+              "answers": [
+                {
+                  "text": "会将它们的详细信息一并列出",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看源码包信息的命令为：apt-cache showsrc package",
+          "qas": [
+            {
+              "question": "查看源码包信息用什么命令？",
+              "id": "3-109-5",
+              "answers": [
+                {
+                  "text": "apt-cache showsrc package",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看软件包的依赖关系使用apt-cache depends package",
+          "qas": [
+            {
+              "question": "如何查看软件包的依赖关系？",
+              "id": "3-109-6",
+              "answers": [
+                {
+                  "text": "apt-cache depends package",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看可以更新的软件包使用apt-show-versions",
+          "qas": [
+            {
+              "question": "用什么命令可以查看可以更新的软件包？",
+              "id": "3-109-7",
+              "answers": [
+                {
+                  "text": "apt-show-versions",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重新安装软件包可使用--reinstall选项，如：apt-get --reinstall install gdm",
+          "qas": [
+            {
+              "question": "如何重新安装软件包？",
+              "id": "3-109-8",
+              "answers": [
+                {
+                  "text": "使用--reinstall选项，如：apt-get --reinstall install gdm",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除软件包用apt-get remove package，会连带删除有依赖关系的包，但保留配置文件；彻底删除包及配置文件用apt-get --purge remove package",
+          "qas": [
+            {
+              "question": "如何删除软件包？",
+              "id": "3-109-9",
+              "answers": [
+                {
+                  "text": "apt-get remove package",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "apt-get remove package会删除配置文件吗？",
+              "id": "3-109-10",
+              "answers": [
+                {
+                  "text": "不会，会保留配置文件",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "question": "如何彻底删除软件包及其配置文件？",
+              "id": "3-109-11",
+              "answers": [
+                {
+                  "text": "apt-get --purge remove package",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt-get clean删除/var/cache/apt/archives和/var/cache/apt/archives/partial目录下锁文件以外的所有文件；apt-get autoclean仅删除不需要再次下载的文件",
+          "qas": [
+            {
+              "question": "apt-get clean的作用是什么？",
+              "id": "3-109-12",
+              "answers": [
+                {
+                  "text": "删除/var/cache/apt/archives和/var/cache/apt/archives/partial目录下锁文件以外的所有文件",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "apt-get autoclean会删除哪些文件？",
+              "id": "3-109-13",
+              "answers": [
+                {
+                  "text": "仅删除那些不需要再次下载的文件",
+                  "answer_start": 104
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载二进制包使用apt-get source packagename",
+          "qas": [
+            {
+              "question": "如何下载二进制包？",
+              "id": "3-109-14",
+              "answers": [
+                {
+                  "text": "apt-get source packagename",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装本地二进制包（.deb包）用dpkg -i ***.deb",
+          "qas": [
+            {
+              "question": "如何安装本地的.deb包？",
+              "id": "3-109-15",
+              "answers": [
+                {
+                  "text": "dpkg -i ***.deb",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载源码包用apt-get source packagename，通常下载三个文件：.orig.tar.gz、.dsc和.diff.gz，会自动解压，未安装dpkg-dev则不会自动解压，加-d选项可阻止自动解压",
+          "qas": [
+            {
+              "question": "下载源码包的命令是什么？",
+              "id": "3-109-16",
+              "answers": [
+                {
+                  "text": "apt-get source packagename",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "下载源码包通常会得到哪些文件？",
+              "id": "3-109-17",
+              "answers": [
+                {
+                  "text": "一个.orig.tar.gz、一个.dsc和一个.diff.gz文件",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "什么情况下下载源码包不会自动解压？",
+              "id": "3-109-18",
+              "answers": [
+                {
+                  "text": "没有安装dpkg-dev时，下载过程则不会自动解压源码包",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "如何阻止下载源码包后自动解压？",
+              "id": "3-109-19",
+              "answers": [
+                {
+                  "text": "指定-d选项，即：apt-get source packagename -d",
+                  "answer_start": 126
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "手动解开源码包用dpkg-source -x foo_version-revision.dsc，会解包到packagename-version目录",
+          "qas": [
+            {
+              "question": "如何手动解开源码包？",
+              "id": "3-109-20",
+              "answers": [
+                {
+                  "text": "运行命令: dpkg-source -x foo_version-revision.dsc",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "手动解开源码包会解到哪个目录？",
+              "id": "3-109-21",
+              "answers": [
+                {
+                  "text": "packagename-version目录",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载的源码包自动编译成二进制包可指定-b选项：apt-get source packagename -b",
+          "qas": [
+            {
+              "question": "如何让下载的源码包自动编译成二进制包？",
+              "id": "3-109-22",
+              "answers": [
+                {
+                  "text": "指定 -b 选项，即：apt-get source packagename -b",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在解压后的源码目录（含debian目录）中用dpkg-buildpackage -rfakeroot -uc -b手动编译成二进制包，-b创建二进制包，-S创建源码包，不指定则都创建",
+          "qas": [
+            {
+              "question": "如何手动将源码包编译成二进制包？",
+              "id": "3-109-23",
+              "answers": [
+                {
+                  "text": "在解压后的源码目录中（该目录中包含debian目录）执行命令：dpkg-buildpackage -rfakeroot -uc -b",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "dpkg-buildpackage的-b选项有什么作用？",
+              "id": "3-109-24",
+              "answers": [
+                {
+                  "text": "创建二进制包",
+                  "answer_start": 102
+                }
+              ]
+            },
+            {
+              "question": "dpkg-buildpackage不指定-b和-S选项会怎样？",
+              "id": "3-109-25",
+              "answers": [
+                {
+                  "text": "源码包和二进制包都会被创建",
+                  "answer_start": 136
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装编译依赖包用sudo apt-get build-dep adduser -y，源码包控制文件中“Build-Depends：”域指出所需附加包",
+          "qas": [
+            {
+              "question": "安装编译依赖包的命令是什么？",
+              "id": "3-109-26",
+              "answers": [
+                {
+                  "text": "sudo apt-get build-dep adduser -y",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "源码包的哪个部分指出了编译所需的附加包？",
+              "id": "3-109-27",
+              "answers": [
+                {
+                  "text": "控制文件中的“Build-Depends：”域",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查询包的依赖列表用apt-cache depends；查询包的反向依赖列表用apt-cache rdepends；递归查询包的依赖关系树用apt-rdepends工具",
+          "qas": [
+            {
+              "question": "如何查询包的依赖列表？",
+              "id": "3-109-28",
+              "answers": [
+                {
+                  "text": "apt-cache depends",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "查询包的反向依赖列表用什么命令？",
+              "id": "3-109-29",
+              "answers": [
+                {
+                  "text": "apt-cache rdepends",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "哪个工具可以递归查询包的依赖关系树？",
+              "id": "3-109-30",
+              "answers": [
+                {
+                  "text": "apt-rdepends工具",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
