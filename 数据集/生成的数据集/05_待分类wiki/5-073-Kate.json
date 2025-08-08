@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Kate",
+      "paragraphs": [
+        {
+          "context": "Kate是一个开源的、先进的文本编辑器，专为桌面环境KDESC设计。包括编辑各种文本文件、语法高亮显示、可扩展XML文件、代码可以折叠/展开显示，动态自动换行。",
+          "qas": [
+            {
+              "id": "5-73-1",
+              "question": "Kate是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "开源的、先进的文本编辑器",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-73-2",
+              "question": "Kate专为哪个桌面环境设计？",
+              "answers": [
+                {
+                  "text": "KDESC",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-73-3",
+              "question": "Kate是什么？",
+              "answers": [
+                {
+                  "text": "一个开源的、先进的文本编辑器，专为桌面环境KDESC设计。",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-73-4",
+              "question": "Kate的功能包括哪些？",
+              "answers": [
+                {
+                  "text": "包括编辑各种文本文件、语法高亮显示、可扩展XML文件、代码可以折叠/展开显示，动态自动换行",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install kate",
+          "qas": [
+            {
+              "id": "5-73-5",
+              "question": "如何安装Kate？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install kate",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove kate",
+          "qas": [
+            {
+              "id": "5-73-6",
+              "question": "如何卸载Kate？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove kate",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/k/kate/",
+          "qas": [
+            {
+              "id": "5-73-7",
+              "question": "Kate的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/k/kate/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

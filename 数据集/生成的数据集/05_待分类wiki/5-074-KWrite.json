@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "KWrite",
+      "paragraphs": [
+        {
+          "context": "KWrite是一款程序员非常喜欢的文字编辑器，支持中文显示和输入。KWrite最主要的功能特征是它能对许多程序语言的语法彩色化，如 C/C++、Java、Python、Per、Bash、HTML等。",
+          "qas": [
+            {
+              "id": "5-74-1",
+              "question": "KWrite是一款什么样的工具？",
+              "answers": [
+                {
+                  "text": "程序员非常喜欢的文字编辑器，支持中文显示和输入",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "5-74-2",
+              "question": "KWrite最主要的功能特征是什么？",
+              "answers": [
+                {
+                  "text": "能对许多程序语言的语法彩色化",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "id": "5-74-3",
+              "question": "KWrite支持语法彩色化的程序语言有哪些例子？",
+              "answers": [
+                {
+                  "text": "C/C++、Java、Python、Per、Bash、HTML等",
+                  "answer_start": 104
+                }
+              ]
+            },
+            {
+              "id": "5-74-4",
+              "question": "KWrite是什么类型的编辑器？",
+              "answers": [
+                {
+                  "text": "文字编辑器",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "5-74-5",
+              "question": "KWrite支持哪些语言特性？",
+              "answers": [
+                {
+                  "text": "对许多程序语言的语法彩色化，如 C/C++、Java、Python、Per、Bash、HTML等",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-74-6",
+              "question": "KWrite支持中文处理吗？",
+              "answers": [
+                {
+                  "text": "支持中文显示和输入",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install kwrite",
+          "qas": [
+            {
+              "id": "5-74-7",
+              "question": "如何安装KWrite？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install kwrite",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove kwrite",
+          "qas": [
+            {
+              "id": "5-74-8",
+              "question": "如何卸载KWrite？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove kwrite",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "KWrite的仓库地址是：http://packages.deepin.com/deepin/pool/main/k/kate/",
+          "qas": [
+            {
+              "id": "5-74-9",
+              "question": "KWrite的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/k/kate/",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

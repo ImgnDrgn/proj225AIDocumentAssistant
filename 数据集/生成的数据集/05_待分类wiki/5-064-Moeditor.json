@@ -1,0 +1,129 @@
+{
+  "data": [
+    {
+      "title": "Moeditor",
+      "paragraphs": [
+        {
+          "context": "Moeditor是一款markdown编辑器，极简风格的界面，支持所有markdown基础功能，可以调整视图，设置主题和样式，支持语法检查，可以将文件导出为HTML和PDF格式。",
+          "qas": [
+            {
+              "id": "5-64-1",
+              "question": "Moeditor是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "markdown编辑器",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-64-2",
+              "question": "Moeditor的界面风格是什么？",
+              "answers": [
+                {
+                  "text": "极简风格",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "5-64-3",
+              "question": "Moeditor支持哪些markdown基础功能？",
+              "answers": [
+                {
+                  "text": "所有markdown基础功能",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "5-64-4",
+              "question": "Moeditor可以调整什么？",
+              "answers": [
+                {
+                  "text": "视图",
+                  "answer_start": 50
+                }
+              ]
+            },
+            {
+              "id": "5-64-5",
+              "question": "Moeditor可以设置什么？",
+              "answers": [
+                {
+                  "text": "主题和样式",
+                  "answer_start": 55
+                }
+              ]
+            },
+            {
+              "id": "5-64-6",
+              "question": "Moeditor是否支持语法检查？",
+              "answers": [
+                {
+                  "text": "支持语法检查",
+                  "answer_start": 60
+                }
+              ]
+            },
+            {
+              "id": "5-64-7",
+              "question": "Moeditor可以将文件导出为哪些格式？",
+              "answers": [
+                {
+                  "text": "HTML和PDF格式",
+                  "answer_start": 73
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install moeditor",
+          "qas": [
+            {
+              "id": "5-64-8",
+              "question": "安装Moeditor的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install moeditor",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove moeditor",
+          "qas": [
+            {
+              "id": "5-64-9",
+              "question": "卸载Moeditor的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove moeditor",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/non-free/m/moeditor/",
+          "qas": [
+            {
+              "id": "5-64-10",
+              "question": "Moeditor的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/m/moeditor/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

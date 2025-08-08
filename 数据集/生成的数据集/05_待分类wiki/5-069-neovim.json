@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "title": "neovim",
+      "paragraphs": [
+        {
+          "context": "Neovim对vim的架构进行了大幅改动，支持lua和python来编写插件，视觉也更美观。vim兼容性强，neovim则是更轻盈，也更适合扩展。安装指令：apt install neovim。卸载指令：apt remove neovim。打开文件方式：nvim 文件（TUI启动）或nvim-qt 文件（GUI启动）。配置文件兼容vim语法，默认路径：1) ~/.neovimrc 2) ~/.config/nvim/init.vim。其他操作基本继承vim。",
+          "qas": [
+            {
+              "question": "Neovim相比Vim有哪些主要改进？",
+              "id": "5-69-1",
+              "answers": [
+                {
+                  "text": "对vim的架构进行了大幅改动，支持lua和python来编写插件，视觉也更美观",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "与vim相比，neovim有哪些特点？",
+              "id": "5-69-2",
+              "answers": [
+                {
+                  "text": "更轻盈，也更适合扩展",
+                  "answer_start": 69
+                }
+              ]
+            },
+            {
+              "question": "如何通过命令行安装Neovim？",
+              "id": "5-69-3",
+              "answers": [
+                {
+                  "text": "apt install neovim",
+                  "answer_start": 104
+                }
+              ]
+            },
+            {
+              "question": "使用什么命令可卸载Neovim？",
+              "id": "5-69-4",
+              "answers": [
+                {
+                  "text": "apt remove neovim",
+                  "answer_start": 128
+                }
+              ]
+            },
+            {
+              "question": "如何通过TUI启动打开文件？",
+              "id": "5-69-5",
+              "answers": [
+                {
+                  "text": "nvim 文件",
+                  "answer_start": 167
+                }
+              ]
+            },
+            {
+              "question": "如何用GUI模式打开文件？",
+              "id": "5-69-6",
+              "answers": [
+                {
+                  "text": "nvim-qt 文件",
+                  "answer_start": 183
+                }
+              ]
+            },
+            {
+              "question": "Neovim的配置文件兼容什么语法？",
+              "id": "5-69-7",
+              "answers": [
+                {
+                  "text": "兼容vim语法",
+                  "answer_start": 214
+                }
+              ]
+            },
+            {
+              "question": "Neovim默认配置文件路径有哪些？",
+              "id": "5-69-8",
+              "answers": [
+                {
+                  "text": "1) ~/.neovimrc 2) ~/.config/nvim/init.vim",
+                  "answer_start": 228
+                }
+              ]
+            },
+            {
+              "question": "Neovim的其他操作与vim有什么关系？",
+              "id": "5-69-9",
+              "answers": [
+                {
+                  "text": "基本继承vim",
+                  "answer_start": 273
+                }
+              ]
+            },
+            {
+              "question": "与Vim相比，Neovim在体积上有什么特点？",
+              "id": "5-69-10",
+              "answers": [
+                {
+                  "text": "更轻盈",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

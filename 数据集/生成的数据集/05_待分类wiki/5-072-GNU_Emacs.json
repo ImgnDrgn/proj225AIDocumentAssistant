@@ -1,0 +1,374 @@
+{
+  "data": [
+    {
+      "title": "GNU_Emacs",
+      "paragraphs": [
+        {
+          "context": "GNU Emacs是一个可扩展、定制的文本编辑器，Emacs内置Elisp解释器和热替换机制，具有各种编辑模式、内置文件、全语言以及对应脚本、高度可定制化、丰富的插件管理等功能。",
+          "qas": [
+            {
+              "id": "5-72-1",
+              "question": "GNU Emacs是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "可扩展、定制的文本编辑器",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-72-2",
+              "question": "GNU Emacs内置了什么解释器？",
+              "answers": [
+                {
+                  "text": "Elisp解释器",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-72-3",
+              "question": "GNU Emacs具有哪些功能？",
+              "answers": [
+                {
+                  "text": "各种编辑模式、内置文件、全语言以及对应脚本、高度可定制化、丰富的插件管理等功能",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装GNU Emacs的命令是：sudo apt-get install emacs",
+          "qas": [
+            {
+              "id": "5-72-4",
+              "question": "如何安装GNU Emacs？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install emacs",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载GNU Emacs的命令是：sudo apt-get remove emacs",
+          "qas": [
+            {
+              "id": "5-72-5",
+              "question": "如何卸载GNU Emacs？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove emacs",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GNU Emacs的仓库地址是：http://packages.deepin.com/deepin/pool/main/e/emacs-defaults/",
+          "qas": [
+            {
+              "id": "5-72-6",
+              "question": "GNU Emacs的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/e/emacs-defaults/",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "快捷键约定：“c-a”、“m-w”中“c-”代表Ctrl键、“m-”代表Meta键（一般是Alt键），“a”、“w”则代表普通的字母按键。",
+          "qas": [
+            {
+              "id": "5-72-7",
+              "question": "快捷键中“c-”代表什么键？",
+              "answers": [
+                {
+                  "text": "Ctrl键",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-72-8",
+              "question": "“m-”在快捷键中代表什么键？",
+              "answers": [
+                {
+                  "text": "Meta键（一般是Alt键）",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件操作快捷键：C-x c-f 用于打开文件（不关闭当前正在浏览的文件）；c-x c-v 用于打开文件（打开文件并关闭当前正在浏览的文件）；c-x c-s 用于保存文件；c-x k 用于杀死（关闭）文件；c-x c-c 用于关闭文件，退出emacs。",
+          "qas": [
+            {
+              "id": "5-72-9",
+              "question": "哪个快捷键用于打开文件且不关闭当前正在浏览的文件？",
+              "answers": [
+                {
+                  "text": "C-x c-f",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-72-10",
+              "question": "保存文件的快捷键是什么？",
+              "answers": [
+                {
+                  "text": "c-x c-s",
+                  "answer_start": 117
+                }
+              ]
+            },
+            {
+              "id": "5-72-11",
+              "question": "关闭文件并退出emacs的快捷键是什么？",
+              "answers": [
+                {
+                  "text": "c-x c-c",
+                  "answer_start": 166
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文本编辑快捷键：c-a 使光标跳到行首（根据显示逻辑不同，行首位置可能不同）；c-e 使光标跳到行尾（根据显示逻辑不同，行尾位置可能不同）；c-f 使光标前进一个字符（前进方向为正常打字方向）；m-f 使光标前进一个单词（中文环境下“单词”可能代表一个句子）；c-b 使光标后退一个字符（后退方向为正常打字的反方向）；m-b 使光标后退一个单词（中文环境下“单词”可能代表一个句子）；c-n 使光标下移一行；c-p 使光标上移一行；c-y 用于召回文本（可理解为“粘贴”）；c-d 用于删除光标当前位置的字符；m-d 用于从当前光标处向前移除一个单词（移除的字词可通过c-y召回，删除则不能）。",
+          "qas": [
+            {
+              "id": "5-72-12",
+              "question": "哪个快捷键能让光标跳到行首？",
+              "answers": [
+                {
+                  "text": "c-a",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-72-13",
+              "question": "光标前进一个字符的快捷键是什么？",
+              "answers": [
+                {
+                  "text": "c-f",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "id": "5-72-14",
+              "question": "c-y的功能是什么？",
+              "answers": [
+                {
+                  "text": "召回文本（可理解为“粘贴”）",
+                  "answer_start": 347
+                }
+              ]
+            },
+            {
+              "id": "5-72-15",
+              "question": "m-d的功能是什么？",
+              "answers": [
+                {
+                  "text": "从当前光标处向前移除一个单词（移除的字词可通过c-y召回，删除则不能）",
+                  "answer_start": 404
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查询帮助快捷键：c-h t 用于查看emacs教程；c-h k 用于查看快捷键绑定的功能；c-h f 用于输入功能名称，查询所绑定的快捷键和功能描述；c-h w 用于输入功能名称，显示其所有绑定的快捷键。",
+          "qas": [
+            {
+              "id": "5-72-16",
+              "question": "如何查看emacs教程？",
+              "answers": [
+                {
+                  "text": "c-h t",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-72-17",
+              "question": "哪个快捷键可以查看快捷键绑定的功能？",
+              "answers": [
+                {
+                  "text": "c-h k",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "id": "5-72-18",
+              "question": "输入功能名称以查询其绑定的快捷键和描述，使用什么快捷键？",
+              "answers": [
+                {
+                  "text": "c-h f",
+                  "answer_start": 94
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GNU Emacs是一个可扩展、定制的文本编辑器，Emacs内置Elisp解释器和热替换机制，具有各种编辑模式、内置文件、全语言以及对应脚本、高度可定制化、丰富的插件管理等功能。",
+          "qas": [
+            {
+              "id": "5-72-19",
+              "question": "GNU Emacs是什么类型的编辑器？",
+              "answers": [
+                {
+                  "text": "可扩展、定制的文本编辑器",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "5-72-20",
+              "question": "Emacs内置了哪些核心组件？",
+              "answers": [
+                {
+                  "text": "Elisp解释器和热替换机制",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-72-21",
+              "question": "GNU Emacs具有哪些主要功能？",
+              "answers": [
+                {
+                  "text": "各种编辑模式、内置文件、全语言以及对应脚本、高度可定制化、丰富的插件管理",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件操作\n快捷键 | 功能\nC-x c-f | 打开文件（不关闭当前正在浏览的文件）",
+          "qas": [
+            {
+              "id": "5-72-22",
+              "question": "在文件操作中，快捷键C-x c-f的功能是什么？",
+              "answers": [
+                {
+                  "text": "打开文件（不关闭当前正在浏览的文件）",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-72-23",
+              "question": "哪个快捷键用于打开文件且不关闭当前文件？",
+              "answers": [
+                {
+                  "text": "C-x c-f",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件操作\n快捷键 | 功能\nC-x c-v | 打开文件（打开文件并关闭当前正在浏览的文件）",
+          "qas": [
+            {
+              "id": "5-72-24",
+              "question": "C-x c-v快捷键在文件操作中有什么功能？",
+              "answers": [
+                {
+                  "text": "打开文件（打开文件并关闭当前正在浏览的文件）",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文本编辑\n快捷键 | 功能 | 备注\nc-a | 光标跳到行首 | 根据显示逻辑（视觉行或是真实行）不同，行首、行尾的位置是不同的。",
+          "qas": [
+            {
+              "id": "5-72-25",
+              "question": "在文本编辑中，c-a快捷键的功能是什么？",
+              "answers": [
+                {
+                  "text": "光标跳到行首",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "5-72-26",
+              "question": "关于光标跳到行首功能有什么注意事项？",
+              "answers": [
+                {
+                  "text": "根据显示逻辑（视觉行或是真实行）不同，行首、行尾的位置是不同的。",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文本编辑\n快捷键 | 功能 | 备注\nc-e | 光标跳到行尾 | 根据显示逻辑（视觉行或是真实行）不同，行首、行尾的位置是不同的。",
+          "qas": [
+            {
+              "id": "5-72-27",
+              "question": "哪个快捷键可以让光标跳到行尾？",
+              "answers": [
+                {
+                  "text": "c-e",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查询帮助\n快捷键 | 功能\nc-h k | 查看快捷键绑定的功能",
+          "qas": [
+            {
+              "id": "5-72-28",
+              "question": "c-h k快捷键的功能是什么？",
+              "answers": [
+                {
+                  "text": "查看快捷键绑定的功能",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "维基百科：",
+          "qas": [
+            {
+              "id": "5-72-29",
+              "question": "可以在哪里找到GNU Emacs的维基百科信息？",
+              "answers": [
+                {
+                  "text": "维基百科",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

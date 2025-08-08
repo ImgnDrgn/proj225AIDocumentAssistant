@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "Haroopad",
+      "paragraphs": [
+        {
+          "context": "Haroopad是一款Linux平台下的markdown编辑器，它在两侧分别显示代码编辑窗口和预览窗口，具有丰富的主题样式、支持语法高亮显示和LaTex数学公式，还可以导出将文档以邮件形式发送到Tumblr和Evernote。",
+          "qas": [
+            {
+              "id": "5-61-1",
+              "question": "Haroopad是什么类型的编辑器？",
+              "answers": [
+                {
+                  "text": "markdown编辑器",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-61-2",
+              "question": "Haroopad是哪个平台下的markdown编辑器？",
+              "answers": [
+                {
+                  "text": "Linux平台",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-61-3",
+              "question": "Haroopad的窗口布局有什么特点？",
+              "answers": [
+                {
+                  "text": "两侧分别显示代码编辑窗口和预览窗口",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "id": "5-61-4",
+              "question": "Haroopad支持哪些主题和功能？",
+              "answers": [
+                {
+                  "text": "具有丰富的主题样式、支持语法高亮显示和LaTex数学公式",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "id": "5-61-5",
+              "question": "Haroopad支持哪些功能？",
+              "answers": [
+                {
+                  "text": "丰富的主题样式、支持语法高亮显示和LaTex数学公式，还可以导出将文档以邮件形式发送到Tumblr和Evernote",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "id": "5-61-6",
+              "question": "Haroopad可以导出文档到哪些服务？",
+              "answers": [
+                {
+                  "text": "Tumblr和Evernote",
+                  "answer_start": 89
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装命令为：sudo apt-get install haroopad",
+          "qas": [
+            {
+              "id": "5-61-7",
+              "question": "安装Haroopad的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install haroopad",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载命令为：sudo apt-get remove haroopad",
+          "qas": [
+            {
+              "id": "5-61-8",
+              "question": "卸载Haroopad的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove haroopad",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Haroopad的仓库地址是：http://packages.deepin.com/deepin/pool/non-free/h/haroopad/",
+          "qas": [
+            {
+              "id": "5-61-9",
+              "question": "Haroopad的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/h/haroopad/",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
