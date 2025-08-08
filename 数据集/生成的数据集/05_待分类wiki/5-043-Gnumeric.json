@@ -1,0 +1,159 @@
+{
+  "data": [
+    {
+      "title": "Gnumeric",
+      "paragraphs": [
+        {
+          "context": "Gnumeric是一款电子表格处理软件，操作方式与Excel非常相似。Gnumeric能够导入导出多种数据格式，支持包括中文在内的多种语言，并且可以自定义扩展行列数。",
+          "qas": [
+            {
+              "id": "5-43-1",
+              "question": "Gnumeric是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "电子表格处理软件",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-43-2",
+              "question": "Gnumeric的操作方式与什么软件相似？",
+              "answers": [
+                {
+                  "text": "Excel",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "5-43-3",
+              "question": "Gnumeric能否导入导出多种数据格式？",
+              "answers": [
+                {
+                  "text": "能够",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "5-43-4",
+              "question": "Gnumeric支持包括中文在内的多种语言吗？",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 55
+                }
+              ]
+            },
+            {
+              "id": "5-43-5",
+              "question": "Gnumeric可以自定义扩展行列数吗？",
+              "answers": [
+                {
+                  "text": "可以",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "id": "5-43-9",
+              "question": "Gnumeric支持哪些语言特性？",
+              "answers": [
+                {
+                  "text": "支持包括中文在内的多种语言",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "5-43-10",
+              "question": "Gnumeric能否自定义扩展功能？",
+              "answers": [
+                {
+                  "text": "可以自定义扩展行列数",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Gnumeric的命令为：sudo apt-get install gnumeric",
+          "qas": [
+            {
+              "id": "5-43-6",
+              "question": "安装Gnumeric的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gnumeric",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Gnumeric的命令为：sudo apt-get remove gnumeric",
+          "qas": [
+            {
+              "id": "5-43-7",
+              "question": "卸载Gnumeric的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gnumeric",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Gnumeric的仓库地址是：http://packages.deepin.com/deepin/pool/main/g/gnumeric/",
+          "qas": [
+            {
+              "id": "5-43-8",
+              "question": "Gnumeric的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gnumeric/",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install gnumeric",
+          "qas": [
+            {
+              "id": "5-43-11",
+              "question": "如何安装Gnumeric？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gnumeric",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove gnumeric",
+          "qas": [
+            {
+              "id": "5-43-12",
+              "question": "如何卸载Gnumeric？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gnumeric",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

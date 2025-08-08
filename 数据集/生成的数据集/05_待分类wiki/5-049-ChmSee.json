@@ -1,0 +1,134 @@
+{
+  "data": [
+    {
+      "title": "ChmSee",
+      "paragraphs": [
+        {
+          "context": "ChmSee是一个在Linux下阅读CHM格式帮助文件的软件，对中文支持良好，目前支持简体和英文编码的CHM文件。chmsee具有与Firefox类似的分页浏览标签，能够自动检测编码，可以收藏书签，以及设置字体等。安装ChmSee的命令是：sudo apt-get install chmsee。卸载ChmSee的命令是：sudo apt-get remove chmsee。ChmSee的仓库地址是http://packages.deepin.com/deepin/pool/main/c/chmsee/。ChmSee的相关链接包括维基百科。",
+          "qas": [
+            {
+              "id": "5-49-1",
+              "question": "ChmSee是用于在什么操作系统下阅读CHM格式帮助文件的软件？",
+              "answers": [
+                {
+                  "text": "Linux",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-49-2",
+              "question": "ChmSee对哪种语言支持良好？",
+              "answers": [
+                {
+                  "text": "中文",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "5-49-3",
+              "question": "ChmSee支持哪些编码的CHM文件？",
+              "answers": [
+                {
+                  "text": "简体和英文编码",
+                  "answer_start": 43
+                }
+              ]
+            },
+            {
+              "id": "5-49-4",
+              "question": "ChmSee具有与Firefox类似的什么功能？",
+              "answers": [
+                {
+                  "text": "分页浏览标签",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "id": "5-49-5",
+              "question": "ChmSee能够自动检测什么？",
+              "answers": [
+                {
+                  "text": "编码",
+                  "answer_start": 89
+                }
+              ]
+            },
+            {
+              "id": "5-49-6",
+              "question": "ChmSee可以进行哪些操作？",
+              "answers": [
+                {
+                  "text": "收藏书签，以及设置字体等",
+                  "answer_start": 94
+                }
+              ]
+            },
+            {
+              "id": "5-49-7",
+              "question": "安装ChmSee的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install chmsee",
+                  "answer_start": 119
+                }
+              ]
+            },
+            {
+              "id": "5-49-8",
+              "question": "卸载ChmSee的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove chmsee",
+                  "answer_start": 160
+                }
+              ]
+            },
+            {
+              "id": "5-49-9",
+              "question": "ChmSee的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/c/chmsee/",
+                  "answer_start": 199
+                }
+              ]
+            },
+            {
+              "id": "5-49-10",
+              "question": "ChmSee的相关链接包括什么？",
+              "answers": [
+                {
+                  "text": "维基百科",
+                  "answer_start": 266
+                }
+              ]
+            },
+            {
+              "id": "5-49-11",
+              "question": "ChmSee的主要功能是什么？",
+              "answers": [
+                {
+                  "text": "在Linux下阅读CHM格式帮助文件",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "5-49-12",
+              "question": "ChmSee的界面特性与什么浏览器相似？",
+              "answers": [
+                {
+                  "text": "Firefox",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

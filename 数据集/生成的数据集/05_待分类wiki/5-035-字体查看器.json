@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "字体查看器",
+      "paragraphs": [
+        {
+          "context": "字体查看器是一个查看字体的应用程序，它允许用户查看和浏览所有已安装的字体，同时可以查看字体的详细信息。",
+          "qas": [
+            {
+              "id": "5-35-1",
+              "question": "字体查看器是什么？",
+              "answers": [
+                {
+                  "text": "一个查看字体的应用程序，它允许用户查看和浏览所有已安装的字体，同时可以查看字体的详细信息。",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-35-2",
+              "question": "字体查看器的主要功能是什么？",
+              "answers": [
+                {
+                  "text": "查看和浏览所有已安装的字体，同时可以查看字体的详细信息",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-35-3",
+              "question": "用户可以通过字体查看器查看哪些内容？",
+              "answers": [
+                {
+                  "text": "所有已安装的字体和字体的详细信息",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install gnome-font-viewer",
+          "qas": [
+            {
+              "id": "5-35-4",
+              "question": "安装字体查看器的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gnome-font-viewer",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-35-5",
+              "question": "使用什么命令安装gnome-font-viewer？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gnome-font-viewer",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove gnome-font-viewer",
+          "qas": [
+            {
+              "id": "5-35-6",
+              "question": "卸载字体查看器的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gnome-font-viewer",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-35-7",
+              "question": "如何移除gnome-font-viewer应用程序？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gnome-font-viewer",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/g/gnome-font-viewer/",
+          "qas": [
+            {
+              "id": "5-35-8",
+              "question": "字体查看器的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gnome-font-viewer/",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-35-9",
+              "question": "在哪里可以找到字体查看器的安装包？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gnome-font-viewer/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

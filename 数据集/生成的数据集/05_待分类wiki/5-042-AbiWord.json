@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "AbiWord",
+      "paragraphs": [
+        {
+          "context": "AbiWord是一款功能完备的高效文字处理软件，提供了强大的文字处理功能，非常适合处理文书、信件、报告、备忘录等常用办公文件，并且可通过各种插件进行扩展，使AbiWord能与其他格式的文件进行交互。",
+          "qas": [
+            {
+              "id": "5-42-1",
+              "question": "AbiWord是什么？",
+              "answers": [
+                {
+                  "text": "AbiWord是一款功能完备的高效文字处理软件，提供了强大的文字处理功能，非常适合处理文书、信件、报告、备忘录等常用办公文件，并且可通过各种插件进行扩展，使AbiWord能与其他格式的文件进行交互。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-42-2",
+              "question": "AbiWord属于什么类型的软件？",
+              "answers": [
+                {
+                  "text": "功能完备的高效文字处理软件",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-42-3",
+              "question": "AbiWord适合处理哪些常用办公文件？",
+              "answers": [
+                {
+                  "text": "文书、信件、报告、备忘录",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-42-4",
+              "question": "AbiWord可以通过什么方式进行扩展？",
+              "answers": [
+                {
+                  "text": "各种插件",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-42-5",
+              "question": "AbiWord通过扩展能够实现什么功能？",
+              "answers": [
+                {
+                  "text": "与其他格式的文件进行交互",
+                  "answer_start": 87
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install abiword",
+          "qas": [
+            {
+              "id": "5-42-6",
+              "question": "如何安装AbiWord？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install abiword",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove abiword",
+          "qas": [
+            {
+              "id": "5-42-7",
+              "question": "如何卸载AbiWord？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove abiword",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/a/abiword/",
+          "qas": [
+            {
+              "id": "5-42-8",
+              "question": "AbiWord的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/a/abiword/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

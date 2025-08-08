@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "永中Office",
+      "paragraphs": [
+        {
+          "context": "永中Office是一款功能强大的办公软件，已经集成了文字处理、电子表格和简报制作三大应用。永中Office对微软Office文档实现双向精确兼容，其精确专业的排版、强大的数据透视表和丰富的插件机制，完全可以满足专业级用户的需求。",
+          "qas": [
+            {
+              "id": "5-41-1",
+              "question": "永中Office属于什么类型的软件？",
+              "answers": [
+                {
+                  "text": "办公软件",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "5-41-2",
+              "question": "永中Office集成了哪三大应用？",
+              "answers": [
+                {
+                  "text": "文字处理、电子表格和简报制作",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-41-3",
+              "question": "永中Office与微软Office文档的兼容性如何？",
+              "answers": [
+                {
+                  "text": "双向精确兼容",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "id": "5-41-4",
+              "question": "永中Office有哪些特点能满足专业级用户需求？",
+              "answers": [
+                {
+                  "text": "精确专业的排版、强大的数据透视表和丰富的插件机制",
+                  "answer_start": 74
+                }
+              ]
+            },
+            {
+              "id": "5-41-5",
+              "question": "永中Office是什么？",
+              "answers": [
+                {
+                  "text": "永中Office是一款功能强大的办公软件，已经集成了文字处理、电子表格和简报制作三大应用。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install yozo-office-zh-cn",
+          "qas": [
+            {
+              "id": "5-41-6",
+              "question": "永中Office的安装命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install yozo-office-zh-cn",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove yozo-office-zh-cn",
+          "qas": [
+            {
+              "id": "5-41-7",
+              "question": "永中Office的卸载命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove yozo-office-zh-cn",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/non-free/y/yozo-office-zh-cn/",
+          "qas": [
+            {
+              "id": "5-41-8",
+              "question": "永中Office的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/y/yozo-office-zh-cn/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

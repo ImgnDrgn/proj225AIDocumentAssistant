@@ -1,0 +1,174 @@
+{
+  "data": [
+    {
+      "title": "Open365",
+      "paragraphs": [
+        {
+          "context": "Open365是一款Office文档处理软件，支持在线创建和编辑、云同步等功能，默认支持20G云存储工具，注册帐号后并登录平台，会列出目前所有的文档内容，支持创建文件夹，所支持的文档格式有docx、xlsx、pptx、JPG、PNG、音视频格式。",
+          "qas": [
+            {
+              "id": "5-39-1",
+              "question": "Open365属于什么类型的软件？",
+              "answers": [
+                {
+                  "text": "Office文档处理软件",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-39-2",
+              "question": "Open365支持哪些核心功能？",
+              "answers": [
+                {
+                  "text": "在线创建和编辑、云同步、20G云存储、列出文档内容、创建文件夹",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "5-39-3",
+              "question": "Open365默认提供多少云存储空间？",
+              "answers": [
+                {
+                  "text": "20G",
+                  "answer_start": 44
+                }
+              ]
+            },
+            {
+              "id": "5-39-4",
+              "question": "Open365支持哪些文档格式？",
+              "answers": [
+                {
+                  "text": "docx、xlsx、pptx、JPG、PNG、音视频格式",
+                  "answer_start": 94
+                }
+              ]
+            },
+            {
+              "id": "5-39-5",
+              "question": "注册并登录Open365后会显示什么内容？",
+              "answers": [
+                {
+                  "text": "目前所有的文档内容",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "id": "5-39-6",
+              "question": "Open365支持哪些基本功能？",
+              "answers": [
+                {
+                  "text": "支持在线创建和编辑、云同步等功能",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "5-39-7",
+              "question": "Open365的默认云存储空间有多大？",
+              "answers": [
+                {
+                  "text": "20G",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-39-8",
+              "question": "注册并登录Open365后，用户可以执行哪些操作？",
+              "answers": [
+                {
+                  "text": "会列出目前所有的文档内容，支持创建文件夹",
+                  "answer_start": 58
+                }
+              ]
+            },
+            {
+              "id": "5-39-9",
+              "question": "Open365支持哪些文件格式？",
+              "answers": [
+                {
+                  "text": "docx、xlsx、pptx、JPG、PNG、音视频格式",
+                  "answer_start": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install open365-client",
+          "qas": [
+            {
+              "id": "5-39-10",
+              "question": "如何安装Open365？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install open365-client",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-39-11",
+              "question": "如何在系统上安装Open365？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install open365-client",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove open365-client",
+          "qas": [
+            {
+              "id": "5-39-12",
+              "question": "如何卸载Open365？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove open365-client",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/o/open365-client/",
+          "qas": [
+            {
+              "id": "5-39-13",
+              "question": "Open365的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/o/open365-client/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址: http://packages.deepin.com/deepin/pool/main/o/open365-client/",
+          "qas": [
+            {
+              "id": "5-39-14",
+              "question": "Open365的软件仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/o/open365-client/",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

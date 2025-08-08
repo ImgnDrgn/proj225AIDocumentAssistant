@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "搜狗输入法在RStudio下无法切换的解决办法",
+      "paragraphs": [
+        {
+          "context": "解决办法为：\ndpkg-deb -R  fcitx-frontend-qt5-rstudio_1.0.5-1_amd64.deb    fcitx-frontend-qt5-rstudio (解压deb包)\n\n然后把解压出来的文件fcitx-frontend-qt5-rstudio/usr/lib/rstudio/　　目录下面的对应文件拷贝到系统/usr/lib/rstudio/目录下面\n\n同理\ndpkg-deb -R  libfcitx-qt5-1-rstudio_1.0.5-1_amd64.deb  libfcitx-qt5-1-rstudio(解压deb包)\n\n把解压目录对应的libfcitx-qt5-1-rstudio/usr/lib/rstudio/  拷贝到/usr/lib/rstudio目录下面重新启动rstudio即可。\n\n原理是如果dpkg安装会检测依赖关系，有依赖问题则无法安装，这个手动安装不用管依赖问题。",
+          "qas": [
+            {
+              "id": "5-36-1",
+              "question": "解决搜狗输入法在RStudio下无法切换的第一个步骤是什么？",
+              "answers": [
+                {
+                  "text": "dpkg-deb -R  fcitx-frontend-qt5-rstudio_1.0.5-1_amd64.deb    fcitx-frontend-qt5-rstudio (解压deb包)然后把解压出来的文件fcitx-frontend-qt5-rstudio/usr/lib/rstudio/目录下面的对应文件拷贝到系统/usr/lib/rstudio/目录下面",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-36-2",
+              "question": "解压第一个deb包（fcitx-frontend-qt5-rstudio）的命令是什么？",
+              "answers": [
+                {
+                  "text": "dpkg-deb -R  fcitx-frontend-qt5-rstudio_1.0.5-1_amd64.deb    fcitx-frontend-qt5-rstudio (解压deb包)",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-36-3",
+              "question": "解压第一个deb包后，文件应该拷贝到哪个系统目录？",
+              "answers": [
+                {
+                  "text": "/usr/lib/rstudio/",
+                  "answer_start": 170
+                }
+              ]
+            },
+            {
+              "id": "5-36-4",
+              "question": "解决搜狗输入法在RStudio下无法切换的第二个步骤是什么？",
+              "answers": [
+                {
+                  "text": "dpkg-deb -R  libfcitx-qt5-1-rstudio_1.0.5-1_amd64.deb  libfcitx-qt5-1-rstudio(解压deb包)把解压目录对应的libfcitx-qt5-1-rstudio/usr/lib/rstudio/  拷贝到/usr/lib/rstudio目录下面",
+                  "answer_start": 225
+                }
+              ]
+            },
+            {
+              "id": "5-36-5",
+              "question": "解压第二个deb包（libfcitx-qt5-1-rstudio）的命令是什么？",
+              "answers": [
+                {
+                  "text": "dpkg-deb -R  libfcitx-qt5-1-rstudio_1.0.5-1_amd64.deb  libfcitx-qt5-1-rstudio(解压deb包)",
+                  "answer_start": 225
+                }
+              ]
+            },
+            {
+              "id": "5-36-6",
+              "question": "完成所有拷贝操作后，需要执行什么步骤？",
+              "answers": [
+                {
+                  "text": "重新启动rstudio",
+                  "answer_start": 328
+                }
+              ]
+            },
+            {
+              "id": "5-36-7",
+              "question": "为什么手动安装deb包可以避免依赖问题？",
+              "answers": [
+                {
+                  "text": "手动安装不用管依赖问题",
+                  "answer_start": 370
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

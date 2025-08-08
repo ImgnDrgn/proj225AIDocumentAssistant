@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Scribus",
+      "paragraphs": [
+        {
+          "context": "Scribus是一款电子杂志制作软件，可以用来制作个人文件、邮件列表、电子杂志类型的电子文档，具有编写档案专业品质图像设置设备的能力，还可以创建动画和互动的PDF图像和形式。",
+          "qas": [
+            {
+              "id": "5-47-1",
+              "question": "Scribus是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "电子杂志制作软件",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-47-2",
+              "question": "Scribus可制作哪些电子文档？",
+              "answers": [
+                {
+                  "text": "个人文件、邮件列表、电子杂志类型的电子文档",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "5-47-3",
+              "question": "Scribus具备什么专业能力？",
+              "answers": [
+                {
+                  "text": "编写档案专业品质图像设置设备的能力",
+                  "answer_start": 49
+                }
+              ]
+            },
+            {
+              "id": "5-47-4",
+              "question": "Scribus能创建什么类型的PDF？",
+              "answers": [
+                {
+                  "text": "动画和互动的PDF图像和形式",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install scribus",
+          "qas": [
+            {
+              "id": "5-47-5",
+              "question": "如何安装Scribus？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install scribus",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove scribus",
+          "qas": [
+            {
+              "id": "5-47-6",
+              "question": "如何卸载Scribus？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove scribus",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/s/scribus/",
+          "qas": [
+            {
+              "id": "5-47-7",
+              "question": "Scribus的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/scribus/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

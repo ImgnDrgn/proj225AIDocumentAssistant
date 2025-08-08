@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "Texmaker",
+      "paragraphs": [
+        {
+          "context": "Texmaker是一个LaTeX的编辑环境，已经集成了所需的开发工具，包括许多LaTeX文档，非常适合需要经常编辑LaTeX公式的人员。安装使用`sudo apt-get install texmaker`命令。卸载使用`sudo apt-get remove texmaker`命令。仓库地址是[http://packages.deepin.com/deepin/pool/non-free/t/texmaker/](http://packages.deepin.com/deepin/pool/non-free/t/texmaker/)。常见问题暂无内容。相关链接包含维基百科。",
+          "qas": [
+            {
+              "id": "5-48-1",
+              "question": "Texmaker是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "LaTeX的编辑环境",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-48-2",
+              "question": "Texmaker主要集成了哪些工具？",
+              "answers": [
+                {
+                  "text": "所需的开发工具，包括许多LaTeX文档",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "5-48-3",
+              "question": "Texmaker最适合哪类人员使用？",
+              "answers": [
+                {
+                  "text": "需要经常编辑LaTeX公式的人员",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "id": "5-48-4",
+              "question": "安装Texmaker需要输入什么命令？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install texmaker",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "id": "5-48-5",
+              "question": "如何卸载Texmaker？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove texmaker",
+                  "answer_start": 120
+                }
+              ]
+            },
+            {
+              "id": "5-48-6",
+              "question": "Texmaker的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/t/texmaker/",
+                  "answer_start": 166
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "福昕阅读器",
+      "paragraphs": [
+        {
+          "context": "福昕阅读器（Foxit Reader）是一款PDF文档阅读器，对中文的支持度非常高。福昕阅读器作为全球最流行的PDF阅读器，能够快速打开、浏览、审阅、注释、签署及打印任何PDF文件。",
+          "qas": [
+            {
+              "id": "5-54-1",
+              "question": "福昕阅读器的英文名称是什么？",
+              "answers": [
+                {
+                  "text": "Foxit Reader",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-54-2",
+              "question": "福昕阅读器是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "一款PDF文档阅读器",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "5-54-3",
+              "question": "福昕阅读器对哪种语言的支持度非常高？",
+              "answers": [
+                {
+                  "text": "中文",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "5-54-4",
+              "question": "福昕阅读器对中文的支持度如何？",
+              "answers": [
+                {
+                  "text": "非常高",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-54-5",
+              "question": "福昕阅读器能执行哪些操作？",
+              "answers": [
+                {
+                  "text": "快速打开、浏览、审阅、注释、签署及打印任何PDF文件",
+                  "answer_start": 64
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "福昕阅读器的安装命令为：sudo apt-get install foxitreader",
+          "qas": [
+            {
+              "id": "5-54-6",
+              "question": "安装福昕阅读器的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install foxitreader",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "福昕阅读器的卸载命令为：sudo apt-get remove foxitreader",
+          "qas": [
+            {
+              "id": "5-54-7",
+              "question": "卸载福昕阅读器的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove foxitreader",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "福昕阅读器的仓库地址是：http://packages.deepin.com/deepin/pool/main/f/foxitreader/",
+          "qas": [
+            {
+              "id": "5-54-8",
+              "question": "福昕阅读器的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/f/foxitreader/",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "Calibre",
+      "paragraphs": [
+        {
+          "context": "Calibre是一个“一站式”的电子书管理软件，支持EPUB、MOBI、PDF等大多数格式的电子书。您可以把Calibre当做电子书图书馆来进行图书管理，也可以使用它来进行电子书的格式转换、阅读等。",
+          "qas": [
+            {
+              "question": "Calibre是什么类型的软件？",
+              "id": "5-55-1",
+              "answers": [
+                {
+                  "text": "一站式的电子书管理软件",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "question": "Calibre支持哪些格式的电子书？",
+              "id": "5-55-2",
+              "answers": [
+                {
+                  "text": "EPUB、MOBI、PDF等大多数格式",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "可以把Calibre当做什么来进行图书管理？",
+              "id": "5-55-3",
+              "answers": [
+                {
+                  "text": "电子书图书馆",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "question": "除了图书管理，Calibre还可以用来做什么？",
+              "id": "5-55-4",
+              "answers": [
+                {
+                  "text": "电子书的格式转换、阅读等",
+                  "answer_start": 87
+                }
+              ]
+            },
+            {
+              "question": "Calibre是什么？",
+              "id": "5-55-5",
+              "answers": [
+                {
+                  "text": "Calibre是一个“一站式”的电子书管理软件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Calibre支持哪些电子书格式？",
+              "id": "5-55-6",
+              "answers": [
+                {
+                  "text": "EPUB、MOBI、PDF等大多数格式",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install calibre",
+          "qas": [
+            {
+              "question": "如何安装Calibre？",
+              "id": "5-55-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get install calibre",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove calibre",
+          "qas": [
+            {
+              "question": "如何卸载Calibre？",
+              "id": "5-55-8",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove calibre",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/c/calibre/",
+          "qas": [
+            {
+              "question": "Calibre的仓库地址是什么？",
+              "id": "5-55-9",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/c/calibre/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

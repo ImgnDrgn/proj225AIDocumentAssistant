@@ -1,0 +1,159 @@
+{
+  "data": [
+    {
+      "title": "Koodo Reader",
+      "paragraphs": [
+        {
+          "context": "Koodo Reader 是一款开源、跨平台的电子书阅读软件，支持 .epub、.pdf、.mobi、.txt、.doc(x) 、.rtf、.htm(l) 等多种格式，支持深色模式，支持自定义源文件夹和自动同步电子书。",
+          "qas": [
+            {
+              "id": "5-51-1",
+              "question": "Koodo Reader是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "开源、跨平台的电子书阅读软件",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "5-51-2",
+              "question": "Koodo Reader支持哪些电子书格式？",
+              "answers": [
+                {
+                  "text": ".epub、.pdf、.mobi、.txt、.doc(x) 、.rtf、.htm(l)",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "id": "5-51-3",
+              "question": "Koodo Reader是否支持深色模式？",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 84
+                }
+              ]
+            },
+            {
+              "id": "5-51-4",
+              "question": "Koodo Reader是否支持自定义源文件夹？",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "id": "5-51-5",
+              "question": "Koodo Reader是否支持自动同步电子书？",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "id": "5-51-6",
+              "question": "Koodo Reader 有哪些自动化功能？",
+              "answers": [
+                {
+                  "text": "支持自定义源文件夹和自动同步电子书",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "wget https://ghproxy.com/https://github.com/troyeguo/koodo-reader/releases/download/v1.3.9/Koodo.Reader-1.3.9.deb sudo apt install ./Koodo.Reader-1.3.9.deb",
+          "qas": [
+            {
+              "id": "5-51-7",
+              "question": "安装Koodo Reader需要执行哪些命令？",
+              "answers": [
+                {
+                  "text": "wget https://ghproxy.com/https://github.com/troyeguo/koodo-reader/releases/download/v1.3.9/Koodo.Reader-1.3.9.deb sudo apt install ./Koodo.Reader-1.3.9.deb",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-51-8",
+              "question": "安装Koodo Reader时下载的deb文件版本是什么？",
+              "answers": [
+                {
+                  "text": "v1.3.9",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-51-9",
+              "question": "如何下载 Koodo Reader 安装包？",
+              "answers": [
+                {
+                  "text": "wget https://ghproxy.com/https://github.com/troyeguo/koodo-reader/releases/download/v1.3.9/Koodo.Reader-1.3.9.deb",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-51-10",
+              "question": "安装 Koodo Reader 需要执行什么命令？",
+              "answers": [
+                {
+                  "text": "sudo apt install ./Koodo.Reader-1.3.9.deb",
+                  "answer_start": 114
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt remove --purge koodo-reader",
+          "qas": [
+            {
+              "id": "5-51-11",
+              "question": "卸载Koodo Reader需要执行什么命令？",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge koodo-reader",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Koodo Reader 官方网站：https://koodo.960960.xyz/zh Koodo Reader Github 主页：https://github.com/troyeguo/koodo-reader",
+          "qas": [
+            {
+              "id": "5-51-12",
+              "question": "Koodo Reader的官方网站是什么？",
+              "answers": [
+                {
+                  "text": "https://koodo.960960.xyz/zh",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "5-51-13",
+              "question": "Koodo Reader的Github主页是什么？",
+              "answers": [
+                {
+                  "text": "https://github.com/troyeguo/koodo-reader",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

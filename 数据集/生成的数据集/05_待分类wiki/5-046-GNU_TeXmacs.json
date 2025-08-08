@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "title": "GNU_TeXmacs",
+      "paragraphs": [
+        {
+          "context": "GNU TeXmacs是一个优秀的科学文档排版软件，您可以不通过编译直接导出为PDF格式的文件，也可以导入和导出为TeX、HTML格式的文件。其完全可视化的表格和公式编辑环境、结构化的浏览功能，将带给您真正的“所见即所得”的体验。",
+          "qas": [
+            {
+              "id": "5-46-1",
+              "question": "GNU TeXmacs属于什么类型的软件？",
+              "answers": [
+                {
+                  "text": "科学文档排版软件",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "5-46-2",
+              "question": "GNU TeXmacs导出PDF是否需要编译？",
+              "answers": [
+                {
+                  "text": "不需要",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "5-46-3",
+              "question": "GNU TeXmacs支持导入和导出哪些格式的文件？",
+              "answers": [
+                {
+                  "text": "TeX、HTML格式的文件",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-46-4",
+              "question": "GNU TeXmacs具有哪些特点？",
+              "answers": [
+                {
+                  "text": "完全可视化的表格和公式编辑环境、结构化的浏览功能，真正的“所见即所得”的体验",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "id": "5-46-5",
+              "question": "GNU TeXmacs是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "一个优秀的科学文档排版软件",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "5-46-6",
+              "question": "如何将GNU TeXmacs文档直接导出为PDF而不编译？",
+              "answers": [
+                {
+                  "text": "不通过编译直接导出为PDF格式的文件",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "id": "5-46-7",
+              "question": "GNU TeXmacs带给用户什么体验？",
+              "answers": [
+                {
+                  "text": "真正的“所见即所得”的体验",
+                  "answer_start": 101
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install texmacs",
+          "qas": [
+            {
+              "id": "5-46-8",
+              "question": "安装GNU TeXmacs的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install texmacs",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-46-9",
+              "question": "如何安装GNU TeXmacs？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install texmacs",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove texmacs",
+          "qas": [
+            {
+              "id": "5-46-10",
+              "question": "卸载GNU TeXmacs的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove texmacs",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-46-11",
+              "question": "如何卸载GNU TeXmacs？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove texmacs",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/t/texmacs/",
+          "qas": [
+            {
+              "id": "5-46-12",
+              "question": "GNU TeXmacs的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/t/texmacs/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

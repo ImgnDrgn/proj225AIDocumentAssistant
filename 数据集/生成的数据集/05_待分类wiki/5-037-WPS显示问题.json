@@ -1,0 +1,139 @@
+{
+  "data": [
+    {
+      "title": "WPS显示问题",
+      "paragraphs": [
+        {
+          "context": "WPS表格中，横行ABCD...和数列1234...显示不全的问题。问题产生原因是WPS表格默认字体为宋体，而deepin系统没有宋体。解决思路有两种：1. 从Windows系统拷贝宋体文件C:\\Windows\\Fonts\\simsun.ttc和simsunb.ttf到deepin安装；2. 修改WPS表格默认字体：点击文件 - 选项 - 常规与保存 - 标准字体，将正文字体改为Noto Sans CJK SC Regular等系统自带字体，保存后新建表格。",
+          "qas": [
+            {
+              "id": "5-37-1",
+              "question": "WPS表格出现什么显示问题？",
+              "answers": [
+                {
+                  "text": "横行ABCD...和数列1234...显示不全",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-37-2",
+              "question": "为什么Deepin系统中WPS表格的行列标签显示不全？",
+              "answers": [
+                {
+                  "text": "因为WPS默认使用宋体字体，而Deepin系统未预装宋体，导致显示异常。",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-37-3",
+              "question": "如何解决Deepin系统WPS表格行列显示不全的问题？",
+              "answers": [
+                {
+                  "text": "方法一：安装Windows宋体字体（simsun.ttc及simsunb.ttf）；方法二：在WPS选项中修改默认字体为系统自带的Noto Sans CJK SC Regular。",
+                  "answer_start": 83
+                }
+              ]
+            },
+            {
+              "id": "5-37-4",
+              "question": "第一种解决方法需要拷贝哪些字体文件？",
+              "answers": [
+                {
+                  "text": "simsun.ttc和simsunb.ttf",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "id": "5-37-5",
+              "question": "如何修改WPS表格的默认字体？",
+              "answers": [
+                {
+                  "text": "点击文件 - 选项 - 常规与保存 - 标准字体",
+                  "answer_start": 147
+                }
+              ]
+            },
+            {
+              "id": "5-37-6",
+              "question": "修改字体后需要执行什么操作使设置生效？",
+              "answers": [
+                {
+                  "text": "保存后新建表格",
+                  "answer_start": 201
+                }
+              ]
+            },
+            {
+              "id": "5-37-7",
+              "question": "推荐替换的系统自带字体是什么？",
+              "answers": [
+                {
+                  "text": "Noto Sans CJK SC Regular",
+                  "answer_start": 179
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户反馈WPS标题栏位置异常（不居中或看不见），论坛建议检查字体问题。参考历史解决方案：通过修改WPS默认字体（路径：文件-选项-常规与保存-标准字体）可修复显示异常。",
+          "qas": [
+            {
+              "id": "5-37-8",
+              "question": "WPS标题栏显示异常（不居中/看不见）的原因是什么？",
+              "answers": [
+                {
+                  "text": "字体缺失或不兼容，尤其是缺少WPS默认的宋体字体。",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-37-9",
+              "question": "标题栏异常是否与行列显示不全问题同源？如何解决？",
+              "answers": [
+                {
+                  "text": "是的，均因字体问题导致。可通过统一修改WPS默认字体为系统兼容字体（如Noto Sans CJK SC Regular）解决。",
+                  "answer_start": 46
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "WPS文档表格文字仅部分显示：选中表格文字→段落设置→将行距「固定值」调大（如从8磅改为12磅），即可完整显示。",
+          "qas": [
+            {
+              "id": "5-37-10",
+              "question": "WPS表格文字显示不全（仅部分可见）如何处理？",
+              "answers": [
+                {
+                  "text": "调整段落行距：右键表格文字→段落→缩进和间距→将行距固定值调大。",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "WPS表格网格线消失：点击顶部「视图」选项卡，勾选「显示网格线」即可恢复。",
+          "qas": [
+            {
+              "id": "5-37-11",
+              "question": "WPS表格一片白（无网格线）怎么办？",
+              "answers": [
+                {
+                  "text": "在「视图」选项卡中勾选「显示网格线」。",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

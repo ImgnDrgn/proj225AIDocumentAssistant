@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "title": "TagSpaces",
+      "paragraphs": [
+        {
+          "context": "TagSpaces是一款文档管理工具，可以帮助您使用标签进行文件的管理。TagSpaces支持给文件添加标签、标记颜色，可以自动将现在、明天、昨天、月、年信息以标签的形式添加进去。",
+          "qas": [
+            {
+              "id": "5-58-1",
+              "question": "TagSpaces属于什么类型的工具？",
+              "answers": [
+                {
+                  "text": "文档管理工具",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "5-58-2",
+              "question": "TagSpaces帮助用户管理文件的方式是什么？",
+              "answers": [
+                {
+                  "text": "使用标签",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "5-58-3",
+              "question": "TagSpaces支持给文件添加哪些内容？",
+              "answers": [
+                {
+                  "text": "标签、标记颜色",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "id": "5-58-4",
+              "question": "TagSpaces能自动添加哪些信息作为标签？",
+              "answers": [
+                {
+                  "text": "现在、明天、昨天、月、年信息",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "id": "5-58-5",
+              "question": "TagSpaces的主要功能是什么？",
+              "answers": [
+                {
+                  "text": "文档管理工具",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "5-58-6",
+              "question": "TagSpaces支持哪些具体的标签功能？",
+              "answers": [
+                {
+                  "text": "给文件添加标签、标记颜色，可以自动将现在、明天、昨天、月、年信息以标签的形式添加进去",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`sudo apt-get install tagspaces`",
+          "qas": [
+            {
+              "id": "5-58-7",
+              "question": "如何安装TagSpaces？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install tagspaces",
+                  "answer_start": 1
+                }
+              ]
+            },
+            {
+              "id": "5-58-8",
+              "question": "在Deepin系统上如何安装TagSpaces？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install tagspaces",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`sudo apt-get remove tagspaces`",
+          "qas": [
+            {
+              "id": "5-58-9",
+              "question": "如何卸载TagSpaces？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove tagspaces",
+                  "answer_start": 1
+                }
+              ]
+            },
+            {
+              "id": "5-58-10",
+              "question": "如何从Deepin系统中卸载TagSpaces？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove tagspaces",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "[http://packages.deepin.com/deepin/pool/main/t/tagspaces/](http://packages.deepin.com/deepin/pool/main/t/tagspaces/)",
+          "qas": [
+            {
+              "id": "5-58-11",
+              "question": "TagSpaces的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/t/tagspaces/",
+                  "answer_start": 1
+                }
+              ]
+            },
+            {
+              "id": "5-58-12",
+              "question": "TagSpaces的Deepin仓库地址在哪里？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/t/tagspaces/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

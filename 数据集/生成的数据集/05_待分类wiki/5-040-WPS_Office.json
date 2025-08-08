@@ -1,0 +1,269 @@
+{
+  "data": [
+    {
+      "title": "WPS Office",
+      "paragraphs": [
+        {
+          "context": "WPS Office是由金山软件股份有限公司自主研发的一款办公软件套件，可以实现办公最常用的文字、表格、演示等多种功能。免费提供海量的在线存储空间及文档模板、支持阅读和输出PDF文件、全面兼容Microsoft Office 97-2010格式。",
+          "qas": [
+            {
+              "id": "5-40-1",
+              "question": "WPS Office是由哪家公司研发的？",
+              "answers": [
+                {
+                  "text": "金山软件股份有限公司",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "5-40-2",
+              "question": "WPS Office属于什么类型的软件？",
+              "answers": [
+                {
+                  "text": "办公软件套件",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "5-40-3",
+              "question": "WPS Office可以实现哪些常用办公功能？",
+              "answers": [
+                {
+                  "text": "文字、表格、演示等多种功能",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "id": "5-40-4",
+              "question": "WPS Office免费提供哪些资源？",
+              "answers": [
+                {
+                  "text": "海量的在线存储空间及文档模板",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "id": "5-40-5",
+              "question": "WPS Office支持阅读和输出什么格式的文件？",
+              "answers": [
+                {
+                  "text": "PDF文件",
+                  "answer_start": 104
+                }
+              ]
+            },
+            {
+              "id": "5-40-6",
+              "question": "WPS Office兼容哪些版本的Microsoft Office？",
+              "answers": [
+                {
+                  "text": "Microsoft Office 97-2010格式",
+                  "answer_start": 114
+                }
+              ]
+            },
+            {
+              "id": "5-40-7",
+              "question": "WPS Office支持哪些常见的办公功能？",
+              "answers": [
+                {
+                  "text": "文字、表格、演示等多种功能",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "id": "5-40-8",
+              "question": "WPS Office提供哪些免费服务？",
+              "answers": [
+                {
+                  "text": "海量的在线存储空间及文档模板",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install wps-office",
+          "qas": [
+            {
+              "id": "5-40-9",
+              "question": "在Linux系统中，安装WPS Office的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install wps-office",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-40-10",
+              "question": "如何在Deepin系统上安装WPS Office？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install wps-office",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove wps-office",
+          "qas": [
+            {
+              "id": "5-40-11",
+              "question": "卸载WPS Office的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove wps-office",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-40-12",
+              "question": "如何在Deepin系统上卸载WPS Office？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove wps-office",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/non-free/w/wps-office/",
+          "qas": [
+            {
+              "id": "5-40-13",
+              "question": "WPS Office的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/w/wps-office/",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-40-14",
+              "question": "WPS Office的软件仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/w/wps-office/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "这是在Deepin系统中使用WPS最常遇到的问题，现象通常为在Deepin端的WPS中查阅在Windows端编辑完成的文档，文档中的每一行只显示一半，就像叠加在一起一样。出现这种情况是因为Deepin是一个开源社区操作系统，而WPS中常用字体则大多需要商业授权，Deepin无法将其集成到系统内，Deepin端WPS缺失相应的字体，从而导致文档排版错乱。解决方法是通过Deepin的字体管理器安装相应的字体，更方便的方法是从星火商店下载`Win字体`软件，安装该软件可以将Windows中默认字体全部安装到Deepin中。",
+          "qas": [
+            {
+              "id": "5-40-15",
+              "question": "在Deepin系统中使用WPS时，排版错乱的常见现象是什么？",
+              "answers": [
+                {
+                  "text": "在Deepin端的WPS中查阅在Windows端编辑完成的文档，文档中的每一行只显示一半，就像叠加在一起一样",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "5-40-16",
+              "question": "Deepin系统中WPS出现排版错乱的原因是什么？",
+              "answers": [
+                {
+                  "text": "Deepin是一个开源社区操作系统，而WPS中常用字体则大多需要商业授权，Deepin无法将其集成到系统内，Deepin端WPS缺失相应的字体",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "id": "5-40-17",
+              "question": "如何解决Deepin系统中WPS的排版错乱问题？",
+              "answers": [
+                {
+                  "text": "通过Deepin的字体管理器安装相应的字体，更方便的方法是从星火商店下载`Win字体`软件，安装该软件可以将Windows中默认字体全部安装到Deepin中",
+                  "answer_start": 220
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "这不一定是WPS的问题，但如果你使用其他软件都很流畅，可唯独使用WPS非常卡顿的话，在WPS的`设置-其他-切换窗口管理模式`中将`整合模式`改为`多组件模式`说不定能解决你的问题",
+          "qas": [
+            {
+              "id": "5-40-18",
+              "question": "如果使用其他软件都很流畅，唯独WPS卡顿，有什么解决方法？",
+              "answers": [
+                {
+                  "text": "在WPS的`设置-其他-切换窗口管理模式`中将`整合模式`改为`多组件模式`",
+                  "answer_start": 60
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "1. 排版错乱 这是在Deepin系统中使用WPS最常遇到的问题，现象通常为在Deepin端的WPS中查阅在Windows端编辑完成的文档，文档中的每一行只显示一半，就像叠加在一起一样。出现这种情况是因为Deepin是一个开源社区操作系统，而WPS中常用字体则大多需要商业授权，Deepin无法将其集成到系统内，Deepin端WPS缺失相应的字体，从而导致文档排版错乱。 解决方法是通过Deepin的字体管理器安装相应的字体，更方便的方法是从星火商店下载`Win字体`软件，安装该软件可以将Windows中默认字体全部安装到Deepin中。",
+          "qas": [
+            {
+              "id": "5-40-19",
+              "question": "在Deepin系统上使用WPS Office时，最常遇到的排版问题现象是什么？",
+              "answers": [
+                {
+                  "text": "文档中的每一行只显示一半，就像叠加在一起一样",
+                  "answer_start": 55
+                }
+              ]
+            },
+            {
+              "id": "5-40-20",
+              "question": "为什么在Deepin系统上会出现WPS文档排版错乱的问题？",
+              "answers": [
+                {
+                  "text": "Deepin是一个开源社区操作系统，而WPS中常用字体则大多需要商业授权，Deepin无法将其集成到系统内，Deepin端WPS缺失相应的字体",
+                  "answer_start": 116
+                }
+              ]
+            },
+            {
+              "id": "5-40-21",
+              "question": "如何解决Deepin上WPS Office的排版错乱问题？",
+              "answers": [
+                {
+                  "text": "通过Deepin的字体管理器安装相应的字体，或从星火商店下载`Win字体`软件",
+                  "answer_start": 237
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "2. 使用卡顿 这不一定是WPS的问题，但如果你使用其他软件都很流畅，可唯独使用WPS非常卡顿的话，在WPS的`设置-其他-切换窗口管理模式`中将`整合模式`改为`多组件模式`说不定能解决你的问题",
+          "qas": [
+            {
+              "id": "5-40-22",
+              "question": "如果在Deepin上其他软件流畅但WPS卡顿，应如何调整设置？",
+              "answers": [
+                {
+                  "text": "在WPS的`设置-其他-切换窗口管理模式`中将`整合模式`改为`多组件模式`",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
