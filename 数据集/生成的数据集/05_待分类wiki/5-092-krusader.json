@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "krusader",
+      "paragraphs": [
+        {
+          "context": "Krusader 是 twin-panel (commander样式) 的文件管理器，可用于浏览硬盘、U 盘、SD 卡和其他存储设备中的内容，也能方便快捷地创建、移动、删除文件和文件夹。安装命令为 sudo apt-get install krusader，卸载命令为 sudo apt-get remove krusader。仓库地址是 http://packages.deepin.com/deepin/pool/main/k/krusader/，官方网站是 https://sourceforge.net/projects/krusader/。",
+          "qas": [
+            {
+              "id": "5-92-1",
+              "question": "Krusader是什么类型的文件管理器？",
+              "answers": [
+                {
+                  "text": "twin-panel (commander样式) 的文件管理器",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "5-92-2",
+              "question": "Krusader可以用来做什么？",
+              "answers": [
+                {
+                  "text": "浏览硬盘、U 盘、SD 卡和其他存储设备中的内容，也能方便快捷地创建、移动、删除文件和文件夹",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "id": "5-92-3",
+              "question": "如何安装Krusader？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install krusader",
+                  "answer_start": 100
+                }
+              ]
+            },
+            {
+              "id": "5-92-4",
+              "question": "如何卸载Krusader？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove krusader",
+                  "answer_start": 136
+                }
+              ]
+            },
+            {
+              "id": "5-92-5",
+              "question": "Krusader的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/k/krusader/",
+                  "answer_start": 171
+                }
+              ]
+            },
+            {
+              "id": "5-92-6",
+              "question": "Krusader的官方网站是什么？",
+              "answers": [
+                {
+                  "text": "https://sourceforge.net/projects/krusader/",
+                  "answer_start": 231
+                }
+              ]
+            },
+            {
+              "id": "5-92-7",
+              "question": "Krusader支持管理哪些存储设备？",
+              "answers": [
+                {
+                  "text": "硬盘、U 盘、SD 卡和其他存储设备",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

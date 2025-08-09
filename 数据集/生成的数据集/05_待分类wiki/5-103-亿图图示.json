@@ -1,0 +1,139 @@
+{
+  "data": [
+    {
+      "title": "亿图图示",
+      "paragraphs": [
+        {
+          "context": "亿图图示是一款综合图形图表制作应用，它包含丰富的实例和模版，帮助您轻松创建流程图、网络拓扑图和平面布局图等。采用更智能和人性化的绘制方式，包括丰富的图形模板库和特色实例库，帮助设计者降低工作量，快捷阐述设计思想。软件格式兼容主流办公软件，可以很方便的把设计结果插入到Office文档或者导出成PDF格式。",
+          "qas": [
+            {
+              "id": "5-103-1",
+              "question": "亿图图示是什么类型的应用？",
+              "answers": [
+                {
+                  "text": "综合图形图表制作应用",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-103-2",
+              "question": "亿图图示能帮助创建哪些图表？",
+              "answers": [
+                {
+                  "text": "流程图、网络拓扑图和平面布局图等",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "id": "5-103-3",
+              "question": "亿图图示采用怎样的绘制方式？",
+              "answers": [
+                {
+                  "text": "更智能和人性化的绘制方式，包括丰富的图形模板库和特色实例库",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "id": "5-103-4",
+              "question": "亿图图示兼容哪些软件？",
+              "answers": [
+                {
+                  "text": "主流办公软件",
+                  "answer_start": 130
+                }
+              ]
+            },
+            {
+              "id": "5-103-5",
+              "question": "亿图图示的设计结果可以导出成什么格式？",
+              "answers": [
+                {
+                  "text": "PDF格式",
+                  "answer_start": 178
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "亿图图示的安装命令为：sudo apt-get install edrawmax-zh；sudo apt-get install edrawmax-en",
+          "qas": [
+            {
+              "id": "5-103-6",
+              "question": "安装中文版本的亿图图示的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install edrawmax-zh",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-103-7",
+              "question": "安装英文版本的亿图图示的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install edrawmax-en",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "亿图图示的卸载命令为：sudo apt-get remove edrawmax-zh；sudo apt-get remove edrawmax-en",
+          "qas": [
+            {
+              "id": "5-103-8",
+              "question": "卸载中文版本的亿图图示的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove edrawmax-zh",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-103-9",
+              "question": "卸载英文版本的亿图图示的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove edrawmax-en",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "亿图图示中文版本的仓库地址为：http://packages.deepin.com/deepin/pool/main/e/edrawmax-zh/；英文版本的仓库地址为：http://packages.deepin.com/deepin/pool/main/e/edrawmax-en/",
+          "qas": [
+            {
+              "id": "5-103-10",
+              "question": "亿图图示中文版本的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/e/edrawmax-zh/",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-103-11",
+              "question": "亿图图示英文版本的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/e/edrawmax-en/",
+                  "answer_start": 77
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

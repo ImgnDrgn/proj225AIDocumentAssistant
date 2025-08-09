@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "title": "Nautilus",
+      "paragraphs": [
+        {
+          "context": "Nautilus是一款文件管理器，它具有文件的图形化显示，左侧导航管理，文件夹图标分类，快速搜索等功能。",
+          "qas": [
+            {
+              "question": "Nautilus是什么类型的软件？",
+              "id": "5-93-1",
+              "answers": [
+                {
+                  "text": "文件管理器",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "Nautilus具备哪些功能？",
+              "id": "5-93-2",
+              "answers": [
+                {
+                  "text": "文件的图形化显示，左侧导航管理，文件夹图标分类，快速搜索等功能",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install nautilus",
+          "qas": [
+            {
+              "question": "安装Nautilus的命令是什么？",
+              "id": "5-93-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install nautilus",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove nautilus",
+          "qas": [
+            {
+              "question": "卸载Nautilus的命令是什么？",
+              "id": "5-93-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove nautilus",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/n/nautilus/",
+          "qas": [
+            {
+              "question": "Nautilus的仓库地址是什么？",
+              "id": "5-93-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/n/nautilus/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

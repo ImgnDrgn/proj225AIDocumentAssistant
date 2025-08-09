@@ -1,0 +1,229 @@
+{
+  "data": [
+    {
+      "title": "aria2下载工具",
+      "paragraphs": [
+        {
+          "context": "linux 没有迅雷（有wine版迅雷），那么 linux 上怎么下载 bt 种子呢？使用 aria2 这个命令行工具可以下载。使用方法比较简单，但是它需要经过配置才有速度。",
+          "qas": [
+            {
+              "id": "5-80-1",
+              "question": "Linux上可以用什么工具下载BT种子？",
+              "answers": [
+                {
+                  "text": "aria2",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "5-80-2",
+              "question": "aria2使用前需要进行什么操作才能有速度？",
+              "answers": [
+                {
+                  "text": "配置",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-80-3",
+              "question": "为什么在Linux上需要配置aria2？",
+              "answers": [
+                {
+                  "text": "需要经过配置才有速度",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载文件：<https://ngosang.github.io/trackerslist/trackers_best_ip.txt>，里面就是服务器的列表。保存到：~/.aria2/aria2.conf 配置文件中，内容如下：```ini# 每一个服务器地址用逗号分隔bt-tracker=网址1,网址2,网址3...```但是第一步得到的地址不是以逗号分隔，而是以一个空行分隔。所以自己要修改一下，可以用 kwrite 编辑器，替换\"\\n\\n\" 为 \",\"。",
+          "qas": [
+            {
+              "id": "5-80-4",
+              "question": "种子服务器列表的下载地址是什么？",
+              "answers": [
+                {
+                  "text": "https://ngosang.github.io/trackerslist/trackers_best_ip.txt",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-80-5",
+              "question": "种子服务器列表应保存到哪个配置文件中？",
+              "answers": [
+                {
+                  "text": "~/.aria2/aria2.conf",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "id": "5-80-6",
+              "question": "aria2.conf中bt-tracker的服务器地址需要用什么分隔？",
+              "answers": [
+                {
+                  "text": "逗号",
+                  "answer_start": 118
+                }
+              ]
+            },
+            {
+              "id": "5-80-7",
+              "question": "初始下载的服务器地址是以什么分隔的？",
+              "answers": [
+                {
+                  "text": "空行",
+                  "answer_start": 165
+                }
+              ]
+            },
+            {
+              "id": "5-80-8",
+              "question": "可以用什么编辑器修改服务器地址的分隔符？",
+              "answers": [
+                {
+                  "text": "kwrite",
+                  "answer_start": 215
+                }
+              ]
+            },
+            {
+              "id": "5-80-9",
+              "question": "如何修改服务器列表的分隔符格式？",
+              "answers": [
+                {
+                  "text": "用 kwrite 编辑器，替换\"\\n\\n\" 为 \",\"",
+                  "answer_start": 178
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "```bash# 获得正确格式的文本curl -o- https://ngosang.github.io/trackerslist/trackers_best_ip.txt|sed -ne '1h; 1!H;${g;s/\\n\\n/,/g;s/\\n//g;p}'# 自动更新脚本sed 's@bt-tracker=.*@bt-tracker='$(curl -o- https://ngosang.github.io/trackerslist/trackers_best_ip.txt|sed -ne '1h; 1!H;${g;s/\\n\\n/,/g;s/\\n//g;p}')'@g' ~/.aria2/aria2.conf```",
+          "qas": [
+            {
+              "id": "5-80-10",
+              "question": "获得正确格式的服务器地址文本的命令是什么？",
+              "answers": [
+                {
+                  "text": "curl -o- https://ngosang.github.io/trackerslist/trackers_best_ip.txt|sed -ne '1h; 1!H;${g;s/\\n\\n/,/g;s/\\n//g;p}'",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-80-11",
+              "question": "自动更新aria2.conf中bt-tracker的脚本命令是什么？",
+              "answers": [
+                {
+                  "text": "sed 's@bt-tracker=.*@bt-tracker='$(curl -o- https://ngosang.github.io/trackerslist/trackers_best_ip.txt|sed -ne '1h; 1!H;${g;s/\\n\\n/,/g;s/\\n//g;p}')'@g' ~/.aria2/aria2.conf",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dht.dat 是一个很关键的步骤，它的作用就是把可以联通的网络保存起来，那么下次下载的时候用这些网络，自然就提高了速度。否则，你还需要从有限的种子服务器里面获取内容，有个缓慢速度爬坡的过程。",
+          "qas": [
+            {
+              "id": "5-80-12",
+              "question": "dht.dat的作用是什么？",
+              "answers": [
+                {
+                  "text": "把可以联通的网络保存起来，下次下载的时候用这些网络，提高下载速度",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "将以下内容写入配置文件：~/.aria2/aria2.conf```ini# aria2配置文件# 保存为 ~/.aria2/dht.datenable-dht=truebt-enable-lpd=trueenable-peer-exchange=true# 以下是 ipv6 支持，保存为 ~/.aria2/dht6.datenable-dht6=true```",
+          "qas": [
+            {
+              "id": "5-80-13",
+              "question": "配置dht.dat需要在aria2.conf中添加哪些启用项？",
+              "answers": [
+                {
+                  "text": "enable-dht=true、bt-enable-lpd=true、enable-peer-exchange=true",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "5-80-14",
+              "question": "支持ipv6需要在aria2.conf中添加什么配置？",
+              "answers": [
+                {
+                  "text": "enable-dht6=true",
+                  "answer_start": 177
+                }
+              ]
+            },
+            {
+              "id": "5-80-15",
+              "question": "dht6.dat的保存路径是什么？",
+              "answers": [
+                {
+                  "text": "~/.aria2/dht6.dat",
+                  "answer_start": 154
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "关键的一步，你必须要创建一个空的文件，否则它不干活：```bashtouch ~/.aria2/dht.dattouch ~/.aria2/dht6.dat```之后就可以正常的使用 aria2 下载种子了：```bash# 下载指定种子文件aria2c xxx.torrent # 结束之后，可以观察 dht.dat 变大了ls -hl ~/.aria2```",
+          "qas": [
+            {
+              "id": "5-80-16",
+              "question": "使用dht.dat前需要创建哪些空文件？",
+              "answers": [
+                {
+                  "text": "~/.aria2/dht.dat、~/.aria2/dht6.dat",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "5-80-17",
+              "question": "下载指定种子文件的aria2命令是什么？",
+              "answers": [
+                {
+                  "text": "aria2c xxx.torrent",
+                  "answer_start": 127
+                }
+              ]
+            },
+            {
+              "id": "5-80-18",
+              "question": "如何观察dht.dat是否变大？",
+              "answers": [
+                {
+                  "text": "ls -hl ~/.aria2",
+                  "answer_start": 157
+                }
+              ]
+            },
+            {
+              "id": "5-80-19",
+              "question": "如何创建dht.dat文件？",
+              "answers": [
+                {
+                  "text": "touch ~/.aria2/dht.dat",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

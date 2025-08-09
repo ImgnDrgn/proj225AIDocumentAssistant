@@ -1,0 +1,183 @@
+{
+  "data": [
+    {
+      "title": "滴答清单",
+      "paragraphs": [
+        {
+          "context": "滴答清单，一款轻便的待办事项(Todo)、日程管理(GTD)应用，全球逾千万用户的共同选择。它可以帮你制定项目计划、设置会议提醒、安排行程规划、保持工作专注，还能用于记录备忘、整理购物清单。滴答清单集计划表、备忘录、日程清单、笔记、便签、闹钟、日历、番茄钟、在线协作多种实用功能于一体，是你高效办公、目标管理、习惯养成及便捷生活的得力助手。",
+          "qas": [
+            {
+              "id": "5-104-1",
+              "question": "滴答清单属于什么类型的应用？",
+              "answers": [
+                {
+                  "text": "轻便的待办事项(Todo)、日程管理(GTD)应用",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-104-2",
+              "question": "有多少用户选择了滴答清单？",
+              "answers": [
+                {
+                  "text": "全球逾千万用户",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-104-3",
+              "question": "滴答清单能帮助用户做哪些事情？",
+              "answers": [
+                {
+                  "text": "制定项目计划、设置会议提醒、安排行程规划、保持工作专注，还能用于记录备忘、整理购物清单",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-104-4",
+              "question": "滴答清单可以帮你制定什么？",
+              "answers": [
+                {
+                  "text": "项目计划",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "id": "5-104-5",
+              "question": "滴答清单可以设置什么提醒？",
+              "answers": [
+                {
+                  "text": "会议提醒",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "id": "5-104-6",
+              "question": "滴答清单可以安排什么？",
+              "answers": [
+                {
+                  "text": "行程规划",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "id": "5-104-7",
+              "question": "滴答清单可以保持什么？",
+              "answers": [
+                {
+                  "text": "工作专注",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-104-8",
+              "question": "滴答清单可以用于记录什么？",
+              "answers": [
+                {
+                  "text": "备忘",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "5-104-9",
+              "question": "滴答清单可以整理什么？",
+              "answers": [
+                {
+                  "text": "购物清单",
+                  "answer_start": 90
+                }
+              ]
+            },
+            {
+              "id": "5-104-10",
+              "question": "滴答清单集成了哪些实用功能？",
+              "answers": [
+                {
+                  "text": "计划表、备忘录、日程清单、笔记、便签、闹钟、日历、番茄钟、在线协作",
+                  "answer_start": 137
+                }
+              ]
+            },
+            {
+              "id": "5-104-11",
+              "question": "滴答清单在哪些方面能成为用户的得力助手？",
+              "answers": [
+                {
+                  "text": "高效办公、目标管理、习惯养成及便捷生活",
+                  "answer_start": 190
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "wget https://cdn.dida365.cn/download/linux/linux_deb_x64/dida-1.0.20-amd64.deb sudo apt install ./dida-1.0.20-amd64.deb",
+          "qas": [
+            {
+              "id": "5-104-12",
+              "question": "安装滴答清单的命令是什么？",
+              "answers": [
+                {
+                  "text": "wget https://cdn.dida365.cn/download/linux/linux_deb_x64/dida-1.0.20-amd64.deb",
+                  "answer_start": 0
+                },
+                {
+                  "text": "sudo apt install ./dida-1.0.20-amd64.deb",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "id": "5-104-13",
+              "question": "如何下载滴答清单的安装文件？",
+              "answers": [
+                {
+                  "text": "wget https://cdn.dida365.cn/download/linux/linux_deb_x64/dida-1.0.20-amd64.deb",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt remove --purge dida",
+          "qas": [
+            {
+              "id": "5-104-14",
+              "question": "卸载滴答清单的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge dida",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "滴答清单官网：https://dida365.com/",
+          "qas": [
+            {
+              "id": "5-104-15",
+              "question": "滴答清单的官网地址是什么？",
+              "answers": [
+                {
+                  "text": "https://dida365.com/",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

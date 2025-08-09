@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "PCManFM-Qt",
+      "paragraphs": [
+        {
+          "context": "PCMan File Manager Qt ( PCManFM-Qt) 是 LXQT 桌面默认的文件管理器，PCMan File Manager的QT移植版，您可以使用它来浏览硬盘、U 盘、SD 卡和其他存储设备中的内容，也可以方便快捷地创建、移动、删除文件和文件夹。",
+          "qas": [
+            {
+              "question": "PCManFM-Qt是哪个桌面环境的默认文件管理器？",
+              "id": "5-95-1",
+              "answers": [
+                {
+                  "text": "LXQT 桌面",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "PCManFM-Qt是哪个软件的QT移植版？",
+              "id": "5-95-2",
+              "answers": [
+                {
+                  "text": "PCMan File Manager",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "使用PCManFM-Qt可以进行哪些操作？",
+              "id": "5-95-3",
+              "answers": [
+                {
+                  "text": "浏览硬盘、U 盘、SD 卡和其他存储设备中的内容，创建、移动、删除文件和文件夹",
+                  "answer_start": 90
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PCMan File Manager Qt ( PCManFM-Qt) 是 LXQT 桌面默认的文件管理器，PCMan File Manager的QT移植版。",
+          "qas": [
+            {
+              "question": "PCManFM-Qt 是什么？",
+              "id": "5-95-4",
+              "answers": [
+                {
+                  "text": "PCMan File Manager Qt ( PCManFM-Qt) 是 LXQT 桌面默认的文件管理器，PCMan File Manager的QT移植版.",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PCManFM-Qt的安装命令是：sudo apt-get install pcmanfm-qt",
+          "qas": [
+            {
+              "question": "安装PCManFM-Qt的命令是什么？",
+              "id": "5-95-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install pcmanfm-qt",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PCManFM-Qt的卸载命令是：sudo apt-get remove pcmanfm-qt",
+          "qas": [
+            {
+              "question": "卸载PCManFM-Qt的命令是什么？",
+              "id": "5-95-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove pcmanfm-qt",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PCManFM-Qt的仓库地址是：http://packages.deepin.com/deepin/pool/main/p/pcmanfm-qt/",
+          "qas": [
+            {
+              "question": "PCManFM-Qt的仓库地址是什么？",
+              "id": "5-95-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/p/pcmanfm-qt/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PCManFM-Qt的官方网站是：https://github.com/lxqt/pcmanfm-qt",
+          "qas": [
+            {
+              "question": "PCManFM-Qt的官方网站是什么？",
+              "id": "5-95-8",
+              "answers": [
+                {
+                  "text": "https://github.com/lxqt/pcmanfm-qt",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

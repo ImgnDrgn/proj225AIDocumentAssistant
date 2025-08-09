@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "GkDebconf",
+      "paragraphs": [
+        {
+          "context": "GkDebconf基本上是一个图形化的前端，在Debian系统上用Debconf重新配置软件包的助手。您可以使用它轻松的重新配置已安装的软件包，摆脱使用命令行操作的烦恼。\n\n安装： sudo apt-get install gkdebconf\n\n卸载： sudo apt-get remove gkdebconf\n\n仓库地址： http://packages.deepin.com/deepin/pool/main/g/gkdebconf/",
+          "qas": [
+            {
+              "id": "5-98-1",
+              "question": "GkDebconf是什么？",
+              "answers": [
+                {
+                  "text": "图形化的前端，在Debian系统上用Debconf重新配置软件包的助手",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "5-98-2",
+              "question": "GkDebconf适用于哪个操作系统？",
+              "answers": [
+                {
+                  "text": "Debian系统",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-98-3",
+              "question": "使用GkDebconf可以实现什么功能？",
+              "answers": [
+                {
+                  "text": "轻松重新配置已安装的软件包，摆脱使用命令行操作的烦恼",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "5-98-4",
+              "question": "如何安装GkDebconf？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gkdebconf",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "5-98-5",
+              "question": "如何卸载GkDebconf？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gkdebconf",
+                  "answer_start": 126
+                }
+              ]
+            },
+            {
+              "id": "5-98-6",
+              "question": "GkDebconf的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gkdebconf/",
+                  "answer_start": 165
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

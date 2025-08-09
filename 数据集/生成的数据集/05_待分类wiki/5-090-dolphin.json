@@ -1,0 +1,214 @@
+{
+  "data": [
+    {
+      "title": "dolphin",
+      "paragraphs": [
+        {
+          "context": "Dolphin 是 KDE 的文件管理器，您可以使用它来浏览硬盘、U 盘、SD 卡和其他存储设备中的内容，也可以方便快捷地创建、移动、删除文件和文件夹。安装命令为：sudo apt-get install dolphin。卸载命令为：sudo apt-get remove dolphin。仓库地址是：http://packages.deepin.com/deepin/pool/main/d/dolphin/。官方网站：https://apps.kde.org/dolphin/",
+          "qas": [
+            {
+              "id": "5-90-1",
+              "question": "Dolphin 是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "KDE 的文件管理器",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "5-90-2",
+              "question": "Dolphin 能操作哪些存储设备？",
+              "answers": [
+                {
+                  "text": "硬盘、U 盘、SD 卡和其他存储设备",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "5-90-3",
+              "question": "使用 Dolphin 可以执行哪些文件操作？",
+              "answers": [
+                {
+                  "text": "创建、移动、删除文件和文件夹",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "5-90-4",
+              "question": "如何在系统上安装 Dolphin？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install dolphin",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "id": "5-90-5",
+              "question": "卸载 Dolphin 的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove dolphin",
+                  "answer_start": 128
+                }
+              ]
+            },
+            {
+              "id": "5-90-6",
+              "question": "Dolphin 的软件仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/d/dolphin/",
+                  "answer_start": 161
+                }
+              ]
+            },
+            {
+              "id": "5-90-7",
+              "question": "Dolphin 的官方网站地址是什么？",
+              "answers": [
+                {
+                  "text": "https://apps.kde.org/dolphin/",
+                  "answer_start": 219
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dolphin contains plenty of productivity features that will save you time . the multiple tabs and split view features allow navigating multiple folders at the same time , and you can easily drag and drop files between views to move or copy them . dolphin 's right - click menu provides with many quick actions that let you compress , share , and duplicate files , among many other things . you can also add your own custom actions .",
+          "qas": [
+            {
+              "id": "5-90-8",
+              "question": "Dolphin有哪些提高效率的功能？",
+              "answers": [
+                {
+                  "text": "多标签和分屏视图（允许同时浏览多个文件夹，可在视图间拖放文件移动或复制）、右键菜单提供压缩、共享、复制文件等快速操作，还可添加自定义操作",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-90-9",
+              "question": "多标签和分屏视图功能有什么作用？",
+              "answers": [
+                {
+                  "text": "允许同时浏览多个文件夹，可在视图间拖放文件移动或复制",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-90-10",
+              "question": "右键菜单可以进行哪些快速操作？",
+              "answers": [
+                {
+                  "text": "压缩、共享、复制文件等，还可添加自定义操作",
+                  "answer_start": 196
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dolphin is very lightweight , but at the same time , you can adapt it to your specific needs . this means that you can carry out your file management exactly the way you want to . dolphin supports three different view modes : a classic grid view of all the files , a more detailed view , and a tree view . you can also configure most of dolphin 's behavior .",
+          "qas": [
+            {
+              "id": "5-90-11",
+              "question": "Dolphin的特点是什么？",
+              "answers": [
+                {
+                  "text": "轻量，同时可以适应特定需求，支持三种不同的视图模式，大部分行为可配置",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-90-12",
+              "question": "Dolphin支持哪些视图模式？",
+              "answers": [
+                {
+                  "text": "经典网格视图、更详细的视图和树视图",
+                  "answer_start": 165
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dolphin can display files and folders from many internet cloud services and other remote machines as if they were right there on your desktop . dolphin also comes with an integrated terminal that allows you to run commands on the current folder .",
+          "qas": [
+            {
+              "id": "5-90-13",
+              "question": "Dolphin可以显示来自哪些地方的文件和文件夹？",
+              "answers": [
+                {
+                  "text": "许多互联网云服务和其他远程机器",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "id": "5-90-14",
+              "question": "Dolphin有什么集成功能？",
+              "answers": [
+                {
+                  "text": "集成终端，允许在当前文件夹运行命令",
+                  "answer_start": 134
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "you can extend the capabilities of dolphin even further with powerful plugins to adapt it to your workflow . you can use the git integration plugin to interact with git repositories , or the nextcloud plugin to synchronize your files online , and much more . dolphin integration for revision control systems , dropbox , and disk images transparent integration of audio cds with kde plasma and kde applications with data conversion capabilities",
+          "qas": [
+            {
+              "id": "5-90-15",
+              "question": "如何扩展Dolphin的功能？",
+              "answers": [
+                {
+                  "text": "通过强大的插件，如git集成插件（与git仓库交互）、nextcloud插件（在线同步文件）等",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-90-16",
+              "question": "git集成插件的作用是什么？",
+              "answers": [
+                {
+                  "text": "与git仓库交互",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "id": "5-90-17",
+              "question": "nextcloud插件的作用是什么？",
+              "answers": [
+                {
+                  "text": "在线同步文件",
+                  "answer_start": 169
+                }
+              ]
+            },
+            {
+              "id": "5-90-18",
+              "question": "Dolphin可以与哪些进行集成？",
+              "answers": [
+                {
+                  "text": "版本控制系统、Dropbox、磁盘镜像、音频CD与KDE Plasma和KDE应用程序（具有数据转换功能）",
+                  "answer_start": 225
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

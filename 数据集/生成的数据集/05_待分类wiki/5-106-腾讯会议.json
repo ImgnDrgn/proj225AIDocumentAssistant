@@ -1,0 +1,129 @@
+{
+  "data": [
+    {
+      "title": "腾讯会议",
+      "paragraphs": [
+        {
+          "context": "腾讯会议是腾讯基于21年音视频通讯经验、并依托于腾讯云全球化网络部署出品的简单易用、高清流畅、安全可靠的云会议协作平台。界面清爽，操作简单，在线文档协作、小程序入会、会管会控、屏幕共享等功能一应俱全，让您随时随地、秒级入会，提升会议效率。",
+          "qas": [
+            {
+              "question": "腾讯会议是由哪家公司出品的？",
+              "id": "5-106-1",
+              "answers": [
+                {
+                  "text": "腾讯",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "腾讯会议基于多少年的音视频通讯经验？",
+              "id": "5-106-2",
+              "answers": [
+                {
+                  "text": "21年",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "腾讯会议依托什么进行部署？",
+              "id": "5-106-3",
+              "answers": [
+                {
+                  "text": "腾讯云全球化网络",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "腾讯会议包含哪些功能？",
+              "id": "5-106-4",
+              "answers": [
+                {
+                  "text": "在线文档协作、小程序入会、会管会控、屏幕共享等",
+                  "answer_start": 70
+                }
+              ]
+            },
+            {
+              "question": "腾讯会议能带来哪些便利？",
+              "id": "5-106-5",
+              "answers": [
+                {
+                  "text": "随时随地、秒级入会，提升会议效率",
+                  "answer_start": 100
+                }
+              ]
+            },
+            {
+              "question": "腾讯会议是什么类型的平台？",
+              "id": "5-106-6",
+              "answers": [
+                {
+                  "text": "简单易用、高清流畅、安全可靠的云会议协作平台",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "腾讯会议基于什么技术经验开发？",
+              "id": "5-106-7",
+              "answers": [
+                {
+                  "text": "基于21年音视频通讯经验、并依托于腾讯云全球化网络部署",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt install com.qq.wemeet",
+          "qas": [
+            {
+              "question": "安装腾讯会议的命令是什么？",
+              "id": "5-106-8",
+              "answers": [
+                {
+                  "text": "sudo apt install com.qq.wemeet",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt remove --purge com.qq.wemeet",
+          "qas": [
+            {
+              "question": "卸载腾讯会议的命令是什么？",
+              "id": "5-106-9",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge com.qq.wemeet",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "腾讯会议官网：https://meeting.tencent.com/",
+          "qas": [
+            {
+              "question": "腾讯会议的官网地址是什么？",
+              "id": "5-106-10",
+              "answers": [
+                {
+                  "text": "https://meeting.tencent.com/",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

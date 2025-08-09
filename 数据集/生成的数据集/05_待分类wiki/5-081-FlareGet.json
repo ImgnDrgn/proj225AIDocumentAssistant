@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "title": "FlareGet-已合并",
+      "paragraphs": [
+        {
+          "context": "## 简介\n\nFlareGet是一个跨平台的下载管理器和加速器，它支持多个线程同时下载、多种浏览器集成、抓取网页上视频等功能，同时还支持云存储服务。\n\n## 安装\n\n`sudo apt-get install flareget`\n\n## 卸载\n\n`sudo apt-get remove flareget`\n\n## 仓库地址\n\n[http://packages.deepin.com/deepin/pool/non-free/f/flareget/](http://packages.deepin.com/deepin/pool/non-free/f/flareget/)\n\n## 常见问题\n\n## 相关链接\n\n维基百科：",
+          "qas": [
+            {
+              "id": "5-81-1",
+              "question": "FlareGet是什么？",
+              "answers": [
+                {
+                  "text": "FlareGet是一个跨平台的下载管理器和加速器，它支持多个线程同时下载、多种浏览器集成、抓取网页上视频等功能，同时还支持云存储服务。",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-81-2",
+              "question": "如何安装FlareGet？",
+              "answers": [
+                {
+                  "text": "`sudo apt-get install flareget`",
+                  "answer_start": 97
+                }
+              ]
+            },
+            {
+              "id": "5-81-3",
+              "question": "如何卸载FlareGet？",
+              "answers": [
+                {
+                  "text": "`sudo apt-get remove flareget`",
+                  "answer_start": 138
+                }
+              ]
+            },
+            {
+              "id": "5-81-4",
+              "question": "FlareGet的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "[http://packages.deepin.com/deepin/pool/non-free/f/flareget/](http://packages.deepin.com/deepin/pool/non-free/f/flareget/)",
+                  "answer_start": 177
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

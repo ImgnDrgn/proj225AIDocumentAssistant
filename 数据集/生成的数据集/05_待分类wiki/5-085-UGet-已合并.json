@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "UGet-已合并",
+      "paragraphs": [
+        {
+          "context": "Uget是一个下载管理器，它支持断点续传、监视剪贴板、Firefox插件、分类/批量下载，还支持从HTML中导入下载地址、命令行下载等功能。安装命令为`sudo apt-get install uget`。卸载命令为`sudo apt-get remove uget`。仓库地址为http://packages.deepin.com/deepin/pool/main/u/uget/。UGet官网链接为https://ugetdm.com/。",
+          "qas": [
+            {
+              "id": "5-85-1",
+              "question": "Uget是什么？",
+              "answers": [
+                {
+                  "text": "一个下载管理器，它支持断点续传、监视剪贴板、Firefox插件、分类/批量下载，还支持从HTML中导入下载地址、命令行下载等功能。",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-85-2",
+              "question": "UGet是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "下载管理器",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-85-3",
+              "question": "UGet支持哪些主要功能？",
+              "answers": [
+                {
+                  "text": "断点续传、监视剪贴板、Firefox插件、分类/批量下载，还支持从HTML中导入下载地址、命令行下载等功能",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "5-85-4",
+              "question": "安装Uget的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install uget",
+                  "answer_start": 84
+                }
+              ]
+            },
+            {
+              "id": "5-85-5",
+              "question": "卸载Uget的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove uget",
+                  "answer_start": 114
+                }
+              ]
+            },
+            {
+              "id": "5-85-6",
+              "question": "Uget的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/u/uget/",
+                  "answer_start": 144
+                }
+              ]
+            },
+            {
+              "id": "5-85-7",
+              "question": "UGet的官网链接是什么？",
+              "answers": [
+                {
+                  "text": "https://ugetdm.com/",
+                  "answer_start": 195
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

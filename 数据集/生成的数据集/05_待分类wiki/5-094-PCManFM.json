@@ -1,0 +1,164 @@
+{
+  "data": [
+    {
+      "title": "PCManFM",
+      "paragraphs": [
+        {
+          "context": "PCMan File Manager（PCManFM） 是 LXDE 桌面默认的文件管理器，您可以使用它来浏览硬盘、U 盘、SD 卡和其他存储设备中的内容，也可以方便快捷地创建、移动、删除文件和文件夹。",
+          "qas": [
+            {
+              "id": "5-94-1",
+              "question": "PCManFM的全称是什么？",
+              "answers": [
+                {
+                  "text": "PCMan File Manager",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-94-2",
+              "question": "PCMan File Manager 的简称是什么？",
+              "answers": [
+                {
+                  "text": "PCManFM",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "5-94-3",
+              "question": "PCManFM是哪个桌面环境的默认文件管理器？",
+              "answers": [
+                {
+                  "text": "LXDE 桌面",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-94-4",
+              "question": "PCManFM可以用来执行哪些操作？",
+              "answers": [
+                {
+                  "text": "浏览硬盘、U 盘、SD 卡和其他存储设备中的内容，也可以方便快捷地创建、移动、删除文件和文件夹",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "id": "5-94-5",
+              "question": "PCManFM 可以管理哪些存储设备？",
+              "answers": [
+                {
+                  "text": "硬盘、U 盘、SD 卡和其他存储设备",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "id": "5-94-6",
+              "question": "PCManFM 支持哪些文件和文件夹操作？",
+              "answers": [
+                {
+                  "text": "创建、移动、删除文件和文件夹",
+                  "answer_start": 94
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装PCManFM的命令为`sudo apt-get install pcmanfm`",
+          "qas": [
+            {
+              "id": "5-94-7",
+              "question": "如何安装PCManFM？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install pcmanfm",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-94-8",
+              "question": "在终端中安装 PCManFM 的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install pcmanfm",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载PCManFM的命令为`sudo apt-get remove pcmanfm`",
+          "qas": [
+            {
+              "id": "5-94-9",
+              "question": "如何卸载PCManFM？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove pcmanfm",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-94-10",
+              "question": "卸载 PCManFM 的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove pcmanfm",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PCManFM的仓库地址是http://packages.deepin.com/deepin/pool/main/p/pcmanfm/",
+          "qas": [
+            {
+              "id": "5-94-11",
+              "question": "PCManFM的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/p/pcmanfm/",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "5-94-12",
+              "question": "deepin 系统上 PCManFM 的软件仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/p/pcmanfm/",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PCManFM的官方网站为https://sourceforge.net/projects/pcmanfm/",
+          "qas": [
+            {
+              "id": "5-94-13",
+              "question": "PCManFM的官方网站是什么？",
+              "answers": [
+                {
+                  "text": "https://sourceforge.net/projects/pcmanfm/",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

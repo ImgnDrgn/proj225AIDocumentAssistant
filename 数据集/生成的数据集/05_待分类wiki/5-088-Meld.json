@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Meld",
+      "paragraphs": [
+        {
+          "context": "Meld是一款可视化的文件及目录对比/合并工具，通过它可以对两个或三个文件/目录进行对比，并以图形化的方式显示出它们的不同之处，同时提供编辑及合并功能，还支持CVS, Subversion、Bazaar-ng和Mercurial等版本控制工具。",
+          "qas": [
+            {
+              "id": "5-88-1",
+              "question": "Meld是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "可视化的文件及目录对比/合并工具",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "5-88-2",
+              "question": "Meld可以对比多少个文件/目录？",
+              "answers": [
+                {
+                  "text": "两个或三个",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-88-3",
+              "question": "Meld以什么方式显示文件/目录的不同之处？",
+              "answers": [
+                {
+                  "text": "图形化的方式",
+                  "answer_start": 48
+                }
+              ]
+            },
+            {
+              "id": "5-88-4",
+              "question": "Meld支持哪些版本控制工具？",
+              "answers": [
+                {
+                  "text": "CVS, Subversion、Bazaar-ng和Mercurial",
+                  "answer_start": 80
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install meld",
+          "qas": [
+            {
+              "id": "5-88-5",
+              "question": "安装Meld的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install meld",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove meld",
+          "qas": [
+            {
+              "id": "5-88-6",
+              "question": "卸载Meld的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove meld",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/m/meld/",
+          "qas": [
+            {
+              "id": "5-88-7",
+              "question": "Meld的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/m/meld/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

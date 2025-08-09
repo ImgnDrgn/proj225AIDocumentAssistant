@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "SmartSynchronize",
+      "paragraphs": [
+        {
+          "context": "SmartSynchronize是一款检查文件与目录比较的工具，可以帮助对比两个文件或者两个文件夹的不同之处，文件比较能够检测内部行着色的变化、比较目录并显示每个文件的添加，删除和修改的行数。同时可以帮助您合并一个基本文件的两个独立的变化。",
+          "qas": [
+            {
+              "id": "5-89-1",
+              "question": "SmartSynchronize是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "检查文件与目录比较的工具",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "5-89-2",
+              "question": "SmartSynchronize可以对比什么的不同之处？",
+              "answers": [
+                {
+                  "text": "两个文件或者两个文件夹",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-89-3",
+              "question": "文件比较时，SmartSynchronize能检测什么变化？",
+              "answers": [
+                {
+                  "text": "内部行着色的变化",
+                  "answer_start": 63
+                }
+              ]
+            },
+            {
+              "id": "5-89-4",
+              "question": "比较目录时，SmartSynchronize会显示什么？",
+              "answers": [
+                {
+                  "text": "每个文件的添加，删除和修改的行数",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "id": "5-89-5",
+              "question": "SmartSynchronize还能帮助做什么？",
+              "answers": [
+                {
+                  "text": "合并一个基本文件的两个独立的变化",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "id": "5-89-6",
+              "question": "SmartSynchronize的主要功能是什么？",
+              "answers": [
+                {
+                  "text": "检查文件与目录比较，帮助对比两个文件或者两个文件夹的不同之处",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install smartsynchronize",
+          "qas": [
+            {
+              "id": "5-89-7",
+              "question": "如何安装SmartSynchronize？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install smartsynchronize",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove smartsynchronize",
+          "qas": [
+            {
+              "id": "5-89-8",
+              "question": "如何卸载SmartSynchronize？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove smartsynchronize",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/s/smartsynchronize/",
+          "qas": [
+            {
+              "id": "5-89-9",
+              "question": "SmartSynchronize的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/smartsynchronize/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
