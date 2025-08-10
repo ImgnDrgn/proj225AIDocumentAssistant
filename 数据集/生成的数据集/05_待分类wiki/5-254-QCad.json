@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "QCad",
+      "paragraphs": [
+        {
+          "context": "QCad是一款2D计算机辅助画图软件，采用AutoCAD DXF文件作为标准文件格式，能以多种格式输出，可绘制工程图、室内设计图、机械图纸等。",
+          "qas": [
+            {
+              "question": "QCad是什么类型的软件？",
+              "id": "5-254-1",
+              "answers": [
+                {
+                  "text": "2D计算机辅助画图软件",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "QCad采用的标准文件格式是什么？",
+              "id": "5-254-2",
+              "answers": [
+                {
+                  "text": "AutoCAD DXF文件",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "QCad可以绘制哪些图形？",
+              "id": "5-254-3",
+              "answers": [
+                {
+                  "text": "工程图、室内设计图、机械图纸等一系列CAD图形",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装QCad的命令是sudo apt-get install qcad。",
+          "qas": [
+            {
+              "question": "如何安装QCad？",
+              "id": "5-254-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install qcad",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载QCad的命令是sudo apt-get remove qcad。",
+          "qas": [
+            {
+              "question": "如何卸载QCad？",
+              "id": "5-254-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove qcad",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "QCad的仓库地址是http://packages.deepin.com/deepin/pool/main/q/qcad/。",
+          "qas": [
+            {
+              "question": "QCad的仓库地址是什么？",
+              "id": "5-254-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/q/qcad/",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
