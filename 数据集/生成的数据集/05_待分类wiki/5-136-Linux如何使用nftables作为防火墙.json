@@ -1,0 +1,234 @@
+{
+  "data": [
+    {
+      "title": "Linux如何使用nftables作为防火墙",
+      "paragraphs": [
+        {
+          "context": "nftables是Linux中新的包过滤前端命令行，用于替代iptables，其命令是nft，系统中若无，可安装nftables软件包，如sudo apt install nftables。",
+          "qas": [
+            {
+              "question": "nftables的命令是什么？",
+              "id": "5-136-1",
+              "answers": [
+                {
+                  "text": "nft",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "如何安装nftables？",
+              "id": "5-136-2",
+              "answers": [
+                {
+                  "text": "sudo apt install nftables",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用nftables作为防火墙，需先创建名为inet的规则表，命令为nft add table inet filter。",
+          "qas": [
+            {
+              "question": "创建名为inet的防火墙规则表的命令是什么？",
+              "id": "5-136-3",
+              "answers": [
+                {
+                  "text": "nft add table inet filter",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "向inet表添加input、forward、output链，分别绑定到对应挂钩点，优先级0，默认规则accept，如input链命令：nft add chain inet filter input { type filter hook input priority 0 ; policy accept ; }。",
+          "qas": [
+            {
+              "question": "添加input链到inet表的命令是什么？",
+              "id": "5-136-4",
+              "answers": [
+                {
+                  "text": "nft add chain inet filter input { type filter hook input priority 0 ; policy accept ; }",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "question": "input链的挂钩点和优先级是什么？",
+              "id": "5-136-5",
+              "answers": [
+                {
+                  "text": "挂钩点是input，优先级0",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "允许其他设备通过wlp3s0接口访问本机SSH服务的命令为nft add rule inet filter input iif wlp3s0 tcp dport 22 accept。iif指输入接口，可用ifconfig或ip addr show查看接口名称。",
+          "qas": [
+            {
+              "question": "允许通过wlp3s0接口访问SSH服务的命令是什么？",
+              "id": "5-136-6",
+              "answers": [
+                {
+                  "text": "nft add rule inet filter input iif wlp3s0 tcp dport 22 accept",
+                  "answer_start": 49
+                }
+              ]
+            },
+            {
+              "question": "iif代表什么？",
+              "id": "5-136-7",
+              "answers": [
+                {
+                  "text": "输入接口（input interface）",
+                  "answer_start": 132
+                }
+              ]
+            },
+            {
+              "question": "如何查看网络接口名称？",
+              "id": "5-136-8",
+              "answers": [
+                {
+                  "text": "用ifconfig或ip addr show命令",
+                  "answer_start": 157
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "拒绝通过wlp3s0接口的input方向新连接的命令为nft add rule inet filter input iif wlp3s0 ct state new reject。ct state new表示新建连接，iif条件不能省略。",
+          "qas": [
+            {
+              "question": "拒绝wlp3s0接口input方向新连接的命令是什么？",
+              "id": "5-136-9",
+              "answers": [
+                {
+                  "text": "nft add rule inet filter input iif wlp3s0 ct state new reject",
+                  "answer_start": 49
+                }
+              ]
+            },
+            {
+              "question": "ct state new表示什么？",
+              "id": "5-136-10",
+              "answers": [
+                {
+                  "text": "新建连接",
+                  "answer_start": 133
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "阻止其他设备访问本机容器内的服务，需在forward方向禁止新连接，命令为nft add rule inet filter forward iif wlp3s0 ct state new reject，iif条件不可省略。",
+          "qas": [
+            {
+              "question": "如何阻止其他设备访问本机容器内的服务？",
+              "id": "5-136-11",
+              "answers": [
+                {
+                  "text": "在forward方向禁止新连接，命令为nft add rule inet filter forward iif wlp3s0 ct state new reject",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "列出现有防火墙规则的命令是nft list ruleset -a，-a参数显示handle（规则序号），table ip和ip6是iptables和ip6tables创建的。",
+          "qas": [
+            {
+              "question": "列出现有防火墙规则的命令是什么？",
+              "id": "5-136-12",
+              "answers": [
+                {
+                  "text": "nft list ruleset -a",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "-a参数的作用是什么？",
+              "id": "5-136-13",
+              "answers": [
+                {
+                  "text": "显示handle（规则序号）",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除inet表可通过其handle，命令为nft delete table handle [handle值]，handle可从nft list ruleset -a中获取。",
+          "qas": [
+            {
+              "question": "如何删除inet表？",
+              "id": "5-136-14",
+              "answers": [
+                {
+                  "text": "通过其handle，命令为nft delete table handle [handle值]，handle可从nft list ruleset -a中获取",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除单条规则需指定链和handle，如删除input链中handle为4的规则，命令为nft delete rule inet filter input handle 4。",
+          "qas": [
+            {
+              "question": "删除input链中handle为4的规则的命令是什么？",
+              "id": "5-136-15",
+              "answers": [
+                {
+                  "text": "nft delete rule inet filter input handle 4",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "完整脚本会刷新现有规则，先删除现有inet表，再添加新规则（创建表、链及相关规则），执行脚本即可生效。",
+          "qas": [
+            {
+              "question": "完整脚本的作用是什么？",
+              "id": "5-136-16",
+              "answers": [
+                {
+                  "text": "刷新现有规则，先删除现有inet表，再添加新规则（创建表、链及相关规则），执行脚本即可生效",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过systemd让脚本开机自启动，需创建/usr/local/bin/nftables.sh脚本和/etc/systemd/system/nftables.service文件，再执行sudo systemctl enable nftables。",
+          "qas": [
+            {
+              "question": "如何通过systemd设置nftables脚本开机自启动？",
+              "id": "5-136-17",
+              "answers": [
+                {
+                  "text": "创建/usr/local/bin/nftables.sh脚本和/etc/systemd/system/nftables.service文件，再执行sudo systemctl enable nftables",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
