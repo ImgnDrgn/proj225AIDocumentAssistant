@@ -1,0 +1,154 @@
+{
+  "data": [
+    {
+      "title": "Deepin配置trojan客户端",
+      "paragraphs": [
+        {
+          "context": "Trojan是一个翻墙软件。",
+          "qas": [
+            {
+              "question": "Trojan是什么软件？",
+              "id": "5-267-1",
+              "answers": [
+                {
+                  "text": "翻墙软件",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在Deepin上安装trojan服务的命令是sudo apt install trojan。",
+          "qas": [
+            {
+              "question": "在Deepin上如何安装trojan服务？",
+              "id": "5-267-2",
+              "answers": [
+                {
+                  "text": "sudo apt install trojan",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "将例子中的客户端配置文件移动到trojan配置服务下的命令是mv /usr/share/doc/trojan/examples/client.json-example /etc/trojan/config.json。",
+          "qas": [
+            {
+              "question": "如何将客户端配置文件示例移动到trojan配置服务下？",
+              "id": "5-267-3",
+              "answers": [
+                {
+                  "text": "mv /usr/share/doc/trojan/examples/client.json-example /etc/trojan/config.json",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改trojan配置文件的命令是sudo dedit /etc/trojan/config.josn。",
+          "qas": [
+            {
+              "question": "修改trojan配置文件使用什么命令？",
+              "id": "5-267-4",
+              "answers": [
+                {
+                  "text": "sudo dedit /etc/trojan/config.josn",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "trojan配置文件中，\"remote_addr\"的示例值是example.com。",
+          "qas": [
+            {
+              "question": "trojan配置文件中\"remote_addr\"的示例值是什么？",
+              "id": "5-267-5",
+              "answers": [
+                {
+                  "text": "example.com",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "trojan配置文件中，\"password\"数组的示例内容是[\"password1\"]。",
+          "qas": [
+            {
+              "question": "trojan配置文件中\"password\"数组的示例内容是什么？",
+              "id": "5-267-6",
+              "answers": [
+                {
+                  "text": "[\"password1\"]",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "trojan配置文件的ssl部分，\"verify\"被设置为false。",
+          "qas": [
+            {
+              "question": "trojan配置文件的ssl部分，\"verify\"被设置为什么值？",
+              "id": "5-267-7",
+              "answers": [
+                {
+                  "text": "false",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启动trojan服务的命令是systemctl start trojan.service。",
+          "qas": [
+            {
+              "question": "如何启动trojan服务？",
+              "id": "5-267-8",
+              "answers": [
+                {
+                  "text": "systemctl start trojan.service",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Trojan有图形界面客户端Trojan-Qt5，其项目地址是https://github.com/Trojan-Qt5/Trojan-Qt5。",
+          "qas": [
+            {
+              "question": "Trojan的图形界面客户端是什么？",
+              "id": "5-267-9",
+              "answers": [
+                {
+                  "text": "Trojan-Qt5",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "question": "Trojan-Qt5的项目地址是什么？",
+              "id": "5-267-10",
+              "answers": [
+                {
+                  "text": "https://github.com/Trojan-Qt5/Trojan-Qt5",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

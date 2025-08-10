@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Conky_Manager",
+      "paragraphs": [
+        {
+          "context": "Conky Manager是一款简单的图形化工具，用来管理Linux桌面上的ConkyScripts。",
+          "qas": [
+            {
+              "question": "Conky Manager是什么？",
+              "id": "5-265-1",
+              "answers": [
+                {
+                  "text": "一款简单的图形化工具，用来管理Linux桌面上的ConkyScripts。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Conky Manager采用全新的用户界面和选项配置，使应用程序窗口更直观易用。",
+          "qas": [
+            {
+              "question": "Conky Manager有什么特点？",
+              "id": "5-265-2",
+              "answers": [
+                {
+                  "text": "采用全新的用户界面和选项配置，使应用程序窗口更加直观和易于使用。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Conky Manager的命令是sudo apt-get install conky-manager。",
+          "qas": [
+            {
+              "question": "如何安装Conky Manager？",
+              "id": "5-265-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install conky-manager",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Conky Manager的命令是sudo apt-get remove conky-manager。",
+          "qas": [
+            {
+              "question": "怎样卸载Conky Manager？",
+              "id": "5-265-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove conky-manager",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Conky Manager的仓库地址是http://packages.deepin.com/deepin/pool/contrib/c/conky-manager/。",
+          "qas": [
+            {
+              "question": "Conky Manager的仓库地址是什么？",
+              "id": "5-265-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/contrib/c/conky-manager/",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "有相关链接介绍如何添加桌面小工具Conky：https://bbs.deepin.org/forum.php?mod=viewthread&tid=42752。",
+          "qas": [
+            {
+              "question": "哪里有介绍如何添加桌面小工具Conky的链接？",
+              "id": "5-265-6",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/forum.php?mod=viewthread&tid=42752",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

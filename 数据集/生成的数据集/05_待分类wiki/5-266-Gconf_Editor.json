@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "Gconf_Editor",
+      "paragraphs": [
+        {
+          "context": "Gconf Editor是一个配置编辑软件，可修改桌面环境和应用程序参数，改变其显示和属性。",
+          "qas": [
+            {
+              "question": "Gconf Editor是什么软件？",
+              "id": "5-266-1",
+              "answers": [
+                {
+                  "text": "一个配置编辑软件",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "Gconf Editor能修改什么？",
+              "id": "5-266-2",
+              "answers": [
+                {
+                  "text": "桌面环境和应用程序的相关参数值",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "使用Gconf Editor可实现什么效果？",
+              "id": "5-266-3",
+              "answers": [
+                {
+                  "text": "改变桌面环境显示和应用程序属性",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Gconf Editor的命令是sudo apt-get install gconf-editor。",
+          "qas": [
+            {
+              "question": "如何安装Gconf Editor？",
+              "id": "5-266-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gconf-editor",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Gconf Editor的命令是sudo apt-get remove gconf-editor。",
+          "qas": [
+            {
+              "question": "怎样卸载Gconf Editor？",
+              "id": "5-266-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gconf-editor",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Gconf Editor的仓库地址是http://packages.deepin.com/deepin/pool/main/g/gconf-editor/。",
+          "qas": [
+            {
+              "question": "Gconf Editor的仓库地址是什么？",
+              "id": "5-266-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gconf-editor/",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
