@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "CopyQ",
+      "paragraphs": [
+        {
+          "context": "CopyQ是一款剪贴板软件，适用于大量数据的复制粘贴。CopyQ能快速复制大量的连续表格数据，具有搜索，编辑历史等一些高级功能，并且还支持图片、命令行、快捷键等。安装命令为sudo apt-get install copyq，卸载命令为sudo apt-get remove copyq，其仓库地址为http://packages.deepin.com/deepin/pool/main/c/copyq/",
+          "qas": [
+            {
+              "id": "5-140-1",
+              "question": "CopyQ是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "剪贴板软件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-140-2",
+              "question": "CopyQ适用于什么场景？",
+              "answers": [
+                {
+                  "text": "大量数据的复制粘贴",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-140-3",
+              "question": "CopyQ有哪些高级功能？",
+              "answers": [
+                {
+                  "text": "搜索，编辑历史等",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-140-4",
+              "question": "CopyQ支持哪些内容？",
+              "answers": [
+                {
+                  "text": "图片、命令行、快捷键等",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "5-140-5",
+              "question": "CopyQ的安装命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install copyq",
+                  "answer_start": 82
+                }
+              ]
+            },
+            {
+              "id": "5-140-6",
+              "question": "如何卸载CopyQ？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove copyq",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "id": "5-140-7",
+              "question": "CopyQ的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/c/copyq/",
+                  "answer_start": 140
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "GoldenDict",
+      "paragraphs": [
+        {
+          "context": "GoldenDict是一款词典软件，支持多种词典文件格式。GoldenDict可以查询Wikipedia、Wiktionary 等基于 MediaWiki 的Wiki网站，格式化、颜色、图像、链接等支持一应俱全，且能够通过模板化URL模式来使用其他的在线词典网站。",
+          "qas": [
+            {
+              "id": "5-142-1",
+              "question": "GoldenDict是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "词典软件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-142-2",
+              "question": "GoldenDict支持哪些基于MediaWiki的Wiki网站？",
+              "answers": [
+                {
+                  "text": "Wikipedia、Wiktionary",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-142-3",
+              "question": "GoldenDict能通过什么模式使用其他在线词典网站？",
+              "answers": [
+                {
+                  "text": "模板化URL模式",
+                  "answer_start": 78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装命令：sudo apt-get install goldendict；卸载命令：sudo apt-get remove goldendict。",
+          "qas": [
+            {
+              "id": "5-142-4",
+              "question": "安装GoldenDict的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install goldendict",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-142-5",
+              "question": "卸载GoldenDict的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove goldendict",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GoldenDict的仓库地址是http://packages.deepin.com/deepin/pool/main/g/goldendict/。",
+          "qas": [
+            {
+              "id": "5-142-6",
+              "question": "GoldenDict的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/goldendict/",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

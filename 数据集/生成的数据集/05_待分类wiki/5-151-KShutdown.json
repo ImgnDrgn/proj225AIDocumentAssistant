@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "title": "KShutdown",
+      "paragraphs": [
+        {
+          "context": "KShutDown是一个定时关机工具，使用它你可以在指定的时间实现对于系统的关闭、重启、锁屏、以及结束会话等操作。同时具有可配置的键盘快捷键、KDE Kiosk支持、命令行和DCOP支持等功能。安装命令为sudo apt-get install kshutdown，卸载命令为sudo apt-get remove kshutdown，仓库地址是http://packages.deepin.com/deepin/pool/main/k/kshutdown/",
+          "qas": [
+            {
+              "id": "5-151-1",
+              "question": "KShutDown是什么工具？",
+              "answers": [
+                {
+                  "text": "KShutDown是一个定时关机工具，使用它你可以在指定的时间实现对于系统的关闭、重启、锁屏、以及结束会话等操作。同时具有可配置的键盘快捷键、KDE Kiosk支持、命令行和DCOP支持等功能。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-151-2",
+              "question": "如何安装KShutdown？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install kshutdown",
+                  "answer_start": 118
+                }
+              ]
+            },
+            {
+              "id": "5-151-3",
+              "question": "卸载KShutdown的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove kshutdown",
+                  "answer_start": 153
+                }
+              ]
+            },
+            {
+              "id": "5-151-4",
+              "question": "KShutdown的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/k/kshutdown/",
+                  "answer_start": 188
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

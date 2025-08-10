@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "title": "Genymotion",
+      "paragraphs": [
+        {
+          "context": "Genymotion是一款专业的虚拟模拟器，可以在您的电脑上运行安卓应用、游戏或者智能电视应用等，同时它也是开发人员使用的开发工具，还可以调试已开发的程序。安装命令为sudo apt-get install genymotion，卸载命令为sudo apt-get remove genymotion，其仓库地址为http://packages.deepin.com/deepin/pool/contrib/g/genymotion/",
+          "qas": [
+            {
+              "id": "5-154-1",
+              "question": "Genymotion是什么？",
+              "answers": [
+                {
+                  "text": "Genymotion是一款专业的虚拟模拟器，可以在您的电脑上运行安卓应用、游戏或者智能电视应用等，同时它也是开发人员使用的开发工具，还可以调试已开发的程序。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-154-2",
+              "question": "如何安装Genymotion？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install genymotion",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "id": "5-154-3",
+              "question": "如何卸载Genymotion？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove genymotion",
+                  "answer_start": 106
+                }
+              ]
+            },
+            {
+              "id": "5-154-4",
+              "question": "Genymotion的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/contrib/g/genymotion/",
+                  "answer_start": 139
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

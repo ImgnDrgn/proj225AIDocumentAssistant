@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "FSearch",
+      "paragraphs": [
+        {
+          "context": "FSearch 是一款快速的文件搜索工具，灵感来自于 Everything 搜索引擎。它是用 C 语言编写的，基于GTK3。安装命令为 sudo apt install io.github.fsearch，卸载命令为 sudo apt remove --purge io.github.fsearch。官方仓库的版本只有英文版。自定义搜索范围（添加或排除某些目录）的方法是进入 Edit 菜单-> Preferences -> Database 选项卡，Include（包含）表示这些目录在搜索范围内，Exclude（不包含）表示这些目录被排除在搜索范围外。FSearch Github 主页是 https://github.com/cboxdoerfer/fsearch。",
+          "qas": [
+            {
+              "id": "5-148-1",
+              "question": "FSearch 是一款什么样的工具？",
+              "answers": [
+                {
+                  "text": "FSearch 是一款快速的文件搜索工具，灵感来自于 Everything 搜索引擎。它是用 C 语言编写的，基于GTK3。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-148-2",
+              "question": "如何安装 FSearch？",
+              "answers": [
+                {
+                  "text": "sudo apt install io.github.fsearch",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "id": "5-148-3",
+              "question": "如何卸载 FSearch？",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge io.github.fsearch",
+                  "answer_start": 107
+                }
+              ]
+            },
+            {
+              "id": "5-148-4",
+              "question": "FSearch 官方仓库的版本有中文版吗？",
+              "answers": [
+                {
+                  "text": "官方仓库的版本只有英文版。",
+                  "answer_start": 150
+                }
+              ]
+            },
+            {
+              "id": "5-148-5",
+              "question": "如何自定义 FSearch 的搜索范围？",
+              "answers": [
+                {
+                  "text": "进入 Edit 菜单-> Preferences -> Database 选项卡。Include（包含）表示这些目录在搜索范围内。Exclude（不包含）表示这些目录被排除在搜索范围外。",
+                  "answer_start": 176
+                }
+              ]
+            },
+            {
+              "id": "5-148-6",
+              "question": "FSearch 的 Github 主页是什么？",
+              "answers": [
+                {
+                  "text": "https://github.com/cboxdoerfer/fsearch",
+                  "answer_start": 315
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

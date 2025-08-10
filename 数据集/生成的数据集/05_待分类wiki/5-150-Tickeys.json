@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "Tickeys",
+      "paragraphs": [
+        {
+          "context": "Tickeys是一款打字机声效模拟软件，它支持进行设置声音方案（自带打字机、冒泡、机械键盘、剑气等方案）、音量、音调等，让您的键盘加上特效声音。安装命令为sudo apt-get install tickeys，卸载命令为sudo apt-get remove tickeys，其仓库地址为http://packages.deepin.com/deepin/pool/contrib/t/tickeys/",
+          "qas": [
+            {
+              "id": "5-150-1",
+              "question": "Tickeys是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "打字机声效模拟软件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-150-2",
+              "question": "Tickeys支持设置哪些内容？",
+              "answers": [
+                {
+                  "text": "声音方案（自带打字机、冒泡、机械键盘、剑气等方案）、音量、音调等",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "5-150-3",
+              "question": "安装Tickeys的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install tickeys",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "5-150-4",
+              "question": "卸载Tickeys的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove tickeys",
+                  "answer_start": 117
+                }
+              ]
+            },
+            {
+              "id": "5-150-5",
+              "question": "Tickeys的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/contrib/t/tickeys/",
+                  "answer_start": 149
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

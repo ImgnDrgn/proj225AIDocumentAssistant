@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "uTools",
+      "paragraphs": [
+        {
+          "context": "uTools是新一代效率工具平台，可自由组合插件应用，打造专属工具集。在任何界面下通过快捷键「Alt + 空格」呼出uTools，或是点击鼠标中键呼出超级面板，具有即用即走、无打扰、不中断当下工作的特点。安装命令为sudo apt install u.utools.utools，卸载命令为sudo apt remove --purge u.utools.utools。仓库地址为http://packages.deepin.com/deepin/pool/non-free/u/utools/，官网地址为https://u.tools/",
+          "qas": [
+            {
+              "id": "5-145-1",
+              "question": "uTools是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "新一代效率工具平台",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-145-2",
+              "question": "如何呼出uTools？",
+              "answers": [
+                {
+                  "text": "在任何界面下通过快捷键「Alt + 空格」呼出uTools，或是点击鼠标中键呼出超级面板",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "5-145-3",
+              "question": "uTools具有哪些特点？",
+              "answers": [
+                {
+                  "text": "即用即走、无打扰、不中断当下工作",
+                  "answer_start": 100
+                }
+              ]
+            },
+            {
+              "id": "5-145-4",
+              "question": "uTools的安装命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt install u.utools.utools",
+                  "answer_start": 124
+                }
+              ]
+            },
+            {
+              "id": "5-145-5",
+              "question": "uTools的卸载命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge u.utools.utools",
+                  "answer_start": 160
+                }
+              ]
+            },
+            {
+              "id": "5-145-6",
+              "question": "uTools的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/u/utools/",
+                  "answer_start": 203
+                }
+              ]
+            },
+            {
+              "id": "5-145-7",
+              "question": "uTools的官网地址是什么？",
+              "answers": [
+                {
+                  "text": "https://u.tools/",
+                  "answer_start": 259
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

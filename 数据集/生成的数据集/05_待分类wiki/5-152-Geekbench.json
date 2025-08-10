@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "Geekbench",
+      "paragraphs": [
+        {
+          "context": "Geekbench 是一款跨平台的跑分软件，评分可分为单核和多核性能，以及模拟真实使用场景的工作负载能力。目前最新版本是 Geekbench 5。软件基准测试适用于 macOS、Windows、Linux、Android和iOS。运行测试可通过以下命令：wget https://cdn.geekbench.com/Geekbench-5.4.5-Linux.tar.gz；tar -xzvf Geekbench-5.4.5-Linux.tar.gz；Geekbench-5.4.5-Linux/geekbench5。",
+          "qas": [
+            {
+              "id": "5-152-1",
+              "question": "Geekbench 是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "跨平台的跑分软件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-152-2",
+              "question": "Geekbench 的评分分为哪些方面？",
+              "answers": [
+                {
+                  "text": "单核和多核性能，以及模拟真实使用场景的工作负载能力",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "5-152-3",
+              "question": "Geekbench 最新版本是什么？",
+              "answers": [
+                {
+                  "text": "Geekbench 5",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "id": "5-152-4",
+              "question": "Geekbench 适用于哪些操作系统？",
+              "answers": [
+                {
+                  "text": "macOS、Windows、Linux、Android和iOS",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "id": "5-152-5",
+              "question": "如何运行 Geekbench 测试？",
+              "answers": [
+                {
+                  "text": "wget https://cdn.geekbench.com/Geekbench-5.4.5-Linux.tar.gz；tar -xzvf Geekbench-5.4.5-Linux.tar.gz；Geekbench-5.4.5-Linux/geekbench5",
+                  "answer_start": 113
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

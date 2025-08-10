@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "Gufw",
+      "paragraphs": [
+        {
+          "context": "Gufw是一款防火墙UFW的图形化管理工具，可以保护您的电脑在接入互联网时免受病毒干扰。其全中文的操作界面，可以方便的设置放行/阻止IP或服务，非常适合对系统完全性要求较高的商务电脑使用。安装命令为sudo apt-get install gufw，卸载命令为sudo apt-get remove gufw，仓库地址是http://packages.deepin.com/deepin/pool/main/g/gui-ufw/",
+          "qas": [
+            {
+              "id": "5-137-1",
+              "question": "Gufw是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "防火墙UFW的图形化管理工具",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-137-2",
+              "question": "Gufw能保护电脑免受什么干扰？",
+              "answers": [
+                {
+                  "text": "病毒",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "5-137-3",
+              "question": "Gufw的操作界面是什么语言的？",
+              "answers": [
+                {
+                  "text": "全中文",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "id": "5-137-4",
+              "question": "Gufw适合什么样的电脑使用？",
+              "answers": [
+                {
+                  "text": "对系统完全性要求较高的商务电脑",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "5-137-5",
+              "question": "安装Gufw的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gufw",
+                  "answer_start": 116
+                }
+              ]
+            },
+            {
+              "id": "5-137-6",
+              "question": "卸载Gufw的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gufw",
+                  "answer_start": 143
+                }
+              ]
+            },
+            {
+              "id": "5-137-7",
+              "question": "Gufw的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gui-ufw/",
+                  "answer_start": 170
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

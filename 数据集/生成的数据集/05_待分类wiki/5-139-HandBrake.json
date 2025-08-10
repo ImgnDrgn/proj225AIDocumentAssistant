@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "HandBrake",
+      "paragraphs": [
+        {
+          "context": "HandBrake是一款视频转码工具，它可以转换常见的视频文件或将DVD、蓝光视频转换成MP4和MKV，同时还可以自定义转换参数，如定制视频大小、视频裁切、滤镜、视音频编解码器、字幕、章节等参数。",
+          "qas": [
+            {
+              "id": "5-139-1",
+              "question": "HandBrake是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "视频转码工具",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-139-2",
+              "question": "HandBrake可以将视频转换成哪些格式？",
+              "answers": [
+                {
+                  "text": "MP4和MKV",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-139-3",
+              "question": "HandBrake可以自定义哪些转换参数？",
+              "answers": [
+                {
+                  "text": "定制视频大小、视频裁切、滤镜、视音频编解码器、字幕、章节等参数",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装命令：sudo apt-get install handbrake",
+          "qas": [
+            {
+              "id": "5-139-4",
+              "question": "如何安装HandBrake？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install handbrake",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载命令：sudo apt-get remove handbrake",
+          "qas": [
+            {
+              "id": "5-139-5",
+              "question": "如何卸载HandBrake？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove handbrake",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址：http://packages.deepin.com/deepin/pool/main/h/handbrake/",
+          "qas": [
+            {
+              "id": "5-139-6",
+              "question": "HandBrake的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/h/handbrake/",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

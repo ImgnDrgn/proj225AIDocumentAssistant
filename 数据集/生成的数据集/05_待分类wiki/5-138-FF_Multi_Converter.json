@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "FF_Multi_Converter",
+      "paragraphs": [
+        {
+          "context": "FF Multi Converter是一个多功能的格式转换工具，它支持音频，视频，图像等格式之间的相互转换，以及选择文件预设，它将自动填充相应的转换命令。安装命令为sudo apt-get install ffmulticonverter，卸载命令为sudo apt-get remove ffmulticonverter，其仓库地址为http://packages.deepin.com/deepin/pool/main/f/ffmulticonverter-dmo/",
+          "qas": [
+            {
+              "id": "5-138-1",
+              "question": "FF Multi Converter是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "多功能的格式转换工具",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-138-2",
+              "question": "FF Multi Converter支持哪些格式的转换？",
+              "answers": [
+                {
+                  "text": "音频，视频，图像等格式之间的相互转换",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "5-138-3",
+              "question": "安装FF Multi Converter的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install ffmulticonverter",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "5-138-4",
+              "question": "卸载FF Multi Converter的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove ffmulticonverter",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "id": "5-138-5",
+              "question": "FF Multi Converter的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/f/ffmulticonverter-dmo/",
+                  "answer_start": 128
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

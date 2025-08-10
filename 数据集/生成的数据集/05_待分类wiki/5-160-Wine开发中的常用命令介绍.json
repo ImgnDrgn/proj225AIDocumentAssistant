@@ -1,0 +1,314 @@
+{
+  "data": [
+    {
+      "title": "Wine开发中的常用命令介绍",
+      "paragraphs": [
+        {
+          "context": "编译这个词我们大家经常在用，笼统的来说就是将源码变成可执行的程序。实际上在 Linux 中我们用的比较多的通常是编译套件，比如 GCC，它包括各种语言的编译器、汇编器、链接器等等。有了编译套件我们能够将源码变成可执行的程序，但是由于大的项目通常涉及成百上千的源文件，手动写脚本来完成这些繁琐的编译、链接工作太耗时，某个改动后想做到重新生成的代价最小则更是难上加难，所以出现了构建系统。最基础和常见的构建系统是 Make，它拥有一套语法，可以定义文件生成的规则，以及文件之间的依赖关系，项目中的 Makefile 文件通常就是包含了这些规则的文件。对于大的项目来说 Makefile 文件的编写也不是太容易，所以人们总结出了一套准则，提供了更高一级的抽象，用更高级的工具来生成 Makefile 文件。这些更高级的构建工具包括 GNU autotools、CMake 等，以 autotools 为例：开发人员通常编写 configure.ac 文件和 Makefile.am 文件，通过 autoconf 和 automake（autoreconf 可以全部生成），生成对应的 configure 脚本和 Makefile.in 文件。用户根据具体需求，通过不同的参数运行 ./configure 脚本生成 Makefile 文件。最后再用 make 命令，生成最终的可执行程序。遵循标准的 Makefile 文件一般还会存在 install 、uninstall 等目标，用来实现安装和卸载等功能。至此，我们完成了从源码到程序的构建。",
+          "qas": [
+            {
+              "id": "5-160-1",
+              "question": "什么是编译？",
+              "answers": [
+                {
+                  "text": "笼统的来说就是将源码变成可执行的程序",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-160-2",
+              "question": "Linux中常用的编译套件有哪些？",
+              "answers": [
+                {
+                  "text": "GCC，它包括各种语言的编译器、汇编器、链接器等等",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-160-3",
+              "question": "为什么会出现构建系统？",
+              "answers": [
+                {
+                  "text": "由于大的项目通常涉及成百上千的源文件，手动写脚本来完成这些繁琐的编译、链接工作太耗时，某个改动后想做到重新生成的代价最小则更是难上加难，所以出现了构建系统",
+                  "answer_start": 135
+                }
+              ]
+            },
+            {
+              "id": "5-160-4",
+              "question": "最基础和常见的构建系统是什么？",
+              "answers": [
+                {
+                  "text": "Make",
+                  "answer_start": 275
+                }
+              ]
+            },
+            {
+              "id": "5-160-5",
+              "question": "Make的作用是什么？",
+              "answers": [
+                {
+                  "text": "它拥有一套语法，可以定义文件生成的规则，以及文件之间的依赖关系",
+                  "answer_start": 281
+                }
+              ]
+            },
+            {
+              "id": "5-160-6",
+              "question": "哪些高级构建工具可以生成Makefile文件？",
+              "answers": [
+                {
+                  "text": "GNU autotools、CMake 等",
+                  "answer_start": 410
+                }
+              ]
+            },
+            {
+              "id": "5-160-7",
+              "question": "使用autotools时，开发人员通常需要编写哪些文件？",
+              "answers": [
+                {
+                  "text": "configure.ac 文件和 Makefile.am 文件",
+                  "answer_start": 465
+                }
+              ]
+            },
+            {
+              "id": "5-160-8",
+              "question": "如何通过autotools生成configure脚本和Makefile.in文件？",
+              "answers": [
+                {
+                  "text": "通过 autoconf 和 automake（autoreconf 可以全部生成）",
+                  "answer_start": 499
+                }
+              ]
+            },
+            {
+              "id": "5-160-9",
+              "question": "生成最终可执行程序的最后一步命令是什么？",
+              "answers": [
+                {
+                  "text": "make 命令",
+                  "answer_start": 614
+                }
+              ]
+            },
+            {
+              "id": "5-160-10",
+              "question": "标准的Makefile文件通常有哪些目标用于安装和卸载？",
+              "answers": [
+                {
+                  "text": "install 、uninstall",
+                  "answer_start": 636
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "不同的操作系统，或者说 Linux 下不同的发行版，通常都有自己的一套标准的软件安装方式，可以用来追踪安装的软件，保证软件来源的一致性和可靠性。Deepin 系统基于 Debian 系统而来，使用了和 Debian 系统一样的包管理系统（Ubuntu 也是基于 Debian 的包管理系统）。所谓打包就是将一系列的文件按照一致的规则收集到一起，以用于方便的安装、升级、卸载和配置的过程，打包最终生成的文件以 .deb 结尾，我们可以通过 dpkg -i  命令来安装。复杂的安装包通常都存在依赖关系，使用 dpkg 系列命令时我们需要了解对应的依赖关系是否满足。而 apt 系列命令，是更高一级的包管理系统，它包含了对依赖的解析和自动解决依赖的功能，所以可以简单的认为，dpkg 系列命令是用来操作单个包的，而 apt 系列命令是用来和包管理系统交互的。常见的 dpkg 和 apt 系列命令如下：dpkg，通过 -i、-r、-l、-S 参数可以安装、移除、查看安装包或者进行文件溯源。dpkg-deb，用来查看、解开或者打包安装包。apt install/remove/purge/update/dist-upgrade，来安装、移除软件包，以及系统的包索引更新和系统完整的升级。apt-cache show/policy/madison/depends/rdepends，可以用来查看包、当前安装策略、可用安装包、依赖包和被依赖包等信息。简单来说，在开发阶段通常都是先使用 dpkg 相关命令来测试，最终在用端一般只会使用 apt 相关命令。关于打包的具体过程，存在许多方法不同，这部分可以参考详细的文档，因此这里不在赘述。",
+          "qas": [
+            {
+              "id": "5-160-11",
+              "question": "Deepin系统使用的包管理系统来自哪个系统？",
+              "answers": [
+                {
+                  "text": "Debian 系统",
+                  "answer_start": 139
+                }
+              ]
+            },
+            {
+              "id": "5-160-12",
+              "question": "什么是打包？",
+              "answers": [
+                {
+                  "text": "将一系列的文件按照一致的规则收集到一起，以用于方便的安装、升级、卸载和配置的过程",
+                  "answer_start": 235
+                }
+              ]
+            },
+            {
+              "id": "5-160-13",
+              "question": "打包生成的文件以什么结尾？",
+              "answers": [
+                {
+                  "text": ".deb",
+                  "answer_start": 335
+                }
+              ]
+            },
+            {
+              "id": "5-160-14",
+              "question": "如何安装.deb文件？",
+              "answers": [
+                {
+                  "text": "通过 dpkg -i  命令来安装",
+                  "answer_start": 342
+                }
+              ]
+            },
+            {
+              "id": "5-160-15",
+              "question": "dpkg系列命令和apt系列命令的区别是什么？",
+              "answers": [
+                {
+                  "text": "dpkg 系列命令是用来操作单个包的，而 apt 系列命令是用来和包管理系统交互的，apt 系列命令包含了对依赖的解析和自动解决依赖的功能",
+                  "answer_start": 445
+                }
+              ]
+            },
+            {
+              "id": "5-160-16",
+              "question": "dpkg通过哪些参数可以实现安装、移除、查看安装包或文件溯源？",
+              "answers": [
+                {
+                  "text": "-i、-r、-l、-S",
+                  "answer_start": 577
+                }
+              ]
+            },
+            {
+              "id": "5-160-17",
+              "question": "dpkg-deb的作用是什么？",
+              "answers": [
+                {
+                  "text": "用来查看、解开或者打包安装包",
+                  "answer_start": 614
+                }
+              ]
+            },
+            {
+              "id": "5-160-18",
+              "question": "apt install/remove/purge/update/dist-upgrade分别有什么作用？",
+              "answers": [
+                {
+                  "text": "安装、移除软件包，以及系统的包索引更新和系统完整的升级",
+                  "answer_start": 651
+                }
+              ]
+            },
+            {
+              "id": "5-160-19",
+              "question": "apt-cache show/policy/madison/depends/rdepends可以用来做什么？",
+              "answers": [
+                {
+                  "text": "查看包、当前安装策略、可用安装包、依赖包和被依赖包等信息",
+                  "answer_start": 746
+                }
+              ]
+            },
+            {
+              "id": "5-160-20",
+              "question": "开发阶段和用端分别常用什么包管理命令？",
+              "answers": [
+                {
+                  "text": "在开发阶段通常都是先使用 dpkg 相关命令来测试，最终在用端一般只会使用 apt 相关命令",
+                  "answer_start": 845
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "可执行程序在终端中可以直接执行运行，运行的结果或者日志，通常以标准输出或者标准错误输出的形式输出到控制台，我们可以灵活的使用 shell 中各种重定向功能将日志保存到文件中。比如：wine xxx.exe &> log，将标准输出和标准错误都重定向到文件中。其他可能常用的命令：用 ps 命令来查看当前运行的进程。用 kill 命令给指定进程发送信号。用 top 命令查看当前系统的负载。用 netstat 或者 ss 查看当面网络链接情况。用 tar、unzip、unrar、7z 等命令来创建或者解压压缩文件。用 grep 命令在指定文件或者文件夹中搜索字符串。最重要的是，学会通过 man 命令来学习其他命令的使用。",
+          "qas": [
+            {
+              "id": "5-160-21",
+              "question": "可执行程序运行的结果或日志通常以什么形式输出到控制台？",
+              "answers": [
+                {
+                  "text": "标准输出或者标准错误输出",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "5-160-22",
+              "question": "如何将wine程序运行的标准输出和标准错误都重定向到文件中？",
+              "answers": [
+                {
+                  "text": "wine xxx.exe &> log",
+                  "answer_start": 167
+                }
+              ]
+            },
+            {
+              "id": "5-160-23",
+              "question": "用什么命令可以查看当前运行的进程？",
+              "answers": [
+                {
+                  "text": "ps 命令",
+                  "answer_start": 222
+                }
+              ]
+            },
+            {
+              "id": "5-160-24",
+              "question": "哪个命令可以给指定进程发送信号？",
+              "answers": [
+                {
+                  "text": "kill 命令",
+                  "answer_start": 246
+                }
+              ]
+            },
+            {
+              "id": "5-160-25",
+              "question": "查看当前系统负载可以使用什么命令？",
+              "answers": [
+                {
+                  "text": "top 命令",
+                  "answer_start": 270
+                }
+              ]
+            },
+            {
+              "id": "5-160-26",
+              "question": "查看当前网络链接情况可以用哪些命令？",
+              "answers": [
+                {
+                  "text": "netstat 或者 ss",
+                  "answer_start": 294
+                }
+              ]
+            },
+            {
+              "id": "5-160-27",
+              "question": "哪些命令可以用来创建或者解压压缩文件？",
+              "answers": [
+                {
+                  "text": "tar、unzip、unrar、7z 等命令",
+                  "answer_start": 326
+                }
+              ]
+            },
+            {
+              "id": "5-160-28",
+              "question": "在指定文件或者文件夹中搜索字符串可以用什么命令？",
+              "answers": [
+                {
+                  "text": "grep 命令",
+                  "answer_start": 369
+                }
+              ]
+            },
+            {
+              "id": "5-160-29",
+              "question": "如何学习其他命令的使用？",
+              "answers": [
+                {
+                  "text": "通过 man 命令来学习其他命令的使用",
+                  "answer_start": 403
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

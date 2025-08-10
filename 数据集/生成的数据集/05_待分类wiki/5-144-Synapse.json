@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "Synapse",
+      "paragraphs": [
+        {
+          "context": "Synapse是一款使用Vala语言编写的启动器软件，它可以为用户更容易找到喜欢的应用程序，同时快速的打开所需的文件，还可以搜索桌面文件、支持输入命令。安装Synapse可以使用命令sudo apt-get install synapse，卸载则使用sudo apt-get remove synapse。其仓库地址为http://packages.deepin.com/deepin/pool/main/s/synapse/",
+          "qas": [
+            {
+              "id": "5-144-1",
+              "question": "Synapse是用什么语言编写的？",
+              "answers": [
+                {
+                  "text": "Vala语言",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-144-2",
+              "question": "Synapse有哪些功能？",
+              "answers": [
+                {
+                  "text": "为用户更容易找到喜欢的应用程序，同时快速的打开所需的文件，还可以搜索桌面文件、支持输入命令",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-144-3",
+              "question": "如何安装Synapse？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install synapse",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "id": "5-144-4",
+              "question": "如何卸载Synapse？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove synapse",
+                  "answer_start": 125
+                }
+              ]
+            },
+            {
+              "id": "5-144-5",
+              "question": "Synapse的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/synapse/",
+                  "answer_start": 162
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
