@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "title": "OpenGL",
+      "paragraphs": [
+        {
+          "context": "OpenGL是用于渲染2D、3D矢量图形的跨语言、跨平台的应用程序编程接口（API）。",
+          "qas": [
+            {
+              "question": "OpenGL是什么？",
+              "id": "5-256-1",
+              "answers": [
+                {
+                  "text": "用于渲染2D、3D矢量图形的跨语言、跨平台的应用程序编程接口（API）。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "终端中输入命令：sudo apt install mesa-utils可安装相关工具。",
+          "qas": [
+            {
+              "question": "如何安装mesa-utils工具？",
+              "id": "5-256-2",
+              "answers": [
+                {
+                  "text": "终端中输入命令：sudo apt install mesa-utils",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "终端中输入命令：glxinfo | grep -i opengl可查看OpenGL相关信息。",
+          "qas": [
+            {
+              "question": "如何查看OpenGL相关信息？",
+              "id": "5-256-3",
+              "answers": [
+                {
+                  "text": "终端中输入命令：glxinfo | grep -i opengl",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若当前使用的为N卡，输入glxinfo | grep -i opengl命令后有对应的截图信息。",
+          "qas": [
+            {
+              "question": "使用N卡时，输入glxinfo | grep -i opengl命令后会有什么？",
+              "id": "5-256-4",
+              "answers": [
+                {
+                  "text": "对应的截图信息",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若当前使用的为A卡（AMD机型），输入glxinfo | grep -i opengl命令后有对应的截图信息。",
+          "qas": [
+            {
+              "question": "AMD机型（A卡）使用glxinfo | grep -i opengl命令后会显示什么？",
+              "id": "5-256-5",
+              "answers": [
+                {
+                  "text": "对应的截图信息",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若当前使用的为I卡（Intel机型），输入glxinfo | grep -i opengl命令后有对应的截图信息。",
+          "qas": [
+            {
+              "question": "Intel机型（I卡）输入glxinfo | grep -i opengl命令后有什么结果？",
+              "id": "5-256-6",
+              "answers": [
+                {
+                  "text": "对应的截图信息",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若显示有误，可能是mesa驱动版本不匹配，需做适配。",
+          "qas": [
+            {
+              "question": "显示有误可能是什么原因？",
+              "id": "5-256-7",
+              "answers": [
+                {
+                  "text": "mesa驱动版本不匹配",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "mesa驱动版本不匹配导致显示有误时该怎么做？",
+              "id": "5-256-8",
+              "answers": [
+                {
+                  "text": "需做适配",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

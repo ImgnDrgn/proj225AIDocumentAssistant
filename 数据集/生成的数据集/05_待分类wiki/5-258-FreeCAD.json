@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "FreeCAD",
+      "paragraphs": [
+        {
+          "context": "FreeCAD是一款通用的三维CAD建模软件，用于机械工程、工业产品设计及建筑设计等工程应用，具有高度模块化架构，支持扩展和定制。",
+          "qas": [
+            {
+              "question": "FreeCAD是什么类型的软件？",
+              "id": "5-258-1",
+              "answers": [
+                {
+                  "text": "通用的三维CAD建模软件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "FreeCAD适用于哪些领域？",
+              "id": "5-258-2",
+              "answers": [
+                {
+                  "text": "机械工程、工业产品设计及建筑设计等工程应用",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "FreeCAD的软件架构有什么特点？",
+              "id": "5-258-3",
+              "answers": [
+                {
+                  "text": "高度模块化，支持扩展和定制",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装FreeCAD的命令为：sudo apt-get install freecad",
+          "qas": [
+            {
+              "question": "如何安装FreeCAD？",
+              "id": "5-258-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install freecad",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载FreeCAD的命令为：sudo apt-get remove freecad",
+          "qas": [
+            {
+              "question": "如何卸载FreeCAD？",
+              "id": "5-258-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove freecad",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "FreeCAD的仓库地址是http://packages.deepin.com/deepin/pool/main/f/freecad/",
+          "qas": [
+            {
+              "question": "FreeCAD的仓库地址是什么？",
+              "id": "5-258-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/f/freecad/",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
