@@ -1,0 +1,134 @@
+{
+  "data": [
+    {
+      "title": "OpenShot",
+      "paragraphs": [
+        {
+          "context": "OpenShot是一个视频编辑软件。",
+          "qas": [
+            {
+              "question": "OpenShot是什么类型的软件？",
+              "id": "5-242-1",
+              "answers": [
+                {
+                  "text": "视频编辑软件",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "OpenShot支持视频实时预览并剪贴缩放、修剪和切割等功能。",
+          "qas": [
+            {
+              "question": "OpenShot支持视频实时预览吗？",
+              "id": "5-242-2",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "OpenShot能进行视频修剪吗？",
+              "id": "5-242-3",
+              "answers": [
+                {
+                  "text": "能",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装OpenShot的命令是sudo apt-get install openshot。",
+          "qas": [
+            {
+              "question": "如何安装OpenShot？",
+              "id": "5-242-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install openshot",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载OpenShot的命令是sudo apt-get remove openshot。",
+          "qas": [
+            {
+              "question": "怎样卸载OpenShot？",
+              "id": "5-242-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove openshot",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "OpenShot的仓库地址是http://packages.deepin.com/deepin/pool/main/o/openshot/。",
+          "qas": [
+            {
+              "question": "OpenShot的仓库地址是什么？",
+              "id": "5-242-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/o/openshot/",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "OpenShot有视频合成、图像叠加层、水印等功能。",
+          "qas": [
+            {
+              "question": "OpenShot有视频合成功能吗？",
+              "id": "5-242-7",
+              "answers": [
+                {
+                  "text": "有",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "OpenShot能添加水印吗？",
+              "id": "5-242-8",
+              "answers": [
+                {
+                  "text": "能",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "OpenShot可提供3D动画标题功能。",
+          "qas": [
+            {
+              "question": "OpenShot能提供3D动画标题吗？",
+              "id": "5-242-9",
+              "answers": [
+                {
+                  "text": "能",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

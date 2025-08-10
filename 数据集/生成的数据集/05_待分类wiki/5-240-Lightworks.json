@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "title": "Lightworks",
+      "paragraphs": [
+        {
+          "context": "Lightworks是一款非线性视频编辑器，具有特效制作、色彩校正等功能。",
+          "qas": [
+            {
+              "question": "Lightworks是什么类型的软件？",
+              "id": "5-240-1",
+              "answers": [
+                {
+                  "text": "非线性视频编辑器",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "Lightworks有哪些功能？",
+              "id": "5-240-2",
+              "answers": [
+                {
+                  "text": "特效制作、色彩校正、音频特效输出、编辑和剪辑影片、媒体管理",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Lightworks的命令是sudo apt-get install lightworks。",
+          "qas": [
+            {
+              "question": "如何安装Lightworks？",
+              "id": "5-240-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install lightworks",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Lightworks的命令是sudo apt-get remove lightworks。",
+          "qas": [
+            {
+              "question": "怎样卸载Lightworks？",
+              "id": "5-240-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove lightworks",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Lightworks的仓库地址是http://packages.deepin.com/deepin/pool/non-free/l/lightworks/。",
+          "qas": [
+            {
+              "question": "Lightworks的仓库地址是什么？",
+              "id": "5-240-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/l/lightworks/",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

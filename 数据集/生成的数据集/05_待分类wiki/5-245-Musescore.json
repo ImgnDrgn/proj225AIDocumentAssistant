@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "Musescore",
+      "paragraphs": [
+        {
+          "context": "MuseScore是一套作曲写乐谱工具，可谱五线谱，输出PDF、PNG及MIDI等格式文件，还有混音器、段落抽取和装饰音等功能。",
+          "qas": [
+            {
+              "question": "MuseScore是什么？",
+              "id": "5-245-1",
+              "answers": [
+                {
+                  "text": "一套作曲写乐谱工具",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "MuseScore能输出哪些格式的文件？",
+              "id": "5-245-2",
+              "answers": [
+                {
+                  "text": "PDF、PNG及MIDI等格式",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "MuseScore具有哪些功能？",
+              "id": "5-245-3",
+              "answers": [
+                {
+                  "text": "混音器、段落抽取和装饰音等功能",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装MuseScore的命令是sudo apt-get install musescore。",
+          "qas": [
+            {
+              "question": "如何安装MuseScore？",
+              "id": "5-245-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install musescore",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载MuseScore的命令是sudo apt-get remove musescore。",
+          "qas": [
+            {
+              "question": "如何卸载MuseScore？",
+              "id": "5-245-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove musescore",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MuseScore的仓库地址是http://packages.deepin.com/deepin/pool/main/m/musescore/。",
+          "qas": [
+            {
+              "question": "MuseScore的仓库地址是什么？",
+              "id": "5-245-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/m/musescore/",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

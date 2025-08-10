@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "Redshift",
+      "paragraphs": [
+        {
+          "context": "Redshift是一款显示器色温自动调整应用，能根据环境调节电脑屏幕色温，保护眼睛。",
+          "qas": [
+            {
+              "question": "Redshift是什么？",
+              "id": "5-248-1",
+              "answers": [
+                {
+                  "text": "一款显示器色温自动调整应用。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Redshift能调节什么？",
+              "id": "5-248-2",
+              "answers": [
+                {
+                  "text": "电脑屏幕的色温。",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "Redshift有什么作用？",
+              "id": "5-248-3",
+              "answers": [
+                {
+                  "text": "根据环境调节电脑屏幕色温，保护眼睛。",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Redshift的命令是sudo apt-get install redshift。",
+          "qas": [
+            {
+              "question": "如何安装Redshift？",
+              "id": "5-248-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install redshift",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Redshift的命令是sudo apt-get remove redshift。",
+          "qas": [
+            {
+              "question": "如何卸载Redshift？",
+              "id": "5-248-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove redshift",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Redshift的仓库地址是http://packages.deepin.com/deepin/pool/main/r/redshift/。",
+          "qas": [
+            {
+              "question": "Redshift的仓库地址是什么？",
+              "id": "5-248-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/r/redshift/",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

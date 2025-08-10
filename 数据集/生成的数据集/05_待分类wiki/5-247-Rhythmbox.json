@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "Rhythmbox",
+      "paragraphs": [
+        {
+          "context": "Rhythmbox是一个音乐播放和管理应用，可播放多种音频格式、管理音乐收藏，还有音乐回放等功能。",
+          "qas": [
+            {
+              "question": "Rhythmbox是什么？",
+              "id": "5-247-1",
+              "answers": [
+                {
+                  "text": "一个音乐播放和管理应用",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Rhythmbox能播放音频格式吗？",
+              "id": "5-247-2",
+              "answers": [
+                {
+                  "text": "可以播放各种音频格式的音乐",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "Rhythmbox具有哪些功能？",
+              "id": "5-247-3",
+              "answers": [
+                {
+                  "text": "音乐回放、音乐导入、刻录音频CD、显示专辑封面、显示歌词、DAAP共享等",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Rhythmbox的命令是sudo apt-get install rhythmbox。",
+          "qas": [
+            {
+              "question": "如何安装Rhythmbox？",
+              "id": "5-247-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install rhythmbox",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Rhythmbox的命令是sudo apt-get remove rhythmbox。",
+          "qas": [
+            {
+              "question": "怎样卸载Rhythmbox？",
+              "id": "5-247-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove rhythmbox",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Rhythmbox的仓库地址是http://packages.deepin.com/deepin/pool/main/r/rhythmbox/。",
+          "qas": [
+            {
+              "question": "Rhythmbox的仓库地址是什么？",
+              "id": "5-247-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/r/rhythmbox/",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
