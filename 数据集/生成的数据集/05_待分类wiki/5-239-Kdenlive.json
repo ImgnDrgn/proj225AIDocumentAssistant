@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "title": "Kdenlive",
+      "paragraphs": [
+        {
+          "context": "Kdenlive是基于MLT框架、KDE和Qt的自由开源非线性视频编辑器，注重灵活性和易用性。",
+          "qas": [
+            {
+              "question": "Kdenlive基于哪些框架和工具？",
+              "id": "5-239-1",
+              "answers": [
+                {
+                  "text": "MLT框架、KDE和Qt",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "Kdenlive注重什么？",
+              "id": "5-239-2",
+              "answers": [
+                {
+                  "text": "灵活性和易用性",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过官方仓库安装20.04版本Kdenlive的命令是sudo apt install org.kdenlive.kdenlive。",
+          "qas": [
+            {
+              "question": "如何通过官方仓库安装20.04版本的Kdenlive？",
+              "id": "5-239-3",
+              "answers": [
+                {
+                  "text": "sudo apt install org.kdenlive.kdenlive",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Kdenlive官网最新版22.04.3版本（AppImage）需执行wget https://download.kde.org/stable/kdenlive/22.04/linux/kdenlive-22.04.3-x86_x64.AppImage、chmod +x kdenlive-22.04.3-x86_x64.AppImage、./kdenlive-22.04.3-x86_x64.AppImage。",
+          "qas": [
+            {
+              "question": "安装Kdenlive官网22.04.3版本（AppImage）需要哪些步骤？",
+              "id": "5-239-4",
+              "answers": [
+                {
+                  "text": "wget https://download.kde.org/stable/kdenlive/22.04/linux/kdenlive-22.04.3-x86_x64.AppImage、chmod +x kdenlive-22.04.3-x86_x64.AppImage、./kdenlive-22.04.3-x86_x64.AppImage",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载官方仓库20.04版本Kdenlive的命令是sudo apt remove --purge org.kdenlive.kdenlive。",
+          "qas": [
+            {
+              "question": "如何卸载官方仓库20.04版本的Kdenlive？",
+              "id": "5-239-5",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge org.kdenlive.kdenlive",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Kdenlive官网22.04.3版本（AppImage）的命令是rm -f kdenlive-22.04.3-x86_x64.AppImage。",
+          "qas": [
+            {
+              "question": "如何卸载Kdenlive官网22.04.3版本（AppImage）？",
+              "id": "5-239-6",
+              "answers": [
+                {
+                  "text": "rm -f kdenlive-22.04.3-x86_x64.AppImage",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Kdenlive的仓库地址是http://packages.deepin.com/deepin/pool/main/k/kdenlive/。",
+          "qas": [
+            {
+              "question": "Kdenlive的仓库地址是什么？",
+              "id": "5-239-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/k/kdenlive/",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Kdenlive软件无法打开、闪退时，需检查Deepin是否在虚拟机里运行，显卡驱动是否正常。",
+          "qas": [
+            {
+              "question": "Kdenlive软件无法打开或闪退该怎么办？",
+              "id": "5-239-8",
+              "answers": [
+                {
+                  "text": "检查Deepin是否在虚拟机里运行，显卡驱动是否正常",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Kdenlive官方网站是https://kdenlive.org/zh/，维基百科链接是https://zh.wikipedia.org/zh-cn/Kdenlive。",
+          "qas": [
+            {
+              "question": "Kdenlive的官方网站是什么？",
+              "id": "5-239-9",
+              "answers": [
+                {
+                  "text": "https://kdenlive.org/zh/",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "Kdenlive的维基百科链接是什么？",
+              "id": "5-239-10",
+              "answers": [
+                {
+                  "text": "https://zh.wikipedia.org/zh-cn/Kdenlive",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

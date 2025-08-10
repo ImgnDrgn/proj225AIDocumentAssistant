@@ -1,0 +1,164 @@
+{
+  "data": [
+    {
+      "title": "ArcTime",
+      "paragraphs": [
+        {
+          "context": "ArcTime是一款可视化字幕编辑器，独创字幕块概念，可在时间线上拖动、调整字幕块完成字幕创建。",
+          "qas": [
+            {
+              "question": "ArcTime是什么类型的软件？",
+              "id": "5-237-1",
+              "answers": [
+                {
+                  "text": "可视化字幕编辑器",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "ArcTime独创的概念是什么？",
+              "id": "5-237-2",
+              "answers": [
+                {
+                  "text": "字幕块概念",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ArcTime支持读写SRT字幕文件、导出ASS等多种外挂字幕格式，支持独立工程文件，可保存工作空间内容与设定。",
+          "qas": [
+            {
+              "question": "ArcTime能读写哪种字幕文件？",
+              "id": "5-237-3",
+              "answers": [
+                {
+                  "text": "SRT字幕文件",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "ArcTime支持导出哪些外挂字幕格式？",
+              "id": "5-237-4",
+              "answers": [
+                {
+                  "text": "ASS等多种外挂字幕格式",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "ArcTime的工程文件有什么作用？",
+              "id": "5-237-5",
+              "answers": [
+                {
+                  "text": "保存整个工作空间的内容与设定",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ArcTime可通过交换工程文件或网络连接与伙伴协同工作，完成后单击“视频转码”按钮可压制字幕。",
+          "qas": [
+            {
+              "question": "ArcTime如何实现协同工作？",
+              "id": "5-237-6",
+              "answers": [
+                {
+                  "text": "通过交换工程文件或者通过网络连接的方式与伙伴协同工作",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "ArcTime编辑完字幕后如何压制字幕？",
+              "id": "5-237-7",
+              "answers": [
+                {
+                  "text": "仅需单击“视频转码”按钮",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ArcTime可将纯字幕输出为XML+PNG序列、Fcpxml等格式，应用到影视后期流程中。",
+          "qas": [
+            {
+              "question": "ArcTime的纯字幕可以输出为哪些格式？",
+              "id": "5-237-8",
+              "answers": [
+                {
+                  "text": "XML+PNG序列、Fcpxml等格式",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "ArcTime输出的纯字幕格式可应用于什么流程？",
+              "id": "5-237-9",
+              "answers": [
+                {
+                  "text": "影视后期流程",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装ArcTime的命令是：sudo apt-get install arctime。",
+          "qas": [
+            {
+              "question": "如何安装ArcTime？",
+              "id": "5-237-10",
+              "answers": [
+                {
+                  "text": "sudo apt-get install arctime",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载ArcTime的命令是：sudo apt-get remove arctime。",
+          "qas": [
+            {
+              "question": "如何卸载ArcTime？",
+              "id": "5-237-11",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove arctime",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ArcTime的仓库地址是http://packages.deepin.com/deepin/pool/non-free/a/arctime/。",
+          "qas": [
+            {
+              "question": "ArcTime的仓库地址是什么？",
+              "id": "5-237-12",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/a/arctime/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

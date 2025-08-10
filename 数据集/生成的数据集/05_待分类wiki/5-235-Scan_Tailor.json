@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "Scan_Tailor",
+      "paragraphs": [
+        {
+          "context": "Scan Tailor是用于扫描件后期处理的软件，可处理原始扫描并输出PDF或DJVU格式文件，能执行页面拆分等操作。",
+          "qas": [
+            {
+              "question": "Scan Tailor是什么软件？",
+              "id": "5-235-1",
+              "answers": [
+                {
+                  "text": "用于扫描件后期处理的软件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Scan Tailor能输出哪些格式的文件？",
+              "id": "5-235-2",
+              "answers": [
+                {
+                  "text": "PDF或DJVU格式",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "Scan Tailor可以执行哪些操作？",
+              "id": "5-235-3",
+              "answers": [
+                {
+                  "text": "页面拆分、倾斜校正、添加/删除边界、去除杂点等",
+                  "answer_start": 64
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Scan Tailor的命令是sudo apt-get install scantailor。",
+          "qas": [
+            {
+              "question": "如何安装Scan Tailor？",
+              "id": "5-235-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install scantailor",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Scan Tailor的命令是sudo apt-get remove scantailor。",
+          "qas": [
+            {
+              "question": "如何卸载Scan Tailor？",
+              "id": "5-235-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove scantailor",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Scan Tailor的仓库地址是http://packages.deepin.com/deepin/pool/main/s/scantailor/。",
+          "qas": [
+            {
+              "question": "Scan Tailor的仓库地址是什么？",
+              "id": "5-235-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/scantailor/",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
