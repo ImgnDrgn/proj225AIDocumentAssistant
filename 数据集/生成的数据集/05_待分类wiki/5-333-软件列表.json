@@ -7,7 +7,7 @@
           "context": "此页面的存在主要是为了提供一个常见软件的索引，以方便您迁移到 deepin 后能够快速的找到您需要的软件，以及介绍一些 windows 中常用软件的替代方案。",
           "qas": [
             {
-              "id": "5-331-1",
+              "id": "5-333-1",
               "question": "这个页面的主要目的是什么？",
               "answers": [
                 {
@@ -22,7 +22,7 @@
           "context": "办公软件套装\nCalligra — KDE 办公软件套装，即 KOffice 的活跃分支。它提供了 OpenOffice 大多功能，又有智能手机和平板的版本。\nhttps://www.calligra-suite.org/ || calligra\nKingsoft Office — 专有，又名 WPS.\nhttp://www.kingsoftstore.com/ || [wps-office]\nLibreOffice — OpenOffice 的超活跃分支之一。\nhttps://www.libreoffice.org/ || [libreoffice]\nOpenOffice — 开源的办公软件，集成了字处理，表格，幻灯片，图像，数据库以及更多的软件，采用 Apache 许可证。\nhttps://www.openoffice.org/ || [openoffice]\nSiag Office — 极度轻量，有字处理、表格、文本编辑器、文件管理器和预览器。\nhttps://siag.nu/ || siag-office\nSoftMaker Office — 完全，稳定，轻快，兼容微软办公格式，有字处理，表格，幻灯片。\nhttps://www.freeoffice.com/ || freeoffice",
           "qas": [
             {
-              "id": "5-331-2",
+              "id": "5-333-2",
               "question": "Calligra 是什么类型的软件？",
               "answers": [
                 {
@@ -32,7 +32,7 @@
               ]
             },
             {
-              "id": "5-331-3",
+              "id": "5-333-3",
               "question": "Kingsoft Office 的别名是什么？",
               "answers": [
                 {
@@ -42,7 +42,7 @@
               ]
             },
             {
-              "id": "5-331-4",
+              "id": "5-333-4",
               "question": "LibreOffice 的来源是什么？",
               "answers": [
                 {
@@ -52,7 +52,7 @@
               ]
             },
             {
-              "id": "5-331-5",
+              "id": "5-333-5",
               "question": "OpenOffice 采用什么许可证？",
               "answers": [
                 {
@@ -62,7 +62,7 @@
               ]
             },
             {
-              "id": "5-331-6",
+              "id": "5-333-6",
               "question": "Siag Office 有哪些特点？",
               "answers": [
                 {
@@ -72,7 +72,7 @@
               ]
             },
             {
-              "id": "5-331-7",
+              "id": "5-333-7",
               "question": "SoftMaker Office 兼容什么格式？",
               "answers": [
                 {
@@ -87,7 +87,7 @@
           "context": "标记语言文档\n[什么是标记语言]\nSphinx — 使用 reStructuredText 生成多种格式的输出的文档生成系统（Python 项目的主要文档系统）。\nhttps://www.sphinx-doc.org/ || Sphinx\ntxt2tags — 非常简单、符合 KISS 标准的轻量级、人类可读的标记语言，可从纯文本文件中生成丰富的格式内容。\nhttps://txt2tags.org/ || txt2tags",
           "qas": [
             {
-              "id": "5-331-8",
+              "id": "5-333-8",
               "question": "Sphinx 使用什么标记语言？",
               "answers": [
                 {
@@ -97,7 +97,7 @@
               ]
             },
             {
-              "id": "5-331-9",
+              "id": "5-333-9",
               "question": "txt2tags符合什么标准？",
               "answers": [
                 {
@@ -107,7 +107,7 @@
               ]
             },
             {
-              "id": "5-331-10",
+              "id": "5-333-10",
               "question": "txt2tags 的主要特点是什么？",
               "answers": [
                 {
@@ -122,7 +122,7 @@
           "context": "AsciiDoc\nAsciiDoc — 原始实现，用 Python 编写。\nhttps://asciidoc.org/ || asciidoc\nAsciidoctor — 用 Ruby 编写的实现，具有许多额外的功能。\nhttps://asciidoctor.org/ || asciidoctor",
           "qas": [
             {
-              "id": "5-331-11",
+              "id": "5-333-11",
               "question": "AsciiDoc 是用什么语言编写的？",
               "answers": [
                 {
@@ -132,7 +132,7 @@
               ]
             },
             {
-              "id": "5-331-12",
+              "id": "5-333-12",
               "question": "Asciidoctor用什么语言编写？",
               "answers": [
                 {
@@ -142,7 +142,7 @@
               ]
             },
             {
-              "id": "5-331-13",
+              "id": "5-333-13",
               "question": "Asciidoctor 有哪些优势？",
               "answers": [
                 {
@@ -157,7 +157,7 @@
           "context": "Markdown\nAbricotine — 为桌面构建的 Markdown 编辑器。基于 Electron 平台。\n || Abricotine\nApostrophe - 使用 GTK 制作的无干扰 Markdown 编辑器。\n ||Apostrophe\nCuteMarkEd — 基于 Qt 的 Markdown 编辑器，具有实时 HTML 预览、数学表达式、代码和 Markdown 语法突出显示。自 2016 年起停产。\n || CuteMarkEd\nFormiko — reStructuredText 和 Markdown 编辑器以及使用 GTK 用 Python 编写的实时预览器。\n || formiko\nghostwriter - 无干扰的 Markdown 编辑器。\n || ghostwriter\nMarker - 简单而强大的 Markdown 编辑器。\n || Marker\nMark My Words - 最小的 Markdown 编辑器。\n || markmywords\nMark Text - 下一代 Markdown 编辑器。基于 Electron 平台。\n || Mark Text\nRemarkable - 功能齐全的 Markdown 编辑器。\n || Remarkable\nReText — Markdown 和 reStructuredText 的简单文本编辑器。\n || ReText\nTypora - 专有的极简 Markdown 编辑器。\n || Typora",
           "qas": [
             {
-              "id": "5-331-14",
+              "id": "5-333-14",
               "question": "Abricotine 基于什么平台？",
               "answers": [
                 {
@@ -167,7 +167,7 @@
               ]
             },
             {
-              "id": "5-331-15",
+              "id": "5-333-15",
               "question": "Apostrophe是用什么制作的？",
               "answers": [
                 {
@@ -177,7 +177,7 @@
               ]
             },
             {
-              "id": "5-331-16",
+              "id": "5-333-16",
               "question": "Apostrophe 的特点是什么？",
               "answers": [
                 {
@@ -187,7 +187,7 @@
               ]
             },
             {
-              "id": "5-331-17",
+              "id": "5-333-17",
               "question": "CuteMarkEd基于什么？",
               "answers": [
                 {
@@ -197,7 +197,7 @@
               ]
             },
             {
-              "id": "5-331-18",
+              "id": "5-333-18",
               "question": "CuteMarkEd 何时停产？",
               "answers": [
                 {
@@ -207,7 +207,7 @@
               ]
             },
             {
-              "id": "5-331-19",
+              "id": "5-333-19",
               "question": "Formiko 用什么语言编写？",
               "answers": [
                 {
@@ -217,7 +217,7 @@
               ]
             },
             {
-              "id": "5-331-20",
+              "id": "5-333-20",
               "question": "ghostwriter是什么类型的编辑器？",
               "answers": [
                 {
@@ -227,7 +227,7 @@
               ]
             },
             {
-              "id": "5-331-21",
+              "id": "5-333-21",
               "question": "Mark My Words是什么样的编辑器？",
               "answers": [
                 {
@@ -237,7 +237,7 @@
               ]
             },
             {
-              "id": "5-331-22",
+              "id": "5-333-22",
               "question": "Mark Text基于什么平台？",
               "answers": [
                 {
@@ -247,7 +247,7 @@
               ]
             },
             {
-              "id": "5-331-23",
+              "id": "5-333-23",
               "question": "ReText支持哪些标记语言？",
               "answers": [
                 {
@@ -257,7 +257,7 @@
               ]
             },
             {
-              "id": "5-331-24",
+              "id": "5-333-24",
               "question": "Typora 是什么类型的编辑器？",
               "answers": [
                 {
@@ -272,7 +272,7 @@
           "context": "TeX editors\n撰写各种科学文档、文章、期刊一般会使用 TeX、LaTeX。\nAUCTeX — AUCTeX 与 RefTex 一起为在 Emacs 中编写和格式化 TeX 文件提供了一个可扩展的环境。\n || auctex\ngedit LaTeX 插件 - 向 gedit 添加代码完成功能，并允许编译 LaTeX 文档和管理 BibTeX 参考书目。\n || gedit-latex\nGNOME LaTeX — GNOME 桌面的 LaTeX 编辑器，包括对代码完成、编译和项目管理的支持。\n || GNOME LaTeX\nGummi - 基于 TeX/LaTeX GTK 的轻量级编辑器。\n || Gummi\nKile — 用于 KDE 桌面的用户友好的 TeX/LaTeX 编辑器，具有许多功能。\n || Kile\nLyX - 文档处理器，它鼓励基于文档结构 (WYSIWYM) 而不仅仅是外观 (WYSIWYG) 的写作方法。\n || lyx\nTeXmacs — 所见即所得（所见即所得）编辑平台，具有科学家的特殊功能。\n || texmacsAUR\nTeXstudio — TeXMaker 的分支，包括支持 bibtex 项目的代码完成、语法检查和自动检测是否需要多次运行 LaTeX。\n || TeXstudio\nTeXworks — 以 TeXShop 为模型的简单 TeX 前端程序。\n || TeXworks\nTikZiT — 使用 PGF/TikZ 快速创建图形和图表的图形工具。\n || TikZiT\nVim-LaTeX-suite — Vim 的可定制 LaTeX 环境。\n || vim-latexsuite",
           "qas": [
             {
-              "id": "5-331-25",
+              "id": "5-333-25",
               "question": "撰写科学文档常使用什么？",
               "answers": [
                 {
@@ -282,7 +282,7 @@
               ]
             },
             {
-              "id": "5-331-26",
+              "id": "5-333-26",
               "question": "AUCTeX 为哪个编辑器提供环境？",
               "answers": [
                 {
@@ -292,7 +292,7 @@
               ]
             },
             {
-              "id": "5-331-27",
+              "id": "5-333-27",
               "question": "AUCTeX与什么一起提供可扩展环境？",
               "answers": [
                 {
@@ -302,7 +302,7 @@
               ]
             },
             {
-              "id": "5-331-28",
+              "id": "5-333-28",
               "question": "gedit LaTeX插件能添加什么功能？",
               "answers": [
                 {
@@ -312,7 +312,7 @@
               ]
             },
             {
-              "id": "5-331-29",
+              "id": "5-333-29",
               "question": "GNOME LaTeX支持哪些功能？",
               "answers": [
                 {
@@ -322,7 +322,7 @@
               ]
             },
             {
-              "id": "5-331-30",
+              "id": "5-333-30",
               "question": "Kile用于什么桌面？",
               "answers": [
                 {
@@ -332,7 +332,7 @@
               ]
             },
             {
-              "id": "5-331-31",
+              "id": "5-333-31",
               "question": "LyX 鼓励什么写作方法？",
               "answers": [
                 {
@@ -342,7 +342,7 @@
               ]
             },
             {
-              "id": "5-331-32",
+              "id": "5-333-32",
               "question": "TeXmacs是什么类型的编辑平台？",
               "answers": [
                 {
@@ -352,7 +352,7 @@
               ]
             },
             {
-              "id": "5-331-33",
+              "id": "5-333-33",
               "question": "TeXstudio是哪个软件的分支？",
               "answers": [
                 {
@@ -362,7 +362,7 @@
               ]
             },
             {
-              "id": "5-331-34",
+              "id": "5-333-34",
               "question": "TeXstudio 有哪些功能？",
               "answers": [
                 {
@@ -372,7 +372,7 @@
               ]
             },
             {
-              "id": "5-331-35",
+              "id": "5-333-35",
               "question": "TikZiT 用于创建什么？",
               "answers": [
                 {
@@ -382,7 +382,7 @@
               ]
             },
             {
-              "id": "5-331-36",
+              "id": "5-333-36",
               "question": "Vim-LaTeX-suite是什么的可定制环境？",
               "answers": [
                 {
