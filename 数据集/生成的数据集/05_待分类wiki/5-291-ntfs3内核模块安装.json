@@ -1,0 +1,184 @@
+{
+  "data": [
+    {
+      "title": "ntfs3内核模块安装",
+      "paragraphs": [
+        {
+          "context": "ntfs3内核模块可使window的ntfs磁盘分区挂载到deepin系统后实现权限的实时变更，而非固定按fstab里的权限。",
+          "qas": [
+            {
+              "question": "ntfs3内核模块的核心功能是什么？",
+              "id": "5-291-1",
+              "answers": [
+                {
+                  "text": "使window的ntfs磁盘分区挂载到deepin系统后实现权限的实时变更，而不是固定按照fstab里挂载的ntfs权限。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载ntfs3补丁的命令：wget https://ucare-resources.oss-cn-shenzhen.aliyuncs.com/pro/2022/05/178f047f89-f2c4-488e-8a85-d57a4db5d6c7 -O /tmp/ntfs3-5.17.patch.xz",
+          "qas": [
+            {
+              "question": "如何下载ntfs3补丁？",
+              "id": "5-291-2",
+              "answers": [
+                {
+                  "text": "wget https://ucare-resources.oss-cn-shenzhen.aliyuncs.com/pro/2022/05/178f047f89-f2c4-488e-8a85-d57a4db5d6c7 -O /tmp/ntfs3-5.17.patch.xz",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解压ntfs3补丁需先执行cd /usr/src，再运行xzcat /tmp/ntfs3-5.17.patch.xz。",
+          "qas": [
+            {
+              "question": "解压ntfs3补丁的步骤是什么？",
+              "id": "5-291-3",
+              "answers": [
+                {
+                  "text": "先执行cd /usr/src，再运行xzcat /tmp/ntfs3-5.17.patch.xz。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "注册dkms的命令：dkms add -m ntfs3 -v 5.17。",
+          "qas": [
+            {
+              "question": "如何注册dkms？",
+              "id": "5-291-4",
+              "answers": [
+                {
+                  "text": "dkms add -m ntfs3 -v 5.17",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装ntfs3内核模块到当前系统的命令：dkms autoinstall -m ntfs3 -v 5.17。",
+          "qas": [
+            {
+              "question": "怎样将ntfs3内核模块安装到当前系统？",
+              "id": "5-291-5",
+              "answers": [
+                {
+                  "text": "dkms autoinstall -m ntfs3 -v 5.17",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "确认ntfs3安装的命令：dkms status、modinfo ntfs。",
+          "qas": [
+            {
+              "question": "如何确认ntfs3的安装情况？",
+              "id": "5-291-6",
+              "answers": [
+                {
+                  "text": "dkms status、modinfo ntfs",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "新建/etc/udev/rules.d/99-ntfs3.rules文件，内容为'SUBSYSTEM==\"block\", ENV{ID_FS_TYPE}==\"ntfs\", ENV{ID_FS_TYPE}=\"ntfs3\"'。",
+          "qas": [
+            {
+              "question": "/etc/udev/rules.d/99-ntfs3.rules文件的内容是什么？",
+              "id": "5-291-7",
+              "answers": [
+                {
+                  "text": "SUBSYSTEM==\"block\", ENV{ID_FS_TYPE}==\"ntfs\", ENV{ID_FS_TYPE}=\"ntfs3\"",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "新建/etc/udisks2/mount_options.conf文件，包含'ntfs3_defaults=uid=$UID,gid=$GID,noatime,prealloc'和'ntfs3_allow=uid=$UID,gid=$GID,umask,dmask,fmask,iocharset,nohidden,sys_immutable,discard,force,sparse,showmeta,prealloc,noacsrules,acl'。",
+          "qas": [
+            {
+              "question": "/etc/udisks2/mount_options.conf文件有哪些内容？",
+              "id": "5-291-8",
+              "answers": [
+                {
+                  "text": "ntfs3_defaults=uid=$UID,gid=$GID,noatime,prealloc；ntfs3_allow=uid=$UID,gid=$GID,umask,dmask,fmask,iocharset,nohidden,sys_immutable,discard,force,sparse,showmeta,prealloc,noacsrules,acl",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/dev/nvme0n1p1在fstab中的挂载配置：/dev/nvme0n1p1 /data ntfs3 defaults,uid=1000,gid=1000,dmask=022,fmask=022 0 0。",
+          "qas": [
+            {
+              "question": "/dev/nvme0n1p1在fstab中如何配置挂载？",
+              "id": "5-291-9",
+              "answers": [
+                {
+                  "text": "/dev/nvme0n1p1 /data ntfs3 defaults,uid=1000,gid=1000,dmask=022,fmask=022 0 0",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/dev/nvme0n1p2在fstab中的挂载配置：/dev/nvme0n1p2 /work ntfs3 defaults,uid=1000,gid=1000,dmask=022,fmask=022 0 0。",
+          "qas": [
+            {
+              "question": "/dev/nvme0n1p2在fstab中怎样配置挂载？",
+              "id": "5-291-10",
+              "answers": [
+                {
+                  "text": "/dev/nvme0n1p2 /work ntfs3 defaults,uid=1000,gid=1000,dmask=022,fmask=022 0 0",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "默认ntfs格式挂载后权限不可修改，ntfs3可在deepin系统挂载windows磁盘文件并修改权限，避免docker等软件因权限报错。",
+          "qas": [
+            {
+              "question": "默认ntfs格式与ntfs3在权限修改上有何区别？",
+              "id": "5-291-11",
+              "answers": [
+                {
+                  "text": "默认ntfs格式挂载后不能修改权限；ntfs3可以修改文件目录的权限。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "使用ntfs3有什么好处？",
+              "id": "5-291-12",
+              "answers": [
+                {
+                  "text": "可以把windows的磁盘文件挂载到deepin系统上用，然后可以修改文件目录的权限，在用docker或者有些软件需要修改目录权限的时候就不会报错了。",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

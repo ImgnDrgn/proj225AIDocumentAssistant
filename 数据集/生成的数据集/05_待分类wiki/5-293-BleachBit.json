@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "BleachBit",
+      "paragraphs": [
+        {
+          "context": "BleachBit是一款开源的系统清理工具，可释放磁盘空间，保护隐私，清除缓存、cookies等，支持清除应用残留数据，切碎文件防止恢复等。",
+          "qas": [
+            {
+              "question": "BleachBit是什么类型的工具？",
+              "id": "5-293-1",
+              "answers": [
+                {
+                  "text": "开源的系统清理工具",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "BleachBit能释放磁盘空间吗？",
+              "id": "5-293-2",
+              "answers": [
+                {
+                  "text": "能",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "BleachBit可以清除哪些内容？",
+              "id": "5-293-3",
+              "answers": [
+                {
+                  "text": "缓存、cookies、internet历史、临时文件、日志、丢弃的垃圾文件、应用的残留数据",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "BleachBit有切碎文件的功能吗？目的是什么？",
+              "id": "5-293-4",
+              "answers": [
+                {
+                  "text": "有，目的是防止恢复、隐藏被删除文件的痕迹",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装BleachBit的命令是sudo apt-get install bleachbit。",
+          "qas": [
+            {
+              "question": "如何安装BleachBit？",
+              "id": "5-293-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install bleachbit",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载BleachBit的命令是sudo apt-get remove bleachbit。",
+          "qas": [
+            {
+              "question": "怎样卸载BleachBit？",
+              "id": "5-293-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove bleachbit",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "BleachBit的仓库地址是http://packages.deepin.com/deepin/pool/main/b/bleachbit/。",
+          "qas": [
+            {
+              "question": "BleachBit的仓库地址是什么？",
+              "id": "5-293-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/b/bleachbit/",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
