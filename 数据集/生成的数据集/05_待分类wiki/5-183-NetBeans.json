@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "NetBeans",
+      "paragraphs": [
+        {
+          "context": "NetBeans是一个集成开发环境，它支持PHP、Ruby、JavaScript、Groovy、Grails和C/C++等开发语言。NetBeans集成开发环境提供了丰富的产品文档和培训资源，以及大量的第三方插件。安装命令为sudo apt-get install netbeans，卸载命令为sudo apt-get remove netbeans，其仓库地址为http://packages.deepin.com/deepin/pool/main/n/netbeans/",
+          "qas": [
+            {
+              "id": "5-183-1",
+              "question": "NetBeans是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "集成开发环境",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-183-2",
+              "question": "NetBeans支持哪些开发语言？",
+              "answers": [
+                {
+                  "text": "PHP、Ruby、JavaScript、Groovy、Grails和C/C++等",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-183-3",
+              "question": "安装NetBeans的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install netbeans",
+                  "answer_start": 77
+                }
+              ]
+            },
+            {
+              "id": "5-183-4",
+              "question": "卸载NetBeans的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove netbeans",
+                  "answer_start": 106
+                }
+              ]
+            },
+            {
+              "id": "5-183-5",
+              "question": "NetBeans的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/n/netbeans/",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
