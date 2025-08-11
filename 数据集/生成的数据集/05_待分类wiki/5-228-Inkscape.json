@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "Inkscape",
+      "paragraphs": [
+        {
+          "context": "Inkscape是一款矢量绘图软件，支持形状、路径、文本、标记、变换、渐变等SVG特性。它除了可以绘制基本的点、线、面、矩形、曲线，还可以进行三维颜色的填充等，支持JPG、PNG、TIFF等多种图片格式。",
+          "qas": [
+            {
+              "id": "5-228-1",
+              "question": "Inkscape是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "矢量绘图软件",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "5-228-2",
+              "question": "Inkscape支持哪些SVG特性？",
+              "answers": [
+                {
+                  "text": "形状、路径、文本、标记、变换、渐变",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "5-228-3",
+              "question": "Inkscape能绘制哪些基本图形？",
+              "answers": [
+                {
+                  "text": "点、线、面、矩形、曲线",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-228-4",
+              "question": "Inkscape支持哪些图片格式？",
+              "answers": [
+                {
+                  "text": "JPG、PNG、TIFF",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装命令：sudo apt-get install inkscape；卸载命令：sudo apt-get remove inkscape；仓库地址：http://packages.deepin.com/deepin/pool/main/i/inkscape/",
+          "qas": [
+            {
+              "id": "5-228-5",
+              "question": "如何安装Inkscape？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install inkscape",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-228-6",
+              "question": "如何卸载Inkscape？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove inkscape",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-228-7",
+              "question": "Inkscape的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/i/inkscape/",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

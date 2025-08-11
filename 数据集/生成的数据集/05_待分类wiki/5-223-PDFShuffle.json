@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "title": "PDF-Shuffler",
+      "paragraphs": [
+        {
+          "context": "PDF-Shuffler是一个PDF合并及分割工具，它可以把几个PDF文件合并为一个PDF文件，还可以对PDF文件进行分割成几个PDF文件，以及删除PDF文件中的一些页面。安装命令为sudo apt-get install pdfshuffler，卸载命令为sudo apt-get remove pdfshuffler，其仓库地址为http://packages.deepin.com/deepin/pool/main/p/pdfshuffler/",
+          "qas": [
+            {
+              "id": "5-223-1",
+              "question": "PDF-Shuffler是什么工具？",
+              "answers": [
+                {
+                  "text": "PDF-Shuffler是一个PDF合并及分割工具，它可以把几个PDF文件合并为一个PDF文件，还可以对PDF文件进行分割成几个PDF文件，以及删除PDF文件中的一些页面。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-223-2",
+              "question": "如何安装PDF-Shuffler？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install pdfshuffler",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "id": "5-223-3",
+              "question": "怎样卸载PDF-Shuffler？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove pdfshuffler",
+                  "answer_start": 107
+                }
+              ]
+            },
+            {
+              "id": "5-223-4",
+              "question": "PDF-Shuffler的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/p/pdfshuffler/",
+                  "answer_start": 141
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
