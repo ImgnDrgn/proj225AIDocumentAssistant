@@ -1,0 +1,359 @@
+{
+  "data": [
+    {
+      "title": "MongoDB数据库安装指南",
+      "paragraphs": [
+        {
+          "context": "MongoDB only provides packages for 64-bit builds of Debian 8 and 9.",
+          "qas": [
+            {
+              "question": "MongoDB提供哪些系统的程序包？",
+              "id": "5-297-1",
+              "answers": [
+                {
+                  "text": "64-bit builds of Debian 8 and 9",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mongodb-org是一个元包，会自动安装下面列出的四个组件包。",
+          "qas": [
+            {
+              "question": "mongodb-org是什么？",
+              "id": "5-297-2",
+              "answers": [
+                {
+                  "text": "一个元包，会自动安装下面列出的四个组件包",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mongodb-org-server包含mongod守护进程、相关的初始化脚本和配置文件（/etc/mongod.conf）。",
+          "qas": [
+            {
+              "question": "mongodb-org-server包含哪些内容？",
+              "id": "5-297-3",
+              "answers": [
+                {
+                  "text": "mongod守护进程、相关的初始化脚本和配置文件（/etc/mongod.conf）",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mongodb-org-mongos包含mongos守护进程。",
+          "qas": [
+            {
+              "question": "mongodb-org-mongos包含什么？",
+              "id": "5-297-4",
+              "answers": [
+                {
+                  "text": "mongos守护进程",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mongodb-org-shell包含mongo shell。",
+          "qas": [
+            {
+              "question": "mongodb-org-shell包含什么？",
+              "id": "5-297-5",
+              "answers": [
+                {
+                  "text": "mongo shell",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mongodb-org-tools包含mongoimport、bsondump、mongodump、mongoexport、mongofiles、mongorestore、mongostat和mongotop等MongoDB工具。",
+          "qas": [
+            {
+              "question": "mongodb-org-tools包含哪些MongoDB工具？",
+              "id": "5-297-6",
+              "answers": [
+                {
+                  "text": "mongoimport、bsondump、mongodump、mongoexport、mongofiles、mongorestore、mongostat和mongotop",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "导入MongoDB公钥的命令：sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4",
+          "qas": [
+            {
+              "question": "如何导入MongoDB公钥？",
+              "id": "5-297-7",
+              "answers": [
+                {
+                  "text": "sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建Debian 9 “Stretch”的MongoDB软件源的命令：echo \"deb http://repo.mongodb.org/apt/debian stretch/mongodb-org/4.0 main\" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list",
+          "qas": [
+            {
+              "question": "如何创建Debian 9 “Stretch”的MongoDB软件源？",
+              "id": "5-297-8",
+              "answers": [
+                {
+                  "text": "echo \"deb http://repo.mongodb.org/apt/debian stretch/mongodb-org/4.0 main\" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装MongoDB的命令：sudo apt-get update；sudo apt-get install -y mongodb-org",
+          "qas": [
+            {
+              "question": "安装MongoDB需要执行哪些命令？",
+              "id": "5-297-9",
+              "answers": [
+                {
+                  "text": "sudo apt-get update；sudo apt-get install -y mongodb-org",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解决没有/home/mongodb目录的命令：sudo mkdir /home/mongodb；sudo chown -R mongodb:mongodb /home/mongodb",
+          "qas": [
+            {
+              "question": "如何解决没有/home/mongodb目录的问题？",
+              "id": "5-297-10",
+              "answers": [
+                {
+                  "text": "sudo mkdir /home/mongodb；sudo chown -R mongodb:mongodb /home/mongodb",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启动MongoDB服务的命令：sudo systemctl start mongod",
+          "qas": [
+            {
+              "question": "如何启动MongoDB服务？",
+              "id": "5-297-11",
+              "answers": [
+                {
+                  "text": "sudo systemctl start mongod",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "验证MongoDB是否安装成功可查看日志文件/var/log/mongodb/mongod.log，或用命令cat /var/log/mongodb/mongod.log | grep port。",
+          "qas": [
+            {
+              "question": "如何验证MongoDB是否安装成功？",
+              "id": "5-297-12",
+              "answers": [
+                {
+                  "text": "查看日志文件/var/log/mongodb/mongod.log，或用命令cat /var/log/mongodb/mongod.log | grep port",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MongoDB默认端口是27017。",
+          "qas": [
+            {
+              "question": "MongoDB的默认端口是多少？",
+              "id": "5-297-13",
+              "answers": [
+                {
+                  "text": "27017",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "停止MongoDB服务的命令：sudo systemctl stop mongod",
+          "qas": [
+            {
+              "question": "如何停止MongoDB服务？",
+              "id": "5-297-14",
+              "answers": [
+                {
+                  "text": "sudo systemctl stop mongod",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重启MongoDB服务的命令：sudo systemctl restart mongod",
+          "qas": [
+            {
+              "question": "如何重启MongoDB服务？",
+              "id": "5-297-15",
+              "answers": [
+                {
+                  "text": "sudo systemctl restart mongod",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置MongoDB开机启动的命令：sudo systemctl enable mongod",
+          "qas": [
+            {
+              "question": "如何设置MongoDB开机启动？",
+              "id": "5-297-16",
+              "answers": [
+                {
+                  "text": "sudo systemctl enable mongod",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "禁用MongoDB开机启动的命令：sudo systemctl disable mongod",
+          "qas": [
+            {
+              "question": "如何禁用MongoDB开机启动？",
+              "id": "5-297-17",
+              "answers": [
+                {
+                  "text": "sudo systemctl disable mongod",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进入MongoDB交互模式的命令是mongo，用Control+C退出。",
+          "qas": [
+            {
+              "question": "如何进入MongoDB交互模式？",
+              "id": "5-297-18",
+              "answers": [
+                {
+                  "text": "在命令窗口输入mongo",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "如何退出MongoDB交互模式？",
+              "id": "5-297-19",
+              "answers": [
+                {
+                  "text": "Control+C",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除MongoDB时，先停止服务：sudo systemctl stop mongod",
+          "qas": [
+            {
+              "question": "删除MongoDB前如何停止其服务？",
+              "id": "5-297-20",
+              "answers": [
+                {
+                  "text": "sudo systemctl stop mongod",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除MongoDB软件的命令：sudo apt-get purge mongodb-org*",
+          "qas": [
+            {
+              "question": "如何删除MongoDB软件？",
+              "id": "5-297-21",
+              "answers": [
+                {
+                  "text": "sudo apt-get purge mongodb-org*",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除MongoDB数据和日志目录的命令：sudo rm -r /var/log/mongodb；sudo rm -r /var/lib/mongodb",
+          "qas": [
+            {
+              "question": "如何删除MongoDB的数据库文件和日志文件？",
+              "id": "5-297-22",
+              "answers": [
+                {
+                  "text": "sudo rm -r /var/log/mongodb；sudo rm -r /var/lib/mongodb",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MongoDB实例默认数据文件存储在/var/lib/mongodb，日志文件在/var/log/mongodb。",
+          "qas": [
+            {
+              "question": "MongoDB实例默认的数据文件存储在哪里？",
+              "id": "5-297-23",
+              "answers": [
+                {
+                  "text": "/var/lib/mongodb",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "question": "MongoDB实例默认的日志文件存储在哪里？",
+              "id": "5-297-24",
+              "answers": [
+                {
+                  "text": "/var/log/mongodb",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "MariaDB",
+      "paragraphs": [
+        {
+          "context": "MariaDB 前身是MySQL，主要由开源社区在维护，目的是完全兼容MySQL，包括API和命令行，能轻松成为MySQL的代替品。",
+          "qas": [
+            {
+              "question": "MariaDB的前身是什么？",
+              "id": "5-298-1",
+              "answers": [
+                {
+                  "text": "MySQL",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "MariaDB主要由谁维护？",
+              "id": "5-298-2",
+              "answers": [
+                {
+                  "text": "开源社区",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "MariaDB的目的是什么？",
+              "id": "5-298-3",
+              "answers": [
+                {
+                  "text": "完全兼容MySQL，包括API和命令行，使之能轻松成为MySQL的代替品。",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装MariaDB的命令是sudo apt-get install mariadb-10.1。",
+          "qas": [
+            {
+              "question": "如何安装MariaDB？",
+              "id": "5-298-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install mariadb-10.1",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载MariaDB的命令是sudo apt-get remove mariadb-10.1。",
+          "qas": [
+            {
+              "question": "怎样卸载MariaDB？",
+              "id": "5-298-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove mariadb-10.1",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MariaDB的仓库地址是http://packages.deepin.com/deepin/pool/main/m/mariadb-10.1/。",
+          "qas": [
+            {
+              "question": "MariaDB的仓库地址是什么？",
+              "id": "5-298-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/m/mariadb-10.1/",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MariaDB的官方网站是https://mariadb.org/。",
+          "qas": [
+            {
+              "question": "MariaDB的官方网站在哪里？",
+              "id": "5-298-7",
+              "answers": [
+                {
+                  "text": "https://mariadb.org/",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

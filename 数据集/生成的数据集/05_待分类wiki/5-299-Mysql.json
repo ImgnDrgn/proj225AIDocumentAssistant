@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "title": "Mysql",
+      "paragraphs": [
+        {
+          "context": "Mysql可从https://dev.mysql.com/downloads/repo/apt/下载，点击Download按钮，弹出界面可点击登录或“No thanks, just start my download.”链接。",
+          "qas": [
+            {
+              "question": "从哪里可以下载Mysql？",
+              "id": "5-299-1",
+              "answers": [
+                {
+                  "text": "https://dev.mysql.com/downloads/repo/apt/",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "下载Mysql时，点击Download按钮后弹出界面有哪些选项？",
+              "id": "5-299-2",
+              "answers": [
+                {
+                  "text": "点击登录按钮或者“No thanks, just start my download.”链接。",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行Mysql安装包的命令为sudo dpkg -i mysql-apt-config_0.8.15-1_all.deb，弹出界面需选择对应debian和mysql版本。",
+          "qas": [
+            {
+              "question": "运行Mysql安装包的命令是什么？",
+              "id": "5-299-3",
+              "answers": [
+                {
+                  "text": "sudo dpkg -i mysql-apt-config_0.8.15-1_all.deb",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "运行Mysql安装包后弹出界面需要做什么？",
+              "id": "5-299-4",
+              "answers": [
+                {
+                  "text": "选择对应的debian版本和mysql版本",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "v15.11用debian 9（Stretch），v20用debian10（Buster）。",
+          "qas": [
+            {
+              "question": "v15.11使用的debian版本是什么？",
+              "id": "5-299-5",
+              "answers": [
+                {
+                  "text": "debian 9（Stretch）",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "v20使用的debian版本是什么？",
+              "id": "5-299-6",
+              "answers": [
+                {
+                  "text": "debian10（Buster）",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更新命令为sudo apt update。",
+          "qas": [
+            {
+              "question": "Mysql的更新命令是什么？",
+              "id": "5-299-7",
+              "answers": [
+                {
+                  "text": "sudo apt update",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Mysql的命令是sudo apt install mysql-server，安装时需输入root密码。",
+          "qas": [
+            {
+              "question": "安装Mysql的命令是什么？",
+              "id": "5-299-8",
+              "answers": [
+                {
+                  "text": "sudo apt install mysql-server",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "安装Mysql时需要输入什么？",
+              "id": "5-299-9",
+              "answers": [
+                {
+                  "text": "mysql的root密码",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
