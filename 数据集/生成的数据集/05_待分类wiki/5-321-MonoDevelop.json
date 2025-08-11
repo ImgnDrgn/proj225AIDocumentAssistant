@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "MonoDevelop",
+      "paragraphs": [
+        {
+          "context": "MonoDevelop是个跨平台的集成开发环境，主要用来开发Mono与.NETFramework软件。",
+          "qas": [
+            {
+              "question": "MonoDevelop是什么？",
+              "id": "5-321-1",
+              "answers": [
+                {
+                  "text": "跨平台的集成开发环境",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "MonoDevelop主要用来开发什么软件？",
+              "id": "5-321-2",
+              "answers": [
+                {
+                  "text": "Mono与.NETFramework软件",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MonoDevelop集成了很多Eclipse与MicrosoftVisual Studio的特性。",
+          "qas": [
+            {
+              "question": "MonoDevelop集成了哪些软件的特性？",
+              "id": "5-321-3",
+              "answers": [
+                {
+                  "text": "Eclipse与MicrosoftVisual Studio",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装MonoDevelop的命令是sudo apt-get install monodevelop。",
+          "qas": [
+            {
+              "question": "如何安装MonoDevelop？",
+              "id": "5-321-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install monodevelop",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载MonoDevelop的命令是sudo apt-get remove monodevelop。",
+          "qas": [
+            {
+              "question": "如何卸载MonoDevelop？",
+              "id": "5-321-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove monodevelop",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MonoDevelop的仓库地址是http://packages.deepin.com/deepin/pool/main/m/monodevelop/。",
+          "qas": [
+            {
+              "question": "MonoDevelop的仓库地址是什么？",
+              "id": "5-321-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/m/monodevelop/",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

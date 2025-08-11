@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "Intel® C++ 编译器",
+      "paragraphs": [
+        {
+          "context": "Intel® C++ 编译器是 Intel 公司开发的 C/C++ 编译器，在并行、矢量化支持、高性能等方面具有较好性能。",
+          "qas": [
+            {
+              "question": "Intel® C++ 编译器是由哪家公司开发的？",
+              "id": "5-316-1",
+              "answers": [
+                {
+                  "text": "Intel 公司",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "Intel® C++ 编译器在哪些方面性能较好？",
+              "id": "5-316-2",
+              "answers": [
+                {
+                  "text": "并行、矢量化支持、高性能",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Intel® C++ Compiler 组件现在已经并入 Intel® oneAPI HPC Toolkit 工具包。",
+          "qas": [
+            {
+              "question": "Intel® C++ Compiler 组件现在并入了哪个工具包？",
+              "id": "5-316-3",
+              "answers": [
+                {
+                  "text": "Intel® oneAPI HPC Toolkit 工具包",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装 Intel® C++ 编译器可使用命令：wget https://registrationcenter-download.intel.com/akdlm/irc_nas/18679/l_HPCKit_p_2022.2.0.191_offline.sh 和 sudo sh ./l_HPCKit_p_2022.2.0.191_offline.sh。",
+          "qas": [
+            {
+              "question": "安装 Intel® C++ 编译器的第一个命令是什么？",
+              "id": "5-316-4",
+              "answers": [
+                {
+                  "text": "wget https://registrationcenter-download.intel.com/akdlm/irc_nas/18679/l_HPCKit_p_2022.2.0.191_offline.sh",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "question": "安装 Intel® C++ 编译器的第二个命令是什么？",
+              "id": "5-316-5",
+              "answers": [
+                {
+                  "text": "sudo sh ./l_HPCKit_p_2022.2.0.191_offline.sh",
+                  "answer_start": 143
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Intel® C++ 编译器的官方网站是 https://www.intel.com/content/www/us/en/developer/tools/oneapi/hpc-toolkit.html。",
+          "qas": [
+            {
+              "question": "Intel® C++ 编译器的官方网站是什么？",
+              "id": "5-316-6",
+              "answers": [
+                {
+                  "text": "https://www.intel.com/content/www/us/en/developer/tools/oneapi/hpc-toolkit.html",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Intel® C++ 编译器相关的标签有 c, c++, 编译器, icc。",
+          "qas": [
+            {
+              "question": "与 Intel® C++ 编译器相关的标签有哪些？",
+              "id": "5-316-7",
+              "answers": [
+                {
+                  "text": "c, c++, 编译器, icc",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

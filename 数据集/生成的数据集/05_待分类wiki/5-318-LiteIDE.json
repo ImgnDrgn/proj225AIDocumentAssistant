@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "LiteIDE",
+      "paragraphs": [
+        {
+          "context": "LiteIDE是一款开源、跨平台的轻量级Go语言集成开发环境。",
+          "qas": [
+            {
+              "question": "LiteIDE是什么类型的工具？",
+              "id": "5-318-1",
+              "answers": [
+                {
+                  "text": "开源、跨平台的轻量级Go语言集成开发环境。",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LiteIDE具有管理系统环境、集成调试系统、代码自动完成、支持插件扩展等功能。",
+          "qas": [
+            {
+              "question": "LiteIDE有哪些功能？",
+              "id": "5-318-2",
+              "answers": [
+                {
+                  "text": "管理系统环境、集成调试系统、代码自动完成、支持插件扩展等。",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装LiteIDE可使用命令：sudo apt-get install liteide。",
+          "qas": [
+            {
+              "question": "如何安装LiteIDE？",
+              "id": "5-318-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install liteide",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载LiteIDE的命令是：sudo apt-get remove liteide。",
+          "qas": [
+            {
+              "question": "怎样卸载LiteIDE？",
+              "id": "5-318-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove liteide",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LiteIDE的仓库地址为http://packages.deepin.com/deepin/pool/non-free/l/liteide/。",
+          "qas": [
+            {
+              "question": "LiteIDE的仓库地址是什么？",
+              "id": "5-318-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/l/liteide/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

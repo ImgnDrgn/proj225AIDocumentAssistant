@@ -1,0 +1,164 @@
+{
+  "data": [
+    {
+      "title": "Java开发环境部署",
+      "paragraphs": [
+        {
+          "context": "安装SUN JDK（现Oracle JDK）需下载.tar.gz压缩包，解压缩到/usr/lib，再用update-alternatives命令配置java和javac。",
+          "qas": [
+            {
+              "question": "SUN JDK（现Oracle JDK）的压缩包格式是什么？",
+              "id": "5-319-1",
+              "answers": [
+                {
+                  "text": ".tar.gz",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "SUN JDK解压缩的目标路径是什么？",
+              "id": "5-319-2",
+              "answers": [
+                {
+                  "text": "/usr/lib",
+                  "answer_start": 46
+                }
+              ]
+            },
+            {
+              "question": "配置java命令使用什么工具？",
+              "id": "5-319-3",
+              "answers": [
+                {
+                  "text": "update-alternatives",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "tomcat安装需下载解压缩，启动用sudo ./bin/startup.sh，关闭用sudo ./bin/shutdown.sh，验证关闭可访问http://localhost:8080/。",
+          "qas": [
+            {
+              "question": "如何启动tomcat？",
+              "id": "5-319-4",
+              "answers": [
+                {
+                  "text": "sudo ./bin/startup.sh",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "关闭tomcat的命令是什么？",
+              "id": "5-319-5",
+              "answers": [
+                {
+                  "text": "sudo ./bin/shutdown.sh",
+                  "answer_start": 49
+                }
+              ]
+            },
+            {
+              "question": "怎样验证tomcat是否关闭成功？",
+              "id": "5-319-6",
+              "answers": [
+                {
+                  "text": "在浏览器中输入：http://localhost:8080/",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MYSQL安装先解压缩，新增mysql用户和组，创建链接，改文件夹权限，执行初始化脚本，配置环境，启动服务并设密码，还可设置开机自启动。",
+          "qas": [
+            {
+              "question": "MYSQL安装时需新增什么用户和组？",
+              "id": "5-319-7",
+              "answers": [
+                {
+                  "text": "用户mysql和组mysql",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "MYSQL初始化脚本执行命令是什么？",
+              "id": "5-319-8",
+              "answers": [
+                {
+                  "text": "scripts/mysql_install_db –user=mysql",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "question": "如何设置MYSQL的root密码？",
+              "id": "5-319-9",
+              "answers": [
+                {
+                  "text": "bin/mysqladmin -u root password ‘new_password’",
+                  "answer_start": 116
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Eclipse安装需先装JDK8，下载最新版解压，创建快捷方式需编辑eclipse.desktop文件并写入指定内容。",
+          "qas": [
+            {
+              "question": "安装Eclipse的前提是什么？",
+              "id": "5-319-10",
+              "answers": [
+                {
+                  "text": "安装JDK8",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "如何创建Eclipse快捷方式？",
+              "id": "5-319-11",
+              "answers": [
+                {
+                  "text": "在终端中执行sudo gedit /usr/share/applications/eclipse.desktop，粘贴并保存指定内容。",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MAVEN安装需下载加压到指定位置，用update-alternatives配置命令连接符，在conf/setting.xml中配置默认jdk版本和编译级别。",
+          "qas": [
+            {
+              "question": "MAVEN配置命令连接符使用什么工具？",
+              "id": "5-319-12",
+              "answers": [
+                {
+                  "text": "update-alternatives",
+                  "answer_start": 43
+                }
+              ]
+            },
+            {
+              "question": "MAVEN在哪里配置默认jdk版本？",
+              "id": "5-319-13",
+              "answers": [
+                {
+                  "text": "conf/setting.xml",
+                  "answer_start": 81
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

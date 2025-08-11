@@ -1,0 +1,199 @@
+{
+  "data": [
+    {
+      "title": "Go",
+      "paragraphs": [
+        {
+          "context": "Go语言也称Golang，是编译型语言，由google出品，兼具效率、性能、安全、健壮等特性，底层对并发支持较好。",
+          "qas": [
+            {
+              "question": "Go语言又称什么？",
+              "id": "5-317-1",
+              "answers": [
+                {
+                  "text": "Golang",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "Go语言属于什么类型的语言？",
+              "id": "5-317-2",
+              "answers": [
+                {
+                  "text": "编译型语言",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "Go语言由哪家公司出品？",
+              "id": "5-317-3",
+              "answers": [
+                {
+                  "text": "google",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用Go语言开发的项目有docker、kubernetes、etcd、consul、prometheus等。",
+          "qas": [
+            {
+              "question": "请列举一些用Go语言开发的项目？",
+              "id": "5-317-4",
+              "answers": [
+                {
+                  "text": "docker、kubernetes、etcd、consul、prometheus",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Go语言官网是https://go.dev/，官方文档网址为https://go.dev/doc/。",
+          "qas": [
+            {
+              "question": "Go语言的官网是什么？",
+              "id": "5-317-5",
+              "answers": [
+                {
+                  "text": "https://go.dev/",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "Go语言的官方文档网址是什么？",
+              "id": "5-317-6",
+              "answers": [
+                {
+                  "text": "https://go.dev/doc/",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Go语言官方安装文档为https://go.dev/doc/install，国内下载链接是https://studygolang.com/dl。",
+          "qas": [
+            {
+              "question": "Go语言官方安装文档的网址是什么？",
+              "id": "5-317-7",
+              "answers": [
+                {
+                  "text": "https://go.dev/doc/install",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "Go语言国内下载链接是什么？",
+              "id": "5-317-8",
+              "answers": [
+                {
+                  "text": "https://studygolang.com/dl",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除旧的Go语言相关文件和安装包可执行命令：rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.3.linux-amd64.tar.gz。",
+          "qas": [
+            {
+              "question": "如何删除旧的Go语言相关文件和安装包？",
+              "id": "5-317-9",
+              "answers": [
+                {
+                  "text": "执行命令：rm -rf /usr/local/go && tar -C /usr/local -xzf go1.18.3.linux-amd64.tar.gz。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "临时添加Go语言环境变量的命令是export PATH=$PATH:/usr/local/go/bin。",
+          "qas": [
+            {
+              "question": "临时添加Go语言环境变量的命令是什么？",
+              "id": "5-317-10",
+              "answers": [
+                {
+                  "text": "export PATH=$PATH:/usr/local/go/bin",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看Go语言版本的命令是go version，成功执行则代表安装完成。",
+          "qas": [
+            {
+              "question": "如何查看Go语言版本？",
+              "id": "5-317-11",
+              "answers": [
+                {
+                  "text": "执行命令go version",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "怎样判断Go语言安装完成？",
+              "id": "5-317-12",
+              "answers": [
+                {
+                  "text": "使用go version命令查看版本，成功则代表安装完成。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Go语言的IDE有VSCode、GoLand、Lite IDE等，推荐使用免费开源的Lite IDE。",
+          "qas": [
+            {
+              "question": "Go语言有哪些集成开发环境？",
+              "id": "5-317-13",
+              "answers": [
+                {
+                  "text": "VSCode，GoLand，Lite IDE等",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "推荐使用的Go语言IDE是什么？",
+              "id": "5-317-14",
+              "answers": [
+                {
+                  "text": "Lite IDE",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "推荐的Go语言IDE有什么特点？",
+              "id": "5-317-15",
+              "answers": [
+                {
+                  "text": "免费，开源，下载即用",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

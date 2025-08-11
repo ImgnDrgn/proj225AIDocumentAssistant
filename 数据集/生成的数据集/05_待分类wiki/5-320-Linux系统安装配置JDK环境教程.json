@@ -1,0 +1,184 @@
+{
+  "data": [
+    {
+      "title": "Linux系统安装配置JDK环境教程",
+      "paragraphs": [
+        {
+          "context": "openjdk 18下载地址为https://jdk.java.net/18/",
+          "qas": [
+            {
+              "question": "openjdk 18的下载地址是什么？",
+              "id": "5-320-1",
+              "answers": [
+                {
+                  "text": "https://jdk.java.net/18/",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "可通过wget https://download.java.net/java/GA/jdk18.0.1.1/65ae32619e2f40f3a9af3af1851d6e19/2/GPL/openjdk-18.0.1.1_linux-x64_bin.tar.gz命令下载jdk",
+          "qas": [
+            {
+              "question": "下载jdk可以使用什么命令？",
+              "id": "5-320-2",
+              "answers": [
+                {
+                  "text": "wget https://download.java.net/java/GA/jdk18.0.1.1/65ae32619e2f40f3a9af3af1851d6e19/2/GPL/openjdk-18.0.1.1_linux-x64_bin.tar.gz",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "jdk可解压到指定位置，如/home/$USER/jdk-18/",
+          "qas": [
+            {
+              "question": "jdk可以解压到什么位置？",
+              "id": "5-320-3",
+              "answers": [
+                {
+                  "text": "/home/$USER/jdk-18/",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置系统全局环境变量可使用sudo vim /etc/profile命令",
+          "qas": [
+            {
+              "question": "配置系统全局环境变量用什么命令？",
+              "id": "5-320-4",
+              "answers": [
+                {
+                  "text": "sudo vim /etc/profile",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "bash用户配置个人环境变量可编辑.bashrc文件",
+          "qas": [
+            {
+              "question": "bash用户如何配置个人环境变量？",
+              "id": "5-320-5",
+              "answers": [
+                {
+                  "text": "编辑.bashrc文件",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "zsh用户配置个人环境变量可编辑.zshrc文件",
+          "qas": [
+            {
+              "question": "zsh用户配置个人环境变量需要编辑哪个文件？",
+              "id": "5-320-6",
+              "answers": [
+                {
+                  "text": ".zshrc",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "环境变量配置需添加export JAVA_HOME=$(PATH_TO_JAVA_INSTALL_DIR)和export PATH=$PATH:$JAVA_HOME/bin，JAVA_HOME为实际解压路径",
+          "qas": [
+            {
+              "question": "环境变量配置需要添加哪些内容？",
+              "id": "5-320-7",
+              "answers": [
+                {
+                  "text": "export JAVA_HOME=$(PATH_TO_JAVA_INSTALL_DIR)和export PATH=$PATH:$JAVA_HOME/bin",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "JAVA_HOME应该如何设置？",
+              "id": "5-320-8",
+              "answers": [
+                {
+                  "text": "根据实际解压安装路径而定，即$(PATH_TO_JAVA_INSTALL_DIR)为jdk实际解压位置",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "jdk8以上版本无需设置CLASSPATH",
+          "qas": [
+            {
+              "question": "jdk8以上版本需要设置CLASSPATH吗？",
+              "id": "5-320-9",
+              "answers": [
+                {
+                  "text": "无需设置",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统级环境变量生效需执行source /etc/profile命令",
+          "qas": [
+            {
+              "question": "如何让系统级环境变量生效？",
+              "id": "5-320-10",
+              "answers": [
+                {
+                  "text": "执行source /etc/profile命令",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "bash用户个人环境变量生效需执行source .bashrc命令",
+          "qas": [
+            {
+              "question": "bash用户如何让个人环境变量生效？",
+              "id": "5-320-11",
+              "answers": [
+                {
+                  "text": "执行source .bashrc命令",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "zsh用户个人环境变量生效需执行source .zshrc命令",
+          "qas": [
+            {
+              "question": "zsh用户个人环境变量生效的命令是什么？",
+              "id": "5-320-12",
+              "answers": [
+                {
+                  "text": "source .zshrc",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
