@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "腾讯通-已合并",
+      "paragraphs": [
+        {
+          "context": "腾讯通是一个企业级的实时通信平台，它通过丰富的沟通方式为企业内办公、企业商务提供服务，支持文本会话、语音/视频交流、手机短信、文件传输、IP电话、网络会议、以及应用程序共享、电子白板等远程协作功能。",
+          "qas": [
+            {
+              "id": "5-110-1",
+              "question": "腾讯通是什么？",
+              "answers": [
+                {
+                  "text": "一个企业级的实时通信平台",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "5-110-2",
+              "question": "腾讯通为哪些场景提供服务？",
+              "answers": [
+                {
+                  "text": "企业内办公、企业商务",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "5-110-3",
+              "question": "腾讯通通过什么方式为企业提供服务？",
+              "answers": [
+                {
+                  "text": "通过丰富的沟通方式为企业内办公、企业商务提供服务",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "5-110-4",
+              "question": "腾讯通支持哪些功能？",
+              "answers": [
+                {
+                  "text": "文本会话、语音/视频交流、手机短信、文件传输、IP电话、网络会议、以及应用程序共享、电子白板等远程协作功能",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install apps.com.qq.rtxclient",
+          "qas": [
+            {
+              "id": "5-110-5",
+              "question": "如何安装腾讯通？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install apps.com.qq.rtxclient",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove apps.com.qq.rtxclient",
+          "qas": [
+            {
+              "id": "5-110-6",
+              "question": "如何卸载腾讯通？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove apps.com.qq.rtxclient",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/non-free/a/apps.com.qq.rtxclient/",
+          "qas": [
+            {
+              "id": "5-110-7",
+              "question": "腾讯通的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/a/apps.com.qq.rtxclient/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

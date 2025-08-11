@@ -1,0 +1,139 @@
+{
+  "data": [
+    {
+      "title": "VNC在linux下的搭建和连接",
+      "paragraphs": [
+        {
+          "context": "服务器上安装x11vnc，构建vnc的服务端：sudo apt-get install x11vnc。设置并存储vnc连接密码为deepin：sudo x11vnc -storepasswd deepin /etc/x11vnc.pass。启动x11vnc服务端：sudo x11vnc -display :0 -auth /var/run/lightdm/root/:0 -forever -bg -o /var/log/x11vnc.log -rfbauth /etc/x11vnc.pass -shared -noxdamage -xrandr \"resize\" -rfbport 5900。",
+          "qas": [
+            {
+              "id": "5-124-1",
+              "question": "服务器上构建vnc服务端需要安装什么软件？",
+              "answers": [
+                {
+                  "text": "x11vnc",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-124-2",
+              "question": "安装x11vnc的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install x11vnc",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "5-124-3",
+              "question": "设置vnc连接密码的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo x11vnc -storepasswd deepin /etc/x11vnc.pass",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-124-4",
+              "question": "vnc连接的密码被设置为多少？",
+              "answers": [
+                {
+                  "text": "deepin",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "id": "5-124-5",
+              "question": "启动x11vnc服务端的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo x11vnc -display :0 -auth /var/run/lightdm/root/:0 -forever -bg -o /var/log/x11vnc.log -rfbauth /etc/x11vnc.pass -shared -noxdamage -xrandr \"resize\" -rfbport 5900",
+                  "answer_start": 109
+                }
+              ]
+            },
+            {
+              "id": "5-124-6",
+              "question": "x11vnc服务端使用的端口是多少？",
+              "answers": [
+                {
+                  "text": "5900",
+                  "answer_start": 240
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "客户端安装并启动remmina：sudo apt-get install remmina -y；remmina。选择VNC服务，直接输入服务端的IP，输入前面服务端设置的连接密码进行连接即可。",
+          "qas": [
+            {
+              "id": "5-124-7",
+              "question": "客户端需要安装什么软件来连接vnc服务？",
+              "answers": [
+                {
+                  "text": "remmina",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-124-8",
+              "question": "客户端安装remmina的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install remmina -y",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "5-124-9",
+              "question": "客户端启动remmina的命令是什么？",
+              "answers": [
+                {
+                  "text": "remmina",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "id": "5-124-10",
+              "question": "客户端连接vnc服务时需要选择什么服务类型？",
+              "answers": [
+                {
+                  "text": "VNC服务",
+                  "answer_start": 49
+                }
+              ]
+            },
+            {
+              "id": "5-124-11",
+              "question": "客户端连接vnc服务时需要输入什么信息？",
+              "answers": [
+                {
+                  "text": "服务端的IP和服务端设置的连接密码",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-124-12",
+              "question": "启动remmina后如何连接VNC服务？",
+              "answers": [
+                {
+                  "text": "选择VNC服务，直接输入服务端的IP，输入前面服务端设置的连接密码进行连接即可",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

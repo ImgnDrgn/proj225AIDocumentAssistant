@@ -1,0 +1,395 @@
+{
+  "title": "默认远程桌面",
+  "paragraphs": [
+    {
+      "context": "可以在应用商店安装这个远程协助的APP进行连接",
+      "qas": [
+        {
+          "id": "5-130-1",
+          "question": "如何进行UOS/Deepin PC互联的远程连接？",
+          "answers": [
+            {
+              "text": "在应用商店安装这个远程协助的APP进行连接",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "均可以在应用商店安装",
+      "qas": [
+        {
+          "id": "5-130-2",
+          "question": "todesk和向日葵如何安装以用于远程连接？",
+          "answers": [
+            {
+              "text": "在应用商店安装",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "安装Remmina然后进行连接。在终端输入`sudo apt install remmina`即可安装，安装完后在启动器打开并连接需要连接的计算机即可",
+      "qas": [
+        {
+          "id": "5-130-3",
+          "question": "远程连接其他rdp协议可访问的计算机的方法一是什么？",
+          "answers": [
+            {
+              "text": "安装Remmina然后进行连接，在终端输入`sudo apt install remmina`安装，安装完后在启动器打开并连接需要连接的计算机",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "id": "5-130-4",
+          "question": "安装Remmina的终端命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt install remmina",
+              "answer_start": 21
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "使用rdesktop工具，在终端输入`sudo apt install rdesktop`即可安装，然后终端输入`rdesktop 远程PCIP地址`即可访问",
+      "qas": [
+        {
+          "id": "5-130-5",
+          "question": "远程连接其他rdp协议可访问的计算机的方法二是什么？",
+          "answers": [
+            {
+              "text": "使用rdesktop工具，在终端输入`sudo apt install rdesktop`安装，然后终端输入`rdesktop 远程PCIP地址`访问",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "id": "5-130-6",
+          "question": "安装rdesktop的终端命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt install rdesktop",
+              "answer_start": 23
+            }
+          ]
+        },
+        {
+          "id": "5-130-7",
+          "question": "使用rdesktop访问远程计算机的命令是什么？",
+          "answers": [
+            {
+              "text": "rdesktop 远程PCIP地址",
+              "answer_start": 62
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "也可以试试这个：https://gitee.com/gfdgd-xi/simple-remote-desktop-accessor",
+      "qas": [
+        {
+          "id": "5-130-8",
+          "question": "远程连接其他rdp协议可访问的计算机的方法三是什么？",
+          "answers": [
+            {
+              "text": "试试https://gitee.com/gfdgd-xi/simple-remote-desktop-accessor",
+              "answer_start": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "在应用商店安装VNC View然后使用即可",
+      "qas": [
+        {
+          "id": "5-130-9",
+          "question": "如何访问VNC服务器？",
+          "answers": [
+            {
+              "text": "在应用商店安装VNC View然后使用即可",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "可以使用Windows 10的openssh，在Windows PowerShell输入ssh ip即可。如果没有ssh，也可以安装一个git然后使用git的bash里面的ssh来使用",
+      "qas": [
+        {
+          "id": "5-130-10",
+          "question": "Windows端访问ssh的方法一是什么？",
+          "answers": [
+            {
+              "text": "使用Windows 10的openssh，在Windows PowerShell输入ssh ip即可；如果没有ssh，安装git后使用git的bash里的ssh",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "id": "5-130-11",
+          "question": "Windows 10中使用openssh访问ssh的命令是什么？",
+          "answers": [
+            {
+              "text": "ssh ip",
+              "answer_start": 56
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "在Windows安装MobaXterm等第三方工具然后连接",
+      "qas": [
+        {
+          "id": "5-130-12",
+          "question": "Windows端访问ssh的方法二是什么？",
+          "answers": [
+            {
+              "text": "在Windows安装MobaXterm等第三方工具然后连接",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "终端输入ssh ip即可，或者deepin终端的连接远程服务器功能",
+      "qas": [
+        {
+          "id": "5-130-13",
+          "question": "Linux端访问ssh的方法一是什么？",
+          "answers": [
+            {
+              "text": "终端输入ssh ip即可，或者使用deepin终端的连接远程服务器功能",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "id": "5-130-14",
+          "question": "Linux端通过终端访问ssh的命令是什么？",
+          "answers": [
+            {
+              "text": "ssh ip",
+              "answer_start": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "使用其它的ssh工具",
+      "qas": [
+        {
+          "id": "5-130-15",
+          "question": "Linux端访问ssh的方法二是什么？",
+          "answers": [
+            {
+              "text": "使用其它的ssh工具",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "输入`sudo apt install x11vnc`安装vnc访问，然后输入`x11vnc`（加-forever可以让设备断开后不关闭vnc服务）即可",
+      "qas": [
+        {
+          "id": "5-130-16",
+          "question": "如何搭建vnc服务器？",
+          "answers": [
+            {
+              "text": "输入`sudo apt install x11vnc`安装，然后输入`x11vnc`（加-forever可让设备断开后不关闭服务）即可",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "id": "5-130-17",
+          "question": "安装x11vnc的终端命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt install x11vnc",
+              "answer_start": 6
+            }
+          ]
+        },
+        {
+          "id": "5-130-18",
+          "question": "启动vnc服务的命令是什么？如何让设备断开后不关闭服务？",
+          "answers": [
+            {
+              "text": "x11vnc，加-forever可以让设备断开后不关闭vnc服务",
+              "answer_start": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "终端输入以下命令安装xrdp访问：`sudo apt install xrdp`；然后输入以下命令启动服务：`sudo service xrdp start`；接着输入以下命令配置xrdp文件：`echo \"startdde-x11\" > .xsession`；最后注销该用户用rdp远程软件访问即可",
+      "qas": [
+        {
+          "id": "5-130-19",
+          "question": "如何搭建rdp服务器？",
+          "answers": [
+            {
+              "text": "终端输入`sudo apt install xrdp`安装，输入`sudo service xrdp start`启动服务，输入`echo \"startdde-x11\" > .xsession`配置文件，最后注销用户用rdp远程软件访问",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "id": "5-130-20",
+          "question": "安装xrdp的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt install xrdp",
+              "answer_start": 30
+            }
+          ]
+        },
+        {
+          "id": "5-130-21",
+          "question": "启动xrdp服务的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo service xrdp start",
+              "answer_start": 75
+            }
+          ]
+        },
+        {
+          "id": "5-130-22",
+          "question": "配置xrdp文件的命令是什么？",
+          "answers": [
+            {
+              "text": "echo \"startdde-x11\" > .xsession",
+              "answer_start": 119
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "输入`rdesktop --help`也可以查看有关帮助",
+      "qas": [
+        {
+          "id": "5-130-23",
+          "question": "如何查看rdesktop的详细参数帮助？",
+          "answers": [
+            {
+              "text": "输入`rdesktop --help`",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "rdesktop: A Remote Desktop Protocol client. Usage: rdesktop [options] server[:port]",
+      "qas": [
+        {
+          "id": "5-130-24",
+          "question": "rdesktop的基本用法是什么？",
+          "answers": [
+            {
+              "text": "rdesktop [options] server[:port]",
+              "answer_start": 43
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "rdesktop常用参数包括：-u: user name；-p: password (- to prompt)；-f: full-screen mode；-a: connection colour depth；-z: enable rdp compression",
+      "qas": [
+        {
+          "id": "5-130-25",
+          "question": "rdesktop中指定用户名的参数是什么？",
+          "answers": [
+            {
+              "text": "-u",
+              "answer_start": 23
+            }
+          ]
+        },
+        {
+          "id": "5-130-26",
+          "question": "rdesktop中进入全屏模式的参数是什么？",
+          "answers": [
+            {
+              "text": "-f",
+              "answer_start": 61
+            }
+          ]
+        },
+        {
+          "id": "5-130-27",
+          "question": "rdesktop中启用rdp压缩的参数是什么？",
+          "answers": [
+            {
+              "text": "-z",
+              "answer_start": 103
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "UOS/Deepin PC互联通过应用商店安装APP实现，todesk和向日葵均可在应用商店安装。",
+      "qas": [
+        {
+          "id": "5-130-28",
+          "question": "哪些工具可在应用商店安装进行远程连接？",
+          "answers": [
+            {
+              "text": "todesk和向日葵",
+              "answer_start": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "访问SSH：Windows端可通过PowerShell输入 ssh ip 或安装MobaXterm；Linux端终端输入 ssh ip 或使用deepin终端的连接远程服务器功能。",
+      "qas": [
+        {
+          "id": "5-130-29",
+          "question": "Windows系统访问SSH有哪两种方法？",
+          "answers": [
+            {
+              "text": "通过PowerShell输入 ssh ip 或安装MobaXterm",
+              "answer_start": 11
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "rdesktop详细参数：基本用法 rdesktop [options] server[:port]，常用参数如 -u 用户名、-p 密码、-g 桌面分辨率、-f 全屏模式等。",
+      "qas": [
+        {
+          "id": "5-130-30",
+          "question": "哪个参数用于设置远程桌面分辨率？",
+          "answers": [
+            {
+              "text": "-g 桌面分辨率",
+              "answer_start": 51
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

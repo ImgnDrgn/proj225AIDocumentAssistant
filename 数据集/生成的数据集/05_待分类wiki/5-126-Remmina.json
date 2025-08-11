@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "Remmina-已合并",
+      "paragraphs": [
+        {
+          "context": "Remmina是一个远程桌面客户端，它提供了RDP、VNC、XDMCP、SSH等远程连接协议的支持。其优点在于界面清爽，方便易用。安装：sudo apt-get install remmina。卸载：sudo apt-get remove remmina。仓库地址：http://packages.deepin.com/deepin/pool/main/r/remmina/。",
+          "qas": [
+            {
+              "id": "5-126-1",
+              "question": "Remmina是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "远程桌面客户端",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-126-2",
+              "question": "Remmina支持哪些远程连接协议？",
+              "answers": [
+                {
+                  "text": "RDP、VNC、XDMCP、SSH等",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "5-126-3",
+              "question": "Remmina的优点是什么？",
+              "answers": [
+                {
+                  "text": "界面清爽，方便易用",
+                  "answer_start": 55
+                }
+              ]
+            },
+            {
+              "id": "5-126-4",
+              "question": "如何安装Remmina？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install remmina",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-126-5",
+              "question": "如何卸载Remmina？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove remmina",
+                  "answer_start": 100
+                }
+              ]
+            },
+            {
+              "id": "5-126-6",
+              "question": "Remmina的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/r/remmina/",
+                  "answer_start": 133
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "title": "安司密信-已合并",
+  "paragraphs": [
+    {
+      "context": "安司密信是一款社交应用，支持即时信息发送以及网络通话功能，所有数据都经过安司密盾的高强度加密，以便有效抵御外部黑客和第三方组织的恶意攻击。开启安司密信安全模式后，所有文字、语音、图片、视频信息都会经过高强度加密之后发送给好友。支持绝密会话、阅后即焚、远程销毁等功能。",
+      "qas": [
+        {
+          "id": "5-117-1",
+          "question": "安司密信属于什么类型的应用？",
+          "answers": [
+            {
+              "text": "社交应用",
+              "answer_start": 7
+            }
+          ]
+        },
+        {
+          "id": "5-117-2",
+          "question": "安司密信支持哪些基础功能？",
+          "answers": [
+            {
+              "text": "即时信息发送以及网络通话功能",
+              "answer_start": 14
+            }
+          ]
+        },
+        {
+          "id": "5-117-3",
+          "question": "安司密信的数据采用什么方式加密？",
+          "answers": [
+            {
+              "text": "安司密盾的高强度加密",
+              "answer_start": 36
+            }
+          ]
+        },
+        {
+          "id": "5-117-4",
+          "question": "开启安司密信安全模式后，哪些信息会被加密发送？",
+          "answers": [
+            {
+              "text": "所有文字、语音、图片、视频信息",
+              "answer_start": 94
+            }
+          ]
+        },
+        {
+          "id": "5-117-5",
+          "question": "安司密信支持哪些特殊功能？",
+          "answers": [
+            {
+              "text": "绝密会话、阅后即焚、远程销毁等功能",
+              "answer_start": 133
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "安装：sudo apt-get install akeychat",
+      "qas": [
+        {
+          "id": "5-117-6",
+          "question": "安司密信的安装命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt-get install akeychat",
+              "answer_start": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "卸载：sudo apt-get remove akeychat",
+      "qas": [
+        {
+          "id": "5-117-7",
+          "question": "安司密信的卸载命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt-get remove akeychat",
+              "answer_start": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "仓库地址：http://packages.deepin.com/deepin/pool/main/a/akeychat/",
+      "qas": [
+        {
+          "id": "5-117-8",
+          "question": "安司密信的仓库地址是什么？",
+          "answers": [
+            {
+              "text": "http://packages.deepin.com/deepin/pool/main/a/akeychat/",
+              "answer_start": 6
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

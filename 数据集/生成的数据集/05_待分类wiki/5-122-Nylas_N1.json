@@ -1,0 +1,90 @@
+{
+  "title": "Nylas_N1-已合并",
+  "paragraphs": [
+    {
+      "context": "Nylas N1是一个开源的邮件客户端，它支持插件框架，可以扩展创建强大的新功能，它兼容上百个邮件服务提供商，提供良好的程序外观并具有离线功能。安装使用sudo apt-get install nylas命令，卸载使用sudo apt-get remove nylas命令。其仓库地址是http://packages.deepin.com/deepin/pool/main/n/nylas/。",
+      "qas": [
+        {
+          "id": "5-122-1",
+          "question": "Nylas N1是什么类型的软件？",
+          "answers": [
+            {
+              "text": "开源的邮件客户端",
+              "answer_start": 7
+            }
+          ]
+        },
+        {
+          "id": "5-122-2",
+          "question": "Nylas N1通过什么机制扩展功能？",
+          "answers": [
+            {
+              "text": "插件框架",
+              "answer_start": 21
+            }
+          ]
+        },
+        {
+          "id": "5-122-3",
+          "question": "Nylas N1兼容多少邮件服务提供商？",
+          "answers": [
+            {
+              "text": "上百个",
+              "answer_start": 37
+            }
+          ]
+        },
+        {
+          "id": "5-122-4",
+          "question": "Nylas N1具有哪些功能特点？",
+          "answers": [
+            {
+              "text": "支持插件框架，可以扩展创建强大的新功能，它兼容上百个邮件服务提供商，提供良好的程序外观并具有离线功能",
+              "answer_start": 21
+            }
+          ]
+        },
+        {
+          "id": "5-122-5",
+          "question": "Nylas N1具有哪些技术特性？",
+          "answers": [
+            {
+              "text": "提供良好的程序外观并具有离线功能",
+              "answer_start": 43
+            }
+          ]
+        },
+        {
+          "id": "5-122-6",
+          "question": "如何安装Nylas N1？",
+          "answers": [
+            {
+              "text": "sudo apt-get install nylas",
+              "answer_start": 77
+            }
+          ]
+        },
+        {
+          "id": "5-122-7",
+          "question": "卸载Nylas N1的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt-get remove nylas",
+              "answer_start": 107
+            }
+          ]
+        },
+        {
+          "id": "5-122-8",
+          "question": "在哪里可以找到Nylas的软件包？",
+          "answers": [
+            {
+              "text": "http://packages.deepin.com/deepin/pool/main/n/nylas/",
+              "answer_start": 135
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

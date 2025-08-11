@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "Xchat-已合并",
+      "paragraphs": [
+        {
+          "context": "Xchat是一款跨平台的IRC通讯协议软件，有着良好的用户界面，具备常用的聊天功能，利用它您可以登录到任何的IRC服务器与别人交流。安装命令：sudo apt-get install xchat。卸载命令：sudo apt-get remove xchat。软件仓库地址：http://packages.deepin.com/deepin/pool/main/x/xchat/。相关链接包括维基百科等资源。",
+          "qas": [
+            {
+              "id": "5-116-1",
+              "question": "Xchat是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "跨平台的IRC通讯协议软件",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-116-2",
+              "question": "Xchat的用户界面如何？",
+              "answers": [
+                {
+                  "text": "良好的用户界面",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "5-116-3",
+              "question": "Xchat具备哪些常用功能？",
+              "answers": [
+                {
+                  "text": "常用的聊天功能",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "id": "5-116-4",
+              "question": "Xchat的主要功能是什么？",
+              "answers": [
+                {
+                  "text": "登录到任何的IRC服务器与别人交流",
+                  "answer_start": 48
+                }
+              ]
+            },
+            {
+              "id": "5-116-5",
+              "question": "如何安装Xchat？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install xchat",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "id": "5-116-6",
+              "question": "卸载Xchat的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove xchat",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "id": "5-116-7",
+              "question": "Xchat的仓库地址在哪里？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/x/xchat/",
+                  "answer_start": 136
+                }
+              ]
+            },
+            {
+              "id": "5-116-8",
+              "question": "Xchat支持哪些操作系统？",
+              "answers": [
+                {
+                  "text": "跨平台",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

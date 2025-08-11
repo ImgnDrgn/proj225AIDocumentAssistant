@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "Thunderbird-已合并",
+      "paragraphs": [
+        {
+          "context": "简介\n雷鸟邮件是一个邮件客户端，支持IMAP 、POP邮件协议以及HTML邮件格式，可以整合多个网络邮箱于一体，让您在本地随时都能接收或者发送邮件。\n安装\nsudo apt-get install thunderbird\n卸载\nsudo apt-get remove thunderbird\n仓库地址\nhttp://packages.deepin.com/deepin/pool/main/t/thunderbird/\n常见问题\n\n相关链接\n维基百科：已合并",
+          "qas": [
+            {
+              "id": "5-123-1",
+              "question": "雷鸟邮件是什么？",
+              "answers": [
+                {
+                  "text": "雷鸟邮件是一个邮件客户端，支持IMAP 、POP邮件协议以及HTML邮件格式，可以整合多个网络邮箱于一体，让您在本地随时都能接收或者发送邮件。",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "5-123-2",
+              "question": "雷鸟邮件是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "邮件客户端",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-123-3",
+              "question": "雷鸟邮件支持哪些协议和格式？",
+              "answers": [
+                {
+                  "text": "IMAP 、POP邮件协议以及HTML邮件格式",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "5-123-4",
+              "question": "雷鸟邮件能整合多个网络邮箱吗？",
+              "answers": [
+                {
+                  "text": "可以",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "5-123-5",
+              "question": "雷鸟邮件允许用户在本地做什么？",
+              "answers": [
+                {
+                  "text": "随时接收或者发送邮件",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "5-123-6",
+              "question": "如何安装雷鸟邮件？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install thunderbird",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "id": "5-123-7",
+              "question": "如何卸载雷鸟邮件？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove thunderbird",
+                  "answer_start": 97
+                }
+              ]
+            },
+            {
+              "id": "5-123-8",
+              "question": "雷鸟邮件的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/t/thunderbird/",
+                  "answer_start": 134
+                }
+              ]
+            },
+            {
+              "id": "5-123-9",
+              "question": "维基百科上的相关链接是什么？",
+              "answers": [
+                {
+                  "text": "已合并",
+                  "answer_start": 209
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

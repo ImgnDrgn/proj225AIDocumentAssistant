@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "腾讯TIM",
+      "paragraphs": [
+        {
+          "context": "TIM是精简版本的QQ。官方没有提供linux下载版本，但有windows版和安卓版。下载地址：https://office.qq.com/download.html",
+          "qas": [
+            {
+              "id": "5-109-1",
+              "question": "TIM是什么？",
+              "answers": [
+                {
+                  "text": "精简版本的QQ",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "5-109-2",
+              "question": "官方是否提供了linux版本的TIM下载？",
+              "answers": [
+                {
+                  "text": "没有",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "5-109-3",
+              "question": "官方提供了哪些版本的TIM下载？",
+              "answers": [
+                {
+                  "text": "windows版和安卓版",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "5-109-4",
+              "question": "TIM的下载地址是什么？",
+              "answers": [
+                {
+                  "text": "https://office.qq.com/download.html",
+                  "answer_start": 48
+                }
+              ]
+            },
+            {
+              "id": "5-109-5",
+              "question": "TIM的主要特点是什么？",
+              "answers": [
+                {
+                  "text": "精简版本",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

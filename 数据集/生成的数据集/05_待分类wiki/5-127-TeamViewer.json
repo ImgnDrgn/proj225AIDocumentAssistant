@@ -1,0 +1,129 @@
+{
+  "data": [
+    {
+      "title": "TeamViewer-已合并",
+      "paragraphs": [
+        {
+          "context": "TeamViewer是一个用于远程控制、桌面共享和文件传输的简单且快速的解决方案。它具有即时远程控制、远程维护、远程访问、家庭办公、在线会议/演示等功能。",
+          "qas": [
+            {
+              "question": "TeamViewer的主要用途是什么？",
+              "id": "5-127-1",
+              "answers": [
+                {
+                  "text": "远程控制、桌面共享和文件传输",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "TeamViewer提供哪些具体功能？",
+              "id": "5-127-2",
+              "answers": [
+                {
+                  "text": "即时远程控制、远程维护、远程访问、家庭办公、在线会议/演示等功能",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install teamviewer",
+          "qas": [
+            {
+              "question": "如何安装TeamViewer？",
+              "id": "5-127-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install teamviewer",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove teamviewer",
+          "qas": [
+            {
+              "question": "如何卸载TeamViewer？",
+              "id": "5-127-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove teamviewer",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/non-free/t/teamviewer/",
+          "qas": [
+            {
+              "question": "TeamViewer的仓库地址是什么？",
+              "id": "5-127-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/t/teamviewer/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "请尽量使用深度商店提供的TeamViewer。由于系统自带的软件包安装程序存在逻辑问题，双击从官网下载的TeamViewer的deb安装包安装将可能导致深度桌面环境被卸载。安装下载的deb包，请尽量使用命令：`sudo dpkg -i xxx.deb` 并注意相应提示。",
+          "qas": [
+            {
+              "question": "推荐通过哪种渠道安装TeamViewer？",
+              "id": "5-127-6",
+              "answers": [
+                {
+                  "text": "深度商店提供的TeamViewer",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "双击官网下载的deb安装包会导致什么问题？",
+              "id": "5-127-7",
+              "answers": [
+                {
+                  "text": "深度桌面环境被卸载",
+                  "answer_start": 70
+                }
+              ]
+            },
+            {
+              "question": "安装下载的deb包应使用什么命令？",
+              "id": "5-127-8",
+              "answers": [
+                {
+                  "text": "sudo dpkg -i xxx.deb",
+                  "answer_start": 123
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "维基百科：https://zh.wikipedia.org/wiki/TeamViewer",
+          "qas": [
+            {
+              "question": "TeamViewer的维基百科链接是什么？",
+              "id": "5-127-9",
+              "answers": [
+                {
+                  "text": "https://zh.wikipedia.org/wiki/TeamViewer",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

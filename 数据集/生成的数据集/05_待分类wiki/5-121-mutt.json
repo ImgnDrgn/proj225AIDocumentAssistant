@@ -1,0 +1,294 @@
+{
+  "data": [
+    {
+      "title": "mutt",
+      "paragraphs": [
+        {
+          "context": "mutt是一款古老而强大的TUI邮件用户代理（MUA），有着非常强大的定制性。neomutt则是fork自mutt并添加了些新功能。",
+          "qas": [
+            {
+              "id": "5-121-1",
+              "question": "mutt是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "一款古老而强大的TUI邮件用户代理（MUA）",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-121-2",
+              "question": "neomutt与mutt有什么关系？",
+              "answers": [
+                {
+                  "text": "neomutt是fork自mutt并添加了些新功能",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装mutt的命令是：apt install mutt；安装neomutt的命令是：apt install neomutt。",
+          "qas": [
+            {
+              "id": "5-121-3",
+              "question": "安装mutt使用什么命令？",
+              "answers": [
+                {
+                  "text": "apt install mutt",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-121-4",
+              "question": "安装neomutt的命令是什么？",
+              "answers": [
+                {
+                  "text": "apt install neomutt",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "POP3是把邮件下载到本地，对邮件操作（如删除）不影响服务器上的邮件。相关配置包括：set pop_authenticators = 'user'；set pop_host = 'pops://邮件服务器:995'（完整标准URL格式为协议://[用户名[:密码]@]邮件服务器域名或ip[:端口]）；set pop_user = '用户名'；set pop_pass = '密码'。",
+          "qas": [
+            {
+              "id": "5-121-5",
+              "question": "POP3收信方式的特点是什么？",
+              "answers": [
+                {
+                  "text": "把邮件下载到本地，对邮件操作（如删除）不影响服务器上的邮件",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-121-6",
+              "question": "POP3配置中，pop_host的标准URL格式是什么？",
+              "answers": [
+                {
+                  "text": "协议://[用户名[:密码]@]邮件服务器域名或ip[:端口]",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "id": "5-121-7",
+              "question": "设置POP3端口995的命令是什么？",
+              "answers": [
+                {
+                  "text": "set pop_host = 'pops://邮件服务器:995'",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "IMAP会同步邮件的状态，对邮件操作（如删除）将会影响到服务器上的邮件。相关配置包括：set folder = 'imaps://邮件服务器:993'（完整标准URL格式为协议://[用户名[:密码]@]邮件服务器域名或ip[:端口]）；set imap_user = '用户名'；set imap_pass = '密码'。",
+          "qas": [
+            {
+              "id": "5-121-8",
+              "question": "IMAP收信方式的特点是什么？",
+              "answers": [
+                {
+                  "text": "会同步邮件的状态，对邮件操作（如删除）将会影响到服务器上的邮件",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-121-9",
+              "question": "IMAP配置中，folder的标准URL格式是什么？",
+              "answers": [
+                {
+                  "text": "协议://[用户名[:密码]@]邮件服务器域名或ip[:端口]",
+                  "answer_start": 112
+                }
+              ]
+            },
+            {
+              "id": "5-121-10",
+              "question": "配置IMAP协议时哪个命令指定加密连接？",
+              "answers": [
+                {
+                  "text": "set folder = 'imaps://邮件服务器:993'",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "smtp是发送邮件用的。相关配置包括：set smtp_url = 'smtp://邮件服务器:25'；set smtp_user = '用户名'；set smtp_pass = '密码'。",
+          "qas": [
+            {
+              "id": "5-121-11",
+              "question": "SMTP的作用是什么？",
+              "answers": [
+                {
+                  "text": "发送邮件用的",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-121-12",
+              "question": "SMTP配置需要设置哪些参数？",
+              "answers": [
+                {
+                  "text": "smtp_url、smtp_user、smtp_pass",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-121-13",
+              "question": "配置SMTP服务器的命令是什么？",
+              "answers": [
+                {
+                  "text": "set smtp_url = 'smtp://邮件服务器:25'",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "官方手册建议，多账户使用时应视为上个使用的邮箱不可知，所以要清空当前连接账户，然后再连下一个账号。账户钩子配置示例：account-hook . 'unset imap_user; unset imap_pass; unset tunnel'；account-hook imap://host1/ 'set imap_user=me1 imap_pass=foo'等。邮箱和目录钩子配置示例：mailboxes imap://user@host1/INBOX；folder-hook imap://user@host1/ 'set folder=imap://host1/ ; set record=+INBOX/Sent'等。",
+          "qas": [
+            {
+              "id": "5-121-14",
+              "question": "多账户使用时，官方手册的建议是什么？",
+              "answers": [
+                {
+                  "text": "应视为上个使用的邮箱不可知，所以要清空当前连接账户，然后再连下一个账号",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-121-15",
+              "question": "多账户配置中的账户钩子有什么作用？",
+              "answers": [
+                {
+                  "text": "用于清空当前连接账户或设置特定账户的参数，如unset imap_user等或set imap_user=me1等",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "id": "5-121-16",
+              "question": "如何清除已配置的IMAP账户信息？",
+              "answers": [
+                {
+                  "text": "account-hook . 'unset imap_user; unset imap_pass; unset tunnel'",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "id": "5-121-17",
+              "question": "如何为特定邮箱设置已发送邮件存档目录？",
+              "answers": [
+                {
+                  "text": "set record=+INBOX/Sent",
+                  "answer_start": 159
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "外观设置中的格式化字符包括：%y表示年，%m表示月，%d表示日，%H表示时，%M表示分，%S表示秒。",
+          "qas": [
+            {
+              "id": "5-121-18",
+              "question": "%y在格式化字符中表示什么？",
+              "answers": [
+                {
+                  "text": "年",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "5-121-19",
+              "question": "%H代表的意义是什么？",
+              "answers": [
+                {
+                  "text": "时",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "index_format中的部分字符串及其意义：%a表示发件人地址，%A表示回复地址（如果存在；否则：发件人地址），%b表示原始邮件文件夹的文件名（类似邮箱），%c表示消息正文中的字符数（字节），%s表示消息的主题。",
+          "qas": [
+            {
+              "id": "5-121-20",
+              "question": "index_format中，%a表示什么？",
+              "answers": [
+                {
+                  "text": "发件人地址",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-121-21",
+              "question": "%s在index_format中的意义是什么？",
+              "answers": [
+                {
+                  "text": "消息的主题",
+                  "answer_start": 177
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "flag_chars中部分字符的默认选项和描述：1的默认选项是*，描述为邮件被标记了；2的默认选项是!，描述为邮件被标记为重要；3的默认选项是D，描述为邮件被标记为删除；5的默认选项是r，描述为邮件已回复。",
+          "qas": [
+            {
+              "id": "5-121-22",
+              "question": "flag_chars中，默认选项为*的字符对应的描述是什么？",
+              "answers": [
+                {
+                  "text": "邮件被标记了",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "id": "5-121-23",
+              "question": "flag_chars中，代表邮件已回复的字符默认选项是什么？",
+              "answers": [
+                {
+                  "text": "r",
+                  "answer_start": 156
+                }
+              ]
+            },
+            {
+              "id": "5-121-24",
+              "question": "flag_chars中D字符代表什么状态？",
+              "answers": [
+                {
+                  "text": "邮件被标记为删除",
+                  "answer_start": 94
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "title": "腾讯QQ-已合并",
+      "paragraphs": [
+        {
+          "context": "QQ是腾讯开发的一款基于Internet的即时通信软件。支持在线聊天、视频电话、点对点断点续传文件、网络硬盘等多种功能。QQ作为一种方便、高效的聊天工具，是中国目前使用最广泛的即时通信软件。",
+          "qas": [
+            {
+              "id": "5-108-1",
+              "question": "QQ是由哪家公司开发的？",
+              "answers": [
+                {
+                  "text": "腾讯",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-108-2",
+              "question": "QQ基于什么开发？",
+              "answers": [
+                {
+                  "text": "Internet",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-108-3",
+              "question": "QQ支持哪些功能？",
+              "answers": [
+                {
+                  "text": "在线聊天、视频电话、点对点断点续传文件、网络硬盘等多种功能",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "5-108-4",
+              "question": "QQ在中国的使用情况如何？",
+              "answers": [
+                {
+                  "text": "是中国目前使用最广泛的即时通信软件",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install deepin.com.qq.im",
+          "qas": [
+            {
+              "id": "5-108-5",
+              "question": "安装QQ的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install deepin.com.qq.im",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove deepin.com.qq.im",
+          "qas": [
+            {
+              "id": "5-108-6",
+              "question": "卸载QQ的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove deepin.com.qq.im",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/non-free/d/deepin.com.qq.im",
+          "qas": [
+            {
+              "id": "5-108-7",
+              "question": "QQ的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/d/deepin.com.qq.im",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "相关链接",
+          "qas": [
+            {
+              "id": "5-108-8",
+              "question": "QQ的常见问题相关信息可以在哪里找到？",
+              "answers": [
+                {
+                  "text": "相关链接",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
