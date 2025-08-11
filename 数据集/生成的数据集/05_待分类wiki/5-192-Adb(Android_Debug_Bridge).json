@@ -1,0 +1,134 @@
+{
+  "data": [
+    {
+      "title": "Adb(Android_Debug_Bridge)",
+      "paragraphs": [
+        {
+          "context": "ADB是功能强大的命令行工具，允许通过数据线或网络与android设备通信，可安装应用、复制文件、运行shell命令或调试应用。",
+          "qas": [
+            {
+              "question": "ADB是什么类型的工具？",
+              "id": "5-192-1",
+              "answers": [
+                {
+                  "text": "功能强大的命令行工具",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "question": "ADB可以通过什么方式与android设备通信？",
+              "id": "5-192-2",
+              "answers": [
+                {
+                  "text": "数据线或者是网络",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "使用ADB可以向android设备做哪些操作？",
+              "id": "5-192-3",
+              "answers": [
+                {
+                  "text": "安装应用程序、复制文件、运行shell命令或者是调试应用",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在Deepin linux系统中，可通过系统内置软件源、google提供的下载链接、android studio的sdk manager安装adb命令。",
+          "qas": [
+            {
+              "question": "在Deepin linux系统中，有哪些安装adb命令的方式？",
+              "id": "5-192-4",
+              "answers": [
+                {
+                  "text": "系统内置软件源、google提供的下载链接、android studio的sdk manager",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过系统内置软件源安装adb工具，执行命令：sudo apt install android-tools-adb。",
+          "qas": [
+            {
+              "question": "通过系统内置软件源安装adb工具的命令是什么？",
+              "id": "5-192-5",
+              "answers": [
+                {
+                  "text": "sudo apt install android-tools-adb",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过google提供的下载链接安装adb，需下载适用于Linux的SDK Platform-Tools，解压到/opt/android/sdk/，bash用户需添加路径到环境变量。",
+          "qas": [
+            {
+              "question": "通过google提供的下载链接安装adb时，下载的文件是什么？",
+              "id": "5-192-6",
+              "answers": [
+                {
+                  "text": "适用于Linux的SDK Platform-Tools",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "通过google提供的下载链接安装adb时，解压到哪个目录？",
+              "id": "5-192-7",
+              "answers": [
+                {
+                  "text": "/opt/android/sdk/",
+                  "answer_start": 70
+                }
+              ]
+            },
+            {
+              "question": "bash用户通过google提供的链接安装adb后，如何添加路径到环境变量？",
+              "id": "5-192-8",
+              "answers": [
+                {
+                  "text": "echo \"export PATH=\\\"/opt/android/sdk/platform-tools:\\$PATH\\\"\" >> ~/.bashrc",
+                  "answer_start": 90
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "执行adb devices提示没有权限，软件源安装的可重新拔插设备和重启Deepin系统；google下载的需参考android-udev-rules解决。",
+          "qas": [
+            {
+              "question": "执行adb devices提示没有权限，软件源安装的adb如何解决？",
+              "id": "5-192-9",
+              "answers": [
+                {
+                  "text": "重新拔插android设备和重启Deepin系统",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "question": "执行adb devices提示没有权限，google下载的adb如何解决？",
+              "id": "5-192-10",
+              "answers": [
+                {
+                  "text": "参考android-udev-rules解决",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

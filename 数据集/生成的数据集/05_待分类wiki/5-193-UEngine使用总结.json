@@ -1,0 +1,244 @@
+{
+  "data": [
+    {
+      "title": "UEngine使用总结",
+      "paragraphs": [
+        {
+          "context": "deepin 20.2.2的uengine环境可运行安卓应用，通过应用商店安装时，打开应用商店定位到“安卓应用”即可。",
+          "qas": [
+            {
+              "question": "在deepin 20.2.2中，如何通过应用商店安装安卓应用？",
+              "id": "5-193-1",
+              "answers": [
+                {
+                  "text": "打开应用商店定位到“安卓应用”即可。",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "终端安装uengine应用，可先用apt search uengine缩小范围，安装QQ用sudo apt install uengine.com.tencent.mobileqq，安装微信用sudo apt install uengine.com.tencent.mm。",
+          "qas": [
+            {
+              "question": "终端中如何搜索uengine相关应用包？",
+              "id": "5-193-2",
+              "answers": [
+                {
+                  "text": "用apt search uengine缩小范围。",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "终端安装QQ和微信的命令分别是什么？",
+              "id": "5-193-3",
+              "answers": [
+                {
+                  "text": "安装QQ：sudo apt install uengine.com.tencent.mobileqq；安装微信：sudo apt install uengine.com.tencent.mm。",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "图形化安装他人打包的deb包：打开下载的deb目录，用deb安装器打开，点击“安装”输入密码。",
+          "qas": [
+            {
+              "question": "如何用图形化方式安装他人打包的deb包？",
+              "id": "5-193-4",
+              "answers": [
+                {
+                  "text": "打开下载的deb目录，用deb安装器打开，点击“安装”输入密码。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "终端安装deb包：定位到deb目录，执行sudo dpkg -i XXX（XXX为deb文件名），依赖问题用sudo apt install -f修复。",
+          "qas": [
+            {
+              "question": "终端安装deb包的命令是什么？",
+              "id": "5-193-5",
+              "answers": [
+                {
+                  "text": "sudo dpkg -i XXX（XXX为deb文件名）",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "终端安装deb包出现依赖问题如何解决？",
+              "id": "5-193-6",
+              "answers": [
+                {
+                  "text": "用sudo apt install -f修复。",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEngine运行器安装APK：下载deb包安装运行器，右键APK选择“安装/卸载APK（UEngine运行器）”，点击安装并输入密码。",
+          "qas": [
+            {
+              "question": "如何用UEngine运行器安装APK？",
+              "id": "5-193-7",
+              "answers": [
+                {
+                  "text": "下载deb包安装运行器，右键APK选择“安装/卸载APK（UEngine运行器）”，点击安装并输入密码。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令安装APK：定位到APK目录，执行sudo /usr/bin/uengine-session-launch-helper -- uengine install --apk='XXX'（XXX为绝对路径，需root权限）。",
+          "qas": [
+            {
+              "question": "如何用命令安装APK？",
+              "id": "5-193-8",
+              "answers": [
+                {
+                  "text": "定位到APK目录，执行sudo /usr/bin/uengine-session-launch-helper -- uengine install --apk='XXX'（XXX为绝对路径，需root权限）。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "将应用打成deb包：用第三方安装器，选择要打包的应用点击打包，deb文件生成于桌面。",
+          "qas": [
+            {
+              "question": "如何将应用打成deb包给他人使用？",
+              "id": "5-193-9",
+              "answers": [
+                {
+                  "text": "用第三方安装器，选择要打包的应用点击打包，deb文件生成于桌面。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开uengine程序列表：终端输入/usr/bin/uengine-launch.sh --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity，或创建含对应内容的.desktop文件。",
+          "qas": [
+            {
+              "question": "如何打开uengine程序列表？",
+              "id": "5-193-10",
+              "answers": [
+                {
+                  "text": "终端输入/usr/bin/uengine-launch.sh --package=org.anbox.appmgr --component=org.anbox.appmgr.AppViewActivity，或创建含对应内容的.desktop文件。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "与uengine互通文件：在桌面、文件管理等位置通过uengine入口交换文件，其不访问根目录，需访问可安装Android第三方文件管理器。",
+          "qas": [
+            {
+              "question": "如何与uengine互通文件？",
+              "id": "5-193-11",
+              "answers": [
+                {
+                  "text": "在桌面、文件管理等位置通过uengine入口交换文件。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "uengine无法访问根目录时怎么办？",
+              "id": "5-193-12",
+              "answers": [
+                {
+                  "text": "安装Android第三方文件管理器。",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "右键卸载uengine应用：部分通过deb或Maicss安装的应用可右键卸载，其他需用其他方法。",
+          "qas": [
+            {
+              "question": "哪些uengine应用可以通过右键卸载？",
+              "id": "5-193-13",
+              "answers": [
+                {
+                  "text": "部分通过deb或Maicss安装的应用。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统设置卸载uengine应用：终端输入/usr/bin/uengine-launch.sh --action=android.intent.action.MAIN --package=com.android.settings --component=com.android.settings.Settings打开设置，点击应用部分，选择应用后卸载。",
+          "qas": [
+            {
+              "question": "如何通过系统设置卸载uengine应用？",
+              "id": "5-193-14",
+              "answers": [
+                {
+                  "text": "终端输入/usr/bin/uengine-launch.sh --action=android.intent.action.MAIN --package=com.android.settings --component=com.android.settings.Settings打开设置，点击应用部分，选择应用后卸载。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "终端卸载uengine应用：先安装aapt，定位APK目录用aapt dump badging XXX获取包名，再执行sudo /usr/bin/uengine-session-launch-helper -- uengine uninstall --pkg='XXX'（需root权限）。",
+          "qas": [
+            {
+              "question": "终端如何卸载uengine应用？",
+              "id": "5-193-15",
+              "answers": [
+                {
+                  "text": "先安装aapt，定位APK目录用aapt dump badging XXX获取包名，再执行sudo /usr/bin/uengine-session-launch-helper -- uengine uninstall --pkg='XXX'（需root权限）。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何获取APK的包名用于终端卸载？",
+              "id": "5-193-16",
+              "answers": [
+                {
+                  "text": "安装aapt，定位APK目录用aapt dump badging XXX获取。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "uengine中Android软件运行故障：部分软件无法运行，可查看anbox的Issues（项目链接：https://github.com/anbox/anbox/），因uengine基于anbox二次开发。",
+          "qas": [
+            {
+              "question": "uengine中Android软件运行故障怎么办？",
+              "id": "5-193-17",
+              "answers": [
+                {
+                  "text": "可查看anbox的Issues（项目链接：https://github.com/anbox/anbox/）。",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

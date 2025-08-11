@@ -1,0 +1,289 @@
+{
+  "data": [
+    {
+      "title": "debian-cd工作原理分析",
+      "paragraphs": [
+        {
+          "context": "debian-cd 是debian的官方的制作ISO的工具。",
+          "qas": [
+            {
+              "question": "debian-cd是什么？",
+              "id": "5-195-1",
+              "answers": [
+                {
+                  "text": "debian的官方的制作ISO的工具。",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装光盘包含autorun.inf、setup.exe、win32-loader.ini等windows启动引导支持文件，可移除。",
+          "qas": [
+            {
+              "question": "安装光盘中哪些是windows启动引导支持文件且可移除？",
+              "id": "5-195-2",
+              "answers": [
+                {
+                  "text": "autorun.inf、setup.exe、win32-loader.ini",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装光盘的debian目录是链接文件，指向当前目录。",
+          "qas": [
+            {
+              "question": "安装光盘中debian目录是什么？",
+              "id": "5-195-3",
+              "answers": [
+                {
+                  "text": "链接文件，指向当前目录。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装光盘的efi/是EFI引导文件目录，boot/是GRUB引导文件目录，isolinux/是ISO启动项菜单目录。",
+          "qas": [
+            {
+              "question": "安装光盘中efi/目录存放什么？",
+              "id": "5-195-4",
+              "answers": [
+                {
+                  "text": "EFI引导文件",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "安装光盘中boot/目录的作用是什么？",
+              "id": "5-195-5",
+              "answers": [
+                {
+                  "text": "存放GRUB引导文件",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "ISO启动项菜单存放在哪个目录？",
+              "id": "5-195-6",
+              "answers": [
+                {
+                  "text": "isolinux/",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装光盘的dists/是ISO内置仓库索引目录，pool/是ISO内置仓库数据目录。",
+          "qas": [
+            {
+              "question": "ISO内置仓库索引存放在哪个目录？",
+              "id": "5-195-7",
+              "answers": [
+                {
+                  "text": "dists/",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "安装光盘中pool/目录的作用是什么？",
+              "id": "5-195-8",
+              "answers": [
+                {
+                  "text": "存放ISO内置仓库数据",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "debian-cd工作流程第一步是初始化工作环境，建立相应目录，如deepin-cd/build/15/等用于存放制作ISO需要的文件和软件包，deepin-cd/output/15/用于存放完成的ISO文件和输出结果。",
+          "qas": [
+            {
+              "question": "debian-cd工作流程的第一步是什么？",
+              "id": "5-195-9",
+              "answers": [
+                {
+                  "text": "初始化工作环境，建立相应目录。",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "deepin-cd/build/15/目录的作用是什么？",
+              "id": "5-195-10",
+              "answers": [
+                {
+                  "text": "用于存放制作ISO需要的全部文件，软件包等等。",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "完成的ISO文件存放在哪个目录？",
+              "id": "5-195-11",
+              "answers": [
+                {
+                  "text": "deepin-cd/output/15/",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "debian-cd会依据定义的task完成包列表的分析，从本地仓库获取软件包，在build目录下创建新仓库，并检查依赖缺失，此功能目前已被isobuilder取代。",
+          "qas": [
+            {
+              "question": "debian-cd如何处理软件包？",
+              "id": "5-195-12",
+              "answers": [
+                {
+                  "text": "依据定义的task完成包列表的分析，从本地仓库获取软件包，在build目录下创建新仓库，并检查依赖缺失。",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "debian-cd处理软件包的功能被什么取代了？",
+              "id": "5-195-13",
+              "answers": [
+                {
+                  "text": "isobuilder",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "debian-cd执行/tools/make_disc_trees.pl创建构建ISO需要的目录树，包括启动引导文件等。",
+          "qas": [
+            {
+              "question": "debian-cd用什么创建构建ISO需要的目录树？",
+              "id": "5-195-14",
+              "answers": [
+                {
+                  "text": "/tools/make_disc_trees.pl",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "构建ISO需要的目录树包括哪些内容？",
+              "id": "5-195-15",
+              "answers": [
+                {
+                  "text": "启动引导文件等",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "debian-cd生成ISO内文件MD5值清单的参考命令为find . -type f | grep -v -e ^\\./\\.disk -e ^\\./dists | xargs md5sum >> md5sum.txt。",
+          "qas": [
+            {
+              "question": "debian-cd生成ISO内文件MD5值清单的参考命令是什么？",
+              "id": "5-195-16",
+              "answers": [
+                {
+                  "text": "find . -type f | grep -v -e ^\\./\\.disk -e ^\\./dists | xargs md5sum >> md5sum.txt",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "debian-cd最后调用xorriso生成ISO文件，结果保存在deepin-cd/output/15/目录。",
+          "qas": [
+            {
+              "question": "debian-cd用什么生成ISO文件？",
+              "id": "5-195-17",
+              "answers": [
+                {
+                  "text": "xorriso",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "xorriso生成的ISO文件保存在哪里？",
+              "id": "5-195-18",
+              "answers": [
+                {
+                  "text": "deepin-cd/output/15/目录",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "debian-cd的关键代码包括tools/apt-selection（封装APT工具）、tools/boot/kui/boot-amd64（生成启动项配置）、tools/make_disc_trees.pl（生成ISO目录结构树）。",
+          "qas": [
+            {
+              "question": "debian-cd的关键代码有哪些？",
+              "id": "5-195-19",
+              "answers": [
+                {
+                  "text": "tools/apt-selection、tools/boot/kui/boot-amd64、tools/make_disc_trees.pl",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "tools/apt-selection的作用是什么？",
+              "id": "5-195-20",
+              "answers": [
+                {
+                  "text": "对APT工具进行封装，使用独立的配置目录和配置文件来获取软件包。",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "question": "哪个代码用于生成启动项配置？",
+              "id": "5-195-21",
+              "answers": [
+                {
+                  "text": "tools/boot/kui/boot-amd64",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "基于grub2封装可引导ISO的命令为xorriso -as mkisofs -graft-points --modification-date=2017010903552500 -b boot/grub/i386-pc/eltorito.img -no-emul-boot -boot-load-size 4 -boot-info-table --grub2-boot-info --grub2-mbr /usr/lib/grub/i386-pc/boot_hybrid.img --efi-boot boot/grub/efi.img -efi-boot-part --efi-boot-image --protective-msdos-label -o test.iso --sort-weight 0 / --sort-weight 1 /boot ISO/.",
+          "qas": [
+            {
+              "question": "基于grub2封装可引导ISO的命令是什么？",
+              "id": "5-195-22",
+              "answers": [
+                {
+                  "text": "xorriso -as mkisofs -graft-points --modification-date=2017010903552500 -b boot/grub/i386-pc/eltorito.img -no-emul-boot -boot-load-size 4 -boot-info-table --grub2-boot-info --grub2-mbr /usr/lib/grub/i386-pc/boot_hybrid.img --efi-boot boot/grub/efi.img -efi-boot-part --efi-boot-image --protective-msdos-label -o test.iso --sort-weight 0 / --sort-weight 1 /boot ISO/.",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
