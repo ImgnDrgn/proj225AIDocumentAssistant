@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "title": "Git",
+      "paragraphs": [
+        {
+          "context": "git是一个开源的分布式版本控制系统，出自Linux Torvalds。",
+          "qas": [
+            {
+              "question": "git是什么？",
+              "id": "5-206-1",
+              "answers": [
+                {
+                  "text": "一个开源的分布式版本控制系统",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "git出自谁之手？",
+              "id": "5-206-2",
+              "answers": [
+                {
+                  "text": "Linux Torvalds",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "版本控制是记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。",
+          "qas": [
+            {
+              "question": "什么是版本控制？",
+              "id": "5-206-3",
+              "answers": [
+                {
+                  "text": "记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Git性能优良，绝大多数操作在本地执行，用哈希值保证数据完整性，上手难度比SVN高。",
+          "qas": [
+            {
+              "question": "Git的特点有哪些？",
+              "id": "5-206-4",
+              "answers": [
+                {
+                  "text": "性能优良，绝大多数操作在本地执行，用哈希值保证数据完整性，上手难度比SVN高",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Git与SVN相比，上手难度如何？",
+              "id": "5-206-5",
+              "answers": [
+                {
+                  "text": "Git的上手难度明显偏高",
+                  "answer_start": 49
+                }
+              ]
+            },
+            {
+              "question": "Git用什么保证数据的完整性？",
+              "id": "5-206-6",
+              "answers": [
+                {
+                  "text": "哈希值",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Git可使用sudo apt install -y git，或sudo apt install -y git-all安装所有模块。",
+          "qas": [
+            {
+              "question": "如何安装Git？",
+              "id": "5-206-7",
+              "answers": [
+                {
+                  "text": "sudo apt install -y git，或sudo apt install -y git-all安装所有模块",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "安装所有Git模块的命令是什么？",
+              "id": "5-206-8",
+              "answers": [
+                {
+                  "text": "sudo apt install -y git-all",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "验证Git安装可执行git --version命令。",
+          "qas": [
+            {
+              "question": "如何验证Git是否安装？",
+              "id": "5-206-9",
+              "answers": [
+                {
+                  "text": "执行git --version命令",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

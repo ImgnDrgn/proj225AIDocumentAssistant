@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "MySQL_Workbench",
+      "paragraphs": [
+        {
+          "context": "MySQL Workbench是专为MySQL设计的ER/数据库建模工具，提供数据建模、SQL开发和管理工具，支持其他RDBMS迁移至MySQL。",
+          "qas": [
+            {
+              "question": "MySQL Workbench是为哪种数据库设计的工具？",
+              "id": "5-204-1",
+              "answers": [
+                {
+                  "text": "MySQL",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "MySQL Workbench提供哪些工具？",
+              "id": "5-204-2",
+              "answers": [
+                {
+                  "text": "数据建模工具、SQL开发工具和全面的管理工具（包括服务器配置、用户管理、备份等）",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "MySQL Workbench支持哪些RDBMS迁移至MySQL？",
+              "id": "5-204-3",
+              "answers": [
+                {
+                  "text": "Microsoft SQL Server、Microsoft Access、Sybase ASE、PostreSQL及其他RDBMS",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装MySQL Workbench的命令是sudo apt-get install mysql-workbench。",
+          "qas": [
+            {
+              "question": "如何安装MySQL Workbench？",
+              "id": "5-204-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install mysql-workbench",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载MySQL Workbench的命令是sudo apt-get remove mysql-workbench。",
+          "qas": [
+            {
+              "question": "如何卸载MySQL Workbench？",
+              "id": "5-204-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove mysql-workbench",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MySQL Workbench的仓库地址是http://packages.deepin.com/deepin/pool/main/m/mysql-workbench/。",
+          "qas": [
+            {
+              "question": "MySQL Workbench的仓库地址是什么？",
+              "id": "5-204-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/m/mysql-workbench/",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+
+{
+  "data": [
+    {
+      "title": "使用 cowbuilder chroot 来构建包",
+      "paragraphs": [
+        {
+          "context": "初始化时，创建基础镜像的命令为 sudo cowbuilder --create，新创建的镜像在 /var/cache/pbuilder/base.cow/ 下。",
+          "qas": [
+            {
+              "question": "初始化时，创建基础镜像的命令是什么？",
+              "id": "5-201-1",
+              "answers": [
+                {
+                  "text": "sudo cowbuilder --create",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "新创建的基础镜像位于哪个目录下？",
+              "id": "5-201-2",
+              "answers": [
+                {
+                  "text": "/var/cache/pbuilder/base.cow/",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "常用操作中，更新基础镜像的命令是 sudo cowbuilder --update，构建软件包的命令是 sudo cowbuilder --build somepackage.dsc。",
+          "qas": [
+            {
+              "question": "如何更新基础镜像？",
+              "id": "5-201-3",
+              "answers": [
+                {
+                  "text": "sudo cowbuilder --update",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "构建软件包使用什么命令？",
+              "id": "5-201-4",
+              "answers": [
+                {
+                  "text": "sudo cowbuilder --build somepackage.dsc",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "为多个发行版构建包时，需先创建放置基础镜像的目录，如 /var/cache/pbuilder/buster-i386，再用 sudo cowbuilder --create --basepath /var/cache/pbuilder/buster-i386/base.cow --distribution buster --debootstrapopts --arch --debootstrapopts i386 创建基础镜像。",
+          "qas": [
+            {
+              "question": "为多个发行版构建包时，首先要做什么？",
+              "id": "5-201-5",
+              "answers": [
+                {
+                  "text": "创建一个放置基础镜像的目录，比如 /var/cache/pbuilder/$DIST-$ARCH/base.cow",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "创建buster-i386架构的基础镜像使用什么命令？",
+              "id": "5-201-6",
+              "answers": [
+                {
+                  "text": "sudo cowbuilder --create --basepath /var/cache/pbuilder/buster-i386/base.cow --distribution buster --debootstrapopts --arch --debootstrapopts i386",
+                  "answer_start": 77
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在家目录创建 .pbuilderrc 文件，可从Ubuntu pbuilder howto获取，在Multiple pbuilders部分注释 BASEPATH=\"/var/cache/pbuilder/$NAME/base.cow/ 行。",
+          "qas": [
+            {
+              "question": "在哪里可以获取 .pbuilderrc 文件？",
+              "id": "5-201-7",
+              "answers": [
+                {
+                  "text": "Ubuntu pbuilder howto",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "在 .pbuilderrc 文件的Multiple pbuilders部分需要注释哪行？",
+              "id": "5-201-8",
+              "answers": [
+                {
+                  "text": "BASEPATH=\"/var/cache/pbuilder/$NAME/base.cow/",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "保持cowbuilder chroot最新的命令为 sudo HOME=$HOME DIST=sid cowbuilder --update，HOME环境变量是必要的，因sudo会剥离环境变量。",
+          "qas": [
+            {
+              "question": "如何让cowbuilder chroot保持最新？",
+              "id": "5-201-9",
+              "answers": [
+                {
+                  "text": "sudo HOME=$HOME DIST=sid cowbuilder --update",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "为什么需要HOME环境变量？",
+              "id": "5-201-10",
+              "answers": [
+                {
+                  "text": "因为 sudo 出于安全原因会剥离环境变量，否则 cowbuilder 将找不到刚刚创建的 .pbuilderrc",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "构建buster的nano包时，先执行 dget -x http://ftp.de.debian.org/debian/pool/main/n/nano/nano_2.7.4-1.dsc，再用 sudo DIST=buster ARCH=i386 cowbuilder --build nano_2.7.4-1.dsc 为buster i386架构打包，结果在 /var/cache/pbuilder/buster-i386/result 目录。",
+          "qas": [
+            {
+              "question": "构建buster的nano包前需要执行什么命令？",
+              "id": "5-201-11",
+              "answers": [
+                {
+                  "text": "dget -x http://ftp.de.debian.org/debian/pool/main/n/nano/nano_2.7.4-1.dsc",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "为buster i386架构打包nano包的命令是什么？",
+              "id": "5-201-12",
+              "answers": [
+                {
+                  "text": "sudo DIST=buster ARCH=i386 cowbuilder --build nano_2.7.4-1.dsc",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "question": "构建结果存放在哪里？",
+              "id": "5-201-13",
+              "answers": [
+                {
+                  "text": "/var/cache/pbuilder/buster-i386/result",
+                  "answer_start": 201
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用eatmydata加速，可执行 DIST=sid cowbuilder --login --save 后 apt-get install eatmydata。pbuiler版本>=0.225时，.pbuilderrc中加 EXTRAPACKAGES=eatmydata 和 EATMYDATA=yes。",
+          "qas": [
+            {
+              "question": "如何通过命令安装eatmydata来加速？",
+              "id": "5-201-14",
+              "answers": [
+                {
+                  "text": "DIST=sid cowbuilder --login --save; apt-get install eatmydata",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "pbuiler版本>=0.225时，.pbuilderrc中需添加什么内容？",
+              "id": "5-201-15",
+              "answers": [
+                {
+                  "text": "EXTRAPACKAGES=eatmydata; EATMYDATA=yes",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "eatmydata版本<=26-2.1时，/etc/pbuilderrc中加 export LD_PRELOAD=${LD_PRELOAD:+$LDPRELOAD:}/usr/lib/libeatmydata/libeatmydata.so；版本>=82-2时加 export LD_PRELOAD=${LD_PRELOAD:+$LDPRELOAD:}libeatmydata.so。",
+          "qas": [
+            {
+              "question": "eatmydata版本<=26-2.1时，/etc/pbuilderrc中需添加什么？",
+              "id": "5-201-16",
+              "answers": [
+                {
+                  "text": "export LD_PRELOAD=${LD_PRELOAD:+$LDPRELOAD:}/usr/lib/libeatmydata/libeatmydata.so",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "eatmydata版本>=82-2时，/etc/pbuilderrc中需添加什么？",
+              "id": "5-201-17",
+              "answers": [
+                {
+                  "text": "export LD_PRELOAD=${LD_PRELOAD:+$LDPRELOAD:}libeatmydata.so",
+                  "answer_start": 142
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
