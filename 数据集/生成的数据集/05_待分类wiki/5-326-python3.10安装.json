@@ -1,0 +1,204 @@
+{
+  "data": [
+    {
+      "title": "python3.10安装",
+      "paragraphs": [
+        {
+          "context": "deepin v20.7的apt源中只有python 3.7版本，本文提供手动编译安装python3.10.7的步骤。",
+          "qas": [
+            {
+              "question": "deepin v20.7的apt源中默认的python版本是什么？",
+              "id": "5-326-1",
+              "answers": [
+                {
+                  "text": "3.7版本",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "本文提供了哪个版本python的安装步骤？",
+              "id": "5-326-2",
+              "answers": [
+                {
+                  "text": "python3.10.7",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装python3.10.7第一步是浏览器访问官方下载页下载source code的压缩包。",
+          "qas": [
+            {
+              "question": "安装python3.10.7的第一步是什么？",
+              "id": "5-326-3",
+              "answers": [
+                {
+                  "text": "浏览器访问官方下载页下载source code的压缩包。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建安装目录的命令为mkdir -p /home/admin/apps/python3.10，假设用户名为admin。",
+          "qas": [
+            {
+              "question": "假设用户名为admin，创建python3.10安装目录的命令是什么？",
+              "id": "5-326-4",
+              "answers": [
+                {
+                  "text": "mkdir -p /home/admin/apps/python3.10",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解压python3.10.7压缩包的命令是tar xf Python-3.10.7.tar.xz，然后进入该目录。",
+          "qas": [
+            {
+              "question": "如何解压python3.10.7的压缩包？",
+              "id": "5-326-5",
+              "answers": [
+                {
+                  "text": "tar xf Python-3.10.7.tar.xz",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "解压压缩包后需要做什么？",
+              "id": "5-326-6",
+              "answers": [
+                {
+                  "text": "进入该目录",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "预编译命令为./configure --prefix=/home/admin/apps/python3.10 --enable-optimizations，缺少依赖用apt安装。",
+          "qas": [
+            {
+              "question": "python3.10.7的预编译命令是什么？",
+              "id": "5-326-7",
+              "answers": [
+                {
+                  "text": "./configure --prefix=/home/admin/apps/python3.10 --enable-optimizations",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "预编译时缺少依赖该如何处理？",
+              "id": "5-326-8",
+              "answers": [
+                {
+                  "text": "用apt安装依赖",
+                  "answer_start": 88
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编译并安装python3.10.7使用make和make install命令，多核CPU可给make加-j参数加速。",
+          "qas": [
+            {
+              "question": "编译并安装python3.10.7使用什么命令？",
+              "id": "5-326-9",
+              "answers": [
+                {
+                  "text": "make和make install命令",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "多核CPU如何加速编译？",
+              "id": "5-326-10",
+              "answers": [
+                {
+                  "text": "给make加-j参数",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建软链接的命令为sudo ln -s /home/admin/apps/python3.10/bin/python3.10 /usr/bin和sudo ln -s /home/admin/apps/python3.10/bin/python3.10-config /usr/bin。",
+          "qas": [
+            {
+              "question": "创建python3.10软链接的命令有哪些？",
+              "id": "5-326-11",
+              "answers": [
+                {
+                  "text": "sudo ln -s /home/admin/apps/python3.10/bin/python3.10 /usr/bin和sudo ln -s /home/admin/apps/python3.10/bin/python3.10-config /usr/bin",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "验证python3.10安装时，python3 --version输出3.7，python3.10 --version输出3.10.7。",
+          "qas": [
+            {
+              "question": "验证时python3 --version的输出结果是什么？",
+              "id": "5-326-12",
+              "answers": [
+                {
+                  "text": "python 3.7",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "验证时python3.10 --version的输出结果是什么？",
+              "id": "5-326-13",
+              "answers": [
+                {
+                  "text": "python 3.10.7",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "建议不要覆盖原本的python3.7，因曾在centos7上从3.6升到3.9导致部分工具无法使用。",
+          "qas": [
+            {
+              "question": "是否建议覆盖原本的python3.7？",
+              "id": "5-326-14",
+              "answers": [
+                {
+                  "text": "不建议",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "question": "为什么不建议覆盖原本的python3.7？",
+              "id": "5-326-15",
+              "answers": [
+                {
+                  "text": "曾在centos7上从3.6升到3.9导致部分工具无法使用",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

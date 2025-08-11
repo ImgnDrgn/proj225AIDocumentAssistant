@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Lazarus",
+      "paragraphs": [
+        {
+          "context": "Lazarus是一个Pascal集成开发环境，可编译运行简单Pascal程序，有强窗体处理功能，界面清晰，操作简单，与Delphi高度兼容，可读性好、编写容易。",
+          "qas": [
+            {
+              "question": "Lazarus是什么？",
+              "id": "5-323-1",
+              "answers": [
+                {
+                  "text": "一个Pascal集成开发环境",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Lazarus能编译运行什么程序？",
+              "id": "5-323-2",
+              "answers": [
+                {
+                  "text": "简单的Pascal程序",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "Lazarus与哪个软件高度兼容？",
+              "id": "5-323-3",
+              "answers": [
+                {
+                  "text": "Delphi",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "Lazarus有哪些特点？",
+              "id": "5-323-4",
+              "answers": [
+                {
+                  "text": "界面清晰，操作简单方便，与Delphi高度兼容，可读性好、编写容易",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Lazarus的命令是sudo apt-get install lazarus。",
+          "qas": [
+            {
+              "question": "如何安装Lazarus？",
+              "id": "5-323-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install lazarus",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Lazarus的命令是sudo apt-get remove lazarus。",
+          "qas": [
+            {
+              "question": "如何卸载Lazarus？",
+              "id": "5-323-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove lazarus",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Lazarus的仓库地址是http://packages.deepin.com/deepin/pool/main/l/lazarus/。",
+          "qas": [
+            {
+              "question": "Lazarus的仓库地址是什么？",
+              "id": "5-323-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/l/lazarus/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "title": "NASM",
+      "paragraphs": [
+        {
+          "context": "Netwide Assembler（简称NASM）是基于英特尔x86架构的汇编与反汇编工具，可编写16位、32位（IA-32）和64位（x86-64）程序，是Linux平台上受欢迎的汇编工具之一。",
+          "qas": [
+            {
+              "question": "NASM的全称是什么？",
+              "id": "5-330-1",
+              "answers": [
+                {
+                  "text": "Netwide Assembler",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "NASM基于什么架构？",
+              "id": "5-330-2",
+              "answers": [
+                {
+                  "text": "英特尔x86架构",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "NASM能编写哪些位数的程序？",
+              "id": "5-330-3",
+              "answers": [
+                {
+                  "text": "16位、32位（IA-32）和64位（x86-64）",
+                  "answer_start": 50
+                }
+              ]
+            },
+            {
+              "question": "NASM在哪个平台上很受欢迎？",
+              "id": "5-330-4",
+              "answers": [
+                {
+                  "text": "Linux平台",
+                  "answer_start": 95
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NASM的安装命令为sudo apt install nasm。",
+          "qas": [
+            {
+              "question": "如何安装NASM？",
+              "id": "5-330-5",
+              "answers": [
+                {
+                  "text": "sudo apt install nasm",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NASM的卸载命令为sudo apt remove --purge nasm。",
+          "qas": [
+            {
+              "question": "如何卸载NASM？",
+              "id": "5-330-6",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge nasm",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NASM的用法格式为nasm [-@ response_file] [options...] [--] filename，查看版本可使用nasm -v（或--v）。",
+          "qas": [
+            {
+              "question": "NASM的基本用法格式是什么？",
+              "id": "5-330-7",
+              "answers": [
+                {
+                  "text": "nasm [-@ response_file] [options...] [--] filename",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "如何查看NASM的版本？",
+              "id": "5-330-8",
+              "answers": [
+                {
+                  "text": "nasm -v（或--v）",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NASM的仓库地址是http://packages.deepin.com/deepin/pool/main/n/nasm/。",
+          "qas": [
+            {
+              "question": "NASM的仓库地址是什么？",
+              "id": "5-330-9",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/n/nasm/",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NASM的相关链接包括维基百科（https://zh.wikipedia.org/zh-cn/Netwide_Assembler）和官方网站（https://www.nasm.org/）。",
+          "qas": [
+            {
+              "question": "NASM的维基百科链接是什么？",
+              "id": "5-330-10",
+              "answers": [
+                {
+                  "text": "https://zh.wikipedia.org/zh-cn/Netwide_Assembler",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "NASM的官方网站链接是什么？",
+              "id": "5-330-11",
+              "answers": [
+                {
+                  "text": "https://www.nasm.org/",
+                  "answer_start": 95
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

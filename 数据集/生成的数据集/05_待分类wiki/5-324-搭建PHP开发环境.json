@@ -1,0 +1,179 @@
+{
+  "data": [
+    {
+      "title": "搭建PHP开发环境",
+      "paragraphs": [
+        {
+          "context": "XAMPP是一个把Apache网页服务器与PHP、Perl、phpMyAdmin及MariaDB集合在一起的安装包，可在电脑上建立网页服务器。",
+          "qas": [
+            {
+              "question": "XAMPP包含哪些组件？",
+              "id": "5-324-1",
+              "answers": [
+                {
+                  "text": "Apache网页服务器、PHP、Perl、phpMyAdmin及MariaDB",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "XAMPP的作用是什么？",
+              "id": "5-324-2",
+              "answers": [
+                {
+                  "text": "允许用户在自己的电脑上轻易的建立网页服务器",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "XAMPP for linux的下载地址为https://www.apachefriends.org，以xampp-linux-x64-7.3.1-0-installer.run为例，下载后在安装包所在文件夹的终端中执行sudo ./xampp-linux-x64-7.3.1-0-installer.run启动图形化安装程序。",
+          "qas": [
+            {
+              "question": "XAMPP for linux的下载地址是什么？",
+              "id": "5-324-3",
+              "answers": [
+                {
+                  "text": "https://www.apachefriends.org",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "如何启动xampp-linux-x64-7.3.1-0-installer.run的图形化安装程序？",
+              "id": "5-324-4",
+              "answers": [
+                {
+                  "text": "在安装包所在文件夹的终端中执行sudo ./xampp-linux-x64-7.3.1-0-installer.run",
+                  "answer_start": 77
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "XAMPP安装完成后会自动运行，需手动进入manage server界面启动全部选项。在Deepin系统中需通过命令行启动，启动命令为sudo ./opt/lampp/lampp start，重启为sudo ./opt/lampp/lampp restart，停止为sudo ./opt/lampp/lampp stop。",
+          "qas": [
+            {
+              "question": "XAMPP安装完成后如何启动全部选项？",
+              "id": "5-324-5",
+              "answers": [
+                {
+                  "text": "手动点击进入manage server界面，点击启动全部选项",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "在Deepin系统中，启动XAMPP的命令是什么？",
+              "id": "5-324-6",
+              "answers": [
+                {
+                  "text": "sudo ./opt/lampp/lampp start",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "在Deepin系统中，如何重启XAMPP？",
+              "id": "5-324-7",
+              "answers": [
+                {
+                  "text": "执行命令sudo ./opt/lampp/lampp restart",
+                  "answer_start": 118
+                }
+              ]
+            },
+            {
+              "question": "在Deepin系统中，停止XAMPP的命令是什么？",
+              "id": "5-324-8",
+              "answers": [
+                {
+                  "text": "sudo ./opt/lampp/lampp stop",
+                  "answer_start": 159
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "测试XAMPP是否成功，可打开浏览器输入localhost看是否显示welcome to xampp网页，输入localhost/phpmyadmin看是否打开phpmyadmin管理网页，两者均正常则成功。",
+          "qas": [
+            {
+              "question": "如何测试XAMPP是否安装成功？",
+              "id": "5-324-9",
+              "answers": [
+                {
+                  "text": "打开浏览器，在地址栏输入localhost，能打开welcome to xampp网页；输入localhost/phpmyadmin，能打开phpmyadmin管理网页，以上两项均无问题则说明成功",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "在浏览器中输入什么地址可以查看phpmyadmin管理网页？",
+              "id": "5-324-10",
+              "answers": [
+                {
+                  "text": "localhost/phpmyadmin",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用XAMPP开发PHP程序，需在opt/lampp/htdocs文件夹下用命令sudo touch /opt/lampp/htdocs/name.php创建php文件，opt/lampp/apache2下的htdocs文件夹中的php文件无法在浏览器中打开。",
+          "qas": [
+            {
+              "question": "在XAMPP环境中，应在哪个文件夹下创建PHP文件才能在浏览器中打开？",
+              "id": "5-324-11",
+              "answers": [
+                {
+                  "text": "opt/lampp/htdocs文件夹",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "在opt/lampp/htdocs文件夹下创建名为name.php的PHP文件的命令是什么？",
+              "id": "5-324-12",
+              "answers": [
+                {
+                  "text": "sudo touch /opt/lampp/htdocs/name.php",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "question": "哪个文件夹下的PHP文件不能在浏览器中打开？",
+              "id": "5-324-13",
+              "answers": [
+                {
+                  "text": "opt/lampp/apache2下的htdocs文件夹",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在Deepin系统中推荐使用Sublime Text编辑器进行PHP编辑。",
+          "qas": [
+            {
+              "question": "在Deepin系统中，推荐使用什么编辑器进行PHP编辑？",
+              "id": "5-324-14",
+              "answers": [
+                {
+                  "text": "Sublime Text",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

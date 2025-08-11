@@ -1,0 +1,429 @@
+{
+  "data": [
+    {
+      "title": "虚拟环境管理",
+      "paragraphs": [
+        {
+          "context": "虚拟环境是相对于系统级环境独立的环境，可减少第三方库依赖，实现多个开发环境独立。",
+          "qas": [
+            {
+              "question": "什么是虚拟环境？",
+              "id": "5-327-1",
+              "answers": [
+                {
+                  "text": "相对于系统级环境独立的环境，可减少第三方库依赖，实现多个开发环境独立。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "pyvenv是Python 3.3、3.4推荐的虚拟环境管理方式，在Python 3.6已弃用，改为venv。",
+          "qas": [
+            {
+              "question": "pyvenv在哪个Python版本中被弃用？",
+              "id": "5-327-2",
+              "answers": [
+                {
+                  "text": "Python 3.6",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "Python 3.6及之后推荐用什么替代pyvenv？",
+              "id": "5-327-3",
+              "answers": [
+                {
+                  "text": "venv",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "venv/pyvenv的优点是Python安装完成自带，不用安装第三方库；缺点是功能单一，环境管理不集中。",
+          "qas": [
+            {
+              "question": "venv/pyvenv的优点是什么？",
+              "id": "5-327-4",
+              "answers": [
+                {
+                  "text": "Python安装完成自带，不用安装第三方库",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "venv/pyvenv的缺点是什么？",
+              "id": "5-327-5",
+              "answers": [
+                {
+                  "text": "功能单一，环境管理不集中",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用`python -m venv <venv name>`创建venv虚拟环境，如`python -m venv ./venv`在当前目录创建venv文件夹。",
+          "qas": [
+            {
+              "question": "如何创建venv虚拟环境？",
+              "id": "5-327-6",
+              "answers": [
+                {
+                  "text": "使用`python -m venv <venv name>`命令",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "`python -m venv ./venv`命令的作用是什么？",
+              "id": "5-327-7",
+              "answers": [
+                {
+                  "text": "在当前目录创建一个venv文件夹，其内为虚拟环境所需文件",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "venv/pyvenv激活环境使用`source <path-to-venv>/bin/activate`，如`source ./venv/bin/activate`。",
+          "qas": [
+            {
+              "question": "如何激活venv/pyvenv虚拟环境？",
+              "id": "5-327-8",
+              "answers": [
+                {
+                  "text": "使用`source <path-to-venv>/bin/activate`命令",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除venv/pyvenv虚拟环境只需删除创建的文件夹，如`rm -rf ./venv`。",
+          "qas": [
+            {
+              "question": "如何删除venv/pyvenv虚拟环境？",
+              "id": "5-327-9",
+              "answers": [
+                {
+                  "text": "删除创建的文件夹，如`rm -rf ./venv`",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "virtualenv是第三方库，优点是有更多参数定制环境，缺点是没有集中管理。",
+          "qas": [
+            {
+              "question": "virtualenv的优点是什么？",
+              "id": "5-327-10",
+              "answers": [
+                {
+                  "text": "有更多的参数来定制所需环境",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "virtualenv的缺点是什么？",
+              "id": "5-327-11",
+              "answers": [
+                {
+                  "text": "没有集中管理",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装virtualenv使用`pip3 install virtualenv`命令。",
+          "qas": [
+            {
+              "question": "如何安装virtualenv？",
+              "id": "5-327-12",
+              "answers": [
+                {
+                  "text": "使用`pip3 install virtualenv`命令",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "virtualenv创建环境用`virtualenv <dest>`，如`virtualenv -p /usr/bin/python3.9 ./venv39`创建基于Python 3.9的环境。",
+          "qas": [
+            {
+              "question": "如何使用virtualenv创建基于Python 3.9的虚拟环境？",
+              "id": "5-327-13",
+              "answers": [
+                {
+                  "text": "使用`virtualenv -p /usr/bin/python3.9 ./venv39`命令（需要系统安装python3.9）",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "virtualenvwrapper是virtualenv的二次封装，优点是统一环境管理，创建、切换方便，Linux下好用；缺点是对powershell支持差，很久不更新。",
+          "qas": [
+            {
+              "question": "virtualenvwrapper的优点有哪些？",
+              "id": "5-327-14",
+              "answers": [
+                {
+                  "text": "具有统一的环境管理；创建、切换环境更加方便；在Linux下使用很方便",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "question": "virtualenvwrapper的缺点是什么？",
+              "id": "5-327-15",
+              "answers": [
+                {
+                  "text": "对于powershell支持较差；已经很久不更新了",
+                  "answer_start": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装virtualenvwrapper使用`pip install virtualenvwrapper`命令。",
+          "qas": [
+            {
+              "question": "如何安装virtualenvwrapper？",
+              "id": "5-327-16",
+              "answers": [
+                {
+                  "text": "使用`pip install virtualenvwrapper`命令",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "virtualenvwrapper创建环境用`mkvirtualenv`，环境在`WORKON_HOME`里，如`mkvirtualenv myvenv`。",
+          "qas": [
+            {
+              "question": "virtualenvwrapper用什么命令创建环境？",
+              "id": "5-327-17",
+              "answers": [
+                {
+                  "text": "mkvirtualenv",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "virtualenvwrapper创建的环境存放在哪里？",
+              "id": "5-327-18",
+              "answers": [
+                {
+                  "text": "WORKON_HOME里",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "virtualenvwrapper激活环境用`workon myvenv`，删除用`rmvirtualenv myvenv`。",
+          "qas": [
+            {
+              "question": "如何激活virtualenvwrapper创建的虚拟环境？",
+              "id": "5-327-19",
+              "answers": [
+                {
+                  "text": "使用`workon myvenv`命令",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何删除virtualenvwrapper创建的虚拟环境？",
+              "id": "5-327-20",
+              "answers": [
+                {
+                  "text": "使用`rmvirtualenv myvenv`命令",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "pipenv集成环境管理与包管理，缺点是卡、慢。安装用`pip install --user pipenv`，用Pipfile和Pipfile.lock管理包。",
+          "qas": [
+            {
+              "question": "pipenv的优点是什么？",
+              "id": "5-327-21",
+              "answers": [
+                {
+                  "text": "集成环境管理与包管理",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "pipenv的缺点是什么？",
+              "id": "5-327-22",
+              "answers": [
+                {
+                  "text": "卡、慢",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "如何安装pipenv？",
+              "id": "5-327-23",
+              "answers": [
+                {
+                  "text": "使用`pip install --user pipenv`命令",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "poetry集成环境与依赖管理，安装用`curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -`。",
+          "qas": [
+            {
+              "question": "poetry的功能是什么？",
+              "id": "5-327-24",
+              "answers": [
+                {
+                  "text": "集成了环境管理与依赖安装",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何安装poetry？",
+              "id": "5-327-25",
+              "answers": [
+                {
+                  "text": "使用`curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -`命令",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "poetry更新用`poetry self update`命令。",
+          "qas": [
+            {
+              "question": "如何更新poetry？",
+              "id": "5-327-26",
+              "answers": [
+                {
+                  "text": "使用`poetry self update`命令",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "poetry新建项目用`poetry new poetry-demo`，已有项目用`poetry init`，用pyproject.toml管理环境与依赖。",
+          "qas": [
+            {
+              "question": "poetry如何创建新项目的环境？",
+              "id": "5-327-27",
+              "answers": [
+                {
+                  "text": "使用`poetry new poetry-demo`命令",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "poetry如何为已有项目创建环境？",
+              "id": "5-327-28",
+              "answers": [
+                {
+                  "text": "进入项目目录，使用`poetry init`命令",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "poetry激活环境用`poetry shell`，安装库可编辑pyproject.toml后用`poetry install`，或用`poetry add package`。",
+          "qas": [
+            {
+              "question": "如何激活poetry创建的虚拟环境？",
+              "id": "5-327-29",
+              "answers": [
+                {
+                  "text": "使用`poetry shell`命令",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "poetry有哪些安装库的方法？",
+              "id": "5-327-30",
+              "answers": [
+                {
+                  "text": "1. 编辑pyproject.toml添加依赖，再用`poetry install`；2. 使用`poetry add package`添加",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "poetry删除环境用`poetry remove poetry-demo`命令。",
+          "qas": [
+            {
+              "question": "如何删除poetry创建的虚拟环境？",
+              "id": "5-327-31",
+              "answers": [
+                {
+                  "text": "使用`poetry remove poetry-demo`命令",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "poetry常见问题：无法安装pytorch与torchvision，可下载whl文件用`pip install <whl>`安装。",
+          "qas": [
+            {
+              "question": "poetry无法安装pytorch与torchvision时如何解决？",
+              "id": "5-327-32",
+              "answers": [
+                {
+                  "text": "下载需要的whl文件，使用`pip install <whl>`安装",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
