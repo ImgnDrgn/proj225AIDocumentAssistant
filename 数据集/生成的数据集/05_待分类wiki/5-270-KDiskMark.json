@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "KDiskMark",
+      "paragraphs": [
+        {
+          "context": "KDiskmark 是一款图形用户界面的磁盘测速软件，用 Qt 编写，不需要 KDE 依赖包。",
+          "qas": [
+            {
+              "question": "KDiskMark是什么类型的软件？",
+              "id": "5-270-1",
+              "answers": [
+                {
+                  "text": "图形用户界面的磁盘测速软件",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "KDiskMark是用什么编写的？",
+              "id": "5-270-2",
+              "answers": [
+                {
+                  "text": "Qt",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "KDiskMark需要KDE依赖包吗？",
+              "id": "5-270-3",
+              "answers": [
+                {
+                  "text": "不需要",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装KDiskMark可执行命令：wget https://github.com/JonMagon/KDiskMark/releases/download/2.3.0/KDiskMark-2.3.0-fio-3.28-x86_64.AppImage，然后执行./KDiskMark-2.3.0-fio-3.28-x86_64.AppImage。",
+          "qas": [
+            {
+              "question": "如何安装KDiskMark？",
+              "id": "5-270-4",
+              "answers": [
+                {
+                  "text": "wget https://github.com/JonMagon/KDiskMark/releases/download/2.3.0/KDiskMark-2.3.0-fio-3.28-x86_64.AppImage，然后执行./KDiskMark-2.3.0-fio-3.28-x86_64.AppImage",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载KDiskMark的命令是rm -f KDiskMark-2.3.0-fio-3.28-x86_64.AppImage。",
+          "qas": [
+            {
+              "question": "怎样卸载KDiskMark？",
+              "id": "5-270-5",
+              "answers": [
+                {
+                  "text": "rm -f KDiskMark-2.3.0-fio-3.28-x86_64.AppImage",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "KDiskMark的Github主页是https://github.com/JonMagon/KDiskMark。",
+          "qas": [
+            {
+              "question": "KDiskMark的Github主页是什么？",
+              "id": "5-270-6",
+              "answers": [
+                {
+                  "text": "https://github.com/JonMagon/KDiskMark",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

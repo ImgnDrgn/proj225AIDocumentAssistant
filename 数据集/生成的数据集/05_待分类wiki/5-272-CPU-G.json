@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "title": "CPU-G",
+      "paragraphs": [
+        {
+          "context": "CPU-G是一款CPU检测软件，可检测CPU名称、厂商、内核进程等参数。",
+          "qas": [
+            {
+              "question": "CPU-G是什么软件？",
+              "id": "5-272-1",
+              "answers": [
+                {
+                  "text": "CPU检测软件",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "CPU-G能检测哪些参数？",
+              "id": "5-272-2",
+              "answers": [
+                {
+                  "text": "CPU名称、厂商、内核进程、内部和外部时钟、局部时钟监测等参数。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装CPU-G的命令是sudo apt-get install cpu-g。",
+          "qas": [
+            {
+              "question": "如何安装CPU-G？",
+              "id": "5-272-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install cpu-g",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载CPU-G的命令是sudo apt-get remove cpu-g。",
+          "qas": [
+            {
+              "question": "怎样卸载CPU-G？",
+              "id": "5-272-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove cpu-g",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CPU-G的仓库地址是http://packages.deepin.com/deepin/pool/main/c/cpu-g/。",
+          "qas": [
+            {
+              "question": "CPU-G的仓库地址是什么？",
+              "id": "5-272-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/c/cpu-g/",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

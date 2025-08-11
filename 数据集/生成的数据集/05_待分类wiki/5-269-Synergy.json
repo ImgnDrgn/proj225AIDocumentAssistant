@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "title": "Synergy",
+      "paragraphs": [
+        {
+          "context": "Synergy是一款键盘鼠标共享软件，可在多台计算机间共享鼠标和键盘，支持跨设备复制粘贴，鼠标可跨屏幕移动。",
+          "qas": [
+            {
+              "question": "Synergy是什么软件？",
+              "id": "5-269-1",
+              "answers": [
+                {
+                  "text": "一款键盘鼠标共享软件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Synergy能实现什么功能？",
+              "id": "5-269-2",
+              "answers": [
+                {
+                  "text": "在多台计算机间共享鼠标和键盘，支持跨设备复制粘贴，鼠标可跨屏幕移动",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Synergy的命令为：sudo apt-get install synergy",
+          "qas": [
+            {
+              "question": "如何安装Synergy？",
+              "id": "5-269-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install synergy",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Synergy的命令为：sudo apt-get remove synergy",
+          "qas": [
+            {
+              "question": "怎样卸载Synergy？",
+              "id": "5-269-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove synergy",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Synergy的仓库地址是http://packages.deepin.com/deepin/pool/main/s/synergy/",
+          "qas": [
+            {
+              "question": "Synergy的仓库地址是什么？",
+              "id": "5-269-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/synergy/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

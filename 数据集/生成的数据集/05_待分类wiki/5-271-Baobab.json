@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Baobab",
+      "paragraphs": [
+        {
+          "context": "Baobab是分析磁盘使用情况的图形工具，可分析本地硬盘、挂载硬盘或设备空间，界面简单，结果以环状或树形状显示。",
+          "qas": [
+            {
+              "question": "Baobab是什么工具？",
+              "id": "5-271-1",
+              "answers": [
+                {
+                  "text": "分析磁盘使用情况的图形工具",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "Baobab可以分析哪些存储空间？",
+              "id": "5-271-2",
+              "answers": [
+                {
+                  "text": "本地硬盘空间、挂载硬盘或设备空间",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "Baobab的界面特点是什么？",
+              "id": "5-271-3",
+              "answers": [
+                {
+                  "text": "简单易操作",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "question": "Baobab的分析结果以什么形式显示？",
+              "id": "5-271-4",
+              "answers": [
+                {
+                  "text": "环状或树形状",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Baobab的命令是sudo apt-get install baobab。",
+          "qas": [
+            {
+              "question": "如何安装Baobab？",
+              "id": "5-271-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install baobab",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Baobab的命令是sudo apt-get remove baobab。",
+          "qas": [
+            {
+              "question": "怎样卸载Baobab？",
+              "id": "5-271-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove baobab",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Baobab的仓库地址是http://packages.deepin.com/deepin/pool/main/b/baobab/。",
+          "qas": [
+            {
+              "question": "Baobab的仓库地址是什么？",
+              "id": "5-271-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/b/baobab/",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

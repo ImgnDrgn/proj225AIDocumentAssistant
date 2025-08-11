@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Hardinfo",
+      "paragraphs": [
+        {
+          "context": "Hardinfo是一个系统信息查看软件，支持查看系统硬件、驱动等信息，生成报告，进行简单性能基准测试。",
+          "qas": [
+            {
+              "question": "Hardinfo是什么软件？",
+              "id": "5-273-1",
+              "answers": [
+                {
+                  "text": "一个系统信息查看软件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Hardinfo支持查看哪些信息？",
+              "id": "5-273-2",
+              "answers": [
+                {
+                  "text": "系统硬件信息、系统驱动方面的信息、系统其他信息",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "Hardinfo能生成信息报告吗？",
+              "id": "5-273-3",
+              "answers": [
+                {
+                  "text": "能",
+                  "answer_start": 46
+                }
+              ]
+            },
+            {
+              "question": "Hardinfo可以进行性能基准测试吗？",
+              "id": "5-273-4",
+              "answers": [
+                {
+                  "text": "能进行简单的性能基准测试",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Hardinfo的命令是sudo apt-get install hardinfo。",
+          "qas": [
+            {
+              "question": "如何安装Hardinfo？",
+              "id": "5-273-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install hardinfo",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Hardinfo的命令是sudo apt-get remove hardinfo。",
+          "qas": [
+            {
+              "question": "怎样卸载Hardinfo？",
+              "id": "5-273-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove hardinfo",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Hardinfo的仓库地址是http://packages.deepin.com/deepin/pool/main/h/hardinfo/。",
+          "qas": [
+            {
+              "question": "Hardinfo的仓库地址是什么？",
+              "id": "5-273-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/h/hardinfo/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
