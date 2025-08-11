@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "LiteIDE",
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "id": "5-170-1",
+              "question": "Eclipse是什么类型的开发工具？",
+              "answers": [
+                {
+                  "text": "开源的集成开发环境（IDE）",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-170-2",
+              "question": "Eclipse最初主要用于什么编程语言开发？",
+              "answers": [
+                {
+                  "text": "Java",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "id": "5-170-3",
+              "question": "Eclipse支持哪些编程语言开发？",
+              "answers": [
+                {
+                  "text": "Java、C/C++、Python、PHP等多种编程语言",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "id": "5-170-4",
+              "question": "Eclipse的安装命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install eclipse",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "id": "5-170-5",
+              "question": "如何卸载Eclipse？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove eclipse",
+                  "answer_start": 145
+                }
+              ]
+            },
+            {
+              "id": "5-170-6",
+              "question": "Eclipse的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/e/eclipse/",
+                  "answer_start": 184
+                }
+              ]
+            }
+          ],
+          "context": "Eclipse是一个开源的集成开发环境（IDE），最初主要用于Java语言开发，通过安装不同的插件可以支持C/C++、Python、PHP等多种编程语言开发。它具有代码补全、语法高亮、调试等功能。安装命令：sudo apt-get install eclipse。卸载命令：sudo apt-get remove eclipse。仓库地址：http://packages.deepin.com/deepin/pool/main/e/eclipse/"
+        }
+      ]
+    }
+  ]
+}

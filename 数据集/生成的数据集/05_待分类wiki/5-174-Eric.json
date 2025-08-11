@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "Eric",
+      "paragraphs": [
+        {
+          "context": "Eric是一个全功能Python和Ruby的编辑器和IDE，它是基于跨平台的Qt GUI工具包，整合高度灵活的编辑控制。Eric包括一个插件系统，它允许使用从网上下载插件且易于扩展到IDE功能中。安装命令为sudo apt-get install eric，卸载命令为sudo apt-get remove eric，仓库地址是http://packages.deepin.com/deepin/pool/main/e/eric/",
+          "qas": [
+            {
+              "id": "5-174-1",
+              "question": "Eric是用于什么编程语言的编辑器和IDE？",
+              "answers": [
+                {
+                  "text": "Python和Ruby",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-174-2",
+              "question": "Eric基于什么工具包开发？",
+              "answers": [
+                {
+                  "text": "跨平台的Qt GUI工具包",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "5-174-3",
+              "question": "Eric的安装命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install eric",
+                  "answer_start": 96
+                }
+              ]
+            },
+            {
+              "id": "5-174-4",
+              "question": "如何卸载Eric？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove eric",
+                  "answer_start": 125
+                }
+              ]
+            },
+            {
+              "id": "5-174-5",
+              "question": "Eric的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/e/eric/",
+                  "answer_start": 154
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

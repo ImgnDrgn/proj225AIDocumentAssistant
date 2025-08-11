@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "Geany",
+      "paragraphs": [
+        {
+          "context": "Geany是一个跨平台的开源集成开发环境，它支持基本的语法高亮、代码自动完成、调用提示、插件扩展。支持文件类型有C、CPP、Java、Python、PHP、 HTML、DocBook、Perl、LateX和Bash脚本。安装命令为sudo apt-get install geany，卸载命令为sudo apt-get remove geany。仓库地址是http://packages.deepin.com/deepin/pool/main/g/geany/。常见问题中，点击执行时无法调用深度终端的解决方法是：在首选项→工具→虚拟终端，修改终端的命令为deepin-terminal -x \"/bin/sh\" %c，点击“应用”按钮后即可。",
+          "qas": [
+            {
+              "id": "5-178-1",
+              "question": "Geany是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "跨平台的开源集成开发环境",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-178-2",
+              "question": "Geany支持哪些功能？",
+              "answers": [
+                {
+                  "text": "基本的语法高亮、代码自动完成、调用提示、插件扩展",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "5-178-3",
+              "question": "Geany支持哪些文件类型？",
+              "answers": [
+                {
+                  "text": "C、CPP、Java、Python、PHP、 HTML、DocBook、Perl、LateX和Bash脚本",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "id": "5-178-4",
+              "question": "如何安装Geany？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install geany",
+                  "answer_start": 102
+                }
+              ]
+            },
+            {
+              "id": "5-178-5",
+              "question": "如何卸载Geany？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove geany",
+                  "answer_start": 129
+                }
+              ]
+            },
+            {
+              "id": "5-178-6",
+              "question": "Geany的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/geany/",
+                  "answer_start": 157
+                }
+              ]
+            },
+            {
+              "id": "5-178-7",
+              "question": "点击执行时无法调用深度终端，该如何解决？",
+              "answers": [
+                {
+                  "text": "在首选项→工具→虚拟终端，修改终端的命令为deepin-terminal -x \"/bin/sh\" %c，点击“应用”按钮后即可",
+                  "answer_start": 214
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "VMware_Workstation",
+      "paragraphs": [
+        {
+          "context": "VMware Workstation是一款桌面虚拟计算机软件，提供用户在单一的桌面上同时运行不同的操作系统，和进行开发、测试 、部署新的应用程序的最佳解决方案。还可以在实体机器上以及可便于携带的虚拟机器中模拟完整的网络环境，同时还具有实时快照、拖曳共享文件夹、支持 PXE 等功能。",
+          "qas": [
+            {
+              "id": "5-163-1",
+              "question": "VMware Workstation是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "桌面虚拟计算机软件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-163-2",
+              "question": "VMware Workstation能让用户在单一桌面同时运行什么？",
+              "answers": [
+                {
+                  "text": "不同的操作系统",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "5-163-3",
+              "question": "VMware Workstation具有哪些功能？",
+              "answers": [
+                {
+                  "text": "在实体机器上以及可便于携带的虚拟机器中模拟完整的网络环境，同时还具有实时快照、拖曳共享文件夹、支持 PXE 等功能",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装命令：sudo apt-get install vmware-workstation-install；卸载命令：sudo apt-get remove vmware-workstation-install",
+          "qas": [
+            {
+              "id": "5-163-4",
+              "question": "如何安装VMware Workstation？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install vmware-workstation-install",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-163-5",
+              "question": "卸载VMware Workstation的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove vmware-workstation-install",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址：http://packages.deepin.com/deepin/pool/non-free/v/vmware-workstation-install/；官方网站：https://www.vmware.com",
+          "qas": [
+            {
+              "id": "5-163-6",
+              "question": "VMware Workstation的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/v/vmware-workstation-install/",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-163-7",
+              "question": "VMware的官方网站是多少？",
+              "answers": [
+                {
+                  "text": "https://www.vmware.com",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

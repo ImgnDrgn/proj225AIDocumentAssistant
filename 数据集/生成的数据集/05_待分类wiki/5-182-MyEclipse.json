@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "MyEclipse",
+      "paragraphs": [
+        {
+          "context": "MyEclipse是一款软件开发工具，是对EclipseIDE的扩展，包括了完备的编码、调试、测试和发布功能，完整支持HTML，Struts，JSP，CSS，Javascript，Spring，SQL，Hibernate。也是一个用于开发Java, J2EE的 Eclipse 插件集合，可以支持Java Servlet，AJAX，JSP，JSF，Struts，Spring，Hibernate，EJB3，JDBC数据库链接工具等多项功能。",
+          "qas": [
+            {
+              "id": "5-182-1",
+              "question": "MyEclipse是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "软件开发工具",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-182-2",
+              "question": "MyEclipse是对哪个工具的扩展？",
+              "answers": [
+                {
+                  "text": "EclipseIDE",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-182-3",
+              "question": "MyEclipse包含哪些功能？",
+              "answers": [
+                {
+                  "text": "完备的编码、调试、测试和发布功能",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-182-4",
+              "question": "MyEclipse支持HTML吗？",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "5-182-5",
+              "question": "MyEclipse可以用于开发哪些语言或技术？",
+              "answers": [
+                {
+                  "text": "Java, J2EE，支持Java Servlet，AJAX，JSP，JSF，Struts，Spring，Hibernate，EJB3，JDBC数据库链接工具等",
+                  "answer_start": 78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装命令：sudo apt-get install myeclipse；卸载命令：sudo apt-get remove myeclipse；仓库地址：http://packages.deepin.com/deepin/pool/non-free/m/myeclipse/",
+          "qas": [
+            {
+              "id": "5-182-6",
+              "question": "如何安装MyEclipse？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install myeclipse",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-182-7",
+              "question": "卸载MyEclipse的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove myeclipse",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "5-182-8",
+              "question": "MyEclipse的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/m/myeclipse/",
+                  "answer_start": 64
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

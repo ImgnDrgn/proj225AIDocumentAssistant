@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "Boxes",
+      "paragraphs": [
+        {
+          "context": "Boxes(gnome-boxes)是一个桌面虚拟化管理工具，能够与其他系统（可以是虚拟的、本地的、远程的系统）上执行的应用程序相交互，还能够连接、访问和使用远程机器、远程虚拟机、本地虚拟机，而且还支持访问可移动设备中的虚拟机。",
+          "qas": [
+            {
+              "id": "5-162-1",
+              "question": "Boxes(gnome-boxes)是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "桌面虚拟化管理工具",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "5-162-2",
+              "question": "Boxes能与哪些系统上的应用程序交互？",
+              "answers": [
+                {
+                  "text": "其他系统（可以是虚拟的、本地的、远程的系统）",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "5-162-3",
+              "question": "Boxes支持访问哪些类型的虚拟机？",
+              "answers": [
+                {
+                  "text": "远程机器、远程虚拟机、本地虚拟机，可移动设备中的虚拟机",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装命令为sudo apt-get install boxes，卸载命令为sudo apt-get remove boxes。",
+          "qas": [
+            {
+              "id": "5-162-4",
+              "question": "如何安装Boxes？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install boxes",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-162-5",
+              "question": "如何卸载Boxes？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove boxes",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Boxes的仓库地址是http://packages.deepin.com/deepin/pool/main/b/boxes/，官方网站是https://apps.gnome.org/zh-CN/app/org.gnome.Boxes/。",
+          "qas": [
+            {
+              "id": "5-162-6",
+              "question": "Boxes的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/b/boxes/",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-162-7",
+              "question": "Boxes的官方网站是什么？",
+              "answers": [
+                {
+                  "text": "https://apps.gnome.org/zh-CN/app/org.gnome.Boxes/",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

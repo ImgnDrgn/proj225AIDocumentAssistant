@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "Intel_XDK",
+      "paragraphs": [
+        {
+          "context": "Intel XDK是一款HTML5跨平台集成开发工具，利用HTML5的技术可以快速开发应用或者游戏，并快速打包成诸如安卓，IOS，WindowsPhone等平台上的应用并发布到应用商店，可谓是一条龙服务了，并有crosswalk做支持，在设备上运行起来也更流畅。",
+          "qas": [
+            {
+              "id": "5-172-1",
+              "question": "Intel XDK是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "HTML5跨平台集成开发工具",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-172-2",
+              "question": "Intel XDK利用什么技术开发应用或游戏？",
+              "answers": [
+                {
+                  "text": "HTML5",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "5-172-3",
+              "question": "Intel XDK可以打包成哪些平台的应用？",
+              "answers": [
+                {
+                  "text": "安卓，IOS，WindowsPhone等平台",
+                  "answer_start": 50
+                }
+              ]
+            },
+            {
+              "id": "5-172-4",
+              "question": "Intel XDK有什么做支持以保证运行流畅？",
+              "answers": [
+                {
+                  "text": "crosswalk",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装命令：sudo apt-get install intel-xdk；卸载命令：sudo apt-get remove intel-xdk；仓库地址：http://packages.deepin.com/deepin/pool/non-free/i/intel-xdk/",
+          "qas": [
+            {
+              "id": "5-172-5",
+              "question": "安装Intel XDK的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install intel-xdk",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-172-6",
+              "question": "卸载Intel XDK的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove intel-xdk",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-172-7",
+              "question": "Intel XDK的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/i/intel-xdk/",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
