@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "Disks",
+      "paragraphs": [
+        {
+          "context": "Disks是一款磁盘管理工具，可读取硬盘、光驱、U盘等信息，还有查看硬盘详细信息、格式化硬盘、编辑分区类型、创建镜像文件等功能。",
+          "qas": [
+            {
+              "question": "Disks是什么类型的工具？",
+              "id": "5-285-1",
+              "answers": [
+                {
+                  "text": "磁盘管理工具",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "Disks能读取哪些设备的信息？",
+              "id": "5-285-2",
+              "answers": [
+                {
+                  "text": "硬盘、光驱、U盘等",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "Disks具有哪些功能？",
+              "id": "5-285-3",
+              "answers": [
+                {
+                  "text": "查看硬盘详细信息、格式化硬盘、编辑分区类型、创建镜像文件等",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Disks的命令是sudo apt-get install gnome-disk-utility。",
+          "qas": [
+            {
+              "question": "如何安装Disks？",
+              "id": "5-285-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gnome-disk-utility",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Disks的命令是sudo apt-get remove gnome-disk-utility。",
+          "qas": [
+            {
+              "question": "怎样卸载Disks？",
+              "id": "5-285-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gnome-disk-utility",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Disks的仓库地址是http://packages.deepin.com/deepin/pool/main/g/gnome-disk-utility/。",
+          "qas": [
+            {
+              "question": "Disks的仓库地址是什么？",
+              "id": "5-285-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gnome-disk-utility/",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

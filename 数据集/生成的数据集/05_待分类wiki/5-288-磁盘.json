@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "磁盘",
+      "paragraphs": [
+        {
+          "context": "图形化磁盘管理工具有磁盘管理器（deepin-diskmanager）和gparted。",
+          "qas": [
+            {
+              "question": "有哪些图形化磁盘管理工具？",
+              "id": "5-288-1",
+              "answers": [
+                {
+                  "text": "磁盘管理器（deepin-diskmanager）、gparted",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "deepin-diskmanager是什么工具？",
+              "id": "5-288-2",
+              "answers": [
+                {
+                  "text": "图形化磁盘管理工具",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "常用终端磁盘管理命令包括df、lsblk、mount、umount、file、mkfs。",
+          "qas": [
+            {
+              "question": "常用的终端磁盘管理命令有哪些？",
+              "id": "5-288-3",
+              "answers": [
+                {
+                  "text": "df、lsblk、mount、umount、file、mkfs",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "常见磁盘术语包含挂载磁盘、磁盘格式、介质类型、磁盘分区、挂载点、卷标和标签。",
+          "qas": [
+            {
+              "question": "常见的磁盘术语有哪些？",
+              "id": "5-288-4",
+              "answers": [
+                {
+                  "text": "挂载磁盘、磁盘格式、介质类型、磁盘分区、挂载点、卷标和标签",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "question": "挂载磁盘属于常见磁盘术语吗？",
+              "id": "5-288-5",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

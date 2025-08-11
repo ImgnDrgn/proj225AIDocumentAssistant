@@ -1,0 +1,159 @@
+{
+  "data": [
+    {
+      "title": "Filelight",
+      "paragraphs": [
+        {
+          "context": "Filelight是KDE图形磁盘使用分析器，属于KDE Gear应用程序集。",
+          "qas": [
+            {
+              "question": "Filelight是什么？",
+              "id": "5-284-1",
+              "answers": [
+                {
+                  "text": "KDE图形磁盘使用分析器，属于KDE Gear应用程序集。",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Filelight通过多级饼图、日暴图或环形图展示分区或目录中目录及空间使用量。",
+          "qas": [
+            {
+              "question": "Filelight用什么方式展示磁盘使用情况？",
+              "id": "5-284-2",
+              "answers": [
+                {
+                  "text": "多级饼图、日暴图或环形图",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户可在代表目录的饼图段上重复分析该目录，右击可打开文件管理器、终端模拟器等。",
+          "qas": [
+            {
+              "question": "在代表目录的饼图段上右击可以做什么？",
+              "id": "5-284-3",
+              "answers": [
+                {
+                  "text": "打开该位置的文件管理器或终端模拟器，或复制到剪贴板或删除目录",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "右键单击代表文件的饼图段可进行打开、复制到剪贴板或删除操作。",
+          "qas": [
+            {
+              "question": "右键单击代表文件的饼图段能进行哪些操作？",
+              "id": "5-284-4",
+              "answers": [
+                {
+                  "text": "打开、复制到剪贴板或删除它",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Filelight的命令是sudo apt install filelight。",
+          "qas": [
+            {
+              "question": "如何安装Filelight？",
+              "id": "5-284-5",
+              "answers": [
+                {
+                  "text": "sudo apt install filelight",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Filelight的命令是sudo apt remove --purge filelight。",
+          "qas": [
+            {
+              "question": "如何卸载Filelight？",
+              "id": "5-284-6",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge filelight",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Filelight的仓库地址是http://packages.deepin.com/deepin/pool/main/f/filelight/。",
+          "qas": [
+            {
+              "question": "Filelight的仓库地址是什么？",
+              "id": "5-284-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/f/filelight/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Filelight的维基百科（英文）链接是https://en.wikipedia.org/wiki/Filelight。",
+          "qas": [
+            {
+              "question": "Filelight的英文维基百科链接是什么？",
+              "id": "5-284-8",
+              "answers": [
+                {
+                  "text": "https://en.wikipedia.org/wiki/Filelight",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Filelight官方网站是https://apps.kde.org/zh-cn/filelight/。",
+          "qas": [
+            {
+              "question": "Filelight的官方网站是什么？",
+              "id": "5-284-9",
+              "answers": [
+                {
+                  "text": "https://apps.kde.org/zh-cn/filelight/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Filelight的Github主页是https://github.com/KDE/filelight。",
+          "qas": [
+            {
+              "question": "Filelight的Github主页在哪里？",
+              "id": "5-284-10",
+              "answers": [
+                {
+                  "text": "https://github.com/KDE/filelight",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

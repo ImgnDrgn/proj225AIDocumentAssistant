@@ -1,0 +1,299 @@
+{
+  "data": [
+    {
+      "title": "deepin下使用Ventoy安装Windows",
+      "paragraphs": [
+        {
+          "context": "Ventoy是一个制作可启动U盘的开源工具，能轻松实现多镜像启动，支持常见的操作系统和硬件类型，插件功能可自定义、扩展启动盘功能。",
+          "qas": [
+            {
+              "question": "Ventoy是什么？",
+              "id": "5-290-1",
+              "answers": [
+                {
+                  "text": "Ventoy是一个制作可启动U盘的开源工具，能轻松实现多镜像启动，支持常见的操作系统和硬件类型，插件功能可自定义、扩展启动盘功能。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "制作Ventoy启动盘需准备8G或以上U盘，将U盘中所有文件复制到电脑或备份到其他位置。",
+          "qas": [
+            {
+              "question": "制作Ventoy启动盘需要准备多大的U盘？",
+              "id": "5-290-2",
+              "answers": [
+                {
+                  "text": "8G或以上",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "制作Ventoy启动盘前需对U盘做什么？",
+              "id": "5-290-3",
+              "answers": [
+                {
+                  "text": "将U盘中所有文件复制到电脑或备份到其他位置",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进入Ventoy下载页，从说明中的链接选择一个（建议选蓝奏云或镜像站），下载ventoy-x.x.xx-linux.tar.gz。",
+          "qas": [
+            {
+              "question": "制作Ventoy启动盘时需下载什么文件？",
+              "id": "5-290-4",
+              "answers": [
+                {
+                  "text": "ventoy-x.x.xx-linux.tar.gz",
+                  "answer_start": 63
+                }
+              ]
+            },
+            {
+              "question": "下载Ventoy文件建议选择哪些链接？",
+              "id": "5-290-5",
+              "answers": [
+                {
+                  "text": "蓝奏云或镜像站",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解压下载的文件，在文件管理器中打开解压后的文件夹，可双击VentoyGUI.x86_64运行，或右击空白处选择“在终端中打开”，输入命令./VentoyGUI.x86_64运行。",
+          "qas": [
+            {
+              "question": "如何运行Ventoy安装程序？",
+              "id": "5-290-6",
+              "answers": [
+                {
+                  "text": "双击VentoyGUI.x86_64文件运行；或右击窗口内空白处，选择“在终端中打开”，输入命令./VentoyGUI.x86_64",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "确认U盘中文件已备份后，在“设备”处选择U盘，点击“安装”。安装完成后，U盘显示名称为Ventoy，将系统镜像复制到U盘任意目录即可作为启动盘，不影响存储其他文件。",
+          "qas": [
+            {
+              "question": "安装Ventoy时的操作步骤是什么？",
+              "id": "5-290-7",
+              "answers": [
+                {
+                  "text": "确认U盘中文件已备份后，在“设备”处选择U盘，点击“安装”",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Ventoy安装完成后，如何使用启动盘？",
+              "id": "5-290-8",
+              "answers": [
+                {
+                  "text": "将系统镜像复制到U盘的任意目录下即可作为该系统的启动盘使用，U盘存储其他文件的功能不受影响",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若安装Ventoy失败，可尝试换另外2种方式，再不行换U盘、USB接口等。使用中有问题可阅读常见问题、文档手册或在论坛发帖。",
+          "qas": [
+            {
+              "question": "安装Ventoy失败该怎么办？",
+              "id": "5-290-9",
+              "answers": [
+                {
+                  "text": "尝试换另外2种方式，再不行就换U盘、USB接口等；使用中有问题可阅读常见问题、文档手册或在论坛发帖",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Windows系统镜像可从微软官网（提供Windows 11/10/8.1磁盘映像）、MSDN我告诉你（大部分原版镜像）、Windsys、ThirdWIN等获取。",
+          "qas": [
+            {
+              "question": "哪里可以下载Windows系统镜像？",
+              "id": "5-290-10",
+              "answers": [
+                {
+                  "text": "微软官网、MSDN我告诉你、Windsys、ThirdWIN等",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "访问Edgeless下载页，点击“访问网页版”右侧小箭头里的“下载ISO镜像”获取Edgeless的iso文件，按手动制作教程操作；进入“插件包/磁盘数据”下载分区助手插件包，放在U盘的/Edgeless/Resources中。",
+          "qas": [
+            {
+              "question": "如何获取Edgeless的iso文件？",
+              "id": "5-290-11",
+              "answers": [
+                {
+                  "text": "访问Edgeless下载页，点击“访问网页版”右侧小箭头里的“下载ISO镜像”",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "分区助手插件包应放在U盘的哪个位置？",
+              "id": "5-290-12",
+              "answers": [
+                {
+                  "text": "/Edgeless/Resources",
+                  "answer_start": 146
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "插入U盘重启电脑，按对应品牌电脑进BIOS的键进入BIOS，关闭安全启动（Legacy传统启动不需要），在启动项中选择U盘回车，在Ventoy引导菜单选择Edgeless回车进入。",
+          "qas": [
+            {
+              "question": "如何进入Edgeless系统？",
+              "id": "5-290-13",
+              "answers": [
+                {
+                  "text": "插入U盘，重启电脑，按对应品牌电脑进BIOS的键进入BIOS，关闭安全启动（Legacy传统启动不需要），在启动项中选择U盘回车，在Ventoy引导菜单中选择Edgeless，回车",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进入Edgeless后，用分区助手（或DiskGenius）调整分区（不要调整deepin系统盘和数据盘分区，谨慎操作），迁移文件，使电脑中有32GB以上的NTFS分区（传统启动需设为活动分区）。",
+          "qas": [
+            {
+              "question": "进入Edgeless后如何调整分区？",
+              "id": "5-290-14",
+              "answers": [
+                {
+                  "text": "用分区助手（或DiskGenius）调整分区（不要调整deepin系统盘和数据盘分区，谨慎操作），迁移文件，使电脑中有32GB以上的NTFS分区（传统启动需设为活动分区）",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开Dism++，点击“文件”>“释放镜像”，浏览选中Windows镜像及安装分区，勾选“添加引导”和“格式化”，点击“释放”。",
+          "qas": [
+            {
+              "question": "如何用Dism++释放Windows镜像？",
+              "id": "5-290-15",
+              "answers": [
+                {
+                  "text": "打开Dism++，点击“文件”>“释放镜像”，点击“浏览”，分别选中要安装的Windows镜像及安装到的分区，勾选“添加引导”和“格式化”，点击“释放”",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若之前电脑已安装正版激活的Windows 10/11，重装相同版本会自动激活，否则需自行激活，建议支持正版。",
+          "qas": [
+            {
+              "question": "重装Windows后如何激活系统？",
+              "id": "5-290-16",
+              "answers": [
+                {
+                  "text": "若之前电脑已安装正版激活的Windows 10/11，重装相同版本（家庭版、专业版等）的Windows时会自动激活。否则，请自行激活系统",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若deepin启动项丢失，可参考Linux Mint文档（适用于deepin和多数Linux），将系统镜像拷贝至Ventoy U盘，重启到试用版系统修复；或用deepin live系统中系统修复工具的修复引导功能。",
+          "qas": [
+            {
+              "question": "deepin启动项丢失怎么办？",
+              "id": "5-290-17",
+              "answers": [
+                {
+                  "text": "参考Linux Mint文档（也适用于deepin和大多数常见的Linux），将deepin、Ubuntu等系统的镜像拷贝至Ventoy U盘，重启到其试用版系统中，进行修复操作；也可以使用deepin live系统中系统修复工具的修复引导功能",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Web UI模式适用于Ventoy 1.0.48及更高版本，解压文件后在终端输入sudo sh ./VentoyWeb.sh，浏览器访问http://127.0.0.1:24680，选择U盘点击安装，完成后按Ctrl+C退出。",
+          "qas": [
+            {
+              "question": "如何用Web UI模式安装Ventoy？",
+              "id": "5-290-18",
+              "answers": [
+                {
+                  "text": "解压下载的tar.gz文件，从文件管理器打开至解压后文件的目录下，右击空白处，点击“在终端中打开”，在终端中输入sudo sh ./VentoyWeb.sh并回车执行，输入密码，在浏览器中输入网址http://127.0.0.1:24680并进入，点击“安装”，将Ventoy安装到U盘上，安装完成后，切换到终端，按Ctrl+C退出",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "Web UI模式适用于哪个版本的Ventoy？",
+              "id": "5-290-19",
+              "answers": [
+                {
+                  "text": "1.0.48或者更高版本",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令行模式安装Ventoy：解压文件，打开终端，插入U盘并备份文件，查看U盘标识（如sdd1，略去数字取前3个字母），输入命令sudo sh Ventoy2Disk.sh -i /dev/XXX（XXX为U盘标识），输入密码，两次输入y确认，安装成功后U盘名称为Ventoy。",
+          "qas": [
+            {
+              "question": "如何用命令行模式安装Ventoy？",
+              "id": "5-290-20",
+              "answers": [
+                {
+                  "text": "解压下载的tar.gz文件，从文件管理器打开至解压后文件的目录下，右击文件管理器窗口的空白处，点击“在终端中打开”，插入U盘并拷贝走所有文件，查看U盘标识（略去数字，只输入前3个字母），输入命令sudo sh Ventoy2Disk.sh -i /dev/XXX（XXX为U盘标识），回车执行，输入密码，两次输入y继续操作",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "从deepin安装镜像启动，当“Install Deepin”高亮时，按e（uefi）或Tab（Legacy），删除“livecd-installer ”（包括空格，uefi需在“locales=zh_CN”后加“.UTF-8”），按F10（uefi）或回车（Legacy）进入Live模式。",
+          "qas": [
+            {
+              "question": "如何进入deepin的Live模式？",
+              "id": "5-290-21",
+              "answers": [
+                {
+                  "text": "从deepin安装镜像启动，当任意一个“Install Deepin”高亮时，按 e（uefi启动）或者Tab键（ Legacy启动），在显示的代码中用方向键移动光标，删去“livecd-installer ”（包括installer后的一个空格）（uefi启动模式下还要在“locales=zh_CN”后面添加“.UTF-8”） ，按F10（uefi启动）或者回车（Legacy启动）",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

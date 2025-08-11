@@ -1,0 +1,339 @@
+{
+  "data": [
+    {
+      "title": "硬盘加密",
+      "paragraphs": [
+        {
+          "context": "磁盘加密功能主要是基于系统工具cryptsetup实现。",
+          "qas": [
+            {
+              "question": "磁盘加密功能主要基于哪个系统工具实现？",
+              "id": "5-287-1",
+              "answers": [
+                {
+                  "text": "cryptsetup",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "device-mapper是linux内核组件，主要作用是将物理块设备映射到高层次的虚拟块设备上，是LVM、EVMS、RAIDS、dm-crypt磁盘加密的基础设施。",
+          "qas": [
+            {
+              "question": "device-mapper是什么？",
+              "id": "5-287-2",
+              "answers": [
+                {
+                  "text": "linux内核组件，主要作用是将物理块设备映射到高层次的虚拟块设备上，是LVM、EVMS、RAIDS、dm-crypt磁盘加密的基础设施。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "device-mapper的工作原理是将自身提供的虚拟块设备上的数据传输到对应（所映射的）物理块设备上，数据在传输时可以被改变，磁盘加密利用了这一特性。",
+          "qas": [
+            {
+              "question": "device-mapper的工作原理是什么？",
+              "id": "5-287-3",
+              "answers": [
+                {
+                  "text": "将自身提供的虚拟块设备上的数据传输到对应（所映射的）物理块设备上，数据在传输时可以被改变。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "device-mapper主要有用户空间配置交互工具dmsetup和libdevmapper.so库，源码在LVM2项目上。",
+          "qas": [
+            {
+              "question": "device-mapper主要有哪些用户空间工具和库？",
+              "id": "5-287-4",
+              "answers": [
+                {
+                  "text": "dmsetup和libdevmapper.so库",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dm-crypt是device-mapper的一个加密目标，使用内核加密API提供透明块设备加密。",
+          "qas": [
+            {
+              "question": "dm-crypt是什么？",
+              "id": "5-287-5",
+              "answers": [
+                {
+                  "text": "device-mapper的一个加密目标，使用内核加密API提供透明块设备加密。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开启dm-crypt需在编译内核时在 Device Drivers/Multi-device support (RAID and LVM) 配置项中开启CONFIG_DM_CRYPT。",
+          "qas": [
+            {
+              "question": "如何开启dm-crypt？",
+              "id": "5-287-6",
+              "answers": [
+                {
+                  "text": "在编译内核时在 Device Drivers/Multi-device support (RAID and LVM) 配置项中开启CONFIG_DM_CRYPT。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置dm-crypt需要用户空间组件device mapper library(LVM2包的一部分)和cryptsetup工具。",
+          "qas": [
+            {
+              "question": "配置dm-crypt需要哪些用户空间组件？",
+              "id": "5-287-7",
+              "answers": [
+                {
+                  "text": "device mapper library(LVM2包的一部分)和cryptsetup工具。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LUKS是为Linux磁盘加密而创建的规范，实现了一种平台独立的磁盘格式，保证了口令以安全的文档化方式实现密码管理。",
+          "qas": [
+            {
+              "question": "LUKS是什么？",
+              "id": "5-287-8",
+              "answers": [
+                {
+                  "text": "为Linux磁盘加密而创建的规范，实现了一种平台独立的磁盘格式，保证了口令以安全的文档化方式实现密码管理。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LUKS的最大特点是其实现的磁盘格式，基于此它可以创建并存储加密相关元数据，这也是它区别于plain dm-crypt最大特点。",
+          "qas": [
+            {
+              "question": "LUKS的最大特点是什么？",
+              "id": "5-287-9",
+              "answers": [
+                {
+                  "text": "其实现的磁盘格式，基于此它可以创建并存储加密相关元数据。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cryptsetup是基于dm-crypt实现的一款用户空间磁盘加密工具，包含了plain dm-crypt volumes, LUKS volumes, loop-AES,TrueCrypt (包含了VeraCrypt扩展)和BitLocker磁盘加密格式。",
+          "qas": [
+            {
+              "question": "cryptsetup是什么？",
+              "id": "5-287-10",
+              "answers": [
+                {
+                  "text": "基于dm-crypt实现的一款用户空间磁盘加密工具，包含了plain dm-crypt volumes, LUKS volumes, loop-AES,TrueCrypt (包含了VeraCrypt扩展)和BitLocker磁盘加密格式。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cryptsetup luksFormat /dev/sdb1 基于物理分区创建luks格式分区。",
+          "qas": [
+            {
+              "question": "如何基于物理分区创建luks格式分区？",
+              "id": "5-287-11",
+              "answers": [
+                {
+                  "text": "cryptsetup luksFormat /dev/sdb1",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cryptsetup luksOpen /dev/vda8 luks_test 打开luks分区，会在/dev/mapper/创建luks_test设备。",
+          "qas": [
+            {
+              "question": "如何打开luks分区并在/dev/mapper/创建luks_test设备？",
+              "id": "5-287-12",
+              "answers": [
+                {
+                  "text": "cryptsetup luksOpen /dev/vda8 luks_test",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mkfs.ext4 /dev/mapper/luks_test 对虚拟设备进行一般文件类型格式化。",
+          "qas": [
+            {
+              "question": "如何对/dev/mapper/luks_test虚拟设备进行ext4格式化？",
+              "id": "5-287-13",
+              "answers": [
+                {
+                  "text": "mkfs.ext4 /dev/mapper/luks_test",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mount /dev/mapper/luks_test /luks/ 挂载设备到/luks目录。",
+          "qas": [
+            {
+              "question": "如何将/dev/mapper/luks_test设备挂载到/luks目录？",
+              "id": "5-287-14",
+              "answers": [
+                {
+                  "text": "mount /dev/mapper/luks_test /luks/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "umount /luks/ 卸载设备。",
+          "qas": [
+            {
+              "question": "如何卸载/luks/目录下的设备？",
+              "id": "5-287-15",
+              "answers": [
+                {
+                  "text": "umount /luks/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cryptsetup luksClose luks_test 关闭映射设备。",
+          "qas": [
+            {
+              "question": "如何关闭luks_test映射设备？",
+              "id": "5-287-16",
+              "answers": [
+                {
+                  "text": "cryptsetup luksClose luks_test",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cryptsetup luksAddKey /dev/vda8 修改或增加口令。",
+          "qas": [
+            {
+              "question": "如何修改或增加/dev/vda8的口令？",
+              "id": "5-287-17",
+              "answers": [
+                {
+                  "text": "cryptsetup luksAddKey /dev/vda8",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cryptsetup luksRemoveKey /dev/vda8 删除口令。",
+          "qas": [
+            {
+              "question": "如何删除/dev/vda8的口令？",
+              "id": "5-287-18",
+              "answers": [
+                {
+                  "text": "cryptsetup luksRemoveKey /dev/vda8",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "全盘加密其实没有对整个磁盘进行加密，引导和内核所在/boot分区未被加密，不然内核无法引导，系统无法加载。",
+          "qas": [
+            {
+              "question": "全盘加密是否对整个磁盘进行加密？",
+              "id": "5-287-19",
+              "answers": [
+                {
+                  "text": "没有，引导和内核所在/boot分区未被加密。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "国密算法是一种加密算法，由内核crypto API提供支持，算法名SM4。",
+          "qas": [
+            {
+              "question": "国密算法的算法名是什么？由什么提供支持？",
+              "id": "5-287-20",
+              "answers": [
+                {
+                  "text": "SM4，由内核crypto API提供支持。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "内核加载系统必需要开启initrd功能，如此可以在内核启动早期提供用户空间以运行cryptsetup，对加密分区解密。",
+          "qas": [
+            {
+              "question": "内核加载系统为什么必须开启initrd功能？",
+              "id": "5-287-21",
+              "answers": [
+                {
+                  "text": "可以在内核启动早期提供用户空间以运行cryptsetup，对加密分区解密。",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "实现一次加密多个分区，是利用dm-crypt可以堆叠LVM逻辑分区的特性。",
+          "qas": [
+            {
+              "question": "如何实现一次加密多个分区？",
+              "id": "5-287-22",
+              "answers": [
+                {
+                  "text": "利用dm-crypt可以堆叠LVM逻辑分区的特性。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
