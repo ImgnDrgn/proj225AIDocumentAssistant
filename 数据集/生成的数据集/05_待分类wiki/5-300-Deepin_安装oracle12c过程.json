@@ -1,0 +1,224 @@
+{
+  "data": [
+    {
+      "title": "Deepin_安装oracle12c过程",
+      "paragraphs": [
+        {
+          "context": "安装oracle12c需建立软链接，包括创建/usr/lib64目录，以及多个文件的链接。",
+          "qas": [
+            {
+              "question": "安装oracle12c时需要建立哪些软链接？",
+              "id": "5-300-1",
+              "answers": [
+                {
+                  "text": "mkdir /usr/lib64；ln -s /usr/bin/awk /bin/awk；ln -s /usr/bin/basename /bin/basename；ln -s /usr/bin/rpm /bin/rpm；ln -s /etc /etc/rc.d；ln -s /usr/lib/x86_64-linux-gnu/libpthread_nonshared.a /usr/lib64/；ln -s /usr/lib/x86_64-linux-gnu/libc_nonshared.a /usr/lib64/；ln -s /lib/x86_64-linux-gnu/libgcc_s.so.1 /lib；ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6 /usr/lib64/",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "调整参数需将两个文本内容追加进/etc/security/limits.conf和/etc/sysctl.conf。",
+          "qas": [
+            {
+              "question": "安装oracle12c时如何调整参数？",
+              "id": "5-300-2",
+              "answers": [
+                {
+                  "text": "把两个文本里的内容追加进/etc/security/limits.conf 和/etc/sysctl.conf",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装oracle12c所需依赖可通过apt-get install libaio-dev sysstat unixodbc-dev libelf-dev unzip g++ zlib1g-dev命令安装。",
+          "qas": [
+            {
+              "question": "安装oracle12c需要哪些依赖？",
+              "id": "5-300-3",
+              "answers": [
+                {
+                  "text": "libaio-dev sysstat unixodbc-dev libelf-dev unzip g++ zlib1g-dev",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "建立组和用户的命令为groupadd dba；useradd -d /home/oracle -m -c \"Oracle Database\" -g dba -G sudo -s `which bash` oracle，之后用passwd设密码。",
+          "qas": [
+            {
+              "question": "安装oracle12c时如何建立组和用户？",
+              "id": "5-300-4",
+              "answers": [
+                {
+                  "text": "groupadd dba；useradd -d /home/oracle -m -c \"Oracle Database\" -g dba -G sudo -s `which bash` oracle",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "建立oracle用户后如何设置密码？",
+              "id": "5-300-5",
+              "answers": [
+                {
+                  "text": "用passwd命令设立用户密码",
+                  "answer_start": 122
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "oracle12c安装默认目录为/home/oracle/app，无需另外建立目录。",
+          "qas": [
+            {
+              "question": "oracle12c的默认安装目录是什么？",
+              "id": "5-300-6",
+              "answers": [
+                {
+                  "text": "/home/oracle/app",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "将oracle12c软件解压到家目录，切换到oracle用户，cd到解压目录，运行xhost +，设置LANG=en_us，处理字体后运行./runInstaller。",
+          "qas": [
+            {
+              "question": "如何运行oracle12c的安装脚本？",
+              "id": "5-300-7",
+              "answers": [
+                {
+                  "text": "将软件解压到家目录下，切换到oracle用户，cd到软件解压所在的目录，运行xhost +，设置语言为英文（export LANG=en_us），处理字体后，运行./runInstaller",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "运行安装命令前为何要设置语言为英文？",
+              "id": "5-300-8",
+              "answers": [
+                {
+                  "text": "因为oracle安装程序自带的JDK指定要一种系统没有的字体",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "如何处理oracle安装程序的字体问题以显示中文？",
+              "id": "5-300-9",
+              "answers": [
+                {
+                  "text": "在database/stage/Components/oracle.jdk/1.6.0.75.0/1/DataFile/下的filegroup1.jar中，在jdk/jre/lib/fonts目录下创建fallback，将中文字体拖到该目录，没有目录就自建",
+                  "answer_start": 146
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "oracle12c图形界面选择包括“install the database software only”“single instance database installation”“Enterprise Edition”，选特定选项时最大内存受dev/shm限制，按提示用root执行脚本。",
+          "qas": [
+            {
+              "question": "oracle12c图形界面安装有哪些选择？",
+              "id": "5-300-10",
+              "answers": [
+                {
+                  "text": "\"install the database software only\" 只安装数据库软件；\"single instance database installation\" 只安装单个数据库实例；\"Enterprise Edition\" 企业版",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "选择Create and configure a database并勾上自动管理内存时，最大内存受什么限制？",
+              "id": "5-300-11",
+              "answers": [
+                {
+                  "text": "最大内存MEMROY_MAX_TARGET不能大于dev/shm",
+                  "answer_start": 184
+                }
+              ]
+            },
+            {
+              "question": "安装过程中按提示需要做什么？",
+              "id": "5-300-12",
+              "answers": [
+                {
+                  "text": "复制脚本路径，以root用户执行",
+                  "answer_start": 236
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装完oracle12c后，修改家目录的.profile文件添加环境变量，包括ORACLE_BASE、ORACLE_HOME、PATH、ORACLE_SID，然后启动dbca建立同名数据库。",
+          "qas": [
+            {
+              "question": "安装完oracle12c后如何设置环境变量？",
+              "id": "5-300-13",
+              "answers": [
+                {
+                  "text": "修改家目录的.profile文件，添加export ORACLE_BASE=/home/oracle/app/oracle；export ORACLE_HOME=/home/oracle/app/oracle/product/12.1.0/dbhome_1；export PATH=$PATH:$ORACLE_HOME/bin；export ORACLE_SID=myora",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "设置环境变量后如何建立数据库？",
+              "id": "5-300-14",
+              "answers": [
+                {
+                  "text": "命令行启动dbca，建立数据库myora（环境变量的ORACLE_SID的名字和这个一样）",
+                  "answer_start": 225
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装sqldeveloper需先安装alien和fakeroot，用法为fakeroot alien package.rpm，还要下载jdk并解压设置环境变量。",
+          "qas": [
+            {
+              "question": "安装sqldeveloper需要哪些工具？",
+              "id": "5-300-15",
+              "answers": [
+                {
+                  "text": "alien 和 fakeroot",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "如何使用工具处理sqldeveloper的rpm安装包？",
+              "id": "5-300-16",
+              "answers": [
+                {
+                  "text": "fakeroot alien package.rpm",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "安装sqldeveloper还需要做什么？",
+              "id": "5-300-17",
+              "answers": [
+                {
+                  "text": "下载jdk，解压，并设置环境变量",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
