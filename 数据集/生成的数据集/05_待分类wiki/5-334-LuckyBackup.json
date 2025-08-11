@@ -7,7 +7,7 @@
           "context": "LuckyBackup是一个文件备份和同步工具，图形化界面，操作简单，从单向复制到双向同步操作都可以实现。还可以通过高级选项设置包含条件、过滤条件、远程连接、命令行模式等，当备份或同步任务完成后，自动通过邮件告知用户。安装：`sudo apt-get install luckybackup`。卸载：`sudo apt-get remove luckybackup`。仓库地址：http://packages.deepin.com/deepin/pool/main/l/luckybackup/。",
           "qas": [
             {
-              "id": "5-332-1",
+              "id": "5-334-1",
               "question": "LuckyBackup的主要功能是什么？",
               "answers": [
                 {
@@ -17,7 +17,7 @@
               ]
             },
             {
-              "id": "5-332-2",
+              "id": "5-334-2",
               "question": "LuckyBackup的界面特点是什么？",
               "answers": [
                 {
@@ -27,7 +27,7 @@
               ]
             },
             {
-              "id": "5-332-3",
+              "id": "5-334-3",
               "question": "LuckyBackup的操作难度如何？",
               "answers": [
                 {
@@ -37,7 +37,7 @@
               ]
             },
             {
-              "id": "5-332-4",
+              "id": "5-334-4",
               "question": "LuckyBackup的界面类型和操作特点是什么？",
               "answers": [
                 {
@@ -47,7 +47,7 @@
               ]
             },
             {
-              "id": "5-332-5",
+              "id": "5-334-5",
               "question": "LuckyBackup支持哪些同步操作模式？",
               "answers": [
                 {
@@ -57,7 +57,7 @@
               ]
             },
             {
-              "id": "5-332-6",
+              "id": "5-334-6",
               "question": "LuckyBackup的高级选项可设置哪些内容？",
               "answers": [
                 {
@@ -67,7 +67,7 @@
               ]
             },
             {
-              "id": "5-332-7",
+              "id": "5-334-7",
               "question": "LuckyBackup通过什么方式通知用户任务完成？",
               "answers": [
                 {
@@ -77,7 +77,7 @@
               ]
             },
             {
-              "id": "5-332-8",
+              "id": "5-334-8",
               "question": "如何安装LuckyBackup？",
               "answers": [
                 {
@@ -87,7 +87,7 @@
               ]
             },
             {
-              "id": "5-332-9",
+              "id": "5-334-9",
               "question": "如何卸载LuckyBackup？",
               "answers": [
                 {
@@ -97,7 +97,7 @@
               ]
             },
             {
-              "id": "5-332-10",
+              "id": "5-334-10",
               "question": "LuckyBackup的官方仓库地址是什么？",
               "answers": [
                 {
