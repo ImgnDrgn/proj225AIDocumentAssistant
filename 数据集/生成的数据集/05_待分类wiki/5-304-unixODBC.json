@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "unixODBC",
+      "paragraphs": [
+        {
+          "context": "unixODBC是连接数据库的组件，提供标准API访问DBMS。",
+          "qas": [
+            {
+              "question": "unixODBC是什么？",
+              "id": "5-304-1",
+              "answers": [
+                {
+                  "text": "unixODBC是连接数据库的组件，提供标准API访问DBMS。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "unixODBC的作用是什么？",
+              "id": "5-304-2",
+              "answers": [
+                {
+                  "text": "提供标准的API来访问DBMS（Database Management System）。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装unixODBC的命令是sudo apt-get install unixodbc。",
+          "qas": [
+            {
+              "question": "如何安装unixODBC？",
+              "id": "5-304-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install unixodbc",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载unixODBC的命令是sudo apt-get remove unixodbc。",
+          "qas": [
+            {
+              "question": "如何卸载unixODBC？",
+              "id": "5-304-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove unixodbc",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "unixODBC的仓库地址是http://packages.deepin.com/deepin/pool/main/u/unixodbc/。",
+          "qas": [
+            {
+              "question": "unixODBC的仓库地址是什么？",
+              "id": "5-304-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/u/unixodbc/",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "unixODBC的官方网站是http://www.unixodbc.org/。",
+          "qas": [
+            {
+              "question": "unixODBC的官方网站是什么？",
+              "id": "5-304-6",
+              "answers": [
+                {
+                  "text": "http://www.unixodbc.org/",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

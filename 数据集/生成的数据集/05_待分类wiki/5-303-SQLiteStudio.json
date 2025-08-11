@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "SQLiteStudio",
+      "paragraphs": [
+        {
+          "context": "SQLiteStudio是管理sqlite数据库的工具，支持sqlite2、sqlite3，视图编码utf8，可同时打开多个数据库文件，能查看和编辑二进制字段，导出格式有csv、html、plain、sql、xml。",
+          "qas": [
+            {
+              "question": "SQLiteStudio是什么工具？",
+              "id": "5-303-1",
+              "answers": [
+                {
+                  "text": "管理sqlite数据库的工具",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "SQLiteStudio支持哪些数据库版本？",
+              "id": "5-303-2",
+              "answers": [
+                {
+                  "text": "sqlite2和sqlite3",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "SQLiteStudio的视图编码支持什么？",
+              "id": "5-303-3",
+              "answers": [
+                {
+                  "text": "utf8",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "SQLiteStudio能否同时打开多个数据库文件？",
+              "id": "5-303-4",
+              "answers": [
+                {
+                  "text": "可以",
+                  "answer_start": 49
+                }
+              ]
+            },
+            {
+              "question": "SQLiteStudio支持查看和编辑什么类型的字段？",
+              "id": "5-303-5",
+              "answers": [
+                {
+                  "text": "二进制字段",
+                  "answer_start": 70
+                }
+              ]
+            },
+            {
+              "question": "SQLiteStudio支持哪些导出数据格式？",
+              "id": "5-303-6",
+              "answers": [
+                {
+                  "text": "csv、html、plain、sql、xml",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SQLiteStudio的安装命令是sudo apt-get install sqlitestudio。",
+          "qas": [
+            {
+              "question": "如何安装SQLiteStudio？",
+              "id": "5-303-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get install sqlitestudio",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SQLiteStudio的卸载命令是sudo apt-get remove sqlitestudio。",
+          "qas": [
+            {
+              "question": "如何卸载SQLiteStudio？",
+              "id": "5-303-8",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove sqlitestudio",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SQLiteStudio的仓库地址是http://packages.deepin.com/deepin/pool/main/s/sqlitestudio/。",
+          "qas": [
+            {
+              "question": "SQLiteStudio的仓库地址是什么？",
+              "id": "5-303-9",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/sqlitestudio/",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

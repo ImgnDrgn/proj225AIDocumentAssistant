@@ -1,0 +1,254 @@
+{
+  "data": [
+    {
+      "title": "docker安装常见数据库",
+      "paragraphs": [
+        {
+          "context": "生产高并发情况下一般不建议将MySQL这样的关系型数据库运行在docker容器中。",
+          "qas": [
+            {
+              "question": "生产高并发情况下，MySQL这样的关系型数据库建议运行在docker容器中吗？",
+              "id": "5-306-1",
+              "answers": [
+                {
+                  "text": "不建议",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "docker pull mysql:5.7 可拉取mysql v5.7容器。",
+          "qas": [
+            {
+              "question": "如何拉取mysql v5.7的docker容器？",
+              "id": "5-306-2",
+              "answers": [
+                {
+                  "text": "docker pull mysql:5.7",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建并运行mysql容器的命令：docker run -it --name mysql -p 3307:3306 -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7，映射宿主机3307端口到容器3306端口，root密码为123456。",
+          "qas": [
+            {
+              "question": "创建并运行mysql容器时，如何映射端口？",
+              "id": "5-306-3",
+              "answers": [
+                {
+                  "text": "映射宿主机3307端口到容器的3306端口",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "question": "用docker创建mysql容器时，设置root密码为123456的命令包含什么参数？",
+              "id": "5-306-4",
+              "answers": [
+                {
+                  "text": "-e MYSQL_ROOT_PASSWORD=123456",
+                  "answer_start": 89
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "拉取redis v6容器的命令是docker pull redis:6。",
+          "qas": [
+            {
+              "question": "如何拉取redis v6的docker容器？",
+              "id": "5-306-5",
+              "answers": [
+                {
+                  "text": "docker pull redis:6",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行redis容器的命令：docker run -p 6379:6379 --name redis -d redis:6。",
+          "qas": [
+            {
+              "question": "创建并运行redis容器的命令是什么？",
+              "id": "5-306-6",
+              "answers": [
+                {
+                  "text": "docker run -p 6379:6379 --name redis -d redis:6",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "拉取MongoDB容器用docker pull mongo命令。",
+          "qas": [
+            {
+              "question": "如何拉取MongoDB的docker容器？",
+              "id": "5-306-7",
+              "answers": [
+                {
+                  "text": "docker pull mongo",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行MongoDB容器命令：docker run -p 27017:27017 --name mongodb -e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=123456 -d mongo:latest，设置了root用户和密码123456。",
+          "qas": [
+            {
+              "question": "创建MongoDB容器时，如何设置root用户名和密码？",
+              "id": "5-306-8",
+              "answers": [
+                {
+                  "text": "-e MONGO_INITDB_ROOT_USERNAME=root -e MONGO_INITDB_ROOT_PASSWORD=123456",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "question": "MongoDB容器映射的端口是多少？",
+              "id": "5-306-9",
+              "answers": [
+                {
+                  "text": "27017:27017",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "拉取PostgreSQL容器使用docker pull postgres命令。",
+          "qas": [
+            {
+              "question": "如何拉取PostgreSQL的docker容器？",
+              "id": "5-306-10",
+              "answers": [
+                {
+                  "text": "docker pull postgres",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行PostgreSQL容器命令：docker run -p 5432:5432 --name postgresql -e POSTGRES_PASSWORD=123456 -d postgres，密码设为123456。",
+          "qas": [
+            {
+              "question": "PostgreSQL容器的运行命令中，设置密码的参数是什么？",
+              "id": "5-306-11",
+              "answers": [
+                {
+                  "text": "-e POSTGRES_PASSWORD=123456",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "question": "PostgreSQL容器映射的端口是多少？",
+              "id": "5-306-12",
+              "answers": [
+                {
+                  "text": "5432:5432",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "拉取带Web管理界面的RabbitMQ容器用docker pull rabbitmq:management命令。",
+          "qas": [
+            {
+              "question": "如何拉取带Web管理界面的RabbitMQ docker容器？",
+              "id": "5-306-13",
+              "answers": [
+                {
+                  "text": "docker pull rabbitmq:management",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "RabbitMQ容器运行命令：docker run --name rabbitmq -p 5672:5672 -p 15672:15672 -e RABBITMQ_DEFAULT_USER=rbmq -e RABBITMQ_DEFAULT_PASS=rbmq --hostname=rabbitmqhosta -d rabbitmq:management，15672是web管理端端口，用户和密码为rbmq。",
+          "qas": [
+            {
+              "question": "RabbitMQ的web管理端访问端口是多少？",
+              "id": "5-306-14",
+              "answers": [
+                {
+                  "text": "15672",
+                  "answer_start": 134
+                }
+              ]
+            },
+            {
+              "question": "RabbitMQ容器默认的用户名和密码是什么？",
+              "id": "5-306-15",
+              "answers": [
+                {
+                  "text": "rbmq",
+                  "answer_start": 175
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "拉取Memcache容器的命令是docker pull memcached。",
+          "qas": [
+            {
+              "question": "如何拉取Memcache的docker容器？",
+              "id": "5-306-16",
+              "answers": [
+                {
+                  "text": "docker pull memcached",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行Memcache容器命令：docker run --name memcache -p 11211:11211 -d memcached -m 128，-m 128指定最大容量128m，默认64m。",
+          "qas": [
+            {
+              "question": "Memcache容器默认的最大容量是多少？",
+              "id": "5-306-17",
+              "answers": [
+                {
+                  "text": "64m",
+                  "answer_start": 101
+                }
+              ]
+            },
+            {
+              "question": "如何在运行Memcache容器时指定最大容量为128m？",
+              "id": "5-306-18",
+              "answers": [
+                {
+                  "text": "-m 128",
+                  "answer_start": 87
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
