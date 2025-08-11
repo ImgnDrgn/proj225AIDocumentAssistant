@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "LightZone",
+      "paragraphs": [
+        {
+          "context": "LightZone是一款数码图象编辑工具，它支持常见TIFF、JPEG、DNG格式外，还支持主流品牌相机的RAW文件，它具有减少高ISO数字图象的噪声，选择性地削尖或模糊图象，去除斑点等功能。安装命令为sudo apt-get install lightzone，卸载命令为sudo apt-get remove lightzone，其仓库地址为http://packages.deepin.com/deepin/pool/main/l/lightzone/",
+          "qas": [
+            {
+              "id": "5-230-1",
+              "question": "LightZone是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "数码图象编辑工具",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-230-2",
+              "question": "LightZone支持哪些文件格式？",
+              "answers": [
+                {
+                  "text": "常见TIFF、JPEG、DNG格式外，还支持主流品牌相机的RAW文件",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-230-3",
+              "question": "LightZone有哪些功能？",
+              "answers": [
+                {
+                  "text": "减少高ISO数字图象的噪声，选择性地削尖或模糊图象，去除斑点等",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "5-230-4",
+              "question": "安装LightZone的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install lightzone",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "id": "5-230-5",
+              "question": "卸载LightZone的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove lightzone",
+                  "answer_start": 142
+                }
+              ]
+            },
+            {
+              "id": "5-230-6",
+              "question": "LightZone的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/l/lightzone/",
+                  "answer_start": 174
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
