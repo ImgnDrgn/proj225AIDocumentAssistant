@@ -1,0 +1,244 @@
+{
+  "data": [
+    {
+      "title": "debuginfod 介绍",
+      "paragraphs": [
+        {
+          "context": "软件的bug通常是不可避免的，开发者通常使用gdb，systemtap这些使用工具加载debuginfo来定位问题。一般源代码是人类可读的，机器不可读，而二进制文件是机器可读，人类不可读的。当程序遇到问题时，机器只知道运行的指令是什么，人类一般无法通过二进制指令来快速定位问题。此时就需要将此处的指令和源代码关联起来，当运行的指令出现bug时，可以快速的关联到源代码的位置上。debuginfo就是起到这个作用，是二进制指令到源代码的一个桥梁。调试信息一般就是变量名，变量类型，函数名，函数参数，函数的地址范围，行号和地址的对应关系等等，这些内容按照一定的格式写入到编译的文件中。现在最常用的格式是 DWARF(Debugging With Attributed Record Formats) 。有关`DWAERF`（https://dwarfstd.org）的介绍请见(https://dwarfstd.org/doc/Debugging%20using%20DWARF-2012.pdf)。",
+          "qas": [
+            {
+              "id": "5-219-1",
+              "question": "开发者通常使用哪些工具加载debuginfo来定位问题？",
+              "answers": [
+                {
+                  "text": "gdb，systemtap",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "5-219-2",
+              "question": "debuginfo的作用是什么？",
+              "answers": [
+                {
+                  "text": "是二进制指令到源代码的一个桥梁，当运行的指令出现bug时，可以快速关联到源代码的位置上",
+                  "answer_start": 212
+                }
+              ]
+            },
+            {
+              "id": "5-219-3",
+              "question": "调试信息通常包含哪些内容？",
+              "answers": [
+                {
+                  "text": "变量名，变量类型，函数名，函数参数，函数的地址范围，行号和地址的对应关系等等",
+                  "answer_start": 275
+                }
+              ]
+            },
+            {
+              "id": "5-219-4",
+              "question": "现在最常用的调试信息格式是什么？",
+              "answers": [
+                {
+                  "text": "DWARF(Debugging With Attributed Record Formats)",
+                  "answer_start": 372
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "debuginfod 是一个用于传输调试信息资源的http文件服务器。debuginfod会定期扫描指定路径下的内容，比如deb和rpm打包文件等。从中提取基于`Build-id`的调试信息和可执行文件，并使用`sqlite`来保存这些信息。当用户使用客户端工具访问已知的`Build-id`的调试信息时，debuginfod就会返回对应的资源。支持获取`debuginfo`，`executable`和`source file`。文件的`Build-id`可以使用`readelf`命令来获取，比如获取`dde-dock=5.5.66-1`的`Build-id`。",
+          "qas": [
+            {
+              "id": "5-219-5",
+              "question": "debuginfod是什么？",
+              "answers": [
+                {
+                  "text": "一个用于传输调试信息资源的http文件服务器",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-219-6",
+              "question": "debuginfod会定期扫描哪些内容？",
+              "answers": [
+                {
+                  "text": "指定路径下的内容，比如deb和rpm打包文件等",
+                  "answer_start": 44
+                }
+              ]
+            },
+            {
+              "id": "5-219-7",
+              "question": "debuginfod使用什么来保存提取的信息？",
+              "answers": [
+                {
+                  "text": "sqlite",
+                  "answer_start": 135
+                }
+              ]
+            },
+            {
+              "id": "5-219-8",
+              "question": "debuginfod支持获取哪些资源？",
+              "answers": [
+                {
+                  "text": "debuginfo，executable和source file",
+                  "answer_start": 196
+                }
+              ]
+            },
+            {
+              "id": "5-219-9",
+              "question": "可以使用什么命令获取文件的Build-id？",
+              "answers": [
+                {
+                  "text": "readelf",
+                  "answer_start": 239
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "debuginfod支持扫描deb，rpm和ELF/DWARF文件格式。下面是一些简单搭建使用的参数，更多参数请参考debuinfod的man手册。-U path/to/debs/ # 扫描的deb文件路径。-R path/to/rpms/ # 扫描的rpm文件路径。-I REGEX --include=REGEX -X REGEX --exclude=REGEX # 扫描过程中排除和包含文件的正则规则。-p port # 启动的端口。-L # 是否处理symlink，当目录中包含软连接时，需要开启这个参数。在deepin上，使用下面命令快速启动一个`debuginfod`服务器。默认端口为8002。sudo apt insatll debuginfod；debuginfod -U path/to/debs/。可以通过编写service文件使用systemd 来对debuginfod的服务做管理。[Unit] Description=Debuginfod Service Documentation=man: debuginfod(8) After=network.target nginx.service [Service] EnvironmentFile=/etc/sysconfig/debuginfod ExecStart=/usr/bin/debuginfod --port=${PORT} --database=${DATABASE_FILE} -U ${REPO_PATH} [Install] wantedBy=multi-user.target",
+          "qas": [
+            {
+              "id": "5-219-10",
+              "question": "debuginfod支持扫描哪些文件格式？",
+              "answers": [
+                {
+                  "text": "deb，rpm和ELF/DWARF文件格式",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-219-11",
+              "question": "-U参数的作用是什么？",
+              "answers": [
+                {
+                  "text": "指定扫描的deb文件路径",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "5-219-12",
+              "question": "-p参数的作用是什么？",
+              "answers": [
+                {
+                  "text": "指定启动的端口",
+                  "answer_start": 257
+                }
+              ]
+            },
+            {
+              "id": "5-219-13",
+              "question": "在deepin上快速启动debuginfod服务器的第一步命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt insatll debuginfod",
+                  "answer_start": 352
+                }
+              ]
+            },
+            {
+              "id": "5-219-14",
+              "question": "debuginfod默认端口是多少？",
+              "answers": [
+                {
+                  "text": "8002",
+                  "answer_start": 327
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置`DEBUGINFOD_URLS`环境变量指向上游的debuginfod服务器，比如在deepin上使用deepin提供的debuginfod服务器。如果长期使用，可配置到`.bashrc`文件中。export DEBUGINFOD_URLS=https://debuginfod.deepin.com。然后使用对debuginfod支持的客户端来获取调试信息。比如`debuginfod-find`,`gdb`,`systemtap` ,`perf`等。deepin 20通过gdb加载debuginfod的调试信息：sudo apt install gdb；export DEBUGINFOD_URLS=https://debuginfod.deepin.com；gdb /usr/bin/gdb；出现下面提示即从debuginfod服务器下载并加载调试信息：Reading symbols from /usr/bin/dde-dock... Downloading separate debug info for /usr/bin/dde-dock... Reading symbols from /home/tsic/.cache/debuginfod_client/3f958ed5f3924da2e3ba2e07a9e065ecbba59437/debuginfo... ....... Starting program: /usr/bin/dde-dock ....... Downloading separate debug info for /lib/x86_64-linux-gnu/libdtkwidget.so.5... ....... Downloading separate debug info for /lib/x86_64-linux-gnu/libsystemd.so.0...",
+          "qas": [
+            {
+              "id": "5-219-15",
+              "question": "使用debuginfod服务需要配置哪个环境变量？",
+              "answers": [
+                {
+                  "text": "DEBUGINFOD_URLS",
+                  "answer_start": 2
+                }
+              ]
+            },
+            {
+              "id": "5-219-16",
+              "question": "在deepin上，DEBUGINFOD_URLS环境变量应配置为什么值？",
+              "answers": [
+                {
+                  "text": "https://debuginfod.deepin.com",
+                  "answer_start": 122
+                }
+              ]
+            },
+            {
+              "id": "5-219-17",
+              "question": "哪些客户端支持debuginfod？",
+              "answers": [
+                {
+                  "text": "debuginfod-find，gdb，systemtap，perf等",
+                  "answer_start": 182
+                }
+              ]
+            },
+            {
+              "id": "5-219-18",
+              "question": "deepin 20通过gdb加载debuginfod的调试信息的第一步命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt install gdb",
+                  "answer_start": 246
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "1.  debuginfod对deb打包方式获取源码的支持有限，请见[can't download source code](https://wiki.debian.org/Debuginfod#The_service_isn.27t_working.21__I_can.27t_download_the_source_code_while_debugging_a_package.21)。2.  各个client对debuginfod的支持情况（2022.08）以下数据来自[debuginfod](https://sourceware.org/elfutils/Debuginfod.html)。elfutils在version 0.178, 2019-11已发布支持；systemtap通过elfutils自动支持；binutils在version 2.34, 2020-02已发布支持；gdb在version 10.1, 2020-10已发布支持等。",
+          "qas": [
+            {
+              "id": "5-219-19",
+              "question": "关于debuginfod的第一个注意事项是什么？",
+              "answers": [
+                {
+                  "text": "debuginfod对deb打包方式获取源码的支持有限",
+                  "answer_start": 2
+                }
+              ]
+            },
+            {
+              "id": "5-219-20",
+              "question": "elfutils从哪个版本开始支持debuginfod？",
+              "answers": [
+                {
+                  "text": "version 0.178",
+                  "answer_start": 192
+                }
+              ]
+            },
+            {
+              "id": "5-219-21",
+              "question": "gdb从哪个版本开始支持debuginfod？",
+              "answers": [
+                {
+                  "text": "version 10.1",
+                  "answer_start": 325
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

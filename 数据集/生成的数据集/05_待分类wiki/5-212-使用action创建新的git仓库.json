@@ -1,0 +1,189 @@
+{
+  "data": [
+    {
+      "title": "使用action创建新的git仓库",
+      "paragraphs": [
+        {
+          "context": "ps: 当前自动化构建是基于commit进行触发，每当有一个commit合入则触发action的自动构建并导入仓库中，请注意不要随意在正式环境中使用下面的仓库，仓库的软件包大多没有经过测试验证，我们无法保证仓库的软件包的稳定性。",
+          "qas": [
+            {
+              "id": "5-212-1",
+              "question": "自动化构建是基于什么触发的？",
+              "answers": [
+                {
+                  "text": "commit",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "5-212-2",
+              "question": "为什么不要随意在正式环境中使用下面的仓库？",
+              "answers": [
+                {
+                  "text": "仓库的软件包大多没有经过测试验证，我们无法保证仓库的软件包的稳定性",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "## archlinux\n\n### 添加仓库\n\n在 `/etc/pacman.conf` 中添加以下内容：\n\n```\n[deepin]\nSigLevel = Never\nServer = https://deepin-community.github.io/arch-dde-repo\n```\n\n所有构建的包，均属于 `deepin-git` group，可通过安装该 group 所有软件包替换 `deepin` group 的所有软件包。",
+          "qas": [
+            {
+              "id": "5-212-3",
+              "question": "在archlinux中添加仓库需要修改哪个文件？",
+              "answers": [
+                {
+                  "text": "/etc/pacman.conf",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-212-4",
+              "question": "archlinux中添加的仓库名称是什么？",
+              "answers": [
+                {
+                  "text": "deepin",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "id": "5-212-5",
+              "question": "archlinux中所有构建的包属于哪个group？",
+              "answers": [
+                {
+                  "text": "deepin-git",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "### 问题修复\n\n有时候项目会需要增加依赖，或者减少依赖，导致 archlinux 平台无法完成构建，那么需要在 [https://packages.archlinux.org/](https://packages.archlinux.org/) 查询相关软件包，并添加到 archlinux/PKGBUILD 文件的 makedepends 中，如果是运行时依赖，还需要同时添加到 depends 中。",
+          "qas": [
+            {
+              "id": "5-212-6",
+              "question": "archlinux平台无法完成构建可能是什么原因？",
+              "answers": [
+                {
+                  "text": "项目需要增加依赖，或者减少依赖",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "5-212-7",
+              "question": "在archlinux中查询相关软件包的网站是什么？",
+              "answers": [
+                {
+                  "text": "https://packages.archlinux.org/",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "id": "5-212-8",
+              "question": "archlinux中需要将查询到的软件包添加到哪个文件中？",
+              "answers": [
+                {
+                  "text": "archlinux/PKGBUILD",
+                  "answer_start": 130
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "### 本地验证\n\n本地验证可以保存以下脚本，在项目的根目录运行，即可完成一次打包测试。\n\n```bash\n#!/bin/bash\n\nrm -rf $(basename $PWD)-git\nmkdir $(basename $PWD)-git\nrsync -a . $(basename $PWD)-git --exclude \"$(basename $PWD)-git\"\ntar -czf archlinux/source.tar.gz $(basename $PWD)-git\nversion=1.0.0\nsed -i \"/pkgver=/cpkgver=${version}\" archlinux/PKGBUILD\necho \"deepin_source_name=$(basename $PWD)-git\" >> archlinux/PKGBUILD\ncd archlinux\ndeepin-x86_64-build\n```\n\n使用该脚本，需要先添加 `deepin-git` 仓库，安装 `devtools-deepin-git` 软件包。",
+          "qas": [
+            {
+              "id": "5-212-9",
+              "question": "在archlinux中进行本地验证时，脚本应在项目的哪个目录运行？",
+              "answers": [
+                {
+                  "text": "根目录",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-212-10",
+              "question": "使用archlinux本地验证脚本需要先添加哪个仓库？",
+              "answers": [
+                {
+                  "text": "deepin-git",
+                  "answer_start": 603
+                }
+              ]
+            },
+            {
+              "id": "5-212-11",
+              "question": "使用archlinux本地验证脚本需要安装什么软件包？",
+              "answers": [
+                {
+                  "text": "devtools-deepin-git",
+                  "answer_start": 622
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "## debian sid\n\n### 添加仓库\n\n在 `/etc/apt/sources.list.d/deepin-git.list` 中添加以下内容:\n\n```\ndeb [trusted=yes arch=amd64] https://deepin-community.github.io/debian-sid-dde-deps-repo sid main\ndeb [trusted=yes arch=amd64] https://deepin-community.github.io/debian-sid-dde-repo sid main\n```\n\ndebian sid 提供了两个仓库，理论上所有发行版仓库都会提供两个仓库，一个是保存 deepin 构建的软件包，另一个是提供官方仓库的补充。\n\n在 debian sid 仓库中，只要添加该仓库，所有 deepin 的软件包均会升级到最新版本。",
+          "qas": [
+            {
+              "id": "5-212-12",
+              "question": "在debian sid中添加仓库需要修改哪个文件？",
+              "answers": [
+                {
+                  "text": "/etc/apt/sources.list.d/deepin-git.list",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-212-13",
+              "question": "debian sid提供了几个仓库？",
+              "answers": [
+                {
+                  "text": "两个",
+                  "answer_start": 301
+                }
+              ]
+            },
+            {
+              "id": "5-212-14",
+              "question": "在debian sid仓库中添加仓库后，deepin的软件包会怎样？",
+              "answers": [
+                {
+                  "text": "均会升级到最新版本",
+                  "answer_start": 415
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "### 国内镜像站点\n```\ndeb [trusted=yes arch=amd64] https://code.gitlink.org.cn/justforlxz/deepin-dde-repo/raw/branch/main apricot main\ndeb [trusted=yes arch=amd64] https://code.gitlink.org.cn/justforlxz/deepin-dde-deps-repo/raw/branch/main apricot main\n\ndeb [trusted=yes arch=amd64] https://code.gitlink.org.cn/justforlxz/debian-sid-dde-repo/raw/branch/main sid main\ndeb [trusted=yes arch=amd64] https://code.gitlink.org.cn/justforlxz/debian-sid-dde-deps-repo/raw/branch/main sid main\n\n[deepin]\nSigLevel = Never\nServer = https://code.gitlink.org.cn/justforlxz/arch-dde-repo/raw/branch/main\n```",
+          "qas": [
+            {
+              "id": "5-212-15",
+              "question": "国内镜像站点中，archlinux对应的仓库服务器地址是什么？",
+              "answers": [
+                {
+                  "text": "https://code.gitlink.org.cn/justforlxz/arch-dde-repo/raw/branch/main",
+                  "answer_start": 476
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

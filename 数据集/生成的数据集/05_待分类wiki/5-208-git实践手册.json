@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "git实践手册",
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "id": "5-208-1",
+              "question": "如何忽略本地更改并切换到源仓库的某个tag版本？",
+              "answers": [
+                {
+                  "text": "使用命令 git reset --hard origin/v5.4.13 可强制切换到源仓库上的v5.4.13 tag版本，以此忽略本地更改",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "当在网上下载git源代码后进行了无关紧要的更改，想同步到新的版本却不想处理合并问题时，可使用命令：git reset --hard origin/v5.4.13 强制切换到源仓库上的v5.4.13 tag版本。"
+        }
+      ]
+    },
+    {
+      "title": "git实践手册：下载特定版本源代码",
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "id": "5-208-2",
+              "question": "如何只下载仓库的最新版本而不下载整个仓库？",
+              "answers": [
+                {
+                  "text": "使用 git clone --depth=1 命令，例如 git clone --depth=1 https://github.com/deepinwiki/wiki.wiki.git 可只下载默认的最新版本",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "若不想下载整个git仓库，只想获取最新版本，可使用 --depth=1 选项，如命令：git clone --depth=1 https://github.com/deepinwiki/wiki.wiki.git，该命令只下载一个版本，即默认的最新版本。"
+        }
+      ]
+    },
+    {
+      "title": "git实践手册：查看远程仓库版本和分支",
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "id": "5-208-3",
+              "question": "如何查看远程仓库的版本和分支信息？",
+              "answers": [
+                {
+                  "text": "使用 git ls-remote 命令，可添加 --tags 查看版本，--heads 查看分支，还可在链接后设置匹配字符串，如 git ls-remote https://github.com/deepinwiki/wiki.wiki.git",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "要查看远程仓库的版本和分支信息，可使用 git ls-remote 命令。在该命令后可添加 --tags 选项查看版本，--heads 选项查看分支，在仓库链接后还能设置匹配字符串，例如 git ls-remote https://github.com/deepinwiki/wiki.wiki.git 。版本信息中，HEAD表示当前工作版本，refs/heads/master是默认主分支，refs/heads/uefi是自定义分支，refs/tags/v5.4.13是自定义tag即特定版本。"
+        }
+      ]
+    },
+    {
+      "title": "git实践手册：下载指定版本源代码",
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "id": "5-208-4",
+              "question": "怎样下载仓库的指定版本？",
+              "answers": [
+                {
+                  "text": "使用 git clone --depth=1 --branch=版本号 命令，例如 git clone --depth=1 --branch=vol.35 https://github.com/521xueweihan/HelloGitHub.git",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "若要下载仓库的指定版本，可使用 git clone 命令并结合 --depth=1 和 --branch 选项，其中 --branch 用于指定版本（不一定是分支，任意版本均可），例如命令：git clone --depth=1 --branch=vol.35 https://github.com/521xueweihan/HelloGitHub.git 。"
+        }
+      ]
+    },
+    {
+      "title": "git实践手册：克隆后跳转其他远程版本",
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "id": "5-208-5",
+              "question": "克隆仓库后，如何跳转到本地没有的其他远程版本且不重新克隆？",
+              "answers": [
+                {
+                  "text": "先使用 git ls-remote origin 查看远程信息，再用 git pull origin 版本号 下载远程对象，或用 git fetch 下载相关对象如tag，之后通过 git checkout 版本标识或tag跳转，例如 git checkout 0092579 或 git checkout vol.41",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "克隆仓库后想跳转到本地没有的其他远程版本且不重新克隆时，可先使用 git ls-remote origin 查看远程信息（origin是远程仓库默认命名）；然后用 git pull origin v5.4.15 下载远程对象（该命令会下载两个版本之间的所有版本），或用 git fetch 下载相关对象如tag；接着通过 git log --oneline --graph --all 查看当前版本历史，最后使用 git checkout 版本标识（如0092579）或tag（如vol.41）跳转到目标版本。也可使用 git pull --depth=1 origin vol.41 不下载过多相关版本，若提示内容不相干，同步内容会放在FETCH_HEAD，再用 git checkout FETCH_HEAD 跳转。"
+        }
+      ]
+    }
+  ]
+}

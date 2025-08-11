@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "SmartCVS",
+      "paragraphs": [
+        {
+          "context": "SmartCVS是一款用于CVS的版本控制应用，基于TCP/IP协议的版本控制工具，它具有内建的文件比较、合并工具、事务显示、列出Repository文件等功能，美观的用户界面，一目了然的功能，同时可以运行在所有的JDK环境中。安装命令为sudo apt-get install smartcvs，卸载命令为sudo apt-get remove smartcvs，仓库地址为http://packages.deepin.com/deepin/pool/main/s/smartcvs。",
+          "qas": [
+            {
+              "id": "5-214-1",
+              "question": "SmartCVS是一款什么类型的应用？",
+              "answers": [
+                {
+                  "text": "用于CVS的版本控制应用，基于TCP/IP协议的版本控制工具",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-214-2",
+              "question": "SmartCVS具有哪些功能？",
+              "answers": [
+                {
+                  "text": "内建的文件比较、合并工具、事务显示、列出Repository文件等功能，美观的用户界面，一目了然的功能",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-214-3",
+              "question": "SmartCVS可以运行在什么环境中？",
+              "answers": [
+                {
+                  "text": "所有的JDK环境中",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "id": "5-214-4",
+              "question": "安装SmartCVS的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install smartcvs",
+                  "answer_start": 130
+                }
+              ]
+            },
+            {
+              "id": "5-214-5",
+              "question": "卸载SmartCVS的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove smartcvs",
+                  "answer_start": 162
+                }
+              ]
+            },
+            {
+              "id": "5-214-6",
+              "question": "SmartCVS的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/smartcvs",
+                  "answer_start": 194
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "topic仓库机制",
+      "paragraphs": [
+        {
+          "context": "为方便可持续开发集成等需求，启动topic的管理机制，对代码变更进行标签化的分类，可以很方便的选择提交PR时自动构建的产物存放的仓库，方便进行rc（release-candidate）阶段的多源码包相关性项目进行联调测试，简化集成流程，提高集成准确率、自动化率，方便后期的主题相关的代码、软件包仓库的回溯。使用方式如下：1. 从deepin-comunity fork 项目到个人账户下；2. 从个人账户下clone项目到本地；3. 添加upstream相关信息，命令为git remote add upstream \"urlxxxx\"、git checkout upstream/master、git checkout -b topic-grep-test（切出本地分支，若需要使用topic机制需采用topic-开头的形式命名分支）；4. 修复代码，推送topic开头命令的分支到个人账户下的仓库中；5. 提交PR，从topic分支合入到upstream的master分支；6. 构建通过后的deb包自动推送到topic仓库中，仓库地址是https://ci.deepin.com/repo/obs/deepin:/CI%3A/topics%3A/（合并之后自动在ci仓库下创建grep-test的仓库）；7. 仓库使用方式为echo \"deb [trusted=yes] https://ci.deepin.com/repo/obs/deepin:/CI%3A/topics%3A/devscript/deepin_develop/ ./\" >> /etc/apt/source.list；8. 参考样例为https://github.com/deepin-community/grep/pull/5。",
+          "qas": [
+            {
+              "id": "5-211-1",
+              "question": "启动topic管理机制的目的是什么？",
+              "answers": [
+                {
+                  "text": "为方便可持续开发集成等需求，对代码变更进行标签化的分类，可以很方便的选择提交PR时自动构建的产物存放的仓库，方便进行rc（release-candidate）阶段的多源码包相关性项目进行联调测试，简化集成流程，提高集成准确率、自动化率，方便后期的主题相关的代码、软件包仓库的回溯",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-211-2",
+              "question": "使用topic机制的分支命名有什么要求？",
+              "answers": [
+                {
+                  "text": "需采用topic-开头的形式命名分支",
+                  "answer_start": 360
+                }
+              ]
+            },
+            {
+              "id": "5-211-3",
+              "question": "添加upstream相关信息的命令有哪些？",
+              "answers": [
+                {
+                  "text": "git remote add upstream \"urlxxxx\"、git checkout upstream/master、git checkout -b topic-grep-test",
+                  "answer_start": 265
+                }
+              ]
+            },
+            {
+              "id": "5-211-4",
+              "question": "构建通过后的deb包会自动推送到哪里？",
+              "answers": [
+                {
+                  "text": "topic仓库中，仓库地址是https://ci.deepin.com/repo/obs/deepin:/CI%3A/topics%3A/",
+                  "answer_start": 435
+                }
+              ]
+            },
+            {
+              "id": "5-211-5",
+              "question": "topic仓库的使用方式是什么？",
+              "answers": [
+                {
+                  "text": "echo \"deb [trusted=yes] https://ci.deepin.com/repo/obs/deepin:/CI%3A/topics%3A/devscript/deepin_develop/ ./\" >> /etc/apt/source.list",
+                  "answer_start": 532
+                }
+              ]
+            },
+            {
+              "id": "5-211-6",
+              "question": "提交PR时是从哪个分支合入到哪个分支？",
+              "answers": [
+                {
+                  "text": "从topic分支合入到upstream的master分支",
+                  "answer_start": 410
+                }
+              ]
+            },
+            {
+              "id": "5-211-7",
+              "question": "topic机制使用方式的参考样例是什么？",
+              "answers": [
+                {
+                  "text": "https://github.com/deepin-community/grep/pull/5",
+                  "answer_start": 657
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

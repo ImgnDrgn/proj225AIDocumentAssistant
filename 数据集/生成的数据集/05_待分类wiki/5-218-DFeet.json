@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "D-Feet",
+      "paragraphs": [
+        {
+          "context": "D-Feet是一个易于使用的D-bus调试器，用来检查D-bus接口的运行程序和调用接口的方法。可以显示service提供的所有对象、信号和方法，还可以通过它实现方法调用。安装命令为sudo apt-get install d-feet，卸载命令为sudo apt-get remove d-feet，其仓库地址为http://packages.deepin.com/deepin/pool/main/d/d-feet/",
+          "qas": [
+            {
+              "id": "5-218-1",
+              "question": "D-Feet是什么？",
+              "answers": [
+                {
+                  "text": "一个易于使用的D-bus调试器",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-218-2",
+              "question": "D-Feet的用途是什么？",
+              "answers": [
+                {
+                  "text": "检查D-bus接口的运行程序和调用接口的方法，显示service提供的所有对象、信号和方法，实现方法调用",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "5-218-3",
+              "question": "如何安装D-Feet？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install d-feet",
+                  "answer_start": 132
+                }
+              ]
+            },
+            {
+              "id": "5-218-4",
+              "question": "如何卸载D-Feet？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove d-feet",
+                  "answer_start": 162
+                }
+              ]
+            },
+            {
+              "id": "5-218-5",
+              "question": "D-Feet的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/d/d-feet/",
+                  "answer_start": 194
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

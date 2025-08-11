@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "GitKraken",
+      "paragraphs": [
+        {
+          "context": "GitKraken是一款Git客户端，它使用图形化的界面，以减少命令行操作，安装使用不需要任何依赖，可以在界面上查看和移动窗口，还可以进行搜索；gitkraken还可以连接到你的GitHub或者bitbucket账户并帮助你找到项目，支持SSH加密。安装命令为sudo apt-get install gitkraken，卸载命令为sudo apt-get remove gitkraken，其仓库地址为http://packages.deepin.com/deepin/pool/main/g/gitkraken/",
+          "qas": [
+            {
+              "id": "5-213-1",
+              "question": "GitKraken 是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "Git客户端",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-213-2",
+              "question": "GitKraken 使用什么类型的界面？",
+              "answers": [
+                {
+                  "text": "图形化的界面",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-213-3",
+              "question": "GitKraken 安装是否需要依赖？",
+              "answers": [
+                {
+                  "text": "不需要任何依赖",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-213-4",
+              "question": "GitKraken 可以连接哪些账户？",
+              "answers": [
+                {
+                  "text": "GitHub或者bitbucket账户",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "5-213-5",
+              "question": "GitKraken 支持哪种加密方式？",
+              "answers": [
+                {
+                  "text": "SSH加密",
+                  "answer_start": 121
+                }
+              ]
+            },
+            {
+              "id": "5-213-6",
+              "question": "安装 GitKraken 的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gitkraken",
+                  "answer_start": 131
+                }
+              ]
+            },
+            {
+              "id": "5-213-7",
+              "question": "卸载 GitKraken 的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gitkraken",
+                  "answer_start": 165
+                }
+              ]
+            },
+            {
+              "id": "5-213-8",
+              "question": "GitKraken 的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gitkraken/",
+                  "answer_start": 200
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
