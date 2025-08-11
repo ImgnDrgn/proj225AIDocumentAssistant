@@ -1,0 +1,399 @@
+{
+  "data": [
+    {
+      "title": "Deepin上搭建Hexo博客",
+      "paragraphs": [
+        {
+          "context": "Hexo是一个快速、简洁且高效的博客框架，使用Markdown解析文章，可生成静态网页。",
+          "qas": [
+            {
+              "question": "Hexo是什么？",
+              "id": "5-311-1",
+              "answers": [
+                {
+                  "text": "一个快速、简洁且高效的博客框架，使用Markdown解析文章，可生成静态网页。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GitHub Pages是GitHub官方提供的免费静态站点托管服务，可在GitHub仓库托管和发布静态网站。",
+          "qas": [
+            {
+              "question": "什么是GitHub Pages？",
+              "id": "5-311-2",
+              "answers": [
+                {
+                  "text": "GitHub官方提供的免费静态站点托管服务，可在GitHub仓库托管和发布静态网站。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Hexo基于Node.js，需安装Node.js、npm（Node.js自带）和git，以Linux为例先搭建环境。",
+          "qas": [
+            {
+              "question": "搭建Hexo需要哪些工具？",
+              "id": "5-311-3",
+              "answers": [
+                {
+                  "text": "Node.js、npm（Node.js自带）和git",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Node.js：从官网下载长期维护版，解压到～/software，设置软连接，查看版本验证。",
+          "qas": [
+            {
+              "question": "如何安装Node.js？",
+              "id": "5-311-4",
+              "answers": [
+                {
+                  "text": "从官网下载长期维护版，解压到～/software，设置软连接，查看版本验证。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置Node.js软连接：将解压文件重命名为nodejs，用ln命令链接npm和node到/usr/local/bin/。",
+          "qas": [
+            {
+              "question": "如何设置Node.js的软连接？",
+              "id": "5-311-5",
+              "answers": [
+                {
+                  "text": "将解压文件重命名为nodejs，用ln命令链接npm和node到/usr/local/bin/。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "验证Node.js安装：终端输入node -v和npm -v，显示版本号即成功。",
+          "qas": [
+            {
+              "question": "如何验证Node.js安装成功？",
+              "id": "5-311-6",
+              "answers": [
+                {
+                  "text": "终端输入node -v和npm -v，显示版本号即成功。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin V20安装Git：终端执行sudo apt-get install git，输入git --version查版本验证。",
+          "qas": [
+            {
+              "question": "Deepin V20如何安装Git？",
+              "id": "5-311-7",
+              "answers": [
+                {
+                  "text": "终端执行sudo apt-get install git",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "如何验证Git安装成功？",
+              "id": "5-311-8",
+              "answers": [
+                {
+                  "text": "输入git --version查版本，显示版本号即成功。",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Hexo：用npm install -g hexo-cli，设置软连接到/usr/local/bin/，hexo -v验证。",
+          "qas": [
+            {
+              "question": "如何安装Hexo？",
+              "id": "5-311-9",
+              "answers": [
+                {
+                  "text": "用npm install -g hexo-cli，设置软连接到/usr/local/bin/。",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "如何验证Hexo安装成功？",
+              "id": "5-311-10",
+              "answers": [
+                {
+                  "text": "输入hexo -v，显示版本信息即成功。",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "升级Hexo：执行npm update -g hexo-cli可升级到最新版，需注意与Node.js版本兼容。",
+          "qas": [
+            {
+              "question": "如何升级Hexo？",
+              "id": "5-311-11",
+              "answers": [
+                {
+                  "text": "执行npm update -g hexo-cli",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建博客目录：在家目录用mkdir ~/blog_folder创建个人博客文件夹。",
+          "qas": [
+            {
+              "question": "如何创建博客目录？",
+              "id": "5-311-12",
+              "answers": [
+                {
+                  "text": "在家目录用mkdir ~/blog_folder创建。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "生成网页文件：cd ~，hexo init blog_folder初始化，cd进入后npm install，hexo generate生成，hexo server启动服务。",
+          "qas": [
+            {
+              "question": "生成网页文件的步骤有哪些？",
+              "id": "5-311-13",
+              "answers": [
+                {
+                  "text": "cd ~，hexo init blog_folder初始化，cd进入后npm install，hexo generate生成，hexo server启动服务。",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "生成静态文件的命令是什么？",
+              "id": "5-311-14",
+              "answers": [
+                {
+                  "text": "hexo generate",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "启动网站服务的命令是什么？",
+              "id": "5-311-15",
+              "answers": [
+                {
+                  "text": "hexo server",
+                  "answer_start": 104
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "浏览本地站点：访问http://localhost:4000，端口被占用可改端口hexo server -p 6000，访问对应地址。",
+          "qas": [
+            {
+              "question": "本地站点的默认访问地址是什么？",
+              "id": "5-311-16",
+              "answers": [
+                {
+                  "text": "http://localhost:4000",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "端口被占用时如何处理？",
+              "id": "5-311-17",
+              "answers": [
+                {
+                  "text": "用hexo server -p 6000更改端口号，访问http://localhost:6000。",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "注册GitHub账号：官网输入邮箱注册，用户名、邮箱需真实，密码不少于8字符，选个人免费版，验证邮箱。",
+          "qas": [
+            {
+              "question": "注册GitHub账号需要注意什么？",
+              "id": "5-311-18",
+              "answers": [
+                {
+                  "text": "用户名、邮箱需真实，密码不少于8字符，选个人免费版，验证邮箱。",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建GitHub Pages仓库：登录后新建仓库，Owner为用户名，Repository name为用户名.github.io，勾选Add a README file。",
+          "qas": [
+            {
+              "question": "GitHub Pages仓库的命名规则是什么？",
+              "id": "5-311-19",
+              "answers": [
+                {
+                  "text": "Repository name为用户名.github.io",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置Git用户信息：终端输入git config --global user.name \"GitHub用户名\"和git config --global user.email \"GitHub邮箱\"。",
+          "qas": [
+            {
+              "question": "如何配置Git用户信息？",
+              "id": "5-311-20",
+              "answers": [
+                {
+                  "text": "终端输入git config --global user.name \"GitHub用户名\"和git config --global user.email \"GitHub邮箱\"。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建SSH密钥：安装ssh（sudo apt install ssh），执行ssh-keygen -t rsa -C \"GitHub邮箱\"，一路默认回车。",
+          "qas": [
+            {
+              "question": "如何创建SSH密钥？",
+              "id": "5-311-21",
+              "answers": [
+                {
+                  "text": "安装ssh（sudo apt install ssh），执行ssh-keygen -t rsa -C \"GitHub邮箱\"，一路默认回车。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看SSH密钥：ls ~/.ssh可看到id_rsa（私钥）和id_rsa.pub（公钥），用vim ~/.ssh/id_rsa.pub打开公钥。",
+          "qas": [
+            {
+              "question": "如何查看SSH公钥？",
+              "id": "5-311-22",
+              "answers": [
+                {
+                  "text": "ls ~/.ssh找到id_rsa.pub，用vim ~/.ssh/id_rsa.pub打开。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加SSH公钥到GitHub：登录后进入Settings→SSH and GPG keys→New SSH key，粘贴公钥内容。",
+          "qas": [
+            {
+              "question": "如何将SSH公钥添加到GitHub？",
+              "id": "5-311-23",
+              "answers": [
+                {
+                  "text": "登录后进入Settings→SSH and GPG keys→New SSH key，粘贴公钥内容。",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "验证GitHub连接：终端输入ssh -T git@github.com，确认后显示成功信息即连接成功。",
+          "qas": [
+            {
+              "question": "如何验证与GitHub的连接？",
+              "id": "5-311-24",
+              "answers": [
+                {
+                  "text": "终端输入ssh -T git@github.com，确认后显示成功信息即连接成功。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置个人令牌：GitHub→Settings→Developer Settings→Personal access tokens生成，选repo权限，保存令牌用于验证。",
+          "qas": [
+            {
+              "question": "如何配置GitHub个人令牌？",
+              "id": "5-311-25",
+              "answers": [
+                {
+                  "text": "GitHub→Settings→Developer Settings→Personal access tokens生成，选repo权限，保存令牌。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "部署Hexo到GitHub：安装hexo-deployer-git，修改_config.yml的deploy部分，执行hexo clean、generate、deploy。",
+          "qas": [
+            {
+              "question": "如何部署Hexo到GitHub Pages？",
+              "id": "5-311-26",
+              "answers": [
+                {
+                  "text": "安装hexo-deployer-git，修改_config.yml的deploy部分，执行hexo clean、generate、deploy。",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "部署前需要安装什么插件？",
+              "id": "5-311-27",
+              "answers": [
+                {
+                  "text": "hexo-deployer-git",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "验证部署成功：访问https://用户名.github.io，看到Hexo网站即成功。",
+          "qas": [
+            {
+              "question": "如何验证Hexo部署到GitHub成功？",
+              "id": "5-311-28",
+              "answers": [
+                {
+                  "text": "访问https://用户名.github.io，看到Hexo网站即成功。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

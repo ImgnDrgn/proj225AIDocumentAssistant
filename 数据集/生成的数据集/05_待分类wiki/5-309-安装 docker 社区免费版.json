@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "title": "安装 docker 社区免费版",
+      "paragraphs": [
+        {
+          "context": "安装docker需打开深度终端，输入命令：sudo apt install docker-ce。",
+          "qas": [
+            {
+              "question": "安装docker需要打开什么工具？",
+              "id": "5-309-1",
+              "answers": [
+                {
+                  "text": "深度终端",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "安装docker的命令是什么？",
+              "id": "5-309-2",
+              "answers": [
+                {
+                  "text": "sudo apt install docker-ce",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "如何安装docker？",
+              "id": "5-309-3",
+              "answers": [
+                {
+                  "text": "打开深度终端，输入命令：sudo apt install docker-ce。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "data": [
+    {
+      "title": "GNU Compiler Collection",
+      "paragraphs": [
+        {
+          "context": "GNU编译器集合包括C、C++、Objective-C、Fortran、Ada、Go和D语言的前端及相关库。",
+          "qas": [
+            {
+              "question": "GNU编译器集合包含哪些语言的前端？",
+              "id": "5-315-1",
+              "answers": [
+                {
+                  "text": "C、C++、Objective-C、Fortran、Ada、Go和D语言",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Gcc 11版及之前用C语言编写，Gcc 12版及之后转换为C++编写。",
+          "qas": [
+            {
+              "question": "Gcc 11版及之前用什么语言编写？",
+              "id": "5-315-2",
+              "answers": [
+                {
+                  "text": "C语言",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "Gcc 12版及之后用什么语言编写？",
+              "id": "5-315-3",
+              "answers": [
+                {
+                  "text": "C++语言",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装C语言的GNU编译器用命令：sudo apt-get install gcc，gcc是空包，可指定gcc-x安装对应版本。",
+          "qas": [
+            {
+              "question": "安装C语言的GNU编译器的命令是什么？",
+              "id": "5-315-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gcc",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "如何安装特定版本的C语言GNU编译器？",
+              "id": "5-315-5",
+              "answers": [
+                {
+                  "text": "指定包名gcc-x（x为大版本号）来安装",
+                  "answer_start": 48
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载C语言GNU编译器的命令：sudo apt-get remove gcc。",
+          "qas": [
+            {
+              "question": "卸载C语言GNU编译器的命令是什么？",
+              "id": "5-315-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gcc",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装C++语言的GNU编译器用命令：sudo apt-get install g++，g++是空包，可指定g++-x安装对应版本。",
+          "qas": [
+            {
+              "question": "安装C++语言的GNU编译器的命令是什么？",
+              "id": "5-315-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get install g++",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "如何安装特定版本的C++语言GNU编译器？",
+              "id": "5-315-8",
+              "answers": [
+                {
+                  "text": "指定包名g++-x（x为大版本号）来安装",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载C++语言GNU编译器的命令：sudo apt-get remove g++。",
+          "qas": [
+            {
+              "question": "卸载C++语言GNU编译器的命令是什么？",
+              "id": "5-315-9",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove g++",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Objective-C语言的GNU编译器用命令：sudo apt-get install gobjc，gobjc是空包，可指定gobjc-x安装对应版本。",
+          "qas": [
+            {
+              "question": "安装Objective-C语言的GNU编译器的命令是什么？",
+              "id": "5-315-10",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gobjc",
+                  "answer_start": 28
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Objective-C语言GNU编译器的命令：sudo apt-get remove gobjc。",
+          "qas": [
+            {
+              "question": "卸载Objective-C语言GNU编译器的命令是什么？",
+              "id": "5-315-11",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gobjc",
+                  "answer_start": 28
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Objective-C++语言的GNU编译器用命令：sudo apt-get install gobjc++，可指定gobjc++-x安装对应版本。",
+          "qas": [
+            {
+              "question": "安装Objective-C++语言的GNU编译器的命令是什么？",
+              "id": "5-315-12",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gobjc++",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Objective-C++语言GNU编译器的命令：sudo apt-get remove gobjc++。",
+          "qas": [
+            {
+              "question": "卸载Objective-C++语言GNU编译器的命令是什么？",
+              "id": "5-315-13",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gobjc++",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Fortran语言的GNU编译器用命令：sudo apt-get install gfortran，可指定gfortran-x安装对应版本。",
+          "qas": [
+            {
+              "question": "安装Fortran语言的GNU编译器的命令是什么？",
+              "id": "5-315-14",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gfortran",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Fortran语言GNU编译器的命令：sudo apt-get remove gfortran。",
+          "qas": [
+            {
+              "question": "卸载Fortran语言GNU编译器的命令是什么？",
+              "id": "5-315-15",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gfortran",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Go语言的GNU编译器用命令：sudo apt-get install gccgo，可指定gccgo-x安装对应版本。",
+          "qas": [
+            {
+              "question": "安装Go语言的GNU编译器的命令是什么？",
+              "id": "5-315-16",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gccgo",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Go语言GNU编译器的命令：sudo apt-get remove gccgo。",
+          "qas": [
+            {
+              "question": "卸载Go语言GNU编译器的命令是什么？",
+              "id": "5-315-17",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gccgo",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GNU编译器集合的仓库地址是http://packages.deepin.com/deepin/pool/main/g/gcc-defaults/。",
+          "qas": [
+            {
+              "question": "GNU编译器集合的仓库地址是什么？",
+              "id": "5-315-18",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gcc-defaults/",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GNU编译器集合的官方网站是http://gcc.gnu.org/。",
+          "qas": [
+            {
+              "question": "GNU编译器集合的官方网站是什么？",
+              "id": "5-315-19",
+              "answers": [
+                {
+                  "text": "http://gcc.gnu.org/",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

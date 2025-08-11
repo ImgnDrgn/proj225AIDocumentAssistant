@@ -1,0 +1,419 @@
+{
+  "data": [
+    {
+      "title": "Docker简介与安装",
+      "paragraphs": [
+        {
+          "context": "Docker是基于Go语言的开源应用容器引擎，能打包应用及依赖到可移植镜像，发布到主流操作系统，实现轻量级虚拟化。",
+          "qas": [
+            {
+              "question": "Docker是基于什么语言实现的？",
+              "id": "5-310-1",
+              "answers": [
+                {
+                  "text": "Go语言",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "Docker能将应用及依赖打包到什么中？",
+              "id": "5-310-2",
+              "answers": [
+                {
+                  "text": "可移植的镜像",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Docker的构想是实现“Build, Ship and Run Any App, Anywhere”，即管理应用的封装、分发、部署、运行生命周期，实现应用级“一次封装，到处运行”。",
+          "qas": [
+            {
+              "question": "Docker的构想是什么？",
+              "id": "5-310-3",
+              "answers": [
+                {
+                  "text": "实现“Build, Ship and Run Any App, Anywhere”",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "Docker构想的目标是什么？",
+              "id": "5-310-4",
+              "answers": [
+                {
+                  "text": "通过对应用的封装、分发、部署、运行生命周期进行管理，达到应用级别的“一次封装，到处运行”。",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用apt安装Docker可参考官方文档，第一步可选卸载旧版本：for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt remove $pkg; done。",
+          "qas": [
+            {
+              "question": "使用apt安装Docker的官方文档在哪里？",
+              "id": "5-310-5",
+              "answers": [
+                {
+                  "text": "https://docs.docker.com/engine/install/debian/",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "使用apt安装Docker时，卸载旧版本的命令是什么？",
+              "id": "5-310-6",
+              "answers": [
+                {
+                  "text": "for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt remove $pkg; done",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt安装Docker第二步是安装依赖：sudo apt update && sudo apt install ca-certificates curl gnupg。",
+          "qas": [
+            {
+              "question": "使用apt安装Docker的第二步是什么？",
+              "id": "5-310-7",
+              "answers": [
+                {
+                  "text": "安装依赖",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "安装Docker依赖的命令是什么？",
+              "id": "5-310-8",
+              "answers": [
+                {
+                  "text": "sudo apt update && sudo apt install ca-certificates curl gnupg",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt安装Docker第三步是添加docker的apt仓库秘钥：curl -fsSL http://mirrors.aliyun.com/docker-ce/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker.gpg。",
+          "qas": [
+            {
+              "question": "使用apt安装Docker的第三步是什么？",
+              "id": "5-310-9",
+              "answers": [
+                {
+                  "text": "添加docker的apt仓库秘钥",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "添加docker的apt仓库秘钥的命令是什么？",
+              "id": "5-310-10",
+              "answers": [
+                {
+                  "text": "curl -fsSL http://mirrors.aliyun.com/docker-ce/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker.gpg",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt安装Docker第四步是添加docker的apt仓库，deepin20.9基于debian10，采用buster：sudo sh -c 'echo \"deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/debian buster stable\" > /etc/apt/sources.list.d/docker.list'。",
+          "qas": [
+            {
+              "question": "使用apt安装Docker的第四步是什么？",
+              "id": "5-310-11",
+              "answers": [
+                {
+                  "text": "添加docker的apt仓库",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "deepin20.9系统添加docker的apt仓库时采用什么发行版代号？",
+              "id": "5-310-12",
+              "answers": [
+                {
+                  "text": "buster",
+                  "answer_start": 55
+                }
+              ]
+            },
+            {
+              "question": "添加docker的apt仓库的命令是什么？",
+              "id": "5-310-13",
+              "answers": [
+                {
+                  "text": "sudo sh -c 'echo \"deb [arch=amd64] http://mirrors.aliyun.com/docker-ce/linux/debian buster stable\" > /etc/apt/sources.list.d/docker.list'",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt安装Docker第五步是更新apt仓库信息并安装docker-ce：sudo apt update && sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin。",
+          "qas": [
+            {
+              "question": "使用apt安装Docker的第五步是什么？",
+              "id": "5-310-14",
+              "answers": [
+                {
+                  "text": "更新apt仓库信息，安装docker-ce",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "更新apt仓库信息并安装docker-ce的命令是什么？",
+              "id": "5-310-15",
+              "answers": [
+                {
+                  "text": "sudo apt update && sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "二进制安装Docker适合内网等无法访问apt源的情况，第一步是从官方下载页下载压缩包，如docker-20.10.9.tgz。",
+          "qas": [
+            {
+              "question": "二进制安装Docker适合什么情况？",
+              "id": "5-310-16",
+              "answers": [
+                {
+                  "text": "完全内网、无法访问apt源的情况",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "二进制安装Docker的第一步是什么？",
+              "id": "5-310-17",
+              "answers": [
+                {
+                  "text": "浏览器访问官方下载页下载压缩包，如docker-20.10.9.tgz。",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "question": "二进制安装Docker的官方下载页地址是什么？",
+              "id": "5-310-18",
+              "answers": [
+                {
+                  "text": "https://download.docker.com/linux/static/stable/x86_64/",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "二进制安装Docker第二步是解压压缩包，将二进制文件放到/usr/local/bin目录。",
+          "qas": [
+            {
+              "question": "二进制安装Docker的第二步是什么？",
+              "id": "5-310-19",
+              "answers": [
+                {
+                  "text": "解压压缩包，将解压后的二进制文件放到 /usr/local/bin 目录",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "二进制安装Docker时，解压后的二进制文件放到哪个目录？",
+              "id": "5-310-20",
+              "answers": [
+                {
+                  "text": "/usr/local/bin",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "二进制安装Docker第三步是新建存储docker数据的空目录，如/home/zhangsan/apps/docker（需替换用户名）。",
+          "qas": [
+            {
+              "question": "二进制安装Docker的第三步是什么？",
+              "id": "5-310-21",
+              "answers": [
+                {
+                  "text": "新建一个空目录用于存储docker数据，例如 /home/zhangsan/apps/docker，其中的 zhangsan 是用户名，注意替换。",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "二进制安装Docker时，存储docker数据的目录示例是什么？",
+              "id": "5-310-22",
+              "answers": [
+                {
+                  "text": "/home/zhangsan/apps/docker",
+                  "answer_start": 48
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "二进制安装Docker第四步是编写服务配置文件docker.service，需注意--data-root参数为数据存储目录。",
+          "qas": [
+            {
+              "question": "二进制安装Docker的第四步是什么？",
+              "id": "5-310-23",
+              "answers": [
+                {
+                  "text": "编写服务配置文件 docker.service, 内容如下。需注意文件中的--data-root 参数为数据存储目录。",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "docker.service文件中哪个参数是数据存储目录？",
+              "id": "5-310-24",
+              "answers": [
+                {
+                  "text": "--data-root",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "二进制安装Docker第五步是将docker.service文件放到/usr/lib/systemd/system目录。",
+          "qas": [
+            {
+              "question": "二进制安装Docker的第五步是什么？",
+              "id": "5-310-25",
+              "answers": [
+                {
+                  "text": "将 docker.service 文件放到 /usr/lib/systemd/system 目录",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "docker.service文件应放到哪个目录？",
+              "id": "5-310-26",
+              "answers": [
+                {
+                  "text": "/usr/lib/systemd/system",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "二进制安装Docker第六步是加载服务并生效：sudo systemctl daemon-reload；sudo systemctl start docker；sudo systemctl enable docker。",
+          "qas": [
+            {
+              "question": "二进制安装Docker的第六步是什么？",
+              "id": "5-310-27",
+              "answers": [
+                {
+                  "text": "在终端使用命令加载服务并生效",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "加载服务并生效的命令有哪些？",
+              "id": "5-310-28",
+              "answers": [
+                {
+                  "text": "sudo systemctl daemon-reload；sudo systemctl start docker；sudo systemctl enable docker",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "二进制安装Docker第七步是使普通用户拥有使用docker的权限：sudo groupadd docker；sudo usermod zhangsan -a -G docker（替换用户名）。",
+          "qas": [
+            {
+              "question": "二进制安装Docker的第七步是什么？",
+              "id": "5-310-29",
+              "answers": [
+                {
+                  "text": "执行以下命令，使普通用户拥有使用docker的权限",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "使普通用户拥有使用docker权限的命令是什么？",
+              "id": "5-310-30",
+              "answers": [
+                {
+                  "text": "sudo groupadd docker；sudo usermod zhangsan -a -G docker（替换zhangsan为实际用户名）",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "二进制安装Docker第八步是注销或重启使权限生效。",
+          "qas": [
+            {
+              "question": "二进制安装Docker的第八步是什么？",
+              "id": "5-310-31",
+              "answers": [
+                {
+                  "text": "注销或重启即可生效",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "二进制安装Docker第九步是验证：docker version。",
+          "qas": [
+            {
+              "question": "二进制安装Docker的第九步是什么？",
+              "id": "5-310-32",
+              "answers": [
+                {
+                  "text": "验证",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "验证Docker是否安装成功的命令是什么？",
+              "id": "5-310-33",
+              "answers": [
+                {
+                  "text": "docker version",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

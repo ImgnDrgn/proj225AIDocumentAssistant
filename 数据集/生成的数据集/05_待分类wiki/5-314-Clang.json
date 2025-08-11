@@ -1,0 +1,164 @@
+{
+  "data": [
+    {
+      "title": "Clang",
+      "paragraphs": [
+        {
+          "context": "Clang是基于LLVM，支持C、C++、Objective C/C++等语言的编译器，用C++编写。",
+          "qas": [
+            {
+              "question": "Clang是用什么语言编写的？",
+              "id": "5-314-1",
+              "answers": [
+                {
+                  "text": "C++",
+                  "answer_start": 44
+                }
+              ]
+            },
+            {
+              "question": "Clang基于什么？支持哪些语言？",
+              "id": "5-314-2",
+              "answers": [
+                {
+                  "text": "基于LLVM，支持C、C++、Objective C/C++等语言",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Clang可使用命令：sudo apt-get install clang，它是个空包，会自动选预设版本安装，也可指定clang-x安装对应版本。",
+          "qas": [
+            {
+              "question": "如何安装Clang？",
+              "id": "5-314-3",
+              "answers": [
+                {
+                  "text": "使用命令：sudo apt-get install clang",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "Clang安装时的特点是什么？",
+              "id": "5-314-4",
+              "answers": [
+                {
+                  "text": "是个空包，会自动选预设版本安装，也可指定clang-x安装对应版本",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Clang的命令为：sudo apt-get remove clang。",
+          "qas": [
+            {
+              "question": "卸载Clang使用什么命令？",
+              "id": "5-314-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove clang",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Clang仓库地址为http://packages.deepin.com/deepin/pool/main/l/llvm-defaults/。",
+          "qas": [
+            {
+              "question": "Clang的仓库地址是什么？",
+              "id": "5-314-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/l/llvm-defaults/",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "clang-tidy是基于Clang的代码检查工具，负责分析代码并找出编程风格不合规部分。",
+          "qas": [
+            {
+              "question": "clang-tidy是什么工具？",
+              "id": "5-314-7",
+              "answers": [
+                {
+                  "text": "基于Clang的代码检查工具，负责分析代码并找出编程风格不合规部分",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用clang-tidy检查代码是否符合LLVM编码规范的命令：clang-tidy -checks=\"llvm-*\" file.cpp，其中file.cpp为需检查的代码文件。",
+          "qas": [
+            {
+              "question": "如何用clang-tidy检查代码是否符合LLVM编码规范？",
+              "id": "5-314-8",
+              "answers": [
+                {
+                  "text": "使用命令：clang-tidy -checks=\"llvm-*\" file.cpp，其中file.cpp为需检查的代码文件",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "clang-tidy的命令行格式：clang-tidy [options] <source0> [... <sourceN>] [-- <compiler command>]。",
+          "qas": [
+            {
+              "question": "clang-tidy的命令行格式是什么？",
+              "id": "5-314-9",
+              "answers": [
+                {
+                  "text": "clang-tidy [options] <source0> [... <sourceN>] [-- <compiler command>]",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Clang的相关工具需安装Clang及其外部工具后才可使用。",
+          "qas": [
+            {
+              "question": "使用Clang的相关工具需要什么前提？",
+              "id": "5-314-10",
+              "answers": [
+                {
+                  "text": "安装Clang及其外部工具",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Clang官方网站是https://clang.llvm.org/。",
+          "qas": [
+            {
+              "question": "Clang的官方网站是什么？",
+              "id": "5-314-11",
+              "answers": [
+                {
+                  "text": "https://clang.llvm.org/",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "data": [
+    {
+      "title": "安装openresty",
+      "paragraphs": [
+        {
+          "context": "OpenResty是一个基于Nginx和Lua的高性能Web平台，集成了大量Lua库、第三方模块及依赖项，用于搭建高并发、高扩展性的动态Web应用等。",
+          "qas": [
+            {
+              "question": "OpenResty是什么？",
+              "id": "5-313-1",
+              "answers": [
+                {
+                  "text": "一个基于Nginx和Lua的高性能Web平台，集成了大量精良的Lua库、第三方模块以及大多数的依赖项，用于方便地搭建能够处理超高并发、扩展性极高的动态 Web 应用、Web 服务和动态网关。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "OpenResty可以用来做什么？",
+              "id": "5-313-2",
+              "answers": [
+                {
+                  "text": "搭建能够处理超高并发、扩展性极高的动态 Web 应用、Web 服务和动态网关。",
+                  "answer_start": 77
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装环境为deepin v20.7 x86_64操作系统，openresty版本1.21.4.1。",
+          "qas": [
+            {
+              "question": "安装openresty的操作系统是什么？",
+              "id": "5-313-3",
+              "answers": [
+                {
+                  "text": "deepin v20.7 x86_64",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "安装的openresty版本是多少？",
+              "id": "5-313-4",
+              "answers": [
+                {
+                  "text": "1.21.4.1",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载、解压、创建目录的步骤：mkdir -p /home/admin/apps/openresty；wget https://openresty.org/download/openresty-1.21.4.1.tar.gz；tar xf openresty-1.21.4.1.tar.gz -C /home/admin/apps；cd /home/admin/apps/openresty-1.21.4.1。",
+          "qas": [
+            {
+              "question": "下载openresty的命令是什么？",
+              "id": "5-313-5",
+              "answers": [
+                {
+                  "text": "wget https://openresty.org/download/openresty-1.21.4.1.tar.gz",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "question": "解压openresty压缩包的命令是什么？",
+              "id": "5-313-6",
+              "answers": [
+                {
+                  "text": "tar xf openresty-1.21.4.1.tar.gz -C /home/admin/apps",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "question": "创建openresty目录的命令是什么？",
+              "id": "5-313-7",
+              "answers": [
+                {
+                  "text": "mkdir -p /home/admin/apps/openresty",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装依赖的命令：sudo apt install -y libpcre3-dev openssl libssl-dev libxml2-dev libgd-dev libxml2 libgeoip-dev libxslt-dev。",
+          "qas": [
+            {
+              "question": "安装openresty需要哪些依赖？",
+              "id": "5-313-8",
+              "answers": [
+                {
+                  "text": "libpcre3-dev openssl libssl-dev libxml2-dev libgd-dev libxml2 libgeoip-dev libxslt-dev",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "question": "安装依赖的命令是什么？",
+              "id": "5-313-9",
+              "answers": [
+                {
+                  "text": "sudo apt install -y libpcre3-dev openssl libssl-dev libxml2-dev libgd-dev libxml2 libgeoip-dev libxslt-dev",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "预编译时--prefix指的是实际安装目录，配置命令包含--with-threads、--with-file-aio等参数。",
+          "qas": [
+            {
+              "question": "预编译时--prefix参数的含义是什么？",
+              "id": "5-313-10",
+              "answers": [
+                {
+                  "text": "实际安装目录",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编译并安装命令：make；make install。多核CPU可给make加-j参数加快速度。",
+          "qas": [
+            {
+              "question": "编译openresty的命令是什么？",
+              "id": "5-313-11",
+              "answers": [
+                {
+                  "text": "make",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "安装openresty的命令是什么？",
+              "id": "5-313-12",
+              "answers": [
+                {
+                  "text": "make install",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "多核CPU如何加快编译速度？",
+              "id": "5-313-13",
+              "answers": [
+                {
+                  "text": "为make添加-j参数，比如4核可以用-j4",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "验证安装步骤：编辑/home/admin/apps/openresty/nginx/conf/nginx.conf，改listen 80;为listen 8000;；到/home/admin/apps/openresty/bin目录执行./openresty启动；浏览器访问http://127.0.0.1:8000，出现欢迎页则成功。",
+          "qas": [
+            {
+              "question": "验证openresty安装时，需要修改nginx配置文件的什么内容？",
+              "id": "5-313-14",
+              "answers": [
+                {
+                  "text": "将listen 80;改成listen 8000;",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "question": "启动openresty的命令是什么？",
+              "id": "5-313-15",
+              "answers": [
+                {
+                  "text": "./openresty",
+                  "answer_start": 106
+                }
+              ]
+            },
+            {
+              "question": "如何验证openresty安装成功？",
+              "id": "5-313-16",
+              "answers": [
+                {
+                  "text": "浏览器访问http://127.0.0.1:8000，出现openresty欢迎信息页",
+                  "answer_start": 128
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "可选操作：将/home/admin/apps/openresty/bin目录添加到环境变量PATH中，方便直接使用。",
+          "qas": [
+            {
+              "question": "如何方便地直接使用openresty命令？",
+              "id": "5-313-17",
+              "answers": [
+                {
+                  "text": "将/home/admin/apps/openresty/bin目录添加到环境变量PATH中",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
