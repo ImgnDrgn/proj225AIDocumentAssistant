@@ -1,0 +1,259 @@
+{
+  "data": [
+    {
+      "title": "linux内存相关的命令详解",
+      "paragraphs": [
+        {
+          "context": "free命令用于显示系统内存使用量情况，包含物理和交换内存的总量、使用量和空闲量。",
+          "qas": [
+            {
+              "question": "free命令的功能是什么？",
+              "id": "5-277-1",
+              "answers": [
+                {
+                  "text": "显示系统内存使用量情况，包含物理和交换内存的总量、使用量和空闲量情况。",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "free命令常用参数中，-b以Byte显示，-k以kb为单位，-m以mb为单位，-g以gb为单位，-s持续显示，-t显示总和，-h以易读单位显示。",
+          "qas": [
+            {
+              "question": "free命令中以mb为单位显示内存使用情况的参数是什么？",
+              "id": "5-277-2",
+              "answers": [
+                {
+                  "text": "-m",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "哪个参数可以让free命令以易读的单位显示内存使用情况？",
+              "id": "5-277-3",
+              "answers": [
+                {
+                  "text": "-h",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "question": "使用什么参数能让free命令持续显示内存使用情况？",
+              "id": "5-277-4",
+              "answers": [
+                {
+                  "text": "-s",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "free命令输出中，total是物理内存大小，used是已使用内存（含cached和应用实际使用），free是未被使用的空闲内存，shared是共享内存大小。",
+          "qas": [
+            {
+              "question": "free命令输出中的total字段表示什么？",
+              "id": "5-277-5",
+              "answers": [
+                {
+                  "text": "物理内存大小，就是机器实际的内存",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "free命令中的free字段指的是什么？",
+              "id": "5-277-6",
+              "answers": [
+                {
+                  "text": "未被使用的内存大小（俗称：空闲内存）",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "used字段包含哪些内容？",
+              "id": "5-277-7",
+              "answers": [
+                {
+                  "text": "已使用的内存大小，这个值包括了 cached 和应用程序实际使用的内存",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cat /proc/meminfo包含所有内存相关信息，如MemTotal、MemFree、MemAvailable等。",
+          "qas": [
+            {
+              "question": "哪个命令可以查看所有的内存相关信息？",
+              "id": "5-277-8",
+              "answers": [
+                {
+                  "text": "cat /proc/meminfo",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "内存泄漏指程序运行中不能正常回收不用的内存，导致内存增长过高，最终使系统不可用，可通过valgrind工具分析。",
+          "qas": [
+            {
+              "question": "什么是内存泄漏？",
+              "id": "5-277-9",
+              "answers": [
+                {
+                  "text": "如果程序运行过程中不能正常回收不用的内存，那么一段时间就会导致内存增长很高，最终导致系统不可以用，这种情况称为内存泄漏。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "可以用什么工具进行内存泄漏分析？",
+              "id": "5-277-10",
+              "answers": [
+                {
+                  "text": "valgrind",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "内存最小单位为页，默认一页4K。虚拟内存是进程申请的空间，物理内存是系统实际分配给进程运行的内存。ps aux中VSZ是虚拟内存，RSS是物理内存。",
+          "qas": [
+            {
+              "question": "内存的最小单位是什么？默认大小是多少？",
+              "id": "5-277-11",
+              "answers": [
+                {
+                  "text": "页（paging）,默认情况一页是 4K。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "ps aux命令输出中，VSZ和RSS分别代表什么？",
+              "id": "5-277-12",
+              "answers": [
+                {
+                  "text": "VSZ 虚拟内存，RSS 物理内存",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "内存溢出（OOM）是进程申请内存时系统无更多内存分配，系统会杀进程释放内存。可通过dmesg或/var/log/messages查看。",
+          "qas": [
+            {
+              "question": "什么是内存溢出（OOM）？",
+              "id": "5-277-13",
+              "answers": [
+                {
+                  "text": "当进程运行向系统申请内存时，系统没有更多的进程分配给该进程了，就会出现内存溢出。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "发生内存溢出后，如何快速确定相关信息？",
+              "id": "5-277-14",
+              "answers": [
+                {
+                  "text": "通过dmesg命令或者通过 `/var/log/messages` 来快速确定。",
+                  "answer_start": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "panic_on_oom参数值有0、1、2。0触发oom killer杀进程；2直接触发kernel panic；1根据情况处理。",
+          "qas": [
+            {
+              "question": "panic_on_oom参数值为0时会怎样？",
+              "id": "5-277-15",
+              "answers": [
+                {
+                  "text": "触发 oom killer 进行杀进程处理（`/proc/sys/vm/oom_kill_allocating_task` 默认值为 0，结束占用内存多的进程；如果设置为 1，就杀死当前申请内存的进程）",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "panic_on_oom参数值为2时的作用是什么？",
+              "id": "5-277-16",
+              "answers": [
+                {
+                  "text": "直接触发 kernel panic（类似于 Windows 的蓝屏），此时系统开发人员可以连接进行debug，但是对其他人并没有什么用。更多希望系统快速重启（`/proc/sys/kernel/panic` 设置多少秒后重启）",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Overcommit控制内存申请，overcommit_memory有0、1、2三个值。0检查可用内存，足够则允许申请，否则引发OOM；1允许分配所有物理内存；2不允许超过系统设置大小。",
+          "qas": [
+            {
+              "question": "overcommit_memory的值为0时，内核如何处理内存申请？",
+              "id": "5-277-17",
+              "answers": [
+                {
+                  "text": "内核将检查是否有足够的可用内存供应用进程使用；如果有足够的可用内存，内存申请允许；否则，引发 OOM。",
+                  "answer_start": 43
+                }
+              ]
+            },
+            {
+              "question": "overcommit_memory设为1时的内存分配策略是什么？",
+              "id": "5-277-18",
+              "answers": [
+                {
+                  "text": "内核允许分配所有的物理内存，而不管当前的内存状态如何。",
+                  "answer_start": 130
+                }
+              ]
+            },
+            {
+              "question": "overcommit_memory为2时，系统可申请内存空间大小如何确定？",
+              "id": "5-277-19",
+              "answers": [
+                {
+                  "text": "系统设置的可申请内存空间大小为：Swap+RAM*(“/proc/sys/vm/overcommit_ratio”/100)",
+                  "answer_start": 196
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/proc/sys/vm/overcommit_ratio是系统最大可分配内存的百分比，默认是50。",
+          "qas": [
+            {
+              "question": "/proc/sys/vm/overcommit_ratio的默认值是多少？",
+              "id": "5-277-20",
+              "answers": [
+                {
+                  "text": "50",
+                  "answer_start": 73
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

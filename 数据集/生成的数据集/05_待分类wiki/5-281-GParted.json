@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "title": "GParted",
+      "paragraphs": [
+        {
+          "context": "GParted是一款Linux下的功能非常强大的分区工具，可创建、删除分区，调整分区大小和移动分区位置。",
+          "qas": [
+            {
+              "question": "GParted是一款什么工具？",
+              "id": "5-281-1",
+              "answers": [
+                {
+                  "text": "Linux下的功能非常强大的分区工具",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "GParted可以进行哪些操作？",
+              "id": "5-281-2",
+              "answers": [
+                {
+                  "text": "创建、删除分区，调整分区的大小和移动分区的位置",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装GParted的命令是sudo apt-get install gparted。",
+          "qas": [
+            {
+              "question": "如何安装GParted？",
+              "id": "5-281-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gparted",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载GParted的命令是sudo apt-get remove gparted。",
+          "qas": [
+            {
+              "question": "怎样卸载GParted？",
+              "id": "5-281-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gparted",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GParted的仓库地址是http://packages.deepin.com/deepin/pool/main/g/gparted/。",
+          "qas": [
+            {
+              "question": "GParted的仓库地址是什么？",
+              "id": "5-281-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gparted/",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

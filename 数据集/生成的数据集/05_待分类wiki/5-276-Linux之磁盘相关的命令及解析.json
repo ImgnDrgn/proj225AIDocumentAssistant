@@ -1,0 +1,414 @@
+{
+  "data": [
+    {
+      "title": "Linux之磁盘相关的命令及解析",
+      "paragraphs": [
+        {
+          "context": "df命令来自英文词组“Disk Free”的缩写，用于显示系统上磁盘空间的使用量情况，含可用、已有及使用率等信息，默认单位为Kb，建议使用-h参数进行单位换算，可查看磁盘使用情况和挂载信息。",
+          "qas": [
+            {
+              "question": "df命令的英文全称是什么？",
+              "id": "5-276-1",
+              "answers": [
+                {
+                  "text": "Disk Free",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "df命令的功能是什么？",
+              "id": "5-276-2",
+              "answers": [
+                {
+                  "text": "显示系统上磁盘空间的使用量情况，含可用、已有及使用率等信息",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "df命令默认的单位是什么？",
+              "id": "5-276-3",
+              "answers": [
+                {
+                  "text": "Kb",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "df命令语法格式为df [参数] [对象磁盘/分区]，常用参数中，-a显示所有系统文件，-h以易读的方式显示，-i显示索引字节信息，-l只显示本地文件系统。",
+          "qas": [
+            {
+              "question": "df命令的语法格式是什么？",
+              "id": "5-276-4",
+              "answers": [
+                {
+                  "text": "df [参数] [对象磁盘/分区]",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "df命令中，-a参数的作用是什么？",
+              "id": "5-276-5",
+              "answers": [
+                {
+                  "text": "显示所有系统文件",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "想要以易读方式显示磁盘空间使用情况，df命令应使用哪个参数？",
+              "id": "5-276-6",
+              "answers": [
+                {
+                  "text": "-h",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "df -h可带有容量单位显示系统全部磁盘使用量情况，df -h /boot显示指定磁盘分区/boot的使用量情况，df -t xfs显示系统中所有xfs格式文件系统的磁盘分区使用量。",
+          "qas": [
+            {
+              "question": "如何带有容量单位显示系统全部磁盘使用量情况？",
+              "id": "5-276-7",
+              "answers": [
+                {
+                  "text": "df -h",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "查看/boot分区的磁盘使用量情况（带容量单位），应使用什么命令？",
+              "id": "5-276-8",
+              "answers": [
+                {
+                  "text": "df -h /boot",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "question": "df -t xfs命令的作用是什么？",
+              "id": "5-276-9",
+              "answers": [
+                {
+                  "text": "显示系统中所有文件系统格式为xfs的磁盘分区使用量情况",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "du命令来自英文词组“Disk Usage”的缩写，用于查看文件或目录的大小，与df不同，df查看磁盘或分区使用情况，du查看文件或目录在磁盘中的占用情况。",
+          "qas": [
+            {
+              "question": "du命令的英文全称是什么？",
+              "id": "5-276-10",
+              "answers": [
+                {
+                  "text": "Disk Usage",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "du命令的功能是什么？",
+              "id": "5-276-11",
+              "answers": [
+                {
+                  "text": "查看文件或目录的大小",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "df和du命令的区别是什么？",
+              "id": "5-276-12",
+              "answers": [
+                {
+                  "text": "df是用于查看磁盘或分区使用情况的命令，而du命令则是用于按照指定容量单位来查看文件或目录在磁盘中的占用情况",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "du命令语法格式为du [参数] 文件，常用参数中，-a显示目录中所有文件大小，-h以易读方式显示文件大小，-s仅显示总计。",
+          "qas": [
+            {
+              "question": "du命令的语法格式是什么？",
+              "id": "5-276-13",
+              "answers": [
+                {
+                  "text": "du [参数] 文件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "du命令中，-s参数的作用是什么？",
+              "id": "5-276-14",
+              "answers": [
+                {
+                  "text": "仅显示总计",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "du -sh *以易读格式显示指定目录内各个文件的大小，du -sh restart/显示指定目录restart/内总文件的大小。",
+          "qas": [
+            {
+              "question": "如何以易读格式显示指定目录内各个文件的大小？",
+              "id": "5-276-15",
+              "answers": [
+                {
+                  "text": "du -sh *",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "查看restart/目录内总文件的大小（易读格式），使用什么命令？",
+              "id": "5-276-16",
+              "answers": [
+                {
+                  "text": "du -sh restart/",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iostat用于监视系统输入输出设备和CPU的使用情况，汇报磁盘活动统计和CPU使用情况，不能对某个进程深入分析，仅分析系统整体情况。",
+          "qas": [
+            {
+              "question": "iostat命令的功能是什么？",
+              "id": "5-276-17",
+              "answers": [
+                {
+                  "text": "监视系统输入输出设备和CPU的使用情况，汇报磁盘活动统计情况和CPU使用情况",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "iostat的局限性是什么？",
+              "id": "5-276-18",
+              "answers": [
+                {
+                  "text": "不能对某个进程进行深入分析，仅对系统的整体情况进行分析",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iostat语法格式为iostat [选项] [时间间隔] [次数]，常用参数中，-c显示CPU使用情况，-d指定磁盘设备，-x显示详细信息，-k以千字节每秒为单位显示。",
+          "qas": [
+            {
+              "question": "iostat的语法格式是什么？",
+              "id": "5-276-19",
+              "answers": [
+                {
+                  "text": "iostat [ 选项 ] [ <时间间隔> [ <次数> ] ]",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "iostat命令中，-c参数的作用是什么？",
+              "id": "5-276-20",
+              "answers": [
+                {
+                  "text": "显示 CPU 使用情况",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "想要iostat显示详细信息，应使用哪个参数？",
+              "id": "5-276-21",
+              "answers": [
+                {
+                  "text": "-x",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iostat -d 2每隔两秒报告一次磁盘情况，iostat -d 2 6每2秒报告一次，持续6次，iostat -x sda sdc 2 6显示sda与sdc的统计数据，每2秒一次，持续6次。",
+          "qas": [
+            {
+              "question": "如何让iostat每隔两秒报告一次磁盘情况？",
+              "id": "5-276-22",
+              "answers": [
+                {
+                  "text": "iostat -d 2",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "iostat -d 2 6的含义是什么？",
+              "id": "5-276-23",
+              "answers": [
+                {
+                  "text": "每2秒报告一次磁盘情况，持续6次",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iostat输出中，tps表示设备每秒的传输次数，kB_read/s是每秒从设备读取的数据量，kB_wrtn/s是每秒向设备写入的数据量，%util是采用周期内用于IO操作的时间比率，接近100%说明I/O系统满负荷。",
+          "qas": [
+            {
+              "question": "iostat输出中，tps代表什么？",
+              "id": "5-276-24",
+              "answers": [
+                {
+                  "text": "该设备每秒的传输次数",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "kB_read/s在iostat输出中表示什么？",
+              "id": "5-276-25",
+              "answers": [
+                {
+                  "text": "每秒从设备（drive expressed）读取的数据量",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "question": "%util接近100%说明什么？",
+              "id": "5-276-26",
+              "answers": [
+                {
+                  "text": "产生的I/O请求太多，I/O系统已经满负荷",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iotop命令动态查看磁盘IO情况，使用方法类似top，具有PID、用户、I/O、进程等信息，可弥补iostat等工具只能统计per设备读写情况的不足，方便查看每个进程的IO使用。",
+          "qas": [
+            {
+              "question": "iotop命令的功能是什么？",
+              "id": "5-276-27",
+              "answers": [
+                {
+                  "text": "动态地查看磁盘 IO 情况，显示PID、用户、I/O、进程等相关信息",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "iotop相比iostat等工具的优势是什么？",
+              "id": "5-276-28",
+              "answers": [
+                {
+                  "text": "可以很方便的查看每个进程是如何使用 IO 的，弥补了iostat等大多数只能统计到 per 设备的读写情况的不足",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iotop语法格式为iotop [参数]，常用参数中，-o只显示有io操作的进程，-b运行在非交互式模式，-n NUM设置非交互式模式下显示次数，-u USER监控指定用户的进程。",
+          "qas": [
+            {
+              "question": "iotop的语法格式是什么？",
+              "id": "5-276-29",
+              "answers": [
+                {
+                  "text": "iotop [参数]",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "iotop中，-o参数的作用是什么？",
+              "id": "5-276-30",
+              "answers": [
+                {
+                  "text": "只显示有 io 操作的进程",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "question": "想要在非交互式模式下使用iotop并设置显示次数，应使用哪个参数？",
+              "id": "5-276-31",
+              "answers": [
+                {
+                  "text": "-n NUM",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iotop -o只显示IO操作进程，iotop -b批量显示无交互，iotop -u root显示root用户的IO进程。iotop输出中，Total DISK READ是从磁盘读取的总速率，TID是线程ID，按p可转成进程ID，COMMAND是具体进程命令。",
+          "qas": [
+            {
+              "question": "如何让iotop只显示有IO操作的进程？",
+              "id": "5-276-32",
+              "answers": [
+                {
+                  "text": "iotop -o",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "查看root用户的IO进程，使用什么iotop命令？",
+              "id": "5-276-33",
+              "answers": [
+                {
+                  "text": "iotop -u root",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "iotop输出中，TID是什么？如何转换为进程ID？",
+              "id": "5-276-34",
+              "answers": [
+                {
+                  "text": "TID是线程 ID，按 p 可转换成进程 ID",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

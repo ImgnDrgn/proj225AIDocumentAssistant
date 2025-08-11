@@ -1,0 +1,204 @@
+{
+  "data": [
+    {
+      "title": "ext4 linux 分区修复",
+      "paragraphs": [
+        {
+          "context": "用户使用kde分区管理器调整调整分区，取消操作后强制关闭，导致/dev/nvme0n1p5剩余空间无法识别，/分区正常。",
+          "qas": [
+            {
+              "question": "用户在什么操作后出现分区问题？",
+              "id": "5-280-1",
+              "answers": [
+                {
+                  "text": "使用kde分区管理器调整分区，取消操作后强制关闭",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "出现问题后哪些分区状况如何？",
+              "id": "5-280-2",
+              "answers": [
+                {
+                  "text": "/分区正常，/dev/nvme0n1p5剩余空间无法识别",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户尝试用windows的diskgenius恢复文件，但其按windows分区逻辑恢复，文件零散无目录结构和名字，故否决该方案。",
+          "qas": [
+            {
+              "question": "用户为什么否决用diskgenius恢复文件的方案？",
+              "id": "5-280-3",
+              "answers": [
+                {
+                  "text": "diskgenius按windows分区逻辑恢复，文件零散，几乎没有目录结构，甚至名字都没有",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ext4有健壮性，文件系统被破坏但数据可能未大量损坏，重建文件系统可恢复大部分数据。",
+          "qas": [
+            {
+              "question": "为什么用户认为ext4分区的数据可能能恢复？",
+              "id": "5-280-4",
+              "answers": [
+                {
+                  "text": "ext4有一定健壮性，文件系统被破坏，但实际数据应该没有被破坏多少，只要能重建文件系统，大部分都是能够用的",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`dumpe2f2 /dev/nvme0n1p4`显示ext4分区修复块信息，`tune2fs -h /dev/nvme0n1p4`查看分区参数。",
+          "qas": [
+            {
+              "question": "哪个命令可以显示ext4分区的修复块信息？",
+              "id": "5-280-5",
+              "answers": [
+                {
+                  "text": "dumpe2f2 /dev/nvme0n1p4",
+                  "answer_start": 1
+                }
+              ]
+            },
+            {
+              "question": "`tune2fs -h /dev/nvme0n1p4`的作用是什么？",
+              "id": "5-280-6",
+              "answers": [
+                {
+                  "text": "查看分区的一些参数",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`mkfs.ext4 -n /dev/nvme0n1p5`可看修复块位置，位置固定为32768、98304等，块大小可从类似“Creating filesystem with 2621440 4k blocks...”信息得知。",
+          "qas": [
+            {
+              "question": "如何查看ext4分区修复块的位置？",
+              "id": "5-280-7",
+              "answers": [
+                {
+                  "text": "mkfs.ext4 -n /dev/nvme0n1p5",
+                  "answer_start": 1
+                }
+              ]
+            },
+            {
+              "question": "从什么信息可以得知ext4分区的块大小？",
+              "id": "5-280-8",
+              "answers": [
+                {
+                  "text": "Creating filesystem with 2621440 4k blocks and 655360 inodes",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`mount -t ext4 -o sb=131072 /dev/nvme0n1p5 /mnt`用131072位置的备份块挂载文件系统，131072由32768*4得来，因sb以1k为单位，备份块信息是4k。",
+          "qas": [
+            {
+              "question": "如何使用备份块挂载ext4文件系统到/mnt？",
+              "id": "5-280-9",
+              "answers": [
+                {
+                  "text": "mount -t ext4 -o sb=131072 /dev/nvme0n1p5 /mnt",
+                  "answer_start": 1
+                }
+              ]
+            },
+            {
+              "question": "131072这个sb参数是如何得来的？",
+              "id": "5-280-10",
+              "answers": [
+                {
+                  "text": "32768 * 4 = 131072，因sb是按1k为单位，备份块之前的信息是4k",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户因p5分区偏移100G挂载失败，通过cfdisk删掉错误p5，与100G合并重建p5恢复原区域，再挂载成功。",
+          "qas": [
+            {
+              "question": "用户的p5分区为何挂载失败？",
+              "id": "5-280-11",
+              "answers": [
+                {
+                  "text": "p5的位置偏移了100G",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何恢复p5分区到原来的位置？",
+              "id": "5-280-12",
+              "answers": [
+                {
+                  "text": "用cfdisk删掉错误的p5，和100G合并，所有空间创建p5",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "正式修复用`fsck.ext4 -b 32768 /dev/nvme0n1p5`，会提示确认；`mkfs.ext4 -S /dev/nvme0n1p5`和`mkfs.ext4 -y /dev/nvme0n1p5`是强行重建文件系统，慎用。",
+          "qas": [
+            {
+              "question": "正式修复ext4分区的命令是什么？",
+              "id": "5-280-13",
+              "answers": [
+                {
+                  "text": "fsck.ext4 -b 32768 /dev/nvme0n1p5",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "哪些是强行重建文件系统的命令？",
+              "id": "5-280-14",
+              "answers": [
+                {
+                  "text": "mkfs.ext4 -S /dev/nvme0n1p5、mkfs.ext4 -y /dev/nvme0n1p5",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "分区会改变PARTUUID，导致/etc/fstab挂载不上/home，需修复。",
+          "qas": [
+            {
+              "question": "分区改变会导致什么问题？",
+              "id": "5-280-15",
+              "answers": [
+                {
+                  "text": "改变PARTUUID，导致/etc/fstab挂载不上/home",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
