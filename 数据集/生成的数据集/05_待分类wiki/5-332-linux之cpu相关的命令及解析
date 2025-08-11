@@ -1,0 +1,324 @@
+{
+  "data": [
+    {
+      "title": "linux之cpu相关的命令及解析",
+      "paragraphs": [
+        {
+          "context": "lscpu命令从sysfs和/proc/cpuinfo收集cpu体系结构信息，输出包含cpu数量，线程，核数，套接字，缓存等。",
+          "qas": [
+            {
+              "question": "lscpu命令从哪里收集cpu体系结构信息？",
+              "id": "5-332-1",
+              "answers": [
+                {
+                  "text": "sysfs和/proc/cpuinfo",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "lscpu命令输出包含哪些信息？",
+              "id": "5-332-2",
+              "answers": [
+                {
+                  "text": "cpu数量，线程，核数，套接字，缓存等",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lscpu常用参数中，-a或--all表示同时打印在线和离线CPU（-e选项默认值）；-b或--online只打印在线CPU（-p选项默认值）；-c或--offline只打印离线CPU。",
+          "qas": [
+            {
+              "question": "lscpu命令中，-a参数的作用是什么？",
+              "id": "5-332-3",
+              "answers": [
+                {
+                  "text": "同时打印在线和离线CPU（-e选项默认值）",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "lscpu的--online参数对应的短参数是什么？其作用是？",
+              "id": "5-332-4",
+              "answers": [
+                {
+                  "text": "-b，只打印在线CPU（-p选项默认值）",
+                  "answer_start": 48
+                }
+              ]
+            },
+            {
+              "question": "若要只打印离线CPU，lscpu应使用哪个参数？",
+              "id": "5-332-5",
+              "answers": [
+                {
+                  "text": "-c或--offline",
+                  "answer_start": 90
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lscpu的-e或--extended[=<列表>]打印扩展的可读格式；-p或--parse[=<列表>]打印可解析格式；-x或--hex打印十六进制掩码而非CPU列表。",
+          "qas": [
+            {
+              "question": "想要打印扩展的可读格式，lscpu需使用哪个参数？",
+              "id": "5-332-6",
+              "answers": [
+                {
+                  "text": "-e或--extended[=<列表>]",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "lscpu的-p参数有什么作用？",
+              "id": "5-332-7",
+              "answers": [
+                {
+                  "text": "打印可解析格式",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "lscpu的--hex参数对应的短参数是什么？作用是？",
+              "id": "5-332-8",
+              "answers": [
+                {
+                  "text": "-x，打印十六进制掩码而非CPU列表",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mpstat命令可以显示随着时间变化的CPU数据，包含在sysstat工具集中，使用前需安装sysstat。",
+          "qas": [
+            {
+              "question": "mpstat命令的作用是什么？",
+              "id": "5-332-9",
+              "answers": [
+                {
+                  "text": "显示随着时间变化的CPU数据",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "mpstat命令包含在哪个工具集中？使用前需要做什么？",
+              "id": "5-332-10",
+              "answers": [
+                {
+                  "text": "sysstat工具集，使用前需安装sysstat",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mpstat语法格式为mpstat [选项] [ <时间间隔> [ <次数> ] ]，常用参数-P用于指定执行监控的CPU，取值0~CPUNUM，或用ALL查看全部CPU。",
+          "qas": [
+            {
+              "question": "mpstat的语法格式是怎样的？",
+              "id": "5-332-11",
+              "answers": [
+                {
+                  "text": "mpstat [选项] [ <时间间隔> [ <次数> ] ]",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "mpstat的-P参数有什么作用？",
+              "id": "5-332-12",
+              "answers": [
+                {
+                  "text": "指定执行监控的CPU，取值0~CPUNUM，或用ALL查看全部CPU",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mpstat参考实例：监控第一个CPU用mpstat -P 1；监控全部CPU用mpstat -P ALL；每隔1个时间单位采样5次用mpstat 1 5。",
+          "qas": [
+            {
+              "question": "如何用mpstat监控第一个CPU？",
+              "id": "5-332-13",
+              "answers": [
+                {
+                  "text": "mpstat -P 1",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "若要监控全部CPU，mpstat命令是什么？",
+              "id": "5-332-14",
+              "answers": [
+                {
+                  "text": "mpstat -P ALL",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "如何使用mpstat每隔1个时间单位采样5次？",
+              "id": "5-332-15",
+              "answers": [
+                {
+                  "text": "mpstat 1 5",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mpstat输出字段中，%user表示用户态程序，%nice是优先级调整，%sys为内核态消耗，%iowait是磁盘等待，%irq是硬件中断，%soft是软件中断。",
+          "qas": [
+            {
+              "question": "mpstat输出中，%user表示什么？",
+              "id": "5-332-16",
+              "answers": [
+                {
+                  "text": "用户态程序",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "%nice在mpstat输出中代表什么？",
+              "id": "5-332-17",
+              "answers": [
+                {
+                  "text": "优先级调整",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "mpstat中的%sys表示什么？",
+              "id": "5-332-18",
+              "answers": [
+                {
+                  "text": "内核态消耗",
+                  "answer_start": 46
+                }
+              ]
+            },
+            {
+              "question": "%iowait在mpstat输出中是什么意思？",
+              "id": "5-332-19",
+              "answers": [
+                {
+                  "text": "磁盘等待",
+                  "answer_start": 60
+                }
+              ]
+            },
+            {
+              "question": "mpstat中的%irq和%soft分别代表什么？",
+              "id": "5-332-20",
+              "answers": [
+                {
+                  "text": "%irq是硬件中断，%soft是软件中断",
+                  "answer_start": 73
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mpstat输出中，%steal是处理hyperviosr的消耗，%guest是虚拟机消耗掉的CPU，%idle是CPU空闲。",
+          "qas": [
+            {
+              "question": "%steal在mpstat输出中表示什么？",
+              "id": "5-332-21",
+              "answers": [
+                {
+                  "text": "处理hyperviosr的消耗",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "mpstat中的%guest代表什么？",
+              "id": "5-332-22",
+              "answers": [
+                {
+                  "text": "虚拟机消耗掉的CPU",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "%idle在mpstat输出中是什么含义？",
+              "id": "5-332-23",
+              "answers": [
+                {
+                  "text": "CPU空闲",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mpstat字段说明：%iowait过高表示硬盘有I/O瓶颈；%idle高表示CPU较空闲；%idle高但系统响应慢可能是CPU等待分配内存，应加大内存；%idle持续低于10表明CPU处理能力低，需解决CPU资源问题。",
+          "qas": [
+            {
+              "question": "mpstat中%iowait值过高说明什么？",
+              "id": "5-332-24",
+              "answers": [
+                {
+                  "text": "硬盘存在I/O瓶颈",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "%idle值高表示什么？",
+              "id": "5-332-25",
+              "answers": [
+                {
+                  "text": "CPU较空闲",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "若%idle值高但系统响应慢，可能是什么原因？应如何解决？",
+              "id": "5-332-26",
+              "answers": [
+                {
+                  "text": "可能是CPU等待分配内存，应加大内存容量",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "%idle值持续低于10表明什么？",
+              "id": "5-332-27",
+              "answers": [
+                {
+                  "text": "CPU处理能力相对较低，系统中最需要解决的资源是CPU",
+                  "answer_start": 100
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
