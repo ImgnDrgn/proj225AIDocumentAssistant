@@ -1,0 +1,130 @@
+{
+  "title": "SuperTux",
+  "paragraphs": [
+    {
+      "context": "SuperTux是一款类似超级马里奥兄弟的游戏，在游戏中控制Tux企鹅通过跳起来顶砖块，吃到金币或雪球或者花，雪球可以使Tux企鹅长大，然后吃到花后可以发子弹。",
+      "qas": [
+        {
+          "id": "5-353-1",
+          "question": "SuperTux是什么类型的游戏？",
+          "answers": [
+            {
+              "text": "类似超级马里奥兄弟的游戏",
+              "answer_start": 8
+            }
+          ]
+        },
+        {
+          "id": "5-353-2",
+          "question": "玩家在游戏中控制什么角色？",
+          "answers": [
+            {
+              "text": "Tux企鹅",
+              "answer_start": 27
+            }
+          ]
+        },
+        {
+          "id": "5-353-3",
+          "question": "Tux企鹅通过什么方式顶砖块？",
+          "answers": [
+            {
+              "text": "跳起来",
+              "answer_start": 27
+            }
+          ]
+        },
+        {
+          "id": "5-353-4",
+          "question": "游戏中Tux企鹅可以吃到哪些物品？",
+          "answers": [
+            {
+              "text": "金币、雪球、花",
+              "answer_start": 34
+            }
+          ]
+        },
+        {
+          "id": "5-353-5",
+          "question": "雪球对Tux企鹅有什么作用？",
+          "answers": [
+            {
+              "text": "可以使Tux企鹅长大",
+              "answer_start": 49
+            }
+          ]
+        },
+        {
+          "id": "5-353-6",
+          "question": "吃到花后Tux企鹅能做什么？",
+          "answers": [
+            {
+              "text": "可以发子弹",
+              "answer_start": 65
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "sudo apt-get install supertux",
+      "qas": [
+        {
+          "id": "5-353-7",
+          "question": "如何安装SuperTux？",
+          "answers": [
+            {
+              "text": "sudo apt-get install supertux",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "sudo apt-get remove supertux",
+      "qas": [
+        {
+          "id": "5-353-8",
+          "question": "如何卸载SuperTux？",
+          "answers": [
+            {
+              "text": "sudo apt-get remove supertux",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "http://packages.deepin.com/deepin/pool/main/s/supertux/",
+      "qas": [
+        {
+          "id": "5-353-9",
+          "question": "SuperTux的仓库地址是什么？",
+          "answers": [
+            {
+              "text": "http://packages.deepin.com/deepin/pool/main/s/supertux/",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "维基百科：",
+      "qas": [
+        {
+          "id": "5-353-10",
+          "question": "哪个百科网站提到了SuperTux？",
+          "answers": [
+            {
+              "text": "维基百科",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

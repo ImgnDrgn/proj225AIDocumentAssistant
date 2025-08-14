@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "Stellarium",
+      "paragraphs": [
+        {
+          "context": "Stellarium是一款虚拟星象仪的计算机软件，是天文爱好者学习夜空知识，进行星空观测必备的辅助软件。stellarium拥有高清的画质，可以真实地模拟出肉眼、望远镜所看到的天空、虚拟出各种天文现象，绘制出各种星图等。",
+          "qas": [
+            {
+              "id": "5-363-1",
+              "question": "Stellarium是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "虚拟星象仪的计算机软件",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-363-2",
+              "question": "Stellarium的主要用户群体是谁？",
+              "answers": [
+                {
+                  "text": "天文爱好者",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-363-3",
+              "question": "Stellarium具有怎样的画质？",
+              "answers": [
+                {
+                  "text": "高清的画质",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "id": "5-363-4",
+              "question": "Stellarium能够模拟出哪些内容？",
+              "answers": [
+                {
+                  "text": "肉眼、望远镜所看到的天空、虚拟出各种天文现象，绘制出各种星图等",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "5-363-5",
+              "question": "Stellarium能够模拟哪些观测设备下的天空？",
+              "answers": [
+                {
+                  "text": "肉眼、望远镜",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install stellarium",
+          "qas": [
+            {
+              "id": "5-363-6",
+              "question": "安装Stellarium的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install stellarium",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove stellarium",
+          "qas": [
+            {
+              "id": "5-363-7",
+              "question": "卸载Stellarium的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove stellarium",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/s/stellarium/",
+          "qas": [
+            {
+              "id": "5-363-8",
+              "question": "Stellarium的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/stellarium/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

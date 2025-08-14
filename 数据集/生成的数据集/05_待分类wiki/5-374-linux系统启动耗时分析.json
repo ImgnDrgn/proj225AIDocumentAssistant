@@ -1,0 +1,150 @@
+{
+  "title": "linux系统启动耗时分析",
+  "paragraphs": [
+    {
+      "context": "systemd-analyze 命令可以方便的记录系统启动耗时详情。可以通过：systemd-analyze plot > start_analyze.svg 命令来输出启动耗时的矢量图。",
+      "qas": [
+        {
+          "id": "5-374-1",
+          "question": "systemd-analyze 命令的作用是什么？",
+          "answers": [
+            {
+              "text": "方便的记录系统启动耗时详情",
+              "answer_start": 18
+            }
+          ]
+        },
+        {
+          "id": "5-374-2",
+          "question": "如何输出启动耗时的矢量图？",
+          "answers": [
+            {
+              "text": "systemd-analyze plot > start_analyze.svg",
+              "answer_start": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "可以通过：systemd-analyze blame 来获得详细的进程耗时排名信息：babyfengfjx@babyfengfjx:~$ systemd-analyze blame 8.382s vmware-USBArbitrator.service 8.140s upower.service 6.655s NetworkManager-wait-online.service 5.138s man-db.service 4.477s deepin-authenticate.service 2.042s plymouth-quit-wait.service 1.222s vmware.service 1.172s udisks2.service 1.138s deepin-accounts-daemon.service 1.122s smartmontools.service",
+      "qas": [
+        {
+          "id": "5-374-3",
+          "question": "如何获得详细的进程耗时排名信息？",
+          "answers": [
+            {
+              "text": "systemd-analyze blame",
+              "answer_start": 5
+            }
+          ]
+        },
+        {
+          "id": "5-374-4",
+          "question": "耗时最长的服务是什么？耗时多久？",
+          "answers": [
+            {
+              "text": "vmware-USBArbitrator.service，8.382s",
+              "answer_start": 77
+            }
+          ]
+        },
+        {
+          "id": "5-374-5",
+          "question": "upower.service 的耗时是多少？",
+          "answers": [
+            {
+              "text": "8.140s",
+              "answer_start": 107
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "996ms apt-daily-upgrade.service 974ms logrotate.service 876ms systemd-journal-flush.service 756ms nvidia-persistenced.service 613ms user@1000.service 600ms accounts-daemon.service 600ms ModemManager.service 594ms NetworkManager.service 591ms laptop-mode.service 591ms gpu-manager.service 582ms vboxdrv.service",
+      "qas": [
+        {
+          "id": "5-374-6",
+          "question": "apt-daily-upgrade.service 的耗时是多少？",
+          "answers": [
+            {
+              "text": "996ms",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "id": "5-374-7",
+          "question": "NetworkManager.service 的耗时是多少？",
+          "answers": [
+            {
+              "text": "594ms",
+              "answer_start": 235
+            }
+          ]
+        },
+        {
+          "id": "5-374-8",
+          "question": "gpu-manager.service 的耗时是多少？",
+          "answers": [
+            {
+              "text": "591ms",
+              "answer_start": 307
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "495ms polkit.service 477ms apparmor.service 425ms dde-filemanager-daemon.service 421ms colord.service 380ms lightdm.service 341ms systemd-modules-load.service 315ms ipwatchd.service 302ms apt-daily.service 236ms winbind.service 228ms uengine-container.service 226ms libvirt-guests.service 180ms smbd.service",
+      "qas": [
+        {
+          "id": "5-374-9",
+          "question": "polkit.service 的耗时是多少？",
+          "answers": [
+            {
+              "text": "495ms",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "id": "5-374-10",
+          "question": "lightdm.service 的耗时是多少？",
+          "answers": [
+            {
+              "text": "380ms",
+              "answer_start": 131
+            }
+          ]
+        },
+        {
+          "id": "5-374-11",
+          "question": "apt-daily.service 的耗时是多少？",
+          "answers": [
+            {
+              "text": "302ms",
+              "answer_start": 227
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "systemd-analyze 命令用于记录系统启动耗时详情。可以通过'systemd-analyze plot > start_analyze.svg'命令输出启动耗时的矢量图，通过'systemd-analyze blame'获取进程启动耗时的排名信息。",
+      "qas": [
+        {
+          "id": "5-374-12",
+          "question": "在systemd-analyze blame中，耗时信息的展示方式是什么？",
+          "answers": [
+            {
+              "text": "按进程启动耗时排名信息",
+              "answer_start": 118
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

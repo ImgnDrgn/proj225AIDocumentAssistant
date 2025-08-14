@@ -1,0 +1,95 @@
+{
+  "title": "GnuCash",
+  "paragraphs": [
+    {
+      "context": "GnuCash是一款适用于个人或小型企业的财务软件，包含有收入支出记录、帐户管理、税务管理等，就像日常纸质账簿一样可以直观并且快速的使用，以确保平衡的账簿和精准的报表。",
+      "qas": [
+        {
+          "id": "5-362-1",
+          "question": "GnuCash适用于哪些用户？",
+          "answers": [
+            {
+              "text": "个人或小型企业",
+              "answer_start": 10
+            }
+          ]
+        },
+        {
+          "id": "5-362-2",
+          "question": "GnuCash包含哪些主要功能？",
+          "answers": [
+            {
+              "text": "收入支出记录、帐户管理、税务管理",
+              "answer_start": 23
+            }
+          ]
+        },
+        {
+          "id": "5-362-3",
+          "question": "GnuCash的使用体验类似于什么？",
+          "answers": [
+            {
+              "text": "日常纸质账簿",
+              "answer_start": 47
+            }
+          ]
+        },
+        {
+          "id": "5-362-4",
+          "question": "GnuCash能确保什么？",
+          "answers": [
+            {
+              "text": "平衡的账簿和精准的报表",
+              "answer_start": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "sudo apt-get install gnucash",
+      "qas": [
+        {
+          "id": "5-362-5",
+          "question": "安装GnuCash的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt-get install gnucash",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "sudo apt-get remove gnucash",
+      "qas": [
+        {
+          "id": "5-362-6",
+          "question": "卸载GnuCash的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt-get remove gnucash",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "http://packages.deepin.com/deepin/pool/main/g/gnucash/",
+      "qas": [
+        {
+          "id": "5-362-7",
+          "question": "GnuCash的仓库地址是什么？",
+          "answers": [
+            {
+              "text": "http://packages.deepin.com/deepin/pool/main/g/gnucash/",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

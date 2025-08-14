@@ -1,0 +1,194 @@
+{
+  "data": [
+    {
+      "title": "Flail_Rider",
+      "paragraphs": [
+        {
+          "context": "Flail Rider是一款快节奏的桌面游戏，玩家可以驾驶一辆牵引连枷的赛车，自上而下地通过连枷打击一切地面物体，而且连枷的体积还可以变大，游戏操控起来非常简单，画面色彩也很丰富，整个过程令人惊叹刺激。",
+          "qas": [
+            {
+              "id": "5-352-1",
+              "question": "Flail Rider是什么类型的游戏？",
+              "answers": [
+                {
+                  "text": "快节奏的桌面游戏",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "5-352-2",
+              "question": "玩家在Flail Rider中可以驾驶什么？",
+              "answers": [
+                {
+                  "text": "一辆牵引连枷的赛车",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "id": "5-352-3",
+              "question": "玩家在Flail Rider中如何打击地面物体？",
+              "answers": [
+                {
+                  "text": "自上而下地通过连枷",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-352-4",
+              "question": "Flail Rider中的连枷有什么特点？",
+              "answers": [
+                {
+                  "text": "体积还可以变大",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "5-352-5",
+              "question": "Flail Rider的操控难度如何？",
+              "answers": [
+                {
+                  "text": "非常简单",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "id": "5-352-6",
+              "question": "Flail Rider的画面色彩有什么特点？",
+              "answers": [
+                {
+                  "text": "很丰富",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "5-352-7",
+              "question": "Flail Rider的游戏过程给人的感受是怎样的？",
+              "answers": [
+                {
+                  "text": "令人惊叹刺激",
+                  "answer_start": 94
+                }
+              ]
+            },
+            {
+              "id": "5-352-8",
+              "question": "玩家在 Flail Rider 中做什么？",
+              "answers": [
+                {
+                  "text": "驾驶一辆牵引连枷的赛车，自上而下地通过连枷打击一切地面物体",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "5-352-9",
+              "question": "连枷在游戏中有什么特点？",
+              "answers": [
+                {
+                  "text": "连枷的体积还可以变大",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "id": "5-352-10",
+              "question": "游戏的操控和画面如何？",
+              "answers": [
+                {
+                  "text": "游戏操控起来非常简单，画面色彩也很丰富",
+                  "answer_start": 70
+                }
+              ]
+            },
+            {
+              "id": "5-352-11",
+              "question": "整体游戏体验如何？",
+              "answers": [
+                {
+                  "text": "整个过程令人惊叹刺激",
+                  "answer_start": 90
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install flailrider",
+          "qas": [
+            {
+              "id": "5-352-12",
+              "question": "安装Flail Rider需要使用什么命令？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install flailrider",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove flailrider",
+          "qas": [
+            {
+              "id": "5-352-13",
+              "question": "卸载Flail Rider需要使用什么命令？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove flailrider",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "[http://packages.deepin.com/deepin/pool/main/f/flailrider/f](http://packages.deepin.com/deepin/pool/main/f/flailrider/f)",
+          "qas": [
+            {
+              "id": "5-352-14",
+              "question": "Flail Rider的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/f/flailrider/f",
+                  "answer_start": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装：`sudo apt-get install flailrider` 卸载：`sudo apt-get remove flailrider`",
+          "qas": [
+            {
+              "id": "5-352-15",
+              "question": "如何安装 Flail Rider？",
+              "answers": [
+                {
+                  "text": "`sudo apt-get install flailrider`",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "5-352-16",
+              "question": "如何卸载 Flail Rider？",
+              "answers": [
+                {
+                  "text": "`sudo apt-get remove flailrider`",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

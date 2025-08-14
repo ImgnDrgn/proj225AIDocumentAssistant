@@ -1,0 +1,1354 @@
+{
+  "data": [
+    {
+      "title": "Linux常用命令",
+      "paragraphs": [
+        {
+          "context": "操作系统 Operating System 简称 OS，通俗讲就是一款软件，不过和一般的软件不同，操作系统是管理和控制计算机硬件与软件资源的计算机程序，是直接运行在“裸机”上的最基本的系统软件，任何其他的软件都必须在操作系统的支持下才能运行。",
+          "qas": [
+            {
+              "id": "5-371-1",
+              "question": "操作系统的简称是什么？",
+              "answers": [
+                {
+                  "text": "OS",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "5-371-2",
+              "question": "操作系统的作用是什么？",
+              "answers": [
+                {
+                  "text": "管理和控制计算机硬件与软件资源",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-371-3",
+              "question": "操作系统运行在什么之上？",
+              "answers": [
+                {
+                  "text": "裸机",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "id": "5-371-4",
+              "question": "操作系统是什么？",
+              "answers": [
+                {
+                  "text": "管理和控制计算机硬件与软件资源的计算机程序",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "5-371-5",
+              "question": "其他软件和操作系统的关系是什么？",
+              "answers": [
+                {
+                  "text": "任何其他的软件都必须在操作系统的支持下才能运行",
+                  "answer_start": 95
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/var：包含在正常操作中被改变的文件、假脱机文件、记录文件、加锁文件、临时文件和页格式化文件等。/home：包含用户的文件：参数设置文件、个性化文件、文档、数据、EMALL、缓存数据等，每增加一个用户，系统就会根据其用户名在 home 目录下新建和其他用户同名的文件夹，用于保存其用户配置。/proc：包含虚幻的文件，他们实际上并不存在于磁盘上，也不占用任何空间，当查看这些文件时，实际上是在访问存在内存中的信息，这些信息用于访问系统。",
+          "qas": [
+            {
+              "id": "5-371-6",
+              "question": "/var目录包含哪些文件？",
+              "answers": [
+                {
+                  "text": "在正常操作中被改变的文件、假脱机文件、记录文件、加锁文件、临时文件和页格式化文件等",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-371-7",
+              "question": "/home目录包含什么？",
+              "answers": [
+                {
+                  "text": "用户的文件：参数设置文件、个性化文件、文档、数据、EMALL、缓存数据等",
+                  "answer_start": 77
+                }
+              ]
+            },
+            {
+              "id": "5-371-8",
+              "question": "/proc目录的文件存在于哪里？",
+              "answers": [
+                {
+                  "text": "内存中",
+                  "answer_start": 247
+                }
+              ]
+            },
+            {
+              "id": "5-371-9",
+              "question": "当新增用户时，系统在 /home 目录下如何操作？",
+              "answers": [
+                {
+                  "text": "系统就会根据其用户名在 home 目录下新建和其他用户同名的文件夹，用于保存其用户配置",
+                  "answer_start": 78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/bin：包含系统启动时需要的执行文件（二进制），这些文件可以被普通用户使用。/etc：为操作系统的配置文件目录（防火墙、启动项）。/root：为系统管理员（也叫超级用户或根用户）的 Home 目录。/dev：为设备目录，Linux 下设备被当成文件，这样一来硬件被抽象化、便于读写、网络共享以及需要临时装载到文件系统中，正常情况下，设备会有一个独立的子目录，这些设备的内容会出现在独立的子目录下。",
+          "qas": [
+            {
+              "id": "5-371-10",
+              "question": "/bin目录包含什么文件？",
+              "answers": [
+                {
+                  "text": "系统启动时需要的执行文件（二进制），这些文件可以被普通用户使用",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-371-11",
+              "question": "/etc目录是什么目录？",
+              "answers": [
+                {
+                  "text": "操作系统的配置文件目录（防火墙、启动项）",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "id": "5-371-12",
+              "question": "/root目录是谁的Home目录？",
+              "answers": [
+                {
+                  "text": "系统管理员（也叫超级用户或根用户）",
+                  "answer_start": 119
+                }
+              ]
+            },
+            {
+              "id": "5-371-13",
+              "question": "/dev目录是什么目录？",
+              "answers": [
+                {
+                  "text": "设备目录",
+                  "answer_start": 185
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看当前目录命令：`pwd`。打开文件夹命令：`cd`。打开指定文件夹：`cd [目录名称]`；打开当前用户的根目录：`cd ~`；返回上级目录：`cd …`；返回进入目录：`cd -`；打开根目录：`cd /`。",
+          "qas": [
+            {
+              "id": "5-371-14",
+              "question": "查看当前目录的命令是什么？",
+              "answers": [
+                {
+                  "text": "pwd",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-371-15",
+              "question": "打开文件夹的命令是什么？",
+              "answers": [
+                {
+                  "text": "cd",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-371-16",
+              "question": "如何用cd命令打开指定文件夹？",
+              "answers": [
+                {
+                  "text": "cd [目录名称]",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-371-17",
+              "question": "cd ~的作用是什么？",
+              "answers": [
+                {
+                  "text": "打开当前用户的根目录",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "5-371-18",
+              "question": "如何用cd命令返回上级目录？",
+              "answers": [
+                {
+                  "text": "cd …",
+                  "answer_start": 81
+                }
+              ]
+            },
+            {
+              "id": "5-371-19",
+              "question": "cd -的作用是什么？",
+              "answers": [
+                {
+                  "text": "返回进入目录",
+                  "answer_start": 98
+                }
+              ]
+            },
+            {
+              "id": "5-371-20",
+              "question": "如何用cd命令打开根目录？",
+              "answers": [
+                {
+                  "text": "cd /",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "id": "5-371-21",
+              "question": "哪个命令用于查看当前目录？",
+              "answers": [
+                {
+                  "text": "pwd",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-371-22",
+              "question": "如何打开根目录？",
+              "answers": [
+                {
+                  "text": "cd /",
+                  "answer_start": 102
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "浏览目录下的文件列表命令：`ls`。以列的方式查看当前目录下的文件列表：`ls -l`；查看当前目录下所有的文件（包括隐藏文件）：`ls -a`；以列表的方式查看当前目录下的所有文件：`ls -la`。",
+          "qas": [
+            {
+              "id": "5-371-23",
+              "question": "浏览目录下文件列表的命令是什么？",
+              "answers": [
+                {
+                  "text": "ls",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-371-24",
+              "question": "如何以列的方式查看当前目录下的文件列表？",
+              "answers": [
+                {
+                  "text": "ls -l",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-371-25",
+              "question": "如何查看当前目录下所有文件（包括隐藏文件）？",
+              "answers": [
+                {
+                  "text": "ls -a",
+                  "answer_start": 78
+                }
+              ]
+            },
+            {
+              "id": "5-371-26",
+              "question": "如何以列表的方式查看当前目录下的所有文件？",
+              "answers": [
+                {
+                  "text": "ls -la",
+                  "answer_start": 122
+                }
+              ]
+            },
+            {
+              "id": "5-371-27",
+              "question": "如何列出当前目录下所有文件（包括隐藏文件）？",
+              "answers": [
+                {
+                  "text": "ls -a",
+                  "answer_start": 150
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建文件目录命令：`mkdir`。新建文件目录：`mkdir 文件夹名称`；递归新建多级目录：`mkdir -p 文件夹名称`；例如在用户目录下新建 test 目录，命令这样写：`mkdir -p test/test1/test2/test3` 递归新建多级目录的写法。",
+          "qas": [
+            {
+              "id": "5-371-28",
+              "question": "创建文件目录的命令是什么？",
+              "answers": [
+                {
+                  "text": "mkdir",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-371-29",
+              "question": "如何新建文件目录？",
+              "answers": [
+                {
+                  "text": "mkdir 文件夹名称",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-371-30",
+              "question": "如何递归新建多级目录？",
+              "answers": [
+                {
+                  "text": "mkdir -p 文件夹名称",
+                  "answer_start": 43
+                }
+              ]
+            },
+            {
+              "id": "5-371-31",
+              "question": "如何递归创建多级目录？",
+              "answers": [
+                {
+                  "text": "mkdir -p 文件夹名称",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除文件目录命令：`rmkdir`（没有字母k）。删除指定目录：`rmkdir 目录名称`；递归删除指定目录及中间目录：`rmdir -p 目录名称`。",
+          "qas": [
+            {
+              "id": "5-371-32",
+              "question": "删除文件目录的命令是什么？",
+              "answers": [
+                {
+                  "text": "rmkdir",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-371-33",
+              "question": "如何删除指定目录？",
+              "answers": [
+                {
+                  "text": "rmkdir 目录名称",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "5-371-34",
+              "question": "如何递归删除指定目录及中间目录？",
+              "answers": [
+                {
+                  "text": "rmdir -p 目录名称",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "5-371-35",
+              "question": "递归删除目录的命令是什么？",
+              "answers": [
+                {
+                  "text": "rmdir -p 目录名称",
+                  "answer_start": 155
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除文件或者目录命令：`rm`。常用命令：`rm -rf [目录或文件]` `rm -ri [目录或文件]`；强制删除文件或目录：`rm -rf 目录或者文件`；在删除前询问是否确认删除：`rm -ri 目录或文件`。rm 命令中不跟 r 参数，无法删除目录，只能删除文件。",
+          "qas": [
+            {
+              "id": "5-371-36",
+              "question": "删除文件或者目录的命令是什么？",
+              "answers": [
+                {
+                  "text": "rm",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-371-37",
+              "question": "如何强制删除文件或目录？",
+              "answers": [
+                {
+                  "text": "rm -rf 目录或者文件",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "id": "5-371-38",
+              "question": "如何在删除前询问是否确认删除？",
+              "answers": [
+                {
+                  "text": "rm -ri 目录或文件",
+                  "answer_start": 81
+                }
+              ]
+            },
+            {
+              "id": "5-371-39",
+              "question": "rm命令不跟r参数能删除目录吗？",
+              "answers": [
+                {
+                  "text": "不能，只能删除文件",
+                  "answer_start": 107
+                }
+              ]
+            },
+            {
+              "id": "5-371-40",
+              "question": "强制删除文件或目录的命令是什么？",
+              "answers": [
+                {
+                  "text": "rm -rf 目录或者文件",
+                  "answer_start": 70
+                }
+              ]
+            },
+            {
+              "id": "5-371-41",
+              "question": "哪个命令在删除前会询问确认？",
+              "answers": [
+                {
+                  "text": "rm -ri 目录或文件",
+                  "answer_start": 91
+                }
+              ]
+            },
+            {
+              "id": "5-371-42",
+              "question": "如果没有 r 参数，rm 命令能删除目录吗？",
+              "answers": [
+                {
+                  "text": "rm 命令中不跟 r 参数，无法删除目录，只能删除文件",
+                  "answer_start": 138
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "复制文件或目录命令：`cp`。递归复制目录1下的所有的文件和文件夹到目录2：`cp -r [目录1][目录2]`；执行复制操作时覆盖原有目录前询问用户：`cp -ri [目录1][目录2]`。",
+          "qas": [
+            {
+              "id": "5-371-43",
+              "question": "复制文件或目录的命令是什么？",
+              "answers": [
+                {
+                  "text": "cp",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-371-44",
+              "question": "如何递归复制目录1下的所有文件和文件夹到目录2？",
+              "answers": [
+                {
+                  "text": "cp -r [目录1][目录2]",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-371-45",
+              "question": "复制时覆盖原有目录前如何询问用户？",
+              "answers": [
+                {
+                  "text": "cp -ri [目录1][目录2]",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "移动文件、修改文件名命令：`mv`。将文件夹1名称更改为文件夹2：`mv 文件1 文件2` (给文件更名)；将目录1的文件移动到目录2：`mv 目录2 目录2` (将目录1的文件移动到目录2)。",
+          "qas": [
+            {
+              "id": "5-371-46",
+              "question": "移动文件、修改文件名的命令是什么？",
+              "answers": [
+                {
+                  "text": "mv",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-371-47",
+              "question": "如何用mv命令给文件更名？",
+              "answers": [
+                {
+                  "text": "mv 文件1 文件2",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-371-48",
+              "question": "如何用mv命令将目录1的文件移动到目录2？",
+              "answers": [
+                {
+                  "text": "mv 目录2 目录2",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建文件命令：`touch`。用法：touch 文件名称。",
+          "qas": [
+            {
+              "id": "5-371-49",
+              "question": "创建文件的命令是什么？",
+              "answers": [
+                {
+                  "text": "touch",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-371-50",
+              "question": "如何使用touch命令创建文件？",
+              "answers": [
+                {
+                  "text": "touch 文件名称",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "vi命令为UNIX或类UNIX操作系统的文件编辑命令，输入vi ++文件名进入vi模式。vi有三种模式：命令模式（打开文件后进入，可输入命令）、输入模式（用于修改文件，按Esc退出）、末行模式（esc + “:”进入，可保存退出“:wq!”或强制退出“:q!”）。",
+          "qas": [
+            {
+              "id": "5-371-51",
+              "question": "vi命令用于什么操作系统？",
+              "answers": [
+                {
+                  "text": "UNIX或类UNIX操作系统",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "5-371-52",
+              "question": "如何进入vi模式？",
+              "answers": [
+                {
+                  "text": "输入vi ++文件名",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "id": "5-371-53",
+              "question": "vi有哪三种模式？",
+              "answers": [
+                {
+                  "text": "命令模式、输入模式、末行模式",
+                  "answer_start": 50
+                }
+              ]
+            },
+            {
+              "id": "5-371-54",
+              "question": "如何进入vi的末行模式？",
+              "answers": [
+                {
+                  "text": "esc + “:”",
+                  "answer_start": 132
+                }
+              ]
+            },
+            {
+              "id": "5-371-55",
+              "question": "vi末行模式中如何保存并退出？",
+              "answers": [
+                {
+                  "text": ":wq!",
+                  "answer_start": 153
+                }
+              ]
+            },
+            {
+              "id": "5-371-56",
+              "question": "vi 命令打开文件后进入什么模式？",
+              "answers": [
+                {
+                  "text": "命令模式",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "5-371-57",
+              "question": "如何进入 vi 的输入模式？",
+              "answers": [
+                {
+                  "text": "如果用户要对文件做修改，则可以使用几种命令进入输入模式",
+                  "answer_start": 70
+                }
+              ]
+            },
+            {
+              "id": "5-371-58",
+              "question": "如何从 vi 进入末行模式？",
+              "answers": [
+                {
+                  "text": "按照 esc + : 进入末行模式",
+                  "answer_start": 164
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看、编辑文件命令：`cat`。显示一个小的文件的内容：`cat 文件名称`；创建并打开一个新的文件：`cat > 文件名称`。",
+          "qas": [
+            {
+              "id": "5-371-59",
+              "question": "cat命令的作用是什么？",
+              "answers": [
+                {
+                  "text": "查看、编辑文件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-371-60",
+              "question": "如何用cat命令显示小文件的内容？",
+              "answers": [
+                {
+                  "text": "cat 文件名称",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "5-371-61",
+              "question": "如何用cat命令创建并打开新文件？",
+              "answers": [
+                {
+                  "text": "cat > 文件名称",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看文件开头内容命令：`head`。语法：`head [参数] [文件名]`。例如，显示某个文件开始的n行数据：`head -n 文件名称`。",
+          "qas": [
+            {
+              "id": "5-371-62",
+              "question": "查看文件开头内容的命令是什么？",
+              "answers": [
+                {
+                  "text": "head",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-371-63",
+              "question": "head命令的语法是什么？",
+              "answers": [
+                {
+                  "text": "head [参数] [文件名]",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-371-64",
+              "question": "如何用head命令显示文件开始的n行数据？",
+              "answers": [
+                {
+                  "text": "head -n 文件名称",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "5-371-65",
+              "question": "如何显示文件开头的 n 行？",
+              "answers": [
+                {
+                  "text": "head -n 文件名称",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看文件结尾内容命令：`tail`。动态加载某个文件的内容（常用于查看日志文件）：`tail -f 文件名称`；展示文件最后几行的数据：`tail -n 行数文件名称`。",
+          "qas": [
+            {
+              "id": "5-371-66",
+              "question": "查看文件结尾内容的命令是什么？",
+              "answers": [
+                {
+                  "text": "tail",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-371-67",
+              "question": "如何用tail命令动态加载文件内容？",
+              "answers": [
+                {
+                  "text": "tail -f 文件名称",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-371-68",
+              "question": "如何用tail命令展示文件最后几行数据？",
+              "answers": [
+                {
+                  "text": "tail -n 行数文件名称",
+                  "answer_start": 88
+                }
+              ]
+            },
+            {
+              "id": "5-371-69",
+              "question": "哪个命令用于动态加载日志文件？",
+              "answers": [
+                {
+                  "text": "tail -f 文件名称",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户是操作系统中一系列权限的集合体，有唯一标识UID。用户组是具有相同特征的用户的集合体，每个用户至少属于一个用户组，有唯一标识GID。root是权限最大的用户，属于root用户组，可添加删除用户，给用户赋予或回收文件权限。",
+          "qas": [
+            {
+              "id": "5-371-70",
+              "question": "用户的唯一标识是什么？",
+              "answers": [
+                {
+                  "text": "UID",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "5-371-71",
+              "question": "用户组的唯一标识是什么？",
+              "answers": [
+                {
+                  "text": "GID",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "5-371-72",
+              "question": "权限最大的用户是什么？",
+              "answers": [
+                {
+                  "text": "root",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "切换用户命令：`su`。`su [用户名]` 或 `su -[用户名]`。前者临时切换，沿用原用户配置；后者切换后，环境变量等变为新用户配置。",
+          "qas": [
+            {
+              "id": "5-371-73",
+              "question": "切换用户的命令是什么？",
+              "answers": [
+                {
+                  "text": "su",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-371-74",
+              "question": "su [用户名]和su -[用户名]的区别是什么？",
+              "answers": [
+                {
+                  "text": "前者临时切换，沿用原用户配置；后者切换后，环境变量等变为新用户配置",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "id": "5-371-75",
+              "question": "su [用户名] 切换用户时有什么特点？",
+              "answers": [
+                {
+                  "text": "前者类似于临时切换用户，当使用该命令进行切换新用户时，用户配置仍然沿用原来的用户配置",
+                  "answer_start": 74
+                }
+              ]
+            },
+            {
+              "id": "5-371-76",
+              "question": "su -[用户名] 切换用户时如何改变系统设置？",
+              "answers": [
+                {
+                  "text": "后者进行切换用户时，环境变量、系统设置全部切换成新用户的用户配置",
+                  "answer_start": 142
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看当前登陆用户命令：`whoami`。查看当前用户所属分组命令：`groups`。查看当前用户UID和GID命令：`id`。",
+          "qas": [
+            {
+              "id": "5-371-77",
+              "question": "查看当前登陆用户的命令是什么？",
+              "answers": [
+                {
+                  "text": "whoami",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-371-78",
+              "question": "查看当前用户所属分组的命令是什么？",
+              "answers": [
+                {
+                  "text": "groups",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-371-79",
+              "question": "查看当前用户UID和GID的命令是什么？",
+              "answers": [
+                {
+                  "text": "id",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "id": "5-371-80",
+              "question": "哪个命令查看当前登录用户？",
+              "answers": [
+                {
+                  "text": "whoami",
+                  "answer_start": 212
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加新用户命令：`useradd`。添加用户：`useradd 用户名`。添加用户并指定UID：`useradd -u 指定的UID 用户名`。",
+          "qas": [
+            {
+              "id": "5-371-81",
+              "question": "添加新用户的命令是什么？",
+              "answers": [
+                {
+                  "text": "useradd",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-371-82",
+              "question": "如何添加用户？",
+              "answers": [
+                {
+                  "text": "useradd 用户名",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "5-371-83",
+              "question": "如何添加用户并指定UID？",
+              "answers": [
+                {
+                  "text": "useradd -u 指定的UID 用户名",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "id": "5-371-84",
+              "question": "如何添加用户并指定 UID？",
+              "answers": [
+                {
+                  "text": "useradd -u 指定的 UID 用户名",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改用户密码命令：`passwd`。例如：修改用户sang的密码：`passwd sang`。添加用户后需设置密码才能登陆。",
+          "qas": [
+            {
+              "id": "5-371-85",
+              "question": "修改用户密码的命令是什么？",
+              "answers": [
+                {
+                  "text": "passwd",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-371-86",
+              "question": "如何修改用户sang的密码？",
+              "answers": [
+                {
+                  "text": "passwd sang",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-371-87",
+              "question": "修改用户 sang 的密码命令是什么？",
+              "answers": [
+                {
+                  "text": "passwd sang",
+                  "answer_start": 150
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除用户命令：`userdel`。删除用户：`userdel 用户名`。删除用户并同时删除其登陆信息：`userdel -r 用户名`。",
+          "qas": [
+            {
+              "id": "5-371-88",
+              "question": "删除用户的命令是什么？",
+              "answers": [
+                {
+                  "text": "userdel",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-371-89",
+              "question": "如何删除用户并删除其登陆信息？",
+              "answers": [
+                {
+                  "text": "userdel -r 用户名",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "id": "5-371-90",
+              "question": "如何删除用户及其登录信息？",
+              "answers": [
+                {
+                  "text": "userdel -r 用户名",
+                  "answer_start": 196
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改用户信息命令：`usermod`。语法：`usermod [选项] [参数] [用户名]`。修改用户登录名：`usermod -l 新用户名 旧用户名`。修改用户所属分组：`usermod -g 新组名称 用户名`。",
+          "qas": [
+            {
+              "id": "5-371-91",
+              "question": "修改用户信息的命令是什么？",
+              "answers": [
+                {
+                  "text": "usermod",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-371-92",
+              "question": "如何修改用户登录名？",
+              "answers": [
+                {
+                  "text": "usermod -l 新用户名 旧用户名",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-371-93",
+              "question": "如何修改用户所属分组？",
+              "answers": [
+                {
+                  "text": "usermod -g 新组名称 用户名",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加用户组命令：`groupadd`。添加用户组：`groupadd 组名`。添加用户组并指定GID：`groupadd -g 组GID 组名`。",
+          "qas": [
+            {
+              "id": "5-371-94",
+              "question": "添加用户组的命令是什么？",
+              "answers": [
+                {
+                  "text": "groupadd",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-371-95",
+              "question": "如何添加用户组？",
+              "answers": [
+                {
+                  "text": "groupadd 组名",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "5-371-96",
+              "question": "如何添加用户组并指定GID？",
+              "answers": [
+                {
+                  "text": "groupadd -g 组GID 组名",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux文件权限用r、w、x表示读、写、执行。变更权限命令：`chmod`。权限模式用u（拥有者）、g（同组用户）、o（其他组用户），+/-表示赋予/收回权限。例如：`chmod -r U+X,G+W F01`。数字模式用二进制代表权限，如101(5)=r-x，111(7)=rwx，100(4)=r--。例如：`chmod 753 -r f01`。",
+          "qas": [
+            {
+              "id": "5-371-97",
+              "question": "Linux文件权限中r、w、x分别表示什么？",
+              "answers": [
+                {
+                  "text": "读、写、执行",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "5-371-98",
+              "question": "变更权限的命令是什么？",
+              "answers": [
+                {
+                  "text": "chmod",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "5-371-99",
+              "question": "chmod权限模式中u、g、o分别代表什么？",
+              "answers": [
+                {
+                  "text": "拥有者、同组用户、其他组用户",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-371-100",
+              "question": "数字模式中111代表什么权限？",
+              "answers": [
+                {
+                  "text": "rwx",
+                  "answer_start": 157
+                }
+              ]
+            },
+            {
+              "id": "5-371-101",
+              "question": "Linux 中用什么符号表示文件的执行权限？",
+              "answers": [
+                {
+                  "text": "x",
+                  "answer_start": 84
+                }
+              ]
+            },
+            {
+              "id": "5-371-102",
+              "question": "如何用 chmod 给所有用户赋予全部权限？",
+              "answers": [
+                {
+                  "text": "chmod 777 -r f01",
+                  "answer_start": 267
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看进程命令：`ps`。`ps -ef | grep [进程关键字]`可查看进程，显示进程的PID（进程唯一标识）等信息。杀掉进程命令：`kill`。`kill -9 [PID]`用于关闭进程。",
+          "qas": [
+            {
+              "id": "5-371-103",
+              "question": "查看进程的命令是什么？",
+              "answers": [
+                {
+                  "text": "ps",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-371-104",
+              "question": "如何查看包含关键字的进程？",
+              "answers": [
+                {
+                  "text": "ps -ef | grep [进程关键字]",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "5-371-105",
+              "question": "杀掉进程的命令是什么？",
+              "answers": [
+                {
+                  "text": "kill",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "5-371-106",
+              "question": "如何关闭进程？",
+              "answers": [
+                {
+                  "text": "kill -9 [PID]",
+                  "answer_start": 99
+                }
+              ]
+            },
+            {
+              "id": "5-371-107",
+              "question": "如何查看特定关键字的进程？",
+              "answers": [
+                {
+                  "text": "ps -ef | grep [进程关键字]",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "id": "5-371-108",
+              "question": "强制杀掉进程的命令是什么？",
+              "answers": [
+                {
+                  "text": "kill -9 [PID]",
+                  "answer_start": 160
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "清屏命令：`clear`。查询命令详细参数命令：`man`。挂载命令：`mnt`。启动SSH服务：`service sshd start`；重启SSH服务：`service sshd restart`；关闭SSH服务：`service sshd stop`。",
+          "qas": [
+            {
+              "id": "5-371-109",
+              "question": "清屏命令是什么？",
+              "answers": [
+                {
+                  "text": "clear",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-371-110",
+              "question": "查询命令详细参数的命令是什么？",
+              "answers": [
+                {
+                  "text": "man",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "5-371-111",
+              "question": "如何启动SSH服务？",
+              "answers": [
+                {
+                  "text": "service sshd start",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "id": "5-371-112",
+              "question": "如何重启SSH服务？",
+              "answers": [
+                {
+                  "text": "service sshd restart",
+                  "answer_start": 74
+                }
+              ]
+            },
+            {
+              "id": "5-371-113",
+              "question": "如何关闭SSH服务？",
+              "answers": [
+                {
+                  "text": "service sshd stop",
+                  "answer_start": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux软件安装方式有3种：tar安装（解压tar、tar.gz、tar.bz包并配置）、rpm安装（redhat系列的软件包管理器）、yum安装（自动下载rpm包，处理依赖）。tar解压命令：解压gzip包`tar -zxvf [包名]`；解压bz包`tar -jxvf [包名]`；解压普通包`tar -xvf [包名]`。",
+          "qas": [
+            {
+              "id": "5-371-114",
+              "question": "Linux常用的软件安装方式有几种？",
+              "answers": [
+                {
+                  "text": "3种",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-371-115",
+              "question": "如何解压gzip包？",
+              "answers": [
+                {
+                  "text": "tar -zxvf [包名]",
+                  "answer_start": 120
+                }
+              ]
+            },
+            {
+              "id": "5-371-116",
+              "question": "如何解压bz包？",
+              "answers": [
+                {
+                  "text": "tar -jxvf [包名]",
+                  "answer_start": 145
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "rpm命令用于安装卸载软件。查询是否安装某软件包：`rpm -qa|grep [软件包关键词]`。卸载软件包：`rpm -e 软件包全名`。安装软件包并查看进度：`rpm -ivh 软件包路径`。",
+          "qas": [
+            {
+              "id": "5-371-117",
+              "question": "如何查询是否安装了某软件包？",
+              "answers": [
+                {
+                  "text": "rpm -qa|grep [软件包关键词]",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "5-371-118",
+              "question": "如何卸载rpm软件包？",
+              "answers": [
+                {
+                  "text": "rpm -e 软件包全名",
+                  "answer_start": 80
+                }
+              ]
+            },
+            {
+              "id": "5-371-119",
+              "question": "如何安装rpm软件包并查看进度？",
+              "answers": [
+                {
+                  "text": "rpm -ivh 软件包路径",
+                  "answer_start": 104
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "其他常用命令：清屏命令：clear 查询命令详细参数命令：man 远程连接服务 SSH 相关命令：启动 SSH 服务：service sshd start 重启 SSH 服务：service sshd restart 关闭 SSH 服务：service sshd stop。注意：启动 JAR 时建议使用 nohup java -jar jar-0.0.1-SNAPSHOT.jar & 以确保窗口关闭后服务继续运行。",
+          "qas": [
+            {
+              "id": "5-371-120",
+              "question": "为什么启动 JAR 时建议使用 nohup？",
+              "answers": [
+                {
+                  "text": "当前窗口关闭时服务不挂起，继续在后台运行",
+                  "answer_start": 196
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

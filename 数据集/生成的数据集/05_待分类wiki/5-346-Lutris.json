@@ -1,0 +1,160 @@
+{
+  "title": "Lutris",
+  "paragraphs": [
+    {
+      "context": "本词条用于介绍 Lutris 的安装使用和一些常见问题。 代码块符号规定：`#` 开头的命令指的是通过 `root` 用户 或普通用户使用 `sudo` 执行。 `$` 开头的命令指的是普通用户可直接执行。 `#` 或 `$` 无需在终端或其他位置打出。",
+      "qas": [
+        {
+          "id": "5-346-1",
+          "question": "本词条的主要目的是什么？",
+          "answers": [
+            {
+              "text": "介绍 Lutris 的安装使用和一些常见问题。",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "id": "5-346-2",
+          "question": "`#` 开头的命令表示什么含义？",
+          "answers": [
+            {
+              "text": "通过 `root` 用户 或普通用户使用 `sudo` 执行。",
+              "answer_start": 38
+            }
+          ]
+        },
+        {
+          "id": "5-346-3",
+          "question": "`$` 开头的命令表示什么含义？",
+          "answers": [
+            {
+              "text": "普通用户可直接执行。",
+              "answer_start": 91
+            }
+          ]
+        },
+        {
+          "id": "5-346-4",
+          "question": "需要在终端中输入 `#` 或 `$` 符号吗？",
+          "answers": [
+            {
+              "text": "`#` 或 `$` 无需在终端或其他位置打出。",
+              "answer_start": 113
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Lutris 是一个 Linux 的开源游戏平台。它无需过多的设置即可开始安装运行游戏。可以从 GOG、Steam、Battle.net、Origin、Uplay 或其他地方获取可以在 Linux 上运行的游戏。[^Lutris介绍]",
+      "qas": [
+        {
+          "id": "5-346-5",
+          "question": "Lutris 是什么类型的平台？",
+          "answers": [
+            {
+              "text": "一个 Linux 的开源游戏平台。",
+              "answer_start": 8
+            }
+          ]
+        },
+        {
+          "id": "5-346-6",
+          "question": "Lutris 的优势是什么？",
+          "answers": [
+            {
+              "text": "它无需过多的设置即可开始安装运行游戏。",
+              "answer_start": 31
+            }
+          ]
+        },
+        {
+          "id": "5-346-7",
+          "question": "可以从哪些来源获取游戏？",
+          "answers": [
+            {
+              "text": "GOG、Steam、Battle.net、Origin、Uplay 或其他地方。",
+              "answer_start": 66
+            }
+          ]
+        },
+        {
+          "id": "5-346-8",
+          "question": "Lutris 支持在什么操作系统上运行游戏？",
+          "answers": [
+            {
+              "text": "Linux",
+              "answer_start": 121
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "[^Lutris介绍]: [Lutris - Open Gaming Platform](https://lutris.net/)",
+      "qas": [
+        {
+          "id": "5-346-9",
+          "question": "Lutris 介绍的参考链接是什么？",
+          "answers": [
+            {
+              "text": "[Lutris - Open Gaming Platform](https://lutris.net/)",
+              "answer_start": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "深度系统可在深度商店中找到并安装 Lutris 本体。或者通过深度终端运行安装命令进行安装。 安装命令是： # apt install lutris",
+      "qas": [
+        {
+          "id": "5-346-10",
+          "question": "在深度系统中，如何安装 Lutris 本体？",
+          "answers": [
+            {
+              "text": "深度系统可在深度商店中找到并安装 Lutris 本体。或者通过深度终端运行安装命令进行安装。",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "id": "5-346-11",
+          "question": "安装 Lutris 本体的命令行指令是什么？",
+          "answers": [
+            {
+              "text": "# apt install lutris",
+              "answer_start": 58
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "无法启动：点击 Play、Wine configuration 等按钮后会一直卡住，没有打开任何界面。 1. 尝试使用代理打开 Lutris。",
+      "qas": [
+        {
+          "id": "5-346-12",
+          "question": "Lutris 启动时遇到什么问题？",
+          "answers": [
+            {
+              "text": "点击 Play、Wine configuration 等按钮后会一直卡住，没有打开任何界面。",
+              "answer_start": 5
+            }
+          ]
+        },
+        {
+          "id": "5-346-13",
+          "question": "如何解决无法启动的问题？",
+          "answers": [
+            {
+              "text": "尝试使用代理打开 Lutris。",
+              "answer_start": 63
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

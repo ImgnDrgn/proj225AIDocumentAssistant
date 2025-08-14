@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "扫描探针显微镜数据可视化和分析工具Gwyddion",
+      "paragraphs": [
+        {
+          "context": "Gwyddion是一款模块化扫描探针显微镜数据可视化和分析工具。主要是它的目的是为分析领域所取得的高度扫描探针显微技术(原子力显微镜，磁力显微镜，扫描隧道显微镜，扫描/ NSOM ) ，但通常可以用于任何其他高度场和图像分析，例如分析的轮廓数据 。",
+          "qas": [
+            {
+              "id": "5-364-1",
+              "question": "Gwyddion是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "模块化扫描探针显微镜数据可视化和分析工具",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-364-2",
+              "question": "Gwyddion的主要分析对象是什么？",
+              "answers": [
+                {
+                  "text": "分析领域所取得的高度扫描探针显微技术(原子力显微镜，磁力显微镜，扫描隧道显微镜，扫描/ NSOM )",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "id": "5-364-3",
+              "question": "Gwyddion的主要目的是什么？",
+              "answers": [
+                {
+                  "text": "为分析领域所取得的高度扫描探针显微技术(原子力显微镜，磁力显微镜，扫描隧道显微镜，扫描/ NSOM )",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "5-364-4",
+              "question": "Gwyddion可以用于哪些其他类型的分析？",
+              "answers": [
+                {
+                  "text": "任何其他高度场和图像分析，例如分析的轮廓数据",
+                  "answer_start": 129
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install gwyddion",
+          "qas": [
+            {
+              "id": "5-364-5",
+              "question": "如何安装Gwyddion？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gwyddion",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-364-6",
+              "question": "安装Gwyddion的具体命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gwyddion",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove gwyddion",
+          "qas": [
+            {
+              "id": "5-364-7",
+              "question": "如何卸载Gwyddion？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gwyddion",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-364-8",
+              "question": "卸载Gwyddion的完整命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gwyddion",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/g/gwyddion/",
+          "qas": [
+            {
+              "id": "5-364-9",
+              "question": "Gwyddion的软件仓库地址在哪里？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gwyddion/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

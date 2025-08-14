@@ -1,0 +1,355 @@
+{
+  "title": "如何创建samba共享文件夹",
+  "paragraphs": [
+    {
+      "context": "在深度文件管理器以及鹦鹉螺(naitulus)文件管理器中，都可以在文件夹右键菜单中找到共享文件夹的入口。但这种方式只能单用户或匿名共享。深度文件管理器与鹦鹉螺文件管理器都是通过net命令实现的文件夹共享，其核心调用为：net usershare add <share_name> <share_path> <share_comment> <share_acl> <share_allow_guest>。例如，命令net usershare add myVideo ~/Video Everyone:F \"\" guest_ok=y将用户目录下的Video文件夹以匿名方式共享给所有人，且都具有全部的读写权限。",
+      "qas": [
+        {
+          "id": "5-339-1",
+          "question": "深度文件管理器和鹦鹉螺文件管理器中，在哪里可以找到共享文件夹的入口？",
+          "answers": [
+            {
+              "text": "文件夹右键菜单中",
+              "answer_start": 30
+            }
+          ]
+        },
+        {
+          "id": "5-339-2",
+          "question": "深度文件管理器和鹦鹉螺文件管理器实现文件夹共享的核心命令是什么？",
+          "answers": [
+            {
+              "text": "net usershare add <share_name> <share_path> <share_comment> <share_acl> <share_allow_guest>",
+              "answer_start": 115
+            }
+          ]
+        },
+        {
+          "id": "5-339-3",
+          "question": "命令net usershare add myVideo ~/Video Everyone:F \"\" guest_ok=y实现了什么功能？",
+          "answers": [
+            {
+              "text": "将用户目录下的Video文件夹以匿名方式共享给所有人，且都具有全部的读写权限",
+              "answer_start": 182
+            }
+          ]
+        },
+        {
+          "id": "5-339-4",
+          "question": "在哪些文件管理器中可以找到共享文件夹入口？",
+          "answers": [
+            {
+              "text": "深度文件管理器和鹦鹉螺(naitulus)文件管理器",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "id": "5-339-5",
+          "question": "右键菜单共享方式的主要限制是什么？",
+          "answers": [
+            {
+              "text": "只能单用户或匿名共享",
+              "answer_start": 49
+            }
+          ]
+        },
+        {
+          "id": "5-339-6",
+          "question": "创建匿名完全共享文件夹的完整命令是什么？",
+          "answers": [
+            {
+              "text": "net usershare add myVideo ~/Video Everyone:F \"\" guest_ok=y",
+              "answer_start": 182
+            }
+          ]
+        },
+        {
+          "id": "5-339-7",
+          "question": "命令中Everyone:F参数表示什么权限？",
+          "answers": [
+            {
+              "text": "所有人都有完全访问权限",
+              "answer_start": 237
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "在多用户分权共享时，需要创建多个用户组和用户。例如：sudo groupadd g1 && sudo groupadd g2创建了g1和g2两个用户组；sudo useradd u1 -G g1 && sudo useradd u2 -G g2创建了u1和u2两个用户，并分别加入g1组和g2组。之后，需要将用户添加到samba用户列表并设置密码，如sudo smbpasswd -a u1。",
+      "qas": [
+        {
+          "id": "5-339-8",
+          "question": "多用户分权共享时，如何创建用户组g1和g2？",
+          "answers": [
+            {
+              "text": "sudo groupadd g1 && sudo groupadd g2",
+              "answer_start": 55
+            }
+          ]
+        },
+        {
+          "id": "5-339-9",
+          "question": "如何创建用户u1并将其加入g1用户组？",
+          "answers": [
+            {
+              "text": "sudo useradd u1 -G g1",
+              "answer_start": 103
+            }
+          ]
+        },
+        {
+          "id": "5-339-10",
+          "question": "如何将用户u1添加到samba用户列表并设置密码？",
+          "answers": [
+            {
+              "text": "sudo smbpasswd -a u1",
+              "answer_start": 203
+            }
+          ]
+        },
+        {
+          "id": "5-339-11",
+          "question": "如何创建g1组并添加u1用户？",
+          "answers": [
+            {
+              "text": "sudo groupadd g1 && sudo useradd u1 -G g1",
+              "answer_start": 103
+            }
+          ]
+        },
+        {
+          "id": "5-339-12",
+          "question": "哪个命令可确认Samba用户添加成功？",
+          "answers": [
+            {
+              "text": "sudo smbpasswd -a u1",
+              "answer_start": 203
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "共享文件夹/home/uos/publicShare且未开启匿名时，/var/lib/samba/usershares目录下会生成publicshare文件，其中path字段为共享文件夹路径，usershare_acl字段控制权限。S-1-1-0:f表示Everyone用户具有完全访问权限，f表示完全访问权限，r表示只读权限。",
+      "qas": [
+        {
+          "id": "5-339-13",
+          "question": "共享文件夹/home/uos/publicShare且未开启匿名时，共享配置信息保存在哪个文件中？",
+          "answers": [
+            {
+              "text": "/var/lib/samba/usershares/publicshare",
+              "answer_start": 45
+            }
+          ]
+        },
+        {
+          "id": "5-339-14",
+          "question": "publicshare文件中path字段的含义是什么？",
+          "answers": [
+            {
+              "text": "共享文件夹的路径",
+              "answer_start": 92
+            }
+          ]
+        },
+        {
+          "id": "5-339-15",
+          "question": "usershare_acl字段中，f和r分别表示什么权限？S-1-1-0:f表示什么？",
+          "answers": [
+            {
+              "text": "f表示完全访问权限，r表示只读权限；S-1-1-0:f表示Everyone用户具有完全访问权限",
+              "answer_start": 118
+            }
+          ]
+        },
+        {
+          "id": "5-339-16",
+          "question": "共享配置文件存储在什么路径？",
+          "answers": [
+            {
+              "text": "/var/lib/samba/usershares",
+              "answer_start": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "通过wbinfo命令可获取用户SID，若没有该命令，可通过sudo apt install -y winbind安装。执行命令wbinfo -U `id -u`可输出用户的SID，例如获得sid-for-u1和sid-for-u2。",
+      "qas": [
+        {
+          "id": "5-339-17",
+          "question": "如何获取用户的SID？",
+          "answers": [
+            {
+              "text": "执行命令wbinfo -U `id -u`",
+              "answer_start": 68
+            }
+          ]
+        },
+        {
+          "id": "5-339-18",
+          "question": "如果没有wbinfo命令，如何安装？",
+          "answers": [
+            {
+              "text": "通过sudo apt install -y winbind安装",
+              "answer_start": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "修改用户权限可通过两种方式：1. 直接修改共享配置文件中的usershare_acl字段，如usershare_acl=sid-for-u1:f,sid-for-u2:r；2. 通过net命令指定，如net usershare add myShare /home/uos/publicShares \"no comment\" u1:F,u2:R，这会在/var/lib/samba/usershares目录下生成myshare文件，其usershare_acl字段与修改文件的一致。组权限控制方法相同。",
+      "qas": [
+        {
+          "id": "5-339-19",
+          "question": "如何通过修改配置文件设置u1有完全访问权限、u2有只读权限？",
+          "answers": [
+            {
+              "text": "直接修改共享配置文件中的usershare_acl字段为usershare_acl=sid-for-u1:f,sid-for-u2:r",
+              "answer_start": 35
+            }
+          ]
+        },
+        {
+          "id": "5-339-20",
+          "question": "如何通过net命令设置u1有完全访问权限、u2有只读权限？",
+          "answers": [
+            {
+              "text": "使用命令net usershare add myShare /home/uos/publicShares \"no comment\" u1:F,u2:R",
+              "answer_start": 106
+            }
+          ]
+        },
+        {
+          "id": "5-339-21",
+          "question": "组权限控制的方法与用户权限控制是否相同？",
+          "answers": [
+            {
+              "text": "相同",
+              "answer_start": 247
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "方法二是修改smb.conf文件配置共享，该文件位于/etc/samba/smb.conf，格式为ini类型，不同组以[]标识，[global]为全局配置，其余[]包裹的为共享文件夹。",
+      "qas": [
+        {
+          "id": "5-339-22",
+          "question": "方法二中用于配置共享的文件是什么？位于哪里？",
+          "answers": [
+            {
+              "text": "smb.conf文件，位于/etc/samba/smb.conf",
+              "answer_start": 11
+            }
+          ]
+        },
+        {
+          "id": "5-339-23",
+          "question": "smb.conf文件的格式是什么？[global]表示什么？",
+          "answers": [
+            {
+              "text": "ini类型，[global]为全局配置",
+              "answer_start": 56
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "例如[print$]是默认共享文件夹配置。创建自己的共享如[myShareViaCfg]，其中comment为简介，path为共享文件夹绝对路径，browseable决定是否在客户端可见，read only为只读（no为读写），guest ok是否允许匿名访问，valid user指定可访问的用户和组（@开头为组），write list指定具备写入权限的用户和组。",
+      "qas": [
+        {
+          "id": "5-339-24",
+          "question": "在smb.conf文件中，如何标识一个共享文件夹？",
+          "answers": [
+            {
+              "text": "以[]包裹标识共享文件夹",
+              "answer_start": 45
+            }
+          ]
+        },
+        {
+          "id": "5-339-25",
+          "question": "[myShareViaCfg]配置中，browseable字段的作用是什么？",
+          "answers": [
+            {
+              "text": "决定当前这个共享能否在客户端中可见",
+              "answer_start": 118
+            }
+          ]
+        },
+        {
+          "id": "5-339-26",
+          "question": "valid user字段中，@开头表示什么？",
+          "answers": [
+            {
+              "text": "@开头表示组",
+              "answer_start": 207
+            }
+          ]
+        },
+        {
+          "id": "5-339-27",
+          "question": "write list字段的作用是什么？",
+          "answers": [
+            {
+              "text": "标识具备写入权限的用户和组",
+              "answer_start": 226
+            }
+          ]
+        },
+        {
+          "id": "5-339-28",
+          "question": "配置文件中如何指定组用户访问权限？",
+          "answers": [
+            {
+              "text": "valid user = @g1,@g2",
+              "answer_start": 207
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "两种共享方式均满足：若用户适用多种权限，如u1:g1，用户配置只读、组配置读写，最终权限为读写；若acl中出现Everyone:F，其余用户权限失效，均为读写。分权限时需移除Everyone:F配置。",
+      "qas": [
+        {
+          "id": "5-339-29",
+          "question": "如果用户u1属于g1组，对u1配置只读权限，对g1组配置读写权限，u1最终的权限是什么？",
+          "answers": [
+            {
+              "text": "读写",
+              "answer_start": 85
+            }
+          ]
+        },
+        {
+          "id": "5-339-30",
+          "question": "若acl中出现Everyone:F，其他用户的权限会怎样？",
+          "answers": [
+            {
+              "text": "其余用户权限失效，均能以读写访问该文件夹",
+              "answer_start": 110
+            }
+          ]
+        },
+        {
+          "id": "5-339-31",
+          "question": "分用户/组配置访问权限时，需要注意什么？",
+          "answers": [
+            {
+              "text": "一定要移除Everyone:F配置",
+              "answer_start": 175
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

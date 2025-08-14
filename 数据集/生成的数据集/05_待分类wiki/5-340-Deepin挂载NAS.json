@@ -1,0 +1,179 @@
+{
+  "data": [
+    {
+      "title": "Deepin挂载NAS",
+      "paragraphs": [
+        {
+          "context": "使用CIFS时，`nfs-common`，`cifs-utils`是必须的前置软件（在Ubuntu发行版下），安装命令为：`sudo apt install -y nfs-common cifs-utils`。",
+          "qas": [
+            {
+              "id": "5-340-1",
+              "question": "使用CIFS时需要安装哪些前置软件？",
+              "answers": [
+                {
+                  "text": "`nfs-common`，`cifs-utils`",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-340-2",
+              "question": "安装CIFS所需前置软件的命令是什么？",
+              "answers": [
+                {
+                  "text": "`sudo apt install -y nfs-common cifs-utils`",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用CIFS时，需编辑`/etc/fstab`文件，命令为`sudo deepin-deitor /etc/fstab`，添加内容为：//your_nas_ip/dir /mnt/NAS/dir cifs rw,dir_mode=0777,file_mode=0777,vers=2.0,username=yourusername,password=yourpassword 0 0，其中`your_nas_ip`代表NAS的访问地址，`dir`代表NAS下的分享挂载点，`/mnt/mountdir`代表本设备要挂载到的路径，`yourusername`为访问的用户名，`yourpassword`为访问用户的密码，若匿名访问则不需要username与password并改为`guest`。",
+          "qas": [
+            {
+              "id": "5-340-3",
+              "question": "使用CIFS时需要编辑哪个文件？",
+              "answers": [
+                {
+                  "text": "`/etc/fstab`",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "5-340-4",
+              "question": "编辑`/etc/fstab`文件的命令是什么？",
+              "answers": [
+                {
+                  "text": "`sudo deepin-deitor /etc/fstab`",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "id": "5-340-5",
+              "question": "在`/etc/fstab`中添加的CIFS挂载内容格式是怎样的？",
+              "answers": [
+                {
+                  "text": "//your_nas_ip/dir /mnt/NAS/dir cifs rw,dir_mode=0777,file_mode=0777,vers=2.0,username=yourusername,password=yourpassword 0 0",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "id": "5-340-6",
+              "question": "`your_nas_ip`代表什么？",
+              "answers": [
+                {
+                  "text": "NAS的访问地址",
+                  "answer_start": 204
+                }
+              ]
+            },
+            {
+              "id": "5-340-7",
+              "question": "匿名访问时`/etc/fstab`中的设置需要做什么修改？",
+              "answers": [
+                {
+                  "text": "不需要username与password并改为`guest`",
+                  "answer_start": 375
+                }
+              ]
+            },
+            {
+              "id": "5-340-8",
+              "question": "CIFS配置中的dir_mode和file_mode权限值是多少？",
+              "answers": [
+                {
+                  "text": "0777",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编辑`/etc/fstab`并保存后，执行`sudo mount -a`，若没有报错与提示信息，则成功挂载。",
+          "qas": [
+            {
+              "id": "5-340-9",
+              "question": "编辑`/etc/fstab`后执行什么命令完成挂载？",
+              "answers": [
+                {
+                  "text": "`sudo mount -a`",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-340-10",
+              "question": "如何判断挂载是否成功？",
+              "answers": [
+                {
+                  "text": "若没有报错与提示信息，则成功挂载",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin20下挂载整个NAS的实例：在`/mnt`下建立`NAS`文件夹，赋予权限的命令为`sudo chmod -R 777 /mnt/NAS`；在`/etc/fstab`中添加//192.168.104.44/homes /mnt/NAS/homes cifs rw,dir_mode=0777,file_mode=0777,vers=2.0,username=GBwater,password=我是密码 0 0；执行`sudo mount -a`；最后在文件管理器上右键`/mnt/NAS/homes/GBwater`，选择`添加书签`，可将其添加到侧边栏方便访问。",
+          "qas": [
+            {
+              "id": "5-340-11",
+              "question": "Deepin20下挂载整个NAS时，在`/mnt`下建立了什么文件夹？",
+              "answers": [
+                {
+                  "text": "`NAS`",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "id": "5-340-12",
+              "question": "Deepin20中给`/mnt/NAS`赋予权限的命令是什么？",
+              "answers": [
+                {
+                  "text": "`sudo chmod -R 777 /mnt/NAS`",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "5-340-13",
+              "question": "Deepin20实例中`/etc/fstab`添加的具体内容是什么？",
+              "answers": [
+                {
+                  "text": "//192.168.104.44/homes /mnt/NAS/homes cifs rw,dir_mode=0777,file_mode=0777,vers=2.0,username=GBwater,password=我是密码 0 0",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "id": "5-340-14",
+              "question": "Deepin20中如何将挂载的NAS添加到文件管理器侧边栏？",
+              "answers": [
+                {
+                  "text": "在文件管理器上右键`/mnt/NAS/homes/GBwater`，选择`添加书签`",
+                  "answer_start": 259
+                }
+              ]
+            },
+            {
+              "id": "5-340-15",
+              "question": "实例中创建的挂载目录路径是什么？",
+              "answers": [
+                {
+                  "text": "/mnt/NAS",
+                  "answer_start": 80
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

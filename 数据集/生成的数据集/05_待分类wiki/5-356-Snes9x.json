@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "Snes9x",
+      "paragraphs": [
+        {
+          "context": "Snes9x是一款超级任天堂SFC模拟器，能流畅运行市面上大部分经典的游戏。Snes9x支持游戏的保存和载入，支持实体键盘和虚拟键盘，可以让玩家再次体验超级任天堂曾经的辉煌。",
+          "qas": [
+            {
+              "id": "5-356-1",
+              "question": "Snes9x是什么？",
+              "answers": [
+                {
+                  "text": "一款超级任天堂SFC模拟器",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-356-2",
+              "question": "Snes9x能流畅运行哪些游戏？",
+              "answers": [
+                {
+                  "text": "市面上大部分经典的游戏",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-356-3",
+              "question": "Snes9x支持哪些功能？",
+              "answers": [
+                {
+                  "text": "游戏的保存和载入，支持实体键盘和虚拟键盘",
+                  "answer_start": 46
+                }
+              ]
+            },
+            {
+              "id": "5-356-4",
+              "question": "Snes9x支持哪些输入设备？",
+              "answers": [
+                {
+                  "text": "实体键盘和虚拟键盘",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-356-5",
+              "question": "使用Snes9x可以让玩家获得什么体验？",
+              "answers": [
+                {
+                  "text": "再次体验超级任天堂曾经的辉煌",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install snes9x-gtk",
+          "qas": [
+            {
+              "id": "5-356-6",
+              "question": "如何安装Snes9x？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install snes9x-gtk",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove snes9x-gtk",
+          "qas": [
+            {
+              "id": "5-356-7",
+              "question": "如何卸载Snes9x？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove snes9x-gtk",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/non-free/s/snes9x/",
+          "qas": [
+            {
+              "id": "5-356-8",
+              "question": "Snes9x的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/s/snes9x/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

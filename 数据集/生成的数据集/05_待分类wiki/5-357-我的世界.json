@@ -1,0 +1,345 @@
+{
+  "title": "我的世界",
+  "paragraphs": [
+    {
+      "context": "《我的世界》（Minecraft）是一款开放世界沙盒游戏，玩家可以自由探索、建造和冒险，支持Java版（跨平台）和基岩版（多设备联机）。",
+      "qas": [
+        {
+          "id": "5-357-1",
+          "question": "《我的世界》是什么类型的游戏？",
+          "answers": [
+            {
+              "text": "开放世界沙盒游戏",
+              "answer_start": 17
+            }
+          ]
+        },
+        {
+          "id": "5-357-2",
+          "question": "《我的世界》支持哪些版本？",
+          "answers": [
+            {
+              "text": "Java版（跨平台）和基岩版（多设备联机）",
+              "answer_start": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Deepin上游玩我的世界Java版最低配置：CPU为Intel Core i3-3210 3.2GHz、AMD A8-7600 APU 3.1GHz等或同等效能的CPU；芯片架构包括ARM、x64、x86、LoongArch、RISC-V；内存2GB。",
+      "qas": [
+        {
+          "id": "5-357-3",
+          "question": "Deepin上玩我的世界Java版的最低内存要求是多少？",
+          "answers": [
+            {
+              "text": "2GB",
+              "answer_start": 139
+            }
+          ]
+        },
+        {
+          "id": "5-357-4",
+          "question": "我的世界Java版在Deepin上运行的最低配置中，芯片架构有哪些？",
+          "answers": [
+            {
+              "text": "ARM、x64、x86、LoongArch、RISC-V",
+              "answer_start": 92
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Deepin上游玩我的世界Java版推荐配置：CPU为Intel Core i5-4690 3.5GHz、AMD A10-7800 APU 3.5GHz等或同等性能的CPU；芯片架构包括ARM、x64、x86、LoongArch、RISC-V；内存4GB。",
+      "qas": [
+        {
+          "id": "5-357-5",
+          "question": "Deepin上玩我的世界Java版的推荐内存要求是多少？",
+          "answers": [
+            {
+              "text": "4GB",
+              "answer_start": 139
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Deepin当前可用Minecraft Java启动器：官方启动器、HMCL、XMCL、LauncherX、Modrinth启动器等。即将到来的有BakaXL4、PCL.Neo等。",
+      "qas": [
+        {
+          "id": "5-357-6",
+          "question": "Deepin当前可用的Minecraft Java启动器有哪些？",
+          "answers": [
+            {
+              "text": "官方启动器、HMCL、XMCL、LauncherX、Modrinth启动器等",
+              "answer_start": 19
+            }
+          ]
+        },
+        {
+          "id": "5-357-7",
+          "question": "Deepin上即将到来的Minecraft Java启动器有哪些？",
+          "answers": [
+            {
+              "text": "BakaXL4、PCL.Neo等",
+              "answer_start": 85
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "HMCL启动器的.jar文件启动命令为java -jar HMCL-xxx.jar；.sh文件启动可用./HMCL-xxx.sh或双击；.exe文件启动用java -jar HMCL-xxx.exe。",
+      "qas": [
+        {
+          "id": "5-357-8",
+          "question": ".jar文件如何启动HMCL？",
+          "answers": [
+            {
+              "text": "java -jar HMCL-xxx.jar",
+              "answer_start": 23
+            }
+          ]
+        },
+        {
+          "id": "5-357-9",
+          "question": ".sh文件启动HMCL的方法有哪些？",
+          "answers": [
+            {
+              "text": "./HMCL-xxx.sh或双击",
+              "answer_start": 56
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "下载Java的方式：OpenJDK可通过sudo apt-get install openjdk-8-jre下载openjdk8，或前往官网下载9及以上版本；Oracle JDK需前往其官网下载。",
+      "qas": [
+        {
+          "id": "5-357-10",
+          "question": "如何下载OpenJDK8？",
+          "answers": [
+            {
+              "text": "通过sudo apt-get install openjdk-8-jre",
+              "answer_start": 26
+            }
+          ]
+        },
+        {
+          "id": "5-357-11",
+          "question": "Oracle JDK在哪里下载？",
+          "answers": [
+            {
+              "text": "前往其官网下载",
+              "answer_start": 103
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "我的世界Java版1.20.5（24w14a）最低Java版本为Java 21；1.18（1.18-pre2）为Java 17；1.17（21w19a）为Java 16；1.12（17w13a）为Java 8。",
+      "qas": [
+        {
+          "id": "5-357-12",
+          "question": "我的世界Java版1.20.5（24w14a）需要的最低Java版本是什么？",
+          "answers": [
+            {
+              "text": "Java 21",
+              "answer_start": 52
+            }
+          ]
+        },
+        {
+          "id": "5-357-13",
+          "question": "我的世界Java版1.12（17w13a）最低需要哪个Java版本？",
+          "answers": [
+            {
+              "text": "Java 8",
+              "answer_start": 146
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Nvidia卡用户在Deepin上用独显启动我的世界Java版，可安装任务栏显卡切换插件后右键选择使用prime-run运行，或创建prime-run脚本，或设置环境变量等。",
+      "qas": [
+        {
+          "id": "5-357-14",
+          "question": "Nvidia卡用户在Deepin上如何用独显启动我的世界Java版？",
+          "answers": [
+            {
+              "text": "安装任务栏显卡切换插件后右键选择使用prime-run运行，或创建prime-run脚本，或设置环境变量等",
+              "answer_start": 42
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Deepin上可使用Mcpelauncher来游玩我的世界基岩版，它是针对Android版Minecraft基岩版的第三方启动工具，支持在Linux和MacOS系统运行。",
+      "qas": [
+        {
+          "id": "5-357-15",
+          "question": "Deepin上可用什么工具游玩我的世界基岩版？",
+          "answers": [
+            {
+              "text": "Mcpelauncher",
+              "answer_start": 19
+            }
+          ]
+        },
+        {
+          "id": "5-357-16",
+          "question": "Mcpelauncher支持哪些系统？",
+          "answers": [
+            {
+              "text": "Linux和MacOS系统",
+              "answer_start": 101
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "mcpelauncher的安装方式有：使用apt仓库安装，输入sudo apt update和sudo apt install相关包；使用Flatpak安装，输入sudo flatpak install flathub io.mrarm.mcpelauncher等。",
+      "qas": [
+        {
+          "id": "5-357-17",
+          "question": "如何用apt仓库安装mcpelauncher？",
+          "answers": [
+            {
+              "text": "输入sudo apt update和sudo apt install相关包",
+              "answer_start": 43
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "《我的世界》（Minecraft）是一款开放世界沙盒游戏，支持Java版（跨平台）和基岩版（多设备联机）。在Deepin系统上运行Java版需满足硬件需求：最低配置要求CPU为Intel Core i3-3210 3.2GHz、AMD A8-7600 APU 3.1GHz等，内存2GB；推荐配置要求CPU为Intel Core i5-4690 3.5GHz、AMD A10-7800 APU 3.5GHz等，内存4GB。",
+      "qas": [
+        {
+          "id": "5-357-18",
+          "question": "Deepin系统运行Java版的最低内存要求是多少？",
+          "answers": [
+            {
+              "text": "2GB",
+              "answer_start": 144
+            }
+          ]
+        },
+        {
+          "id": "5-357-19",
+          "question": "推荐配置中AMD CPU的具体型号是什么？",
+          "answers": [
+            {
+              "text": "AMD A10-7800 APU 3.5GHz",
+              "answer_start": 186
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Deepin可用Java版启动器包括：官方启动器、HMCL、XMCL、LauncherX、Modrinth启动器。HMCL启动方式：需预装JDK11+，可通过.jar文件（命令：java -jar HMCL-xxx.jar）或.sh文件启动。创建桌面快捷图标需编写.desktop文件，指定Exec路径及图标。",
+      "qas": [
+        {
+          "id": "5-357-20",
+          "question": "列出三个Deepin支持的Minecraft Java启动器",
+          "answers": [
+            {
+              "text": "官方启动器、HMCL、XMCL",
+              "answer_start": 22
+            }
+          ]
+        },
+        {
+          "id": "5-357-21",
+          "question": "桌面快捷图标的Exec字段应包含什么内容？",
+          "answers": [
+            {
+              "text": "指定HMCL可执行文件的路径",
+              "answer_start": 179
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "游戏需安装对应Java版本：Minecraft 1.20.5需Java 21，1.18需Java 17。可通过apt安装OpenJDK或下载Oracle JDK。NVIDIA显卡启动方法：1. 使用任务栏插件右键选择prime-run；2. 创建prime-run脚本设置环境变量；3. 在启动器环境变量输入__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia。",
+      "qas": [
+        {
+          "id": "5-357-22",
+          "question": "Minecraft 1.18版本需要哪个Java版本？",
+          "answers": [
+            {
+              "text": "Java 17",
+              "answer_start": 48
+            }
+          ]
+        },
+        {
+          "id": "5-357-23",
+          "question": "NVIDIA显卡启动的三种方法是什么？",
+          "answers": [
+            {
+              "text": "任务栏插件、prime-run脚本、启动器环境变量",
+              "answer_start": 126
+            }
+          ]
+        },
+        {
+          "id": "5-357-24",
+          "question": "启动器环境变量需设置哪些值？",
+          "answers": [
+            {
+              "text": "__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia",
+              "answer_start": 192
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "基岩版可通过mcpelauncher启动，需已购买安卓版账号。安装方式：1. 添加apt仓库安装；2. Flatpak全局安装。NVIDIA显卡启动需在环境变量设置__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia。当前问题：不支持光线追踪和输入法。",
+      "qas": [
+        {
+          "id": "5-357-25",
+          "question": "mcpelauncher启动基岩版需要什么账号？",
+          "answers": [
+            {
+              "text": "已购买安卓版Minecraft的Google账号",
+              "answer_start": 26
+            }
+          ]
+        },
+        {
+          "id": "5-357-26",
+          "question": "Flatpak安装的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo flatpak install flathub io.mrarm.mcpelauncher",
+              "answer_start": 91
+            }
+          ]
+        },
+        {
+          "id": "5-357-27",
+          "question": "基岩版当前存在哪些限制？",
+          "answers": [
+            {
+              "text": "不支持光线追踪和输入法",
+              "answer_start": 193
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

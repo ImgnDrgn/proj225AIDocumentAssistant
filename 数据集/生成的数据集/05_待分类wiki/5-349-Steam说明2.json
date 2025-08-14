@@ -1,0 +1,184 @@
+{
+  "data": [
+    {
+      "title": "Steam说明2",
+      "paragraphs": [
+        {
+          "context": "Steam 是由 Valve 公司开发一个游戏平台。Proton 是 Steam 提供的修改版的 Wine，可以在 Linux 系统中运行部分 Windows 游戏。Steam 平台的游戏的兼容情况可以在 Protondb 查到。",
+          "qas": [
+            {
+              "id": "5-349-1",
+              "question": "Steam是由哪家公司开发的？",
+              "answers": [
+                {
+                  "text": "Valve 公司",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-349-2",
+              "question": "Steam 是什么？",
+              "answers": [
+                {
+                  "text": "由 Valve 公司开发一个游戏平台",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-349-3",
+              "question": "Proton是什么？",
+              "answers": [
+                {
+                  "text": "Steam 提供的修改版的 Wine，可以在 Linux 系统中运行部分 Windows 游戏",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "5-349-4",
+              "question": "哪里可以查到Steam平台游戏的兼容情况？",
+              "answers": [
+                {
+                  "text": "Protondb",
+                  "answer_start": 105
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "缺失 32 位库的解决命令为：sudo apt-get install libgl1-nvidia-glvnd-glx:i386",
+          "qas": [
+            {
+              "id": "5-349-5",
+              "question": "缺失32位库的解决命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install libgl1-nvidia-glvnd-glx:i386",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-349-6",
+              "question": "如何解决缺失 32 位库的问题？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install libgl1-nvidia-glvnd-glx:i386",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "强制打开 Steamplay 支持的方法：在设置中选择 Steamplay，可以强制启用 Proton。也可以在游戏库中右键游戏，为游戏选择特定版本的 Proton。",
+          "qas": [
+            {
+              "id": "5-349-7",
+              "question": "如何强制打开Steamplay支持？",
+              "answers": [
+                {
+                  "text": "在设置中选择 Steamplay，可以强制启用 Proton；也可以在游戏库中右键游戏，为游戏选择特定版本的 Proton",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "5-349-8",
+              "question": "如何强制启用 Proton？",
+              "answers": [
+                {
+                  "text": "在设置中选择 Steamplay",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "5-349-9",
+              "question": "在游戏库中如何为游戏选择特定版本的Proton？",
+              "answers": [
+                {
+                  "text": "右键游戏，为游戏选择特定版本的 Proton",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用蒸汽平台：可以通过附加命令 -steamchina 进入中国版蒸汽平台。不过由于软件/游戏安装限制，不能通过安装 Proton 兼容层来运行 Windows 游戏，而只能游玩原生 Linux 游戏。",
+          "qas": [
+            {
+              "id": "5-349-10",
+              "question": "如何进入中国版蒸汽平台？",
+              "answers": [
+                {
+                  "text": "通过附加命令 -steamchina",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "5-349-11",
+              "question": "蒸汽平台能否通过安装Proton兼容层运行Windows游戏？",
+              "answers": [
+                {
+                  "text": "不能，只能游玩原生 Linux 游戏",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "5-349-12",
+              "question": "在蒸汽平台上，你能运行 Windows 游戏吗？",
+              "answers": [
+                {
+                  "text": "不能通过安装 Proton 兼容层来运行 Windows 游戏，而只能游玩原生 Linux 游戏",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "提示与技巧中的Steam++：Steam++ 是一个 Steam 辅助软件，提供本地反代、SAM 等功能。其Github 仓库地址是https://github.com/SteamTools-Team/SteamTools，Gitee 仓库地址是https://gitee.com/rmbgame/SteamTools。",
+          "qas": [
+            {
+              "id": "5-349-13",
+              "question": "Steam++是什么？",
+              "answers": [
+                {
+                  "text": "一个 Steam 辅助软件，提供本地反代、SAM 等功能",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-349-14",
+              "question": "Steam++的Github仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "https://github.com/SteamTools-Team/SteamTools",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "id": "5-349-15",
+              "question": "Steam++的Gitee仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "https://gitee.com/rmbgame/SteamTools",
+                  "answer_start": 123
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

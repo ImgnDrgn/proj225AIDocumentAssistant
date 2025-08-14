@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "千牛工作台",
+      "paragraphs": [
+        {
+          "context": "千牛工作台是阿里巴巴官方出品的卖家一站式店铺管理工具，卖家可以通过它发布经营资讯消息、商业伙伴关系，借此提升卖家的经营效率，促进彼此间的合作共赢，让卖家可以更加便捷和高效的管理店铺，让生意游刃有余。",
+          "qas": [
+            {
+              "id": "5-365-1",
+              "question": "千牛工作台是由谁出品的？",
+              "answers": [
+                {
+                  "text": "阿里巴巴官方",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-365-2",
+              "question": "千牛工作台属于什么类型的工具？",
+              "answers": [
+                {
+                  "text": "卖家一站式店铺管理工具",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-365-3",
+              "question": "卖家可通过千牛工作台发布哪些内容？",
+              "answers": [
+                {
+                  "text": "经营资讯消息、商业伙伴关系",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-365-4",
+              "question": "使用千牛工作台能带来什么好处？",
+              "answers": [
+                {
+                  "text": "提升卖家的经营效率，促进彼此间的合作共赢，让卖家可以更加便捷和高效的管理店铺，让生意游刃有余",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "id": "5-365-5",
+              "question": "千牛工作台的主要功能是什么？",
+              "answers": [
+                {
+                  "text": "发布经营资讯消息、商业伙伴关系，提升卖家经营效率，促进合作共赢，便捷高效管理店铺",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install apps.com.taobao.aliclient.qianniu",
+          "qas": [
+            {
+              "id": "5-365-6",
+              "question": "千牛工作台的安装命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install apps.com.taobao.aliclient.qianniu",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove apps.com.taobao.aliclient.qianniu",
+          "qas": [
+            {
+              "id": "5-365-7",
+              "question": "千牛工作台的卸载命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove apps.com.taobao.aliclient.qianniu",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/non-free/a/apps.com.taobao.aliclient.qianniu/",
+          "qas": [
+            {
+              "id": "5-365-8",
+              "question": "千牛工作台的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/a/apps.com.taobao.aliclient.qianniu/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

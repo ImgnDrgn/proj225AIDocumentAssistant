@@ -1,0 +1,180 @@
+{
+  "title": "文件类型",
+  "paragraphs": [
+    {
+      "context": "在Linux中，文件类型包括普通文件（用 '-' 表示）、目录文件（'d'）、链接文件（'l'）、设备文件（'b' 或 'c'）、套接字文件（'s'）和管道文件（'p'）。文件权限分为创建者权限、同组权限和其他权限，每个权限由读（'r'）、写（'w'）、执行（'x'）或无（'-'）表示，分别对应数字4、2、1、0。例如，权限 'rwx' 的二进制是 '111'，八进制是 '7'；'r-x' 的二进制是 '101'，八进制是 '5'。使用 ls -l 命令可以查看文件详细信息，输出包括文件类型和权限、连接个数、文件所有者、文件所在群组、文件大小（字节）、最后修改时间和文件名称。例如：'d rwx r-x r-x 2 mistyos mistyos 4096 11月 21 09:15 Desktop'。",
+      "qas": [
+        {
+          "id": "5-378-1",
+          "question": "Linux中有哪些文件类型？",
+          "answers": [
+            {
+              "text": "普通文件（用 '-' 表示）、目录文件（'d'）、链接文件（'l'）、设备文件（'b' 或 'c'）、套接字文件（'s'）和管道文件（'p'）",
+              "answer_start": 14
+            }
+          ]
+        },
+        {
+          "id": "5-378-2",
+          "question": "文件权限中的读、写、执行分别对应什么数字？",
+          "answers": [
+            {
+              "text": "4、2、1",
+              "answer_start": 126
+            }
+          ]
+        },
+        {
+          "id": "5-378-3",
+          "question": "权限 'rwx' 在八进制中表示什么？",
+          "answers": [
+            {
+              "text": "7",
+              "answer_start": 189
+            }
+          ]
+        },
+        {
+          "id": "5-378-4",
+          "question": "权限 'r-x' 在八进制中表示什么？",
+          "answers": [
+            {
+              "text": "5",
+              "answer_start": 215
+            }
+          ]
+        },
+        {
+          "id": "5-378-5",
+          "question": "ls -l 命令输出中的文件大小单位是什么？",
+          "answers": [
+            {
+              "text": "字节",
+              "answer_start": 278
+            }
+          ]
+        },
+        {
+          "id": "5-378-6",
+          "question": "文件权限分为哪几个部分？",
+          "answers": [
+            {
+              "text": "创建者权限、同组权限和其他权限",
+              "answer_start": 65
+            }
+          ]
+        },
+        {
+          "id": "5-378-7",
+          "question": "在示例中，文件所有者是谁？",
+          "answers": [
+            {
+              "text": "mistyos",
+              "answer_start": 319
+            }
+          ]
+        },
+        {
+          "id": "5-378-8",
+          "question": "无权限在文件权限中用什么表示？",
+          "answers": [
+            {
+              "text": "'-'",
+              "answer_start": 105
+            }
+          ]
+        },
+        {
+          "id": "5-378-9",
+          "question": "权限 'rwx' 的二进制表示是什么？",
+          "answers": [
+            {
+              "text": "'111'",
+              "answer_start": 181
+            }
+          ]
+        },
+        {
+          "id": "5-378-10",
+          "question": "Linux中普通文件对应的符号是什么？",
+          "answers": [
+            {
+              "text": "-",
+              "answer_start": 22
+            }
+          ]
+        },
+        {
+          "id": "5-378-11",
+          "question": "链接文件在Linux中对应的符号是什么？",
+          "answers": [
+            {
+              "text": "l",
+              "answer_start": 44
+            }
+          ]
+        },
+        {
+          "id": "5-378-12",
+          "question": "Linux中设备文件对应的符号有哪些？",
+          "answers": [
+            {
+              "text": "'b' 或 'c'",
+              "answer_start": 53
+            }
+          ]
+        },
+        {
+          "id": "5-378-13",
+          "question": "文件权限中，‘r’对应的数字表示是多少？",
+          "answers": [
+            {
+              "text": "4",
+              "answer_start": 126
+            }
+          ]
+        },
+        {
+          "id": "5-378-14",
+          "question": "‘r-x’的二进制表示是什么？",
+          "answers": [
+            {
+              "text": "'101'",
+              "answer_start": 203
+            }
+          ]
+        },
+        {
+          "id": "5-378-15",
+          "question": "ls -l查看中，文件名称为‘Desktop’的创建者权限是什么？",
+          "answers": [
+            {
+              "text": "rwx",
+              "answer_start": 332
+            }
+          ]
+        },
+        {
+          "id": "5-378-16",
+          "question": "ls -l查看中，该文件的文件所在群组是什么？",
+          "answers": [
+            {
+              "text": "mistyos",
+              "answer_start": 342
+            }
+          ]
+        },
+        {
+          "id": "5-378-17",
+          "question": "ls -l查看中，该文件的最后更新时间是什么？",
+          "answers": [
+            {
+              "text": "11月 21 09:15",
+              "answer_start": 355
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

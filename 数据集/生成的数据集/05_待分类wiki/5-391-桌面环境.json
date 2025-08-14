@@ -1,0 +1,290 @@
+{
+  "title": "桌面环境",
+  "paragraphs": [
+    {
+      "context": "在图形计算中，一个桌面环境(Desktop Environment)为计算机提供一个图形用户界面（GUI）。\n\n对应于早期的文字命令行界面（CLI），一个典型的桌面环境提供图标，视窗，工具栏，文件夹，壁纸等软件界面，并且内置了各式各样的多媒体软件、系统程序、游戏、实用程序、网页开发工具、编程 工具等等。整体而言，桌面环境在设计和功能上的特性，赋予了它与众不同的外观和感觉。\n\n开源的Linux系统拥有很多桌面环境可以更换.但流行的闭源操作系统Microsoft Windows和Mac OS X所用的桌面环境是相对不可变的。但是也有主题和第三方软件可以完全更改常见界面元素的外观（比如窗口、按钮和图标）以及界面本身。在Windows中，这一切可以通过替换默认的Explorer shell来实现。",
+      "qas": [
+        {
+          "question": "什么是桌面环境？",
+          "id": "5-391-1",
+          "answers": [
+            {
+              "text": "一个桌面环境(Desktop Environment)为计算机提供一个图形用户界面（GUI）。",
+              "answer_start": 7
+            }
+          ]
+        },
+        {
+          "question": "桌面环境在图形计算中为计算机提供什么？",
+          "id": "5-391-2",
+          "answers": [
+            {
+              "text": "一个图形用户界面（GUI）",
+              "answer_start": 26
+            }
+          ]
+        },
+        {
+          "question": "桌面环境对应于早期的什么界面？",
+          "id": "5-391-3",
+          "answers": [
+            {
+              "text": "文字命令行界面（CLI）",
+              "answer_start": 55
+            }
+          ]
+        },
+        {
+          "question": "典型桌面环境提供哪些软件界面元素？",
+          "id": "5-391-4",
+          "answers": [
+            {
+              "text": "图标，视窗，工具栏，文件夹，壁纸等",
+              "answer_start": 88
+            }
+          ]
+        },
+        {
+          "question": "桌面环境内置了哪些类型的软件？",
+          "id": "5-391-5",
+          "answers": [
+            {
+              "text": "多媒体软件、系统程序、游戏、实用程序、网页开发工具、编程工具等等。",
+              "answer_start": 106
+            }
+          ]
+        },
+        {
+          "question": "开源的Linux系统在桌面环境方面有什么特点？",
+          "id": "5-391-6",
+          "answers": [
+            {
+              "text": "拥有很多桌面环境可以更换.",
+              "answer_start": 169
+            }
+          ]
+        },
+        {
+          "question": "Microsoft Windows和Mac OS X的桌面环境通常是怎样的？",
+          "id": "5-391-7",
+          "answers": [
+            {
+              "text": "相对不可变的。",
+              "answer_start": 198
+            }
+          ]
+        },
+        {
+          "question": "开源的Linux系统和闭源操作系统（如Microsoft Windows和Mac OS X）在桌面环境上的主要区别是什么？",
+          "id": "5-391-8",
+          "answers": [
+            {
+              "text": "开源的Linux系统拥有很多桌面环境可以更换，而流行的闭源操作系统Microsoft Windows和Mac OS X所用的桌面环境是相对不可变的",
+              "answer_start": 169
+            }
+          ]
+        },
+        {
+          "question": "在Windows中如何更改界面元素的外观？",
+          "id": "5-391-9",
+          "answers": [
+            {
+              "text": "通过替换默认的Explorer shell来实现。",
+              "answer_start": 247
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "深度桌面环境 DDE：深度科技团队基于Qt和GO开发的全新桌面环境。\nGnome Shell：世界最为流行、基于GTK图形库开发的桌面环境。\nKDE：世界最为流行、基于QT图形库开发的桌面环境。\nUnity：ubuntu团队基于Gnome Shell开发的桌面环境。\nXfce：轻巧优美的Xfce桌面环境。\nLXDE：极度简洁的LXDE桌面环境。\nGnome2：已经失去支持的Gnome2桌面环境。\nMATE:Linux Mint发行版基于Gnome2的开发的桌面环境。\nCinnamon:Linux Mint发行版基于Gnome Shell的开发的桌面环境。\nRazor-qt：基于QT开发的桌面环境.",
+      "qas": [
+        {
+          "question": "深度桌面环境DDE是由谁开发的？",
+          "id": "5-391-10",
+          "answers": [
+            {
+              "text": "深度科技团队",
+              "answer_start": 12
+            }
+          ]
+        },
+        {
+          "question": "深度桌面环境DDE基于什么技术开发？",
+          "id": "5-391-11",
+          "answers": [
+            {
+              "text": "基于Qt和GO开发",
+              "answer_start": 17
+            }
+          ]
+        },
+        {
+          "question": "深度桌面环境（DDE）是由哪个团队基于什么开发的？",
+          "id": "5-391-12",
+          "answers": [
+            {
+              "text": "深度科技团队基于Qt和GO开发的",
+              "answer_start": 12
+            }
+          ]
+        },
+        {
+          "question": "Gnome Shell的特点是什么？",
+          "id": "5-391-13",
+          "answers": [
+            {
+              "text": "世界最为流行、基于GTK图形库开发的桌面环境。",
+              "answer_start": 59
+            }
+          ]
+        },
+        {
+          "question": "KDE基于什么图形库开发？",
+          "id": "5-391-14",
+          "answers": [
+            {
+              "text": "基于QT图形库",
+              "answer_start": 123
+            }
+          ]
+        },
+        {
+          "question": "Unity是由哪个团队开发的？",
+          "id": "5-391-15",
+          "answers": [
+            {
+              "text": "ubuntu团队",
+              "answer_start": 159
+            }
+          ]
+        },
+        {
+          "question": "Unity是由哪个团队基于什么开发的？",
+          "id": "5-391-16",
+          "answers": [
+            {
+              "text": "ubuntu团队基于Gnome Shell开发的",
+              "answer_start": 159
+            }
+          ]
+        },
+        {
+          "question": "Xfce桌面环境的特点是什么？",
+          "id": "5-391-17",
+          "answers": [
+            {
+              "text": "轻巧优美的Xfce桌面环境。",
+              "answer_start": 203
+            }
+          ]
+        },
+        {
+          "question": "LXDE桌面环境的特点是什么？",
+          "id": "5-391-18",
+          "answers": [
+            {
+              "text": "极度简洁的LXDE桌面环境。",
+              "answer_start": 231
+            }
+          ]
+        },
+        {
+          "question": "Gnome2桌面环境的现状如何？",
+          "id": "5-391-19",
+          "answers": [
+            {
+              "text": "已经失去支持的Gnome2桌面环境。",
+              "answer_start": 262
+            }
+          ]
+        },
+        {
+          "question": "MATE桌面环境是基于什么开发的？",
+          "id": "5-391-20",
+          "answers": [
+            {
+              "text": "基于Gnome2的开发",
+              "answer_start": 299
+            }
+          ]
+        },
+        {
+          "question": "Cinnamon是由哪个发行版开发的？",
+          "id": "5-391-21",
+          "answers": [
+            {
+              "text": "Linux Mint发行版",
+              "answer_start": 344
+            }
+          ]
+        },
+        {
+          "question": "MATE是哪个Linux发行版基于什么开发的桌面环境？",
+          "id": "5-391-22",
+          "answers": [
+            {
+              "text": "Linux Mint发行版基于Gnome2的开发的",
+              "answer_start": 304
+            }
+          ]
+        },
+        {
+          "question": "Cinnamon是哪个Linux发行版基于什么开发的桌面环境？",
+          "id": "5-391-23",
+          "answers": [
+            {
+              "text": "Linux Mint发行版基于Gnome Shell的开发的",
+              "answer_start": 352
+            }
+          ]
+        },
+        {
+          "question": "Razor-qt基于什么技术开发？",
+          "id": "5-391-24",
+          "answers": [
+            {
+              "text": "基于QT开发的桌面环境.",
+              "answer_start": 396
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "桌面环境是由很多软件包构成的，不同的桌面环境需要的软件包相差很大，就算两个不同的桌面环境需要的软件包相同，但是需要的版本也不一样，由于Linux存在软件依赖这一特殊情况，所以并不是所有桌面环境都可以共存。",
+      "qas": [
+        {
+          "question": "桌面环境由什么构成？",
+          "id": "5-391-25",
+          "answers": [
+            {
+              "text": "很多软件包",
+              "answer_start": 6
+            }
+          ]
+        },
+        {
+          "question": "为什么不同的桌面环境需要的软件包不同？",
+          "id": "5-391-26",
+          "answers": [
+            {
+              "text": "不同的桌面环境需要的软件包相差很大，就算两个不同的桌面环境需要的软件包相同，但是需要的版本也不一样",
+              "answer_start": 26
+            }
+          ]
+        },
+        {
+          "question": "为什么不是所有桌面环境都可以共存？",
+          "id": "5-391-27",
+          "answers": [
+            {
+              "text": "由于Linux存在软件依赖这一特殊情况，所以并不是所有桌面环境都可以共存。",
+              "answer_start": 96
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
