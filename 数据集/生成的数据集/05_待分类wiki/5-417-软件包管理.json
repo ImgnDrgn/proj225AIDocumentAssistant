@@ -1,0 +1,833 @@
+{
+  "data": [
+    {
+      "title": "软件包管理",
+      "paragraphs": [
+        {
+          "context": "包管理的作用是管理整个系统环境中的所有软件包。支持从远程仓库下载、安装并自动处理依赖。",
+          "qas": [
+            {
+              "id": "5-417-1",
+              "question": "包管理的作用是什么？",
+              "answers": [
+                {
+                  "text": "管理整个系统环境中的所有软件包，支持从远程仓库下载、安装并自动处理依赖",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin 是基于 Debian 的 Linux 发行版，因此使用 apt 作为包管理器，dpkg 作为包管理器基础，两者都作为系统的一部分被预装在操作系统环境中。",
+          "qas": [
+            {
+              "id": "5-417-2",
+              "question": "deepin使用什么作为包管理器和包管理器基础？两者是否预装？",
+              "answers": [
+                {
+                  "text": "使用apt作为包管理器，dpkg作为包管理器基础，两者都作为系统的一部分被预装在操作系统环境中",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包可以看作整个系统的组成单元，操作系统由若干软件包和文件组成。在 deepin 或其他基于Debian的发行版中，软件包的后缀名为`.deb`。",
+          "qas": [
+            {
+              "id": "5-417-3",
+              "question": "软件包可看作系统的什么？在deepin或其他基于Debian的发行版中，软件包的后缀名是什么？",
+              "answers": [
+                {
+                  "text": "软件包可以看作整个系统的组成单元",
+                  "answer_start": 0
+                },
+                {
+                  "text": ".deb",
+                  "answer_start": 63
+                }
+              ]
+            },
+            {
+              "id": "5-417-4",
+              "question": "软件包在系统中的作用是什么？",
+              "answers": [
+                {
+                  "text": "组成单元",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "5-417-5",
+              "question": "deepin系统中软件包的后缀名是什么？",
+              "answers": [
+                {
+                  "text": ".deb",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "当在系统中安装某软件包时，需要先补齐该软件包所需的依赖，否则软件包将不允许被安装。",
+          "qas": [
+            {
+              "id": "5-417-6",
+              "question": "安装某软件包时，若不补齐其所需依赖，会发生什么？",
+              "answers": [
+                {
+                  "text": "软件包将不允许被安装",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "5-417-7",
+              "question": "安装软件包的前提条件是什么？",
+              "answers": [
+                {
+                  "text": "补齐该软件包所需的依赖",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "包名是软件包的唯一标识，一般情况下，相同包名的软件包不允许在系统中安装多个，即使版本不同。",
+          "qas": [
+            {
+              "id": "5-417-8",
+              "question": "包名的作用是什么？相同包名的软件包能否在系统中安装多个（即使版本不同）？",
+              "answers": [
+                {
+                  "text": "包名是软件包的唯一标识",
+                  "answer_start": 0
+                },
+                {
+                  "text": "一般情况下，相同包名的软件包不允许在系统中安装多个，即使版本不同",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "5-417-9",
+              "question": "什么是软件包的唯一标识？",
+              "answers": [
+                {
+                  "text": "包名",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-417-10",
+              "question": "相同包名的软件包安装规则是什么？",
+              "answers": [
+                {
+                  "text": "不允许在系统中安装多个",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装软件包时所需要的其他软件包称为该软件包的依赖。通常来说，依赖可能是运行库，也可能是资源包等，依赖将由打包者决定。",
+          "qas": [
+            {
+              "id": "5-417-11",
+              "question": "什么是软件包的依赖？依赖通常可能是什么，由谁决定？",
+              "answers": [
+                {
+                  "text": "安装软件包时所需要的其他软件包称为该软件包的依赖",
+                  "answer_start": 0
+                },
+                {
+                  "text": "依赖通常可能是运行库，也可能是资源包等，由打包者决定",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "依赖可以设置版本作为可选条件，若系统中存在的依赖软件包版本与所需软件包版本要求不符，则视为该依赖包不满足。",
+          "qas": [
+            {
+              "id": "5-417-12",
+              "question": "依赖能否设置版本条件？若依赖软件包版本与所需版本不符，会怎样？",
+              "answers": [
+                {
+                  "text": "依赖可以设置版本作为可选条件",
+                  "answer_start": 0
+                },
+                {
+                  "text": "视为该依赖包不满足",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "5-417-13",
+              "question": "依赖可以设置什么作为可选条件？",
+              "answers": [
+                {
+                  "text": "版本",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "依赖地狱是指当软件包的依赖树过于复杂时，系统可能无法同时满足所有软件的依赖需求的现象。例如：软件包A依赖于1.0版本的软件包C，软件包B依赖于2.0版本的软件包C，若A和C 1.0已安装，安装B需升级C到2.0，这会导致A的依赖无法满足。",
+          "qas": [
+            {
+              "id": "5-417-14",
+              "question": "什么是依赖地狱？请举原文中的例子说明。",
+              "answers": [
+                {
+                  "text": "依赖地狱是指当软件包的依赖树过于复杂时，系统可能无法同时满足所有软件的依赖需求的现象",
+                  "answer_start": 0
+                },
+                {
+                  "text": "软件包A依赖于1.0版本的软件包C，软件包B依赖于2.0版本的软件包C，若A和C 1.0已安装，安装B需升级C到2.0，这会导致A的依赖无法满足",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-417-15",
+              "question": "在依赖地狱例子中，软件包B依赖什么版本的软件包C？",
+              "answers": [
+                {
+                  "text": "2.0版本",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "现代的软件包管理器支持自动从远程的软件包仓库中下载软件包及其依赖，这一定程度上无需自己考虑软件的依赖问题。发行版通常会维护这些仓库，仓库中的软件包通常能保证可用的依赖关系。",
+          "qas": [
+            {
+              "id": "5-417-16",
+              "question": "现代软件包管理器从远程仓库下载软件包有什么优势？软件仓库通常由谁维护？",
+              "answers": [
+                {
+                  "text": "支持自动下载软件包及其依赖，一定程度上无需自己考虑软件的依赖问题",
+                  "answer_start": 0
+                },
+                {
+                  "text": "软件仓库通常由发行版维护",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-417-17",
+              "question": "软件仓库的主要作用是什么？",
+              "answers": [
+                {
+                  "text": "支持自动从远程下载软件包及其依赖",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "发行版维护的仓库可能因地理位置或网络环境导致访问慢或无法访问，因此有团队或组织提供镜像仓库。镜像仓库内容应与发行版仓库一致，但同步需时间，故更新可能略有延迟，通常影响短暂。",
+          "qas": [
+            {
+              "id": "5-417-18",
+              "question": "为什么会有镜像仓库？镜像仓库内容与发行版仓库是否一致？其更新有何特点？",
+              "answers": [
+                {
+                  "text": "因为发行版维护的仓库可能因地理位置或网络环境导致访问慢或无法访问",
+                  "answer_start": 0
+                },
+                {
+                  "text": "镜像仓库内容应与发行版仓库一致",
+                  "answer_start": 59
+                },
+                {
+                  "text": "镜像仓库同步需时间，故更新可能略有延迟，通常影响短暂",
+                  "answer_start": 77
+                }
+              ]
+            },
+            {
+              "id": "5-417-19",
+              "question": "镜像仓库与发行版仓库的内容关系是什么？",
+              "answers": [
+                {
+                  "text": "应当一致",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-417-20",
+              "question": "镜像仓库更新的主要特点是什么？",
+              "answers": [
+                {
+                  "text": "通常会有短暂延迟",
+                  "answer_start": 48
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt支持安装本地软件包，命令为：sudo apt install 包文件名。该操作会自动从远程仓库查找所需依赖并同时安装。注意：包文件名必须是路径（相对或绝对），即使在当前目录也需写./包文件名。",
+          "qas": [
+            {
+              "id": "5-417-21",
+              "question": "apt安装本地软件包的命令是什么？该命令会自动处理依赖吗？对包文件名有何要求？",
+              "answers": [
+                {
+                  "text": "sudo apt install 包文件名",
+                  "answer_start": 15
+                },
+                {
+                  "text": "该操作会自动从远程仓库查找所需依赖并同时安装",
+                  "answer_start": 36
+                },
+                {
+                  "text": "包文件名必须是路径（相对或绝对），即使在当前目录也需写./包文件名",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt支持根据包名从远程仓库安装软件包，命令为：sudo apt install 包名。例如安装gimp，包名是gimp；在deepin/UOS应用商店仓库中，gimp包名是org.gimp（两者均能安装，来自不同打包）。",
+          "qas": [
+            {
+              "id": "5-417-22",
+              "question": "apt根据包名从远程仓库安装软件包的命令是什么？安装gimp的常见包名有哪些？",
+              "answers": [
+                {
+                  "text": "sudo apt install 包名",
+                  "answer_start": 23
+                },
+                {
+                  "text": "安装gimp的常见包名是gimp，在deepin/UOS应用商店仓库中的包名是org.gimp",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除已安装的软件包，通常使用命令：sudo apt remove 包名。该命令不会删除软件的配置文件。",
+          "qas": [
+            {
+              "id": "5-417-23",
+              "question": "apt删除已安装软件包的常用命令是什么？该命令会删除配置文件吗？",
+              "answers": [
+                {
+                  "text": "sudo apt remove 包名",
+                  "answer_start": 17
+                },
+                {
+                  "text": "该命令不会删除软件的配置文件",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若想删除软件包的同时删除配置文件，可使用apt的purge命令：sudo apt purge 包名。",
+          "qas": [
+            {
+              "id": "5-417-24",
+              "question": "apt删除软件包并同时删除配置文件的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt purge 包名",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统中若存在因软件包删除或更新而不再被需要的自动安装依赖包，可使用命令：sudo apt autoremove 自动卸载。也可组合remove命令：sudo apt autoremove 包名，指卸载指定包并清除不再需要的软件包。",
+          "qas": [
+            {
+              "id": "5-417-25",
+              "question": "apt autoremove命令的作用是什么？如何组合它与删除指定软件包的操作？",
+              "answers": [
+                {
+                  "text": "卸载系统中因软件包删除或更新而不再被需要的自动安装依赖包",
+                  "answer_start": 35
+                },
+                {
+                  "text": "使用命令sudo apt autoremove 包名，卸载指定包并清除不再需要的软件包",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt从远程仓库下载软件包前需更新本地缓存，确保本地软件包列表与远程一致，命令为：sudo apt update。该操作将远程仓库信息缓存到/var/lib/apt/lists中。",
+          "qas": [
+            {
+              "id": "5-417-26",
+              "question": "为什么要更新apt本地缓存？更新命令是什么？缓存存储在哪个目录？",
+              "answers": [
+                {
+                  "text": "确保本地软件包列表与远程仓库中的列表保持一致",
+                  "answer_start": 29
+                },
+                {
+                  "text": "sudo apt update",
+                  "answer_start": 57
+                },
+                {
+                  "text": "/var/lib/apt/lists",
+                  "answer_start": 82
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "远程仓库软件包更新后，使用sudo apt update更新缓存后，apt会通知有软件需升级，此时可使用命令：sudo apt upgrade 同步本地软件包版本（升级系统）。",
+          "qas": [
+            {
+              "id": "5-417-27",
+              "question": "远程仓库软件包更新且更新apt缓存后，用什么命令升级系统（同步本地软件包版本）？",
+              "answers": [
+                {
+                  "text": "sudo apt upgrade",
+                  "answer_start": 73
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过关键字搜索软件包，可使用apt的search命令：sudo apt search 关键字。该命令会列出所有搜索到的软件包及其部分信息。",
+          "qas": [
+            {
+              "id": "5-417-28",
+              "question": "apt通过关键字搜索软件包的命令是什么？该命令会输出什么？",
+              "answers": [
+                {
+                  "text": "sudo apt search 关键字",
+                  "answer_start": 18
+                },
+                {
+                  "text": "该命令会列出所有搜索到的软件包及其部分信息",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "从本地缓存根据包名列出符合条件的软件包，包名支持通配符，命令为：sudo apt list 包名。该命令会列出符合条件的软件包信息，已安装的会有[已安装]字样。",
+          "qas": [
+            {
+              "id": "5-417-29",
+              "question": "apt从本地缓存列出符合条件软件包的命令是什么？包名是否支持通配符？已安装软件包有何标识？",
+              "answers": [
+                {
+                  "text": "sudo apt list 包名",
+                  "answer_start": 32
+                },
+                {
+                  "text": "包名支持通配符",
+                  "answer_start": 19
+                },
+                {
+                  "text": "已安装的软件包会有[已安装]字样",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Debian提供根据文件名或路径搜索软件包的功能，需安装apt-file包：sudo apt install apt-file。安装后需先执行：sudo apt-file update。",
+          "qas": [
+            {
+              "id": "5-417-30",
+              "question": "要使用根据文件名或路径搜索软件包的功能，需先安装什么包？安装后需执行什么命令？",
+              "answers": [
+                {
+                  "text": "apt-file",
+                  "answer_start": 45
+                },
+                {
+                  "text": "sudo apt-file update",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用apt-file搜索软件包的命令为：sudo apt-file search 文件名或路径。该操作模糊匹配文件的完整路径，只需提供路径的部分或全部即可。",
+          "qas": [
+            {
+              "id": "5-417-31",
+              "question": "apt-file搜索软件包的命令是什么？其匹配文件路径的方式是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-file search 文件名或路径",
+                  "answer_start": 15
+                },
+                {
+                  "text": "模糊匹配文件的完整路径，只需提供路径的部分或全部即可",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装apt-file后，apt执行update时会下载额外缓存（包名与文件名列表），导致apt update消耗更多时间和网络流量。",
+          "qas": [
+            {
+              "id": "5-417-32",
+              "question": "安装apt-file后，对apt的update操作有什么影响？",
+              "answers": [
+                {
+                  "text": "apt执行update时会下载额外缓存（包名与文件名列表），导致apt update消耗更多时间和网络流量",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpkg是包管理器的底层部分，通常不推荐日常使用，因为它不能自动处理依赖关系，也不支持从远程仓库获取软件包。",
+          "qas": [
+            {
+              "id": "5-417-33",
+              "question": "dpkg在包管理中的定位是什么？为什么不推荐日常使用？",
+              "answers": [
+                {
+                  "text": "dpkg是包管理器的底层部分",
+                  "answer_start": 0
+                },
+                {
+                  "text": "因为它不能自动处理依赖关系，也不支持从远程仓库获取软件包",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpkg安装本地软件包需使用-i选项，命令为：sudo dpkg -i 软件包文件名。无需像apt一样必须提供路径，包文件在当前目录可直接输入文件名。",
+          "qas": [
+            {
+              "id": "5-417-34",
+              "question": "dpkg安装本地软件包的命令是什么？与apt相比，对包文件名的路径要求有何不同？",
+              "answers": [
+                {
+                  "text": "sudo dpkg -i 软件包文件名",
+                  "answer_start": 19
+                },
+                {
+                  "text": "dpkg无需像apt一样必须提供路径，包文件在当前目录可直接输入文件名",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpkg卸载软件包可使用-r或-P选项，类比apt的remove和purge。命令分别为：sudo dpkg -r 包名（不删配置）、sudo dpkg -P 包名（删配置）。",
+          "qas": [
+            {
+              "id": "5-417-35",
+              "question": "dpkg卸载软件包的-r和-P选项对应的命令是什么？分别类比apt的什么命令？",
+              "answers": [
+                {
+                  "text": "sudo dpkg -r 包名（不删配置）、sudo dpkg -P 包名（删配置）",
+                  "answer_start": 28
+                },
+                {
+                  "text": "-r选项类比apt的remove命令，-P选项类比apt的purge命令",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看系统中某文件所属的软件包，可使用dpkg的-S选项，命令为：sudo dpkg -S 文件名。软件包卸载时，其所属文件将被删除。",
+          "qas": [
+            {
+              "id": "5-417-36",
+              "question": "dpkg查看文件所属软件包的命令是什么？软件包卸载时，其所属文件会怎样？",
+              "answers": [
+                {
+                  "text": "sudo dpkg -S 文件名",
+                  "answer_start": 33
+                },
+                {
+                  "text": "软件包卸载时，其所属文件将被删除",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "构建软件包前需安装fakeroot包，命令为：sudo apt install fakeroot。",
+          "qas": [
+            {
+              "id": "5-417-37",
+              "question": "构建软件包前需安装什么包？安装命令是什么？",
+              "answers": [
+                {
+                  "text": "fakeroot",
+                  "answer_start": 13
+                },
+                {
+                  "text": "sudo apt install fakeroot",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "构建软件包需建立工作目录存储包的内容，命令为：mkdir mypkg（创建目录）、cd mypkg（切换到该目录）。",
+          "qas": [
+            {
+              "id": "5-417-38",
+              "question": "构建软件包时，创建工作目录和切换到该目录的命令分别是什么？",
+              "answers": [
+                {
+                  "text": "mkdir mypkg（创建目录）",
+                  "answer_start": 30
+                },
+                {
+                  "text": "cd mypkg（切换到该目录）",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "部署文件需在工作目录建立usr/bin文件夹（命令：mkdir usr/bin -p），在其中创建hello文件（命令：touch usr/bin/hello），编辑文件内容为#!/bin/bash\necho hi ${USER}，并添加可执行权限（命令：chmod +x usr/bin/hello）。",
+          "qas": [
+            {
+              "id": "5-417-39",
+              "question": "构建软件包时，部署文件的关键步骤及对应命令是什么？",
+              "answers": [
+                {
+                  "text": "建立usr/bin文件夹，命令：mkdir usr/bin -p",
+                  "answer_start": 11
+                },
+                {
+                  "text": "创建hello文件，命令：touch usr/bin/hello",
+                  "answer_start": 38
+                },
+                {
+                  "text": "添加可执行权限，命令：chmod +x usr/bin/hello",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "构建软件包需在工作目录创建DEBIAN目录（存描述文件）和control文件（必须存在）。control文件内容包括：Package: myhello、Maintainer: MySelf、Architecture: all、Version: 1.0、Depends: bash、Description: 自制软件包，提供hello命令。",
+          "qas": [
+            {
+              "id": "5-417-40",
+              "question": "DEBIAN目录的作用是什么？control文件中必须包含哪些内容（至少5项）？",
+              "answers": [
+                {
+                  "text": "存储描述整个软件包的文件以及一些脚本文件",
+                  "answer_start": 26
+                },
+                {
+                  "text": "Package: myhello、Maintainer: MySelf、Architecture: all、Version: 1.0、Depends: bash、Description: 自制软件包，提供hello命令",
+                  "answer_start": 48
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "构建软件包的命令为：cd ..（回到工作目录上级）、fakeroot dpkg -b mypkg。成功后当前目录会生成mypkg.deb文件。",
+          "qas": [
+            {
+              "id": "5-417-41",
+              "question": "构建软件包的命令步骤是什么？成功后会生成什么文件？",
+              "answers": [
+                {
+                  "text": "cd ..（回到工作目录上级）、fakeroot dpkg -b mypkg",
+                  "answer_start": 15
+                },
+                {
+                  "text": "mypkg.deb",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装构建好的软件包命令：sudo dpkg -i mypkg.deb。测试时，若用户名为myname，输入hello命令会显示hi myname。",
+          "qas": [
+            {
+              "id": "5-417-42",
+              "question": "安装构建好的mypkg.deb的命令是什么？若用户名为myname，测试命令及输出是什么？",
+              "answers": [
+                {
+                  "text": "sudo dpkg -i mypkg.deb",
+                  "answer_start": 11
+                },
+                {
+                  "text": "输入hello命令，输出hi myname",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包的唯一标识称为包名。一般情况下，相同包名的软件包不允许在系统中安装多个，即使版本不同。",
+          "qas": [
+            {
+              "id": "5-417-43",
+              "question": "什么是软件包的唯一标识？",
+              "answers": [
+                {
+                  "text": "包名",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-417-44",
+              "question": "相同包名的软件包安装规则是什么？",
+              "answers": [
+                {
+                  "text": "不允许在系统中安装多个",
+                  "answer_start": 28
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装软件包时所需要的其他软件包称为该软件包的依赖。依赖可以设置版本作为可选条件，若系统中存在的依赖软件包版本与所需软件包版本要求不符，则视为该依赖包不满足。依赖地狱现象指当软件包的依赖树过于复杂时，系统无法同时满足所有软件的依赖需求。例如软件包A依赖于1.0版本的软件包C，软件包B依赖于2.0版本的软件包C，此时若升级软件包C至2.0版本会导致软件包A的依赖无法满足。",
+          "qas": [
+            {
+              "id": "5-417-45",
+              "question": "什么是软件包的依赖？",
+              "answers": [
+                {
+                  "text": "安装软件包时所需要的其他软件包",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-417-46",
+              "question": "依赖可以设置什么作为可选条件？",
+              "answers": [
+                {
+                  "text": "版本",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-417-47",
+              "question": "什么是依赖地狱？",
+              "answers": [
+                {
+                  "text": "当软件包的依赖树过于复杂时，系统无法同时满足所有软件的依赖需求",
+                  "answer_start": 91
+                }
+              ]
+            },
+            {
+              "id": "5-417-48",
+              "question": "在依赖地狱例子中，软件包B依赖什么版本的软件包C？",
+              "answers": [
+                {
+                  "text": "2.0版本",
+                  "answer_start": 172
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件仓库是现代的软件包管理器支持自动从远程下载软件包及其依赖的存储库。这些仓库通常由发行版所维护，仓库中的软件包能保证可用的依赖关系。",
+          "qas": [
+            {
+              "id": "5-417-49",
+              "question": "软件仓库的主要作用是什么？",
+              "answers": [
+                {
+                  "text": "支持自动从远程下载软件包及其依赖",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-417-50",
+              "question": "软件仓库通常由谁维护？",
+              "answers": [
+                {
+                  "text": "发行版",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "镜像仓库是针对官方仓库提供的同步副本，其内容应当与发行版仓库一致。由于同步需要时间，镜像仓库的更新通常会有短暂延迟。",
+          "qas": [
+            {
+              "id": "5-417-51",
+              "question": "镜像仓库与发行版仓库的内容关系是什么？",
+              "answers": [
+                {
+                  "text": "应当一致",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-417-52",
+              "question": "镜像仓库更新的主要特点是什么？",
+              "answers": [
+                {
+                  "text": "通常会有短暂延迟",
+                  "answer_start": 48
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

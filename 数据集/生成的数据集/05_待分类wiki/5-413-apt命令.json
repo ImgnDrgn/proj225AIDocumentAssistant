@@ -1,0 +1,384 @@
+{
+  "data": [
+    {
+      "title": "apt命令",
+      "paragraphs": [
+        {
+          "context": "相关命令如果不了解，强烈建议复制百度后再使用；命令要在输入法英文模式下输入；一些命令执行权限不够的情况下，命令前面加sudo；sudo输入密码的时候不显示，输完密码直接按Enter(回车)执行",
+          "qas": [
+            {
+              "id": "5-413-1",
+              "question": "不了解apt相关命令时，建议怎么做？",
+              "answers": [
+                {
+                  "text": "强烈建议复制百度后再使用",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-413-2",
+              "question": "输入apt命令时，输入法需处于什么模式？",
+              "answers": [
+                {
+                  "text": "英文模式",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-413-3",
+              "question": "命令执行权限不够时，该如何操作？",
+              "answers": [
+                {
+                  "text": "命令前面加sudo",
+                  "answer_start": 58
+                }
+              ]
+            },
+            {
+              "id": "5-413-4",
+              "question": "sudo输入密码时有什么特点？输完密码后该怎么做？",
+              "answers": [
+                {
+                  "text": "sudo输入密码的时候不显示，输完密码直接按Enter(回车)执行",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "&& 两条命令一同输入之间的连接符号，其前后有空格；sudo apt-get update 更新软件源中的所有软件列表；sudo apt-get upgrade 更新软件；sudo apt-get dist-upgrade 更新系统版本；通常apt的更新是使用两条命令完成的；sudo apt-get -f install 修复安装”-f = –fix-missing”",
+          "qas": [
+            {
+              "id": "5-413-5",
+              "question": "&&符号的作用是什么？使用时有什么注意事项？",
+              "answers": [
+                {
+                  "text": "&& 两条命令一同输入之间的连接符号，其前后有空格",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-413-6",
+              "question": "sudo apt-get update的作用是什么？",
+              "answers": [
+                {
+                  "text": "更新软件源中的所有软件列表",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "id": "5-413-7",
+              "question": "sudo apt-get upgrade的作用是什么？",
+              "answers": [
+                {
+                  "text": "更新软件",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "id": "5-413-8",
+              "question": "sudo apt-get dist-upgrade的作用是什么？",
+              "answers": [
+                {
+                  "text": "更新系统版本",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "5-413-9",
+              "question": "通常apt的更新需要使用几条命令完成？",
+              "answers": [
+                {
+                  "text": "两条",
+                  "answer_start": 112
+                }
+              ]
+            },
+            {
+              "id": "5-413-10",
+              "question": "sudo apt-get -f install的作用是什么？其中-f代表什么？",
+              "answers": [
+                {
+                  "text": "修复安装，-f = –fix-missing",
+                  "answer_start": 126
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get update && sudo apt-get dist-upgrade -y；sudo apt-get update && sudo apt dist-upgrade -y；sudo apt-get -f install；sudo dpkg --configure -a && sudo apt -f install；sudo apt --fix-broken install；sudo apt update && sudo apt full-upgrade；apt list --upgradable；sudo apt full-upgrade",
+          "qas": [
+            {
+              "id": "5-413-11",
+              "question": "包含-y参数的apt更新组合命令有哪些？",
+              "answers": [
+                {
+                  "text": "sudo apt-get update && sudo apt-get dist-upgrade -y、sudo apt-get update && sudo apt dist-upgrade -y",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-413-12",
+              "question": "可用于查看可升级软件列表的命令是什么？",
+              "answers": [
+                {
+                  "text": "apt list --upgradable",
+                  "answer_start": 141
+                }
+              ]
+            },
+            {
+              "id": "5-413-13",
+              "question": "包含dpkg --configure -a的组合修复命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo dpkg --configure -a && sudo apt -f install",
+                  "answer_start": 83
+                }
+              ]
+            },
+            {
+              "id": "5-413-14",
+              "question": "与sudo apt-get -f install功能类似的apt命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt --fix-broken install",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "id": "5-413-15",
+              "question": "包含full-upgrade的apt命令有哪些？",
+              "answers": [
+                {
+                  "text": "sudo apt update && sudo apt full-upgrade、sudo apt full-upgrade",
+                  "answer_start": 163
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt-get remove 会删除软件包而保留软件的配置文件；apt-get purge 会同时清除软件包和软件的配置文件；sudo apt remove linux-image；sudo apt autoremove 包名 命令即可卸载上面的那些包；还有没有删除干净的内容可以用sudo apt-get autoremove来清理；remove – 卸载软件包；autoremove – 卸载所有自动安装且不再使用的软件包；purge – 卸载并清除软件包的配置",
+          "qas": [
+            {
+              "id": "5-413-16",
+              "question": "apt-get remove的作用是什么？",
+              "answers": [
+                {
+                  "text": "删除软件包而保留软件的配置文件，即卸载软件包",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-413-17",
+              "question": "apt-get purge的作用是什么？",
+              "answers": [
+                {
+                  "text": "同时清除软件包和软件的配置文件，即卸载并清除软件包的配置",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-413-18",
+              "question": "卸载linux-image包的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt remove linux-image",
+                  "answer_start": 87
+                }
+              ]
+            },
+            {
+              "id": "5-413-19",
+              "question": "卸载特定包的autoremove命令格式是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt autoremove 包名",
+                  "answer_start": 111
+                }
+              ]
+            },
+            {
+              "id": "5-413-20",
+              "question": "清理未删除干净内容的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get autoremove",
+                  "answer_start": 147
+                }
+              ]
+            },
+            {
+              "id": "5-413-21",
+              "question": "autoremove命令的核心作用是什么？",
+              "answers": [
+                {
+                  "text": "卸载所有自动安装且不再使用的软件包",
+                  "answer_start": 185
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt-get autoremove的行为重点是卸载所有自动安装，举个栗子：C 依赖于 B, D 依赖于B, 且D没有被其他手动安装的包依赖；apt-get remove C将删除C,同时提示你用apt-get autoremove去清除B,D；apt-get autoremove C 将删除B, C, D；所以，这条命令最恐怖的是在不了解的情况下，你不知道他会把系统中的什么配置文件给删除，导致需要重装系统的风险",
+          "qas": [
+            {
+              "id": "5-413-22",
+              "question": "apt-get autoremove行为的核心重点是什么？",
+              "answers": [
+                {
+                  "text": "卸载所有自动安装的软件包",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-413-23",
+              "question": "在示例（C依赖B，D依赖B且D无其他手动安装包依赖）中，apt-get remove C会产生什么效果？",
+              "answers": [
+                {
+                  "text": "删除C，同时提示用apt-get autoremove去清除B,D",
+                  "answer_start": 69
+                }
+              ]
+            },
+            {
+              "id": "5-413-24",
+              "question": "在示例（C依赖B，D依赖B且D无其他手动安装包依赖）中，apt-get autoremove C会产生什么效果？",
+              "answers": [
+                {
+                  "text": "删除B, C, D",
+                  "answer_start": 118
+                }
+              ]
+            },
+            {
+              "id": "5-413-25",
+              "question": "不了解apt-get autoremove时使用，可能存在什么风险？",
+              "answers": [
+                {
+                  "text": "可能会删除系统中的某些配置文件，导致需要重装系统",
+                  "answer_start": 152
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "主要记录了日常使用较高频率的终端操作命令,供大家查询使用\n1. 相关命令如果不了解，强烈建议复制百度后再使用\n1. 命令要在输入法英文模式下输入\n1. 一些命令执行权限不够的情况下，命令前面加sudo\n1. sudo输入密码的时候不显示，输完密码直接按Enter(回车)执行",
+          "qas": [
+            {
+              "id": "5-413-26",
+              "question": "文档主要记录什么类型的命令？",
+              "answers": [
+                {
+                  "text": "日常使用较高频率的终端操作命令",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`sudo apt-get update`更新软件源中的所有软件列表\n`sudo apt-get upgrade` 更新软件\n`sudo apt-get dist-upgrade`更新系统版本\n`sudo apt-get -f install`修复安装”-f = –fix-missing”\n`sudo apt-get update && sudo apt-get dist-upgrade -y`\n`sudo apt --fix-broken install`\n`sudo apt update && sudo apt full-upgrade`\n`apt list --upgradable`",
+          "qas": [
+            {
+              "id": "5-413-27",
+              "question": "更新软件源列表的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get update",
+                  "answer_start": 1
+                }
+              ]
+            },
+            {
+              "id": "5-413-28",
+              "question": "修复安装缺失依赖的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get -f install",
+                  "answer_start": 123
+                }
+              ]
+            },
+            {
+              "id": "5-413-29",
+              "question": "同时更新软件列表并升级系统的命令怎么组合？",
+              "answers": [
+                {
+                  "text": "sudo apt-get update && sudo apt-get dist-upgrade -y",
+                  "answer_start": 176
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`apt-get remove`会删除软件包而保留软件的配置文件\n`apt-get purge`会同时清除软件包和软件的配置文件\n`sudo apt autoremove` 包名 命令即可卸载不再需要的依赖包\nremove – 卸载软件包\nautoremove – 卸载所有自动安装且不再使用的软件包\npurge – 卸载并清除软件包的配置",
+          "qas": [
+            {
+              "id": "5-413-30",
+              "question": "如何同时删除软件包和配置文件？",
+              "answers": [
+                {
+                  "text": "apt-get purge",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "id": "5-413-31",
+              "question": "什么命令会保留配置文件？",
+              "answers": [
+                {
+                  "text": "apt-get remove",
+                  "answer_start": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt-get autoremove的行为重点是卸载所有自动安装\n例如：C 依赖于 B, D 依赖于B, 且D未被手动安装依赖\napt-get remove C将删除C,同时提示用autoremove清除B,D\nautoremove C 将删除B, C, D",
+          "qas": [
+            {
+              "id": "5-413-32",
+              "question": "直接运行autoremove C会删除哪些包？",
+              "answers": [
+                {
+                  "text": "将删除B, C, D",
+                  "answer_start": 109
+                }
+              ]
+            },
+            {
+              "id": "5-413-33",
+              "question": "使用remove删除C后会提示清理什么？",
+              "answers": [
+                {
+                  "text": "提示用autoremove清除B,D",
+                  "answer_start": 87
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

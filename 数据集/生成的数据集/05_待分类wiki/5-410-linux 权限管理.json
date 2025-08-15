@@ -1,0 +1,499 @@
+{
+  "data": [
+    {
+      "title": "linux 权限管理",
+      "paragraphs": [
+        {
+          "context": "linux作为一个服务器起家的操作系统，比相对工作站起家的windows有着更加注重安全性的传统。在linux中管理安全性的技术有：1. UGO；1. ACL；1. SELinux；1. PAM。",
+          "qas": [
+            {
+              "id": "5-410-1",
+              "question": "linux中管理安全性的技术有哪些？",
+              "answers": [
+                {
+                  "text": "UGO、ACL、SELinux、PAM",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-410-2",
+              "question": "linux作为什么起家的操作系统，比windows更注重安全性？",
+              "answers": [
+                {
+                  "text": "服务器",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UGO （User、Group、Other）即用户，用户组，他人，三个主体的权限组合。使用ls -l命令可输出当前文件夹的UGO权限信息，例如：-rw-r-xr--  1 htqx htqx    3328 1月  20 10:31 cmake_install.cmake。",
+          "qas": [
+            {
+              "id": "5-410-3",
+              "question": "UGO分别代表什么？",
+              "answers": [
+                {
+                  "text": "User、Group、Other",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-410-4",
+              "question": "如何查看当前文件夹的UGO权限信息？",
+              "answers": [
+                {
+                  "text": "ls -l",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-410-5",
+              "question": "UGO指的是哪三个主体的权限组合？",
+              "answers": [
+                {
+                  "text": "用户，用户组，他人",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ls -l输出的UGO权限信息组成：1.第一个字符表示文件的类型：d目录、l链接、s套接字、b块设备、c字符设备、p管道、-普通文件；2.后续三个字符为一组，表示用户、用户组、他人的权限，其中r代表读、w代表写、x代表可执行；3.htqx 是用户名；4.htqx 是用户组。",
+          "qas": [
+            {
+              "id": "5-410-6",
+              "question": "ls -l输出中，第一个字符为d、l、-分别表示什么文件类型？",
+              "answers": [
+                {
+                  "text": "d目录、l链接、-普通文件",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "5-410-7",
+              "question": "UGO权限中，r、w、x分别代表什么权限？",
+              "answers": [
+                {
+                  "text": "r代表读、w代表写、x代表可执行",
+                  "answer_start": 83
+                }
+              ]
+            },
+            {
+              "id": "5-410-8",
+              "question": "ls -l输出中，权限信息后续三个字符为一组，分别对应哪三个主体？",
+              "answers": [
+                {
+                  "text": "用户、用户组、他人",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "linux权限可用数字表示：4代表读、2代表写、1代表可执行，数字可相加组合，如3=2+1、5=4+1、6=4+2、7=4+2+1。例如756表示用户读写+执行，用户组只读+执行，他人读写。linux程序或脚本的可执行性通过权限x定义，而非windows的文件类型（扩展名）。",
+          "qas": [
+            {
+              "id": "5-410-9",
+              "question": "linux权限中，数字4、2、1分别对应什么权限？",
+              "answers": [
+                {
+                  "text": "4代表读、2代表写、1代表可执行",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-410-10",
+              "question": "权限组合7、5、6分别由哪些数字相加得到？",
+              "answers": [
+                {
+                  "text": "7=4+2+1、5=4+1、6=4+2",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-410-11",
+              "question": "linux程序或脚本的可执行性通过什么定义？",
+              "answers": [
+                {
+                  "text": "权限x",
+                  "answer_start": 101
+                }
+              ]
+            },
+            {
+              "id": "5-410-12",
+              "question": "权限组合756表示什么？",
+              "answers": [
+                {
+                  "text": "用户读写+执行，用户组只读+执行，他人读写",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改文件权限用chmod命令：u代表用户、g代表用户组、o代表他人、a代表三者；+增加权限、=设置权限、-删除权限；也可用数值设置。例：chmod u+r filename（给用户加读权限）、chmod go=wx filename（设置用户组和他人为wx权限）、chmod 721 filename（数值721设权限）。改变文件用户和用户组用chown命令，例：sudo chowm root:root filename（改成root用户和组）。",
+          "qas": [
+            {
+              "id": "5-410-13",
+              "question": "chmod命令中，u、g、o、a分别代表什么？",
+              "answers": [
+                {
+                  "text": "u代表用户、g代表用户组、o代表他人、a代表三者",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-410-14",
+              "question": "如何给文件filename的用户增加读权限？",
+              "answers": [
+                {
+                  "text": "chmod u+r filename",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "id": "5-410-15",
+              "question": "如何将文件filename的用户和用户组改成root？",
+              "answers": [
+                {
+                  "text": "sudo chowm root:root filename",
+                  "answer_start": 136
+                }
+              ]
+            },
+            {
+              "id": "5-410-16",
+              "question": "chmod命令中，+、=、-分别表示什么操作？",
+              "answers": [
+                {
+                  "text": "+增加权限、=设置权限、-删除权限",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件夹的UGO权限意义与文件不同：r表示列出文件、w表示删除文件、x表示进入文件夹（如cd命令）；rx表示只读、wx表示可写。一般文件夹需rw权限（因读取操作常需进入文件夹）。",
+          "qas": [
+            {
+              "id": "5-410-17",
+              "question": "文件夹的r、w、x权限分别表示什么？",
+              "answers": [
+                {
+                  "text": "r表示列出文件、w表示删除文件、x表示进入文件夹（如cd命令）",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "5-410-18",
+              "question": "文件夹的rx和wx权限分别表示什么？",
+              "answers": [
+                {
+                  "text": "rx表示只读、wx表示可写",
+                  "answer_start": 73
+                }
+              ]
+            },
+            {
+              "id": "5-410-19",
+              "question": "为什么一般文件夹需要rw权限？",
+              "answers": [
+                {
+                  "text": "因读取操作常需进入文件夹",
+                  "answer_start": 94
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "linux权限实际有4组，第4组为扩展位（隐藏）。文件可执行时：4表示借用用户权限、2表示借用用户组权限；文件夹时：2表示目录内文件继承用户组（递归）、1表示目录内文件不可所属用户之外的人删除（非递归）。例：sudo chmod u+s hwclock（设u+s=4，借用用户权限）、sudo chmod 4755 hwclcok（数字设扩展位）。",
+          "qas": [
+            {
+              "id": "5-410-20",
+              "question": "linux权限实际有几组？第4组是什么？",
+              "answers": [
+                {
+                  "text": "4组，第4组为扩展位（隐藏）",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-410-21",
+              "question": "文件可执行时，扩展位4和2分别表示什么？",
+              "answers": [
+                {
+                  "text": "4表示借用用户权限、2表示借用用户组权限",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "5-410-22",
+              "question": "文件夹的扩展位2和1分别表示什么？",
+              "answers": [
+                {
+                  "text": "2表示目录内文件继承用户组（递归）、1表示目录内文件不可所属用户之外的人删除（非递归）",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-410-23",
+              "question": "如何通过chmod命令给hwclock文件设置扩展位4（借用用户权限）？",
+              "answers": [
+                {
+                  "text": "sudo chmod u+s hwclock、sudo chmod 4755 hwclcok",
+                  "answer_start": 130
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "linux默认创建的文件基础权限是666，文件夹是777，同时有蒙版umask，默认值为022。权限计算方式：文件权限=666-umask（如666-022=644），文件夹权限=777-umask（如777-022=755）。查看umask用umask命令，修改umask用umask 新值（例：umask 002）。",
+          "qas": [
+            {
+              "id": "5-410-24",
+              "question": "linux默认创建的文件和文件夹的基础权限分别是什么？",
+              "answers": [
+                {
+                  "text": "文件666，文件夹777",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-410-25",
+              "question": "linux默认的umask值是多少？",
+              "answers": [
+                {
+                  "text": "022",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-410-26",
+              "question": "如何查看当前umask？如何将umask改为002？",
+              "answers": [
+                {
+                  "text": "查看用umask命令，修改用umask 002",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "id": "5-410-27",
+              "question": "默认umask下，文件和文件夹的最终权限分别是多少？",
+              "answers": [
+                {
+                  "text": "文件644，文件夹755",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ACL（Access Control List）即访问控制表，相比UGO提供多用户、多用户组控制能力，但需文件系统支持。文件系统需通过acl选项挂载（例：mount -t ext4 -o rw,acl /dev/sda1 /mnt）。ls -l中权限位后有+表示有ACL权限。查看ACL用getfacl命令（例：getfacl hwclock），设置ACL用setfacl命令（例：sudo setfacl -m u:lp:rw,g:htqx:rx hwclock，给lp用户rw权限、htqx组rx权限），-x表示去除ACL权限。",
+          "qas": [
+            {
+              "id": "5-410-28",
+              "question": "ACL的全称是什么？",
+              "answers": [
+                {
+                  "text": "Access Control List",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-410-29",
+              "question": "ACL相比UGO权限的优势是什么？",
+              "answers": [
+                {
+                  "text": "提供多用户，多用户组控制的能力",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "5-410-30",
+              "question": "如何判断文件是否有ACL权限？",
+              "answers": [
+                {
+                  "text": "ls -l中权限位后有一个+符号",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "5-410-31",
+              "question": "如何查看文件hwclock的ACL信息？如何给lp用户设置hwclock的rw权限、htqx组设置rx权限？",
+              "answers": [
+                {
+                  "text": "查看用getfacl hwclock，设置用sudo setfacl -m u:lp:rw,g:htqx:rx hwclock",
+                  "answer_start": 106
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PAM（Pluggable Authentication Modules）即可插拔认证模块，是linux账户登录验证框架。其层次结构：1.会话登录（应用层）；2.PAM-API 接口层（系统管理员配置模块）；3.PAM-SPI 服务模块（含认证、账号、会话、口令管理模块）。相关路径：1./etc/pam.d/（配置目录）；2./lib/security/（服务模块）；3./etc/security/（服务模块配置参数）。",
+          "qas": [
+            {
+              "id": "5-410-32",
+              "question": "PAM的全称是什么？其作用是什么？",
+              "answers": [
+                {
+                  "text": "Pluggable Authentication Modules，是linux账户登录验证的一个框架",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-410-33",
+              "question": "PAM的层次结构从上层到下层依次是什么？",
+              "answers": [
+                {
+                  "text": "会话登录（应用层）、PAM-API 接口层、PAM-SPI 服务模块",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "5-410-34",
+              "question": "PAM-SPI服务模块包含哪些类型？",
+              "answers": [
+                {
+                  "text": "认证管理模块、账号管理模块、会话管理模块、口令管理模块",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "id": "5-410-35",
+              "question": "PAM的配置目录、服务模块路径分别是什么？",
+              "answers": [
+                {
+                  "text": "配置目录是/etc/pam.d/，服务模块路径是/lib/security/",
+                  "answer_start": 163
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "linux作为一个服务器起家的操作系统，比相对工作站起家的windows有着更加注重安全性的传统。在linux中管理安全性的技术有：UGO、ACL、SELinux、PAM。",
+          "qas": [
+            {
+              "id": "5-410-36",
+              "question": "Linux相比Windows在安全性上有什么特点？",
+              "answers": [
+                {
+                  "text": "更加注重安全性的传统",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UGO（User、Group、Other）即用户，用户组，他人，三个主体的权限组合。通过ls -l可查看权限信息，权限由rwx组成：r表示读，w表示写，x表示可执行。权限也可用数字表示：4读、2写、1可执行，组合如7=4+2+1。修改权限命令：chmod u+r filename（符号法），chmod 721 filename（数字法）。修改所属关系：sudo chown root:root filename。",
+          "qas": [
+            {
+              "id": "5-410-37",
+              "question": "将文件所有者改为root的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo chown root:root filename",
+                  "answer_start": 244
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件夹权限中：r权限允许列出文件，w权限允许删除文件，x权限允许进入文件夹（如cd命令）。rx组合表示只读权限，wx组合表示可写权限。",
+          "qas": [
+            {
+              "id": "5-410-38",
+              "question": "什么权限组合表示文件夹只读？",
+              "answers": [
+                {
+                  "text": "rx",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "umask是权限掩码，默认创建文件权限666，文件夹权限777。umask 022表示最终权限为644（文件）和755（文件夹）。查看命令：umask；修改命令：umask 002。",
+          "qas": [
+            {
+              "id": "5-410-39",
+              "question": "如何修改umask值为002？",
+              "answers": [
+                {
+                  "text": "umask 002",
+                  "answer_start": 107
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ACL提供多用户/组权限控制能力。挂载要求：mount -o acl。ACL文件在ls -l中显示+标记。操作命令：getfacl查看权限，setfacl -m u:lp:rw设置权限。",
+          "qas": [
+            {
+              "id": "5-410-40",
+              "question": "给用户lp设置rw ACL权限的命令格式是什么？",
+              "answers": [
+                {
+                  "text": "setfacl -m u:lp:rw",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PAM是可插拔认证模块框架，层次结构：1. 会话登录层 2. PAM-API接口层 3. PAM-SPI服务模块（含认证/账号/会话/口令管理模块）。配置文件路径：/etc/pam.d/，模块路径：/lib/security/，参数路径：/etc/security/。",
+          "qas": [
+            {
+              "id": "5-410-41",
+              "question": "PAM的主配置目录在哪里？",
+              "answers": [
+                {
+                  "text": "/etc/pam.d/",
+                  "answer_start": 154
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

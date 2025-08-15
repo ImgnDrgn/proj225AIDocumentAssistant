@@ -1,0 +1,904 @@
+{
+  "data": [
+    {
+      "title": "用户与群组",
+      "paragraphs": [
+        {
+          "context": "每个LINUX登陆的使用者至少都会取得两个ID：使用者ID(User ID，简称UID)和群组ID(Group ID，简称GID)。这是LINUX下用户与群组最基础的知识。LINUX系统通过UID(User Identification)识别用户，分为三类：超级管理员(UID 0，默认禁止直接登录)、系统用户(UID 1-499，可使用sudo)和普通用户(UID 500-65535)。",
+          "qas": [
+            {
+              "id": "5-409-1",
+              "question": "LINUX系统通过什么识别用户？",
+              "answers": [
+                {
+                  "text": "UID(User Identification)",
+                  "answer_start": 96
+                }
+              ]
+            },
+            {
+              "id": "5-409-2",
+              "question": "超级管理员的UID是什么？",
+              "answers": [
+                {
+                  "text": "0",
+                  "answer_start": 142
+                }
+              ]
+            },
+            {
+              "id": "5-409-3",
+              "question": "系统用户的UID范围是多少？",
+              "answers": [
+                {
+                  "text": "1-499",
+                  "answer_start": 162
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/etc/passwd文件存储用户信息，每行格式为：用户名：密码：用户ID：主要组ID：GECOS：主目录：登录shell。密码字段显示为'x'表示实际密码存在/etc/shadow中。例如：'root:x:0:0:root:/root:/bin/bash'表示root用户。",
+          "qas": [
+            {
+              "id": "5-409-4",
+              "question": "/etc/passwd字段的正确顺序是什么？",
+              "answers": [
+                {
+                  "text": "用户名：密码：用户ID：主要组ID：GECOS：主目录：登录shell",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "5-409-5",
+              "question": "密码字段显示'x'表示什么？",
+              "answers": [
+                {
+                  "text": "实际密码存在/etc/shadow中",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加用户使用useradd命令：'sudo useradd hilbert'创建基本账户；添加详情可指定参数如：'sudo useradd -d /home/math/hilbert -g faculty -s /bin/sh hilbert'。删除用户用userdel命令：'sudo userdel -r hilbert'彻底删除账户及家目录。",
+          "qas": [
+            {
+              "id": "5-409-6",
+              "question": "创建基本用户的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo useradd hilbert",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-409-7",
+              "question": "哪个命令能彻底删除用户及其家目录？",
+              "answers": [
+                {
+                  "text": "sudo userdel -r hilbert",
+                  "answer_start": 122
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "群组信息存在/etc/group中，格式为：groupname:password:gid:members。添加群组用'groupadd cjh'，删除用'groupdel cjh'。修改群组成员：'gpasswd -a cxbii root'添加用户到组，'gpasswd -d cxbii root'从组移除用户。",
+          "qas": [
+            {
+              "id": "5-409-8",
+              "question": "/etc/group的文件格式是什么？",
+              "answers": [
+                {
+                  "text": "groupname:password:gid:members",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-409-9",
+              "question": "如何将用户添加到群组？",
+              "answers": [
+                {
+                  "text": "gpasswd -a cxbii root",
+                  "answer_start": 91
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "身份切换：su命令直接切换用户需目标用户密码（如'su root'），su -同时切换环境。sudo临时获取root权限（5分钟时效），配置在/etc/sudoers中。解决sudo权限错误：在/etc/sudoers添加'username ALL=(ALL)ALL'。",
+          "qas": [
+            {
+              "id": "5-409-10",
+              "question": "sudo提权的时效性是多久？",
+              "answers": [
+                {
+                  "text": "5分钟",
+                  "answer_start": 70
+                }
+              ]
+            },
+            {
+              "id": "5-409-11",
+              "question": "如何解决'sudo提权出错不在sudoers文件中'的错误？",
+              "answers": [
+                {
+                  "text": "在/etc/sudoers添加'username ALL=(ALL)ALL'",
+                  "answer_start": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "忘记密码的解决方案：开机按Shift进入引导菜单→编辑启动项→行末添加'rw init=/bin/bash'→Ctrl-X启动→执行'passwd 用户名'重置密码。用户权限不默认root因其权限过大危险，日常使用需sudo临时提权。",
+          "qas": [
+            {
+              "id": "5-409-12",
+              "question": "重置忘记密码的关键启动参数是什么？",
+              "answers": [
+                {
+                  "text": "rw init=/bin/bash",
+                  "answer_start": 60
+                }
+              ]
+            },
+            {
+              "id": "5-409-13",
+              "question": "为什么用户权限不默认root？",
+              "answers": [
+                {
+                  "text": "root权限过大危险",
+                  "answer_start": 148
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "每个LINUX登陆的使用者至少都会取得两个 ID:使用者 ID (User ID ，简称 UID)和群组 ID (Group ID ，简称 GID)。这个是LINUX下用户与群组最基础的知识。",
+          "qas": [
+            {
+              "id": "5-409-14",
+              "question": "Linux登录使用者至少会取得哪两个ID？",
+              "answers": [
+                {
+                  "text": "使用者 ID (User ID ，简称 UID)和群组 ID (Group ID ，简称 GID)",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LINUX系统通过UID(User Identification)识别用户，而非用户名。LINUX的用户分为三类：超级管理员（UID为0，即root用户，具有操作整个系统的所有权限，默认禁止该账户直接登录）、系统用户（UID范围1~499，能够登录系统获得有限权限，可使用sudo获取root权限，默认系统用户为普通用户）、普通用户（UID范围500~65535，目前支持到4294967295，由前两类用户建立，只能执行普通操作）。",
+          "qas": [
+            {
+              "id": "5-409-15",
+              "question": "Linux系统通过什么识别用户，而非用户名？",
+              "answers": [
+                {
+                  "text": "UID(User Identification)",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-409-16",
+              "question": "Linux系统中超级管理员的UID是多少，对应的用户名是什么？",
+              "answers": [
+                {
+                  "text": "UID为0，即root用户",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-409-17",
+              "question": "Linux系统中系统用户的UID范围是多少？",
+              "answers": [
+                {
+                  "text": "1~499",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "id": "5-409-18",
+              "question": "Linux系统中普通用户的UID范围原本是多少，目前支持到多少？",
+              "answers": [
+                {
+                  "text": "500~65535，目前支持到4294967295",
+                  "answer_start": 152
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户信息保存在/etc/passwd中，该文件以行为单位，每行定义系统上的一个用户，行内字段用冒号隔开，依次为：用户名：密码：用户ID：主要组ID：GECOS：主目录：登录shell。密码字段在旧UNIX系统含加密密码，现代Linux中显示为x或*号（实际密码存于/etc/shadow）；GECOS为用户全名，不可用于登录；主目录是用户登录时Shell的当前工作目录；RedHat企业版中登录Shell通常为/bin/bash。",
+          "qas": [
+            {
+              "id": "5-409-19",
+              "question": "Linux用户信息保存在哪个文件中？",
+              "answers": [
+                {
+                  "text": "/etc/passwd",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-409-20",
+              "question": "/etc/passwd文件中每个用户条目的字段依次是什么，用什么分隔？",
+              "answers": [
+                {
+                  "text": "用户名：密码：用户ID：主要组ID：GECOS：主目录：登录shell，字段间用冒号隔开",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-409-21",
+              "question": "现代Linux中/etc/passwd文件的密码字段显示什么，实际密码存放在哪里？",
+              "answers": [
+                {
+                  "text": "x或*号，实际密码存于/etc/shadow",
+                  "answer_start": 88
+                }
+              ]
+            },
+            {
+              "id": "5-409-22",
+              "question": "/etc/passwd文件中的GECOS字段表示什么，能否用于登录？",
+              "answers": [
+                {
+                  "text": "用户全名，不可用于登录",
+                  "answer_start": 126
+                }
+              ]
+            },
+            {
+              "id": "5-409-23",
+              "question": "RedHat企业版中用户登录时的默认Shell通常是什么？",
+              "answers": [
+                {
+                  "text": "/bin/bash",
+                  "answer_start": 188
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "为提升安全性，现代Linux采用“影子密码”，用户加密密码保存在/etc/shadow中，该文件仅root用户可查看，普通用户无权限。/etc/shadow文件含九个冒号分隔的字段，依次为：用户名：加密密码：上次更改密码的时间：最小更改密码间隔：密码有效期限：密码过期提示时间：密码锁定期：账户有效期：保留字段。其中，加密密码字段为x时表示用户不能登录；上次更改密码时间是从1970年01月01日起的天数；账户有效期字段为空则帐号永久可用。",
+          "qas": [
+            {
+              "id": "5-409-24",
+              "question": "现代Linux中用户的加密密码保存在哪个文件中，该文件的权限如何？",
+              "answers": [
+                {
+                  "text": "/etc/shadow，仅root用户可查看，普通用户无权限",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-409-25",
+              "question": "/etc/shadow文件包含几个字段，依次是什么？",
+              "answers": [
+                {
+                  "text": "九个字段，依次为：用户名：加密密码：上次更改密码的时间：最小更改密码间隔：密码有效期限：密码过期提示时间：密码锁定期：账户有效期：保留字段",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "id": "5-409-26",
+              "question": "/etc/shadow文件中加密密码字段为x时表示什么？",
+              "answers": [
+                {
+                  "text": "用户不能登录",
+                  "answer_start": 135
+                }
+              ]
+            },
+            {
+              "id": "5-409-27",
+              "question": "/etc/shadow文件中上次更改密码的时间是从哪一天开始计算的？",
+              "answers": [
+                {
+                  "text": "1970年01月01日",
+                  "answer_start": 151
+                }
+              ]
+            },
+            {
+              "id": "5-409-28",
+              "question": "/etc/shadow文件中账户有效期字段为空时，帐号的状态是什么？",
+              "answers": [
+                {
+                  "text": "永久可用",
+                  "answer_start": 203
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux中添加用户可使用useradd和adduser命令。useradd是ELF可执行程序，终端执行sudo useradd hilbert可创建用户hilbert，默认不在/home目录创建家目录、不提示设密码，密码区域为*号（禁用账号，需指定密码后启用）；可加参数定制，如sudo useradd -c \"David Hilbert\" -d /home/math/hilbert -g faculty -G famous -m -s /bin/sh hilbert，其中-c设全名、-d设家目录、-g设首要组、-G设附加组、-m创建家目录、-s设Shell。adduser是perl脚本，终端执行sudo adduser hilbert可交互式创建用户，自动设置家目录，无密码和系统Shell；其-p参数不能加密密码。useradd -D可查看默认设置，也可联用-D与其他参数设默认值。",
+          "qas": [
+            {
+              "id": "5-409-29",
+              "question": "Linux中用于添加用户的两个命令是什么？",
+              "answers": [
+                {
+                  "text": "useradd和adduser",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-409-30",
+              "question": "执行sudo useradd hilbert命令后，默认是否在/home目录创建hilbert的家目录？是否提示设置密码？",
+              "answers": [
+                {
+                  "text": "默认不在/home目录创建家目录，不提示设置密码",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "5-409-31",
+              "question": "useradd命令中，-c、-d、-g、-G、-m、-s参数分别用于设置什么？",
+              "answers": [
+                {
+                  "text": "-c设用户全名、-d设家目录、-g设首要组、-G设附加组、-m创建家目录、-s设Shell",
+                  "answer_start": 132
+                }
+              ]
+            },
+            {
+              "id": "5-409-32",
+              "question": "adduser命令与useradd命令相比，本质上是什么类型的文件，创建用户时的交互方式如何？",
+              "answers": [
+                {
+                  "text": "adduser是perl脚本，创建用户时为交互式",
+                  "answer_start": 215
+                }
+              ]
+            },
+            {
+              "id": "5-409-33",
+              "question": "adduser命令的-p参数有什么限制？",
+              "answers": [
+                {
+                  "text": "不能加密密码",
+                  "answer_start": 275
+                }
+              ]
+            },
+            {
+              "id": "5-409-34",
+              "question": "如何查看useradd命令的默认设置？",
+              "answers": [
+                {
+                  "text": "运行useradd -D",
+                  "answer_start": 288
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "usermod命令用于修改用户账户设置，语法为usermod [-LU][-c <备注>][-d <登入目录>][-e <有效期限>][-f <缓冲天数>][-g <群组>][-G <群组>][-l <帐号名称>][-s <shell>][-u <uid>][用户帐号]。常用参数：-c改备注文字、-d改登入目录、-e改帐号有效期限、-f改密码过期后关闭帐号的缓冲天数、-g改所属群组、-G改附加群组、-l改帐号名称、-L锁定密码（使密码无效）、-U解除密码锁定、-u改用户ID。例如sudo usermod -e 2015-07-04 hilbert设hilbert账号2015年07月04日到期；usermod不允许修改在线用户的帐号名称，修改用户ID前需确认用户无运行程序，还需手动改其crontab和at工作档，NIS server需改相关NIS设定。",
+          "qas": [
+            {
+              "id": "5-409-35",
+              "question": "Linux中用于修改用户账户设置的命令是什么？",
+              "answers": [
+                {
+                  "text": "usermod",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-409-36",
+              "question": "usermod命令中，-e、-L、-U、-l参数分别用于什么操作？",
+              "answers": [
+                {
+                  "text": "-e改帐号有效期限、-L锁定密码（使密码无效）、-U解除密码锁定、-l改帐号名称",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "id": "5-409-37",
+              "question": "执行sudo usermod -e 2015-07-04 hilbert命令的作用是什么？",
+              "answers": [
+                {
+                  "text": "设置hilbert账号于2015年07月04日到期",
+                  "answer_start": 182
+                }
+              ]
+            },
+            {
+              "id": "5-409-38",
+              "question": "usermod命令是否允许修改正在线上的使用者帐号名称？修改用户ID前需确认什么？",
+              "answers": [
+                {
+                  "text": "不允许修改正在线上的使用者帐号名称；修改用户ID前需确认该用户没在电脑上执行任何程序",
+                  "answer_start": 225
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "userdel命令用于删除用户账户，sudo userdel hilbert仅删除用户在passwd、shadow、group文件中的相关条目，不删除家目录；sudo userdel -r hilbert除删除上述条目外，还会删除用户的家目录。",
+          "qas": [
+            {
+              "id": "5-409-39",
+              "question": "Linux中用于删除用户账户的命令是什么？",
+              "answers": [
+                {
+                  "text": "userdel",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-409-40",
+              "question": "sudo userdel hilbert与sudo userdel -r hilbert命令的区别是什么？",
+              "answers": [
+                {
+                  "text": "sudo userdel hilbert仅删除用户在passwd、shadow、group文件中的相关条目，不删除家目录；sudo userdel -r hilbert除删除上述条目外，还会删除用户的家目录",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux引入群组功能以方便用户共享资源，每用户属一个群组，每群组有GID（group标示符），所有群组及对应GID存于/etc/group。系统创建用户时，会自动创建同名群组并将用户加入，用户也可加入其他群组以获取访问特定资源的权限；若文件属某群组，则该群组所有用户可存取该文件。",
+          "qas": [
+            {
+              "id": "5-409-41",
+              "question": "Linux引入群组功能的主要目的是什么？",
+              "answers": [
+                {
+                  "text": "方便用户共享资源",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-409-42",
+              "question": "Linux系统中所有群组及其对应的GID存放在哪个文件中？",
+              "answers": [
+                {
+                  "text": "/etc/group",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-409-43",
+              "question": "Linux系统在创建用户时，会对群组进行什么操作？",
+              "answers": [
+                {
+                  "text": "自动创建与用户同名的群组，并将该用户加入到该群组中",
+                  "answer_start": 78
+                }
+              ]
+            },
+            {
+              "id": "5-409-44",
+              "question": "若一个文件属于某群组，该群组的用户对该文件有什么权限？",
+              "answers": [
+                {
+                  "text": "可存取该文件",
+                  "answer_start": 138
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/etc/group文件控制用户分组，格式为groupname:password:gid:members，含四个冒号分隔的字段：组名（字母或数字构成，不重复）、口令（一般为空或x，存加密后的群组口令）、GID（组标识号）、组内用户列表（用户间用逗号分隔，可为空，空表示群组为GID对应的用户名）。例如root:x:0:表示root群组，GID为0，无成员；adm:x:4:cxbii表示adm群组，GID为4，成员为cxbii。",
+          "qas": [
+            {
+              "id": "5-409-45",
+              "question": "/etc/group文件的格式是什么，包含几个字段？",
+              "answers": [
+                {
+                  "text": "格式为groupname:password:gid:members，包含四个字段",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-409-46",
+              "question": "/etc/group文件中组名字段的构成规则是什么，是否允许重复？",
+              "answers": [
+                {
+                  "text": "由字母或数字构成，不允许重复",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-409-47",
+              "question": "/etc/group文件中口令字段一般是什么值？",
+              "answers": [
+                {
+                  "text": "空或x",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-409-48",
+              "question": "/etc/group文件中组内用户列表字段为空时，表示什么？",
+              "answers": [
+                {
+                  "text": "群组为GID对应的用户名",
+                  "answer_start": 112
+                }
+              ]
+            },
+            {
+              "id": "5-409-49",
+              "question": "根据/etc/group中的adm:x:4:cxbii条目，adm群组的GID是多少，成员是谁？",
+              "answers": [
+                {
+                  "text": "GID为4，成员为cxbii",
+                  "answer_start": 165
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux群组密码存于/etc/gshadow文件，仅特权用户可访问，一般很少用到。该文件含四个冒号分隔的字段：群组名称、密码（x表示有群组登录密码）、群组GID、群组成员。例如/etc/group中root:x:0:对应/etc/gshadow中相关条目，adm:x:4:cxbii表示adm群组有密码（x）、GID为4、成员为cxbii。",
+          "qas": [
+            {
+              "id": "5-409-50",
+              "question": "Linux群组密码存放在哪个文件中，谁有权访问该文件？",
+              "answers": [
+                {
+                  "text": "/etc/gshadow文件，仅特权用户可访问",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-409-51",
+              "question": "/etc/gshadow文件包含几个字段，依次是什么？",
+              "answers": [
+                {
+                  "text": "四个字段，依次为：群组名称、密码、群组GID、群组成员",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-409-52",
+              "question": "/etc/gshadow文件中密码字段为x时表示什么？",
+              "answers": [
+                {
+                  "text": "该群组有登录密码",
+                  "answer_start": 78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "groupadd命令用于添加群组，语法为groupadd [-g gid [-o]] [-r] [-f] group；-g指定GID（默认≥500，0~999保留给系统帐号）、-r建立系统帐号（GID小于/etc/login.defs中UID_MIN）、-f若群组已存在则报错。例如sudo groupadd cjh创建cjh群组，sudo groupadd -g 344 cjh创建GID为344的cjh群组。groupdel命令用于删除群组，sudo groupdel cjh删除cjh群组。gpasswd命令用于设置/取消群组密码、修改成员：sudo gpasswd group_name设密码，sudo gpasswd -r group_name取消密码（取消后仅成员可通过newgrp切换入组）；-a添加用户到组（如sudo gpasswd -a cxbii root）、-d从组删除用户（如sudo gpasswd -d cxbii root）、-A指定管理员、-M指定成员、-R限制仅成员可newgrp入组。",
+          "qas": [
+            {
+              "id": "5-409-53",
+              "question": "Linux中用于添加群组的命令是什么？",
+              "answers": [
+                {
+                  "text": "groupadd",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-409-54",
+              "question": "groupadd命令中-g参数的作用是什么？",
+              "answers": [
+                {
+                  "text": "指定群组的GID",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "5-409-55",
+              "question": "执行sudo groupadd -g 344 cjh命令的作用是什么？",
+              "answers": [
+                {
+                  "text": "创建GID为344的cjh群组",
+                  "answer_start": 135
+                }
+              ]
+            },
+            {
+              "id": "5-409-56",
+              "question": "Linux中用于删除群组的命令是什么，如何删除cjh群组？",
+              "answers": [
+                {
+                  "text": "groupdel命令，sudo groupdel cjh删除cjh群组",
+                  "answer_start": 162
+                }
+              ]
+            },
+            {
+              "id": "5-409-57",
+              "question": "如何设置群组密码，如何取消群组密码？取消群组密码后有什么限制？",
+              "answers": [
+                {
+                  "text": "sudo gpasswd group_name设置群组密码，sudo gpasswd -r group_name取消密码；取消后仅成员可通过newgrp切换入该组",
+                  "answer_start": 192
+                }
+              ]
+            },
+            {
+              "id": "5-409-58",
+              "question": "如何将用户cxbii添加到root群组，如何从root群组中删除cxbii？",
+              "answers": [
+                {
+                  "text": "sudo gpasswd -a cxbii root添加，sudo gpasswd -d cxbii root删除",
+                  "answer_start": 265
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "su（Switch user）用于切换用户，普通用户切换到其他用户需输入目标用户密码，root切换到普通用户无需密码。语法：su [-fmp] [-c command] [-s shell] [--help] [--version] [-] [USER [ARG]]。常用参数：-f不读启动档（csh/tcsh）、-m/-p不改变环境变量、-c执行命令后返回原用户、-s指定Shell、-/-l重新登录（改变环境变量和工作目录，默认root）。例如su -c ls root变更为root执行ls后返回原用户；su - clsung变更为clsung并切换到其家目录。su与su -的区别：su仅切换身份，Shell环境仍为原用户；su -连用户和Shell环境一起切换。su的优点是灵活切换身份，缺点是切换到root需root密码，多用户知道root密码会增加泄露风险和系统隐患。",
+          "qas": [
+            {
+              "id": "5-409-59",
+              "question": "su命令的全称是什么，主要用途是什么？",
+              "answers": [
+                {
+                  "text": "Switch user，主要用途是切换用户",
+                  "answer_start": 1
+                }
+              ]
+            },
+            {
+              "id": "5-409-60",
+              "question": "普通用户使用su命令切换到其他用户时，是否需要输入密码？root切换到普通用户呢？",
+              "answers": [
+                {
+                  "text": "普通用户切换需输入目标用户密码，root切换无需密码",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-409-61",
+              "question": "su命令中-c参数的作用是什么？请举例说明。",
+              "answers": [
+                {
+                  "text": "执行指定命令后返回原用户，例如su -c ls root变更为root执行ls后返回原用户",
+                  "answer_start": 78
+                }
+              ]
+            },
+            {
+              "id": "5-409-62",
+              "question": "su与su -命令的本质区别是什么？",
+              "answers": [
+                {
+                  "text": "su仅切换身份，Shell环境仍为原用户；su -连用户和Shell环境一起切换",
+                  "answer_start": 182
+                }
+              ]
+            },
+            {
+              "id": "5-409-63",
+              "question": "su命令的缺点是什么？",
+              "answers": [
+                {
+                  "text": "切换到root需root密码，多用户知道root密码会增加泄露风险和系统隐患",
+                  "answer_start": 235
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo允许普通用户使用超级用户或其他用户权限，无需提供root口令，利于控制root访问权限。命令格式：sudo -K | -L | -V | -h | -k | -l | -vsudo [-HPSb] [-a auth_type] [-c class|-] [-p prompt] [-u username|#uid] {-e file [...] | -i | -s | command}。常用参数：-h显示帮助、-V显示版本、-l列出当前用户可执行命令、-u指定执行命令的用户、-k清除时间戳（下次需输密码）、-K删除时间戳、-b后台执行命令、-p更改密码提示语、-e修改文件。sudo优点是避免root密码泄露，缺点是提权有5分钟时效（5分钟内无root权限操作需重新提权）。sudo配置文件为/etc/sudoers，需用visudo命令修改（校验配置正确性），缺省配置root ALL=(ALL) ALL，添加support ALL=(ALL) ALL可让support用户拥有root所有权限。",
+          "qas": [
+            {
+              "id": "5-409-64",
+              "question": "sudo命令的主要作用是什么，使用它是否需要提供root口令？",
+              "answers": [
+                {
+                  "text": "允许普通用户使用超级用户或其他用户权限，无需提供root口令",
+                  "answer_start": 1
+                }
+              ]
+            },
+            {
+              "id": "5-409-65",
+              "question": "sudo命令中-l、-u、-k、-e参数分别用于什么操作？",
+              "answers": [
+                {
+                  "text": "-l列出当前用户可执行命令、-u指定执行命令的用户、-k清除时间戳（下次需输密码）、-e修改文件",
+                  "answer_start": 102
+                }
+              ]
+            },
+            {
+              "id": "5-409-66",
+              "question": "sudo命令的优点和缺点分别是什么？",
+              "answers": [
+                {
+                  "text": "优点是避免root密码泄露，缺点是提权有5分钟时效（5分钟内无root权限操作需重新提权）",
+                  "answer_start": 175
+                }
+              ]
+            },
+            {
+              "id": "5-409-67",
+              "question": "sudo的配置文件是什么，修改该文件应使用什么命令，为什么？",
+              "answers": [
+                {
+                  "text": "配置文件是/etc/sudoers，应使用visudo命令修改，因为visudo会校验文件配置是否正确",
+                  "answer_start": 238
+                }
+              ]
+            },
+            {
+              "id": "5-409-68",
+              "question": "如何通过修改/etc/sudoers让普通用户support拥有root的所有权限？",
+              "answers": [
+                {
+                  "text": "在/etc/sudoers中添加support ALL=(ALL) ALL",
+                  "answer_start": 305
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux忘记登录密码时，解决步骤如下：1.开机按住Shift键至引导菜单（wubi安装则在Windows启动菜单选深度操作系统，按Shift+Enter）；2.光标选深度操作系统启动项，按e键；3.光标移到“linux /boot/....”行，按End键到行尾，加空格和rw init=/bin/bash；4.按Ctrl-X启动至提示符；5.执行passwd <用户名>（如passwd sam），输两次新密码；6.按Ctrl-Alt-Del重启，用新密码登录。该方法适用于所有使用Grub2的Linux系统。",
+          "qas": [
+            {
+              "id": "5-409-69",
+              "question": "Linux忘记登录密码时，开机后第一步操作是什么？",
+              "answers": [
+                {
+                  "text": "开机按住Shift键至引导菜单（wubi安装则在Windows启动菜单选深度操作系统，按Shift+Enter）",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-409-70",
+              "question": "在忘记Linux登录密码的解决步骤中，编辑“linux /boot/....”行时，需在该行末尾添加什么内容？",
+              "answers": [
+                {
+                  "text": "空格和rw init=/bin/bash",
+                  "answer_start": 88
+                }
+              ]
+            },
+            {
+              "id": "5-409-71",
+              "question": "忘记Linux登录密码时，在提示符下执行什么命令设置新密码？",
+              "answers": [
+                {
+                  "text": "passwd <用户名>（如passwd sam）",
+                  "answer_start": 126
+                }
+              ]
+            },
+            {
+              "id": "5-409-72",
+              "question": "上述忘记登录密码的解决方法适用于什么类型的Linux系统？",
+              "answers": [
+                {
+                  "text": "所有使用Grub2的Linux系统",
+                  "answer_start": 165
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "终端使用sudo提权时出现“xx用户不在 sudoers 文件中。此事将被报告”，原因是sudo配置文件/etc/sudoers出错。解决方法：用su切换到root，终端执行sudo gedit /etc/sudoers，在文件中添加xx ALL=(ALL) ALL（xx为出错用户名），保存退出即可。/etc/sudoers中缺省有root ALL=(ALL:ALL) ALL、%admin ALL=(ALL:ALL) ALL、%sudo ALL=(ALL) ALL等配置。",
+          "qas": [
+            {
+              "id": "5-409-73",
+              "question": "终端使用sudo提权时出现“xx用户不在 sudoers 文件中。此事将被报告”的原因是什么？",
+              "answers": [
+                {
+                  "text": "sudo配置文件/etc/sudoers出错",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-409-74",
+              "question": "解决sudo提权出错（xx用户不在sudoers文件）的步骤是什么？",
+              "answers": [
+                {
+                  "text": "用su切换到root，终端执行sudo gedit /etc/sudoers，在文件中添加xx ALL=(ALL) ALL（xx为出错用户名），保存退出",
+                  "answer_start": 58
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux系统账户默认不是root，且登录管理器默认屏蔽root直接登录，原因是root权限过大，作为日常账户使用过于危险。需临时使用root权限时，可通过sudo命令临时获取。",
+          "qas": [
+            {
+              "id": "5-409-75",
+              "question": "Linux系统账户默认为什么不是root，且登录管理器默认屏蔽root直接登录？",
+              "answers": [
+                {
+                  "text": "因为root权限过大，作为日常账户使用过于危险",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-409-76",
+              "question": "Linux中需临时使用root权限时，可通过什么命令获取？",
+              "answers": [
+                {
+                  "text": "sudo命令",
+                  "answer_start": 88
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux系统重视密码安全，用户在终端输入密码时，终端不会回显（不产生****等占位符），只需盲打密码后回车即可。",
+          "qas": [
+            {
+              "id": "5-409-77",
+              "question": "Linux终端输入密码时为什么没有回显（不显示****等占位符）？",
+              "answers": [
+                {
+                  "text": "因为Linux系统重视密码安全",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-409-78",
+              "question": "Linux终端输入密码无回显时，应如何操作？",
+              "answers": [
+                {
+                  "text": "盲打密码后回车即可",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "data": [
+    {
+      "title": "源代码包",
+      "paragraphs": [
+        {
+          "context": "首先要说的是tar.gz不是软件包格式，而是压缩档格式，你可以把任何格式的东西压缩成tar.gz文件，就像.7z , .zip和.rar一样。你下载的tar.gz包装的软件很可能是源码，但也有的地方把二进制码打包成tar.gz的，而deb包里包装的是二进制码和少量配置文件。把源码转换到deb文件的过程需要编译软件并制作配置文件，比较麻烦。",
+          "qas": [
+            {
+              "id": "5-415-1",
+              "question": "tar.gz属于什么格式？",
+              "answers": [
+                {
+                  "text": "压缩档格式",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-415-2",
+              "question": "tar.gz包中可能包含软件的哪些形式？",
+              "answers": [
+                {
+                  "text": "源码或二进制码",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-415-3",
+              "question": "deb软件包通常包含哪些内容？",
+              "answers": [
+                {
+                  "text": "二进制码和少量配置文件",
+                  "answer_start": 97
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "对于常见的软件，已经有人打包好了，都可以从软件源安装，没有必要从源码安装。如果你下载的软件是源码，那么解开之后会有一个README或者INSTALL文件，安装步骤应该就写在里面。",
+          "qas": [
+            {
+              "id": "5-415-4",
+              "question": "常见软件更推荐的安装方式是什么？",
+              "answers": [
+                {
+                  "text": "从软件源安装",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "5-415-5",
+              "question": "源码包解开后，记录安装步骤的文件通常是什么？",
+              "answers": [
+                {
+                  "text": "README或者INSTALL文件",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "源码包的获取源默认都是关闭的，需要手动将其开启：sudo vim /etc/apt/sources.list。将#deb-src改为deb-src保存退出后，需要刷新软件源列表：sudo apt-get update。",
+          "qas": [
+            {
+              "id": "5-415-6",
+              "question": "源码包获取源的默认状态是什么？",
+              "answers": [
+                {
+                  "text": "关闭的",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-415-7",
+              "question": "开启源码包获取源需编辑哪个文件？编辑命令是什么？",
+              "answers": [
+                {
+                  "text": "/etc/apt/sources.list，命令是sudo vim /etc/apt/sources.list",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "id": "5-415-8",
+              "question": "编辑sources.list后需如何修改内容？刷新软件源列表的命令是什么？",
+              "answers": [
+                {
+                  "text": "将#deb-src改为deb-src，刷新命令是sudo apt-get update",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度操作系统使用的所有软件的源代码都可以轻松获取。例如获取deepin-music-player源代码，只需要终端执行：sudo apt-get source deepin-music-player。",
+          "qas": [
+            {
+              "id": "5-415-9",
+              "question": "深度操作系统能否轻松获取所有软件的源代码？",
+              "answers": [
+                {
+                  "text": "可以",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "5-415-10",
+              "question": "在深度操作系统中，获取deepin-music-player源代码的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get source deepin-music-player",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "源代码包安装前需先安装gcc、make等软件：sudo apt-get update && sudo apt-get install build-essential。解压缩tar.gz包的命令是tar -zvxf ***.tar.gz，解压缩后cd进得到的文件夹，再执行./configure进行配置。",
+          "qas": [
+            {
+              "id": "5-415-11",
+              "question": "安装源码包前，安装gcc、make等软件的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get update && sudo apt-get install build-essential",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "5-415-12",
+              "question": "解压缩tar.gz包的命令是什么？",
+              "answers": [
+                {
+                  "text": "tar -zvxf ***.tar.gz",
+                  "answer_start": 98
+                }
+              ]
+            },
+            {
+              "id": "5-415-13",
+              "question": "解压缩tar.gz包并进入文件夹后，进行配置的命令是什么？",
+              "answers": [
+                {
+                  "text": "./configure",
+                  "answer_start": 136
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "configure报错时通常提示缺少依赖，可通过新立得安装依赖，安装新立得的命令是sudo apt-get update && sudo apt-get install synaptic。配置完成后执行make编译，再执行sudo make install安装二进制文件，具体安装方法以源码中的README等帮助文件为准。",
+          "qas": [
+            {
+              "id": "5-415-14",
+              "question": "configure报错时通常提示什么问题？",
+              "answers": [
+                {
+                  "text": "缺少依赖关系",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-415-15",
+              "question": "安装新立得（synaptic）的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get update && sudo apt-get install synaptic",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "id": "5-415-16",
+              "question": "源码配置完成后，编译和安装的命令分别是什么？",
+              "answers": [
+                {
+                  "text": "编译命令是make，安装命令是sudo make install",
+                  "answer_start": 120
+                }
+              ]
+            },
+            {
+              "id": "5-415-17",
+              "question": "源码包的具体安装方法应以什么文件为准？",
+              "answers": [
+                {
+                  "text": "软件源代码中的README等帮助文件",
+                  "answer_start": 168
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除源码安装的软件有两种方法：方法一是在源码包目录执行make uninstall；方法二是直接删除源码程序文件。若编译前用./configure --prefix=目录名指定安装路径，后续可通过rm -rf 软件目录名彻底卸载。",
+          "qas": [
+            {
+              "id": "5-415-18",
+              "question": "删除源码安装软件的方法一是什么？对应的命令是什么？",
+              "answers": [
+                {
+                  "text": "在源码包目录执行make uninstall",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "5-415-19",
+              "question": "为方便后续彻底卸载，编译前指定软件安装路径的configure命令格式是什么？",
+              "answers": [
+                {
+                  "text": "./configure --prefix=目录名",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "id": "5-415-20",
+              "question": "指定安装路径后，彻底卸载软件的命令是什么？",
+              "answers": [
+                {
+                  "text": "rm -rf 软件目录名",
+                  "answer_start": 121
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "不把软件全转成deb包的原因：程序源码不依赖平台，可在多种系统运行；deb包等二进制包依赖硬件和软件平台（如深度系统的deb包仅x86的ubuntu可用）。自己编译软件可得到适配自身电脑配置的版本，性能更好。",
+          "qas": [
+            {
+              "id": "5-415-21",
+              "question": "为什么不将所有软件都转换成deb包？",
+              "answers": [
+                {
+                  "text": "程序源码不依赖平台，可在多种系统运行；deb包等二进制包依赖硬件和软件平台",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "5-415-22",
+              "question": "自己编译软件的好处是什么？",
+              "answers": [
+                {
+                  "text": "可以编译出最适合自己电脑软件配置的版本，软件性能更好",
+                  "answer_start": 130
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "不同Linux发行版有不同二进制包格式和包管理器：debian和ubuntu用.deb包，核心工具是dpkg，apt-get是dpkg的前端；suse和fedora用rpm包，还有yum、dnf、apt、aptitude等工具。可通过man dpkg查看dpkg帮助手册。",
+          "qas": [
+            {
+              "id": "5-415-23",
+              "question": "debian和ubuntu系统使用的二进制包格式是什么？对应的核心包管理器工具是什么？",
+              "answers": [
+                {
+                  "text": "二进制包格式是.deb，核心工具是dpkg",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "id": "5-415-24",
+              "question": "apt-get是什么工具的前端？",
+              "answers": [
+                {
+                  "text": "dpkg",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "id": "5-415-25",
+              "question": "suse和fedora系统常用的二进制包格式是什么？",
+              "answers": [
+                {
+                  "text": "rpm包",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "id": "5-415-26",
+              "question": "查看dpkg帮助手册的命令是什么？",
+              "answers": [
+                {
+                  "text": "man dpkg",
+                  "answer_start": 145
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文中提供的关于linux源码包软件安装与卸载的相关链接是：http://blog.csdn.net/samxx8/article/details/7570542。",
+          "qas": [
+            {
+              "id": "5-415-27",
+              "question": "文中给出的linux源码包软件安装与卸载的相关链接是什么？",
+              "answers": [
+                {
+                  "text": "http://blog.csdn.net/samxx8/article/details/7570542",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "源代码包的安装一般为下载软件源代码，然后编译安装. 常见的C程序软件的安装步骤是 configure, make, make install三部曲。首先得安装gcc、make等软件 sudo apt-get update && sudo apt-get install build-essential 解压缩你下载的tar.gz包，得到一个文件夹。 tar -zvxf ***.tar.gz 在命令行下，cd进这个文件夹 cd xxx 配置文件，终端执行： ./configure configure的时候如果报错，一般会提示你少了一些什么依赖关系。开始编译。终端执行： make 安装生成的二进制文件 sudo make install 注意：具体安装方法以软件源代码中的README等帮助文件为准。",
+          "qas": [
+            {
+              "id": "5-415-28",
+              "question": "C程序源代码的标准安装流程是什么？",
+              "answers": [
+                {
+                  "text": "configure, make, make install三部曲",
+                  "answer_start": 63
+                }
+              ]
+            },
+            {
+              "id": "5-415-29",
+              "question": "安装前需要准备哪些基础工具？",
+              "answers": [
+                {
+                  "text": "sudo apt-get update && sudo apt-get install build-essential",
+                  "answer_start": 124
+                }
+              ]
+            },
+            {
+              "id": "5-415-30",
+              "question": "如何解压下载的tar.gz源码包？",
+              "answers": [
+                {
+                  "text": "tar -zvxf ***.tar.gz",
+                  "answer_start": 200
+                }
+              ]
+            },
+            {
+              "id": "5-415-31",
+              "question": "configure过程报错通常表示什么？",
+              "answers": [
+                {
+                  "text": "少了一些什么依赖关系",
+                  "answer_start": 302
+                }
+              ]
+            },
+            {
+              "id": "5-415-32",
+              "question": "编译源代码使用什么命令？",
+              "answers": [
+                {
+                  "text": "make",
+                  "answer_start": 345
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

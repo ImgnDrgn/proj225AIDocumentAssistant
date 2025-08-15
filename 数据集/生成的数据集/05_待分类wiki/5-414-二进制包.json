@@ -1,0 +1,460 @@
+{
+  "title": "二进制包",
+  "paragraphs": [
+    {
+      "context": "二进制包是已经编译好的软件包，通常是针对某个系统构架的，i686和amd64不能混用。",
+      "qas": [
+        {
+          "question": "二进制包是什么？",
+          "id": "5-414-1",
+          "answers": [
+            {
+              "text": "已经编译好的软件包",
+              "answer_start": 5
+            }
+          ]
+        },
+        {
+          "question": "二进制包通常针对什么，i686和amd64能否混用？",
+          "id": "5-414-2",
+          "answers": [
+            {
+              "text": "某个系统构架，i686和amd64不能混用",
+              "answer_start": 16
+            }
+          ]
+        },
+        {
+          "question": "二进制包针对什么系统构架编译？",
+          "id": "5-414-3",
+          "answers": [
+            {
+              "text": "某个系统构架",
+              "answer_start": 16
+            }
+          ]
+        },
+        {
+          "question": "哪些构架的二进制包不能混用？",
+          "id": "5-414-4",
+          "answers": [
+            {
+              "text": "i686和amd64",
+              "answer_start": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "一般来说，除了源代码包以外的软件包都属于二进制包。deb后缀二进制包为DPKG包管理程序专用包，深度操作系统用dpkg管理，可直接安装DEB包，且能使用适合Ubuntu的DEB包。",
+      "qas": [
+        {
+          "question": "除源代码包外的软件包属于什么？",
+          "id": "5-414-5",
+          "answers": [
+            {
+              "text": "二进制包",
+              "answer_start": 18
+            }
+          ]
+        },
+        {
+          "question": "deb后缀二进制包是哪个包管理程序的专用包？",
+          "id": "5-414-6",
+          "answers": [
+            {
+              "text": "DPKG包管理程序",
+              "answer_start": 32
+            }
+          ]
+        },
+        {
+          "question": "深度操作系统能否使用适合Ubuntu的DEB包？",
+          "id": "5-414-7",
+          "answers": [
+            {
+              "text": "可以",
+              "answer_start": 76
+            }
+          ]
+        },
+        {
+          "question": "deb后缀名的二进制包是哪个包管理程序的专用格式？",
+          "id": "5-414-8",
+          "answers": [
+            {
+              "text": "DPKG包管理程序",
+              "answer_start": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "二进制包常见后缀及用途：bin为通用发行版安装包；run为闭源显卡驱动安装包；sh为shell脚本安装包，获可执行权限后无需安装即可运行；无后缀为编译好的通用二进制包（如火狐），获可执行权限后无需安装直接运行。",
+      "qas": [
+        {
+          "question": "bin后缀二进制包的用途是什么？",
+          "id": "5-414-9",
+          "answers": [
+            {
+              "text": "通用发行版本的安装程序包",
+              "answer_start": 18
+            }
+          ]
+        },
+        {
+          "question": "run后缀二进制包一般用于什么？",
+          "id": "5-414-10",
+          "answers": [
+            {
+              "text": "闭源显卡驱动的安装程序包",
+              "answer_start": 32
+            }
+          ]
+        },
+        {
+          "question": "sh后缀二进制包获可执行权限后是否需要安装才能运行？",
+          "id": "5-414-11",
+          "answers": [
+            {
+              "text": "无需安装即可运行",
+              "answer_start": 61
+            }
+          ]
+        },
+        {
+          "question": "无后缀二进制包的例子是什么？",
+          "id": "5-414-12",
+          "answers": [
+            {
+              "text": "火狐浏览器二进制包",
+              "answer_start": 92
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "deb包安装：方法一，双击DEB包，文件管理器自动用自带的Gdebi打开，按提示操作；方法二，当前目录有chrome.deb时，终端执行sudo dpkg -i chrome.deb。",
+      "qas": [
+        {
+          "question": "深度操作系统安装deb包的方法一是什么？",
+          "id": "5-414-13",
+          "answers": [
+            {
+              "text": "双击DEB包，文件管理器自动用自带的Gdebi打开，按提示操作",
+              "answer_start": 11
+            }
+          ]
+        },
+        {
+          "question": "用dpkg命令安装当前目录下chrome.deb的终端命令是什么？",
+          "id": "5-414-14",
+          "answers": [
+            {
+              "text": "sudo dpkg -i chrome.deb",
+              "answer_start": 73
+            }
+          ]
+        },
+        {
+          "question": "双击DEB包时默认使用什么程序打开？",
+          "id": "5-414-15",
+          "answers": [
+            {
+              "text": "Gdebi",
+              "answer_start": 24
+            }
+          ]
+        },
+        {
+          "question": "安装名为chrome.deb的终端命令是什么？",
+          "id": "5-414-16",
+          "answers": [
+            {
+              "text": "sudo dpkg -i chrome.deb",
+              "answer_start": 73
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "bin包（以install-crossover-12.5.1.bin为例）安装：命令赋予权限sudo chmod +x 文件名，图形操作右键属性勾选执行权限；运行用./文件名，无法进入向导则用sudo ./文件名。",
+      "qas": [
+        {
+          "question": "赋予install-crossover-12.5.1.bin可执行权限的命令是什么？",
+          "id": "5-414-17",
+          "answers": [
+            {
+              "text": "sudo chmod +x install-crossover-12.5.1.bin",
+              "answer_start": 41
+            }
+          ]
+        },
+        {
+          "question": "运行install-crossover-12.5.1.bin无法进入向导时，终端命令是什么？",
+          "id": "5-414-18",
+          "answers": [
+            {
+              "text": "sudo ./install-crossover-12.5.1.bin",
+              "answer_start": 103
+            }
+          ]
+        },
+        {
+          "question": "如何赋予bin文件可执行权限的终端命令？",
+          "id": "5-414-19",
+          "answers": [
+            {
+              "text": "sudo chmod +x",
+              "answer_start": 41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "run包（以ati.run为例）安装：命令赋予权限sudo chmod +x ati.run，图形操作右键属性勾选执行权限；运行用./ati.run，无法进入向导则用sudo ./ati.run。",
+      "qas": [
+        {
+          "question": "赋予ati.run可执行权限的图形操作是什么？",
+          "id": "5-414-20",
+          "answers": [
+            {
+              "text": "右键该文件属性—权限，勾选允许作为程序执行文件",
+              "answer_start": 62
+            }
+          ]
+        },
+        {
+          "question": "运行ati.run的基础终端命令是什么？",
+          "id": "5-414-21",
+          "answers": [
+            {
+              "text": "./ati.run",
+              "answer_start": 98
+            }
+          ]
+        },
+        {
+          "question": "如何解决run文件安装失败的问题？",
+          "id": "5-414-22",
+          "answers": [
+            {
+              "text": "用sudo权限运行",
+              "answer_start": 107
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "sh包（以deepin.sh为例）安装：命令赋予权限sudo chmod +x deepin.sh，图形操作右键属性勾选执行权限；运行可终端执行./deepin.sh，或双击选择在终端中运行。",
+      "qas": [
+        {
+          "question": "运行deepin.sh的图形操作是什么？",
+          "id": "5-414-23",
+          "answers": [
+            {
+              "text": "双击该文件，选择在终端中运行该文件",
+              "answer_start": 107
+            }
+          ]
+        },
+        {
+          "question": "sh文件获得权限后的两种运行方式是什么？",
+          "id": "5-414-24",
+          "answers": [
+            {
+              "text": "终端./deepin.sh或双击选择终端运行",
+              "answer_start": 98
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "无后缀包（以火狐为例）安装：复制文件sudo cp 文件名 /opt，进入目录cd /opt，解压sudo tar -xvjf 文件名，建软链接sudo ln -sf /opt/firefox/firefox /usr/bin/firefox（-f表强制覆盖）。",
+      "qas": [
+        {
+          "question": "安装火狐无后缀二进制包时，解压文件的终端命令是什么？",
+          "id": "5-414-25",
+          "answers": [
+            {
+              "text": "sudo tar -xvjf Firefox-latest-x86_64.tar.bz2",
+              "answer_start": 72
+            }
+          ]
+        },
+        {
+          "question": "安装火狐时，建立软链接命令中-f参数的作用是什么？",
+          "id": "5-414-26",
+          "answers": [
+            {
+              "text": "强制覆盖原来已有的软链接",
+              "answer_start": 136
+            }
+          ]
+        },
+        {
+          "question": "安装无后缀名的Firefox浏览器后创建软链接的命令是什么？",
+          "id": "5-414-27",
+          "answers": [
+            {
+              "text": "sudo ln -sf /opt/firefox/firefox /usr/bin/firefox",
+              "answer_start": 103
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "DEB包卸载：方法一双击原有DEB包按Gdebi提示卸载；方法二用命令，卸载chrome：sudo apt-get remove google-chrome（不删配置）、sudo apt-get --purge remove google-chrome（删配置）、sudo dpkg -r google-chrome（不删配置）、sudo dpkg --purge google-chrome（删配置）。",
+      "qas": [
+        {
+          "question": "用apt-get命令卸载google-chrome并删除配置文件的终端命令是什么？",
+          "id": "5-414-28",
+          "answers": [
+            {
+              "text": "sudo apt-get --purge remove google-chrome",
+              "answer_start": 85
+            }
+          ]
+        },
+        {
+          "question": "用dpkg命令卸载google-chrome且不删除配置文件的终端命令是什么？",
+          "id": "5-414-29",
+          "answers": [
+            {
+              "text": "sudo dpkg -r google-chrome",
+              "answer_start": 136
+            }
+          ]
+        },
+        {
+          "question": "卸载DEB包的两类终端命令分别是什么？",
+          "id": "5-414-30",
+          "answers": [
+            {
+              "text": "sudo apt-get remove或sudo dpkg -r",
+              "answer_start": 83
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "bin包（以crossover为例）卸载：安装路径为/opt时，反安装脚本在/opt/cxoffice/bin/cxuninstall，双击运行；需查看帮助文档获脚本路径。",
+      "qas": [
+        {
+          "question": "crossover（bin包）的反安装脚本存于何处（安装路径为/opt时）？",
+          "id": "5-414-31",
+          "answers": [
+            {
+              "text": "/opt/cxoffice/bin下的cxuninstall文件",
+              "answer_start": 32
+            }
+          ]
+        },
+        {
+          "question": "crossover的反安装脚本路径在哪里？",
+          "id": "5-414-32",
+          "answers": [
+            {
+              "text": "/opt/cxoffice/bin/cxuninstall",
+              "answer_start": 32
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "run包（以ATI驱动为例）卸载：终端执行sudo sh /usr/share/ati/fglrx-uninstall.sh；需查看帮助文档获脚本路径。",
+      "qas": [
+        {
+          "question": "卸载ATI闭源显卡驱动（run包）的终端命令是什么？",
+          "id": "5-414-33",
+          "answers": [
+            {
+              "text": "sudo sh /usr/share/ati/fglrx-uninstall.sh",
+              "answer_start": 28
+            }
+          ]
+        },
+        {
+          "question": "如何卸载ATI闭源显卡驱动？",
+          "id": "5-414-34",
+          "answers": [
+            {
+              "text": "执行 sudo sh /usr/share/ati/fglrx-uninstall.sh",
+              "answer_start": 28
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "sh包卸载：无需安装，直接删除其文件即可；无后缀包（以火狐为例）卸载：终端执行sudo rm -rf /opt/firefox/firefox。",
+      "qas": [
+        {
+          "question": "如何卸载sh后缀的二进制包？",
+          "id": "5-414-35",
+          "answers": [
+            {
+              "text": "直接删除其文件即可",
+              "answer_start": 15
+            }
+          ]
+        },
+        {
+          "question": "卸载火狐无后缀二进制包的终端命令是什么？",
+          "id": "5-414-36",
+          "answers": [
+            {
+              "text": "sudo rm -rf /opt/firefox/firefox",
+              "answer_start": 53
+            }
+          ]
+        },
+        {
+          "question": "如何卸载sh后缀名的程序？",
+          "id": "5-414-37",
+          "answers": [
+            {
+              "text": "直接删除文件",
+              "answer_start": 15
+            }
+          ]
+        },
+        {
+          "question": "卸载火狐浏览器的具体命令是什么？",
+          "id": "5-414-38",
+          "answers": [
+            {
+              "text": "sudo rm -rf /opt/firefox/firefox",
+              "answer_start": 53
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "注意安装程序的反安装脚本路径需查看帮助文档。",
+      "qas": [
+        {
+          "question": "在哪里查找程序的反安装脚本路径？",
+          "id": "5-414-39",
+          "answers": [
+            {
+              "text": "查看帮助文档",
+              "answer_start": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
