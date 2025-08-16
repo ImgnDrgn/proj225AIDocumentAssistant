@@ -1,0 +1,264 @@
+{
+  "data": [
+    {
+      "title": "时间和时区",
+      "paragraphs": [
+        {
+          "context": "Linux时钟分为系统时钟和硬件时钟。硬件时钟是主板上电池供电的时钟，仅保存年、月、日、时、分、秒；系统时钟是Linux Kernel中的时钟，保存时间、时区和夏令时设置，内核保存为自UTC 1970年1月1日经过的秒数。",
+          "qas": [
+            {
+              "question": "Linux时钟分为哪两类？",
+              "id": "5-442-1",
+              "answers": [
+                {
+                  "text": "系统时钟和硬件时钟",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "硬件时钟能保存哪些信息？",
+              "id": "5-442-2",
+              "answers": [
+                {
+                  "text": "年、月、日、时、分、秒",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "系统时钟在Linux内核中如何保存？",
+              "id": "5-442-3",
+              "answers": [
+                {
+                  "text": "自UTC时间1970年1月1日经过的秒数",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "时间表示有UTC和localtime两个标准。UTC是与时区无关的全球时间标准；localtime依赖当前时区。Windows默认用localtime，Mac OS默认用UTC，UNIX系列两者都有。Linux建议将硬件时钟设为UTC。",
+          "qas": [
+            {
+              "question": "时间表示的两个标准是什么？",
+              "id": "5-442-4",
+              "answers": [
+                {
+                  "text": "UTC和localtime",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "UTC的特点是什么？",
+              "id": "5-442-5",
+              "answers": [
+                {
+                  "text": "与时区无关的全球时间标准",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "Windows默认使用哪种时间标准？",
+              "id": "5-442-6",
+              "answers": [
+                {
+                  "text": "localtime",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "timedatectl可查看和设置时间，如timedatectl status显示硬件和系统时间，timedatectl set-time \"2012-10-30 18:17:16\"设置系统时间。",
+          "qas": [
+            {
+              "question": "如何用timedatectl查看当前时间状态？",
+              "id": "5-442-7",
+              "answers": [
+                {
+                  "text": "timedatectl status",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "如何用timedatectl设置系统时间？",
+              "id": "5-442-8",
+              "answers": [
+                {
+                  "text": "timedatectl set-time \"2012-10-30 18:17:16\"",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "date命令可显示和设置系统时间，管理员有权限设置，普通用户只能查看。如date显示当前时间，date -s \"20100618 12:00:00\"设置时间。",
+          "qas": [
+            {
+              "question": "普通用户使用date命令能进行什么操作？",
+              "id": "5-442-9",
+              "answers": [
+                {
+                  "text": "只能查看系统时间",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "如何用date命令设置系统时间为2010年6月18日12点？",
+              "id": "5-442-10",
+              "answers": [
+                {
+                  "text": "date -s \"20100618 12:00:00\"",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "hwclock和clock用于硬件时钟操作，--show显示硬件时间，--set --date设置硬件时间，--hctosys将系统时钟与硬件时钟同步，--systohc将硬件时钟与系统时钟同步。",
+          "qas": [
+            {
+              "question": "如何查看硬件时间？",
+              "id": "5-442-11",
+              "answers": [
+                {
+                  "text": "hwclock --show 或者 clock --show",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "如何将系统时钟与硬件时钟同步？",
+              "id": "5-442-12",
+              "answers": [
+                {
+                  "text": "hwclock --hctosys 或者 clock –hctosys",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "question": "如何将硬件时钟与系统时钟同步？",
+              "id": "5-442-13",
+              "answers": [
+                {
+                  "text": "hwclock --systohc 或者 clock –systohc",
+                  "answer_start": 99
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "tzselect可设置时区，如设置北京时间需依次选择亚洲、中国、华东地区（北京等），确认后使用TZ='Asia/Shanghai'。",
+          "qas": [
+            {
+              "question": "如何用tzselect设置北京时间？",
+              "id": "5-442-14",
+              "answers": [
+                {
+                  "text": "依次选择亚洲、中国、华东地区（北京等），确认后使用TZ='Asia/Shanghai'",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "timedatectl可检查时区（status）、显示可用时区（list-timezones）、修改时区（set-timezone <Zone>/<SubZone>）。",
+          "qas": [
+            {
+              "question": "如何用timedatectl显示可用时区？",
+              "id": "5-442-15",
+              "answers": [
+                {
+                  "text": "timedatectl list-timezones",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "如何用timedatectl修改时区？",
+              "id": "5-442-16",
+              "answers": [
+                {
+                  "text": "timedatectl set-timezone <Zone>/<SubZone>",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度操作系统默认不启用UTC，若启用会与Windows时差8小时。修改/etc/default/rcS，将UTC=yes改为no，重启生效。",
+          "qas": [
+            {
+              "question": "深度操作系统启用UTC时间会有什么问题？",
+              "id": "5-442-17",
+              "answers": [
+                {
+                  "text": "会与Windows系统相差8小时的时差",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "如何禁止Linux使用UTC时间？",
+              "id": "5-442-18",
+              "answers": [
+                {
+                  "text": "修改/etc/default/rcS，将UTC=yes改为no，重启生效",
+                  "answer_start": 64
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NTP用于同步计算机时间，安装命令sudo apt-get install ntp，配置文件/etc/ntp.conf，重启服务sudo service ntp restart，检查同步用sudo ntpq -c lpeer。",
+          "qas": [
+            {
+              "question": "如何安装NTP？",
+              "id": "5-442-19",
+              "answers": [
+                {
+                  "text": "sudo apt-get install ntp",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "如何重启NTP服务？",
+              "id": "5-442-20",
+              "answers": [
+                {
+                  "text": "sudo service ntp restart",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "question": "如何检查NTP服务是否在同步？",
+              "id": "5-442-21",
+              "answers": [
+                {
+                  "text": "sudo ntpq -c lpeer",
+                  "answer_start": 99
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
