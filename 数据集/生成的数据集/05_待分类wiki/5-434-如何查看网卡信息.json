@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "如何查看网卡信息",
+      "paragraphs": [
+        {
+          "context": "## 查看所有网络连接\n终端输入：`nmcli connection show`",
+          "qas": [
+            {
+              "id": "5-434-1",
+              "question": "在终端中输入什么命令可以查看所有网络连接？",
+              "answers": [
+                {
+                  "text": "nmcli connection show",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "## 查看活动的网络连接\n终端输入：`nmcli connection show -active`",
+          "qas": [
+            {
+              "id": "5-434-2",
+              "question": "如何通过终端查看活动的网络连接？对应的命令是什么？",
+              "answers": [
+                {
+                  "text": "nmcli connection show -active",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "## 查看指定网卡的信息\n终端输入：`nmcli connection show enp2s0`\n命令中的 `enp2s0` 为网卡名称",
+          "qas": [
+            {
+              "id": "5-434-3",
+              "question": "查看指定网卡信息的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "nmcli connection show enp2s0",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-434-4",
+              "question": "在查看指定网卡信息的命令“nmcli connection show enp2s0”中，enp2s0代表什么？",
+              "answers": [
+                {
+                  "text": "网卡名称",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "## 显示设备的连接状态\n终端输入：`nmcli device status`",
+          "qas": [
+            {
+              "id": "5-434-5",
+              "question": "使用终端命令如何显示设备的连接状态？",
+              "answers": [
+                {
+                  "text": "nmcli device status",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "## 显示所有设备网络设备详情信息\n终端输入：`nmcli device show`",
+          "qas": [
+            {
+              "id": "5-434-6",
+              "question": "终端中输入什么命令可以显示所有网络设备的详情信息？",
+              "answers": [
+                {
+                  "text": "nmcli device show",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "## 显示指定网络设备的详细信息\n终端输入：`nmcli device show enp2s0`\n命令中的 `enp2s0` 为网卡名称",
+          "qas": [
+            {
+              "id": "5-434-7",
+              "question": "要显示指定网络设备的详细信息，对应的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "nmcli device show enp2s0",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "5-434-8",
+              "question": "命令“nmcli device show enp2s0”中，enp2s0的含义是什么？",
+              "answers": [
+                {
+                  "text": "网卡名称",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

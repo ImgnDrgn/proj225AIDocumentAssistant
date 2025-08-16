@@ -1,0 +1,569 @@
+{
+    "data": [
+        {
+            "title": "DHCP服务",
+            "paragraphs": [
+                {
+                    "context": "动态主机设置协议（Dynamic Host Configuration Protocol, DHCP）是一个局域网的网络协议，使用UDP协议工作，主要有两个用途：- 给内部网络或网络服务供应商自动分配IP地址给用户 - 给内部网络管理员作为对所有电脑作中央管理的手段",
+                    "qas": [
+                        {
+                            "id": "5-424-1",
+                            "question": "DHCP是什么类型的网络协议？",
+                            "answers": [
+                                {
+                                    "text": "局域网的网络协议",
+                                    "answer_start": 53
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-2",
+                            "question": "DHCP使用什么协议工作？",
+                            "answers": [
+                                {
+                                    "text": "UDP协议",
+                                    "answer_start": 63
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-3",
+                            "question": "DHCP的主要用途之一是什么？",
+                            "answers": [
+                                {
+                                    "text": "给内部网络或网络服务供应商自动分配IP地址给用户",
+                                    "answer_start": 72
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "DHCP用一台或一组DHCP服务器来管理网络参数的分配，这种方案具有容错性。即使在一个仅拥有少量机器的网络中，DHCP仍然是有用的，因为一台机器可以几乎不造成任何影响地被增加到本地网络中",
+                    "qas": [
+                        {
+                            "id": "5-424-4",
+                            "question": "DHCP管理网络参数分配的方案具有什么特性？",
+                            "answers": [
+                                {
+                                    "text": "容错性",
+                                    "answer_start": 42
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-5",
+                            "question": "仅拥有少量机器的网络中，DHCP为何仍有用？",
+                            "answers": [
+                                {
+                                    "text": "一台机器可以几乎不造成任何影响地被增加到本地网络中",
+                                    "answer_start": 79
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "甚至对于那些很少改变地址的服务器来说，DHCP仍然被建议用来设置它们的地址。如果服务器需要被重新分配地址（RFC2071）的时候，就可以在尽可能少的地方去做这些改动。对于一些设备，如路由器和防火墙，则不应使用DHCP",
+                    "qas": [
+                        {
+                            "id": "5-424-6",
+                            "question": "为何建议少改变地址的服务器用DHCP设置地址？",
+                            "answers": [
+                                {
+                                    "text": "如果服务器需要被重新分配地址（RFC2071）的时候，就可以在尽可能少的地方去做这些改动",
+                                    "answer_start": 50
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "DHCP于1993年10月成为标准协议，其前身是BOOTP协议。当前的DHCP定义可以在RFC 2131中找到，而基于IPv6的建议标准（DHCPv6）可以在 RFC 3315中找到",
+                    "qas": [
+                        {
+                            "id": "5-424-7",
+                            "question": "DHCP何时成为标准协议？",
+                            "answers": [
+                                {
+                                    "text": "1993年10月",
+                                    "answer_start": 4
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-8",
+                            "question": "DHCP的前身是什么协议？",
+                            "answers": [
+                                {
+                                    "text": "BOOTP协议",
+                                    "answer_start": 34
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-9",
+                            "question": "当前DHCP定义可在哪个文档中找到？",
+                            "answers": [
+                                {
+                                    "text": "RFC 2131",
+                                    "answer_start": 56
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-10",
+                            "question": "DHCPv6的建议标准可在哪个文档中找到？",
+                            "answers": [
+                                {
+                                    "text": "RFC 3315",
+                                    "answer_start": 103
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "DHCP使用了租约的概念，或称为计算机IP地址的有效期。租用时间是不定的，主要取决于用户在某地联接Internet需要多久，这对于教育行业和其它用户频繁改变的环境是很实用的",
+                    "qas": [
+                        {
+                            "id": "5-424-11",
+                            "question": "DHCP中的租约指什么？",
+                            "answers": [
+                                {
+                                    "text": "计算机IP地址的有效期",
+                                    "answer_start": 22
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-12",
+                            "question": "DHCP租约时间取决于什么？",
+                            "answers": [
+                                {
+                                    "text": "用户在某地联接Internet需要多久",
+                                    "answer_start": 54
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "DHCP协议结构包含8 bits的Op（消息操作代码，可分为引导请求BOOTREQUEST和引导答复BOOTREPLY）、8 bits的Htype（硬件地址类型）、32 bits的Xid（处理ID）、32 bits的Yiaddr（“你的”（客户机）IP地址）",
+                    "qas": [
+                        {
+                            "id": "5-424-13",
+                            "question": "DHCP协议中Op字段的含义是什么？",
+                            "answers": [
+                                {
+                                    "text": "消息操作代码，可分为引导请求BOOTREQUEST和引导答复BOOTREPLY",
+                                    "answer_start": 42
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-14",
+                            "question": "DHCP协议中Xid字段的位数和含义是什么？",
+                            "answers": [
+                                {
+                                    "text": "32 bits，处理ID",
+                                    "answer_start": 102
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-15",
+                            "question": "DHCP协议中Yiaddr字段的含义是什么？",
+                            "answers": [
+                                {
+                                    "text": "“你的”（客户机）IP地址",
+                                    "answer_start": 124
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "DHCP统一使用两个IANA分配的端口：服务器端使用67/udp，客户端使用68/udp。DHCP运行分为四个基本过程，分别为请求IP租约、提供IP租约、选择IP租约和确认IP租约",
+                    "qas": [
+                        {
+                            "id": "5-424-16",
+                            "question": "DHCP服务器端和客户端分别使用哪个UDP端口？",
+                            "answers": [
+                                {
+                                    "text": "服务器端67/udp，客户端68/udp",
+                                    "answer_start": 34
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-17",
+                            "question": "DHCP运行的四个基本过程是什么？",
+                            "answers": [
+                                {
+                                    "text": "请求IP租约、提供IP租约、选择IP租约和确认IP租约",
+                                    "answer_start": 72
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "DHCP发现（DISCOVER）过程中，客户在物理子网上发送广播寻找可用服务器，生成的UDP包目的地址为255.255.255.255或子网广播地址。DHCP提供（OFFER）过程中，服务器会广播DHCPOFFER消息，包含客户MAC地址、提供的IP地址、租期等信息",
+                    "qas": [
+                        {
+                            "id": "5-424-18",
+                            "question": "DHCP发现过程中，客户如何寻找可用服务器？",
+                            "answers": [
+                                {
+                                    "text": "在物理子网上发送广播",
+                                    "answer_start": 22
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-19",
+                            "question": "DHCPOFFER消息包含哪些信息？",
+                            "answers": [
+                                {
+                                    "text": "客户MAC地址、提供的IP地址、租期等信息",
+                                    "answer_start": 118
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "终端安装DHCP服务器的命令为：sudo apt-get install 3- dhcp3-server。安装后备份监听网卡配置文件的命令：sudo cp /etc/default/isc-dhcp-server /etc/default/isc-dhcp-server.bk",
+                    "qas": [
+                        {
+                            "id": "5-424-20",
+                            "question": "终端安装DHCP服务器的命令是什么？",
+                            "answers": [
+                                {
+                                    "text": "sudo apt-get install 3- dhcp3-server",
+                                    "answer_start": 28
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-21",
+                            "question": "备份DHCP监听网卡配置文件的命令是什么？",
+                            "answers": [
+                                {
+                                    "text": "sudo cp /etc/default/isc-dhcp-server /etc/default/isc-dhcp-server.bk",
+                                    "answer_start": 82
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "修改DHCP主配置文件时，可设置地址池：subnet 192.168.4.0 netmask 255.255.255.0 { range 192.168.4.10 192.168.4.100; }。配置完成后重启DHCP服务的命令：sudo /etc/init.d/isc-dhcp-server restart",
+                    "qas": [
+                        {
+                            "id": "5-424-22",
+                            "question": "subnet 192.168.4.0对应的地址池范围是什么？",
+                            "answers": [
+                                {
+                                    "text": "192.168.4.10 192.168.4.100",
+                                    "answer_start": 74
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-23",
+                            "question": "重启DHCP服务的命令是什么？",
+                            "answers": [
+                                {
+                                    "text": "sudo /etc/init.d/isc-dhcp-server restart",
+                                    "answer_start": 132
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "DHCP服务的相关链接包括：[维基百科:DHCP](http://zh.wikipedia.org/wiki/DHCP) 和 [Ubuntu 12.04下的DHCP服务器的配置](http://www.slightme.info/archives/59)",
+                    "qas": [
+                        {
+                            "id": "5-424-24",
+                            "question": "DHCP的维基百科链接是什么？",
+                            "answers": [
+                                {
+                                    "text": "http://zh.wikipedia.org/wiki/DHCP",
+                                    "answer_start": 40
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-25",
+                            "question": "Ubuntu 12.04下DHCP服务器配置的参考链接是什么？",
+                            "answers": [
+                                {
+                                    "text": "http://www.slightme.info/archives/59",
+                                    "answer_start": 98
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "动态主机设置协议（Dynamic Host Configuration Protocol, DHCP）是一个局域网的网络协议，使用UDP协议工作，主要有两个用途：给内部网络或网络服务供应商自动分配IP地址给用户；给内部网络管理员作为对所有电脑作中央管理的手段。",
+                    "qas": [
+                        {
+                            "id": "5-424-26",
+                            "question": "DHCP是什么？",
+                            "answers": [
+                                {
+                                    "text": "动态主机设置协议（Dynamic Host Configuration Protocol, DHCP）是一个局域网的网络协议",
+                                    "answer_start": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-27",
+                            "question": "DHCP使用什么传输层协议工作？",
+                            "answers": [
+                                {
+                                    "text": "使用UDP协议工作",
+                                    "answer_start": 42
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-28",
+                            "question": "DHCP的两个主要用途是什么？",
+                            "answers": [
+                                {
+                                    "text": "给内部网络或网络服务供应商自动分配IP地址给用户；给内部网络管理员作为对所有电脑作中央管理的手段",
+                                    "answer_start": 53
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "DHCP用一台或一组DHCP服务器来管理网络参数的分配，这种方案具有容错性。即使在一个仅拥有少量机器的网络中，DHCP仍然是有用的，因为一台机器可以几乎不造成任何影响地被增加到本地网络中。甚至对于那些很少改变地址的服务器来说，DHCP仍然被建议用来设置它们的地址。对于一些设备，如路由器和防火墙，则不应使用DHCP。DHCP也可为拨号及宽带主机，以及住宅NAT网关分配地址，但一般不适用于无边际路由器和DNS服务器。",
+                    "qas": [
+                        {
+                            "id": "5-424-29",
+                            "question": "DHCP如何管理网络参数分配？",
+                            "answers": [
+                                {
+                                    "text": "用一台或一组DHCP服务器来管理网络参数的分配",
+                                    "answer_start": 0
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-30",
+                            "question": "为什么在小型网络中DHCP仍然有用？",
+                            "answers": [
+                                {
+                                    "text": "因为一台机器可以几乎不造成任何影响地被增加到本地网络中",
+                                    "answer_start": 63
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-31",
+                            "question": "DHCP一般不适用于哪些设备？",
+                            "answers": [
+                                {
+                                    "text": "无边际路由器和DNS服务器",
+                                    "answer_start": 247
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "DHCP于1993年10月成为标准协议，其前身是BOOTP协议。当前的DHCP定义可以在RFC 2131中找到，而基于IPv6的建议标准（DHCPv6）可以在 RFC 3315中找到。",
+                    "qas": [
+                        {
+                            "id": "5-424-32",
+                            "question": "DHCPv6的标准在哪份RFC中定义？",
+                            "answers": [
+                                {
+                                    "text": "RFC 3315",
+                                    "answer_start": 75
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "动态主机设置协议（DHCP）是一种使网络管理员能够集中管理和自动分配IP网络地址的通信协议。在IP网络中，每个连接Internet的设备都需要分配唯一的IP地址。DHCP使用了租约的概念，或称为计算机IP地址的有效期。租用时间主要取决于用户在某地联接Internet需要多久，这对于教育行业和其它用户频繁改变的环境很实用。",
+                    "qas": [
+                        {
+                            "id": "5-424-33",
+                            "question": "DHCP如何协助网络管理员？",
+                            "answers": [
+                                {
+                                    "text": "使网络管理员能够集中管理和自动分配IP网络地址",
+                                    "answer_start": 12
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-34",
+                            "question": "为什么每个联网设备都需要唯一IP地址？",
+                            "answers": [
+                                {
+                                    "text": "每个连接Internet的设备都需要分配唯一的IP地址",
+                                    "answer_start": 53
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-35",
+                            "question": "什么是DHCP租约？",
+                            "answers": [
+                                {
+                                    "text": "计算机IP地址的有效期",
+                                    "answer_start": 108
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-36",
+                            "question": "租用时间取决于什么因素？",
+                            "answers": [
+                                {
+                                    "text": "主要取决于用户在某地联接Internet需要多久",
+                                    "answer_start": 127
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "协议结构包含多个字段：Op是消息操作代码；Htype是硬件地址类型；Hlen是硬件地址长度；Xid是处理ID；Secs是从获取到IP地址或者续约过程开始到现在所消耗的时间；Flags是标记；Ciaddr是客户机IP地址；Yiaddr是客户机IP地址；Siaddr是在bootstrap中使用的下一台服务器的IP地址；Giaddr是用于导入的接替代理IP地址；Chaddr是客户机硬件地址；Sname是服务器主机名称；File是引导文件名或受限目录路径名；Options是可选项字段。",
+                    "qas": [
+                        {
+                            "id": "5-424-37",
+                            "question": "Op字段在协议中表示什么？",
+                            "answers": [
+                                {
+                                    "text": "消息操作代码",
+                                    "answer_start": 14
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-38",
+                            "question": "Xid字段的功能是什么？",
+                            "answers": [
+                                {
+                                    "text": "处理ID",
+                                    "answer_start": 69
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-39",
+                            "question": "Yiaddr字段包含什么信息？",
+                            "answers": [
+                                {
+                                    "text": "客户机IP地址",
+                                    "answer_start": 140
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-40",
+                            "question": "Giaddr字段的作用是什么？",
+                            "answers": [
+                                {
+                                    "text": "用于导入的接替代理IP地址",
+                                    "answer_start": 192
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "DHCP运行分为四个基本过程：1. DHCP发现(DISCOVER)：客户在物理子网上发送广播寻找可用服务器；2. DHCP提供(OFFER)：服务器保留IP地址并广播DHCPOFFER消息；3. DHCP请求(REQUEST)：客户通知所有DHCP服务器已接受租约；4. DHCP确认(ACK)：服务器发送DHCPACK包完成配置。客户端配置参数通过Option 60进行供应商识别，实现特定功能选择。",
+                    "qas": [
+                        {
+                            "id": "5-424-41",
+                            "question": "DHCP发现阶段客户端如何寻找服务器？",
+                            "answers": [
+                                {
+                                    "text": "客户在物理子网上发送广播寻找可用服务器",
+                                    "answer_start": 41
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-42",
+                            "question": "在OFFER阶段服务器会发送什么消息？",
+                            "answers": [
+                                {
+                                    "text": "广播DHCPOFFER消息",
+                                    "answer_start": 98
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-43",
+                            "question": "REQUEST阶段的主要目的是什么？",
+                            "answers": [
+                                {
+                                    "text": "客户通知所有DHCP服务器已接受租约",
+                                    "answer_start": 135
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-44",
+                            "question": "哪个DHCP字段用于供应商识别？",
+                            "answers": [
+                                {
+                                    "text": "Option 60",
+                                    "answer_start": 243
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "context": "在Ubuntu系统安装DHCP服务器：1. 执行安装命令：sudo apt-get install isc-dhcp-server；2. 配置监听网卡：备份并编辑/etc/default/isc-dhcp-server文件，设置INTERFACES=\"eth0\"；3. 配置主文件：备份并编辑/etc/dhcp/dhcpd.conf，添加地址池(如subnet 192.168.4.0)、租期设置(default-lease-time 6000)等参数；4. 重启服务：sudo /etc/init.d/isc-dhcp-server restart。",
+                    "qas": [
+                        {
+                            "id": "5-424-45",
+                            "question": "安装DHCP服务器的命令是什么？",
+                            "answers": [
+                                {
+                                    "text": "sudo apt-get install isc-dhcp-server",
+                                    "answer_start": 26
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-46",
+                            "question": "哪个文件用于设置监听网卡？",
+                            "answers": [
+                                {
+                                    "text": "/etc/default/isc-dhcp-server",
+                                    "answer_start": 68
+                                }
+                            ]
+                        },
+                        {
+                            "id": "5-424-47",
+                            "question": "如何设置地址池范围？",
+                            "answers": [
+                                {
+                                    "text": "添加地址池(如subnet 192.168.4.0)",
+                                    "answer_start": 167
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

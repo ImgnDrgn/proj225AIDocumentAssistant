@@ -1,0 +1,444 @@
+{
+  "data": [
+    {
+      "title": "DNS服务",
+      "paragraphs": [
+        {
+          "context": "域名系统（英文：Domain Name System，DNS）是因特网的一项服务，它作为将域名和IP地址相互映射的一个分布式数据库，能够使人更方便的访问互联网。DNS 使用TCP和UDP端口53。",
+          "qas": [
+            {
+              "id": "5-425-1",
+              "question": "DNS作为因特网的服务，其核心功能是什么？它使用的TCP和UDP端口号是多少？",
+              "answers": [
+                {
+                  "text": "作为将域名和IP地址相互映射的分布式数据库，使人更方便访问互联网；端口53",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "当前，对于每一级域名长度的限制是63个字符，域名总长度则不能超过253个字符。",
+          "qas": [
+            {
+              "id": "5-425-2",
+              "question": "DNS对每一级域名长度和域名总长度的限制分别是多少？",
+              "answers": [
+                {
+                  "text": "每一级域名长度限制63个字符，域名总长度不超过253个字符",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开始时，域名的字符仅限于ASCII字符的一个子集。2008年，ICANN通过一项决议，允许使用其它语言作为互联网顶级域名的字符。使用基于Punycode码的IDNA系统，可将Unicode字符串映射为有效的DNS字符集。",
+          "qas": [
+            {
+              "id": "5-425-3",
+              "question": "ICANN在哪一年允许使用其它语言作为互联网顶级域名的字符？将Unicode字符串映射为有效DNS字符集依赖什么系统？",
+              "answers": [
+                {
+                  "text": "2008年；基于Punycode码的IDNA系统",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DNS最早于1983年由保罗·莫卡派乔斯（Paul Mockapetris）发明；原始的技术规范在882号因特网标准草案（RFC 882）中发布。1987年发布的第1034和1035号草案修正了DNS技术规范，并废除了之前的第882和883号草案。",
+          "qas": [
+            {
+              "id": "5-425-4",
+              "question": "DNS的发明者是谁？发明于哪一年？原始技术规范发布于哪份RFC草案？",
+              "answers": [
+                {
+                  "text": "保罗·莫卡派乔斯（Paul Mockapetris）；1983年；RFC 882",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-425-5",
+              "question": "1987年发布的哪两份RFC草案修正了DNS技术规范，并废除了之前的相关草案？",
+              "answers": [
+                {
+                  "text": "RFC 1034和RFC 1035，废除了RFC 882和RFC 883",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "早期的域名必须以英文句号“.”结尾，当用户访问www.wikipedia.org的HTTP服务时需输入http://www.wikipedia.org.，如今DNS服务器已可自动补上结尾的句号。",
+          "qas": [
+            {
+              "id": "5-425-6",
+              "question": "早期访问www.wikipedia.org的HTTP服务时，需在地址栏输入什么内容才能让DNS进行解析？现在DNS服务器在这方面有什么改进？",
+              "answers": [
+                {
+                  "text": "需输入http://www.wikipedia.org.；现在DNS服务器可自动补上结尾的句号",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "主机记录(A记录)：RFC 1035定义，将特定主机名映射到对应主机的IP地址；别名记录(CNAME记录)：RFC 1035定义，将别名指向到某个A记录，无需为新名字创建新A记录。",
+          "qas": [
+            {
+              "id": "5-425-7",
+              "question": "A记录和CNAME记录分别由哪份RFC定义？它们的功能各是什么？",
+              "answers": [
+                {
+                  "text": "均由RFC 1035定义；A记录映射特定主机名到IP地址，CNAME记录将别名指向A记录",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "IPv6主机记录(AAAA记录)：RFC 3596定义，映射特定主机名到IPv6地址；服务位置记录(SRV记录)：RFC 2782定义，定义提供特定服务的服务器位置（如主机、端口）。",
+          "qas": [
+            {
+              "id": "5-425-8",
+              "question": "AAAA记录和SRV记录分别由哪份RFC定义？功能各是什么？",
+              "answers": [
+                {
+                  "text": "AAAA记录由RFC 3596定义（映射主机名到IPv6地址），SRV记录由RFC 2782定义（定义服务服务器位置）",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NAPTR记录：RFC 3403定义，提供正则表达式方式映射域名，著名应用是用于ENUM查询。",
+          "qas": [
+            {
+              "id": "5-425-9",
+              "question": "NAPTR记录由哪份RFC定义？其著名应用场景是什么？",
+              "answers": [
+                {
+                  "text": "RFC 3403；用于ENUM查询",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DNS通过允许名称服务器将部分名称服务（zone）“委托”给子服务器，实现层次结构的名称空间；还提供系统别名、联系信息及邮件枢纽主机等额外信息。",
+          "qas": [
+            {
+              "id": "5-425-10",
+              "question": "DNS如何实现层次结构的名称空间？它还能提供哪些额外信息？",
+              "answers": [
+                {
+                  "text": "允许名称服务器将部分名称服务（zone）“委托”给子服务器；额外信息包括系统别名、联系信息、邮件枢纽主机",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "公共Internet DNS系统基于13个全球范围的“根服务器”（root-servers.net），除3个外，其余均位于美国；余下命名空间委托给其他DNS服务器负责特定部分。",
+          "qas": [
+            {
+              "id": "5-425-11",
+              "question": "公共Internet DNS系统基于多少个全球根服务器？这些根服务器的位置分布有何特点？",
+              "answers": [
+                {
+                  "text": "13个；除3个外，其余均位于美国",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DNS系统常用驱动软件包括BIND（使用最广）、DJBDNS、MaraDNS、NSD（Name Server Daemon）、PowerDNS。",
+          "qas": [
+            {
+              "id": "5-425-12",
+              "question": "DNS系统常用的驱动软件有哪些？其中使用最广泛的是哪一个？",
+              "answers": [
+                {
+                  "text": "BIND、DJBDNS、MaraDNS、NSD、PowerDNS；使用最广的是BIND",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Punycode根据RFC 3492标准制定，用于将域名的Unicode编码转换为DNS可用编码，还可根据IANA域名相异字表防止IDN欺骗。",
+          "qas": [
+            {
+              "id": "5-425-13",
+              "question": "Punycode基于哪份RFC标准？其主要作用是什么？",
+              "answers": [
+                {
+                  "text": "RFC 3492；转换域名Unicode编码为DNS可用编码，防止IDN欺骗",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "zh.wikipedia.org对应IP地址208.80.154.225；DNS类似自动电话号码簿，将便于人类使用的域名转化为机器识别的IP地址。",
+          "qas": [
+            {
+              "id": "5-425-14",
+              "question": "zh.wikipedia.org对应的IP地址是什么？DNS的作用可类比什么？",
+              "answers": [
+                {
+                  "text": "208.80.154.225；自动电话号码簿",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DNS查询分递归和迭代：客户端DNS服务器（递归服务器）全权处理请求至返回结果；DNS服务器之间采用迭代查询。",
+          "qas": [
+            {
+              "id": "5-425-15",
+              "question": "DNS查询有哪两种方式？客户端DNS服务器和服务器之间分别采用哪种方式？",
+              "answers": [
+                {
+                  "text": "递归和迭代；客户端DNS服务器用递归，服务器之间用迭代",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查询zh.wikipedia.org时，DNS服务器无缓存则先向根服务器查.org域权威服务器地址，再向.org域查.wikipedia.org域权威服务器地址，最后向该服务器查zh的A记录并缓存返回。",
+          "qas": [
+            {
+              "id": "5-425-16",
+              "question": "DNS服务器无缓存时，查询zh.wikipedia.org需经过哪几步？",
+              "answers": [
+                {
+                  "text": "1.向根服务器查.org域权威服务器地址；2.向.org域查.wikipedia.org域权威服务器地址；3.向该服务器查zh的A记录并缓存返回",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "大多数根域名服务器的基本WHOIS由ICANN维护，细节由域注册机构负责；.CN、.HK、.TW域名的WHOIS分别由CNNIC、香港互联网注册管理有限公司、台湾网络信息中心维护。",
+          "qas": [
+            {
+              "id": "5-425-17",
+              "question": "大多数根域名服务器的基本WHOIS由哪个机构维护？.CN和.HK域名的WHOIS分别由谁负责？",
+              "answers": [
+                {
+                  "text": "ICANN；.CN由CNNIC维护，.HK由香港互联网注册管理有限公司维护",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DNS系统控制方式常被指责，焦点包括VeriSign等企业滥用DNS、顶级域名分配问题；部分人认为部分DNS软件难适配动态IP，但这是实现问题非协议问题。",
+          "qas": [
+            {
+              "id": "5-425-18",
+              "question": "DNS系统控制方式常被指责的焦点是什么？部分DNS软件存在的适配问题是什么？",
+              "answers": [
+                {
+                  "text": "焦点是企业滥用DNS（如VeriSign）、顶级域名分配；适配问题是难在动态IP分配上很好工作",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "黑客通过伪造DNS服务器将用户引向错误网站窃取隐私，目前约有68000台此类恶意DNS服务器。",
+          "qas": [
+            {
+              "id": "5-425-19",
+              "question": "黑客如何利用DNS服务器窃取用户隐私？目前约有多少台此类恶意服务器？",
+              "answers": [
+                {
+                  "text": "伪造DNS服务器将用户引向错误网站；约68000台",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Bind9的终端命令为sudo apt-get -y install bind9 bind9utils；修改DNS地址需执行echo \"nameserver 192.168.1.101\" >> /etc/resolv.conf，再重启网络。",
+          "qas": [
+            {
+              "id": "5-425-20",
+              "question": "在终端中安装Bind9及其相关工具的命令是什么？修改DNS服务器地址的命令是什么？",
+              "answers": [
+                {
+                  "text": "安装命令：sudo apt-get -y install bind9 bind9utils；修改地址命令：echo \"nameserver 192.168.1.101\" >> /etc/resolv.conf",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建DNS正向Zone文件需编辑/etc/bind/named.conf.local，添加zone \"wangyan.org\"{type master; file \"db.wangyan.org\";}；type master表示主配置文件。",
+          "qas": [
+            {
+              "id": "5-425-21",
+              "question": "创建DNS正向Zone文件需编辑哪个配置文件？添加内容中“type master”的含义是什么？",
+              "answers": [
+                {
+                  "text": "/etc/bind/named.conf.local；表示该配置文件为主配置文件",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux系统中，检查MX记录生效用host -t mx example.com，dig工具测试用dig wangyan.org；named-checkzone工具可检查区域文件正确性，命令为named-checkzone wangyan.org /var/cache/bind/db.wangyan.org。",
+          "qas": [
+            {
+              "id": "5-425-22",
+              "question": "Linux系统中检查MX记录生效和使用dig工具测试的命令分别是什么？named-checkzone工具的作用及测试命令是什么？",
+              "answers": [
+                {
+                  "text": "检查MX记录：host -t mx example.com；dig测试：dig wangyan.org；named-checkzone作用是检查区域文件正确性，命令：named-checkzone wangyan.org /var/cache/bind/db.wangyan.org",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "域名系统（英文：Domain Name System，DNS）是因特网的一项服务，它作为将域名和IP地址相互映射的一个分布式数据库，能够使人更方便的访问互联网。DNS 使用TCP和UDP端口53。当前，对于每一级域名长度的限制是63个字符，域名总长度则不能超过253个字符。",
+          "qas": [
+            {
+              "id": "5-425-23",
+              "question": "DNS的主要功能是什么？",
+              "answers": [
+                {
+                  "text": "将域名和IP地址相互映射",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-425-24",
+              "question": "DNS使用哪些端口协议？",
+              "answers": [
+                {
+                  "text": "TCP和UDP端口53",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "id": "5-425-25",
+              "question": "单级域名的最大长度限制是多少字符？",
+              "answers": [
+                {
+                  "text": "63个字符",
+                  "answer_start": 119
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DNS系统中，常见的资源记录类型有：主机记录(A记录)：RFC 1035定义，A记录是用于名称解析的重要记录，它将特定的主机名映射到对应主机的IP地址上。别名记录(CNAME记录): RFC 1035定义，CNAME记录用于将某个别名指向到某个A记录上。",
+          "qas": [
+            {
+              "id": "5-425-26",
+              "question": "哪种DNS记录直接将主机名映射到IP地址？",
+              "answers": [
+                {
+                  "text": "主机记录(A记录)",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "5-425-27",
+              "question": "CNAME记录的主要作用是什么？",
+              "answers": [
+                {
+                  "text": "将某个别名指向到某个A记录上",
+                  "answer_start": 121
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Bind9的方法：命令安装,终端执行：sudo apt-get -y install bind9 bind9utils。修改DNS服务器地址：echo \"nameserver 192.168.1.101\" >> /etc/resolv.conf；/etc/init.d/networking restart #重启网络。",
+          "qas": [
+            {
+              "id": "5-425-28",
+              "question": "安装Bind9的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get -y install bind9 bind9utils",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-425-29",
+              "question": "如何修改DNS服务器地址？",
+              "answers": [
+                {
+                  "text": "echo \"nameserver 192.168.1.101\" >> /etc/resolv.conf",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DNS查询有两种方式：递归 和 迭代。DNS客户端设置使用的DNS服务器一般都是递归服务器，它负责全权处理客户端的DNS查询请求，直到返回最终结果。而DNS服务器之间一般采用迭代查询方式。",
+          "qas": [
+            {
+              "id": "5-425-30",
+              "question": "DNS客户端通常使用哪种查询方式？",
+              "answers": [
+                {
+                  "text": "递归",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-425-31",
+              "question": "DNS服务器之间使用什么查询方式？",
+              "answers": [
+                {
+                  "text": "迭代查询",
+                  "answer_start": 102
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

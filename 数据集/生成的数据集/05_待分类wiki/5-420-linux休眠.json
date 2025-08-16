@@ -1,0 +1,244 @@
+{
+  "data": [
+    {
+      "title": "linux休眠",
+      "paragraphs": [
+        {
+          "context": "休眠是一个很好用的功能，但是也是一个很容易出现问题的功能。",
+          "qas": [
+            {
+              "id": "5-420-1",
+              "question": "Linux系统中休眠功能的特点是什么？",
+              "answers": [
+                {
+                  "text": "休眠是一个很好用的功能，但是也是一个很容易出现问题的功能",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "休眠的原理是将内存的数据存放进硬盘里面，然后断电。开机后能够从硬盘里面还原数据到内存，然后就变成和关机之前一模一样的运行状态。其中还涉及网络重连、时间重设等细节调整。Linux对休眠功能的支持，要求开启交换分区，内存的信息在休眠时将转储到交换分区之上，因此最好让交换分区和内存差不多大小。",
+          "qas": [
+            {
+              "id": "5-420-2",
+              "question": "Linux休眠的原理是什么？",
+              "answers": [
+                {
+                  "text": "将内存的数据存放进硬盘里面，然后断电。开机后能够从硬盘里面还原数据到内存，然后就变成和关机之前一模一样的运行状态",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-420-3",
+              "question": "Linux支持休眠需要开启什么分区？该分区大小建议如何？",
+              "answers": [
+                {
+                  "text": "需要开启交换分区，最好让交换分区和内存差不多大小",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "5-420-4",
+              "question": "Linux休眠开机后需进行哪些细节调整？",
+              "answers": [
+                {
+                  "text": "网络重连、时间重设",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ACPI（高级配置和电源接口）对软硬件都是一项挑战，它要求硬件能支持休眠的电源管理调度，也要求软件驱动对其支持。ACPI电源状态包括：S0为正常开机；S1为待机（几乎所有硬件都需维持供电，但进入停机状态）；S3为睡眠（挂起到内存，内存不能断电）；S4为休眠（挂起到硬盘，可以断电，某些硬件驱动不支持S4会阻止进入该状态）；S5为支持唤醒（支持网络唤醒功能，不能断电）。",
+          "qas": [
+            {
+              "id": "5-420-5",
+              "question": "ACPI对软硬件的要求是什么？",
+              "answers": [
+                {
+                  "text": "要求硬件能支持休眠的电源管理调度，也要求软件驱动对其支持",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "5-420-6",
+              "question": "为什么休眠功能容易出现故障?",
+              "answers": [
+                {
+                  "text": "对软硬件都是一项挑战，要求硬件能支持休眠的电源管理调度，也要求软件驱动对其支持",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-420-7",
+              "question": "ACPI电源状态中S3对应的状态及特点是什么？",
+              "answers": [
+                {
+                  "text": "S3为睡眠（挂起到内存，内存不能断电）",
+                  "answer_start": 125
+                }
+              ]
+            },
+            {
+              "id": "5-420-8",
+              "question": "ACPI电源状态中S4对应的状态及进入限制是什么？",
+              "answers": [
+                {
+                  "text": "S4为休眠（挂起到硬盘，可以断电，某些硬件驱动不支持S4会阻止进入该状态）",
+                  "answer_start": 153
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "systemd后台管理支持的电源功能：1. systemctl suspend 对应ACPI S3状态；2. systemctl hibernate对应ACPI S4状态；3. systemctl suspend-then-hibernate对应S3一段时间后S4；4. systemctl hybrid-sleep对应S4+S3。",
+          "qas": [
+            {
+              "id": "5-420-9",
+              "question": "对应ACPI S3状态的systemd命令是什么？",
+              "answers": [
+                {
+                  "text": "systemctl suspend",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "5-420-10",
+              "question": "systemctl hibernate对应ACPI的哪个状态？",
+              "answers": [
+                {
+                  "text": "ACPI S4状态",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "id": "5-420-11",
+              "question": "实现「S3一段时间后S4」的systemd命令是什么？",
+              "answers": [
+                {
+                  "text": "systemctl suspend-then-hibernate",
+                  "answer_start": 83
+                }
+              ]
+            },
+            {
+              "id": "5-420-12",
+              "question": "systemctl hybrid-sleep命令对应什么电源状态?",
+              "answers": [
+                {
+                  "text": "S4+S3",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "某用户在Linux 5.1内核可成功休眠，5.2、5.3、5.4内核无法休眠。查看ACPI相关内核输出的命令为sudo dmesg |grep -i acpi，输出可疑内容：「ACPI: EC: event blocked」「ACPI: EC: EC stopped」，推测休眠被中断。",
+          "qas": [
+            {
+              "id": "5-420-13",
+              "question": "某用户在哪些Linux内核版本下无法休眠？",
+              "answers": [
+                {
+                  "text": "5.2、5.3、5.4内核",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "5-420-14",
+              "question": "查看ACPI相关内核输出的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo dmesg |grep -i acpi",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "5-420-15",
+              "question": "dmesg日志中发现了什么关键错误信息?",
+              "answers": [
+                {
+                  "text": "「ACPI: EC: event blocked」「ACPI: EC: EC stopped」",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "某用户通过sudo dmesg -l err查看系统错误，发现硬件报错（如ACPI Error、tpm_crb错误）；后在Arch Wiki找到解决方法：执行sudo nano /etc/systemd/sleep.conf，在文件中添加HibernateMode=shutdown，成功解决休眠问题。",
+          "qas": [
+            {
+              "id": "5-420-16",
+              "question": "查看Linux系统错误信息的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo dmesg -l err",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-420-17",
+              "question": "编辑systemd sleep.conf文件的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo nano /etc/systemd/sleep.conf",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-420-18",
+              "question": "解决某用户休眠问题需在sleep.conf中添加什么配置？",
+              "answers": [
+                {
+                  "text": "HibernateMode=shutdown",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux休眠问题的参考资源：1. StackExchange类似问题链接：https://unix.stackexchange.com/questions/502235/system-fails-to-suspend-acpi-ec-interrupt-blocked；2. Arch Wiki链接：https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate。",
+          "qas": [
+            {
+              "id": "5-420-19",
+              "question": "关于Linux休眠问题的StackExchange链接是什么？",
+              "answers": [
+                {
+                  "text": "https://unix.stackexchange.com/questions/502235/system-fails-to-suspend-acpi-ec-interrupt-blocked",
+                  "answer_start": 49
+                }
+              ]
+            },
+            {
+              "id": "5-420-20",
+              "question": "关于Linux休眠的Arch Wiki链接是什么？",
+              "answers": [
+                {
+                  "text": "https://wiki.archlinux.org/index.php/Power_management/Suspend_and_hibernate",
+                  "answer_start": 131
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
