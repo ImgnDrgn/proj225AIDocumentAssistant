@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "外置移动硬盘上安装体验",
+      "paragraphs": [
+        {
+          "context": "安装deepin到外置移动硬盘的步骤：1.准备镜像U盘；2.插入安装U盘和移动硬盘；3.安装时选择移动硬盘（建议不勾选加密安装）。",
+          "qas": [
+            {
+              "question": "安装deepin到外置移动硬盘的第一步是什么？",
+              "id": "5-491-1",
+              "answers": [
+                {
+                  "text": "准备镜像U盘",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "安装deepin到外置移动硬盘时，建议是否勾选加密安装？",
+              "id": "5-491-2",
+              "answers": [
+                {
+                  "text": "不勾选",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "安装deepin到外置移动硬盘需要插入哪些设备？",
+              "id": "5-491-3",
+              "answers": [
+                {
+                  "text": "安装U盘和移动硬盘",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "外置移动硬盘安装deepin后，可在不同设备使用，建议在原电脑用，其他设备可能无法读入；插入后需修改BIOS启动项顺序；分区安装建议关闭安全启动；安装在U盘运行慢。",
+          "qas": [
+            {
+              "question": "外置移动硬盘安装deepin后，建议在什么设备上使用？",
+              "id": "5-491-4",
+              "answers": [
+                {
+                  "text": "原电脑设备",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "question": "外置移动硬盘插入后需要修改什么？",
+              "id": "5-491-5",
+              "answers": [
+                {
+                  "text": "BIOS的启动项顺序",
+                  "answer_start": 89
+                }
+              ]
+            },
+            {
+              "question": "分区安装的移动硬盘建议做什么？",
+              "id": "5-491-6",
+              "answers": [
+                {
+                  "text": "关闭安全启动",
+                  "answer_start": 119
+                }
+              ]
+            },
+            {
+              "question": "将deepin安装在U盘上运行速度如何？",
+              "id": "5-491-7",
+              "answers": [
+                {
+                  "text": "非常慢",
+                  "answer_start": 150
+                }
+              ]
+            },
+            {
+              "question": "外置移动硬盘安装deepin后，在其他设备上使用可能出现什么情况？",
+              "id": "5-491-8",
+              "answers": [
+                {
+                  "text": "有时候不能读入",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

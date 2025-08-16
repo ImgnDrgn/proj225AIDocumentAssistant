@@ -1,0 +1,369 @@
+{
+  "data": [
+    {
+      "title": "软件包管理",
+      "paragraphs": [
+        {
+          "context": "主要的包管理工具包括：Apt、aptitude、Synaptic、apt-get、dpkg。",
+          "qas": [
+            {
+              "question": "主要的包管理工具包括哪些？",
+              "id": "5-486-1",
+              "answers": [
+                {
+                  "text": "Apt、aptitude、Synaptic、apt-get、dpkg。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpkg是Debian的中级包管理器，也用于深度操作系统。",
+          "qas": [
+            {
+              "question": "dpkg是什么？",
+              "id": "5-486-2",
+              "answers": [
+                {
+                  "text": "dpkg是Debian的中级包管理器，也用于深度操作系统。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpkg的功能包括：安装或管理单个软件包、升级软件套件、安装应用安全补丁。",
+          "qas": [
+            {
+              "question": "dpkg有哪些功能？",
+              "id": "5-486-3",
+              "answers": [
+                {
+                  "text": "安装或管理单个软件包、升级软件套件、安装应用安全补丁。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpkg被称为“中级”是因为：有更低级的dpkg-deb处理.deb包；dpkg检查依赖但不解决，需高级工具协助。",
+          "qas": [
+            {
+              "question": "为什么dpkg被称为“中级”包管理器？",
+              "id": "5-486-4",
+              "answers": [
+                {
+                  "text": "有更低级的dpkg-deb处理.deb包；dpkg检查依赖但不解决，需高级工具协助。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "APT是管理Debian包的工具集，用于管理系统安装的应用。",
+          "qas": [
+            {
+              "question": "APT是什么？",
+              "id": "5-486-5",
+              "answers": [
+                {
+                  "text": "APT是管理Debian包的工具集，用于管理系统安装的应用。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "APT的功能包括：安装、移除应用，保持应用更新等，能解决依赖并从仓库获取包。",
+          "qas": [
+            {
+              "question": "APT有哪些功能？",
+              "id": "5-486-6",
+              "answers": [
+                {
+                  "text": "安装、移除应用，保持应用更新等，能解决依赖并从仓库获取包。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "APT委托dpkg执行实际的包安装和移除操作。",
+          "qas": [
+            {
+              "question": "APT与dpkg的关系是什么？",
+              "id": "5-486-7",
+              "answers": [
+                {
+                  "text": "APT委托dpkg执行实际的包安装和移除操作。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpkg安装deb包的命令：sudo dpkg -i <package.deb>。",
+          "qas": [
+            {
+              "question": "如何用dpkg安装deb包？",
+              "id": "5-486-8",
+              "answers": [
+                {
+                  "text": "sudo dpkg -i <package.deb>",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpkg -r删除包保留配置，dpkg -P完全清除包（含配置）。",
+          "qas": [
+            {
+              "question": "dpkg -r和dpkg -P的区别是什么？",
+              "id": "5-486-9",
+              "answers": [
+                {
+                  "text": "dpkg -r删除包保留配置，dpkg -P完全清除包（含配置）。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt-get update用于更新软件包列表，确保列表是最新的。",
+          "qas": [
+            {
+              "question": "apt-get update的作用是什么？",
+              "id": "5-486-10",
+              "answers": [
+                {
+                  "text": "更新软件包列表，确保列表是最新的。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt-get install package_name用于安装新软件包。",
+          "qas": [
+            {
+              "question": "如何用apt-get安装新软件包？",
+              "id": "5-486-11",
+              "answers": [
+                {
+                  "text": "apt-get install package_name",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt-get remove保留配置文件，--purge remove删除配置文件。",
+          "qas": [
+            {
+              "question": "apt-get remove和--purge remove的区别是什么？",
+              "id": "5-486-12",
+              "answers": [
+                {
+                  "text": "apt-get remove保留配置文件，--purge remove删除配置文件。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt-cache search package_name在软件包列表中搜索字符串。",
+          "qas": [
+            {
+              "question": "如何用apt-cache搜索软件包？",
+              "id": "5-486-13",
+              "answers": [
+                {
+                  "text": "apt-cache search package_name",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装apt-file的命令：apt install apt-file。",
+          "qas": [
+            {
+              "question": "如何安装apt-file？",
+              "id": "5-486-14",
+              "answers": [
+                {
+                  "text": "apt install apt-file",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "aptitude处理依赖更佳，删除包时会同时删除其依赖的包。",
+          "qas": [
+            {
+              "question": "aptitude与apt-get的不同之处是什么？",
+              "id": "5-486-15",
+              "answers": [
+                {
+                  "text": "aptitude处理依赖更佳，删除包时会同时删除其依赖的包。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "aptitude safe-upgrade用于执行一次安全的升级。",
+          "qas": [
+            {
+              "question": "aptitude safe-upgrade的作用是什么？",
+              "id": "5-486-16",
+              "answers": [
+                {
+                  "text": "执行一次安全的升级。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt-get clean删除所有包，autoclean仅删除旧版本和无用包。",
+          "qas": [
+            {
+              "question": "apt-get clean和autoclean的区别是什么？",
+              "id": "5-486-17",
+              "answers": [
+                {
+                  "text": "apt-get clean删除所有包，autoclean仅删除旧版本和无用包。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解决E:Sub-process /usr/bin/dpkg returned an error code (1)：cd /var/lib/dpkg，sudo mv info info.bak等一系列命令。",
+          "qas": [
+            {
+              "question": "终端出现E:Sub-process /usr/bin/dpkg returned an error code (1)如何解决？",
+              "id": "5-486-18",
+              "answers": [
+                {
+                  "text": "cd /var/lib/dpkg，sudo mv info info.bak等一系列命令。",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解决无法获得锁的问题：关闭其他包管理程序，或删除相关lock文件。",
+          "qas": [
+            {
+              "question": "终端提示无法获得锁时如何解决？",
+              "id": "5-486-19",
+              "answers": [
+                {
+                  "text": "关闭其他包管理程序，或删除相关lock文件。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "降级软件包的命令格式：sudo apt-get install pkg=version。",
+          "qas": [
+            {
+              "question": "降级软件包的命令格式是什么？",
+              "id": "5-486-20",
+              "answers": [
+                {
+                  "text": "sudo apt-get install pkg=version",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "阻止软件包升级：sudo echo \"firefox hold\" | sudo dpkg --set-selections。",
+          "qas": [
+            {
+              "question": "如何阻止软件包升级？",
+              "id": "5-486-21",
+              "answers": [
+                {
+                  "text": "sudo echo \"firefox hold\" | sudo dpkg --set-selections",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt-get autoremove用于删除依赖于被删包的无用依赖包。",
+          "qas": [
+            {
+              "question": "apt-get autoremove的作用是什么？",
+              "id": "5-486-22",
+              "answers": [
+                {
+                  "text": "删除依赖于被删包的无用依赖包。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "upgrade仅更新包不增删，dist-upgrade可根据依赖增删包及配置。",
+          "qas": [
+            {
+              "question": "upgrade和dist-upgrade的区别是什么？",
+              "id": "5-486-23",
+              "answers": [
+                {
+                  "text": "upgrade仅更新包不增删，dist-upgrade可根据依赖增删包及配置。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加PPA需先安装：sudo apt-get install python-software-properties等。",
+          "qas": [
+            {
+              "question": "添加PPA前需要安装什么？",
+              "id": "5-486-24",
+              "answers": [
+                {
+                  "text": "sudo apt-get install python-software-properties等。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

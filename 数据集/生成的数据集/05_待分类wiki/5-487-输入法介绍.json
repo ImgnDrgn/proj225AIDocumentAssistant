@@ -1,0 +1,359 @@
+{
+  "data": [
+    {
+      "title": "输入法介绍",
+      "paragraphs": [
+        {
+          "context": "Linux系统上的输入法接口通常由im-config管理，类似Windows的输入法切换面板和MacOS的输入源管理器，终端输入im-config可调出可视化界面切换输入法框架。",
+          "qas": [
+            {
+              "question": "Linux系统上管理输入法接口的工具是什么？",
+              "id": "5-487-1",
+              "answers": [
+                {
+                  "text": "im-config",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "如何调出im-config的可视化管理界面？",
+              "id": "5-487-2",
+              "answers": [
+                {
+                  "text": "在终端中键入：im-config",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "音码是以汉字发音为根据的编码方式，拼音输入法是其代表。",
+          "qas": [
+            {
+              "question": "音码的编码依据是什么？",
+              "id": "5-487-3",
+              "answers": [
+                {
+                  "text": "汉字的发音",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "音码的代表输入法是什么？",
+              "id": "5-487-4",
+              "answers": [
+                {
+                  "text": "拼音输入法",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "形码依据汉字字形拆分，种类多，代表有86五笔、98五笔、新世纪五笔等。",
+          "qas": [
+            {
+              "question": "形码的编码原则是什么？",
+              "id": "5-487-5",
+              "answers": [
+                {
+                  "text": "依据汉字的字形，按照不同的原则拆分汉字",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "question": "请列举至少三种形码？",
+              "id": "5-487-6",
+              "answers": [
+                {
+                  "text": "86五笔、98五笔、新世纪五笔",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "音形码杂糅音码与形码，代表有自然码、二笔、小鹤音形。",
+          "qas": [
+            {
+              "question": "音形码是如何构成的？",
+              "id": "5-487-7",
+              "answers": [
+                {
+                  "text": "杂糅音码与形码而成",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "question": "音形码的杰出代表有哪些？",
+              "id": "5-487-8",
+              "answers": [
+                {
+                  "text": "自然码、二笔、小鹤音形",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "中文输入法本质是字典程序，建立字母到汉字的映射，通过响应键盘事件实现汉字检索。",
+          "qas": [
+            {
+              "question": "中文输入法的本质是什么？",
+              "id": "5-487-9",
+              "answers": [
+                {
+                  "text": "一个字典程序",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "中文输入法如何实现汉字检索？",
+              "id": "5-487-10",
+              "answers": [
+                {
+                  "text": "建立了一套由『字母』到『汉字』的映射，通过响应用户的『键盘事件』实现汉字的『检索』",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "拥有独立完整的后端检索引擎才是独立输入法程序，其性能决定输入法的性能与健壮程度，Linux上的ibus、fcitx、yong、rime均是此类。",
+          "qas": [
+            {
+              "question": "怎样才算一个独立的输入法程序？",
+              "id": "5-487-11",
+              "answers": [
+                {
+                  "text": "拥有独立、完整的『后端检索引擎』",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Linux上有哪些拥有独立后端检索引擎的输入法程序？",
+              "id": "5-487-12",
+              "answers": [
+                {
+                  "text": "ibus、fcitx、yong、rime",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "输入法前端皮肤系统因系统平台而异，良好设计应使前后端独立，方便移植，如RIME可在多系统使用同一份配置。",
+          "qas": [
+            {
+              "question": "输入法前端皮肤系统的特点是什么？",
+              "id": "5-487-13",
+              "answers": [
+                {
+                  "text": "不同的系统平台，拥有不同的前端环境。输入法程序的可视部分，都是由对应系统的前端实现的",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "RIME输入法的什么特点体现了前后端独立设计的优势？",
+              "id": "5-487-14",
+              "answers": [
+                {
+                  "text": "能在 Android / iOS / MacOS / Win / Linux 上使用同一份配置文件",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "输入法码表是编码与汉字映射的文本文件，执行时转储为二进制提高效率，格式多为GB18030或UTF-8无BOM。",
+          "qas": [
+            {
+              "question": "输入法码表是什么？",
+              "id": "5-487-15",
+              "answers": [
+                {
+                  "text": "一份包含了『编码』与『汉字』映射关系的文件",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "输入法码表通常有哪些格式？",
+              "id": "5-487-16",
+              "answers": [
+                {
+                  "text": "GB18030 格式，或者 UTF-8 无BOM 格式",
+                  "answer_start": 74
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "单行单义类码表一行含一个词条、编码，可能有词频，不加词频则上优先于下。",
+          "qas": [
+            {
+              "question": "单行单义类码表的特点是什么？",
+              "id": "5-487-17",
+              "answers": [
+                {
+                  "text": "一行之内，只有一个词条与对应编码，通常还有第三列，即词频。如果不加词频，则默认排在上面的词条优先权高于排在下面的",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "单行多义类码表一行中编码对应多个词条，重码按从左到右顺序排列。",
+          "qas": [
+            {
+              "question": "单行多义类码表中重码如何排列？",
+              "id": "5-487-18",
+              "answers": [
+                {
+                  "text": "按码表内从左到右的顺序，依次排列重码词条",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "小小输入法安装需进入程序文件夹终端执行sudo ./yong-tool.sh --install和./yong-tool.sh --select，再进QT插件文件夹执行sudo ./qt.sh，最后重启生效。",
+          "qas": [
+            {
+              "question": "安装小小输入法的步骤有哪些？",
+              "id": "5-487-19",
+              "answers": [
+                {
+                  "text": "1. 进入程序文件夹下，于此处打终端执行$ sudo ./yong-tool.sh --install和$ ./yong-tool.sh --select；2. 进入QT插件文件夹下，于此处打开终端执行$ sudo ./qt.sh；3. 重启或注销系统生效",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "小小输入法卸载需进入程序文件夹终端执行sudo ./yong --uninstall。",
+          "qas": [
+            {
+              "question": "如何卸载小小输入法？",
+              "id": "5-487-20",
+              "answers": [
+                {
+                  "text": "进入程序文件夹下，于此处打开终端执行$ sudo ./yong --uninstall",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "小小输入法程序目录在解包文件夹，用户有读写权限，.yong目录的yong.ini是用户配置，程序优先读取。",
+          "qas": [
+            {
+              "question": "小小输入法的用户配置文件在哪里？",
+              "id": "5-487-21",
+              "answers": [
+                {
+                  "text": "home 目录下的『.yong』文件夹内的『yong.ini』",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "小小输入法码表是单行多义类，第一行需声明UTF-8，新增方案需在mb文件夹放方案定义与码表，并修改yong.ini。",
+          "qas": [
+            {
+              "question": "小小输入法的码表类型是什么？",
+              "id": "5-487-22",
+              "answers": [
+                {
+                  "text": "典型的『单行多义』类码表",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "新增输入法方案到小小输入法平台需要做什么？",
+              "id": "5-487-23",
+              "answers": [
+                {
+                  "text": "在mb文件夹下放置『方案定义』与『方案码表』，并在『yong.ini』中仿照示例挂单",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fcitx是Linux流行输入法框架，提供txt2mb命令行工具转制码表，如txt2mb 98wb.txt 98wb.mb。",
+          "qas": [
+            {
+              "question": "fcitx提供的码表转制命令行工具是什么？",
+              "id": "5-487-24",
+              "answers": [
+                {
+                  "text": "txt2mb",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fcitx安装可终端执行sudo apt install fcitx fcitx-table，切换用im-config，卸载用sudo apt purge fcitx。",
+          "qas": [
+            {
+              "question": "如何安装fcitx？",
+              "id": "5-487-25",
+              "answers": [
+                {
+                  "text": "终端输入$ sudo apt install fcitx fcitx-table",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "如何切换到fcitx输入法框架？",
+              "id": "5-487-26",
+              "answers": [
+                {
+                  "text": "$ im-config",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "question": "如何卸载fcitx？",
+              "id": "5-487-27",
+              "answers": [
+                {
+                  "text": "终端输入$ sudo apt purge fcitx",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
