@@ -1,0 +1,289 @@
+{
+  "data": [
+    {
+      "title": "Deepin运维教程-L5",
+      "paragraphs": [
+        {
+          "context": "grep用于查找文件中符合条件的字符串，命令格式：grep [-选项] \"查找条件\" 目标文件。常用选项：-n（行号）、-i（忽略大小写）、-v（排除匹配行）。",
+          "qas": [
+            {
+              "question": "grep命令的作用是什么？",
+              "id": "5-464-1",
+              "answers": [
+                {
+                  "text": "查找文件中符合条件的字符串",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "grep命令的格式是什么？",
+              "id": "5-464-2",
+              "answers": [
+                {
+                  "text": "grep [-选项] \"查找条件\" 目标文件",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "grep选项-n的作用是什么？",
+              "id": "5-464-3",
+              "answers": [
+                {
+                  "text": "以行号形式输出",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "grep常用正则表达式：^字符串（以该字符串开头的行）、$字符串（以该字符串结尾的行）、^$（空行）。",
+          "qas": [
+            {
+              "question": "grep中，^字符串表示什么？",
+              "id": "5-464-4",
+              "answers": [
+                {
+                  "text": "以该字符串开头的行",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "grep中，^$表示什么？",
+              "id": "5-464-5",
+              "answers": [
+                {
+                  "text": "空行",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "find命令根据预设条件递归查找文件或目录，格式：find 查找路径 查找条件 [-exec 处理命令 {} \\; ]。常用条件：-type（f文件、d目录、l链接）、-name（文件名）、-size（大小，+大于、-小于）。",
+          "qas": [
+            {
+              "question": "find命令的作用是什么？",
+              "id": "5-464-6",
+              "answers": [
+                {
+                  "text": "根据预设的条件递归查找文件或目录所在位置",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "find命令中-type f表示什么？",
+              "id": "5-464-7",
+              "answers": [
+                {
+                  "text": "文件",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "find命令中-size +10k表示什么？",
+              "id": "5-464-8",
+              "answers": [
+                {
+                  "text": "大于10k的文件",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux压缩格式及工具：gzip→.gz、bzip2→.bz2、xz→.xz。压缩命令格式：gzip [选项] 文件名，-d为解压缩选项。",
+          "qas": [
+            {
+              "question": "gzip压缩后的文件后缀是什么？",
+              "id": "5-464-9",
+              "answers": [
+                {
+                  "text": ".gz",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "gzip命令中-d选项的作用是什么？",
+              "id": "5-464-10",
+              "answers": [
+                {
+                  "text": "解压缩",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "tar命令用于打包，格式：tar 选项 压缩包名 被压缩文件。常用选项：-c（创建）、-f（指定文件名）、-z（gzip）、-j（bzip2）、-J（xz）、-x（释放）、-C（指定解压路径）。",
+          "qas": [
+            {
+              "question": "tar命令的作用是什么？",
+              "id": "5-464-11",
+              "answers": [
+                {
+                  "text": "在linux下用于对文件/目录打包",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "tar命令中-c选项的作用是什么？",
+              "id": "5-464-12",
+              "answers": [
+                {
+                  "text": "创建打包文件",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "question": "tar命令中-x选项的作用是什么？",
+              "id": "5-464-13",
+              "answers": [
+                {
+                  "text": "释放打包文件",
+                  "answer_start": 95
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MBR分区格式：最多4个主分区，支持最大2.2T磁盘容量。GPT分区格式：可划分128个主分区，最大支持18EB容量。",
+          "qas": [
+            {
+              "question": "MBR分区格式最多支持多少个主分区？",
+              "id": "5-464-14",
+              "answers": [
+                {
+                  "text": "4个",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "GPT分区格式最大支持多大容量磁盘？",
+              "id": "5-464-15",
+              "answers": [
+                {
+                  "text": "18EB",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CentOS5默认文件系统ext3，CentOS6默认ext4，CentOS7默认xfs。xfs支持单个文件系统最大8EB，单个文件最大500TB。",
+          "qas": [
+            {
+              "question": "CentOS7默认的文件系统类型是什么？",
+              "id": "5-464-16",
+              "answers": [
+                {
+                  "text": "xfs",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "xfs文件系统支持的单个文件系统最大容量是多少？",
+              "id": "5-464-17",
+              "answers": [
+                {
+                  "text": "8EB",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mount命令用于挂载文件系统，格式：mount 设备路径 挂载点目录。umount用于卸载，格式：umount 挂载点目录。",
+          "qas": [
+            {
+              "question": "mount命令的格式是什么？",
+              "id": "5-464-18",
+              "answers": [
+                {
+                  "text": "mount 设备路径 挂载点目录",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "卸载文件系统使用什么命令？",
+              "id": "5-464-19",
+              "answers": [
+                {
+                  "text": "umount",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/etc/fstab用于存放文件系统信息，系统启动时自动挂载。文件含6个字段：设备路径、挂载点、文件系统类型、挂载参数、备份标识、检查顺序。",
+          "qas": [
+            {
+              "question": "/etc/fstab文件的作用是什么？",
+              "id": "5-464-20",
+              "answers": [
+                {
+                  "text": "用于存放文件系统信息，当系统启动时，系统会自动读取文件内容将指定的文件系统挂载到指定的目录",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "/etc/fstab文件包含几个字段？",
+              "id": "5-464-21",
+              "answers": [
+                {
+                  "text": "6个",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LVM创建步骤：创建卷组（vgcreate 卷组名 设备）、创建逻辑卷（lvcreate -L 大小 -n 逻辑卷名 卷组名）、格式化、挂载。扩展逻辑卷用lvextend，扩展文件系统用xfs_growfs（xfs）。",
+          "qas": [
+            {
+              "question": "创建卷组的命令是什么？",
+              "id": "5-464-22",
+              "answers": [
+                {
+                  "text": "vgcreate 卷组名 设备路径1 设备路径2...",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "扩展xfs文件系统使用什么命令？",
+              "id": "5-464-23",
+              "answers": [
+                {
+                  "text": "xfs_growfs",
+                  "answer_start": 96
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

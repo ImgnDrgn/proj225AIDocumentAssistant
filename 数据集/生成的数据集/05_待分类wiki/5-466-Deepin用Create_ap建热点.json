@@ -1,0 +1,359 @@
+{
+  "data": [
+    {
+      "title": "Deepin用Create_ap建热点",
+      "paragraphs": [
+        {
+          "context": "使用Create_ap可在Deepin系统用网卡建立虚拟wifi热点，无需路由器即可使用WiFi。",
+          "qas": [
+            {
+              "question": "在Deepin系统中使用Create_ap的作用是什么？",
+              "id": "5-466-1",
+              "answers": [
+                {
+                  "text": "用网卡建立虚拟wifi热点，无需路由器即可使用WiFi。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建create_ap.sh脚本的步骤：创建txt文本，复制代码，修改名称为“create_ap.sh”，右键属性勾选“允许以程序执行”。",
+          "qas": [
+            {
+              "question": "如何创建create_ap.sh脚本？",
+              "id": "5-466-2",
+              "answers": [
+                {
+                  "text": "创建txt文本，复制代码，修改名称为“create_ap.sh”，右键属性勾选“允许以程序执行”。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开create_ap.sh脚本需双击，选择“在终端中运行”。",
+          "qas": [
+            {
+              "question": "如何打开create_ap.sh脚本？",
+              "id": "5-466-3",
+              "answers": [
+                {
+                  "text": "双击打开，选择“在终端中运行”。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "脚本会查询网络接口，包括无线网卡接口（以wl开头）、有线网卡接口（以en开头）、宽带接口（以ppp开头）。",
+          "qas": [
+            {
+              "question": "脚本会查询哪些网络接口？",
+              "id": "5-466-4",
+              "answers": [
+                {
+                  "text": "无线网卡接口（以wl开头）、有线网卡接口（以en开头）、宽带接口（以ppp开头）。",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "检查网卡是否支持AP模式：查看sudo iw list|grep -E \"^* AP$\"是否有“* AP”字样，也可访问http://wireless.kernel.org/en/users/Drivers查询。",
+          "qas": [
+            {
+              "question": "如何检查网卡是否支持AP模式？",
+              "id": "5-466-5",
+              "answers": [
+                {
+                  "text": "查看sudo iw list|grep -E \"^* AP$\"是否有“* AP”字样，也可访问http://wireless.kernel.org/en/users/Drivers查询。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装create_ap需先安装hostapd、dnsmasq、haveged、iptables和git，再通过git clone https://github.com/oblique/create_ap获取源码并sudo make install。",
+          "qas": [
+            {
+              "question": "如何安装create_ap？",
+              "id": "5-466-6",
+              "answers": [
+                {
+                  "text": "先安装hostapd、dnsmasq、haveged、iptables和git，再通过git clone https://github.com/oblique/create_ap获取源码并sudo make install。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "建AP时不可用的信道可通过sudo iw list|grep \"(no IR)\"|cut -d' ' -f4和sudo iw list|grep \"(disabled)\"|cut -d' ' -f4查询。",
+          "qas": [
+            {
+              "question": "如何查询建AP时不可用的信道？",
+              "id": "5-466-7",
+              "answers": [
+                {
+                  "text": "通过sudo iw list|grep \"(no IR)\"|cut -d' ' -f4和sudo iw list|grep \"(disabled)\"|cut -d' ' -f4查询。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开启Wan-->AP的命令为sudo create_ap $wan $wan Deepin_AP 123456789 &。",
+          "qas": [
+            {
+              "question": "开启Wan-->AP的命令是什么？",
+              "id": "5-466-8",
+              "answers": [
+                {
+                  "text": "sudo create_ap $wan $wan Deepin_AP 123456789 &",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开启Lan-->AP的命令为sudo create_ap $wan $lan Deepin_AP 123456789 &。",
+          "qas": [
+            {
+              "question": "开启Lan-->AP的命令是什么？",
+              "id": "5-466-9",
+              "answers": [
+                {
+                  "text": "sudo create_ap $wan $lan Deepin_AP 123456789 &",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开启ppp-->AP的命令为sudo create_ap $wan $ppp Deepin_AP 123456789 &。",
+          "qas": [
+            {
+              "question": "开启ppp-->AP的命令是什么？",
+              "id": "5-466-10",
+              "answers": [
+                {
+                  "text": "sudo create_ap $wan $ppp Deepin_AP 123456789 &",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "关闭AP的命令为sudo create_ap --stop $wan。",
+          "qas": [
+            {
+              "question": "关闭AP的命令是什么？",
+              "id": "5-466-11",
+              "answers": [
+                {
+                  "text": "sudo create_ap --stop $wan",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "无密码开放网络的create_ap示例命令：create_ap wlan0 eth0 MyAccessPoint。",
+          "qas": [
+            {
+              "question": "无密码开放网络的create_ap示例命令是什么？",
+              "id": "5-466-12",
+              "answers": [
+                {
+                  "text": "create_ap wlan0 eth0 MyAccessPoint",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "WPA + WPA2密码的create_ap示例命令：create_ap wlan0 eth0 MyAccessPoint MyPassPhrase。",
+          "qas": [
+            {
+              "question": "WPA + WPA2密码的create_ap示例命令是什么？",
+              "id": "5-466-13",
+              "answers": [
+                {
+                  "text": "create_ap wlan0 eth0 MyAccessPoint MyPassPhrase",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "AP无Internet访问的create_ap示例命令：create_ap -n wlan0 MyAccessPoint MyPassPhrase。",
+          "qas": [
+            {
+              "question": "AP无Internet访问的create_ap示例命令是什么？",
+              "id": "5-466-14",
+              "answers": [
+                {
+                  "text": "create_ap -n wlan0 MyAccessPoint MyPassPhrase",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "桥接共享Internet的create_ap示例命令：create_ap -m bridge wlan0 eth0 MyAccessPoint MyPassPhrase。",
+          "qas": [
+            {
+              "question": "桥接共享Internet的create_ap示例命令是什么？",
+              "id": "5-466-15",
+              "answers": [
+                {
+                  "text": "create_ap -m bridge wlan0 eth0 MyAccessPoint MyPassPhrase",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "同一WiFi接口共享Internet的create_ap示例命令：create_ap wlan0 wlan0 MyAccessPoint MyPassPhrase。",
+          "qas": [
+            {
+              "question": "同一WiFi接口共享Internet的create_ap示例命令是什么？",
+              "id": "5-466-16",
+              "answers": [
+                {
+                  "text": "create_ap wlan0 wlan0 MyAccessPoint MyPassPhrase",
+                  "answer_start": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "选择不同WiFi适配器驱动的create_ap示例命令：create_ap --driver rtl871xdrv wlan0 eth0 MyAccessPoint MyPassPhrase。",
+          "qas": [
+            {
+              "question": "选择不同WiFi适配器驱动的create_ap示例命令是什么？",
+              "id": "5-466-17",
+              "answers": [
+                {
+                  "text": "create_ap --driver rtl871xdrv wlan0 eth0 MyAccessPoint MyPassPhrase",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启用IEEE 802.11n的create_ap示例命令：create_ap --ieee80211n --ht_capab '[HT40+]' wlan0 eth0 MyAccessPoint MyPassPhrase。",
+          "qas": [
+            {
+              "question": "启用IEEE 802.11n的create_ap示例命令是什么？",
+              "id": "5-466-18",
+              "answers": [
+                {
+                  "text": "create_ap --ieee80211n --ht_capab '[HT40+]' wlan0 eth0 MyAccessPoint MyPassPhrase",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Client Isolation的create_ap示例命令：create_ap --isolate-clients wlan0 eth0 MyAccessPoint MyPassPhrase。",
+          "qas": [
+            {
+              "question": "Client Isolation的create_ap示例命令是什么？",
+              "id": "5-466-19",
+              "answers": [
+                {
+                  "text": "create_ap --isolate-clients wlan0 eth0 MyAccessPoint MyPassPhrase",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启动create_ap系统服务的命令：systemctl start create_ap；开机自启命令：systemctl enable create_ap。",
+          "qas": [
+            {
+              "question": "如何启动create_ap系统服务？",
+              "id": "5-466-20",
+              "answers": [
+                {
+                  "text": "systemctl start create_ap",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "如何设置create_ap开机自启？",
+              "id": "5-466-21",
+              "answers": [
+                {
+                  "text": "systemctl enable create_ap",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "网络接口与网卡不同，网卡是物理硬件，网络接口是虚拟的，多数时候一个网络接口对应一个网卡，如宽带连接、VPN、AP都是虚拟网络接口。",
+          "qas": [
+            {
+              "question": "网络接口和网卡有什么区别？",
+              "id": "5-466-22",
+              "answers": [
+                {
+                  "text": "网卡是物理硬件，网络接口是虚拟的，多数时候一个网络接口对应一个网卡。",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用有线网络接口上网却选择共享无线网络接口，用sudo create_ap wlp8s0b1 wlp8s0b1 Deepin_AP 123456789命令会出错，应使用create_ap wlan0 eth0 MyAccessPoint MyPassPhrase。",
+          "qas": [
+            {
+              "question": "使用有线网络接口上网时，错误使用共享无线网络接口的命令会怎样？",
+              "id": "5-466-23",
+              "answers": [
+                {
+                  "text": "会出错。",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "question": "使用有线网络接口上网时，正确的共享命令是什么？",
+              "id": "5-466-24",
+              "answers": [
+                {
+                  "text": "create_ap wlan0 eth0 MyAccessPoint MyPassPhrase",
+                  "answer_start": 93
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

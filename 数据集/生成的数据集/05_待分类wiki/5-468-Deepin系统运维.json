@@ -1,0 +1,679 @@
+{
+  "data": [
+    {
+      "title": "Deepin系统运维",
+      "paragraphs": [
+        {
+          "context": "Deepin中，Super + S可切换工作区，工作区横向排列，无多行自适应布局。Super键即Windows键，该快捷键源自Ubuntu。",
+          "qas": [
+            {
+              "question": "Deepin系统中，Super + S的作用是什么？",
+              "id": "5-468-1",
+              "answers": [
+                {
+                  "text": "切换工作区",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "Deepin的工作区布局有什么特点？",
+              "id": "5-468-2",
+              "answers": [
+                {
+                  "text": "多个工作区横向排列，缺少智能的多行自适应布局",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Super键功能：启动器（Super）；显示工作区（Super + S）；当前工作区窗口（Super + W）；所有工作区窗口（Super + A）；显示桌面（Super + D）；文件管理器（Super + E）；锁屏（Super + L）。",
+          "qas": [
+            {
+              "question": "在Deepin中，按Super键会启动什么？",
+              "id": "5-468-3",
+              "answers": [
+                {
+                  "text": "启动器",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "如何在Deepin中快速显示桌面？",
+              "id": "5-468-4",
+              "answers": [
+                {
+                  "text": "Super + D",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "question": "要查看所有工作区的窗口，应使用什么快捷键？",
+              "id": "5-468-5",
+              "answers": [
+                {
+                  "text": "Super + A",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin启动器搜索支持拼音，输入“xk”可显示“显卡驱动管理器”，支持简拼、全拼和模糊匹配。",
+          "qas": [
+            {
+              "question": "Deepin启动器搜索支持哪些拼音输入方式？",
+              "id": "5-468-6",
+              "answers": [
+                {
+                  "text": "简拼、全拼和模糊匹配",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "在启动器中输入“xk”会显示什么？",
+              "id": "5-468-7",
+              "answers": [
+                {
+                  "text": "显卡驱动管理器",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin中，控制中心-鼠标开启“自然滚动”，可使笔记本触控板双指滚动与手机、平板、macOS、Win10一致。",
+          "qas": [
+            {
+              "question": "如何在Deepin中设置自然滚动？",
+              "id": "5-468-8",
+              "answers": [
+                {
+                  "text": "控制中心-鼠标：打开“自然滚动”选项",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Chrome可右键去掉“使用系统标题栏和边框”；VSCode在“文件-首选项-设置-窗口-Title Bar Style”选custom，以使用自定义标题栏。",
+          "qas": [
+            {
+              "question": "Chrome如何使用自定义标题栏？",
+              "id": "5-468-9",
+              "answers": [
+                {
+                  "text": "在标题栏右键，去掉“使用系统标题栏和边框”",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "VSCode设置自定义标题栏的路径是什么？",
+              "id": "5-468-10",
+              "answers": [
+                {
+                  "text": "文件-首选项-设置-窗口-Title Bar Style",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装VSCode后，Chrome下载文件点击“在文件夹中显示”弹出VSCode，解决方法：文件管理器建空文件夹，右键“打开方式”设“文件管理器”为默认。",
+          "qas": [
+            {
+              "question": "安装VSCode后，Chrome下载文件点击“在文件夹中显示”弹出VSCode，如何解决？",
+              "id": "5-468-11",
+              "answers": [
+                {
+                  "text": "在文件管理器里随意创建一个空文件夹，然后在这个文件夹上点击右键，从右键菜单里选择“打开方式”，把“文件管理器”设置为默认程序",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "搜狗输入法有内存泄露，建议换fcitx。卸载：sudo apt purge sogoupinyin，注销或重启，killall fcitx，pgrep fcitx无输出后删配置，安装：sudo apt install fcitx-googlepinyin fcitx-ui-classic，启动fcitx-autostart。",
+          "qas": [
+            {
+              "question": "为什么建议卸载搜狗输入法？",
+              "id": "5-468-12",
+              "answers": [
+                {
+                  "text": "存在严重的内存泄露（开机大约8小时，内存占用将达到3G）",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "卸载搜狗输入法后，如何安装替代的输入法？",
+              "id": "5-468-13",
+              "answers": [
+                {
+                  "text": "sudo apt install fcitx-googlepinyin fcitx-ui-classic",
+                  "answer_start": 131
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "应用商店卸载软件失败，可Ctrl + Alt + T打开终端，执行sudo apt install -f后重新卸载。",
+          "qas": [
+            {
+              "question": "应用商店卸载软件失败时，如何解决？",
+              "id": "5-468-14",
+              "answers": [
+                {
+                  "text": "Ctrl + Alt + T打开终端，输入命令：sudo apt install -f回车执行后重新应用商店卸载",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改文件扩展名：方法一，文件管理器右键“属性”修改；方法二，终端执行sudo mv filename.txt filename。",
+          "qas": [
+            {
+              "question": "Deepin中修改文件扩展名的方法有哪些？",
+              "id": "5-468-15",
+              "answers": [
+                {
+                  "text": "方法一：文件管理器，在要修改的文件上弹出右键菜单，”属性“窗口可完成文件名、扩展名修改。方法二：进入文件所在目录，右键”在终端中打开“，执行：sudo mv filename.txt filename",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统快照用Timeshift，从应用商店安装。位置选/和/home外分区，用户选“包含隐藏文件”，筛选列表排除部分目录。第一次快照全备份，后续用软链接。命令行查看：sudo timeshift --list，还原：sudo timeshift --restore。",
+          "qas": [
+            {
+              "question": "Deepin中推荐用什么工具做系统快照？",
+              "id": "5-468-16",
+              "answers": [
+                {
+                  "text": "Timeshift",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "Timeshift创建快照前，位置应如何选择？",
+              "id": "5-468-17",
+              "answers": [
+                {
+                  "text": "选择/和/home之外的分区，推荐“数据盘”",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "如何在命令行查看Timeshift快照？",
+              "id": "5-468-18",
+              "answers": [
+                {
+                  "text": "sudo timeshift --list",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除不需要的文件打开方式：文件管理器进主目录，Ctrl + H显示隐藏文件，进入.config目录，编辑mimeapps.list。",
+          "qas": [
+            {
+              "question": "如何删除Deepin中不需要的文件打开方式？",
+              "id": "5-468-19",
+              "answers": [
+                {
+                  "text": "文件管理器进入主目录，Ctrl + H显示隐藏文件，进入.config目录，编辑mimeapps.list",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ShadowSocks代理：手动代理设SOCKS代理“127.0.0.1”，端口“1080”；自动代理配置URL“file:///homeloaden/.ss.pac”，需安装python3-pip和genpac生成pac文件。",
+          "qas": [
+            {
+              "question": "ShadowSocks手动代理的SOCKS代理地址和端口是什么？",
+              "id": "5-468-20",
+              "answers": [
+                {
+                  "text": "127.0.0.1，端口1080",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "如何生成ShadowSocks的自动代理pac文件？",
+              "id": "5-468-21",
+              "answers": [
+                {
+                  "text": "sudo apt install python3-pip；sudo pip3 install genpac；genpac --pac-proxy \"SOCKS5 127.0.01:1080\" --gfwlist-proxy=\"SOCKS5127.0.0.1:1080\" --output=~/.ss.pac",
+                  "answer_start": 74
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启动器隐藏启动项：文件管理器进/usr/share/applications，右键“管理员身份打开”，编辑不想看的启动项，添加NoDisplay=true。",
+          "qas": [
+            {
+              "question": "如何在Deepin启动器中隐藏不想看到的启动项？",
+              "id": "5-468-22",
+              "answers": [
+                {
+                  "text": "文件管理器打开系统盘，进入/usr/share目录，在applications目录上右键“管理员身份打开”。在不想看到的启动项图标上右键，“打开方式”选择“编辑器”添加：NoDisplay=true 保存",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建“我的世界”启动项：在~/.local/share/applications建Minecraft.desktop，内容含Categories、Comment、Exec、Icon等，Exec用绝对路径，Icon放~/.local/share/icons/hicolor各尺寸目录。启动脚本Minecraft.sh含cd路径和java -jar HMCL.jar，需装default-jre和openjfx。",
+          "qas": [
+            {
+              "question": "“我的世界”启动项的最佳创建位置在哪里？",
+              "id": "5-468-23",
+              "answers": [
+                {
+                  "text": "主目录 ~/.local/share/applications",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "运行“我的世界”需要安装哪些依赖？",
+              "id": "5-468-24",
+              "answers": [
+                {
+                  "text": "default-jre openjfx",
+                  "answer_start": 252
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "VirtualBox支持USB2.0/3.0：安装扩展sudo apt install virtualbox-extension-pack，添加用户组sudo adduser loaden vboxusers，重启生效，查看用户组groups loaden。",
+          "qas": [
+            {
+              "question": "如何让VirtualBox支持USB2.0/3.0？",
+              "id": "5-468-25",
+              "answers": [
+                {
+                  "text": "1. 安装扩展：sudo apt install virtualbox-extension-pack；2. 添加用户组：sudo adduser loaden vboxusers；3. 重启生效",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "VirtualBox虚拟机减肥：关休眠powercfg /h off，关系统还原，磁盘碎片整理，用sdelete -c -z C: D:，关虚拟机后执行VBoxManage modifyhd --compact WINXP.vdi。",
+          "qas": [
+            {
+              "question": "VirtualBox虚拟机减肥的步骤有哪些？",
+              "id": "5-468-26",
+              "answers": [
+                {
+                  "text": "1. 关闭虚拟机休眠功能：powercfg /h off；2. 关闭系统还原；3. 磁盘碎片整理；4. 下载sdelete，执行：sdelete -c -z C: D:；5. 关闭虚拟机；6. VBoxManage modifyhd --compact WINXP.vdi",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更换主机名：sudo deepin-editor /etc/hostname，替换后重启生效。",
+          "qas": [
+            {
+              "question": "如何在Deepin中更换主机名？",
+              "id": "5-468-27",
+              "answers": [
+                {
+                  "text": "sudo deepin-editor /etc/hostname，替换成新的主机名，重启电脑生效",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查找命令路径用which，如which deepin-editor；查文件所属包用dpkg -S，如dpkg -S /usr/bin/deepin-editor。",
+          "qas": [
+            {
+              "question": "如何查找命令所在路径？",
+              "id": "5-468-28",
+              "answers": [
+                {
+                  "text": "使用which命令，如which deepin-editor",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "如何查询文件属于哪个软件包？",
+              "id": "5-468-29",
+              "answers": [
+                {
+                  "text": "使用dpkg -S命令，如dpkg -S /usr/bin/deepin-editor",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "APT命令：查找软件apt search；重装sudo apt install --reinstall；安装修复依赖sudo apt install -f；卸载清配置sudo apt purge；自动卸载清配置sudo apt autoremove --purge。",
+          "qas": [
+            {
+              "question": "如何重装软件包？",
+              "id": "5-468-30",
+              "answers": [
+                {
+                  "text": "sudo apt install --reinstall package-name",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "卸载软件并清除系统配置用什么命令？",
+              "id": "5-468-31",
+              "answers": [
+                {
+                  "text": "sudo apt purge package-name",
+                  "answer_start": 77
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "批量编码转换：装libav-tools，建conv.sh设可执行，脚本含循环用avconv转换.mov为.mp4，成功后删原文件。",
+          "qas": [
+            {
+              "question": "进行批量编码转换需要安装什么软件？",
+              "id": "5-468-32",
+              "answers": [
+                {
+                  "text": "libav-tools",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "硬盘克隆推荐Clonezilla，dd命令备用：备份sudo dd if=/dev/sda1 of=~/elf.bak status=progress，还原sudo dd if=~/elf.bak of=/dev/sda1 status=progress。",
+          "qas": [
+            {
+              "question": "Deepin中推荐用什么工具进行硬盘克隆？",
+              "id": "5-468-33",
+              "answers": [
+                {
+                  "text": "Clonezilla（再生龙）",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "用dd命令备份分区的命令是什么？",
+              "id": "5-468-34",
+              "answers": [
+                {
+                  "text": "sudo dd if=/dev/sda1 of=~/elf.bak status=progress",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "备份MBR：sudo dd if=/dev/sdX of=/path/to/mbr bs=512 count=1；还原：sudo dd if=/path/to/mbr of=/dev/sdX bs=512 count=1；备份分区表sudo sfdisk -d /dev/sdX  /path/to/fqb。",
+          "qas": [
+            {
+              "question": "如何备份MBR？",
+              "id": "5-468-35",
+              "answers": [
+                {
+                  "text": "sudo dd if=/dev/sdX of=/path/to/mbr bs=512 count=1",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "备份分区表的命令是什么？",
+              "id": "5-468-36",
+              "answers": [
+                {
+                  "text": "sudo sfdisk -d /dev/sdX  /path/to/fqb",
+                  "answer_start": 114
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解决与Windows时间不同步：sudo dpkg-reconfigure tzdata设时区，sudo hwclock --localtime --systohc写本地时间；或timedatectl set-local-rtc 1 --adjust-system-clock。",
+          "qas": [
+            {
+              "question": "如何解决Deepin与Windows时间不同步的问题？",
+              "id": "5-468-37",
+              "answers": [
+                {
+                  "text": "sudo dpkg-reconfigure tzdata #时区设置；sudo hwclock --localtime --systohc #使用本地时间并写入主板；或timedatectl set-local-rtc 1 --adjust-system-clock",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除旧内核：查所有内核dpkg --get-selections | grep linux，查正在使用的uname -r，删除不用的sudo apt purge XXX。",
+          "qas": [
+            {
+              "question": "如何查询正在使用的内核？",
+              "id": "5-468-38",
+              "answers": [
+                {
+                  "text": "uname -r",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "清除已卸载软件遗留配置:dpkg --get-selections | grep deinstall | sed 's/deinstall/lpurge/' | sudo dpkg --set-selections; sudo dpkg -Pa。",
+          "qas": [
+            {
+              "question": "如何清除已卸载软件的遗留配置？",
+              "id": "5-468-39",
+              "answers": [
+                {
+                  "text": "dpkg --get-selections | grep deinstall | sed 's/deinstall/lpurge/' | sudo dpkg --set-selections; sudo dpkg -Pa",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开机进命令行：sudo systemctl disable lightdm；恢复进桌面：sudo systemctl enable lightdm。",
+          "qas": [
+            {
+              "question": "如何设置Deepin开机进入命令行？",
+              "id": "5-468-40",
+              "answers": [
+                {
+                  "text": "sudo systemctl disable lightdm",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "如何恢复开机进入桌面？",
+              "id": "5-468-41",
+              "answers": [
+                {
+                  "text": "sudo systemctl enable lightdm",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统启动分析：systemd-analyze显示用户态和内核态时间；systemd-analyze blame显示各启动项耗时。",
+          "qas": [
+            {
+              "question": "如何查看系统启动过程中各启动项的耗时？",
+              "id": "5-468-42",
+              "answers": [
+                {
+                  "text": "systemd-analyze blame",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统假死后安全重启：Alt + SysRq + B，SysRq即Print Screen键，有Fn键可能需同时按。",
+          "qas": [
+            {
+              "question": "系统假死后如何安全重启？",
+              "id": "5-468-43",
+              "answers": [
+                {
+                  "text": "同时按住Alt + SysRq + B，其中SysRq就是Print Screen键。有Fn功能键的，可能需要同时按住Fn功能键",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进程相关命令：pgrep XXX查进程ID；ps -ef |grep XXX显示进程及命令行；pkill XXX杀掉进程；killall XXX全杀。",
+          "qas": [
+            {
+              "question": "如何查询进程ID？",
+              "id": "5-468-44",
+              "answers": [
+                {
+                  "text": "pgrep XXX",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "如何杀掉所有名为XXX的进程？",
+              "id": "5-468-45",
+              "answers": [
+                {
+                  "text": "killall XXX",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Live模式修复GRUB引导：终端执行sudo -i && fdisk -l找sdaX，挂载相关分区，chroot /mnt，update-grub，grub-install /dev/sda，exit。",
+          "qas": [
+            {
+              "question": "Live模式下如何修复GRUB引导？",
+              "id": "5-468-46",
+              "answers": [
+                {
+                  "text": "打开Terminal，或者进入Shell，执行sudo -i && fdisk -l找到系统安装分区sdaX，然后按顺序执行：mount /dev/sdaX /mnt；mount /dev/sdaY /mnt/boot/efi；mount --bind /dev /mnt/dev；mount --bind /proc /mnt/proc；mount --bind /sys /mnt/sys；chroot /mnt；update-grub；grub-install /dev/sda；exit",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "离线安装软件：有网电脑下载软件及依赖，脱机电脑sudo dpkg -i *.deb，报错则sudo apt install -f，缺依赖用apt download XXX下载。",
+          "qas": [
+            {
+              "question": "离线安装软件时，若安装命令报错该怎么办？",
+              "id": "5-468-47",
+              "answers": [
+                {
+                  "text": "执行sudo apt install -f",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "制作USB启动盘：sudo dd if=/path/to/iso of=/path/to/USB status=progress。",
+          "qas": [
+            {
+              "question": "制作USB启动盘的命令是什么？",
+              "id": "5-468-48",
+              "answers": [
+                {
+                  "text": "sudo dd if=/path/to/the/downloaded/iso of=/path/to/the/USB/devicestatus=progress",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看UUID：blkid或ls -l /dev/disk/by-uuid；同步编辑/etc/fstab。",
+          "qas": [
+            {
+              "question": "查看分区UUID的方法有哪些？",
+              "id": "5-468-49",
+              "answers": [
+                {
+                  "text": "1. blkid；2. ls -l /dev/disk/by-uuid",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置默认Python版本：用update-alternatives，添加选项sudo update-alternatives --install ...，切换sudo update-alternatives --config python。",
+          "qas": [
+            {
+              "question": "如何切换默认Python版本？",
+              "id": "5-468-50",
+              "answers": [
+                {
+                  "text": "sudo update-alternatives --config python",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
