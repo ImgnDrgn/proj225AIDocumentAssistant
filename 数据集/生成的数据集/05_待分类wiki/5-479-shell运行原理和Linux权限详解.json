@@ -1,0 +1,354 @@
+{
+  "data": [
+    {
+      "title": "shell运行原理和Linux权限详解",
+      "paragraphs": [
+        {
+          "context": "Linux的核心（kernel）不能直接被用户使用，需通过shell（命令行解释器）沟通。shell将用户命令翻译给kernel，将kernel处理结果翻译给用户。bash是具体的shell，如centos 7使用bash。",
+          "qas": [
+            {
+              "question": "用户为何不能直接使用Linux内核？",
+              "id": "5-479-1",
+              "answers": [
+                {
+                  "text": "Linux的核心（kernel）不能直接被用户使用，需通过shell（命令行解释器）沟通。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "shell的主要功能是什么？",
+              "id": "5-479-2",
+              "answers": [
+                {
+                  "text": "将用户命令翻译给kernel，将kernel处理结果翻译给用户。",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "centos 7使用的具体shell是什么？",
+              "id": "5-479-3",
+              "answers": [
+                {
+                  "text": "bash",
+                  "answer_start": 77
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "shell运行原理：做命令行解释，阻止有害命令保护系统，子进程问题不影响父进程shell。",
+          "qas": [
+            {
+              "question": "shell运行原理有哪些特点？",
+              "id": "5-479-4",
+              "answers": [
+                {
+                  "text": "做命令行解释，阻止有害命令保护系统，子进程问题不影响父进程shell。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux用户分超级用户（root，可做任何事，提示符#）和普通用户（有限操作，提示符$）。切换用户用su [用户名]，从普通到root可省用户名，需输root密码；切回普通用户推荐exit或Ctrl+d。",
+          "qas": [
+            {
+              "question": "Linux的超级用户和普通用户有何区别？",
+              "id": "5-479-5",
+              "answers": [
+                {
+                  "text": "超级用户（root）可做任何事，提示符#；普通用户有限操作，提示符$。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "切换用户的命令是什么？",
+              "id": "5-479-6",
+              "answers": [
+                {
+                  "text": "su [用户名]",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "从普通用户切换回普通用户推荐什么方式？",
+              "id": "5-479-7",
+              "answers": [
+                {
+                  "text": "exit或Ctrl+d",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件权限=人+事物属性。人分为拥有者（u）、所属组（g）、其它（o）。事物属性为r（读/4）、w（写/2）、x（执行/1），“—”表示无此权限。",
+          "qas": [
+            {
+              "question": "文件权限由什么构成？",
+              "id": "5-479-8",
+              "answers": [
+                {
+                  "text": "人+事物属性",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "文件访问者分为哪几类？",
+              "id": "5-479-9",
+              "answers": [
+                {
+                  "text": "拥有者（u）、所属组（g）、其它（o）",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "文件权限的基本属性及对应数值是什么？",
+              "id": "5-479-10",
+              "answers": [
+                {
+                  "text": "r（读/4）、w（写/2）、x（执行/1）",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件类型用ls -l第一列字符区分：d（文件夹）、-（普通文件）、l（软链接）、b（块设备文件）、p（管道文件）、c（字符设备文件）、s（套接口文件）。",
+          "qas": [
+            {
+              "question": "如何区分文件类型？",
+              "id": "5-479-11",
+              "answers": [
+                {
+                  "text": "用ls -l第一列字符区分",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "表示文件夹的文件类型字符是什么？",
+              "id": "5-479-12",
+              "answers": [
+                {
+                  "text": "d",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "软链接对应的文件类型字符是什么？",
+              "id": "5-479-13",
+              "answers": [
+                {
+                  "text": "l",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "权限更改可用chmod命令，如chmod 777 text.c、chmod u+x text.c。只有文件拥有者和root可改权限，选项-R递归修改目录权限。",
+          "qas": [
+            {
+              "question": "修改文件权限的命令是什么？",
+              "id": "5-479-14",
+              "answers": [
+                {
+                  "text": "chmod",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "谁可以修改文件权限？",
+              "id": "5-479-15",
+              "answers": [
+                {
+                  "text": "文件的拥有者和root",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "递归修改目录文件权限的chmod选项是什么？",
+              "id": "5-479-16",
+              "answers": [
+                {
+                  "text": "R",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "chown修改文件拥有者，格式chown [参数] 用户名 文件名，可同时改拥有者和所属组（如chown user:group file）。chgrp修改所属组，格式chgrp [参数] 用户组名 文件名，选项-R递归修改。",
+          "qas": [
+            {
+              "question": "修改文件拥有者的命令是什么？",
+              "id": "5-479-17",
+              "answers": [
+                {
+                  "text": "chown",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何同时修改文件的拥有者和所属组？",
+              "id": "5-479-18",
+              "answers": [
+                {
+                  "text": "使用chown命令，格式如chown user:group file",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "修改文件所属组的命令是什么？",
+              "id": "5-479-19",
+              "answers": [
+                {
+                  "text": "chgrp",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "umask查看或修改文件掩码。新建文件默认权限0666，目录0777，实际权限为默认权限减去umask。超级用户默认掩码0022，普通用户0002。",
+          "qas": [
+            {
+              "question": "umask的功能是什么？",
+              "id": "5-479-20",
+              "answers": [
+                {
+                  "text": "查看或修改文件掩码",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "新建文件和目录的默认权限分别是什么？",
+              "id": "5-479-21",
+              "answers": [
+                {
+                  "text": "新建文件默认权限0666，目录0777",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "超级用户和普通用户的默认umask值分别是多少？",
+              "id": "5-479-22",
+              "answers": [
+                {
+                  "text": "超级用户默认掩码0022，普通用户0002",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "file指令辨识文件类型，语法file [选项] 文件或目录…，选项-c详细显示执行过程，-z解读压缩文件内容。",
+          "qas": [
+            {
+              "question": "file指令的功能是什么？",
+              "id": "5-479-23",
+              "answers": [
+                {
+                  "text": "辨识文件类型",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "file指令的常用选项有哪些？",
+              "id": "5-479-24",
+              "answers": [
+                {
+                  "text": "c（详细显示指令执行过程）、z（尝试解读压缩文件的内容）",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进入目录需执行权限（x）；无读权限（r）无法用ls查看目录内容；无写权限（w）无法在目录中创建或删除文件。",
+          "qas": [
+            {
+              "question": "进入一个目录需要什么权限？",
+              "id": "5-479-25",
+              "answers": [
+                {
+                  "text": "执行权限（x）",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "目录没有读权限会导致什么后果？",
+              "id": "5-479-26",
+              "answers": [
+                {
+                  "text": "无法用ls等命令查看目录中的文件内容",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "粘滞位用chmod +t 目录名设置，仅对目录有效，限制other权限。设粘滞位后，目录中只有文件拥有者和root可删除文件，如/tmp目录常用。",
+          "qas": [
+            {
+              "question": "如何设置粘滞位？",
+              "id": "5-479-27",
+              "answers": [
+                {
+                  "text": "chmod +t 目录名",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "粘滞位的作用是什么？",
+              "id": "5-479-28",
+              "answers": [
+                {
+                  "text": "对设置粘滞位的目录，只有文件的拥有者和root用户可以删除，其他人不能删除",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "哪个目录常用粘滞位？",
+              "id": "5-479-29",
+              "answers": [
+                {
+                  "text": "/tmp",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "字符集安装",
+      "paragraphs": [
+        {
+          "context": "/usr/share/i18n/charmaps存放Linux可用字符集安装包，如GBK.gz是GBK字符集包。",
+          "qas": [
+            {
+              "question": "/usr/share/i18n/charmaps目录的作用是什么？",
+              "id": "5-484-1",
+              "answers": [
+                {
+                  "text": "存放Linux操作系统可用字符集的安装包",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "GBK字符集的安装包是什么？",
+              "id": "5-484-2",
+              "answers": [
+                {
+                  "text": "GBK.gz",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/usr/share/i18n/locales存放所有语言包对应的locale信息，如zh_CN.GBK是完整字符集，zh表语言，CN表国家，GBK表编码。",
+          "qas": [
+            {
+              "question": "/usr/share/i18n/locales目录存放什么？",
+              "id": "5-484-3",
+              "answers": [
+                {
+                  "text": "和所有语言包对应的locale信息",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "zh_CN.GBK中各部分分别代表什么？",
+              "id": "5-484-4",
+              "answers": [
+                {
+                  "text": "zh表示语言，CN表示这个语言使用的国家，GBK表示这个语言所对应的编码",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装GBK/中文字符集需切换到/usr/share/i18n/charmaps目录，解压GBK.gz，再用localedef命令安装。",
+          "qas": [
+            {
+              "question": "安装GBK/中文字符集第一步需要做什么？",
+              "id": "5-484-5",
+              "answers": [
+                {
+                  "text": "切换目录到/usr/share/i18n/charmaps",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "解压GBK字符集安装包的命令是什么？",
+              "id": "5-484-6",
+              "answers": [
+                {
+                  "text": "sudo gunzip GBK.gz",
+                  "answer_start": 55
+                }
+              ]
+            },
+            {
+              "question": "安装GBK/中文字符集的命令是什么？",
+              "id": "5-484-7",
+              "answers": [
+                {
+                  "text": "localedef -f GBK -i zh_CN /usr/lib/locale/zh_CN.GBK",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看字符集可使用locale -a命令，若结果中有zh_CN.GBK则表示安装成功。",
+          "qas": [
+            {
+              "question": "如何查看字符集？",
+              "id": "5-484-8",
+              "answers": [
+                {
+                  "text": "locale -a",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "怎样判断GBK/中文字符集安装成功？",
+              "id": "5-484-9",
+              "answers": [
+                {
+                  "text": "查看字符集的结果中存在zh_CN.GBK",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

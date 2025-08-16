@@ -1,0 +1,224 @@
+{
+  "data": [
+    {
+      "title": "使用Find和Locate命令在Linux中搜索文件",
+      "paragraphs": [
+        {
+          "context": "使用find命令按名称查找文件，语法为find -name \"query\"，区分大小写；-iname选项可忽略大小写。",
+          "qas": [
+            {
+              "question": "find命令按名称搜索文件的语法是什么？",
+              "id": "5-482-1",
+              "answers": [
+                {
+                  "text": "find -name \"query\"",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "find命令中哪个选项可忽略大小写按名称搜索文件？",
+              "id": "5-482-2",
+              "answers": [
+                {
+                  "text": "-iname",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "find命令可用!或-not反转搜索，查找不匹配关键字的文件，如find -not -name \"query_to_avoid\"、find ! -name \"query_to_avoid\"。",
+          "qas": [
+            {
+              "question": "find命令如何反转搜索，查找不匹配关键字的文件？",
+              "id": "5-482-3",
+              "answers": [
+                {
+                  "text": "使用!或-not，如find -not -name \"query_to_avoid\"、find ! -name \"query_to_avoid\"",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "find命令的-type选项可指定文件类型，如b代表块设备，f是常规文件，d为目录等。",
+          "qas": [
+            {
+              "question": "find命令中用什么选项指定文件类型？",
+              "id": "5-482-4",
+              "answers": [
+                {
+                  "text": "-type",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "find命令中块设备对应的类型选项是什么？",
+              "id": "5-482-5",
+              "answers": [
+                {
+                  "text": "b",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "find命令的-size参数按文件大小过滤，后缀c是bytes，k是kilobytes，M是megabytes等。",
+          "qas": [
+            {
+              "question": "find命令用什么参数按文件大小过滤？",
+              "id": "5-482-6",
+              "answers": [
+                {
+                  "text": "-size",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "find命令中表示兆字节的大小后缀是什么？",
+              "id": "5-482-7",
+              "answers": [
+                {
+                  "text": "M",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux文件有-atime（访问时间）、-mtime（修改时间）、-ctime（更改时间），find命令可按这些时间过滤。",
+          "qas": [
+            {
+              "question": "find命令中哪个参数对应文件最后一次被读写的时间？",
+              "id": "5-482-8",
+              "answers": [
+                {
+                  "text": "-atime",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "文件内容最后一次被修改的时间对应的find命令参数是什么？",
+              "id": "5-482-9",
+              "answers": [
+                {
+                  "text": "-mtime",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "find命令用-user和-group参数按用户或组搜索文件，-perm选项搜索指定权限的文件。",
+          "qas": [
+            {
+              "question": "find命令中按文件所有者搜索用什么参数？",
+              "id": "5-482-10",
+              "answers": [
+                {
+                  "text": "-user",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "find命令搜索指定权限的文件使用哪个选项？",
+              "id": "5-482-11",
+              "answers": [
+                {
+                  "text": "-perm",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "find命令的-exec参数可对查找结果执行命令，{}是匹配文件的占位符，;表示命令结束。",
+          "qas": [
+            {
+              "question": "find命令中用什么参数对查找结果执行命令？",
+              "id": "5-482-12",
+              "answers": [
+                {
+                  "text": "-exec",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "find命令中{}的作用是什么？",
+              "id": "5-482-13",
+              "answers": [
+                {
+                  "text": "用作查找匹配文件的占位符",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "locate命令比find快，依赖文件系统数据库，centos8中用yum安装mlocate包，updatedb命令手动更新数据库。",
+          "qas": [
+            {
+              "question": "locate命令为什么比find快？",
+              "id": "5-482-14",
+              "answers": [
+                {
+                  "text": "它依赖于列出文件系统上所有文件的数据库",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "centos8中如何安装locate相关包？",
+              "id": "5-482-15",
+              "answers": [
+                {
+                  "text": "使用yum包管理器来安装mlocate包：yum -y install mlocate",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "如何手动更新locate的数据库？",
+              "id": "5-482-16",
+              "answers": [
+                {
+                  "text": "使用updatedb命令",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "locate命令用-S选项可检索已存储信息的统计，如数据库中的目录、文件数量等。",
+          "qas": [
+            {
+              "question": "locate命令中哪个选项用于检索存储信息的统计？",
+              "id": "5-482-17",
+              "answers": [
+                {
+                  "text": "-S",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
