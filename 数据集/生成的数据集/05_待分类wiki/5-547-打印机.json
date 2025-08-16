@@ -1,0 +1,339 @@
+{
+  "data": [
+    {
+      "title": "打印机",
+      "paragraphs": [
+        {
+          "context": "深度操作系统和Debian、Ubuntu一样，使用CUPS（通用UNIX打印系统）。",
+          "qas": [
+            {
+              "question": "深度操作系统使用什么打印系统？",
+              "id": "5-547-1",
+              "answers": [
+                {
+                  "text": "CUPS（通用UNIX打印系统）",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加打印机的方式分为：1）通过搜索添加（推荐），2）通过官方驱动添加。",
+          "qas": [
+            {
+              "question": "添加打印机的方式有哪些？",
+              "id": "5-547-2",
+              "answers": [
+                {
+                  "text": "1）通过搜索添加打印机，2）通过官方驱动添加打印机",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "搜索添加打印机可通过三种方式查找：自动查找，手动查找和URI查找。",
+          "qas": [
+            {
+              "question": "搜索添加打印机时，有哪些查找方式？",
+              "id": "5-547-3",
+              "answers": [
+                {
+                  "text": "自动查找，手动查找和URI查找",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加网络打印机需确保拥有访问该网络打印机的权限。",
+          "qas": [
+            {
+              "question": "添加网络打印机时需要注意什么？",
+              "id": "5-547-4",
+              "answers": [
+                {
+                  "text": "拥有访问该网络打印机的权限",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "国产打印机若下拉列表无型号，可选择'Generic'项。",
+          "qas": [
+            {
+              "question": "国产打印机在下拉列表中没有对应型号时，可选择什么？",
+              "id": "5-547-5",
+              "answers": [
+                {
+                  "text": "Generic",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "惠普打印机驱动安装命令：sudo apt-get update && sudo apt-get install hplip hplip-gui hplip-plugin，之后输入hp-setup按提示操作。",
+          "qas": [
+            {
+              "question": "如何安装惠普打印机驱动？",
+              "id": "5-547-6",
+              "answers": [
+                {
+                  "text": "打开深度终端，输入sudo apt-get update && sudo apt-get install hplip hplip-gui hplip-plugin，接着输入hp-setup，按照提示操作",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "三星打印机驱动安装命令：sudo apt-get install samsung-print。",
+          "qas": [
+            {
+              "question": "安装三星打印机驱动的命令是什么？",
+              "id": "5-547-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get install samsung-print",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "兄弟打印机/扫描仪驱动下载地址：http://support.brother.com/g/b/productsearch.aspx?c=cn&lang=zh&content=dl。",
+          "qas": [
+            {
+              "question": "兄弟打印机/扫描仪驱动的下载地址是什么？",
+              "id": "5-547-8",
+              "answers": [
+                {
+                  "text": "http://support.brother.com/g/b/productsearch.aspx?c=cn&lang=zh&content=dl",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "兄弟打印机Driver Install Tool安装：解压.gz压缩包，在文件夹打开终端，执行chmod +x ./[文件名] && sudo ./[文件名]，按提示操作。",
+          "qas": [
+            {
+              "question": "如何使用兄弟打印机的Driver Install Tool安装驱动？",
+              "id": "5-547-9",
+              "answers": [
+                {
+                  "text": "将下载的后缀为.gz的压缩包解压，在解压的文件夹中打开终端，并执行chmod +x ./linux-brprinter-installer-2.2.2-1 && sudo ./linux-brprinter-installer-2.2.2-1（将2.2.2-1替换为下载文件名对应部分），按提示操作",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "佳能打印机驱动包包括cndrvcups-ufr2-uk，cndrvcups-ufr2lt-uk，cndrvcups-capt，可全部安装。",
+          "qas": [
+            {
+              "question": "佳能打印机有哪些驱动包？",
+              "id": "5-547-10",
+              "answers": [
+                {
+                  "text": "cndrvcups-ufr2-uk，cndrvcups-ufr2lt-uk，cndrvcups-capt",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "佳能LBP2900打印机安装驱动后需运行脚本：sudo /opt/cndrvcups-capt/addprinter.sh LBP2900 CNCUPSLBP2900CAPTK.ppd /dev/usb/lp0。",
+          "qas": [
+            {
+              "question": "佳能LBP2900打印机安装驱动后需要运行什么脚本？",
+              "id": "5-547-11",
+              "answers": [
+                {
+                  "text": "sudo /opt/cndrvcups-capt/addprinter.sh LBP2900 CNCUPSLBP2900CAPTK.ppd /dev/usb/lp0",
+                  "answer_start": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "爱普生L358墨仓式一体机驱动下载链接：http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX。",
+          "qas": [
+            {
+              "question": "爱普生L358墨仓式一体机驱动的下载链接是什么？",
+              "id": "5-547-12",
+              "answers": [
+                {
+                  "text": "http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "爱普生L358与L355驱动通用，添加时搜索不到L358可搜索L355。",
+          "qas": [
+            {
+              "question": "爱普生L358和L355的驱动有什么关系？",
+              "id": "5-547-13",
+              "answers": [
+                {
+                  "text": "L355与L358是通用的驱动",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "爱普生DEB软件包安装命令：sudo dpkg -i *.deb。",
+          "qas": [
+            {
+              "question": "安装爱普生DEB软件包的命令是什么？",
+              "id": "5-547-14",
+              "answers": [
+                {
+                  "text": "sudo dpkg -i *.deb",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "爱普生扫描仪驱动解压后，在目录执行sudo sh ./install.sh安装。",
+          "qas": [
+            {
+              "question": "如何安装爱普生扫描仪驱动？",
+              "id": "5-547-15",
+              "answers": [
+                {
+                  "text": "将扫描仪驱动压缩包解压，在解压文件的目录打开终端，执行sudo sh ./install.sh，参照提示安装",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CUPS网页端管理地址：http://localhost:631/。",
+          "qas": [
+            {
+              "question": "CUPS网页端的管理地址是什么？",
+              "id": "5-547-16",
+              "answers": [
+                {
+                  "text": "http://localhost:631/",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lpstat -r命令用于查看打印机是否正在运行。",
+          "qas": [
+            {
+              "question": "lpstat -r命令的作用是什么？",
+              "id": "5-547-17",
+              "answers": [
+                {
+                  "text": "查看打印机是否正在运行",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lpstat -d命令用于查看默认的打印机。",
+          "qas": [
+            {
+              "question": "lpstat -d命令的作用是什么？",
+              "id": "5-547-18",
+              "answers": [
+                {
+                  "text": "查看默认的打印机",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lpq命令用于检查打印文件缓冲区队列，报告作业状态。",
+          "qas": [
+            {
+              "question": "lpq命令的作用是什么？",
+              "id": "5-547-19",
+              "answers": [
+                {
+                  "text": "检查打印文件缓冲区队列，报告指定作业的状态或指定用户的所有作业",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "找不到打印机时，可到厂商官网或https://wiki.linuxfoundation.org/openprinting/start查看驱动支持。",
+          "qas": [
+            {
+              "question": "找不到打印机时，可以去哪里查看驱动支持？",
+              "id": "5-547-20",
+              "answers": [
+                {
+                  "text": "相应生产厂商的官网或https://wiki.linuxfoundation.org/openprinting/start",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "东芝e-studio357网络打印机驱动下载地址：http://business.toshiba.com/usa/support/downloads.jsp?SELCTD_MODEL=e-STUDIO357&AXN=SELCTD&site=usa。",
+          "qas": [
+            {
+              "question": "东芝e-studio357网络打印机的驱动在哪里下载？",
+              "id": "5-547-21",
+              "answers": [
+                {
+                  "text": "http://business.toshiba.com/usa/support/downloads.jsp?SELCTD_MODEL=e-STUDIO357&AXN=SELCTD&site=usa",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打印任务显示暂停，可编辑/etc/samba/smb.conf，在[global]块添加client max protocol = NT 1。",
+          "qas": [
+            {
+              "question": "打印任务显示暂停时如何解决？",
+              "id": "5-547-22",
+              "answers": [
+                {
+                  "text": "编辑/etc/samba/smb.conf文件，在全局设置[global]块下添加client max protocol = NT 1",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

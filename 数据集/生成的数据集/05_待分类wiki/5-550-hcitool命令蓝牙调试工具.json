@@ -1,0 +1,224 @@
+{
+  "data": [
+    {
+      "title": "hcitool命令:蓝牙调试工具",
+      "paragraphs": [
+        {
+          "context": "hcitool命令用于配置蓝牙连接，并向蓝牙设备发送一些特殊命令。",
+          "qas": [
+            {
+              "question": "hcitool命令的作用是什么？",
+              "id": "5-550-1",
+              "answers": [
+                {
+                  "text": "配置蓝牙连接，并向蓝牙设备发送一些特殊命令。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如果没有给定命令，或者使用了选项-h，hcitool会打印一些使用信息并退出。",
+          "qas": [
+            {
+              "question": "在什么情况下hcitool会打印使用信息并退出？",
+              "id": "5-550-2",
+              "answers": [
+                {
+                  "text": "没有给定命令，或者使用了选项-h。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "hcitool的选项有--help（显示帮助）和-i dev（指定HCI设备）。",
+          "qas": [
+            {
+              "question": "hcitool有哪些选项？",
+              "id": "5-550-3",
+              "answers": [
+                {
+                  "text": "--help（显示帮助）和-i dev（指定HCI设备）。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "哪个选项可以让hcitool显示帮助？",
+              "id": "5-550-4",
+              "answers": [
+                {
+                  "text": "--help",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "hcitool的命令包括dev（显示本地设备）、inq（查询远程设备）等。",
+          "qas": [
+            {
+              "question": "hcitool中用于显示本地设备的命令是什么？",
+              "id": "5-550-5",
+              "answers": [
+                {
+                  "text": "dev",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "inq命令的作用是什么？",
+              "id": "5-550-6",
+              "answers": [
+                {
+                  "text": "查询远程设备",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "hcitool scan命令用于扫描远程设备。",
+          "qas": [
+            {
+              "question": "哪个命令可以用于扫描远程设备？",
+              "id": "5-550-7",
+              "answers": [
+                {
+                  "text": "hcitool scan",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在终端输入hcitool dev可显示本地设备。",
+          "qas": [
+            {
+              "question": "如何显示本地设备？",
+              "id": "5-550-8",
+              "answers": [
+                {
+                  "text": "在终端输入hcitool dev",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "hcitool name命令用于获取远程设备的名称。",
+          "qas": [
+            {
+              "question": "如何获取远程设备的名称？",
+              "id": "5-550-9",
+              "answers": [
+                {
+                  "text": "使用hcitool name命令",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "hcitool info命令可获取远程设备的信息。",
+          "qas": [
+            {
+              "question": "哪个命令可以获取远程设备的信息？",
+              "id": "5-550-10",
+              "answers": [
+                {
+                  "text": "hcitool info",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "hcitool con命令用于显示活跃连接。",
+          "qas": [
+            {
+              "question": "显示活跃连接使用哪个命令？",
+              "id": "5-550-11",
+              "answers": [
+                {
+                  "text": "hcitool con",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "hcitool cc命令用于创建与远程设备的连接。",
+          "qas": [
+            {
+              "question": "如何创建与远程设备的连接？",
+              "id": "5-550-12",
+              "answers": [
+                {
+                  "text": "使用hcitool cc命令",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "hcitool dc命令用于断开与远程设备的连接。",
+          "qas": [
+            {
+              "question": "断开与远程设备的连接使用什么命令？",
+              "id": "5-550-13",
+              "answers": [
+                {
+                  "text": "hcitool dc",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "hcitool lescan命令用于开始LE扫描。",
+          "qas": [
+            {
+              "question": "开始LE扫描使用哪个命令？",
+              "id": "5-550-14",
+              "answers": [
+                {
+                  "text": "hcitool lescan",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "hcitool leinfo命令用于获取LE远程信息。",
+          "qas": [
+            {
+              "question": "获取LE远程信息用什么命令？",
+              "id": "5-550-15",
+              "answers": [
+                {
+                  "text": "hcitool leinfo",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

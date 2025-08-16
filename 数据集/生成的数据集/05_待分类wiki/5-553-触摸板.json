@@ -1,0 +1,204 @@
+{
+  "data": [
+    {
+      "title": "触摸板",
+      "paragraphs": [
+        {
+          "context": "触摸板（TouchPad 或 TrackPad），是一种广泛应用于笔记本电脑上的输入设备。其利用用户手指的移动来控制指针的动作。",
+          "qas": [
+            {
+              "question": "触摸板是什么？",
+              "id": "5-553-1",
+              "answers": [
+                {
+                  "text": "一种广泛应用于笔记本电脑上的输入设备。其利用用户手指的移动来控制指针的动作。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置-鼠标-插入鼠标时禁用触摸板",
+          "qas": [
+            {
+              "question": "如何设置插入鼠标时禁用触摸板？",
+              "id": "5-553-2",
+              "answers": [
+                {
+                  "text": "设置-鼠标-插入鼠标时禁用触摸板",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo modprobe psmouse  ##启用触摸板；sudo rmmod psmouse     ##禁用触摸板",
+          "qas": [
+            {
+              "question": "终端中如何启用触摸板？",
+              "id": "5-553-3",
+              "answers": [
+                {
+                  "text": "sudo modprobe psmouse",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "终端中如何禁用触摸板？",
+              "id": "5-553-4",
+              "answers": [
+                {
+                  "text": "sudo rmmod psmouse",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "synclient TouchpadOff=1    ##禁用触摸板；synclient TouchpadOff=0    ##恢复触摸板（适用于ThinkPad之类含有摇杆的机型，可仅禁用触摸板而保留摇杆）",
+          "qas": [
+            {
+              "question": "对于ThinkPad之类含摇杆的机型，如何禁用触摸板？",
+              "id": "5-553-5",
+              "answers": [
+                {
+                  "text": "synclient TouchpadOff=1",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "对于ThinkPad之类含摇杆的机型，如何恢复触摸板？",
+              "id": "5-553-6",
+              "answers": [
+                {
+                  "text": "synclient TouchpadOff=0",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置-鼠标-自然滚动",
+          "qas": [
+            {
+              "question": "如何通过设置开启自然滚动？",
+              "id": "5-553-7",
+              "answers": [
+                {
+                  "text": "设置-鼠标-自然滚动",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "交换滚动方向的信号，编辑家目录下的.Xmodmap文件（终端执行gedit ~/.Xmodmap），添加或修改内容为pointer = 1 2 3 5 4 7 6 8 9 10 11 12，注销再登录生效（适用于synaptics触摸板，会同时设置鼠标自然滚动）",
+          "qas": [
+            {
+              "question": "如何通过修改文件设置自然滚动（适用于synaptics触摸板）？",
+              "id": "5-553-8",
+              "answers": [
+                {
+                  "text": "终端执行gedit ~/.Xmodmap，添加或修改内容为pointer = 1 2 3 5 4 7 6 8 9 10 11 12，注销再登录生效。",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在xf86-input-libinput驱动下，双指垂直滚动与边缘滚动只能二选一，谁后设置的谁生效；在xf86-input-synaptics下两者可以同时开启。",
+          "qas": [
+            {
+              "question": "在xf86-input-libinput驱动下，双指垂直滚动与边缘滚动能否同时开启？",
+              "id": "5-553-9",
+              "answers": [
+                {
+                  "text": "不能，只能二选一，谁后设置的谁生效。",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "在xf86-input-synaptics驱动下，双指垂直滚动与边缘滚动能否同时开启？",
+              "id": "5-553-10",
+              "answers": [
+                {
+                  "text": "可以同时开启。",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "gsettings set com.deepin.dde.touchpad edge-scroll-enabled  true ## 开启边缘滚动",
+          "qas": [
+            {
+              "question": "如何开启边缘滚动？",
+              "id": "5-553-11",
+              "answers": [
+                {
+                  "text": "gsettings set com.deepin.dde.touchpad edge-scroll-enabled  true",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "gsettings set com.deepin.dde.touchpad vert-scroll-enabled  true ## 开启双指垂直滚动",
+          "qas": [
+            {
+              "question": "如何开启双指垂直滚动？",
+              "id": "5-553-12",
+              "answers": [
+                {
+                  "text": "gsettings set com.deepin.dde.touchpad vert-scroll-enabled  true",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "gsettings set com.deepin.dde.touchpad horiz-scroll-enabled true ## 开启双指水平滚动",
+          "qas": [
+            {
+              "question": "如何开启双指水平滚动？",
+              "id": "5-553-13",
+              "answers": [
+                {
+                  "text": "gsettings set com.deepin.dde.touchpad horiz-scroll-enabled true",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "部分acer等机型的笔记本无法使用触摸板，进入主板设置，查找touchpad项目，将它的状态由“Advance”改为“Basic”。",
+          "qas": [
+            {
+              "question": "部分acer等机型笔记本无法使用触摸板怎么办？",
+              "id": "5-553-14",
+              "answers": [
+                {
+                  "text": "进入主板设置，查找touchpad项目，将它的状态由“Advance”改为“Basic”。",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

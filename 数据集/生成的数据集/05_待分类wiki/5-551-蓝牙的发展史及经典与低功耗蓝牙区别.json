@@ -1,0 +1,329 @@
+{
+  "data": [
+    {
+      "title": "蓝牙的发展史及经典与低功耗蓝牙区别",
+      "paragraphs": [
+        {
+          "context": "蓝牙技术是爱立信于1994年研发的，目的是淘汰传统串口数据线，1997年由英特尔工程师命名为Bluetooth。",
+          "qas": [
+            {
+              "question": "蓝牙技术是哪家公司研发的？",
+              "id": "5-551-1",
+              "answers": [
+                {
+                  "text": "爱立信",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "蓝牙技术研发的主要目的是什么？",
+              "id": "5-551-2",
+              "answers": [
+                {
+                  "text": "淘汰掉传统的串口数据线（RS-232接口）为旗下产品提供更好的信息传输方式",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "蓝牙一词是何时由谁提出的？",
+              "id": "5-551-3",
+              "answers": [
+                {
+                  "text": "1997年，英特尔的一名工程师",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "2001年索尼爱立信T39mc成为第一款内置蓝牙的手机，2002年蓝牙1.1版正式推出，1.2版增加抗干扰跳频功能。",
+          "qas": [
+            {
+              "question": "第一款内置蓝牙的手机是什么？",
+              "id": "5-551-4",
+              "answers": [
+                {
+                  "text": "索尼爱立信T39mc",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "蓝牙1.2版新增了什么功能？",
+              "id": "5-551-5",
+              "answers": [
+                {
+                  "text": "抗干扰跳频功能",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "蓝牙2.0版新增EDR技术，传输率最高可达3Mbps，2012年苹果MacOSX v10.2、微软Windows XP SP2/3等开始支持。",
+          "qas": [
+            {
+              "question": "蓝牙2.0版新增了什么技术？",
+              "id": "5-551-6",
+              "answers": [
+                {
+                  "text": "EDR技术",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "蓝牙2.0版的最高传输率是多少？",
+              "id": "5-551-7",
+              "answers": [
+                {
+                  "text": "3Mbps",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "蓝牙3.0版最高传输速度24Mbps，可满足视频传输，2009年高速发展，但存在功耗过高问题。",
+          "qas": [
+            {
+              "question": "蓝牙3.0版的最高传输速度是多少？",
+              "id": "5-551-8",
+              "answers": [
+                {
+                  "text": "24Mbps",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "蓝牙3.0版的主要问题是什么？",
+              "id": "5-551-9",
+              "answers": [
+                {
+                  "text": "功耗过高",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "2012年蓝牙4.0版发布，大幅降低功耗，提升抗干扰性、连接速度和距离，最远100m，4.1、4.2版增强安全性。",
+          "qas": [
+            {
+              "question": "蓝牙4.0版发布于哪一年？",
+              "id": "5-551-10",
+              "answers": [
+                {
+                  "text": "2012年",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "蓝牙4.0版数据传输最远距离是多少？",
+              "id": "5-551-11",
+              "answers": [
+                {
+                  "text": "100m",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "2016年蓝牙5.0版推出，定位精度1米以内，传输速度比4.2版更快，有效工作距离300米，苹果8以上手机使用。",
+          "qas": [
+            {
+              "question": "蓝牙5.0版的定位精度是多少？",
+              "id": "5-551-12",
+              "answers": [
+                {
+                  "text": "1米以内",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "蓝牙5.0版的有效工作距离是多少？",
+              "id": "5-551-13",
+              "answers": [
+                {
+                  "text": "300米",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "2010年前只有经典蓝牙，1.0/2.0/2.1/3.0均为经典蓝牙，包含BR、EDR和HS(AMP)模式。",
+          "qas": [
+            {
+              "question": "2010年之前的蓝牙技术属于什么类型？",
+              "id": "5-551-14",
+              "answers": [
+                {
+                  "text": "经典蓝牙",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "经典蓝牙包括哪些模式？",
+              "id": "5-551-15",
+              "answers": [
+                {
+                  "text": "BR，EDR和HS(AMP)三种模式",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "2010年SIG合并Wibree联盟，将其低功耗技术命名为低功耗蓝牙（BLE），蓝牙4.0规格同时包含经典和低功耗蓝牙。",
+          "qas": [
+            {
+              "question": "低功耗蓝牙（BLE）源自哪个联盟的技术？",
+              "id": "5-551-16",
+              "answers": [
+                {
+                  "text": "Wibree联盟",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "从哪个蓝牙版本开始同时包含经典蓝牙和低功耗蓝牙？",
+              "id": "5-551-17",
+              "answers": [
+                {
+                  "text": "蓝牙4.0",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SIG在蓝牙4.0规格中定义BR、EDR、AMP和LE四种controller技术，人们将BR/EDR/AMP称为经典蓝牙技术。",
+          "qas": [
+            {
+              "question": "蓝牙4.0规格中定义了哪几种controller技术？",
+              "id": "5-551-18",
+              "answers": [
+                {
+                  "text": "BR，EDR，AMP和LE",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "经典蓝牙技术指的是哪些？",
+              "id": "5-551-19",
+              "answers": [
+                {
+                  "text": "BR/EDR/AMP技术",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SIG曾称低功耗蓝牙为Bluetooth Smart，经典蓝牙为Bluetooth，双模为Bluetooth Smart Ready，后统一用Bluetooth品牌。",
+          "qas": [
+            {
+              "question": "SIG曾用什么名称指代低功耗蓝牙？",
+              "id": "5-551-20",
+              "answers": [
+                {
+                  "text": "Bluetooth Smart",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "双模蓝牙曾被称为什么？",
+              "id": "5-551-21",
+              "answers": [
+                {
+                  "text": "Bluetooth Smart Ready",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "蓝牙4.1/4.2/5.0均包含低功耗和经典蓝牙，经典蓝牙用于音频传输等，低功耗用于可穿戴设备等，两者不能直接通信。",
+          "qas": [
+            {
+              "question": "蓝牙4.1及以上版本包含哪些类型的蓝牙技术？",
+              "id": "5-551-22",
+              "answers": [
+                {
+                  "text": "低功耗蓝牙和经典蓝牙",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "经典蓝牙主要应用在哪些场合？",
+              "id": "5-551-23",
+              "answers": [
+                {
+                  "text": "蓝牙电话接听，蓝牙耳机，蓝牙音箱等场合",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "低功耗蓝牙和经典蓝牙设备能直接通信吗？",
+              "id": "5-551-24",
+              "answers": [
+                {
+                  "text": "不能",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "双模蓝牙设备同时支持低功耗和经典蓝牙，如手机、电脑等，通过分时机制切换模式实现与两类设备通信。",
+          "qas": [
+            {
+              "question": "什么是双模蓝牙设备？",
+              "id": "5-551-25",
+              "answers": [
+                {
+                  "text": "同时支持低功耗蓝牙和经典蓝牙的设备",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "双模蓝牙设备如何实现与两类蓝牙设备通信？",
+              "id": "5-551-26",
+              "answers": [
+                {
+                  "text": "通过分时机制，让双模蓝牙芯片不断地在低功耗蓝牙模式和经典蓝牙模式之间进行切换",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
