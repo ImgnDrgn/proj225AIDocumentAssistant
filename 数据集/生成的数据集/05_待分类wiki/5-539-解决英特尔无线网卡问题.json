@@ -1,0 +1,264 @@
+{
+  "data": [
+    {
+      "title": "解决英特尔无线网卡问题",
+      "paragraphs": [
+        {
+          "context": "确认是否为英特尔无线网卡，可在设备管理器查看，或用命令lspci | grep -i wireless，输出带Intel字样则适用。",
+          "qas": [
+            {
+              "question": "如何确认自己的无线网卡是否为英特尔的？",
+              "id": "5-539-1",
+              "answers": [
+                {
+                  "text": "可在设备管理器查看，或用命令lspci | grep -i wireless，输出带Intel字样则为英特尔无线网卡。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/etc/modprobe.d/iwlwifi.conf保存英特尔无线网卡参数，不同网卡需不同参数以达最佳状态。",
+          "qas": [
+            {
+              "question": "/etc/modprobe.d/iwlwifi.conf文件的作用是什么？",
+              "id": "5-539-2",
+              "answers": [
+                {
+                  "text": "保存英特尔无线网卡的参数，不同网卡需要设置不同参数以达到最佳工作状态。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iwlwifi.conf开头为options iwlwifi，后接参数，格式为名称=值，空格分隔，未给出参数为默认值。",
+          "qas": [
+            {
+              "question": "iwlwifi.conf文件的结构是怎样的？",
+              "id": "5-539-3",
+              "answers": [
+                {
+                  "text": "开头是固定的options iwlwifi，后面接一系列可选参数，参数格式为名称=值，由空格分隔，未给出的参数为默认值。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "11n_disable是WiFi4功能开关，0完全启用，1完全禁用（网速慢），2禁用发送链路聚合等，建议0或8。",
+          "qas": [
+            {
+              "question": "11n_disable参数的作用是什么？建议值是多少？",
+              "id": "5-539-4",
+              "answers": [
+                {
+                  "text": "是WiFi4功能开关，建议值0（完全启用WiFi4功能）或8（强制启用发送链路聚合）。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "bt_coex_active是蓝牙/WiFi共存开关，1允许同时开启，0不允许，默认1，建议1，若蓝牙影响WiFi可设0。",
+          "qas": [
+            {
+              "question": "bt_coex_active参数的作用是什么？默认值是多少？",
+              "id": "5-539-5",
+              "answers": [
+                {
+                  "text": "是蓝牙/WiFi共存开关，默认值1（允许同时开启）。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "power_save是WiFi省电模式开关，1启用，0禁用，默认0，建议0。",
+          "qas": [
+            {
+              "question": "power_save参数的作用是什么？建议值是多少？",
+              "id": "5-539-6",
+              "answers": [
+                {
+                  "text": "是WiFi省电模式开关，建议值0（禁用省电模式）。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "swcrypto是加密方式开关，1软件加密，0硬件加密，默认0，建议0，若断网设1。",
+          "qas": [
+            {
+              "question": "swcrypto参数的作用是什么？默认值是多少？",
+              "id": "5-539-7",
+              "answers": [
+                {
+                  "text": "是加密方式开关，1使用软件加密，0使用硬件加密，默认值0（硬件加密）。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "disable_11ac是WiFi5功能开关，0启用，1禁用，默认0，建议0，不支持5GHz无需关注。",
+          "qas": [
+            {
+              "question": "disable_11ac参数的作用是什么？",
+              "id": "5-539-8",
+              "answers": [
+                {
+                  "text": "是802.11ac（WiFi5）功能开关，0启用WiFi5，1禁用WiFi5。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "disable_11ax是WiFi6功能开关，0启用，1禁用，默认0，建议0，不支持WiFi6无需关注。",
+          "qas": [
+            {
+              "question": "disable_11ax参数的作用是什么？",
+              "id": "5-539-9",
+              "answers": [
+                {
+                  "text": "是802.11ax（WiFi6）功能开关，0启用WiFi6，1禁用WiFi6。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UOS默认配置11n_disable=1（禁用WiFi4）、bt_coex_active=0（蓝牙WiFi不能共存）、swcrypto=1（软件加密），导致网速慢等问题。",
+          "qas": [
+            {
+              "question": "UOS中iwlwifi.conf的默认配置有什么问题？",
+              "id": "5-539-10",
+              "answers": [
+                {
+                  "text": "11n_disable=1禁用了WiFi4导致网速慢，bt_coex_active=0使蓝牙和WiFi不能同时开启，swcrypto=1使用软件加密可能让WiFi变慢。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更合理的iwlwifi.conf配置为options iwlwifi 11n_disable=0 bt_coex_active=1 power_save=0 swcrypto=0，启用WiFi4、允许共存、关闭省电、硬件加密。",
+          "qas": [
+            {
+              "question": "更合理的iwlwifi.conf配置是什么？",
+              "id": "5-539-11",
+              "answers": [
+                {
+                  "text": "options iwlwifi 11n_disable=0 bt_coex_active=1 power_save=0 swcrypto=0",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改iwlwifi.conf为合理设置的命令：sudo echo 'options iwlwifi 11n_disable=0 bt_coex_active=1 power_save=0 swcrypto=0' | sudo tee /etc/modprobe.d/iwlwifi.conf。",
+          "qas": [
+            {
+              "question": "如何修改iwlwifi.conf文件为更合理的设置？",
+              "id": "5-539-12",
+              "answers": [
+                {
+                  "text": "执行命令：sudo echo 'options iwlwifi 11n_disable=0 bt_coex_active=1 power_save=0 swcrypto=0' | sudo tee /etc/modprobe.d/iwlwifi.conf。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Debian、Ubuntu等系统更新initramfs使配置生效的命令：sudo update-initramfs -k all -u。",
+          "qas": [
+            {
+              "question": "Debian、Ubuntu系统中，如何更新initramfs使配置生效？",
+              "id": "5-539-13",
+              "answers": [
+                {
+                  "text": "执行命令：sudo update-initramfs -k all -u。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Fedora系统更新initramfs使配置生效的命令：sudo dracut --force --no-hostonly。",
+          "qas": [
+            {
+              "question": "Fedora系统中，如何更新initramfs使配置生效？",
+              "id": "5-539-14",
+              "answers": [
+                {
+                  "text": "执行命令：sudo dracut --force --no-hostonly。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Archlinux系统更新initramfs使配置生效的命令：sudo mkinitcpio -P。",
+          "qas": [
+            {
+              "question": "Archlinux系统中，如何更新initramfs使配置生效？",
+              "id": "5-539-15",
+              "answers": [
+                {
+                  "text": "执行命令：sudo mkinitcpio -P。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改iwlwifi.conf后需执行更新initramfs命令并重启，否则可能不生效。",
+          "qas": [
+            {
+              "question": "修改iwlwifi.conf后，如何确保配置生效？",
+              "id": "5-539-16",
+              "answers": [
+                {
+                  "text": "执行更新initramfs命令并重启。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若重启后无线网卡连不上WiFi，可调整参数，如11n_disable=8，或bt_coex_active=0、swcrypto=1等。",
+          "qas": [
+            {
+              "question": "若修改配置后无线网卡连不上WiFi，该怎么办？",
+              "id": "5-539-17",
+              "answers": [
+                {
+                  "text": "调整参数，如11n_disable=8，或bt_coex_active=0、swcrypto=1等。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

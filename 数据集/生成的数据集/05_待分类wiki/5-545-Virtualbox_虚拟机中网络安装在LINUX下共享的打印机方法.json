@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Virtualbox_虚拟机中网络安装在LINUX下共享的打印机方法",
+      "paragraphs": [
+        {
+          "context": "默认情况下DEEPIN已安装CUPS，未安装的可通过新立得或命令sudo apt-get install cups安装。",
+          "qas": [
+            {
+              "question": "DEEPIN系统中如何安装CUPS？",
+              "id": "5-545-1",
+              "answers": [
+                {
+                  "text": "默认已安装，未安装的用新立得或命令sudo apt-get install cups",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置共享可通过网页打开https://主机IP:631/admin，勾选Share printers connected to this system和Allow printing from the Internet；或打开打印机设置，点击服务器——设置勾选相关选项，且打印机右键共享需勾选。",
+          "qas": [
+            {
+              "question": "如何通过网页配置打印机共享？",
+              "id": "5-545-2",
+              "answers": [
+                {
+                  "text": "用网页打开https://主机IP:631/admin，勾选Share printers connected to this system和Allow printing from the Internet",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "通过打印机设置配置共享需要做什么？",
+              "id": "5-545-3",
+              "answers": [
+                {
+                  "text": "打开打印机设置，点击服务器——设置勾选相关选项，且打印机右键的共享也要勾选",
+                  "answer_start": 117
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "虚拟机网络需设为桥接网卡，在虚拟机中输入http://主机IP:631/printers，选择要连接的打印机获取网络地址。",
+          "qas": [
+            {
+              "question": "虚拟机的网络需要如何设置？",
+              "id": "5-545-4",
+              "answers": [
+                {
+                  "text": "设置成桥接网卡",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "在虚拟机中如何获取打印机的网络地址？",
+              "id": "5-545-5",
+              "answers": [
+                {
+                  "text": "输入http://主机IP:631/printers，选择要连接的打印机",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加打印机需在控制面板打开设备和打印机，点击添加打印机，选添加网络打印机，点击“我需要的打印机不在列表中”，按名称选择并输入网络地址，安装驱动。",
+          "qas": [
+            {
+              "question": "如何添加网络打印机？",
+              "id": "5-545-6",
+              "answers": [
+                {
+                  "text": "在控制面板打开设备和打印机，点击添加打印机，选添加网络打印机，点击“我需要的打印机不在列表中”，按名称选择并输入网络地址，安装驱动",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "添加打印机时若没有合适的驱动该怎么办？",
+              "id": "5-545-7",
+              "answers": [
+                {
+                  "text": "自己官网下载驱动",
+                  "answer_start": 175
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

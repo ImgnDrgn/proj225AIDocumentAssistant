@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "光驱",
+      "paragraphs": [
+        {
+          "context": "光盘驱动器，电脑用来读写光盘内容的机器。",
+          "qas": [
+            {
+              "question": "什么是光盘驱动器？",
+              "id": "5-537-1",
+              "answers": [
+                {
+                  "text": "电脑用来读写光盘内容的机器。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "只读光盘驱动器包括CD-ROM、DVD-ROM。",
+          "qas": [
+            {
+              "question": "哪些只读光盘驱动器有哪些类型？",
+              "id": "5-537-2",
+              "answers": [
+                {
+                  "text": "CD-ROM、DVD-ROM",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Combo驱动器有读CD、DVD，写CD功能，有单激光头和双激光头类型。",
+          "qas": [
+            {
+              "question": "Combo驱动器有什么功能？",
+              "id": "5-537-3",
+              "answers": [
+                {
+                  "text": "有读CD、DVD，写CD功能。",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "Combo驱动器有哪些类型的激光头？",
+              "id": "5-537-4",
+              "answers": [
+                {
+                  "text": "单激光头和双激光头。",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "可读写光盘驱动器包括CD-RW、DVD-RW、DVD+RW、DVD±RW(DVD-Dual)、DVD-RAM、DVD-Super Multi。",
+          "qas": [
+            {
+              "question": "可读写光盘驱动器有哪些类型？",
+              "id": "5-537-5",
+              "answers": [
+                {
+                  "text": "CD-RW、DVD-RW、DVD+RW、DVD±RW(DVD-Dual)、DVD-RAM、DVD-Super Multi",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "电子游戏机专用驱动器有PlayStation2、GAMECUBE、DreamCast、XBOX。",
+          "qas": [
+            {
+              "question": "哪些电子游戏机有专用驱动器？",
+              "id": "5-537-6",
+              "answers": [
+                {
+                  "text": "PlayStation2、GAMECUBE、DreamCast、XBOX",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查询光驱信息可在终端执行cat /proc/ide/hdc/model。",
+          "qas": [
+            {
+              "question": "如何在终端查询光驱信息？",
+              "id": "5-537-7",
+              "answers": [
+                {
+                  "text": "执行cat /proc/ide/hdc/model",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
