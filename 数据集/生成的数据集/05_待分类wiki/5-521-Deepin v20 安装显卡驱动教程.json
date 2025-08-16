@@ -1,0 +1,244 @@
+{
+  "data": [
+    {
+      "title": "Deepin v20 安装显卡驱动教程",
+      "paragraphs": [
+        {
+          "context": "本教程不适用于ARM64和龙芯机器，仅限x86 CPU（英特尔、AMD、兆芯、海光）。",
+          "qas": [
+            {
+              "question": "本教程适用于哪些CPU的机器？",
+              "id": "5-521-1",
+              "answers": [
+                {
+                  "text": "x86 CPU（英特尔、AMD、兆芯、海光）",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "哪些机器不适用本教程？",
+              "id": "5-521-2",
+              "answers": [
+                {
+                  "text": "ARM64和龙芯机器，以及使用鲲鹏、飞腾、麒麟等CPU的机器",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开Wine游戏助手，点右上角三个点，选“首选项”，“硬件信息”，看是否有“Vulkan: Supported”，有则驱动装好。",
+          "qas": [
+            {
+              "question": "如何测试显卡驱动是否安装成功？",
+              "id": "5-521-3",
+              "answers": [
+                {
+                  "text": "打开Wine游戏助手，点右上角三个点，选“首选项”，“硬件信息”，查看是否有“Vulkan: Supported”",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UOS需在“控制中心”>“通用”打开开发者模式，激活方式有在线和离线，离线可从chinauos.com/developMode获取文件。",
+          "qas": [
+            {
+              "question": "UOS安装显卡驱动前需要开启什么模式？如何开启？",
+              "id": "5-521-4",
+              "answers": [
+                {
+                  "text": "开发者模式，在“控制中心”>“通用”里打开，激活方式有在线和离线，离线可从chinauos.com/developMode获取文件",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "A卡、AMD核显、英特尔核显可通过命令安装mesa驱动：sudo apt update；sudo apt upgrade；sudo apt install libgl1-mesa-dri libgl1-mesa-dri:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 libvulkan1:i386 'vulkan-utils|vulkan-tools'。",
+          "qas": [
+            {
+              "question": "A卡、AMD核显、英特尔核显如何安装显卡驱动？",
+              "id": "5-521-5",
+              "answers": [
+                {
+                  "text": "通过命令安装mesa驱动：sudo apt update；sudo apt upgrade；sudo apt install libgl1-mesa-dri libgl1-mesa-dri:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386 libvulkan1 libvulkan1:i386 'vulkan-utils|vulkan-tools'",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NAVI架构显卡（如5700XT）需更新Linux amdgpu固件映像：安装git和make；克隆清华源linux-firmware.git；进入目录安装；更新启动文件。",
+          "qas": [
+            {
+              "question": "NAVI架构显卡（如5700XT）安装驱动后还需做什么？",
+              "id": "5-521-6",
+              "answers": [
+                {
+                  "text": "更新Linux amdgpu固件映像：安装git和make；克隆清华源linux-firmware.git；进入目录安装；更新启动文件",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "N卡等安装驱动前先执行：sudo dpkg --add-architecture i386；sudo apt update。",
+          "qas": [
+            {
+              "question": "安装N卡驱动前，需先执行哪些命令？",
+              "id": "5-521-7",
+              "answers": [
+                {
+                  "text": "sudo dpkg --add-architecture i386；sudo apt update",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "从UOS/Deepin官方源安装N卡驱动命令：sudo apt install libgl1-mesa-dri libgl1-mesa-dri:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386 nvidia-driver nvidia-smi...；并更新启动文件。",
+          "qas": [
+            {
+              "question": "如何从UOS/Deepin官方软件源安装N卡驱动？",
+              "id": "5-521-8",
+              "answers": [
+                {
+                  "text": "执行命令：sudo apt install libgl1-mesa-dri libgl1-mesa-dri:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386 nvidia-driver nvidia-smi...；并更新启动文件",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "双显卡笔记本可选安装mgpu-prime：wget https://file.winegame.net/packages/deepin/mgpu/mgpu-prime_0.2.0_amd64.deb；sudo apt install ./mgpu-prime_0.2.0_amd64.deb。",
+          "qas": [
+            {
+              "question": "双显卡笔记本中，如何强制开启独显？",
+              "id": "5-521-9",
+              "answers": [
+                {
+                  "text": "可选安装mgpu-prime：wget https://file.winegame.net/packages/deepin/mgpu/mgpu-prime_0.2.0_amd64.deb；sudo apt install ./mgpu-prime_0.2.0_amd64.deb",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "笔记本可能需打开“Nvidia Prime渲染卸载”，在“Vulkan ICD 加载器”选“NVIDIA ICD”。",
+          "qas": [
+            {
+              "question": "笔记本安装N卡驱动后，某些游戏打不开该怎么办？",
+              "id": "5-521-10",
+              "answers": [
+                {
+                  "text": "打开“Nvidia Prime渲染卸载”选项，在“Vulkan ICD 加载器”那里选择“NVIDIA ICD”",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过.run文件安装驱动后缺Vulkan库，可执行：sudo apt update；sudo apt upgrade；sudo apt install libvulkan1 libvulkan1:i386 'vulkan-utils|vulkan-tools'。",
+          "qas": [
+            {
+              "question": "通过英伟达官网.run文件安装驱动后，出现缺少Vulkan库提示如何解决？",
+              "id": "5-521-11",
+              "answers": [
+                {
+                  "text": "执行命令：sudo apt update；sudo apt upgrade；sudo apt install libvulkan1 libvulkan1:i386 'vulkan-utils|vulkan-tools'",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装N卡驱动后不能调整亮度，可参考相关教程。",
+          "qas": [
+            {
+              "question": "安装N卡驱动后不能调整亮度怎么办？",
+              "id": "5-521-12",
+              "answers": [
+                {
+                  "text": "参考相关教程",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mgpu-prime仅支持lightdm显示管理器，不支持gdm。",
+          "qas": [
+            {
+              "question": "mgpu-prime软件包支持哪些显示管理器？",
+              "id": "5-521-13",
+              "answers": [
+                {
+                  "text": "仅支持lightdm显示管理器，不支持gdm",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mgpu-prime不支持Wayland会话，需用X11，判断命令：echo $XDG_SESSION_TYPE。",
+          "qas": [
+            {
+              "question": "如何判断当前会话类型？mgpu-prime支持哪种会话类型？",
+              "id": "5-521-14",
+              "answers": [
+                {
+                  "text": "判断命令：echo $XDG_SESSION_TYPE；mgpu-prime不支持Wayland会话，需用X11",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "方法3是从中风险的Debian反向移植软件源安装最新N卡驱动，详见相关帖子。",
+          "qas": [
+            {
+              "question": "安装最新N卡驱动的中风险方法是什么？",
+              "id": "5-521-15",
+              "answers": [
+                {
+                  "text": "从Debian反向移植软件源安装，详见相关帖子",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "方法4是通过英伟达官网.run文件安装N卡驱动，不推荐，因复杂且易导致无法进入桌面。",
+          "qas": [
+            {
+              "question": "不推荐的N卡驱动安装方法是什么？为什么不推荐？",
+              "id": "5-521-16",
+              "answers": [
+                {
+                  "text": "通过英伟达官网的.run文件安装；因为这种方法安装很复杂，而且一旦失败，电脑可能完全无法进入桌面",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

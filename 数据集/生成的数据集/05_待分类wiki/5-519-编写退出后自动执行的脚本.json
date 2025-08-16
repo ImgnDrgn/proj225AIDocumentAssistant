@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "title": "编写退出后自动执行的脚本",
+      "paragraphs": [
+        {
+          "context": "退出登录时，bash自动执行个人的退出登录脚本/.bash_logout。",
+          "qas": [
+            {
+              "question": "退出登录时，bash会自动执行哪个个人脚本？",
+              "id": "5-519-1",
+              "answers": [
+                {
+                  "text": "/.bash_logout",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在/.bash_logout中加入命令可实现退出登录时自动执行该命令，例如加入“tar －cvzf c.source.tgz ＊.c”可备份＊.c文件。",
+          "qas": [
+            {
+              "question": "如何让退出登录时自动执行某个命令？",
+              "id": "5-519-2",
+              "answers": [
+                {
+                  "text": "在/.bash_logout中加入该命令。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "在/.bash_logout中加入“tar －cvzf c.source.tgz ＊.c”命令的作用是什么？",
+              "id": "5-519-3",
+              "answers": [
+                {
+                  "text": "备份＊.c文件。",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
