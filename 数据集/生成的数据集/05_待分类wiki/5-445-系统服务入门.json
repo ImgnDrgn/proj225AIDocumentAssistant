@@ -1,0 +1,289 @@
+{
+  "data": [
+    {
+      "title": "系统服务入门",
+      "paragraphs": [
+        {
+          "context": "系统提供的服务（service）需通过程序运行，该程序称为daemon，二者可视为相同，无daemon则无service。",
+          "qas": [
+            {
+              "question": "daemon与service的关系是什么？",
+              "id": "5-445-1",
+              "answers": [
+                {
+                  "text": "系统提供的服务（service）需通过程序运行，该程序称为daemon，二者可视为相同，无daemon则无service。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "按启动与管理方式，daemon分两类：stand alone可独立启动，常驻内存，响应快，如httpd、vsftpd；super daemon统一管理，无请求时服务未启动，有请求才唤醒，如xinetd管理telnet。",
+          "qas": [
+            {
+              "question": "daemon按启动与管理方式分为哪两类？",
+              "id": "5-445-2",
+              "answers": [
+                {
+                  "text": "stand alone和super daemon",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "stand alone类型的daemon有什么特点？",
+              "id": "5-445-3",
+              "answers": [
+                {
+                  "text": "可独立启动，常驻内存，响应快，如httpd、vsftpd",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "super daemon管理的服务机制优点：有安全控管功能，服务不常驻内存节省资源；缺点：客户端请求时唤醒服务，响应较慢。",
+          "qas": [
+            {
+              "question": "super daemon管理服务的优点是什么？",
+              "id": "5-445-4",
+              "answers": [
+                {
+                  "text": "有安全控管功能，服务不常驻内存节省资源",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "super daemon管理服务的缺点是什么？",
+              "id": "5-445-5",
+              "answers": [
+                {
+                  "text": "客户端请求时唤醒服务，响应较慢",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "super daemon处理模式分两种：multi-threaded（多重线程）可同时处理多个客户端请求；single-threaded（单个线程）需排队处理，一个完成再处理下一个。",
+          "qas": [
+            {
+              "question": "super daemon的处理模式有哪两种？",
+              "id": "5-445-6",
+              "answers": [
+                {
+                  "text": "multi-threaded（多重线程）和single-threaded（单个线程）",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "multi-threaded处理模式的特点是什么？",
+              "id": "5-445-7",
+              "answers": [
+                {
+                  "text": "可同时处理多个客户端请求",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "按工作状态，daemon分signal-control（受讯号管理，有客户端需求立即启动，如cupsd）和interval-control（每隔一段时间主动运行，如atd、crond）。",
+          "qas": [
+            {
+              "question": "按工作状态，daemon分为哪两类？",
+              "id": "5-445-8",
+              "answers": [
+                {
+                  "text": "signal-control和interval-control",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "interval-control类型的daemon有什么特点？",
+              "id": "5-445-9",
+              "answers": [
+                {
+                  "text": "每隔一段时间主动运行，如atd、crond",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "服务命名通常在名称后加d，代表daemon，如at的程序文件为atd，cron的为crond。",
+          "qas": [
+            {
+              "question": "服务命名有什么特点？",
+              "id": "5-445-10",
+              "answers": [
+                {
+                  "text": "通常在名称后加d，代表daemon，如at的程序文件为atd，cron的为crond",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "daemon启动脚本多在/etc/init.d/（CentOS实际在/etc/rc.d/init.d/，有链接），初始化环境配置文件在/etc/sysconfig/。",
+          "qas": [
+            {
+              "question": "daemon的启动脚本通常放在哪里？",
+              "id": "5-445-11",
+              "answers": [
+                {
+                  "text": "/etc/init.d/（CentOS实际在/etc/rc.d/init.d/，有链接）",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "daemon的初始化环境配置文件放在哪里？",
+              "id": "5-445-12",
+              "answers": [
+                {
+                  "text": "/etc/sysconfig/",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "super daemon配置文件：主配置文件为/etc/xinetd.conf，管理的其他daemon配置在/etc/xinetd.d/。",
+          "qas": [
+            {
+              "question": "super daemon的主配置文件是什么？",
+              "id": "5-445-13",
+              "answers": [
+                {
+                  "text": "/etc/xinetd.conf",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "super daemon管理的其他daemon配置文件在哪里？",
+              "id": "5-445-14",
+              "answers": [
+                {
+                  "text": "/etc/xinetd.d/",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "常见服务中，cron是任务调度系统，建议开启；atd类似cron，建议关闭；syslog-ng是系统日志，建议开启。",
+          "qas": [
+            {
+              "question": "cron服务的作用是什么？是否建议开启？",
+              "id": "5-445-15",
+              "answers": [
+                {
+                  "text": "是任务调度系统，建议开启",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "atd服务是否建议开启？",
+              "id": "5-445-16",
+              "answers": [
+                {
+                  "text": "不建议，建议关闭",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "chkconfig是命令行服务管理工具，可启用和禁用系统服务，语法为chkconfig [--add][--del][--list][系统服务]或chkconfig [--level<等级代号>][系统服务][on/off/reset]。",
+          "qas": [
+            {
+              "question": "chkconfig工具的作用是什么？",
+              "id": "5-445-17",
+              "answers": [
+                {
+                  "text": "是命令行服务管理工具，可启用和禁用系统服务",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "chkconfig的语法有哪两种形式？",
+              "id": "5-445-18",
+              "answers": [
+                {
+                  "text": "chkconfig [--add][--del][--list][系统服务]或chkconfig [--level<等级代号>][系统服务][on/off/reset]",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux操作环境分7个等级，0为开机（不建议切换），1为单人使用者文字界面，2为多人文字界面（无NFS），3为多人文字界面（有NFS），4为部分发行版x windows，5为部分发行版x windows，6为重新启动。",
+          "qas": [
+            {
+              "question": "Linux操作环境的等级6代表什么？",
+              "id": "5-445-19",
+              "answers": [
+                {
+                  "text": "重新启动",
+                  "answer_start": 194
+                }
+              ]
+            },
+            {
+              "question": "Linux操作环境中，等级3的特点是什么？",
+              "id": "5-445-20",
+              "answers": [
+                {
+                  "text": "多人使用者模式的文字界面，具有网络档案系统（NFS）功能",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "service命令用于管理系统服务，可进行启动（start）、停止（stop）、重启（restart）、查看状态（status）等操作，语法为service service name 命令 [选项]。",
+          "qas": [
+            {
+              "question": "service命令的作用是什么？",
+              "id": "5-445-21",
+              "answers": [
+                {
+                  "text": "用于管理系统服务，可进行启动（start）、停止（stop）、重启（restart）、查看状态（status）等操作",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何使用service命令启动httpd服务？",
+              "id": "5-445-22",
+              "answers": [
+                {
+                  "text": "sudo service httpd start",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

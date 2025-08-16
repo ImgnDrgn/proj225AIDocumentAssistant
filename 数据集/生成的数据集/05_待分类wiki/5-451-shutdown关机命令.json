@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "title": "shutdown关机命令",
+      "paragraphs": [
+        {
+          "context": "shutdown -h now 是立刻关机的命令。",
+          "qas": [
+            {
+              "question": "立刻关机的命令是什么？",
+              "id": "5-451-1",
+              "answers": [
+                {
+                  "text": "shutdown -h now",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "shutdown -r now 可实现立刻重启，等价于 reboot 命令。",
+          "qas": [
+            {
+              "question": "立刻重启的命令是什么？",
+              "id": "5-451-2",
+              "answers": [
+                {
+                  "text": "shutdown -r now",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "与 shutdown -r now 等价的命令是什么？",
+              "id": "5-451-3",
+              "answers": [
+                {
+                  "text": "reboot",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "shutdown -h 20:01 用于设置到晚上8点1分时关机。",
+          "qas": [
+            {
+              "question": "如何设置到晚上8点1分关机？",
+              "id": "5-451-4",
+              "answers": [
+                {
+                  "text": "shutdown -h 20:01",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "shutdown -h +5 表示5小时后关机。",
+          "qas": [
+            {
+              "question": "怎样设置5小时后关机？",
+              "id": "5-451-5",
+              "answers": [
+                {
+                  "text": "shutdown -h +5",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "data": [
+    {
+      "title": "grep和find命令",
+      "paragraphs": [
+        {
+          "context": "linux 中查找东西，最常用的就是 grep 和 find。grep 是处理文件内容，而 find 是查找文件。",
+          "qas": [
+            {
+              "question": "linux中常用的查找工具是什么？",
+              "id": "5-449-1",
+              "answers": [
+                {
+                  "text": "grep 和 find",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "grep和find的区别是什么？",
+              "id": "5-449-2",
+              "answers": [
+                {
+                  "text": "grep 是处理文件内容，而 find 是查找文件。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "grep 有两种使用场景，一种是对其他命令的输出做处理，搜索管道来的数据。一种是对文件系统中的文件内容进行查找。",
+          "qas": [
+            {
+              "question": "grep有哪些使用场景？",
+              "id": "5-449-3",
+              "answers": [
+                {
+                  "text": "一种是对其他命令的输出做处理，搜索管道来的数据。一种是对文件系统中的文件内容进行查找。",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ls | grep wps 可查找当前目录下的文件名字。",
+          "qas": [
+            {
+              "question": "如何查找当前目录下名字包含wps的文件？",
+              "id": "5-449-4",
+              "answers": [
+                {
+                  "text": "ls | grep wps",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lspci -k | grep VGA -A2 可查询显卡的驱动。",
+          "qas": [
+            {
+              "question": "查询显卡驱动的命令是什么？",
+              "id": "5-449-5",
+              "answers": [
+                {
+                  "text": "lspci -k | grep VGA -A2",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "grep -c sse /proc/cpuinfo 可查看 cpu 支持什么指令集。",
+          "qas": [
+            {
+              "question": "如何查看cpu支持的指令集？",
+              "id": "5-449-6",
+              "answers": [
+                {
+                  "text": "grep -c sse /proc/cpuinfo",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "find 命令可以根据给定的路径和表达式查找文件或目录, 支持正则，不加任何参数表示查找当前路径下的所有文件和目录。",
+          "qas": [
+            {
+              "question": "find命令的作用是什么？",
+              "id": "5-449-7",
+              "answers": [
+                {
+                  "text": "根据给定的路径和表达式查找文件或目录",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "find命令不加任何参数时查找范围是什么？",
+              "id": "5-449-8",
+              "answers": [
+                {
+                  "text": "当前路径下的所有文件和目录",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "find命令是否支持正则？",
+              "id": "5-449-9",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "find 常用参数有 -name（按名称查找）、-size（按大小查找）、-user（按属性查找）、-type（按类型查找）、-iname（忽略大小写）。",
+          "qas": [
+            {
+              "question": "find命令按名称查找的参数是什么？",
+              "id": "5-449-10",
+              "answers": [
+                {
+                  "text": "-name",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "find命令按大小查找的参数是什么？",
+              "id": "5-449-11",
+              "answers": [
+                {
+                  "text": "-size",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "find命令忽略大小写查找的参数是什么？",
+              "id": "5-449-12",
+              "answers": [
+                {
+                  "text": "-iname",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "find -name ./ \"*.txt 可在当前目录下搜索名称后缀为 .txt 的所有文件名。",
+          "qas": [
+            {
+              "question": "如何在当前目录下搜索后缀为.txt的所有文件？",
+              "id": "5-449-13",
+              "answers": [
+                {
+                  "text": "find -name ./ \"*.txt",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "find -size ./video +1M 可在当前 video 目录下搜索所有文件大小大于 1M 的文件。",
+          "qas": [
+            {
+              "question": "如何在video目录下搜索大小大于1M的文件？",
+              "id": "5-449-14",
+              "answers": [
+                {
+                  "text": "find -size ./video +1M",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

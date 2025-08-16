@@ -1,0 +1,289 @@
+{
+  "data": [
+    {
+      "title": "mount挂载命令",
+      "paragraphs": [
+        {
+          "context": "Linux将一切作为文件管理，硬件设备、磁盘分区等需挂载到目录才能操作，根目录始终挂载，Unix文件系统可对应文件而非必是硬件。",
+          "qas": [
+            {
+              "question": "Linux中为什么要对硬件设备或磁盘分区进行挂载？",
+              "id": "5-450-1",
+              "answers": [
+                {
+                  "text": "Linux将一切作为文件管理，需挂载到相关目录才能对其进行操作。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Unix文件系统对应的一定是硬件设备吗？",
+              "id": "5-450-2",
+              "answers": [
+                {
+                  "text": "不一定，Unix文件系统可以对应一个文件而不一定要是硬件设备。",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "挂载点是磁盘文件系统或设备的入口目录，Linux用唯一树形结构管理文件，各文件系统挂载于树形结构的挂载点，根目录/是唯一必须挂载的。",
+          "qas": [
+            {
+              "question": "什么是挂载点？",
+              "id": "5-450-3",
+              "answers": [
+                {
+                  "text": "挂载点实际上就是linux中的磁盘文件系统或者设备的入口目录。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Linux中唯一必须挂载的目录是什么？",
+              "id": "5-450-4",
+              "answers": [
+                {
+                  "text": "/（根目录）",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "FHS是Linux目录布局标准，核心是文件的可共享vs不可共享、静态vs变量特征，使文件存储更合理，根文件系统需包含启动等必要文件。",
+          "qas": [
+            {
+              "question": "FHS的全称是什么？",
+              "id": "5-450-5",
+              "answers": [
+                {
+                  "text": "Filesystem Hierarchy Standard",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "FHS的核心特征是什么？",
+              "id": "5-450-6",
+              "answers": [
+                {
+                  "text": "文件的两个独立特征：可共享 vs. 不可共享；静态 vs 变量。",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/bin存放用户常用命令，静态且不可共享；/boot存放系统内核及启动文件，如vmlinuz、initrd和grub目录，静态且不可共享。",
+          "qas": [
+            {
+              "question": "/bin目录存放什么内容？",
+              "id": "5-450-7",
+              "answers": [
+                {
+                  "text": "主要存放用户经常使用的命令。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "/boot目录包含哪些文件？",
+              "id": "5-450-8",
+              "answers": [
+                {
+                  "text": "系统的内核以及启动时所需要的文件，比如Linux内核文件vmlinuz和核心解压缩所需的RAM Disk文件initrd，如果安装了grub，还有Grub目录。",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/dev存放设备文件，如/dev/sda代表第一块IDE硬盘，静态且不可共享；/etc存放系统管理配置文件和子目录，静态且不可共享。",
+          "qas": [
+            {
+              "question": "/dev目录中，/dev/sda代表什么？",
+              "id": "5-450-9",
+              "answers": [
+                {
+                  "text": "第一块IDE硬盘。",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "/etc目录的用途是什么？",
+              "id": "5-450-10",
+              "answers": [
+                {
+                  "text": "主要存放系统管理所需的配置文件和子目录。",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mount命令可加载设备文件系统到Linux目录，语法为mount [参数] [设备名] [加载点]，-a加载/etc/fstab中所有设备，-t指定文件系统类型。",
+          "qas": [
+            {
+              "question": "mount命令的基本语法是什么？",
+              "id": "5-450-11",
+              "answers": [
+                {
+                  "text": "mount [-afFhnrvVw] [-L] [-o] [-t] [设备名] [加载点]",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "mount命令的-a参数有什么作用？",
+              "id": "5-450-12",
+              "answers": [
+                {
+                  "text": "加载文件/etc/fstab中设置的所有设备。",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mount的-o选项可指定加载选项，如ro（只读）、rw（可读写）、uid（指定用户ID）等，defaults包含rw、suid等默认选项。",
+          "qas": [
+            {
+              "question": "mount命令中，-o选项的作用是什么？",
+              "id": "5-450-13",
+              "answers": [
+                {
+                  "text": "指定加载文件系统时的选项。",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "defaults选项包含哪些默认设置？",
+              "id": "5-450-14",
+              "answers": [
+                {
+                  "text": "rw、suid、dev、exec、anto nouser与async。",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "umount命令卸除挂载的文件系统，语法为umount [参数] [文件系统]，-a卸除/etc/mtab中所有文件系统，-l可进行lazy umount。",
+          "qas": [
+            {
+              "question": "umount命令的功能是什么？",
+              "id": "5-450-15",
+              "answers": [
+                {
+                  "text": "卸除目前挂在Linux目录中的文件系统。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "umount的-l选项有什么作用？",
+              "id": "5-450-16",
+              "answers": [
+                {
+                  "text": "进行lazy umount，即卸载“busy”的文件系统，立即从目录结构中卸载，进程操作完成后真正umount。",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/etc/fstab记录默认加载的文件系统信息，包括设备、挂载点、类型、选项等，格式为“文件系统 挂载点 类型 选项 转储 fsck”。",
+          "qas": [
+            {
+              "question": "/etc/fstab文件的作用是什么？",
+              "id": "5-450-17",
+              "answers": [
+                {
+                  "text": "被一些程序用来确定哪些文件系统默认要加载，哪些需要检查，顺序是怎样的。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "/etc/fstab的格式包含哪些字段？",
+              "id": "5-450-18",
+              "answers": [
+                {
+                  "text": "文件系统 挂载点 类型 选项 转储 fsck",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "降低SWAP使用率可修改/etc/sysctl.conf中的vm.swappiness值，内存大于1GB时建议设为10或5，默认可能为60。",
+          "qas": [
+            {
+              "question": "如何降低SWAP的使用率？",
+              "id": "5-450-19",
+              "answers": [
+                {
+                  "text": "修改/etc/sysctl.conf中的vm.swappiness值，内存大于1GB时建议设为10或5。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "深度操作系统中vm.swappiness的默认值是多少？",
+              "id": "5-450-20",
+              "answers": [
+                {
+                  "text": "60",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度系统不默认挂载Win分区，因Windows快速启动可能导致数据丢失，Win分区错误或有保护软件可能影响启动。",
+          "qas": [
+            {
+              "question": "深度操作系统为什么不默认开机挂载Win分区？",
+              "id": "5-450-21",
+              "answers": [
+                {
+                  "text": "Windows8默认开启快速启动功能，导致关闭实质是休眠，会抹去Linux下对Win分区数据的写入，造成数据丢失；Win分区出现错误会导致开机卡住；Win分区有数据加密或同步软件保护也会影响启动。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "不能挂载特定Win分区可能因未关闭Windows8快速启动、分区有数据保护/网盘软件，或硬盘分区表有问题。",
+          "qas": [
+            {
+              "question": "不能挂载特定Win分区的可能原因有哪些？",
+              "id": "5-450-22",
+              "answers": [
+                {
+                  "text": "未关闭windows8的快速启动且未完全重启；分区下有数据保护和网盘等软件；硬盘分区表存在问题。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

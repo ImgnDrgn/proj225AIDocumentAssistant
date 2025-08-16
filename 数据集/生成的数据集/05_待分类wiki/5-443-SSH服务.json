@@ -1,0 +1,314 @@
+{
+  "data": [
+    {
+      "title": "SSH服务",
+      "paragraphs": [
+        {
+          "context": "SSH为Secure Shell的缩写，是建立在应用层和传输层基础上的安全协议，为远程登录会话和其他网络服务提供安全性，可防止远程管理中的信息泄露。",
+          "qas": [
+            {
+              "question": "SSH的全称是什么？",
+              "id": "5-443-1",
+              "answers": [
+                {
+                  "text": "Secure Shell",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "SSH协议建立在哪些层之上？",
+              "id": "5-443-2",
+              "answers": [
+                {
+                  "text": "应用层和传输层",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "SSH的主要作用是什么？",
+              "id": "5-443-3",
+              "answers": [
+                {
+                  "text": "为远程登录会话和其他网络服务提供安全性，防止远程管理过程中的信息泄露问题。",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SSH分客户端openssh-client和openssh-server。仅登录其他机器的SSH需安装openssh-client，深度操作系统默认安装，未安装可执行sudo apt-get install openssh-client；使本机开放SSH服务需安装openssh-server，执行sudo apt-get install openssh-server。",
+          "qas": [
+            {
+              "question": "SSH包含哪两个部分？",
+              "id": "5-443-4",
+              "answers": [
+                {
+                  "text": "客户端openssh-client和openssh-server",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "仅需登录其他机器的SSH，应安装什么？",
+              "id": "5-443-5",
+              "answers": [
+                {
+                  "text": "openssh-client",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "question": "深度操作系统是否默认安装openssh-client？",
+              "id": "5-443-6",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "question": "安装openssh-client的命令是什么？",
+              "id": "5-443-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get install openssh-client",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "question": "使本机开放SSH服务需安装什么？",
+              "id": "5-443-8",
+              "answers": [
+                {
+                  "text": "openssh-server",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "question": "安装openssh-server的命令是什么？",
+              "id": "5-443-9",
+              "answers": [
+                {
+                  "text": "sudo apt-get install openssh-server",
+                  "answer_start": 142
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用ssh-keygen命令生成一对私钥和公钥；向服务器发送自己的公钥可实现无密码登录，命令为ssh-copy-id username@xxx.xxx.xxx.xxx（username和xxx.xxx.xxx.xxx替换成登录服务器的用户名和IP）。",
+          "qas": [
+            {
+              "question": "如何生成一对私钥和公钥？",
+              "id": "5-443-10",
+              "answers": [
+                {
+                  "text": "使用ssh-keygen命令",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "怎样实现无密码登录服务器？",
+              "id": "5-443-11",
+              "answers": [
+                {
+                  "text": "向服务器发送自己的公钥，命令为ssh-copy-id username@xxx.xxx.xxx.xxx（username和xxx.xxx.xxx.xxx替换成登录服务器的用户名和IP）。",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载SSH客户端和服务器的命令分别为sudo apt-get remove openssh-client和sudo apt-get remove openssh-server。",
+          "qas": [
+            {
+              "question": "卸载openssh-client的命令是什么？",
+              "id": "5-443-12",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove openssh-client",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "卸载openssh-server的命令是什么？",
+              "id": "5-443-13",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove openssh-server",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "执行ps -e |grep ssh可确认sshserver是否启动，看到sshd说明已启动；未启动可执行sudo /etc/init.d/ssh start或service ssh start启动。",
+          "qas": [
+            {
+              "question": "如何确认sshserver是否启动？",
+              "id": "5-443-14",
+              "answers": [
+                {
+                  "text": "执行ps -e |grep ssh",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "sshserver已启动的标志是什么？",
+              "id": "5-443-15",
+              "answers": [
+                {
+                  "text": "看到sshd",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "未启动sshserver时，可用哪些命令启动？",
+              "id": "5-443-16",
+              "answers": [
+                {
+                  "text": "sudo /etc/init.d/ssh start 或 service ssh start",
+                  "answer_start": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ssh-server配置文件位于/etc/ssh/sshd_config，可定义SSH服务端口，默认端口22；修改后需重启SSH服务，命令为sudo /etc/init.d/ssh stop和sudo /etc/init.d/ssh start。",
+          "qas": [
+            {
+              "question": "ssh-server配置文件位于哪里？",
+              "id": "5-443-17",
+              "answers": [
+                {
+                  "text": "/etc/ssh/sshd_config",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "SSH服务的默认端口是多少？",
+              "id": "5-443-18",
+              "answers": [
+                {
+                  "text": "22",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "question": "修改ssh-server配置后如何重启SSH服务？",
+              "id": "5-443-19",
+              "answers": [
+                {
+                  "text": "执行sudo /etc/init.d/ssh stop和sudo /etc/init.d/ssh start",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "登录SSH的命令为ssh username@192.168.1.112，其中username为目标机器上的用户，需输入密码。",
+          "qas": [
+            {
+              "question": "登录SSH的命令是什么？",
+              "id": "5-443-20",
+              "answers": [
+                {
+                  "text": "ssh username@192.168.1.112",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "使用SSH登录时需要输入什么？",
+              "id": "5-443-21",
+              "answers": [
+                {
+                  "text": "密码",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用w命令可查看当前登录的用户，其列选项包括USER、TTY、FROM、LOGIN@、IDLE、JCPU、PCPU、WHAT；使用pkill -kill -t [TTY]可强制注销指定登录用户，[TTY]为终端名。",
+          "qas": [
+            {
+              "question": "如何查看当前登录的用户？",
+              "id": "5-443-22",
+              "answers": [
+                {
+                  "text": "使用w命令",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "w命令的列选项有哪些？",
+              "id": "5-443-23",
+              "answers": [
+                {
+                  "text": "USER、TTY、FROM、LOGIN@、IDLE、JCPU、PCPU、WHAT",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "如何强制注销指定的登录用户？",
+              "id": "5-443-24",
+              "answers": [
+                {
+                  "text": "使用pkill -kill -t [TTY]命令，其中[TTY]表示终端名。",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SSH相关链接包括官方网站http://www.openssh.org/和Linux下查看已登录用户及pkill强制退出命令的链接http://wangye.org/blog/archives/343/。",
+          "qas": [
+            {
+              "question": "SSH官方网站的网址是什么？",
+              "id": "5-443-25",
+              "answers": [
+                {
+                  "text": "http://www.openssh.org/",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "哪里可以找到Linux下查看已登录用户及pkill强制退出命令的信息？",
+              "id": "5-443-26",
+              "answers": [
+                {
+                  "text": "http://wangye.org/blog/archives/343/",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
