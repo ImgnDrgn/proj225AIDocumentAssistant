@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "屏幕色温控制_Flux",
+      "paragraphs": [
+        {
+          "context": "f.lux是一款自动调整屏幕色温亮度的应用，可预设色温范围，白天≤6500K，晚上≥3500K，随时间变化调整屏幕色温，过滤蓝光，减少眼疲劳。",
+          "qas": [
+            {
+              "question": "f.lux是什么类型的应用？",
+              "id": "5-557-1",
+              "answers": [
+                {
+                  "text": "自动调整屏幕色温亮度的应用",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "f.lux白天的色温控制在多少以下？",
+              "id": "5-557-2",
+              "answers": [
+                {
+                  "text": "6500K",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "f.lux晚上的色温控制在多少以上？",
+              "id": "5-557-3",
+              "answers": [
+                {
+                  "text": "3500K",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "question": "f.lux能过滤哪种对人眼伤害大的光线？",
+              "id": "5-557-4",
+              "answers": [
+                {
+                  "text": "蓝光",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "question": "f.lux的作用是什么？",
+              "id": "5-557-5",
+              "answers": [
+                {
+                  "text": "随着一天的时间变化自动调整电脑显示器屏幕的色温，过滤对人眼伤害最大的蓝光，从而尽可能减少屏幕对眼睛所带来的疲劳感。",
+                  "answer_start": 64
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装f.lux的命令是sudo apt-get install fluxgui。",
+          "qas": [
+            {
+              "question": "如何安装f.lux？",
+              "id": "5-557-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get install fluxgui",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载f.lux的命令是sudo apt-get remove fluxgui。",
+          "qas": [
+            {
+              "question": "如何卸载f.lux？",
+              "id": "5-557-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove fluxgui",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "f.lux的仓库地址是http://packages.deepin.com/deepin/pool/contrib/f/fluxgui/。",
+          "qas": [
+            {
+              "question": "f.lux的仓库地址是什么？",
+              "id": "5-557-8",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/contrib/f/fluxgui/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

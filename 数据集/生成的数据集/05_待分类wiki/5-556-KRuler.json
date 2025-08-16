@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "KRuler",
+      "paragraphs": [
+        {
+          "context": "KRuler是一款制定屏幕分辨率规则和颜色测量的工具，界面是仿真黄色计量尺，可测屏幕两点长度，测量单位可选。",
+          "qas": [
+            {
+              "question": "KRuler是什么工具？",
+              "id": "5-556-1",
+              "answers": [
+                {
+                  "text": "制定屏幕分辨率规则和颜色测量的工具",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "KRuler的界面是什么样的？",
+              "id": "5-556-2",
+              "answers": [
+                {
+                  "text": "仿真的黄色计量尺",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "KRuler能测量什么？",
+              "id": "5-556-3",
+              "answers": [
+                {
+                  "text": "屏幕上某两点间的长度",
+                  "answer_start": 44
+                }
+              ]
+            },
+            {
+              "question": "KRuler的测量单位是否固定？",
+              "id": "5-556-4",
+              "answers": [
+                {
+                  "text": "可选的",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "KRuler的安装命令为sudo apt-get install kruler。",
+          "qas": [
+            {
+              "question": "如何安装KRuler？",
+              "id": "5-556-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install kruler",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "KRuler的卸载命令为sudo apt-get remove kruler。",
+          "qas": [
+            {
+              "question": "如何卸载KRuler？",
+              "id": "5-556-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove kruler",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "KRuler的仓库地址是http://packages.deepin.com/deepin/pool/main/k/kruler/。",
+          "qas": [
+            {
+              "question": "KRuler的仓库地址是什么？",
+              "id": "5-556-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/k/kruler/",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
