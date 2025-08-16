@@ -1,0 +1,289 @@
+{
+  "data": [
+    {
+      "title": "光盘烧录工具",
+      "paragraphs": [
+        {
+          "context": "Brasero是一款CD/DVD刻录软件，支持单次写入数据DVD和任何类型的CD，能将光盘镜像写入硬盘，图形化界面便于在Linux下烧录光盘。",
+          "qas": [
+            {
+              "question": "Brasero支持哪些光盘类型的刻录？",
+              "id": "5-500-1",
+              "answers": [
+                {
+                  "text": "CD/DVD，支持单次写入数据DVD和任何类型的CD",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "Brasero有什么特点？",
+              "id": "5-500-2",
+              "answers": [
+                {
+                  "text": "图形化的操作界面，使用户能够轻松而快速的在Linux下烧录光盘，支持将光盘镜像写入到硬盘",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Brasero的安装命令为sudo apt-get install brasero，卸载命令为sudo apt-get remove brasero。",
+          "qas": [
+            {
+              "question": "如何安装Brasero？",
+              "id": "5-500-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install brasero",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "怎样卸载Brasero？",
+              "id": "5-500-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove brasero",
+                  "answer_start": 48
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Brasero的仓库地址是http://packages.deepin.com/deepin/pool/main/b/brasero/。",
+          "qas": [
+            {
+              "question": "Brasero的仓库地址是什么？",
+              "id": "5-500-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/b/brasero/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "K3b是全功能CD/DVD烧录软件，可翻录音频光碟为CD数据库支持的格式，能从音频CD提取音轨、从视频DVD提取影辑，用户界面便捷。",
+          "qas": [
+            {
+              "question": "K3b有哪些功能？",
+              "id": "5-500-6",
+              "answers": [
+                {
+                  "text": "光盘烧录，把音频光碟翻录成CD数据库所支持的任意格式，从音频CD中提取音轨，从视频DVD中提取影辑",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "K3b的用户界面有什么特点？",
+              "id": "5-500-7",
+              "answers": [
+                {
+                  "text": "便捷的用户操作界面",
+                  "answer_start": 89
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "K3b的安装命令为sudo apt-get install k3b，卸载命令为sudo apt-get remove k3b。",
+          "qas": [
+            {
+              "question": "安装K3b使用什么命令？",
+              "id": "5-500-8",
+              "answers": [
+                {
+                  "text": "sudo apt-get install k3b",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "卸载K3b的命令是什么？",
+              "id": "5-500-9",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove k3b",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "K3b的仓库地址是http://packages.deepin.com/deepin/pool/main/k/k3b/，相关链接有K3d官方wiki和k3d官网。",
+          "qas": [
+            {
+              "question": "K3b的仓库地址是什么？",
+              "id": "5-500-10",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/k/k3b/",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "K3b有哪些相关链接？",
+              "id": "5-500-11",
+              "answers": [
+                {
+                  "text": "K3d官方wiki（https://userbase.kde.org/K3b/zh-cn）、k3d官网（https://www.K3b.org）",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Nero是多媒体刻录和编辑应用，用于刻录和复制音乐CD、DVD或蓝光光盘，带有专业工具，可创建、剪切、编辑，有转录和转换功能。",
+          "qas": [
+            {
+              "question": "Nero可以用于处理哪些光盘类型？",
+              "id": "5-500-12",
+              "answers": [
+                {
+                  "text": "音乐CD、DVD或蓝光光盘",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "Nero有哪些专业工具功能？",
+              "id": "5-500-13",
+              "answers": [
+                {
+                  "text": "方便快捷地进行创建、剪切和编辑，使用转录和转换功能，将多媒体文件转换成其他格式",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Nero的安装命令为sudo apt-get install nerolinux，卸载命令为sudo apt-get remove nerolinux。",
+          "qas": [
+            {
+              "question": "如何安装Nero？",
+              "id": "5-500-14",
+              "answers": [
+                {
+                  "text": "sudo apt-get install nerolinux",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "卸载Nero使用什么命令？",
+              "id": "5-500-15",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove nerolinux",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Nero的仓库地址是http://packages.deepin.com/deepin/pool/non-free/n/nerolinux/。",
+          "qas": [
+            {
+              "question": "Nero的仓库地址是什么？",
+              "id": "5-500-16",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/n/nerolinux/",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Xfburn是使用GTK开发基于libburnia的CD/DVD/Blu-ray光盘烧录工具。",
+          "qas": [
+            {
+              "question": "Xfburn是基于什么开发的？",
+              "id": "5-500-17",
+              "answers": [
+                {
+                  "text": "GTK开发基于libburnia",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "Xfburn支持哪些光盘类型的烧录？",
+              "id": "5-500-18",
+              "answers": [
+                {
+                  "text": "CD/DVD/Blu-ray",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Xfburn的安装命令为sudo apt-get install xfburn，卸载命令为sudo apt-get remove xfburn。",
+          "qas": [
+            {
+              "question": "安装Xfburn的命令是什么？",
+              "id": "5-500-19",
+              "answers": [
+                {
+                  "text": "sudo apt-get install xfburn",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "怎样卸载Xfburn？",
+              "id": "5-500-20",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove xfburn",
+                  "answer_start": 48
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Xfburn的仓库地址是http://packages.deepin.com/deepin/pool/main/x/xfburn/，相关链接有官方网站和维基百科。",
+          "qas": [
+            {
+              "question": "Xfburn的仓库地址是什么？",
+              "id": "5-500-21",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/x/xfburn/",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "Xfburn的官方网站是什么？",
+              "id": "5-500-22",
+              "answers": [
+                {
+                  "text": "https://docs.xfce.org/apps/xfburn/start",
+                  "answer_start": 84
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "启动盘制作_UNetbootin",
+      "paragraphs": [
+        {
+          "context": "UNetbootin是跨平台制作启动盘的工具，能将Linux操作系统装进U盘，用于电脑维护和系统还原等。",
+          "qas": [
+            {
+              "question": "UNetbootin是什么工具？",
+              "id": "5-496-1",
+              "answers": [
+                {
+                  "text": "跨平台制作启动盘的工具",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "UNetbootin能将什么装进U盘？",
+              "id": "5-496-2",
+              "answers": [
+                {
+                  "text": "Linux操作系统",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "制作好的启动盘可用于哪些操作？",
+              "id": "5-496-3",
+              "answers": [
+                {
+                  "text": "电脑的维护和系统还原等操作",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装UNetbootin的命令是sudo apt-get install unetbootin。",
+          "qas": [
+            {
+              "question": "如何安装UNetbootin？",
+              "id": "5-496-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install unetbootin",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载UNetbootin的命令是sudo apt-get remove unetbootin。",
+          "qas": [
+            {
+              "question": "怎样卸载UNetbootin？",
+              "id": "5-496-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove unetbootin",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UNetbootin的仓库地址是http://packages.deepin.com/deepin/pool/main/u/unetbootin/。",
+          "qas": [
+            {
+              "question": "UNetbootin的仓库地址是什么？",
+              "id": "5-496-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/u/unetbootin/",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

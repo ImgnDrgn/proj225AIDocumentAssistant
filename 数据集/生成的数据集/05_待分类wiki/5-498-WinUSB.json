@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "WinUSB",
+      "paragraphs": [
+        {
+          "context": "WinUSB是创建Windows可引导U盘工具，支持从ISO镜像文件及DVD创建，提供图形界面及命令行界面。",
+          "qas": [
+            {
+              "question": "WinUSB是什么工具？",
+              "id": "5-498-1",
+              "answers": [
+                {
+                  "text": "创建Windows可引导U盘的工具",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "WinUSB支持从哪些来源创建可引导U盘？",
+              "id": "5-498-2",
+              "answers": [
+                {
+                  "text": "ISO镜像文件及DVD",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "WinUSB提供哪些界面？",
+              "id": "5-498-3",
+              "answers": [
+                {
+                  "text": "图形界面及命令行界面",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装WinUSB的命令是sudo apt-get install winusb。",
+          "qas": [
+            {
+              "question": "如何安装WinUSB？",
+              "id": "5-498-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install winusb",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载WinUSB的命令是sudo apt-get remove winusb。",
+          "qas": [
+            {
+              "question": "如何卸载WinUSB？",
+              "id": "5-498-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove winusb",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "WinUSB的仓库地址是http://packages.deepin.com/deepin/pool/main/w/winusb/。",
+          "qas": [
+            {
+              "question": "WinUSB的仓库地址是什么？",
+              "id": "5-498-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/w/winusb/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

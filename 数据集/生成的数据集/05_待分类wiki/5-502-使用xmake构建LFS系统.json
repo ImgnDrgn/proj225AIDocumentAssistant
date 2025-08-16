@@ -1,0 +1,339 @@
+{
+  "data": [
+    {
+      "title": "使用xmake构建LFS系统",
+      "paragraphs": [
+        {
+          "context": "使用xmake构建LFS系统的项目目的是让用户从头构建自己的linux发行版，好处是得到统一、和谐的构建系统，用户无需学习不同构建系统的差异，只需使用xmake。",
+          "qas": [
+            {
+              "question": "使用xmake构建LFS系统的项目目的是什么？",
+              "id": "5-502-1",
+              "answers": [
+                {
+                  "text": "让用户从头构建自己的linux发行版",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "使用xmake构建LFS系统的好处是什么？",
+              "id": "5-502-2",
+              "answers": [
+                {
+                  "text": "得到统一、和谐的构建系统，用户无需学习不同构建系统的差异，只需使用xmake",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "源代码包让用户根据硬件环境优化构建可执行软件，预编译二进制包免编译等待但优化通用，可能有兼容问题。源代码包常用存档格式有tar、zip、gzip等。",
+          "qas": [
+            {
+              "question": "源代码包的作用是什么？",
+              "id": "5-502-3",
+              "answers": [
+                {
+                  "text": "让用户根据硬件环境优化构建可执行软件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "预编译二进制包的不足是什么？",
+              "id": "5-502-4",
+              "answers": [
+                {
+                  "text": "优化可能是通用的，没有针对性，还有不同组件因为编译方式不同导致的兼容问题",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "源代码包常用的存档格式有哪些？",
+              "id": "5-502-5",
+              "answers": [
+                {
+                  "text": "tar、zip、gzip等",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "从源代码安装软件的通常流程：下载源码包、验证散列值、解压缩、查看帮助文档、配置makefile、构建、安装、清理临时文件。",
+          "qas": [
+            {
+              "question": "从源代码安装软件的通常流程包括哪些步骤？",
+              "id": "5-502-6",
+              "answers": [
+                {
+                  "text": "下载源码包、验证散列值、解压缩、查看帮助文档、配置makefile、构建、安装、清理临时文件",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "C语言中，程序分多个源文件，使用对应头文件调用其他源文件内容。编译是将源文件转为二进制对象文件（*.o），链接是将多个对象文件组合成可执行程序或库。",
+          "qas": [
+            {
+              "question": "C语言中如何调用其他源文件的内容？",
+              "id": "5-502-7",
+              "answers": [
+                {
+                  "text": "使用对应头文件",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "什么是编译？",
+              "id": "5-502-8",
+              "answers": [
+                {
+                  "text": "将源文件编译成二进制的格式，即对象文件(object file)（*.o）",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "question": "什么是链接？",
+              "id": "5-502-9",
+              "answers": [
+                {
+                  "text": "将多个对象文件组合起来形成一个可执行的应用程序（或库）",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "静态库是多个对象文件合并成的中间库（*.a），动态库是用于动态链接的中间库（*.so）。动态链接只记录关联组件信息，不包含内容；静态链接包含相关组件内容。",
+          "qas": [
+            {
+              "question": "静态库的扩展名是什么？",
+              "id": "5-502-10",
+              "answers": [
+                {
+                  "text": "*.a",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "question": "动态库的扩展名是什么？",
+              "id": "5-502-11",
+              "answers": [
+                {
+                  "text": "*.so",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "question": "动态链接与静态链接的区别是什么？",
+              "id": "5-502-12",
+              "answers": [
+                {
+                  "text": "动态链接只记录关联组件的信息，不包含相关组件的内容；静态链接包含相关组件的内容",
+                  "answer_start": 90
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GCC可调用预处理器、编译器、汇编器等完成编译流程。预处理器处理源代码生成.i等文件，编译器将.i转为汇编代码.s，汇编器将.s转为对象文件.o。",
+          "qas": [
+            {
+              "question": "GCC能调用哪些工具完成编译流程？",
+              "id": "5-502-13",
+              "answers": [
+                {
+                  "text": "预处理器、编译器、汇编器等",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "预处理器的作用是什么？",
+              "id": "5-502-14",
+              "answers": [
+                {
+                  "text": "将源代码做简单处理，生成.i等文件",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "汇编器将什么文件转换为对象文件？",
+              "id": "5-502-15",
+              "answers": [
+                {
+                  "text": "汇编代码.s",
+                  "answer_start": 93
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "交叉编译是在当前平台编译能在不同目标平台运行的程序，支持此方式的编译器叫交叉编译器。交叉编译涉及build（构建平台）、host（运行平台）、target（输出目标平台）。",
+          "qas": [
+            {
+              "question": "什么是交叉编译？",
+              "id": "5-502-16",
+              "answers": [
+                {
+                  "text": "在当前平台上编译一个能在目标平台（和当前平台不同的）上运行的程序",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "交叉编译器指的是什么？",
+              "id": "5-502-17",
+              "answers": [
+                {
+                  "text": "支持交叉编译方式的编译器",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "question": "交叉编译涉及哪些平台概念？",
+              "id": "5-502-18",
+              "answers": [
+                {
+                  "text": "build（构建平台）、host（运行平台）、target（输出目标平台）",
+                  "answer_start": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "构建LFS系统时，环境变量定义：P1=x86_64-pc-linux-gun（本机），P2=x86_64-lfs-linux-gun（中间平台），LFS=~/lfs/rootfs（新系统根目录），P2ROOT=~/lfs/crosstools（中间平台根目录）。",
+          "qas": [
+            {
+              "question": "P1代表什么？",
+              "id": "5-502-19",
+              "answers": [
+                {
+                  "text": "x86_64-pc-linux-gun（本机）",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "LFS环境变量指的是什么路径？",
+              "id": "5-502-20",
+              "answers": [
+                {
+                  "text": "~/lfs/rootfs（新系统的根目录）",
+                  "answer_start": 95
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用xmake构建binutils时，参数包括--trybuild=autotools、--tryconfigs（含--prefix、--with-sysroot等），--target=$P2，--disable-nls，--disable-werror等。",
+          "qas": [
+            {
+              "question": "构建binutils时，--trybuild参数的值是什么？",
+              "id": "5-502-21",
+              "answers": [
+                {
+                  "text": "autotools",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "构建binutils时，--target参数的值是什么？",
+              "id": "5-502-22",
+              "answers": [
+                {
+                  "text": "$P2",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GCC依赖mpfr和mpc，需在GCC目录下创建指向它们源代码的符号链接。GCC需在源文件目录外部构建，即源外构建。",
+          "qas": [
+            {
+              "question": "GCC依赖哪些库？",
+              "id": "5-502-23",
+              "answers": [
+                {
+                  "text": "mpfr和mpc",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "GCC的构建方式是什么？",
+              "id": "5-502-24",
+              "answers": [
+                {
+                  "text": "在源文件目录外部构建（源外构建）",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "glibc依赖linux header（系统头文件），安装glibc时需进行交叉编译（p1->p2），路径需提供新构造的C1编译器。",
+          "qas": [
+            {
+              "question": "glibc依赖什么？",
+              "id": "5-502-25",
+              "answers": [
+                {
+                  "text": "linux header（系统头文件）",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "安装glibc时的交叉编译方式是什么？",
+              "id": "5-502-26",
+              "answers": [
+                {
+                  "text": "p1->p2",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "构建C2编译器前需准备基本工具包：M4、Ncurses、bash、coreutils、diffutils、file、findutils、gawk、grep、gzip、make、patch、sed、tar、xz。",
+          "qas": [
+            {
+              "question": "构建C2编译器前需要准备哪些基本工具包？",
+              "id": "5-502-27",
+              "answers": [
+                {
+                  "text": "M4、Ncurses、bash、coreutils、diffutils、file、findutils、gawk、grep、gzip、make、patch、sed、tar、xz",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

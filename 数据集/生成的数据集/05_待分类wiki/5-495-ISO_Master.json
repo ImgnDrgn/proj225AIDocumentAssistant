@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "title": "ISO_Master",
+      "paragraphs": [
+        {
+          "context": "ISO Master是一个光盘镜像文件编辑器，可提取、添加文件到ISO，创建可引导ISO。",
+          "qas": [
+            {
+              "question": "ISO Master是什么？",
+              "id": "5-495-1",
+              "answers": [
+                {
+                  "text": "一个光盘光盘镜像文件编辑器",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "ISO Master能实现哪些功能？",
+              "id": "5-495-2",
+              "answers": [
+                {
+                  "text": "从ISO中提取文件、添加文件到ISO、创建可引导的ISO文件等",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装ISO Master的命令：sudo apt-get install isomaster",
+          "qas": [
+            {
+              "question": "如何安装ISO Master？",
+              "id": "5-495-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install isomaster",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载ISO Master的命令：sudo apt-get remove isomaster",
+          "qas": [
+            {
+              "question": "怎样卸载ISO Master？",
+              "id": "5-495-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove isomaster",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ISO Master的仓库地址：http://packages.deepin.com/deepin/pool/main/i/isomaster/",
+          "qas": [
+            {
+              "question": "ISO Master的仓库地址是什么？",
+              "id": "5-495-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/i/isomaster/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

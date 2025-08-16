@@ -1,0 +1,214 @@
+{
+  "data": [
+    {
+      "title": "Deepin+Windows10双系统安装教程",
+      "paragraphs": [
+        {
+          "context": "本教程由深度论坛用户Mzlw（ID：cyx980622）分享，原文地址为https://bbs.deepin.org/forum.php?mod=viewthread&tid=135870。",
+          "qas": [
+            {
+              "question": "本教程的作者是谁？",
+              "id": "5-494-1",
+              "answers": [
+                {
+                  "text": "Mzlw",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "本教程的原文地址是什么？",
+              "id": "5-494-2",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/forum.php?mod=viewthread&tid=135870",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "为Deepin留出硬盘空间的步骤：1. 右键Windows徽标打开磁盘管理；2. 选空闲空间大于30G的分区；3. 右键所选分区选压缩卷；4. 输入空闲空间（计划30G根目录+8G交换分区，1GB=1024MB）。",
+          "qas": [
+            {
+              "question": "如何打开磁盘管理？",
+              "id": "5-494-3",
+              "answers": [
+                {
+                  "text": "Windows徽标上右键单击，选择磁盘管理",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "选择用于压缩的分区需要满足什么条件？",
+              "id": "5-494-4",
+              "answers": [
+                {
+                  "text": "空闲空间大于30G",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "作者计划为Deepin留出多少空间？",
+              "id": "5-494-5",
+              "answers": [
+                {
+                  "text": "30G根目录+8G交换分区",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "question": "1GB等于多少MB？",
+              "id": "5-494-6",
+              "answers": [
+                {
+                  "text": "1024MB",
+                  "answer_start": 89
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "制作启动U盘步骤：1. 双击运行下载好的Deepin安装镜像中的DEEPIN_B.EXE；2. 点光盘图标选ISO镜像；3. 点U盘图标选要使用的U盘，备份数据后勾选格式化，确认选择后点开始制作。",
+          "qas": [
+            {
+              "question": "制作启动U盘第一步是什么？",
+              "id": "5-494-7",
+              "answers": [
+                {
+                  "text": "双击运行下载好的Deepin安装镜像中的DEEPIN_B.EXE",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "如何选择Deepin的ISO安装镜像？",
+              "id": "5-494-8",
+              "answers": [
+                {
+                  "text": "点击上方的光盘图标选择",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "question": "制作启动U盘时勾选格式化前需要做什么？",
+              "id": "5-494-9",
+              "answers": [
+                {
+                  "text": "备份数据",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Deepin系统步骤：1. 开机进启动项选择菜单选U盘启动；2. 回车开始安装；3. 选简体中文；4. 设置用户名和密码；5. 点高级选空分区；6. 添加分区建立/根目录（预留交换分区空间，推荐4G）；7. 建立交换分区（选交换分区文件系统）；8. 可挂载旧/home分区（不格式化）；9. 确认后开始安装，固态不到5分钟完成；10. 开机从GRUB菜单进Deepin。",
+          "qas": [
+            {
+              "question": "安装Deepin时如何进入安装程序？",
+              "id": "5-494-10",
+              "answers": [
+                {
+                  "text": "开机时进入启动项选择菜单选择U盘启动的启动项，按回车以开始安装",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "安装Deepin时语言选择什么？",
+              "id": "5-494-11",
+              "answers": [
+                {
+                  "text": "简体中文",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "question": "建立/根目录时需要预留多少交换分区空间？",
+              "id": "5-494-12",
+              "answers": [
+                {
+                  "text": "推荐留4G（4096MB）",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "question": "交换分区的文件系统应选择什么？",
+              "id": "5-494-13",
+              "answers": [
+                {
+                  "text": "交换分区",
+                  "answer_start": 152
+                }
+              ]
+            },
+            {
+              "question": "固态硬盘安装Deepin大概需要多久？",
+              "id": "5-494-14",
+              "answers": [
+                {
+                  "text": "不到5分钟",
+                  "answer_start": 210
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解决无Deepin启动项问题：开机按启动菜单键选Deepin；若无，进Windows下载安装EasyUEFI，打开后点管理EFI启动项，点加号，选Linux or other OS，名填deepin，选EFI分区，浏览选引导文件确认，可调整启动顺序。",
+          "qas": [
+            {
+              "question": "开机时没有Deepin启动项，首先可以尝试什么方法？",
+              "id": "5-494-15",
+              "answers": [
+                {
+                  "text": "在开机时按打开启动菜单的键调出启动项选择菜单，选择deepin即可",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "用于添加Deepin启动项的软件是什么？",
+              "id": "5-494-16",
+              "answers": [
+                {
+                  "text": "EasyUEFI",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "添加Deepin启动项时，在上方选择栏中应选择什么？",
+              "id": "5-494-17",
+              "answers": [
+                {
+                  "text": "Linux or other OS",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "添加Deepin启动项时名称应填什么？",
+              "id": "5-494-18",
+              "answers": [
+                {
+                  "text": "deepin",
+                  "answer_start": 109
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
