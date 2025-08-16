@@ -1,0 +1,269 @@
+{
+  "data": [
+    {
+      "title": "字体字号和dpi的关系",
+      "paragraphs": [
+        {
+          "context": "1pt=1/72in，1in=2.54cm，因此1pt≈0.3527mm。",
+          "qas": [
+            {
+              "question": "1pt等于多少英寸？",
+              "id": "5-461-1",
+              "answers": [
+                {
+                  "text": "1/72in",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "1pt约等于多少毫米？",
+              "id": "5-461-2",
+              "answers": [
+                {
+                  "text": "0.3527mm",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "初号对应42pt，小初号对应36pt，一号对应28pt，小四号对应12pt，五号对应10.5pt。",
+          "qas": [
+            {
+              "question": "初号对应的点数是多少？",
+              "id": "5-461-3",
+              "answers": [
+                {
+                  "text": "42pt",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "小四号对应的点数是多少？",
+              "id": "5-461-4",
+              "answers": [
+                {
+                  "text": "12pt",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpi即每英寸点数（dots per Inch），系统通过dpi反推显示器大小，计算每个pt对应的像素点px。",
+          "qas": [
+            {
+              "question": "dpi的全称是什么？",
+              "id": "5-461-5",
+              "answers": [
+                {
+                  "text": "每英寸点数（dots per Inch）",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "系统通过dpi可以做什么？",
+              "id": "5-461-6",
+              "answers": [
+                {
+                  "text": "反推显示器大小，计算每个pt对应的像素点px",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统通过dpi计算pt对应的px，公式为px=pt*dpi/72。例如，12pt的小四号字体在96dpi下，px=12*96/72=16。",
+          "qas": [
+            {
+              "question": "pt转换为px的公式是什么？",
+              "id": "5-461-7",
+              "answers": [
+                {
+                  "text": "px=pt*dpi/72",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "12pt的字体在96dpi下对应多少像素？",
+              "id": "5-461-8",
+              "answers": [
+                {
+                  "text": "16",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "字体文件设计一般采用96dpi（windows系统默认值），系统会根据自身dpi与设计dpi计算实际显示的pt。",
+          "qas": [
+            {
+              "question": "字体文件设计通常采用的dpi是多少？",
+              "id": "5-461-9",
+              "answers": [
+                {
+                  "text": "96dpi",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "手机在20cm视距下，300dpi是乔布斯认为的视网膜屏；显示器在40cm视距下对应150dpi；电视机在120cm视距下对应50dpi。",
+          "qas": [
+            {
+              "question": "乔布斯认为手机在什么视距下300dpi是视网膜屏？",
+              "id": "5-461-10",
+              "answers": [
+                {
+                  "text": "20cm",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "question": "显示器在40cm视距下对应的dpi是多少？",
+              "id": "5-461-11",
+              "answers": [
+                {
+                  "text": "150dpi",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dp单位用于统一不同设备的视觉体验，如手机12dp/2=6pt、电脑12dp/1=12pt、电视机12dp/0.33=36pt。",
+          "qas": [
+            {
+              "question": "dp单位的作用是什么？",
+              "id": "5-461-12",
+              "answers": [
+                {
+                  "text": "用于统一不同设备的视觉体验",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在debian+KDE中，获取当前dpi信息的命令：1. `xdpyinfo | grep men` 获取分辨率和尺寸；2. `xdpyinfo | grep reso` 获取dpi。",
+          "qas": [
+            {
+              "question": "在debian+KDE中，如何获取当前dpi信息？",
+              "id": "5-461-13",
+              "answers": [
+                {
+                  "text": "1. `xdpyinfo | grep men` 获取分辨率和尺寸；2. `xdpyinfo | grep reso` 获取dpi。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`xrandr --dpi 138` 可设置dpi（nvidia暂不支持），数值可通过分辨率除以尺寸（英寸，1英寸=2.54厘米）计算。",
+          "qas": [
+            {
+              "question": "xrandr设置dpi的命令是什么？",
+              "id": "5-461-14",
+              "answers": [
+                {
+                  "text": "`xrandr --dpi 138`",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "dpi数值如何计算？",
+              "id": "5-461-15",
+              "answers": [
+                {
+                  "text": "分辨率除以尺寸（英寸，1英寸=2.54厘米）",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lightdm中，修改/etc/lightdm/lightdm.conf，将xserver-command修改为：xserver-command=X -dpi 138，可自动设置dpi。",
+          "qas": [
+            {
+              "question": "lightdm中如何自动设置dpi？",
+              "id": "5-461-16",
+              "answers": [
+                {
+                  "text": "修改/etc/lightdm/lightdm.conf，将xserver-command修改为：xserver-command=X -dpi 138",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nvidia显卡设置中，在Section \"Screen\"节添加`Option          \"DPI\" \"138 x 138\"`；在Section \"Monitor\"节添加`DisplaySize     707 398`（毫米）。",
+          "qas": [
+            {
+              "question": "nvidia显卡设置中，在Section \"Screen\"节需要添加什么配置？",
+              "id": "5-461-17",
+              "answers": [
+                {
+                  "text": "`Option          \"DPI\" \"138 x 138\"`",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "nvidia显卡设置中，Section \"Monitor\"节添加的配置是什么？",
+              "id": "5-461-18",
+              "answers": [
+                {
+                  "text": "`DisplaySize     707 398`（毫米）",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GTK/GNOME程序修正dpi需添加环境变量`export GDK_DPI_SCALE=1.4357`（138/96=1.4357），添加到/etc/profile或~.profile。",
+          "qas": [
+            {
+              "question": "GTK程序修正dpi需要添加什么环境变量？",
+              "id": "5-461-19",
+              "answers": [
+                {
+                  "text": "`export GDK_DPI_SCALE=1.4357`",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "修正GTK程序dpi的环境变量应添加到哪些文件？",
+              "id": "5-461-20",
+              "answers": [
+                {
+                  "text": "/etc/profile或~.profile",
+                  "answer_start": 84
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

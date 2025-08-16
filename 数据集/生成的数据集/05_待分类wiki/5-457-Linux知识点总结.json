@@ -1,0 +1,209 @@
+{
+  "data": [
+    {
+      "title": "Linux知识点总结",
+      "paragraphs": [
+        {
+          "context": "Linux知识点总结包含基础篇、帮助命令等多个部分。",
+          "qas": [
+            {
+              "question": "Linux知识点总结包含哪些部分？",
+              "id": "5-457-1",
+              "answers": [
+                {
+                  "text": "基础篇、帮助命令等多个部分。",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux知识点总结的基础篇有相关图片说明。",
+          "qas": [
+            {
+              "question": "Linux知识点总结的基础篇有什么？",
+              "id": "5-457-2",
+              "answers": [
+                {
+                  "text": "相关图片说明。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "帮助命令是Linux知识点总结的一部分，有对应图片。",
+          "qas": [
+            {
+              "question": "帮助命令在Linux知识点总结中是否有对应图片？",
+              "id": "5-457-3",
+              "answers": [
+                {
+                  "text": "有对应图片。",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件与目录管理分为（一）和（二）两部分，均有图片。",
+          "qas": [
+            {
+              "question": "文件与目录管理在Linux知识点总结中分为几部分？",
+              "id": "5-457-4",
+              "answers": [
+                {
+                  "text": "两部分，（一）和（二）。",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "文件与目录管理的两部分都有图片吗？",
+              "id": "5-457-5",
+              "answers": [
+                {
+                  "text": "均有图片。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "权限管理是Linux知识点总结的第五部分，包含图片。",
+          "qas": [
+            {
+              "question": "权限管理是Linux知识点总结的第几部分？",
+              "id": "5-457-6",
+              "answers": [
+                {
+                  "text": "第五部分。",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Vim文本编辑器是第六部分，有相关图片描述。",
+          "qas": [
+            {
+              "question": "Vim文本编辑器在Linux知识点总结中是第几部分？",
+              "id": "5-457-7",
+              "answers": [
+                {
+                  "text": "第六部分。",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件系统与文件查找为第七部分，包含图片。",
+          "qas": [
+            {
+              "question": "文件系统与文件查找是Linux知识点总结的第几部分？",
+              "id": "5-457-8",
+              "answers": [
+                {
+                  "text": "第七部分。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统管理是第八部分，有对应图片。",
+          "qas": [
+            {
+              "question": "系统管理在Linux知识点总结中是第几部分？",
+              "id": "5-457-9",
+              "answers": [
+                {
+                  "text": "第八部分。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "磁盘分区、逻辑卷和启动修复是第九部分，包含图片。",
+          "qas": [
+            {
+              "question": "磁盘分区、逻辑卷和启动修复是第几部分？",
+              "id": "5-457-10",
+              "answers": [
+                {
+                  "text": "第九部分。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Shell篇认识BASH为第十部分，有图片描述。",
+          "qas": [
+            {
+              "question": "Shell篇认识BASH在Linux知识点总结中是第几部分？",
+              "id": "5-457-11",
+              "answers": [
+                {
+                  "text": "第十部分。",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Shell篇基础命令是第十一部分，包含图片。",
+          "qas": [
+            {
+              "question": "Shell篇基础命令是Linux知识点总结的第几部分？",
+              "id": "5-457-12",
+              "answers": [
+                {
+                  "text": "第十一部分。",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文本操作篇为第十二部分，有两张相关图片。",
+          "qas": [
+            {
+              "question": "文本操作篇是Linux知识点总结的第几部分？",
+              "id": "5-457-13",
+              "answers": [
+                {
+                  "text": "第十二部分。",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "文本操作篇有几张相关图片？",
+              "id": "5-457-14",
+              "answers": [
+                {
+                  "text": "两张。",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

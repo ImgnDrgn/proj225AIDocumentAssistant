@@ -1,0 +1,219 @@
+{
+  "data": [
+    {
+      "title": "系统语言",
+      "paragraphs": [
+        {
+          "context": "locale中文译为地区或地域，在linux上用于定义用户使用的语言及相关语言环境，还定义用户使用的字符集，对含非ASCII字符的语言很重要。",
+          "qas": [
+            {
+              "question": "locale在中文里是什么意思？",
+              "id": "5-463-1",
+              "answers": [
+                {
+                  "text": "地区或地域",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "在linux上，locale的作用是什么？",
+              "id": "5-463-2",
+              "answers": [
+                {
+                  "text": "用于定义用户使用的语言及相关语言环境，还定义用户使用的字符集",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Locales格式为<lang>_<territory>.<codeset>[@<modifiers>]，涉及用户语言符号、数字、排序等多方面文化传统分类。",
+          "qas": [
+            {
+              "question": "Locales的格式是什么？",
+              "id": "5-463-3",
+              "answers": [
+                {
+                  "text": "<lang>_<territory>.<codeset>[@<modifiers>]",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "Locales涉及哪些方面的文化传统分类？",
+              "id": "5-463-4",
+              "answers": [
+                {
+                  "text": "用户语言符号、数字、排序等多方面",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "列出所有启用的locale，终端执行locale -a；显示正在使用的locale，终端执行locale。",
+          "qas": [
+            {
+              "question": "如何列出所有启用的locale？",
+              "id": "5-463-5",
+              "answers": [
+                {
+                  "text": "终端执行locale -a",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "怎样显示正在使用的locale？",
+              "id": "5-463-6",
+              "answers": [
+                {
+                  "text": "终端执行locale",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置中文local环境第一步：编辑/var/lib/locales/supported.d/local，写入如zh_CN.UTF-8 UTF-8等内容。",
+          "qas": [
+            {
+              "question": "配置中文local环境的第一步是什么？",
+              "id": "5-463-7",
+              "answers": [
+                {
+                  "text": "编辑/var/lib/locales/supported.d/local，写入如zh_CN.UTF-8 UTF-8等内容",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置中文local环境第二步：生成相关locales，终端执行sudo locale-gen --purge。",
+          "qas": [
+            {
+              "question": "配置中文local环境的第二步是什么？",
+              "id": "5-463-8",
+              "answers": [
+                {
+                  "text": "生成相关locales，终端执行sudo locale-gen --purge",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置中文local环境第三步：编辑/etc/default/locale，写入LANG等相关内容，重启电脑生效。",
+          "qas": [
+            {
+              "question": "配置中文local环境的第三步是什么？",
+              "id": "5-463-9",
+              "answers": [
+                {
+                  "text": "编辑/etc/default/locale，写入LANG等相关内容，重启电脑生效",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "TTY下中文默认乱码，可使用Fbterm解决。",
+          "qas": [
+            {
+              "question": "TTY下中文乱码如何解决？",
+              "id": "5-463-10",
+              "answers": [
+                {
+                  "text": "使用Fbterm解决",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LC_CTYPE定义用户使用的语言符号及其分类，LC_NUMERIC与数字相关。",
+          "qas": [
+            {
+              "question": "LC_CTYPE的作用是什么？",
+              "id": "5-463-11",
+              "answers": [
+                {
+                  "text": "定义用户使用的语言符号及其分类",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "哪个分类与数字相关？",
+              "id": "5-463-12",
+              "answers": [
+                {
+                  "text": "LC_NUMERIC",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LC_TIME关乎时间显示格式，LC_MONETARY与货币单位有关。",
+          "qas": [
+            {
+              "question": "哪个分类涉及时间显示格式？",
+              "id": "5-463-13",
+              "answers": [
+                {
+                  "text": "LC_TIME",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "LC_MONETARY和什么有关？",
+              "id": "5-463-14",
+              "answers": [
+                {
+                  "text": "货币单位",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LC_MESSAGES包含提示信息、错误信息等，LC_PAPER与默认纸张尺寸相关。",
+          "qas": [
+            {
+              "question": "LC_MESSAGES包含哪些内容？",
+              "id": "5-463-15",
+              "answers": [
+                {
+                  "text": "提示信息、错误信息等",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "哪个分类和默认纸张尺寸相关？",
+              "id": "5-463-16",
+              "answers": [
+                {
+                  "text": "LC_PAPER",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "data": [
+    {
+      "title": "代码评审流程",
+      "paragraphs": [
+        {
+          "context": "当拉取请求（Pull Request）创建后，仓库维护人员和自动化流水线可对代码变动进行评审，有修改意见需贡献者修改，问题解决后维护人员可合并代码。",
+          "qas": [
+            {
+              "question": "拉取请求创建后，哪些角色可以对代码变动进行评审？",
+              "id": "5-453-1",
+              "answers": [
+                {
+                  "text": "仓库维护人员和自动化流水线",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "若评审有修改意见，贡献者需要做什么？",
+              "id": "5-453-2",
+              "answers": [
+                {
+                  "text": "进行相应的修改，并更新拉取请求中的代码",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "question": "什么时候维护人员可以合并代码？",
+              "id": "5-453-3",
+              "answers": [
+                {
+                  "text": "当所有问题均已解决时",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "代码评审在拉取请求的Files Changed页面进行，可在代码行左侧点蓝色加号评注，有Start a review（pending状态，需Submit review提交）和Add single comment（立即添加）两种方式。",
+          "qas": [
+            {
+              "question": "代码评审在拉取请求的哪个页面进行？",
+              "id": "5-453-4",
+              "answers": [
+                {
+                  "text": "Files Changed页面",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "如何在代码评审时进行评注？",
+              "id": "5-453-5",
+              "answers": [
+                {
+                  "text": "在要评注的行左侧悬浮鼠标，并点击出现的蓝色加号，然后在下方出现的评论框中填写评注内容和/或修改建议",
+                  "answer_start": 44
+                }
+              ]
+            },
+            {
+              "question": "使用Start a review进行评注后，贡献者何时能看到？",
+              "id": "5-453-6",
+              "answers": [
+                {
+                  "text": "在“Review Changes”中通过点击“Submit review”提交后",
+                  "answer_start": 135
+                }
+              ]
+            },
+            {
+              "question": "若只需简单备注说明，可使用哪种评注方式？",
+              "id": "5-453-7",
+              "answers": [
+                {
+                  "text": "Add single comment",
+                  "answer_start": 196
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "评注后点击右上角Review Changes按钮，选择评审结果提交。结果有三种：Approve（通过，相当于gerrit的+2）、Request change（请求修改，相当于gerrit的-1）、Comment（仅做评论）。",
+          "qas": [
+            {
+              "question": "评注完毕后，如何提交评审结果？",
+              "id": "5-453-8",
+              "answers": [
+                {
+                  "text": "点击右上角的Review Changes按钮，选择评审结果，并提交评审结果即可",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "代码评审结果有哪几种？",
+              "id": "5-453-9",
+              "answers": [
+                {
+                  "text": "Approve、Request change、Comment",
+                  "answer_start": 63
+                }
+              ]
+            },
+            {
+              "question": "Approve相当于gerrit的什么？",
+              "id": "5-453-10",
+              "answers": [
+                {
+                  "text": "+2",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "question": "Request change相当于gerrit的什么？",
+              "id": "5-453-11",
+              "answers": [
+                {
+                  "text": "-1",
+                  "answer_start": 133
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "具有推送（Push/Write）权限的人员的Approve为有效Approval。deepin相关项目至少需要一个有效的Approval，足够Approval后项目维护者可合并。",
+          "qas": [
+            {
+              "question": "什么样的人的Approve是有效的Approval？",
+              "id": "5-453-12",
+              "answers": [
+                {
+                  "text": "项目仓库的具有推送（Push/Write）权限的人员",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "deepin相关项目需要多少个有效的Approval？",
+              "id": "5-453-13",
+              "answers": [
+                {
+                  "text": "至少有一个",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "question": "拉取请求得到足够的Approval后，谁可以合并代码？",
+              "id": "5-453-14",
+              "answers": [
+                {
+                  "text": "项目维护者",
+                  "answer_start": 99
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
