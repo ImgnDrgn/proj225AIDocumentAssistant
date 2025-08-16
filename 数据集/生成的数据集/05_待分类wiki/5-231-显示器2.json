@@ -1,0 +1,164 @@
+{
+  "data": [
+    {
+      "title": "显示器",
+      "paragraphs": [
+        {
+          "context": "显示屏是一种输出设备，用于显示图像及色彩。",
+          "qas": [
+            {
+              "question": "显示屏属于什么类型的设备？",
+              "id": "5-231-1",
+              "answers": [
+                {
+                  "text": "输出设备",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "显示屏的作用是什么？",
+              "id": "5-231-2",
+              "answers": [
+                {
+                  "text": "显示图像及色彩",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "显示器主要分类包括阴极射线管显示屏(CRT)、液晶显示屏(LCD)、等离子显示屏(PDP)、投影式显示屏、立体成像显示屏、有机发光二极管显示屏、电子纸、发光二极管显示屏。",
+          "qas": [
+            {
+              "question": "显示器主要有哪些分类？",
+              "id": "5-231-3",
+              "answers": [
+                {
+                  "text": "阴极射线管显示屏(CRT)、液晶显示屏(LCD)、等离子显示屏(PDP)、投影式显示屏、立体成像显示屏、有机发光二极管显示屏、电子纸、发光二极管显示屏",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看显示器信息可在终端执行xrandr命令，更多选项参考xrandr的帮助文档man xrandr。",
+          "qas": [
+            {
+              "question": "如何查看显示器信息？",
+              "id": "5-231-4",
+              "answers": [
+                {
+                  "text": "在终端执行xrandr命令",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "在哪里可以找到xrandr的更多选项？",
+              "id": "5-231-5",
+              "answers": [
+                {
+                  "text": "xrandr的帮助文档man xrandr",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "xrandr --output VGA-1 --right-of LVDS-1 可设置VGA-1（外置显示器）在LVDS-1的右侧。",
+          "qas": [
+            {
+              "question": "如何设置VGA-1在外置显示器LVDS-1的右侧？",
+              "id": "5-231-6",
+              "answers": [
+                {
+                  "text": "xrandr --output VGA-1 --right-of LVDS-1",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用cvt 1920 1080可查看1920×1080的信息。",
+          "qas": [
+            {
+              "question": "如何查看1920×1080的信息？",
+              "id": "5-231-7",
+              "answers": [
+                {
+                  "text": "使用cvt 1920 1080命令",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo xrandr --newmode \"1920x1080_60.00″ 173.00 1920 2048 2248 2576 1080 1083 1088 1120 -hsync +vsync可添加1920×1080的新模式。",
+          "qas": [
+            {
+              "question": "如何添加1920×1080的新模式？",
+              "id": "5-231-8",
+              "answers": [
+                {
+                  "text": "sudo xrandr --newmode \"1920x1080_60.00″ 173.00 1920 2048 2248 2576 1080 1083 1088 1120 -hsync +vsync",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo xrandr --addmode VGA-1 “1920x1080_60.00″ 可将新的1920×1080分辨率加给VGA-1。",
+          "qas": [
+            {
+              "question": "如何将新的1920×1080分辨率加给VGA-1？",
+              "id": "5-231-9",
+              "answers": [
+                {
+                  "text": "sudo xrandr --addmode VGA-1 “1920x1080_60.00″",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "xrandr --output VGA-1 --mode 1920x1080_60.00 --rate 60 可将外置显示器分辨率设置为1920×1080。",
+          "qas": [
+            {
+              "question": "如何将外置显示器分辨率设置为1920×1080？",
+              "id": "5-231-10",
+              "answers": [
+                {
+                  "text": "xrandr --output VGA-1 --mode 1920x1080_60.00 --rate 60",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在命令行中输入1920×1080中的乘号时，用字母“x”替代即可。",
+          "qas": [
+            {
+              "question": "在命令行中输入1920×1080时，乘号用什么替代？",
+              "id": "5-231-11",
+              "answers": [
+                {
+                  "text": "字母“x”",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
