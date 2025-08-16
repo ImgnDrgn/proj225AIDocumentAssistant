@@ -1,0 +1,444 @@
+{
+  "data": [
+    {
+      "title": "Deepin1541安装Caffe",
+      "paragraphs": [
+        {
+          "context": "安装nvidia-bumblebee的命令：sudo apt update；sudo apt install bumblebee bumblebee-nvidia nvidia-smi。",
+          "qas": [
+            {
+              "question": "如何安装nvidia-bumblebee？",
+              "id": "5-533-1",
+              "answers": [
+                {
+                  "text": "sudo apt update；sudo apt install bumblebee bumblebee-nvidia nvidia-smi。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装nvidia-bumblebee后需重启，命令为sudo reboot。",
+          "qas": [
+            {
+              "question": "安装nvidia-bumblebee后需要做什么？",
+              "id": "5-533-2",
+              "answers": [
+                {
+                  "text": "重启，命令为sudo reboot。",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重启后测试显卡状态的命令：nvidia-smi；optirun nvidia-smi。",
+          "qas": [
+            {
+              "question": "重启后如何测试显卡状态？",
+              "id": "5-533-3",
+              "answers": [
+                {
+                  "text": "nvidia-smi；optirun nvidia-smi。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用nvidia显卡需在命令前加optirun，如optirun nvidia-settings -c :8。",
+          "qas": [
+            {
+              "question": "如何使用nvidia显卡运行命令？",
+              "id": "5-533-4",
+              "answers": [
+                {
+                  "text": "在命令前加optirun，如optirun nvidia-settings -c :8。",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cuda8及之前版本支持gcc-4.8、g++-4.8，安装命令：sudo apt install g++-4.8 gcc-4.8。",
+          "qas": [
+            {
+              "question": "cuda8及之前版本需要什么版本的gcc和g++？如何安装？",
+              "id": "5-533-5",
+              "answers": [
+                {
+                  "text": "gcc-4.8、g++-4.8，安装命令：sudo apt install g++-4.8 gcc-4.8。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更改gcc和g++软连接步骤：cd /usr/bin；sudo rm gcc g++；sudo ln -s g++-4.8 g++；sudo ln -s gcc-4.8 gcc。",
+          "qas": [
+            {
+              "question": "如何更改gcc和g++的软连接？",
+              "id": "5-533-6",
+              "answers": [
+                {
+                  "text": "cd /usr/bin；sudo rm gcc g++；sudo ln -s g++-4.8 g++；sudo ln -s gcc-4.8 gcc。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装cuda开发工具命令：sudo apt install nvidia-cuda-dev nvidia-cuda-toolkit nvidia-nsight nvidia-visual-profiler。",
+          "qas": [
+            {
+              "question": "如何安装cuda开发工具？",
+              "id": "5-533-7",
+              "answers": [
+                {
+                  "text": "sudo apt install nvidia-cuda-dev nvidia-cuda-toolkit nvidia-nsight nvidia-visual-profiler。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用nsight的方法：在终端输入optirun nsight。",
+          "qas": [
+            {
+              "question": "如何使用nsight？",
+              "id": "5-533-8",
+              "answers": [
+                {
+                  "text": "在终端输入optirun nsight。",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装pycuda的命令：sudo apt install python-pycuda。",
+          "qas": [
+            {
+              "question": "如何安装pycuda？",
+              "id": "5-533-9",
+              "answers": [
+                {
+                  "text": "sudo apt install python-pycuda。",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行pycuda测试代码的命令：optirun python cuda_test.py。",
+          "qas": [
+            {
+              "question": "如何运行pycuda测试代码？",
+              "id": "5-533-10",
+              "answers": [
+                {
+                  "text": "optirun python cuda_test.py。",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装cudnn需复制头文件：cd cuda/include；sudo cp *.h /usr/include。",
+          "qas": [
+            {
+              "question": "如何安装cudnn的头文件？",
+              "id": "5-533-11",
+              "answers": [
+                {
+                  "text": "cd cuda/include；sudo cp *.h /usr/include。",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装cudnn库文件：cd cuda/lib64；sudo cp libcudnn.so.7.0.1 /usr/lib；sudo cp libcudnn_static.a /usr/lib。",
+          "qas": [
+            {
+              "question": "如何安装cudnn的库文件？",
+              "id": "5-533-12",
+              "answers": [
+                {
+                  "text": "cd cuda/lib64；sudo cp libcudnn.so.7.0.1 /usr/lib；sudo cp libcudnn_static.a /usr/lib。",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建cudnn软连接：sudo ln -s /usr/libcudnn.so.7.0.1 /usr/libcudnn.so.7；sudo ln -s /usr/libcudnn.so.7 /usr/libcudnn.so。",
+          "qas": [
+            {
+              "question": "如何创建cudnn的软连接？",
+              "id": "5-533-13",
+              "answers": [
+                {
+                  "text": "sudo ln -s /usr/libcudnn.so.7.0.1 /usr/libcudnn.so.7；sudo ln -s /usr/libcudnn.so.7 /usr/libcudnn.so。",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装OpenCV依赖库命令：sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev；sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev；sudo apt-get install libglu1-mesa-dev。",
+          "qas": [
+            {
+              "question": "安装OpenCV需要哪些依赖库？如何安装？",
+              "id": "5-533-14",
+              "answers": [
+                {
+                  "text": "cmake git libgtk2.0-dev等，安装命令：sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev；sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev；sudo apt-get install libglu1-mesa-dev。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载OpenCV源码命令：git clone https://github.com/opencv/opencv.git。",
+          "qas": [
+            {
+              "question": "如何下载OpenCV源代码？",
+              "id": "5-533-15",
+              "answers": [
+                {
+                  "text": "git clone https://github.com/opencv/opencv.git。",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装cmake-gui命令：sudo apt-get install cmake-gui。",
+          "qas": [
+            {
+              "question": "如何安装cmake的GUI工具？",
+              "id": "5-533-16",
+              "answers": [
+                {
+                  "text": "sudo apt-get install cmake-gui。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "OpenCV编译步骤：在build路径下执行make -j8；编译完成后sudo make install；sudo ldconfig。",
+          "qas": [
+            {
+              "question": "如何编译和安装OpenCV？",
+              "id": "5-533-17",
+              "answers": [
+                {
+                  "text": "在build路径下执行make -j8；编译完成后sudo make install；sudo ldconfig。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装caffe依赖库命令：sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libhdf5-serial-dev protobuf-compiler；sudo apt-get install --no-install-recommends libboost-all-dev；sudo apt-get install libatlas-base-dev；sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev。",
+          "qas": [
+            {
+              "question": "安装caffe需要哪些依赖库？如何安装？",
+              "id": "5-533-18",
+              "answers": [
+                {
+                  "text": "libprotobuf-dev、libleveldb-dev等，安装命令：sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libhdf5-serial-dev protobuf-compiler；sudo apt-get install --no-install-recommends libboost-all-dev；sudo apt-get install libatlas-base-dev；sudo apt-get install libgflags-dev libgoogle-glog-dev liblmdb-dev。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除不兼容库命令：sudo apt-get remove libleveldb-dev；sudo apt-get remove libprotobuf-dev；sudo apt-get remove libgflags-dev；sudo apt-get remove libgoogle-glog-dev。",
+          "qas": [
+            {
+              "question": "为避免caffe编译错误，需要删除哪些库？",
+              "id": "5-533-19",
+              "answers": [
+                {
+                  "text": "libleveldb-dev、libprotobuf-dev、libgflags-dev、libgoogle-glog-dev，命令：sudo apt-get remove libleveldb-dev；sudo apt-get remove libprotobuf-dev；sudo apt-get remove libgflags-dev；sudo apt-get remove libgoogle-glog-dev。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编译安装leveldb步骤：git clone https://github.com/google/leveldb.git；cd leveldb/；make -j8；sudo cp -r leveldb/include/leveldb/ /usr/include/；sudo cp leveldb/out-shared/libleveldb.so.1.20 /usr/lib/；sudo ln -s /usr/lib/libleveldb.so.1.20 /usr/lib/libleveldb.so.1；sudo ln -s /usr/lib/libleveldb.so.1 /usr/lib/libleveldb.so；sudo ldconfig。",
+          "qas": [
+            {
+              "question": "如何编译安装leveldb？",
+              "id": "5-533-20",
+              "answers": [
+                {
+                  "text": "git clone https://github.com/google/leveldb.git；cd leveldb/；make -j8；sudo cp -r leveldb/include/leveldb/ /usr/include/；sudo cp leveldb/out-shared/libleveldb.so.1.20 /usr/lib/；sudo ln -s /usr/lib/libleveldb.so.1.20 /usr/lib/libleveldb.so.1；sudo ln -s /usr/lib/libleveldb.so.1 /usr/lib/libleveldb.so；sudo ldconfig。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编译安装protobuf步骤：git clone https://github.com/google/protobuf.git；cd protobuf/；git checkout v2.5.0；git clone https://github.com/kgcd/gtest.git；./autogen.sh；./configure --prefix=/usr/；make -j8；make check -j8；sudo make install；sudo ldconfig。",
+          "qas": [
+            {
+              "question": "如何编译安装protobuf？",
+              "id": "5-533-21",
+              "answers": [
+                {
+                  "text": "git clone https://github.com/google/protobuf.git；cd protobuf/；git checkout v2.5.0；git clone https://github.com/kgcd/gtest.git；./autogen.sh；./configure --prefix=/usr/；make -j8；make check -j8；sudo make install；sudo ldconfig。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载caffe源码命令：git clone https://github.com/BVLC/caffe.git。",
+          "qas": [
+            {
+              "question": "如何下载caffe源码？",
+              "id": "5-533-22",
+              "answers": [
+                {
+                  "text": "git clone https://github.com/BVLC/caffe.git。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改caffe的Makefile.config：cp Makefile.config.example Makefile.config；vim Makefile.config；开启USE_CUDNN := 1、OPENCV_VERSION := 3、WITH_PYTHON_LAYER := 1；设置CUDA_DIR := /usr；修改INCLUDE_DIRS和LIBRARY_DIRS路径。",
+          "qas": [
+            {
+              "question": "如何修改caffe的Makefile.config？",
+              "id": "5-533-23",
+              "answers": [
+                {
+                  "text": "cp Makefile.config.example Makefile.config；vim Makefile.config；开启USE_CUDNN := 1、OPENCV_VERSION := 3、WITH_PYTHON_LAYER := 1；设置CUDA_DIR := /usr；修改INCLUDE_DIRS和LIBRARY_DIRS路径。",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改caffe的Makefile：将LIBRARIES += ... hdf5_hl hdf5改为LIBRARIES += ... hdf5_serial_hl hdf5_serial。",
+          "qas": [
+            {
+              "question": "如何修改caffe的Makefile？",
+              "id": "5-533-24",
+              "answers": [
+                {
+                  "text": "将LIBRARIES += ... hdf5_hl hdf5改为LIBRARIES += ... hdf5_serial_hl hdf5_serial。",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编译caffe命令：make all -j8；make test -j8。",
+          "qas": [
+            {
+              "question": "如何编译caffe？",
+              "id": "5-533-25",
+              "answers": [
+                {
+                  "text": "make all -j8；make test -j8。",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载MNIST数据命令：data/mnist/get_mnist.sh。",
+          "qas": [
+            {
+              "question": "如何下载MNIST数据？",
+              "id": "5-533-26",
+              "answers": [
+                {
+                  "text": "data/mnist/get_mnist.sh。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "转换MNIST数据格式命令：optirun examples/mnist/create_mnist.sh。",
+          "qas": [
+            {
+              "question": "如何转换MNIST数据格式？",
+              "id": "5-533-27",
+              "answers": [
+                {
+                  "text": "optirun examples/mnist/create_mnist.sh。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "训练LeNet-5命令：optirun examples/mnist/train_lenet.sh。",
+          "qas": [
+            {
+              "question": "如何训练LeNet-5模型？",
+              "id": "5-533-28",
+              "answers": [
+                {
+                  "text": "optirun examples/mnist/train_lenet.sh。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "测试MNIST预测命令：optirun build/tools/caffe.bin test -model examples/mnist/lenet_train_test.prototxt -weights examples/mnist/lenet_iter_10000.caffemodel -iterations 100。",
+          "qas": [
+            {
+              "question": "如何在测试集上测试MNIST预测？",
+              "id": "5-533-29",
+              "answers": [
+                {
+                  "text": "optirun build/tools/caffe.bin test -model examples/mnist/lenet_train_test.prototxt -weights examples/mnist/lenet_iter_10000.caffemodel -iterations 100。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

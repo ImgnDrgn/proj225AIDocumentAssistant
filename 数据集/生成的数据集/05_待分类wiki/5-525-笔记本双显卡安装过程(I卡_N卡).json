@@ -1,0 +1,209 @@
+{
+  "data": [
+    {
+      "title": "笔记本双显卡安装过程(I卡_N卡)",
+      "paragraphs": [
+        {
+          "context": "安装笔记本双显卡（I卡、N卡）前，需删除以往所有安装的驱动和大黄蜂，命令为sudo apt remove --purge nvidia*和sudo apt remove --purge bumblebee*。",
+          "qas": [
+            {
+              "question": "安装笔记本双显卡前需要删除哪些内容？",
+              "id": "5-525-1",
+              "answers": [
+                {
+                  "text": "以往所有安装的驱动和大黄蜂",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "删除以往安装的驱动和大黄蜂的命令是什么？",
+              "id": "5-525-2",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge nvidia*和sudo apt remove --purge bumblebee*",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除旧驱动等后，打开驱动管理器点击驱动安装，再安装相关软件，命令为sudo apt-get install bumblebee-nvidia bumblebee primus。",
+          "qas": [
+            {
+              "question": "删除旧驱动后，接下来的安装步骤是什么？",
+              "id": "5-525-3",
+              "answers": [
+                {
+                  "text": "打开驱动管理器点击驱动安装，再安装相关软件",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "安装相关软件的命令是什么？",
+              "id": "5-525-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install bumblebee-nvidia bumblebee primus",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用独显启动程序的命令有optirun command和optirun -b primus command，后者可提升性能。",
+          "qas": [
+            {
+              "question": "使用独显启动程序的命令有哪些？",
+              "id": "5-525-5",
+              "answers": [
+                {
+                  "text": "optirun command和optirun -b primus command",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "哪个命令使用独显启动程序能提升性能？",
+              "id": "5-525-6",
+              "answers": [
+                {
+                  "text": "optirun -b primus command",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "可安装nvidia-smi，执行sudo nvidia-smi能查看驱动安装及设备运转情况；执行sudo lspci -v可查看详细信息。",
+          "qas": [
+            {
+              "question": "如何查看驱动安装及设备运转情况？",
+              "id": "5-525-7",
+              "answers": [
+                {
+                  "text": "安装nvidia-smi，执行sudo nvidia-smi",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "执行什么命令可以查看详细信息？",
+              "id": "5-525-8",
+              "answers": [
+                {
+                  "text": "sudo lspci -v",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用optirun命令前，lspci查看独显信息为(rev ff)，代表设备关闭；使用后为(rev a2)，代表正常使用。",
+          "qas": [
+            {
+              "question": "使用optirun命令前，lspci查看独显信息为(rev ff)意味着什么？",
+              "id": "5-525-9",
+              "answers": [
+                {
+                  "text": "设备关闭",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "question": "使用optirun命令后，lspci查看独显信息为(rev a2)表示什么？",
+              "id": "5-525-10",
+              "answers": [
+                {
+                  "text": "独显已经正常使用",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装好驱动后，nvidia x server seetings打不开，会弹出错误提示；bumblebee配置下需用optirun或primusrun调用独显操作，如optirun -b none nvidia-settings -c :8。",
+          "qas": [
+            {
+              "question": "安装好驱动后，nvidia x server seetings能正常打开吗？",
+              "id": "5-525-11",
+              "answers": [
+                {
+                  "text": "不能，点击后会弹出错误提示",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "bumblebee配置下需要用什么调用独显操作？",
+              "id": "5-525-12",
+              "answers": [
+                {
+                  "text": "optirun或primusrun",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "黑屏或进不去系统时，可按ctrl+alt+2进入2号控制台，尝试sudo apt remove --purge nvidia*、sudo rm /etc/X11/xorg.conf、sudo apt install xorg这三种方法。",
+          "qas": [
+            {
+              "question": "黑屏或进不去系统时，如何进入2号控制台？",
+              "id": "5-525-13",
+              "answers": [
+                {
+                  "text": "按ctrl+alt+2",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "黑屏或进不去系统的救急方法有哪些？",
+              "id": "5-525-14",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge nvidia*、sudo rm /etc/X11/xorg.conf、sudo apt install xorg",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进不了tty时，开机选“Advanced options for *****”回车，选最后是“（recovery mode）”的行按“E”编辑，把ro改成rw，按F10进入root shell。",
+          "qas": [
+            {
+              "question": "进不了tty时，开机选择哪一行按回车？",
+              "id": "5-525-15",
+              "answers": [
+                {
+                  "text": "Advanced options for *****",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "进不了tty时，编辑页面需要把什么改成rw？",
+              "id": "5-525-16",
+              "answers": [
+                {
+                  "text": "ro",
+                  "answer_start": 106
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

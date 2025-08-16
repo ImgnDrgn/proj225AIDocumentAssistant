@@ -1,0 +1,219 @@
+{
+  "data": [
+    {
+      "title": "deepin系统下双显卡的切换",
+      "paragraphs": [
+        {
+          "context": "本文针对双显卡机器（I+N卡或A+N卡），deepin内核优选5.18.17-amd64-desktop-hwe版本。",
+          "qas": [
+            {
+              "question": "本文针对哪种机器？",
+              "id": "5-536-1",
+              "answers": [
+                {
+                  "text": "双显卡机器（I+N卡或A+N卡）",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "deepin系统优选哪种内核版本？",
+              "id": "5-536-2",
+              "answers": [
+                {
+                  "text": "5.18.17-amd64-desktop-hwe版本",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装N卡驱动方法：a.安装系统时，硬盘分区勾选“集成NVIDIA闭源驱动”；b.终端输入`sudo apt install nvidia-driver`。",
+          "qas": [
+            {
+              "question": "安装N卡驱动的方法有哪些？",
+              "id": "5-536-3",
+              "answers": [
+                {
+                  "text": "a.安装系统时，硬盘分区勾选“集成NVIDIA闭源驱动”；b.终端输入`sudo apt install nvidia-driver`。",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "判定NVIDIA闭源驱动安装成功：终端输入`dpkg -l | grep nvidia`查看显示。",
+          "qas": [
+            {
+              "question": "如何判定NVIDIA闭源驱动是否安装成功？",
+              "id": "5-536-4",
+              "answers": [
+                {
+                  "text": "终端输入`dpkg -l | grep nvidia`查看显示。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "官方切换至NVIDIA闭源方法：1.终端输入`sudo apt install deepin-prime`；2.用`sudo prime-select offload`设置混合模式；3.`sudo prime-select get-current`查看当前模式。",
+          "qas": [
+            {
+              "question": "官方切换至NVIDIA闭源的第一步是什么？",
+              "id": "5-536-5",
+              "answers": [
+                {
+                  "text": "终端输入`sudo apt install deepin-prime`",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "如何设置显卡混合使用模式？",
+              "id": "5-536-6",
+              "answers": [
+                {
+                  "text": "用`sudo prime-select offload`设置混合模式",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "怎样查看当前配置的显卡模式？",
+              "id": "5-536-7",
+              "answers": [
+                {
+                  "text": "`sudo prime-select get-current`查看当前模式",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开启offload后N卡渲染方法1：安装mesa-utils，终端输入`__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia 应用命令`。",
+          "qas": [
+            {
+              "question": "开启offload后，N卡渲染的第一种方法是什么？",
+              "id": "5-536-8",
+              "answers": [
+                {
+                  "text": "安装mesa-utils，终端输入`__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia 应用命令`。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开启offload后N卡渲染方法2：修改应用.desktop文件，如修改deepin-movie.desktop的Exec行为`sh -c \"__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia deepin-movie\" %U`。",
+          "qas": [
+            {
+              "question": "开启offload后，N卡渲染的第二种方法是什么？",
+              "id": "5-536-9",
+              "answers": [
+                {
+                  "text": "修改应用.desktop文件，如修改deepin-movie.desktop的Exec行为`sh -c \"__NV_PRIME_RENDER_OFFLOAD=1 __GLX_VENDOR_LIBRARY_NAME=nvidia deepin-movie\" %U`。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "N卡渲染验证方法1：安装nvidia-smi，播放视频时用`nvidia-smi`查看显存在用情况。",
+          "qas": [
+            {
+              "question": "用nvidia-smi如何验证N卡渲染？",
+              "id": "5-536-10",
+              "answers": [
+                {
+                  "text": "安装nvidia-smi，播放视频时用`nvidia-smi`查看显存在用情况。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "N卡渲染验证方法2：安装nvidia-settings，播放视频时调用`nvidia-settings`查看显存在用情况。",
+          "qas": [
+            {
+              "question": "用nvidia-settings如何验证N卡渲染？",
+              "id": "5-536-11",
+              "answers": [
+                {
+                  "text": "安装nvidia-settings，播放视频时调用`nvidia-settings`查看显存在用情况。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "硬件解码功能：offload模式暂不能调用，设置影院解码方式为“硬件解码”，用htop看CPU占用率判断。",
+          "qas": [
+            {
+              "question": "offload模式下N卡能调用硬件解码功能吗？",
+              "id": "5-536-12",
+              "answers": [
+                {
+                  "text": "不能",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "如何判断硬件解码功能是否被调用？",
+              "id": "5-536-13",
+              "answers": [
+                {
+                  "text": "设置影院解码方式为“硬件解码”，用htop看CPU占用率判断。",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "还原设置：终端用`sudo prime-select unset`，切回I卡用`sudo prime-select intel`，切回A卡用`sudo prime-select amd`。",
+          "qas": [
+            {
+              "question": "如何还原显卡设置？",
+              "id": "5-536-14",
+              "answers": [
+                {
+                  "text": "终端用`sudo prime-select unset`",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "怎样切回I卡？",
+              "id": "5-536-15",
+              "answers": [
+                {
+                  "text": "`sudo prime-select intel`",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "question": "怎样切回A卡？",
+              "id": "5-536-16",
+              "answers": [
+                {
+                  "text": "`sudo prime-select amd`",
+                  "answer_start": 73
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

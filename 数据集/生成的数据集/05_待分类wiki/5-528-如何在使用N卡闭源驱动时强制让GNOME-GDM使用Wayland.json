@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "title": "如何在使用N卡闭源驱动时强制让GNOME-GDM使用Wayland",
+      "paragraphs": [
+        {
+          "context": "教程适用于使用GNOME桌面、GDM显示管理器、安装了Nvidia闭源驱动的环境，不适用于LightDM等其他显示管理器、非GNOME桌面、未安装Nvidia闭源驱动的情况。",
+          "qas": [
+            {
+              "question": "该教程适用于哪些桌面环境？",
+              "id": "5-528-1",
+              "answers": [
+                {
+                  "text": "使用GNOME桌面、GDM显示管理器、安装了Nvidia闭源驱动的环境",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "哪些桌面环境不适用该教程？",
+              "id": "5-528-2",
+              "answers": [
+                {
+                  "text": "使用LightDM或者其他显示管理器、不使用GNOME桌面（如KDE、DDE等）、未安装Nvidia闭源驱动",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "已知问题：Nvidia闭源驱动不支持XWayland 3D加速，Wine未原生支持Wayland，导致Wine游戏助手无法启动3D游戏。",
+          "qas": [
+            {
+              "question": "使用该方案存在什么已知问题？",
+              "id": "5-528-3",
+              "answers": [
+                {
+                  "text": "Nvidia闭源驱动不支持XWayland 3D加速，Wine未原生支持Wayland，导致Wine游戏助手无法启动3D游戏",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改/etc/gdm/custom.conf，确保WaylandEnable=false被注释（前面有#）。",
+          "qas": [
+            {
+              "question": "如何修改/etc/gdm/custom.conf以启用Wayland？",
+              "id": "5-528-4",
+              "answers": [
+                {
+                  "text": "确保WaylandEnable=false被注释（前面有#）",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改/usr/lib/udev/rules.d/61-gdm.rules，在Driver==\"nvidia\"……前面加#，若无效则在所有行前加#。",
+          "qas": [
+            {
+              "question": "修改/usr/lib/udev/rules.d/61-gdm.rules的步骤是什么？",
+              "id": "5-528-5",
+              "answers": [
+                {
+                  "text": "在Driver==\"nvidia\"……前面加#，若无效则在所有行前加#",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改/etc/default/grub，在GRUB_CMDLINE_LINUX_DEFAULT的引号内末尾添加nvidia-drm.modeset=1，再运行更新grub的命令。",
+          "qas": [
+            {
+              "question": "如何修改GRUB配置以启用Wayland？",
+              "id": "5-528-6",
+              "answers": [
+                {
+                  "text": "在/etc/default/grub的GRUB_CMDLINE_LINUX_DEFAULT引号内末尾添加nvidia-drm.modeset=1，再运行更新grub的命令",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重启后，选择用户后点击右下角齿轮图标，若有“运行于 Xorg 的 GNOME”，则Wayland已启用，另两个为Wayland会话。",
+          "qas": [
+            {
+              "question": "如何判断Wayland是否已启用？",
+              "id": "5-528-7",
+              "answers": [
+                {
+                  "text": "重启后选择用户，点击右下角齿轮图标，若有“运行于 Xorg 的 GNOME”，则Wayland已启用",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "登陆后运行env | grep XDG，若XDG_SESSION_TYPE=wayland则为Wayland会话，x11则为Xorg会话。",
+          "qas": [
+            {
+              "question": "如何确认当前是Wayland还是Xorg会话？",
+              "id": "5-528-8",
+              "answers": [
+                {
+                  "text": "运行env | grep XDG，XDG_SESSION_TYPE=wayland是Wayland会话，x11是Xorg会话",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "想打游戏需注销并选择“运行于 Xorg 的 GNOME”，坚持用Wayland会话很多游戏无法启动，或使用wine-wayland。",
+          "qas": [
+            {
+              "question": "想打游戏应该选择哪种会话？",
+              "id": "5-528-9",
+              "answers": [
+                {
+                  "text": "运行于 Xorg 的 GNOME",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "坚持使用Wayland会话玩游戏有什么解决办法？",
+              "id": "5-528-10",
+              "answers": [
+                {
+                  "text": "使用wine-wayland",
+                  "answer_start": 74
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+
+{
+  "data": [
+    {
+      "title": "硬解码详解",
+      "paragraphs": [
+        {
+          "context": "\"硬解码\"是硬件解码的简称，指通过显卡的视频加速功能对高清视频进行解码，将CPU从视频解码运算中释放出来。",
+          "qas": [
+            {
+              "question": "什么是硬解码？",
+              "id": "5-532-1",
+              "answers": [
+                {
+                  "text": "\"硬解码\"是硬件解码的简称，指通过显卡的视频加速功能对高清视频进行解码，将CPU从视频解码运算中释放出来。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "硬解码优点是效率高，功耗低、热功耗低，能流畅支持1080p甚至4K电影播放，不占用CPU，使CPU可承担更多其他任务。",
+          "qas": [
+            {
+              "question": "硬解码有哪些优点？",
+              "id": "5-532-2",
+              "answers": [
+                {
+                  "text": "效率高，功耗低、热功耗低，能流畅支持1080p甚至4K电影播放，不占用CPU，使CPU可承担更多其他任务。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "硬解码起步较晚，软件支持度不如软解，对杂乱视频编码和封装格式兼容不全面，画面输出补偿及画质增强技术与软解差距大，软件设置复杂。",
+          "qas": [
+            {
+              "question": "硬解码的缺点是什么？",
+              "id": "5-532-3",
+              "answers": [
+                {
+                  "text": "起步较晚，软件支持度不如软解，对杂乱视频编码和封装格式兼容不全面，画面输出补偿及画质增强技术与软解差距大，软件设置复杂。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "VDPAU是NVIDIA开发的基于UNIX和类UNIX系统的视频硬件解码技术，包括视频解码、后期处理等，支持最大2048像素的视频宽高，最小48像素。",
+          "qas": [
+            {
+              "question": "什么是VDPAU？",
+              "id": "5-532-4",
+              "answers": [
+                {
+                  "text": "VDPAU是NVIDIA开发的基于UNIX和类UNIX系统的视频硬件解码技术，包括视频解码、后期处理等。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "VDPAU支持的最大视频宽高是多少？",
+              "id": "5-532-5",
+              "answers": [
+                {
+                  "text": "2048像素",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "VDPAU支持NVIDIA的GeForce 8系列以上的显卡进行视频硬件解码。",
+          "qas": [
+            {
+              "question": "哪些显卡支持VDPAU的硬件解码？",
+              "id": "5-532-6",
+              "answers": [
+                {
+                  "text": "NVIDIA的GeForce 8系列以上的显卡",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "VDPAU支持MPEG-1、MPEG-2、MPEG-4 ASP、VC-1/WMV9和H.264视频解码的完全加速，但不支持MPEG-4 ASP的运动补偿和数据分块。",
+          "qas": [
+            {
+              "question": "VDPAU支持哪些视频解码格式的完全加速？",
+              "id": "5-532-7",
+              "answers": [
+                {
+                  "text": "MPEG-1、MPEG-2、MPEG-4 ASP、VC-1/WMV9和H.264",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "VDPAU不支持MPEG-4 ASP的哪些功能？",
+              "id": "5-532-8",
+              "answers": [
+                {
+                  "text": "运动补偿和数据分块",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "FFmpeg提供vdpau硬解码入口支持，不提供实现，具体实现由不同硬件厂商负责，不同显卡驱动对vdpau接口有不同实现。",
+          "qas": [
+            {
+              "question": "FFmpeg对VDPAU硬解码提供什么支持？",
+              "id": "5-532-9",
+              "answers": [
+                {
+                  "text": "提供vdpau硬解码入口支持，不提供实现",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "VA-API规范最初由英特尔为其GMA系列GPU设计，目的是取代XvMC标准，成为Windows DxVA API的Unix多平台等效项。",
+          "qas": [
+            {
+              "question": "VA-API规范最初是为谁设计的？",
+              "id": "5-532-10",
+              "answers": [
+                {
+                  "text": "英特尔为其GMA系列GPU",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "VA-API规范的目的是什么？",
+              "id": "5-532-11",
+              "answers": [
+                {
+                  "text": "取代XvMC标准，成为Windows DxVA API的Unix多平台等效项",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "VA-API支持的硬件和驱动包括：Linux的Intel Quick Sync开源驱动，AMD和Intel显卡的Mesa开源驱动等。",
+          "qas": [
+            {
+              "question": "VA-API支持哪些硬件和驱动？",
+              "id": "5-532-12",
+              "answers": [
+                {
+                  "text": "Linux的Intel Quick Sync开源驱动，AMD和Intel显卡的Mesa开源驱动等",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "VA-API支持MPEG-2、VC-1/WMV3、MPEG-4第2部分、H.264、H.265、VP9等多种编解码器，具体支持取决于硬件和驱动功能。",
+          "qas": [
+            {
+              "question": "VA-API支持哪些视频编解码器？",
+              "id": "5-532-13",
+              "answers": [
+                {
+                  "text": "MPEG-2、VC-1/WMV3、MPEG-4第2部分、H.264、H.265、VP9等",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "英特尔图形开源驱动程序支持VA-API，如intel-media-driver支持Broadwell开始的HD Graphics系列及更高版本。",
+          "qas": [
+            {
+              "question": "英特尔的哪些驱动支持VA-API？",
+              "id": "5-532-14",
+              "answers": [
+                {
+                  "text": "intel-media-driver支持Broadwell开始的HD Graphics系列及更高版本，libva-intel-driver支持GMA 4500和更新的GPU等",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Nouveau开源驱动程序支持VA-API和VDPAU，libva-mesa-driver和mesa-vdpau支持GeForce 8系列和更新的GPU直至GTX 750。",
+          "qas": [
+            {
+              "question": "Nouveau开源驱动程序支持哪些硬解技术？",
+              "id": "5-532-15",
+              "answers": [
+                {
+                  "text": "VA-API和VDPAU",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NVIDIA专有驱动程序通过nvidia-utils支持GeForce 8系列和更新的GPU上的VDPAU。",
+          "qas": [
+            {
+              "question": "NVIDIA专有驱动程序支持什么硬解技术及显卡？",
+              "id": "5-532-16",
+              "answers": [
+                {
+                  "text": "通过nvidia-utils支持GeForce 8系列和更新的GPU上的VDPAU",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ATI和AMDGPU开源驱动程序支持VA-API和VDPAU，libva-mesa-driver支持Radeon HD 2000及更高GPU的VA-API。",
+          "qas": [
+            {
+              "question": "ATI和AMDGPU开源驱动程序支持哪些硬解技术？",
+              "id": "5-532-17",
+              "answers": [
+                {
+                  "text": "VA-API和VDPAU",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

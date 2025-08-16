@@ -1,0 +1,244 @@
+{
+  "data": [
+    {
+      "title": "GPU",
+      "paragraphs": [
+        {
+          "context": "GPU是计算机的图形处理器，负责处理计算机的图像数据以及做一些大型计算工作。",
+          "qas": [
+            {
+              "question": "GPU是什么？",
+              "id": "5-535-1",
+              "answers": [
+                {
+                  "text": "计算机的图形处理器",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "GPU负责什么工作？",
+              "id": "5-535-2",
+              "answers": [
+                {
+                  "text": "处理计算机的图像数据以及做一些大型计算工作",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "目前主流的GPU架构有AMD的RDNA2架构，以及NVIDIA的安培架构。英特尔也在2022年下半年推出了自家的A系列独立显卡。从早期的Maxwell到最新的ADA架构，每一代GPU架构都进行了很多优化。",
+          "qas": [
+            {
+              "question": "目前主流的GPU架构有哪些？",
+              "id": "5-535-3",
+              "answers": [
+                {
+                  "text": "AMD的RDNA2架构，以及NVIDIA的安培架构",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "英特尔何时推出了自家的A系列独立显卡？",
+              "id": "5-535-4",
+              "answers": [
+                {
+                  "text": "2022年下半年",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NVIDIA对Linux的驱动支持一直不好，2022年上半年，NVIDIA才将RTX30系列的GPU驱动开源。deepin可以在安装时选择自动安装N卡闭源驱动。",
+          "qas": [
+            {
+              "question": "NVIDIA何时将RTX30系列的GPU驱动开源？",
+              "id": "5-535-5",
+              "answers": [
+                {
+                  "text": "2022年上半年",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "deepin安装时能否自动安装N卡闭源驱动？",
+              "id": "5-535-6",
+              "answers": [
+                {
+                  "text": "可以",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "AMD显卡驱动对Linux支持很好，驱动程序构建在Linux内核里，部分独立显卡需要在AMD官网下载开源驱动进行安装。",
+          "qas": [
+            {
+              "question": "AMD显卡驱动对Linux支持如何？",
+              "id": "5-535-7",
+              "answers": [
+                {
+                  "text": "很好",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "AMD部分独立显卡在哪里下载开源驱动？",
+              "id": "5-535-8",
+              "answers": [
+                {
+                  "text": "AMD官网",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "英特尔也为Linux提供了良好的驱动支持，其显卡驱动支持可参考相关链接。英伟达也为大多数显卡提供了闭源驱动，可在其官网下载。",
+          "qas": [
+            {
+              "question": "英特尔对Linux的驱动支持如何？",
+              "id": "5-535-9",
+              "answers": [
+                {
+                  "text": "良好",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "英伟达为大多数显卡提供了什么类型的驱动？",
+              "id": "5-535-10",
+              "answers": [
+                {
+                  "text": "闭源驱动",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GPU计算是使用GPU作为协处理器来加速CPU，以加快程序的运行速度，GPU计算加速器于2007年由英伟达率先推出。",
+          "qas": [
+            {
+              "question": "什么是GPU计算？",
+              "id": "5-535-11",
+              "answers": [
+                {
+                  "text": "使用GPU作为协处理器来加速CPU，以加快程序的运行速度",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "GPU计算加速器由谁率先推出？",
+              "id": "5-535-12",
+              "answers": [
+                {
+                  "text": "英伟达",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "question": "GPU计算加速器何时被率先推出？",
+              "id": "5-535-13",
+              "answers": [
+                {
+                  "text": "2007年",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CPU由2到96个CPU内核组成，而GPU由成千上万较小的流处理器组成。它们共同运作以应对应用程序中的数据，这种大规模并行架构为GPU提供了高计算性能。",
+          "qas": [
+            {
+              "question": "CPU由多少个CPU内核组成？",
+              "id": "5-535-14",
+              "answers": [
+                {
+                  "text": "2到96个",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "GPU由什么组成？",
+              "id": "5-535-15",
+              "answers": [
+                {
+                  "text": "成千上万较小的流处理器",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CUDA是显卡厂商NVIDIA推出的运算平台，是一种通用并行计算架构，该架构使GPU能够解决复杂的计算问题。它包含了CUDA指令集架构（ISA）以及GPU内部的并行计算引擎。",
+          "qas": [
+            {
+              "question": "CUDA是什么？",
+              "id": "5-535-16",
+              "answers": [
+                {
+                  "text": "显卡厂商NVIDIA推出的运算平台，是一种通用并行计算架构",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "CUDA包含什么？",
+              "id": "5-535-17",
+              "answers": [
+                {
+                  "text": "CUDA指令集架构（ISA）以及GPU内部的并行计算引擎",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开发人员可以使用C语言来为CUDA架构编写程序，所编写出的程序可以在支持CUDA的处理器上以超高性能运行。开发者可以从相关链接下载Linux版本的CUDA程序。",
+          "qas": [
+            {
+              "question": "开发人员可以使用什么语言为CUDA架构编写程序？",
+              "id": "5-535-18",
+              "answers": [
+                {
+                  "text": "C语言",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "question": "为CUDA架构编写的程序在哪里可以超高性能运行？",
+              "id": "5-535-19",
+              "answers": [
+                {
+                  "text": "支持CUDA的处理器上",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "data": [
+    {
+      "title": "双显卡笔记本安装N卡闭源驱动教程",
+      "paragraphs": [
+        {
+          "context": "安装N卡闭源驱动第一步是在星火商店安装双显卡快速切换插件，注销后可见图标，但可直接进行第二步。",
+          "qas": [
+            {
+              "question": "安装N卡闭源驱动的第一步是什么？",
+              "id": "5-530-1",
+              "answers": [
+                {
+                  "text": "在星火商店安装双显卡快速切换插件。",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "安装双显卡快速切换插件后需要立即注销吗？",
+              "id": "5-530-2",
+              "answers": [
+                {
+                  "text": "不用注销，直接第二步。",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "星火商店网址为https://spark-app.store。",
+          "qas": [
+            {
+              "question": "星火商店的网址是什么？",
+              "id": "5-530-3",
+              "answers": [
+                {
+                  "text": "https://spark-app.store",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装N卡闭源驱动第二步是使用代码sudo apt install nvidia-driver nvidia-settings一键安装440驱动、显卡设置，回车确认即可。",
+          "qas": [
+            {
+              "question": "安装N卡闭源驱动的第二步是什么？",
+              "id": "5-530-4",
+              "answers": [
+                {
+                  "text": "使用代码sudo apt install nvidia-driver nvidia-settings一键安装440驱动、显卡设置，回车确认。",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "安装440驱动和显卡设置的命令是什么？",
+              "id": "5-530-5",
+              "answers": [
+                {
+                  "text": "sudo apt install nvidia-driver nvidia-settings",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装N卡闭源驱动第三步是在任务栏切换成nvidia显卡，自动注销后查看启动器中是否有“NVIDIA X 服务器设置”或在psensor中查看是否有独显温度信息。",
+          "qas": [
+            {
+              "question": "安装N卡闭源驱动的第三步是什么？",
+              "id": "5-530-6",
+              "answers": [
+                {
+                  "text": "在任务栏切换成nvidia显卡，自动注销后查看启动器中是否有“NVIDIA X 服务器设置”或在psensor中查看是否有独显温度信息。",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "如何确认N卡驱动安装成功？",
+              "id": "5-530-7",
+              "answers": [
+                {
+                  "text": "查看启动器中是否成功安装“NVIDIA X 服务器设置”；或在psensor中查看是否有独显温度信息。",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "question": "在任务栏切换成nvidia显卡后会发生什么？",
+              "id": "5-530-8",
+              "answers": [
+                {
+                  "text": "自动注销（注意保存资料）。",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更高阶玩法可尝试Nvidia Prime方案，参考网址https://bbs.deepin.org/zh/post/191741。",
+          "qas": [
+            {
+              "question": "N卡驱动安装的更高阶玩法有什么？",
+              "id": "5-530-9",
+              "answers": [
+                {
+                  "text": "可以尝试的Nvidia Prime方案。",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "Nvidia Prime方案的参考网址是什么？",
+              "id": "5-530-10",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/zh/post/191741",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "该教程内容由论坛用户bxkdhao提供，时间为2021年2月6日，原帖地址https://bbs.deepin.org/zh/post/226463。",
+          "qas": [
+            {
+              "question": "该教程内容由谁提供？",
+              "id": "5-530-11",
+              "answers": [
+                {
+                  "text": "论坛用户bxkdhao。",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "教程内容的提供时间是什么时候？",
+              "id": "5-530-12",
+              "answers": [
+                {
+                  "text": "2021年2月6日。",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "教程原帖地址是什么？",
+              "id": "5-530-13",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/zh/post/226463",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "教程作者使用的电脑硬件为神舟战神G7M-CT7NA 英特尔酷睿i7-9750H。",
+          "qas": [
+            {
+              "question": "教程作者使用的电脑硬件是什么？",
+              "id": "5-530-14",
+              "answers": [
+                {
+                  "text": "神舟战神G7M-CT7NA 英特尔酷睿i7-9750H。",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

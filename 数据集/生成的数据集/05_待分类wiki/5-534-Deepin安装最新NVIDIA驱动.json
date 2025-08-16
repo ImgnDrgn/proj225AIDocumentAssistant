@@ -1,0 +1,195 @@
+
+{
+  "data": [
+    {
+      "title": "Deepin安装最新NVIDIA驱动",
+      "paragraphs": [
+        {
+          "context": "建议优先使用商店里的深度显卡驱动管理器安装NVIDIA驱动。安装黑屏后，只能recovery模式或单用户模式下卸载驱动。",
+          "qas": [
+            {
+              "question": "安装NVIDIA驱动的优先方式是什么？",
+              "id": "5-534-1",
+              "answers": [
+                {
+                  "text": "使用商店里的深度显卡驱动管理器安装。",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "安装NVIDIA驱动黑屏后如何卸载？",
+              "id": "5-534-2",
+              "answers": [
+                {
+                  "text": "在recovery模式或单用户模式下卸载。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装独立显卡驱动可从官方仓库找编译好的驱动，第一步是执行sudo apt-get install bumblebee-nvidia nvidia-driver nvidia-settings。",
+          "qas": [
+            {
+              "question": "从官方仓库安装独立显卡驱动的第一步命令是什么？",
+              "id": "5-534-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install bumblebee-nvidia nvidia-driver nvidia-settings",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nvidia-driver对应仓库里最新的nvidia驱动程序，仓库里有367、340、304三个版本，分别对应nvidia-driver、nvidia-legacy-340xx-driver、nvidia-legacy-304xx-driver。",
+          "qas": [
+            {
+              "question": "仓库里的NVIDIA驱动有哪些版本？",
+              "id": "5-534-4",
+              "answers": [
+                {
+                  "text": "367、340、304三个版本。",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "nvidia-legacy-340xx-driver对应哪个驱动版本？",
+              "id": "5-534-5",
+              "answers": [
+                {
+                  "text": "340版本。",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "linux下有三种optimus的实现：nouveau-only、nvidia-only、nouveau or nvidia（bumblebee）。ubuntu用第二种，debian只打包第三种bumblebee。",
+          "qas": [
+            {
+              "question": "linux下optimus的实现有哪几种？",
+              "id": "5-534-6",
+              "answers": [
+                {
+                  "text": "nouveau-only、nvidia-only、nouveau or nvidia（bumblebee）。",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "debian打包了哪种optimus实现？",
+              "id": "5-534-7",
+              "answers": [
+                {
+                  "text": "bumblebee。",
+                  "answer_start": 104
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ubuntu的nvidia-prime切换显卡需重启X session，因X启动时nvidia驱动模块已加载，独显一直工作。debian用bumblebee，开机加载intel驱动，程序默认用集显，需用optirun运行程序启用独显。",
+          "qas": [
+            {
+              "question": "ubuntu的nvidia-prime切换显卡为什么需要重启X session？",
+              "id": "5-534-8",
+              "answers": [
+                {
+                  "text": "因为在X启动的时候nvidia的驱动模块就已经加载了，独显是一直在工作的。",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "debian下如何启用独显运行程序？",
+              "id": "5-534-9",
+              "answers": [
+                {
+                  "text": "用optirun运行程序。",
+                  "answer_start": 165
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "检查驱动是否安装成功，先安装mesa-utils，命令为sudo apt-get install mesa-utils，再用optirun glxinfo|grep NVIDIA查看。",
+          "qas": [
+            {
+              "question": "检查NVIDIA驱动安装成功需先安装什么包？",
+              "id": "5-534-10",
+              "answers": [
+                {
+                  "text": "mesa-utils。",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "查看NVIDIA驱动是否安装成功的命令是什么？",
+              "id": "5-534-11",
+              "answers": [
+                {
+                  "text": "optirun glxinfo|grep NVIDIA",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开nvidia-settings提示“You do not appear to be using the NVIDIA X driver”，在terminal中运行optirun -b none nvidia-settings -c :8。",
+          "qas": [
+            {
+              "question": "打开nvidia-settings出现特定提示时如何解决？",
+              "id": "5-534-12",
+              "answers": [
+                {
+                  "text": "在terminal中运行optirun -b none nvidia-settings -c :8。",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "测试Bumblebee是否支持Optimus系统，可运行optirun glxgears -info，终端中看到Nvidia提示则工作正常。",
+          "qas": [
+            {
+              "question": "如何测试Bumblebee是否支持Optimus系统？",
+              "id": "5-534-13",
+              "answers": [
+                {
+                  "text": "运行optirun glxgears -info，终端中看到关于Nvidia的提示则工作正常。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用bumblebee开启独立显卡玩游戏，可用Primusrun 程序名 或者 optirun 程序名，例如Primusrun firefox 或者optirun firefox。",
+          "qas": [
+            {
+              "question": "如何用bumblebee开启独立显卡玩游戏？",
+              "id": "5-534-14",
+              "answers": [
+                {
+                  "text": "用Primusrun 程序名 或者 optirun 程序名，例如Primusrun firefox 或者optirun firefox。",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
