@@ -1,0 +1,164 @@
+{
+  "data": [
+    {
+      "title": "开机动画",
+      "paragraphs": [
+        {
+          "context": "开机动画(Bootsplash)是操作系统的启动过程的图形化表示。",
+          "qas": [
+            {
+              "question": "什么是开机动画？",
+              "id": "5-508-1",
+              "answers": [
+                {
+                  "text": "操作系统的启动过程的图形化表示。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开机动画可以将系统启动的信息以图形界面显示出来，并且也可以切换文本模式，以查看系统启动信息输出。",
+          "qas": [
+            {
+              "question": "开机动画能以什么方式显示系统启动信息？",
+              "id": "5-508-2",
+              "answers": [
+                {
+                  "text": "图形界面显示，也可以切换文本模式查看。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开机动画可以提高系统美观程度，吸引用户，并且开机动画可以在开机阶段和用户交互，解决一部分开机遇到的系统问题。",
+          "qas": [
+            {
+              "question": "开机动画有哪些作用？",
+              "id": "5-508-3",
+              "answers": [
+                {
+                  "text": "提高系统美观程度，吸引用户，在开机阶段和用户交互，解决一部分开机遇到的系统问题。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Plymouth是深度操作系统所使用的开机动画程序。",
+          "qas": [
+            {
+              "question": "深度操作系统使用的开机动画程序是什么？",
+              "id": "5-508-4",
+              "answers": [
+                {
+                  "text": "Plymouth",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Bootsplash是第一款开机动画程序，目前已经被Splashy取代。",
+          "qas": [
+            {
+              "question": "第一款开机动画程序是什么？",
+              "id": "5-508-5",
+              "answers": [
+                {
+                  "text": "Bootsplash",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Bootsplash目前被什么程序取代了？",
+              "id": "5-508-6",
+              "answers": [
+                {
+                  "text": "Splashy",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fbsplash是Gentoo开发的新开机动画程序，为了取代bootsplash。",
+          "qas": [
+            {
+              "question": "fbsplash是由哪个机构开发的？",
+              "id": "5-508-7",
+              "answers": [
+                {
+                  "text": "Gentoo",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "fbsplash开发的目的是什么？",
+              "id": "5-508-8",
+              "answers": [
+                {
+                  "text": "取代bootsplash",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Splashy是新的开机动画程序，以取代老化的bootsplash开机动画程序。",
+          "qas": [
+            {
+              "question": "Splashy是为了取代哪个开机动画程序？",
+              "id": "5-508-9",
+              "answers": [
+                {
+                  "text": "bootsplash",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "usplash是ubuntu之前早期使用的开机动画程序。",
+          "qas": [
+            {
+              "question": "ubuntu早期使用的开机动画程序是什么？",
+              "id": "5-508-10",
+              "answers": [
+                {
+                  "text": "usplash",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "XSplash是Ubuntu9.10开始使用的开机动画程序。",
+          "qas": [
+            {
+              "question": "Ubuntu9.10开始使用的开机动画程序是什么？",
+              "id": "5-508-11",
+              "answers": [
+                {
+                  "text": "XSplash",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

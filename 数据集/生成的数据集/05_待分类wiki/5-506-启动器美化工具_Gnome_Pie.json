@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "启动器美化工具_Gnome_Pie",
+      "paragraphs": [
+        {
+          "context": "Gnome Pie是一款炫酷的程序启动器，可快速启动程序及执行系统功能，有超炫外观和快捷键功能。",
+          "qas": [
+            {
+              "question": "Gnome Pie是什么？",
+              "id": "5-506-1",
+              "answers": [
+                {
+                  "text": "一款炫酷的程序启动器，可快速启动程序及执行系统功能，有超炫外观和快捷键功能。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Gnome Pie能实现什么功能？",
+              "id": "5-506-2",
+              "answers": [
+                {
+                  "text": "快速启动特定程序及执行如关机、重启等系统功能。",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "Gnome Pie有什么特点？",
+              "id": "5-506-3",
+              "answers": [
+                {
+                  "text": "具备超炫的外观及方便的快捷键功能。",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Gnome Pie的命令是sudo apt-get install gnome-pie。",
+          "qas": [
+            {
+              "question": "如何安装Gnome Pie？",
+              "id": "5-506-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gnome-pie",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Gnome Pie的命令是sudo apt-get remove gnome-pie。",
+          "qas": [
+            {
+              "question": "如何卸载Gnome Pie？",
+              "id": "5-506-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gnome-pie",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Gnome Pie的仓库地址是http://packages.deepin.com/deepin/pool/main/g/gnome-pie/。",
+          "qas": [
+            {
+              "question": "Gnome Pie的仓库地址是什么？",
+              "id": "5-506-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gnome-pie/",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,309 @@
+{
+  "data": [
+    {
+      "title": "如何自己写一个开机自启动服务？",
+      "paragraphs": [
+        {
+          "context": "systemd 是 Linux 下与 SysV 和 LSB 初始化脚本兼容的系统和服务管理器，支持socket和D-Bus开启服务等功能。",
+          "qas": [
+            {
+              "question": "systemd 是什么？",
+              "id": "5-505-1",
+              "answers": [
+                {
+                  "text": "Linux 下与 SysV 和 LSB 初始化脚本兼容的系统和服务管理器，支持socket和D-Bus开启服务等功能。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "service文件一般分为[Unit]、[Service]、[Install]三个部分。",
+          "qas": [
+            {
+              "question": "service文件一般分为哪几个部分？",
+              "id": "5-505-2",
+              "answers": [
+                {
+                  "text": "[Unit]、[Service]、[Install]",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "[Unit]部分用来定义Unit的元数据及与其他Unit的关系，包含Description等字段。",
+          "qas": [
+            {
+              "question": "[Unit]部分的作用是什么？",
+              "id": "5-505-3",
+              "answers": [
+                {
+                  "text": "定义Unit的元数据及与其他Unit的关系",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Description是[Unit]部分的字段，用于简短描述。",
+          "qas": [
+            {
+              "question": "Description字段的作用是什么？",
+              "id": "5-505-4",
+              "answers": [
+                {
+                  "text": "简短描述",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "[Service]部分定义Service的配置，Type是其字段，有simple等多种值。",
+          "qas": [
+            {
+              "question": "[Service]部分的作用是什么？",
+              "id": "5-505-5",
+              "answers": [
+                {
+                  "text": "定义Service的配置",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Type=simple是[Service]的默认值，执行ExecStart指定的命令启动主进程。",
+          "qas": [
+            {
+              "question": "Type=simple的含义是什么？",
+              "id": "5-505-6",
+              "answers": [
+                {
+                  "text": "默认值，执行ExecStart指定的命令，启动主进程",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ExecStart是[Service]的字段，用于指定启动当前服务的命令。",
+          "qas": [
+            {
+              "question": "ExecStart字段的作用是什么？",
+              "id": "5-505-7",
+              "answers": [
+                {
+                  "text": "启动当前服务的命令",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "[Install]部分定义如何启动及是否开机启动，WantedBy是其字段。",
+          "qas": [
+            {
+              "question": "[Install]部分的作用是什么？",
+              "id": "5-505-8",
+              "answers": [
+                {
+                  "text": "定义如何启动，以及是否开机启动",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "WantedBy的值是一个或多个Target，当前Unit激活时符号链接会放入对应子目录。",
+          "qas": [
+            {
+              "question": "WantedBy字段的作用是什么？",
+              "id": "5-505-9",
+              "answers": [
+                {
+                  "text": "其值是一个或多个Target，当前Unit激活时（enable）符号链接会放入/etc/systemd/system目录下面以Target名+.wants后缀构成的子目录中",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "支持Systemd的软件安装时，会在/usr/lib/systemd/system目录添加配置文件。",
+          "qas": [
+            {
+              "question": "支持Systemd的软件安装时，配置文件添加在哪个目录？",
+              "id": "5-505-10",
+              "answers": [
+                {
+                  "text": "/usr/lib/systemd/system",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建服务文件可进入/etc/systemd/system目录，用sudo touch命令创建，如apptest.service。",
+          "qas": [
+            {
+              "question": "如何创建服务文件？",
+              "id": "5-505-11",
+              "answers": [
+                {
+                  "text": "进入/etc/systemd/system目录，用sudo touch命令创建，如sudo touch apptest.service",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启动服务使用systemctl start 服务名.service命令，如systemctl start apptest.service。",
+          "qas": [
+            {
+              "question": "如何启动服务？",
+              "id": "5-505-12",
+              "answers": [
+                {
+                  "text": "使用systemctl start 服务名.service命令，如systemctl start apptest.service",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看服务状态用systemctl status 服务名.service命令，如systemctl status apptest.service。",
+          "qas": [
+            {
+              "question": "如何查看服务状态？",
+              "id": "5-505-13",
+              "answers": [
+                {
+                  "text": "用systemctl status 服务名.service命令，如systemctl status apptest.service",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置开机自启动使用systemctl enable 服务名.service命令，如systemctl enable apptest.service。",
+          "qas": [
+            {
+              "question": "如何设置服务开机自启动？",
+              "id": "5-505-14",
+              "answers": [
+                {
+                  "text": "使用systemctl enable 服务名.service命令，如systemctl enable apptest.service",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "服务文件中[Service]的User字段用于指定以什么用户执行命令。",
+          "qas": [
+            {
+              "question": "User字段的作用是什么？",
+              "id": "5-505-15",
+              "answers": [
+                {
+                  "text": "以什么用户执行命令",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Type=forking表示以fork方式从父进程创建子进程，父进程创建后立即退出。",
+          "qas": [
+            {
+              "question": "Type=forking的含义是什么？",
+              "id": "5-505-16",
+              "answers": [
+                {
+                  "text": "以 fork 方式从父进程创建子进程，创建后父进程会立即退出",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Restart字段定义何种情况Systemd会自动重启当前服务，值包括always等。",
+          "qas": [
+            {
+              "question": "Restart字段的作用是什么？",
+              "id": "5-505-17",
+              "answers": [
+                {
+                  "text": "定义何种情况 Systemd 会自动重启当前服务",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "After字段指定若该字段的Unit也要启动，必须在当前Unit之前启动。",
+          "qas": [
+            {
+              "question": "After字段的作用是什么？",
+              "id": "5-505-18",
+              "answers": [
+                {
+                  "text": "如果该字段指定的 Unit 也要启动，那么必须在当前 Unit 之前启动",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ExecStop是[Service]的字段，用于指定停止当前服务的命令。",
+          "qas": [
+            {
+              "question": "ExecStop字段的作用是什么？",
+              "id": "5-505-19",
+              "answers": [
+                {
+                  "text": "停止当前服务时执行的命令",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "RequiredBy的值是一个或多个Target，当前Unit激活时符号链接放入对应子目录。",
+          "qas": [
+            {
+              "question": "RequiredBy字段的作用是什么？",
+              "id": "5-505-20",
+              "answers": [
+                {
+                  "text": "其值是一个或多个 Target，当前 Unit 激活时，符号链接会放入/etc/systemd/system目录下面以 Target 名 + .required后缀构成的子目录中",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

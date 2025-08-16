@@ -1,0 +1,155 @@
+
+{
+  "data": [
+    {
+      "title": "Linux下创建systemd启动项实现开机自启动",
+      "paragraphs": [
+        {
+          "context": "创建systemd启动项需root权限，用sudo -i操作。",
+          "qas": [
+            {
+              "question": "创建systemd启动项需要什么权限？",
+              "id": "5-514-1",
+              "answers": [
+                {
+                  "text": "root权限",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "如何获取root权限进行操作？",
+              "id": "5-514-2",
+              "answers": [
+                {
+                  "text": "使用sudo -i",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "需创建文件/etc/systemd/system/myservice.service。",
+          "qas": [
+            {
+              "question": "要创建的systemd启动项文件路径是什么？",
+              "id": "5-514-3",
+              "answers": [
+                {
+                  "text": "/etc/systemd/system/myservice.service",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "[Unit]部分包含Description、After=network.target、StartLimitIntervalSec=0。",
+          "qas": [
+            {
+              "question": "systemd服务文件[Unit]部分有哪些内容？",
+              "id": "5-514-4",
+              "answers": [
+                {
+                  "text": "Description、After=network.target、StartLimitIntervalSec=0",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "After=network.target表示什么？",
+              "id": "5-514-5",
+              "answers": [
+                {
+                  "text": "联网后才会启动这个服务",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "[Service]部分有Type=simple、Restart=always、RestartSec=1、User=root、ExecStart=/path-to/myservice.sh。",
+          "qas": [
+            {
+              "question": "[Service]部分的Type设置是什么？",
+              "id": "5-514-6",
+              "answers": [
+                {
+                  "text": "simple",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "Restart=always的作用是什么？",
+              "id": "5-514-7",
+              "answers": [
+                {
+                  "text": "程序退出后会以1秒一次的频率不断重启",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "question": "ExecStart指定了什么？",
+              "id": "5-514-8",
+              "answers": [
+                {
+                  "text": "/path-to/myservice.sh",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "[Install]部分为WantedBy=multi-user.target。",
+          "qas": [
+            {
+              "question": "[Install]部分的WantedBy设置是什么？",
+              "id": "5-514-9",
+              "answers": [
+                {
+                  "text": "multi-user.target",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若程序运行完成后会退出，无需自动重启，将Restart=always改成Restart=no。",
+          "qas": [
+            {
+              "question": "程序运行完成后会退出且无需自动重启，应如何设置？",
+              "id": "5-514-10",
+              "answers": [
+                {
+                  "text": "将Restart=always改成Restart=no",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若需联网前启动服务，可删掉After=network.target。",
+          "qas": [
+            {
+              "question": "如何设置服务在联网前启动？",
+              "id": "5-514-11",
+              "answers": [
+                {
+                  "text": "删掉After=network.target",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
