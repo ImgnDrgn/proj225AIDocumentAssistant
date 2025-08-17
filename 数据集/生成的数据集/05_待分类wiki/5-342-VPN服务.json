@@ -40,7 +40,7 @@
           "answers": [
             {
               "text": "/etc/pptpd.conf",
-              "answer_start": 48  // 从context中定位到相同文本位置
+              "answer_start": 48    
             }
           ]
         },
@@ -50,7 +50,7 @@
           "answers": [
             {
               "text": "192.168.0.11-150",
-              "answer_start": 117  // 从context中定位到相同文本位置
+              "answer_start": 117    
             }
           ]
         }
@@ -85,7 +85,7 @@
           "answers": [
             {
               "text": "/etc/ppp/pptpd-options",
-              "answer_start": 17  // 从context中定位到相同文本位置
+              "answer_start": 17  
             }
           ]
         }
@@ -120,8 +120,7 @@
           "answers": [
             {
               "text": "/etc/ppp/chap-secrets",
-              "answer_start": 17  // 从context中定位到相同文本位置
-            }
+              "answer_start": 17 
           ]
         }
       ]
