@@ -334,7 +334,7 @@
           ]
         },
         {
-          "context": "连接到 SMB 共享（samba shares）十分直接。遗憾的是，SMB 的支持度没有 NFS 那么好，但它还是提供了与 Windows 主机的良好性能和连接性。因此，SMB 是部署在局域网的文件共享协议。挂载 SMB 共享很简单，与 NFS 共享十分相似。你可以用同样的方式告诉 mount 在哪里找到服务器和及想要读取哪个共享。另外，你必须指定一个用户名和密码。例如：# mount -t cifs //darkstar/home /home -o username=alan,password=secret。在 Linux 内核的较老版本中，用的是 smbfs，后来被性能更好、更安全的 cifs 驱动所取代。",
+          "context": "连接到 SMB 共享（samba shares）十分直接。遗憾的是，SMB 的支持度没有 NFS 那么好，但它还是提供了与 Windows 主机的良好性能和连接性。因此，SMB 是部署在局域网的文件共享协议。挂载 SMB 共享很简单，与 NFS 共享十分相似。你可以用同样的方式告诉 mount 在哪里找到服务器和及想要读取哪个共享。另外，你必须指定一个用户名和密码。例如：# mount -t cifs  darkstar/home /home -o username=alan,password=secret。在 Linux 内核的较老版本中，用的是 smbfs，后来被性能更好、更安全的 cifs 驱动所取代。",
           "qas": [
             {
               "id": "5-390-28",
@@ -559,7 +559,7 @@
           ]
         },
         {
-          "context": "SMB Samba，是种用来让UNIX系列的操作系统与微软Windows操作系统的SMB/CIFS（Server Message Block/Common Internet File System）网络协定做连结的自由软件。目前的版本（v3）不仅可存取及分享SMB的资料夹及打印机，本身还可以整合入Windows Server的网域，扮演为网域控制站（Domain Controller）以及加入Active Directory成员。简而言之，此软件在Windows与UNIX系列OS之间搭起一座桥梁，让两者的资源可互通有无。连接到 SMB 共享（samba shares）十分直接。遗憾的是，SMB 的支持度没有 NFS 那么好，但它还是提供了与 Windows 主机的良好性能和连接性。因此，SMB 是部署在局域网的文件共享协议。挂载与共享值得庆幸的是挂载 SMB 共享很简单，与 NFS 共享十分相似。你可以用同样的方式告诉 mount 在哪里找到服务器和及想要读取哪个共享。另外，你必须指定一个用户名和密码。# mount -t cifs //darkstar/home /home -o username=alan,password=secret你可能想知道为什么该文件系统是 cifs 而非 smbfs。在 Linux 内核的较老版本中，用的是 smbfs，后来被性能更好、更安全的 cifs 驱动所取代。所有的 SMB 共享都需要用户名和密码作为参数。这在你想要将 smb 共享放到 fstab 时会导致安全问题。可以使用 credentials 参数来避免这一问题。credentials 会指向含有用户名和密码信息的文件。只要该文件能够得到安全地保护并只能由 root 读取，那么你的认证资格受到影响的可能性就会减小。",
+          "context": "SMB Samba，是种用来让UNIX系列的操作系统与微软Windows操作系统的SMB/CIFS（Server Message Block/Common Internet File System）网络协定做连结的自由软件。目前的版本（v3）不仅可存取及分享SMB的资料夹及打印机，本身还可以整合入Windows Server的网域，扮演为网域控制站（Domain Controller）以及加入Active Directory成员。简而言之，此软件在Windows与UNIX系列OS之间搭起一座桥梁，让两者的资源可互通有无。连接到 SMB 共享（samba shares）十分直接。遗憾的是，SMB 的支持度没有 NFS 那么好，但它还是提供了与 Windows 主机的良好性能和连接性。因此，SMB 是部署在局域网的文件共享协议。挂载与共享值得庆幸的是挂载 SMB 共享很简单，与 NFS 共享十分相似。你可以用同样的方式告诉 mount 在哪里找到服务器和及想要读取哪个共享。另外，你必须指定一个用户名和密码。# mount -t cifs  darkstar/home /home -o username=alan,password=secret你可能想知道为什么该文件系统是 cifs 而非 smbfs。在 Linux 内核的较老版本中，用的是 smbfs，后来被性能更好、更安全的 cifs 驱动所取代。所有的 SMB 共享都需要用户名和密码作为参数。这在你想要将 smb 共享放到 fstab 时会导致安全问题。可以使用 credentials 参数来避免这一问题。credentials 会指向含有用户名和密码信息的文件。只要该文件能够得到安全地保护并只能由 root 读取，那么你的认证资格受到影响的可能性就会减小。",
           "qas": [
             {
               "id": "5-390-48",
