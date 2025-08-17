@@ -29,7 +29,7 @@
           ]
         },
         {
-          "context": "使用CIFS时，需编辑`/etc/fstab`文件，命令为`sudo deepin-deitor /etc/fstab`，添加内容为：//your_nas_ip/dir /mnt/NAS/dir cifs rw,dir_mode=0777,file_mode=0777,vers=2.0,username=yourusername,password=yourpassword 0 0，其中`your_nas_ip`代表NAS的访问地址，`dir`代表NAS下的分享挂载点，`/mnt/mountdir`代表本设备要挂载到的路径，`yourusername`为访问的用户名，`yourpassword`为访问用户的密码，若匿名访问则不需要username与password并改为`guest`。",
+          "context": "使用CIFS时，需编辑`/etc/fstab`文件，命令为`sudo deepin-deitor /etc/fstab`，添加内容为： your_nas_ip/dir /mnt/NAS/dir cifs rw,dir_mode=0777,file_mode=0777,vers=2.0,username=yourusername,password=yourpassword 0 0，其中`your_nas_ip`代表NAS的访问地址，`dir`代表NAS下的分享挂载点，`/mnt/mountdir`代表本设备要挂载到的路径，`yourusername`为访问的用户名，`yourpassword`为访问用户的密码，若匿名访问则不需要username与password并改为`guest`。",
           "qas": [
             {
               "id": "5-340-3",
@@ -56,7 +56,7 @@
               "question": "在`/etc/fstab`中添加的CIFS挂载内容格式是怎样的？",
               "answers": [
                 {
-                  "text": "//your_nas_ip/dir /mnt/NAS/dir cifs rw,dir_mode=0777,file_mode=0777,vers=2.0,username=yourusername,password=yourpassword 0 0",
+                  "text": " your_nas_ip/dir /mnt/NAS/dir cifs rw,dir_mode=0777,file_mode=0777,vers=2.0,username=yourusername,password=yourpassword 0 0",
                   "answer_start": 71
                 }
               ]
@@ -119,7 +119,7 @@
           ]
         },
         {
-          "context": "Deepin20下挂载整个NAS的实例：在`/mnt`下建立`NAS`文件夹，赋予权限的命令为`sudo chmod -R 777 /mnt/NAS`；在`/etc/fstab`中添加//192.168.104.44/homes /mnt/NAS/homes cifs rw,dir_mode=0777,file_mode=0777,vers=2.0,username=GBwater,password=我是密码 0 0；执行`sudo mount -a`；最后在文件管理器上右键`/mnt/NAS/homes/GBwater`，选择`添加书签`，可将其添加到侧边栏方便访问。",
+          "context": "Deepin20下挂载整个NAS的实例：在`/mnt`下建立`NAS`文件夹，赋予权限的命令为`sudo chmod -R 777 /mnt/NAS`；在`/etc/fstab`中添加 192.168.104.44/homes /mnt/NAS/homes cifs rw,dir_mode=0777,file_mode=0777,vers=2.0,username=GBwater,password=我是密码 0 0；执行`sudo mount -a`；最后在文件管理器上右键`/mnt/NAS/homes/GBwater`，选择`添加书签`，可将其添加到侧边栏方便访问。",
           "qas": [
             {
               "id": "5-340-11",
@@ -146,7 +146,7 @@
               "question": "Deepin20实例中`/etc/fstab`添加的具体内容是什么？",
               "answers": [
                 {
-                  "text": "//192.168.104.44/homes /mnt/NAS/homes cifs rw,dir_mode=0777,file_mode=0777,vers=2.0,username=GBwater,password=我是密码 0 0",
+                  "text": " 192.168.104.44/homes /mnt/NAS/homes cifs rw,dir_mode=0777,file_mode=0777,vers=2.0,username=GBwater,password=我是密码 0 0",
                   "answer_start": 110
                 }
               ]
