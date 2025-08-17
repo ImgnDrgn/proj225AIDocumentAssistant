@@ -99,7 +99,7 @@
           ]
         },
         {
-          "context": "xrandr --output VGA-1 --right-of LVDS-1   // 设置VGA-1（外置显示器）在LVDS-1的右侧。",
+          "context": "xrandr --output VGA-1 --right-of LVDS-1     设置VGA-1（外置显示器）在LVDS-1的右侧。",
           "qas": [
             {
               "question": "如何设置VGA-1在外置显示器LVDS-1的右侧？",
@@ -114,7 +114,7 @@
           ]
         },
         {
-          "context": "cvt 1920 1080      // 查看1920×1080的信息。",
+          "context": "cvt 1920 1080        查看1920×1080的信息。",
           "qas": [
             {
               "question": "如何查看1920×1080的信息？",
@@ -129,7 +129,7 @@
           ]
         },
         {
-          "context": "sudo xrandr --newmode \"1920x1080_60.00″ 173.00 1920 2048 2248 2576 1080 1083 1088 1120 -hsync +vsync\"  // 将cvt命令显示的结果加在newmode后替换。",
+          "context": "sudo xrandr --newmode \"1920x1080_60.00″ 173.00 1920 2048 2248 2576 1080 1083 1088 1120 -hsync +vsync\"    将cvt命令显示的结果加在newmode后替换。",
           "qas": [
             {
               "question": "如何将cvt命令显示的1920×1080信息添加为新模式？",
@@ -144,7 +144,7 @@
           ]
         },
         {
-          "context": "sudo xrandr --addmode VGA-1 “1920x1080_60.00″  // 添加新的1920×1080分辨率加给VGA-1。",
+          "context": "sudo xrandr --addmode VGA-1 “1920x1080_60.00″    添加新的1920×1080分辨率加给VGA-1。",
           "qas": [
             {
               "question": "如何给VGA-1添加新的1920×1080分辨率？",
@@ -159,7 +159,7 @@
           ]
         },
         {
-          "context": "xrandr --output VGA-1 --mode 1920x1080_60.00 --rate 60  // 将理想分辨率设置外置显示器分辨率。",
+          "context": "xrandr --output VGA-1 --mode 1920x1080_60.00 --rate 60    将理想分辨率设置外置显示器分辨率。",
           "qas": [
             {
               "question": "如何将外置显示器VGA-1的分辨率设置为1920x1080_60.00，刷新率为60？",
@@ -191,4 +191,5 @@
       ]
     }
   ]
+
 }
