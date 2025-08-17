@@ -39,7 +39,7 @@
           ]
         },
         {
-          "context": "下载文件：<https://ngosang.github.io/trackerslist/trackers_best_ip.txt>，里面就是服务器的列表。保存到：~/.aria2/aria2.conf 配置文件中，内容如下：```ini# 每一个服务器地址用逗号分隔bt-tracker=网址1,网址2,网址3...```但是第一步得到的地址不是以逗号分隔，而是以一个空行分隔。所以自己要修改一下，可以用 kwrite 编辑器，替换\"\\n\\n\" 为 \",\"。",
+          "context": "下载文件：<https: ngosang.github.io/trackerslist/trackers_best_ip.txt>，里面就是服务器的列表。保存到：~/.aria2/aria2.conf 配置文件中，内容如下：```ini# 每一个服务器地址用逗号分隔bt-tracker=网址1,网址2,网址3...```但是第一步得到的地址不是以逗号分隔，而是以一个空行分隔。所以自己要修改一下，可以用 kwrite 编辑器，替换\"\\n\\n\" 为 \",\"。",
           "qas": [
             {
               "id": "5-80-4",
@@ -104,14 +104,14 @@
           ]
         },
         {
-          "context": "```bash# 获得正确格式的文本curl -o- https://ngosang.github.io/trackerslist/trackers_best_ip.txt|sed -ne '1h; 1!H;${g;s/\\n\\n/,/g;s/\\n//g;p}'# 自动更新脚本sed 's@bt-tracker=.*@bt-tracker='$(curl -o- https://ngosang.github.io/trackerslist/trackers_best_ip.txt|sed -ne '1h; 1!H;${g;s/\\n\\n/,/g;s/\\n//g;p}')'@g' ~/.aria2/aria2.conf```",
+          "context": "```bash# 获得正确格式的文本curl -o- https://ngosang.github.io/trackerslist/trackers_best_ip.txt|sed -ne '1h; 1!H;${g;s/\\n\\n/,/g;s/\\n g;p}'# 自动更新脚本sed 's@bt-tracker=.*@bt-tracker='$(curl -o- https: ngosang.github.io/trackerslist/trackers_best_ip.txt|sed -ne '1h; 1!H;${g;s/\\n\\n/,/g;s/\\n g;p}')'@g' ~/.aria2/aria2.conf```",
           "qas": [
             {
               "id": "5-80-10",
               "question": "获得正确格式的服务器地址文本的命令是什么？",
               "answers": [
                 {
-                  "text": "curl -o- https://ngosang.github.io/trackerslist/trackers_best_ip.txt|sed -ne '1h; 1!H;${g;s/\\n\\n/,/g;s/\\n//g;p}'",
+                  "text": "curl -o- https: ngosang.github.io/trackerslist/trackers_best_ip.txt|sed -ne '1h; 1!H;${g;s/\\n\\n/,/g;s/\\n g;p}'",
                   "answer_start": 23
                 }
               ]
@@ -121,7 +121,7 @@
               "question": "自动更新aria2.conf中bt-tracker的脚本命令是什么？",
               "answers": [
                 {
-                  "text": "sed 's@bt-tracker=.*@bt-tracker='$(curl -o- https://ngosang.github.io/trackerslist/trackers_best_ip.txt|sed -ne '1h; 1!H;${g;s/\\n\\n/,/g;s/\\n//g;p}')'@g' ~/.aria2/aria2.conf",
+                  "text": "sed 's@bt-tracker=.*@bt-tracker='$(curl -o- https://ngosang.github.io/trackerslist/trackers_best_ip.txt|sed -ne '1h; 1!H;${g;s/\\n\\n/,/g;s/\\n g;p}')'@g' ~/.aria2/aria2.conf",
                   "answer_start": 59
                 }
               ]
