@@ -278,7 +278,7 @@
     },
     {
       "context": "modeset（KMS：kernel mode set) 是一个新型的显示模式，即内核在启动阶段调用更先进的图形显示技术，以达到更好的显示效果。副作用就是兼容性低。可以设置nomodeset或者modeset=0关闭这项功能，至少保证进入字符界面。更进阶一点的写法是：i915.modeset=0，其中i915是intel的显示驱动，该命令可以单独关闭该驱动的KMS。",
-      "qas": []  // 问答对去重后为空（原q1和q2重复）
+      "qas": [] 
     },
     {
       "context": "很多视频驱动都是以动态模块的方式链接到内核的，内核在启动过程中会加载这些驱动。modprobe.blacklist=nouveau就禁止加载该模块，这可以屏蔽有问题的驱动程序。显卡驱动包括：nvidia（官方驱动，性能好，但需要手动安装）、nvidiafb（老式驱动）、nvidia_drm（DRM是直接渲染管理器的缩写）、nouveau（nvidia显卡在linux的默认驱动）、i915（intel的官方驱动）、radeon（旧的amd显卡开源驱动）、amdgpu（新的amd显卡开源驱动）、amdgpu-pro（官方闭源驱动）。",
@@ -307,7 +307,7 @@
     },
     {
       "context": "linux系统大多数通过grub来引导。出现菜单读秒时，按e进入编辑状态，按F10执行编辑后的菜单。找到linux开始的一行，该行格式一般如下：linux /.../vmlinuz... root=UUID=xxx ...。我们要修改的就是内核参数部分。参数格式：1.模块名.参数=值 2.modprobe动态模块名参数=值 3.参数。获取参数的方法：1./sys/module/模块名/parameters 2./proc/cmdline启动参数 3.modinfo -p模块名。",
-      "qas": []  // 问答对去重后为空（原q5和q6重复）
+      "qas": []  
     },
     {
       "context": "常用参数包括：quiet（安静模式）、debug（详细信息）、memtest=1（测试一次内存）、acpi=off（禁止acpi高级电源配置接口）、acpi_os_name=\"Linux\"（告知acpi系统名称）、root=xxx（启动设备或文件）、ro（只读）、rw（读写）、3（启动命令行和非图形界面）。",
