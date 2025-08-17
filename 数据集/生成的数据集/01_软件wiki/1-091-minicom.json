@@ -69,7 +69,7 @@
           ]
         },
         {
-          "context": "第一次运行minicom，启动minicom要以root权限登录系统，需要进行minicom的设置，输入下了命令#minicom –s，显示的屏幕如下所示,按上下光标键进行上下移动选择，我们要对串行端口进行设置，因此选中Serial port setup,然后回车：[configuration]配置│ Filenames and paths │//文件名和路径│ File transfer protocols│//文件传输协议│ Serial port setup │//串行端口设置│ Modem and dialing │//调制解调器和拨号│ Screen and keyboard │//屏幕和键盘│ Save setup as dfl │//设置保存到│ Save setup as.. │//储存设定为│ Exit │//退出│ Exit from Minicom │//退出minicom",
+          "context": "第一次运行minicom，启动minicom要以root权限登录系统，需要进行minicom的设置，输入下了命令#minicom –s，显示的屏幕如下所示,按上下光标键进行上下移动选择，我们要对串行端口进行设置，因此选中Serial port setup,然后回车：[configuration]配置│ Filenames and paths │ 文件名和路径│ File transfer protocols│ 文件传输协议│ Serial port setup │ 串行端口设置│ Modem and dialing │ 调制解调器和拨号│ Screen and keyboard │ 屏幕和键盘│ Save setup as dfl │ 设置保存到│ Save setup as.. │ 储存设定为│ Exit │ 退出│ Exit from Minicom │ 退出minicom",
           "qas": [
             {
               "id": "1-91-6",
