@@ -329,14 +329,14 @@
           ]
         },
         {
-          "context": "sed命令示例：去掉test.txt行首的.字符：sed -i ‘s/^.//g’ test.txt；行首加a：sed ‘s/^/a/g’ test.txt等。",
+          "context": "sed命令示例：去掉test.txt行首的.字符：sed -i ‘s/^. g’ test.txt；行首加a：sed ‘s/^/a/g’ test.txt等。",
           "qas": [
             {
               "question": "如何用sed去掉test.txt行首的.字符？",
               "id": "5-476-25",
               "answers": [
                 {
-                  "text": "sed -i ‘s/^.//g’ test.txt",
+                  "text": "sed -i ‘s/^. g’ test.txt",
                   "answer_start": 22
                 }
               ]
@@ -359,14 +359,14 @@
           ]
         },
         {
-          "context": "监控根分区空间，大于等于90%发邮件：while sleep 5m;do for i in `df -h |sed -n '//$/p' |awk '{print $5}' |sed 's/%//g'`;do if [ $i -ge 90 ];then echo “...” |mail -s “...” XXX@XXX.XX;fi;done;done。",
+          "context": "监控根分区空间，大于等于90%发邮件：while sleep 5m;do for i in `df -h |sed -n ' $/p' |awk '{print $5}' |sed 's/% g'`;do if [ $i -ge 90 ];then echo “...” |mail -s “...” XXX@XXX.XX;fi;done;done。",
           "qas": [
             {
               "question": "如何监控Linux磁盘根分区，空间大于等于90%时发送邮件报警？",
               "id": "5-476-27",
               "answers": [
                 {
-                  "text": "while sleep 5m;do for i in `df -h |sed -n '//$/p' |awk '{print $5}' |sed 's/%//g'`;do if [ $i -ge 90 ];then echo “More than 90% Linux of disk space ,Please LinuxSA Check Linux Disk !” |mail -s “Warn Linux / Parts is $i%” XXX@XXX.XX;fi;done;done",
+                  "text": "while sleep 5m;do for i in `df -h |sed -n ' $/p' |awk '{print $5}' |sed 's/% g'`;do if [ $i -ge 90 ];then echo “More than 90% Linux of disk space ,Please LinuxSA Check Linux Disk !” |mail -s “Warn Linux / Parts is $i%” XXX@XXX.XX;fi;done;done",
                   "answer_start": 36
                 }
               ]
@@ -539,14 +539,14 @@
           ]
         },
         {
-          "context": "替换文件中的目录：sed 's:/user/local:/tmp:g' test.txt；或sed -i 's//usr/local//tmp/g' test.txt。",
+          "context": "替换文件中的目录：sed 's:/user/local:/tmp:g' test.txt；或sed -i 's usr/local tmp/g' test.txt。",
           "qas": [
             {
               "question": "如何用sed替换test.txt中的/user/local为/tmp？",
               "id": "5-476-39",
               "answers": [
                 {
-                  "text": "sed 's:/user/local:/tmp:g' test.txt；或sed -i 's//usr/local//tmp/g' test.txt",
+                  "text": "sed 's:/user/local:/tmp:g' test.txt；或sed -i 's usr/local tmp/g' test.txt",
                   "answer_start": 22
                 }
               ]
@@ -556,4 +556,5 @@
       ]
     }
   ]
+
 }
