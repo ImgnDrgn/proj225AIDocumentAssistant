@@ -54,7 +54,7 @@
           ]
         },
         {
-          "context": "POP3是把邮件下载到本地，对邮件操作（如删除）不影响服务器上的邮件。相关配置包括：set pop_authenticators = 'user'；set pop_host = 'pops://邮件服务器:995'（完整标准URL格式为协议://[用户名[:密码]@]邮件服务器域名或ip[:端口]）；set pop_user = '用户名'；set pop_pass = '密码'。",
+          "context": "POP3是把邮件下载到本地，对邮件操作（如删除）不影响服务器上的邮件。相关配置包括：set pop_authenticators = 'user'；set pop_host = 'pops: 邮件服务器:995'（完整标准URL格式为协议: [用户名[:密码]@]邮件服务器域名或ip[:端口]）；set pop_user = '用户名'；set pop_pass = '密码'。",
           "qas": [
             {
               "id": "5-121-5",
@@ -71,7 +71,7 @@
               "question": "POP3配置中，pop_host的标准URL格式是什么？",
               "answers": [
                 {
-                  "text": "协议://[用户名[:密码]@]邮件服务器域名或ip[:端口]",
+                  "text": "协议: [用户名[:密码]@]邮件服务器域名或ip[:端口]",
                   "answer_start": 115
                 }
               ]
@@ -81,7 +81,7 @@
               "question": "设置POP3端口995的命令是什么？",
               "answers": [
                 {
-                  "text": "set pop_host = 'pops://邮件服务器:995'",
+                  "text": "set pop_host = 'pops: 邮件服务器:995'",
                   "answer_start": 70
                 }
               ]
@@ -89,7 +89,7 @@
           ]
         },
         {
-          "context": "IMAP会同步邮件的状态，对邮件操作（如删除）将会影响到服务器上的邮件。相关配置包括：set folder = 'imaps://邮件服务器:993'（完整标准URL格式为协议://[用户名[:密码]@]邮件服务器域名或ip[:端口]）；set imap_user = '用户名'；set imap_pass = '密码'。",
+          "context": "IMAP会同步邮件的状态，对邮件操作（如删除）将会影响到服务器上的邮件。相关配置包括：set folder = 'imaps: 邮件服务器:993'（完整标准URL格式为协议: [用户名[:密码]@]邮件服务器域名或ip[:端口]）；set imap_user = '用户名'；set imap_pass = '密码'。",
           "qas": [
             {
               "id": "5-121-8",
@@ -106,7 +106,7 @@
               "question": "IMAP配置中，folder的标准URL格式是什么？",
               "answers": [
                 {
-                  "text": "协议://[用户名[:密码]@]邮件服务器域名或ip[:端口]",
+                  "text": "协议: [用户名[:密码]@]邮件服务器域名或ip[:端口]",
                   "answer_start": 112
                 }
               ]
@@ -116,7 +116,7 @@
               "question": "配置IMAP协议时哪个命令指定加密连接？",
               "answers": [
                 {
-                  "text": "set folder = 'imaps://邮件服务器:993'",
+                  "text": "set folder = 'imaps: 邮件服务器:993'",
                   "answer_start": 67
                 }
               ]
@@ -124,7 +124,7 @@
           ]
         },
         {
-          "context": "smtp是发送邮件用的。相关配置包括：set smtp_url = 'smtp://邮件服务器:25'；set smtp_user = '用户名'；set smtp_pass = '密码'。",
+          "context": "smtp是发送邮件用的。相关配置包括：set smtp_url = 'smtp: 邮件服务器:25'；set smtp_user = '用户名'；set smtp_pass = '密码'。",
           "qas": [
             {
               "id": "5-121-11",
@@ -151,7 +151,7 @@
               "question": "配置SMTP服务器的命令是什么？",
               "answers": [
                 {
-                  "text": "set smtp_url = 'smtp://邮件服务器:25'",
+                  "text": "set smtp_url = 'smtp: 邮件服务器:25'",
                   "answer_start": 14
                 }
               ]
@@ -159,7 +159,7 @@
           ]
         },
         {
-          "context": "官方手册建议，多账户使用时应视为上个使用的邮箱不可知，所以要清空当前连接账户，然后再连下一个账号。账户钩子配置示例：account-hook . 'unset imap_user; unset imap_pass; unset tunnel'；account-hook imap://host1/ 'set imap_user=me1 imap_pass=foo'等。邮箱和目录钩子配置示例：mailboxes imap://user@host1/INBOX；folder-hook imap://user@host1/ 'set folder=imap://host1/ ; set record=+INBOX/Sent'等。",
+          "context": "官方手册建议，多账户使用时应视为上个使用的邮箱不可知，所以要清空当前连接账户，然后再连下一个账号。账户钩子配置示例：account-hook . 'unset imap_user; unset imap_pass; unset tunnel'；account-hook imap: host1/ 'set imap_user=me1 imap_pass=foo'等。邮箱和目录钩子配置示例：mailboxes imap: user@host1/INBOX；folder-hook imap: user@host1/ 'set folder=imap: host1/ ; set record=+INBOX/Sent'等。",
           "qas": [
             {
               "id": "5-121-14",
