@@ -1,0 +1,394 @@
+{
+  "data": [
+    {
+      "title": "Linux 磁盘分区和挂载",
+      "paragraphs": [
+        {
+          "context": "Linux 来说无论有几个分区，分给哪一目录使用，它归根结底只有一个根目录，一个独立且唯一的文件结构，Linux 中每个分区都是用来组成整个文件系统的一部分。Linux 采用了一种叫 '载入' 的处理方法，它的整个文件系统中包含了一整套的文件和目录，且将一个分区和一个目录联系起来，这是要载入的一个分区将使它的存储空间在一个目录下获得。",
+          "qas": [
+            {
+              "id": "3-091-1",
+              "question": "Linux的文件系统结构有什么核心特点？",
+              "answers": [
+                {
+                  "text": "Linux归根结底只有一个根目录，一个独立且唯一的文件结构，每个分区都是用来组成整个文件系统的一部分",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "3-091-2",
+              "question": "Linux中分区如何与文件系统结合以提供存储空间？",
+              "answers": [
+                {
+                  "text": "Linux采用'载入'的处理方法，将一个分区和一个目录联系起来，载入的分区使其存储空间在该目录下获得",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux硬盘分IDE硬盘和SCSI硬盘，目前基本上是SCSI硬盘。对于IDE硬盘，驱动器标识符为'hdx~'，其中'hd'表明分区所在设备的类型，'x'为盘号（a为基本盘，b为基本从属盘，c为辅助主盘，d为辅助从属盘），'~'代表分区，前四个分区用数字1到4表示（主分区或扩展分区），从5开始是逻辑分区。对于SCSI硬盘则标识为'sdx~'，用'sd'表示设备类型，其余与IDE硬盘表示方法一致。",
+          "qas": [
+            {
+              "id": "3-091-3",
+              "question": "Linux中IDE硬盘的驱动器标识符格式是什么？",
+              "answers": [
+                {
+                  "text": "hdx~，其中'hd'表明分区所在设备类型，'x'为盘号，'~'代表分区",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "3-091-4",
+              "question": "Linux中SCSI硬盘与IDE硬盘的分区标识有何异同？",
+              "answers": [
+                {
+                  "text": "相同点：分区盘号（x）和分区编号（~）的表示方法一致；不同点：SCSI硬盘用'sd'表设备类型，标识符为'sdx~'，IDE硬盘用'hd'表设备类型，标识符为'hdx~'",
+                  "answer_start": 157
+                }
+              ]
+            },
+            {
+              "id": "3-091-5",
+              "question": "Linux中IDE硬盘的分区编号规则是什么？",
+              "answers": [
+                {
+                  "text": "前四个分区用数字1到4表示（主分区或扩展分区），从5开始的分区为逻辑分区",
+                  "answer_start": 119
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在Linux中查看所有设备挂载情况的指令为lsblk或者lsblk -f。示例中[root@kongchao03 ~]# lsblk的输出里，sda1、sda2、sda3分别代表第一块硬盘的第一分区、第二分区、第三分区。",
+          "qas": [
+            {
+              "id": "3-091-6",
+              "question": "Linux中查看所有设备挂载情况的指令是什么？",
+              "answers": [
+                {
+                  "text": "lsblk 或者 lsblk -f",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-091-7",
+              "question": "lsblk指令输出中的sda1、sda2、sda3分别代表什么？",
+              "answers": [
+                {
+                  "text": "第一块硬盘的第一分区、第二分区、第三分区",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux虚拟机中新增一块硬盘的操作：在虚拟机菜单的设置中增加一块硬盘，完成后需重启虚拟机才能生效识别，生效后可使用lsblk命令查看新增的硬盘。",
+          "qas": [
+            {
+              "id": "3-091-8",
+              "question": "Linux虚拟机中新增一块硬盘后，如何使其生效并确认新增结果？",
+              "answers": [
+                {
+                  "text": "完成硬盘添加后重启虚拟机使其生效，生效后使用lsblk命令查看新增的硬盘",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "对Linux虚拟机中新增的sdb硬盘进行分区的指令是fdisk /dev/sdb。fdisk命令的常用操作：m显示命令列表、p显示磁盘分区（同fdisk -l）、n新增分区、d删除分区、w写入并退出、q不保存退出。",
+          "qas": [
+            {
+              "id": "3-091-9",
+              "question": "对Linux虚拟机中新增的sdb硬盘进行分区的指令是什么？",
+              "answers": [
+                {
+                  "text": "fdisk /dev/sdb",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-091-10",
+              "question": "fdisk命令中，显示命令列表、新增分区、写入分区并退出的操作分别是什么？",
+              "answers": [
+                {
+                  "text": "显示命令列表用m，新增分区用n，写入分区并退出用w",
+                  "answer_start": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用fdisk /dev/sdb新增主分区的步骤：输入n（新增分区），选择p（分区类型为主分区），默认分区号（1-4），默认起始扇区和最后扇区（使用剩余全部空间），最后输入w（写入分区并退出）；若不保存退出则输入q。",
+          "qas": [
+            {
+              "id": "3-091-11",
+              "question": "使用fdisk /dev/sdb在Linux中新增主分区的具体步骤是什么？",
+              "answers": [
+                {
+                  "text": "1.输入n新增分区；2.选择p确定为主分区；3.默认分区号、起始扇区和最后扇区；4.输入w写入分区并退出（不保存则输入q）",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux中对分区进行格式化的指令为mkfs -t ext4 /dev/sdb1，其中ext4是分区类型；分区格式化后会分配UUID，可通过lsblk -f命令查看。",
+          "qas": [
+            {
+              "id": "3-091-12",
+              "question": "Linux中对/dev/sdb1分区进行格式化的指令是什么？",
+              "answers": [
+                {
+                  "text": "mkfs -t ext4 /dev/sdb1",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-091-13",
+              "question": "mkfs -t ext4 /dev/sdb1命令中ext4的含义是什么？",
+              "answers": [
+                {
+                  "text": "分区类型",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "3-091-14",
+              "question": "Linux中分区格式化后会获得什么，如何查看？",
+              "answers": [
+                {
+                  "text": "会分配UUID，可通过lsblk -f命令查看",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux中mount挂载的语法为mount 设备名称 挂载目录（挂载目录可任意）。示例：先在根目录下创建newdisk目录（mkdir /newdisk），再执行mount /dev/sdb1 /newdisk将/dev/sdb1挂载到/newdisk；进入/newdisk目录创建文件，实际是在/dev/sdb1分区上新建文件。",
+          "qas": [
+            {
+              "id": "3-091-15",
+              "question": "Linux中mount挂载的语法是什么？",
+              "answers": [
+                {
+                  "text": "mount 设备名称 挂载目录（挂载目录可任意）",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-091-16",
+              "question": "将/dev/sdb1分区挂载到根目录下newdisk目录的具体步骤是什么？",
+              "answers": [
+                {
+                  "text": "1.在根目录下创建newdisk目录：mkdir /newdisk；2.执行挂载命令：mount /dev/sdb1 /newdisk",
+                  "answer_start": 43
+                }
+              ]
+            },
+            {
+              "id": "3-091-17",
+              "question": "在挂载目录/newdisk中创建文件，实际是在哪个位置新建文件？",
+              "answers": [
+                {
+                  "text": "在/dev/sdb1分区上",
+                  "answer_start": 111
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux中umount取消挂载的语法为umount 挂载点或umount 设备名，示例：umount /dev/sdb1；通过命令行执行mount挂载（如mount /dev/sdb1 /newdisk），重启虚拟机后挂载点会消失。",
+          "qas": [
+            {
+              "id": "3-091-18",
+              "question": "Linux中取消挂载的语法是什么？",
+              "answers": [
+                {
+                  "text": "umount 挂载点或 umount 设备名",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-091-19",
+              "question": "通过命令行执行mount挂载后，重启虚拟机会出现什么情况？",
+              "answers": [
+                {
+                  "text": "重启虚拟机后挂载点会消失",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux中实现分区永久挂载（重启不消失）的方法：通过修改/etc/fstab文件实现；修改完成后，执行mount -a或reboot命令即可生效。查询磁盘使用情况的指令为df -h。",
+          "qas": [
+            {
+              "id": "3-091-20",
+              "question": "Linux中如何实现分区的永久挂载（重启不消失）？",
+              "answers": [
+                {
+                  "text": "通过修改/etc/fstab文件，修改后执行mount -a或reboot命令生效",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-091-21",
+              "question": "修改/etc/fstab实现永久挂载后，如何使其生效？",
+              "answers": [
+                {
+                  "text": "执行mount -a命令或重启（reboot）虚拟机",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "id": "3-091-22",
+              "question": "Linux中查询磁盘使用情况的指令是什么？",
+              "answers": [
+                {
+                  "text": "df -h",
+                  "answer_start": 97
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux中查询指定目录磁盘占用情况的基础指令为du [参数] /目录（默认为当前目录）。du命令的常用参数：-s指定目录占用大小汇总、-h带计量单位、-a含文件、--max-depth=1限制子目录深度、-c列出明细并增加汇总值。",
+          "qas": [
+            {
+              "id": "3-091-23",
+              "question": "Linux中查询指定目录磁盘占用情况的基础指令是什么？",
+              "answers": [
+                {
+                  "text": "du [参数] /目录（默认为当前目录）",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-091-24",
+              "question": "du命令中，带计量单位、限制子目录深度为1、增加汇总值的参数分别是什么？",
+              "answers": [
+                {
+                  "text": "带计量单位用-h，限制子目录深度为1用--max-depth=1，增加汇总值用-c",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux中du命令参数联合使用的示例：查询/opt目录磁盘占用情况（子目录深度为1）的命令为du -h --max-depth=1 /opt；查询/opt目录（深度1）并含文件、带单位、显示汇总的命令为du -hac --max-depth=1 /opt。",
+          "qas": [
+            {
+              "id": "3-091-25",
+              "question": "Linux中查询/opt目录磁盘占用情况且限制子目录深度为1的du命令是什么？",
+              "answers": [
+                {
+                  "text": "du -h --max-depth=1 /opt",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-091-26",
+              "question": "Linux中查询/opt目录（子目录深度1）且含文件、带单位、显示汇总值的du命令是什么？",
+              "answers": [
+                {
+                  "text": "du -hac --max-depth=1 /opt",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux分区原理：无论有几个分区，都只有一个根目录和独立的文件结构。每个分区组成整个文件系统，采用\"载入\"方式将分区与目录关联，使分区存储空间在目录下生效。",
+          "qas": [
+            {
+              "id": "3-091-27",
+              "question": "Linux分区的特点是什么？",
+              "answers": [
+                {
+                  "text": "无论有几个分区，都只有一个根目录和独立的文件结构",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "3-091-28",
+              "question": "什么是Linux的\"载入\"处理方法？",
+              "answers": [
+                {
+                  "text": "将分区与目录关联，使分区存储空间在目录下生效",
+                  "answer_start": 73
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "硬盘标识规则：IDE硬盘标记为\"hdx~\"，其中hd表示设备类型，x为盘号（a=基本盘,b=基本从属盘,c=辅助主盘,d=辅助从属盘），~为分区号（1-4表示主分区/扩展分区，5+为逻辑分区）。SCSI硬盘标记为\"sdx~\"，规则同IDE但前缀为sd。",
+          "qas": [
+            {
+              "id": "3-091-29",
+              "question": "如何区分IDE硬盘和SCSI硬盘的标识符？",
+              "answers": [
+                {
+                  "text": "IDE硬盘标记为\"hdx~\"，SCSI硬盘标记为\"sdx~\"",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "id": "3-091-30",
+              "question": "hdb2标识符的含义是什么？",
+              "answers": [
+                {
+                  "text": "第二个IDE硬盘上的第二个主分区或扩展分区",
+                  "answer_start": 165
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "磁盘查询工具：df -h查看磁盘使用情况，du -h --max-depth=1 /opt可查指定目录的磁盘占用。参数-s汇总大小，-a包含文件，-c增加汇总值。",
+          "qas": [
+            {
+              "id": "3-091-31",
+              "question": "du命令的-s参数作用是什么？",
+              "answers": [
+                {
+                  "text": "汇总指定目录占用大小",
+                  "answer_start": 88
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

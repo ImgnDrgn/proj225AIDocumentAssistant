@@ -4,11 +4,460 @@
       "title": "文件与目录",
       "paragraphs": [
         {
-          "context": "文件是存储在某种长期储存设备或临时存储设备中的一段数据流，并且归属于计算机文件系统管理之下。文件类型可分为：文本文件，是由一些字符的串行组成的；二进制文件，一般是指除了文本文件以外的文件。文件扩展名是操作系统用来标志文件类型的一种机制，通常来说，一个扩展名是跟在主文件名后面的，由一个分隔符分隔。举例：“readme.txt”文件名中，readme是主文件名，txt为扩展名，表示这个文件被认为是一个纯文本文件。注意：在Linux中，带有扩展名的文件，只能代表程序的关联，并不能说明文件是可以执行，只要属性中有运行权限，那么就表示这个文件具有可以执行的权限，但最终能不能成功运行，还得看文件的内容。",
+          "context": "本页面介绍linux下的文件与目录管理。",
           "qas": [
             {
+              "question": "本页面介绍的核心内容是什么？",
               "id": "5-377-1",
-              "question": "Linux中的文件指的是什么？",
+              "answers": [
+                {
+                  "text": "linux下的文件与目录管理",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件：是存储在某种长期储存设备或临时存储设备中的一段数据流，并且归属于计算机文件系统管理之下。文件类型可分: 文本文件，是由一些字符的串行组成的。二进制文件,一般是指除了文本文件以外的文件。",
+          "qas": [
+            {
+              "question": "什么是文件？Linux下文件分为哪两类？各类文件的定义是什么？",
+              "id": "5-377-2",
+              "answers": [
+                {
+                  "text": "存储在某种长期储存设备或临时存储设备中的一段数据流，并且归属于计算机文件系统管理之下",
+                  "answer_start": 3
+                },
+                {
+                  "text": "文本文件、二进制文件",
+                  "answer_start": 66
+                },
+                {
+                  "text": "由一些字符的串行组成的",
+                  "answer_start": 76
+                },
+                {
+                  "text": "除了文本文件以外的文件",
+                  "answer_start": 101
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件扩展名是操作系统用来标志文类型的一种机制。注意：在Linux中，带有扩展名的文件，只能代表程序的关联，并不能说明文件是可以执行；只要属性中有运行权限，那么就表示这个文件具有可以执行的权限,但最终能否成功运行还得看文件内容。",
+          "qas": [
+            {
+              "question": "文件扩展名的作用是什么？Linux中文件扩展名能否说明文件可执行？如何判断Linux文件是否具有可执行权限？",
+              "id": "5-377-3",
+              "answers": [
+                {
+                  "text": "操作系统用来标志文件类型的一种机制",
+                  "answer_start": 8
+                },
+                {
+                  "text": "不能，带有扩展名的文件只能代表程序的关联，不能说明文件可执行",
+                  "answer_start": 37
+                },
+                {
+                  "text": "查看文件属性中是否有运行权限，有则表示具有可执行权限",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在命名linux文件时，最好避免如下一些特殊字符：`*` `?` `<` `>` `;` `&` `!` `[` `]` `|` `\\` `'` `\"` `(` `)` `{` `}`。Linux中，每一个文件或目录命名最长可达255个字符，加上完整路径最长可达4096个字符。文件名字前面有.表示为隐藏文件，例如“.linux.txt”为隐藏文件。",
+          "qas": [
+            {
+              "question": "命名Linux文件应避免哪些特殊字符？Linux文件/目录命名及完整路径的最长字符数分别是多少？如何标识Linux隐藏文件？请举例说明。",
+              "id": "5-377-4",
+              "answers": [
+                {
+                  "text": "`*` `?` `<` `>` `;` `&` `!` `[` `]` `|` `\\` `'` `\"` `(` `)` `{` `}`",
+                  "answer_start": 23
+                },
+                {
+                  "text": "255个字符、4096个字符",
+                  "answer_start": 79
+                },
+                {
+                  "text": "文件名字前面加.；.linux.txt",
+                  "answer_start": 126
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DEB是Debian软件包格式，文件扩展名为.deb，由Debra Murdock得名（Debian创始人Ian Murdock的前妻）。Debian包是Unixar标准归档，经gzip和tar打包而成，处理工具为dpkg（常通过apt运作），可通过Alien工具转其他包格式。DEB包适用于Debian系Linux（如Linux Deepin），双击即可安装。",
+          "qas": [
+            {
+              "question": "DEB包的文件扩展名是什么？其命名来源是什么？处理DEB包的经典工具是什么？DEB包适用于哪类Linux系统？",
+              "id": "5-377-5",
+              "answers": [
+                {
+                  "text": ".deb",
+                  "answer_start": 22
+                },
+                {
+                  "text": "因Debra Murdock（Debian创始人Ian Murdock的前妻）而得名",
+                  "answer_start": 26
+                },
+                {
+                  "text": "dpkg（常通过apt运作）",
+                  "answer_start": 88
+                },
+                {
+                  "text": "Debian系Linux（如Linux Deepin）",
+                  "answer_start": 123
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "RPM包管理员（简称RPM，全称为The RPM Package Manager）是Linux下广泛使用的软件包管理器，最早由Red Hat研制，现由开源社区开发。RPM适用于安装RPM打包的软件，是GNU/Linux下资源最丰富的包类型，双击即可安装，仅适用于Red Hat系Linux系统。",
+          "qas": [
+            {
+              "question": "RPM的全称是什么？它最初由谁研制？RPM包适用于哪类Linux系统？",
+              "id": "5-377-6",
+              "answers": [
+                {
+                  "text": "The RPM Package Manager",
+                  "answer_start": 13
+                },
+                {
+                  "text": "Red Hat",
+                  "answer_start": 48
+                },
+                {
+                  "text": "Red Hat系Linux系统",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux下的库有两种：静态库(.a)和共享库(.so)。静态库命名格式为libxxxx.a（xxxx为lib名称），动态库命名格式为libxxxx.so.major.minor（xxxx为lib名称，major为主版本号，minor为副版本号）。",
+          "qas": [
+            {
+              "question": "Linux下的库分为哪两类？它们的文件扩展名分别是什么？静态库和动态库的命名格式是什么？",
+              "id": "5-377-7",
+              "answers": [
+                {
+                  "text": "静态库、共享库（动态库）",
+                  "answer_start": 11
+                },
+                {
+                  "text": ".a、.so",
+                  "answer_start": 19
+                },
+                {
+                  "text": "libxxxx.a（xxxx为lib名称）",
+                  "answer_start": 28
+                },
+                {
+                  "text": "libxxxx.so.major.minor（xxxx为lib名称，major为主版本号，minor为副版本号）",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "路径：用户寻找文件历经的文件夹线路。路径分两种: 绝对路径：由根目录/写起，例如/usr/share/doc；相对路径：不由/写起，如从/usr/share/doc到/usr/share/man可写cd ../man，指相对于当前工作目录的路径。",
+          "qas": [
+            {
+              "question": "什么是路径？Linux路径分为哪两种？它们的写法特点及示例分别是什么？",
+              "id": "5-377-8",
+              "answers": [
+                {
+                  "text": "用户在磁盘上寻找文件时，所历经的文件夹线路",
+                  "answer_start": 3
+                },
+                {
+                  "text": "绝对路径、相对路径",
+                  "answer_start": 22
+                },
+                {
+                  "text": "由根目录/写起，示例/usr/share/doc",
+                  "answer_start": 29
+                },
+                {
+                  "text": "不由/写起，示例cd ../man（从/usr/share/doc到/usr/share/man）",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "目录：计算机系统中文件的索引（文件名与物理位置的映射），也称文件夹，是存储文件和子目录的虚拟容器，构成层次/树形结构。文件目录表目至少包含文件名、内部标识、类型、存储地址、长度、访问权限、建立时间、访问时间。",
+          "qas": [
+            {
+              "question": "什么是目录？目录的结构特点是什么？文件目录表目至少包含哪些信息？",
+              "id": "5-377-9",
+              "answers": [
+                {
+                  "text": "计算机系统中文件的索引，即文件名和文件物理位置之间的映射关系，也指存储文件和子目录的虚拟容器",
+                  "answer_start": 3
+                },
+                {
+                  "text": "层次结构或树形结构",
+                  "answer_start": 64
+                },
+                {
+                  "text": "文件名、文件内部标识、文件的类型、文件存储地址、文件的长度、访问权限、建立时间和访问时间",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux下的文件名与目录严格区分大小写，例如abc.txt与abC.txt是完全不同的文件。",
+          "qas": [
+            {
+              "question": "Linux下文件名与目录在大小写方面有什么规则？请举例说明。",
+              "id": "5-377-10",
+              "answers": [
+                {
+                  "text": "严格区分大小写",
+                  "answer_start": 13
+                },
+                {
+                  "text": "abc.txt与abC.txt是完全不同的文件",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "图形管理：用系统自带的Nautilus文件管理器实现日常文件/目录管理；用File_Roller归档管理器实现压缩、解压缩、打包管理。",
+          "qas": [
+            {
+              "question": "Linux下用于日常文件与目录管理的图形化工具是什么？用于文件压缩、解压缩和打包的图形化工具是什么？",
+              "id": "5-377-11",
+              "answers": [
+                {
+                  "text": "Nautilus文件管理器",
+                  "answer_start": 10
+                },
+                {
+                  "text": "File_Roller归档管理器",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cd:变换工作目录至DIR。dirName可写绝对路径（如/home/sun/downloads）或相对路径（如./downloads）；省略目录名则切换到用户home directory（登录时目录）。~表示home directory，.表示当前目录，..表示上一层目录。实例：cd /usr/bin（进入/usr/bin/）、cd ..（返回上一级）、cd -（返回上一次目录）、cd ~（进入宿主目录）。",
+          "qas": [
+            {
+              "question": "cd命令的作用是什么？dirName支持哪些路径格式？省略目录名时cd切换到哪个目录？~、.、..分别代表什么？请举一个cd命令进入绝对路径的实例。",
+              "id": "5-377-12",
+              "answers": [
+                {
+                  "text": "变换工作目录至指定DIR",
+                  "answer_start": 3
+                },
+                {
+                  "text": "绝对路径、相对路径",
+                  "answer_start": 15
+                },
+                {
+                  "text": "用户的home directory（刚login时所在的目录）",
+                  "answer_start": 56
+                },
+                {
+                  "text": "~表示home directory，.表示目前所在的目录，..表示目前目录位置的上一层目录",
+                  "answer_start": 79
+                },
+                {
+                  "text": "cd /usr/bin（进入/usr/bin/）",
+                  "answer_start": 118
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "pwd:打印当前/活动目录的绝对路径。实例：pwd（查看当前工作目录）。默认工作目录在~下，~是家目录，默认路径为/home/USERNAME。",
+          "qas": [
+            {
+              "question": "pwd命令的作用是什么？Linux默认的工作目录在哪里？家目录的默认路径是什么？",
+              "id": "5-377-13",
+              "answers": [
+                {
+                  "text": "打印出当前/活动目录的绝对路径",
+                  "answer_start": 4
+                },
+                {
+                  "text": "~下（用户的家目录下）",
+                  "answer_start": 36
+                },
+                {
+                  "text": "/home/USERNAME",
+                  "answer_start": 48
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mkdir:建立空目录。实例：mkdir <DIR>（在当前目录下创建“DIR”文件夹）。",
+          "qas": [
+            {
+              "question": "mkdir命令的作用是什么？请写出在当前目录下创建“test_dir”文件夹的mkdir命令。",
+              "id": "5-377-14",
+              "answers": [
+                {
+                  "text": "建立一个空目录",
+                  "answer_start": 5
+                },
+                {
+                  "text": "mkdir test_dir",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "rmdir：删除空目录，若目录不为空则报错。实例：rmdir <DIR>（移除空文件夹DIR）。",
+          "qas": [
+            {
+              "question": "rmdir命令的作用是什么？使用rmdir删除目录的前提条件是什么？",
+              "id": "5-377-15",
+              "answers": [
+                {
+                  "text": "删除一个空的目录",
+                  "answer_start": 6
+                },
+                {
+                  "text": "所给出的目录为空",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ls:显示文件和目录内容。实例：ls（列当前目录文件，不含隐含文件）、ls -a（含隐含文件）、ls -l（列文件详细信息）、ls -la（列所有文件及详细信息，含隐藏文件）。",
+          "qas": [
+            {
+              "question": "ls命令的作用是什么？ls、ls -a、ls -l、ls -la分别实现什么功能？",
+              "id": "5-377-16",
+              "answers": [
+                {
+                  "text": "显示文件和目录内容",
+                  "answer_start": 3
+                },
+                {
+                  "text": "ls：列出当前目录文件（不包括隐含文件）",
+                  "answer_start": 18
+                },
+                {
+                  "text": "ls -a：列出当前目录文件（包括隐含文件）",
+                  "answer_start": 38
+                },
+                {
+                  "text": "ls -l：列出当前目录下文件的详细信息",
+                  "answer_start": 58
+                },
+                {
+                  "text": "ls -la：显示当前目录下所有文件和文件夹，包括隐藏文件，并显示文件详细信息",
+                  "answer_start": 78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "rm:移除文件或目录。实例：rm <FILE>（删除当前目录下“FILE”文件）、rm -rf <DIR>（递归删除DIR及其中所有文件/文件夹）。",
+          "qas": [
+            {
+              "question": "rm命令的作用是什么？删除“note.txt”文件的rm命令是什么？如何递归删除“old_files”文件夹及其内容？",
+              "id": "5-377-17",
+              "answers": [
+                {
+                  "text": "移除文件或者目录",
+                  "answer_start": 3
+                },
+                {
+                  "text": "rm note.txt",
+                  "answer_start": 18
+                },
+                {
+                  "text": "rm -rf old_files",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "tar:打包文件。实例：tar cf FILE.tar FILES（仅打包不压缩）、tar xf FILE.tar（解包）、tar czf FILE.tar.gz FILES（打包并gzip压缩）、tar xzf FILE.tar.gz（解压缩解包）、tar cjf FILE.tar.bz2 FILES（打包并bzip压缩，文件更小）、tar xjf FILE.tar.bz2（解压缩解包）。",
+          "qas": [
+            {
+              "question": "tar命令的核心作用是什么？tar czf和tar cjf分别使用什么压缩方式？哪种压缩方式得到的文件更小？",
+              "id": "5-377-18",
+              "answers": [
+                {
+                  "text": "打包文件（可搭配压缩/解压缩操作）",
+                  "answer_start": 4
+                },
+                {
+                  "text": "tar czf：gzip压缩；tar cjf：bzip压缩",
+                  "answer_start": 48
+                },
+                {
+                  "text": "bzip压缩（tar cjf命令）",
+                  "answer_start": 88
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "grep:搜索文件。实例：grep PATTERN FILES（在文件中搜特定片段）、grep -r PATTERN DIR（在文件夹中递归搜文件片段）、COMMAND | grep PATTERN（在命令输出中搜片段，如lspci | grep VGA）。",
+          "qas": [
+            {
+              "question": "grep命令的作用是什么？如何用grep递归搜索文件夹中的文件片段？COMMAND | grep PATTERN的作用是什么？请举例说明。",
+              "id": "5-377-19",
+              "answers": [
+                {
+                  "text": "搜索文件中的特定片段（或命令输出中的特定片段）",
+                  "answer_start": 5
+                },
+                {
+                  "text": "grep -r PATTERN DIR（在指定文件夹中递归地寻找文件中的特定片段）",
+                  "answer_start": 23
+                },
+                {
+                  "text": "在COMMAND命令的输出中寻找特定片段",
+                  "answer_start": 51
+                },
+                {
+                  "text": "lspci | grep VGA（在lspci的结果中搜寻带有VGA字样的行）",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件是存储在某种长期储存设备或临时存储设备中的一段数据流，并且归属于计算机文件系统管理之下。文件类型可分文本文件和二进制文件。文件扩展名是操作系统用来标志文件类型的一种机制，通常跟在主文件名后面，由一个分隔符分隔。Linux中扩展名主要表示程序关联，不能说明文件可执行性。命名Linux文件时应避免特殊字符如`*` `?` `<` `>` `;` `&` `!` `[` `]` `|` `\\` `'` `\"` `(` `)` `{` `}`，文件名长度最长可达255字符，加完整路径最长4096字符。文件名前有.表示为隐藏文件。",
+          "qas": [
+            {
+              "id": "5-377-20",
+              "question": "Linux中文件的基本定义是什么？",
               "answers": [
                 {
                   "text": "存储在某种长期储存设备或临时存储设备中的一段数据流，并且归属于计算机文件系统管理之下",
@@ -17,462 +466,152 @@
               ]
             },
             {
-              "id": "5-377-2",
-              "question": "文件类型分为哪两类？",
+              "id": "5-377-21",
+              "question": "Linux中的文件主要分为哪两类？",
               "answers": [
                 {
                   "text": "文本文件和二进制文件",
-                  "answer_start": 68
+                  "answer_start": 67
                 }
               ]
             },
             {
-              "id": "5-377-3",
-              "question": "文件扩展名的作用是什么？",
-              "answers": [
-                {
-                  "text": "操作系统用来标志文件类型的一种机制",
-                  "answer_start": 135
-                }
-              ]
-            },
-            {
-              "id": "5-377-4",
-              "question": "在Linux中，文件有扩展名能否说明它可以执行？",
-              "answers": [
-                {
-                  "text": "不能，带有扩展名的文件只能代表程序的关联，只要属性中有运行权限，才表示具有可以执行的权限，但最终能不能成功运行还得看文件的内容",
-                  "answer_start": 307
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "在命名linux文件时，最好避免如下一些特殊字符：`*` `?` `<` `>` `;` `&` `!` `[` `]` `|` `\` `'` `\"` `(` `)` `{` `}`。Linux中，每一个文件或目录命名最长可以达到255个字符，加上完整路径，最长可达4096个字符。可以采用［TAB］命令、文件名补全键来减少键盘输入量及输入差错。文件名字前面有. 表示为隐藏文件，例如“.linux.txt”为隐藏文件。",
-          "qas": [
-            {
-              "id": "5-377-5",
-              "question": "命名Linux文件时应避免哪些特殊字符？",
+              "id": "5-377-22",
+              "question": "在Linux中命名文件时应该避免哪些特殊字符？",
               "answers": [
                 {
                   "text": "`*` `?` `<` `>` `;` `&` `!` `[` `]` `|` `\\` `'` `\"` `(` `)` `{` `}`",
-                  "answer_start": 31
-                }
-              ]
-            },
-            {
-              "id": "5-377-6",
-              "question": "Linux中文件或目录命名的最长字符数是多少？",
-              "answers": [
-                {
-                  "text": "255个字符",
-                  "answer_start": 103
-                }
-              ]
-            },
-            {
-              "id": "5-377-7",
-              "question": "如何表示隐藏文件？",
-              "answers": [
-                {
-                  "text": "文件名字前面有.",
-                  "answer_start": 184
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "DEB是Debian软件包格式，文件扩展名为.deb，跟Debian的命名一样，DEB也是因Debra Murdock（Debian创始人Ian Murdock的前妻）而得名。Debian包是Unixar的标准归档，将包文件信息以及包内容，经过gzip和tar打包而成。处理这些包的经典程序是dpkg，经常是通过apt来运作。通过Alien工具，可以将deb包转换成其他形式的软件包。安装DEB包软件只需要双击即可，非常方便。DEB包为Debian系Linux系统软件安装包，Linux Deepin属于Debian系Linux。",
-          "qas": [
-            {
-              "id": "5-377-8",
-              "question": "DEB文件的扩展名是什么？",
-              "answers": [
-                {
-                  "text": ".deb",
-                  "answer_start": 32
-                }
-              ]
-            },
-            {
-              "id": "5-377-9",
-              "question": "DEB包得名于谁？",
-              "answers": [
-                {
-                  "text": "Debra Murdock（Debian创始人Ian Murdock的前妻）",
-                  "answer_start": 47
-                }
-              ]
-            },
-            {
-              "id": "5-377-10",
-              "question": "处理DEB包的经典程序是什么？",
-              "answers": [
-                {
-                  "text": "dpkg",
-                  "answer_start": 167
-                }
-              ]
-            },
-            {
-              "id": "5-377-11",
-              "question": "哪个工具可以将deb包转换成其他形式的软件包？",
-              "answers": [
-                {
-                  "text": "Alien工具",
-                  "answer_start": 192
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "RPM包管理员（简称RPM，全称为The RPM Package Manager）是在Linux下广泛使用的软件包管理器。最早由Red Hat研制，现在也由开源社区开发。RPM通常随附于Linux发行版，但也有单独将RPM作为应用软件发行的发行版（例如Gentoo）。RPM仅适用于安装用RPM来打包的软件，目前是GNU/Linux下软件包资源最丰富的软件包类型。安装RPM包软件只需要双击即可，非常方便。RPM包为Red Hat系Linux系统软件安装包，只有属于Red Hat系的Linux系统才可以使用RPM包安装软件。",
-          "qas": [
-            {
-              "id": "5-377-12",
-              "question": "RPM的全称是什么？",
-              "answers": [
-                {
-                  "text": "The RPM Package Manager",
-                  "answer_start": 17
-                }
-              ]
-            },
-            {
-              "id": "5-377-13",
-              "question": "RPM最早由谁研制？",
-              "answers": [
-                {
-                  "text": "Red Hat",
-                  "answer_start": 65
-                }
-              ]
-            },
-            {
-              "id": "5-377-14",
-              "question": "RPM包适用于哪些Linux系统？",
-              "answers": [
-                {
-                  "text": "Red Hat系Linux系统",
-                  "answer_start": 310
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "Linux下的库有两种：静态库(.a)和共享库(.so)。Linux下的静态库的名字一般为libxxxx.a，其中xxxx是该lib的名称。Linux下的动态库的名字一般为libxxxx.so.major.minor，xxxx是该lib的名称，major是主版本号，minor是副版本号。",
-          "qas": [
-            {
-              "id": "5-377-15",
-              "question": "Linux下的库有哪两种类型？",
-              "answers": [
-                {
-                  "text": "静态库(.a)和共享库(.so)",
-                  "answer_start": 19
-                }
-              ]
-            },
-            {
-              "id": "5-377-16",
-              "question": "静态库的文件名格式是什么？",
-              "answers": [
-                {
-                  "text": "libxxxx.a，其中xxxx是该lib的名称",
-                  "answer_start": 50
-                }
-              ]
-            },
-            {
-              "id": "5-377-17",
-              "question": "动态库的文件名格式是什么？",
-              "answers": [
-                {
-                  "text": "libxxxx.so.major.minor，xxxx是该lib的名称，major是主版本号，minor是副版本号",
-                  "answer_start": 100
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "路径是用户在磁盘上寻找文件时，所历经的文件夹线路。路径分有两种：绝对路径：路径的写法一定由根目录 / 写起，例如： /usr/share/doc 这个目录。相对路径：路径的写法不是由 / 写起，例如由 /usr/share/doc 要到 /usr/share/man 底下时，可以写成：cd ../man，这就是相对路径的写法，相对路径意指相对于目前工作目录的路径。",
-          "qas": [
-            {
-              "id": "5-377-18",
-              "question": "什么是路径？",
-              "answers": [
-                {
-                  "text": "用户在磁盘上寻找文件时，所历经的文件夹线路",
-                  "answer_start": 0
-                }
-              ]
-            },
-            {
-              "id": "5-377-19",
-              "question": "路径分为哪两种类型？",
-              "answers": [
-                {
-                  "text": "绝对路径和相对路径",
-                  "answer_start": 36
-                }
-              ]
-            },
-            {
-              "id": "5-377-20",
-              "question": "绝对路径的写法有什么特点？",
-              "answers": [
-                {
-                  "text": "一定由根目录 / 写起",
-                  "answer_start": 53
-                }
-              ]
-            },
-            {
-              "id": "5-377-21",
-              "question": "相对路径的写法有什么特点？",
-              "answers": [
-                {
-                  "text": "不是由 / 写起，相对于目前工作目录的路径",
-                  "answer_start": 110
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "目录是计算机系统中为便于对文件进行存取和管理而建立的文件索引，即文件名和文件物理位置之间的映射关系。在计算机或相关设备中，一个“目录”或“文件夹”就是一个装有数字文件系统的虚拟“容器”，里面保存着一组文件和其它一些目录。一个典型的文件系统可能会包含成千上万个目录。多个文件通过存储在一个目录中，可以达到有组织的存储文件的目的。在一个目录中的另一个目录被称作它的子目录，这些目录构成了层次或树形结构。文件目录表目至少要包含文件名、文件内部标识、文件的类型、文件存储地址、文件的长度、访问权限、建立时间和访问时间等内容。",
-          "qas": [
-            {
-              "id": "5-377-22",
-              "question": "什么是目录？",
-              "answers": [
-                {
-                  "text": "计算机系统中为便于对文件进行存取和管理而建立的文件索引，即文件名和文件物理位置之间的映射关系",
-                  "answer_start": 0
+                  "answer_start": 254
                 }
               ]
             },
             {
               "id": "5-377-23",
-              "question": "目录又被称为什么？",
+              "question": "Linux中如何表示隐藏文件？",
               "answers": [
                 {
-                  "text": "文件夹",
-                  "answer_start": 79
-                }
-              ]
-            },
-            {
-              "id": "5-377-24",
-              "question": "目录中的另一个目录被称为什么？",
-              "answers": [
-                {
-                  "text": "子目录",
-                  "answer_start": 246
+                  "text": "文件名前有.",
+                  "answer_start": 386
                 }
               ]
             }
           ]
         },
         {
-          "context": "Linux下的文件名与目录严格区分大小写。例如：abc.txt与abC.txt是完全不同的文件。",
+          "context": "DEB是Debian软件包格式，扩展名为.deb。RPM全称The RPM Package Manager，是在Linux下广泛使用的软件包管理器。归档文件（压缩包）包括.zip .tar .gz等扩展名。Linux库文件分静态库(.a)和共享库(.so)，静态库名格式libxxxx.a，共享库名格式libxxxx.so.major.minor。SH是脚本文件扩展名，相当于Windows的bat批处理但更强大。",
           "qas": [
             {
-              "id": "5-377-25",
-              "question": "Linux下的文件名与目录是否区分大小写？",
+              "id": "5-377-24",
+              "question": "DEB软件包格式的文件扩展名是什么？",
               "answers": [
                 {
-                  "text": "严格区分大小写",
-                  "answer_start": 24
+                  "text": ".deb",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-377-25",
+              "question": "RPM包管理器的全称是什么？",
+              "answers": [
+                {
+                  "text": "The RPM Package Manager",
+                  "answer_start": 48
                 }
               ]
             },
             {
               "id": "5-377-26",
-              "question": "举例说明Linux下文件名的大小写区别？",
+              "question": "Linux中的共享库文件扩展名是什么？",
               "answers": [
                 {
-                  "text": "abc.txt与abC.txt是完全不同的文件",
-                  "answer_start": 42
+                  "text": ".so",
+                  "answer_start": 142
                 }
               ]
             }
           ]
         },
         {
-          "context": "使用系统自带的Nautilus文件管理器可以很便捷的实现我们日常的文件与目录管理。使用File_Roller归档管理器可以轻松的实现文件与目录的压缩、解压缩、打包管理。",
+          "context": "绝对路径写法由根目录/写起如/usr/share/doc。相对路径写法不由/写起，如从/usr/share/doc到/usr/share/man可用cd ../man。目录是为便于文件存取管理建立的索引系统，包含文件名和物理位置映射关系。Linux严格区分文件名大小写，如abc.txt与abC.txt不同。",
           "qas": [
             {
               "id": "5-377-27",
-              "question": "哪个工具可以便捷实现日常的文件与目录管理？",
+              "question": "什么是绝对路径的书写特征？",
               "answers": [
                 {
-                  "text": "Nautilus文件管理器",
-                  "answer_start": 7
+                  "text": "写法一定由根目录/写起",
+                  "answer_start": 0
                 }
               ]
             },
             {
               "id": "5-377-28",
-              "question": "哪个工具可以实现文件与目录的压缩、解压缩、打包管理？",
+              "question": "Linux系统对文件名大小写有什么要求？",
               "answers": [
                 {
-                  "text": "File_Roller归档管理器",
-                  "answer_start": 68
+                  "text": "严格区分文件名大小写",
+                  "answer_start": 139
                 }
               ]
             }
           ]
         },
         {
-          "context": "cd命令用于变换工作目录至DIR。其中dirName表示法可是绝对路径，如\"/home/sun/downloads\"，也可以是相对路径，如\"./downloads\"。若目录名称省略，则变换至使用者的home directory（也就是刚login时所在的目录）。~表示为home directory的意思，.则是表示目前所在的目录，..则表示目前目录位置的上一层目录。实例：cd /usr/bin 进入/usr/bin/；cd .. 返回当前目录的上一级目录；cd - 返回上一次所在的目录；cd ~ 进入当前用户的宿主目录。",
+          "context": "cd命令变换工作目录至DIR，~表示home directory，.表示当前目录，..表示上层目录。pwd打印当前活动目录的绝对路径。mkdir建立空目录，rmdir删除空目录。ls显示文件和目录内容，-a选项包括隐含文件。cp复制文件，mv移动或重命名文件。touch更新文件时间戳或创建空文件。",
           "qas": [
             {
               "id": "5-377-29",
-              "question": "cd命令的作用是什么？",
+              "question": "cd命令中~符号代表什么？",
               "answers": [
                 {
-                  "text": "变换工作目录至DIR",
-                  "answer_start": 3
+                  "text": "home directory",
+                  "answer_start": 32
                 }
               ]
             },
             {
               "id": "5-377-30",
-              "question": "cd命令中，~表示什么？",
+              "question": "哪个命令选项可以显示包括隐藏文件在内的所有文件？",
               "answers": [
                 {
-                  "text": "home directory（宿主目录）",
-                  "answer_start": 167
-                }
-              ]
-            },
-            {
-              "id": "5-377-31",
-              "question": "cd ..的作用是什么？",
-              "answers": [
-                {
-                  "text": "返回当前目录的上一级目录",
-                  "answer_start": 307
+                  "text": "-a",
+                  "answer_start": 146
                 }
               ]
             }
           ]
         },
         {
-          "context": "pwd命令用于打印出当前/活动目录的绝对路径。实例：pwd 查看当前的工作目录。默认的工作目录在~下，~是您的“家目录”，默认在/home/USERNAME。",
+          "context": "more在显示器阅读文件，head显示文件开头，tail显示文件结尾。rm移除文件或目录，-rf选项递归删除。tar打包文件，czf选项打包并用gzip压缩。gzip压缩文件，-d选项解压。find查找文件，-name按文件名搜索。ln创建文件链接，-s创建软链接。grep在文件中搜索模式，-r递归搜索目录。locate从数据库查询文件，whereis定位可执行文件。",
           "qas": [
             {
-              "id": "5-377-32",
-              "question": "pwd命令的作用是什么？",
+              "id": "5-377-31",
+              "question": "如何递归强制删除目录及其内容？",
               "answers": [
                 {
-                  "text": "打印出当前/活动目录的绝对路径",
-                  "answer_start": 3
+                  "text": "rm -rf",
+                  "answer_start": 90
+                }
+              ]
+            },
+            {
+              "id": "5-377-32",
+              "question": "gzip命令中哪个选项用于解压缩？",
+              "answers": [
+                {
+                  "text": "-d",
+                  "answer_start": 186
                 }
               ]
             },
             {
               "id": "5-377-33",
-              "question": "默认的工作目录在哪里？",
+              "question": "find命令中按文件名搜索使用的选项是什么？",
               "answers": [
                 {
-                  "text": "~下，~是“家目录”，默认在/home/USERNAME",
-                  "answer_start": 56
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "rm命令用于移除文件或者目录。实例：rm <FILE> 删除当前目录下的“FILE”文件；rm -rf <DIR> 递归删除文件夹DIR，也就是删除DIR及其中的所有文件、文件夹。",
-          "qas": [
-            {
-              "id": "5-377-34",
-              "question": "rm命令的作用是什么？",
-              "answers": [
-                {
-                  "text": "移除文件或者目录",
-                  "answer_start": 3
-                }
-              ]
-            },
-            {
-              "id": "5-377-35",
-              "question": "rm -rf <DIR>的作用是什么？",
-              "answers": [
-                {
-                  "text": "递归删除文件夹DIR，也就是删除DIR及其中的所有文件、文件夹",
-                  "answer_start": 45
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "文件：是存储在某种长期储存设备或临时存储设备中的一段数据流，并且归属于计算机文件系统管理之下。文件类型可分: 文本文件，是由一些字符的串行组成的。 二进制文件,一般是指除了文本文件以外的文件。 文件扩展名是操作系统用来标志文类型的一种机制。通常来说，一个扩展名是跟在主文件名后面的，由一个分隔符分隔。 举例：“readme.txt”文件名中，readme是主文件名，txt为扩展名，表示这个文件被认为是一个纯文本文件。 注意：在Linux中，带有扩展名的文件，只能代表程序的关联，并不能说明文件是可以执行，从这方面来说，Linux的扩展名没有太大的意义。只要属性中有运行权限，那么就表示这个文件具有可以执行的权限,但是最终能不能成功运行,还得看文件的内容。",
-          "qas": [
-            {
-              "id": "5-377-36",
-              "question": "文件扩展名在Linux系统中的特点是什么？",
-              "answers": [
-                {
-                  "text": "只能代表程序的关联，并不能说明文件是可以执行",
-                  "answer_start": 290
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "路径：用户在磁盘上寻找文件时，所历经的文件夹线路叫路径。路径分有两种: 绝对路径：路径的写法一定由根目录 / 写起，例如： /usr/share/doc 这个目录。 相对路径：路径的写法不是由 / 写起，例如由 /usr/share/doc 要到 /usr/share/man 底下时，可以写成： cd ../man 这就是相对路径的写法，相对路径意指相对于目前工作目录的路径。 目录：一个计算机系统中有成千上万个文件，为了便于对文件进行存取和管理，计算机系统建立文件的索引，即文件名和文件物理位置之间的映射关系，这种文件的索引称为文件目录。 在计算机或相关设备中，一个“目录”或“文件夹”就是一个装有数字文件系统的虚拟“容器”。在它里面保存着一组文件和其它一些目录。 一个典型的文件系统可能会包含成千上万个目录。多个文件通过存储在一个目录中，可以达到有组织的存储文件的目的。在一个目录中的另一个目录被称作它的子目录。这样，这些目录就构成了层次，或树形结构。 文件目录(file directory）为每个文件设立一个表目。文件目录表目至少要包含文件名、文件内部标识、文件的类型、文件存储地址、文件的长度、访问权限、建立时间和访问时间等内容。",
-          "qas": [
-            {
-              "id": "5-377-37",
-              "question": "相对路径的典型写法示例是什么？",
-              "answers": [
-                {
-                  "text": "cd ../man",
-                  "answer_start": 206
-                }
-              ]
-            },
-            {
-              "id": "5-377-38",
-              "question": "文件目录的作用是什么？",
-              "answers": [
-                {
-                  "text": "为了便于对文件进行存取和管理，计算机系统建立文件的索引",
-                  "answer_start": 327
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "DEB 是Debian软件包格式，文件扩展名为.deb，跟Debian的命名一样，DEB也是因Debra Murdock（Debian创始人Ian Murdock的前妻）而得名。 Debian包是Unixar的标准归档，将包文件信息以及包内容，经过gzip和tar打包而成。 处理这些包的经典程序是dpkg，经常是通过apt来运作。 通过Alien工具，可以将deb包转换成其他形式的软件包。 安装DEB包软件只需要双击即可，非常方便。 DEB包为Debian系Linux系统软件安装包，Linux Deepin属于Debian系Linux。 RPM包管理员（简称RPM，全称为The RPM Package Manager）是在Linux下广泛使用的软件包管理器。 最早由Red Hat研制，现在也由开源社区开发。RPM通常随附于Linux发行版，但也有单独将RPM作为应用软件发行的发行版（例如Gentoo）。RPM仅适用于安装用RPM来打包的软件，目前是GNU/Linux下软件包资源最丰富的软件包类型。 安装RPM包软件只需要双击即可，非常方便。 RPM包为Red Hat系Linux系统软件安装包，只有属于Red Hat系的Linux系统才可以使用RPM包安装软件。",
-          "qas": [
-            {
-              "id": "5-377-39",
-              "question": "DEB软件包格式的特点是什么？",
-              "answers": [
-                {
-                  "text": "文件扩展名为.deb, 是Unixar的标准归档，将包文件信息以及包内容，经过gzip和tar打包而成",
-                  "answer_start": 56
-                }
-              ]
-            },
-            {
-              "id": "5-377-40",
-              "question": "两种软件包格式的安装方式有什么共同点？",
-              "answers": [
-                {
-                  "text": "只需要双击即可安装",
-                  "answer_start": 216
+                  "text": "-name",
+                  "answer_start": 201
                 }
               ]
             }

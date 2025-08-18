@@ -15,6 +15,9 @@ def combine_all_json(doc_dir: str, combined_file: str):
         data = (
             []
         )  # 用于存放"data"键下所有内容，每一篇文档的内容都是一个字典，包含"title"和"paragraphs"两个键。这个字典作为data列表的元素
+        title_dict = (
+            dict()
+        )  # 用于存放所有出现过的标题及其出现次数，从而处理某些文档中"title"重复的问题
 
         for filename in os.listdir(
             doc_dir
@@ -31,10 +34,38 @@ def combine_all_json(doc_dir: str, combined_file: str):
                     try:
                         # 绝大部分应该是有data键的，但是部分可能一上来就直接"title"和"paragraphs"了
                         # 对于有"data"键的，其值是只有一个元素的列表，直接和data列表合并
+
+                        # 合并前需要查看这个文档的"title"是否出现过了
+                        title = json_content["data"][0][
+                            "title"
+                        ]  # 读取json中"title"的内容
+                        if title in title_dict:
+                            # 如果已经出现过，计数+1，并且修改"title"
+                            title_dict[title] = title_dict[title] + 1
+                            title = f"{title}-{title_dict[title]}"  # 名字改为"原title-出现次数"
+                            json_content["data"][0][
+                                "title"
+                            ] = title  # 修改json_content中的"title"
+                        else:
+                            # 对于首次出现的标题，将其加入title_dict，并计数为1
+                            title_dict[title] = 1
+
+                        # 再合并本篇文档
                         data = data + json_content["data"]
                     except KeyError:
                         # 对于没有"data"键的，上来是"title和"paragraphs"，直接将json_content作为元素添加到data列表中
+
+                        # 同样合并前先判断是否出现过
+                        title = json_content["title"]
+                        if title in title_dict:
+                            title_dict[title] = title_dict[title] + 1
+                            title = f"{title}-{title_dict[title]}"
+                            json_content["title"] = title
+                        else:
+                            title_dict[title] = 1
+
                         data.append(json_content)
+
                 except json.JSONDecodeError:
                     pass  # 对于空文件，不进行操作，自行关闭后处理下一个即可
 

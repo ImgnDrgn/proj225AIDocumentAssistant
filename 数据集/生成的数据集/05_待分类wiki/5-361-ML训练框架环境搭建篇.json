@@ -4,94 +4,420 @@
       "title": "ML训练框架环境搭建篇",
       "paragraphs": [
         {
-          "context": "在 deepin 社区版 20.6 发布后，社区小伙伴对在 deepin 上如何进行机器学习表现出浓厚的兴趣。为此，咱们趁热打铁的介绍 Pytorch、TensorFlow、PaddlePaddle 三款主流训练框架在 deepin 的环境搭建全过程，其中不乏踩过的坑和收获的经验，包括在Linux上安装显卡驱动、配置 Docker、部署训练框架等。下面是为本次试验准备的软硬件基础环境：系统 	Deepin 20.6；CPU 	Intel i9-10900k；显卡 	Nvidia RTX3090；内存 	Corsair 32G DDR4 2133MHZ ×2；硬盘 	Micron SSD 512G + Western Digital Corp HDD 2TB。",
+          "context": "本次试验准备的软硬件基础环境：系统 Deepin 20.6，CPU Intel i9-10900k，显卡 Nvidia RTX3090，内存 Corsair 32G DDR4 2133MHZ ×2，硬盘 Micron SSD 512G + Western Digital Corp HDD 2TB。",
           "qas": [
             {
-              "question": "本文介绍了哪三款主流训练框架的环境搭建？",
               "id": "5-361-1",
-              "answers": [
-                {
-                  "text": "Pytorch、TensorFlow、PaddlePaddle",
-                  "answer_start": 72
-                }
-              ]
-            },
-            {
-              "question": "本次试验使用的系统是什么？",
-              "id": "5-361-2",
+              "question": "本次试验使用的系统版本是什么？",
               "answers": [
                 {
                   "text": "Deepin 20.6",
-                  "answer_start": 300
+                  "answer_start": 18
                 }
               ]
             },
             {
-              "question": "本次试验使用的显卡是什么？",
-              "id": "5-361-3",
+              "id": "5-361-2",
+              "question": "本次试验使用的显卡型号是什么？",
               "answers": [
                 {
                   "text": "Nvidia RTX3090",
-                  "answer_start": 335
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "5-361-3",
+              "question": "本次试验使用的内存规格是什么？",
+              "answers": [
+                {
+                  "text": "Corsair 32G DDR4 2133MHZ ×2",
+                  "answer_start": 58
                 }
               ]
             }
           ]
         },
         {
-          "context": "我们首先从显卡驱动的安装谈起，因为众所周知，在机器学习领域利用显卡对模型进行计算和加速发挥作用举足轻重的作用。这里的显卡驱动安装指的是安装 NVIDIA 的闭源驱动，不使用开源的 nouveau 驱动的原因是它无法调起 NVIDIA 显卡内部的 CUDA 单元，也无法使用 NVIDIA 的 cuDNN 库为整个训练过程进行加速等等。首先我们需要在终端中执行命令 nvidia-smi 来检查是否已经安装了 NVIDIA 闭源驱动。nvidia-smi（简称 NVSMI）是一个跨平台工具，主要提供监控 NVIDIA GPU 使用情况和更改其状态的功能，这个工具是 N 卡闭源驱动附带的，驱动安装好之后就会有这个命令，反之如果没能正确配置 N 卡的闭源驱动，则执行此命令会产生报错。如果执行该命令发现报错或提示命令不存在，那么就需要去 NVIDIA 官网下载合适的闭源驱动。",
+          "context": "检查是否安装NVIDIA闭源驱动需在终端执行命令nvidia-smi；若命令报错或不存在，需去NVIDIA官网下载驱动，deepin系统在官网选择Operating System为Linux 64 bit。",
           "qas": [
             {
-              "question": "如何检测是否安装了NVIDIA闭源驱动？",
               "id": "5-361-4",
+              "question": "检测是否安装NVIDIA闭源驱动的终端命令是什么？",
               "answers": [
                 {
-                  "text": "在终端中执行命令 nvidia-smi",
-                  "answer_start": 196
+                  "text": "nvidia-smi",
+                  "answer_start": 27
                 }
               ]
             },
             {
-              "question": "nvidia-smi的简称是什么？",
               "id": "5-361-5",
-              "answers": [
-                {
-                  "text": "NVSMI",
-                  "answer_start": 261
-                }
-              ]
-            },
-            {
-              "question": "为什么不使用开源的nouveau驱动？",
-              "id": "5-361-6",
-              "answers": [
-                {
-                  "text": "它无法调起 NVIDIA 显卡内部的 CUDA 单元，也无法使用 NVIDIA 的 cuDNN 库为整个训练过程进行加速等等",
-                  "answer_start": 128
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "在NVIDIA 官网查询显卡匹配的驱动版本（https://www.nvidia.com/Download/index.aspx)，对于 deepin 而言，Operating System 一栏直接选择 Linux 64 bit 即可，其余选项则根据自己显卡的情况进行选择即可。而本次教程的选择如下图所示：选完后点击下方的 SEARCH 按钮即可进入下载界面。",
-          "qas": [
-            {
-              "question": "在NVIDIA官网查询显卡驱动的网址是什么？",
-              "id": "5-361-7",
-              "answers": [
-                {
-                  "text": "https://www.nvidia.com/Download/index.aspx",
-                  "answer_start": 36
-                }
-              ]
-            },
-            {
-              "question": "对于deepin系统，在NVIDIA官网下载驱动时，Operating System一栏应选择什么？",
-              "id": "5-361-8",
+              "question": "deepin系统在NVIDIA官网下载驱动时，Operating System一栏应选择什么？",
               "answers": [
                 {
                   "text": "Linux 64 bit",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin安装NVIDIA闭源驱动步骤：1.按Ctrl+Alt+F2打开tty，输入用户名密码后执行sudo init 3关闭图形界面；2.用sudo sh /YourSavePath/xxx.run安装驱动；3.安装完成后reboot重启，运行nvidia-smi或nvidia-settings验证。",
+          "qas": [
+            {
+              "id": "5-361-6",
+              "question": "安装NVIDIA闭源驱动时，打开tty的组合键是什么？",
+              "answers": [
+                {
+                  "text": "Ctrl+Alt+F2",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-361-7",
+              "question": "关闭图形界面的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo init 3",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "id": "5-361-8",
+              "question": "验证NVIDIA闭源驱动安装成功的命令有哪些？",
+              "answers": [
+                {
+                  "text": "nvidia-smi或nvidia-settings",
+                  "answer_start": 106
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin安装Docker CE：先执行sudo apt update更新源，再用sudo apt install docker-ce安装；测试用sudo docker run hello-world，出现对应界面则安装成功。",
+          "qas": [
+            {
+              "id": "5-361-9",
+              "question": "deepin中安装Docker CE前更新源的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt update",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-361-10",
+              "question": "安装Docker CE的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt install docker-ce",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-361-11",
+              "question": "测试Docker安装是否成功的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo docker run hello-world",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装nvidia-container-toolkit：添加源用curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -和curl -s -L https://nvidia.github.io/nvidia-docker/debian10/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list；再执行sudo apt update、sudo apt install -y nvidia-container-toolkit，最后sudo systemctl restart docker；测试用sudo docker run --gpus all --rm nvidia/cuda:11.0-base nvidia-smi。",
+          "qas": [
+            {
+              "id": "5-361-12",
+              "question": "添加nvidia-docker gpgkey的命令是什么？",
+              "answers": [
+                {
+                  "text": "curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-361-13",
+              "question": "安装nvidia-container-toolkit后重启Docker的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo systemctl restart docker",
+                  "answer_start": 225
+                }
+              ]
+            },
+            {
+              "id": "5-361-14",
+              "question": "测试nvidia-container-toolkit是否成功的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo docker run --gpus all --rm nvidia/cuda:11.0-base nvidia-smi",
+                  "answer_start": 259
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "部署Pytorch：选1.11.0-cuda11.3-cudnn8-devel镜像，拉取命令加sudo；启动命令为sudo docker run -it --gpus all -v /home/deepin/Desktop/mnist/pytorch:/test pytorch/pytorch:1.11.0-cuda11.3-cudnn8-runtime /bin/bash，进入后cd /test，执行python3 train.py，训练设备为CUDA则成功。",
+          "qas": [
+            {
+              "id": "5-361-15",
+              "question": "本次部署Pytorch选择的镜像tag是什么？",
+              "answers": [
+                {
+                  "text": "1.11.0-cuda11.3-cudnn8-devel",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "5-361-16",
+              "question": "启动Pytorch Docker镜像并挂载数据集路径的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo docker run -it --gpus all -v /home/deepin/Desktop/mnist/pytorch:/test pytorch/pytorch:1.11.0-cuda11.3-cudnn8-runtime /bin/bash",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "id": "5-361-17",
+              "question": "Pytorch框架下验证环境成功的标志是什么？",
+              "answers": [
+                {
+                  "text": "训练设备为CUDA（即NVIDIA的GPU）",
+                  "answer_start": 218
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "部署TensorFlow：拉取镜像命令为sudo docker pull tensorflow/tensorflow:latest-gpu；启动命令为sudo docker run -it --gpus all -v /home/deepin/Desktop/mnist/tensorflow:/test tensorflow/tensorflow:latest-gpu /bin/bash，cd /test后执行python train.py；五个EPOCH用时9.3825秒，ACC 97.73%，LOSS 0.756。",
+          "qas": [
+            {
+              "id": "5-361-18",
+              "question": "拉取TensorFlow GPU镜像的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo docker pull tensorflow/tensorflow:latest-gpu",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "5-361-19",
+              "question": "TensorFlow框架下训练MNIST数据集五个EPOCH的用时是多少？",
+              "answers": [
+                {
+                  "text": "9.3825秒",
+                  "answer_start": 198
+                }
+              ]
+            },
+            {
+              "id": "5-361-20",
+              "question": "TensorFlow框架下训练MNIST数据集的最终ACC是多少？",
+              "answers": [
+                {
+                  "text": "97.73%",
+                  "answer_start": 213
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "部署PaddlePaddle：拉取镜像命令为sudo docker pull paddlepaddle/paddle:2.0.1-gpu-cuda11.0-cudnn8；启动命令为sudo docker run -it --gpus all -v /home/deepin/Desktop/mnist/paddlepaddle:/test paddlepaddle/paddle:2.0.1-gpu-cuda11.0-cudnn8 /bin/bash；五个EPOCH用时10.3678秒，ACC 98.57%，LOSS 0.0850，成功调起cuDNN库。",
+          "qas": [
+            {
+              "id": "5-361-21",
+              "question": "拉取PaddlePaddle GPU镜像的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo docker pull paddlepaddle/paddle:2.0.1-gpu-cuda11.0-cudnn8",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "5-361-22",
+              "question": "PaddlePaddle框架下训练MNIST数据集的最终LOSS是多少？",
+              "answers": [
+                {
+                  "text": "0.0850",
+                  "answer_start": 215
+                }
+              ]
+            },
+            {
+              "id": "5-361-23",
+              "question": "PaddlePaddle框架部署成功的一个表现是什么？",
+              "answers": [
+                {
+                  "text": "成功调起cuDNN库",
+                  "answer_start": 225
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "本次搭建总结：在deepin中安装支持CUDA的闭源显卡驱动；用Docker CE和对应镜像部署Pytorch、TensorFlow、PaddlePaddle；在Docker内成功调用GPU训练模型。",
+          "qas": [
+            {
+              "id": "5-361-24",
+              "question": "本次环境搭建中安装的显卡驱动类型是什么？",
+              "answers": [
+                {
+                  "text": "支持CUDA的闭源显卡驱动",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "5-361-25",
+              "question": "本次部署的三个主流机器学习训练框架是什么？",
+              "answers": [
+                {
+                  "text": "Pytorch、TensorFlow、PaddlePaddle",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在 deepin 社区版 20.6 发布后，社区小伙伴对在 deepin 上如何进行机器学习表现出浓厚的兴趣。为此，咱们趁热打铁的介绍 Pytorch、TensorFlow、PaddlePaddle 三款主流训练框架在 deepin 的环境搭建全过程，其中不乏踩过的坑和收获的经验，包括在Linux上安装显卡驱动、配置 Docker、部署训练框架等。",
+          "qas": [
+            {
+              "id": "5-361-26",
+              "question": "为什么社区对在deepin上进行机器学习感兴趣？",
+              "answers": [
+                {
+                  "text": "deepin 社区版 20.6 发布后",
+                  "answer_start": 2
+                }
+              ]
+            },
+            {
+              "id": "5-361-27",
+              "question": "环境搭建过程包括哪些主要步骤？",
+              "answers": [
+                {
+                  "text": "安装显卡驱动、配置 Docker、部署训练框架",
+                  "answer_start": 125
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "我们首先从显卡驱动的安装谈起，因为众所周知，在机器学习领域利用显卡对模型进行计算和加速发挥作用举足轻重的作用。这里的显卡驱动安装指的是安装 NVIDIA 的闭源驱动，不使用开源的 nouveau 驱动的原因是它无法调起 NVIDIA 显卡内部的 CUDA 单元，也无法使用 NVIDIA 的 cuDNN 库为整个训练过程进行加速等等。",
+          "qas": [
+            {
+              "id": "5-361-28",
+              "question": "为什么在机器学习中显卡驱动很重要？",
+              "answers": [
+                {
+                  "text": "在机器学习领域利用显卡对模型进行计算和加速发挥作用举足轻重的作用",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-361-29",
+              "question": "为什么不使用nouveau开源驱动？",
+              "answers": [
+                {
+                  "text": "它无法调起 NVIDIA 显卡内部的 CUDA 单元，也无法使用 NVIDIA 的 cuDNN 库为整个训练过程进行加速等等",
+                  "answer_start": 134
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "首先我们需要在终端中执行命令 nvidia-smi 来检查是否已经安装了 NVIDIA 闭源驱动。nvidia-smi（简称 NVSMI）是一个跨平台工具，主要提供监控 NVIDIA GPU 使用情况和更改 其状态的功能，这个工具是 N 卡闭源驱动附带的，驱动安装好之后就会有这个命令，反之如果没能正确配置 N 卡的闭源驱动，则执行此命令会产生报错。",
+          "qas": [
+            {
+              "id": "5-361-30",
+              "question": "nvidia-smi的主要功能是什么？",
+              "answers": [
+                {
+                  "text": "监控 NVIDIA GPU 使用情况和更改 其状态的功能",
+                  "answer_start": 97
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在NVIDIA 官网查询显卡匹配的驱动版本（https://www.nvidia.com/Download/index.aspx)，对于 deepin 而言，Operating System 一栏直接选择 Linux 64 bit 即可，其余选项则根据自己显卡的情况进行选择即可。而本次教程的选择如下图所示：",
+          "qas": []
+        },
+        {
+          "context": "第一步：按组合键（<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>） 打开 tty ，按照提示输入用户名和密码，然后执行 sudo init 3 关闭图形界面；",
+          "qas": []
+        },
+        {
+          "context": "在 tty 中使用 `sudo sh /YourSavePath/xxx.run` 命令安装显卡驱动，其中 YourSavePath 是你的 xxx.run 文件的保存位置，你也可以像我一样，先把目录切到目标位置，然后执行 `sudo sh xxx.run`。随后就会进入正式的安装过程：",
+          "qas": [
+            {
+              "id": "5-361-31",
+              "question": "安装显卡驱动的两种命令格式是什么？",
+              "answers": [
+                {
+                  "text": "`sudo sh /YourSavePath/xxx.run` 或 `sudo sh xxx.run`",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "等待安装完成且没有报错后，使用 `reboot` 命令重启系统，然后在终端中运行 `nvidia-smi` 命令查看显卡相关信息，或是使用 `nvidia-settings` 命令可以打开 NVIDIA 图形设置界面。若这两个命令均可运行则说明显卡驱动安装成功。",
+          "qas": [
+            {
+              "id": "5-361-32",
+              "question": "如何验证显卡驱动安装成功？",
+              "answers": [
+                {
+                  "text": "在终端中运行 `nvidia-smi` 命令查看显卡相关信息，或是使用 `nvidia-settings` 命令可以打开 NVIDIA 图形设置界面",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更新源\n```\n$ sudo apt update\n```",
+          "qas": []
+        },
+        {
+          "context": "添加源，可手动选择使用 debian 10 的包\n```\n$ curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -\n\n$ curl -s -L https://nvidia.github.io/nvidia-docker/debian10/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list\n```",
+          "qas": [
+            {
+              "id": "5-361-33",
+              "question": "添加nvidia-docker源的两条命令是什么？",
+              "answers": [
+                {
+                  "text": "curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -",
+                  "answer_start": 50
+                },
+                {
+                  "text": "curl -s -L https://nvidia.github.io/nvidia-docker/debian10/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list",
                   "answer_start": 115
                 }
               ]
@@ -99,429 +425,15 @@
           ]
         },
         {
-          "context": "完成下载后会得到一个 xxx.run 文件，这个文件就是显卡驱动，如果在其它一些最小系统安装它则需要预装一些依赖项，但是在 deepin 中，这些依赖项都是已经集成在了系统里，直接按下面步骤进行即可。第一步：按组合键（<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>） 打开 tty ，按照提示输入用户名和密码，然后执行 sudo init 3 关闭图形界面；第二步：在 tty 中使用 `sudo sh /YourSavePath/xxx.run` 命令安装显卡驱动，其中 YourSavePath 是你的 xxx.run 文件的保存位置，你也可以像我一样，先把目录切到目标位置，然后执行 `sudo sh xxx.run`。随后就会进入正式的安装过程：第三步：等待安装完成且没有报错后，使用 `reboot` 命令重启系统，然后在终端中运行 `nvidia-smi` 命令查看显卡相关信息，或是使用 `nvidia-settings` 命令可以打开 NVIDIA 图形设置界面。若这两个命令均可运行则说明显卡驱动安装成功。",
+          "context": "当看到和直接执行 nvidia-smi 命令的输出差不多的界面时，即表示我们的 docker 环境可以正确调起部署在宿主机上的 N 卡。",
           "qas": [
             {
-              "question": "下载显卡驱动后得到的文件是什么类型？",
-              "id": "5-361-9",
-              "answers": [
-                {
-                  "text": "xxx.run 文件",
-                  "answer_start": 13
-                }
-              ]
-            },
-            {
-              "question": "在deepin中安装显卡驱动前需要预装依赖项吗？",
-              "id": "5-361-10",
-              "answers": [
-                {
-                  "text": "不需要，这些依赖项都是已经集成在了系统里",
-                  "answer_start": 79
-                }
-              ]
-            },
-            {
-              "question": "安装显卡驱动的第一步是什么？",
-              "id": "5-361-11",
-              "answers": [
-                {
-                  "text": "按组合键（<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd>） 打开 tty ，按照提示输入用户名和密码，然后执行 sudo init 3 关闭图形界面",
-                  "answer_start": 145
-                }
-              ]
-            },
-            {
-              "question": "如何验证显卡驱动安装成功？",
-              "id": "5-361-12",
-              "answers": [
-                {
-                  "text": "在终端中运行 `nvidia-smi` 命令查看显卡相关信息，或是使用 `nvidia-settings` 命令可以打开 NVIDIA 图形设置界面。若这两个命令均可运行则说明显卡驱动安装成功",
-                  "answer_start": 415
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "显卡驱动安装完成以后，我们需要继续安装 CUDA 和 cuDNN 以发挥显卡的全部性能，然后再编译或者下载我们需要的训练框架。但是这样从头进行配置会非常麻烦且容易出错。所幸的是绝大部分机器学习厂商都提供了可以开箱即用的 Docker 镜像，因此我们将选择使用配置好的 Docker 来加速环境搭建这一过程。接下来我们将继续自底向上，在安装好了显卡驱动的基础上安装和配置训练用的 Docker。在 deepin 内部存在 docker 和 docker-ce 两个包，这里我们选择安装 docker-ce 这个包：更新源：$ sudo apt update；安装 Docker：$ sudo apt install docker-ce；测试 Docker：$ sudo docker run hello-world；输入 `sudo docker run hello-world` 命令测试 Docker，出现下图则说明测试 Docker 安装成功。",
-          "qas": [
-            {
-              "question": "在deepin中安装Docker选择哪个包？",
-              "id": "5-361-13",
-              "answers": [
-                {
-                  "text": "docker-ce",
-                  "answer_start": 309
-                }
-              ]
-            },
-            {
-              "question": "安装Docker前需要执行什么命令更新源？",
-              "id": "5-361-14",
-              "answers": [
-                {
-                  "text": "$ sudo apt update",
-                  "answer_start": 335
-                }
-              ]
-            },
-            {
-              "question": "如何测试Docker安装是否成功？",
-              "id": "5-361-15",
-              "answers": [
-                {
-                  "text": "输入 `sudo docker run hello-world` 命令测试，出现下图则说明成功",
-                  "answer_start": 400
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "原本在官方版本的 Docker 中不支持调用 N 卡，只有 NVIDIA 自己维护的 Docker 中才能调起 N 卡，后来有了 nvidia-container-toolkit 工具以及 Docker 上游社区将相关特性合入主线，这才支持在官方版本的 Docker 中调起 N 卡。比较凑巧的是，deepin 仓库源里的 docker-ce 恰好支持这些特性，这使得我们直接安装配置 nvidia-container-toolkit 即可：添加源，可手动选择使用 debian 10 的包：$ curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -；$ curl -s -L https://nvidia.github.io/nvidia-docker/debian10/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list；安装nvidia-container-toolkit并重启docker：$ sudo apt update；$ sudo apt install -y nvidia-container-toolkit；$ sudo systemctl restart docker；测试nvidia-container-toolkit：$ sudo docker run --gpus all --rm nvidia/cuda:11.0-base nvidia-smi；当看到和直接执行 nvidia-smi 命令的输出差不多的界面时，即表示我们的 docker 环境可以正确调起部署在宿主机上的 N 卡。在这个过程中还可能遭遇以下报错：ldcache error: open failed: /sbin/ldconfig.real: no such file or directory\\n\"\"\": unknown. 此时执行 `sudo ln -s /sbin/ldconfig /sbin/ldconfig.real` 即可解除报错。",
-          "qas": [
-            {
-              "question": "nvidia-container-toolkit工具的作用是什么？",
-              "id": "5-361-16",
-              "answers": [
-                {
-                  "text": "支持在官方版本的 Docker 中调起 N 卡",
-                  "answer_start": 143
-                }
-              ]
-            },
-            {
-              "question": "添加nvidia-container-toolkit源时，需要执行哪两个curl命令？",
-              "id": "5-361-17",
-              "answers": [
-                {
-                  "text": "$ curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -；$ curl -s -L https://nvidia.github.io/nvidia-docker/debian10/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list",
-                  "answer_start": 265
-                }
-              ]
-            },
-            {
-              "question": "安装nvidia-container-toolkit后需要重启docker吗？如何重启？",
-              "id": "5-361-18",
-              "answers": [
-                {
-                  "text": "需要，执行 $ sudo systemctl restart docker 命令",
-                  "answer_start": 456
-                }
-              ]
-            },
-            {
-              "question": "如何测试nvidia-container-toolkit是否安装成功？",
-              "id": "5-361-19",
-              "answers": [
-                {
-                  "text": "执行 $ sudo docker run --gpus all --rm nvidia/cuda:11.0-base nvidia-smi 命令，当看到和直接执行 nvidia-smi 命令的输出差不多的界面时，即表示成功",
-                  "answer_start": 503
-                }
-              ]
-            },
-            {
-              "question": "遇到ldcache error报错时，如何解决？",
-              "id": "5-361-20",
-              "answers": [
-                {
-                  "text": "执行 `sudo ln -s /sbin/ldconfig /sbin/ldconfig.real`",
-                  "answer_start": 716
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "在安装了 Docker 和 nvidia-container-toolkit 之后，机器学习的基础环境就准备完成。现在在 Docker 上运行对应训练框架的 Docker 镜像，就可以进行机器学习训练。首先需要在 Docker 仓库(https://hub.docker.com/) 寻找自己需要的 Docker 容器（比如：Pytorch），然后调用命令获取对应的镜像 。接下来，我们将使用Pytorch、TensorFlow、PaddlePaddle三种训练框架演示，同时使用 MNIST 数据集（美国国家标准与技术研究院收集整理的大型手写数字数据库）进行训练，从而验证我们的训练框架是否成功部署，可以用来训练模型。点开 https://hub.docker.com/ 搜索 pytorch，并下拉找到 Downloads 数量最高的那个，点进去后切到 Tags 一栏，下面就是各个版本的 Pytorch Dockers 了。此时需要注意的是它的命名规则：- latest 表示最后打包的 Docker 镜像；- 其余的按照 版本号-CUDA版本-cuDNN版本-镜像类型 的规则命名；- 版本号意为 Pytorch 项目的版本号；CUDA版本和cuDNN版本则是镜像内部的N卡GPU加速配置，它和宿主机上的驱动相关；最后的镜像类型分为 runtime、devel 两个版本，runtime 为仅有运行环境的版本，适合部署至最终生产环境，devel 内部包含 Pytorch 的开发环境，方便对 Pytorch 进行调试和开发等等，适合开发阶段使用。这里查询到我们下载的驱动版本 515.48.07 对应的 CUDA 版本是 11.7，但我们希望使用 1.11.0 版本的 Pytorch，同时我们处于开发阶段，有潜在的调试 Pytorch 的需求：因此我们拉到下面经过一番对比，最终选择最接近的 1.11.0-cuda11.3-cudnn8-devel 这个 tag， 复制它右边的命令到终端内部，并在前面加上 sudo 指令，最后敲下回车：当终端提示符再次出现时，即表示 Docker 镜像拉取完成。当镜像拉取结束后，我们就可以启动 Docker 尝试使用 MNIST 数据集进行训练了。由于一般的数据集都特别大，因此我们需要先将数据集下载至宿主机的硬盘中，再将对应的路径挂载至 Docker 内部。比如本次我们就将数据集和训练的代码打包放在 MNIST/home/deepin/Desktop/mnist/pytorch 这个路径下，然后我们使用以下命令启动 Docker 并且移动到挂载目录下：$ sudo docker run -it --gpus all -v /home/deepin/Desktop/mnist/pytorch:/test pytorch/pytorch:1.11.0-cuda11.3-cudnn8-runtime /bin/bash；$ cd /test；接下来将测试整体环境是否可以完成模型训练，由于我们已经切换至挂载目录，因此直接执行我们写好的 Python 脚本即可：python3 train.py；最后我们从以上结果可以观察到训练设备为 CUDA（即NVIDIA的GPU），此时即证明我们的环境搭建成功，可以进行正式的开发工作了。",
-          "qas": [
-            {
-              "question": "Pytorch的Docker镜像命名规则中，镜像类型有哪两种？分别适合什么场景？",
-              "id": "5-361-21",
-              "answers": [
-                {
-                  "text": "分为 runtime、devel 两个版本，runtime 为仅有运行环境的版本，适合部署至最终生产环境，devel 内部包含 Pytorch 的开发环境，方便对 Pytorch 进行调试和开发等等，适合开发阶段使用",
-                  "answer_start": 575
-                }
-              ]
-            },
-            {
-              "question": "本次试验选择的Pytorch Docker镜像tag是什么？",
-              "id": "5-361-22",
-              "answers": [
-                {
-                  "text": "1.11.0-cuda11.3-cudnn8-devel",
-                  "answer_start": 825
-                }
-              ]
-            },
-            {
-              "question": "启动Pytorch Docker容器并挂载数据集路径的命令是什么？",
-              "id": "5-361-23",
-              "answers": [
-                {
-                  "text": "$ sudo docker run -it --gpus all -v /home/deepin/Desktop/mnist/pytorch:/test pytorch/pytorch:1.11.0-cuda11.3-cudnn8-runtime /bin/bash",
-                  "answer_start": 998
-                }
-              ]
-            },
-            {
-              "question": "如何测试Pytorch环境是否搭建成功？",
-              "id": "5-361-24",
-              "answers": [
-                {
-                  "text": "切换至挂载目录，执行 python3 train.py 脚本，观察到训练设备为 CUDA（即NVIDIA的GPU），即证明成功",
-                  "answer_start": 1146
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "同样地，我们在 Docker Hub 上寻找所需要的训练框架 Docker，然后使用相应命令获取Tensorflow Docker。Tensorflow 的 Docker 命名规则和 Pytorch 的有些不一样，有需要的小伙伴可以自行去搜索相关的资料。这里我们直接拉取它最后打包的版本：$ sudo docker pull tensorflow/tensorflow:latest-gpu；然后重复 3.1 节的步骤：$ sudo docker run -it --gpus all -v /home/deepin/Desktop/mnist/tensorflow:/test tensorflow/tensorflow:latest-gpu /bin/bash；$ cd /test；$ python train.py；此时可以看到 Docker 检测到 GPU 设备，可以调用 GPU 进行模型训练，并在最终完成 MNIST 数据集的训练，五个 EPOCH 共计用时9.3825秒，最终训练 ACC 达到97.73%，LOSS 收敛至0.756。",
-          "qas": [
-            {
-              "question": "拉取TensorFlow最新GPU版本Docker镜像的命令是什么？",
-              "id": "5-361-25",
-              "answers": [
-                {
-                  "text": "$ sudo docker pull tensorflow/tensorflow:latest-gpu",
-                  "answer_start": 207
-                }
-              ]
-            },
-            {
-              "question": "启动TensorFlow Docker容器并挂载数据集路径的命令是什么？",
-              "id": "5-361-26",
-              "answers": [
-                {
-                  "text": "$ sudo docker run -it --gpus all -v /home/deepin/Desktop/mnist/tensorflow:/test tensorflow/tensorflow:latest-gpu /bin/bash",
-                  "answer_start": 265
-                }
-              ]
-            },
-            {
-              "question": "TensorFlow在MNIST数据集训练中，五个EPOCH的用时、最终ACC和LOSS分别是多少？",
-              "id": "5-361-27",
-              "answers": [
-                {
-                  "text": "五个 EPOCH 共计用时9.3825秒，最终训练 ACC 达到97.73%，LOSS 收敛至0.756",
-                  "answer_start": 446
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "同样的，在Docker Hub 中寻找我们需要的训练框架镜像，并使用命令获取镜像，PaddlePaddle 的命名规则和 Pytorch 比较类似，参考 3.1 节的选型规则即可：$ sudo docker pull paddlepaddle/paddle:2.0.1-gpu-cuda11.0-cudnn8；然后重复 3.1 节的步骤：$ sudo docker run -it --gpus all -v /home/deepin/Desktop/mnist/paddlepaddle:/test paddlepaddle/paddle:2.0.1-gpu-cuda11.0-cudnn8 /bin/bash；最终在 PaddlePaddle 训练框架下对 MNIST 数据集进行训练完成，可以看到它成功调起了 cuDNN 库，同时共五个 EPOCH 训练用时为 10.3678 秒，最终 ACC 达到 98.57%，LOSS 收敛至0.0850。",
-          "qas": [
-            {
-              "question": "拉取PaddlePaddle指定版本Docker镜像的命令是什么？",
-              "id": "5-361-28",
-              "answers": [
-                {
-                  "text": "$ sudo docker pull paddlepaddle/paddle:2.0.1-gpu-cuda11.0-cudnn8",
-                  "answer_start": 172
-                }
-              ]
-            },
-            {
-              "question": "启动PaddlePaddle Docker容器并挂载数据集路径的命令是什么？",
-              "id": "5-361-29",
-              "answers": [
-                {
-                  "text": "$ sudo docker run -it --gpus all -v /home/deepin/Desktop/mnist/paddlepaddle:/test paddlepaddle/paddle:2.0.1-gpu-cuda11.0-cudnn8 /bin/bash",
-                  "answer_start": 230
-                }
-              ]
-            },
-            {
-              "question": "PaddlePaddle在MNIST数据集训练中，五个EPOCH的用时、最终ACC和LOSS分别是多少？",
-              "id": "5-361-30",
-              "answers": [
-                {
-                  "text": "共五个 EPOCH 训练用时为 10.3678 秒，最终 ACC 达到 98.57%，LOSS 收敛至0.0850",
-                  "answer_start": 435
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "以上，我们成功的在 deepin 中实现了三个主流训练框架的部署，包括：- 安装了支持 CUDA 的闭源显卡驱动；- 使用 Docker CE 和对应的 Docker 镜像完成了训练框架的部署，有效避开了训练框架部署的繁琐流程，简化了 Pytorch、TensorFlow 和 PaddlePaddle 的部署过程；- 在 Docker 内使用 Pytorch、TensowFlow、PaddlePaddle 成功调用GPU进行训练；社区小伙伴也可以按照上述的流程在 deepin 上进行不同的尝试，也欢迎在评论区留言提出意见和建议！",
-          "qas": [
-            {
-              "question": "本次在deepin中实现了哪些部署内容？",
-              "id": "5-361-31",
-              "answers": [
-                {
-                  "text": "安装了支持 CUDA 的闭源显卡驱动；使用 Docker CE 和对应的 Docker 镜像完成了训练框架的部署，简化了 Pytorch、TensorFlow 和 PaddlePaddle 的部署过程；在 Docker 内使用这些框架成功调用GPU进行训练",
-                  "answer_start": 45
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "在 deepin 社区版 20.6 发布后，社区小伙伴对在 deepin 上如何进行机器学习表现出浓厚的兴趣。为此，咱们趁热打铁的介绍 Pytorch、TensorFlow、PaddlePaddle 三款主流训练框架在 deepin 的环境搭建全过程。",
-          "qas": [
-            {
-              "question": "社区对什么表现出浓厚兴趣？",
-              "id": "5-361-32",
-              "answers": [
-                {
-                  "text": "在deepin上如何进行机器学习",
-                  "answer_start": 45
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "试验基础环境：系统 Deepin 20.6, CPU Intel i9-10900k, 显卡 Nvidia RTX3090, 内存 Corsair 32G DDR4 2133MHZ ×2, 硬盘 Micron SSD 512G + Western Digital Corp HDD 2TB。",
-          "qas": [
-            {
-              "question": "内存配置是多少？",
-              "id": "5-361-33",
-              "answers": [
-                {
-                  "text": "Corsair 32G DDR4 2133MHZ ×2",
-                  "answer_start": 63
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "需要安装NVIDIA闭源驱动，因为开源的nouveau驱动无法调起NVIDIA显卡内部的CUDA单元，也无法使用NVIDIA的cuDNN库进行加速。首先执行nvidia-smi命令检查驱动状态，该命令是N卡闭源驱动附带的工具。",
-          "qas": [
-            {
-              "question": "使用什么命令检查驱动状态？",
               "id": "5-361-34",
+              "question": "如何确认docker可以正确调用N卡？",
               "answers": [
                 {
-                  "text": "nvidia-smi",
-                  "answer_start": 85
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "在NVIDIA官网下载驱动：选择Operating System为Linux 64 bit，根据显卡型号选择其他选项后点击SEARCH按钮下载。本次教程选择RTX3090对应的驱动版本。",
-          "qas": [
-            {
-              "question": "如何开始下载驱动？",
-              "id": "5-361-35",
-              "answers": [
-                {
-                  "text": "点击SEARCH按钮",
-                  "answer_start": 79
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "安装步骤：1. 按Ctrl+Alt+F2打开tty，执行sudo init 3关闭图形界面；2. 在tty运行sudo sh xxx.run安装驱动；3. 安装完成后执行reboot重启系统。验证成功：nvidia-smi和nvidia-settings命令正常运行。",
-          "qas": [
-            {
-              "question": "如何关闭图形界面？",
-              "id": "5-361-36",
-              "answers": [
-                {
-                  "text": "执行sudo init 3",
-                  "answer_start": 38
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "安装Docker：执行sudo apt update更新源，再运行sudo apt install docker-ce安装。测试：sudo docker run hello-world出现欢迎界面即安装成功。",
-          "qas": [
-            {
-              "question": "安装Docker的命令是什么？",
-              "id": "5-361-37",
-              "answers": [
-                {
-                  "text": "sudo apt install docker-ce",
-                  "answer_start": 46
-                }
-              ]
-            },
-            {
-              "question": "如何测试Docker安装？",
-              "id": "5-361-38",
-              "answers": [
-                {
-                  "text": "sudo docker run hello-world",
-                  "answer_start": 63
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "配置nvidia-container-toolkit：1. 添加源并安装工具；2. 重启Docker服务。测试：sudo docker run --gpus all nvidia/cuda:11.0-base nvidia-smi成功调用GPU。错误处理：ldcache报错时执行sudo ln -s /sbin/ldconfig /sbin/ldconfig.real。",
-          "qas": []
-        },
-        {
-          "context": "部署Pytorch：从Docker Hub拉取镜像如pytorch/pytorch:1.11.0-cuda11.3-cudnn8-runtime。启动容器：sudo docker run -it --gpus all -v /本地路径:/test 镜像名。训练验证：在挂载目录执行python3 train.py，观察CUDA设备调用。",
-          "qas": [
-            {
-              "question": "如何启动Pytorch容器？",
-              "id": "5-361-39",
-              "answers": [
-                {
-                  "text": "sudo docker run -it --gpus all -v /本地路径:/test 镜像名",
-                  "answer_start": 70
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "部署TensorFlow：拉取镜像tensorflow/tensorflow:latest-gpu。启动容器与Pytorch类似，在挂载目录执行训练脚本，成功调用GPU完成MNIST数据集训练。",
-          "qas": [
-            {
-              "question": "使用的TensorFlow镜像是什么？",
-              "id": "5-361-40",
-              "answers": [
-                {
-                  "text": "tensorflow/tensorflow:latest-gpu",
-                  "answer_start": 16
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "部署PaddlePaddle：拉取镜像paddlepaddle/paddle:2.0.1-gpu-cuda11.0-cudnn8。启动容器后在挂载目录训练，成功调起cuDNN库并完成MNIST训练。",
-          "qas": [
-            {
-              "question": "PaddlePaddle镜像支持哪些组件？",
-              "id": "5-361-41",
-              "answers": [
-                {
-                  "text": "gpu-cuda11.0-cudnn8",
-                  "answer_start": 37
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "context": "总结：成功在deepin中实现1) 安装支持CUDA的闭源驱动；2) 通过Docker CE和镜像简化部署；3) 在Docker内调用GPU运行三大框架训练。",
-          "qas": [
-            {
-              "question": "部署框架的核心方法是什么？",
-              "id": "5-361-42",
-              "answers": [
-                {
-                  "text": "通过Docker CE和镜像简化部署",
-                  "answer_start": 35
+                  "text": "和直接执行 nvidia-smi 命令的输出差不多的界面时",
+                  "answer_start": 7
                 }
               ]
             }

@@ -4,115 +4,160 @@
       "title": "Master PDF Editor",
       "paragraphs": [
         {
-          "context": "Master PDF Editor 是一款功能强大的PDF和XPS文档编辑工具，它可以帮助您查看和编辑PDF和XPS文档。它支持PDF和XPS文件导入/导出到JPG、TIFF、PNG或BMP格式。同时，对于常见的PDF阅读需求，如添加注释、高亮显示等也能很好的支持。",
+          "context": "Master PDF Editor 是一款功能强大的PDF和XPS文档编辑工具，它可以帮助您查看和编辑PDF和XPS文档。它支持PDF和XPS文件导入/导出到JPG、 TIFF、 PNG或BMP格式。同时，对于常见的PDF阅读需求，如添加注释、高亮显示等也能很好的支持。",
           "qas": [
             {
               "id": "5-222-1",
               "question": "Master PDF Editor 是什么类型的工具？",
               "answers": [
                 {
-                  "text": "功能强大的PDF和XPS文档编辑工具",
-                  "answer_start": 0
+                  "text": "一款功能强大的PDF和XPS文档编辑工具",
+                  "answer_start": 19
                 }
               ]
             },
             {
               "id": "5-222-2",
-              "question": "Master PDF Editor 可以处理哪些类型的文档？",
+              "question": "Master PDF Editor 支持查看和编辑哪些格式的文档？",
               "answers": [
                 {
                   "text": "PDF和XPS文档",
-                  "answer_start": 27
+                  "answer_start": 45
                 }
               ]
             },
             {
               "id": "5-222-3",
-              "question": "Master PDF Editor 支持哪些文件格式的导入/导出？",
+              "question": "Master PDF Editor 支持PDF和XPS文件导入/导出到哪些图像格式？",
               "answers": [
                 {
-                  "text": "PDF和XPS文件导入/导出到JPG、TIFF、PNG或BMP格式",
-                  "answer_start": 57
+                  "text": "JPG、 TIFF、 PNG或BMP格式",
+                  "answer_start": 83
                 }
               ]
             },
             {
               "id": "5-222-4",
-              "question": "Master PDF Editor 支持哪些PDF阅读需求？",
+              "question": "Master PDF Editor 对PDF阅读需求支持哪些操作？",
               "answers": [
                 {
                   "text": "添加注释、高亮显示等",
-                  "answer_start": 116
+                  "answer_start": 128
                 }
               ]
             }
           ]
         },
         {
-          "context": "安装命令为sudo apt install net.code-industry.master-pdf-editor，卸载命令为sudo apt remove --purge net.code-industry.master-pdf-editor。其仓库地址为http://packages.deepin.com/deepin/pool/main/m/master-pdf-editor/",
+          "context": "Master PDF Editor 在Linux系统中的安装命令为：sudo apt install net.code-industry.master-pdf-editor",
           "qas": [
             {
               "id": "5-222-5",
-              "question": "如何安装 Master PDF Editor？",
+              "question": "在Linux系统中安装Master PDF Editor 的命令是什么？",
               "answers": [
                 {
                   "text": "sudo apt install net.code-industry.master-pdf-editor",
-                  "answer_start": 5
-                }
-              ]
-            },
-            {
-              "id": "5-222-6",
-              "question": "如何卸载 Master PDF Editor？",
-              "answers": [
-                {
-                  "text": "sudo apt remove --purge net.code-industry.master-pdf-editor",
-                  "answer_start": 45
-                }
-              ]
-            },
-            {
-              "id": "5-222-7",
-              "question": "Master PDF Editor 的仓库地址是什么？",
-              "answers": [
-                {
-                  "text": "http://packages.deepin.com/deepin/pool/main/m/master-pdf-editor/",
-                  "answer_start": 103
+                  "answer_start": 35
                 }
               ]
             }
           ]
         },
         {
-          "context": "常见问题包括：Master PDF Editor 并非免费软件，未注册版本会有水印；软件默认打开为英文，切换为中文需要点击 Tools 菜单->Settings->Language 选项卡，将“Built-in"修改为简体中文。相关链接中，官方网站为https://code-industry.net/masterpdfeditor/",
+          "context": "Master PDF Editor 在Linux系统中的卸载命令为：sudo apt remove --purge net.code-industry.master-pdf-editor",
+          "qas": [
+            {
+              "id": "5-222-6",
+              "question": "在Linux系统中卸载Master PDF Editor 的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge net.code-industry.master-pdf-editor",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Master PDF Editor 的软件仓库地址为：http://packages.deepin.com/deepin/pool/main/m/master-pdf-editor/",
+          "qas": [
+            {
+              "id": "5-222-7",
+              "question": "Master PDF Editor 的软件仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/m/master-pdf-editor/",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Master PDF Editor 并非免费软件，未注册版本会有水印。",
           "qas": [
             {
               "id": "5-222-8",
-              "question": "Master PDF Editor 是免费软件吗？",
+              "question": "Master PDF Editor 是免费软件吗？未注册版本有什么限制？",
               "answers": [
                 {
                   "text": "并非免费软件，未注册版本会有水印",
-                  "answer_start": 12
+                  "answer_start": 19
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "context": "Master PDF Editor 默认打开为英文，切换为中文需要点击 Tools 菜单->Settings->Language 选项卡，将“Built-in\"修改为简体中文。",
+          "qas": [
             {
               "id": "5-222-9",
-              "question": "如何将 Master PDF Editor 切换为中文？",
+              "question": "Master PDF Editor 默认打开的语言是什么？如何切换为中文？",
               "answers": [
                 {
-                  "text": "点击 Tools 菜单->Settings->Language 选项卡，将“Built-in\"修改为简体中文",
-                  "answer_start": 45
+                  "text": "默认打开为英文；切换为中文需要点击 Tools 菜单->Settings->Language 选项卡，将“Built-in\"修改为简体中文",
+                  "answer_start": 19
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "context": "Master PDF Editor 官方网站的网址是：https://code-industry.net/masterpdfeditor/",
+          "qas": [
             {
               "id": "5-222-10",
-              "question": "Master PDF Editor 的官方网站是什么？",
+              "question": "Master PDF Editor 官方网站的网址是什么？",
               "answers": [
                 {
                   "text": "https://code-industry.net/masterpdfeditor/",
-                  "answer_start": 145
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Master PDF Editor 并非免费软件，未注册版本会有水印。软件默认打开为英文，切换为中文需要点击 Tools 菜单->Settings->Language 选项卡，将\"Built-in\"修改为简体中文。",
+          "qas": [
+            {
+              "id": "5-222-11",
+              "question": "未注册版本的 Master PDF Editor 有什么限制？",
+              "answers": [
+                {
+                  "text": "会有水印",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "id": "5-222-12",
+              "question": "如何将 Master PDF Editor 切换为中文界面？",
+              "answers": [
+                {
+                  "text": "点击 Tools 菜单->Settings->Language 选项卡，将\"Built-in\"修改为简体中文",
+                  "answer_start": 54
                 }
               ]
             }

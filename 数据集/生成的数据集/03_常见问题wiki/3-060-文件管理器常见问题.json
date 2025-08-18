@@ -4,55 +4,300 @@
       "title": "文件管理器常见问题",
       "paragraphs": [
         {
-          "context": "深度文件管理器中新建、修改目录内容不及时刷新时，可按下快捷键【Ctrl+Alt+T】打开终端，执行命令 sudo sysctl -a | grep fs.inotify.max_user_watches 查看当前监控数，再执行命令 sudo sysctl -w fs/inotify/max_user_watches=10000 修改目录内容。系统音效存放路径为“/usr/share/sounds/deepin/stereo”，可通过 cd /usr/share/sounds/deepin/stereo 进入，按文件名替换音效。强制清除回收站可按下快捷键【Ctrl+Alt+T】打开终端，执行命令 rm -rf ~/.local/share/Trash/files 。其他设备获取deepin共享文件夹内容需设置共享文件夹：选择要共享的文件夹，右键选择【共享文件夹】，在【共享管理】选项下勾选【共享文件夹】，设置权限，允许匿名访问。deepin和Windows10文件共享需在同一局域网，在deepin桌面建文件夹（如deepin共享文件夹）并建文件，右键点击文件夹选属性设置共享及权限，查看deepin IP（如192.168.1.15），在win10运行中输入IP（\192.168.1.15），输入deepin用户和密码。deepin查看windows共享文件：打开计算机-网络邻居-windows网络，搜索IP，用指令smb: IP地址/共享文件名称，输入用户名密码，WIN10输入IP后无需共享文件名（smb: IP地址）。deepin系统间查看共享文件：打开计算机-网络邻居-windows网络，搜索IP，用指令smb: IP地址，输入用户名密码。无法拷贝或新建文件到数据盘，在所属文件页打开终端，执行sudo chmod -R 777 /data 解锁。离线安装deb包有依赖问题，联网安装出现依赖时，保持/var/cache/apt/archives无deb包，执行apt-get install -f ，再拷贝相关deb包。vim编辑文档选中不能复制，修改/usr/share/vim/vim81/defaults.vim文件第79行参数为set mouse-=a 。修改文件扩展名：方法一右键文件选“属性”修改；方法二进入目录右键“在终端中打开”，执行mv filename.txt filename.sh 。主目录被误删（如/home/user），无法进DDE桌面但可进shell，Ctrl+Alt+F2进入tty2登陆，执行sudo mkdir /home/user 和sudo chown user:user /home/user 重建并设置权限。Deepin回收站无法清空：切换到root（su -），执行chown -R 用户名 /home/用户名/.local/share/Trash ，退出su（exit），执行chmod -R +w /home/用户名/.local/share/Trash ，再清空。Windows复制长文件名到deepin失败，修改文件名长度到200字符以内。UOS系统更改文件后缀名：文件管理器-设置-隐藏文件-重命名隐藏扩展名，去掉勾选。个别硬盘无法查看序列号，用sudo lshw -C disk 查看serial，常用硬盘会显示。",
+          "context": "深度文件管理器中新建、修改目录内容不及时刷新：1. 按下快捷键【Ctrl+Alt+T】打开终端，执行命令 sudo sysctl -a | grep fs.inotify.max_user_watches 查看当前监控数。2. 执行命令 sudo sysctl -w fs/inotify/max_user_watches=10000 修改目录内容。",
           "qas": [
             {
-              "id": "3-60-1",
-              "question": "深度文件管理器中新建、修改目录内容不及时刷新该如何解决？",
+              "id": "3-060-1",
+              "question": "深度文件管理器中新建、修改目录内容不及时刷新，该如何解决？",
               "answers": [
                 {
-                  "text": "1. 按下快捷键【Ctrl+Alt+T】打开终端，执行命令 `sudo sysctl -a | grep fs.inotify.max_user_watches` 查看当前监控数。2. 执行命令 `sudo sysctl -w fs/inotify/max_user_watches=10000` 修改目录内容。",
-                  "answer_start": 0
+                  "text": "1. 按下快捷键【Ctrl+Alt+T】打开终端，执行命令 sudo sysctl -a | grep fs.inotify.max_user_watches 查看当前监控数。2. 执行命令 sudo sysctl -w fs/inotify/max_user_watches=10000 修改目录内容",
+                  "answer_start": 23
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "context": "查看系统音效存放路径的方法：1. 进入系统音效存放路径 “/usr/share/sounds/deepin/stereo”，对应命令为 cd /usr/share/sounds/deepin/stereo。2. 按照音效的文件名进行替换。",
+          "qas": [
             {
-              "id": "3-60-2",
-              "question": "系统音效的存放路径是什么？如何进入该路径？",
+              "id": "3-060-2",
+              "question": "如何查看系统音效存放路径？",
               "answers": [
                 {
-                  "text": "系统音效存放路径为“/usr/share/sounds/deepin/stereo”。可通过命令 `cd /usr/share/sounds/deepin/stereo` 进入该路径。",
-                  "answer_start": 179
+                  "text": "1. 进入系统音效存放路径 “/usr/share/sounds/deepin/stereo”，对应命令为 cd /usr/share/sounds/deepin/stereo。2. 按照音效的文件名进行替换",
+                  "answer_start": 15
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "context": "强制清除回收站的操作：按下快捷键【Ctrl+Alt+T】打开终端，执行命令 rm -rf ~/.local/share/Trash/files 强制清除回收站内容。",
+          "qas": [
             {
-              "id": "3-60-3",
-              "question": "如何强制清除回收站内容？",
+              "id": "3-060-3",
+              "question": "如何强制清除回收站？",
               "answers": [
                 {
-                  "text": "按下快捷键【Ctrl+Alt+T】打开终端，执行命令 `rm -rf ~/.local/share/Trash/files `强制清除回收站内容。",
-                  "answer_start": 316
+                  "text": "按下快捷键【Ctrl+Alt+T】打开终端，执行命令 rm -rf ~/.local/share/Trash/files 强制清除回收站内容",
+                  "answer_start": 15
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "context": "其他设备获取deepin共享文件夹内容的步骤：1. 选择一个要共享的文件夹，右键选择【共享文件夹】。2. 在【共享管理】选项下，勾选【共享此文件夹】，根据需要设置权限，匿名访问选择【允许】。",
+          "qas": [
             {
-              "id": "3-60-4",
+              "id": "3-060-4",
               "question": "其他设备如何获取deepin共享文件夹内容？",
               "answers": [
                 {
-                  "text": "1. 选择一个要共享的文件夹，右键选择【共享文件夹】。2. 在【共享管理】选项下，勾选【共享此文件夹】，根据需要设置权限，匿名访问选择【允许】。",
-                  "answer_start": 435
+                  "text": "1. 选择一个要共享的文件夹，右键选择【共享文件夹】。2. 在【共享管理】选项下，勾选【共享此文件夹】，根据需要设置权限，匿名访问选择【允许】",
+                  "answer_start": 22
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "context": "deepin文件通过Windows10查看的共享方法（前提：两台电脑在同一个局域网内）：1. 在deepin桌面建立文件夹（如“deepin共享文件夹”），并在其中建一个文件；2. 右键点击该文件夹，点击属性，设置共享管理及权限管理；3. 点击右下角网络连接，查看deepin系统IP地址（示例：192.168.1.15）；4. 在Windows10中按Win+R打开运行，输入IP地址（如\\192.168.1.15），输入deepin用户名和登录密码。",
+          "qas": [
             {
-              "id": "3-60-5",
-              "question": "deepin和Windows10如何实现文件共享？",
+              "id": "3-060-5",
+              "question": "如何把deepin文件进行共享，通过Windows10查看？",
               "answers": [
                 {
-                  "text": "前提条件是两台电脑在同一个局域网内。1. 在deepin操作系统里的桌面建立一个文件夹，例如：deepin共享文件夹，并且在文件夹中随便建一个文件；2. 再右键点击该文件夹，点击属性，设置共享管理及权限管理；3. 点击右下角网络连接，查看deepin系统的IP地址（如192.168.1.15）；4. 回到win10中，通过win r键，打开运行，然后输入IP地址：\\192.168.1.15 ，输入deepin操作系统用户和登录密码即可。",
-                  "answer_start": 579
+                  "text": "前提：两台电脑在同一个局域网内。步骤：1. 在deepin桌面建立文件夹（如“deepin共享文件夹”），并在其中建一个文件；2. 右键点击该文件夹，点击属性，设置共享管理及权限管理；3. 点击右下角网络连接，查看deepin系统IP地址（示例：192.168.1.15）；4. 在Windows10中按Win+R打开运行，输入IP地址（如\\192.168.1.15），输入deepin用户名和登录密码",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin系统查看windows系统共享文件的方法：打开计算机-网络邻居-windows网络，搜索被访问计算机的IP，输入指令（smb://IP地址/共享文件名称），之后输入被访问计算机的用户名及密码；Windows10系统输入IP地址后无需输入共享文件名称（指令：smb://IP地址）。",
+          "qas": [
+            {
+              "id": "3-060-6",
+              "question": "deepin系统如何查看windows系统的共享文件？",
+              "answers": [
+                {
+                  "text": "打开计算机-网络邻居-windows网络，搜索被访问计算机的IP，输入指令（smb://IP地址/共享文件名称），之后输入被访问计算机的用户名及密码；Windows10系统输入IP地址后无需输入共享文件名称（指令：smb://IP地址）",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin系统之间查看共享文件的方法：打开计算机-网络邻居-windows网络，搜索被访问计算机的IP，输入指令（smb://IP地址），之后输入被访问计算机的用户名及密码。",
+          "qas": [
+            {
+              "id": "3-060-7",
+              "question": "deepin系统之间如何查看共享文件？",
+              "answers": [
+                {
+                  "text": "打开计算机-网络邻居-windows网络，搜索被访问计算机的IP，输入指令（smb://IP地址），之后输入被访问计算机的用户名及密码",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "无法拷贝文件到数据盘/无法在数据盘里新建文件的解决方法：在所属文件页打开终端，执行命令 sudo chmod -R 777 /data 解锁该文件夹。",
+          "qas": [
+            {
+              "id": "3-060-8",
+              "question": "无法拷贝文件到数据盘或无法在数据盘里新建文件，该怎么解决？",
+              "answers": [
+                {
+                  "text": "在所属文件页打开终端，执行命令 sudo chmod -R 777 /data 解锁该文件夹",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "离线安装deb包出现依赖问题的解决方法：1. 在联网情况下安装该包，若仍出现依赖关系，保持/var/cache/apt/archives无deb包；2. 执行 apt-get install -f ；3. 把相关deb包拷贝出来。",
+          "qas": [
+            {
+              "id": "3-060-9",
+              "question": "离线安装一个deb包出现很多依赖问题，该如何解决？",
+              "answers": [
+                {
+                  "text": "1. 在联网情况下安装该包，若仍出现依赖关系，保持/var/cache/apt/archives无deb包；2. 执行 apt-get install -f ；3. 把相关deb包拷贝出来",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "vim编辑文档选中不能复制的解决方法：修改/usr/share/vim/vim81/defaults.vim文件第79行的参数为 set mouse-=a。",
+          "qas": [
+            {
+              "id": "3-060-10",
+              "question": "vim编辑文档时选中不能复制，该怎么解决？",
+              "answers": [
+                {
+                  "text": "修改/usr/share/vim/vim81/defaults.vim文件第79行的参数为 set mouse-=a",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改文件扩展名的两种方法：方法一：在要修改的文件上右键，打开“属性”窗口完成文件名、扩展名修改；方法二：进入文件所在目录，右键“在终端中打开”，执行命令 mv filename.txt filename.sh。",
+          "qas": [
+            {
+              "id": "3-060-11",
+              "question": "如何修改文件扩展名？",
+              "answers": [
+                {
+                  "text": "方法一：在要修改的文件上右键，打开“属性”窗口完成文件名、扩展名修改；方法二：进入文件所在目录，右键“在终端中打开”，执行命令 mv filename.txt filename.sh",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "主目录被误删除的恢复方法（示例：用户名为user，主目录/home/user）：1. 主目录删除后无法进入DDE桌面，但可进shell；2. 按Ctrl+Alt+F2进入tty2并登陆；3. 执行命令 sudo mkdir /home/user 重新创建主目录；4. 执行命令 sudo chown user:user /home/user 设置主目录为当前用户所有。",
+          "qas": [
+            {
+              "id": "3-060-12",
+              "question": "主目录被误删除该如何恢复？（以用户名为user，主目录/home/user为例）",
+              "answers": [
+                {
+                  "text": "1. 主目录删除后无法进入DDE桌面，但可进shell；2. 按Ctrl+Alt+F2进入tty2并登陆；3. 执行命令 sudo mkdir /home/user 重新创建主目录；4. 执行命令 sudo chown user:user /home/user 设置主目录为当前用户所有",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin系统回收站无法清空的解决方法（示例：用户名为kelecn）：1. 切换到root身份，执行 su - ；2. 执行命令 chown -R kelecn /home/kelecn/.local/share/Trash ；3. 退出su权限，执行 exit ；4. 执行命令 chmod -R +w /home/kelecn/.local/share/Trash ；5. 清空回收站。",
+          "qas": [
+            {
+              "id": "3-060-13",
+              "question": "Deepin系统回收站无法清空，该怎么解决？（以用户名为kelecn为例）",
+              "answers": [
+                {
+                  "text": "1. 切换到root身份，执行 su - ；2. 执行命令 chown -R kelecn /home/kelecn/.local/share/Trash ；3. 退出su权限，执行 exit ；4. 执行命令 chmod -R +w /home/kelecn/.local/share/Trash ；5. 清空回收站",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Windows复制文件名过长的文件到deepin失败的解决方法：修改文件名长度到200字符以内。",
+          "qas": [
+            {
+              "id": "3-060-14",
+              "question": "Windows复制文件名过长的文件到deepin存在失败情况，该如何解决？",
+              "answers": [
+                {
+                  "text": "修改文件名长度到200字符以内",
+                  "answer_start": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在UOS系统中更改文件后缀名的方法：文件管理器-设置-隐藏文件-重命名隐藏扩展名，将勾选去掉。",
+          "qas": [
+            {
+              "id": "3-060-15",
+              "question": "如何在UOS系统中更改文件后缀名？",
+              "answers": [
+                {
+                  "text": "文件管理器-设置-隐藏文件-重命名隐藏扩展名，将勾选去掉",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看个别硬盘序列号的方法：执行命令 sudo lshw -C disk 查看serial，常用硬盘都会显示序列号。",
+          "qas": [
+            {
+              "id": "3-060-16",
+              "question": "个别硬盘无法查看序列号，该怎么解决？",
+              "answers": [
+                {
+                  "text": "执行命令 sudo lshw -C disk 查看serial，常用硬盘都会显示序列号",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度文件管理器中新建、修改目录内容不及时刷新，可查看并修改目录监控数。系统音效存放路径为 /usr/share/sounds/deepin/stereo。强制清除回收站使用 rm -rf 命令。共享文件夹需设置权限和匿名访问。deepin 和 Windows 文件共享需在同局域网内，通过 IP 地址访问。查看共享文件需输入计算机 IP 和凭证。数据盘权限问题可通过 chmod 解决。deb 包依赖问题通过联网安装处理。vim 编辑时修改 defaults.vim 文件参数。文件扩展名通过属性窗口或 mv 命令修改。误删主目录可通过 tty 重新创建。回收站无法清空需修改 Trash 目录权限。文件名过长需控制在 200 字符内。UOS 中更改文件后缀名需取消隐藏扩展名选项。硬盘序列号查看使用 lshw -C disk 命令。",
+          "qas": [
+            {
+              "id": "3-060-17",
+              "question": "共享文件夹需要设置哪些参数？",
+              "answers": [
+                {
+                  "text": "权限和匿名访问",
+                  "answer_start": 156
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度文件管理器中新建、修改目录内容不及时刷新，可查看并修改目录监控数。系统音效存放路径为 /usr/share/sounds/deepin/stereo。强制清除回收站使用 rm -rf 命令。共享文件夹需设置权限和匿名访问。deepin 和 Windows 文件共享需在同局域网内，通过 IP 地址访问。查看共享文件需输入计算机 IP 和凭证。数据盘权限问题可通过 chmod 解决。deb 包依赖问题通过联网安装处理。vim 编辑时修改 defaults.vim 文件参数。文件扩展名通过属性窗口或 mv 命令修改。误删主目录可通过 tty 重新创建。回收站无法清空需修改 Trash 目录权限。文件名过长需控制在 200 字符内。UOS 中更改文件后缀名需取消隐藏扩展名选项。硬盘序列号查看使用 lshw -C disk 命令。",
+          "qas": [
+            {
+              "id": "3-060-18",
+              "question": "deepin 和 Windows 文件共享的前提条件是什么？",
+              "answers": [
+                {
+                  "text": "在同局域网内",
+                  "answer_start": 191
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度文件管理器中新建、修改目录内容不及时刷新，可查看并修改目录监控数。系统音效存放路径为 /usr/share/sounds/deepin/stereo。强制清除回收站使用 rm -rf 命令。共享文件夹需设置权限和匿名访问。deepin 和 Windows 文件共享需在同局域网内，通过 IP 地址访问。查看共享文件需输入计算机 IP 和凭证。数据盘权限问题可通过 chmod 解决。deb 包依赖问题通过联网安装处理。vim 编辑时修改 defaults.vim 文件参数。文件扩展名通过属性窗口或 mv 命令修改。误删主目录可通过 tty 重新创建。回收站无法清空需修改 Trash 目录权限。文件名过长需控制在 200 字符内。UOS 中更改文件后缀名需取消隐藏扩展名选项。硬盘序列号查看使用 lshw -C disk 命令。",
+          "qas": [
+            {
+              "id": "3-060-19",
+              "question": "如何访问网络共享文件？",
+              "answers": [
+                {
+                  "text": "通过 IP 地址访问",
+                  "answer_start": 212
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度文件管理器中新建、修改目录内容不及时刷新，可查看并修改目录监控数。系统音效存放路径为 /usr/share/sounds/deepin/stereo。强制清除回收站使用 rm -rf 命令。共享文件夹需设置权限和匿名访问。deepin 和 Windows 文件共享需在同局域网内，通过 IP 地址访问。查看共享文件需输入计算机 IP 和凭证。数据盘权限问题可通过 chmod 解决。deb 包依赖问题通过联网安装处理。vim 编辑时修改 defaults.vim 文件参数。文件扩展名通过属性窗口或 mv 命令修改。误删主目录可通过 tty 重新创建。回收站无法清空需修改 Trash 目录权限。文件名过长需控制在 200 字符内。UOS 中更改文件后缀名需取消隐藏扩展名选项。硬盘序列号查看使用 lshw -C disk 命令。",
+          "qas": [
+            {
+              "id": "3-060-20",
+              "question": "如何在 UOS 中显示文件扩展名？",
+              "answers": [
+                {
+                  "text": "取消隐藏扩展名选项",
+                  "answer_start": 496
                 }
               ]
             }
@@ -62,5 +307,3 @@
     }
   ]
 }
-
-    

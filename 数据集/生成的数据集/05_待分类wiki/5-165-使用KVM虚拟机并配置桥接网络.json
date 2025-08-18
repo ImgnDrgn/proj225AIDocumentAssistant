@@ -4,165 +4,300 @@
       "title": "使用KVM虚拟机并配置桥接网络",
       "paragraphs": [
         {
-          "context": "在deepin下使用虚拟机其实有很多的解决方案。比如VirtualBox。主要是想尝试下使用其他的虚拟机软件。在这里我们来使用kvm。在deepin下使用kvm其实很方便，有一个现成的kvm图形管理器叫\"virt-manager\"。可以像其他的虚拟机如VirtualBox，VMWare Workstation一样管理虚拟机。",
+          "context": "在deepin下使用KVM虚拟机，首先需安装所需软件包，命令为：sudo apt-get install qemu-kvm libvirt-clients libvirt-daemon-system",
           "qas": [
             {
               "id": "5-165-1",
-              "question": "在deepin下有哪些虚拟机解决方案？",
+              "question": "在deepin下使用KVM虚拟机，首先安装所需软件包的命令是什么？",
               "answers": [
                 {
-                  "text": "VirtualBox、kvm",
-                  "answer_start": 11
+                  "text": "sudo apt-get install qemu-kvm libvirt-clients libvirt-daemon-system",
+                  "answer_start": 32
                 }
               ]
             },
             {
               "id": "5-165-2",
-              "question": "kvm的图形管理器叫什么？",
+              "question": "在deepin系统安装KVM需要哪些核心软件包？",
               "answers": [
                 {
-                  "text": "virt-manager",
-                  "answer_start": 66
+                  "text": "qemu-kvm libvirt-clients libvirt-daemon-system",
+                  "answer_start": 28
                 }
               ]
             }
           ]
         },
         {
-          "context": "首先我们来安装所需要的软件包。sudo apt-get install qemu-kvm libvirt-clients libvirt-daemon-system 安装完这些包以后，就需要将当前的用户添加到libvirt用户组。这样做的目的是为了，使当前用户可以直接管理虚拟机而不需要提权 sudo adduser uos libvirt    #把uos替换成自己的用户名 使用命令查看自己的用户是否可以管理虚拟机。sudo virsh list --all 然后就可以安装图形管理工具来管理虚拟机了。管理kvm虚拟机，主要是通过使用一个叫做virt-manager的图形界面工具实现的。使用apt-get安装virt-manager sudo apt-get install virt-manager 到这里，就可以通过图形界面工具管理虚拟机了。安装完virt-manager之后应该可以在应用程序菜单找到它。接下来创建虚拟机",
+          "context": "安装KVM相关软件包后，需将当前用户添加到libvirt用户组，命令为：sudo adduser uos libvirt，其中需将uos替换成自己的用户名，目的是使当前用户可直接管理虚拟机无需提权",
           "qas": [
             {
               "id": "5-165-3",
-              "question": "安装KVM需要哪些软件包？",
+              "question": "安装KVM相关软件包后，为使当前用户无需提权即可管理虚拟机，需执行什么命令？该命令中需替换的内容是什么？",
               "answers": [
                 {
-                  "text": "qemu-kvm libvirt-clients libvirt-daemon-system",
-                  "answer_start": 20
+                  "text": "sudo adduser uos libvirt，需将uos替换成自己的用户名",
+                  "answer_start": 36
                 }
               ]
             },
             {
               "id": "5-165-4",
-              "question": "将用户添加到libvirt用户组的命令是什么？",
+              "question": "如何将用户加入libvirt组？",
               "answers": [
                 {
                   "text": "sudo adduser uos libvirt",
-                  "answer_start": 135
-                }
-              ]
-            },
-            {
-              "id": "5-165-5",
-              "question": "如何查看用户是否可以管理虚拟机？",
-              "answers": [
-                {
-                  "text": "sudo virsh list --all",
-                  "answer_start": 210
-                }
-              ]
-            },
-            {
-              "id": "5-165-6",
-              "question": "安装virt-manager的命令是什么？",
-              "answers": [
-                {
-                  "text": "sudo apt-get install virt-manager",
-                  "answer_start": 336
+                  "answer_start": 70
                 }
               ]
             }
           ]
         },
         {
-          "context": "接下来讲，如何将kvm虚拟机桥接到物理网络。1.首先我们需要安装开启桥接接口所需的工具的软件包 sudo apt-get install bridge-utils 2.安装完以后，就可以使用brctl命令创建桥接接口并管理桥接接口 sudo brctl addbr br0   #创建一个桥接接口，名字叫br0 sudo brctl show        #输出系统上的所有桥接接口 3.然后将虚拟机的物理网卡接口加入到刚刚创建的br0桥接接口中 sudo brctl addif br0 enp0s25 #enp0s25替换成自己的网络接口的名称 4.通过执行命令sudo brctl show就可以看到enp0s25,已经加入br0中了 bridge name    bridge id            STP enabled    interfaces br0            8000.f0def11b0be2    no             enp0s25 5.删除物理网卡接口的ip地址，把物理网卡接口的ip地址配置到桥接接口上，并开启桥接接口。然后添加默认网关 sudo ip addr del dev enp0s25 192.168.1.8/24 #把接口替换成自己的接口，ip地址替换成自己的ip地址 sudo ip addr add 192.168.1.8/24 dev br0     #把ip地址替换成自己的ip地址 sudo ip link set up br0 sudo route add default gw 192.168.1.1    #把网关地址替换成自己的网关 6.这时候在virt-manager中配置虚拟机的网络，将网络设置给刚刚创建的桥接接口，虚拟机就处于桥接模式了 iptables -A FORWARD -p all -i br0 -j ACCEPT	#开启转发 恢复原来的状态，只需要将桥接接口关闭，然后从桥接接口中删除物理网卡接口，即可 sudo ip link set br0 down sudo brctl delif br0 enp0s25 sudo ip link set enp0s25 down sudo ip link set up enp0s25 #重启物理网卡 桥接网卡配置信息为: auto lo iface lo inet loopback auto br0 iface br0 inet static bridge_ports enp5s0f0 address 10.8.10.12 netmask 255.255.255.0 gateway 10.8.10.1 bridge_stp off bridge_fd 0 bridge_maxwait 0",
+          "context": "验证当前用户是否可以管理KVM虚拟机的命令是：sudo virsh list --all",
           "qas": [
             {
-              "id": "5-165-7",
-              "question": "安装桥接接口所需工具的命令是什么？",
+              "id": "5-165-5",
+              "question": "如何验证当前用户是否可以管理KVM虚拟机？",
               "answers": [
                 {
-                  "text": "sudo apt-get install bridge-utils",
-                  "answer_start": 53
+                  "text": "sudo virsh list --all",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "管理KVM虚拟机的图形界面工具是virt-manager，通过命令sudo apt-get install virt-manager安装，安装后可在应用程序菜单找到该工具",
+          "qas": [
+            {
+              "id": "5-165-6",
+              "question": "管理KVM虚拟机的图形界面工具是什么？如何安装该工具？安装后在哪里可找到它？",
+              "answers": [
+                {
+                  "text": "图形界面工具是virt-manager，安装命令为sudo apt-get install virt-manager，安装后可在应用程序菜单找到",
+                  "answer_start": 16
                 }
               ]
             },
+            {
+              "id": "5-165-7",
+              "question": "安装virt-manager的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install virt-manager",
+                  "answer_start": 139
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置KVM桥接网络的第一步是安装开启桥接接口所需工具，命令为：sudo apt-get install bridge-utils",
+          "qas": [
             {
               "id": "5-165-8",
-              "question": "创建名为br0的桥接接口的命令是什么？",
+              "question": "配置KVM桥接网络的第一步是什么？对应的执行命令是什么？",
               "answers": [
                 {
-                  "text": "sudo brctl addbr br0",
-                  "answer_start": 115
+                  "text": "第一步是安装开启桥接接口所需工具，命令为sudo apt-get install bridge-utils",
+                  "answer_start": 14
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "context": "安装bridge-utils后，可使用brctl命令管理桥接接口，创建名为br0的桥接接口命令为sudo brctl addbr br0，查看系统所有桥接接口命令为sudo brctl show",
+          "qas": [
             {
               "id": "5-165-9",
-              "question": "如何将物理网卡接口加入br0桥接接口？",
+              "question": "安装bridge-utils后，如何创建名为br0的桥接接口？如何查看系统上所有的桥接接口？",
               "answers": [
                 {
-                  "text": "sudo brctl addif br0 enp0s25",
-                  "answer_start": 212
+                  "text": "创建br0桥接接口的命令是sudo brctl addbr br0，查看所有桥接接口的命令是sudo brctl show",
+                  "answer_start": 33
                 }
               ]
             },
             {
               "id": "5-165-10",
-              "question": "如何删除物理网卡接口的ip地址？",
+              "question": "创建桥接接口br0的命令是什么？",
               "answers": [
                 {
-                  "text": "sudo ip addr del dev enp0s25 192.168.1.8/24",
-                  "answer_start": 385
+                  "text": "sudo brctl addbr br0",
+                  "answer_start": 40
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "context": "将物理网卡接口加入br0桥接接口的命令为sudo brctl addif br0 enp0s25，其中需将enp0s25替换成自己的网络接口名称",
+          "qas": [
             {
               "id": "5-165-11",
-              "question": "如何给桥接接口配置ip地址？",
+              "question": "如何将物理网卡接口加入到br0桥接接口中？该命令中需替换的内容是什么？",
               "answers": [
                 {
-                  "text": "sudo ip addr add 192.168.1.8/24 dev br0",
-                  "answer_start": 482
+                  "text": "命令为sudo brctl addif br0 enp0s25，需将enp0s25替换成自己的网络接口名称",
+                  "answer_start": 20
                 }
               ]
             },
             {
               "id": "5-165-12",
-              "question": "开启桥接接口的命令是什么？",
+              "question": "如何将物理网卡加入桥接接口？",
               "answers": [
                 {
-                  "text": "sudo ip link set up br0",
-                  "answer_start": 559
+                  "text": "sudo brctl addif br0 enp0s25",
+                  "answer_start": 75
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "context": "执行sudo brctl show命令可查看物理网卡接口是否已加入br0，若输出中br0对应的interfaces列显示enp0s25，则说明已加入",
+          "qas": [
             {
               "id": "5-165-13",
-              "question": "添加默认网关的命令是什么？",
+              "question": "如何确认物理网卡接口已加入br0桥接接口？输出中哪个信息可作为确认依据？",
               "answers": [
                 {
-                  "text": "sudo route add default gw 192.168.1.1",
-                  "answer_start": 589
+                  "text": "执行sudo brctl show命令确认，输出中br0对应的interfaces列显示目标物理网卡接口（如enp0s25）即可确认",
+                  "answer_start": 2
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "context": "配置桥接接口IP和网关的步骤：1.删除物理网卡IP：sudo ip addr del dev enp0s25 192.168.1.8/24（替换接口和IP）；2.添加IP到br0：sudo ip addr add 192.168.1.8/24 dev br0（替换IP）；3.开启br0：sudo ip link set up br0；4.添加默认网关：sudo route add default gw 192.168.1.1（替换网关）",
+          "qas": [
             {
               "id": "5-165-14",
-              "question": "如何开启转发？",
+              "question": "配置桥接接口br0的IP地址和默认网关需执行哪些步骤？各步骤对应的命令及需替换的内容是什么？",
               "answers": [
                 {
-                  "text": "iptables -A FORWARD -p all -i br0 -j ACCEPT",
-                  "answer_start": 725
+                  "text": "1.删除物理网卡IP：sudo ip addr del dev enp0s25 192.168.1.8/24（替换接口和IP）；2.添加IP到br0：sudo ip addr add 192.168.1.8/24 dev br0（替换IP）；3.开启br0：sudo ip link set up br0；4.添加默认网关：sudo route add default gw 192.168.1.1（替换网关）",
+                  "answer_start": 15
                 }
               ]
             },
             {
               "id": "5-165-15",
-              "question": "如何恢复原来的网络状态？",
+              "question": "如何将IP地址转移到桥接接口？",
               "answers": [
                 {
-                  "text": "sudo ip link set br0 down; sudo brctl delif br0 enp0s25; sudo ip link set enp0s25 down; sudo ip link set up enp0s25",
-                  "answer_start": 789
+                  "text": "sudo ip addr del dev enp0s25 192.168.1.8/24 && sudo ip addr add 192.168.1.8/24 dev br0",
+                  "answer_start": 121
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在virt-manager中配置虚拟机为桥接模式，需将虚拟机网络设置为创建的br0桥接接口，同时需执行命令iptables -A FORWARD -p all -i br0 -j ACCEPT开启转发",
+          "qas": [
+            {
+              "id": "5-165-16",
+              "question": "在virt-manager中如何将虚拟机配置为桥接模式？还需执行什么命令以开启转发功能？",
+              "answers": [
+                {
+                  "text": "将虚拟机网络设置为br0桥接接口，开启转发的命令为iptables -A FORWARD -p all -i br0 -j ACCEPT",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-165-17",
+              "question": "启用网络转发的iptables命令是什么？",
+              "answers": [
+                {
+                  "text": "iptables -A FORWARD -p all -i br0 -j ACCEPT",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "恢复网络原状态的命令：1.关闭br0：sudo ip link set br0 down；2.删除br0中的物理网卡：sudo brctl delif br0 enp0s25；3.关闭物理网卡：sudo ip link set enp0s25 down；4.重启物理网卡：sudo ip link set up enp0s25",
+          "qas": [
+            {
+              "id": "5-165-18",
+              "question": "配置KVM桥接网络后，如何恢复网络原来的状态？需执行哪些命令？",
+              "answers": [
+                {
+                  "text": "需执行4个命令：1.关闭br0：sudo ip link set br0 down；2.删除br0中的物理网卡：sudo brctl delif br0 enp0s25；3.关闭物理网卡：sudo ip link set enp0s25 down；4.重启物理网卡：sudo ip link set up enp0s25",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-165-19",
+              "question": "如何从桥接接口移除物理网卡？",
+              "answers": [
+                {
+                  "text": "sudo brctl delif br0 enp0s25",
+                  "answer_start": 111
+                }
+              ]
+            },
+            {
+              "id": "5-165-20",
+              "question": "重启物理网卡的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo ip link set up enp0s25",
+                  "answer_start": 158
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "KVM桥接网卡静态IP配置示例：auto lo\niface lo inet loopback\nauto br0\niface br0 inet static\nbridge_ports enp5s0f0\naddress 10.8.10.12\nnetmask 255.255.255.0\ngateway 10.8.10.1\nbridge_stp off\nbridge_fd 0\nbridge_maxwait 0",
+          "qas": [
+            {
+              "id": "5-165-21",
+              "question": "KVM桥接网卡的静态IP配置信息包含哪些内容（以示例为准）？",
+              "answers": [
+                {
+                  "text": "包含：auto lo及iface lo inet loopback；auto br0及iface br0 inet static，其下有bridge_ports enp5s0f0、address 10.8.10.12、netmask 255.255.255.0、gateway 10.8.10.1、bridge_stp off、bridge_fd 0、bridge_maxwait 0",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "5-165-22",
+              "question": "桥接配置文件中的物理网卡接口字段是什么？",
+              "answers": [
+                {
+                  "text": "bridge_ports enp5s0f0",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "id": "5-165-23",
+              "question": "永久配置中如何指定桥接IP地址？",
+              "answers": [
+                {
+                  "text": "address 10.8.10.12",
+                  "answer_start": 97
+                }
+              ]
+            },
+            {
+              "id": "5-165-24",
+              "question": "如何禁用桥接的STP协议？",
+              "answers": [
+                {
+                  "text": "bridge_stp off",
+                  "answer_start": 154
                 }
               ]
             }

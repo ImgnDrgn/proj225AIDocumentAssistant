@@ -1,0 +1,244 @@
+{
+  "data": [
+    {
+      "title": "Pull Request 机器人命令列表",
+      "paragraphs": [
+        {
+          "context": "命令：/check，说明：重新触发所有 CI 检查",
+          "qas": [
+            {
+              "id": "5-210-1",
+              "question": "重新触发所有 CI 检查的命令是什么？",
+              "answers": [
+                {
+                  "text": "/check",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令：/check jobname，说明：重新触发 jobname 检查",
+          "qas": [
+            {
+              "id": "5-210-2",
+              "question": "仅重新触发指定 jobname 检查的命令是什么？",
+              "answers": [
+                {
+                  "text": "/check jobname",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令：/assign @username，说明：指派 @username 处理 PR",
+          "qas": [
+            {
+              "id": "5-210-3",
+              "question": "指派 @username 处理 PR 的命令是什么？",
+              "answers": [
+                {
+                  "text": "/assign @username",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令：/review @username，说明：添加 @username 为代码评审人员",
+          "qas": [
+            {
+              "id": "5-210-4",
+              "question": "添加 @username 为代码评审人员的命令是什么？",
+              "answers": [
+                {
+                  "text": "/review @username",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令：/merge，说明：在满足所有合并要求时，执行合并",
+          "qas": [
+            {
+              "id": "5-210-5",
+              "question": "满足所有合并要求时，执行 PR 合并的命令是什么？",
+              "answers": [
+                {
+                  "text": "/merge",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令：/+1 或 /approve，说明：添加一个 approve 标签（限维护者使用）",
+          "qas": [
+            {
+              "id": "5-210-6",
+              "question": "可添加 approve 标签的命令有哪些？该命令的使用限制是什么？",
+              "answers": [
+                {
+                  "text": "/+1 或 /approve；限维护者使用",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "假定你要重新触发一个显示为 build-distribution / check_job / archlinux-build 的任务，那么你需要使用 /check archlinux-build 或 /check check_job/archlinux-build 任一方式进行触发。",
+          "qas": [
+            {
+              "id": "5-210-7",
+              "question": "要重新触发 build-distribution / check_job / archlinux-build 任务，可使用哪些命令？",
+              "answers": [
+                {
+                  "text": "/check archlinux-build 或 /check check_job/archlinux-build",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用油猴脚本简化PR命令操作的第一步：在浏览器安装 Tampermonkey 插件",
+          "qas": [
+            {
+              "id": "5-210-8",
+              "question": "安装油猴脚本以简化PR命令操作的第一步是什么？",
+              "answers": [
+                {
+                  "text": "在浏览器安装 Tampermonkey 插件",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在 Tampermonkey 插件中从URL安装脚本的步骤：打开管理面板 - 实用工具，找到“从 URL 安装”，输入 https://raw.githubusercontent.com/deepin-community/deepin-chatopt-script/main/chatopt.js",
+          "qas": [
+            {
+              "id": "5-210-9",
+              "question": "在 Tampermonkey 插件中，如何从URL安装指定的PR命令简化脚本？",
+              "answers": [
+                {
+                  "text": "打开管理面板 - 实用工具，找到“从 URL 安装”，输入 https://raw.githubusercontent.com/deepin-community/deepin-chatopt-script/main/chatopt.js",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "油猴脚本安装成功后，在 GitHub 的 Pull Request 页面评论框下放会自动添加 /merge 和 /check 相关操作按钮。",
+          "qas": [
+            {
+              "id": "5-210-10",
+              "question": "油猴脚本安装成功后，GitHub 的 Pull Request 页面会出现什么变化？",
+              "answers": [
+                {
+                  "text": "评论框下放会自动添加 /merge 和 /check 相关操作按钮",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PR 合并要求：1. 至少有一个有效的 Approval（加分/合并许可）；2. 所有 CI 检查通过",
+          "qas": [
+            {
+              "id": "5-210-11",
+              "question": "合并 PR 需要满足哪些要求？",
+              "answers": [
+                {
+                  "text": "1. 至少有一个有效的 Approval（加分/合并许可）；2. 所有 CI 检查通过",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "请注意: /approve 仅为添加标记的目的，对于实际的代码评审，请使用 GitHub 的代码评审流程。",
+          "qas": [
+            {
+              "id": "5-210-12",
+              "question": "/approve 命令的作用是什么？实际的代码评审应使用什么流程？",
+              "answers": [
+                {
+                  "text": "/approve 仅为添加标记的目的；实际的代码评审应使用 GitHub 的代码评审流程",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令                  | 说明\n---------------------|---------------------------\n`/check`             | 重新触发所有 CI 检查\n`/check jobname`     | 重新触发 *jobname* 检查\n`/assign @username`  | 指派 @username 处理 PR\n`/review @username`  | 添加 @username 为代码评审人员\n`/merge`             | 在满足所有合并要求时，执行合并\n`/+1` or `/approve`  | 添加一个 approve 标签（限维护者使用）",
+          "qas": [
+            {
+              "id": "5-210-13",
+              "question": "添加approve标签的命令有哪些？",
+              "answers": [
+                {
+                  "text": "`/+1` or `/approve`",
+                  "answer_start": 294
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "假定你要重新触发一个显示为 `build-distribution / check_job / archlinux-build` 的任务，那么你需要使用 `/check archlinux-build` 或 `/check check_job/archlinux-build` 任一方式进行触发。",
+          "qas": [
+            {
+              "id": "5-210-14",
+              "question": "重新触发多级显示的任务有哪些方式？",
+              "answers": [
+                {
+                  "text": "使用最后部分名称或中间部分加最后部分的组合方式",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "1. 至少有一个有效的 Approval（加分/合并许可）\n2. 所有 CI 检查通过",
+          "qas": [
+            {
+              "id": "5-210-15",
+              "question": "合并要求的首要条件是什么？",
+              "answers": [
+                {
+                  "text": "至少有一个有效的 Approval",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-210-16",
+              "question": "CI检查状态需要满足什么条件才能合并？",
+              "answers": [
+                {
+                  "text": "所有 CI 检查通过",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
