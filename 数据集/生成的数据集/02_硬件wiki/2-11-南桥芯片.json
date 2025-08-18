@@ -1,0 +1,50 @@
+{
+  "title": "南桥芯片",
+  "paragraphs": [
+    {
+      "context": "南桥芯片是电脑主板芯片组中的另一枚芯片。南桥设计用来处理低速IO信号，如PCI总线、USB、网卡、ATA、SATA、声卡、键盘、电源管理等。南桥芯片一般位于PCI接口下方。",
+      "qas": [
+        {
+          "id": "2-11-1",
+          "question": "南桥芯片是什么？",
+          "answers": [
+            {
+              "text": "电脑主板芯片组中的另一枚芯片",
+              "answer_start": 5
+            }
+          ]
+        },
+        {
+          "id": "2-11-2",
+          "question": "南桥芯片设计用来处理什么？",
+          "answers": [
+            {
+              "text": "低速IO信号",
+              "answer_start": 28
+            }
+          ]
+        },
+        {
+          "id": "2-11-3",
+          "question": "南桥处理的低速IO信号包括哪些？",
+          "answers": [
+            {
+              "text": "PCI总线、USB、网卡、ATA、SATA、声卡、键盘、电源管理等",
+              "answer_start": 36
+            }
+          ]
+        },
+        {
+          "id": "2-11-4",
+          "question": "南桥芯片一般位于哪里？",
+          "answers": [
+            {
+              "text": "PCI接口下方",
+              "answer_start": 78
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

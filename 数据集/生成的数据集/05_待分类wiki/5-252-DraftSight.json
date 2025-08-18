@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "DraftSight",
+      "paragraphs": [
+        {
+          "context": "DraftSight是一款专业的2D CAD制图软件，可查看、编辑、创建DWG、DXF、DWT文件，输出PNG、BMP、JPG、PDF等格式。",
+          "qas": [
+            {
+              "question": "DraftSight是什么类型的软件？",
+              "id": "5-252-1",
+              "answers": [
+                {
+                  "text": "专业的2D CAD制图软件",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "DraftSight能创建哪些格式的文件？",
+              "id": "5-252-2",
+              "answers": [
+                {
+                  "text": "DWG、DXF、DWT文件",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "DraftSight可以输出哪些格式的图纸？",
+              "id": "5-252-3",
+              "answers": [
+                {
+                  "text": "PNG、BMP、JPG、PDF等格式",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装DraftSight的命令是：sudo apt-get install draftsight",
+          "qas": [
+            {
+              "question": "如何安装DraftSight？",
+              "id": "5-252-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install draftsight",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载DraftSight的命令是：sudo apt-get remove draftsight",
+          "qas": [
+            {
+              "question": "怎样卸载DraftSight？",
+              "id": "5-252-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove draftsight",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DraftSight的仓库地址为http://packages.deepin.com/deepin/pool/non-free/d/draftsight/",
+          "qas": [
+            {
+              "question": "DraftSight的仓库地址是什么？",
+              "id": "5-252-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/d/draftsight/",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

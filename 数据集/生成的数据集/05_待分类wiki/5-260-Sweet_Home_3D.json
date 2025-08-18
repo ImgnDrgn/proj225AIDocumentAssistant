@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Sweet_Home_3D",
+      "paragraphs": [
+        {
+          "context": "Sweet Home 3D是家装辅助设计软件，支持含中文的16种语言，能通过二维平面图设计布置家居，平面图更改实时显示在3D视图。",
+          "qas": [
+            {
+              "question": "Sweet Home 3D是什么类型的软件？",
+              "id": "5-260-1",
+              "answers": [
+                {
+                  "text": "家装辅助设计软件",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "Sweet Home 3D支持多少种语言？",
+              "id": "5-260-2",
+              "answers": [
+                {
+                  "text": "16种",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "question": "Sweet Home 3D是否支持中文？",
+              "id": "5-260-3",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "Sweet Home 3D能实现什么功能？",
+              "id": "5-260-4",
+              "answers": [
+                {
+                  "text": "通过二维的平面图来设计和布置家居，平面图上的更改会实时显示在3D视图中。",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Sweet Home 3D的命令是sudo apt-get install sweethome3d。",
+          "qas": [
+            {
+              "question": "如何安装Sweet Home 3D？",
+              "id": "5-260-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install sweethome3d",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Sweet Home 3D的命令是sudo apt-get remove sweethome3d。",
+          "qas": [
+            {
+              "question": "如何卸载Sweet Home 3D？",
+              "id": "5-260-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove sweethome3d",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Sweet Home 3D的仓库地址是http://packages.deepin.com/deepin/pool/main/s/sweethome3d/。",
+          "qas": [
+            {
+              "question": "Sweet Home 3D的仓库地址是什么？",
+              "id": "5-260-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/sweethome3d/",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

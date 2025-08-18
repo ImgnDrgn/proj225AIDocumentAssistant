@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "cat查看文件内容",
+      "paragraphs": [
+        {
+          "context": "查看文件。示例: 查看fileName.txt 文件的内容，对应的命令为：cat fileName.txt",
+          "qas": [
+            {
+              "id": "5-406-1",
+              "question": "文中提及的用于查看文件内容的命令是什么？",
+              "answers": [
+                {
+                  "text": "cat",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "id": "5-406-2",
+              "question": "查看fileName.txt文件内容的命令示例是什么？",
+              "answers": [
+                {
+                  "text": "cat fileName.txt",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "id": "5-406-3",
+              "question": "文中示例中，使用cat命令查看的是哪个文件？",
+              "answers": [
+                {
+                  "text": "fileName.txt",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-406-4",
+              "question": "文中介绍的操作是什么？",
+              "answers": [
+                {
+                  "text": "查看文件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-406-5",
+              "question": "示例描述了什么？",
+              "answers": [
+                {
+                  "text": "查看 fileName.txt 文件的内容",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "5-406-6",
+              "question": "查看文件内容的命令是什么？",
+              "answers": [
+                {
+                  "text": "cat fileName.txt",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

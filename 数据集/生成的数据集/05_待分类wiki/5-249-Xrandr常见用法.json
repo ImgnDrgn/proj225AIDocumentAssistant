@@ -1,0 +1,279 @@
+{
+  "data": [
+    {
+      "title": "Xrandr常见用法",
+      "paragraphs": [
+        {
+          "context": "xrandr用来设置和查询屏幕相关信息配置。",
+          "qas": [
+            {
+              "question": "xrandr的用途是什么？",
+              "id": "5-249-1",
+              "answers": [
+                {
+                  "text": "设置和查询屏幕相关信息配置。",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`xrandr` 查看当前所连接的屏幕通用信息；`xrandr -q` 查询当前的显示器状态；`xrandr --verbose` 显示更详细的信息。",
+          "qas": [
+            {
+              "question": "如何查看当前连接的屏幕通用信息？",
+              "id": "5-249-2",
+              "answers": [
+                {
+                  "text": "xrandr",
+                  "answer_start": 1
+                }
+              ]
+            },
+            {
+              "question": "哪个命令可以查询当前的显示器状态？",
+              "id": "5-249-3",
+              "answers": [
+                {
+                  "text": "xrandr -q",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "怎样获取更详细的屏幕信息？",
+              "id": "5-249-4",
+              "answers": [
+                {
+                  "text": "xrandr --verbose",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置分辨率需指定output和mode，如`xrandr --output eDP1 --mode 1920x1080`将eDP1分辨率改为1920x1080，不可用1920*1080替代。",
+          "qas": [
+            {
+              "question": "设置屏幕分辨率需要指定哪些参数？",
+              "id": "5-249-5",
+              "answers": [
+                {
+                  "text": "output和mode",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "如何将eDP1的分辨率改为1920x1080？",
+              "id": "5-249-6",
+              "answers": [
+                {
+                  "text": "xrandr --output eDP1 --mode 1920x1080",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "设置分辨率时1920x1080可以用1920*1080替代吗？",
+              "id": "5-249-7",
+              "answers": [
+                {
+                  "text": "不可以",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`xrandr --output eDP1 --brightness 0.5` 将eDP1的屏幕亮度设置为0.5。",
+          "qas": [
+            {
+              "question": "如何将eDP1的屏幕亮度设置为0.5？",
+              "id": "5-249-8",
+              "answers": [
+                {
+                  "text": "xrandr --output eDP1 --brightness 0.5",
+                  "answer_start": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`xrandr --output eDP1 --mode 1920x1080 --rate 75` 将eDP1的刷新率设置为75，不同分辨率可用刷新率不同，可用xrandr查询。",
+          "qas": [
+            {
+              "question": "如何将eDP1在1920x1080分辨率下的刷新率设置为75？",
+              "id": "5-249-9",
+              "answers": [
+                {
+                  "text": "xrandr --output eDP1 --mode 1920x1080 --rate 75",
+                  "answer_start": 1
+                }
+              ]
+            },
+            {
+              "question": "不同分辨率的可用刷新率如何查询？",
+              "id": "5-249-10",
+              "answers": [
+                {
+                  "text": "xrandr",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`xrandr --output eDP1 --rotate left` 可旋转屏幕，left向左90度，right向右90度，inverted上下翻转，normal回到正常。",
+          "qas": [
+            {
+              "question": "如何将eDP1屏幕向左旋转90度？",
+              "id": "5-249-11",
+              "answers": [
+                {
+                  "text": "xrandr --output eDP1 --rotate left",
+                  "answer_start": 1
+                }
+              ]
+            },
+            {
+              "question": "xrandr中屏幕向右旋转90度用什么参数？",
+              "id": "5-249-12",
+              "answers": [
+                {
+                  "text": "right",
+                  "answer_start": 55
+                }
+              ]
+            },
+            {
+              "question": "怎样让屏幕回到正常角度？",
+              "id": "5-249-13",
+              "answers": [
+                {
+                  "text": "xrandr --output [output名称] --rotate normal",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "question": "哪个参数可以实现屏幕上下翻转？",
+              "id": "5-249-14",
+              "answers": [
+                {
+                  "text": "inverted",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "有eDP1和VGA1两个output时，`xrandr --auto --output eDP1 --primary` 可设置eDP1为主屏，--auto自动启用关闭的屏幕。",
+          "qas": [
+            {
+              "question": "如何设置eDP1为主屏？",
+              "id": "5-249-15",
+              "answers": [
+                {
+                  "text": "xrandr --auto --output eDP1 --primary",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "--auto参数的作用是什么？",
+              "id": "5-249-16",
+              "answers": [
+                {
+                  "text": "自动启用关闭的屏幕。",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "复制模式用`xrandr --auto --output eDP1 --pos 0x0 --mode 1440x900 --output VGA1 --same-as eDP1`，需用两显示器都有的mode。",
+          "qas": [
+            {
+              "question": "如何设置eDP1和VGA1为复制模式？",
+              "id": "5-249-17",
+              "answers": [
+                {
+                  "text": "xrandr --auto --output eDP1 --pos 0x0 --mode 1440x900 --output VGA1 --same-as eDP1",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "复制模式对显示器的mode有什么要求？",
+              "id": "5-249-18",
+              "answers": [
+                {
+                  "text": "使用两个显示器都有的mode作为默认的mode",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "扩展模式可将VGA1放在eDP1右边，如`xrandr --auto --output eDP1 --pos 0x0 --mode 1920x1080 --primary --output VGA1 --mode 1440x900 --right-of eDP1`，位置参数还有left-of、--above、--below等。",
+          "qas": [
+            {
+              "question": "如何将VGA1设置在eDP1的右边形成扩展模式？",
+              "id": "5-249-19",
+              "answers": [
+                {
+                  "text": "xrandr --auto --output eDP1 --pos 0x0 --mode 1920x1080 --primary --output VGA1 --mode 1440x900 --right-of eDP1",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "扩展模式中除了right-of，还有哪些位置参数？",
+              "id": "5-249-20",
+              "answers": [
+                {
+                  "text": "left-of、--above、--below等",
+                  "answer_start": 203
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "单屏模式只显示某一屏幕，如`xrandr --output eDP1 --pos 0x0 --mode 1920x1080 --primary --output VGA1 --off` 只显示eDP1。",
+          "qas": [
+            {
+              "question": "如何设置只显示eDP1的单屏模式？",
+              "id": "5-249-21",
+              "answers": [
+                {
+                  "text": "xrandr --output eDP1 --pos 0x0 --mode 1920x1080 --primary --output VGA1 --off",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "单屏模式的特点是什么？",
+              "id": "5-249-22",
+              "answers": [
+                {
+                  "text": "只显示某一个屏幕",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

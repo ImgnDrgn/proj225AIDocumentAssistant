@@ -1,0 +1,459 @@
+{
+  "data": [
+    {
+      "title": "fish脚本编程",
+      "paragraphs": [
+        {
+          "context": "fish shell比bash更人性化，智能体验和文字样式无需配置即可使用，有自己的脚本语言，与bash不兼容。",
+          "qas": [
+            {
+              "question": "fish shell相比bash的优胜之处是什么？",
+              "id": "5-452-1",
+              "answers": [
+                {
+                  "text": "更人性化，智能体验和文字样式无需配置即可使用",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "fish shell的脚本语言与bash兼容吗？",
+              "id": "5-452-2",
+              "answers": [
+                {
+                  "text": "不兼容",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fish中查看命令帮助可使用man命令，如man set。",
+          "qas": [
+            {
+              "question": "fish中如何查看set命令的帮助？",
+              "id": "5-452-3",
+              "answers": [
+                {
+                  "text": "man set",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fish中，文件存在时文字显示蓝色，不存在时显示红色。",
+          "qas": [
+            {
+              "question": "fish中文件存在时文字是什么颜色？",
+              "id": "5-452-4",
+              "answers": [
+                {
+                  "text": "蓝色",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "fish中文件不存在时文字是什么颜色？",
+              "id": "5-452-5",
+              "answers": [
+                {
+                  "text": "红色",
+                  "answer_start": 28
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fish中，*匹配文件名的全部或一部分，**匹配当前目录下所有路径的全部或一部分。",
+          "qas": [
+            {
+              "question": "fish中*通配符的作用是什么？",
+              "id": "5-452-6",
+              "answers": [
+                {
+                  "text": "匹配文件名的全部或一部分",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "fish中**通配符的作用是什么？",
+              "id": "5-452-7",
+              "answers": [
+                {
+                  "text": "匹配当前目录下所有路径的全部或一部分",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fish中，|将左命令标准输出重定向到右命令标准输入；>重定向输出到文件，2>指定标准错误输出，>&1表示输出到标准输出。",
+          "qas": [
+            {
+              "question": "fish中|的作用是什么？",
+              "id": "5-452-8",
+              "answers": [
+                {
+                  "text": "将左命令标准输出重定向到右命令标准输入",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "fish中如何指定标准错误输出？",
+              "id": "5-452-9",
+              "answers": [
+                {
+                  "text": "2>",
+                  "answer_start": 60
+                }
+              ]
+            },
+            {
+              "question": "fish中如何将输出重定向到标准输出？",
+              "id": "5-452-10",
+              "answers": [
+                {
+                  "text": ">&1",
+                  "answer_start": 69
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fish中，敲击命令时会提示补充词，按ctrl + f或右箭头完成单词，alt + ->局部完成；tab键激活命令、参数、路径提示。",
+          "qas": [
+            {
+              "question": "fish中按什么键可完成提示的单词？",
+              "id": "5-452-11",
+              "answers": [
+                {
+                  "text": "ctrl + f或右箭头",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "fish中按什么键激活命令、参数、路径提示？",
+              "id": "5-452-12",
+              "answers": [
+                {
+                  "text": "tab键",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fish中，alt + 左右箭头可进入上一个或下一个目录。",
+          "qas": [
+            {
+              "question": "fish中如何进入上一个目录？",
+              "id": "5-452-13",
+              "answers": [
+                {
+                  "text": "alt + 左箭头",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "fish中如何进入下一个目录？",
+              "id": "5-452-14",
+              "answers": [
+                {
+                  "text": "alt + 右箭头",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fish中，用$变量名读取变量值，set 变量名 变量值设置变量值；双引号内可使用变量，单引号内不能。",
+          "qas": [
+            {
+              "question": "fish中如何读取变量值？",
+              "id": "5-452-15",
+              "answers": [
+                {
+                  "text": "$变量名",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "fish中如何设置变量值？",
+              "id": "5-452-16",
+              "answers": [
+                {
+                  "text": "set 变量名 变量值",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "fish中双引号和单引号对变量使用有何区别？",
+              "id": "5-452-17",
+              "answers": [
+                {
+                  "text": "双引号内可使用变量，单引号内不能",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fish中，set -e 变量名撤销变量，set -x 变量名 变量值设置导出变量（子脚本可读取），set -u 变量名撤销导出变量。",
+          "qas": [
+            {
+              "question": "fish中如何撤销变量？",
+              "id": "5-452-18",
+              "answers": [
+                {
+                  "text": "set -e 变量名",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "fish中如何设置子脚本可读取的导出变量？",
+              "id": "5-452-19",
+              "answers": [
+                {
+                  "text": "set -x 变量名 变量值",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fish中，变量是列表，set a $a b往$a添加项b；count $a获取列表长度，$a[1]取第1项，$a[-1]取末尾项。",
+          "qas": [
+            {
+              "question": "fish中如何往变量$a添加列表项b？",
+              "id": "5-452-20",
+              "answers": [
+                {
+                  "text": "set a $a b",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "fish中如何获取列表变量$a的长度？",
+              "id": "5-452-21",
+              "answers": [
+                {
+                  "text": "count $a",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "question": "fish中如何获取列表变量$a的末尾项？",
+              "id": "5-452-22",
+              "answers": [
+                {
+                  "text": "$a[-1]",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fish中，(命令)执行括号内命令，输出作为参数插入，如echo (uname)；$status表示上一个命令的返回值，0为成功。",
+          "qas": [
+            {
+              "question": "fish中如何将命令输出作为参数插入？",
+              "id": "5-452-23",
+              "answers": [
+                {
+                  "text": "(命令)",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "fish中$status的含义是什么？",
+              "id": "5-452-24",
+              "answers": [
+                {
+                  "text": "上一个命令的返回值，0为成功",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fish中，数字运算用math命令，如math -s0 1+1；支持+、-、x、/、^、%等运算，-s0保留整数。",
+          "qas": [
+            {
+              "question": "fish中如何进行数字运算？",
+              "id": "5-452-25",
+              "answers": [
+                {
+                  "text": "用math命令，如math -s0 1+1",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "fish中math命令的-s0选项有何作用？",
+              "id": "5-452-26",
+              "answers": [
+                {
+                  "text": "保留整数",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fish中，判断语句用if...else if...else...end；test命令可判断，如test \"$number\" -gt 5判断是否大于5。",
+          "qas": [
+            {
+              "question": "fish中的判断语句结构是什么？",
+              "id": "5-452-27",
+              "answers": [
+                {
+                  "text": "if...else if...else...end",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "fish中如何判断变量number是否大于5？",
+              "id": "5-452-28",
+              "answers": [
+                {
+                  "text": "test \"$number\" -gt 5",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fish中，switch...case语句根据$a的值控制分支，case '*'表示默认选项。",
+          "qas": [
+            {
+              "question": "fish中switch...case语句的默认选项如何表示？",
+              "id": "5-452-29",
+              "answers": [
+                {
+                  "text": "case '*'",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fish中，while true实现死循环；for file in *.txt依次读取txt文件列表执行循环体。",
+          "qas": [
+            {
+              "question": "fish中如何实现死循环？",
+              "id": "5-452-30",
+              "answers": [
+                {
+                  "text": "while true",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "fish中如何遍历当前目录下的所有txt文件？",
+              "id": "5-452-31",
+              "answers": [
+                {
+                  "text": "for file in *.txt",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fish中，用function 函数名...end定义函数，参数通过$argv获取，如function say; echo hello $argv; end。",
+          "qas": [
+            {
+              "question": "fish中如何定义函数？",
+              "id": "5-452-32",
+              "answers": [
+                {
+                  "text": "用function 函数名...end",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "fish中函数如何获取参数？",
+              "id": "5-452-33",
+              "answers": [
+                {
+                  "text": "通过$argv获取",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fish中，string join命令指定联接符联接字符串，如echo a\\nb\\nc | string join ' '输出a b c。",
+          "qas": [
+            {
+              "question": "fish中如何指定联接符联接字符串？",
+              "id": "5-452-34",
+              "answers": [
+                {
+                  "text": "string join命令",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fish中，abbr -ag ll ls -l将ls -l用ll缩写代替；alias ll=\"ls -l\"用ll函数包装ls -l。",
+          "qas": [
+            {
+              "question": "fish中如何将ls -l用ll缩写代替？",
+              "id": "5-452-35",
+              "answers": [
+                {
+                  "text": "abbr -ag ll ls -l",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "fish中如何用ll函数包装ls -l？",
+              "id": "5-452-36",
+              "answers": [
+                {
+                  "text": "alias ll=\"ls -l\"",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

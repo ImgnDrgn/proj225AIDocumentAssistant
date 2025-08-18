@@ -1,0 +1,359 @@
+{
+  "data": [
+    {
+      "title": "5-用原生wine运行绿化版exe程序bat文件的方法",
+      "paragraphs": [
+        {
+          "context": "之前开帖介绍过用原生wine运行便携式exe程序（绿色程序）的方法，有朋友想知道bat程序如何运行，现在再开一帖介绍一下方法。学习本帖内容前建议先看前四帖内容。用原生wine运行绿化版exe程序（bat程序）的方法其实跟[wine使用教程4-用原生wine运行便携式exe程序（绿色软件）的方法](/zh/常见问题FAQ/Wine/用原生wine运行便携式exe程序绿色软件的方法)是差不多的，只不过把wine命令换成wineconsole而已。本帖案例软件名称假定为AppDemo.exe，bat文件名称假定为绿化处理.bat，容器名称假定为Deepin-AppDemo。方法如下：1、下载绿化版exe程序包并解压。案例软件：AppDemo.exe。",
+          "qas": [
+            {
+              "id": "3-37-1",
+              "question": "学习本文内容前建议先学习哪些资料？",
+              "answers": [
+                {
+                  "text": "前四帖内容",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "3-37-2",
+              "question": "本帖介绍的是用原生wine运行什么程序的方法？",
+              "answers": [
+                {
+                  "text": "绿化版exe程序（bat程序）",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "3-37-3",
+              "question": "运行bat程序和普通exe程序的主要区别是什么？",
+              "answers": [
+                {
+                  "text": "把wine命令换成wineconsole",
+                  "answer_start": 176
+                }
+              ]
+            },
+            {
+              "id": "3-37-4",
+              "question": "第一步操作需要处理哪个示例文件？",
+              "answers": [
+                {
+                  "text": "AppDemo.exe",
+                  "answer_start": 232
+                }
+              ]
+            },
+            {
+              "id": "3-37-5",
+              "question": "步骤1的内容是什么？",
+              "answers": [
+                {
+                  "text": "下载绿化版exe程序包并解压",
+                  "answer_start": 285
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "2、创建一个全新容器。创建容器的终端命令：```bash WINEARCH=win32或者wine64 WINEPREFIX=容器路径 wine winecfg ```案例：```bash WINEARCH=win32 WINEPREFIX=~/.deepinwine/Deepin-AppDemo wine winecfg ```上述命令结构解析：1. `WINEARCH=`后面写win32，即表示新建一个32位的容器，如果写win64，即表示新建一个64位的容器。2. `WINEPREFIX=`是指定的容器路径（此处Deepin-AppDemo就是准备新建的容器名称）。3. `wine`即你指定的wine的执行程序，原生wine的执行程序就是wine。（注：创建容器时如果提示安装mono，可点取消。mono模拟的.NET Framework，不是所有exe软件都需要这个。需要的时候你再手动安装即可）Windows版本要跟根据你所运行的exe软件要求选择。特别说明：1. 楼主已经把自己电脑里的原生wine升级到了最新版，即wine开发版7.11。2. Deepin系统预装的原生wine版本是4.0，过于老旧，很多exe程序wine4.0都不能运行。因此建议小伙伴升级原生wine到最新版本。3. **升级原生wine的方法见WineHQ官网：** https://wiki.winehq.org/Debian_zhcn。",
+          "qas": [
+            {
+              "id": "3-37-6",
+              "question": "步骤2的内容是什么？",
+              "answers": [
+                {
+                  "text": "创建一个全新容器",
+                  "answer_start": 2
+                }
+              ]
+            },
+            {
+              "id": "3-37-7",
+              "question": "创建容器的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "WINEARCH=win32或者wine64 WINEPREFIX=容器路径 wine winecfg",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "3-37-8",
+              "question": "WINEPREFIX参数的作用是什么？",
+              "answers": [
+                {
+                  "text": "指定的容器路径",
+                  "answer_start": 77
+                }
+              ]
+            },
+            {
+              "id": "3-37-9",
+              "question": "`WINEARCH=`后面写win32表示什么？",
+              "answers": [
+                {
+                  "text": "新建一个32位的容器",
+                  "answer_start": 187
+                }
+              ]
+            },
+            {
+              "id": "3-37-10",
+              "question": "创建容器时如何避免安装mono？",
+              "answers": [
+                {
+                  "text": "可点取消",
+                  "answer_start": 340
+                }
+              ]
+            },
+            {
+              "id": "3-37-11",
+              "question": "Deepin系统预装的原生wine版本是什么？",
+              "answers": [
+                {
+                  "text": "4.0",
+                  "answer_start": 514
+                }
+              ]
+            },
+            {
+              "id": "3-37-12",
+              "question": "升级原生wine的方法可以在哪里找到？",
+              "answers": [
+                {
+                  "text": "WineHQ官网：https://wiki.winehq.org/Debian_zhcn",
+                  "answer_start": 614
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "3、拷贝exe软件目录至容器c盘中。",
+          "qas": [
+            {
+              "id": "3-37-13",
+              "question": "步骤3的内容是什么？",
+              "answers": [
+                {
+                  "text": "拷贝exe软件目录至容器c盘中",
+                  "answer_start": 2
+                }
+              ]
+            },
+            {
+              "id": "3-37-14",
+              "question": "第三步需要将软件拷贝到容器的什么位置？",
+              "answers": [
+                {
+                  "text": "容器c盘中",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "4、运行绿化程序bat文件。运行bat文件的终端命令：```bash WINEPREFIX=容器路径 wineconsole \"bat文件在容器c盘中的路径\" ```案例：```bash WINEPREFIX=~/.deepinwine/Deepin-AppDemo wineconsole \"c:/Program Files/AppDemo/绿化处理.bat\" ```提醒：bat文件名不要带感叹号和其他符号，中文名或英文名即可。",
+          "qas": [
+            {
+              "id": "3-37-15",
+              "question": "步骤4的内容是什么？",
+              "answers": [
+                {
+                  "text": "运行绿化程序bat文件",
+                  "answer_start": 2
+                }
+              ]
+            },
+            {
+              "id": "3-37-16",
+              "question": "运行bat文件的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "WINEPREFIX=容器路径 wineconsole \"bat文件在容器c盘中的路径\"",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "3-37-17",
+              "question": "运行bat文件的核心命令是什么？",
+              "answers": [
+                {
+                  "text": "wineconsole \"bat文件路径\"",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "3-37-18",
+              "question": "运行bat文件时，对文件名有什么提醒？",
+              "answers": [
+                {
+                  "text": "不要带感叹号和其他符号，中文名或英文名即可",
+                  "answer_start": 216
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "5、测试运行exe主程序。终端命令：```bash WINEPREFIX=容器路径 wine \"exe程序在容器C盘中的路径\" ```案例：```bash WINEPREFIX=~/.deepinwine/Deepin-AppDemo wine \"c:/Program Files/Appdemo/AppDemo.exe\" ```",
+          "qas": [
+            {
+              "id": "3-37-19",
+              "question": "步骤5的内容是什么？",
+              "answers": [
+                {
+                  "text": "测试运行exe主程序",
+                  "answer_start": 2
+                }
+              ]
+            },
+            {
+              "id": "3-37-20",
+              "question": "测试运行exe主程序的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "WINEPREFIX=容器路径 wine \"exe程序在容器C盘中的路径\"",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "3-37-21",
+              "question": "测试运行的执行命令是什么？",
+              "answers": [
+                {
+                  "text": "wine \"exe路径\"",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "6、安装字体。之前教程介绍过，解决字体问题有三种方法，我个人建议小白直接安装星火应用商店里的“Win字体”即可。",
+          "qas": [
+            {
+              "id": "3-37-22",
+              "question": "步骤6的内容是什么？",
+              "answers": [
+                {
+                  "text": "安装字体",
+                  "answer_start": 2
+                }
+              ]
+            },
+            {
+              "id": "3-37-23",
+              "question": "建议小白如何解决字体问题？",
+              "answers": [
+                {
+                  "text": "直接安装星火应用商店里的“Win字体”",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "3-37-24",
+              "question": "推荐的字体安装方案是什么？",
+              "answers": [
+                {
+                  "text": "安装星火应用商店里的\"Win字体\"",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "7、创建桌面图标。在桌面新建一个txt文件（如screentogif.txt），复制以下内容到txt文件里：```ini [Desktop Entry] Categories=Application Exec=sh -c 'WINEPREFIX=/home/$USER/.deepinwine/Deepin-AppDemo wine \"c:/Program Files/AppDemo/AppDemo.exe\"' Icon=/usr/share/icons/Default/devices/64/media-optical.svg MimeType= Name=AppDemo StartupNotify=true Type=Application X-Deepin-Vendor=user-custom ```注：Exec= ————sh -c 'WINEPREFIX=容器路径 wine \"exe主程序路径在虚拟C盘里的路径\"' 特别提醒:这里/home/$USER/不能写成~/。Icon= ————指图标路径，文件格式一般为png、svg、icon，图标大小64×64为宜，图标格式最好是svg。Name= ————图标文件显示的名称。以上三项后面的内容可以根据你自己所安装的软件的实际情况更改。上面的内容填写好后保存退出txt，右键重命名，把这个txt文件的后缀改为desktop（如appdemo.desktop）。这样就可以双击桌面图标运行该软件了。",
+          "qas": [
+            {
+              "id": "3-37-25",
+              "question": "步骤7的内容是什么？",
+              "answers": [
+                {
+                  "text": "创建桌面图标",
+                  "answer_start": 2
+                }
+              ]
+            },
+            {
+              "id": "3-37-26",
+              "question": "创建桌面图标时，首先需要在桌面新建什么文件？",
+              "answers": [
+                {
+                  "text": "一个txt文件",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "3-37-27",
+              "question": "新建的txt文件内容中，Exec=后面的内容是什么格式？",
+              "answers": [
+                {
+                  "text": "sh -c 'WINEPREFIX=容器路径 wine \"exe主程序路径在虚拟C盘里的路径\"'",
+                  "answer_start": 342
+                }
+              ]
+            },
+            {
+              "id": "3-37-28",
+              "question": "desktop文件中Exec字段的关键注意事项是什么？",
+              "answers": [
+                {
+                  "text": "路径不能用~符号",
+                  "answer_start": 83
+                }
+              ]
+            },
+            {
+              "id": "3-37-29",
+              "question": "图标文件推荐使用什么格式？",
+              "answers": [
+                {
+                  "text": "svg格式",
+                  "answer_start": 101
+                }
+              ]
+            },
+            {
+              "id": "3-37-30",
+              "question": "新建的txt文件需要改为什么后缀才能成为桌面图标？",
+              "answers": [
+                {
+                  "text": "desktop",
+                  "answer_start": 596
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "8、其他配置。以上步骤为基础步骤。但除以上步骤外，有的exe软件还需要替换dll函数库，会用到winecfg、winetricks，有的软件需要安装mono或Gecko，有的软件还需要安装dxvk。这些都是比较高级的玩法，楼主能力有限，无法为大家讲解。",
+          "qas": [
+            {
+              "id": "3-37-31",
+              "question": "步骤8提到的其他配置可能包括哪些内容？",
+              "answers": [
+                {
+                  "text": "替换dll函数库，用到winecfg、winetricks，安装mono或Gecko，安装dxvk",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

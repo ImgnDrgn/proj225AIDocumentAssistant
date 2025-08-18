@@ -1,0 +1,139 @@
+{
+  "data": [
+    {
+      "title": "CrossFTP",
+      "paragraphs": [
+        {
+          "context": "CrossFTP是一款FTP客户端工具，支持多标签管理、Unicode/中文编码等功能。",
+          "qas": [
+            {
+              "question": "CrossFTP是什么类型的工具？",
+              "id": "5-284-1",
+              "answers": [
+                {
+                  "text": "FTP客户端工具",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "CrossFTP支持多标签管理吗？",
+              "id": "5-284-2",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "CrossFTP是否支持中文编码？",
+              "id": "5-284-3",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装CrossFTP的命令是sudo apt-get install crossftp。",
+          "qas": [
+            {
+              "question": "如何安装CrossFTP？",
+              "id": "5-284-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install crossftp",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载CrossFTP的命令是sudo apt-get remove crossftp。",
+          "qas": [
+            {
+              "question": "怎样卸载CrossFTP？",
+              "id": "5-284-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove crossftp",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CrossFTP的仓库地址是http://packages.deepin.com/deepin/pool/non-free/c/crossftp/。",
+          "qas": [
+            {
+              "question": "CrossFTP的仓库地址是什么？",
+              "id": "5-284-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/c/crossftp/",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CrossFTP支持站点管理/加密、文件远程备份等功能。",
+          "qas": [
+            {
+              "question": "CrossFTP支持站点管理和加密吗？",
+              "id": "5-284-7",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "CrossFTP有文件远程备份功能吗？",
+              "id": "5-284-8",
+              "answers": [
+                {
+                  "text": "有",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CrossFTP具备文件本地和Web搜索、自动重连、命令控制功能。",
+          "qas": [
+            {
+              "question": "CrossFTP能进行文件本地搜索吗？",
+              "id": "5-284-9",
+              "answers": [
+                {
+                  "text": "能",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "CrossFTP是否有自动重连功能？",
+              "id": "5-284-10",
+              "answers": [
+                {
+                  "text": "有",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

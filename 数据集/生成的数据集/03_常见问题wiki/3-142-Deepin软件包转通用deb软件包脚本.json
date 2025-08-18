@@ -1,0 +1,159 @@
+{
+  "data": [
+    {
+      "title": "Deepin软件包转通用deb软件包脚本",
+      "paragraphs": [
+        {
+          "context": "该脚本可将deepin deb包重打包为debian deb包，解决在debian/ubuntu等非deepin/uos发行版中安装后无图标的问题，并去除对deepin-elf-verify软件包的依赖。",
+          "qas": [
+            {
+              "question": "该脚本的作用是什么？",
+              "id": "3-142-1",
+              "answers": [
+                {
+                  "text": "将deepin deb包重打包为debian deb包，解决在debian/ubuntu等非deepin/uos发行版中安装后无图标的问题，并去除对deepin-elf-verify软件包的依赖。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用脚本前需执行sudo chmod +x /usr/local/bin/deepin-packge-to-debian-package.sh，再创建new-deb目录，最后运行sudo deepin-packge-to-debian-package.sh xxx.deb new-deb。",
+          "qas": [
+            {
+              "question": "如何使用该脚本？",
+              "id": "3-142-2",
+              "answers": [
+                {
+                  "text": "使用脚本前需执行sudo chmod +x /usr/local/bin/deepin-packge-to-debian-package.sh，再创建new-deb目录，最后运行sudo deepin-packge-to-debian-package.sh xxx.deb new-deb。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "脚本文件名为/usr/local/bin/deepin-packge-to-debian-package.sh。",
+          "qas": [
+            {
+              "question": "该脚本的文件名是什么？",
+              "id": "3-142-3",
+              "answers": [
+                {
+                  "text": "/usr/local/bin/deepin-packge-to-debian-package.sh",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "脚本会先检查输入的deb包路径和保存目录是否为空，以及是否以root权限运行，若不满足则提示用法并退出。",
+          "qas": [
+            {
+              "question": "脚本运行前会做哪些检查？",
+              "id": "3-142-4",
+              "answers": [
+                {
+                  "text": "检查输入的deb包路径和保存目录是否为空，以及是否以root权限运行。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "脚本会将deb包提取到/tmp/deepin-packge-to-debian-package/extract/目录，包括使用dpkg -X提取内容和dpkg -e提取DEBIAN信息。",
+          "qas": [
+            {
+              "question": "脚本将deb包提取到哪个目录？",
+              "id": "3-142-5",
+              "answers": [
+                {
+                  "text": "/tmp/deepin-packge-to-debian-package/extract/",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "脚本用什么命令提取deb包内容和DEBIAN信息？",
+              "id": "3-142-6",
+              "answers": [
+                {
+                  "text": "dpkg -X提取内容，dpkg -e提取DEBIAN信息。",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若存在/opt/apps/目录，脚本会获取包名，并通过linkDir函数将entries下的目录链接到/usr/share/对应目录。",
+          "qas": [
+            {
+              "question": "当存在/opt/apps/目录时，脚本会做什么？",
+              "id": "3-142-7",
+              "answers": [
+                {
+                  "text": "获取包名，并通过linkDir函数将entries下的目录链接到/usr/share/对应目录。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "脚本会清理依赖，通过sed命令移除对deepin-elf-verify的依赖信息。",
+          "qas": [
+            {
+              "question": "脚本如何清理依赖？",
+              "id": "3-142-8",
+              "answers": [
+                {
+                  "text": "通过sed命令移除对deepin-elf-verify的依赖信息。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "脚本使用dpkg-deb -b命令将处理后的内容重新打包，并保存到指定目录，最后清理临时文件。",
+          "qas": [
+            {
+              "question": "脚本用什么命令重新打包？",
+              "id": "3-142-9",
+              "answers": [
+                {
+                  "text": "dpkg-deb -b",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "重新打包后的文件保存到哪里？",
+              "id": "3-142-10",
+              "answers": [
+                {
+                  "text": "指定目录",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "脚本最后会做什么清理工作？",
+              "id": "3-142-11",
+              "answers": [
+                {
+                  "text": "清理临时文件。",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

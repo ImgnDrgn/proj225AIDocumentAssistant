@@ -1,0 +1,134 @@
+{
+  "data": [
+    {
+      "title": "惠普打印扫描一体机如何开启扫描功能",
+      "paragraphs": [
+        {
+          "context": "深度系统中惠普打印扫描一体机可直接打印，但但扫描功能因驱动问题无法使用，办公室机型为HP ColorLaserJet MFP M278-M281 Postscript。",
+          "qas": [
+            {
+              "question": "深度系统中惠普打印扫描一体机扫描功能无法使用的可能原因是什么？",
+              "id": "5-541-1",
+              "answers": [
+                {
+                  "text": "驱动缺失或者驱动出了问题",
+                  "answer_start": 49
+                }
+              ]
+            },
+            {
+              "question": "办公室使用的惠普打印扫描一体机型号是什么？",
+              "id": "5-541-2",
+              "answers": [
+                {
+                  "text": "HP ColorLaserJet MFP M278-M281 Postscript",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在终端运行hp-setup进行初始化，需选择打印机连接方式，点击next后会搜索指定网络环境中的打印机，选择后点next可能出现错误。",
+          "qas": [
+            {
+              "question": "如何初始化惠普打印机设置？",
+              "id": "5-541-3",
+              "answers": [
+                {
+                  "text": "在终端里运行 hp-setup",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "运行hp-setup并点击next后会进行什么操作？",
+              "id": "5-541-4",
+              "answers": [
+                {
+                  "text": "在你指定的网络环境中搜索打印机",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "错误信息显示TypeError: translate() takes exactly one argument (2 given)，因深度系统hplip用python2，而python3中s.translate(identity, unprintable)应改为s.translate(unprintable)。",
+          "qas": [
+            {
+              "question": "运行hp-setup出现的TypeError错误原因是什么？",
+              "id": "5-541-5",
+              "answers": [
+                {
+                  "text": "深度系统的hplip用的python还是python2，而当前python3才是主流，python2和python3在某些内置函数上不同，s.translate(identity, unprintable)是python2的写法",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "python3中如何修改s.translate(identity, unprintable)的写法？",
+              "id": "5-541-6",
+              "answers": [
+                {
+                  "text": "改成s.translate(unprintable)",
+                  "answer_start": 194
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改后重新执行hp-setup可正确连接打印机，打开扫描易点击扫描会弹出插件缺失窗口，在线下载安装即可，下载时间可能较长。",
+          "qas": [
+            {
+              "question": "修改代码后如何正确连接打印机？",
+              "id": "5-541-7",
+              "answers": [
+                {
+                  "text": "重新执行一遍 hp-setup",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "打开扫描易点击扫描弹出插件缺失窗口该怎么办？",
+              "id": "5-541-8",
+              "answers": [
+                {
+                  "text": "在线下载安装即可，下载时间可能会有点长，耐心等待",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "插件安装时会弹出证书不受信任窗口，选择继续安装，完成后点击扫描即可使用。",
+          "qas": [
+            {
+              "question": "插件安装时弹出证书不受信任窗口该如何操作？",
+              "id": "5-541-9",
+              "answers": [
+                {
+                  "text": "点继续",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "插件安装完成后如何使用扫描功能？",
+              "id": "5-541-10",
+              "answers": [
+                {
+                  "text": "再点击扫描就可以了",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

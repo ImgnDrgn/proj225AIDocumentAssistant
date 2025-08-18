@@ -1,0 +1,224 @@
+{
+  "data": [
+    {
+      "title": "linux调整现有分区大小",
+      "paragraphs": [
+        {
+          "context": "创建10G映像盘可使用命令：dd if=/dev/zero of=ddu.img  bs=1G count=10 status=progress",
+          "qas": [
+            {
+              "question": "如何创建10G的映像盘？",
+              "id": "5-279-1",
+              "answers": [
+                {
+                  "text": "dd if=/dev/zero of=ddu.img  bs=1G count=10 status=progress",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "加载映像盘分区设备使用命令：sudo losetup -Pf ddu.img",
+          "qas": [
+            {
+              "question": "怎样加载映像盘分区设备的命令是什么？",
+              "id": "5-279-2",
+              "answers": [
+                {
+                  "text": "sudo losetup -Pf ddu.img",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看分区可使用lsblk命令",
+          "qas": [
+            {
+              "question": "用什么命令可以查看分区？",
+              "id": "5-279-3",
+              "answers": [
+                {
+                  "text": "lsblk",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "格式化分区1为vfat格式用：sudo mkfs.vfat /dev/loop0p1；格式化分区2为ext4格式用：sudo mkfs.ext4 /dev/loop0p2",
+          "qas": [
+            {
+              "question": "如何将分区1格式化为vfat格式？",
+              "id": "5-279-4",
+              "answers": [
+                {
+                  "text": "sudo mkfs.vfat /dev/loop0p1",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "格式化分区2为ext4格式的命令是什么？",
+              "id": "5-279-5",
+              "answers": [
+                {
+                  "text": "sudo mkfs.ext4 /dev/loop0p2",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "挂载分区2到mnt/root目录：sudo mount /dev/loop0p2 mnt/root",
+          "qas": [
+            {
+              "question": "如何将分区2挂载到mnt/root目录？",
+              "id": "5-279-6",
+              "answers": [
+                {
+                  "text": "sudo mount /dev/loop0p2 mnt/root",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载挂载点用：sudo umount mnt/root；卸载映像盘设备用：sudo losetup -D（非映像盘无需此步）",
+          "qas": [
+            {
+              "question": "如何卸载挂载点mnt/root？",
+              "id": "5-279-7",
+              "answers": [
+                {
+                  "text": "sudo umount mnt/root",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "卸载映像盘设备的命令是什么？非映像盘需要这步吗？",
+              "id": "5-279-8",
+              "answers": [
+                {
+                  "text": "sudo losetup -D，非映像盘不需要这步",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "给映像盘追加10G可用空间：dd if=/dev/zero of=ddu.img oflag=append bs=1G count=10 status=progress conv=notrunc，oflag=append和conv=notrunc需同时使用",
+          "qas": [
+            {
+              "question": "如何给映像盘追加10G可用空间？",
+              "id": "5-279-9",
+              "answers": [
+                {
+                  "text": "dd if=/dev/zero of=ddu.img oflag=append bs=1G count=10 status=progress conv=notrunc",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "给映像盘追加空间时，哪两个参数必须一起使用？",
+              "id": "5-279-10",
+              "answers": [
+                {
+                  "text": "oflag=append和conv=notrunc",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "操作gpt分区扩展需安装gdisk：sudo apt install gdisk",
+          "qas": [
+            {
+              "question": "操作gpt分区扩展需要安装什么工具？安装命令是什么？",
+              "id": "5-279-11",
+              "answers": [
+                {
+                  "text": "gdisk，sudo apt install gdisk",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在gdisk中操作gpt分区表：按x进入专家模式，按e移动备份数据到磁盘末尾，按w保存",
+          "qas": [
+            {
+              "question": "在gdisk中如何移动gpt分区表的备份数据到磁盘末尾？",
+              "id": "5-279-12",
+              "answers": [
+                {
+                  "text": "按x进入专家模式，按e移动备份数据到磁盘末尾，按w保存",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "调整分区大小原理：删除分区（不删数据），重建时保持开始位置和分区类型，调整结束位置。最后分区可删除后重建，保持默认开始和结束以自动调整为最大",
+          "qas": [
+            {
+              "question": "调整分区大小的原理是什么？",
+              "id": "5-279-13",
+              "answers": [
+                {
+                  "text": "删除分区（不删数据），重建时保持开始位置和分区类型，调整结束位置",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何让最后一个分区自动调整为最大？",
+              "id": "5-279-14",
+              "answers": [
+                {
+                  "text": "删除后重建，保持默认开始和结束",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "调整ext系列文件系统范围：先执行sudo fsck -y /dev/loop0p2，再执行sudo resize2fs -p /dev/loop0p2自动扩展到最大",
+          "qas": [
+            {
+              "question": "调整ext系列文件系统范围前需要做什么？",
+              "id": "5-279-15",
+              "answers": [
+                {
+                  "text": "执行sudo fsck -y /dev/loop0p2",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "如何将ext系列文件系统自动扩展到分区表允许的最大大小？",
+              "id": "5-279-16",
+              "answers": [
+                {
+                  "text": "sudo resize2fs -p /dev/loop0p2",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

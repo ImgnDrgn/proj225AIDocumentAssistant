@@ -1,0 +1,264 @@
+{
+  "data": [
+    {
+      "title": "详解debian/rules",
+      "paragraphs": [
+        {
+          "context": "一个通用的源码包可能使用如下方式编译安装:./configure --prefix=/usr --sysconfdir=/etc --mandir=/usr/share/man --localstatedir=/var; make; make install",
+          "qas": [
+            {
+              "question": "通用源码包的编译安装方式是什么？",
+              "id": "5-197-1",
+              "answers": [
+                {
+                  "text": "./configure --prefix=/usr --sysconfdir=/etc --mandir=/usr/share/man --localstatedir=/var; make; make install",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "rules文件一般会包含“binary-arch”, ”binary-indep”, ”binary”，”build”, ”clean”, ”install”等targets。",
+          "qas": [
+            {
+              "question": "debian/rules文件通常包含哪些targets？",
+              "id": "5-197-2",
+              "answers": [
+                {
+                  "text": "“binary-arch”, ”binary-indep”, ”binary”，”build”, ”clean”, ”install”",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "debian社区开发了包含常用操作dh命令的debhelper软件包来简化debian/rules的编写。",
+          "qas": [
+            {
+              "question": "哪个软件包可简化debian/rules的编写？",
+              "id": "5-197-3",
+              "answers": [
+                {
+                  "text": "debhelper",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "最新版本的dh_make会使用默认的“dh $@”来进一步简化rules文件的编写。",
+          "qas": [
+            {
+              "question": "最新版本的dh_make用什么简化rules文件编写？",
+              "id": "5-197-4",
+              "answers": [
+                {
+                  "text": "dh $@",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "当默认执行的dh命令不能满足需求时，可以通过override_来重新定义dh命令。",
+          "qas": [
+            {
+              "question": "如何重新定义不满足需求的默认dh命令？",
+              "id": "5-197-5",
+              "answers": [
+                {
+                  "text": "通过override_来重新定义",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dh_auto_clean对应make distclean；dh_auto_configure对应./configure --prefix=/usr等；dh_auto_build对应make；dh_auto_test对应make test；dh_auto_install对应make install DESTDIR=...",
+          "qas": [
+            {
+              "question": "dh_auto_clean对应什么操作？",
+              "id": "5-197-6",
+              "answers": [
+                {
+                  "text": "make distclean",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "dh_auto_build对应什么操作？",
+              "id": "5-197-7",
+              "answers": [
+                {
+                  "text": "make",
+                  "answer_start": 101
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deb格式软件安装过程由debian/preinst（安装前）、debian/postinst（安装后）、debian/prerm（卸载前）、debian/postrm（卸载后）脚本控制。",
+          "qas": [
+            {
+              "question": "控制deb包安装前执行操作的脚本是什么？",
+              "id": "5-197-8",
+              "answers": [
+                {
+                  "text": "debian/preinst",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "deb包卸载后执行操作的脚本是什么？",
+              "id": "5-197-9",
+              "answers": [
+                {
+                  "text": "debian/postrm",
+                  "answer_start": 114
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deb源代码包Format：1.0包含一个.dsc文件，一个.orig.tar.gz文件，一个.diff.gz文件。",
+          "qas": [
+            {
+              "question": "Format：1.0的deb源代码包包含哪些文件？",
+              "id": "5-197-10",
+              "answers": [
+                {
+                  "text": "一个.dsc文件，一个.orig.tar.gz文件，一个.diff.gz文件",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Format：3.0 (native)的deb源代码包包含debian化的所有更改全部在一个压缩包中。",
+          "qas": [
+            {
+              "question": "Format：3.0 (native)的deb源代码包有什么特点？",
+              "id": "5-197-11",
+              "answers": [
+                {
+                  "text": "包含了debian化的所有更改全部在一个压缩包中",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "生成deb签名密钥的步骤：gpg --gen-key；gpg --list-keys；gpg --export -a 6A9E1B52 > key.pub；apt-key add key.pub。",
+          "qas": [
+            {
+              "question": "生成deb签名所需密钥的步骤是什么？",
+              "id": "5-197-12",
+              "answers": [
+                {
+                  "text": "gpg --gen-key；gpg --list-keys；gpg --export -a 6A9E1B52 > key.pub；apt-key add key.pub",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "给deb软件包签名的指令：dpkg-sig -k keyid --sign builder /your_packages_<version>_<architecture>.deb，需输入生成公钥时的密码。",
+          "qas": [
+            {
+              "question": "给deb软件包签名的指令是什么？",
+              "id": "5-197-13",
+              "answers": [
+                {
+                  "text": "dpkg-sig -k keyid --sign builder /your_packages_<version>_<architecture>.deb",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进阶工具包括debootstrap（构建临时环境）、devscripts（辅助脚本集合）、pbuilder（创建维护chroot环境）、ccache（缓存编译临时文件）。",
+          "qas": [
+            {
+              "question": "用于构建临时环境的进阶工具是什么？",
+              "id": "5-197-14",
+              "answers": [
+                {
+                  "text": "debootstrap",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "哪个工具用于缓存编译临时文件以加快编译？",
+              "id": "5-197-15",
+              "answers": [
+                {
+                  "text": "ccache",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "pbuilder的基本用法：pbuilder create；pbuilder build *.dsc。",
+          "qas": [
+            {
+              "question": "pbuilder的基本用法是什么？",
+              "id": "5-197-16",
+              "answers": [
+                {
+                  "text": "pbuilder create；pbuilder build *.dsc",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库管理工具reprepro的安装命令：apt-get install reprepro -y。",
+          "qas": [
+            {
+              "question": "如何安装reprepro工具？",
+              "id": "5-197-17",
+              "answers": [
+                {
+                  "text": "apt-get install reprepro -y",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用reprepro更新仓库的命令：reprepro includedeb wheezy pkgdir/*.deb；reprepro includedsc wheezy pkgdir/*.dsc。",
+          "qas": [
+            {
+              "question": "如何使用reprepro更新仓库？",
+              "id": "5-197-18",
+              "answers": [
+                {
+                  "text": "reprepro includedeb wheezy pkgdir/*.deb；reprepro includedsc wheezy pkgdir/*.dsc",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

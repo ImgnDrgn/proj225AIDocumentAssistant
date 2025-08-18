@@ -1,0 +1,169 @@
+{
+  "data": [
+    {
+      "title": "EarlyOOM",
+      "paragraphs": [
+        {
+          "context": "许多用户讨厌 Linux 系统在内存耗尽情况下杀进程（oom-killer）的逻辑。大概也是因为这个原因，Linux 只在绝无其他选择时才调用它。系统会把桌面环境swap进虚拟内存、删除一整个分页缓存甚至清空每个缓冲区，最后才对进程下手。我们可没有耐心坐在一个无响应的桌面环境前等它救场。默认情况下剩余可用物理内存小于 10% 和剩余交换内存小于 10% 时，就会触发 earlyoom。",
+          "qas": [
+            {
+              "id": "1-87-1",
+              "question": "用户为什么讨厌Linux系统的oom-killer逻辑？",
+              "answers": [
+                {
+                  "text": "Linux 只在绝无其他选择时才调用它，系统会把桌面环境swap进虚拟内存、删除一整个分页缓存甚至清空每个缓冲区，最后才对进程下手，导致用户需要坐在无响应的桌面环境前等待",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "1-87-2",
+              "question": "EarlyOOM的作用是什么？",
+              "answers": [
+                {
+                  "text": "在系统OOM之前挽救系统，让系统再也不会因为内存不足而卡死",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "1-87-3",
+              "question": "默认情况下，EarlyOOM的触发条件是什么？",
+              "answers": [
+                {
+                  "text": "剩余可用物理内存小于 10% 和剩余交换内存小于 10%",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "# 直接 apt 安装 apt install earlyoom # 设定为开机启动，并且马上启动 earlyoom 服务 systemctl enable --now earlyoom",
+          "qas": [
+            {
+              "id": "1-87-4",
+              "question": "如何通过apt安装EarlyOOM？",
+              "answers": [
+                {
+                  "text": "apt install earlyoom",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "1-87-5",
+              "question": "如何设置EarlyOOM开机启动并立即启动服务？",
+              "answers": [
+                {
+                  "text": "systemctl enable --now earlyoom",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "-m PERCENT[,KILL_PERCENT]：至少保留物理内存总量的百分之 PERCENT（默认百分之 10）。earlyoom 在内存降至百分之 PERCENT 后向最占内存的进程发送 SIGTERM，如进一步降至百分之 KILL_PERCENT（默认为 PERCENT 的一半）就发送 SIGKILL。-s PERCENT[,KILL_PERCENT]：至少保留虚拟内存总量的百分之 PERCENT（默认百分之 10）。注意：仅当可用的物理内存和虚拟内存都少于设定量时才会触发 earlyoom。-M SIZE[,KILL_SIZE]：至少保留 SIZE KiB 物理内存。-S SIZE[,KILL_SIZE]：至少保留 SIZE KiB 虚拟内存。-n：启用 d-bus 消息。-N /PATH/TO/SCRIPT：当有进程因 OOM 被杀后调用脚本。-g：终止同一进程组中的所有进程。-d：启用调试信息。-v：打印版本信息后退出。-r INTERVAL：每 INTERVAL 秒打印一次内存报告（默认为 1），设为 0 即禁用。-p：将 earlyoom 的 niceness 设为 -20、oom_score_adj 设为 -100。--prefer REGEX：尽量优先终止名字与正则表达式 REGEX 相匹配的进程。--avoid REGEX：尽量避免终止名字与正则表达式 REGEX 相匹配的进程。--ignore REGEX：忽略名字与正则表达式 REGEX 相匹配的进程。--dryrun：试运行（不杀任何进程）。-h, --help：显示帮助。",
+          "qas": [
+            {
+              "id": "1-87-6",
+              "question": "-m选项中，物理内存保留比例的默认值是多少？",
+              "answers": [
+                {
+                  "text": "10%",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "1-87-7",
+              "question": "-s选项触发earlyoom的前提是什么？",
+              "answers": [
+                {
+                  "text": "仅当可用的物理内存和虚拟内存都少于设定量时",
+                  "answer_start": 215
+                }
+              ]
+            },
+            {
+              "id": "1-87-8",
+              "question": "哪个选项可以启用d-bus消息？",
+              "answers": [
+                {
+                  "text": "-n",
+                  "answer_start": 322
+                }
+              ]
+            },
+            {
+              "id": "1-87-9",
+              "question": "--prefer REGEX选项的作用是什么？",
+              "answers": [
+                {
+                  "text": "尽量优先终止名字与正则表达式 REGEX 相匹配的进程",
+                  "answer_start": 628
+                }
+              ]
+            },
+            {
+              "id": "1-87-10",
+              "question": "-v选项的功能是什么？",
+              "answers": [
+                {
+                  "text": "打印版本信息后退出",
+                  "answer_start": 445
+                }
+              ]
+            },
+            {
+              "id": "1-87-11",
+              "question": "哪个选项可以防止终止特定进程？",
+              "answers": [
+                {
+                  "text": "尽量避免终止名字与正则表达式 REGEX 相匹配的进程",
+                  "answer_start": 660
+                }
+              ]
+            },
+            {
+              "id": "1-87-12",
+              "question": "测试配置不实际杀进程应使用什么参数？",
+              "answers": [
+                {
+                  "text": "--dryrun",
+                  "answer_start": 700
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "项目地址: https://github.com/rfjakob/earlyoom 参考博客: [CSDN 链接](https://blog.csdn.net/ONE_SIX_MIX/article/details/124046026)",
+          "qas": [
+            {
+              "id": "1-87-13",
+              "question": "EarlyOOM的项目地址是什么？",
+              "answers": [
+                {
+                  "text": "https://github.com/rfjakob/earlyoom",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "1-87-14",
+              "question": "参考博客的链接是什么？",
+              "answers": [
+                {
+                  "text": "https://blog.csdn.net/ONE_SIX_MIX/article/details/124046026",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

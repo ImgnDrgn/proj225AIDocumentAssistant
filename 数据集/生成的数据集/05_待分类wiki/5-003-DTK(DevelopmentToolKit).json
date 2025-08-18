@@ -1,0 +1,324 @@
+{
+  "data": [
+    {
+      "title": "DTK(DevelopmentToolKit)",
+      "paragraphs": [
+        {
+          "context": "DTK是统信基于Qt开发的通用开发框架，位于统信UOS系统核心位置。",
+          "qas": [
+            {
+              "question": "DTK是由谁开发的？",
+              "id": "5-3-1",
+              "answers": [
+                {
+                  "text": "统信",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "DTK基于什么开发？",
+              "id": "5-3-2",
+              "answers": [
+                {
+                  "text": "Qt",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "DTK在统信UOS系统中处于什么位置？",
+              "id": "5-3-3",
+              "answers": [
+                {
+                  "text": "核心位置",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DTK已完成5个版本迭代，108+次更新，累计提交代码近20万行，已被迁移至超过10个Linux发行版。",
+          "qas": [
+            {
+              "question": "DTK完成了多少个版本迭代？",
+              "id": "5-3-4",
+              "answers": [
+                {
+                  "text": "5个",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "DTK更新了多少次？",
+              "id": "5-3-5",
+              "answers": [
+                {
+                  "text": "108+次",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "DTK累计提交代码约多少行？",
+              "id": "5-3-6",
+              "answers": [
+                {
+                  "text": "近20万行",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "DTK已被迁移至多少个Linux发行版？",
+              "id": "5-3-7",
+              "answers": [
+                {
+                  "text": "超过10个",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DTK提供丰富接口与工具，满足图形、业务、系统定制应用开发需求，提升效率，支持跨平台、跨架构开发。",
+          "qas": [
+            {
+              "question": "DTK能满足哪些应用的开发需求？",
+              "id": "5-3-8",
+              "answers": [
+                {
+                  "text": "日常图形应用、业务应用、系统定制应用",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "DTK对开发有什么帮助？",
+              "id": "5-3-9",
+              "answers": [
+                {
+                  "text": "提升开发效率，让开发者畅享跨平台、跨架构的开发体验",
+                  "answer_start": 46
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DDE 30+组件，如统信UOS浏览器、音乐、邮件等40余款原生应用全部使用DTK开发。",
+          "qas": [
+            {
+              "question": "哪些应用使用DTK开发？",
+              "id": "5-3-10",
+              "answers": [
+                {
+                  "text": "DDE 30+组件，如统信UOS浏览器、音乐、邮件等40余款原生应用",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DTK覆盖Qt控件50+，自定义控件10+，提供现代化UI高级特性，统一样式。",
+          "qas": [
+            {
+              "question": "DTK覆盖多少个Qt控件？",
+              "id": "5-3-11",
+              "answers": [
+                {
+                  "text": "50+",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "DTK有多少个自定义控件？",
+              "id": "5-3-12",
+              "answers": [
+                {
+                  "text": "10+",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "DTK在UI方面有什么特点？",
+              "id": "5-3-13",
+              "answers": [
+                {
+                  "text": "提供现代化UI高级特性，统一样式",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DTK支持3大操作系统(统信UOS、Windows、MacOS)，4大CPU架构7个CPU品牌，实现“一次研发，多平台、多架构复用”。",
+          "qas": [
+            {
+              "question": "DTK支持哪些操作系统？",
+              "id": "5-3-14",
+              "answers": [
+                {
+                  "text": "统信UOS、Windows、MacOS",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "DTK支持多少种CPU架构和品牌？",
+              "id": "5-3-15",
+              "answers": [
+                {
+                  "text": "4大CPU架构7个CPU品牌",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "DTK在跨平台架构方面能实现什么？",
+              "id": "5-3-16",
+              "answers": [
+                {
+                  "text": "一次研发，多平台、多架构复用",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DTK可快速生成项目模板，支持常用代码调试，具备性能剖析和反向调试功能。",
+          "qas": [
+            {
+              "question": "DTK在开发工具方面有什么功能？",
+              "id": "5-3-17",
+              "answers": [
+                {
+                  "text": "可快速生成项目模板，支持常用代码调试手段，具备性能剖析和反向调试功能",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DTK包含3个核心模块、180+个类、2000+函数接口，可无缝融合Qt的14个辅助功能模块。",
+          "qas": [
+            {
+              "question": "DTK有多少个核心模块？",
+              "id": "5-3-18",
+              "answers": [
+                {
+                  "text": "3个",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "DTK有多少个类和函数接口？",
+              "id": "5-3-19",
+              "answers": [
+                {
+                  "text": "180+个类、2000+函数接口",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "question": "DTK能融合Qt的多少个辅助功能模块？",
+              "id": "5-3-20",
+              "answers": [
+                {
+                  "text": "14个",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DTK有应用和桌面扩展接口模块10+个，满足多种应用开发需求。",
+          "qas": [
+            {
+              "question": "DTK有多少个应用和桌面扩展接口模块？",
+              "id": "5-3-21",
+              "answers": [
+                {
+                  "text": "10+个",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DTK代码开源，社区开放，提供丰富文档，被迁移至10余个Linux发行版，接收100余次外部贡献，有200+外部开发者贡献。",
+          "qas": [
+            {
+              "question": "DTK在生态开放方面有什么特点？",
+              "id": "5-3-22",
+              "answers": [
+                {
+                  "text": "代码开源，社区开放，提供丰富的DTK文档支持",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "DTK接收到多少次外部开发者的贡献提交？",
+              "id": "5-3-23",
+              "answers": [
+                {
+                  "text": "100余次",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "question": "有多少外部开发者为DTK做出贡献？",
+              "id": "5-3-24",
+              "answers": [
+                {
+                  "text": "超过200名",
+                  "answer_start": 82
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DTK通过开发教程、线上培训、高校合作赋能开发者，建立以统信UOS为核心、DTK为基础的开发生态圈。",
+          "qas": [
+            {
+              "question": "DTK通过哪些方式赋能开发者？",
+              "id": "5-3-25",
+              "answers": [
+                {
+                  "text": "推出DTK开发教程、组织线上视频培训以及与高校合作",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "DTK旨在建立怎样的开发生态圈？",
+              "id": "5-3-26",
+              "answers": [
+                {
+                  "text": "以统信UOS为核心、DTK为基础的开发生态圈",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

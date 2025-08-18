@@ -1,0 +1,339 @@
+{
+  "data": [
+    {
+      "title": "Linux程序编译过程详解",
+      "paragraphs": [
+        {
+          "context": "GCC（GNU C Compiler）是编译工具，负责将C/C++语言编写的程序转换成为处理器能够执行的二进制代码。",
+          "qas": [
+            {
+              "question": "GCC是什么？其作用是什么？",
+              "id": "5-475-1",
+              "answers": [
+                {
+                  "text": "GCC（GNU C Compiler）是编译工具，负责将C/C++语言编写的程序转换成为处理器能够执行的二进制代码。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Binutils是一组二进制程序处理工具，包括addr2line、ar、objcopy、objdump、as、ld、ldd、readelf、size等。",
+          "qas": [
+            {
+              "question": "Binutils是什么？包含哪些工具？",
+              "id": "5-475-2",
+              "answers": [
+                {
+                  "text": "Binutils是一组二进制程序处理工具，包括addr2line、ar、objcopy、objdump、as、ld、ldd、readelf、size等。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "addr2line用来将程序地址转换成其所对应的程序源文件及所对应的代码行，也可以得到所对应的函数，帮助调试器定位源代码位置。",
+          "qas": [
+            {
+              "question": "addr2line工具的作用是什么？",
+              "id": "5-475-3",
+              "answers": [
+                {
+                  "text": "将程序地址转换成其所对应的程序源文件及所对应的代码行，也可以得到所对应的函数，帮助调试器定位源代码位置。",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "as主要用于汇编。",
+          "qas": [
+            {
+              "question": "as工具的主要用途是什么？",
+              "id": "5-475-4",
+              "answers": [
+                {
+                  "text": "用于汇编。",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ld主要用于链接。",
+          "qas": [
+            {
+              "question": "ld工具的主要用途是什么？",
+              "id": "5-475-5",
+              "answers": [
+                {
+                  "text": "用于链接。",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ar主要用于创建静态库。",
+          "qas": [
+            {
+              "question": "ar工具的主要用途是什么？",
+              "id": "5-475-6",
+              "answers": [
+                {
+                  "text": "用于创建静态库。",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ldd可以用于查看一个可执行程序依赖的共享库。",
+          "qas": [
+            {
+              "question": "ldd工具的作用是什么？",
+              "id": "5-475-7",
+              "answers": [
+                {
+                  "text": "查看一个可执行程序依赖的共享库。",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "objcopy将一种对象文件翻译成另一种格式，譬如将.bin转换成.elf、或者将.elf转换成.bin等。",
+          "qas": [
+            {
+              "question": "objcopy工具的功能是什么？",
+              "id": "5-475-8",
+              "answers": [
+                {
+                  "text": "将一种对象文件翻译成另一种格式，譬如将.bin转换成.elf、或者将.elf转换成.bin等。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "objdump主要的作用是反汇编。",
+          "qas": [
+            {
+              "question": "objdump工具的主要作用是什么？",
+              "id": "5-475-9",
+              "answers": [
+                {
+                  "text": "反汇编。",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "readelf用于显示有关ELF文件的信息。",
+          "qas": [
+            {
+              "question": "readelf工具的作用是什么？",
+              "id": "5-475-10",
+              "answers": [
+                {
+                  "text": "显示有关ELF文件的信息。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "size用于列出可执行文件每个部分的尺寸和总尺寸，包括代码段、数据段、总大小等。",
+          "qas": [
+            {
+              "question": "size工具的作用是什么？",
+              "id": "5-475-11",
+              "answers": [
+                {
+                  "text": "列出可执行文件每个部分的尺寸和总尺寸，包括代码段、数据段、总大小等。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "C运行时库（CRT）支持C语言编译器，C语言标准定义了C标准库函数原型，但其实现由C运行库提供；C++也有对应的C++运行时库。",
+          "qas": [
+            {
+              "question": "什么是C运行库？C++有对应的运行库吗？",
+              "id": "5-475-12",
+              "answers": [
+                {
+                  "text": "C运行时库（CRT）支持C语言编译器，C语言标准定义了C标准库函数原型，但其实现由C运行库提供；C++有对应的C++运行时库。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "预处理过程包括删除#define、展开宏定义、处理条件预编译指令、处理#include、删除注释、添加行号和文件标识、保留#pragma。使用gcc预处理命令：gcc -E hello.c -o hello.i，选项-E使GCC预处理后即停止。",
+          "qas": [
+            {
+              "question": "预处理过程包括哪些操作？使用gcc进行预处理的命令是什么？",
+              "id": "5-475-13",
+              "answers": [
+                {
+                  "text": "预处理过程包括删除#define、展开宏定义、处理条件预编译指令、处理#include、删除注释、添加行号和文件标识、保留#pragma。使用gcc预处理命令：gcc -E hello.c -o hello.i。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编译过程对预处理完的文件进行词法分析、语法分析、语义分析及优化后生成汇编代码。使用gcc编译命令：gcc -S hello.i -o hello.s，选项-S使GCC编译后停止，生成汇编程序。",
+          "qas": [
+            {
+              "question": "编译过程的作用是什么？使用gcc进行编译的命令是什么？",
+              "id": "5-475-14",
+              "answers": [
+                {
+                  "text": "对预处理完的文件进行词法分析、语法分析、语义分析及优化后生成汇编代码。使用gcc编译命令：gcc -S hello.i -o hello.s。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "汇编过程处理汇编代码，生成处理器能识别的指令，保存在.o目标文件中。使用gcc汇编命令：gcc -c hello.s -o hello.o，选项-c使GCC汇编后停止；也可直接调用as：as -c hello.s -o hello.o。hello.o为ELF格式可重定向文件。",
+          "qas": [
+            {
+              "question": "汇编过程的作用是什么？有哪些汇编命令？",
+              "id": "5-475-15",
+              "answers": [
+                {
+                  "text": "处理汇编代码，生成处理器能识别的指令，保存在.o目标文件中。命令有gcc -c hello.s -o hello.o和as -c hello.s -o hello.o。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "链接分为静态链接和动态链接。静态链接在编译阶段把静态库加入可执行文件，文件较大；动态链接在链接阶段加描述信息，程序执行时加载动态库。",
+          "qas": [
+            {
+              "question": "链接分为哪两种类型？它们的主要区别是什么？",
+              "id": "5-475-16",
+              "answers": [
+                {
+                  "text": "链接分为静态链接和动态链接。静态链接在编译阶段把静态库加入可执行文件，文件较大；动态链接在链接阶段加描述信息，程序执行时加载动态库。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux中，gcc编译链接时动态库搜索路径顺序：首先是gcc命令的-L参数指定路径；然后是环境变量LIBRARY_PATH指定路径；最后是默认路径/lib、/usr/lib、/usr/local/lib。",
+          "qas": [
+            {
+              "question": "Linux中gcc编译链接时，动态库的搜索路径顺序是什么？",
+              "id": "5-475-17",
+              "answers": [
+                {
+                  "text": "首先是gcc命令的-L参数指定路径；然后是环境变量LIBRARY_PATH指定路径；最后是默认路径/lib、/usr/lib、/usr/local/lib。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux中，执行二进制文件时动态库搜索路径顺序：首先是编译目标代码时指定的路径；然后是环境变量LD_LIBRARY_PATH指定路径；接着是配置文件/etc/ld.so.conf中指定路径；最后是默认路径/lib、/usr/lib。",
+          "qas": [
+            {
+              "question": "Linux中执行二进制文件时，动态库的搜索路径顺序是什么？",
+              "id": "5-475-18",
+              "answers": [
+                {
+                  "text": "首先是编译目标代码时指定的路径；然后是环境变量LD_LIBRARY_PATH指定路径；接着是配置文件/etc/ld.so.conf中指定路径；最后是默认路径/lib、/usr/lib。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "gcc链接时，若路径中有同名静态库（.a）和动态库（.so），默认优先选择动态库；使用-static选项可强制使用静态库链接。",
+          "qas": [
+            {
+              "question": "gcc链接时，若存在同名静态库和动态库，默认选择哪种？如何强制使用静态库？",
+              "id": "5-475-19",
+              "answers": [
+                {
+                  "text": "默认优先选择动态库；使用-static选项可强制使用静态库链接。",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "典型ELF文件包含.text（指令代码段）、.rodata（只读数据）、.data（已初始化全局变量和静态局部变量）、.bss（未初始化全局变量和静态局部变量）、.debug（调试符号表）等段。",
+          "qas": [
+            {
+              "question": "典型的ELF文件包含哪些段？各段存放什么内容？",
+              "id": "5-475-20",
+              "answers": [
+                {
+                  "text": ".text（指令代码段）、.rodata（只读数据）、.data（已初始化全局变量和静态局部变量）、.bss（未初始化全局变量和静态局部变量）、.debug（调试符号表）。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用readelf -S可查看ELF文件各个section的信息。",
+          "qas": [
+            {
+              "question": "如何查看ELF文件各个section的信息？",
+              "id": "5-475-21",
+              "answers": [
+                {
+                  "text": "使用readelf -S。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用objdump -D可对ELF文件进行反汇编；使用objdump -S可将反汇编与C语言源代码混合显示（需编译时加-g选项）。",
+          "qas": [
+            {
+              "question": "如何对ELF文件进行反汇编？如何将反汇编与C源代码混合显示？",
+              "id": "5-475-22",
+              "answers": [
+                {
+                  "text": "使用objdump -D可对ELF文件进行反汇编；使用objdump -S可将反汇编与C语言源代码混合显示（需编译时加-g选项）。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

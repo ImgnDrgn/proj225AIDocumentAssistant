@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "Notepadqq",
+      "paragraphs": [
+        {
+          "context": "Notepadqq是一套纯文字编辑器，与Notepad++非常相似。Notepadqq除了可以用来制作一般的纯文字说明文件，也十分适合当作编写电脑程序的编辑器。Notepadqq支持语法高亮显示，具有搜索、查找/替换、分屏、书签、代码折叠等功能。",
+          "qas": [
+            {
+              "id": "5-76-1",
+              "question": "Notepadqq属于什么类型的工具？",
+              "answers": [
+                {
+                  "text": "纯文字编辑器",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "5-76-2",
+              "question": "Notepadqq与哪个工具非常相似？",
+              "answers": [
+                {
+                  "text": "Notepad++",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-76-3",
+              "question": "Notepadqq适合用来做什么？",
+              "answers": [
+                {
+                  "text": "制作一般的纯文字说明文件，也十分适合当作编写电脑程序的编辑器",
+                  "answer_start": 50
+                }
+              ]
+            },
+            {
+              "id": "5-76-4",
+              "question": "Notepadqq可以用来制作什么文件？",
+              "answers": [
+                {
+                  "text": "制作一般的纯文字说明文件",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "id": "5-76-5",
+              "question": "Notepadqq支持哪些功能？",
+              "answers": [
+                {
+                  "text": "语法高亮显示，具有搜索、查找/替换、分屏、书签、代码折叠等功能",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install notepadqq",
+          "qas": [
+            {
+              "id": "5-76-6",
+              "question": "安装Notepadqq的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install notepadqq",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove notepadqq",
+          "qas": [
+            {
+              "id": "5-76-7",
+              "question": "卸载Notepadqq的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove notepadqq",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/n/notepadqq/",
+          "qas": [
+            {
+              "id": "5-76-8",
+              "question": "Notepadqq的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/n/notepadqq/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

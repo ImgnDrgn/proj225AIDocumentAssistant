@@ -1,0 +1,184 @@
+{
+  "data": [
+    {
+      "title": "Linux下如何做到一个文件即可读写又只读",
+      "paragraphs": [
+        {
+          "context": "Linux运维中，目录或磁盘满且无法扩容时，常用软链接解决，但其有多层后易晕、易误操作的弊端。",
+          "qas": [
+            {
+              "question": "Linux运维中，目录或磁盘满且无法扩容时常用什么方法解决？",
+              "id": "3-95-1",
+              "answers": [
+                {
+                  "text": "软链接",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "软链接的弊端是什么？",
+              "id": "3-95-2",
+              "answers": [
+                {
+                  "text": "多层软链之后，会被绕晕，很容易造成误操作",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mount --bind可重新挂载文件目录结构，连接两个目录，将前一个目录挂载到后一个目录，对后一个目录的访问实际是对前一个的访问。",
+          "qas": [
+            {
+              "question": "mount --bind的作用是什么？",
+              "id": "3-95-3",
+              "answers": [
+                {
+                  "text": "可重新挂载文件目录结构，连接两个目录，将前一个目录挂载到后一个目录，对后一个目录的访问实际是对前一个的访问",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mount --bind test1 test2执行后，Linux屏蔽test2的目录项，内核将test1的目录项记录在内存s_root对象，VFS创建含mount信息的vfsmount对象，其为HASH对应表，含/test1与/test2的对应关系。",
+          "qas": [
+            {
+              "question": "mount --bind test1 test2执行后，Linux会对test2做什么操作？",
+              "id": "3-95-4",
+              "answers": [
+                {
+                  "text": "屏蔽test2的目录项",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "mount --bind test1 test2执行后，内核将test1的目录项记录在哪里？",
+              "id": "3-95-5",
+              "answers": [
+                {
+                  "text": "内存里的一个s_root对象里",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "mount --bind test1 test2执行时，VFS会创建什么？",
+              "id": "3-95-6",
+              "answers": [
+                {
+                  "text": "一个vfsmount对象，这个对象里包含了整个文件系统所有的mount信息，其中也会包括本次mount中的信息",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "question": "vfsmount对象是什么样的？",
+              "id": "3-95-7",
+              "answers": [
+                {
+                  "text": "一个HASH值对应表（HASH值通过对路径字符串的计算得来），表里有/test1到/test2两个目录的HASH值对应关系",
+                  "answer_start": 145
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "访问/test2下的文件时，系统告知/test2目录项被屏蔽，自动转至VFS，通过vfsmount了解对应关系，读取/test1的inode，故/test2下读到的是/test1的文件。",
+          "qas": [
+            {
+              "question": "访问/test2下的文件时，系统如何处理？",
+              "id": "3-95-8",
+              "answers": [
+                {
+                  "text": "系统会告知/test2的目录项被屏蔽掉了，自动转到内存里找VFS，通过vfsmount了解到/test2和/test1的对应关系，从而读取到/test1的inode",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "两个目录的挂载关系存在于内存中，重启后消失，需写入/etc/fstab中。",
+          "qas": [
+            {
+              "question": "两个目录的挂载关系存储在哪里？",
+              "id": "3-95-9",
+              "answers": [
+                {
+                  "text": "内存中",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "重启后挂载关系会怎样？",
+              "id": "3-95-10",
+              "answers": [
+                {
+                  "text": "挂载关系就没有了",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "如何让挂载关系在重启后仍存在？",
+              "id": "3-95-11",
+              "answers": [
+                {
+                  "text": "将挂载关系写入/etc/fstab中",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mount --bind可用于临时配置文件读取测试：在/tmp等目录写测试配置文件，挂载到配置文件读取目录，程序读取临时文件，测试后umount不影响原配置。",
+          "qas": [
+            {
+              "question": "如何利用mount --bind进行临时配置文件读取测试？",
+              "id": "3-95-12",
+              "answers": [
+                {
+                  "text": "在/tmp等目录，写一个测试的配置文件，通过mount --bind的方式挂载到配置文件读取目录，运行程序读取该临时配置文件，测试完成后，只需要umount，不影响原来的配置",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mount --bind的只读挂载：通过mount --bind,ro挂载只读目录，原目录可写，挂载出的目录只读，可将只读目录权限给开发人员查看配置，不允许修改。",
+          "qas": [
+            {
+              "question": "如何利用mount --bind实现只读挂载？",
+              "id": "3-95-13",
+              "answers": [
+                {
+                  "text": "通过mount --bind,ro挂载一个只读目录，原目录可写，挂载出来的目录只读",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "question": "只读挂载适用于什么场景？",
+              "id": "3-95-14",
+              "answers": [
+                {
+                  "text": "需要给开发人员查看一些配置的权限，但是又不允许它们修改配置的情况",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

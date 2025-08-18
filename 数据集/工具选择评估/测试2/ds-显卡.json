@@ -1,0 +1,294 @@
+{
+  "data": [
+    {
+      "title": "显卡概述",
+      "paragraphs": [
+        {
+          "context": "显卡（Video card、Display card、Graphics card、Video adapter）是个人电脑最基本组成部分之一，用途是将计算机系统所需要的显示信息进行转换驱动显示器，并向显示器提供逐行或隔行扫描信号，控制显示器的正确显示，是连接显示器和个人电脑主板的重要组件，是“人机对话”的重要设备之一。Deepin目前支持AMD，NVIDIA，Intel等主流显卡，同时支持摩尔线程MTT S80国产显卡。",
+          "qas": [
+            {
+              "id": "10001",
+              "question": "显卡的核心功能是什么？",
+              "answers": [
+                {
+                  "text": "将计算机系统所需要的显示信息进行转换驱动显示器，并向显示器提供逐行或隔行扫描信号，控制显示器的正确显示",
+                  "answer_start": 69
+                }
+              ]
+            },
+            {
+              "id": "10002",
+              "question": "Deepin操作系统支持哪些国产显卡？",
+              "answers": [
+                {
+                  "text": "摩尔线程MTT S80国产显卡",
+                  "answer_start": 189
+                }
+              ]
+            },
+            {
+              "id": "10003",
+              "question": "显卡在计算机系统中扮演什么角色？",
+              "answers": [
+                {
+                  "text": "连接显示器和个人电脑主板的重要组件，是“人机对话”的重要设备之一",
+                  "answer_start": 150
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "硬件信息查询",
+      "paragraphs": [
+        {
+          "context": "可以通过以下命令查询显卡信息：\n    lspci |grep -i 'VGA'    #查看默认集成显卡型号\n    lspci |grep -i nvidia  #查看NVIDIA类型的显卡型号\n    sudo dmesg | grep -i 'VGA'  #通过查看开机信息获取显卡信息",
+          "qas": [
+            {
+              "id": "10004",
+              "question": "如何查询NVIDIA显卡的型号？",
+              "answers": [
+                {
+                  "text": "lspci |grep -i nvidia",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "id": "10005",
+              "question": "查看默认集成显卡型号应该使用什么命令？",
+              "answers": [
+                {
+                  "text": "lspci |grep -i 'VGA'",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "10006",
+              "question": "如何通过开机信息获取显卡信息？",
+              "answers": [
+                {
+                  "text": "sudo dmesg | grep -i 'VGA'",
+                  "answer_start": 132
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "硬件温度监控方法：\n- AMD显卡：安装闭源驱动后执行 sudo aticonfig --odgt\n- NVIDIA显卡：安装闭源驱动后执行 sudo nvidia-settings -q GPUCoreTemp -t\n- 摩尔线程显卡：安装官方驱动后执行 mthreads-gmi",
+          "qas": [
+            {
+              "id": "10007",
+              "question": "监控AMD显卡温度需要什么前提条件？",
+              "answers": [
+                {
+                  "text": "安装闭源驱动",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "10008",
+              "question": "获取NVIDIA显卡温度的具体命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo nvidia-settings -q GPUCoreTemp -t",
+                  "answer_start": 91
+                }
+              ]
+            },
+            {
+              "id": "10009",
+              "question": "摩尔线程显卡的温度查询命令是什么？",
+              "answers": [
+                {
+                  "text": "mthreads-gmi",
+                  "answer_start": 166
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "闭源驱动安装",
+      "paragraphs": [
+        {
+          "context": "系统默认启用开源驱动，开源驱动虽然性能不如闭源驱动，但是兼容性和稳定性较为优秀。如果系统没有问题，不建议安装闭源驱动。",
+          "qas": [
+            {
+              "id": "10010",
+              "question": "为什么系统默认使用开源驱动？",
+              "answers": [
+                {
+                  "text": "开源驱动兼容性和稳定性较为优秀",
+                  "answer_start": 60
+                }
+              ]
+            },
+            {
+              "id": "10011",
+              "question": "在什么情况下不建议安装闭源驱动？",
+              "answers": [
+                {
+                  "text": "如果系统没有问题",
+                  "answer_start": 94
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ATI显卡安装：\n安装源内版本：sudo apt-get install fglrx-driver\n卸载命令：sudo apt-get purge fglrx* glx-alternative-fglrx libgl1-fglrx*",
+          "qas": [
+            {
+              "id": "10012",
+              "question": "ATI显卡推荐安装什么版本的闭源驱动？",
+              "answers": [
+                {
+                  "text": "源内版本",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "10013",
+              "question": "如何完全卸载ATI闭源驱动？",
+              "answers": [
+                {
+                  "text": "sudo apt-get purge fglrx* glx-alternative-fglrx libgl1-fglrx*",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NVIDIA显卡安装：\n自动安装：sudo apt-get install nvidia-driver\n驱动检测：sudo apt install nvidia-detect > /dev/null 2>&1 && nvidia-detect\n手动安装步骤：\n1. 停止lightdm服务：sudo systemctl stop lightdm\n2. 卸载旧驱动：sudo apt-get remove --purge nvidia*\n3. 禁用nouveau驱动\n4. 安装官方驱动：sudo ./NVIDIA-Linux-x86_64-XXX.run",
+          "qas": [
+            {
+              "id": "10014",
+              "question": "NVIDIA自动安装的基本命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install nvidia-driver",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "10015",
+              "question": "手动安装NVIDIA驱动前需要停止什么服务？",
+              "answers": [
+                {
+                  "text": "lightdm服务",
+                  "answer_start": 108
+                }
+              ]
+            },
+            {
+              "id": "10016",
+              "question": "如何检测适合的NVIDIA驱动版本？",
+              "answers": [
+                {
+                  "text": "sudo apt install nvidia-detect > /dev/null 2>&1 && nvidia-detect",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "双显卡解决方案",
+      "paragraphs": [
+        {
+          "context": "关闭ATI独显方法：\n1. BIOS禁用独显\n2. 使用vgaswitcheroo模块：\n   - sudo mount -t debugfs debugfs /sys/kernel/debug\n   - echo OFF > /sys/kernel/debug/vgaswitcheroo/switch\n3. 添加命令到/etc/rc.local实现开机自动禁用",
+          "qas": [
+            {
+              "id": "10017",
+              "question": "如何通过命令关闭ATI独立显卡？",
+              "answers": [
+                {
+                  "text": "echo OFF > /sys/kernel/debug/vgaswitcheroo/switch",
+                  "answer_start": 97
+                }
+              ]
+            },
+            {
+              "id": "10018",
+              "question": "如何使ATI独显在开机时自动禁用？",
+              "answers": [
+                {
+                  "text": "添加命令到/etc/rc.local",
+                  "answer_start": 151
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Intel & NVIDIA双显卡配置：\n1. 安装驱动：sudo apt install nvidia-driver\n2. 配置/etc/X11/xorg.conf指定BusID\n3. 创建/etc/lightdm/display_setup.sh脚本\n4. 修改/etc/lightdm/lightdm.conf添加display-setup-script",
+          "qas": [
+            {
+              "id": "10019",
+              "question": "配置Intel & NVIDIA双显卡需要编辑哪些关键文件？",
+              "answers": [
+                {
+                  "text": "/etc/X11/xorg.conf, /etc/lightdm/display_setup.sh, /etc/lightdm/lightdm.conf",
+                  "answer_start": 82
+                }
+              ]
+            },
+            {
+              "id": "10020",
+              "question": "双显卡配置中display_setup.sh脚本的作用是什么？",
+              "answers": [
+                {
+                  "text": "设置显示输出源和DPI参数",
+                  "answer_start": 108
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "常见问题处理",
+      "paragraphs": [
+        {
+          "context": "安装闭源驱动后可能出现开机动画消失、分辨率异常、电脑温度大幅上升等问题。解决方案：\n- 图形界面：使用“附加驱动”更换驱动\n- 恢复模式：sudo apt-get autoremove --purge nvidia-*\n- 重启系统：sudo reboot",
+          "qas": [
+            {
+              "id": "10021",
+              "question": "闭源驱动可能导致哪些典型问题？",
+              "answers": [
+                {
+                  "text": "开机动画消失、分辨率异常、电脑温度大幅上升",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "id": "10022",
+              "question": "无法进入图形界面时如何卸载问题驱动？",
+              "answers": [
+                {
+                  "text": "在恢复模式执行：sudo apt-get autoremove --purge nvidia-*",
+                  "answer_start": 105
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

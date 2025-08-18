@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "PostgreSQL",
+      "paragraphs": [
+        {
+          "context": "PostgreSQL 是一个对象-关系数据库服务器(ORDBMS)。",
+          "qas": [
+            {
+              "question": "PostgreSQL是什么类型的数据库服务器？",
+              "id": "5-301-1",
+              "answers": [
+                {
+                  "text": "对象-关系数据库服务器(ORDBMS)",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装PostgreSQL可使用命令：sudo apt-get install postgresql-9.6，可指定版本安装。",
+          "qas": [
+            {
+              "question": "安装PostgreSQL 9.6的命令是什么？",
+              "id": "5-301-2",
+              "answers": [
+                {
+                  "text": "sudo apt-get install postgresql-9.6",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "如何安装不同版本的PostgreSQL？",
+              "id": "5-301-3",
+              "answers": [
+                {
+                  "text": "手工指定包名postgresql-x.y（x为大版本号）来安装对应的版本",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载PostgreSQL 9.6的命令是：sudo apt-get remove postgresql-9.6。",
+          "qas": [
+            {
+              "question": "卸载PostgreSQL 9.6的命令是什么？",
+              "id": "5-301-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove postgresql-9.6",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PostgreSQL 9.6的仓库地址为http://packages.deepin.com/deepin/pool/main/p/postgresql-9.6/。",
+          "qas": [
+            {
+              "question": "PostgreSQL 9.6的仓库地址是什么？",
+              "id": "5-301-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/p/postgresql-9.6/",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PostgreSQL官方网站是https://www.postgresql.org/。",
+          "qas": [
+            {
+              "question": "PostgreSQL的官方网站是什么？",
+              "id": "5-301-6",
+              "answers": [
+                {
+                  "text": "https://www.postgresql.org/",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

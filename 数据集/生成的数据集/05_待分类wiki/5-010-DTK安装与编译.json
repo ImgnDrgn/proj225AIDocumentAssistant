@@ -1,0 +1,370 @@
+
+{
+  "data": [
+    {
+      "title": "DTK安装与编译",
+      "paragraphs": [
+        {
+          "context": "DTK (deepin tool kit) 是基于Qt5开发的一整套UI图形库，便于编写风格统一的深度桌面和深度系列应用。",
+          "qas": [
+            {
+              "question": "DTK是什么？",
+              "id": "5-10-1",
+              "answers": [
+                {
+                  "text": "DTK (deepin tool kit) 是基于Qt5开发的一整套UI图形库，便于编写风格统一的深度桌面和深度系列应用。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DTK主要功能：提供单实例接口；提供XCB窗口移动、缩放等函数；提供美观自绘控件。",
+          "qas": [
+            {
+              "question": "DTK有哪些主要功能？",
+              "id": "5-10-2",
+              "answers": [
+                {
+                  "text": "提供单实例接口；提供XCB窗口移动、缩放等函数；提供美观自绘控件。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DTK核心仓库包括dtkcore、dtkgui、dtkwidget、qt5integration。",
+          "qas": [
+            {
+              "question": "DTK的核心仓库有哪些？",
+              "id": "5-10-3",
+              "answers": [
+                {
+                  "text": "dtkcore、dtkgui、dtkwidget、qt5integration。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "从源码编译、安装dtk组件，需按dtkcore > dtkgui > dtkwidget的顺序，且版本需一致。",
+          "qas": [
+            {
+              "question": "从源码编译安装dtk组件的顺序和版本要求是什么？",
+              "id": "5-10-4",
+              "answers": [
+                {
+                  "text": "按dtkcore > dtkgui > dtkwidget的顺序编译，且版本需一致。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "不希望参与开发DTK，推荐切换到相应tag版构建。",
+          "qas": [
+            {
+              "question": "不希望参与DTK开发，推荐如何构建？",
+              "id": "5-10-5",
+              "answers": [
+                {
+                  "text": "切换到相应的tag版进行构建。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "从源码编译DTK组件需安装基础环境，命令：sudo apt install git build-essential cmake devscripts doxygen graphviz。",
+          "qas": [
+            {
+              "question": "从源码编译DTK组件需要安装哪些基础环境？",
+              "id": "5-10-6",
+              "answers": [
+                {
+                  "text": "git build-essential cmake devscripts doxygen graphviz",
+                  "answer_start": 44
+                }
+              ]
+            },
+            {
+              "question": "安装DTK源码编译基础环境的命令是什么？",
+              "id": "5-10-7",
+              "answers": [
+                {
+                  "text": "sudo apt install git build-essential cmake devscripts doxygen graphviz",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dtkcore是DTK的核心组件，等同于Qt5中的core组件，Deepin系统默认安装。",
+          "qas": [
+            {
+              "question": "dtkcore在DTK中的地位是什么？",
+              "id": "5-10-8",
+              "answers": [
+                {
+                  "text": "dtkcore是DTK的核心组件，等同于Qt5中的core组件。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Deepin系统是否默认安装dtkcore？",
+              "id": "5-10-9",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重新安装dtkcore命令：sudo apt install libdtkcore5 --reinstall；安装开发库命令：sudo apt install libdtkcore-dev。",
+          "qas": [
+            {
+              "question": "重新安装dtkcore的命令是什么？",
+              "id": "5-10-10",
+              "answers": [
+                {
+                  "text": "sudo apt install libdtkcore5 --reinstall",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "安装dtkcore开发库的命令是什么？",
+              "id": "5-10-11",
+              "answers": [
+                {
+                  "text": "sudo apt install libdtkcore-dev",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "源码编译dtkcore步骤：git clone -b [tags] https://github.com/linuxdeepin/dtkcore.git；cd dtkcore；sudo apt build-dep ./；cmake -B build；cmake --build build -j$(nproc)。",
+          "qas": [
+            {
+              "question": "源码编译dtkcore的步骤是什么？",
+              "id": "5-10-12",
+              "answers": [
+                {
+                  "text": "git clone -b [tags] https://github.com/linuxdeepin/dtkcore.git；cd dtkcore；sudo apt build-dep ./；cmake -B build；cmake --build build -j$(nproc)。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dtkcore编译后安装方案：debuild -us -uc -b（打包成deb包）；sudo make install（源码安装），推荐debuild。",
+          "qas": [
+            {
+              "question": "dtkcore编译后有哪些安装方案？",
+              "id": "5-10-13",
+              "answers": [
+                {
+                  "text": "debuild -us -uc -b（打包成deb包）；sudo make install（源码安装）。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "dtkcore编译后推荐哪种安装方式？",
+              "id": "5-10-14",
+              "answers": [
+                {
+                  "text": "debuild -us -uc -b",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dtkgui是DTK的图形核心组件，等同于Qt5中的gui组件，Deepin系统默认安装。",
+          "qas": [
+            {
+              "question": "dtkgui在DTK中的作用是什么？",
+              "id": "5-10-15",
+              "answers": [
+                {
+                  "text": "dtkgui是DTK的图形核心组件，等同于Qt5中的gui组件。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重新安装dtkgui命令：sudo apt install libdtkgui5 --reinstall；安装开发库命令：sudo apt install libdtkgui-dev。",
+          "qas": [
+            {
+              "question": "重新安装dtkgui的命令是什么？",
+              "id": "5-10-16",
+              "answers": [
+                {
+                  "text": "sudo apt install libdtkgui5 --reinstall",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "安装dtkgui开发库的命令是什么？",
+              "id": "5-10-17",
+              "answers": [
+                {
+                  "text": "sudo apt install libdtkgui-dev",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "源码编译dtkgui步骤：git clone -b [tags] https://github.com/linuxdeepin/dtkgui.git；cd dtkgui；sudo apt build-dep ./；cmake -B build；cmake --build build -j$(nproc)。",
+          "qas": [
+            {
+              "question": "源码编译dtkgui的步骤是什么？",
+              "id": "5-10-18",
+              "answers": [
+                {
+                  "text": "git clone -b [tags] https://github.com/linuxdeepin/dtkgui.git；cd dtkgui；sudo apt build-dep ./；cmake -B build；cmake --build build -j$(nproc)。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dtkwidget是DTK的核心组件，等同于Qt5中的widget组件，Deepin系统默认安装。",
+          "qas": [
+            {
+              "question": "dtkwidget在DTK中的地位是什么？",
+              "id": "5-10-19",
+              "answers": [
+                {
+                  "text": "dtkwidget是DTK的核心组件，等同于Qt5中的widget组件。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重新安装dtkwidget命令：sudo apt install libdtkwidget5 --reinstall；安装开发库命令：sudo apt install libdtkwidget-dev。",
+          "qas": [
+            {
+              "question": "重新安装dtkwidget的命令是什么？",
+              "id": "5-10-20",
+              "answers": [
+                {
+                  "text": "sudo apt install libdtkwidget5 --reinstall",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "安装dtkwidget开发库的命令是什么？",
+              "id": "5-10-21",
+              "answers": [
+                {
+                  "text": "sudo apt install libdtkwidget-dev",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "源码编译dtkwidget步骤：git clone -b [tags] https://github.com/linuxdeepin/dtkwidget.git；cd dtkwidget；sudo apt build-dep ./；cmake -B build；cmake --build build -j$(nproc)。",
+          "qas": [
+            {
+              "question": "源码编译dtkwidget的步骤是什么？",
+              "id": "5-10-22",
+              "answers": [
+                {
+                  "text": "git clone -b [tags] https://github.com/linuxdeepin/dtkwidget.git；cd dtkwidget；sudo apt build-dep ./；cmake -B build；cmake --build build -j$(nproc)。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "qt5integration是DTK的插件组件，等同于Qt5中的plugin组件，Deepin系统默认安装。",
+          "qas": [
+            {
+              "question": "qt5integration在DTK中的作用是什么？",
+              "id": "5-10-23",
+              "answers": [
+                {
+                  "text": "qt5integration是DTK的插件组件，等同于Qt5中的plugin组件。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重新安装qt5integration命令：sudo apt install qt5integration --reinstall。",
+          "qas": [
+            {
+              "question": "重新安装qt5integration的命令是什么？",
+              "id": "5-10-24",
+              "answers": [
+                {
+                  "text": "sudo apt install qt5integration --reinstall",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "源码编译qt5integration步骤：git clone -b [tags] https://github.com/linuxdeepin/qt5integration.git；cd qt5integration；mkdir build && cd build；sudo apt build-dep ../；qmake ..；make。",
+          "qas": [
+            {
+              "question": "源码编译qt5integration的步骤是什么？",
+              "id": "5-10-25",
+              "answers": [
+                {
+                  "text": "git clone -b [tags] https://github.com/linuxdeepin/qt5integration.git；cd qt5integration；mkdir build && cd build；sudo apt build-dep ../；qmake ..；make。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "qt5integration编译后安装方案：sudo make install（源码安装）；debuild -us -uc -b（打包成deb包）。",
+          "qas": [
+            {
+              "question": "qt5integration编译后有哪些安装方案？",
+              "id": "5-10-26",
+              "answers": [
+                {
+                  "text": "sudo make install（源码安装）；debuild -us -uc -b（打包成deb包）。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

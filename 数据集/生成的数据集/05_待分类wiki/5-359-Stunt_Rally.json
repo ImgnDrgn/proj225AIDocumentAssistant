@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "Stunt_Rally",
+      "paragraphs": [
+        {
+          "context": "Stunt Rally是一款赛车游戏，玩家可以从153条赛车轨道和24个关卡中感受到游戏的魅力。游戏设置有锦标赛、挑战赛以及多人比赛等，除此之外，Stunt Rally允许用户实时编辑比赛道路和它们的参数，通过改变赛道的参数、调整地形，甚至修改自己的赛车，从而让驾驶乐趣倍增。",
+          "qas": [
+            {
+              "id": "5-359-1",
+              "question": "Stunt Rally是什么类型的游戏？",
+              "answers": [
+                {
+                  "text": "赛车游戏",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "5-359-2",
+              "question": "Stunt Rally有多少条赛车轨道？",
+              "answers": [
+                {
+                  "text": "153条",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "5-359-3",
+              "question": "Stunt Rally有多少个关卡？",
+              "answers": [
+                {
+                  "text": "24个",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-359-4",
+              "question": "Stunt Rally提供哪些游戏模式？",
+              "answers": [
+                {
+                  "text": "锦标赛、挑战赛以及多人比赛",
+                  "answer_start": 50
+                }
+              ]
+            },
+            {
+              "id": "5-359-5",
+              "question": "Stunt Rally允许用户做什么？",
+              "answers": [
+                {
+                  "text": "实时编辑比赛道路和它们的参数，通过改变赛道的参数、调整地形，甚至修改自己的赛车",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install stuntrally",
+          "qas": [
+            {
+              "id": "5-359-6",
+              "question": "如何在系统中安装 Stunt Rally？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install stuntrally",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove stuntrally",
+          "qas": [
+            {
+              "id": "5-359-7",
+              "question": "如何卸载 Stunt Rally？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove stuntrally",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/contrib/s/stuntrally/",
+          "qas": [
+            {
+              "id": "5-359-8",
+              "question": "Stunt Rally的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/contrib/s/stuntrally/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

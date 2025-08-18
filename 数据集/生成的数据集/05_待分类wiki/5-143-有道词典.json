@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "有道词典",
+      "paragraphs": [
+        {
+          "context": "有道词典是中国第一个基于Linux下的互联网商业翻译软件，是网易有道与武汉深之度科技有限公司联合开发的。有道词典Linux版可以实现多语言的精准翻译，支持原声发音和智能屏幕取词与划词、图解词典等功能。安装命令为sudo apt-get install youdao-dict，卸载命令为sudo apt-get remove youdao-dict。其仓库地址为http://packages.deepin.com/deepin/pool/non-free/y/youdao-dict/，相关链接包括deepin官网介绍https://www.deepin.org/cooperative/youdao-dict/",
+          "qas": [
+            {
+              "id": "5-143-1",
+              "question": "有道词典是中国第一个基于什么系统的互联网商业翻译软件？",
+              "answers": [
+                {
+                  "text": "Linux",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-143-2",
+              "question": "有道词典是由哪两家公司联合开发的？",
+              "answers": [
+                {
+                  "text": "网易有道与武汉深之度科技有限公司",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-143-3",
+              "question": "有道词典Linux版支持哪些功能？",
+              "answers": [
+                {
+                  "text": "多语言的精准翻译，支持原声发音和智能屏幕取词与划词、图解词典等功能",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-143-4",
+              "question": "安装有道词典的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install youdao-dict",
+                  "answer_start": 101
+                }
+              ]
+            },
+            {
+              "id": "5-143-5",
+              "question": "卸载有道词典的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove youdao-dict",
+                  "answer_start": 132
+                }
+              ]
+            },
+            {
+              "id": "5-143-6",
+              "question": "有道词典的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/y/youdao-dict/",
+                  "answer_start": 163
+                }
+              ]
+            },
+            {
+              "id": "5-143-7",
+              "question": "与有道词典相关的deepin官网介绍链接是什么？",
+              "answers": [
+                {
+                  "text": "https://www.deepin.org/cooperative/youdao-dict/",
+                  "answer_start": 225
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

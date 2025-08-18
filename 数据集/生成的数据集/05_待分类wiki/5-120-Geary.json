@@ -1,0 +1,129 @@
+{
+  "data": [
+    {
+      "title": "Geary-已合并",
+      "paragraphs": [
+        {
+          "context": "Geary是一款桌面电子邮件客户端程序，它支持基本的查看和撰写、预览、回复等电子邮件基本功能，同时还支持IMAP协议，可以使用Google, Yahoo和Microsoft等其他在线邮箱服务。",
+          "qas": [
+            {
+              "id": "5-120-1",
+              "question": "什么是Geary？",
+              "answers": [
+                {
+                  "text": "一款桌面电子邮件客户端程序",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-120-2",
+              "question": "Geary支持哪些电子邮件功能？",
+              "answers": [
+                {
+                  "text": "查看和撰写、预览、回复等电子邮件基本功能",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-120-3",
+              "question": "Geary支持什么协议？",
+              "answers": [
+                {
+                  "text": "IMAP协议",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "id": "5-120-4",
+              "question": "Geary可以使用哪些在线邮箱服务？",
+              "answers": [
+                {
+                  "text": "Google, Yahoo和Microsoft等其他在线邮箱服务",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install geary",
+          "qas": [
+            {
+              "id": "5-120-5",
+              "question": "如何安装Geary？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install geary",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove geary",
+          "qas": [
+            {
+              "id": "5-120-6",
+              "question": "如何卸载Geary？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove geary",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "[http://packages.deepin.com/deepin/pool/main/g/geary/](http://packages.deepin.com/deepin/pool/main/g/geary/)",
+          "qas": [
+            {
+              "id": "5-120-7",
+              "question": "Geary的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/geary/",
+                  "answer_start": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/g/geary/",
+          "qas": [
+            {
+              "id": "5-120-8",
+              "question": "Geary的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/geary/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "维基百科：",
+          "qas": [
+            {
+              "id": "5-120-9",
+              "question": "Geary的相关链接是什么？",
+              "answers": [
+                {
+                  "text": "维基百科：",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

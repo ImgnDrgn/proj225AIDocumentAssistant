@@ -1,0 +1,484 @@
+{
+  "data": [
+    {
+      "title": "Deepin运维教程-L4",
+      "paragraphs": [
+        {
+          "context": "用户账号可用来登录系统，实现访问控制；用户模板目录为/etc/skel/",
+          "qas": [
+            {
+              "question": "用户账号的作用是什么？",
+              "id": "5-472-1",
+              "answers": [
+                {
+                  "text": "登录系统，实现访问控制",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "用户模板目录是什么？",
+              "id": "5-472-2",
+              "answers": [
+                {
+                  "text": "/etc/skel/",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "useradd命令用于创建新用户，格式为useradd [-选项] 用户名，常用选项包括-u（指定UID）、-d（指定家目录）等",
+          "qas": [
+            {
+              "question": "useradd命令的作用是什么？",
+              "id": "5-472-3",
+              "answers": [
+                {
+                  "text": "创建新用户",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "useradd命令中-u选项的作用是什么？",
+              "id": "5-472-4",
+              "answers": [
+                {
+                  "text": "指定UID",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "id命令用于查看系统用户和用户所在组的信息，格式为id [-选项] [用户名]",
+          "qas": [
+            {
+              "question": "id命令的作用是什么？",
+              "id": "5-472-5",
+              "answers": [
+                {
+                  "text": "查看系统用户和用户所在组的信息",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户基本信息存放在/etc/passwd文件，字段含义：用户名:密码占位符:UID:基本组GID:描述信息:家目录:解释器程序",
+          "qas": [
+            {
+              "question": "用户基本信息存放在哪个文件？",
+              "id": "5-472-6",
+              "answers": [
+                {
+                  "text": "/etc/passwd",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "/etc/passwd文件中第一个字段是什么？",
+              "id": "5-472-7",
+              "answers": [
+                {
+                  "text": "用户名",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UID分类：0为超级用户，1-499为系统伪用户（不能登录，无家目录），500-65535为普通用户",
+          "qas": [
+            {
+              "question": "UID为0代表什么用户？",
+              "id": "5-472-8",
+              "answers": [
+                {
+                  "text": "超级用户",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "系统伪用户的UID范围是多少？",
+              "id": "5-472-9",
+              "answers": [
+                {
+                  "text": "1-499",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/etc/default/useradd存放用户默认值信息，包括GROUP、HOME、SHELL等",
+          "qas": [
+            {
+              "question": "/etc/default/useradd文件的作用是什么？",
+              "id": "5-472-10",
+              "answers": [
+                {
+                  "text": "存放用户默认值信息",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/var/spool/mail/是用户邮件目录",
+          "qas": [
+            {
+              "question": "用户邮件目录是什么？",
+              "id": "5-472-11",
+              "answers": [
+                {
+                  "text": "/var/spool/mail/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "passwd命令用于设置用户密码，格式为passwd [-选项] [用户名]，-l选项用于锁定用户密码",
+          "qas": [
+            {
+              "question": "passwd命令的作用是什么？",
+              "id": "5-472-12",
+              "answers": [
+                {
+                  "text": "设置用户密码",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "passwd命令中-l选项的作用是什么？",
+              "id": "5-472-13",
+              "answers": [
+                {
+                  "text": "锁定用户密码",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "非交互设置用户密码格式：echo \"密码\" | passwd --stdin 用户名",
+          "qas": [
+            {
+              "question": "如何非交互设置用户密码？",
+              "id": "5-472-14",
+              "answers": [
+                {
+                  "text": "echo \"密码\" | passwd --stdin 用户名",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户密码信息存放在/etc/shadow文件，默认任何人无权限（除root）",
+          "qas": [
+            {
+              "question": "用户密码信息存放在哪个文件？",
+              "id": "5-472-15",
+              "answers": [
+                {
+                  "text": "/etc/shadow",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "su命令用于切换用户身份，格式为su [-选项] [用户名]，-选项可连同环境一起切换",
+          "qas": [
+            {
+              "question": "su命令的作用是什么？",
+              "id": "5-472-16",
+              "answers": [
+                {
+                  "text": "切换用户身份",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "如何连同环境一起切换用户身份？",
+              "id": "5-472-17",
+              "answers": [
+                {
+                  "text": "su [-选项] [用户名]，-选项可连同环境一起切换",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "usermod用于修改用户属性，格式为usermod [-选项] 用户名，-u选项修改用户UID",
+          "qas": [
+            {
+              "question": "usermod命令的作用是什么？",
+              "id": "5-472-18",
+              "answers": [
+                {
+                  "text": "修改用户属性",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "userdel用于删除用户，-r选项删除用户及相关文件（包括家目录）",
+          "qas": [
+            {
+              "question": "如何删除用户并连同家目录一并删除？",
+              "id": "5-472-19",
+              "answers": [
+                {
+                  "text": "userdel -r 用户名",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "groupadd用于创建新工作组，格式为groupadd [-选项] 组名，-g指定组的GID",
+          "qas": [
+            {
+              "question": "groupadd命令的作用是什么？",
+              "id": "5-472-20",
+              "answers": [
+                {
+                  "text": "创建新工作组",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "组信息存放在/etc/group文件，字段含义：组名:组密码占位符:GID:组中附加用户",
+          "qas": [
+            {
+              "question": "组信息存放在哪个文件？",
+              "id": "5-472-21",
+              "answers": [
+                {
+                  "text": "/etc/group",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "组密码信息存放在/etc/gshadow文件",
+          "qas": [
+            {
+              "question": "组密码信息存放在哪个文件？",
+              "id": "5-472-22",
+              "answers": [
+                {
+                  "text": "/etc/gshadow",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "groupmod用于修改组属性，-g修改组的GID，-n修改组名",
+          "qas": [
+            {
+              "question": "如何修改组的GID？",
+              "id": "5-472-23",
+              "answers": [
+                {
+                  "text": "groupmod -g GID 组名",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "gpasswd用于管理组，-a将用户添加到组，-d将用户从组中删除",
+          "qas": [
+            {
+              "question": "如何将用户添加到工作组？",
+              "id": "5-472-24",
+              "answers": [
+                {
+                  "text": "gpasswd -a 用户名 组名",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "groupdel用于删除指定工作组，格式为groupdel 组名",
+          "qas": [
+            {
+              "question": "groupdel命令的作用是什么？",
+              "id": "5-472-25",
+              "answers": [
+                {
+                  "text": "删除指定工作组",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "chmod设置文件权限，归属关系u（所有者）、g（所属组）、o（其他人），权限r（4）、w（2）、x（1）",
+          "qas": [
+            {
+              "question": "chmod命令中u代表什么？",
+              "id": "5-472-26",
+              "answers": [
+                {
+                  "text": "所有者",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "权限r的数字表示是多少？",
+              "id": "5-472-27",
+              "answers": [
+                {
+                  "text": "4",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "umask用于显示或设置创建文件的权限掩码，格式为umask [-p] [-S] [mode]",
+          "qas": [
+            {
+              "question": "umask命令的作用是什么？",
+              "id": "5-472-28",
+              "answers": [
+                {
+                  "text": "显示或设置创建文件的权限掩码",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "chown设置文件所有者和所属组，格式包括chown 所有者:所属组 文档，-R递归修改",
+          "qas": [
+            {
+              "question": "chown命令的作用是什么？",
+              "id": "5-472-29",
+              "answers": [
+                {
+                  "text": "设置文件的所有者和所属组",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SetUID使普通用户执行文件时临时拥有所有者身份，设置命令chmod u+s 文件名",
+          "qas": [
+            {
+              "question": "SetUID的作用是什么？",
+              "id": "5-472-30",
+              "answers": [
+                {
+                  "text": "普通用户执行文件时临时拥有所有者身份",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "对目录设置SetGID后，普通用户在该目录下创建的文件所属组与目录所属组相同",
+          "qas": [
+            {
+              "question": "对目录设置SetGID有什么效果？",
+              "id": "5-472-31",
+              "answers": [
+                {
+                  "text": "普通用户在该目录下创建的文件所属组与目录所属组相同",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Sticky BIT针对目录，普通用户只能删除自己创建的文件，设置命令chmod o+t 目录名",
+          "qas": [
+            {
+              "question": "Sticky BIT的作用是什么？",
+              "id": "5-472-32",
+              "answers": [
+                {
+                  "text": "普通用户只能删除自己在目录下创建的文件",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "FACL为用户定制权限，setfacl -m设置权限，-x删除指定用户权限",
+          "qas": [
+            {
+              "question": "如何设置FACL权限？",
+              "id": "5-472-33",
+              "answers": [
+                {
+                  "text": "setfacl -m 归属关系:权限 文档",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux通配符：*代表任意多个字符，?代表任意单个字符",
+          "qas": [
+            {
+              "question": "*在文件名中代表什么？",
+              "id": "5-472-34",
+              "answers": [
+                {
+                  "text": "任意多个字符",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

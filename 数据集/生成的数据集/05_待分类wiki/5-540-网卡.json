@@ -1,0 +1,374 @@
+{
+  "data": [
+    {
+      "title": "网卡",
+      "paragraphs": [
+        {
+          "context": "网卡、网络适配器或NIC是允许计算机在网络上通讯的硬件，有独一无二的48位MAC地址，属于OSI模型第1层，分板载和无线网卡，Linux对板载网卡支持良好，无线网卡可能有驱动问题。",
+          "qas": [
+            {
+              "question": "网卡的作用是什么？",
+              "id": "5-540-1",
+              "answers": [
+                {
+                  "text": "允许计算机在计算机网络上进行通讯",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "网卡的MAC地址有何特点？",
+              "id": "5-540-2",
+              "answers": [
+                {
+                  "text": "独一无二的48位串行号，写在卡上的一块ROM中",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "question": "网卡分为哪两类？",
+              "id": "5-540-3",
+              "answers": [
+                {
+                  "text": "板载网卡(简称网卡)和无线网卡",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux的以太型网卡界面通常称做eth0、eth1等，环形卡称做tr0、tr1等。ifconfig命令用于观看及修改网络界面状态，网络界面不在/dev目录下。",
+          "qas": [
+            {
+              "question": "Linux中以太型网卡界面通常叫什么？",
+              "id": "5-540-4",
+              "answers": [
+                {
+                  "text": "eth0、eth1等等",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "Linux中环形卡的界面通常叫什么？",
+              "id": "5-540-5",
+              "answers": [
+                {
+                  "text": "tr0、tr1等等",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "哪个命令用于观看及修改网络界面状态？",
+              "id": "5-540-6",
+              "answers": [
+                {
+                  "text": "ifconfig",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看网卡信息的命令：dmesg | grep -i 'eth'、lspci | grep -i 'eth'、cat /etc/sysconfig/hwconf | grep -i eth。查看当前网卡物理地址：ifconfig eth0 | head -1 | awk '{print $5}'。",
+          "qas": [
+            {
+              "question": "如何通过查看开机信息获取网卡信息？",
+              "id": "5-540-7",
+              "answers": [
+                {
+                  "text": "dmesg | grep -i 'eth'",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "列出当前网卡信息的命令是什么？",
+              "id": "5-540-8",
+              "answers": [
+                {
+                  "text": "lspci | grep -i 'eth'",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "question": "如何查看当前网卡的物理地址？",
+              "id": "5-540-9",
+              "answers": [
+                {
+                  "text": "ifconfig eth0 | head -1 | awk '{print $5}'",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装无线网卡驱动可尝试安装Windows驱动（如Mint无线网络驱动程序），或编译安装Linux驱动，如realtek的rtl8188eus网卡，下载驱动后执行sudo sh install.sh。",
+          "qas": [
+            {
+              "question": "安装无线网卡Windows驱动的途径之一是什么？",
+              "id": "5-540-10",
+              "answers": [
+                {
+                  "text": "应用程序-Windows无线驱动程序：Mint 无线网络驱动程序",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "如何编译安装realtek的rtl8188eus无线网卡驱动？",
+              "id": "5-540-11",
+              "answers": [
+                {
+                  "text": "去realtek官网下载对应驱动，解压后cd到驱动目录，执行sudo sh install.sh",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "笔记本用Fn+Fx关闭无线网卡后无法启用，有Windows系统可重启到Windows开启再进Linux；无Windows可安装wicd，关闭后按Fn+Fx再启动，勾选“启用无线”。",
+          "qas": [
+            {
+              "question": "有Windows系统时，无线网卡用Fn+Fx关闭后无法启用怎么办？",
+              "id": "5-540-12",
+              "answers": [
+                {
+                  "text": "重启到Windows下，再次使用Fn+Fx快捷键开启无线网卡，然后再进入Linux",
+                  "answer_start": 43
+                }
+              ]
+            },
+            {
+              "question": "无Windows系统时，如何解决无线网卡用Fn+Fx关闭后无法启用的问题？",
+              "id": "5-540-13",
+              "answers": [
+                {
+                  "text": "安装wicd：sudo apt-get install wicd，关闭wicd，按Fn+Fx，再启动wicd，点击网络连接勾选“启用无线”",
+                  "answer_start": 95
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "禁止不需要的网卡启动：1. lspci -v查看pci硬件；2. 查找对应网卡驱动；3. sudo vim /etc/modprobe.d/blacklist.conf；4. 末尾输入blacklist +驱动；5. 保存重启。",
+          "qas": [
+            {
+              "question": "禁止不需要的网卡启动的第一步是什么？",
+              "id": "5-540-14",
+              "answers": [
+                {
+                  "text": "查看pci接口上的所有硬件命令：lspci -v",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "如何编辑系统黑名单文件以禁止网卡启动？",
+              "id": "5-540-15",
+              "answers": [
+                {
+                  "text": "sudo vim /etc/modprobe.d/blacklist.conf，在末尾输入blacklist +所对应的网卡驱动",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置主DNS：NetworkManager 0.9.8.x需手动编辑配置，如设置为8.8.8.8，执行echo \"nameserver 8.8.8.8\" | sudo tee -a /etc/resolvconf/resolv.conf.d/head，再sudo resolvconf -u，验证看/etc/resolv.conf。",
+          "qas": [
+            {
+              "question": "如何设置主DNS为8.8.8.8？",
+              "id": "5-540-16",
+              "answers": [
+                {
+                  "text": "echo \"nameserver 8.8.8.8\" | sudo tee -a /etc/resolvconf/resolv.conf.d/head，sudo resolvconf -u",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "question": "如何验证主DNS设置是否成功？",
+              "id": "5-540-17",
+              "answers": [
+                {
+                  "text": "查看/etc/resolv.conf文件内容：cat /etc/resolv.conf",
+                  "answer_start": 140
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "反馈网络问题可提供路由器型号、配置，用deepin-bug-reporter收集信息：sudo apt-get install deepin-bug-reporter，sudo deepin-bug-reporter network，或提供计算机型号、内核信息等。",
+          "qas": [
+            {
+              "question": "反馈网络问题时，如何利用deepin-bug-reporter收集信息？",
+              "id": "5-540-18",
+              "answers": [
+                {
+                  "text": "sudo apt-get install deepin-bug-reporter，sudo deepin-bug-reporter network",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "question": "反馈网络问题可能需要提供哪些信息？",
+              "id": "5-540-19",
+              "answers": [
+                {
+                  "text": "路由器型号及具体网络配置（包括WiFi加密方式等），计算机型号，Linux内核信息，NetworkManager当前状态等",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "偶尔搜不到WiFi信号，可切换WiFi总开关或执行nmcli nm wifi false，nmcli nm wifi true，不行则sudo restart network-manager。",
+          "qas": [
+            {
+              "question": "偶尔搜不到WiFi信号，可执行哪些命令解决？",
+              "id": "5-540-20",
+              "answers": [
+                {
+                  "text": "nmcli nm wifi false，nmcli nm wifi true，不行则sudo restart network-manager",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "网络可连接但速度慢可能因MTU值过低，用ifconfig查看，一般为1500，可到控制中心->网络编辑页面手动设置。",
+          "qas": [
+            {
+              "question": "网络可连接但速度慢可能的原因是什么？",
+              "id": "5-540-21",
+              "answers": [
+                {
+                  "text": "MTU 值过低",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "如何查看当前网络的MTU值？",
+              "id": "5-540-22",
+              "answers": [
+                {
+                  "text": "在终端输入 ifconfig",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Broadcom BCM4313无线网卡连接失败，可执行相关命令：卸载bcmwl-kernel-source，安装linux-firmware-nonfree，黑名单屏蔽b43和wl驱动，启用brcmsmac。",
+          "qas": [
+            {
+              "question": "如何解决Broadcom BCM4313无线网卡连接失败问题？",
+              "id": "5-540-23",
+              "answers": [
+                {
+                  "text": "sudo apt-get purge bcmwl-kernel-source，sudo apt-get install linux-firmware-nonfree，黑名单屏蔽b43和wl驱动，启用brcmsmac",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "华硕X550VC用户的BCM4322网卡硬件开关默认关闭，临时解决方法是让系统待机。",
+          "qas": [
+            {
+              "question": "华硕X550VC用户的BCM4322网卡硬件开关默认关闭，临时解决方法是什么？",
+              "id": "5-540-24",
+              "answers": [
+                {
+                  "text": "让系统待机，待机后网卡能正常使用",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "华硕笔记本的Qualcomm Atheros AR9485网卡搜不到WiFi信号，可设置asus_nb_wmi驱动参数，或屏蔽acer-wmi。神舟K500C-I3笔记本连接需密码循环，执行echo \"options ath9k nohwcrypt=1\" | sudo tee -a /etc/modprobe.d/ath9k.conf重启。",
+          "qas": [
+            {
+              "question": "华硕笔记本的Qualcomm Atheros AR9485网卡搜不到WiFi信号，可采取哪些措施？",
+              "id": "5-540-25",
+              "answers": [
+                {
+                  "text": "设置“asus_nb_wmi”驱动参数，或屏蔽“acer-wmi”",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "question": "神舟K500C-I3笔记本无线连接需反复输入密码怎么办？",
+              "id": "5-540-26",
+              "answers": [
+                {
+                  "text": "echo \"options ath9k nohwcrypt=1\" | sudo tee -a /etc/modprobe.d/ath9k.conf，然后重启",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "联想ideapad系列无线网卡搜不到wifi信号，执行sudo su，echo \"blacklist ideapad_laptop\" | tee -a /etc/modprobe.d/black_ideapad_laptop.conf。",
+          "qas": [
+            {
+              "question": "联想ideapad系列无线网卡搜不到wifi信号怎么办？",
+              "id": "5-540-27",
+              "answers": [
+                {
+                  "text": "sudo su，echo \"blacklist ideapad_laptop\" | tee -a /etc/modprobe.d/black_ideapad_laptop.conf",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "英特尔AX210无线网卡（5.10+内核）：下载驱动解压，sudo cp iwlwifi-ty-a0-gf-a0-59.ucode /lib/firmware，禁用原驱动缓存，重启。5.17+内核需删除或重命名三个相关文件。",
+          "qas": [
+            {
+              "question": "5.10+内核版本的英特尔AX210无线网卡如何安装驱动？",
+              "id": "5-540-28",
+              "answers": [
+                {
+                  "text": "下载驱动程序并解压，进入文件夹，执行sudo cp iwlwifi-ty-a0-gf-a0-59.ucode /lib/firmware，禁用原驱动缓存，最后重启系统",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "使用5.17+内核时，英特尔AX210无线网卡需要处理哪些文件？",
+              "id": "5-540-29",
+              "answers": [
+                {
+                  "text": "删除或重命名/lib/firmware/目录下的iwlwifi-ty-a0-gf-a0-62.ucode、iwlwifi-ty-a0-gf-a0-63.ucode、iwlwifi-ty-a0-gf-a0-66.ucode",
+                  "answer_start": 167
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

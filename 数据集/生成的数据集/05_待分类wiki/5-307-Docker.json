@@ -1,0 +1,379 @@
+{
+  "data": [
+    {
+      "title": "Docker",
+      "paragraphs": [
+        {
+          "context": "Docker是开源的应用容器引擎，可将应用及依赖包打包到可移植容器，发布到Linux机器并实现虚拟化，容器采用沙箱机制，相互无接口。",
+          "qas": [
+            {
+              "question": "Docker是什么？",
+              "id": "5-307-1",
+              "answers": [
+                {
+                  "text": "开源的应用容器引擎，可将应用及依赖包打包到可移植容器，发布到Linux机器并实现虚拟化，容器采用沙箱机制，相互无接口。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin官方仓库有docker，但非docker-ce等最新版。因Deepin基于debian unstable，官方源不支持，故官方教程安装docker-ce会失败。",
+          "qas": [
+            {
+              "question": "Deepin官方仓库中的Docker是最新版吗？",
+              "id": "5-307-2",
+              "answers": [
+                {
+                  "text": "不是，非docker-ce等最新版。",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "为什么Deepin用官方教程安装docker-ce会失败？",
+              "id": "5-307-3",
+              "answers": [
+                {
+                  "text": "因Deepin基于debian unstable，docker官方源不支持unstable版本。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Docker最新版前，需卸载旧版本，命令为：sudo apt-get remove docker.io docker-engine。",
+          "qas": [
+            {
+              "question": "安装Docker最新版前需要做什么？",
+              "id": "5-307-4",
+              "answers": [
+                {
+                  "text": "卸载旧版本。",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "卸载Docker旧版本的命令是什么？",
+              "id": "5-307-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove docker.io docker-engine",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Docker需先安装密钥管理与下载工具，命令：sudo apt-get install apt-transport-https ca-certificates curl python-software-properties software-properties-common。",
+          "qas": [
+            {
+              "question": "安装Docker时需要安装哪些密钥管理与下载相关工具？",
+              "id": "5-307-6",
+              "answers": [
+                {
+                  "text": "apt-transport-https、ca-certificates、curl、python-software-properties、software-properties-common",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "安装这些工具的命令是什么？",
+              "id": "5-307-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get install apt-transport-https ca-certificates curl python-software-properties software-properties-common",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载安装Docker的GPG密钥，国内源（如中科大）命令：curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/debian/gpg | sudo apt-key add -；官方源命令：curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -。",
+          "qas": [
+            {
+              "question": "国内源下载Docker密钥的命令是什么？",
+              "id": "5-307-8",
+              "answers": [
+                {
+                  "text": "curl -fsSL https://mirrors.ustc.edu.cn/docker-ce/linux/debian/gpg | sudo apt-key add -",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "Docker官方源下载密钥的命令是什么？",
+              "id": "5-307-9",
+              "answers": [
+                {
+                  "text": "curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看Docker密钥是否安装成功的命令：sudo apt-key fingerprint 0EBFCD88，成功会显示含9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88的指纹。",
+          "qas": [
+            {
+              "question": "如何查看Docker密钥是否安装成功？",
+              "id": "5-307-10",
+              "answers": [
+                {
+                  "text": "执行命令：sudo apt-key fingerprint 0EBFCD88",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Docker密钥安装成功的指纹包含什么？",
+              "id": "5-307-11",
+              "answers": [
+                {
+                  "text": "9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加docker-ce软件源需将版本名替换为Deepin基于的debian代号（通过cat /etc/debian_version查看）。如Deepin 20对应debian 10（buster），命令：sudo add-apt-repository \"deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/debian buster stable\"。",
+          "qas": [
+            {
+              "question": "查看Deepin基于的debian版本的命令是什么？",
+              "id": "5-307-12",
+              "answers": [
+                {
+                  "text": "cat /etc/debian_version",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "question": "Deepin 20对应的debian版本代号是什么？",
+              "id": "5-307-13",
+              "answers": [
+                {
+                  "text": "buster",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "question": "Deepin 20添加docker-ce软件源的命令是什么？",
+              "id": "5-307-14",
+              "answers": [
+                {
+                  "text": "sudo add-apt-repository \"deb [arch=amd64] https://mirrors.ustc.edu.cn/docker-ce/linux/debian buster stable\"",
+                  "answer_start": 118
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加docker-ce软件源后，需更新仓库，命令：sudo apt-get update。",
+          "qas": [
+            {
+              "question": "添加docker-ce软件源后需要做什么？",
+              "id": "5-307-15",
+              "answers": [
+                {
+                  "text": "更新仓库。",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "更新仓库的命令是什么？",
+              "id": "5-307-16",
+              "answers": [
+                {
+                  "text": "sudo apt-get update",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装docker-ce的命令：sudo apt-get install docker-ce，网络不稳定可能导致下载失败，可重试。",
+          "qas": [
+            {
+              "question": "安装docker-ce的命令是什么？",
+              "id": "5-307-17",
+              "answers": [
+                {
+                  "text": "sudo apt-get install docker-ce",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "安装docker-ce失败可能的原因是什么？",
+              "id": "5-307-18",
+              "answers": [
+                {
+                  "text": "网络不稳定。",
+                  "answer_start": 48
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启动Docker的命令：systemctl start docker。",
+          "qas": [
+            {
+              "question": "如何启动Docker？",
+              "id": "5-307-19",
+              "answers": [
+                {
+                  "text": "执行命令：systemctl start docker",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看Docker版本信息的命令：docker version。",
+          "qas": [
+            {
+              "question": "如何查看Docker的版本信息？",
+              "id": "5-307-20",
+              "answers": [
+                {
+                  "text": "执行命令：docker version",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "验证Docker安装正常的命令：sudo docker run hello-world，能正常下载执行则安装成功。",
+          "qas": [
+            {
+              "question": "如何验证Docker是否正确安装并正常使用？",
+              "id": "5-307-21",
+              "answers": [
+                {
+                  "text": "执行命令：sudo docker run hello-world，能正常下载执行则安装成功。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "让普通用户无需sudo运行docker，需将账号加入docker用户组：sudo usermod -aG docker $USER，然后注销重登录。",
+          "qas": [
+            {
+              "question": "如何让普通用户无需sudo即可运行docker？",
+              "id": "5-307-22",
+              "answers": [
+                {
+                  "text": "将账号加入docker用户组：sudo usermod -aG docker $USER，然后注销重登录。",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "将用户加入docker用户组的命令是什么？",
+              "id": "5-307-23",
+              "answers": [
+                {
+                  "text": "sudo usermod -aG docker $USER",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用阿里云docker加速器：1. 申请账号获取地址；2. 执行命令：sudo mkdir -p /etc/docker；sudo tee /etc/docker/daemon.json <<-'EOF' { \"registry-mirrors\": [\"加速器地址\"] } EOF；sudo systemctl daemon-reload；sudo systemctl restart docker。",
+          "qas": [
+            {
+              "question": "如何使用阿里云的docker加速器？",
+              "id": "5-307-24",
+              "answers": [
+                {
+                  "text": "1. 申请账号获取地址；2. 执行命令：sudo mkdir -p /etc/docker；sudo tee /etc/docker/daemon.json <<-'EOF' { \"registry-mirrors\": [\"加速器地址\"] } EOF；sudo systemctl daemon-reload；sudo systemctl restart docker。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用docker-cn镜像源：编辑/etc/docker/daemon.json输入{ \"registry-mirrors\": [\"https://registry.docker-cn.com\"] }，然后sudo service docker restart。",
+          "qas": [
+            {
+              "question": "如何使用docker-cn提供的镜像源作为加速器？",
+              "id": "5-307-25",
+              "answers": [
+                {
+                  "text": "编辑/etc/docker/daemon.json输入{ \"registry-mirrors\": [\"https://registry-cn.com\"] }，然后sudo service docker restart。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "使用docker-cn加速器后需要做什么？",
+              "id": "5-307-26",
+              "answers": [
+                {
+                  "text": "sudo service docker restart",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "禁用Docker开机自启：安装chkconfig（sudo apt-get install chkconfig），然后移除自启（sudo chkconfig --del docker）。",
+          "qas": [
+            {
+              "question": "如何禁止Docker开机自启？",
+              "id": "5-307-27",
+              "answers": [
+                {
+                  "text": "安装chkconfig（sudo apt-get install chkconfig），然后移除自启（sudo chkconfig --del docker）。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "安装chkconfig的命令是什么？",
+              "id": "5-307-28",
+              "answers": [
+                {
+                  "text": "sudo apt-get install chkconfig",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "移除Docker自启的命令是什么？",
+              "id": "5-307-29",
+              "answers": [
+                {
+                  "text": "sudo chkconfig --del docker",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

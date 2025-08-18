@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "Desktop图标文件生成器",
+      "paragraphs": [
+        {
+          "context": "Desktop图标文件生成器是由zinface制作的小工具，能用GUI界面制作desktop文件，是提供基于Linux平台的desktop文件自动化生成工具。其仓库/分支地址为https://gitee.com/zinface/z-tools/tree/desktop-dev，版本历史中有Release desktop-generater v1.1，参见链接为https://bbs.deepin.org/post/231528。",
+          "qas": [
+            {
+              "id": "3-7-1",
+              "question": "谁制作了Desktop图标文件生成器？",
+              "answers": [
+                {
+                  "text": "zinface",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "3-7-2",
+              "question": "Desktop图标文件生成器能用什么界面制作desktop文件？",
+              "answers": [
+                {
+                  "text": "GUI界面",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "3-7-3",
+              "question": "Desktop图标文件生成器是基于哪个平台的工具？",
+              "answers": [
+                {
+                  "text": "Linux平台",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "3-7-4",
+              "question": "Desktop图标文件生成器的仓库/分支地址是什么？",
+              "answers": [
+                {
+                  "text": "https://gitee.com/zinface/z-tools/tree/desktop-dev",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "id": "3-7-5",
+              "question": "Desktop图标文件生成器的版本历史中有哪个版本？",
+              "answers": [
+                {
+                  "text": "Release desktop-generater v1.1",
+                  "answer_start": 153
+                }
+              ]
+            },
+            {
+              "id": "3-7-6",
+              "question": "Desktop图标文件生成器的参见链接是什么？",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/post/231528",
+                  "answer_start": 186
+                }
+              ]
+            },
+            {
+              "id": "3-7-7",
+              "question": "Desktop图标文件生成器的功能是什么？",
+              "answers": [
+                {
+                  "text": "用GUI界面制作desktop文件，是基于Linux平台的desktop文件自动化生成工具",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "3-7-8",
+              "question": "最新版本号是什么？",
+              "answers": [
+                {
+                  "text": "v1.1",
+                  "answer_start": 178
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

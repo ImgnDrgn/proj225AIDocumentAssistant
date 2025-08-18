@@ -1,0 +1,95 @@
+{
+  "title": "阿里旺旺-已合并",
+  "paragraphs": [
+    {
+      "context": "阿里旺旺是一款专为淘宝会员量身定做的个人交易沟通软件，它能方便进行买家和卖家的实时沟通，提供文字聊天、语音聊天、视频聊天、文件传输、发送离线文件等功能。",
+      "qas": [
+        {
+          "id": "5-118-1",
+          "question": "阿里旺旺是什么？",
+          "answers": [
+            {
+              "text": "一款专为淘宝会员量身定做的个人交易沟通软件",
+              "answer_start": 5
+            }
+          ]
+        },
+        {
+          "id": "5-118-2",
+          "question": "阿里旺旺的目标用户是谁？",
+          "answers": [
+            {
+              "text": "淘宝会员",
+              "answer_start": 9
+            }
+          ]
+        },
+        {
+          "id": "5-118-3",
+          "question": "阿里旺旺能方便哪两类人进行实时沟通？",
+          "answers": [
+            {
+              "text": "买家和卖家",
+              "answer_start": 33
+            }
+          ]
+        },
+        {
+          "id": "5-118-4",
+          "question": "阿里旺旺提供哪些功能？",
+          "answers": [
+            {
+              "text": "文字聊天、语音聊天、视频聊天、文件传输、发送离线文件等功能",
+              "answer_start": 46
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "sudo apt-get install apps.com.taobao.aliclient.wangwang",
+      "qas": [
+        {
+          "id": "5-118-5",
+          "question": "如何安装阿里旺旺？",
+          "answers": [
+            {
+              "text": "sudo apt-get install apps.com.taobao.aliclient.wangwang",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "sudo apt-get remove apps.com.taobao.aliclient.wangwang",
+      "qas": [
+        {
+          "id": "5-118-6",
+          "question": "如何卸载阿里旺旺？",
+          "answers": [
+            {
+              "text": "sudo apt-get remove apps.com.taobao.aliclient.wangwang",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "http://packages.deepin.com/deepin/pool/non-free/a/apps.com.taobao.aliclient.wangwang/",
+      "qas": [
+        {
+          "id": "5-118-7",
+          "question": "阿里旺旺的仓库地址是什么？",
+          "answers": [
+            {
+              "text": "http://packages.deepin.com/deepin/pool/non-free/a/apps.com.taobao.aliclient.wangwang/",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "data": [
+    {
+      "title": "wxPython",
+      "paragraphs": [
+        {
+          "context": "wxPython是Python包装wxWidgets（C++编写）的跨平台GUI工具包，由Robin Dunn及Harri Pasanen开发，作为Python扩展模块，免费，可从官网http://wxpython.org下载。",
+          "qas": [
+            {
+              "question": "wxPython是什么？",
+              "id": "5-191-1",
+              "answers": [
+                {
+                  "text": "wxPython是一个Python包装wxWidgets（这是用 C++ 编写），一个流行的跨平台GUI工具包。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "wxPython的开发者是谁？",
+              "id": "5-191-2",
+              "answers": [
+                {
+                  "text": "Robin Dunn以及Harri Pasanen",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "wxPython是免费软件吗？",
+              "id": "5-191-3",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "question": "在哪里可以下载wxPython？",
+              "id": "5-191-4",
+              "answers": [
+                {
+                  "text": "官方网站：http://wxpython.org",
+                  "answer_start": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "wxPython API主要模块包括核心模块（含wxObject类，是所有类基础）、控制模块（含GUI部件如wx.Button等）、GDI模块（绘图类如字体等）、Windows模块（定义容器窗口类）。",
+          "qas": [
+            {
+              "question": "wxPython API的核心模块包含什么？",
+              "id": "5-191-5",
+              "answers": [
+                {
+                  "text": "wxObject 类，这是基础 API 的所有类",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "wxPython的控制模块包含哪些部件？",
+              "id": "5-191-6",
+              "answers": [
+                {
+                  "text": "wx.Button，wx.StaticText（类似于一个标签），wx.TextCtrl（可编辑的文本控制）等",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "question": "wxPython的GDI模块有什么作用？",
+              "id": "5-191-7",
+              "answers": [
+                {
+                  "text": "是一组用于在部件中的绘图类。如字体，颜色，画笔等类就是其中的一部分",
+                  "answer_start": 135
+                }
+              ]
+            },
+            {
+              "question": "wxPython中定义所有容器窗口类的模块是什么？",
+              "id": "5-191-8",
+              "answers": [
+                {
+                  "text": "Windows 模块",
+                  "answer_start": 209
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "wxPython官方网站主持Phoenix工程计划，为Python3.*新实现，着重提高速度、可维护性和可扩展性，始于2012年，仍处测试阶段。",
+          "qas": [
+            {
+              "question": "Phoenix工程计划是什么？",
+              "id": "5-191-9",
+              "answers": [
+                {
+                  "text": "wxPython 官方网站主持的为Python3.* 新实现的wxPython，着重于提高速度，可维护性和可扩展性",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Phoenix工程计划始于何时？",
+              "id": "5-191-10",
+              "answers": [
+                {
+                  "text": "2012年",
+                  "answer_start": 122
+                }
+              ]
+            },
+            {
+              "question": "Phoenix工程计划目前处于什么阶段？",
+              "id": "5-191-11",
+              "answers": [
+                {
+                  "text": "测试阶段",
+                  "answer_start": 133
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin15.8中python3用pip方式安装wxPython失败，安装命令为pip3 install -U wxPython，Python 3.6.5版本导入wx时报ModuleNotFoundError。",
+          "qas": [
+            {
+              "question": "在deepin15.8中python3用什么方式安装wxPython失败？",
+              "id": "5-191-12",
+              "answers": [
+                {
+                  "text": "pip方式",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "wxPython的pip安装命令是什么？",
+              "id": "5-191-13",
+              "answers": [
+                {
+                  "text": "pip3 install -U wxPython",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "question": "Python 3.6.5版本导入wx时出现什么错误？",
+              "id": "5-191-14",
+              "answers": [
+                {
+                  "text": "ModuleNotFoundError: No module named 'wx'",
+                  "answer_start": 95
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "win10系统安装wxPython也报错，Python3.7.1配wxPython-4.0.3-cp37-cp37m-win_amd64文件安装，导入wx时报ImportError: DLL load failed: 找不到指定的模块。",
+          "qas": [
+            {
+              "question": "win10系统安装wxPython是否成功？",
+              "id": "5-191-15",
+              "answers": [
+                {
+                  "text": "否，安装报错",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "win10系统中使用的Python版本和wxPython文件是什么？",
+              "id": "5-191-16",
+              "answers": [
+                {
+                  "text": "Python3.7.1配wxPython-4.0.3-cp37-cp37m-win_amd64文件",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "win10系统导入wx时出现什么错误？",
+              "id": "5-191-17",
+              "answers": [
+                {
+                  "text": "ImportError: DLL load failed: 找不到指定的模块。",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

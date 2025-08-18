@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "title": "GtkHash",
+      "paragraphs": [
+        {
+          "context": "GtkHash是计算消息摘要和checksum的工具，支持MD5、SHA1、SHA256、SHA512、RIPEMD、TIGER、WHIRLPOOL等哈希函数。",
+          "qas": [
+            {
+              "question": "GtkHash是什么工具？",
+              "id": "5-134-1",
+              "answers": [
+                {
+                  "text": "计算消息摘要和checksum的工具",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "GtkHash支持哪些哈希函数？",
+              "id": "5-134-2",
+              "answers": [
+                {
+                  "text": "MD5、SHA1、SHA256、SHA512、RIPEMD、TIGER、WHIRLPOOL",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装GtkHash的命令是sudo apt-get install gtkhash。",
+          "qas": [
+            {
+              "question": "如何安装GtkHash？",
+              "id": "5-134-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gtkhash",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载GtkHash的命令是sudo apt-get remove gtkhash。",
+          "qas": [
+            {
+              "question": "怎样卸载GtkHash？",
+              "id": "5-134-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gtkhash",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GtkHash的仓库地址是http://packages.deepin.com/deepin/pool/main/g/gtkhash/。",
+          "qas": [
+            {
+              "question": "GtkHash的仓库地址是什么？",
+              "id": "5-134-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gtkhash/",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

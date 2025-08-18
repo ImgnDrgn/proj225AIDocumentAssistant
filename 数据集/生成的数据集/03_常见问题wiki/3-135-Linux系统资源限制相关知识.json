@@ -1,0 +1,239 @@
+{
+  "data": [
+    {
+      "title": "Linux系统资源限制相关知识",
+      "paragraphs": [
+        {
+          "context": "ulimit命令可查看用户层面的系统资源限制，其配置基于/etc/security/limits.conf，且/etc/security/limits.d目录中的配置文件会按字母顺序覆盖相同或更具体的设置。",
+          "qas": [
+            {
+              "question": "哪个命令可以查看用户层面的系统资源限制？",
+              "id": "3-135-1",
+              "answers": [
+                {
+                  "text": "ulimit",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "用户层面系统资源限制的配置基于哪个文件？",
+              "id": "3-135-2",
+              "answers": [
+                {
+                  "text": "/etc/security/limits.conf",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ulimit -a 可查看所有资源上限，其中关注的有：-s栈大小8MB，-u进程上限30000多，-n文件描述符上限1024。ulimit -Ha和ulimit -Sa可查看硬限制和软限制，硬限制由root设置，非root可降低硬限制，只有root能增加；非root不能超过软限制，但可将软限制增加到硬限制。",
+          "qas": [
+            {
+              "question": "如何查看所有资源上限？",
+              "id": "3-135-3",
+              "answers": [
+                {
+                  "text": "ulimit -a",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "默认栈大小是多少？",
+              "id": "3-135-4",
+              "answers": [
+                {
+                  "text": "8MB",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "默认文件描述符上限是多少？",
+              "id": "3-135-5",
+              "answers": [
+                {
+                  "text": "1024",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "question": "如何查看硬限制和软限制？",
+              "id": "3-135-6",
+              "answers": [
+                {
+                  "text": "ulimit -Ha 查看硬限制，ulimit -Sa 查看软限制",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ulimit -n 1024 可临时修改当前shell的文件描述符限制，修改/etc/security/limits.conf可使修改永久生效，需重启。",
+          "qas": [
+            {
+              "question": "如何临时修改当前shell的文件描述符限制？",
+              "id": "3-135-7",
+              "answers": [
+                {
+                  "text": "ulimit -n 1024",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何使文件描述符限制的修改永久生效？",
+              "id": "3-135-8",
+              "answers": [
+                {
+                  "text": "修改/etc/security/limits.conf，然后重启",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "实验1中，修改/etc/security/limits.conf后，文件描述符上限从1024改为10240，测试能打开10217个临时文件，因程序自身打开一些文件等，总数非10240。",
+          "qas": [
+            {
+              "question": "实验1中，文件描述符上限修改前后分别是多少？",
+              "id": "3-135-9",
+              "answers": [
+                {
+                  "text": "修改前1024，修改后10240",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "question": "实验1中，修改后能打开多少个临时文件？",
+              "id": "3-135-10",
+              "answers": [
+                {
+                  "text": "10217个",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "实验2中，在/etc/security/limits.conf添加配置修改栈空间上限，C程序测试显示调整后进程栈空间约8192000B，调到临界值程序发生段错误。",
+          "qas": [
+            {
+              "question": "实验2中如何修改栈空间上限？",
+              "id": "3-135-11",
+              "answers": [
+                {
+                  "text": "在/etc/security/limits.conf添加配置",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "实验2中，调整后进程的栈空间大概是多少？",
+              "id": "3-135-12",
+              "answers": [
+                {
+                  "text": "8192000B",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统层面，单个进程打开文件句柄数上限10亿，系统分配的pid上限400多万，file-max（内核级别最大文件描述符）上限600万，系统全局总线程数限制6万，单个程序内存映射空间数量6万。",
+          "qas": [
+            {
+              "question": "系统层面，单个进程打开文件句柄数上限是多少？",
+              "id": "3-135-13",
+              "answers": [
+                {
+                  "text": "10亿",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "系统分配的pid上限是多少？",
+              "id": "3-135-14",
+              "answers": [
+                {
+                  "text": "400多万",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "file-max的上限是多少？",
+              "id": "3-135-15",
+              "answers": [
+                {
+                  "text": "600万",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "question": "系统全局的总线程数限制是多少？",
+              "id": "3-135-16",
+              "answers": [
+                {
+                  "text": "6万",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "redis打开时会将文件描述符上限从1024调整到10032以适应更多网络连接，源码中通过调用setrlimit(RLIMIT_NOFILE,&limit)进行临时调整。",
+          "qas": [
+            {
+              "question": "redis打开时会将文件描述符上限调整到多少？",
+              "id": "3-135-17",
+              "answers": [
+                {
+                  "text": "10032",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "redis源码中用什么API调整文件描述符上限？",
+              "id": "3-135-18",
+              "answers": [
+                {
+                  "text": "setrlimit(RLIMIT_NOFILE,&limit)",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "prlimit是另一个类似ulimit的命令。",
+          "qas": [
+            {
+              "question": "有一个类似ulimit的命令是什么？",
+              "id": "3-135-19",
+              "answers": [
+                {
+                  "text": "prlimit",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

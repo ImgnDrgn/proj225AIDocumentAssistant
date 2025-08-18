@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "deepin开启wayland切换通道",
+      "paragraphs": [
+        {
+          "context": "进入终端下载配置策略工具，命令：apt download dde-dconfig-editor",
+          "qas": [
+            {
+              "question": "如何下载配置配置策略工具？",
+              "id": "3-152-1",
+              "answers": [
+                {
+                  "text": "进入终端下载，命令：apt download dde-dconfig-editor",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "执行命令解压工具deb包：dpkg -x dde-dconfig-editor_0.0.5.1-1_amd64.deb [解压目录]",
+          "qas": [
+            {
+              "question": "怎样解压配置策略工具的deb包？",
+              "id": "3-152-2",
+              "answers": [
+                {
+                  "text": "执行命令：dpkg -x dde-dconfig-editor_0.0.5.1-1_amd64.deb [解压目录]",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "示例：dpkg -x dde-dconfig-editor_0.0.5.1-1_amd64.deb /home/qqq/Desktop/",
+          "qas": [
+            {
+              "question": "解压deb包的示例命令是什么？",
+              "id": "3-152-3",
+              "answers": [
+                {
+                  "text": "dpkg -x dde-dconfig-editor_0.0.5.1-1_amd64.deb /home/qqq/Desktop/",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过终端进入配置策略工具配置页面",
+          "qas": [
+            {
+              "question": "如何进入配置策略工具配置页面？",
+              "id": "3-152-4",
+              "answers": [
+                {
+                  "text": "通过终端进入",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在greeter配置中开启wayland切换配置项",
+          "qas": [
+            {
+              "question": "在哪里开启wayland切换配置项？",
+              "id": "3-152-5",
+              "answers": [
+                {
+                  "text": "在greeter配置中",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "注销后通过登录页面右下角按钮切换wayland",
+          "qas": [
+            {
+              "question": "开启wayland切换配置项后，如何切换wayland？",
+              "id": "3-152-6",
+              "answers": [
+                {
+                  "text": "注销后通过登录页面右下角按钮切换",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

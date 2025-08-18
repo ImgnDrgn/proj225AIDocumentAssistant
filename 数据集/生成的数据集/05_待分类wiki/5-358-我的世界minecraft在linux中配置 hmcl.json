@@ -1,0 +1,428 @@
+{
+  "data": [
+    {
+      "title": "我的世界minecraft在linux中配置 hmcl",
+      "paragraphs": [
+        {
+          "context": "我的世界是一个广受欢迎的沙盒游戏，最重要的是，它基于java技术，因此也能正常运行在linux中。不过在linux中，有一些需要注意的事项。 首先是官方 java 的授权问题，据说 java 8 还是有 bsd 授权的，但是为了避免著作权的纠纷，我们还是想办法是用 openjdk 比较好。 openjdk 是开源的java 运行时。对于我的世界本身而言，openjdk 不会存在太大的兼容性问题，但是如果你是使用一个叫 hmcl 的我的世界登陆器来玩游戏，它使用了一个叫 javafx 的图形界面框架，需要你配置第三方类库。",
+          "qas": [
+            {
+              "id": "5-358-1",
+              "question": "为什么在Linux中使用我的世界时建议用openjdk？",
+              "answers": [
+                {
+                  "text": "为了避免著作权的纠纷",
+                  "answer_start": 178
+                }
+              ]
+            },
+            {
+              "id": "5-358-2",
+              "question": "HMCL使用了什么图形界面框架？",
+              "answers": [
+                {
+                  "text": "javafx",
+                  "answer_start": 328
+                }
+              ]
+            },
+            {
+              "id": "5-358-3",
+              "question": "我的世界基于什么技术开发？",
+              "answers": [
+                {
+                  "text": "java技术",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "5-358-4",
+              "question": "在Linux中使用官方Java可能存在什么问题？",
+              "answers": [
+                {
+                  "text": "官方java的授权问题",
+                  "answer_start": 87
+                }
+              ]
+            },
+            {
+              "id": "5-358-5",
+              "question": "为了避免著作权纠纷，推荐在Linux上使用什么Java运行时？",
+              "answers": [
+                {
+                  "text": "openjdk",
+                  "answer_start": 141
+                }
+              ]
+            },
+            {
+              "id": "5-358-6",
+              "question": "使用hmcl登录器时需要额外配置什么框架？",
+              "answers": [
+                {
+                  "text": "javafx",
+                  "answer_start": 230
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Bellsoft 公司维护着 Liberica 系列产品，其完整版 JDK/JRE 附带 JavaFX。下载链接：https://bell-sw.com/pages/downloads/。1. 选择 JDK 8 LTS（也可以选 JDK 11 LTS）2. 向下滚动到 Linux 一栏3. 确认选择的是 x864. 下拉菜单选择 JRE Full5. 右侧点击下载 DEB 包并安装。以上安装方法不经过包管理器，所以 Java 未来不会被 apt upgrade 这类指令自动更新。如果你想要自动更新，建议通过 Bellsoft 的 APT 仓库安装。在命令行中依次执行：wget -q -O - https://download.bell-sw.com/pki/GPG-KEY-bellsoft | sudo apt-key add -；echo \"deb https://apt.bell-sw.com/ stable main\" | sudo tee /etc/apt/sources.list.d/bellsoft.list；sudo apt update。安装 JRE 8 + JFX 请运行 sudo apt install bellsoft-java8-runtime-full；安装 JRE 11 + JFX 请运行 sudo apt install bellsoft-java11-runtime-full。",
+          "qas": [
+            {
+              "id": "5-358-7",
+              "question": "Bellsoft的Liberica系列产品有什么特点？",
+              "answers": [
+                {
+                  "text": "其完整版 JDK/JRE 附带 JavaFX",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "5-358-8",
+              "question": "下载Liberica时选择JRE Full的步骤是什么？",
+              "answers": [
+                {
+                  "text": "1. 选择 JDK 8 LTS（也可以选 JDK 11 LTS）2. 向下滚动到 Linux 一栏3. 确认选择的是 x864. 下拉菜单选择 JRE Full5. 右侧点击下载 DEB 包并安装",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "5-358-9",
+              "question": "如何通过APT仓库安装Liberica的JRE 8 + JFX？",
+              "answers": [
+                {
+                  "text": "在命令行中依次执行：wget -q -O - https://download.bell-sw.com/pki/GPG-KEY-bellsoft | sudo apt-key add -；echo \"deb https://apt.bell-sw.com/ stable main\" | sudo tee /etc/apt/sources.list.d/bellsoft.list；sudo apt update；然后运行 sudo apt install bellsoft-java8-runtime-full",
+                  "answer_start": 320
+                }
+              ]
+            },
+            {
+              "id": "5-358-10",
+              "question": "哪个公司提供的Liberica产品包含完整JavaFX支持？",
+              "answers": [
+                {
+                  "text": "Bellsoft 公司",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-358-11",
+              "question": "安装DEB包方式的缺点是什么？",
+              "answers": [
+                {
+                  "text": "不会被 apt upgrade 自动更新",
+                  "answer_start": 256
+                }
+              ]
+            },
+            {
+              "id": "5-358-12",
+              "question": "添加Bellsoft APT仓库时需要执行哪条命令？",
+              "answers": [
+                {
+                  "text": "echo \"deb https://apt.bell-sw.com/ stable main\" | sudo tee /etc/apt/sources.list.d/bellsoft.list",
+                  "answer_start": 444
+                }
+              ]
+            },
+            {
+              "id": "5-358-13",
+              "question": "安装Java 11运行时加JavaFX的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt install bellsoft-java11-runtime-full",
+                  "answer_start": 669
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "除了 Bellsoft 的 Liberica 以外，Azul 公司的 [Zulu](https://www.azul.com/downloads/) 也提供捆绑 JavaFX 的版本，但他们的安装包只有tar.gz格式的。",
+          "qas": [
+            {
+              "id": "5-358-14",
+              "question": "Azul公司的Zulu提供的捆绑JavaFX版本的安装包是什么格式？",
+              "answers": [
+                {
+                  "text": "tar.gz格式",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "我的世界低版本会对java的版本有一定的显示，通常来说java 8 或者 1.8 是兼容性最好的。高版本的java我也不知道带来什么好处，暂时没有看到。如果你需要制作安装包，提供给别人使用，最好就是绑定 java 8 的运行时。不过 javafx 和 java 分离之后，独立发展，现在长期支持的版本是 javafx 11，对javafx8 支持不太有好。而 hmcl 暂时还不支持openjdk11 以上。鉴于种种原因，我选择了 openjdk11 + javafx11 这样的组合。javafx 的开源名字是openjfx。",
+          "qas": [
+            {
+              "id": "5-358-15",
+              "question": "我的世界低版本通常哪个java版本兼容性最好？",
+              "answers": [
+                {
+                  "text": "java 8 或者 1.8",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-358-16",
+              "question": "为什么选择openjdk11 + javafx11的组合？",
+              "answers": [
+                {
+                  "text": "因为javafx长期支持的版本是11，对javafx8支持不太友好，而hmcl暂时还不支持openjdk11以上",
+                  "answer_start": 226
+                }
+              ]
+            },
+            {
+              "id": "5-358-17",
+              "question": "javafx的开源名字是什么？",
+              "answers": [
+                {
+                  "text": "openjfx",
+                  "answer_start": 389
+                }
+              ]
+            },
+            {
+              "id": "5-358-18",
+              "question": "javafx的开源版本叫什么名字？",
+              "answers": [
+                {
+                  "text": "openjfx",
+                  "answer_start": 389
+                }
+              ]
+            },
+            {
+              "id": "5-358-19",
+              "question": "作者选择了什么组合运行hmcl？",
+              "answers": [
+                {
+                  "text": "openjdk11 + javafx11",
+                  "answer_start": 310
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "openjdk11 下载地址：<https://github.com/AdoptOpenJDK/openjdk11-binaries/releases>。页面比较复杂。下载一个新版本即可。注意几个关键词，x64,linux,openj9,jre。 jre是运行时，不带开发组件，对我们运行来说足够了，但是如果你想制作整合openjfx的捆绑java，就要下载sdk版本。 openj9 和 hotspot 是java虚拟机的技术，其中openj9比较省内存，因此可以选择这个。 hotspot是甲骨文官方支持的，也可以选择。 x64 和 linux 就是平台的版本。",
+          "qas": [
+            {
+              "id": "5-358-20",
+              "question": "openjdk11的下载地址是什么？",
+              "answers": [
+                {
+                  "text": "https://github.com/AdoptOpenJDK/openjdk11-binaries/releases",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-358-21",
+              "question": "下载openjdk11时，若要制作整合openjfx的捆绑java，需要下载什么版本？",
+              "answers": [
+                {
+                  "text": "sdk版本",
+                  "answer_start": 236
+                }
+              ]
+            },
+            {
+              "id": "5-358-22",
+              "question": "openj9相比hotspot有什么特点？",
+              "answers": [
+                {
+                  "text": "openj9比较省内存",
+                  "answer_start": 285
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "openjfx11 下载地址：<https://gluonhq.com/products/javafx/>。注意几个关键词， `javafx linux sdk` 这个包含了.jar库，可以用命令行来调用运行。 `javafx linux jmods` 是一种编译时插件，可以用来制作捆绑 javafx 的新 java 运行时。为了方便起见，制作捆绑包在用户使用时会相对比较简单一些。",
+          "qas": [
+            {
+              "id": "5-358-23",
+              "question": "openjfx11的下载地址是什么？",
+              "answers": [
+                {
+                  "text": "https://gluonhq.com/products/javafx/",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-358-24",
+              "question": "javafx linux sdk包含什么？",
+              "answers": [
+                {
+                  "text": "包含了.jar库，可以用命令行来调用运行",
+                  "answer_start": 82
+                }
+              ]
+            },
+            {
+              "id": "5-358-25",
+              "question": "javafx linux jmods的作用是什么？",
+              "answers": [
+                {
+                  "text": "是一种编译时插件，可以用来制作捆绑javafx的新java运行时",
+                  "answer_start": 139
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "分离式运行 hcml：这个需要 jre11 + jfx11 sdk。```bash# 假设jdk11解压缩出来是jdk-11.0.8+2=jre# 假设javafx11解压出来是 javafx-sdk-11.0.2# 假设 hmcl 是 hmcl.jar# 以下命令即可正常使用./jdk-11.0.8+2-jre/bin/java -p javafx-sdk-11.0.2/lib --add-modules ALL-MODULE-PATH -jar hcml.jar```",
+          "qas": [
+            {
+              "id": "5-358-26",
+              "question": "分离式运行hcml需要什么环境？",
+              "answers": [
+                {
+                  "text": "jre11 + jfx11 sdk",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "5-358-27",
+              "question": "分离式运行hcml的命令是什么（假设相关文件解压后的名称）？",
+              "answers": [
+                {
+                  "text": "./jdk-11.0.8+2-jre/bin/java -p javafx-sdk-11.0.2/lib --add-modules ALL-MODULE-PATH -jar hcml.jar",
+                  "answer_start": 207
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "捆绑包运行 hcml：这个需要 jdk11 + jfx11 jmods。```bash# 假设 jdk11 解压出来是jdk-11# 假设 jfx11 jmods 解压出来是 javafx-jmods-11.0.2# 输出整合包到 jdk11jfx11 目录./jdk-11/bin/jlink --module-path javafx-jmods-11.0.2/ --add-modules javafx.base,javafx.fxml,javafx.media,javafx.web,javafx.controls,javafx.graphics,javafx.swing,java.base,java.desktop,java.logging,java.management,java.sql,java.xml,jdk.unsupported --bind-services --output jdk11jfx11# 运行 hcml./jdk11jfx11/bin/java -jar hcml.jar```",
+          "qas": [
+            {
+              "id": "5-358-28",
+              "question": "捆绑包运行hcml需要什么环境？",
+              "answers": [
+                {
+                  "text": "jdk11 + jfx11 jmods",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "5-358-29",
+              "question": "生成捆绑包到jdk11jfx11目录的命令是什么（假设相关文件解压后的名称）？",
+              "answers": [
+                {
+                  "text": "./jdk-11/bin/jlink --module-path javafx-jmods-11.0.2/ --add-modules javafx.base,javafx.fxml,javafx.media,javafx.web,javafx.controls,javafx.graphics,javafx.swing,java.base,java.desktop,java.logging,java.management,java.sql,java.xml,jdk.unsupported --bind-services --output jdk11jfx11",
+                  "answer_start": 203
+                }
+              ]
+            },
+            {
+              "id": "5-358-30",
+              "question": "用捆绑包运行hcml的命令是什么？",
+              "answers": [
+                {
+                  "text": "./jdk11jfx11/bin/java -jar hcml.jar",
+                  "answer_start": 487
+                }
+              ]
+            },
+            {
+              "id": "5-358-31",
+              "question": "制作包含JavaFX的捆绑包需要使用的命令是什么？",
+              "answers": [
+                {
+                  "text": "./jdk-11/bin/jlink --module-path javafx-jmods-11.0.2/ --add-modules javafx.base,javafx.fxml,javafx.media,javafx.web,javafx.controls,javafx.graphics,javafx.swing,java.base,java.desktop,java.logging,java.management,java.sql,java.xml,jdk.unsupported --bind-services --output jdk11jfx11",
+                  "answer_start": 203
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "当前版本hcml 3.3.158 依赖的包：1. java.base1. java.desktop1. java.logging1. java.management1. java.sql1. java.xml1. javafx.base1. javafx.controls1. javafx.fxml1. javafx.graphics1. javafx.swing1. javafx.web1. jdk.unsupported",
+          "qas": [
+            {
+              "id": "5-358-32",
+              "question": "当前版本hcml 3.3.158依赖哪些包？",
+              "answers": [
+                {
+                  "text": "java.base、java.desktop、java.logging、java.management、java.sql、java.xml、javafx.base、javafx.controls、javafx.fxml、javafx.graphics、javafx.swing、javafx.web、jdk.unsupported",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "怎么知道 hcml 依赖什么包？```bash# 使用jdk 的一个叫 jdeps 的工具可以检查./jdk-13/bin/jdeps --list-deps --multi-release=11 *.jar```",
+          "qas": [
+            {
+              "id": "5-358-33",
+              "question": "如何检查hcml依赖什么包？",
+              "answers": [
+                {
+                  "text": "使用jdk的jdeps工具，命令：./jdk-13/bin/jdeps --list-deps --multi-release=11 *.jar",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "5-358-34",
+              "question": "检测hmcl依赖包的工具是什么？",
+              "answers": [
+                {
+                  "text": "jdeps",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "参考：1. openjdk8 下载地址： <https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/>2. Java 9：使用第三方jar生成JLink的运行时映像: <https://stackoom.com/question/3H7FW/Java-%E4%BD%BF%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9jar%E7%94%9F%E6%88%90JLink%E7%9A%84%E8%BF%90%E8%A1%8C%E6%97%B6%E6%98%A0%E5%83%8F>",
+          "qas": [
+            {
+              "id": "5-358-35",
+              "question": "参考中openjdk8的下载地址是什么？",
+              "answers": [
+                {
+                  "text": "https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "5-358-36",
+              "question": "参考中关于Java 9使用第三方jar生成JLink运行时映像的链接是什么？",
+              "answers": [
+                {
+                  "text": "https://stackoom.com/question/3H7FW/Java-%E4%BD%BF%E7%94%A8%E7%AC%AC%E4%B8%89%E6%96%B9jar%E7%94%9F%E6%88%90JLink%E7%9A%84%E8%BF%90%E8%A1%8C%E6%97%B6%E6%98%A0%E5%83%8F",
+                  "answer_start": 102
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "当前长期支持的Javafx版本是什么？现在长期支持的版本是 javafx 11。hmcl 暂时还不支持openjdk11 以上。作者选择的组合：openjdk11 + javafx11。openjfx 是 javafx 的开源名称。下载openjdk时需要注意的关键词：x64,linux,openj9,jre。分离式运行hmcl的命令：./jdk-11.0.8+2-jre/bin/java -p javafx-sdk-11.0.2/lib --add-modules ALL-MODULE-PATH -jar hcml.jar捆绑包制作命令：./jdk-11/bin/jlink --module-path javafx-jmods-11.0.2/ --add-modules javafx.base,javafx.fxml,javafx.media,javafx.web,javafx.controls,javafx.graphics,javafx.swing,java.base,java.desktop,java.logging,java.management,java.sql,java.xml,jdk.unsupported --bind-services --output jdk11jfx11运行捆绑包：./jdk11jfx11/bin/java -jar hcml.jar检测依赖包的命令：./jdk-13/bin/jdeps --list-deps --multi-release=11 *.jar",
+          "qas": []
+        }
+      ]
+    }
+  ]
+}

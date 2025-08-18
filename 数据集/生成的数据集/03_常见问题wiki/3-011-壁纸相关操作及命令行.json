@@ -1,0 +1,404 @@
+{
+  "data": [
+    {
+      "title": "壁纸相关操作及命令行",
+      "paragraphs": [
+        {
+          "context": "壁纸功能是可视化操作系统的基础功能，桌面支持为分别每个显示器设置壁纸。设置壁纸通过DBus调用com.deepin.daemon.Appearance服务的SetMonitorBackground方法实现。DBus服务：服务名：com.deepin.daemon.Appearance；地址：/com/deepin/daemon/Appearance；接口：com.deepin.daemon.Appearance。DBus方法：SetMonitorBackground (String monitorName, String imageFile) ↦ ()。参数：@monitorName 为显示器名字，如“HDMI-0”、“VGA-0”、“eDP-1”等，显示器名称可从com.deepin.daemon.Display服务列表中/com/deepin/daemon/Display/Monitor_×（×表示编号）的com.deepin.daemon.Display.Monitor接口中的\"Name\"属性获取；也可从控制中心显示中获取。@imageFile 壁纸图片URL路径，如\"file: /usr/share/wallpapers/deepin/desktop.jpg\"。",
+          "qas": [
+            {
+              "id": "3-11-1",
+              "question": "桌面是否支持为每个显示器分别设置壁纸？",
+              "answers": [
+                {
+                  "text": "是，桌面支持为分别每个显示器设置壁纸",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "3-11-2",
+              "question": "设置壁纸通过调用哪个DBus服务的什么方法实现？",
+              "answers": [
+                {
+                  "text": "com.deepin.daemon.Appearance服务的SetMonitorBackground方法",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "id": "3-11-3",
+              "question": "设置壁纸的DBus服务名是什么？",
+              "answers": [
+                {
+                  "text": "com.deepin.daemon.Appearance",
+                  "answer_start": 125
+                }
+              ]
+            },
+            {
+              "id": "3-11-4",
+              "question": "设置壁纸的DBus服务地址是什么？",
+              "answers": [
+                {
+                  "text": "/com/deepin/daemon/Appearance",
+                  "answer_start": 159
+                }
+              ]
+            },
+            {
+              "id": "3-11-5",
+              "question": "设置壁纸的DBus接口是什么？",
+              "answers": [
+                {
+                  "text": "com.deepin.daemon.Appearance",
+                  "answer_start": 195
+                }
+              ]
+            },
+            {
+              "id": "3-11-6",
+              "question": "SetMonitorBackground方法的两个参数分别是什么？",
+              "answers": [
+                {
+                  "text": "String monitorName, String imageFile",
+                  "answer_start": 231
+                }
+              ]
+            },
+            {
+              "id": "3-11-7",
+              "question": "@monitorName参数指的是什么？",
+              "answers": [
+                {
+                  "text": "显示器名字，如“HDMI-0”、“VGA-0”、“eDP-1”等",
+                  "answer_start": 275
+                }
+              ]
+            },
+            {
+              "id": "3-11-8",
+              "question": "如何获取显示器名称？",
+              "answers": [
+                {
+                  "text": "可从com.deepin.daemon.Display服务列表中/com/deepin/daemon/Display/Monitor_×（×表示编号）的com.deepin.daemon.Display.Monitor接口中的\"Name\"属性获取；也可从控制中心显示中获取",
+                  "answer_start": 322
+                }
+              ]
+            },
+            {
+              "id": "3-11-9",
+              "question": "@imageFile参数指的是什么？",
+              "answers": [
+                {
+                  "text": "壁纸图片URL路径，如\"file: /usr/share/wallpapers/deepin/desktop.jpg\"",
+                  "answer_start": 489
+                }
+              ]
+            },
+            {
+              "id": "3-11-10",
+              "question": "壁纸功能属于什么类型的基础功能？",
+              "answers": [
+                {
+                  "text": "可视化操作系统",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "壁纸图片路径可以是壁纸库里的文件或者用户自己的图片路径，Appearance服务会将用户自定义的壁纸保存到壁纸库中。用户自定义的壁纸的存储地址为:file: /usr/share/wallpapers/custom-wallpapers。系统自带的壁纸的存储地址为:file: /usr/share/wallpapers/deepin。命令行: qdbus com.deepin.daemon.Appearance /com/deepin/daemon/Appearance com.deepin.daemon.Appearance.SetMonitorBackground  \"@monitorName\" \"@imageFile\" 或 dbus-send --session --print-reply=literal --dest=com.deepin.daemon.Appearance /com/deepin/daemon/Appearance   com.deepin.daemon.Appearance.SetMonitorBackground string:\"@monitorName\" \"@imageFile\"。",
+          "qas": [
+            {
+              "id": "3-11-11",
+              "question": "壁纸图片路径可以是哪些？",
+              "answers": [
+                {
+                  "text": "壁纸库里的文件或者用户自己的图片路径",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-11-12",
+              "question": "Appearance服务会如何处理用户自定义的壁纸？",
+              "answers": [
+                {
+                  "text": "将用户自定义的壁纸保存到壁纸库中",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "3-11-13",
+              "question": "用户自定义的壁纸存储地址是什么？",
+              "answers": [
+                {
+                  "text": "file: /usr/share/wallpapers/custom-wallpapers",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "3-11-14",
+              "question": "系统自带的壁纸存储地址是什么？",
+              "answers": [
+                {
+                  "text": "file: /usr/share/wallpapers/deepin",
+                  "answer_start": 139
+                }
+              ]
+            },
+            {
+              "id": "3-11-15",
+              "question": "设置壁纸的命令行有哪些？",
+              "answers": [
+                {
+                  "text": "qdbus com.deepin.daemon.Appearance /com/deepin/daemon/Appearance com.deepin.daemon.Appearance.SetMonitorBackground  \"@monitorName\" \"@imageFile\" 或 dbus-send --session --print-reply=literal --dest=com.deepin.daemon.Appearance /com/deepin/daemon/Appearance   com.deepin.daemon.Appearance.SetMonitorBackground string:\"@monitorName\" \"@imageFile\"",
+                  "answer_start": 183
+                }
+              ]
+            },
+            {
+              "id": "3-11-16",
+              "question": "dbus-send命令中需要指定哪些关键参数？",
+              "answers": [
+                {
+                  "text": "--session --print-reply=literal --dest=com.deepin.daemon.Appearance /com/deepin/daemon/Appearance com.deepin.daemon.Appearance.SetMonitorBackground",
+                  "answer_start": 268
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "获取壁纸列表通过DBus调用com.deepin.daemon.Appearance接口的List方法实现。DBus服务：服务名：com.deepin.daemon.Appearance；地址：/com/deepin/daemon/Appearance；接口：com.deepin.daemon.Appearance。DBus方法：List (String ty) ↦ (String list)。参数：@type 类型，值为\"background\"。命令行：dbus-send --session --type=method_call --print-reply --dest=com.deepin.daemon.Appearance /com/deepin/daemon/Appearance  com.deepin.daemon.Appearance.List string:'@type'。",
+          "qas": [
+            {
+              "id": "3-11-17",
+              "question": "获取壁纸列表是通过调用哪个DBus接口的什么方法实现的？",
+              "answers": [
+                {
+                  "text": "com.deepin.daemon.Appearance接口的List方法",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "3-11-18",
+              "question": "获取壁纸列表的DBus服务名是什么？",
+              "answers": [
+                {
+                  "text": "com.deepin.daemon.Appearance",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "3-11-19",
+              "question": "获取壁纸列表的DBus服务地址是什么？",
+              "answers": [
+                {
+                  "text": "/com/deepin/daemon/Appearance",
+                  "answer_start": 120
+                }
+              ]
+            },
+            {
+              "id": "3-11-20",
+              "question": "获取壁纸列表的DBus接口是什么？",
+              "answers": [
+                {
+                  "text": "com.deepin.daemon.Appearance",
+                  "answer_start": 156
+                }
+              ]
+            },
+            {
+              "id": "3-11-21",
+              "question": "List方法的参数是什么，其值为多少？",
+              "answers": [
+                {
+                  "text": "@type 类型，值为\"background\"",
+                  "answer_start": 235
+                }
+              ]
+            },
+            {
+              "id": "3-11-22",
+              "question": "获取壁纸列表的命令行是什么？",
+              "answers": [
+                {
+                  "text": "dbus-send --session --type=method_call --print-reply --dest=com.deepin.daemon.Appearance /com/deepin/daemon/Appearance  com.deepin.daemon.Appearance.List string:'@type'",
+                  "answer_start": 271
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除壁纸通过DBus调用com.deepin.daemon.Appearance接口的Delete方法实现，可从上述获取壁纸列表中查看壁纸的”Deletable“属性，属性值为”True“，则表示该壁纸可被删除（一般系统自带的壁纸和桌面当前使用的壁纸是不可被删除的）。DBus服务：服务名：com.deepin.daemon.Appearance；地址：/com/deepin/daemon/Appearance；接口：com.deepin.daemon.Appearance。DBus方法：Delete (String type, String name) ↦ ()。参数：@type 类型，值为\"background\"；@name 壁纸图片URL路径，如\"file: /usr/share/wallpapers/deepin/desktop.jpg\"。命令行：dbus-send --session --type=method_call --print-reply --dest=com.deepin.daemon.Appearance /com/deepin/daemon/Appearance  com.deepin.daemon.Appearance.Delete string:'@type' string:'@name'。",
+          "qas": [
+            {
+              "id": "3-11-23",
+              "question": "删除壁纸是通过调用哪个DBus接口的什么方法实现的？",
+              "answers": [
+                {
+                  "text": "com.deepin.daemon.Appearance接口的Delete方法",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "3-11-24",
+              "question": "如何判断一个壁纸是否可被删除？",
+              "answers": [
+                {
+                  "text": "从获取壁纸列表中查看壁纸的”Deletable“属性，属性值为”True“，则表示该壁纸可被删除",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "id": "3-11-25",
+              "question": "哪些壁纸一般不可被删除？",
+              "answers": [
+                {
+                  "text": "系统自带的壁纸和桌面当前使用的壁纸",
+                  "answer_start": 165
+                }
+              ]
+            },
+            {
+              "id": "3-11-26",
+              "question": "删除壁纸的DBus服务名是什么？",
+              "answers": [
+                {
+                  "text": "com.deepin.daemon.Appearance",
+                  "answer_start": 219
+                }
+              ]
+            },
+            {
+              "id": "3-11-27",
+              "question": "删除壁纸的DBus服务地址是什么？",
+              "answers": [
+                {
+                  "text": "/com/deepin/daemon/Appearance",
+                  "answer_start": 253
+                }
+              ]
+            },
+            {
+              "id": "3-11-28",
+              "question": "删除壁纸的DBus接口是什么？",
+              "answers": [
+                {
+                  "text": "com.deepin.daemon.Appearance",
+                  "answer_start": 289
+                }
+              ]
+            },
+            {
+              "id": "3-11-29",
+              "question": "Delete方法的参数有哪些，分别是什么？",
+              "answers": [
+                {
+                  "text": "@type 类型，值为\"background\"；@name 壁纸图片URL路径，如\"file: /usr/share/wallpapers/deepin/desktop.jpg\"",
+                  "answer_start": 368
+                }
+              ]
+            },
+            {
+              "id": "3-11-30",
+              "question": "删除壁纸的命令行是什么？",
+              "answers": [
+                {
+                  "text": "dbus-send --session --type=method_call --print-reply --dest=com.deepin.daemon.Appearance /com/deepin/daemon/Appearance  com.deepin.daemon.Appearance.Delete string:'@type' string:'@name'",
+                  "answer_start": 496
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "获取桌面当前壁纸的保存路径，通过DBus调用com.deepin.wm接口的GetCurrentWorkspaceBackgroundForMonitor方法实现。DBus服务：服务名：com.deepin.wm；地址：/com/deepin/wm；接口：com.deepin.wm。DBus方法：GetCurrentWorkspaceBackgroundForMonitor (String strMonitorName) ↦ (String result)。参数：@strMonitorName 为显示器名字，如“HDMI-0”，显示器名称可从com.deepin.daemon.Display服务列表中/com/deepin/daemon/Display/Monitor_×（×表示编号）的com.deepin.daemon.Display.Monitor接口中的\"Name\"属性获取。命令行：dbus-send --session --type=method_call --print-reply --dest=com.deepin.wm /com/deepin/wm  com.deepin.wm.GetCurrentWorkspaceBackgroundForMonitor string:'@strMonitorName'。",
+          "qas": [
+            {
+              "id": "3-11-31",
+              "question": "如何获取桌面当前壁纸的保存路径？",
+              "answers": [
+                {
+                  "text": "通过DBus调用com.deepin.wm接口的GetCurrentWorkspaceBackgroundForMonitor方法实现",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "3-11-32",
+              "question": "获取当前壁纸保存路径的DBus服务名是什么？",
+              "answers": [
+                {
+                  "text": "com.deepin.wm",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "id": "3-11-33",
+              "question": "获取当前壁纸保存路径的DBus服务地址是什么？",
+              "answers": [
+                {
+                  "text": "/com/deepin/wm",
+                  "answer_start": 133
+                }
+              ]
+            },
+            {
+              "id": "3-11-34",
+              "question": "获取当前壁纸保存路径的DBus接口是什么？",
+              "answers": [
+                {
+                  "text": "com.deepin.wm",
+                  "answer_start": 151
+                }
+              ]
+            },
+            {
+              "id": "3-11-35",
+              "question": "GetCurrentWorkspaceBackgroundForMonitor方法的参数是什么？",
+              "answers": [
+                {
+                  "text": "@strMonitorName 为显示器名字，如“HDMI-0”",
+                  "answer_start": 230
+                }
+              ]
+            },
+            {
+              "id": "3-11-36",
+              "question": "如何获取GetCurrentWorkspaceBackgroundForMonitor方法所需的显示器名称？",
+              "answers": [
+                {
+                  "text": "可从com.deepin.daemon.Display服务列表中/com/deepin/daemon/Display/Monitor_×（×表示编号）的com.deepin.daemon.Display.Monitor接口中的\"Name\"属性获取",
+                  "answer_start": 275
+                }
+              ]
+            },
+            {
+              "id": "3-11-37",
+              "question": "获取当前壁纸保存路径的命令行是什么？",
+              "answers": [
+                {
+                  "text": "dbus-send --session --type=method_call --print-reply --dest=com.deepin.wm /com/deepin/wm  com.deepin.wm.GetCurrentWorkspaceBackgroundForMonitor string:'@strMonitorName'",
+                  "answer_start": 442
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

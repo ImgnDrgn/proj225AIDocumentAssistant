@@ -1,0 +1,199 @@
+{
+  "data": [
+    {
+      "title": "浅探deepin-Live和修复Linux引导",
+      "paragraphs": [
+        {
+          "context": "制作启动盘推荐使用Ventoy，也可用Rufus（仅Windows）、Etcher等软件。",
+          "qas": [
+            {
+              "question": "制作启动盘推荐使用什么工具？",
+              "id": "4-3-1",
+              "answers": [
+                {
+                  "text": "Ventoy",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "仅Windows系统可用的启动盘制作工具是什么？",
+              "id": "4-3-2",
+              "answers": [
+                {
+                  "text": "Rufus",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Live系统关机后数据不保留，deepin镜像无Persistence功能，使用时关机前勿拔U盘。",
+          "qas": [
+            {
+              "question": "Live系统关机后数据会保留吗？",
+              "id": "4-3-3",
+              "answers": [
+                {
+                  "text": "不会保留",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "deepin镜像是否支持Persistence功能？",
+              "id": "4-3-4",
+              "answers": [
+                {
+                  "text": "不支持",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin V23 Beta安装镜像无法通过修改启动参数进入Live。",
+          "qas": [
+            {
+              "question": "哪个版本的deepin安装镜像无法通过修改启动参数进入Live？",
+              "id": "4-3-5",
+              "answers": [
+                {
+                  "text": "V23 Beta",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI启动进入deepin Live：Install Deepin高亮时按e，删去livecd-installer，改后为locales=zh_CN.UTF-8，按F10。",
+          "qas": [
+            {
+              "question": "UEFI启动如何进入deepin Live？",
+              "id": "4-3-6",
+              "answers": [
+                {
+                  "text": "Install Deepin高亮时按e，删去livecd-installer，改后为locales=zh_CN.UTF-8，按F10。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Legacy启动进入deepin Live：Install Deepin高亮时按Tab，删去livecd-installer，按回车。",
+          "qas": [
+            {
+              "question": "Legacy启动如何进入deepin Live？",
+              "id": "4-3-7",
+              "answers": [
+                {
+                  "text": "Install Deepin高亮时按Tab，删去livecd-installer，按回车。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改Live用户密码：终端执行sudo su和passwd，输入新密码。",
+          "qas": [
+            {
+              "question": "如何修改Live用户密码？",
+              "id": "4-3-8",
+              "answers": [
+                {
+                  "text": "终端执行sudo su和passwd，输入新密码。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "官方Live系统发布于2018年，内置深度系统修复工具等，不能用于安装。",
+          "qas": [
+            {
+              "question": "官方Live系统发布于哪一年？",
+              "id": "4-3-9",
+              "answers": [
+                {
+                  "text": "2018年",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "官方Live系统能否用于安装？",
+              "id": "4-3-10",
+              "answers": [
+                {
+                  "text": "不能",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ExTix Deepin镜像Live默认用户是live，密码live；root用户密码root。",
+          "qas": [
+            {
+              "question": "ExTix Deepin镜像Live的默认用户和密码是什么？",
+              "id": "4-3-11",
+              "answers": [
+                {
+                  "text": "默认用户是live，密码live",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "ExTix Deepin镜像Live的root用户密码是什么？",
+              "id": "4-3-12",
+              "answers": [
+                {
+                  "text": "root",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修复deepin引导可用深度系统修复工具，官方Live、Community LiveCD中内置。",
+          "qas": [
+            {
+              "question": "修复deepin引导可以使用什么工具？",
+              "id": "4-3-13",
+              "answers": [
+                {
+                  "text": "深度系统修复工具",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "手动修复引导：先lsblk -f找系统分区sdaX，挂载后执行grub-install等命令。",
+          "qas": [
+            {
+              "question": "手动修复引导第一步需要做什么？",
+              "id": "4-3-14",
+              "answers": [
+                {
+                  "text": "执行lsblk -f找到系统所在分区",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

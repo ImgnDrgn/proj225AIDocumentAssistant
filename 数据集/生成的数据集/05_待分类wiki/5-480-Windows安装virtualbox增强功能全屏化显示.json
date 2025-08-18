@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "Windows安装virtualbox增强功能全屏化显示",
+      "paragraphs": [
+        {
+          "context": "在Windows上通过Virtualbox安装deepin后，需安装增强工具实现全屏显示，点击安装时可能出现无法加载VBoxGuestAdditions.iso的提示。",
+          "qas": [
+            {
+              "question": "在Windows上用Virtualbox安装deepin后，为什么要安装增强工具？",
+              "id": "5-479-1",
+              "answers": [
+                {
+                  "text": "实现deepin在virtualbox中全屏显示",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "安装增强工具时可能出现什么问题？",
+              "id": "5-479-2",
+              "answers": [
+                {
+                  "text": "未能加载虚拟光盘C:\\Program Files\\Oracle\\VirtualBox\\VBoxGuestAdditions.iso到虚拟电脑Deepin.",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装增强功能第一步：检查VBox目录中是否有VBoxGuestAdditions.iso，官网下载的VBox通常有，需找到其中的VBoxLinuxAdditions.run。",
+          "qas": [
+            {
+              "question": "安装增强功能的第一步是什么？",
+              "id": "5-479-3",
+              "answers": [
+                {
+                  "text": "检查VBox的目录中有无增强工具的镜像文件（VBoxGuestAdditions.iso）",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "VBoxGuestAdditions.iso中哪个是安装增强的关键运行文件？",
+              "id": "5-479-4",
+              "answers": [
+                {
+                  "text": "VBoxLinuxAdditions.run",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在deepin中，可通过文件管理器查看相关文件，用ctrl+alt+t打开终端，运行sudo ./VBoxLinuxAdditions.run，重启后实现全屏。",
+          "qas": [
+            {
+              "question": "在deepin中如何打开终端？",
+              "id": "5-479-5",
+              "answers": [
+                {
+                  "text": "<kbd>ctrl</kbd>+<kbd>alt</kbd>+<kbd>t</kbd>",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "在终端中运行什么命令可安装增强功能？",
+              "id": "5-479-6",
+              "answers": [
+                {
+                  "text": "sudo ./VBoxLinuxAdditions.run",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "question": "运行安装命令后需要做什么才能实现全屏？",
+              "id": "5-479-7",
+              "answers": [
+                {
+                  "text": "重启virtualbox中的deepin系统",
+                  "answer_start": 99
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "不懂命令行的用户，可在deepin的media文件夹-用户名文件夹中找到VBox_GAs_6.0.10，右击在终端中打开，输入sudo ./VBoxLinuxAdditions.run并重启。",
+          "qas": [
+            {
+              "question": "不懂命令行的用户在哪里能找到VBox_GAs_6.0.10？",
+              "id": "5-479-8",
+              "answers": [
+                {
+                  "text": "deepin的系统盘中的media文件夹—用户名文件夹",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "不懂命令行的用户找到VBox_GAs_6.0.10后如何操作？",
+              "id": "5-479-9",
+              "answers": [
+                {
+                  "text": "右击在终端中打开，输入sudo ./VBoxLinuxAdditions.run，回车，运行完成重启",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

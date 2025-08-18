@@ -1,0 +1,65 @@
+{
+  "data": [
+    {
+      "title": "KVM详解（三）——KVM创建虚拟机",
+      "paragraphs": [
+        {
+          "context": "要创建KVM的虚拟机，首先要为KVM虚拟机挂载一块磁盘。可执行命令：fdisk /dev/sdb、mkfs.xfs /dev/sdb1、mount /dev/sdb1 /var/lib/libvirt/images。这些命令分别用于对新磁盘进行分区、格式化分区（安装文件系统）以及将分区挂载到/var/lib/libvirt/images/目录。之后可执行df -h命令查看操作是否成功。上传超过4G的虚拟机镜像（如CentOS7镜像）不能用rz命令，可借助Final的FTP上传功能。创建KVM虚拟机时，执行virt-manager命令打开管理页面，选择“New”，然后选择“通过本地介质安装”，点击Browse选择上传的镜像，接着设置内存大小、CPU数量、磁盘大小，填写虚拟机名字和网络设置，之后虚拟机开始自动安装。",
+          "qas": [
+            {
+              "id": "3-67-1",
+              "question": "创建KVM虚拟机前，为其挂载磁盘需要执行哪些命令？分别有什么作用？",
+              "answers": [
+                {
+                  "text": "fdisk /dev/sdb：对新的磁盘进行分区；mkfs.xfs /dev/sdb1：对分区安装文件系统（格式化）；mount /dev/sdb1 /var/lib/libvirt/images：将分区挂载到/var/lib/libvirt/images/目录中",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "3-67-2",
+              "question": "如何验证磁盘挂载操作是否成功？",
+              "answers": [
+                {
+                  "text": "执行命令df -h",
+                  "answer_start": 209
+                }
+              ]
+            },
+            {
+              "id": "3-67-3",
+              "question": "上传超过4G的虚拟机镜像（如CentOS7镜像）不能使用什么命令？可以借助什么工具？",
+              "answers": [
+                {
+                  "text": "不能使用rz命令，可借助Final下方的FTP上传功能",
+                  "answer_start": 232
+                }
+              ]
+            },
+            {
+              "id": "3-67-4",
+              "question": "打开KVM虚拟机管理页面需要执行什么命令？",
+              "answers": [
+                {
+                  "text": "virt-manager",
+                  "answer_start": 315
+                }
+              ]
+            },
+            {
+              "id": "3-67-5",
+              "question": "创建KVM虚拟机时，选择的安装方式是什么？",
+              "answers": [
+                {
+                  "text": "通过本地介质安装",
+                  "answer_start": 342
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+    

@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "网易云音乐",
+      "paragraphs": [
+        {
+          "context": "网易云音乐是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，在线音乐服务主打歌单、社交、大牌推荐和音乐指纹，以歌单、DJ节目、社交、地理位置为核心要素，主打发现和分享。",
+          "qas": [
+            {
+              "question": "网易云音乐是一款什么样的产品(理念)？",
+              "id": "1-45-1",
+              "answers": [
+                {
+                  "text": "专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能。",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "网易云音乐在线音乐服务主打哪些内容？",
+              "id": "1-45-2",
+              "answers": [
+                {
+                  "text": "歌单、社交、大牌推荐和音乐指纹",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "question": "网易云音乐的核心要素有哪些？",
+              "id": "1-45-3",
+              "answers": [
+                {
+                  "text": "歌单、DJ节目、社交、地理位置",
+                  "answer_start": 97
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install netease-cloud-music",
+          "qas": [
+            {
+              "question": "如何安装网易云音乐？",
+              "id": "1-45-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install netease-cloud-music",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove netease-cloud-music",
+          "qas": [
+            {
+              "question": "怎样卸载网易云音乐？",
+              "id": "1-45-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove netease-cloud-music",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/n/netease-cloud-music/",
+          "qas": [
+            {
+              "question": "网易云音乐的仓库地址是什么？",
+              "id": "1-45-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/n/netease-cloud-music/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "https://www.deepin.org/cooperative/netease-cloud-music/",
+          "qas": [
+            {
+              "question": "关于网易云音乐的deepin官网介绍链接是什么？",
+              "id": "1-45-7",
+              "answers": [
+                {
+                  "text": "https://www.deepin.org/cooperative/netease-cloud-music/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

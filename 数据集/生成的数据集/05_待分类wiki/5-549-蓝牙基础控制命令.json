@@ -1,0 +1,159 @@
+{
+  "data": [
+    {
+      "title": "蓝牙基础控制命令",
+      "paragraphs": [
+        {
+          "context": "查询蓝牙接口信息，在终端中输入：hciconfig",
+          "qas": [
+            {
+              "question": "如何查询蓝牙接口信息？",
+              "id": "5-549-1",
+              "answers": [
+                {
+                  "text": "在终端中输入：hciconfig",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开蓝牙开关，在终端中输入：sudo hciconfig hci0 up",
+          "qas": [
+            {
+              "question": "怎样打开蓝牙开关？",
+              "id": "5-549-2",
+              "answers": [
+                {
+                  "text": "在终端中输入：sudo hciconfig hci0 up",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "关闭蓝牙开关，在终端中输入：sudo hciconfig hci0 down",
+          "qas": [
+            {
+              "question": "如何关闭蓝牙开关？",
+              "id": "5-549-3",
+              "answers": [
+                {
+                  "text": "在终端中输入：sudo hciconfig hci0 down",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "搜索蓝牙外设，在终端中输入：hcitool scan",
+          "qas": [
+            {
+              "question": "如何搜索蓝牙外设？",
+              "id": "5-549-4",
+              "answers": [
+                {
+                  "text": "在终端中输入：hcitool scan",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配对蓝牙外设，在终端中输入：bluetoothctl pair [外设mac地址]",
+          "qas": [
+            {
+              "question": "怎样配对蓝牙外设？",
+              "id": "5-549-5",
+              "answers": [
+                {
+                  "text": "在终端中输入：bluetoothctl pair [外设mac地址]",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看已成功配对的设备，在终端中输入：bluetoothctl paired-devices",
+          "qas": [
+            {
+              "question": "如何查看已成功配对的设备？",
+              "id": "5-549-6",
+              "answers": [
+                {
+                  "text": "在终端中输入：bluetoothctl paired-devices",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看已配对设备连接状态，在终端中输入：bluetoothctl info [外设mac地址]",
+          "qas": [
+            {
+              "question": "怎样查看已配对设备连接状态？",
+              "id": "5-549-7",
+              "answers": [
+                {
+                  "text": "在终端中输入：bluetoothctl info [外设mac地址]",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "断开已配对设备，在终端中输入：bluetoothctl disconnect [外设mac地址]",
+          "qas": [
+            {
+              "question": "如何断开已配对设备？",
+              "id": "5-549-8",
+              "answers": [
+                {
+                  "text": "在终端中输入：bluetoothctl disconnect [外设mac地址]",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "连接已配对设备，在终端中输入：bluetoothctl connect [外设mac地址]",
+          "qas": [
+            {
+              "question": "怎样连接已配对设备？",
+              "id": "5-549-9",
+              "answers": [
+                {
+                  "text": "在终端中输入：bluetoothctl connect [外设mac地址]",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除配对设备，在终端中输入：bluetoothctl remove [外设mac地址]",
+          "qas": [
+            {
+              "question": "如何删除配对设备？",
+              "id": "5-549-10",
+              "answers": [
+                {
+                  "text": "在终端中输入：bluetoothctl remove [外设mac地址]",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

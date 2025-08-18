@@ -1,0 +1,279 @@
+{
+  "data": [
+    {
+      "title": "远程代码托管平台--GitHub和Gitee的使用",
+      "paragraphs": [
+        {
+          "context": "代码托管中心用于实现团队协作，包括团队内协作和跨团队协作。",
+          "qas": [
+            {
+              "question": "代码托管中心的作用是什么？",
+              "id": "5-456-1",
+              "answers": [
+                {
+                  "text": "实现团队协作，包括团队内协作和跨团队协作。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "团队内协作（A和B）步骤：A push本地库到远程库；B clone远程库到本地库；B获授权后push修改到远程库；A pull更新本地库。",
+          "qas": [
+            {
+              "question": "团队内协作（A和B）的步骤是什么？",
+              "id": "5-456-2",
+              "answers": [
+                {
+                  "text": "A push本地库到远程库；B clone远程库到本地库；B获授权后push修改到远程库；A pull更新本地库。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "跨团队协作（A和B团队）步骤：B fork A的远程库；B clone自己的远程库；B push修改到自己的远程库；B发pull request；A审核后merge并pull。",
+          "qas": [
+            {
+              "question": "跨团队协作（A和B团队）的步骤是什么？",
+              "id": "5-456-3",
+              "answers": [
+                {
+                  "text": "B fork A的远程库；B clone自己的远程库；B push修改到自己的远程库；B发pull request；A审核后merge并pull。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "常见代码托管平台：GitHub（开源及私有项目托管）、Gitee（国内版GitHub）、Gitlab（公司内部私有托管）。",
+          "qas": [
+            {
+              "question": "常见的代码托管平台有哪些？",
+              "id": "5-456-4",
+              "answers": [
+                {
+                  "text": "GitHub、Gitee、Gitlab",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Gitee被称为什么？",
+              "id": "5-456-5",
+              "answers": [
+                {
+                  "text": "国内版GitHub",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "Gitlab一般用于什么场景？",
+              "id": "5-456-6",
+              "answers": [
+                {
+                  "text": "搭建公司内部私有的代码托管中心",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "国内访问GitHub的方法：梯子（不建议，违法等）、游戏加速器（不稳定）、镜像站、本地代理直连加速、出国。",
+          "qas": [
+            {
+              "question": "国内访问GitHub有哪些方法？",
+              "id": "5-456-7",
+              "answers": [
+                {
+                  "text": "梯子、游戏加速器、镜像站、本地代理直连加速、出国",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "为什么不建议用梯子访问GitHub？",
+              "id": "5-456-8",
+              "answers": [
+                {
+                  "text": "网速较慢、麻烦、国内翻墙违法",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GitHub创建远程仓库：登录账号，点击右上角+号选New repository，填写名称，建议设为公开。",
+          "qas": [
+            {
+              "question": "如何在GitHub上创建远程仓库？",
+              "id": "5-456-9",
+              "answers": [
+                {
+                  "text": "登录账号，点击右上角+号选New repository，填写名称，建议设为公开。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "为GitHub远程库创建别名：复制HTTPS地址，用git remote add 别名 地址，git remote -v查看。",
+          "qas": [
+            {
+              "question": "如何为GitHub远程仓库创建别名？",
+              "id": "5-456-10",
+              "answers": [
+                {
+                  "text": "复制HTTPS地址，用git remote add 别名 地址，git remote -v查看。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "推送本地库到GitHub远程库：用git push 别名 分支名，登录账号即可。",
+          "qas": [
+            {
+              "question": "如何将本地库代码推送到GitHub远程库？",
+              "id": "5-456-11",
+              "answers": [
+                {
+                  "text": "用git push 别名 分支名，登录账号即可。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "拉取GitHub远程库到本地库：使用git pull 仓库别名 分支名命令。",
+          "qas": [
+            {
+              "question": "如何拉取GitHub远程库代码到本地库？",
+              "id": "5-456-12",
+              "answers": [
+                {
+                  "text": "使用git pull 仓库别名 分支名命令。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "克隆GitHub远程库到本地库：用git clone 链接，会拉取代码、初始化本地库、创建origin别名。",
+          "qas": [
+            {
+              "question": "如何克隆GitHub远程库到本地库？",
+              "id": "5-456-13",
+              "answers": [
+                {
+                  "text": "用git clone 链接，会拉取代码、初始化本地库、创建origin别名。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GitHub SSH免密登录：生成公钥（ssh-keygen -t rsa -C 邮箱，三次回车），复制id_rsa.pub内容，添加到GitHub的SSH and GPG keys。",
+          "qas": [
+            {
+              "question": "GitHub的SSH免密登录如何设置？",
+              "id": "5-456-14",
+              "answers": [
+                {
+                  "text": "生成公钥（ssh-keygen -t rsa -C 邮箱，三次回车），复制id_rsa.pub内容，添加到GitHub的SSH and GPG keys。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Gitee是国内基于Git的代码托管平台，中文界面，网址为Gitee - 基于 Git 的代码托管和研发协作平台。",
+          "qas": [
+            {
+              "question": "Gitee是什么？",
+              "id": "5-456-15",
+              "answers": [
+                {
+                  "text": "国内基于Git的代码托管平台，中文界面。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Gitee创建远程仓库：需先设为私有，推送一定代码后可申请公开。",
+          "qas": [
+            {
+              "question": "Gitee创建远程仓库时初始设置有什么注意事项？",
+              "id": "5-456-16",
+              "answers": [
+                {
+                  "text": "需先设为私有，推送一定代码后可申请公开。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Gitee的推送、拉取、克隆操作与GitHub相同。",
+          "qas": [
+            {
+              "question": "Gitee的推送、拉取、克隆操作与GitHub是否相同？",
+              "id": "5-456-17",
+              "answers": [
+                {
+                  "text": "相同",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Gitee SSH免密登录：使用已生成的id_rsa.pub在Gitee设置中添加SSH公钥。",
+          "qas": [
+            {
+              "question": "如何设置Gitee的SSH免密登录？",
+              "id": "5-456-18",
+              "answers": [
+                {
+                  "text": "使用已生成的id_rsa.pub在Gitee设置中添加SSH公钥。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Gitee导入GitHub仓库：新建仓库，点击导入已有仓库，输入GitHub仓库HTTPS网址，可刷新同步。",
+          "qas": [
+            {
+              "question": "如何在Gitee中导入GitHub仓库？",
+              "id": "5-456-19",
+              "answers": [
+                {
+                  "text": "新建仓库，点击导入已有仓库，输入GitHub仓库HTTPS网址，可刷新同步。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

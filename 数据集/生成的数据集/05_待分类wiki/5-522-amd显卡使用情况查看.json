@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "title": "amd显卡使用情况查看",
+      "paragraphs": [
+        {
+          "context": "查看AMD显卡使用情况可使用工具radeontop。",
+          "qas": [
+            {
+              "question": "查看AMD显卡使用情况可以用什么工具？",
+              "id": "5-522-1",
+              "answers": [
+                {
+                  "text": "radeontop",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装radeontop的命令是sudo apt install radeontop。",
+          "qas": [
+            {
+              "question": "如何安装radeontop？",
+              "id": "5-522-2",
+              "answers": [
+                {
+                  "text": "sudo apt install radeontop",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行radeontop的命令是sudo radeontop。",
+          "qas": [
+            {
+              "question": "怎样运行radeontop？",
+              "id": "5-522-3",
+              "answers": [
+                {
+                  "text": "sudo radeontop",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "radeontop界面最后一行VRAM显示显存大小和使用情况，如1982M为显存大小，833M为使用大小，使用率42.01%。",
+          "qas": [
+            {
+              "question": "radeontop界面中哪里显示显存信息？",
+              "id": "5-522-4",
+              "answers": [
+                {
+                  "text": "最后一行VRAM",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "radeontop界面中VRAM行显示哪些内容？",
+              "id": "5-522-5",
+              "answers": [
+                {
+                  "text": "显存大小、使用大小、使用率",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

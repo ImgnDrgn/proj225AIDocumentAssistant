@@ -1,0 +1,514 @@
+{
+  "data": [
+    {
+      "title": "4-用原生wine运行便携式exe程序绿色软件的方法",
+      "paragraphs": [
+        {
+          "context": "之前开帖介绍过用wine安装exe程序的方法，有朋友想知道用wine运行便携式exe程序（也称绿色软件）的方法，今天再开一帖介绍一下方法。学习本帖内容前建议先看前三帖内容。用wine运行绿色软件的方法其实跟[wine使用教程1-用原生wine安装/运行exe程序的方法](/zh/常见问题FAQ/Wine/wine如何安装运行exe程序)是差不多的，只不过少了安装程序的步骤而已。",
+          "qas": [
+            {
+              "id": "3-36-1",
+              "question": "本文介绍的是什么方法？",
+              "answers": [
+                {
+                  "text": "用原生wine运行便携式exe程序（也称绿色软件）的方法",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "3-36-2",
+              "question": "用wine运行绿色软件的方法和之前介绍的用wine安装exe程序的方法有什么区别？",
+              "answers": [
+                {
+                  "text": "少了安装程序的步骤",
+                  "answer_start": 177
+                }
+              ]
+            },
+            {
+              "id": "3-36-3",
+              "question": "学习本文内容前建议先看什么？",
+              "answers": [
+                {
+                  "text": "前三帖内容",
+                  "answer_start": 112
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "1、下载免安装版exe软件并解压。案例软件：[32位ScreenToGif（下载时选择x86，系统要求windows8以上）](https://www.screentogif.com/?l=zh_cn)。友情提醒：大家下载exe软件尽量从它们的官网下载，以免下载到带毒的软件。",
+          "qas": [
+            {
+              "id": "3-36-4",
+              "question": "运行绿色软件的第一步是什么？",
+              "answers": [
+                {
+                  "text": "下载免安装版exe软件并解压",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "3-36-5",
+              "question": "案例软件是什么？",
+              "answers": [
+                {
+                  "text": "32位ScreenToGif",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "3-36-6",
+              "question": "下载案例软件时应选择什么版本？",
+              "answers": [
+                {
+                  "text": "x86",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "id": "3-36-7",
+              "question": "案例软件的系统要求是什么？",
+              "answers": [
+                {
+                  "text": "windows8以上",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "3-36-8",
+              "question": "下载exe软件时建议从哪里下载？",
+              "answers": [
+                {
+                  "text": "它们的官网",
+                  "answer_start": 140
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "2、创建一个全新容器。创建容器的终端命令：```bash WINEARCH=win32或者wine64 WINEPREFIX=容器路径 wine winecfg ```。案例：```bash WINEARCH=win32 WINEPREFIX=~/.deepinwine/Wine-ScreenToGif wine winecfg ```。上述命令结构解析：（1）WINEARCH=后面写win32，即表示新建一个32位的容器，如果写win64，即表示新建一个64位的容器。（2）WINEPREFIX=是指定的容器路径（此处Wine-ScreenToGif就是准备新建的容器名称）。（3）wine即你指定的wine的执行程序，原生wine的执行程序就是wine。（如果要用deepin-wine，则这里可以换成`deepin-wine5`或者`deepin-wine6-stable`，或者`~/.deepinwine/deepin-wine5-stable/bin/wine`）。（注：创建容器时如果提示安装mono，可点取消。mono模拟的.NET Framework，不是所有exe软件都需要这个。需要的时候你再手动安装即可）。",
+          "qas": [
+            {
+              "id": "3-36-9",
+              "question": "运行绿色软件的第二步是什么？",
+              "answers": [
+                {
+                  "text": "创建一个全新容器",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "3-36-10",
+              "question": "创建容器的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "WINEARCH=win32或者wine64 WINEPREFIX=容器路径 wine winecfg",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "3-36-11",
+              "question": "案例中创建容器的命令是什么？",
+              "answers": [
+                {
+                  "text": "WINEARCH=win32 WINEPREFIX=~/.deepinwine/Wine-ScreenToGif wine winecfg",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "3-36-12",
+              "question": "WINEARCH=win32表示什么？",
+              "answers": [
+                {
+                  "text": "新建一个32位的容器",
+                  "answer_start": 183
+                }
+              ]
+            },
+            {
+              "id": "3-36-13",
+              "question": "WINEARCH=wine64表示什么？",
+              "answers": [
+                {
+                  "text": "新建一个64位的容器",
+                  "answer_start": 235
+                }
+              ]
+            },
+            {
+              "id": "3-36-14",
+              "question": "WINEPREFIX=的作用是什么？",
+              "answers": [
+                {
+                  "text": "指定的容器路径",
+                  "answer_start": 263
+                }
+              ]
+            },
+            {
+              "id": "3-36-15",
+              "question": "原生wine的执行程序是什么？",
+              "answers": [
+                {
+                  "text": "wine",
+                  "answer_start": 352
+                }
+              ]
+            },
+            {
+              "id": "3-36-16",
+              "question": "创建容器时提示安装mono该如何处理？",
+              "answers": [
+                {
+                  "text": "可点取消",
+                  "answer_start": 475
+                }
+              ]
+            },
+            {
+              "id": "3-36-17",
+              "question": "mono模拟的是什么？",
+              "answers": [
+                {
+                  "text": ".NET Framework",
+                  "answer_start": 496
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "案例软件ScreenToGif要求系统为windows8以上，所以在winecfg窗口里windows版本设定为windows10。特别说明：（1）经测试，案例软件ScreenToGif.exe不能用deepin-wine5和deepin-wine6-stable运行，可以用原生wine7.10运行（楼主已将原生wine版本升级为开发版wine-devel 7.10），因此本帖用原生wine7.10做例子。（2）Deepin系统预装的原生wine版本是4.0，过于老旧，喜欢尝鲜的小伙伴建议升级原生wine到最新版本。（3）**升级原生wine的方法见WineHQ官网：** https://wiki.winehq.org/Debian_zhcn",
+          "qas": [
+            {
+              "id": "3-36-18",
+              "question": "案例软件ScreenToGif要求的系统版本是什么？",
+              "answers": [
+                {
+                  "text": "windows8以上",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "3-36-19",
+              "question": "案例软件的Windows版本如何设置？",
+              "answers": [
+                {
+                  "text": "在winecfg窗口里windows版本设定为windows10",
+                  "answer_start": 82
+                }
+              ]
+            },
+            {
+              "id": "3-36-20",
+              "question": "在winecfg窗口里案例软件的windows版本设定为多少？",
+              "answers": [
+                {
+                  "text": "windows10",
+                  "answer_start": 82
+                }
+              ]
+            },
+            {
+              "id": "3-36-21",
+              "question": "案例软件ScreenToGif.exe不能用哪些wine版本运行？",
+              "answers": [
+                {
+                  "text": "deepin-wine5和deepin-wine6-stable",
+                  "answer_start": 146
+                }
+              ]
+            },
+            {
+              "id": "3-36-22",
+              "question": "案例软件ScreenToGif.exe可以用什么版本的wine运行？",
+              "answers": [
+                {
+                  "text": "原生wine7.10",
+                  "answer_start": 197
+                }
+              ]
+            },
+            {
+              "id": "3-36-23",
+              "question": "Deepin系统预装的原生wine版本是什么？",
+              "answers": [
+                {
+                  "text": "4.0",
+                  "answer_start": 301
+                }
+              ]
+            },
+            {
+              "id": "3-36-24",
+              "question": "在哪里可以找到升级原生wine的方法？",
+              "answers": [
+                {
+                  "text": "WineHQ官网（https://wiki.winehq.org/Debian_zhcn）",
+                  "answer_start": 365
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "3、拷贝exe软件目录至容器c盘中。容器路径：~/.deepinwine/Deepin-ScreenToGif。案例软件解压后只有一个主程序ScreenToGif.exe，我在容器的drive_c文件夹（即模拟的c盘）Program Files文件夹下新建一个ScreenToGif文件夹，用于放置ScreenToGif.exe。",
+          "qas": [
+            {
+              "id": "3-36-25",
+              "question": "运行绿色软件的第三步是什么？",
+              "answers": [
+                {
+                  "text": "拷贝exe软件目录至容器c盘中",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "3-36-26",
+              "question": "案例中的容器路径是什么？",
+              "answers": [
+                {
+                  "text": "~/.deepinwine/Deepin-ScreenToGif",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "3-36-27",
+              "question": "案例软件的主程序是什么？",
+              "answers": [
+                {
+                  "text": "ScreenToGif.exe",
+                  "answer_start": 77
+                }
+              ]
+            },
+            {
+              "id": "3-36-28",
+              "question": "案例软件的主程序放在容器的什么位置？",
+              "answers": [
+                {
+                  "text": "容器的drive_c文件夹（即模拟的c盘）Program Files文件夹下新建的ScreenToGif文件夹中",
+                  "answer_start": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "4、测试运行。运行exe程序的终端命令：```bash WINEPREFIX=容器路径 wine \"exe主程序在容器c盘中的路径\" ```。案例：```bash WINEPREFIX=~/.deepinwine/Wine-ScreenToGif wine \"c:/Program Files/ScreenToGif/ScreenToGif.exe\" ```。",
+          "qas": [
+            {
+              "id": "3-36-29",
+              "question": "运行绿色软件的第四步是什么？",
+              "answers": [
+                {
+                  "text": "测试运行",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "3-36-30",
+              "question": "运行exe程序的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "WINEPREFIX=容器路径 wine \"exe主程序在容器c盘中的路径\"",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "3-36-31",
+              "question": "案例中运行exe程序的命令是什么？",
+              "answers": [
+                {
+                  "text": "WINEPREFIX=~/.deepinwine/Wine-ScreenToGif wine \"c:/Program Files/ScreenToGif/ScreenToGif.exe\"",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "5、安装字体。之前教程介绍过，解决字体问题有三种方法，我个人建议小白直接安装星火应用商店里的“Win字体”即可。",
+          "qas": [
+            {
+              "id": "3-36-32",
+              "question": "运行绿色软件的第五步是什么？",
+              "answers": [
+                {
+                  "text": "安装字体",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "3-36-33",
+              "question": "建议小白如何解决字体问题？",
+              "answers": [
+                {
+                  "text": "直接安装星火应用商店里的“Win字体”",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "6、创建桌面图标。在桌面新建一个txt文件（如screentogif.txt），复制以下内容到txt文件里：```ini [Desktop Entry] Categories=Application Exec=sh -c 'WINEPREFIX=/home/$USER/.deepinwine/Wine-ScreenToGif wine \"c:/Program Files/ScreenToGif/ScreenToGif.exe\"' Icon=/usr/share/icons/Default/devices/64/media-optical.svg MimeType= Name=ScreenToGif StartupNotify=true Type=Application X-Deepin-Vendor=user-custom ```。注：Exec= ————sh -c 'WINEPREFIX=容器路径 wine \"c:/exe主程序路径在虚拟C盘里的路径\"' 特别提醒:这里/home/$USER/不能写成~/。Icon= ————指图标路径，文件格式一般为png、svg、icon，图标大小64×64为宜，图标格式最好是svg。Name= ————图标文件显示的名称。以上三项后面的内容可以根据你自己所安装的软件的实际情况更改。上面的内容填写好后保存退出txt，右键重命名，把这个txt文件的后缀改为desktop（如screentogif.desktop）。这样就可以双击桌面图标运行该软件了。",
+          "qas": [
+            {
+              "id": "3-36-34",
+              "question": "运行绿色软件的第六步是什么？",
+              "answers": [
+                {
+                  "text": "创建桌面图标",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "3-36-35",
+              "question": "创建桌面图标的第一步是什么？",
+              "answers": [
+                {
+                  "text": "在桌面新建一个txt文件（如screentogif.txt）",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "3-36-36",
+              "question": "txt文件中Exec=后面的内容格式是什么？",
+              "answers": [
+                {
+                  "text": "sh -c 'WINEPREFIX=容器路径 wine \"c:/exe主程序路径在虚拟C盘里的路径\"'",
+                  "answer_start": 308
+                }
+              ]
+            },
+            {
+              "id": "3-36-37",
+              "question": "Exec=中路径的/home/$USER/能否写成~/?",
+              "answers": [
+                {
+                  "text": "不能",
+                  "answer_start": 407
+                }
+              ]
+            },
+            {
+              "id": "3-36-38",
+              "question": "Icon=指的是什么？",
+              "answers": [
+                {
+                  "text": "图标路径",
+                  "answer_start": 427
+                }
+              ]
+            },
+            {
+              "id": "3-36-39",
+              "question": "图标的文件格式一般有哪些？",
+              "answers": [
+                {
+                  "text": "png、svg、icon",
+                  "answer_start": 446
+                }
+              ]
+            },
+            {
+              "id": "3-36-40",
+              "question": "图标的建议大小是多少？",
+              "answers": [
+                {
+                  "text": "64×64",
+                  "answer_start": 467
+                }
+              ]
+            },
+            {
+              "id": "3-36-41",
+              "question": "图标的推荐格式是什么？",
+              "answers": [
+                {
+                  "text": "svg",
+                  "answer_start": 482
+                }
+              ]
+            },
+            {
+              "id": "3-36-42",
+              "question": "Name=指的是什么？",
+              "answers": [
+                {
+                  "text": "图标文件显示的名称",
+                  "answer_start": 500
+                }
+              ]
+            },
+            {
+              "id": "3-36-43",
+              "question": "如何让txt文件成为可运行的桌面图标？",
+              "answers": [
+                {
+                  "text": "右键重命名，把txt文件的后缀改为desktop（如screentogif.desktop）",
+                  "answer_start": 579
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "5、其他配置。以上步骤为基础步骤。但除以上步骤外，有的exe软件还需要替换dll函数库，会用到winecfg、winetricks，有的软件需要安装mono或Gecko，有的软件还需要安装dxvk。这些都是比较高级的玩法，楼主能力有限，无法为大家讲解。------经测试，案例软件无法在wine7.10里完美运行，使用过程会崩溃闪退。本帖仅做讲解运行绿色软件的基本方法，并不深究软件崩溃的原因。",
+          "qas": [
+            {
+              "id": "3-36-44",
+              "question": "除了基础步骤，有的exe软件可能还需要哪些配置？",
+              "answers": [
+                {
+                  "text": "替换dll函数库，会用到winecfg、winetricks，安装mono或Gecko，安装dxvk等",
+                  "answer_start": 49
+                }
+              ]
+            },
+            {
+              "id": "3-36-45",
+              "question": "案例软件在wine7.10里运行情况如何？",
+              "answers": [
+                {
+                  "text": "无法完美运行，使用过程会崩溃闪退",
+                  "answer_start": 186
+                }
+              ]
+            },
+            {
+              "id": "3-36-46",
+              "question": "本帖的主要目的是什么？",
+              "answers": [
+                {
+                  "text": "讲解运行绿色软件的基本方法，不深究软件崩溃的原因",
+                  "answer_start": 232
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

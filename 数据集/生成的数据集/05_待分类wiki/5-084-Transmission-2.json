@@ -1,0 +1,139 @@
+{
+  "data": [
+    {
+      "title": "Transmission-2",
+      "paragraphs": [
+        {
+          "context": "简介\nTransmission是一种跨平台轻量级的BitTorrent客户端。\n安装\n`sudo apt-get install transmission-daemon`\t安装服务器端\n`sudo apt-get install transmission-cli`\t\t安装基于命令行的客户端（可选）\n`sudo apt-get install transmission-gtk`\t\t安装基于Gtk的客户端（可选）\n`sudo apt-get install transmission-qt`\t\t安装基于Qt的客户端（可选）",
+          "qas": [
+            {
+              "id": "5-84-1",
+              "question": "Transmission是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "BitTorrent客户端",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-84-2",
+              "question": "安装服务器端的完整命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install transmission-daemon",
+                  "answer_start": 48
+                }
+              ]
+            },
+            {
+              "id": "5-84-3",
+              "question": "如何安装基于命令行的客户端？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install transmission-cli",
+                  "answer_start": 105
+                }
+              ]
+            },
+            {
+              "id": "5-84-4",
+              "question": "安装基于Gtk的Transmission客户端的可选命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install transmission-gtk",
+                  "answer_start": 161
+                }
+              ]
+            },
+            {
+              "id": "5-84-5",
+              "question": "安装基于Qt的Transmission客户端的可选命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install transmission-qt",
+                  "answer_start": 217
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载\n`sudo apt-get remove transmission-daemon`\t\t卸载服务器端\n`sudo apt-get remove transmission-cli`\t\t卸载基于命令行的客户端\n`sudo apt-get remove transmission-gtk`\t\t卸载基于Gtk的客户端\n`sudo apt-get remove transmission-qt`\t\t\t卸载基于QT的客户端",
+          "qas": [
+            {
+              "id": "5-84-6",
+              "question": "卸载服务器端的完整命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove transmission-daemon",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-84-7",
+              "question": "卸载基于命令行的Transmission客户端的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove transmission-cli",
+                  "answer_start": 69
+                }
+              ]
+            },
+            {
+              "id": "5-84-8",
+              "question": "卸载基于Gtk的Transmission客户端的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove transmission-gtk",
+                  "answer_start": 130
+                }
+              ]
+            },
+            {
+              "id": "5-84-9",
+              "question": "卸载基于QT的Transmission客户端的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove transmission-qt",
+                  "answer_start": 191
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址\nhttp://packages.deepin.com/deepin/pool/main/t/transmission/",
+          "qas": [
+            {
+              "id": "5-84-10",
+              "question": "Transmission的仓库地址在哪里？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/t/transmission/",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "相关链接\n官方网站：https://transmissionbt.com/",
+          "qas": [
+            {
+              "id": "5-84-11",
+              "question": "Transmission的官方网站是什么？",
+              "answers": [
+                {
+                  "text": "https://transmissionbt.com/",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

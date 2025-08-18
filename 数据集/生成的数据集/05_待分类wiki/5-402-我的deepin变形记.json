@@ -1,0 +1,404 @@
+{
+  "data": [
+    {
+      "title": "我的deepin变形记",
+      "paragraphs": [
+        {
+          "context": "接触和使用deepin也有多年的时间了。虚拟机，物理机，双系统都折腾过。重装系统N次，在N次重装过程中，发现自己折腾和配置deepin的路线大体一致，呈现出极强的个人主义色彩。虽然这个色彩跟我本人的使用习惯息息相关，但是其中一些操作，遇到的问题，也可能是其他人未曾或者也曾遇到过的。那就果断分享出来，给那些还在折腾的道路上不知所措的小伙伴们一点儿光芒，照亮他们入坑的道路。本篇主要分2部分：+ 小篇幅介绍系统下载安装+ 大篇幅介绍安装完系统以后的事情",
+          "qas": [
+            {
+              "id": "5-402-1",
+              "question": "作者接触和使用deepin有多长时间？",
+              "answers": [
+                {
+                  "text": "多年的时间",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-402-2",
+              "question": "作者发现自己折腾和配置deepin的路线有什么特点？",
+              "answers": [
+                {
+                  "text": "大体一致，呈现出极强的个人主义色彩",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-402-3",
+              "question": "本文主要分为哪两部分？",
+              "answers": [
+                {
+                  "text": "小篇幅介绍系统下载安装；大篇幅介绍安装完系统以后的事情",
+                  "answer_start": 196
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin系统ISO下载，使用官方网站给出的各种下载途径即可：[点我直达](https://www.deepin.org/zh/download/)。截止到2021年11月30号，deepin当前可下载的最新版本是20.3版本。其他历史版本下载地址：+ [V20的历史版本](https://cdimage.deepin.com/releases/)+ [V20之前的历史版本](https://cdimage.deepin.com/releases-archive/)",
+          "qas": [
+            {
+              "id": "5-402-4",
+              "question": "deepin系统ISO的官方下载途径链接是什么？",
+              "answers": [
+                {
+                  "text": "https://www.deepin.org/zh/download/",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "5-402-5",
+              "question": "截止到2021年11月30号，deepin当前可下载的最新版本是多少？",
+              "answers": [
+                {
+                  "text": "20.3版本",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "id": "5-402-6",
+              "question": "V20之前的历史版本下载地址是什么？",
+              "answers": [
+                {
+                  "text": "https://cdimage.deepin.com/releases-archive/",
+                  "answer_start": 145
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统安装方式包括：刻录启动盘【适合专业人士】，官方提供windows和Linux平台的刻录工具【深度启动盘制作工具】；使用第三方工具【适合小白人士】，推荐vetory（官方地址https://www.ventoy.net/cn/index.html）；虚拟机体验【适合体验人士】，windows平台建议用vmware workstation；双系统安装【适合更专业人士】，常见双硬盘安装，不建议双分区；其他方式（live版本、无盘安装等）作者未尝试。",
+          "qas": [
+            {
+              "id": "5-402-7",
+              "question": "适合小白人士的deepin安装方式是什么？推荐的工具及官方地址是什么？",
+              "answers": [
+                {
+                  "text": "使用第三方工具；推荐vetory，官方地址https://www.ventoy.net/cn/index.html",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-402-8",
+              "question": "windows平台用户体验deepin虚拟机，建议使用什么软件？",
+              "answers": [
+                {
+                  "text": "vmware workstation",
+                  "answer_start": 136
+                }
+              ]
+            },
+            {
+              "id": "5-402-9",
+              "question": "作者对双系统安装的常见方式及不建议的操作是什么？",
+              "answers": [
+                {
+                  "text": "常见双硬盘安装；不建议双分区",
+                  "answer_start": 168
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统安装注意事项：内核版本建议安装stable内核，适用于尝鲜或硬件新的用户；分区选择作者常用手动安装，分efi（默认大小）、boot（默认大小）、/（占剩余全盘）三个分区，不喜欢交换分区；可根据硬件配置和喜好选择是否集成nvidia驱动。",
+          "qas": [
+            {
+              "id": "5-402-10",
+              "question": "系统安装时，作者建议选择什么内核版本？适用人群是哪些？",
+              "answers": [
+                {
+                  "text": "stable内核版本；适用于喜欢尝鲜或者硬件比较新的用户",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "5-402-11",
+              "question": "作者手动安装deepin时，分哪几个分区？各分区大小如何设置？",
+              "answers": [
+                {
+                  "text": "efi分区（大小默认）、boot分区（大小默认）、/分区（占剩余全盘）",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "id": "5-402-12",
+              "question": "系统安装时，是否集成nvidia驱动由什么决定？",
+              "answers": [
+                {
+                  "text": "个人硬件配置和喜好",
+                  "answer_start": 126
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统简单美化包含deepin桌面环境四大件：任务栏、启动器、控制中心、文件管理器。系统提供“时尚模式”和“高效模式”，可右键任务栏调整；任务栏插件可右键选择显示/隐藏并拖动；控制中心可配置个性化图像、启动sshd服务、设置电源策略（作者选“从不”）、修改主机名（需同步编辑/etc/hosts）。",
+          "qas": [
+            {
+              "id": "5-402-13",
+              "question": "deepin系统简单美化包含的桌面环境四大件是什么？",
+              "answers": [
+                {
+                  "text": "任务栏、启动器、控制中心、文件管理器",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "5-402-14",
+              "question": "如何调整deepin系统的“时尚模式”和“高效模式”？",
+              "answers": [
+                {
+                  "text": "右键点击任务栏进行选择调整",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "id": "5-402-15",
+              "question": "作者在控制中心设置电源策略时选择了什么选项？",
+              "answers": [
+                {
+                  "text": "从不",
+                  "answer_start": 136
+                }
+              ]
+            },
+            {
+              "id": "5-402-16",
+              "question": "通过控制中心修改主机名后，还需做什么操作避免后续小问题？",
+              "answers": [
+                {
+                  "text": "编辑/etc/hosts文件",
+                  "answer_start": 146
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "作者卸载默认fcitx输入法，安装fcitx5的步骤：1. sudo apt purge *fcitx*；2. sudo apt update；3. sudo apt install fcitx5 fcitx5-pinyin；4. sudo vim /etc/environment添加GTK_IM_MODULE=fcitx、QT_IM_MODULE=fcitx、XMODIFIERS=@im=fcitx、SDL_IM_MODULE=fcitx。安装后需设置开机启动，配置输入法及快捷键。",
+          "qas": [
+            {
+              "id": "5-402-17",
+              "question": "作者卸载默认fcitx输入法后，安装fcitx5的第一步命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt purge *fcitx*",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "id": "5-402-18",
+              "question": "安装fcitx5后，编辑/etc/environment文件需添加哪些内容？",
+              "answers": [
+                {
+                  "text": "GTK_IM_MODULE=fcitx、QT_IM_MODULE=fcitx、XMODIFIERS=@im=fcitx、SDL_IM_MODULE=fcitx",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统瘦身包括：卸载原创应用（如深度浏览器、下载器等，可通过启动器右键或sudo apt purge卸载）；卸载多余内核（查看：sudo dpkg -l | egrep \"linux-header|linux-image\"，卸载：sudo apt purge 内核名）；清理系统日志（目录/var/log/或用jourctl工具）；使用系统清理工具。",
+          "qas": [
+            {
+              "id": "5-402-19",
+              "question": "查看deepin系统已安装内核的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo dpkg -l | egrep \"linux-header|linux-image\"",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "id": "5-402-20",
+              "question": "deepin系统日志存放的目录是什么？",
+              "answers": [
+                {
+                  "text": "/var/log/",
+                  "answer_start": 136
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "第三方应用微信的安装方式：通过应用商店或命令行sudo apt install com.qq.weixin.deepin；坚果云在4K屏幕初次安装登陆界面显示不全，可外接1920x1080显示器或禁止缩放；网易云音乐4K屏幕缩放问题，修改/usr/share/applications/com.163.music.desktop的Exec字段为Exec=env QT_SCALE_FACTOR=2.25 /opt/apps/com.163.music/files/bin/netease-cloud-music %U（2.25为作者使用的缩放比例）。",
+          "qas": [
+            {
+              "id": "5-402-21",
+              "question": "通过命令行安装微信的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt install com.qq.weixin.deepin",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-402-22",
+              "question": "如何解决坚果云在4K屏幕初次安装登陆界面显示不全的问题？",
+              "answers": [
+                {
+                  "text": "找一个1920x1080的显示器外接，或在启动器坚果云启动图标右键选择【禁止缩放】设置好目录后解禁缩放",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-402-23",
+              "question": "解决网易云音乐4K屏幕缩放问题时，需修改哪个文件的什么字段？修改后的内容示例是什么？",
+              "answers": [
+                {
+                  "text": "修改/usr/share/applications/com.163.music.desktop文件的Exec字段；示例：Exec=env QT_SCALE_FACTOR=2.25 /opt/apps/com.163.music/files/bin/netease-cloud-music %U",
+                  "answer_start": 156
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统提供了“时尚模式”和“高效模式”的选择。通过系统介绍视频，或者右键点击任务栏，均可选择调整。最下面放置各类图标的，叫做任务栏。鼠标右键任务栏，调整模式为“高效模式”。",
+          "qas": [
+            {
+              "id": "5-402-24",
+              "question": "如何改变deepin任务栏的工作模式？",
+              "answers": [
+                {
+                  "text": "鼠标右键任务栏，调整模式为“高效模式”",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "id": "5-402-25",
+              "question": "任务栏位于屏幕的什么位置？",
+              "answers": [
+                {
+                  "text": "最下面放置各类图标",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "任务栏右键时，插件提供了一些能够显示在任务栏上的插件模块。选择自己喜欢的，不显示自己不喜欢的插件。插件也可以进行拖动，隐藏起来或者显示出来。",
+          "qas": [
+            {
+              "id": "5-402-26",
+              "question": "如何自定义任务栏上显示的插件？",
+              "answers": [
+                {
+                  "text": "选择自己喜欢的，不显示自己不喜欢的插件",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "5-402-27",
+              "question": "任务栏插件可以如何调整位置？",
+              "answers": [
+                {
+                  "text": "插件也可以进行拖动，隐藏起来或者显示出来",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装完系统之后，【终端】执行命令 `df -h`可以看到系统安装完成，所占磁盘比例还是挺少的。但是deepin默认安装的一些应用，如果我们不喜欢，完全可以卸载。这里介绍如何卸载deepin原创应用来实现系统瘦身。",
+          "qas": [
+            {
+              "id": "5-402-28",
+              "question": "查看系统磁盘使用情况的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "`df -h`",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-402-29",
+              "question": "如何减少deepin系统的空间占用？",
+              "answers": [
+                {
+                  "text": "卸载deepin原创应用来实现系统瘦身",
+                  "answer_start": 82
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改/etc/lightdm/deepin/xsettingsd.conf文件可以调整锁屏界面的字体。具体操作是先安装字体文件，然后编辑配置文件指定字体名称。",
+          "qas": [
+            {
+              "id": "5-402-30",
+              "question": "哪个配置文件控制deepin锁屏界面的字体？",
+              "answers": [
+                {
+                  "text": "/etc/lightdm/deepin/xsettingsd.conf",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "5-402-31",
+              "question": "修改锁屏字体需要哪些步骤？",
+              "answers": [
+                {
+                  "text": "先安装字体文件，然后编辑配置文件指定字体名称",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "执行sudo visudo命令，编辑内容为：%sudo ALL=(ALL:ALL) NOPASSWD:ALL。然后将用户添加到sudo组，配置普通用户执行sudo时免密码验证。",
+          "qas": [
+            {
+              "id": "5-402-32",
+              "question": "如何配置sudo免密码验证？",
+              "answers": [
+                {
+                  "text": "编辑内容为：%sudo ALL=(ALL:ALL) NOPASSWD:ALL",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "5-402-33",
+              "question": "配置免密码验证后还需要什么操作？",
+              "answers": [
+                {
+                  "text": "将用户添加到sudo组",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

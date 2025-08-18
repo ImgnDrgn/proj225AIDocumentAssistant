@@ -1,0 +1,364 @@
+{
+  "data": [
+    {
+      "title": "Deepin运维教程-L3",
+      "paragraphs": [
+        {
+          "context": "vi/vim分为三种模式：命令模式、输入模式、底线命令模式（末行模式）。",
+          "qas": [
+            {
+              "question": "vi/vim有哪三种模式？",
+              "id": "5-471-1",
+              "answers": [
+                {
+                  "text": "命令模式、输入模式、底线命令模式（末行模式）",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令模式下按a/i/o进入输入模式，i在当前光标前插入，a在当前光标后插入，o在当前行下插入新行。",
+          "qas": [
+            {
+              "question": "命令模式下如何进入输入模式？",
+              "id": "5-471-2",
+              "answers": [
+                {
+                  "text": "按a/i/o进入输入模式",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "命令模式下i键的作用是什么？",
+              "id": "5-471-3",
+              "answers": [
+                {
+                  "text": "在当前光标所在字符前插入",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "底线命令模式下，:w保存，:q退出，:wq保存并退出，:q!强制退出不保存。",
+          "qas": [
+            {
+              "question": "底线命令模式下如何保存文件？",
+              "id": "5-471-4",
+              "answers": [
+                {
+                  "text": ":w",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "底线命令模式下强制退出不保存的命令是什么？",
+              "id": "5-471-5",
+              "answers": [
+                {
+                  "text": ":q!",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "网卡配置文件地址：/etc/sysconfig/network-scripts/网卡名。",
+          "qas": [
+            {
+              "question": "网卡配置文件的存放路径是什么？",
+              "id": "5-471-6",
+              "answers": [
+                {
+                  "text": "/etc/sysconfig/network-scripts/网卡名",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重启网络用systemctl restart network，启动网卡用ifup 网卡名，禁用网卡用ifdown 网卡名。",
+          "qas": [
+            {
+              "question": "如何重启网络？",
+              "id": "5-471-7",
+              "answers": [
+                {
+                  "text": "systemctl restart network",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "启动指定网卡的命令是什么？",
+              "id": "5-471-8",
+              "answers": [
+                {
+                  "text": "ifup 网卡名",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nmcli修改IP：nmcli connection modify 网卡名 ipv4.method manual ipv4.addresses Ip地址/掩码 connection.autoconnect yes，激活用nmcli connection up 网卡名。",
+          "qas": [
+            {
+              "question": "用nmcli修改网卡IP的命令是什么？",
+              "id": "5-471-9",
+              "answers": [
+                {
+                  "text": "nmcli connection modify 网卡名 ipv4.method manual ipv4.addresses Ip地址/掩码 connection.autoconnect yes",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "如何激活用nmcli修改后的网卡？",
+              "id": "5-471-10",
+              "answers": [
+                {
+                  "text": "nmcli connection up 网卡名",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "host命令用于将一个域名解析到一个IP地址。",
+          "qas": [
+            {
+              "question": "host命令的作用是什么？",
+              "id": "5-471-11",
+              "answers": [
+                {
+                  "text": "将一个域名解析到一个IP地址",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nslookup用于查询域名解析是否正常，诊断网络问题。",
+          "qas": [
+            {
+              "question": "nslookup命令的用途是什么？",
+              "id": "5-471-12",
+              "answers": [
+                {
+                  "text": "查询域名解析是否正常，诊断网络问题",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "alias设置命令别名，格式：alias 别名=命令（等号前后无空格），.bashrc存放别名，unalias 别名取消别名。",
+          "qas": [
+            {
+              "question": "设置命令别名的命令格式是什么？",
+              "id": "5-471-13",
+              "answers": [
+                {
+                  "text": "alias 别名=命令（等号前后无空格）",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "存放命令别名的文件是什么？",
+              "id": "5-471-14",
+              "answers": [
+                {
+                  "text": ".bashrc",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "如何取消命令别名？",
+              "id": "5-471-15",
+              "answers": [
+                {
+                  "text": "unalias 别名",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "history显示历史命令，-a追加新命令到历史文件，-d删除指定命令，-c清空历史列表；!#调用第N条命令，!string调用以string开头的命令，!!重复上一条。",
+          "qas": [
+            {
+              "question": "history命令的作用是什么？",
+              "id": "5-471-16",
+              "answers": [
+                {
+                  "text": "显示历史记录和执行过的命令",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "history -a的功能是什么？",
+              "id": "5-471-17",
+              "answers": [
+                {
+                  "text": "追加本次新执行的命令至历史命令文件中",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "如何重复执行上一条命令？",
+              "id": "5-471-18",
+              "answers": [
+                {
+                  "text": "!!",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "date显示或设置系统时间，+%Y显示年份，+%F显示年-月-日，-s设置时间；hwclock -s将系统时间设为与硬件时间相同，-w则相反。",
+          "qas": [
+            {
+              "question": "date命令的用途是什么？",
+              "id": "5-471-19",
+              "answers": [
+                {
+                  "text": "显示或设置系统日期与时间",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "如何用date命令显示年-月-日？",
+              "id": "5-471-20",
+              "answers": [
+                {
+                  "text": "date +%F",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "hwclock -w的作用是什么？",
+              "id": "5-471-21",
+              "answers": [
+                {
+                  "text": "把硬件时间设置成与系统时间相同",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "wc统计文件字节数、行数，-c统计字节数，-l统计行数。",
+          "qas": [
+            {
+              "question": "wc命令的作用是什么？",
+              "id": "5-471-22",
+              "answers": [
+                {
+                  "text": "统计文件的字节数、行数",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "question": "wc -l的功能是什么？",
+              "id": "5-471-23",
+              "answers": [
+                {
+                  "text": "统计行数",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "管道符“|”将命令输出交给另一条命令处理。",
+          "qas": [
+            {
+              "question": "管道符“|”的作用是什么？",
+              "id": "5-471-24",
+              "answers": [
+                {
+                  "text": "将命令的输出结果交给另外一条命令作为参数继续处理",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重定向符号：>覆盖输出，>>追加输出，2>收集错误输出，&>收集正确和错误输出。",
+          "qas": [
+            {
+              "question": ">符号的作用是什么？",
+              "id": "5-471-25",
+              "answers": [
+                {
+                  "text": "重定向输出（覆盖）",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "如何收集命令的错误输出结果？",
+              "id": "5-471-26",
+              "answers": [
+                {
+                  "text": "2>",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "echo输出字符串和变量，sleep延迟一段时间，单位有s（秒）、m（分钟）等。",
+          "qas": [
+            {
+              "question": "echo命令的作用是什么？",
+              "id": "5-471-27",
+              "answers": [
+                {
+                  "text": "输出指定的字符串和变量",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "sleep命令的单位有哪些？",
+              "id": "5-471-28",
+              "answers": [
+                {
+                  "text": "s（秒）、m（分钟）、h（小时）、d（日）",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

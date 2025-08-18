@@ -1,0 +1,384 @@
+{
+  "data": [
+    {
+      "title": "Podman及容器技术介绍",
+      "paragraphs": [
+        {
+          "context": "容器是一种轻量的虚拟化技术；相对于虚拟机，容器一般并不尝试虚拟化硬件及操作系统内核，只虚拟化文件系统、进程、网络等系统组件（俗称用户空间）；因此容器的镜像大小及启动时间大大缩短。",
+          "qas": [
+            {
+              "question": "容器相对于虚拟机的特点是什么？",
+              "id": "3-114-1",
+              "answers": [
+                {
+                  "text": "容器一般并不尝试虚拟化硬件及操作系统内核，只虚拟化文件系统、进程、网络等系统组件（俗称用户空间）；因此容器的镜像大小及启动时间大大缩短。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "容器的弊端：由于容器一般不选择虚拟化硬件、操作系统内核，因此跟宿主系统及其他容器的隔离不及虚拟机；故容器遭遇入侵攻击时，黑客从容器跳到宿主系统继续攻击的难度相对较易。",
+          "qas": [
+            {
+              "question": "容器的弊端是什么？",
+              "id": "3-114-2",
+              "answers": [
+                {
+                  "text": "由于容器一般不选择虚拟化硬件、操作系统内核，因此跟宿主系统及其他容器的隔离不及虚拟机；故容器遭遇入侵攻击时，黑客从容器跳到宿主系统继续攻击的难度相对较易。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Podman 是一个用于创建及管理个别容器的引擎及客户端，一般适合个人用户及开发者使用。",
+          "qas": [
+            {
+              "question": "Podman是什么？",
+              "id": "3-114-3",
+              "answers": [
+                {
+                  "text": "一个用于创建及管理个别容器的引擎及客户端，一般适合个人用户及开发者使用。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Podman 相对于 Docker 的安全优势：Docker 依靠长期运行的 Docker Daemon 服务，该服务以 root 用户运行，有安全隐患；Podman 则不依靠 root 运行的服务，一般用户能直接创建管理容器，非 root 运行的容器里的 root 用户在宿主系统上只是一般用户，更安全。",
+          "qas": [
+            {
+              "question": "Podman相对于Docker的安全优势是什么？",
+              "id": "3-114-4",
+              "answers": [
+                {
+                  "text": "Docker 依靠长期运行的 Docker Daemon 服务，该服务以 root 用户运行，有安全隐患；Podman 则不依靠 root 运行的服务，一般用户能直接创建管理容器，非 root 运行的容器里的 root 用户在宿主系统上只是一般用户，更安全。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Podman 相对于 Docker 的兼容性优势：Docker 引擎依靠的运行时不完全兼容统一容器运行时（CRI）标准；Podman 引擎依靠 CRI-O 运行时，完全兼容 CRI 标准。",
+          "qas": [
+            {
+              "question": "Podman相对于Docker的兼容性优势是什么？",
+              "id": "3-114-5",
+              "answers": [
+                {
+                  "text": "Docker 引擎依靠的运行时不完全兼容统一容器运行时（CRI）标准；Podman 引擎依靠 CRI-O 运行时，完全兼容 CRI 标准。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在 deepin 23 上安装 Podman：调用 APT 安装，命令为 sudo apt update && sudo apt install -y podman。",
+          "qas": [
+            {
+              "question": "在deepin 23上如何安装Podman？",
+              "id": "3-114-6",
+              "answers": [
+                {
+                  "text": "调用 APT 安装，命令为 sudo apt update && sudo apt install -y podman。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "验证 Podman 安装：使用 which podman 命令查看podman位置，podman --version 命令查询版本。",
+          "qas": [
+            {
+              "question": "如何验证Podman的安装？",
+              "id": "3-114-7",
+              "answers": [
+                {
+                  "text": "使用 which podman 命令查看podman位置，podman --version 命令查询版本。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行 Hello World 容器的命令：podman run --rm --name hello-podman docker.io/library/hello-world:latest。",
+          "qas": [
+            {
+              "question": "运行Hello World容器的Podman命令是什么？",
+              "id": "3-114-8",
+              "answers": [
+                {
+                  "text": "podman run --rm --name hello-podman docker.io/library/hello-world:latest",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Podman run 命令中 --rm 选项的作用：容器运行完毕后 Podman 会把它自动删掉（但镜像会保留）。",
+          "qas": [
+            {
+              "question": "Podman run命令中--rm选项的作用是什么？",
+              "id": "3-114-9",
+              "answers": [
+                {
+                  "text": "容器运行完毕后 Podman 会把它自动删掉（但镜像会保留）。",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查询本地已下载的镜像使用 podman images 命令。",
+          "qas": [
+            {
+              "question": "如何查询本地已下载的Podman镜像？",
+              "id": "3-114-10",
+              "answers": [
+                {
+                  "text": "使用 podman images 命令。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载镜像使用 podman pull <镜像名称>:<镜像版本> 命令，例如下载 docker.io/library/nginx 镜像的 1.24 版本，命令为 podman pull docker.io/library/nginx:1.24。",
+          "qas": [
+            {
+              "question": "如何使用Podman下载镜像？",
+              "id": "3-114-11",
+              "answers": [
+                {
+                  "text": "使用 podman pull <镜像名称>:<镜像版本> 命令。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除镜像使用 podman image rm <镜像名称>:<镜像版本> 命令。",
+          "qas": [
+            {
+              "question": "如何使用Podman删除镜像？",
+              "id": "3-114-12",
+              "answers": [
+                {
+                  "text": "使用 podman image rm <镜像名称>:<镜像版本> 命令。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行容器的基本命令：podman run <镜像名称>:<镜像版本>，建议添加 --name <容器名称> 选项给容器起名字。",
+          "qas": [
+            {
+              "question": "运行容器的基本Podman命令是什么？",
+              "id": "3-114-13",
+              "answers": [
+                {
+                  "text": "podman run <镜像名称>:<镜像版本>，建议添加 --name <容器名称> 选项给容器起名字。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看正在运行的容器使用 podman ps 命令，添加 -a 选项能看到运行及已停止的容器。",
+          "qas": [
+            {
+              "question": "如何查看正在运行的容器？如何查看所有容器（包括已停止的）？",
+              "id": "3-114-14",
+              "answers": [
+                {
+                  "text": "查看正在运行的容器使用 podman ps 命令，添加 -a 选项能看到运行及已停止的容器。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删掉容器使用 podman rm <容器名称> 命令。",
+          "qas": [
+            {
+              "question": "如何删除Podman容器？",
+              "id": "3-114-15",
+              "answers": [
+                {
+                  "text": "使用 podman rm <容器名称> 命令。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行 NGINX Web 服务器容器的命令：podman run --name my-web-server -d -p 8080:80 docker.io/library/nginx:1.24，其中 -d 让容器在后台运行，-p 8080:80 是端口映射（宿主8080端口转发到容器80端口）。",
+          "qas": [
+            {
+              "question": "运行NGINX Web服务器容器的Podman命令及选项含义是什么？",
+              "id": "3-114-16",
+              "answers": [
+                {
+                  "text": "命令：podman run --name my-web-server -d -p 8080:80 docker.io/library/nginx:1.24；-d 让容器在后台运行，-p 8080:80 是端口映射（宿主8080端口转发到容器80端口）。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "停止容器使用 podman stop <容器名称> 命令。",
+          "qas": [
+            {
+              "question": "如何停止Podman容器？",
+              "id": "3-114-17",
+              "answers": [
+                {
+                  "text": "使用 podman stop <容器名称> 命令。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建容器镜像需要代码和Dockerfile，Dockerfile指示Podman如何创建镜像。",
+          "qas": [
+            {
+              "question": "创建容器镜像需要哪些部分？",
+              "id": "3-114-18",
+              "answers": [
+                {
+                  "text": "需要代码和Dockerfile，Dockerfile指示Podman如何创建镜像。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Dockerfile中FROM指令：指示Podman从指定底层镜像开始创建新镜像。",
+          "qas": [
+            {
+              "question": "Dockerfile中FROM指令的作用是什么？",
+              "id": "3-114-19",
+              "answers": [
+                {
+                  "text": "指示Podman从指定底层镜像开始创建新镜像。",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Dockerfile中WORKDIR指令：指示Podman设置新一层镜像的工作目录。",
+          "qas": [
+            {
+              "question": "Dockerfile中WORKDIR指令的作用是什么？",
+              "id": "3-114-20",
+              "answers": [
+                {
+                  "text": "指示Podman设置新一层镜像的工作目录。",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Dockerfile中COPY指令：指示Podman将文件拷贝到镜像里的工作目录。",
+          "qas": [
+            {
+              "question": "Dockerfile中COPY指令的作用是什么？",
+              "id": "3-114-21",
+              "answers": [
+                {
+                  "text": "指示Podman将文件拷贝到镜像里的工作目录。",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Dockerfile中CMD指令：指示Podman设置基于该镜像创建的容器的默认命令。",
+          "qas": [
+            {
+              "question": "Dockerfile中CMD指令的作用是什么？",
+              "id": "3-114-22",
+              "answers": [
+                {
+                  "text": "指示Podman设置基于该镜像创建的容器的默认命令。",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "构建镜像的命令：podman build -t <镜像名称>:<镜像版本> <项目根目录>。",
+          "qas": [
+            {
+              "question": "如何使用Podman构建镜像？",
+              "id": "3-114-23",
+              "answers": [
+                {
+                  "text": "使用命令：podman build -t <镜像名称>:<镜像版本> <项目根目录>。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "上传镜像到Docker Hub前，需用podman tag命令重命名镜像为<仓库>/<个人或机构名称>/<镜像名称>:<版本>格式，再用podman login登录，podman push上传，最后podman logout注销。",
+          "qas": [
+            {
+              "question": "上传镜像到Docker Hub的步骤是什么？",
+              "id": "3-114-24",
+              "answers": [
+                {
+                  "text": "需用podman tag命令重命名镜像为<仓库>/<个人或机构名称>/<镜像名称>:<版本>格式，再用podman login登录，podman push上传，最后podman logout注销。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "主流容器编排工具：Kubernetes（K8s）占绝对主导地位，还有Docker Swarm、Apache Mesos。",
+          "qas": [
+            {
+              "question": "主流的容器编排工具有哪些？",
+              "id": "3-114-25",
+              "answers": [
+                {
+                  "text": "Kubernetes（K8s）占绝对主导地位，还有Docker Swarm、Apache Mesos。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

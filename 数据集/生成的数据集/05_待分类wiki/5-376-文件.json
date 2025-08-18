@@ -1,0 +1,195 @@
+{
+  "title": "文件",
+  "paragraphs": [
+    {
+      "context": "Linux下，把各种计算机资源统一都抽象成了文件。硬件设备，套接字，普通文件，可执行程序都算是文件。内核通过文件描述符来访问文件。",
+      "qas": [
+        {
+          "id": "5-376-1",
+          "question": "Linux下把什么统一抽象成了文件？",
+          "answers": [
+            {
+              "text": "各种计算机资源",
+              "answer_start": 8
+            }
+          ]
+        },
+        {
+          "id": "5-376-2",
+          "question": "硬件设备、套接字、普通文件、可执行程序属于什么？",
+          "answers": [
+            {
+              "text": "文件",
+              "answer_start": 47
+            }
+          ]
+        },
+        {
+          "id": "5-376-3",
+          "question": "Linux将哪些资源抽象为文件？",
+          "answers": [
+            {
+              "text": "硬件设备，套接字，普通文件，可执行程序",
+              "answer_start": 25
+            }
+          ]
+        },
+        {
+          "id": "5-376-4",
+          "question": "内核通过什么访问文件？",
+          "answers": [
+            {
+              "text": "文件描述符",
+              "answer_start": 55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "对于文件，首先需要了解的，就是文件的属性。指令`ls`可以查看文件。",
+      "qas": [
+        {
+          "id": "5-376-5",
+          "question": "对于文件，首先需要了解的是什么？",
+          "answers": [
+            {
+              "text": "文件的属性",
+              "answer_start": 15
+            }
+          ]
+        },
+        {
+          "id": "5-376-6",
+          "question": "哪个指令可以查看文件？",
+          "answers": [
+            {
+              "text": "ls",
+              "answer_start": 25
+            }
+          ]
+        },
+        {
+          "id": "5-376-7",
+          "question": "查看文件属性的基础指令是什么？",
+          "answers": [
+            {
+              "text": "指令`ls`",
+              "answer_start": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Linux一般将文件可读写的身份分为三个类别，拥有者（Owner），所属群组（group），其他人（others）。每个身份有对应的读（**r**ead）、写（**w**rite），执行（e**x**ecute）。",
+      "qas": [
+        {
+          "id": "5-376-8",
+          "question": "Linux将文件可读写的身份分为哪三个类别？",
+          "answers": [
+            {
+              "text": "拥有者（Owner），所属群组（group），其他人（others）",
+              "answer_start": 23
+            }
+          ]
+        },
+        {
+          "id": "5-376-9",
+          "question": "每个文件可读写身份对应的权限有哪些？",
+          "answers": [
+            {
+              "text": "读（read）、写（write）、执行（execute）",
+              "answer_start": 66
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Linux有很多用户， 每个用户可以属于一个或者多个用户组。文件也是类似的。文件有创建者，以及所属群组。",
+      "qas": [
+        {
+          "id": "5-376-10",
+          "question": "Linux中每个用户可以属于多少个用户组？",
+          "answers": [
+            {
+              "text": "一个或者多个",
+              "answer_start": 20
+            }
+          ]
+        },
+        {
+          "id": "5-376-11",
+          "question": "文件有哪些类似用户组的属性？",
+          "answers": [
+            {
+              "text": "创建者，以及所属群组",
+              "answer_start": 41
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "和Windows下不同，Linux文件不是通过后缀名来区分可执行程序或者普通文本文件，而是通过检查文件是否有执行权限来判断是否是可执行程序。",
+      "qas": [
+        {
+          "id": "5-376-12",
+          "question": "与Windows不同，Linux文件如何区分可执行程序和普通文本文件？",
+          "answers": [
+            {
+              "text": "通过检查文件是否有执行权限来判断是否是可执行程序",
+              "answer_start": 45
+            }
+          ]
+        },
+        {
+          "id": "5-376-13",
+          "question": "Linux文件是否通过后缀名区分可执行程序？",
+          "answers": [
+            {
+              "text": "不是",
+              "answer_start": 19
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "在终端中，通过指令`ls -l`可以查看当前目录下文件的的权限。`chmod`指令可以修改文件的权限。`chown`指令可以修改文件的所有者。",
+      "qas": [
+        {
+          "id": "5-376-14",
+          "question": "哪个指令可以查看当前目录下文件的权限？",
+          "answers": [
+            {
+              "text": "ls -l",
+              "answer_start": 10
+            }
+          ]
+        },
+        {
+          "id": "5-376-15",
+          "question": "哪个指令可以修改文件的权限？",
+          "answers": [
+            {
+              "text": "chmod",
+              "answer_start": 33
+            }
+          ]
+        },
+        {
+          "id": "5-376-16",
+          "question": "哪个指令可以修改文件的所有者？",
+          "answers": [
+            {
+              "text": "chown",
+              "answer_start": 52
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

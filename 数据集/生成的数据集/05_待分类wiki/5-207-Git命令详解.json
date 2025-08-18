@@ -1,0 +1,580 @@
+
+{
+  "data": [
+    {
+      "title": "Git命令详解",
+      "paragraphs": [
+        {
+          "context": "Workspace：工作区；Index / Stage：暂存区；Repository：仓库区（或本地仓库）；Remote：远程仓库",
+          "qas": [
+            {
+              "question": "Git中Workspace指的是什么？",
+              "id": "5-207-1",
+              "answers": [
+                {
+                  "text": "工作区",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "Index / Stage的译名是什么？",
+              "id": "5-207-2",
+              "answers": [
+                {
+                  "text": "暂存区",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "Repository在Git中被称为什么？",
+              "id": "5-207-3",
+              "answers": [
+                {
+                  "text": "仓库区（或本地仓库）",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "question": "Remote对应的中文名称是什么？",
+              "id": "5-207-4",
+              "answers": [
+                {
+                  "text": "远程仓库",
+                  "answer_start": 80
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在当前目录新建一个Git代码库：git init；新建一个目录并初始化为Git代码库: git init [project-name]；下载项目和整个代码历史: git clone [url]",
+          "qas": [
+            {
+              "question": "如何在当前目录新建一个Git代码库？",
+              "id": "5-207-5",
+              "answers": [
+                {
+                  "text": "git init",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "新建一个目录并将其初始化为Git代码库的命令是什么？",
+              "id": "5-207-6",
+              "answers": [
+                {
+                  "text": "git init [project-name]",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "怎样下载一个项目和它的整个代码历史？",
+              "id": "5-207-7",
+              "answers": [
+                {
+                  "text": "git clone [url]",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "显示当前的Git配置: git config --list；编辑Git配置文件: git config -e [--global]；设置提交用户信息: git config [--global] user.name \"[name]\"、git config [--global] user.email \"[email address]\"",
+          "qas": [
+            {
+              "question": "如何显示当前的Git配置？",
+              "id": "5-207-8",
+              "answers": [
+                {
+                  "text": "git config --list",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "编辑Git配置文件的命令是什么？",
+              "id": "5-207-9",
+              "answers": [
+                {
+                  "text": "git config -e [--global]",
+                  "answer_start": 48
+                }
+              ]
+            },
+            {
+              "question": "设置提交代码时用户姓名的命令是什么？",
+              "id": "5-207-10",
+              "answers": [
+                {
+                  "text": "git config [--global] user.name \"[name]\"",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "如何设置提交代码时的用户邮箱？",
+              "id": "5-207-11",
+              "answers": [
+                {
+                  "text": "git config [--global] user.email \"[email address]\"",
+                  "answer_start": 129
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加指定文件到暂存区: git add [file1] [file2]；添加指定目录到暂存区（含子目录）: git add [dir]；添加当前目录所有文件到暂存区: git add .；分次提交同一文件多处变化: git add -p",
+          "qas": [
+            {
+              "question": "如何添加指定文件到暂存区？",
+              "id": "5-207-12",
+              "answers": [
+                {
+                  "text": "git add [file1] [file2]",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "添加指定目录到暂存区（包括子目录）使用什么命令？",
+              "id": "5-207-13",
+              "answers": [
+                {
+                  "text": "git add [dir]",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "question": "添加当前目录的所有文件到暂存区的命令是什么？",
+              "id": "5-207-14",
+              "answers": [
+                {
+                  "text": "git add .",
+                  "answer_start": 100
+                }
+              ]
+            },
+            {
+              "question": "对于同一个文件的多处变化，如何实现分次提交？",
+              "id": "5-207-15",
+              "answers": [
+                {
+                  "text": "git add -p",
+                  "answer_start": 136
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除工作区文件并放入暂存区: git rm [file1] [file2]；停止追踪指定文件但保留在工作区: git rm --cached [file]；改名文件并放入暂存区: git mv [file-original] [file-renamed]",
+          "qas": [
+            {
+              "question": "删除工作区文件并且将这次删除放入暂存区用什么命令？",
+              "id": "5-207-16",
+              "answers": [
+                {
+                  "text": "git rm [file1] [file2]",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "如何停止追踪指定文件，但该文件保留在工作区？",
+              "id": "5-207-17",
+              "answers": [
+                {
+                  "text": "git rm --cached [file]",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "改名文件并将这个改名放入暂存区的命令是什么？",
+              "id": "5-207-18",
+              "answers": [
+                {
+                  "text": "git mv [file-original] [file-renamed]",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "提交暂存区到仓库区: git commit -m [message]；提交暂存区指定文件到仓库区: git commit [file1] [file2] ... -m [message]；提交工作区自上次commit后的变化到仓库区: git commit -a；提交时显示所有diff信息: git commit -v",
+          "qas": [
+            {
+              "question": "提交暂存区到仓库区的命令是什么？",
+              "id": "5-207-19",
+              "answers": [
+                {
+                  "text": "git commit -m [message]",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "如何提交暂存区的指定文件到仓库区？",
+              "id": "5-207-20",
+              "answers": [
+                {
+                  "text": "git commit [file1] [file2] ... -m [message]",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "question": "提交工作区自上次commit之后的变化直接到仓库区用什么命令？",
+              "id": "5-207-21",
+              "answers": [
+                {
+                  "text": "git commit -a",
+                  "answer_start": 123
+                }
+              ]
+            },
+            {
+              "question": "提交时显示所有diff信息的命令是什么？",
+              "id": "5-207-22",
+              "answers": [
+                {
+                  "text": "git commit -v",
+                  "answer_start": 163
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用新commit替代上一次提交（无新变化时改写信息）: git commit --amend -m [message]；重做上一次commit并包括指定文件新变化: git commit --amend [file1] [file2]",
+          "qas": [
+            {
+              "question": "如何使用一次新的commit替代上一次提交？",
+              "id": "5-207-23",
+              "answers": [
+                {
+                  "text": "git commit --amend -m [message]",
+                  "answer_start": 46
+                }
+              ]
+            },
+            {
+              "question": "重做上一次commit，并包括指定文件的新变化用什么命令？",
+              "id": "5-207-24",
+              "answers": [
+                {
+                  "text": "git commit --amend [file1] [file2]",
+                  "answer_start": 107
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "列出所有本地分支: git branch；列出所有远程分支: git branch -r；列出所有本地和远程分支: git branch -a；新建分支但停留在当前分支: git branch [branch-name]",
+          "qas": [
+            {
+              "question": "列出所有本地分支的命令是什么？",
+              "id": "5-207-25",
+              "answers": [
+                {
+                  "text": "git branch",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "如何列出所有远程分支？",
+              "id": "5-207-26",
+              "answers": [
+                {
+                  "text": "git branch -r",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "列出所有本地分支和远程分支用什么命令？",
+              "id": "5-207-27",
+              "answers": [
+                {
+                  "text": "git branch -a",
+                  "answer_start": 77
+                }
+              ]
+            },
+            {
+              "question": "新建一个分支但依然停留在当前分支的命令是什么？",
+              "id": "5-207-28",
+              "answers": [
+                {
+                  "text": "git branch [branch-name]",
+                  "answer_start": 113
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "新建分支并切换到该分支: git checkout -b [branch]；新建分支指向指定commit: git branch [branch] [commit]；新建分支与指定远程分支建立追踪关系: git branch --track [branch] [remote-branch]",
+          "qas": [
+            {
+              "question": "新建一个分支并切换到该分支用什么命令？",
+              "id": "5-207-29",
+              "answers": [
+                {
+                  "text": "git checkout -b [branch]",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "如何新建一个分支，指向指定commit？",
+              "id": "5-207-30",
+              "answers": [
+                {
+                  "text": "git branch [branch] [commit]",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "question": "新建一个分支并与指定的远程分支建立追踪关系的命令是什么？",
+              "id": "5-207-31",
+              "answers": [
+                {
+                  "text": "git branch --track [branch] [remote-branch]",
+                  "answer_start": 108
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "切换到指定分支并更新工作区: git checkout [branch-name]；切换到上一个分支: git checkout -；在现有分支与指定远程分支间建立追踪关系: git branch --set-upstream [branch] [remote-branch]",
+          "qas": [
+            {
+              "question": "切换到指定分支并更新工作区的命令是什么？",
+              "id": "5-207-32",
+              "answers": [
+                {
+                  "text": "git checkout [branch-name]",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "如何切换到上一个分支？",
+              "id": "5-207-33",
+              "answers": [
+                {
+                  "text": "git checkout -",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "question": "在现有分支与指定的远程分支之间建立追踪关系用什么命令？",
+              "id": "5-207-34",
+              "answers": [
+                {
+                  "text": "git branch --set-upstream [branch] [remote-branch]",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "合并指定分支到当前分支: git merge [branch]；选择一个commit合并进当前分支: git cherry-pick [commit]；删除分支: git branch -d [branch-name]；删除远程分支: git push origin --delete [branch-name]、git branch -dr [remote/branch]",
+          "qas": [
+            {
+              "question": "合并指定分支到当前分支的命令是什么？",
+              "id": "5-207-35",
+              "answers": [
+                {
+                  "text": "git merge [branch]",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "如何选择一个commit，合并进当前分支？",
+              "id": "5-207-36",
+              "answers": [
+                {
+                  "text": "git cherry-pick [commit]",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "question": "删除分支用什么命令？",
+              "id": "5-207-37",
+              "answers": [
+                {
+                  "text": "git branch -d [branch-name]",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "question": "删除远程分支的命令有哪些？",
+              "id": "5-207-38",
+              "answers": [
+                {
+                  "text": "git push origin --delete [branch-name]、git branch -dr [remote/branch]",
+                  "answer_start": 132
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "列出所有tag: git tag；新建tag在当前commit: git tag [tag]；新建tag在指定commit: git tag [tag] [commit]；删除本地tag: git tag -d [tag]",
+          "qas": [
+            {
+              "question": "列出所有tag的命令是什么？",
+              "id": "5-207-39",
+              "answers": [
+                {
+                  "text": "git tag",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "如何在当前commit新建一个tag？",
+              "id": "5-207-40",
+              "answers": [
+                {
+                  "text": "git tag [tag]",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "question": "在指定commit新建一个tag用什么命令？",
+              "id": "5-207-41",
+              "answers": [
+                {
+                  "text": "git tag [tag] [commit]",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "question": "删除本地tag的命令是什么？",
+              "id": "5-207-42",
+              "answers": [
+                {
+                  "text": "git tag -d [tag]",
+                  "answer_start": 99
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除远程tag: git push origin :refs/tags/[tagName]；查看tag信息: git show [tag]；提交指定tag: git push [remote] [tag]；提交所有tag: git push [remote] --tags",
+          "qas": [
+            {
+              "question": "删除远程tag的命令是什么？",
+              "id": "5-207-43",
+              "answers": [
+                {
+                  "text": "git push origin :refs/tags/[tagName]",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "如何查看tag信息？",
+              "id": "5-207-44",
+              "answers": [
+                {
+                  "text": "git show [tag]",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "question": "提交指定tag用什么命令？",
+              "id": "5-207-45",
+              "answers": [
+                {
+                  "text": "git push [remote] [tag]",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "提交所有tag的命令是什么？",
+              "id": "5-207-46",
+              "answers": [
+                {
+                  "text": "git push [remote] --tags",
+                  "answer_start": 116
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "新建分支指向某个tag: git checkout -b [branch] [tag]；显示有变更的文件: git status；显示当前分支的版本历史: git log；显示commit历史及每次变更的文件: git log --stat",
+          "qas": [
+            {
+              "question": "新建一个分支，指向某个tag的命令是什么？",
+              "id": "5-207-47",
+              "answers": [
+                {
+                  "text": "git checkout -b [branch] [tag]",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "如何显示有变更的文件？",
+              "id": "5-207-48",
+              "answers": [
+                {
+                  "text": "git status",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "question": "显示当前分支的版本历史用什么命令？",
+              "id": "5-207-49",
+              "answers": [
+                {
+                  "text": "git log",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "question": "显示commit历史，以及每次commit发生变更的文件的命令是什么？",
+              "id": "5-207-50",
+              "answers": [
+                {
+                  "text": "git log --stat",
+                  "answer_start": 126
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

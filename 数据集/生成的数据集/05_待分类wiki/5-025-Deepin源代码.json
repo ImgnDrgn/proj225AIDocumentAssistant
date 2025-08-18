@@ -1,0 +1,139 @@
+{
+  "data": [
+    {
+      "title": "Deepin源代码",
+      "paragraphs": [
+        {
+          "context": "绝大部分DDE相关开源社区组件的仓库已迁移至GitHub，未迁移部分计划未来迁移。",
+          "qas": [
+            {
+              "question": "绝大部分DDE相关开源社区组件的仓库迁移到了哪里？",
+              "id": "5-25-1",
+              "answers": [
+                {
+                  "text": "GitHub",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "尚未迁移的DDE相关开源社区组件仓库有何计划？",
+              "id": "5-25-2",
+              "answers": [
+                {
+                  "text": "计划于未来完成迁移",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "项目迁移进度可在GitHub的developer-center讨论版跟进。",
+          "qas": [
+            {
+              "question": "在哪里可以跟进DDE相关项目的迁移进度？",
+              "id": "5-25-3",
+              "answers": [
+                {
+                  "text": "GitHub的developer-center讨论版",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "已迁移项目可按developer-center的wiki贡献指南参与开发。",
+          "qas": [
+            {
+              "question": "如何参与已迁移的DDE相关项目开发？",
+              "id": "5-25-4",
+              "answers": [
+                {
+                  "text": "根据developer-center中wiki页面提供的贡献指南参与开发",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过GitHub的Pull Request参与贡献，名字会出现在仓库contributor列表。",
+          "qas": [
+            {
+              "question": "通过什么方式参与DDE项目贡献能让名字出现在contributor列表？",
+              "id": "5-25-5",
+              "answers": [
+                {
+                  "text": "GitHub的Pull Request",
+                  "answer_start": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "参与贡献的网址是https://github.com/linuxdeepin。",
+          "qas": [
+            {
+              "question": "参与DDE相关项目贡献的网址是什么？",
+              "id": "5-25-6",
+              "answers": [
+                {
+                  "text": "https://github.com/linuxdeepin",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "developer-center讨论版网址为https://github.com/linuxdeepin/developer-center/discussions/3050。",
+          "qas": [
+            {
+              "question": "developer-center讨论版的网址是什么？",
+              "id": "5-25-7",
+              "answers": [
+                {
+                  "text": "https://github.com/linuxdeepin/developer-center/discussions/3050",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "贡献指南网址是https://github.com/linuxdeepin/developer-center/wiki/Contribution-Guidelines-for-Developers。",
+          "qas": [
+            {
+              "question": "贡献指南的网址是什么？",
+              "id": "5-25-8",
+              "answers": [
+                {
+                  "text": "https://github.com/linuxdeepin/developer-center/wiki/Contribution-Guidelines-for-Developers",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "提交issue的网址为https://github.com/linuxdeepin/developer-center/discussions。",
+          "qas": [
+            {
+              "question": "提交issue的网址是什么？",
+              "id": "5-25-9",
+              "answers": [
+                {
+                  "text": "https://github.com/linuxdeepin/developer-center/discussions",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

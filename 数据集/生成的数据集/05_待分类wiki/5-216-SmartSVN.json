@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "SmartSVN",
+      "paragraphs": [
+        {
+          "context": "SmartSVN是一个图形化的SVN客户端，其最大的优势就是操作非常简单和方便，大部分操作都可以通过鼠标点击完成。其中支持多种认证机制：SVN、SVN+SSH、Http、Https、Http代理；支持所有的svn命令、支持标签操作、智慧化程度高、方便的导航系统等功能。安装命令为sudo apt-get install smartsvn，卸载命令为sudo apt-get remove smartsvn，仓库地址是http://packages.deepin.com/deepin/pool/main/s/smartsvn/",
+          "qas": [
+            {
+              "id": "5-216-1",
+              "question": "SmartSVN是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "图形化的SVN客户端",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-216-2",
+              "question": "SmartSVN最大的优势是什么？",
+              "answers": [
+                {
+                  "text": "操作非常简单和方便，大部分操作都可以通过鼠标点击完成",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "5-216-3",
+              "question": "SmartSVN支持哪些认证机制？",
+              "answers": [
+                {
+                  "text": "SVN、SVN+SSH、Http、Https、Http代理",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-216-4",
+              "question": "安装SmartSVN的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install smartsvn",
+                  "answer_start": 113
+                }
+              ]
+            },
+            {
+              "id": "5-216-5",
+              "question": "卸载SmartSVN的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove smartsvn",
+                  "answer_start": 142
+                }
+              ]
+            },
+            {
+              "id": "5-216-6",
+              "question": "SmartSVN的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/smartsvn/",
+                  "answer_start": 172
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

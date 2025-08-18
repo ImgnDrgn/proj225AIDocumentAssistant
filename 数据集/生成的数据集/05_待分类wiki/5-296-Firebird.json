@@ -1,0 +1,239 @@
+{
+  "data": [
+    {
+      "title": "Firebird",
+      "paragraphs": [
+        {
+          "context": "Firebird RDBMS 基于 InterBase 6.0 的代码开发，是跨平台的关系数据库系统。",
+          "qas": [
+            {
+              "question": "Firebird RDBMS 基于什么开发？",
+              "id": "5-296-1",
+              "answers": [
+                {
+                  "text": "InterBase 6.0 的代码",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "Firebird 是什么类型的数据库系统？",
+              "id": "5-296-2",
+              "answers": [
+                {
+                  "text": "跨平台的关系数据库系统",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Firebird能运行在Windows、linux和各种Unix操作系统上，提供大部分SQL-99标准功能。",
+          "qas": [
+            {
+              "question": "Firebird 能运行在哪些操作系统上？",
+              "id": "5-296-3",
+              "answers": [
+                {
+                  "text": "Windows、linux和各种Unix操作系统",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "Firebird 提供了哪些标准的功能？",
+              "id": "5-296-4",
+              "answers": [
+                {
+                  "text": "大部分SQL-99标准的功能",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Firebird既能作为多用户环境下的数据库服务器运行，也提供嵌入式数据库实现。",
+          "qas": [
+            {
+              "question": "Firebird 可以作为什么运行？",
+              "id": "5-296-5",
+              "answers": [
+                {
+                  "text": "多用户环境下的数据库服务器",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "Firebird 是否提供嵌入式数据库实现？",
+              "id": "5-296-6",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Firebird脱胎于Borland公司的开源版数据库Interbase6.0，用C和C++开发。",
+          "qas": [
+            {
+              "question": "Firebird 脱胎于哪个公司的数据库？",
+              "id": "5-296-7",
+              "answers": [
+                {
+                  "text": "Borland公司",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "Firebird 是用什么语言开发的？",
+              "id": "5-296-8",
+              "answers": [
+                {
+                  "text": "C和C++",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Firebird使用Mozilla Public License v.1.1许可证发行。",
+          "qas": [
+            {
+              "question": "Firebird 使用什么许可证发行？",
+              "id": "5-296-9",
+              "answers": [
+                {
+                  "text": "Mozilla Public License v.1.1",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "一个firebird数据库服务器能管理多个独立数据库，每个数据库可支持多个客户端连结。",
+          "qas": [
+            {
+              "question": "一个Firebird数据库服务器能管理多少个数据库？",
+              "id": "5-296-10",
+              "answers": [
+                {
+                  "text": "多个独立的数据库",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "每个Firebird数据库可支持多少个客户端连结？",
+              "id": "5-296-11",
+              "answers": [
+                {
+                  "text": "多个",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Firebird服务：sudo apt-get install firebird3.0-server。",
+          "qas": [
+            {
+              "question": "如何安装Firebird服务？",
+              "id": "5-296-12",
+              "answers": [
+                {
+                  "text": "sudo apt-get install firebird3.0-server",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Firebird组件：sudo apt-get install firebird3.0-utils。",
+          "qas": [
+            {
+              "question": "如何安装Firebird组件？",
+              "id": "5-296-13",
+              "answers": [
+                {
+                  "text": "sudo apt-get install firebird3.0-utils",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Firebird服务：sudo apt-get remove firebird3.0-server。",
+          "qas": [
+            {
+              "question": "如何卸载Firebird服务？",
+              "id": "5-296-14",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove firebird3.0-server",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Firebird组件：sudo apt-get remove firebird3.0-utils。",
+          "qas": [
+            {
+              "question": "如何卸载Firebird组件？",
+              "id": "5-296-15",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove firebird3.0-utils",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Firebird仓库地址：http://packages.deepin.com/deepin/pool/main/f/firebird3.0/",
+          "qas": [
+            {
+              "question": "Firebird的仓库地址是什么？",
+              "id": "5-296-16",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/f/firebird3.0/",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Firebird官方网站：https://firebirdsql.org/ ， https://sourceforge.net/projects/firebird/",
+          "qas": [
+            {
+              "question": "Firebird的官方网站有哪些？",
+              "id": "5-296-17",
+              "answers": [
+                {
+                  "text": "https://firebirdsql.org/ ， https://sourceforge.net/projects/firebird/",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

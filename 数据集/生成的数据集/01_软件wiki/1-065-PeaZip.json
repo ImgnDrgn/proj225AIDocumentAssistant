@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "PeaZip",
+      "paragraphs": [
+        {
+          "context": "PeaZip是一款解压缩软件，支持各种主流压缩格式的解压缩，支持鼠标右键操作，具备搜索及历史纪录浏览功能，图形化界面提示压缩或解压缩动作，同时还支持文件的切割与合并、安全删档、文件比对、文件完整性检查、系统效能监控、随机密码/密钥产生器等功能。\n\n安装命令：`sudo apt-get install peazip`\n卸载命令：`sudo apt-get remove peazip`\n仓库地址：[http://packages.deepin.com/deepin/pool/non-free/p/peazip/](http://packages.deepin.com/deepin/pool/non-free/p/peazip/)",
+          "qas": [
+            {
+              "id": "1-65-1",
+              "question": "PeaZip属于什么类型的软件？",
+              "answers": [
+                {
+                  "text": "解压缩软件",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "1-65-2",
+              "question": "PeaZip对压缩格式有什么支持？",
+              "answers": [
+                {
+                  "text": "支持各种主流压缩格式的解压缩",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "1-65-3",
+              "question": "PeaZip是否支持鼠标右键操作？",
+              "answers": [
+                {
+                  "text": "支持鼠标右键操作",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "1-65-4",
+              "question": "PeaZip的主要功能是什么？",
+              "answers": [
+                {
+                  "text": "支持各种主流压缩格式的解压缩，支持鼠标右键操作，具备搜索及历史纪录浏览功能，图形化界面提示压缩或解压缩动作，同时还支持文件的切割与合并、安全删档、文件比对、文件完整性检查、系统效能监控、随机密码/密钥产生器等功能",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "1-65-5",
+              "question": "如何安装PeaZip？",
+              "answers": [
+                {
+                  "text": "`sudo apt-get install peazip`",
+                  "answer_start": 182
+                }
+              ]
+            },
+            {
+              "id": "1-65-6",
+              "question": "卸载PeaZip需要使用什么命令？",
+              "answers": [
+                {
+                  "text": "`sudo apt-get remove peazip`",
+                  "answer_start": 219
+                }
+              ]
+            },
+            {
+              "id": "1-65-7",
+              "question": "PeaZip的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "[http://packages.deepin.com/deepin/pool/non-free/p/peazip/](http://packages.deepin.com/deepin/pool/non-free/p/peazip/)",
+                  "answer_start": 252
+                }
+              ]
+            },
+            {
+              "id": "1-65-8",
+              "question": "在Deepin系统中，PeaZip的软件包存储在哪里？",
+              "answers": [
+                {
+                  "text": "[http://packages.deepin.com/deepin/pool/non-free/p/peazip/](http://packages.deepin.com/deepin/pool/non-free/p/peazip/)",
+                  "answer_start": 252
+                }
+              ]
+            },
+            {
+              "id": "1-65-9",
+              "question": "PeaZip支持哪些非压缩相关的文件操作功能？",
+              "answers": [
+                {
+                  "text": "支持文件的切割与合并、安全删档、文件比对、文件完整性检查",
+                  "answer_start": 99
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

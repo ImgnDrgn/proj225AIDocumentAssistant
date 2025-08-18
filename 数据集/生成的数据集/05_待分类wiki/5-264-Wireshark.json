@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Wireshark",
+      "paragraphs": [
+        {
+          "context": "Wireshark是一个网络封包分析软件，能获取网络封包、显示详情，还可检测网络问题、检查安全问题、排查通信错误。",
+          "qas": [
+            {
+              "question": "Wireshark是什么软件？",
+              "id": "5-268-1",
+              "answers": [
+                {
+                  "text": "网络封包分析软件",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "Wireshark能获取网络封包并显示详情吗？",
+              "id": "5-268-2",
+              "answers": [
+                {
+                  "text": "能",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "Wireshark可以检测网络问题吗？",
+              "id": "5-268-3",
+              "answers": [
+                {
+                  "text": "可以",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "Wireshark能排查通信错误吗？",
+              "id": "5-268-4",
+              "answers": [
+                {
+                  "text": "能",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Wireshark的命令是sudo apt-get install wireshark。",
+          "qas": [
+            {
+              "question": "如何安装Wireshark？",
+              "id": "5-268-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install wireshark",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Wireshark的命令是sudo apt-get remove wireshark。",
+          "qas": [
+            {
+              "question": "如何卸载Wireshark？",
+              "id": "5-268-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove wireshark",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Wireshark的仓库地址是http://packages.deepin.com/deepin/pool/main/w/wireshark/。",
+          "qas": [
+            {
+              "question": "Wireshark的仓库地址是什么？",
+              "id": "5-268-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/w/wireshark/",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

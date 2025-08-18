@@ -1,0 +1,294 @@
+{
+  "data": [
+    {
+      "title": "Spacevim",
+      "paragraphs": [
+        {
+          "context": "SpaceVim 是一个社区驱动的模块化的 Vim IDE，以模块的方式组织管理插件以及相关配置，为不同的语言开发量身定制了相关的开发模块，该模块提供代码自动补全， 语法检查、格式化、调试、REPL 等特性。用户仅需载入相关语言的模块即可得到一个开箱即用的 Vim IDE。",
+          "qas": [
+            {
+              "id": "5-70-1",
+              "question": "SpaceVim是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "社区驱动的模块化的Vim IDE",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "5-70-2",
+              "question": "SpaceVim以什么方式组织管理插件及配置？",
+              "answers": [
+                {
+                  "text": "以模块的方式",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "id": "5-70-3",
+              "question": "SpaceVim的开发模块为不同语言开发提供了哪些特性？",
+              "answers": [
+                {
+                  "text": "代码自动补全，语法检查、格式化、调试、REPL等",
+                  "answer_start": 100
+                }
+              ]
+            },
+            {
+              "id": "5-70-4",
+              "question": "用户如何获得开箱即用的Vim IDE？",
+              "answers": [
+                {
+                  "text": "仅需载入相关语言的模块",
+                  "answer_start": 156
+                }
+              ]
+            },
+            {
+              "id": "5-70-5",
+              "question": "SpaceVim 如何管理插件和配置?",
+              "answers": [
+                {
+                  "text": "以模块的方式组织管理插件以及相关配置",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "5-70-6",
+              "question": "SpaceVim 的开发模块提供哪些功能特性?",
+              "answers": [
+                {
+                  "text": "代码自动补全，语法检查、格式化、调试、REPL 等特性",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装SpaceVim的命令如下：sudo apt install git curl -sLf https://spacevim.org/cn/install.sh | bash",
+          "qas": [
+            {
+              "id": "5-70-7",
+              "question": "安装SpaceVim需要先安装哪个工具？",
+              "answers": [
+                {
+                  "text": "git",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "id": "5-70-8",
+              "question": "安装SpaceVim的主要脚本命令是什么？",
+              "answers": [
+                {
+                  "text": "curl -sLf https://spacevim.org/cn/install.sh | bash",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SpaceVim 的默认配置文件为 ~/.SpaceVim.d/init.toml。",
+          "qas": [
+            {
+              "id": "5-70-9",
+              "question": "SpaceVim的默认配置文件是什么？",
+              "answers": [
+                {
+                  "text": "~/.SpaceVim.d/init.toml",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "5-70-10",
+              "question": "SpaceVim 的默认配置文件路径是什么?",
+              "answers": [
+                {
+                  "text": "~/.SpaceVim.d/init.toml",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "[options]中可设置SpaceVim的主题、背景等。默认主题是gruvbox，背景可取值'dark'或'light'；enable_guicolors控制终端真色，默认true；statusline_separator设置状态栏分割符号，默认'arrow'；buffer_index_type设置顶部标签列表序号类型，有0-4五种；enable_tabline_filetype_icon控制文件类型图标显示；enable_statusline_mode控制状态栏是否显示当前模式。",
+          "qas": [
+            {
+              "id": "5-70-11",
+              "question": "SpaceVim的默认主题是什么？",
+              "answers": [
+                {
+                  "text": "gruvbox",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "id": "5-70-12",
+              "question": "SpaceVim的背景可以设置哪些值？",
+              "answers": [
+                {
+                  "text": "'dark'或'light'",
+                  "answer_start": 55
+                }
+              ]
+            },
+            {
+              "id": "5-70-13",
+              "question": "哪个选项控制SpaceVim的终端真色？",
+              "answers": [
+                {
+                  "text": "enable_guicolors",
+                  "answer_start": 70
+                }
+              ]
+            },
+            {
+              "id": "5-70-14",
+              "question": "statusline_separator的默认值是什么？",
+              "answers": [
+                {
+                  "text": "'arrow'",
+                  "answer_start": 100
+                }
+              ]
+            },
+            {
+              "id": "5-70-15",
+              "question": "buffer_index_type有几种序号类型？",
+              "answers": [
+                {
+                  "text": "五种（0-4）",
+                  "answer_start": 130
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SpaceVim通过[[layers]]设置模块，启用模块时需指定name及选项，如autocomplete模块；禁用模块需设置enable = false，如shell模块。",
+          "qas": [
+            {
+              "id": "5-70-16",
+              "question": "SpaceVim如何启用模块？",
+              "answers": [
+                {
+                  "text": "通过[[layers]]指定name及选项",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-70-17",
+              "question": "如何禁用SpaceVim的模块？",
+              "answers": [
+                {
+                  "text": "在[[layers]]中设置enable = false",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SpaceVim可通过[[custom_plugins]]添加自定义插件，需指定repo，如lilydjwg/colorizer和junegunn/vader.vim，merged设为false。",
+          "qas": [
+            {
+              "id": "5-70-18",
+              "question": "SpaceVim如何添加自定义插件？",
+              "answers": [
+                {
+                  "text": "通过[[custom_plugins]]指定repo，merged设为false",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SpaceVim的快速上手教程链接：https://spacevim.org/cn/quick-start-guide/；入门教程链接：https://everettjf.gitbooks.io/spacevimtutorial/content/",
+          "qas": [
+            {
+              "id": "5-70-19",
+              "question": "SpaceVim的快速上手教程在哪里？",
+              "answers": [
+                {
+                  "text": "https://spacevim.org/cn/quick-start-guide/",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "5-70-20",
+              "question": "SpaceVim的入门教程链接是什么？",
+              "answers": [
+                {
+                  "text": "https://everettjf.gitbooks.io/spacevimtutorial/content/",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装\nsudo apt install git\ncurl -sLf https://spacevim.org/cn/install.sh | bash",
+          "qas": [
+            {
+              "id": "5-70-21",
+              "question": "安装 SpaceVim 前需要先安装什么依赖?",
+              "answers": [
+                {
+                  "text": "git",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "5-70-22",
+              "question": "安装 SpaceVim 的具体命令是什么?",
+              "answers": [
+                {
+                  "text": "curl -sLf https://spacevim.org/cn/install.sh | bash",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "常见问题\nSpacevim 快速上手教程：https://spacevim.org/cn/quick-start-guide/\nSpacevim 入门教程：https://everettjf.gitbooks.io/spacevimtutorial/content/",
+          "qas": [
+            {
+              "id": "5-70-23",
+              "question": "SpaceVim 的快速上手教程链接是什么?",
+              "answers": [
+                {
+                  "text": "https://spacevim.org/cn/quick-start-guide/",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-70-24",
+              "question": "SpaceVim 的详细入门教程在哪里可以找到?",
+              "answers": [
+                {
+                  "text": "https://everettjf.gitbooks.io/spacevimtutorial/content/",
+                  "answer_start": 64
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

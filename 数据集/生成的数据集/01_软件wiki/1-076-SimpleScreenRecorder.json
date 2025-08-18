@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "title": "SimpleScreenRecorder",
+      "paragraphs": [
+        {
+          "context": "SimpleScreenRecorder是一款屏幕录制软件，它具有录制整个桌面、应用窗口、指定窗口大小以及音/视频同步，视频缩放等功能。",
+          "qas": [
+            {
+              "question": "SimpleScreenRecorder是什么类型的软件？",
+              "id": "1-76-1",
+              "answers": [
+                {
+                  "text": "屏幕录制软件",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "SimpleScreenRecorder具有哪些功能？",
+              "id": "1-76-2",
+              "answers": [
+                {
+                  "text": "录制整个桌面、应用窗口、指定窗口大小以及音/视频同步，视频缩放等功能",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install simplescreenrecorder",
+          "qas": [
+            {
+              "question": "安装SimpleScreenRecorder的命令是什么？",
+              "id": "1-76-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install simplescreenrecorder",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove simplescreenrecorder",
+          "qas": [
+            {
+              "question": "卸载SimpleScreenRecorder的命令是什么？",
+              "id": "1-76-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove simplescreenrecorder",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/contrib/s/simplescreenrecorder/",
+          "qas": [
+            {
+              "question": "SimpleScreenRecorder的仓库地址是什么？",
+              "id": "1-76-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/contrib/s/simplescreenrecorder/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

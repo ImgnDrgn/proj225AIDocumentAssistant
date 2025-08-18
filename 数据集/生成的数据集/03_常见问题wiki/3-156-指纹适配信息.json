@@ -1,0 +1,194 @@
+{
+  "data": [
+    {
+      "title": "指纹适配信息",
+      "paragraphs": [
+        {
+          "context": "社区版内测中推送了首款指纹适配驱动，不符合指定ID的设备暂无法使用。",
+          "qas": [
+            {
+              "question": "目前社区版内测中推送了什么？",
+              "id": "3-156-1",
+              "answers": [
+                {
+                  "text": "首款指纹适配驱动",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "不符合不符合指定ID的设备能否使用指纹功能？",
+              "id": "3-156-2",
+              "answers": [
+                {
+                  "text": "暂时还无法使用",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "汇顶科技27c6:5110适配MagicBook 14SE（NIR-WAP9HNRP）、matebook13，状态为已适配。",
+          "qas": [
+            {
+              "question": "汇顶科技27c6:5110适配哪些机型？",
+              "id": "3-156-3",
+              "answers": [
+                {
+                  "text": "MagicBook 14SE（NIR-WAP9HNRP）、matebook13",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "汇顶科技27c6:5110的适配状态是什么？",
+              "id": "3-156-4",
+              "answers": [
+                {
+                  "text": "已适配",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "汇顶科技27C6:659A适配联想Thinkbook 14，状态为已适配。",
+          "qas": [
+            {
+              "question": "联想Thinkbook 14适配的汇顶科技指纹设备ID是什么？",
+              "id": "3-156-5",
+              "answers": [
+                {
+                  "text": "27C6:659A",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "汇顶科技27c6:5117适配华为matebook13锐龙版（2019），状态为未适配。",
+          "qas": [
+            {
+              "question": "华为matebook13锐龙版（2019）的指纹适配状态是什么？",
+              "id": "3-156-6",
+              "answers": [
+                {
+                  "text": "未适配",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "汇顶科技27c6:581a适配小米pro15增强版、redmibook 15 pro锐龙版，状态为未适配。",
+          "qas": [
+            {
+              "question": "小米pro15增强版适配的汇顶科技指纹设备ID是什么？",
+              "id": "3-156-7",
+              "answers": [
+                {
+                  "text": "27c6:581a",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "敦泰电子2808:0979适配联想Thinkpad x250，状态为已适配。",
+          "qas": [
+            {
+              "question": "联想Thinkpad x250适配的敦泰电子指纹设备ID是什么？",
+              "id": "3-156-8",
+              "answers": [
+                {
+                  "text": "2808:0979",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fprint支持设备列表详见https://fprint.freedesktop.org/supported-devices.html。",
+          "qas": [
+            {
+              "question": "哪里可以查看fprint支持的设备列表？",
+              "id": "3-156-9",
+              "answers": [
+                {
+                  "text": "https://fprint.freedesktop.org/supported-devices.html",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过lsusb查询指纹设备ID，终端执行sudo lsusb -v |grep \"Bus.*27c6:5110\"命令匹配。",
+          "qas": [
+            {
+              "question": "如何查询指纹设备ID？",
+              "id": "3-156-10",
+              "answers": [
+                {
+                  "text": "通过lsusb，终端执行sudo lsusb -v |grep \"Bus.*27c6:5110\"命令匹配",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装指纹驱动先加内测源：打开控制中心》更新》更新设置》打开内测通道。",
+          "qas": [
+            {
+              "question": "安装指纹驱动如何加内测源？",
+              "id": "3-156-11",
+              "answers": [
+                {
+                  "text": "打开控制中心》更新》更新设置》打开内测通道",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装指纹驱动第二步：sudo apt install goodix-fingerprint-drivers goodix-fingerprint。",
+          "qas": [
+            {
+              "question": "安装指纹驱动的第二步命令是什么？",
+              "id": "3-156-12",
+              "answers": [
+                {
+                  "text": "sudo apt install goodix-fingerprint-drivers goodix-fingerprint",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装指纹驱动后需重启，进入控制中心生物认证模块找指纹入口录入。",
+          "qas": [
+            {
+              "question": "安装指纹驱动后需要做什么？",
+              "id": "3-156-13",
+              "answers": [
+                {
+                  "text": "重启，进入控制中心生物认证模块找指纹入口录入",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

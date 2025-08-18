@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "快捷键无效、触发慢",
+      "paragraphs": [
+        {
+          "context": "请先使用 evtest 命令检测是否能获取该按键事件。运行 sudo evtest 然后按序号选择键盘（例如下面的键盘序号是3），planc0515@uos:~$ sudo evtest。Available devices:/dev/input/event0:      Sleep Button/dev/input/event1:      Power Button/dev/input/event2:      Power Button/dev/input/event3:      SIGMACHIP USB Keyboard/dev/input/event4:      SIGMACHIP USB Keyboard Consumer Control/dev/input/event5:      SIGMACHIP USB Keyboard System Control/dev/input/event6:      PixA琀 USB Optical Mouse/dev/input/event7:      PC Speaker/dev/input/event8:      HDA ATI HDMI HDMI/DP,pcm=3/dev/input/event9:      HDA Intel PCH Rear Mic/dev/input/event10:     HDA Intel PCH Front Mic/dev/input/event11:     HDA Intel PCH Line/dev/input/event12:     HDA Intel PCH Line Out/dev/input/event13:     HDA Intel PCH Front Headphone/dev/input/event14:     87:48:54:15:83:35Select the device event number [0-14]:然后按对应的快捷键，观察是否有正确的事件产生，例如下面这个输出中code 29 (KEY_LEFTCTRL)表示按键是 [左CTRL]value 1表示按下，value 0表示松开Event: time 1597816145.422913, type 4 (EV_MSC), code 4 (MSC_SCAN), value 700e0Event: time 1597816145.422913, type 1 (EV_KEY), code 29 (KEY_LEFTCTRL), value 1Event: time 1597816145.422913, -------------- SYN_REPORT ------------Event: time 1597816145.542865, type 4 (EV_MSC), code 4 (MSC_SCAN), value 700e0Event: time 1597816145.542865, type 1 (EV_KEY), code 29 (KEY_LEFTCTRL), value 0Event: time 1597816145.542865, -------------- SYN_REPORT ------------",
+          "qas": [
+            {
+              "id": "3-18-1",
+              "question": "检测快捷键事件首先需要使用什么命令？",
+              "answers": [
+                {
+                  "text": "evtest",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "3-18-2",
+              "question": "运行evtest命令时需要加什么权限前缀？",
+              "answers": [
+                {
+                  "text": "sudo",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "3-18-3",
+              "question": "运行sudo evtest后需要做什么？",
+              "answers": [
+                {
+                  "text": "按序号选择键盘",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "3-18-4",
+              "question": "示例中键盘的序号是多少？",
+              "answers": [
+                {
+                  "text": "3",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "id": "3-18-5",
+              "question": "事件中code 29代表什么按键？",
+              "answers": [
+                {
+                  "text": "左CTRL",
+                  "answer_start": 389
+                }
+              ]
+            },
+            {
+              "id": "3-18-6",
+              "question": "事件中value为1表示什么操作？",
+              "answers": [
+                {
+                  "text": "按下",
+                  "answer_start": 407
+                }
+              ]
+            },
+            {
+              "id": "3-18-7",
+              "question": "事件中value为0表示什么操作？",
+              "answers": [
+                {
+                  "text": "松开",
+                  "answer_start": 415
+                }
+              ]
+            },
+            {
+              "id": "3-18-8",
+              "question": "选择设备后，如何判断快捷键是否有正确事件？",
+              "answers": [
+                {
+                  "text": "按对应的快捷键，观察是否有正确的事件产生",
+                  "answer_start": 335
+                }
+              ]
+            },
+            {
+              "id": "3-18-9",
+              "question": "如何运行evtest命令？",
+              "answers": [
+                {
+                  "text": "运行 sudo evtest 然后按序号选择键盘",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

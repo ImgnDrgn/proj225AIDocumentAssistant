@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "title": "fzf使用说明",
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "id": "5-149-1",
+              "question": "fzf 是什么工具？",
+              "answers": [
+                {
+                  "text": "fzf 是一个命令行下对文件或者文件内容过滤的工具。它有着高效的性能，简单易用。不过要结合其他工具，才能获得最大的收益。"
+                }
+              ]
+            },
+            {
+              "id": "5-149-2",
+              "question": "如何安装 fzf？",
+              "answers": [
+                {
+                  "text": "sudo apt install fzf"
+                }
+              ]
+            },
+            {
+              "id": "5-149-3",
+              "question": "fzf 默认调用什么作为输入进行搜索？",
+              "answers": [
+                {
+                  "text": "find"
+                }
+              ]
+            },
+            {
+              "id": "5-149-4",
+              "question": "fzf 的按键绑定样例文件位于哪里？",
+              "answers": [
+                {
+                  "text": "/usr/share/doc/fzf/examples"
+                }
+              ]
+            },
+            {
+              "id": "5-149-5",
+              "question": "如何将 fzf 按键绑定脚本添加到 .bashrc 并使其立即生效？",
+              "answers": [
+                {
+                  "text": "echo source key-bindings.bash >> .bashrc; . bashrc"
+                }
+              ]
+            },
+            {
+              "id": "5-149-6",
+              "question": "按 ctrl + t 可以实现什么功能？",
+              "answers": [
+                {
+                  "text": "调出 fzf 搜索文件名"
+                }
+              ]
+            },
+            {
+              "id": "5-149-7",
+              "question": "alt + c 的功能是什么？",
+              "answers": [
+                {
+                  "text": "搜索目录，并选择进入"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

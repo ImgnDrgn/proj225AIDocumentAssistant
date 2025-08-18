@@ -1,0 +1,239 @@
+{
+  "data": [
+    {
+      "title": "Linux内存压缩技术",
+      "paragraphs": [
+        {
+          "context": "内存压缩是通过压缩内存节省空间，在内存紧张时减少IO操作，提升系统性能，处于内存回收部分。",
+          "qas": [
+            {
+              "question": "内存压缩的作用是什么？",
+              "id": "4-33-1",
+              "answers": [
+                {
+                  "text": "节省内存空间，减少由于内存紧张导致的IO操作，提升系统性能。",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "内存压缩技术在内存管理框架中处于哪部分？",
+              "id": "4-33-2",
+              "answers": [
+                {
+                  "text": "内存回收memory reclaim部分",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux内核主流内存压缩技术有zSwap、zRAM、zCache。zSwap是memory与flash间的cache，zRAM用内存模拟block device，zCache压缩文件页。",
+          "qas": [
+            {
+              "question": "Linux内核主流的内存压缩技术有哪些？",
+              "id": "4-33-3",
+              "answers": [
+                {
+                  "text": "zSwap、zRAM、zCache",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "zSwap在系统中扮演什么角色？",
+              "id": "4-33-4",
+              "answers": [
+                {
+                  "text": "是memory与flash之间的一层“cache”",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "zRAM的实现方式是什么？",
+              "id": "4-33-5",
+              "answers": [
+                {
+                  "text": "使用内存模拟block device的做法，压缩后写到模拟的块设备中，仍在RAM中。",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "question": "zCache主要压缩什么类型的页？",
+              "id": "4-33-6",
+              "answers": [
+                {
+                  "text": "文件页",
+                  "answer_start": 99
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "内存压缩主流分配器有Zsmalloc、Zbud、Z3fold。Zsmalloc为ZRAM设计，Zbud存2个objects到1页，Z3fold存3个到1页。",
+          "qas": [
+            {
+              "question": "内存压缩主流的内存分配器有哪些？",
+              "id": "4-33-7",
+              "answers": [
+                {
+                  "text": "Zsmalloc、Zbud、Z3fold",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "Zsmalloc是为哪种技术设计的？",
+              "id": "4-33-8",
+              "answers": [
+                {
+                  "text": "ZRAM",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "Zbud和Z3fold在存储objects数量上有何不同？",
+              "id": "4-33-9",
+              "answers": [
+                {
+                  "text": "Zbud将2个objects存到1个单独的page中，Z3fold将3个objects存到1个单独的page中。",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "zRAM压缩时机包括Kswapd场景（内存watermark低于low水线时唤醒）和Direct reclaim场景（内存分配进入slowpath）。",
+          "qas": [
+            {
+              "question": "zRAM进行内存压缩的时机有哪些？",
+              "id": "4-33-10",
+              "answers": [
+                {
+                  "text": "1）Kswapd场景：kswapd是内核内存回收线程，当内存watermark低于low水线时会被唤醒工作，直到内存watermark不小于high水线。2）Direct reclaim场景：内存分配过程进入slowpath，进行直接内存回收。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置zRAM可通过echo命令设置压缩算法（如lz4）、大小（如2GB），启用需执行mkswap和swapon命令，还可设定块设备个数和压缩流最大个数。",
+          "qas": [
+            {
+              "question": "如何配置zRAM的压缩算法为lz4？",
+              "id": "4-33-11",
+              "answers": [
+                {
+                  "text": "echo lz4 > /sys/block/zram0/comp_algorithm",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "怎样配置zRAM大小为2GB？",
+              "id": "4-33-12",
+              "answers": [
+                {
+                  "text": "echo 2147483648 > /sys/block/zram0/disksize",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "question": "如何启用zRAM？",
+              "id": "4-33-13",
+              "answers": [
+                {
+                  "text": "mkswap /dev/zram0; swapon /dev/zram0",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "swappiness参数范围0~100，值越大回收匿名页到swap的比例越大，默认60，可通过/proc/sys/vm/swappiness配置。",
+          "qas": [
+            {
+              "question": "swappiness参数的范围是多少？",
+              "id": "4-33-14",
+              "answers": [
+                {
+                  "text": "0~100",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "swappiness参数的默认值是多少？",
+              "id": "4-33-15",
+              "answers": [
+                {
+                  "text": "60",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "在哪里配置swappiness参数？",
+              "id": "4-33-16",
+              "answers": [
+                {
+                  "text": "/proc/sys/vm/swappiness",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "zRAM压缩率可通过/sys/block/zram/mm_stat中的orig_data_size和compr_data_size计算，单位为bytes。",
+          "qas": [
+            {
+              "question": "如何计算zRAM的压缩率？",
+              "id": "4-33-17",
+              "answers": [
+                {
+                  "text": "通过/sys/block/zram/mm_stat中的orig_data_size（压缩前数据大小）和compr_data_size（压缩后数据大小）计算。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "zRAM并非配置越大越好，过大可能影响前台应用流畅度和导致内存碎片；低内存时kswapd占CPU高可通过优化压缩算法等改善。",
+          "qas": [
+            {
+              "question": "zRAM配置越大越好吗？为什么？",
+              "id": "4-33-18",
+              "answers": [
+                {
+                  "text": "不是。如果zRam配置过大，后台缓存了应用过多，可能会影响前台应用使用的流畅度，也需要关注系统的内存碎片化情况。",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "如何改善低内存场景下zRAM导致kswapd进程占CPU高的问题？",
+              "id": "4-33-19",
+              "answers": [
+                {
+                  "text": "使用更优的压缩算法，区别使用场景，后台不影响用户使用的场景异步进行深度内存压缩，与用户体验相关的场景同步适当减少内存压缩，通过增加文件页的回收比例加快内存回收等等。",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

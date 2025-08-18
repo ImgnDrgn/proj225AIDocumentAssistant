@@ -1,0 +1,229 @@
+{
+  "data": [
+    {
+      "title": "Wine运行器如何进行安装和提取",
+      "paragraphs": [
+        {
+          "context": "一个图形化了以下命令的程序：WINEPREFIX=容器路径 wine（wine的路径） 可执行文件路径，让你可以简易方便的使用 wine，是使用 Python3 的 tkinter 构建的（自己美术功底太差，图标只能在网络上找了）（测试平台：deepin 20.6 1030；UOS 家庭版 21；Ubuntu 22.04）",
+          "qas": [
+            {
+              "question": "Wine运行器是对哪个命令进行图形化的？",
+              "id": "3-47-1",
+              "answers": [
+                {
+                  "text": "WINEPREFIX=容器路径 wine（wine的路径） 可执行文件路径",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "Wine运行器是用什么构建的？",
+              "id": "3-47-2",
+              "answers": [
+                {
+                  "text": "Python3 的 tkinter",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "question": "Wine运行器的测试平台有哪些？",
+              "id": "3-47-3",
+              "answers": [
+                {
+                  "text": "deepin 20.6 1030；UOS 家庭版 21；Ubuntu 22.04",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "※1、支持打开 spark-wine7-devel 的专门专门缩放设置（如未安装则此按钮禁用）※2、支持提取选择的 exe 文件的图标※3、支持向指定的 wine 容器安装 mono、gecko、.net framework（此功能在菜单栏“Wine”中，卸载只需要使用程序的卸载按钮打开 Geek Uninstaller 即可）※4、支持指定特定的 wine 容器调用 winetricks※5、在没有指定 wine 容器的情况下，将自动设置为 ~/.wine6、新增 ukylin-wine7、将默认选择的 wine 改为 deepin-wine6 stable8、支持打开指定容器的 winecfg、winver、regedit、taskmgr9、双击使用 wine 运行器打开 exe（不知道不知道能不能能不能生效）",
+          "qas": [
+            {
+              "question": "Wine运行器支持打开spark-wine7-devel的专门缩放设置吗？",
+              "id": "3-47-4",
+              "answers": [
+                {
+                  "text": "支持，如未安装则此按钮禁用",
+                  "answer_start": 2
+                }
+              ]
+            },
+            {
+              "question": "Wine运行器是否支持提取什么文件的图标？",
+              "id": "3-47-5",
+              "answers": [
+                {
+                  "text": "选择的 exe 文件",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "question": "Wine运行器支持向指定的wine容器安装哪些内容？",
+              "id": "3-47-6",
+              "answers": [
+                {
+                  "text": "mono、gecko、.net framework",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "question": "向指定的wine容器安装相关内容的功能在哪个菜单栏中？",
+              "id": "3-47-7",
+              "answers": [
+                {
+                  "text": "菜单栏“Wine”中",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "question": "如何卸载 Wine 容器的情况下，默认设置的容器路径是什么？",
+              "id": "3-47-8",
+              "answers": [
+                {
+                  "text": "~/.wine",
+                  "answer_start": 234
+                }
+              ]
+            },
+            {
+              "question": "Wine运行器新增了哪种wine版本？",
+              "id": "3-47-9",
+              "answers": [
+                {
+                  "text": "ukylin-wine",
+                  "answer_start": 253
+                }
+              ]
+            },
+            {
+              "question": "Wine运行器默认选择的wine是什么？",
+              "id": "3-47-10",
+              "answers": [
+                {
+                  "text": "deepin-wine6 stable",
+                  "answer_start": 276
+                }
+              ]
+            },
+            {
+              "question": "Wine运行器支持打开打开指定容器的哪些工具？",
+              "id": "3-47-11",
+              "answers": [
+                {
+                  "text": "winecfg、winver、regedit、taskmgr",
+                  "answer_start": 306
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "1、使用终端运行该程序，可以看到 wine 以及程序本身的提示和报错;2、wine 32 位和 64 位的容器互不兼容;3、所有的 wine 和 winetricks 均需要自行安装（可以从 菜单栏=>程序 里面进行安装）4、本程序支持带参数运行 wine 程序（之前版本也可以），只需要按以下格式即可：exe路径' 参数 '即可（单引号需要输入）5、wine 容器如果没有指定，则会默认为 ~/.wine",
+          "qas": [
+            {
+              "question": "如何查看wine以及程序本身的提示和报错？",
+              "id": "3-47-12",
+              "answers": [
+                {
+                  "text": "使用终端运行该程序",
+                  "answer_start": 2
+                }
+              ]
+            },
+            {
+              "question": "wine 32位和64位的容器是否兼容？",
+              "id": "3-47-13",
+              "answers": [
+                {
+                  "text": "互不兼容",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "question": "wine 和 winetricks 需要如何安装？",
+              "id": "3-47-14",
+              "answers": [
+                {
+                  "text": "自行安装，可以从菜单栏=>程序里面进行安装",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "该程序支持带参数运行wine程序的格式是什么？",
+              "id": "3-47-15",
+              "answers": [
+                {
+                  "text": "exe路径' 参数 '（单引号需要输入）",
+                  "answer_start": 165
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Gitee：https://gitee.com/gfdgd-xi/deep-wine-runner Github：https://github.com/gfdgd-xi/deep-wine-runner Gitlink：https://www.gitlink.org.cn/gfdgd_xi/deep-wine-runner 蓝奏云：https://gfdgdxi.lanzouj.com/b01nz7y3e，密码:7oii 星火应用商店（好像截图传错版本，无伤大雅）：spk://store/tools/spark-deepin-wine-runner",
+          "qas": [
+            {
+              "question": "Wine运行器在Gitee上的下载链接是什么？",
+              "id": "3-47-16",
+              "answers": [
+                {
+                  "text": "https://gitee.com/gfdgd-xi/deep-wine-runner",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "Wine运行器在Github上的下载链接是什么？",
+              "id": "3-47-17",
+              "answers": [
+                {
+                  "text": "https://github.com/gfdgd-xi/deep-wine-runner",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "question": "Wine运行器在Gitlink上的下载链接是什么？",
+              "id": "3-47-18",
+              "answers": [
+                {
+                  "text": "https://www.gitlink.org.cn/gfdgd_xi/deep-wine-runner",
+                  "answer_start": 94
+                }
+              ]
+            },
+            {
+              "question": "Wine运行器在蓝奏云的下载链接及密码是什么？",
+              "id": "3-47-19",
+              "answers": [
+                {
+                  "text": "https://gfdgdxi.lanzouj.com/b01nz7y3e，密码:7oii",
+                  "answer_start": 146
+                }
+              ]
+            },
+            {
+              "question": "Wine运行器在星火应用商店的下载链接是什么？",
+              "id": "3-47-20",
+              "answers": [
+                {
+                  "text": "spk://store/tools/spark-deepin-wine-runner",
+                  "answer_start": 206
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "data": [
+    {
+      "title": "deepin安装指南",
+      "paragraphs": [
+        {
+          "context": "deepin安装前需下载iso映像，检查其md5码，用iso中的刻录工具将iso刻录到u盘，准备好可能需要的替换u盘。",
+          "qas": [
+            {
+              "question": "deepin安装前需要准备哪些与iso和u盘相关的操作？",
+              "id": "5-490-1",
+              "answers": [
+                {
+                  "text": "下载iso映像，检查其md5码，用iso中的刻录工具将iso刻录到u盘，准备好可能需要的替换u盘。",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "电脑bios设置需关闭安全模式、关闭兼容模式csm、开启uefi模式并保存；硬盘需为gpt分区表，可用geniusdisk工具无损转换，需提前准备空分区。",
+          "qas": [
+            {
+              "question": "deepin安装前，电脑bios和硬盘需要做哪些设置？",
+              "id": "5-490-2",
+              "answers": [
+                {
+                  "text": "bios设置需关闭安全模式、关闭兼容模式csm、开启uefi模式并保存；硬盘需为gpt分区表，可用geniusdisk工具无损转换，需提前准备空分区。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin安装的磁盘选择有简单、高级、全盘三种模式：简单模式需提前准备系统分区和efi分区；高级模式可对分区操作、格式化、挂载；全盘模式适用于单硬盘且数据无需保留的情况。",
+          "qas": [
+            {
+              "question": "deepin安装的磁盘选择有哪些模式？各自适用情况是什么？",
+              "id": "5-490-3",
+              "answers": [
+                {
+                  "text": "有简单、高级、全盘三种模式：简单模式需提前准备系统分区和efi分区；高级模式可对分区操作、格式化、挂载；全盘模式适用于单硬盘且数据无需保留的情况。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装阶段出现花屏等故障，排除iso、u盘、usb插口问题后，可在引导菜单按e编辑，在linux行后（--前）输入nomodeset等参数，按f10执行，该修改不保存。",
+          "qas": [
+            {
+              "question": "安装deepin时出现花屏等故障，如何通过修改内核引导参数解决？",
+              "id": "5-490-4",
+              "answers": [
+                {
+                  "text": "在引导菜单按e编辑，在linux行后（--前）输入nomodeset等参数，按f10执行，该修改不保存。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "可能有用的内核引导参数组合包括：nomodeset（改变显示模式）、仿冒win7的acpi参数、acpi=off（关闭acpi）、acpi_backlight=vendor（修改背光模式）等。",
+          "qas": [
+            {
+              "question": "有哪些可能有用的内核引导参数组合？",
+              "id": "5-490-5",
+              "answers": [
+                {
+                  "text": "nomodeset（改变显示模式）、仿冒win7的acpi参数、acpi=off（关闭acpi）、acpi_backlight=vendor（修改背光模式）等。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "linux硬盘分区无c、d盘称呼，设备为/dev/sda等，分区为/dev/sda1等，通过挂载到目录实现读写，目录根为/，分区文件系统默认ext4，也支持fat和ntfs。",
+          "qas": [
+            {
+              "question": "linux硬盘分区与windows有何不同？",
+              "id": "5-490-6",
+              "answers": [
+                {
+                  "text": "无c、d盘称呼，设备为/dev/sda等，分区为/dev/sda1等，通过挂载到目录实现读写，目录根为/，分区文件系统默认ext4，也支持fat和ntfs。",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "linux安装建议分区：/（30~50G，根目录）、/home（剩余全部，用户数据）、交换分区（与内存同大，无挂载点）、/boot/efi（100M以上，uefi引导分区）。",
+          "qas": [
+            {
+              "question": "linux安装时建议的分区方案是什么？",
+              "id": "5-490-7",
+              "answers": [
+                {
+                  "text": "/（30~50G，根目录）、/home（剩余全部，用户数据）、交换分区（与内存同大，无挂载点）、/boot/efi（100M以上，uefi引导分区）。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装deepin检测不到ssd固态硬盘，可能因主板bios设置ssd接口为raid，需改为achi；切换后win10需进安全模式修复，之后可安装deepin。",
+          "qas": [
+            {
+              "question": "安装deepin时检测不到ssd固态硬盘怎么办？",
+              "id": "5-490-8",
+              "answers": [
+                {
+                  "text": "需将主板bios中ssd接口的raid设置改为achi；切换后win10需进安全模式修复，之后可安装deepin。",
+                  "answer_start": 28
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "linux兼容性问题由内核、固件、驱动构成，解决思路是尝试不同组合，升级它们，推荐较新但非最新版本以获广兼容性。",
+          "qas": [
+            {
+              "question": "linux兼容性问题的构成及解决思路是什么？",
+              "id": "5-490-9",
+              "answers": [
+                {
+                  "text": "由内核、固件、驱动构成，解决思路是尝试不同组合，升级它们，推荐较新但非最新版本以获广兼容性。",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更新deepin固件可从清华镜像源下载最新固件，解压后进入目录执行make check和sudo make install，再用sudo update-initramfs -uk all更新内核启动映像。",
+          "qas": [
+            {
+              "question": "如何更新deepin的固件？",
+              "id": "5-490-10",
+              "answers": [
+                {
+                  "text": "从清华镜像源下载最新固件，解压后进入目录执行make check和sudo make install，再用sudo update-initramfs -uk all更新内核启动映像。",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin推荐内核版本为5.1.x，可从deepin天天用群或ubuntu下载编译好的内核，自行编译耗时且有难度。",
+          "qas": [
+            {
+              "question": "deepin推荐的内核版本是什么？如何获取？",
+              "id": "5-490-11",
+              "answers": [
+                {
+                  "text": "推荐5.1.x版本，可从deepin天天用群或ubuntu下载编译好的内核，自行编译耗时且有难度。",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nvidia显卡的linux驱动有nouveau（默认开源第三方）、nvidia（官方）、bumblebee（支持双显卡切换，基于官方），intel集成显卡驱动为i915，amd为amdgpu。",
+          "qas": [
+            {
+              "question": "常见的linux显卡驱动有哪些？",
+              "id": "5-490-12",
+              "answers": [
+                {
+                  "text": "nvidia显卡有nouveau（默认开源第三方）、nvidia（官方）、bumblebee（支持双显卡切换，基于官方）；intel集成显卡为i915；amd为amdgpu。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装大黄蜂驱动：sudo apt install bumblebee-nvidia primus和sudo apt install nvidia-driver，有问题可先删除（sudo apt purge相关包）再安装，安装卡住可重启重试。",
+          "qas": [
+            {
+              "question": "如何安装和卸载大黄蜂驱动？",
+              "id": "5-490-13",
+              "answers": [
+                {
+                  "text": "安装：sudo apt install bumblebee-nvidia primus和sudo apt install nvidia-driver；卸载：sudo apt purge bumblebee-nvidia primus等相关包。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看显卡及驱动信息可执行lspci -nnk |egrep -i \"vga | 3d | display\" -A3或lspci -nnk命令。",
+          "qas": [
+            {
+              "question": "如何查看自己的显卡及当前使用的驱动信息？",
+              "id": "5-490-14",
+              "answers": [
+                {
+                  "text": "执行lspci -nnk |egrep -i \"vga | 3d | display\" -A3或lspci -nnk命令。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "大黄蜂驱动默认用集成显卡，通过primusrun xxx调用独立显卡运行程序；可用glxinfo查看集成显卡信息，primusrun glxinfo查看独立显卡信息。",
+          "qas": [
+            {
+              "question": "大黄蜂驱动如何切换显卡？如何查看不同显卡信息？",
+              "id": "5-490-15",
+              "answers": [
+                {
+                  "text": "默认用集成显卡，通过primusrun xxx调用独立显卡；glxinfo查看集成显卡信息，primusrun glxinfo查看独立显卡信息。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用win应用的推荐方案是虚拟机，wine并非万能，可学习linux替代品或放弃使用。",
+          "qas": [
+            {
+              "question": "在deepin中使用win应用的推荐方案是什么？",
+              "id": "5-490-16",
+              "answers": [
+                {
+                  "text": "推荐使用虚拟机，wine并非万能，可学习linux替代品或放弃使用。",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "linux更推荐cli程序，因其实用通用，在任意发行版可复用知识，系统故障时图形界面常无法修复，需依赖cli。",
+          "qas": [
+            {
+              "question": "为什么linux更推荐使用cli程序？",
+              "id": "5-490-17",
+              "answers": [
+                {
+                  "text": "因其实用通用，在任意发行版可复用知识，系统故障时图形界面常无法修复，需依赖cli。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "linux的自由体现在可定制，但需相关知识，多数设置可通过修改配置文件实现，自由程度取决于知识积累、搜索能力和学习热情。",
+          "qas": [
+            {
+              "question": "linux的自由体现在哪里？其自由程度取决于什么？",
+              "id": "5-490-18",
+              "answers": [
+                {
+                  "text": "体现在可定制，但需相关知识，多数设置可通过修改配置文件实现；取决于知识积累、搜索能力和学习热情。",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "不同linux发行版的区别主要在包管理方案，共通点在于内核、固件、驱动等，大部分知识通用，深入后会发现共通之处更多。",
+          "qas": [
+            {
+              "question": "不同linux发行版的主要区别和共通点是什么？",
+              "id": "5-490-19",
+              "answers": [
+                {
+                  "text": "区别主要在包管理方案；共通点在于内核、固件、驱动等，大部分知识通用，深入后会发现共通之处更多。",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

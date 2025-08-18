@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "Terminator",
+      "paragraphs": [
+        {
+          "context": "Terminator是一款跨平台的终端工具，将界面分割成网格状，拖拽排序各个终端，并行使用各个窗口，通过可视化界面来调整界面布局和配置喜好。",
+          "qas": [
+            {
+              "question": "Terminator是什么类型的工具？",
+              "id": "1-25-1",
+              "answers": [
+                {
+                  "text": "跨平台的终端工具",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "Terminator能将界面分割成什么形状？",
+              "id": "1-25-2",
+              "answers": [
+                {
+                  "text": "网格状",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "Terminator可以通过什么方式调整界面布局和配置喜好？",
+              "id": "1-25-3",
+              "answers": [
+                {
+                  "text": "可视化界面",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install terminator",
+          "qas": [
+            {
+              "question": "安装Terminator的命令是什么？",
+              "id": "1-25-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install terminator",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove terminator",
+          "qas": [
+            {
+              "question": "卸载Terminator的命令是什么？",
+              "id": "1-25-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove terminator",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/t/terminator/",
+          "qas": [
+            {
+              "question": "Terminator的仓库地址是什么？",
+              "id": "1-25-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/t/terminator/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

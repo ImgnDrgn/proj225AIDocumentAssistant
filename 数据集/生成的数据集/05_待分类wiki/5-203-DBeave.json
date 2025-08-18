@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "DBeaver",
+      "paragraphs": [
+        {
+          "context": "DBeaver是通用数据库管理工具和SQL客户端，支持多种数据库。",
+          "qas": [
+            {
+              "question": "DBeaver是什么类型的工具？",
+              "id": "5-203-1",
+              "answers": [
+                {
+                  "text": "通用的数据库管理工具和SQL客户端",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "DBeaver支持哪些数据库？",
+              "id": "5-203-2",
+              "answers": [
+                {
+                  "text": "MySQL、PostgreSQL、Oracle、DB2、MSSQL、Sybase、Mime、HSQLDB、Derby以及其他兼容JDBC的数据库",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DBeaver提供图形界面，可查看数据库结构、执行SQL等。",
+          "qas": [
+            {
+              "question": "DBeaver提供什么界面？",
+              "id": "5-203-3",
+              "answers": [
+                {
+                  "text": "图形界面",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "通过DBeaver的图形界面可以做什么？",
+              "id": "5-203-4",
+              "answers": [
+                {
+                  "text": "查看数据库结构、执行SQL查询和脚本，浏览和导出数据，处理BLOB/CLOB数据，修改数据库结构等",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装DBeaver的命令是sudo apt-get install dbeaver-ce。",
+          "qas": [
+            {
+              "question": "如何安装DBeaver？",
+              "id": "5-203-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install dbeaver-ce",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载DBeaver的命令是sudo apt-get remove dbeaver-ce。",
+          "qas": [
+            {
+              "question": "怎样卸载DBeaver？",
+              "id": "5-203-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove dbeaver-ce",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DBeaver的仓库地址是http://packages.deepin.com/deepin/pool/non-free/d/dbeaver-ce/。",
+          "qas": [
+            {
+              "question": "DBeaver的仓库地址是什么？",
+              "id": "5-203-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/d/dbeaver-ce/",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

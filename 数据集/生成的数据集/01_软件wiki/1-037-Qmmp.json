@@ -1,0 +1,129 @@
+{
+  "data": [
+    {
+      "title": "Qmmp",
+      "paragraphs": [
+        {
+          "context": "Qmmp是一个基于QT开发的音乐播放器，支持播放WAV、MP3、AAC、M4A等有损或CUE索引文件和无损音乐格式，读取WMA、FLAC、WAV等格式的标签信息。界面类似winamp或xmms。",
+          "qas": [
+            {
+              "question": "Qmmp是基于什么开发的？",
+              "id": "1-37-1",
+              "answers": [
+                {
+                  "text": "QT",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "Qmmp支持播放哪些音乐格式？",
+              "id": "1-37-2",
+              "answers": [
+                {
+                  "text": "WAV、MP3、AAC、M4A等有损或CUE索引文件和无损音乐格式",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "Qmmp能读取哪些格式的标签信息？",
+              "id": "1-37-3",
+              "answers": [
+                {
+                  "text": "WMA、FLAC、WAV等格式",
+                  "answer_start": 60
+                }
+              ]
+            },
+            {
+              "question": "Qmmp的界面类似什么？",
+              "id": "1-37-4",
+              "answers": [
+                {
+                  "text": "winamp或xmms",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Qmmp是一个音乐播放器，支持播放WAV、MP3、AAC、M4A等有损或CUE索引文件和无损音乐格式，读取WMA、FLAC、WAV等格式的标签信息。界面类似winamp或xmms。",
+          "qas": [
+            {
+              "question": "Qmmp是什么？",
+              "id": "1-37-5",
+              "answers": [
+                {
+                  "text": "一个音乐播放器",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Qmmp的安装命令为：sudo apt-get install qmmp",
+          "qas": [
+            {
+              "question": "安装Qmmp的命令是什么？",
+              "id": "1-37-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get install qmmp",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Qmmp的卸载命令为：sudo apt-get remove qmmp",
+          "qas": [
+            {
+              "question": "卸载Qmmp的命令是什么？",
+              "id": "1-37-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove qmmp",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Qmmp的仓库地址为：http://packages.deepin.com/deepin/pool/main/q/qmmp/",
+          "qas": [
+            {
+              "question": "Qmmp的仓库地址是什么？",
+              "id": "1-37-8",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/q/qmmp/",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Qmmp的官方网站是：http://qmmp.ylsoftware.com/",
+          "qas": [
+            {
+              "question": "Qmmp的官方网站是什么？",
+              "id": "1-37-9",
+              "answers": [
+                {
+                  "text": "http://qmmp.ylsoftware.com/",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

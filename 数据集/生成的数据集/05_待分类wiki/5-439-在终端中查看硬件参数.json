@@ -1,0 +1,184 @@
+{
+  "data": [
+    {
+      "title": "在终端中查看硬件参数",
+      "paragraphs": [
+        {
+          "context": "lscpu 用于获取CPU基本信息，包括架构，核心数，主频等。",
+          "qas": [
+            {
+              "question": "哪个命令可以获取CPU基本信息？",
+              "id": "5-439-1",
+              "answers": [
+                {
+                  "text": "lscpu",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "lscpu能获取CPU的哪些信息？",
+              "id": "5-439-2",
+              "answers": [
+                {
+                  "text": "架构，核心数，主频等信息",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lscpu -p 用于获取CPU详细信息，一般用不到。",
+          "qas": [
+            {
+              "question": "获取CPU详细信息的命令是什么？",
+              "id": "5-439-3",
+              "answers": [
+                {
+                  "text": "lscpu -p",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lspci | grep -i vga 可查看设备上所有图形处理器信息。",
+          "qas": [
+            {
+              "question": "查看设备上所有图形处理器信息用什么命令？",
+              "id": "5-439-4",
+              "answers": [
+                {
+                  "text": "lspci | grep -i vga",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lspci -k | grep -EA3 \"VGA|3D|Display\" 能查看当前图像输出显卡。",
+          "qas": [
+            {
+              "question": "如何查看当前图像输出显卡？",
+              "id": "5-439-5",
+              "answers": [
+                {
+                  "text": "lspci -k | grep -EA3 \"VGA|3D|Display\"",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsblk 用于查看硬盘基本参数及分区信息。",
+          "qas": [
+            {
+              "question": "查看硬盘基本参数和分区信息的命令是什么？",
+              "id": "5-439-6",
+              "answers": [
+                {
+                  "text": "lsblk",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo lshw -C disk 可查看每块硬盘的具体参数，包括序列号、型号、挂载点等。",
+          "qas": [
+            {
+              "question": "哪个命令能查看硬盘的序列号、型号等具体参数？",
+              "id": "5-439-7",
+              "answers": [
+                {
+                  "text": "sudo lshw -C disk",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "hdparm 用于查看Sata设备信息。",
+          "qas": [
+            {
+              "question": "查看Sata设备信息用什么命令？",
+              "id": "5-439-8",
+              "answers": [
+                {
+                  "text": "hdparm",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsscsi 用于查看SCSI设备信息。",
+          "qas": [
+            {
+              "question": "查看SCSI设备信息的命令是什么？",
+              "id": "5-439-9",
+              "answers": [
+                {
+                  "text": "lsscsi",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "free -g 和 meminfo 可用于查看内存信息。",
+          "qas": [
+            {
+              "question": "查看内存信息可以用哪些命令？",
+              "id": "5-439-10",
+              "answers": [
+                {
+                  "text": "free -g 和 meminfo",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lspci | grep Ethernet 用于查看网卡信息。",
+          "qas": [
+            {
+              "question": "查看网卡信息的命令是什么？",
+              "id": "5-439-11",
+              "answers": [
+                {
+                  "text": "lspci | grep Ethernet",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dmidecode | more 用于查看主板信息。",
+          "qas": [
+            {
+              "question": "如何查看主板信息？",
+              "id": "5-439-12",
+              "answers": [
+                {
+                  "text": "dmidecode | more",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

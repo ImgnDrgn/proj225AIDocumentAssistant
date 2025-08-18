@@ -1,0 +1,65 @@
+{
+  "title": "SuperTuxKart",
+  "paragraphs": [
+    {
+      "context": "SuperTuxKart 是一款开源的三维街机赛车游戏，内含多种角色、赛道和游戏模式",
+      "qas": [
+        {
+          "id": "5-360-1",
+          "question": "SuperTuxKart是什么类型的游戏？",
+          "answers": [
+            {
+              "text": "开源的三维街机赛车游戏",
+              "answer_start": 15
+            }
+          ]
+        },
+        {
+          "id": "5-360-2",
+          "question": "SuperTuxKart包含哪些元素？",
+          "answers": [
+            {
+              "text": "多种角色、赛道和游戏模式",
+              "answer_start": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "通过此链接 https://supertuxkart.net/zh_CN/Download 下载对应架构的游戏，解压并执行运行脚本",
+      "qas": [
+        {
+          "id": "5-360-3",
+          "question": "下载SuperTuxKart的官方链接是什么？",
+          "answers": [
+            {
+              "text": "https://supertuxkart.net/zh_CN/Download",
+              "answer_start": 6
+            }
+          ]
+        },
+        {
+          "id": "5-360-4",
+          "question": "下载SuperTuxKart安装包后需要执行哪些步骤？",
+          "answers": [
+            {
+              "text": "解压并执行运行脚本",
+              "answer_start": 57
+            }
+          ]
+        },
+        {
+          "id": "5-360-5",
+          "question": "如何直接运行SuperTuxKart？",
+          "answers": [
+            {
+              "text": "通过此链接 https://supertuxkart.net/zh_CN/Download 下载对应架构的游戏，解压并执行运行脚本",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

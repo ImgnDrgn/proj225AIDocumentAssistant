@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "title": "解决N卡闭源驱动不能调亮度的问题",
+      "paragraphs": [
+        {
+          "context": "以deepin为例，修改相关文件可解决N卡闭源驱动不能调亮度问题，使用dedit编辑器，无则换其他编辑器。",
+          "qas": [
+            {
+              "question": "解决N卡闭源驱动不能调亮度问题以哪个系统为例？",
+              "id": "5-526-1",
+              "answers": [
+                {
+                  "text": "deepin",
+                  "answer_start": 2
+                }
+              ]
+            },
+            {
+              "question": "解决该问题推荐使用什么编辑器？没有的话可以用哪些替代？",
+              "id": "5-526-2",
+              "answers": [
+                {
+                  "text": "dedit，没有的话可以用gedit、vim、nano等",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装了deepin-nvidia-prime，需修改/usr/share/X11/xorg.conf.d/11-nvidia-prime.conf，在Driver \"nvidia\"后加Option \"RegistryDwords\" \"EnableBrightnessControl=1\"。",
+          "qas": [
+            {
+              "question": "安装了deepin-nvidia-prime，需要修改哪个文件？",
+              "id": "5-526-3",
+              "answers": [
+                {
+                  "text": "/usr/share/X11/xorg.conf.d/11-nvidia-prime.conf",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "在该文件的何处添加内容？添加什么？",
+              "id": "5-526-4",
+              "answers": [
+                {
+                  "text": "在Driver \"nvidia\"后面添加Option \"RegistryDwords\" \"EnableBrightnessControl=1\"",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "存在/etc/X11/xorg.conf时，编辑它，在Driver \"nvidia\"后加Option \"RegistryDwords\" \"EnableBrightnessControl=1\"。",
+          "qas": [
+            {
+              "question": "存在/etc/X11/xorg.conf时，如何操作？",
+              "id": "5-526-5",
+              "answers": [
+                {
+                  "text": "编辑它，在Driver \"nvidia\"后面添加Option \"RegistryDwords\" \"EnableBrightnessControl=1\"",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若上述文件都不存在，运行sudo nvidia-xconfig创建/etc/X11/xorg.conf，再按步骤修改。",
+          "qas": [
+            {
+              "question": "上述文件都不存在时，如何创建/etc/X11/xorg.conf？",
+              "id": "5-526-6",
+              "answers": [
+                {
+                  "text": "运行sudo nvidia-xconfig",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "完成操作后重启，即可调亮度，NVIDIA默认不开启是为避免兼容性问题，开启后可能有亮度到0导致黑屏的问题。",
+          "qas": [
+            {
+              "question": "完成操作后如何使设置生效？",
+              "id": "5-526-7",
+              "answers": [
+                {
+                  "text": "重启",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "NVIDIA默认不开启亮度调节功能的原因是什么？",
+              "id": "5-526-8",
+              "answers": [
+                {
+                  "text": "为了避免兼容性问题",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "强行开启亮度调节可能遇到什么问题？",
+              "id": "5-526-9",
+              "answers": [
+                {
+                  "text": "有时候亮度可以调到0，导致黑屏",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

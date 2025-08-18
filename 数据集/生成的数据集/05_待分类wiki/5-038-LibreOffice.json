@@ -1,0 +1,209 @@
+{
+  "data": [
+    {
+      "title": "LibreOffice",
+      "paragraphs": [
+        {
+          "context": "LibreOffice是一款功能强大的办公套件，可用于文本文档、电子表格、演示文稿、绘图、数据库以及数学公式编辑和处理，libreoffice拥有强大的数据导入和导出功能，能直接导入PDF文档、微软Works，支持主要的OpenXML格式。",
+          "qas": [
+            {
+              "question": "LibreOffice是什么类型的软件？",
+              "id": "5-38-1",
+              "answers": [
+                {
+                  "text": "办公套件",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "LibreOffice可以用于处理哪些内容？",
+              "id": "5-38-2",
+              "answers": [
+                {
+                  "text": "文本文档、电子表格、演示文稿、绘图、数据库以及数学公式",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "LibreOffice能直接导入哪些内容？",
+              "id": "5-38-3",
+              "answers": [
+                {
+                  "text": "PDF文档、微软Works",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "question": "LibreOffice支持哪种主要的格式？",
+              "id": "5-38-4",
+              "answers": [
+                {
+                  "text": "OpenXML格式",
+                  "answer_start": 100
+                }
+              ]
+            },
+            {
+              "question": "LibreOffice支持处理哪些类型的内容？",
+              "id": "5-38-5",
+              "answers": [
+                {
+                  "text": "文本文档、电子表格、演示文稿、绘图、数据库以及数学公式编辑和处理",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "LibreOffice在数据兼容性方面有什么特点？",
+              "id": "5-38-6",
+              "answers": [
+                {
+                  "text": "拥有强大的数据导入和导出功能，能直接导入PDF文档、微软Works，支持主要的OpenXML格式",
+                  "answer_start": 73
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install libreoffice",
+          "qas": [
+            {
+              "question": "如何通过apt-get命令安装LibreOffice？",
+              "id": "5-38-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get install libreoffice",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何安装LibreOffice？",
+              "id": "5-38-8",
+              "answers": [
+                {
+                  "text": "sudo apt-get install libreoffice",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove libreoffice",
+          "qas": [
+            {
+              "question": "如何通过apt-get命令卸载LibreOffice？",
+              "id": "5-38-9",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove libreoffice",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何卸载LibreOffice？",
+              "id": "5-38-10",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove libreoffice",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/libr/libreoffice/",
+          "qas": [
+            {
+              "question": "LibreOffice的仓库地址是什么？",
+              "id": "5-38-11",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/libr/libreoffice/",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "哪里可以找到LibreOffice的仓库地址？",
+              "id": "5-38-12",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/libr/libreoffice/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "高分屏下 LibreOffice 的图标显示不清晰，是因为默认情况下的图标主题不是矢量化的。可以在 工具>选项>LibreOffice>视图>图标主题 中调整主题至 SVG 主题。",
+          "qas": [
+            {
+              "question": "高分屏下LibreOffice的图标显示不清晰的原因是什么？",
+              "id": "5-38-13",
+              "answers": [
+                {
+                  "text": "默认情况下的图标主题不是矢量化的",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "高分屏下如何解决LibreOffice图标显示不清晰的问题？",
+              "id": "5-38-14",
+              "answers": [
+                {
+                  "text": "在 工具>选项>LibreOffice>视图>图标主题 中调整主题至 SVG 主题",
+                  "answer_start": 78
+                }
+              ]
+            },
+            {
+              "question": "为什么高分屏下LibreOffice图标显示不清晰？",
+              "id": "5-38-15",
+              "answers": [
+                {
+                  "text": "默认情况下的图标主题不是矢量化的",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "高分屏下 LibreOffice 的图标显示不清晰，是因为默认情况下的图标主题不是矢量化的。可以在 `工具>选项>LibreOffice>视图>图标主题` 中调整主题至 SVG 主题。\n\nhttps://bugs.documentfoundation.org/show_bug.cgi?id=115439",
+          "qas": [
+            {
+              "question": "如何解决高分屏下图标不清晰的问题？",
+              "id": "5-38-16",
+              "answers": [
+                {
+                  "text": "可以在 `工具>选项>LibreOffice>视图>图标主题` 中调整主题至 SVG 主题",
+                  "answer_start": 46
+                }
+              ]
+            },
+            {
+              "question": "在哪里可以查看高分屏图标问题的bug报告？",
+              "id": "5-38-17",
+              "answers": [
+                {
+                  "text": "https://bugs.documentfoundation.org/show_bug.cgi?id=115439",
+                  "answer_start": 94
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

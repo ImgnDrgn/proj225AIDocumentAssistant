@@ -1,0 +1,284 @@
+{
+  "data": [
+    {
+      "title": "find命令查找技巧",
+      "paragraphs": [
+        {
+          "context": "find命令格式一般分三部分：find命令、要搜索的路径（可多个）、表达式。表达式是核心，包括Tests、Actions、Global options、Positional options。",
+          "qas": [
+            {
+              "question": "find命令的格式分为哪几个部分？",
+              "id": "3-87-1",
+              "answers": [
+                {
+                  "text": "find命令、要搜索的路径（可多个）、表达式。",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "find命令表达式的类型有哪些？",
+              "id": "3-87-2",
+              "answers": [
+                {
+                  "text": "Tests、Actions、Global options、Positional options。",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Tests是指定查找文件的条件，涉及文件属性。参数中数字n的三种写法：+n（大于n）、-n（小于n）、n（等于n）。",
+          "qas": [
+            {
+              "question": "find命令的Tests类型表达式是什么？",
+              "id": "3-87-3",
+              "answers": [
+                {
+                  "text": "指定查找文件的条件，涉及文件属性。",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "Tests参数中数字n的+ n、-n、n分别表示什么？",
+              "id": "3-87-4",
+              "answers": [
+                {
+                  "text": "+n（大于n）、-n（小于n）、n（等于n）。",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "根据时间查找的参数：-mtime（修改时间，天）、-ctime（change time，天）、-atime（access time，天）、-mmin（修改时间，分钟）、-amin（access time，分钟）、-cmin（change time，分钟）。还可通过对比文件时间，如-anewer（access time较新）等。",
+          "qas": [
+            {
+              "question": "以天为单位查找文件修改时间的参数是什么？",
+              "id": "3-87-5",
+              "answers": [
+                {
+                  "text": "-mtime",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "如何查找access time比某文件更新的文件？",
+              "id": "3-87-6",
+              "answers": [
+                {
+                  "text": "使用-anewer参数，如find /etc -anewer /etc/passwd。",
+                  "answer_start": 130
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "根据用户查找的参数：-uid（uid为n）、-user（所属用户为name）、-gid（gid为n）、-group（所属组为name）、-nogroup（无所属组）、-nouser（无所属用户）。",
+          "qas": [
+            {
+              "question": "查找所属用户为name的文件用什么参数？",
+              "id": "3-87-7",
+              "answers": [
+                {
+                  "text": "-user",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "查找没有所属用户的文件用哪个参数？",
+              "id": "3-87-8",
+              "answers": [
+                {
+                  "text": "-nouser",
+                  "answer_start": 114
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "根据权限查找：-executable（可执行）、-readable（可读）、-writable（可写）、-perm mode（权限为mode，支持数字或ugo=rwx格式，mode前可加/或-）。",
+          "qas": [
+            {
+              "question": "查找可执行文件用什么参数？",
+              "id": "3-87-9",
+              "answers": [
+                {
+                  "text": "-executable",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "-perm mode中mode的写法有哪些？",
+              "id": "3-87-10",
+              "answers": [
+                {
+                  "text": "数字或ugo=rwx格式，mode前可加/或-。",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "根据路径查找：-name（文件名匹配pattern）、-iname（忽略大小写的name）、-lname（符号连接文件名匹配）、-ilname（忽略大小写的lname）、-path（完整路径匹配）、-ipath（忽略大小写的path）、-regex（正则匹配文件名）、-iregex（忽略大小写的regex）。",
+          "qas": [
+            {
+              "question": "忽略大小写查找文件名匹配pattern的文件用什么参数？",
+              "id": "3-87-11",
+              "answers": [
+                {
+                  "text": "-iname",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "用正则表达式匹配文件名的参数是什么？",
+              "id": "3-87-12",
+              "answers": [
+                {
+                  "text": "-regex",
+                  "answer_start": 176
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "其他状态查找：-empty（空文件或目录）、-size n[cwbkMG]（指定文件长度，n可加+-）、-inum（inode编号）、-links n（连接数）、-samefile name（硬连接文件）、-type c（文件类型，如d为目录、f为普通文件等）。",
+          "qas": [
+            {
+              "question": "查找空文件或目录用什么参数？",
+              "id": "3-87-13",
+              "answers": [
+                {
+                  "text": "-empty",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "-type c中表示目录的符号是什么？",
+              "id": "3-87-14",
+              "answers": [
+                {
+                  "text": "d",
+                  "answer_start": 177
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Actions参数对找到的文件操作：-ls（长格式显示）、-fls file（写入文件）、-print（默认显示）、-print0（null分割显示）、-fprint file（写入文件）、-fprint0 file（null分割写入）、-delete（删除）、-printf（格式化输出）、-prune（不进入目录）、-quit（找到后退出）。",
+          "qas": [
+            {
+              "question": "将找到的文件信息写入file的Actions参数是什么？",
+              "id": "3-87-15",
+              "answers": [
+                {
+                  "text": "-fls file、-fprint file、-fprint0 file",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "使find命令找到符合条件的文件后立即退出的参数是什么？",
+              "id": "3-87-16",
+              "answers": [
+                {
+                  "text": "-quit",
+                  "answer_start": 209
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "find执行命令：-exec（在起始目录执行，格式-exec command ; 或-exec command {} +）、-execdir（在文件所在目录执行，格式类似）、-ok（执行前确认，类似exec）、-okdir（执行前确认，类似execdir）。;需转义，{}代表文件名。",
+          "qas": [
+            {
+              "question": "-exec和-execdir的主要区别是什么？",
+              "id": "3-87-17",
+              "answers": [
+                {
+                  "text": "-exec在find指定的起始目录执行命令，-execdir在文件所在目录执行。",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "-exec参数中{}代表什么？",
+              "id": "3-87-18",
+              "answers": [
+                {
+                  "text": "当前find找到的文件名。",
+                  "answer_start": 153
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Operators连接表达式：-a/-and（逻辑与）、-o/-or（逻辑或）、!/-not（取非）、( expr )（确定优先级）。默认多个表达式为逻辑与。",
+          "qas": [
+            {
+              "question": "表示表达式逻辑或关系的Operators有哪些？",
+              "id": "3-87-19",
+              "answers": [
+                {
+                  "text": "-o/-or",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "多个表达式之间默认是什么逻辑关系？",
+              "id": "3-87-20",
+              "answers": [
+                {
+                  "text": "逻辑与",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "find其他常用参数：-depth（先操作目录内文件再操作目录）、-maxdepth（最大目录深度）、-mindepth（最小目录深度）。",
+          "qas": [
+            {
+              "question": "限制目录最大深度的参数是什么？",
+              "id": "3-87-21",
+              "answers": [
+                {
+                  "text": "-maxdepth",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "-depth参数的作用是什么？",
+              "id": "3-87-22",
+              "answers": [
+                {
+                  "text": "遇到目录先进入目录操作目录中的文件，最后再操作目录本身。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

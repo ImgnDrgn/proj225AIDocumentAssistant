@@ -1,0 +1,594 @@
+{
+  "data": [
+    {
+      "title": "星火应用商店",
+      "paragraphs": [
+        {
+          "context": "由深度科技论坛 @shenmo 发起的星火工作组致力于丰富 Linux 生态，取“星星之火，可以燎原”之意，组建了星火应用商店。是个年轻的团队，大部分成员是 00 后，有小学生，中学生，大学生，来自五湖四海。",
+          "qas": [
+            {
+              "id": "5-99-1",
+              "question": "星火应用商店是由谁发起的？",
+              "answers": [
+                {
+                  "text": "深度科技论坛 @shenmo 发起的星火工作组",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "5-99-2",
+              "question": "星火应用商店的名称由来是什么？",
+              "answers": [
+                {
+                  "text": "取“星星之火，可以燎原”之意",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-99-3",
+              "question": "星火应用商店的团队有什么特点？",
+              "answers": [
+                {
+                  "text": "是个年轻的团队，大部分成员是 00 后，有小学生，中学生，大学生，来自五湖四海",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "星火商店支持：Deepin 20; Ubuntu 20.04 LTS; UOS Home 20。星火应用商店官网：https://spark-app.store/。星火商店仓库地址：https://gitee.com/deepin-community-store/spark-store。",
+          "qas": [
+            {
+              "id": "5-99-4",
+              "question": "星火商店支持哪些系统？",
+              "answers": [
+                {
+                  "text": "Deepin 20; Ubuntu 20.04 LTS; UOS Home 20",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-99-5",
+              "question": "星火应用商店的官网是什么？",
+              "answers": [
+                {
+                  "text": "https://spark-app.store/",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "id": "5-99-6",
+              "question": "星火商店的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "https://gitee.com/deepin-community-store/spark-store",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "众所周知，国内的Linux应用比较少，wine应用难以获取，优质工具分散在民间各大论坛，无法形成合力，难以改善生态。 生态构建需要的不是某一方的单打独斗，而是人人行动起来，汇聚星火，产生燎原之势。[Gitee 仓库](https://gitee.com/deepin-community-store/spark-store)",
+          "qas": [
+            {
+              "id": "5-99-7",
+              "question": "国内Linux生态存在哪些问题？",
+              "answers": [
+                {
+                  "text": "国内的Linux应用比较少，wine应用难以获取，优质工具分散在民间各大论坛，无法形成合力，难以改善生态",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "5-99-8",
+              "question": "如何构建Linux生态？",
+              "answers": [
+                {
+                  "text": "生态构建需要的不是某一方的单打独斗，而是人人行动起来，汇聚星火，产生燎原之势",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "星火商店交流群：872690351。有意向参与开发请在交流群中@管理员来申请进入内部开发群。",
+          "qas": [
+            {
+              "id": "5-99-9",
+              "question": "星火商店的交流群号是什么？",
+              "answers": [
+                {
+                  "text": "872690351",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-99-10",
+              "question": "如何申请进入星火商店的内部开发群？",
+              "answers": [
+                {
+                  "text": "有意向参与开发请在交流群中@管理员来申请",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "点击[这里](https://upload.deepinos.org/)进行应用的投递，参照下方投递标准进行投递。",
+          "qas": [
+            {
+              "id": "5-99-11",
+              "question": "在哪里进行应用的投递？",
+              "answers": [
+                {
+                  "text": "https://upload.deepinos.org/",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "1. 投递时，软件包名选择的分分类现有记录一致时，此时会替换对应的记录；不一致则认为是新的软件包。在更新时如果选错分类，则会无法正确覆盖。你可以获取spk链接并检查第三字段（spk:store/这里/xxxxx）来获取原有的分类信息。2. 新仓库，目前同时维护两套软件源，新的仓库替换版本时是按照Package来替换文件，当投递时填写的联系邮箱与现有的记录一致时则认为版本升级，更新记录。",
+          "qas": [
+            {
+              "id": "5-99-12",
+              "question": "投递时软件包名分类与现有记录一致会发生什么？",
+              "answers": [
+                {
+                  "text": "此时会替换对应的记录",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "id": "5-99-13",
+              "question": "投递时软件包名分类与现有记录不一致会被认为是什么？",
+              "answers": [
+                {
+                  "text": "新的软件包",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "id": "5-99-14",
+              "question": "新仓库替换版本时是按照什么来替换文件的？",
+              "answers": [
+                {
+                  "text": "Package",
+                  "answer_start": 185
+                }
+              ]
+            },
+            {
+              "id": "5-99-15",
+              "question": "新仓库中，投递时填写的联系邮箱与现有记录一致会被认为是什么？",
+              "answers": [
+                {
+                  "text": "版本升级，更新记录",
+                  "answer_start": 230
+                }
+              ]
+            },
+            {
+              "id": "5-99-16",
+              "question": "如何获取软件包原有的分类信息？",
+              "answers": [
+                {
+                  "text": "获取spk链接并检查第三字段（spk://store/这里/xxxxx）",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "id": "5-99-17",
+              "question": "什么情况下软件包会被视为更新而非新包？",
+              "answers": [
+                {
+                  "text": "软件包名选择的分分类现有记录一致时",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "1. 对于开源软件，请遵循其开源协议。2. 对于商业软件，仅可投稿可以在官网免费下载(下载不用付费)的商业软件，拆包打包不可修改其官方的二进制文件及相关配置，不可投递**已经购买的付费商业软件** 。特别地，对于试用版商业软件， 不可包含**序列号，激活程序等一切有可能使得版权所有方获益减少的内容和程序** 。",
+          "qas": [
+            {
+              "id": "5-99-18",
+              "question": "对于开源软件，投递时有什么版权要求？",
+              "answers": [
+                {
+                  "text": "请遵循其开源协议",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-99-19",
+              "question": "可以投递什么样的商业软件？",
+              "answers": [
+                {
+                  "text": "仅可投稿可以在官网免费下载(下载不用付费)的商业软件",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "id": "5-99-20",
+              "question": "投递商业软件时，拆包打包有什么限制？",
+              "answers": [
+                {
+                  "text": "不可修改其官方的二进制文件及相关配置",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "5-99-21",
+              "question": "不可投递的商业软件有哪些？",
+              "answers": [
+                {
+                  "text": "已经购买的付费商业软件",
+                  "answer_start": 125
+                }
+              ]
+            },
+            {
+              "id": "5-99-22",
+              "question": "对于试用版商业软件，不可包含哪些内容？",
+              "answers": [
+                {
+                  "text": "序列号，激活程序等一切有可能使得版权所有方获益减少的内容和程序",
+                  "answer_start": 176
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "1. 不触犯中华人民共和国现行法律2. 不影响操作系统运行和其他软件运行3. 安装、卸载干净",
+          "qas": [
+            {
+              "id": "5-99-23",
+              "question": "星火应用商店对投递应用的内容有哪些要求？",
+              "answers": [
+                {
+                  "text": "不触犯中华人民共和国现行法律；不影响操作系统运行和其他软件运行；安装、卸载干净",
+                  "answer_start": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "一般来说，使用 `dpkg -b . ../` 这样的指令生成的软件包是符合规范的。您也可以按下方的要求进行再次检查。1. 包名必须规范，可以使用lintian进行包名检查，如果不出现bad-package-name即可通过（其它错误可暂时忽略），现在审核已经加上了lintian的自动检查，如果不通过会直接被拒绝，人工无法干预，后续会慢慢检查control文件的一些内容，请大家留意各个渠道的通知。2. 从官方直接获取的deb包可不做修改，自己打包或者拆包打包后的包名(Package Name)不可与官方一致，可考虑命名为 “官方包名”+”.spark”。",
+          "qas": [
+            {
+              "id": "5-99-24",
+              "question": "生成符合规范的软件包可以使用什么指令？",
+              "answers": [
+                {
+                  "text": "dpkg -b . ../",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-99-25",
+              "question": "如何检查包名是否规范？",
+              "answers": [
+                {
+                  "text": "可以使用lintian进行包名检查，如果不出现bad-package-name即可通过",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "id": "5-99-26",
+              "question": "自己打包或拆包打包后的包名与官方包名有什么要求？",
+              "answers": [
+                {
+                  "text": "不可与官方一致，可考虑命名为 “官方包名”+”.spark”",
+                  "answer_start": 296
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在 软件包名 里只能含有 小写字母 (a-z), 数字 (0-9), 加号 (+) 和 减号 (-) ， 以及 点号 (.)。 软件包名最短长度两个字符；它必须以字母开头；它不能与仓库软件包名发生冲突。还有，把软件包名的长度控制在 30 字符以内是明智之举。",
+          "qas": [
+            {
+              "id": "5-99-27",
+              "question": "软件包名中可以包含哪些字符？",
+              "answers": [
+                {
+                  "text": "小写字母 (a-z), 数字 (0-9), 加号 (+) 和 减号 (-) ， 以及 点号 (.)",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-99-28",
+              "question": "软件包名的最短长度是多少？",
+              "answers": [
+                {
+                  "text": "两个字符",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "id": "5-99-29",
+              "question": "软件包名必须以什么开头？",
+              "answers": [
+                {
+                  "text": "字母",
+                  "answer_start": 90
+                }
+              ]
+            },
+            {
+              "id": "5-99-30",
+              "question": "软件包名不能与什么发生冲突？",
+              "answers": [
+                {
+                  "text": "仓库软件包名",
+                  "answer_start": 105
+                }
+              ]
+            },
+            {
+              "id": "5-99-31",
+              "question": "软件包名的长度建议控制在多少以内？",
+              "answers": [
+                {
+                  "text": "30 字符",
+                  "answer_start": 143
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "例子如下：```spark-store_3.0.3-11_amd64.deb├─────┘└──┤┬└──┴─Architecture└Package Name   │└──Build Number                 └Version Number```Ubuntu软件包命名遵循下列约定： ①\_②-③\_④.deb 。① 软件包名称 (Package Name)；② 版本 (Version Number)；③ 修订号 (Build Number)；④ 平台 (Architecture): i386：x86的32位程序；amd64：x86的64位程序；all: 平台无关. 即适用于所有平台。",
+          "qas": [
+            {
+              "id": "5-99-32",
+              "question": "Ubuntu软件包命名遵循的约定是什么？",
+              "answers": [
+                {
+                  "text": "①\_②-③\_④.deb ，其中①是软件包名称 (Package Name)，②是版本 (Version Number)，③是修订号 (Build Number)，④是平台 (Architecture)",
+                  "answer_start": 181
+                }
+              ]
+            },
+            {
+              "id": "5-99-33",
+              "question": "在Ubuntu软件包命名中，④代表什么？",
+              "answers": [
+                {
+                  "text": "平台 (Architecture)",
+                  "answer_start": 336
+                }
+              ]
+            },
+            {
+              "id": "5-99-34",
+              "question": "amd64在平台中表示什么？",
+              "answers": [
+                {
+                  "text": "x86的64位程序",
+                  "answer_start": 395
+                }
+              ]
+            },
+            {
+              "id": "5-99-35",
+              "question": "i386在平台中表示什么？",
+              "answers": [
+                {
+                  "text": "x86的32位程序",
+                  "answer_start": 367
+                }
+              ]
+            },
+            {
+              "id": "5-99-36",
+              "question": "all在平台中表示什么？",
+              "answers": [
+                {
+                  "text": "平台无关，即适用于所有平台",
+                  "answer_start": 423
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "1. control文件的各个字段经查阅文档建议首字母大写，例如Package，Version，Architecture，Depends，Description等。2. 字段中Package，Version，Architecture，Maintainer，Description这五个字段是deb文档强制要求要有的。3. 字段用途说明：Package：包名，相当于软件名，apt卸载安装等使用的；Version：版本，用来更新等；Architecture：平台，参见上文；Maintainer：维护者；Description：说明，说明这个包的用途等。",
+          "qas": [
+            {
+              "id": "5-99-37",
+              "question": "control文件的字段建议首字母如何？",
+              "answers": [
+                {
+                  "text": "大写",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-99-38",
+              "question": "deb文档强制要求有的字段有哪些？",
+              "answers": [
+                {
+                  "text": "Package，Version，Architecture，Maintainer，Description",
+                  "answer_start": 100
+                }
+              ]
+            },
+            {
+              "id": "5-99-39",
+              "question": "Package字段的用途是什么？",
+              "answers": [
+                {
+                  "text": "包名，相当于软件名，apt卸载安装等使用的",
+                  "answer_start": 175
+                }
+              ]
+            },
+            {
+              "id": "5-99-40",
+              "question": "Version字段的用途是什么？",
+              "answers": [
+                {
+                  "text": "版本，用来更新等",
+                  "answer_start": 215
+                }
+              ]
+            },
+            {
+              "id": "5-99-41",
+              "question": "Architecture字段的用途是什么？",
+              "answers": [
+                {
+                  "text": "平台，参见上文",
+                  "answer_start": 237
+                }
+              ]
+            },
+            {
+              "id": "5-99-42",
+              "question": "Maintainer字段的用途是什么？",
+              "answers": [
+                {
+                  "text": "维护者",
+                  "answer_start": 259
+                }
+              ]
+            },
+            {
+              "id": "5-99-43",
+              "question": "Description字段的用途是什么？",
+              "answers": [
+                {
+                  "text": "说明，说明这个包的用途等",
+                  "answer_start": 274
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "对于桌面应用程序(有GUI的程序), 投递的deb包需要有 `.desktop` 文件，且安装后能桌面正确识别，即位于 `/usr/share/applications/` 下或在此位置有软链接。`.desktop` 文件要有以下字段：1. Name：名称；2. Exec：执行的命令；3. Icon: 图标的名称或者绝对路径；4. Type: 类型，一般是 `Application`。可在星火商店下载 `桌面快捷方式编辑器` 来生成.desktop。请注意：desktop文件名应当和包名一致（比如web.douyin.com的desktop文件名应当是web.douyin.com.desktop）。在线 `.desktop` 生成：[https://www.freedesktop.org/software/appstream/metainfocreator/#/guiapp](https://www.freedesktop.org/software/appstream/metainfocreator/#/guiapp)。`.desktop` 文件验证 `desktop-file-validate *.desktop` 续依赖 `desktop-file-utils`。```bash sudo apt install desktop-file-utils```",
+          "qas": [
+            {
+              "id": "5-99-44",
+              "question": "对于有GUI的桌面应用程序，投递的deb包需要包含什么文件？",
+              "answers": [
+                {
+                  "text": ".desktop 文件",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "id": "5-99-45",
+              "question": ".desktop文件安装后需要位于哪个位置才能被桌面正确识别？",
+              "answers": [
+                {
+                  "text": "/usr/share/applications/ 下或在此位置有软链接",
+                  "answer_start": 73
+                }
+              ]
+            },
+            {
+              "id": "5-99-46",
+              "question": ".desktop文件必须包含哪些字段？",
+              "answers": [
+                {
+                  "text": "Name：名称；Exec：执行的命令；Icon: 图标的名称或者绝对路径；Type: 类型，一般是 Application",
+                  "answer_start": 124
+                }
+              ]
+            },
+            {
+              "id": "5-99-47",
+              "question": "可以在哪里下载工具生成.desktop文件？",
+              "answers": [
+                {
+                  "text": "星火商店下载 桌面快捷方式编辑器",
+                  "answer_start": 265
+                }
+              ]
+            },
+            {
+              "id": "5-99-48",
+              "question": "desktop文件名与包名有什么关系？",
+              "answers": [
+                {
+                  "text": "desktop文件名应当和包名一致",
+                  "answer_start": 311
+                }
+              ]
+            },
+            {
+              "id": "5-99-49",
+              "question": "在线生成.desktop文件的链接是什么？",
+              "answers": [
+                {
+                  "text": "https://www.freedesktop.org/software/appstream/metainfocreator/#/guiapp",
+                  "answer_start": 385
+                }
+              ]
+            },
+            {
+              "id": "5-99-50",
+              "question": "验证.desktop文件的命令是什么？",
+              "answers": [
+                {
+                  "text": "desktop-file-validate *.desktop",
+                  "answer_start": 465
+                }
+              ]
+            },
+            {
+              "id": "5-99-51",
+              "question": "验证.desktop文件需要依赖什么？",
+              "answers": [
+                {
+                  "text": "desktop-file-utils",
+                  "answer_start": 501
+                }
+              ]
+            },
+            {
+              "id": "5-99-52",
+              "question": "如何安装desktop-file-utils？",
+              "answers": [
+                {
+                  "text": "sudo apt install desktop-file-utils",
+                  "answer_start": 537
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

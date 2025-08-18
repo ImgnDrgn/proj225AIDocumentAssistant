@@ -1,0 +1,294 @@
+{
+  "data": [
+    {
+      "title": "Wine 运行器",
+      "paragraphs": [
+        {
+          "context": "Wine运行器是能让Linux用户更方便运行Windows应用的程序，内置Wine图形化支持、工具、打包器、运行库安装工具等，还有基于VirtualBox的Windows虚拟机安装工具。",
+          "qas": [
+            {
+              "question": "Wine运行器是什么？",
+              "id": "5-157-1",
+              "answers": [
+                {
+                  "text": "能让Linux用户更方便运行Windows应用的程序，内置Wine图形化支持、工具、打包器、运行库安装工具等，还有基于VirtualBox的Windows虚拟机安装工具。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Wine运行器简化了命令“env WINEPREFIX=容器路径 wine（wine的路径） 可执行文件路径”，方便使用Wine。",
+          "qas": [
+            {
+              "question": "Wine运行器简化了什么命令？",
+              "id": "5-157-2",
+              "answers": [
+                {
+                  "text": "env WINEPREFIX=容器路径 wine（wine的路径） 可执行文件路径",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Wine运行器用Python3的PyQt5构建，测试平台有deepin 20.8、UOS家庭版21.3.1等。",
+          "qas": [
+            {
+              "question": "Wine运行器是用什么构建的？",
+              "id": "5-157-3",
+              "answers": [
+                {
+                  "text": "Python3的PyQt5",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Wine运行器的测试平台有哪些？",
+              "id": "5-157-4",
+              "answers": [
+                {
+                  "text": "deepin 20.8；UOS 家庭版 21.3.1；Ubuntu 22.04；优麒麟 22.04；deepin 23；openkylin",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Wine运行器更新支持Qemu + Chroot跨运行Wine及指定程序，提供简易打包器，支持下载配置过的Qemu + Chroot容器等。",
+          "qas": [
+            {
+              "question": "Wine运行器更新后支持哪些功能？",
+              "id": "5-157-5",
+              "answers": [
+                {
+                  "text": "支持Qemu + Chroot跨运行Wine以及指定程序的功能；提供了简易打包器以用于打包简易 deb；支持下载配置过的 Qemu + Chroot 容器等。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行Wine程序时，使用终端运行该程序可看到提示和报错，32位和64位容器互不兼容，wine和winetricks需自行安装。",
+          "qas": [
+            {
+              "question": "运行Wine程序时，使用终端运行有什么作用？",
+              "id": "5-157-6",
+              "answers": [
+                {
+                  "text": "可以看到 wine 以及程序本身的提示和报错",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "wine 32位和64位的容器是否兼容？",
+              "id": "5-157-7",
+              "answers": [
+                {
+                  "text": "互不兼容",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "question": "wine 和 winetricks 需要如何获取？",
+              "id": "5-157-8",
+              "answers": [
+                {
+                  "text": "自行安装（可以从 菜单栏=>程序 里面进行安装）",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Wine运行器支持带参数运行wine程序，格式为“exe路径\' 参数 \'”（单引号需输入）。",
+          "qas": [
+            {
+              "question": "Wine运行器如何带参数运行wine程序？",
+              "id": "5-157-9",
+              "answers": [
+                {
+                  "text": "按以下格式：exe路径\' 参数 \'（单引号需要输入）",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "wine容器未指定时，默认是~/.wine。",
+          "qas": [
+            {
+              "question": "wine容器如果没有指定，默认路径是什么？",
+              "id": "5-157-10",
+              "answers": [
+                {
+                  "text": "~/.wine",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "非X86用户不要使用自带的Wine安装程序和Windows虚拟机安装功能，UOS专业版用户可在应用商店安装Wine版本微信后选择正确程序。",
+          "qas": [
+            {
+              "question": "对于非X86的用户，使用Wine运行器有什么注意事项？",
+              "id": "5-157-11",
+              "answers": [
+                {
+                  "text": "请不要使用本程序自带的 Wine 安装程序和 Windows 虚拟机安装功能（检测到为非 X86 架构会自动禁用）",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "非X86的UOS专业版用户如何使用Wine运行器？",
+              "id": "5-157-12",
+              "answers": [
+                {
+                  "text": "只需要在应用商店安装一个 Wine 版本微信即可在本程序选择正确的 Wine 运行程序",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用linglong包的Wine应用时，需安装至少一个相关软件包，识别的Wine按字母排序第一个，容器不在用户目录下（部分映射目录除外），EXE需在映射目录内。",
+          "qas": [
+            {
+              "question": "使用linglong包的Wine应用时，需要满足什么条件才会出现相关选项？",
+              "id": "5-157-13",
+              "answers": [
+                {
+                  "text": "必须安装至少一个 linglong 的使用 Wine 软件包",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "使用linglong包的Wine应用时，生成的容器位置在哪里？",
+              "id": "5-157-14",
+              "answers": [
+                {
+                  "text": "不在用户目录下，而是在容器的用户目录下（用户目录/.deepinwine、/tmp、桌面、下载、文档等被映射的目录除外）",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deb打包软件包名只能含小写字母、数字、+、-、.，最短两个字符，必须以字母开头。",
+          "qas": [
+            {
+              "question": "deb打包软件包名有什么要求？",
+              "id": "5-157-15",
+              "answers": [
+                {
+                  "text": "只能含有小写字母(a-z)、数字(0-9)、加号(+)和减号(-)、以及点号(.)，软件包名最短长度两个字符；它必须以字母开头",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "输入wine容器路径最后不要输入“/”，可执行文件运行路径以“C:/XXX/XXX.exe”格式输入，用“/”分隔。",
+          "qas": [
+            {
+              "question": "输入wine的容器路径时需要注意什么？",
+              "id": "5-157-16",
+              "answers": [
+                {
+                  "text": "最后面请不要输入“/”",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "可执行文件的运行路径输入格式是什么？",
+              "id": "5-157-17",
+              "answers": [
+                {
+                  "text": "以“C:/XXX/XXX.exe”的格式进行输入，默认是以 C： 为开头，不用“\”做命令的分隔，而是用“/”",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": ".desktop的图标只支持PNG和SVG格式，其他格式无法显示。",
+          "qas": [
+            {
+              "question": ".desktop的图标支持哪些格式？",
+              "id": "5-157-18",
+              "answers": [
+                {
+                  "text": "PNG 格式和 SVG 格式",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "基于统信Wine生态适配脚本的打包器，第一个文本框是应用程序中文名，第二个是英文名，第三个是包描述。",
+          "qas": [
+            {
+              "question": "基于统信Wine生态适配脚本的打包器中，第一个和第二个文本框分别填写什么？",
+              "id": "5-157-19",
+              "answers": [
+                {
+                  "text": "第一个文本框是应用程序中文名，第二个文本框是应用程序英文名",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在Openkylin安装Wine运行器，先添加作者源（Gitlink源或Github源），再执行sudo apt install spark-deepin-wine-runner。",
+          "qas": [
+            {
+              "question": "在Openkylin上如何安装Wine运行器？",
+              "id": "5-157-20",
+              "answers": [
+                {
+                  "text": "首先添加作者的源（Gitlink 源或 Github 源），添加完后执行sudo apt install spark-deepin-wine-runner",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Wine运行器下载链接包括Gitee、Github、Gitlink、蓝奏云等。",
+          "qas": [
+            {
+              "question": "Wine运行器的下载链接有哪些？",
+              "id": "5-157-21",
+              "answers": [
+                {
+                  "text": "Gitee：https://gitee.com/gfdgd-xi/deep-wine-runner；Github：https://github.com/gfdgd-xi/deep-wine-runner；Gitlink：https://www.gitlink.org.cn/gfdgd_xi/deep-wine-runner；蓝奏云：https://gfdgdxi.lanzouj.com/b01nz7y3e，密码:7oii；奇怪的链接（需要有 IPv6 才能访问）：http://gfdgdxi.msns.cn/gfdgd-xi-apt-mirrors/program/spark-deepin-wine-runner/；星火应用商店：spk://store/tools/spark-deepin-wine-runner；程序官网：https://gfdgd-xi.github.io/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

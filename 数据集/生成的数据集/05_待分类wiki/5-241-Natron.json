@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "title": "Natron",
+      "paragraphs": [
+        {
+          "context": "Natron是一个跨平台的视频合成软件，具有多种视频特效、图形视频处理、多层剪辑、关键帧编辑、导出/导入、分享视频等功能。",
+          "qas": [
+            {
+              "question": "Natron是什么软件？",
+              "id": "5-241-1",
+              "answers": [
+                {
+                  "text": "跨平台的视频合成软件",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "Natron有哪些功能？",
+              "id": "5-241-2",
+              "answers": [
+                {
+                  "text": "多种视频特效、图形视频处理、多层剪辑、关键帧编辑、导出/导入、分享视频等",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Natron的命令是sudo apt-get install natron。",
+          "qas": [
+            {
+              "question": "如何安装Natron？",
+              "id": "5-241-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install natron",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Natron的命令是sudo apt-get remove natron。",
+          "qas": [
+            {
+              "question": "怎样卸载Natron？",
+              "id": "5-241-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove natron",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Natron的仓库地址是http://packages.deepin.com/deepin/pool/non-free/n/natron/。",
+          "qas": [
+            {
+              "question": "Natron的仓库地址是什么？",
+              "id": "5-241-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/n/natron/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+
+{
+  "data": [
+    {
+      "title": "Networkmanager",
+      "paragraphs": [
+        {
+          "context": "介绍打包network-manager生成deb包的方法。",
+          "qas": [
+            {
+              "question": "本文介绍了什么内容？",
+              "id": "5-200-1",
+              "answers": [
+                {
+                  "text": "打包network-manager生成deb包的方法。",
+                  "answer_start": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "获取network-manager源码可使用命令apt source network-manager，需确保/etc/apt/sources.list源被打开。",
+          "qas": [
+            {
+              "question": "如何获取network-manager源码？",
+              "id": "5-200-2",
+              "answers": [
+                {
+                  "text": "使用命令apt source network-manager，需确保/etc/apt/sources.list源被打开。",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置系统仓库地址需编辑/etc/apt/source.list，加入deb [trusted=yes] http://pools.corp.deepin.com/uos eagle main contrib non-free和deb-src [trusted=yes] http://pools.corp.deepin.com/uos eagle main contrib non-free，再执行sudo apt update。",
+          "qas": [
+            {
+              "question": "如何配置系统中的仓库地址？",
+              "id": "5-200-3",
+              "answers": [
+                {
+                  "text": "编辑/etc/apt/source.list，加入deb [trusted=yes] http://pools.corp.deepin.com/uos eagle main contrib non-free和deb-src [trusted=yes] http://pools.corp.deepin.com/uos eagle main contrib non-free，再执行sudo apt update。",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改network-manager代码可进入network-manager-1.14.6.4+c1/src/目录，用vim编辑xxx.c文件后保存。",
+          "qas": [
+            {
+              "question": "如何修改network-manager的代码？",
+              "id": "5-200-4",
+              "answers": [
+                {
+                  "text": "进入network-manager-1.14.6.4+c1/src/目录，用vim编辑xxx.c文件后保存。",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "提交修改需在network-manager-1.14.6.4+c1目录执行dpkg-source --commit，输入patch名字，生成的patch在debian/patches/下，debian/patches/series决定应用顺序。",
+          "qas": [
+            {
+              "question": "如何提交对network-manager的修改？",
+              "id": "5-200-5",
+              "answers": [
+                {
+                  "text": "在network-manager-1.14.6.4+c1目录执行dpkg-source --commit，输入patch名字。",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "提交修改后生成的patch在哪里？",
+              "id": "5-200-6",
+              "answers": [
+                {
+                  "text": "debian/patches/下",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "哪个文件决定patch的应用顺序？",
+              "id": "5-200-7",
+              "answers": [
+                {
+                  "text": "debian/patches/series",
+                  "answer_start": 105
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装network-manager依赖使用sudo apt build-dep network-manager-1.14.6.4+c1，失败时根据提示安装相应文件。",
+          "qas": [
+            {
+              "question": "如何安装network-manager的依赖？",
+              "id": "5-200-8",
+              "answers": [
+                {
+                  "text": "使用sudo apt build-dep network-manager-1.14.6.4+c1，失败时根据提示安装相应文件。",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "应用修改可执行dpkg-source -b .命令。",
+          "qas": [
+            {
+              "question": "如何应用修改？",
+              "id": "5-200-9",
+              "answers": [
+                {
+                  "text": "执行dpkg-source -b .命令。",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重新编译用dpkg-buildpackage -us -uc -j8，遇‘SIOCGSTAMP’ undeclared错误，在tools/rctest.c和tools/l2test.c加#include <linux/sockios.h>，修改后重新提交，编译错误可执行debian/rules clean。",
+          "qas": [
+            {
+              "question": "如何重新编译network-manager？",
+              "id": "5-200-10",
+              "answers": [
+                {
+                  "text": "用dpkg-buildpackage -us -uc -j8命令。",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "编译时遇到‘SIOCGSTAMP’ undeclared错误如何解决？",
+              "id": "5-200-11",
+              "answers": [
+                {
+                  "text": "在tools/rctest.c和tools/l2test.c中增加头文件#include <linux/sockios.h>。",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "遇到编译错误时可执行什么命令？",
+              "id": "5-200-12",
+              "answers": [
+                {
+                  "text": "debian/rules clean",
+                  "answer_start": 151
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编译完成后在上级目录生成deb包，用sudo dpkg -i xxx.deb安装。",
+          "qas": [
+            {
+              "question": "编译完成后deb包生成在什么位置？",
+              "id": "5-200-13",
+              "answers": [
+                {
+                  "text": "上级目录",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "如何安装生成的deb包？",
+              "id": "5-200-14",
+              "answers": [
+                {
+                  "text": "用sudo dpkg -i xxx.deb命令。",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

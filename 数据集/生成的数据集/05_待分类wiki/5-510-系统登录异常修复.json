@@ -1,0 +1,174 @@
+{
+  "data": [
+    {
+      "title": "系统登录异常修复",
+      "paragraphs": [
+        {
+          "context": "系统救援的核心功能是在系统修改错配置文件、更新系统或软件失败导致启动失败时，提供自救机会，前提是了解异常原因。",
+          "qas": [
+            {
+              "question": "系统救援的核心功能是什么？",
+              "id": "5-510-1",
+              "answers": [
+                {
+                  "text": "在系统修改错配置文件、更新系统或软件失败导致启动失败时，提供自救机会，前提是了解异常原因。",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统能正常引导时，可执行系统救援步骤：在grub引导时按e进入编辑模式。",
+          "qas": [
+            {
+              "question": "系统能正常引导时，系统救援的第一步是什么？",
+              "id": "5-510-2",
+              "answers": [
+                {
+                  "text": "在grub引导时按e进入编辑模式。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统救援第二步：找到root=uuid那里随便删除或添加一个字符。",
+          "qas": [
+            {
+              "question": "系统救援的第二步是什么？",
+              "id": "5-510-3",
+              "answers": [
+                {
+                  "text": "找到root=uuid那里随便删除或添加一个字符。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统救援第三步：按F10引导错误进入initramfs。",
+          "qas": [
+            {
+              "question": "系统救援的第三步是什么？",
+              "id": "5-510-4",
+              "answers": [
+                {
+                  "text": "按F10引导错误进入initramfs。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统救援第四步：执行blkid查询分区。",
+          "qas": [
+            {
+              "question": "系统救援的第四步是什么？",
+              "id": "5-510-5",
+              "answers": [
+                {
+                  "text": "执行blkid查询分区。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统救援第五步：挂载根分区到/root。",
+          "qas": [
+            {
+              "question": "系统救援的第五步是什么？",
+              "id": "5-510-6",
+              "answers": [
+                {
+                  "text": "挂载根分区到/root。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统救援第六步：修复异常配置文件。",
+          "qas": [
+            {
+              "question": "系统救援的第六步是什么？",
+              "id": "5-510-7",
+              "answers": [
+                {
+                  "text": "修复异常配置文件。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "挂载根分区到/root的命令：mount -t ext4 /dev/nvme0n1p5 /root。",
+          "qas": [
+            {
+              "question": "如何挂载根分区到/root？",
+              "id": "5-510-8",
+              "answers": [
+                {
+                  "text": "mount -t ext4 /dev/nvme0n1p5 /root",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进入chroot环境的命令：chroot /root。",
+          "qas": [
+            {
+              "question": "如何进入chroot环境？",
+              "id": "5-510-9",
+              "answers": [
+                {
+                  "text": "chroot /root",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "chroot /root后，可在命令行操作，如恢复配置、安装或卸载软件等。",
+          "qas": [
+            {
+              "question": "chroot /root后可以进行哪些操作？",
+              "id": "5-510-10",
+              "answers": [
+                {
+                  "text": "恢复异常配置，安装或卸载相应软件等。",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编辑/etc/fstab文件的命令：vi /etc/fstab。",
+          "qas": [
+            {
+              "question": "如何编辑/etc/fstab文件？",
+              "id": "5-510-11",
+              "answers": [
+                {
+                  "text": "vi /etc/fstab",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

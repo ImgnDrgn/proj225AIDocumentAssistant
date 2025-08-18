@@ -1,0 +1,819 @@
+{
+  "data": [
+    {
+      "title": "初始化",
+      "paragraphs": [
+        {
+          "context": "初始化英文简称:init（initialization）是 Unix 和 类Unix 系统启动过程中的第一道程序，用来产生其它所有进程的程序。它以守护进程的方式存在，其进程号为1，它将继续运行直到系统关闭。它是所有其他进程的直接或间接的始源，并会接管孤儿进程。",
+          "qas": [
+            {
+              "id": "5-422-1",
+              "question": "初始化的英文简称是什么？",
+              "answers": [
+                {
+                  "text": "init",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-422-2",
+              "question": "init在Unix和类Unix系统启动过程中的作用是什么？",
+              "answers": [
+                {
+                  "text": "是启动过程中的第一道程序，用来产生其它所有进程的程序",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "5-422-3",
+              "question": "init以什么方式存在？",
+              "answers": [
+                {
+                  "text": "守护进程",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "5-422-4",
+              "question": "init的进程号是多少？",
+              "answers": [
+                {
+                  "text": "1",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "id": "5-422-5",
+              "question": "init会运行到何时停止？",
+              "answers": [
+                {
+                  "text": "系统关闭",
+                  "answer_start": 77
+                }
+              ]
+            },
+            {
+              "id": "5-422-6",
+              "question": "init与其他进程的关系是什么？",
+              "answers": [
+                {
+                  "text": "是所有其他进程的直接或间接的始源，并会接管孤儿进程",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Init由使用硬编码的文件名的内核来启动，如果内核无法启动它，将导致内核崩溃（或“内核恐慌”）。init的设计，在Unix系统如System III和System V中，已偏离Research Unix和它的BSD衍生版的init所提供的功能。大多数Linux发行版用法与System V有些兼容，部分发行版使用非BSD风格：Gentoo是自己定制的；deepin、ubuntu等大部分发行版都采用systemd。",
+          "qas": [
+            {
+              "id": "5-422-7",
+              "question": "Init由什么启动？",
+              "answers": [
+                {
+                  "text": "使用硬编码的文件名的内核",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-422-8",
+              "question": "内核无法启动Init会导致什么结果？",
+              "answers": [
+                {
+                  "text": "内核崩溃（或“内核恐慌”）",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "id": "5-422-9",
+              "question": "哪些Unix系统的init设计偏离了Research Unix和BSD衍生版init的功能？",
+              "answers": [
+                {
+                  "text": "System III和System V",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "id": "5-422-10",
+              "question": "Gentoo使用的init风格是怎样的？",
+              "answers": [
+                {
+                  "text": "自己定制的",
+                  "answer_start": 153
+                }
+              ]
+            },
+            {
+              "id": "5-422-11",
+              "question": "deepin、ubuntu等大部分发行版采用什么init相关程序？",
+              "answers": [
+                {
+                  "text": "systemd",
+                  "answer_start": 175
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "BSD init 运行存放于/etc/rc的初始化 shell 脚本，然后启动基于文本模式的终端(getty)或者基于图形界面的终端(窗口系统，如 X)。这里没有运行模式的问题，因为文件 'rc' 决定了 init 如何执行。",
+          "qas": [
+            {
+              "id": "5-422-12",
+              "question": "BSD init运行的初始化shell脚本存放在哪里？",
+              "answers": [
+                {
+                  "text": "/etc/rc",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-422-13",
+              "question": "BSD init启动的终端类型有哪些？",
+              "answers": [
+                {
+                  "text": "基于文本模式的终端(getty)或者基于图形界面的终端(窗口系统，如 X)",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "5-422-14",
+              "question": "BSD init是否存在运行模式问题？为什么？",
+              "answers": [
+                {
+                  "text": "不存在，因为文件 'rc' 决定了 init 如何执行",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "BSD init的优点是简单且易于手动编辑；缺点是如果第三方软件需要在启动过程执行自身的初始化脚本，必须修改已存在的启动脚本，一旦过程中有小错误，将导致系统无法正常启动。",
+          "qas": [
+            {
+              "id": "5-422-15",
+              "question": "BSD init的优点是什么？",
+              "answers": [
+                {
+                  "text": "简单且易于手动编辑",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-422-16",
+              "question": "BSD init的缺点是什么？",
+              "answers": [
+                {
+                  "text": "如果第三方软件需要在启动过程执行自身的初始化脚本，必须修改已存在的启动脚本，一旦过程中有小错误，将导致系统无法正常启动",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "现代的BSD派生系统支持使用rc.local文件，它在正常启动过程接近最后的时间以子脚本方式执行，减少系统无法启动的风险。第三方软件包可将独立的start/stop脚本安装到本地的rc.d目录（通常由ports collection/pkgsrc完成）。FreeBSD 和 NetBSD 现在默认使用rc.d，该目录中所有用户启动脚本被分成更小的子脚本，rcorder根据脚本依赖关系决定执行顺序。",
+          "qas": [
+            {
+              "id": "5-422-17",
+              "question": "现代BSD派生系统使用什么文件减少系统无法启动的风险？",
+              "answers": [
+                {
+                  "text": "rc.local文件",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-422-18",
+              "question": "第三方软件包的start/stop脚本可安装到哪个本地目录？",
+              "answers": [
+                {
+                  "text": "rc.d目录",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "5-422-19",
+              "question": "FreeBSD和NetBSD现在默认使用什么目录存放用户启动脚本？",
+              "answers": [
+                {
+                  "text": "rc.d",
+                  "answer_start": 126
+                }
+              ]
+            },
+            {
+              "id": "5-422-20",
+              "question": "rcorder如何决定rc.d目录中脚本的执行顺序？",
+              "answers": [
+                {
+                  "text": "根据在rc.d目录中脚本之间的依赖关系",
+                  "answer_start": 175
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "System V init 检查 /etc/inittab文件中是否含有initdefault项，这告诉init系统是否有默认运行模式。如果没有默认运行模式，用户将进入系统控制台，手动决定进入何种运行模式。System V init优点是灵活性强，缺陷是比较复杂。",
+          "qas": [
+            {
+              "id": "5-422-21",
+              "question": "System V init会检查哪个文件中的initdefault项？",
+              "answers": [
+                {
+                  "text": "/etc/inittab",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "5-422-22",
+              "question": "initdefault项的作用是什么？",
+              "answers": [
+                {
+                  "text": "告诉init系统是否有一个默认运行模式",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "id": "5-422-23",
+              "question": "没有默认运行模式时，用户会进入什么界面？",
+              "answers": [
+                {
+                  "text": "系统控制台",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-422-24",
+              "question": "System V init的优点和缺陷分别是什么？",
+              "answers": [
+                {
+                  "text": "优点是灵活性强，缺陷是比较复杂",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行模式（Runlevel）指Unix或者Linux等类Unix操作系统下不同的运行模式，通常分为7等，分别是从0到6，必要时可更多。在深度操作系统中，/etc/rc0.d对应Run level 0，/etc/rc1.d对应Run level 1，/etc/rc2.d对应Run level 2，/etc/rc3.d对应Run level 3，/etc/rc4.d对应Run level 4，/etc/rc5.d对应Run level 5，/etc/rc6.d对应Run level 6。",
+          "qas": [
+            {
+              "id": "5-422-25",
+              "question": "运行模式（Runlevel）的定义是什么？",
+              "answers": [
+                {
+                  "text": "Unix或者Linux等类Unix操作系统下不同的运行模式",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-422-26",
+              "question": "运行级别通常分为几等？",
+              "answers": [
+                {
+                  "text": "7等，分别是从0到6",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-422-27",
+              "question": "深度操作系统中，Run level 0对应的路径是什么？",
+              "answers": [
+                {
+                  "text": "/etc/rc0.d",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度操作系统的运行级别：0为所有进程终止，机器有序停止（关机时）；1为单用户模式，用于系统维护，少数进程运行，所有服务不启动；2为多用户模式，和3一样但网络文件系统(NFS)服务没启动；3为多用户模式，允许多用户登录，是默认启动级别；4为用户自定义运行级别；5为多用户模式，启动后运行X-Window，提供图形化登录窗口；6为所有进程终止，系统重新启动。",
+          "qas": [
+            {
+              "id": "5-422-28",
+              "question": "深度操作系统运行级别0的作用是什么？",
+              "answers": [
+                {
+                  "text": "所有进程将被终止，机器将有序的停止，关机时系统处于这个运行级别",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-422-29",
+              "question": "深度操作系统运行级别1的用途是什么？",
+              "answers": [
+                {
+                  "text": "单用户模式，用于系统维护，只有少数进程运行，同时所有服务也不启动",
+                  "answer_start": 43
+                }
+              ]
+            },
+            {
+              "id": "5-422-30",
+              "question": "深度操作系统运行级别3的特点是什么？",
+              "answers": [
+                {
+                  "text": "多用户模式，允许多用户登录系统，是系统默认的启动级别",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "id": "5-422-31",
+              "question": "深度操作系统运行级别4的性质是什么？",
+              "answers": [
+                {
+                  "text": "留给用户自定义的运行级别",
+                  "answer_start": 142
+                }
+              ]
+            },
+            {
+              "id": "5-422-32",
+              "question": "深度操作系统运行级别5有什么特点？",
+              "answers": [
+                {
+                  "text": "多用户模式，并且在系统启动后运行X-Window，给出一个图形化的登录窗口",
+                  "answer_start": 161
+                }
+              ]
+            },
+            {
+              "id": "5-422-33",
+              "question": "深度操作系统运行级别6会触发什么操作？",
+              "answers": [
+                {
+                  "text": "所有进程被终止，系统重新启动",
+                  "answer_start": 222
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度操作系统默认运行级别为5，使用runlevel命令可查看当前运行模式，终端执行：runlevel。切换运行级别执行命令：init [0123456Ss]，参数为要切换的运行级代号，init 0为关机，init 6为重新启动。",
+          "qas": [
+            {
+              "id": "5-422-34",
+              "question": "深度操作系统的默认运行级别是多少？",
+              "answers": [
+                {
+                  "text": "5",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "5-422-35",
+              "question": "查看当前运行模式的命令是什么？",
+              "answers": [
+                {
+                  "text": "runlevel",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "5-422-36",
+              "question": "切换运行级别的命令格式是什么？",
+              "answers": [
+                {
+                  "text": "init [0123456Ss]",
+                  "answer_start": 46
+                }
+              ]
+            },
+            {
+              "id": "5-422-37",
+              "question": "init 0和init 6分别对应什么操作？",
+              "answers": [
+                {
+                  "text": "init 0为关机，init 6为重新启动",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更改深度操作系统默认运行模式需编辑/etc/init/rc-sysinit.conf，终端执行：sudo gedit /etc/init/rc-sysinit.conf。找到行：env DEFAULT_RUNLEVEL=2，更改最后数字为目标运行级别。为系统正常使用，不要将默认运行模式改为0、4和6。删除特定运行模式可直接删除对应配置文件，不明白后果则不建议操作。",
+          "qas": [
+            {
+              "id": "5-422-38",
+              "question": "更改默认运行模式需要编辑哪个文件？",
+              "answers": [
+                {
+                  "text": "/etc/init/rc-sysinit.conf",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-422-39",
+              "question": "编辑该文件的终端命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo gedit /etc/init/rc-sysinit.conf",
+                  "answer_start": 44
+                }
+              ]
+            },
+            {
+              "id": "5-422-40",
+              "question": "需要修改的配置行是什么？",
+              "answers": [
+                {
+                  "text": "env DEFAULT_RUNLEVEL=2",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "id": "5-422-41",
+              "question": "不应将默认运行模式改为哪些级别？",
+              "answers": [
+                {
+                  "text": "0、4和6",
+                  "answer_start": 118
+                }
+              ]
+            },
+            {
+              "id": "5-422-42",
+              "question": "如何删除特定的运行模式？",
+              "answers": [
+                {
+                  "text": "直接删除特定运行模式对应的配置文件",
+                  "answer_start": 136
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux系统中，现代引导程序（如LILO或者GRUB）允许用户在初始化过程中用最后启动的进程取代默认的/sbin/init，通常执行init=/foo/bar命令。例如执行init=/bin/bash，启动单用户root的shell环境，无需密码。正常用户进入单用户模式一般为了重置用户密码。",
+          "qas": [
+            {
+              "id": "5-422-43",
+              "question": "Linux系统中，用户可通过什么引导程序取代默认的/sbin/init？",
+              "answers": [
+                {
+                  "text": "LILO 或者 GRUB",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "5-422-44",
+              "question": "执行init=/bin/bash会启动什么环境？",
+              "answers": [
+                {
+                  "text": "单用户root的shell环境，无需用户密码",
+                  "answer_start": 88
+                }
+              ]
+            },
+            {
+              "id": "5-422-45",
+              "question": "正常用户进入单用户模式的常见目的是什么？",
+              "answers": [
+                {
+                  "text": "重置用户密码",
+                  "answer_start": 121
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "改进传统init守护进程的程序包括：Upstart（ubuntu主导开发）、Systemd（完全替代init，并行启动服务，减少shell系统开销，Fedora使用）、SystemStarter（Apple Mac OS X用来替代launchd）、Initng（完全代替init，异步开启进程）、Service Management Facility（替代/重新设计Solaris启动，Solaris 10）、runit（跨平台，完全代替init，并行启动服务）、Mudur（Python写成，异步开启进程，Pardus Linux）、eINIT（完全代替init，异步开启进程，不使用shell脚本）。",
+          "qas": [
+            {
+              "id": "5-422-46",
+              "question": "由ubuntu主导开发的初始化软件是什么？",
+              "answers": [
+                {
+                  "text": "Upstart",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "5-422-47",
+              "question": "Fedora使用的完全替代init的程序是什么？",
+              "answers": [
+                {
+                  "text": "Systemd",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "5-422-48",
+              "question": "Apple Mac OS X中用来替代launchd的程序是什么？",
+              "answers": [
+                {
+                  "text": "SystemStarter",
+                  "answer_start": 89
+                }
+              ]
+            },
+            {
+              "id": "5-422-49",
+              "question": "能异步开启进程的init替代品有哪些（列举一个即可）？",
+              "answers": [
+                {
+                  "text": "Initng",
+                  "answer_start": 126
+                }
+              ]
+            },
+            {
+              "id": "5-422-50",
+              "question": "跨平台且可并行启动服务的init替代品是什么？",
+              "answers": [
+                {
+                  "text": "runit",
+                  "answer_start": 188
+                }
+              ]
+            },
+            {
+              "id": "5-422-51",
+              "question": "用Python写成的init替代品是什么？",
+              "answers": [
+                {
+                  "text": "Mudur",
+                  "answer_start": 215
+                }
+              ]
+            },
+            {
+              "id": "5-422-52",
+              "question": "不使用shell脚本即可异步开启进程的init替代品是什么？",
+              "answers": [
+                {
+                  "text": "eINIT",
+                  "answer_start": 256
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "关于初始化的相关链接：维基百科:init（http://zh.wikipedia.org/wiki/Init）、运行级别（http://zh.wikipedia.org/wiki/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F）、ubuntu设置开机启动图形应用程序（http://blog.csdn.net/liebergott/article/details/7793408）。",
+          "qas": [
+            {
+              "id": "5-422-53",
+              "question": "关于init的维基百科链接是什么？",
+              "answers": [
+                {
+                  "text": "http://zh.wikipedia.org/wiki/Init",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "5-422-54",
+              "question": "关于运行级别的维基百科链接是什么？",
+              "answers": [
+                {
+                  "text": "http://zh.wikipedia.org/wiki/%E8%BF%90%E8%A1%8C%E6%A8%A1%E5%BC%8F",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "id": "5-422-55",
+              "question": "ubuntu设置开机启动图形应用程序的链接是什么？",
+              "answers": [
+                {
+                  "text": "http://blog.csdn.net/liebergott/article/details/7793408",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "初始化英文简称:init（initialization）是 Unix 和 类Unix 系统启动过程中的第一道程序，用来产生其它所有进程的程序。它以守护进程的方式存在，其进程号为1，它将继续运行直到系统关闭。它是所有其他进程的直接或间接的始源，并会接管孤儿进程。Init由使用硬编码的文件名的内核来启动，如果内核无法启动它，将导致内核崩溃（或“内核恐慌”）.",
+          "qas": [
+            {
+              "id": "5-422-56",
+              "question": "init在系统启动中扮演什么角色？",
+              "answers": [
+                {
+                  "text": "是 Unix 和 类Unix 系统启动过程中的第一道程序，用来产生其它所有进程的程序",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-422-57",
+              "question": "如果内核无法启动init会发生什么？",
+              "answers": [
+                {
+                  "text": "将导致内核崩溃（或“内核恐慌”）",
+                  "answer_start": 171
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "BSD init 运行存放于/etc/rc的初始化 shell 脚本，然后启动基于文本模式的终端(getty)或者基于图形界面的终端(窗口系统，如 X)。这里没有运行模式的问题，因为文件 'rc' 决定了 init 如何执行。优点: 简单且易于手动编辑。缺点: 如果第三方软件需要在启动过程执行它自身的初始化脚本，它必须修改已经存在的启动脚本，一旦这种过程中有一个小错误，都将导致系统无法正常启动。值得注意的是，现代的 BSD 派生系统一直支持使用 rc.local文件的方式，它将在正常启动过程接近最后的时间以子脚本的方式来执行。这样做减少了整个系统无法启动的风险。然后，第三方软件包可以将它们独立的 start/stop 脚本安装到一个本地的 rc.d目录中(通常这是由 ports collection/pkgsrc 完成的)。FreeBSD 和 NetBSD 现在默认使用 rc.d ，该目录中所有的用户启动脚本，都被分成更小的子脚本，和 SysV 类似。rcorder 通常根据在 rc.d目录中脚本之间的依赖关系来决定脚本的执行顺序.",
+          "qas": [
+            {
+              "id": "5-422-58",
+              "question": "BSD init运行什么脚本来启动？",
+              "answers": [
+                {
+                  "text": "运行存放于/etc/rc的初始化 shell 脚本",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-422-59",
+              "question": "现代BSD系统如何减少启动风险？",
+              "answers": [
+                {
+                  "text": "支持使用 rc.local文件的方式，它将在正常启动过程接近最后的时间以子脚本的方式来执行",
+                  "answer_start": 281
+                }
+              ]
+            },
+            {
+              "id": "5-422-60",
+              "question": "FreeBSD 和 NetBSD 默认使用什么机制？",
+              "answers": [
+                {
+                  "text": "默认使用 rc.d",
+                  "answer_start": 439
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "System V init 检查 /etc/inittab文件中是否含有 initdefault项。这告诉 init 系统是否有一个默认运行模式。如果没有默认的运行模式，那么用户将进入系统控制台，手动决定进入何种运行模式。优点: 灵活性强 缺陷: 比较复杂。",
+          "qas": [
+            {
+              "id": "5-422-61",
+              "question": "System V init检查哪个文件？",
+              "answers": [
+                {
+                  "text": "检查 /etc/inittab文件中是否含有 initdefault项",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "5-422-62",
+              "question": "当没有默认运行模式时，用户会怎么做？",
+              "answers": [
+                {
+                  "text": "用户将进入系统控制台，手动决定进入何种运行模式",
+                  "answer_start": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行模式在深度操作系统中分类如下：0 所有进程将被终止，机器将有序的停止，关机时系统处于这个运行级别；1 单用户模式。用于系统维护,只有少数进程运行,同时所有服务也不启动；2 多用户模式。和运行级别3一样,只是网络文件系统(NFS)服务没被启动；3 多用户模式。允许多用户登录系统,是系统默认的启动级别；4 留给用户自定义的运行级别；5 多用户模式,并且在系统启动后运行 X-Window, 给出一个图形化的登录窗口；6 所有进程被终止,系统重新启动。",
+          "qas": [
+            {
+              "id": "5-422-63",
+              "question": "关机时系统处于哪个运行级别？",
+              "answers": [
+                {
+                  "text": "0",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "5-422-64",
+              "question": "单用户模式对应哪个运行级别？",
+              "answers": [
+                {
+                  "text": "1",
+                  "answer_start": 93
+                }
+              ]
+            },
+            {
+              "id": "5-422-65",
+              "question": "系统默认的启动级别是哪个？",
+              "answers": [
+                {
+                  "text": "3",
+                  "answer_start": 184
+                }
+              ]
+            },
+            {
+              "id": "5-422-66",
+              "question": "哪个运行级别会启动图形界面？",
+              "answers": [
+                {
+                  "text": "5",
+                  "answer_start": 245
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看当前的运行级别使用runlevel命令。更改当前运行级别执行命令：init [0123456Ss]。注意:init 0 为关机,init 6 为重新启动。更改默认运行模式需要编辑 /etc/init/rc-sysinit.conf,找到下面一行： env DEFAULT_RUNLEVEL=2 更改最后面的数字为你想要更改到的运行级别。注意:为了系统的正常使用,请不要更改默认运行模式为0、4和6。删除运行模式如果有需要,直接删除特定运行模式对应的配置文件即可。但是如果你不明白这样做的后果,请不要这么做!",
+          "qas": [
+            {
+              "id": "5-422-67",
+              "question": "如何查看当前的运行级别？",
+              "answers": [
+                {
+                  "text": "使用runlevel命令",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-422-68",
+              "question": "如何切换到运行级别5？",
+              "answers": [
+                {
+                  "text": "init 5",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在Linux系统中,用户可以在初始化过程中通过执行 init=/foo/bar 命令来取代默认的 /sbin/init。例如,执行 init=/bin/bash 会启动单用户 root 的 shell 环境,无需用户密码。正常用户进入单用户模式一般为了重置用户密码.",
+          "qas": [
+            {
+              "id": "5-422-69",
+              "question": "如何进入单用户模式？",
+              "answers": [
+                {
+                  "text": "执行 init=/foo/bar 命令来取代默认的 /sbin/init",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "改进传统的 init 守护进程包括: Upstart：ubuntu主导开发的初始化软件；Systemd：完全替代init，可并行启动服务，为Fedora所使用；SystemStarter：用于 Apple Mac OS X；Initng：完全代替 init ，可以异步开启进程；runit：跨平台的完全代替 init；Mudur：用 Python 写成的 init 替代品，用于Pardus Linux发行版；eINIT：可异步开启进程而不使用 shell 脚本.",
+          "qas": [
+            {
+              "id": "5-422-70",
+              "question": "哪个初始化程序被Fedora使用？",
+              "answers": [
+                {
+                  "text": "Systemd",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-422-71",
+              "question": "Mudur使用什么语言编写？",
+              "answers": [
+                {
+                  "text": "Python",
+                  "answer_start": 192
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

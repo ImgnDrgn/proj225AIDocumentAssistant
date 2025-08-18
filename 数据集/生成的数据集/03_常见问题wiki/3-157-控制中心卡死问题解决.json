@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "title": "控制中心卡死问题解决",
+      "paragraphs": [
+        {
+          "context": "控制中心卡死可尝试重装deepin控制中心，包名是dde-control-center，命令为sudo apt install dde-control-center。",
+          "qas": [
+            {
+              "question": "控制中心卡死可以怎么解决？",
+              "id": "3-157-1",
+              "answers": [
+                {
+                  "text": "尝试重装安装deepin控制中心",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "deepin控制中心的包名是什么？",
+              "id": "3-157-2",
+              "answers": [
+                {
+                  "text": "dde-control-center",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "重装deepin控制中心的命令是什么？",
+              "id": "3-157-3",
+              "answers": [
+                {
+                  "text": "sudo apt install dde-control-center",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

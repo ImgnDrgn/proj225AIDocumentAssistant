@@ -1,0 +1,274 @@
+{
+  "data": [
+    {
+      "title": "系统日志",
+      "paragraphs": [
+        {
+          "context": "日志文件能记录系统事件，帮助检查错误原因和追踪攻击者踪迹，主要功能是审计和监测，还能实时监测系统状态及追踪侵入者。",
+          "qas": [
+            {
+              "question": "日志文件的主要功能是什么？",
+              "id": "5-447-1",
+              "answers": [
+                {
+                  "text": "审计和监测，还能实时地监测系统状态，监测和追踪侵入者。",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux系统有3个主要日志子系统：连接时间日志、进程统计日志和错误日志。连接时间日志由多个程序执行，记录写入/var/log/wtmp和/var/run/utmp；进程统计日志由系统内核执行，进程终止时写入pacct或acct；错误日志由sysogd(8)执行，向/var/og/messages报告事件。",
+          "qas": [
+            {
+              "question": "Linux系统主要有哪些日志子系统？",
+              "id": "5-447-2",
+              "answers": [
+                {
+                  "text": "连接时间日志、进程统计日志和错误日志。",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "连接时间日志的记录保存在哪里？",
+              "id": "5-447-3",
+              "answers": [
+                {
+                  "text": "/var/log/wtmp和/var/run/utmp",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "日志消息级别从0到7，0是EMERG（紧急，主机不可用），1是ALERT（警告，需立即处理），2是CRIT（严重），3是ERR（错误），4是WARNING（提醒），5是NOTICE（注意），6是INFO（信息），7是DEBUG（调试）。",
+          "qas": [
+            {
+              "question": "日志消息级别中0级对应的是什么？",
+              "id": "5-447-4",
+              "answers": [
+                {
+                  "text": "EMERG（紧急）：会导致主机系统不可用的情况",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "哪个日志消息级别表示可能影响系统功能的事件？",
+              "id": "5-447-5",
+              "answers": [
+                {
+                  "text": "4 WARNING（提醒）",
+                  "answer_start": 104
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/var/log/messages包含整体系统信息，包括启动期间日志及mail、cron等内容；/var/log/dmesg包含内核缓冲信息，启动时显示硬件相关信息，可用dmesg查看。",
+          "qas": [
+            {
+              "question": "/var/log/messages包含哪些内容？",
+              "id": "5-447-6",
+              "answers": [
+                {
+                  "text": "整体系统信息，其中也包含系统启动期间的日志。此外，mail，cron，daemon，kern和auth等内容也记录在其中。",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "如何查看/var/log/dmesg中的内容？",
+              "id": "5-447-7",
+              "answers": [
+                {
+                  "text": "用dmesg查看",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/var/log/auth.log包含系统授权信息，如用户登录和权限机制；/var/log/boot.log包含系统启动时的日志；/var/log/daemon.log包含各种系统后台守护进程日志信息。",
+          "qas": [
+            {
+              "question": "/var/log/auth.log包含什么信息？",
+              "id": "5-447-8",
+              "answers": [
+                {
+                  "text": "系统授权信息，包括用户登录和使用的权限机制等。",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "哪个日志文件包含系统启动时的日志？",
+              "id": "5-447-9",
+              "answers": [
+                {
+                  "text": "/var/log/boot.log",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/var/log/kern.log包含内核产生的日志，有助于定制内核时解决问题；/var/log/lastlog记录所有用户的最近信息，需用lastlog命令查看；/var/log/maillog 和 /var/log/mail.log包含电子邮件服务器的日志信息。",
+          "qas": [
+            {
+              "question": "/var/log/kern.log有什么作用？",
+              "id": "5-447-10",
+              "answers": [
+                {
+                  "text": "包含内核产生的日志，有助于在定制内核时解决问题。",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "如何查看/var/log/lastlog的内容？",
+              "id": "5-447-11",
+              "answers": [
+                {
+                  "text": "用lastlog命令查看",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/var/log/btmp记录所有失败登录信息，可用last -f /var/log/btmp | more查看；/var/log/cron记录cron进程开始工作的相关信息；/var/log/secure包含验证和授权方面信息，如sshd的相关记录。",
+          "qas": [
+            {
+              "question": "/var/log/btmp记录什么信息？",
+              "id": "5-447-12",
+              "answers": [
+                {
+                  "text": "所有失败登录信息。",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "如何查看/var/log/btmp的内容？",
+              "id": "5-447-13",
+              "answers": [
+                {
+                  "text": "last -f /var/log/btmp | more",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "systemd-analyze命令可记录系统启动耗时详情，用systemd-analyze plot > start_analyze.svg输出图形，用systemd-analyze blame获得进程耗时排名。",
+          "qas": [
+            {
+              "question": "如何输出系统启动耗时的图形？",
+              "id": "5-447-14",
+              "answers": [
+                {
+                  "text": "systemd-analyze plot > start_analyze.svg",
+                  "answer_start": 55
+                }
+              ]
+            },
+            {
+              "question": "哪个命令能获得系统启动时进程耗时排名信息？",
+              "id": "5-447-15",
+              "answers": [
+                {
+                  "text": "systemd-analyze blame",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "who命令显示当前本地系统用户信息，包括登录名、tty、登录日期和时间等。who am i 或 whoami显示自己的登录信息，远程登录会显示主机名。",
+          "qas": [
+            {
+              "question": "who命令能显示哪些信息？",
+              "id": "5-447-16",
+              "answers": [
+                {
+                  "text": "登录名、tty、登录日期和时间。如果用户是从一个远程机器登录的，那么该机器的主机名也会被显示出来。",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "如何查看自己的登录信息？",
+              "id": "5-447-17",
+              "answers": [
+                {
+                  "text": "输入 who am i 或 whoami",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "w命令显示目前登入系统的用户信息及他们正在执行的程序，可指定用户查看；last命令读取/var/log/wtmp文件，列出目前与过去登入系统的用户信息。",
+          "qas": [
+            {
+              "question": "w命令的作用是什么？",
+              "id": "5-447-18",
+              "answers": [
+                {
+                  "text": "显示目前登入系统的用户信息，以及他们正在执行的程序。可指定用户名称，仅显示某位用户的相关信息。",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "last命令读取哪个文件来获取登录信息？",
+              "id": "5-447-19",
+              "answers": [
+                {
+                  "text": "/var/log/wtmp",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lastlog命令报告所有用户或指定用户的最近登录情况，有-b、-t等选项，分别用于显示老于或新于指定天数的登录记录。",
+          "qas": [
+            {
+              "question": "lastlog命令的作用是什么？",
+              "id": "5-447-20",
+              "answers": [
+                {
+                  "text": "报告所有用户的最近登录情况，或者指定用户的最近登录情况。",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "lastlog命令中，-b选项的作用是什么？",
+              "id": "5-447-21",
+              "answers": [
+                {
+                  "text": "只显示老于 DAYS 的最近登录记录。",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

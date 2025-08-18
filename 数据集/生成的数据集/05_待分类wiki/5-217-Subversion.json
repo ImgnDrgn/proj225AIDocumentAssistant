@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "Subversion",
+      "paragraphs": [
+        {
+          "context": "Subversion是一个自由开源的版本控制系统。安装命令为sudo apt-get install subversion。卸载命令为sudo apt-get remove subversion。仓库地址为http://packages.deepin.com/deepin/pool/main/s/subversion/。官方网站是https://subversion.apache.org/。",
+          "qas": [
+            {
+              "id": "5-217-1",
+              "question": "Subversion是什么类型的系统？",
+              "answers": [
+                {
+                  "text": "自由开源的版本控制系统",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-217-2",
+              "question": "如何安装Subversion？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install subversion",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "5-217-3",
+              "question": "卸载Subversion的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove subversion",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "5-217-4",
+              "question": "Subversion的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/subversion/",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "id": "5-217-5",
+              "question": "Subversion的官方网站在哪里？",
+              "answers": [
+                {
+                  "text": "https://subversion.apache.org/",
+                  "answer_start": 145
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

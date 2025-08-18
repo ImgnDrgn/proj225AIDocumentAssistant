@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "如何在deepin系统中访问windows中共享的文件",
+      "paragraphs": [
+        {
+          "context": "本文介绍了如何在deepin系统中访问windows11中共享的文件，涉及windows中共享文件夹的设置和deepin系统中访问的步骤。windows中共享文件夹需要关闭使用中网络的防火墙，启用smb服务（windows系统默认开启），使用本地账号登录并记住账户名和密码，在资源管理器中设置需要共享的文件夹，以及查看windows系统IP地址。deepin系统中访问需打开文件管理器，在搜索框中输入smb://+Windows系统的ip地址，然后输入用户名和密码即可。",
+          "qas": [
+            {
+              "id": "3-55-1",
+              "question": "在windows中设置文件夹共享时，需要关闭什么？",
+              "answers": [
+                {
+                  "text": "使用中网络的防火墙",
+                  "answer_start": 77
+                }
+              ]
+            },
+            {
+              "id": "3-55-2",
+              "question": "windows系统中smb服务默认是否开启？",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 109
+                }
+              ]
+            },
+            {
+              "id": "3-55-3",
+              "question": "windows11系统中设置文件夹共享时，登录账户有什么要求？",
+              "answers": [
+                {
+                  "text": "使用本地账号登录，且需记住该账户名和密码",
+                  "answer_start": 132
+                }
+              ]
+            },
+            {
+              "id": "3-55-4",
+              "question": "在资源管理器中如何设置需要共享的文件夹？",
+              "answers": [
+                {
+                  "text": "右键点击需要共享的文件夹，选择“更多选项”-“属性”",
+                  "answer_start": 177
+                }
+              ]
+            },
+            {
+              "id": "3-55-5",
+              "question": "deepin系统中访问windows共享文件时，在文件管理器搜索框中输入什么？",
+              "answers": [
+                {
+                  "text": "smb://+Windows系统的ip地址",
+                  "answer_start": 257
+                }
+              ]
+            },
+            {
+              "id": "3-55-6",
+              "question": "deepin系统访问windows共享文件最后需要输入什么才能访问？",
+              "answers": [
+                {
+                  "text": "用户名和密码",
+                  "answer_start": 297
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,229 @@
+{
+  "data": [
+    {
+      "title": "如何在Fedora发行版上安装DDE桌面环境",
+      "paragraphs": [
+        {
+          "context": "深度桌面环境（DDE）被认为是深度Linux开发者创造的最优秀的美观桌面环境之一。它也经常被认为是Linux上最漂亮的桌面。对于Fedora的用户来说，这可以很容易地安装并且对于那些喜欢在桌面之间跳跃的人来说是一个可选的选择。",
+          "qas": [
+            {
+              "question": "DDE是由谁创造的？",
+              "id": "3-14-1",
+              "answers": [
+                {
+                  "text": "深度Linux开发者",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "DDE常被认为是Linux上的什么？",
+              "id": "3-14-2",
+              "answers": [
+                {
+                  "text": "最漂亮的桌面",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "question": "对于Fedora用户来说，DDE是否容易安装？",
+              "id": "3-14-3",
+              "answers": [
+                {
+                  "text": "可以很容易地安装",
+                  "answer_start": 77
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "首先，确保您的系统是最新的，因为在使用以下命令安装辅助桌面环境时这是必不可少的。在Fedora桌面环境中，打开终端输入：sudo dnf upgrade --refresh -y",
+          "qas": [
+            {
+              "question": "安装DDE前，为什么需要确保系统是最新的？",
+              "id": "3-14-4",
+              "answers": [
+                {
+                  "text": "因为在使用命令安装辅助桌面环境时这是必不可少的",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "Fedora上更新系统的终端命令是什么？",
+              "id": "3-14-5",
+              "answers": [
+                {
+                  "text": "sudo dnf upgrade --refresh -y",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度桌面环境包含在Fedora 36的存储库中，使得安装相对简单。要开始安装，打开终端输入：sudo dnf group install \"Deepin Desktop\" -y 安装可能需要几分钟时间，具体取决于硬件的使用年限，尤其是您的互联网连接。总体而言，下载量大约在450MB左右，之后所需的磁盘空间大小约为1.5GB。安装完成后，您需要重新启动PC。这可以在您的终端中使用reboot命令快速完成。",
+          "qas": [
+            {
+              "question": "Fedora 36的存储库中是否包含DDE？",
+              "id": "3-14-6",
+              "answers": [
+                {
+                  "text": "是，深度桌面环境包含在Fedora 36的存储库中",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "安装DDE的终端命令是什么？",
+              "id": "3-14-7",
+              "answers": [
+                {
+                  "text": "sudo dnf group install \"Deepin Desktop\" -y",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "question": "安装DDE的下载量大约是多少？",
+              "id": "3-14-8",
+              "answers": [
+                {
+                  "text": "450MB左右",
+                  "answer_start": 133
+                }
+              ]
+            },
+            {
+              "question": "安装DDE后所需的磁盘空间约为多少？",
+              "id": "3-14-9",
+              "answers": [
+                {
+                  "text": "1.5GB",
+                  "answer_start": 160
+                }
+              ]
+            },
+            {
+              "question": "安装DDE完成后需要做什么？",
+              "id": "3-14-10",
+              "answers": [
+                {
+                  "text": "重新启动PC，可在终端中使用reboot命令",
+                  "answer_start": 172
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重新启动桌面后，您将进入登录屏幕。首先，您需要通过单击屏幕右上角的设置图标来更改和验证桌面环境，然后选择Deepin。",
+          "qas": [
+            {
+              "question": "重新启动后进入什么界面？",
+              "id": "3-14-11",
+              "answers": [
+                {
+                  "text": "登录屏幕",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "如何选择登录Deepin桌面环境？",
+              "id": "3-14-12",
+              "answers": [
+                {
+                  "text": "单击屏幕右上角的设置图标，然后选择Deepin",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "为深度桌面环境和任何默认DNF包运行标准DNF更新命令以进行更新。在终端中输入：sudo dnf update 当更新可用时，像使用任何其他DNF包一样运行标准升级命令。在终端中输入：sudo dnf upgrade --refresh -y",
+          "qas": [
+            {
+              "question": "更新深度桌面环境的基础命令是什么？",
+              "id": "3-14-13",
+              "answers": [
+                {
+                  "text": "sudo dnf update",
+                  "answer_start": 44
+                }
+              ]
+            },
+            {
+              "question": "当有更新可用时，升级DDE的命令是什么？",
+              "id": "3-14-14",
+              "answers": [
+                {
+                  "text": "sudo dnf upgrade --refresh -y",
+                  "answer_start": 121
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除Deepin桌面环境的用户，请使用以下终端命令: sudo dnf group remove \"Deepin Desktop\" 完成后，重新启动系统。",
+          "qas": [
+            {
+              "question": "卸载Deepin桌面环境的终端命令是什么？",
+              "id": "3-14-15",
+              "answers": [
+                {
+                  "text": "sudo dnf group remove \"Deepin Desktop\"",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "卸载DDE后需要做什么？",
+              "id": "3-14-16",
+              "answers": [
+                {
+                  "text": "重新启动系统",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在终端中输入：yum list installed查看所有包环境信息",
+          "qas": [
+            {
+              "question": "如何查看所有包环境信息？",
+              "id": "3-14-17",
+              "answers": [
+                {
+                  "text": "在终端中输入：yum list installed",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "可在路径~/.cache/deepin下查看日志信息",
+          "qas": [
+            {
+              "question": "在哪里可以查看DDE的日志信息？",
+              "id": "3-14-18",
+              "answers": [
+                {
+                  "text": "路径~/.cache/deepin下",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

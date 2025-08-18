@@ -1,0 +1,214 @@
+{
+  "data": [
+    {
+      "title": "U盘安装",
+      "paragraphs": [
+        {
+          "context": "Deepin Linux U盘安装教程由社区用户(cyx980622)分享，原地址为https://bbs.deepin.org/forum.php?mod=viewthread&tid=41972&extra=。",
+          "qas": [
+            {
+              "question": "Deepin Linux U盘安装教程由谁分享？",
+              "id": "5-497-1",
+              "answers": [
+                {
+                  "text": "社区用户(cyx980622)",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "该教程的原地址是什么？",
+              "id": "5-497-2",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/forum.php?mod=viewthread&tid=41972&extra=",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度U盘启动制作工具在windows系统中的版本为1.1，360云盘下载地址为http://yunpan.cn/c6WJGnRtItmUd，提取码6325；Linux系统中的版本为1.0，下载地址为http://yunpan.cn/c6WJUJ8cSUSk9，提取码f2d3，感谢youyou2011分享。",
+          "qas": [
+            {
+              "question": "windows系统中深度U盘启动制作工具的版本是什么？",
+              "id": "5-497-3",
+              "answers": [
+                {
+                  "text": "1.1",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "Linux系统中深度U盘启动制作工具的360云盘提取码是什么？",
+              "id": "5-497-4",
+              "answers": [
+                {
+                  "text": "f2d3",
+                  "answer_start": 145
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装前需在官网下载Deepin的ISO镜像，完成后比对MD5校验码，确认一致后制作可启动U盘。",
+          "qas": [
+            {
+              "question": "安装Deepin前需要下载什么？",
+              "id": "5-497-5",
+              "answers": [
+                {
+                  "text": "Deepin的ISO镜像",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "下载ISO镜像后需要做什么？",
+              "id": "5-497-6",
+              "answers": [
+                {
+                  "text": "比对MD5校验码，确认一致后制作可启动U盘",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开deepin-boot-maker 1.1.exe（最好右键以管理员权限运行），步骤为：1.选择光盘镜像；2.选择可启动U盘设备；3.格式化U盘（提前转移数据）；4.点U盘设备选择；5.开始制作；6.完成；7.关机或重启。",
+          "qas": [
+            {
+              "question": "打开deepin-boot-maker 1.1.exe时建议如何操作？",
+              "id": "5-497-7",
+              "answers": [
+                {
+                  "text": "右键以管理员权限运行",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "制作可启动U盘的第一步是什么？",
+              "id": "5-497-8",
+              "answers": [
+                {
+                  "text": "选择光盘镜像",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "question": "制作U盘前为何要格式化U盘？",
+              "id": "5-497-9",
+              "answers": [
+                {
+                  "text": "需要提前转移U盘里的数据到其他地方",
+                  "answer_start": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开机前按F10进入引导选择页面（不同主板可能不同，老主板需改BIOS设置），支持UEFI启动的机子可识别出UEFI的U盘引导项。",
+          "qas": [
+            {
+              "question": "开机前按什么键进入引导选择页面？",
+              "id": "5-497-10",
+              "answers": [
+                {
+                  "text": "F10",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "老主板如何进入引导选择相关设置？",
+              "id": "5-497-11",
+              "answers": [
+                {
+                  "text": "通过改BIOS设置",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装过程步骤：1.回车选择Install Deepin；2.选简体中文；3.设置用户名、主机名、密码；4.磁盘分区（简单模式直接安装，专家模式需根目录分区，swap分区可设为与物理内存同大）；5.确认安装；6.完成后拔U盘重启；7.修改启动顺序（非必须）。",
+          "qas": [
+            {
+              "question": "安装过程中语言选择什么？",
+              "id": "5-497-12",
+              "answers": [
+                {
+                  "text": "简体中文",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "专家模式分区需要什么？",
+              "id": "5-497-13",
+              "answers": [
+                {
+                  "text": "根目录分区",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "question": "swap分区如何设置？",
+              "id": "5-497-14",
+              "answers": [
+                {
+                  "text": "可以设置为和物理内存一样大",
+                  "answer_start": 100
+                }
+              ]
+            },
+            {
+              "question": "安装完成后需要做什么？",
+              "id": "5-497-15",
+              "answers": [
+                {
+                  "text": "拔出u盘，点击重启，自动进入deepin系统",
+                  "answer_start": 142
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "uefi引导可通过EasyUEFI工具或BIOS修改启动顺序；MBR引导在win7及之后系统可用EasyBCD修改。",
+          "qas": [
+            {
+              "question": "如何修改uefi引导的启动顺序？",
+              "id": "5-497-16",
+              "answers": [
+                {
+                  "text": "使用EasyUEFI工具进行修改或者在BIOS里进行修改",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "MBR引导在哪些系统中可用EasyBCD修改启动顺序？",
+              "id": "5-497-17",
+              "answers": [
+                {
+                  "text": "win7及之后windows操作系统",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

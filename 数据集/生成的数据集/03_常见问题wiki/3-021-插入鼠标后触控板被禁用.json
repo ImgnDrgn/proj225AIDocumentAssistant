@@ -1,0 +1,144 @@
+{
+  "data": [
+    {
+      "title": "插入鼠标后触控板被禁用",
+      "paragraphs": [
+        {
+          "context": "输入密码进入桌面后，触摸板不能使用了；可以通过 xinput enable \"MSFT0001:01 06CB:CE2D Touchpad\" 打开。插入鼠标后，触摸板又被禁用了；此时没有选择控制中心的“插入鼠标禁用触摸板”。",
+          "qas": [
+            {
+              "id": "3-21-1",
+              "question": "输入密码进入桌面后触控板的状态是什么？",
+              "answers": [
+                {
+                  "text": "触摸板不能使用了",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-21-2",
+              "question": "如何恢复进入桌面后失效的触控板？",
+              "answers": [
+                {
+                  "text": "xinput enable \"MSFT0001:01 06CB:CE2D Touchpad\"",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "3-21-3",
+              "question": "插入鼠标后触控板出现什么现象？",
+              "answers": [
+                {
+                  "text": "触摸板又被禁用了",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "id": "3-21-4",
+              "question": "触控板被禁用时控制中心的设置状态如何？",
+              "answers": [
+                {
+                  "text": "没有选择控制中心的“插入鼠标禁用触摸板”",
+                  "answer_start": 89
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "调查将/usr/lib/deepin-daemon/dde-session-daemon 杀掉后就没有问题了，可以确定是dde-daemon的问题。查看gsetting值：gsettings get com.deepin.dde.touchpad touchpad-enabled，发现返回值是false。通过修改 gsettings set com.deepin.dde.touchpad touchpad-enabled true，就不存在这个问题了。",
+          "qas": [
+            {
+              "id": "3-21-5",
+              "question": "杀掉哪个进程后，插入鼠标后触控板被禁用的问题就没有了？",
+              "answers": [
+                {
+                  "text": "/usr/lib/deepin-daemon/dde-session-daemon",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "3-21-6",
+              "question": "导致触控板问题的根本组件是什么？",
+              "answers": [
+                {
+                  "text": "dde-daemon",
+                  "answer_start": 48
+                }
+              ]
+            },
+            {
+              "id": "3-21-7",
+              "question": "查看触控板相关gsetting值的命令是什么？",
+              "answers": [
+                {
+                  "text": "gsettings get com.deepin.dde.touchpad touchpad-enabled",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "id": "3-21-8",
+              "question": "导致触控板被禁用的gsetting返回值是多少？",
+              "answers": [
+                {
+                  "text": "false",
+                  "answer_start": 121
+                }
+              ]
+            },
+            {
+              "id": "3-21-9",
+              "question": "如何修改gsetting值解决触控板被禁用的问题？",
+              "answers": [
+                {
+                  "text": "gsettings set com.deepin.dde.touchpad touchpad-enabled true",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "该设置在某些情况下被用户设置成了false，但是控制中心却没有隐藏 鼠标 -> 鼠标 ->“插入鼠标时禁用触摸板”给用户造成了误解。因此后面会将该设置项目与这个gsetting值绑定，该值为false的时候就不显示。",
+          "qas": [
+            {
+              "id": "3-21-10",
+              "question": "为什么用户会对“插入鼠标时禁用触摸板”选项产生误解？",
+              "answers": [
+                {
+                  "text": "控制中心却没有隐藏 鼠标 -> 鼠标 ->“插入鼠标时禁用触摸板”",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "3-21-11",
+              "question": "控制中心未隐藏哪个误导用户的设置路径？",
+              "answers": [
+                {
+                  "text": "鼠标 -> 鼠标 ->“插入鼠标时禁用触摸板”",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "3-21-12",
+              "question": "后续会如何处理“插入鼠标时禁用触摸板”选项？",
+              "answers": [
+                {
+                  "text": "将该设置项目与这个gsetting值绑定，该值为false的时候就不显示",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

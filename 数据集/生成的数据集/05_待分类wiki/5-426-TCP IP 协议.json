@@ -1,0 +1,419 @@
+{
+  "data": [
+    {
+      "title": "TCP/IP 协议",
+      "paragraphs": [
+        {
+          "context": "TCP/IP 是基于 TCP 和 IP 这两个最初的协议之上的不同的通信协议的大集合。",
+          "qas": [
+            {
+              "id": "5-426-1",
+              "question": "TCP/IP协议是基于哪两个最初的协议构建的不同通信协议的大集合？",
+              "answers": [
+                {
+                  "text": "TCP 和 IP",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-426-2",
+              "question": "TCP/IP 协议族是什么？",
+              "answers": [
+                {
+                  "text": "基于 TCP 和 IP 这两个最初的协议之上的不同的通信协议的大集合",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "TCP 用于从应用程序到网络的数据传输控制。TCP 负责在数据传送之前将它们分割为 IP 包，然后在它们到达的时候将它们重组。",
+          "qas": [
+            {
+              "id": "5-426-3",
+              "question": "TCP用于什么场景下的数据传输控制？",
+              "answers": [
+                {
+                  "text": "从应用程序到网络",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "5-426-4",
+              "question": "TCP在数据传送前后分别执行什么操作？",
+              "answers": [
+                {
+                  "text": "传送前将数据分割为IP包，到达时将数据重组",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "IP 负责计算机之间的通信。IP 负责在因特网上发送和接收数据包。",
+          "qas": [
+            {
+              "id": "5-426-5",
+              "question": "IP协议主要负责哪些功能？",
+              "answers": [
+                {
+                  "text": "计算机之间的通信，以及在因特网上发送和接收数据包",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "5-426-6",
+              "question": "IP 协议的功能是什么？",
+              "answers": [
+                {
+                  "text": "负责计算机之间的通信",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "5-426-7",
+              "question": "IP 在因特网中的角色是什么？",
+              "answers": [
+                {
+                  "text": "负责在因特网上发送和接收数据包",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "HTTP 负责 web 服务器与 web 浏览器之间的通信。HTTP 用于从 web 客户端（浏览器）向 web 服务器发送请求，并从 web 服务器向 web 客户端返回内容（网页）。",
+          "qas": [
+            {
+              "id": "5-426-8",
+              "question": "HTTP负责哪两者之间的通信？",
+              "answers": [
+                {
+                  "text": "web 服务器与 web 浏览器",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "5-426-9",
+              "question": "HTTP在web客户端和服务器之间的作用是什么？",
+              "answers": [
+                {
+                  "text": "从web客户端（浏览器）向web服务器发送请求，从web服务器向web客户端返回内容（网页）",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "HTTPS 负责在 web 服务器和 web 浏览器之间的安全通信。作为有代表性的应用，HTTPS 会用于处理信用卡交易和其他的敏感数据。",
+          "qas": [
+            {
+              "id": "5-426-10",
+              "question": "HTTPS的核心功能是什么？",
+              "answers": [
+                {
+                  "text": "在web服务器和web浏览器之间提供安全通信",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "5-426-11",
+              "question": "HTTPS有哪些代表性应用场景？",
+              "answers": [
+                {
+                  "text": "处理信用卡交易和其他的敏感数据",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SSL 协议用于为安全数据传输加密数据。",
+          "qas": [
+            {
+              "id": "5-426-12",
+              "question": "SSL协议的作用是什么？",
+              "answers": [
+                {
+                  "text": "为安全数据传输加密数据",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SMTP 协议用于传输电子邮件。SMTP 负责把邮件发送到另一台计算机。通常情况下，邮件会被送到一台邮件服务器（SMTP 服务器），然后被送到另一台（或几台）服务器，然后最终被送到它的目的地。SMTP 也可以传送纯文本，但是无法传输诸如图片、声音或者电影之类的二进制数据。SMTP 使用 MIME 协议通过 TCP/IP 网络来发送二进制数据。MIME 协议会将二进制数据转换为纯文本。",
+          "qas": [
+            {
+              "id": "5-426-13",
+              "question": "SMTP 的主要用途是什么？",
+              "answers": [
+                {
+                  "text": "用于传输电子邮件",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-426-14",
+              "question": "SMTP 如何发送邮件？",
+              "answers": [
+                {
+                  "text": "负责把邮件发送到另一台计算机",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "5-426-15",
+              "question": "SMTP无法直接传输哪些类型的数据？如何解决这一问题？",
+              "answers": [
+                {
+                  "text": "无法传输图片、声音、电影之类的二进制数据；通过使用MIME协议，将二进制数据转换为纯文本后传输",
+                  "answer_start": 118
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MIME 协议使 SMTP 有能力通过 TCP/IP 网络传输多媒体文件，包括声音、视频和二进制数据。",
+          "qas": [
+            {
+              "id": "5-426-16",
+              "question": "MIME协议的作用是什么？",
+              "answers": [
+                {
+                  "text": "使SMTP能通过TCP/IP网络传输多媒体文件，包括声音、视频和二进制数据",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "IMAP 用于存储和取回电子邮件。与 POP 类似，IMAP 协议同样被邮件程序使用。IMAP 协议与 POP 协议之间的主要差异是：如果 IMAP 连上了邮件服务器，它不会自动地将邮件下载到邮件程序之中。IMAP 使您有能力在下载邮件之前先通过邮件服务器端查看他们。通过 IMAP，您可以选择下载这些邮件或者仅仅是删除它们。比方说您需要从不同的位置访问邮件服务器，但是仅仅希望回到办公室的时候再下载邮件，IMAP 在这种情况下会很有用。",
+          "qas": [
+            {
+              "id": "5-426-17",
+              "question": "IMAP协议的基本功能是什么？",
+              "answers": [
+                {
+                  "text": "存储和取回电子邮件，被邮件程序使用",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-426-18",
+              "question": "IMAP与POP协议的主要差异是什么？",
+              "answers": [
+                {
+                  "text": "IMAP连上邮件服务器后不会自动将邮件下载到邮件程序，能在下载前通过服务器端查看邮件，并可选择下载或删除邮件",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-426-19",
+              "question": "什么场景下使用IMAP会比较有用？",
+              "answers": [
+                {
+                  "text": "需要从不同的位置访问邮件服务器，但仅希望回到办公室时再下载邮件",
+                  "answer_start": 156
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "POP 协议被邮件程序用来取回邮件服务器上面的邮件。假如您的邮件程序使用 POP，那么一旦它连接上邮件服务器，您的所有的邮件都会被下载到邮件程序中（或者称之为邮件客户端）。",
+          "qas": [
+            {
+              "id": "5-426-20",
+              "question": "POP协议被邮件程序用于什么操作？",
+              "answers": [
+                {
+                  "text": "取回邮件服务器上面的邮件",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-426-21",
+              "question": "邮件程序使用POP连接邮件服务器后会发生什么？",
+              "answers": [
+                {
+                  "text": "所有的邮件都会被下载到邮件程序中（或邮件客户端）",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "FTP 负责计算机之间的文件传输。",
+          "qas": [
+            {
+              "id": "5-426-22",
+              "question": "FTP协议的功能是什么？",
+              "answers": [
+                {
+                  "text": "负责计算机之间的文件传输",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NTP 用于在计算机之间同步时间（钟）。",
+          "qas": [
+            {
+              "id": "5-426-23",
+              "question": "NTP协议的用途是什么？",
+              "answers": [
+                {
+                  "text": "在计算机之间同步时间（钟）",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DHCP 用于向网络中的计算机分配动态 IP 地址。",
+          "qas": [
+            {
+              "id": "5-426-24",
+              "question": "DHCP协议的作用是什么？",
+              "answers": [
+                {
+                  "text": "向网络中的计算机分配动态IP地址",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SNMP 用于计算机网络的管理。",
+          "qas": [
+            {
+              "id": "5-426-25",
+              "question": "SNMP协议的用途是什么？",
+              "answers": [
+                {
+                  "text": "用于计算机网络的管理",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LDAP 用于从因特网搜集关于用户和电子邮件地址的信息。",
+          "qas": [
+            {
+              "id": "5-426-26",
+              "question": "LDAP协议的功能是什么？",
+              "answers": [
+                {
+                  "text": "从因特网搜集关于用户和电子邮件地址的信息",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ICMP 负责网络中的错误处理。",
+          "qas": [
+            {
+              "id": "5-426-27",
+              "question": "ICMP协议的职责是什么？",
+              "answers": [
+                {
+                  "text": "负责网络中的错误处理",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ARP 用于通过 IP 来查找基于 IP 地址的计算机网卡的硬件地址。",
+          "qas": [
+            {
+              "id": "5-426-28",
+              "question": "ARP协议的作用是什么？",
+              "answers": [
+                {
+                  "text": "通过IP来查找基于IP地址的计算机网卡的硬件地址",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "RARP 用于通过 IP 查找基于硬件地址的计算机网卡的 IP 地址。",
+          "qas": [
+            {
+              "id": "5-426-29",
+              "question": "RARP协议的用途是什么？",
+              "answers": [
+                {
+                  "text": "通过IP查找基于硬件地址的计算机网卡的IP地址",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "BOOTP 用于从网络启动计算机。",
+          "qas": [
+            {
+              "id": "5-426-30",
+              "question": "BOOTP协议的功能是什么？",
+              "answers": [
+                {
+                  "text": "用于从网络启动计算机",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PPTP 用于私人网络之间的连接（隧道）。",
+          "qas": [
+            {
+              "id": "5-426-31",
+              "question": "PPTP协议的作用是什么？",
+              "answers": [
+                {
+                  "text": "用于私人网络之间的连接（隧道）",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

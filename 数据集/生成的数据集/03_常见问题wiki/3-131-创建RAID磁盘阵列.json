@@ -1,0 +1,224 @@
+{
+  "data": [
+    {
+      "title": "创建RAID磁盘阵列",
+      "paragraphs": [
+        {
+          "context": "使用mdadm命令来创建RAID磁盘阵列，详细用法参考[man mdadm](https://linux.die.net/man/8/mdadm)。",
+          "qas": [
+            {
+              "question": "用什么命令创建RAID磁盘阵列？",
+              "id": "3-131-1",
+              "answers": [
+                {
+                  "text": "mdadm",
+                  "answer_start": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建RAID前，需使用fdisk对需要的磁盘进行格式化。",
+          "qas": [
+            {
+              "question": "创建RAID前用什么工具格式化磁盘？",
+              "id": "3-131-2",
+              "answers": [
+                {
+                  "text": "fdisk",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建raid6的命令：mdadm -C -v /dev/md6 -a yes -l 6 -n 7 /dev/sd[b-h]1。-C为创建选项，-v显示详细过程，/dev/md6是raid卷路径，-l 6指定级别，-n 7是磁盘数，/dev/sd[b-h]1是具体磁盘。",
+          "qas": [
+            {
+              "question": "创建raid6的命令是什么？",
+              "id": "3-131-3",
+              "answers": [
+                {
+                  "text": "mdadm -C -v /dev/md6 -a yes -l 6 -n 7 /dev/sd[b-h]1",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "命令中-C参数的作用是什么？",
+              "id": "3-131-4",
+              "answers": [
+                {
+                  "text": "创建选项",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "-l 6表示什么？",
+              "id": "3-131-5",
+              "answers": [
+                {
+                  "text": "指定raid级别为6",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "question": "创建该raid6使用了多少块磁盘？",
+              "id": "3-131-6",
+              "answers": [
+                {
+                  "text": "7",
+                  "answer_start": 109
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "验证raid6创建结果用命令：mdadm -D /dev/md6。",
+          "qas": [
+            {
+              "question": "如何验证raid6的创建结果？",
+              "id": "3-131-7",
+              "answers": [
+                {
+                  "text": "使用命令：mdadm -D /dev/md6",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "格式化raid6的命令：mkfs.ext4 /dev/md6。",
+          "qas": [
+            {
+              "question": "用什么命令格式化raid6？",
+              "id": "3-131-8",
+              "answers": [
+                {
+                  "text": "mkfs.ext4 /dev/md6",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置开机自动挂载，先确定挂载目录，没有则用mkdir -p /media/md6创建。",
+          "qas": [
+            {
+              "question": "如何创建raid6的挂载目录？",
+              "id": "3-131-9",
+              "answers": [
+                {
+                  "text": "mkdir -p /media/md6",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "获取挂载磁盘UUID用blkid命令，/dev/md6的UUID为f2ee12a8-2c96-48d5-af11-f555d2eef1f5。",
+          "qas": [
+            {
+              "question": "用什么命令获取挂载磁盘的UUID？",
+              "id": "3-131-10",
+              "answers": [
+                {
+                  "text": "blkid",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "/dev/md6的UUID是什么？",
+              "id": "3-131-11",
+              "answers": [
+                {
+                  "text": "f2ee12a8-2c96-48d5-af11-f555d2eef1f5",
+                  "answer_start": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fstab条目格式：<fs spec> <fs file> <fs vfstype> <fs mntops> <fs freq> <fs passno>。/dev/md6的条目为UUID=f2ee12a8-2c96-48d5-af11-f555d2eef1f5 /media/md6 ext4 defaults 0 0。",
+          "qas": [
+            {
+              "question": "fstab条目的格式是什么？",
+              "id": "3-131-12",
+              "answers": [
+                {
+                  "text": "<fs spec> <fs file> <fs vfstype> <fs mntops> <fs freq> <fs passno>",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "/dev/md6在fstab中的条目是什么？",
+              "id": "3-131-13",
+              "answers": [
+                {
+                  "text": "UUID=f2ee12a8-2c96-48d5-af11-f555d2eef1f5 /media/md6 ext4 defaults 0 0",
+                  "answer_start": 78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置fstab后，用mount -a验证是否有错误。",
+          "qas": [
+            {
+              "question": "配置fstab后如何验证是否有错误？",
+              "id": "3-131-14",
+              "answers": [
+                {
+                  "text": "执行mount -a",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "保存raid6配置用命令：mdadm --detail --scan --verbose >> /etc/mdadm/mdadm.conf。",
+          "qas": [
+            {
+              "question": "如何保存raid6的配置信息？",
+              "id": "3-131-15",
+              "answers": [
+                {
+                  "text": "mdadm --detail --scan --verbose >> /etc/mdadm/mdadm.conf",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "保存配置后，执行update-initramfs -u更新引导文件，确保重启后RAID名称不变。",
+          "qas": [
+            {
+              "question": "保存raid6配置后需要执行什么命令更新引导文件？",
+              "id": "3-131-16",
+              "answers": [
+                {
+                  "text": "update-initramfs -u",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

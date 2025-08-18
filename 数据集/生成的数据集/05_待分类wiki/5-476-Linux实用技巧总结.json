@@ -1,0 +1,560 @@
+{
+  "data": [
+    {
+      "title": "Linux实用技巧总结",
+      "paragraphs": [
+        {
+          "context": "快速清空文件的方法有：> access.log；true > access.log；cat /dev/null > access.log；echo -n \"\" > access.log；echo > access.log；truncate -s 0 access.log。: 是shell内置命令，表示空语句，输出空内容覆盖文件。",
+          "qas": [
+            {
+              "question": "快速清空文件的方法有哪些？",
+              "id": "5-476-1",
+              "answers": [
+                {
+                  "text": "> access.log；true > access.log；cat /dev/null > access.log；echo -n \"\" > access.log；echo > access.log；truncate -s 0 access.log",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "shell中: 命令的作用是什么？",
+              "id": "5-476-2",
+              "answers": [
+                {
+                  "text": "内置命令，表示空语句，输出空内容覆盖文件",
+                  "answer_start": 134
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过dd命令可快速生成大文件，如dd if=/dev/zero of=file.img bs=1M count=1024生成1G的file.img。",
+          "qas": [
+            {
+              "question": "如何快速生成大文件？",
+              "id": "5-476-3",
+              "answers": [
+                {
+                  "text": "通过dd命令，如dd if=/dev/zero of=file.img bs=1M count=1024",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "dd if=/dev/zero of=file.img bs=1M count=1024生成的文件大小是多少？",
+              "id": "5-476-4",
+              "answers": [
+                {
+                  "text": "1G",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用dd命令安全擦除硬盘数据：dd if=/dev/urandom of=/dev/sda，通过生成随机数据写入硬盘实现。",
+          "qas": [
+            {
+              "question": "如何安全擦除硬盘数据？",
+              "id": "5-476-5",
+              "answers": [
+                {
+                  "text": "用dd命令：dd if=/dev/urandom of=/dev/sda",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux下制作系统盘的命令：dd if=ubuntu-server-amd64.iso of=/dev/sdb，sdb可以是U盘或普通硬盘。",
+          "qas": [
+            {
+              "question": "Linux下如何制作系统盘？",
+              "id": "5-476-6",
+              "answers": [
+                {
+                  "text": "使用命令dd if=ubuntu-server-amd64.iso of=/dev/sdb，sdb可以是U盘或普通硬盘",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看进程运行时间用ps -p 进程号 -o etimes,etime；查看进程内存信息用ps -p 进程号 -o rss。",
+          "qas": [
+            {
+              "question": "如何查看某个进程的运行时间？",
+              "id": "5-476-7",
+              "answers": [
+                {
+                  "text": "ps -p 进程号 -o etimes,etime",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何查看某个进程的内存信息？",
+              "id": "5-476-8",
+              "answers": [
+                {
+                  "text": "ps -p 进程号 -o rss",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "tail -f test.log可动态实时查看日志；tail -f test.log | sed '/Failed/ q'在日志出现Failed时停止监控。",
+          "qas": [
+            {
+              "question": "如何动态实时查看日志？",
+              "id": "5-476-9",
+              "answers": [
+                {
+                  "text": "tail -f test.log",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何在日志出现Failed时停止tail监控？",
+              "id": "5-476-10",
+              "answers": [
+                {
+                  "text": "tail -f test.log | sed '/Failed/ q'",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "时间戳转日期时间：date -d@时间戳 +\"%Y-%m-%d %H:%M:%S\"；查看当前时间戳：date +%s。",
+          "qas": [
+            {
+              "question": "如何将时间戳转换为日期时间？",
+              "id": "5-476-11",
+              "answers": [
+                {
+                  "text": "date -d@时间戳 +\"%Y-%m-%d %H:%M:%S\"",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何查看当前的时间戳？",
+              "id": "5-476-12",
+              "answers": [
+                {
+                  "text": "date +%s",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用time命令获取程序运行时间，如time ./test，输出real（钟表时间）、user（用户空间CPU时间）、sys（内核空间CPU时间）。",
+          "qas": [
+            {
+              "question": "如何获取程序的运行时间？",
+              "id": "5-476-13",
+              "answers": [
+                {
+                  "text": "用time命令，如time ./test",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "time命令输出的real、user、sys分别表示什么？",
+              "id": "5-476-14",
+              "answers": [
+                {
+                  "text": "real：钟表时间；user：用户空间CPU时间；sys：内核空间CPU时间",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在Linux命令行查看ascii码的命令是man ascii。",
+          "qas": [
+            {
+              "question": "如何在Linux命令行查看ascii码？",
+              "id": "5-476-15",
+              "answers": [
+                {
+                  "text": "man ascii",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除乱码文件：先用ls -i查inode号，再用find . -inum inode号 -exec rm {} \\;。",
+          "qas": [
+            {
+              "question": "如何删除乱码的文件？",
+              "id": "5-476-16",
+              "answers": [
+                {
+                  "text": "先用ls -i查inode号，再用find . -inum inode号 -exec rm {} \\;",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux上获取公网IP地址的命令：curl ip.sb 或 curl ifconfig.me。",
+          "qas": [
+            {
+              "question": "在Linux上如何获取公网IP地址？",
+              "id": "5-476-17",
+              "answers": [
+                {
+                  "text": "curl ip.sb 或 curl ifconfig.me",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "wget批量下载网页资源：wget -r -nd -np --accept=pdf 网址，--accept指定资源类型。",
+          "qas": [
+            {
+              "question": "如何批量下载网页上的pdf资源？",
+              "id": "5-476-18",
+              "answers": [
+                {
+                  "text": "wget -r -nd -np --accept=pdf 网址",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "历史命令技巧：!!重复上条命令；!N执行历史第N条；!pw执行最近以pw开头的；!$表示上条命令最后一个参数。",
+          "qas": [
+            {
+              "question": "如何重复执行上一条命令？",
+              "id": "5-476-19",
+              "answers": [
+                {
+                  "text": "!!",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "!$在历史命令中表示什么？",
+              "id": "5-476-20",
+              "answers": [
+                {
+                  "text": "最近一次命令的最后一个参数",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "快速搜索历史命令：按Ctrl + r，键入关键词搜索，回车执行。",
+          "qas": [
+            {
+              "question": "如何快速搜索并执行历史命令？",
+              "id": "5-476-21",
+              "answers": [
+                {
+                  "text": "按Ctrl + r，键入关键词搜索，回车执行",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令前加空格，该命令不会被history保存到历史记录，适合含敏感信息的命令。",
+          "qas": [
+            {
+              "question": "如何让命令不被保存到历史记录？",
+              "id": "5-476-22",
+              "answers": [
+                {
+                  "text": "在命令前加一个空格",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查找当前目录下所有以.tar结尾的文件并移动到指定目录：find . -name “*.tar” -exec mv {} ./backup/ ;。",
+          "qas": [
+            {
+              "question": "如何查找当前目录下所有以.tar结尾的文件并移动到./backup/目录？",
+              "id": "5-476-23",
+              "answers": [
+                {
+                  "text": "find . -name “*.tar” -exec mv {} ./backup/ ;",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "批量解压当前目录下以.zip结尾的文件到指定目录：for i in `find . –name “*.zip”–type f `; do unzip –d $i /data/www/img/; done。",
+          "qas": [
+            {
+              "question": "如何批量解压当前目录下以.zip结尾的所有文件到/data/www/img/？",
+              "id": "5-476-24",
+              "answers": [
+                {
+                  "text": "for i in `find . –name “*.zip”–type f `; do unzip –d $i /data/www/img/; done",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sed命令示例：去掉test.txt行首的.字符：sed -i ‘s/^. g’ test.txt；行首加a：sed ‘s/^/a/g’ test.txt等。",
+          "qas": [
+            {
+              "question": "如何用sed去掉test.txt行首的.字符？",
+              "id": "5-476-25",
+              "answers": [
+                {
+                  "text": "sed -i ‘s/^. g’ test.txt",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "判断目录是否存在，不存在则新建，存在则打印信息：if [ ! –d /data/backup/ ];then mkdir –p /data/backup/;else echo \"The Directory already exists,please exit\";fi。",
+          "qas": [
+            {
+              "question": "如何判断/data/backup/目录是否存在，不存在则新建？",
+              "id": "5-476-26",
+              "answers": [
+                {
+                  "text": "if [ ! –d /data/backup/ ];then mkdir –p /data/backup/;else echo \"The Directory already exists,please exit\";fi",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "监控根分区空间，大于等于90%发邮件：while sleep 5m;do for i in `df -h |sed -n ' $/p' |awk '{print $5}' |sed 's/% g'`;do if [ $i -ge 90 ];then echo “...” |mail -s “...” XXX@XXX.XX;fi;done;done。",
+          "qas": [
+            {
+              "question": "如何监控Linux磁盘根分区，空间大于等于90%时发送邮件报警？",
+              "id": "5-476-27",
+              "answers": [
+                {
+                  "text": "while sleep 5m;do for i in `df -h |sed -n ' $/p' |awk '{print $5}' |sed 's/% g'`;do if [ $i -ge 90 ];then echo “More than 90% Linux of disk space ,Please LinuxSA Check Linux Disk !” |mail -s “Warn Linux / Parts is $i%” XXX@XXX.XX;fi;done;done",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "统计Nginx访问日志访问量前20的IP：cat access.log |awk '{print $1}'|sort|uniq -c |sort -nr |head -20。",
+          "qas": [
+            {
+              "question": "如何统计Nginx访问日志中访问量排在前20的IP地址？",
+              "id": "5-476-28",
+              "answers": [
+                {
+                  "text": "cat access.log |awk '{print $1}'|sort|uniq -c |sort -nr |head -20",
+                  "answer_start": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sed修改行后参数：sed -i '/SELINUX/s/enforcing/disabled/' /etc/selinux/config；替换目录：sed 's:/user/local:/tmp:g' test.txt。",
+          "qas": [
+            {
+              "question": "如何用sed将/etc/selinux/config中SELINUX的enforcing改为disabled？",
+              "id": "5-476-29",
+              "answers": [
+                {
+                  "text": "sed -i '/SELINUX/s/enforcing/disabled/' /etc/selinux/config",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打印文件最大和最小值：sed 's/ / /g' a.txt |sort -nr|sed -n ’1p;$p’。",
+          "qas": [
+            {
+              "question": "如何打印一个文件里的最大和最小值？",
+              "id": "5-476-30",
+              "answers": [
+                {
+                  "text": "sed 's/ / /g' a.txt |sort -nr|sed -n ’1p;$p’",
+                  "answer_start": 28
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "snmpd抓取v2版本cacti数据：snmpwalk -v2c -c public 192.168.0.241。",
+          "qas": [
+            {
+              "question": "如何使用snmpd抓取版本为v2的cacti数据？",
+              "id": "5-476-31",
+              "answers": [
+                {
+                  "text": "snmpwalk -v2c -c public 192.168.0.241",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "替换文本中以jk结尾的为yz：sed -e ‘s/jk$/yz/g’ b.txt。",
+          "qas": [
+            {
+              "question": "如何替换b.txt中以jk结尾的内容为yz？",
+              "id": "5-476-32",
+              "answers": [
+                {
+                  "text": "sed -e ‘s/jk$/yz/g’ b.txt",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "tcpdump抓包：抓取56.7通过80请求的包：tcpdump -nn host 192.168.56.7 and port 80；排除0.22 80端口：tcpdump -nn host 192.168.56.7 or ! host 192.168.0.22 and port 80。",
+          "qas": [
+            {
+              "question": "如何用tcpdump抓取192.168.56.7通过80端口请求的数据包？",
+              "id": "5-476-33",
+              "answers": [
+                {
+                  "text": "tcpdump -nn host 192.168.56.7 and port 80",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "显示最常用的20条命令：cat .bash_history |grep -v ^# |awk ‘{print $1}’ |sort |uniq -c |sort -nr |head -20。",
+          "qas": [
+            {
+              "question": "如何显示最常用的20条命令？",
+              "id": "5-476-34",
+              "answers": [
+                {
+                  "text": "cat .bash_history |grep -v ^# |awk ‘{print $1}’ |sort |uniq -c |sort -nr |head -20",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除最后创建时间3天前的*.log文件：find . -mtime +3 -name \"*.log\" |xargs rm -rf {} ;。",
+          "qas": [
+            {
+              "question": "如何删除最后创建时间是3天前且后缀为*.log的文件？",
+              "id": "5-476-35",
+              "answers": [
+                {
+                  "text": "find . -mtime +3 -name \"*.log\" |xargs rm -rf {} ;",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "移动某目录下大于100k的文件至/tmp：find . -size +100k -exec mv {} /tmp ;。",
+          "qas": [
+            {
+              "question": "如何将某目录下大于100k的文件移动至/tmp目录？",
+              "id": "5-476-36",
+              "answers": [
+                {
+                  "text": "find . -size +100k -exec mv {} /tmp ;",
+                  "answer_start": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "防火墙配置只允许访问80端口：iptables -F; iptables -X; iptables -A INPUT -p tcp --dport 80 -j accept; iptables -A INPUT -p tcp -j REJECT；或iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT。",
+          "qas": [
+            {
+              "question": "如何配置防火墙只允许远程主机访问本机的80端口？",
+              "id": "5-476-37",
+              "answers": [
+                {
+                  "text": "iptables -F; iptables -X; iptables -A INPUT -p tcp --dport 80 -j accept; iptables -A INPUT -p tcp -j REJECT；或iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Nginx日志统计访问ip最多的前10个：cd /home/logs.nginx/default; sort -m -k 4 -o access.logok access.1 access.2 access.3 .....",
+          "qas": [
+            {
+              "question": "如何统计/home/logs/nginx/default/access.log中访问ip最多的前10个？",
+              "id": "5-476-38",
+              "answers": [
+                {
+                  "text": "cd /home/logs.nginx/default; sort -m -k 4 -o access.logok access.1 access.2 access.3 .....",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "替换文件中的目录：sed 's:/user/local:/tmp:g' test.txt；或sed -i 's usr/local tmp/g' test.txt。",
+          "qas": [
+            {
+              "question": "如何用sed替换test.txt中的/user/local为/tmp？",
+              "id": "5-476-39",
+              "answers": [
+                {
+                  "text": "sed 's:/user/local:/tmp:g' test.txt；或sed -i 's usr/local tmp/g' test.txt",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+
+}

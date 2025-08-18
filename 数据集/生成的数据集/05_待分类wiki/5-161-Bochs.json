@@ -1,0 +1,164 @@
+{
+  "data": [
+    {
+      "title": "Bochs",
+      "paragraphs": [
+        {
+          "context": "Bochs（发音：box）是以GNU宽通用公共许可证发放的开放源代码的x86、x86-64 IBM PC兼容机模拟器和调试工具，支持处理器（包括保护模式）、内存、硬盘、显示器、以太网、BIOS、IBM PC兼容机的常见硬件外设的仿真。",
+          "qas": [
+            {
+              "id": "5-161-1",
+              "question": "Bochs的发音是什么？",
+              "answers": [
+                {
+                  "text": "box",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-161-2",
+              "question": "Bochs依据什么许可证发放？",
+              "answers": [
+                {
+                  "text": "GNU宽通用公共许可证",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-161-3",
+              "question": "Bochs支持哪些硬件的仿真？",
+              "answers": [
+                {
+                  "text": "处理器（包括保护模式）、内存、硬盘、显示器、以太网、BIOS、IBM PC兼容机的常见硬件外设",
+                  "answer_start": 82
+                }
+              ]
+            },
+            {
+              "id": "5-161-4",
+              "question": "Bochs是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "开放源代码的x86、x86-64 IBM PC兼容机模拟器和调试工具",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Bochs主要用于操作系统开发（当模拟操作系统崩溃，它不崩溃主机操作系统，所以可以调试仿真操作系统）和在主机操作系统运行其他来宾操作系统。它也可以用来运行不兼容的旧的软件（如电脑游戏）。",
+          "qas": [
+            {
+              "id": "5-161-5",
+              "question": "Bochs主要用于哪些方面？",
+              "answers": [
+                {
+                  "text": "操作系统开发和在主机操作系统运行其他来宾操作系统，也可以用来运行不兼容的旧的软件（如电脑游戏）",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-161-6",
+              "question": "为什么Bochs适合用于操作系统开发？",
+              "answers": [
+                {
+                  "text": "当模拟操作系统崩溃，它不崩溃主机操作系统，所以可以调试仿真操作系统",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Bochs的优点在于能够模拟跟主机不同的机种，例如在SPARC系统里模拟x86，但缺点是它的速度却慢得多。",
+          "qas": [
+            {
+              "id": "5-161-7",
+              "question": "Bochs的优点是什么？",
+              "answers": [
+                {
+                  "text": "能够模拟跟主机不同的机种，例如在SPARC系统里模拟x86",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-161-8",
+              "question": "Bochs的缺点是什么？",
+              "answers": [
+                {
+                  "text": "速度却慢得多",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Bochs的安装命令为sudo apt install bochs，卸载命令为sudo apt remove --purge bochs。",
+          "qas": [
+            {
+              "id": "5-161-9",
+              "question": "如何安装Bochs？",
+              "answers": [
+                {
+                  "text": "sudo apt install bochs",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-161-10",
+              "question": "如何卸载Bochs？",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge bochs",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Bochs的仓库地址是http://packages.deepin.com/deepin/pool/main/b/bochs/，相关链接包括维基百科：https://zh.wikipedia.org/zh-cn/Bochs和Bochs官方网站：https://bochs.sourceforge.io/",
+          "qas": [
+            {
+              "id": "5-161-11",
+              "question": "Bochs的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/b/bochs/",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-161-12",
+              "question": "Bochs的相关链接有哪些？",
+              "answers": [
+                {
+                  "text": "维基百科：https://zh.wikipedia.org/zh-cn/Bochs和Bochs官方网站：https://bochs.sourceforge.io/",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "id": "5-161-13",
+              "question": "Bochs的官方网站是什么？",
+              "answers": [
+                {
+                  "text": "https://bochs.sourceforge.io/",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

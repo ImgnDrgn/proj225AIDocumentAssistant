@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "Visual_Studio_Code",
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "id": "5-184-1",
+              "question": "Visual Studio Code是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "一款轻量级代码编辑器",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-184-2",
+              "question": "Visual Studio Code具有哪些功能？",
+              "answers": [
+                {
+                  "text": "语法高亮、可定制的热键绑定、括号匹配、代码片段收集、代码调试、自定义语言和主题、支持扩展/插件等功能",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "5-184-3",
+              "question": "在相关系统中，安装Visual Studio Code的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install vscode",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-184-4",
+              "question": "卸载Visual Studio Code的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove vscode",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-184-5",
+              "question": "Visual Studio Code的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/v/vscode/",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-184-6",
+              "question": "VSCode通常指的是什么？",
+              "answers": [
+                {
+                  "text": "Visual Studio Code的缩写",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "Visual Studio Code是一款轻量级代码编辑器，它具有语法高亮、可定制的热键绑定、括号匹配、代码片段收集、代码调试、自定义语言和主题、支持扩展/插件等功能。\n安装命令：sudo apt-get install vscode\n卸载命令：sudo apt-get remove vscode\n仓库地址：http://packages.deepin.com/deepin/pool/main/v/vscode/\nVSCode一般是指Visual Studio Code的缩写"
+        }
+      ]
+    }
+  ]
+}

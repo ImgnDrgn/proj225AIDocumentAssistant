@@ -1,0 +1,129 @@
+{
+  "data": [
+    {
+      "title": "LibreCAD",
+      "paragraphs": [
+        {
+          "context": "LibreCAD是一款2D的CAD绘图工具。",
+          "qas": [
+            {
+              "question": "LibreCAD是什么类型的工具？",
+              "id": "5-253-1",
+              "answers": [
+                {
+                  "text": "2D的CAD绘图工具",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LibreCAD可提供DXF、JWW、DWG等图形文件格式。",
+          "qas": [
+            {
+              "question": "LibreCAD能提供哪些图形文件格式？",
+              "id": "5-253-2",
+              "answers": [
+                {
+                  "text": "DXF、JWW、DWG等",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LibreCAD可导出SVG、JPG、PNG等图片格式。",
+          "qas": [
+            {
+              "question": "LibreCAD可以导出哪些图片格式？",
+              "id": "5-253-3",
+              "answers": [
+                {
+                  "text": "SVG、JPG、PNG等",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LibreCAD操作简单，支持多种语言。",
+          "qas": [
+            {
+              "question": "LibreCAD有哪些特点？",
+              "id": "5-253-4",
+              "answers": [
+                {
+                  "text": "操作简单，支持多种语言",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装LibreCAD的命令是sudo apt-get install librecad。",
+          "qas": [
+            {
+              "question": "如何安装LibreCAD？",
+              "id": "5-253-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install librecad",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载LibreCAD的命令是sudo apt-get remove librecad。",
+          "qas": [
+            {
+              "question": "怎样卸载LibreCAD？",
+              "id": "5-253-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove librecad",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LibreCAD的仓库地址是http://packages.deepin.com/deepin/pool/main/libr/librecad/。",
+          "qas": [
+            {
+              "question": "LibreCAD的仓库地址是什么？",
+              "id": "5-253-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/libr/librecad/",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LibreCAD用户可以随意标注，绘图和修改。",
+          "qas": [
+            {
+              "question": "用户使用LibreCAD可以进行哪些操作？",
+              "id": "5-253-8",
+              "answers": [
+                {
+                  "text": "随意标注，绘图和修改",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

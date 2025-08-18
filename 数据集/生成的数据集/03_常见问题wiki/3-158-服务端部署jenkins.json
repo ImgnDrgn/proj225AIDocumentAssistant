@@ -1,0 +1,199 @@
+{
+  "data": [
+    {
+      "title": "服务端部署jenkins",
+      "paragraphs": [
+        {
+          "context": "安装tomcat及相关组件：apt-get install tomcat9 tomcat9-docs tomcat9-examples tomcat9-admin -y；启动tomcat9：service tomcat9 start。",
+          "qas": [
+            {
+              "question": "如何安装tomcat及相关组件？",
+              "id": "3-158-1",
+              "answers": [
+                {
+                  "text": "apt-get install tomcat9 tomcat9-docs tomcat9-examples tomcat9-admin -y",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "怎样启动tomcat9服务？",
+              "id": "3-158-2",
+              "answers": [
+                {
+                  "text": "service tomcat9 start",
+                  "answer_start": 89
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置管理员权限需编辑/var/lib/tomcat9/conf/tomcat-users.xml，添加<role rolename=\"manager-gui\"/><role rolename=\"admin-gui\"/><user username=\"root\" password=\"123456\" roles=\"manager-gui,admin-gui\"/>。",
+          "qas": [
+            {
+              "question": "配置tomcat管理员权限需要编辑哪个文件？",
+              "id": "3-158-3",
+              "answers": [
+                {
+                  "text": "/var/lib/tomcat9/conf/tomcat-users.xml",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "配置tomcat管理员权限时需要添加哪些内容？",
+              "id": "3-158-4",
+              "answers": [
+                {
+                  "text": "<role rolename=\"manager-gui\"/><role rolename=\"admin-gui\"/><user username=\"root\" password=\"123456\" roles=\"manager-gui,admin-gui\"/>",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置管理员权限后需重启服务：service tomcat9 restart。",
+          "qas": [
+            {
+              "question": "配置tomcat管理员权限后如何重启服务？",
+              "id": "3-158-5",
+              "answers": [
+                {
+                  "text": "service tomcat9 restart",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载jenkins官方软件仓库密钥：wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key。",
+          "qas": [
+            {
+              "question": "如何下载jenkins官方软件仓库密钥？",
+              "id": "3-158-6",
+              "answers": [
+                {
+                  "text": "wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加jenkins密钥到本地：apt-key add jenkins.io.key。",
+          "qas": [
+            {
+              "question": "怎样将jenkins密钥添加到本地？",
+              "id": "3-158-7",
+              "answers": [
+                {
+                  "text": "apt-key add jenkins.io.key",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "jenkins的源为：deb https://pkg.jenkins.io/debian-stable binary/。",
+          "qas": [
+            {
+              "question": "jenkins的源是什么？",
+              "id": "3-158-8",
+              "answers": [
+                {
+                  "text": "deb https://pkg.jenkins.io/debian-stable binary/",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更新并安装jenkins：apt-get update；apt-get install jenkins。",
+          "qas": [
+            {
+              "question": "如何更新并安装jenkins？",
+              "id": "3-158-9",
+              "answers": [
+                {
+                  "text": "apt-get update；apt-get install jenkins",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启动jenkins：/etc/init.d/jenkins start。",
+          "qas": [
+            {
+              "question": "如何启动jenkins？",
+              "id": "3-158-10",
+              "answers": [
+                {
+                  "text": "/etc/init.d/jenkins start",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改jenkins端口需编辑/etc/default/jenkins，设置HTTP_PORT=8085，再重启：sudo /etc/init.d/jenkins restart。",
+          "qas": [
+            {
+              "question": "如何修改jenkins的端口？",
+              "id": "3-158-11",
+              "answers": [
+                {
+                  "text": "编辑/etc/default/jenkins，设置HTTP_PORT=8085",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "修改jenkins端口后如何重启服务？",
+              "id": "3-158-12",
+              "answers": [
+                {
+                  "text": "sudo /etc/init.d/jenkins restart",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "jenkins首次进入密码位置：/var/lib/jenkins/secrets/initialAdminPassword，之后点击“Install suggested plugins”。",
+          "qas": [
+            {
+              "question": "jenkins首次进入的密码在哪里？",
+              "id": "3-158-13",
+              "answers": [
+                {
+                  "text": "/var/lib/jenkins/secrets/initialAdminPassword",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "jenkins首次进入输入密码后应点击什么？",
+              "id": "3-158-14",
+              "answers": [
+                {
+                  "text": "Install suggested plugins",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

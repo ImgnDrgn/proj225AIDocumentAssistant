@@ -1,0 +1,219 @@
+{
+  "data": [
+    {
+      "title": "拨号网络",
+      "paragraphs": [
+        {
+          "context": "拨号网络是国内家庭用户最常见的网络环境，下面我们简单介绍如何设置拨号网络。",
+          "qas": [
+            {
+              "id": "5-435-1",
+              "question": "国内家庭用户最常见的网络环境是什么？",
+              "answers": [
+                {
+                  "text": "拨号网络",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-435-2",
+              "question": "这段内容主要介绍什么？",
+              "answers": [
+                {
+                  "text": "如何设置拨号网络",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "图形设置拨号网络时，需进入系统设置——网络——DSL，点击“创建PPPoE网络”。",
+          "qas": [
+            {
+              "id": "5-435-3",
+              "question": "图形设置拨号网络时，进入哪个路径后点击“创建PPPoE网络”？",
+              "answers": [
+                {
+                  "text": "系统设置——网络——DSL",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建PPPoE网络需填写四类信息：名称（可随便填写，为该链接方式的名称）、用户名（拨号上网的账号）、服务（提供拨号服务的网络运营商，名称可随便填写）、密码（拨号上网账号的密码）。",
+          "qas": [
+            {
+              "id": "5-435-4",
+              "question": "创建PPPoE网络需要填写哪些信息？各信息如何填写？",
+              "answers": [
+                {
+                  "text": "名称（可随便填写，为该链接方式的名称）、用户名（拨号上网的账号）、服务（提供拨号服务的网络运营商，名称可随便填写）、密码（拨号上网账号的密码）",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进入系统设置——网络——DSL，点击“创建PPPoE网络”。我们需要填写的信息有:\n- 名称:这个为设置该链接方式的名称,名称可以随便填写\n- 用户名:这个填写你拨号上网的账号\n- 服务:这个是指提供拨号服务的网络运营商,名称可以随便填写\n- 密码:这个填写你拨号上网的账号的密码\n\n如果你需要设置固定IP和DNS,请在IPv4一栏中点击“方法”，然后选择“手动”，即可看到IP和DNS设置栏。\n\n最后设置完成后,请点击保存,然后深度操作系统会自动尝试链接网络。",
+          "qas": [
+            {
+              "id": "5-435-5",
+              "question": "如何开始创建PPPoE网络？",
+              "answers": [
+                {
+                  "text": "进入系统设置——网络——DSL，点击“创建PPPoE网络”",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-435-6",
+              "question": "名称字段可以如何填写？",
+              "answers": [
+                {
+                  "text": "随便填写",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "id": "5-435-7",
+              "question": "用户名字段应该填写什么？",
+              "answers": [
+                {
+                  "text": "拨号上网的账号",
+                  "answer_start": 98
+                }
+              ]
+            },
+            {
+              "id": "5-435-8",
+              "question": "服务字段填写什么内容？",
+              "answers": [
+                {
+                  "text": "提供拨号服务的网络运营商",
+                  "answer_start": 135
+                }
+              ]
+            },
+            {
+              "id": "5-435-9",
+              "question": "如何设置固定IP和DNS？",
+              "answers": [
+                {
+                  "text": "在IPv4一栏中点击“方法”，然后选择“手动”",
+                  "answer_start": 182
+                }
+              ]
+            },
+            {
+              "id": "5-435-10",
+              "question": "完成设置后需要点击什么？",
+              "answers": [
+                {
+                  "text": "保存",
+                  "answer_start": 241
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "拨号网络图形设置完成后，点击保存，深度操作系统会自动尝试链接网络。",
+          "qas": [
+            {
+              "id": "5-435-11",
+              "question": "拨号网络图形设置完成并点击保存后，深度操作系统会执行什么操作？",
+              "answers": [
+                {
+                  "text": "自动尝试链接网络",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令设置PPPoE连接ADSL modem：打开终端，执行“sudo pppoeconf”，按文本配置导航一步步设置（一般点击“Yes”），在输入用户名和密码时填写电信局申请的帐号和密码，完成后网络通常可使用。",
+          "qas": [
+            {
+              "id": "5-435-12",
+              "question": "如何通过命令设置PPPoE连接到ADSL modem？",
+              "answers": [
+                {
+                  "text": "打开终端，执行“sudo pppoeconf”，按文本配置导航一步步设置（一般点击“Yes”），在输入用户名和密码时填写电信局申请的帐号和密码",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用PPPoE 连接到ADSL modem,打开终端，执行下面命令：\n    sudo pppoeconf\n\n然后出现文本配置导航，一步步设置，一般点击“Yes”即可。在要求输入你的用户名和密码处填写在电信局申请的帐号和密码,待完成基本设置，一般网络就能用了。",
+          "qas": [
+            {
+              "id": "5-435-13",
+              "question": "配置PPPoE连接需要执行什么命令？",
+              "answers": [
+                {
+                  "text": "sudo pppoeconf",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-435-14",
+              "question": "在文本配置导航中通常如何操作？",
+              "answers": [
+                {
+                  "text": "点击“Yes”即可",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "id": "5-435-15",
+              "question": "用户名和密码需要填写什么内容？",
+              "answers": [
+                {
+                  "text": "在电信局申请的帐号和密码",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "连接已设置好的ADSL连接：\n    sudo pon dsl-provider\n\n断开ADSL连接：\n    sudo poff dsl-provider",
+          "qas": [
+            {
+              "id": "5-435-16",
+              "question": "连接ADSL的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo pon dsl-provider",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "5-435-17",
+              "question": "断开ADSL连接使用什么命令？",
+              "answers": [
+                {
+                  "text": "sudo poff dsl-provider",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

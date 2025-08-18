@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "PPSSPP",
+      "paragraphs": [
+        {
+          "context": "PPSSPP是一款非常出色的PSP模拟器，可以流畅运行大部分的PSP游戏。PPSSPP支持中文，支持高清分辨率以及自适应分辨率，并且支持即时存档和读取存档。除此之外，PPSSPP还支持外接手柄进行游戏，完美满足追求手感和流畅操控的游戏玩家。",
+          "qas": [
+            {
+              "id": "5-355-1",
+              "question": "PPSSPP是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "PSP模拟器",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-355-2",
+              "question": "PPSSPP能运行大部分PSP游戏吗？",
+              "answers": [
+                {
+                  "text": "可以流畅运行大部分的PSP游戏",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "5-355-3",
+              "question": "PPSSPP是否支持中文？",
+              "answers": [
+                {
+                  "text": "支持中文",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "5-355-4",
+              "question": "PPSSPP在分辨率方面支持什么功能？",
+              "answers": [
+                {
+                  "text": "支持高清分辨率以及自适应分辨率",
+                  "answer_start": 50
+                }
+              ]
+            },
+            {
+              "id": "5-355-5",
+              "question": "PPSSPP是否支持即时存档和读取存档？",
+              "answers": [
+                {
+                  "text": "支持即时存档和读取存档",
+                  "answer_start": 77
+                }
+              ]
+            },
+            {
+              "id": "5-355-6",
+              "question": "PPSSPP支持外接手柄吗？",
+              "answers": [
+                {
+                  "text": "支持外接手柄进行游戏",
+                  "answer_start": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install ppsspp",
+          "qas": [
+            {
+              "id": "5-355-7",
+              "question": "安装PPSSPP的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install ppsspp",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove ppsspp",
+          "qas": [
+            {
+              "id": "5-355-8",
+              "question": "卸载PPSSPP的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove ppsspp",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/p/ppsspp/",
+          "qas": [
+            {
+              "id": "5-355-9",
+              "question": "PPSSPP的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/p/ppsspp/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

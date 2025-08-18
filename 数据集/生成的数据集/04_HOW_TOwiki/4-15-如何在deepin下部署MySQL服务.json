@@ -1,0 +1,329 @@
+{
+  "data": [
+    {
+      "title": "如何在deepin下部署MySQL服务",
+      "paragraphs": [
+        {
+          "context": "MySQL是关系型数据库管理系统，由瑞典MySQL AB公司开发，属Oracle旗下产品，是流行的关系型数据库管理系统之一，在WEB应用方面是最好的RDBMS应用软件之一。",
+          "qas": [
+            {
+              "question": "MySQL是什么？",
+              "id": "4-15-1",
+              "answers": [
+                {
+                  "text": "MySQL是一个关系型数据库管理系统，由瑞典MySQL AB 公司开发，属于 Oracle 旗下产品。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在deepin下部署MySQL服务不使用命令行从软件源安装，考虑配置灵活及多版本共存，使用通用包解压安装，MySQL5.x与8.x配置有区别，分别给出安装方式。",
+          "qas": [
+            {
+              "question": "在deepin下部署MySQL服务为何不使用命令行从软件源安装？",
+              "id": "4-15-2",
+              "answers": [
+                {
+                  "text": "为了配置更加灵活以及多版本数据库共存的考虑。",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "MySQL5.x与MySQL8.x在配置上有何情况？",
+              "id": "4-15-3",
+              "answers": [
+                {
+                  "text": "配置有一定区别，分别给出两个版本的安装。",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MySQL5.x获取通用二进制安装包可从官方下载，选择5.7.40 x64版本，用wget命令获取，解压到/usr/local，重命名为mysql5，创建data、log目录及相关文件，赋予mysql用户权限。",
+          "qas": [
+            {
+              "question": "MySQL5.x选择的安装包版本是什么？",
+              "id": "4-15-4",
+              "answers": [
+                {
+                  "text": "5.7.40 x64版本",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "如何获取MySQL5.7.40 x64版本安装包？",
+              "id": "4-15-5",
+              "answers": [
+                {
+                  "text": "wget https://cdn.mysql.com/archives/mysql-5.7/mysql-5.7.40-linux-glibc2.12-x86_64.tar.gz",
+                  "answer_start": 83
+                }
+              ]
+            },
+            {
+              "question": "MySQL5.x解压后重命名为什么？",
+              "id": "4-15-6",
+              "answers": [
+                {
+                  "text": "mysql5",
+                  "answer_start": 181
+                }
+              ]
+            },
+            {
+              "question": "MySQL5.x需要创建哪些目录和文件？",
+              "id": "4-15-7",
+              "answers": [
+                {
+                  "text": "/usr/local/mysql5/data、/usr/local/mysql5/log目录，/usr/local/mysql5/log/mysql.err、/usr/local/mysql5/mysql.pid文件",
+                  "answer_start": 190
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MySQL5.x配置文件在mysql5目录下创建my.cnf，[mysqld]中设置bind-address为0.0.0.0，端口3306，basedir和datadir路径，socket位置等；[mysql]和[client]设置默认字符集和socket等。",
+          "qas": [
+            {
+              "question": "MySQL5.x的配置文件是什么？在哪个目录下创建？",
+              "id": "4-15-8",
+              "answers": [
+                {
+                  "text": "my.cnf，在/usr/local/mysql5目录下创建。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "MySQL5.x中[mysqld]的bind-address设置是什么？",
+              "id": "4-15-9",
+              "answers": [
+                {
+                  "text": "0.0.0.0",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "MySQL5.x的端口设置是多少？",
+              "id": "4-15-10",
+              "answers": [
+                {
+                  "text": "3306",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MySQL5.x创建用户组，mysql用户不涉及登录，仅作运行用户，用groupadd mysql创建组，useradd -r -g mysql -s /bin/false mysql创建用户。",
+          "qas": [
+            {
+              "question": "MySQL5.x如何创建用户组和用户？",
+              "id": "4-15-11",
+              "answers": [
+                {
+                  "text": "groupadd mysql；useradd -r -g mysql -s /bin/false mysql",
+                  "answer_start": 49
+                }
+              ]
+            },
+            {
+              "question": "MySQL5.x的mysql用户有何特点？",
+              "id": "4-15-12",
+              "answers": [
+                {
+                  "text": "不涉及登录，仅作为运行用户使用。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MySQL5.x初始化用指定命令，需指定配置文件、数据目录、安装目录和用户，初始化后在mysql.err中查看随机密码，最后一行有11位密码。",
+          "qas": [
+            {
+              "question": "MySQL5.x初始化命令是什么？",
+              "id": "4-15-13",
+              "answers": [
+                {
+                  "text": "sudo /usr/local/mysql5/bin/mysqld --defaults-file=/usr/local/mysql5/my.cnf --initialize --datadir=/usr/local/mysql5/data --basedir=/usr/local/mysql5 --user=mysql",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "MySQL5.x初始化后如何查看随机密码？",
+              "id": "4-15-14",
+              "answers": [
+                {
+                  "text": "sudo cat /usr/local/mysql5/log/mysql.err，最后一行有11位密码。",
+                  "answer_start": 184
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MySQL5.x添加服务到系统，复制mysql.server到/etc/init.d/mysql5，替换basedir、datadir等变量，授权并刷新服务，可启动、停止服务，查看状态，添加软链接到/usr/bin/mysql5。",
+          "qas": [
+            {
+              "question": "MySQL5.x如何添加服务到系统？",
+              "id": "4-15-15",
+              "answers": [
+                {
+                  "text": "sudo cp /usr/local/mysql5/support-files/mysql.server /etc/init.d/mysql5，替换相关变量，授权并刷新服务。",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "MySQL5.x启动服务的命令是什么？",
+              "id": "4-15-16",
+              "answers": [
+                {
+                  "text": "systemctl start mysql5",
+                  "answer_start": 236
+                }
+              ]
+            },
+            {
+              "question": "MySQL5.x的软链接路径是什么？",
+              "id": "4-15-17",
+              "answers": [
+                {
+                  "text": "/usr/bin/mysql5",
+                  "answer_start": 325
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MySQL5.x登录可用mysql5 -u root -h 127.0.0.1 -p或指定sock路径，修改密码用set password命令，更新root主机权限并刷新。",
+          "qas": [
+            {
+              "question": "MySQL5.x登录命令有哪些？",
+              "id": "4-15-18",
+              "answers": [
+                {
+                  "text": "mysql5 -u root -h 127.0.0.1 -p；mysql5 -u root -S /usr/local/mysql5/mysql.sock -p",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "MySQL5.x如何修改root临时密码？",
+              "id": "4-15-19",
+              "answers": [
+                {
+                  "text": "set password=password('123456');",
+                  "answer_start": 140
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MySQL8.x安装包选8.0.32 x64版本，用wget获取，解压到/usr/local，重命名为mysql8，创建data、log目录及文件，赋予mysql用户权限。",
+          "qas": [
+            {
+              "question": "MySQL8.x选择的安装包版本是什么？",
+              "id": "4-15-20",
+              "answers": [
+                {
+                  "text": "8.0.32 x64版本",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "MySQL8.x解压后重命名为什么？",
+              "id": "4-15-21",
+              "answers": [
+                {
+                  "text": "mysql8",
+                  "answer_start": 120
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MySQL8.x配置文件my.cnf在mysql8目录下，[mysqld]等部分设置与5.x类似，包括端口、路径、字符集等。",
+          "qas": [
+            {
+              "question": "MySQL8.x的配置文件在哪个目录下？",
+              "id": "4-15-22",
+              "answers": [
+                {
+                  "text": "/usr/local/mysql8目录下",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MySQL8.x初始化命令类似5.x，指定对应配置文件、目录和用户，随机密码在mysql.err最后一行，添加服务到系统需复制文件并替换变量，启动停止命令类似。",
+          "qas": [
+            {
+              "question": "MySQL8.x初始化命令是什么？",
+              "id": "4-15-23",
+              "answers": [
+                {
+                  "text": "sudo /usr/local/mysql8/bin/mysqld --defaults-file=/usr/local/mysql8/my.cnf --initialize --datadir=/usr/local/mysql8/data --basedir=/usr/local/mysql8 --user=mysql",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "MySQL8.x停止服务的命令是什么？",
+              "id": "4-15-24",
+              "answers": [
+                {
+                  "text": "systemctl stop mysql8",
+                  "answer_start": 275
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MySQL8.x登录命令与5.x类似，修改密码用ALTER USER语句，更新root主机权限并刷新，两版本若同时运行需设不同端口并连接时指定。",
+          "qas": [
+            {
+              "question": "MySQL8.x如何修改root临时密码？",
+              "id": "4-15-25",
+              "answers": [
+                {
+                  "text": "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';",
+                  "answer_start": 140
+                }
+              ]
+            },
+            {
+              "question": "MySQL5.x和8.x同时运行需要注意什么？",
+              "id": "4-15-26",
+              "answers": [
+                {
+                  "text": "需要设置将my.cnf中设置不同端口，并且在mysql连接时指定-P设置的端口进行连接。",
+                  "answer_start": 279
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

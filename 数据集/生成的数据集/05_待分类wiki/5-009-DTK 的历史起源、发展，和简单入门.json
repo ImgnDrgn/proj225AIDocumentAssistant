@@ -1,0 +1,269 @@
+{
+  "data": [
+    {
+      "title": "DTK 的历史起源、发展，和简单入门",
+      "paragraphs": [
+        {
+          "context": "DTK（deepin tool kit 后改为 Development ToolKit）全称是深度工具套件；是基于 Qt5 开发的一整套界面美观且实用的 UI 图形库。",
+          "qas": [
+            {
+              "question": "DTK 的全称是什么？",
+              "id": "5-9-1",
+              "answers": [
+                {
+                  "text": "深度工具套件",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "DTK 是基于什么开发的？",
+              "id": "5-9-2",
+              "answers": [
+                {
+                  "text": "Qt5",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DTK 目前分为三个模块，dtkcore、dtkgui、dtkwidget。dtkcore 提供应用程序开发中的工具类；dtkgui 包含开发图形用户界面所需功能，控制窗口主题等；dtkwidget 提供各种 dtk 基础控件。",
+          "qas": [
+            {
+              "question": "DTK 目前分为哪三个模块？",
+              "id": "5-9-3",
+              "answers": [
+                {
+                  "text": "dtkcore、dtkgui、dtkwidget",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "dtkcore 模块的功能是什么？",
+              "id": "5-9-4",
+              "answers": [
+                {
+                  "text": "提供应用程序开发中的工具类，如程序日志、文件系统监控、格式转换等工具类",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "dtkgui 模块主要负责什么？",
+              "id": "5-9-5",
+              "answers": [
+                {
+                  "text": "包含了开发图形用户界面应用程序所需的功能。主要是控制窗口主题这种外观性，调色板等信息",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "question": "dtkwidget 模块有什么作用？",
+              "id": "5-9-6",
+              "answers": [
+                {
+                  "text": "提供各种 dtk 基础控件，方便开发统一风格的应用",
+                  "answer_start": 147
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "2015 年，开发 deepin v15 版本时，从控制中心开发中抽象出 dui 控件库，仓库名称为 dui。",
+          "qas": [
+            {
+              "question": "dtk 的前身 dui 控件库是在什么时候诞生的？",
+              "id": "5-9-7",
+              "answers": [
+                {
+                  "text": "2015 年",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "dui 控件库是从哪个项目的开发中抽象出来的？",
+              "id": "5-9-8",
+              "answers": [
+                {
+                  "text": "deepin v15 版本的控制中心",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "16 年初，dui 改名为 deepin-tool-kit 项目。",
+          "qas": [
+            {
+              "question": "dui 是在什么时候改名为 deepin-tool-kit 项目的？",
+              "id": "5-9-9",
+              "answers": [
+                {
+                  "text": "16 年初",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "17 年底，deepin-tool-kit 拆分为 dtkcore、dtkwidget、dtkwm 三个仓库，旧仓库废弃。",
+          "qas": [
+            {
+              "question": "17 年底，deepin-tool-kit 拆分成了哪几个仓库？",
+              "id": "5-9-10",
+              "answers": [
+                {
+                  "text": "dtkcore、dtkwidget、dtkwm",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "19 年新增加了 dtkgui 模块，废弃了 dtkwm，此后 DTK 分为 dtkcore、dtkgui、dtkwidget。",
+          "qas": [
+            {
+              "question": "dtkgui 模块是在什么时候新增的？",
+              "id": "5-9-11",
+              "answers": [
+                {
+                  "text": "19 年",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "19 年后 DTK 分为哪几个模块？",
+              "id": "5-9-12",
+              "answers": [
+                {
+                  "text": "dtkcore、dtkgui、dtkwidget",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "19 年被废弃的 DTK 模块是什么？",
+              "id": "5-9-13",
+              "answers": [
+                {
+                  "text": "dtkwm",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "20 年之后，dtk 是多个项目的总称呼，包括 dtkwidget、dtkgui、qt5integration、dtkcore 等。",
+          "qas": [
+            {
+              "question": "20 年之后，dtk 包含哪些项目？",
+              "id": "5-9-14",
+              "answers": [
+                {
+                  "text": "dtkwidget、dtkgui、qt5integration、dtkcore 等",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "qt5integration 主要由 iconengines、imageformats、qt5deepintheme-plugin、styleplugins、styles 组成，styleplugins 中的 chameleon 样式是实现 Dxxxxx 控件的主要地方。",
+          "qas": [
+            {
+              "question": "qt5integration 主要由哪些部分组成？",
+              "id": "5-9-15",
+              "answers": [
+                {
+                  "text": "iconengines、imageformats、qt5deepintheme-plugin、styleplugins、styles",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "实现 Dxxxxx 控件的主要地方在哪里？",
+              "id": "5-9-16",
+              "answers": [
+                {
+                  "text": "styleplugins 中的 chameleon 样式",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dtkwidget 的 src 目录下的 widgets 存放自定义 Dxxxx 控件，是 dtk 开发的主战场。",
+          "qas": [
+            {
+              "question": "dtkwidget 中自定义 Dxxxx 控件存放在哪里？",
+              "id": "5-9-17",
+              "answers": [
+                {
+                  "text": "src 目录下的 widgets",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dtkgui 中 src-dguiapplicationhelper.cpp 文件常被修改，用于实现设计师调整的颜色等参数。",
+          "qas": [
+            {
+              "question": "dtkgui 中哪个文件常被修改以实现颜色等参数调整？",
+              "id": "5-9-18",
+              "answers": [
+                {
+                  "text": "src-dguiapplicationhelper.cpp",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dtk 的 api 文档地址为 https://linuxdeepin.github.io/dtk。",
+          "qas": [
+            {
+              "question": "dtk 的 api 文档地址是什么？",
+              "id": "5-9-19",
+              "answers": [
+                {
+                  "text": "https://linuxdeepin.github.io/dtk",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin 在 github 的开源地址是 https://github.com/linuxdeepin，包含完整 dtk 项目。",
+          "qas": [
+            {
+              "question": "deepin 在 github 的开源地址是什么？",
+              "id": "5-9-20",
+              "answers": [
+                {
+                  "text": "https://github.com/linuxdeepin",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

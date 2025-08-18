@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "QBittorrent-已合并",
+      "paragraphs": [
+        {
+          "context": "qBittorrent是一个轻量级BitTorrent客户端，它支持文件上传/下载、支持DHT网络、数据交换、文件选择性下载、预览媒体文件、支持Unicode、支持代理连接、远程控制等功能。",
+          "qas": [
+            {
+              "question": "qBittorrent属于什么类型的软件？",
+              "id": "5-82-1",
+              "answers": [
+                {
+                  "text": "轻量级BitTorrent客户端",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "qBittorrent支持哪些功能？",
+              "id": "5-82-2",
+              "answers": [
+                {
+                  "text": "文件上传/下载、支持DHT网络、数据交换、文件选择性下载、预览媒体文件、支持Unicode、支持代理连接、远程控制等功能",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "qBittorrent是否支持代理连接？",
+              "id": "5-82-3",
+              "answers": [
+                {
+                  "text": "支持代理连接",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "question": "qBittorrent是否支持预览媒体文件？",
+              "id": "5-82-4",
+              "answers": [
+                {
+                  "text": "预览媒体文件",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install qbittorrent",
+          "qas": [
+            {
+              "question": "如何安装qBittorrent？",
+              "id": "5-82-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install qbittorrent",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove qbittorrent",
+          "qas": [
+            {
+              "question": "如何卸载qBittorrent？",
+              "id": "5-82-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove qbittorrent",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/q/qbittorrent/",
+          "qas": [
+            {
+              "question": "qBittorrent的仓库地址是什么？",
+              "id": "5-82-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/q/qbittorrent/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

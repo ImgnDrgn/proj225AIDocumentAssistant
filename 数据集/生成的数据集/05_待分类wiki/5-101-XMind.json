@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "title": "XMind",
+      "paragraphs": [
+        {
+          "context": "XMind是一款全球领先的思维导图软件，除了可以轻松绘制基本逻辑图之外，还支持结构图、树状图、思维导图、鱼骨图、二维图等模型。XMind可以将您的图形显示给他人，或者将图形内容导出到Powerpoint、Word中，令复杂的思想和信息得到更快的交流。XMind在企业和教育领域都有很广泛的应用。",
+          "qas": [
+            {
+              "id": "5-101-1",
+              "question": "XMind属于什么类型的软件？",
+              "answers": [
+                {
+                  "text": "全球领先的思维导图软件",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-101-2",
+              "question": "XMind除基本逻辑图外，还支持哪些模型？",
+              "answers": [
+                {
+                  "text": "结构图、树状图、思维导图、鱼骨图、二维图等模型",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-101-3",
+              "question": "XMind的图形内容可导出到哪些软件？",
+              "answers": [
+                {
+                  "text": "Powerpoint、Word",
+                  "answer_start": 91
+                }
+              ]
+            },
+            {
+              "id": "5-101-4",
+              "question": "XMind在哪些领域有广泛应用？",
+              "answers": [
+                {
+                  "text": "企业和教育领域",
+                  "answer_start": 131
+                }
+              ]
+            },
+            {
+              "id": "5-101-5",
+              "question": "什么是XMind？",
+              "answers": [
+                {
+                  "text": "一款全球领先的思维导图软件",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-101-6",
+              "question": "XMind支持哪些模型？",
+              "answers": [
+                {
+                  "text": "结构图、树状图、思维导图、鱼骨图、二维图等模型",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-101-7",
+              "question": "XMind可以将图形内容导出到哪里？",
+              "answers": [
+                {
+                  "text": "Powerpoint、Word中",
+                  "answer_start": 105
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install xmind",
+          "qas": [
+            {
+              "id": "5-101-8",
+              "question": "安装XMind的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install xmind",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-101-9",
+              "question": "如何安装XMind？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install xmind",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove xmind",
+          "qas": [
+            {
+              "id": "5-101-10",
+              "question": "卸载XMind的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove xmind",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-101-11",
+              "question": "如何卸载XMind？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove xmind",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/non-free/x/xmind/",
+          "qas": [
+            {
+              "id": "5-101-12",
+              "question": "XMind的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/x/xmind/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

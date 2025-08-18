@@ -1,0 +1,389 @@
+{
+  "data": [
+    {
+      "title": "硬盘",
+      "paragraphs": [
+        {
+          "context": "硬盘（英语：Hard Disk Drive，简称HDD）是电脑上使用坚硬的旋转盘片为基础的非易失性存储设备，它在平整的磁性表面存储和检索数字数据，信息通过离磁性表面很近的写头，由电磁流来改变极性方式被电磁流写到磁盘上，信息可以通过相反的方式回读，例如磁场导致线圈中电气的改变或读头经过它的上方。早期的硬盘存储媒介是可替换的，不过今日典型的硬盘是固定的存储媒介，碟片与磁头被封装在机身里（除了一个过滤孔，用来平衡工作时产生的热量导致的气压差）。",
+          "qas": [
+            {
+              "id": "2-3-1",
+              "question": "硬盘的英语全称和简称是什么？",
+              "answers": [
+                {
+                  "text": "Hard Disk Drive，简称HDD",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "2-3-2",
+              "question": "硬盘是基于什么的非易失性存储设备？",
+              "answers": [
+                {
+                  "text": "坚硬的旋转盘片",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "id": "2-3-3",
+              "question": "硬盘如何在磁性表面存储信息？",
+              "answers": [
+                {
+                  "text": "通过离磁性表面很近的写头，由电磁流来改变极性方式被电磁流写到磁盘上",
+                  "answer_start": 119
+                }
+              ]
+            },
+            {
+              "id": "2-3-4",
+              "question": "硬盘如何回读信息？",
+              "answers": [
+                {
+                  "text": "通过相反的方式回读，例如磁场导致线圈中电气的改变或读头经过它的上方",
+                  "answer_start": 196
+                }
+              ]
+            },
+            {
+              "id": "2-3-5",
+              "question": "早期硬盘和今日典型硬盘的存储媒介有何不同？",
+              "answers": [
+                {
+                  "text": "早期的硬盘存储媒介是可替换的，不过今日典型的硬盘是固定的存储媒介，碟片与磁头被封装在机身里（除了一个过滤孔，用来平衡工作时产生的热量导致的气压差）",
+                  "answer_start": 284
+                }
+              ]
+            },
+            {
+              "id": "2-3-6",
+              "question": "硬盘的英文全称是什么？",
+              "answers": [
+                {
+                  "text": "Hard Disk Drive",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "2-3-7",
+              "question": "现代硬盘的存储媒介封装有什么特点？",
+              "answers": [
+                {
+                  "text": "碟片与磁头被封装在机身里（除了一个过滤孔，用来平衡工作时产生的热量导致的气压差）",
+                  "answer_start": 348
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "主引导记录（Master Boot Record，缩写：MBR），又叫做主引导扇区，是计算机开机后访问硬盘时所必须要读取的首个扇区，它在硬盘上的三维地址为（柱面，磁头，扇区）＝（0，0，1）。",
+          "qas": [
+            {
+              "id": "2-3-8",
+              "question": "主引导记录的英文全称、缩写及别称是什么？",
+              "answers": [
+                {
+                  "text": "Master Boot Record，缩写：MBR，又叫做主引导扇区",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "2-3-9",
+              "question": "主引导记录是计算机开机后访问硬盘时必须读取的第几个扇区？",
+              "answers": [
+                {
+                  "text": "首个扇区",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "2-3-10",
+              "question": "主引导记录在硬盘上的三维地址是什么？",
+              "answers": [
+                {
+                  "text": "（柱面，磁头，扇区）＝（0，0，1）",
+                  "answer_start": 90
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "全局标识唯一分区表（GUID Partition Table）是一个实体硬盘的分区结构，它是可扩展固件接口（EFI）标准的一部分，用来取代现有大多数磁盘的主启动记录MBR分区表。尽管它是EFI的一部分，它依然可以和部分BIOS通力合作，因为它还能解决MBR无法正常管理超过2TB的单个硬盘的问题，在一个超过2TB大小的硬盘上，主启动记录只能管理2TB。GPT解决这个问题的方式是通过分配64位的逻辑块地址，使其支持的最大硬盘和分区尺寸为2⁶⁴-1个扇区。在一个扇区512字节大小的磁盘上，这意味着GPT支持9.4ZB的单个硬盘和分区。截止至2010年，大多数操作系统对GPT均有所支持，尽管包括Mac OS X和Windows在内的一些仅支持在EFI基础上自GPT分区启动。",
+          "qas": [
+            {
+              "id": "2-3-11",
+              "question": "全局唯一标识分区表的英文名称是什么？",
+              "answers": [
+                {
+                  "text": "GUID Partition Table",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "2-3-12",
+              "question": "GPT属于哪个标准的一部分？",
+              "answers": [
+                {
+                  "text": "可扩展固件接口（EFI）标准",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "id": "2-3-13",
+              "question": "GPT主要用来取代什么？",
+              "answers": [
+                {
+                  "text": "现有大多数磁盘的主启动记录MBR分区表",
+                  "answer_start": 81
+                }
+              ]
+            },
+            {
+              "id": "2-3-14",
+              "question": "GPT能解决MBR的什么问题？",
+              "answers": [
+                {
+                  "text": "MBR无法正常管理超过2TB的单个硬盘的问题",
+                  "answer_start": 167
+                }
+              ]
+            },
+            {
+              "id": "2-3-15",
+              "question": "GPT通过什么方式解决MBR的管理限制问题？",
+              "answers": [
+                {
+                  "text": "通过分配64位的逻辑块地址",
+                  "answer_start": 252
+                }
+              ]
+            },
+            {
+              "id": "2-3-16",
+              "question": "GPT支持的最大硬盘和分区尺寸是多少个扇区？",
+              "answers": [
+                {
+                  "text": "2⁶⁴-1个扇区",
+                  "answer_start": 296
+                }
+              ]
+            },
+            {
+              "id": "2-3-17",
+              "question": "在扇区512字节的磁盘上，GPT支持的单个硬盘和分区大小是多少？",
+              "answers": [
+                {
+                  "text": "9.4ZB",
+                  "answer_start": 359
+                }
+              ]
+            },
+            {
+              "id": "2-3-18",
+              "question": "截止至2010年，哪些操作系统仅支持在EFI基础上自GPT分区启动？",
+              "answers": [
+                {
+                  "text": "Mac OS X和Windows",
+                  "answer_start": 425
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Disks:是Gnome桌面环境的一款简单的磁盘管理软件。GParted:是一款硬盘管理软件GNU Parted的GTK+图形界面前端。",
+          "qas": [
+            {
+              "id": "2-3-19",
+              "question": "Disks是什么软件？",
+              "answers": [
+                {
+                  "text": "Gnome桌面环境的一款简单的磁盘管理软件",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "2-3-20",
+              "question": "GParted是什么软件的GTK+图形界面前端？",
+              "answers": [
+                {
+                  "text": "硬盘管理软件GNU Parted",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "终端执行以下命令可查看硬盘相关信息：mount | column -t  ## 查看挂接的分区状态；sudo fdisk -l  ##查看硬盘分区情况；swapon -s   # # 查看所有交换分区；hdparm -i /dev/hda     ##查看磁盘参数(仅适用于IDE设备)；df -h     ##查看硬盘大小信息；du -h     ##查看硬盘使用情况；sudo hdparm -I /dev/sda  ##查看硬盘详细信息；dmesg | grep sda ##通过查看开机信息获取硬盘信息；sudo iotop  ##查看硬盘I/O读取状态；inxi -D  ##查看硬盘硬件情况。",
+          "qas": [
+            {
+              "id": "2-3-21",
+              "question": "查看挂接的分区状态的命令是什么？",
+              "answers": [
+                {
+                  "text": "mount | column -t",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "2-3-22",
+              "question": "查看硬盘分区情况的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo fdisk -l",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "id": "2-3-23",
+              "question": "查看所有交换分区的命令是什么？",
+              "answers": [
+                {
+                  "text": "swapon -s",
+                  "answer_start": 93
+                }
+              ]
+            },
+            {
+              "id": "2-3-24",
+              "question": "查看磁盘参数（仅适用于IDE设备）的命令是什么？",
+              "answers": [
+                {
+                  "text": "hdparm -i /dev/hda",
+                  "answer_start": 127
+                }
+              ]
+            },
+            {
+              "id": "2-3-25",
+              "question": "查看硬盘大小信息的命令是什么？",
+              "answers": [
+                {
+                  "text": "df -h",
+                  "answer_start": 177
+                }
+              ]
+            },
+            {
+              "id": "2-3-26",
+              "question": "查看硬盘使用情况的命令是什么？",
+              "answers": [
+                {
+                  "text": "du -h",
+                  "answer_start": 201
+                }
+              ]
+            },
+            {
+              "id": "2-3-27",
+              "question": "查看硬盘详细信息的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo hdparm -I /dev/sda",
+                  "answer_start": 225
+                }
+              ]
+            },
+            {
+              "id": "2-3-28",
+              "question": "通过查看开机信息获取硬盘信息的命令是什么？",
+              "answers": [
+                {
+                  "text": "dmesg | grep sda",
+                  "answer_start": 271
+                }
+              ]
+            },
+            {
+              "id": "2-3-29",
+              "question": "查看硬盘I/O读取状态的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo iotop",
+                  "answer_start": 307
+                }
+              ]
+            },
+            {
+              "id": "2-3-30",
+              "question": "查看硬盘硬件情况的命令是什么？",
+              "answers": [
+                {
+                  "text": "inxi -D",
+                  "answer_start": 334
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装hddtemp软件查看硬盘温度,终端执行：sudo apt-get install hddtemp  ##安装hddtemp软件；sudo hddtemp /dev/sda   ##查看硬盘温度。",
+          "qas": [
+            {
+              "id": "2-3-31",
+              "question": "如何安装hddtemp软件？",
+              "answers": [
+                {
+                  "text": "终端执行sudo apt-get install hddtemp",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "2-3-32",
+              "question": "查看硬盘温度的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo hddtemp /dev/sda",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "目前硬盘的磁盘分区架构分类有如下两种: 主引导记录(MBR): 主引导记录（Master Boot Record，缩写：MBR），又叫做主引导扇区，是计算机开机后访问硬盘时所必须要读取的首个扇区，它在硬盘上的三维地址为（柱面，磁头，扇区）＝（0，0，1）。 全局唯一标识分区表（GPT）: 全局标识唯一分区表（GUID Partition Table）是一个实体硬盘的分区结构，它是可扩展固件接口（EFI）标准的一部分，用来取代现有大多数磁盘的主启动记录MBR分区表。 尽管它是EFI的一部分，它依然可以和部分BIOS通力合作，因为它还能解决MBR无法正常管理超过2TB的单个硬盘的问题，在一个超过2TB大小的硬盘上，主启动记录只能管理2TB。GPT解决这个问题的方式是通过分配64位的逻辑块地址，使其支持的最大硬盘和分区尺寸为2⁶⁴-1个扇区。在一个扇区512字节大小的磁盘上，这意味着GPT支持9.4ZB的单个硬盘和分区。 截止至2010年，大多数操作系统对GPT均有所支持，尽管包括Mac OS X和Windows在内的一些仅支持在EFI基础上自GPT分区启动。",
+          "qas": [
+            {
+              "id": "2-3-33",
+              "question": "MBR的全称是什么？",
+              "answers": [
+                {
+                  "text": "Master Boot Record",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看信息可通过以下方式：软件查询：Disks是Gnome桌面环境的一款简单的磁盘管理软件。GParted是一款硬盘管理软件GNU Parted的GTK+图形界面前端。命令查看：终端执行：mount | column -t（查看挂接的分区状态）、sudo fdisk -l（查看硬盘分区情况）、swapon -s（查看所有交换分区）、hdparm -i /dev/hda（查看磁盘参数，仅适用于IDE设备）、df -h（查看硬盘大小信息）、du -h（查看硬盘使用情况）、sudo hdparm -I /dev/sda（查看硬盘详细信息）、dmesg | grep sda（通过开机信息获取硬盘信息）、sudo iotop（查看硬盘I/O读取状态）、inxi -D（查看硬盘硬件情况）。温度信息：安装hddtemp软件后，执行sudo hddtemp /dev/sda可查看硬盘温度。",
+          "qas": [
+            {
+              "id": "2-3-34",
+              "question": "如何获取硬盘温度信息？",
+              "answers": [
+                {
+                  "text": "安装hddtemp软件后，执行sudo hddtemp /dev/sda",
+                  "answer_start": 332
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

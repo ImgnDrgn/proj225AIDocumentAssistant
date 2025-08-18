@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "File Roller",
+      "paragraphs": [
+        {
+          "context": "File Roller是GNOME桌面环境的归档管理器，它具有创建、修改、查看、提取等功能，以及可以保存为不同格式的文档。",
+          "qas": [
+            {
+              "id": "1-64-1",
+              "question": "File Roller是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "归档管理器",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "1-64-2",
+              "question": "File Roller是哪个桌面环境的归档管理器？",
+              "answers": [
+                {
+                  "text": "GNOME",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "1-64-3",
+              "question": "File Roller具有哪些功能？",
+              "answers": [
+                {
+                  "text": "创建、修改、查看、提取等功能，以及可以保存为不同格式的文档",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装File Roller的命令为：sudo apt-get install file-roller",
+          "qas": [
+            {
+              "id": "1-64-4",
+              "question": "如何安装File Roller？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install file-roller",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载File Roller的命令为：sudo apt-get remove file-roller",
+          "qas": [
+            {
+              "id": "1-64-5",
+              "question": "如何卸载File Roller？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove file-roller",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "File Roller的仓库地址是：http://packages.deepin.com/deepin/pool/main/f/file-roller/",
+          "qas": [
+            {
+              "id": "1-64-6",
+              "question": "File Roller的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/f/file-roller/",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "File Roller的官方网站为：http://fileroller.sourceforge.net/",
+          "qas": [
+            {
+              "id": "1-64-7",
+              "question": "File Roller的官方网站是什么？",
+              "answers": [
+                {
+                  "text": "http://fileroller.sourceforge.net/",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

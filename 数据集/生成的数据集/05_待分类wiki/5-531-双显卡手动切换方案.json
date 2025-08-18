@@ -1,0 +1,199 @@
+{
+  "data": [
+    {
+      "title": "双显卡手动切换方案",
+      "paragraphs": [
+        {
+          "context": "大黄蜂方案中，安装开源驱动的命令：sudo apt-get install bumblebee primus nvidia-settings，primus为可选项提升性能，nvidia-settings用于图形化设置。",
+          "qas": [
+            {
+              "question": "大黄蜂方案中安装开源驱动需要哪些命令？",
+              "id": "5-531-1",
+              "answers": [
+                {
+                  "text": "sudo apt-get install bumblebee primus nvidia-settings",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "大黄蜂方案中，安装闭源nvidia驱动的命令：sudo apt-get install bumblebee-nvidia nvidia-driver nvidia-settings。",
+          "qas": [
+            {
+              "question": "大黄蜂方案中安装闭源nvidia驱动的命令是什么？",
+              "id": "5-531-2",
+              "answers": [
+                {
+                  "text": "sudo apt-get install bumblebee-nvidia nvidia-driver nvidia-settings",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "验证大黄蜂驱动安装成功的方法：安装mesa-utils后，执行optirun glxinfo|grep NVIDIA。",
+          "qas": [
+            {
+              "question": "如何验证大黄蜂驱动是否安装成功？",
+              "id": "5-531-3",
+              "answers": [
+                {
+                  "text": "安装mesa-utils后，执行optirun glxinfo|grep NVIDIA",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "bumblebeed版本为3.2.1时，电脑自带电源管理功能，开箱即用，无需额外设置。",
+          "qas": [
+            {
+              "question": "bumblebeed版本为3.2.1时有什么特点？",
+              "id": "5-531-4",
+              "answers": [
+                {
+                  "text": "电脑自带电源管理功能，开箱即用，无需额外设置",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Prime方案的前提：①专有NVIDIA驱动版本≥435.17；②Xorg-server版本≥1.20.6-1（查看版本命令：sudo X -version）。",
+          "qas": [
+            {
+              "question": "Prime方案的前提条件是什么？",
+              "id": "5-531-5",
+              "answers": [
+                {
+                  "text": "①专有NVIDIA驱动版本≥435.17；②Xorg-server版本≥1.20.6-1",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "禁用开源nouveau驱动步骤：1. sudo vim /etc/modprobe.d/blacklist-bcm43.conf，末尾加blacklist nouveau和options nouveau modeset=0；2. sudo update-initramfs -u；3. sudo init 6；4. 重启后lsmod | grep -i nouveau无输出则成功。",
+          "qas": [
+            {
+              "question": "如何禁用开源nouveau驱动？",
+              "id": "5-531-6",
+              "answers": [
+                {
+                  "text": "1. sudo vim /etc/modprobe.d/blacklist-bcm43.conf，末尾加blacklist nouveau和options nouveau modeset=0；2. sudo update-initramfs -u；3. sudo init 6；4. 重启后lsmod | grep -i nouveau无输出则成功",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Prime方案安装NVIDIA驱动步骤：1. Ctrl+Alt+F2进入tty2，登录后sudo systemctl stop lightdm；2. 卸载旧驱动sudo apt-get remove --purge nvidia*；3. 赋予驱动文件可执行权限chmod u+x 驱动文件；4. sudo ./驱动文件安装；5. 配置display_setup.sh脚本及lightdm.conf，重启。",
+          "qas": [
+            {
+              "question": "Prime方案中如何安装NVIDIA驱动？",
+              "id": "5-531-7",
+              "answers": [
+                {
+                  "text": "1. Ctrl+Alt+F2进入tty2，登录后sudo systemctl stop lightdm；2. 卸载旧驱动sudo apt-get remove --purge nvidia*；3. 赋予驱动文件可执行权限chmod u+x 驱动文件；4. sudo ./驱动文件安装；5. 配置display_setup.sh脚本及lightdm.conf，重启",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "检查NVIDIA驱动安装成功的命令：nvidia-smi，成功会有内容显示。",
+          "qas": [
+            {
+              "question": "如何检查NVIDIA驱动是否安装成功？",
+              "id": "5-531-8",
+              "answers": [
+                {
+                  "text": "执行命令nvidia-smi，成功会有内容显示",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nvidia-prime切换显卡命令：选择Intel显卡sudo prime-select intel；选择NVIDIA显卡sudo prime-select nvidia；查看当前方案prime-select query。",
+          "qas": [
+            {
+              "question": "nvidia-prime如何切换显卡？",
+              "id": "5-531-9",
+              "answers": [
+                {
+                  "text": "选择Intel显卡sudo prime-select intel；选择NVIDIA显卡sudo prime-select nvidia",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何查看nvidia-prime当前运行的方案？",
+              "id": "5-531-10",
+              "answers": [
+                {
+                  "text": "prime-select query",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看显卡BusID的命令：lspci | egrep -i 'VGA|3D'，输出包含集显和独显的BusID。",
+          "qas": [
+            {
+              "question": "如何查看显卡的BusID？",
+              "id": "5-531-11",
+              "answers": [
+                {
+                  "text": "lspci | egrep -i 'VGA|3D'",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "手动切换方案启用双显卡（集显默认）的xorg.conf配置：含ServerLayout（Screen 0为intel，Screen 1为nvidia）、两个Device（intel和nvidia，填对应BusID）及两个Screen部分。",
+          "qas": [
+            {
+              "question": "手动切换方案中如何配置启用双显卡且集显为默认？",
+              "id": "5-531-12",
+              "answers": [
+                {
+                  "text": "xorg.conf配置含ServerLayout（Screen 0为intel，Screen 1为nvidia）、两个Device（intel和nvidia，填对应BusID）及两个Screen部分",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "手动切换方案启用集显屏蔽独显的xorg.conf配置：Section \"Module\" Load \"modesetting\"；Section \"Device\" Identifier \"Card0\" Driver \"intel\" BusID \"PCI:集显BusID\"。",
+          "qas": [
+            {
+              "question": "手动切换方案中如何配置启用集显并屏蔽独显？",
+              "id": "5-531-13",
+              "answers": [
+                {
+                  "text": "xorg.conf配置：Section \"Module\" Load \"modesetting\"；Section \"Device\" Identifier \"Card0\" Driver \"intel\" BusID \"PCI:集显BusID\"",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

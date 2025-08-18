@@ -1,0 +1,219 @@
+{
+  "data": [
+    {
+      "title": "Linux或Windows上实现端口映射",
+      "paragraphs": [
+        {
+          "context": "服务器多网卡连接不同网络时，可配置转发数据包实现隔离网络中服务通信。",
+          "qas": [
+            {
+              "question": "服务器在什么情况下需要配置转发数据包功能？",
+              "id": "3-101-1",
+              "answers": [
+                {
+                  "text": "服务器有许多块网卡，连接到不同的网络，隔离的网络中某些服务需要进行通信时。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Windows下查询端口映射情况可用命令：netsh interface portproxy show v4tov4。",
+          "qas": [
+            {
+              "question": "Windows下如何查询端口映射情况？",
+              "id": "3-101-2",
+              "answers": [
+                {
+                  "text": "netsh interface portproxy show v4tov4",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Windows下查询某一IP的所有端口映射情况，可使用命令：netsh interface portproxy show v4tov4 | find \"[IP]\"。",
+          "qas": [
+            {
+              "question": "Windows下如何查询某一个IP的所有端口映射情况？",
+              "id": "3-101-3",
+              "answers": [
+                {
+                  "text": "netsh interface portproxy show v4tov4 | find \"[IP]\"",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Windows下增加端口映射的命令为：netsh interface portproxy add v4tov4 listenaddress=[外网IP] listenport=[外网端口] connectaddress=[内网IP] connectport=[内网端口]。",
+          "qas": [
+            {
+              "question": "Windows下如何增加一个端口映射？",
+              "id": "3-101-4",
+              "answers": [
+                {
+                  "text": "netsh interface portproxy add v4tov4 listenaddress=[外网IP] listenport=[外网端口] connectaddress=[内网IP] connectport=[内网端口]",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Windows下删除端口映射的命令是：netsh interface portproxy delete v4tov4 listenaddress=[外网IP] listenport=[外网端口]。",
+          "qas": [
+            {
+              "question": "Windows下如何删除一个端口映射？",
+              "id": "3-101-5",
+              "answers": [
+                {
+                  "text": "netsh interface portproxy delete v4tov4 listenaddress=[外网IP] listenport=[外网端口]",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux下允许数据包转发需执行：echo 1 >/proc/sys/net/ipv4/ip_forward 等命令。",
+          "qas": [
+            {
+              "question": "Linux下如何允许数据包转发？",
+              "id": "3-101-6",
+              "answers": [
+                {
+                  "text": "echo 1 >/proc/sys/net/ipv4/ip_forward；iptables -t nat -A POSTROUTING -j MASQUERADE；iptables -A FORWARD -i [内网网卡名称] -j ACCEPT；iptables -t nat -A POSTROUTING -s [内网网段] -o [外网网卡名称] -j MASQUERADE",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux下设置端口映射的命令为：iptables -t nat -A PREROUTING -p tcp -m tcp --dport [外网端口] -j DNAT --to-destination [内网地址]:[内网端口]。",
+          "qas": [
+            {
+              "question": "Linux下如何设置端口映射？",
+              "id": "3-101-7",
+              "answers": [
+                {
+                  "text": "iptables -t nat -A PREROUTING -p tcp -m tcp --dport [外网端口] -j DNAT --to-destination [内网地址]:[内网端口]",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "实验用5台最小化安装的centos 7虚拟机，Server1、2为内网服务器，Server3为外网服务器，Server4双网卡连两个网络。",
+          "qas": [
+            {
+              "question": "实验环境使用了几台虚拟机？是什么系统？",
+              "id": "3-101-8",
+              "answers": [
+                {
+                  "text": "5台最小化安装的centos 7虚拟机",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "实验中Server1和Server2处于什么网络环境？",
+              "id": "3-101-9",
+              "answers": [
+                {
+                  "text": "内网环境",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "实验中Server4的网络特点是什么？",
+              "id": "3-101-10",
+              "answers": [
+                {
+                  "text": "双网卡主机，分别连接192.168.50.0/24和172.16.2.0/24两个网络",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Server1上用Python搭建HTTP服务：cd ~；echo \"server1\" > index.html；python -m SimpleHTTPServer 8080。",
+          "qas": [
+            {
+              "question": "Server1上如何用Python搭建简单的HTTP服务？",
+              "id": "3-101-11",
+              "answers": [
+                {
+                  "text": "cd ~；echo \"server1\" > index.html；python -m SimpleHTTPServer 8080",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux的Server4临时配置端口映射需允许数据包转发并设置端口映射规则。",
+          "qas": [
+            {
+              "question": "Linux的Server4如何进行临时配置端口映射？",
+              "id": "3-101-12",
+              "answers": [
+                {
+                  "text": "允许数据包转发：echo 1 >/proc/sys/net/ipv4/ip_forward；iptables -t nat -A POSTROUTING -j MASQUERADE；iptables -A FORWARD -i ens33 -j ACCEPT；iptables -t nat -A POSTROUTING -s 192.168.50.0/24 -o ens37 -j MASQUERADE；设置端口映射：iptables -t nat -A PREROUTING -p tcp -m tcp --dport 8081 -j DNAT --to-destination 192.168.50.11:8080；iptables -t nat -A PREROUTING -p tcp -m tcp --dport 8082 -j DNAT --to-destination 192.168.50.12:8080",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux的Server4永久配置端口映射，需将临时配置命令追加到/etc/rc.local文件。",
+          "qas": [
+            {
+              "question": "Linux的Server4如何进行永久配置端口映射？",
+              "id": "3-101-13",
+              "answers": [
+                {
+                  "text": "将临时配置命令追加到/etc/rc.local文件",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Windows的Server4配置端口映射用netsh interface portproxy add v4tov4命令，查看用show v4tov4。",
+          "qas": [
+            {
+              "question": "Windows的Server4如何配置端口映射？",
+              "id": "3-101-14",
+              "answers": [
+                {
+                  "text": "netsh interface portproxy add v4tov4 listenaddress=172.16.2.105 listenport=8081 connectaddress=192.168.50.11 connectport=8080；netsh interface portproxy add v4tov4 listenaddress=172.16.2.105 listenport=8082 connectaddress=192.168.50.12 connectport=8080",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "Windows的Server4如何查看端口映射情况？",
+              "id": "3-101-15",
+              "answers": [
+                {
+                  "text": "netsh interface portproxy show v4tov4",
+                  "answer_start": 74
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

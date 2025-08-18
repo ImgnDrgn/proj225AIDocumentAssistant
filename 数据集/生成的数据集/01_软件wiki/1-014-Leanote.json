@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "title": "Leanote",
+      "paragraphs": [
+        {
+          "context": "Leanote是一款在线的云笔记应用，支持 Markdown，程序代码高亮，多人协作，笔记历史记录，可以直接将笔记发布为博客、工作日志，支持创建多笔记本、标签、共享，还有免打扰的写作模式。",
+          "qas": [
+            {
+              "question": "Leanote是什么类型的应用？",
+              "id": "1-14-1",
+              "answers": [
+                {
+                  "text": "在线的云笔记应用",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "Leanote支持哪些功能？",
+              "id": "1-14-2",
+              "answers": [
+                {
+                  "text": "支持 Markdown，程序代码高亮，多人协作，笔记历史记录，可以直接将笔记发布为博客、工作日志，支持创建多笔记本、标签、共享，还有免打扰的写作模式。",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装命令：sudo apt-get install leanote",
+          "qas": [
+            {
+              "question": "如何安装Leanote？",
+              "id": "1-14-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install leanote",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载命令：sudo apt-get remove leanote",
+          "qas": [
+            {
+              "question": "怎样卸载Leanote？",
+              "id": "1-14-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove leanote",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址：http://packages.deepin.com/deepin/pool/main/l/leanote/",
+          "qas": [
+            {
+              "question": "Leanote的仓库地址是什么？",
+              "id": "1-14-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/l/leanote/",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

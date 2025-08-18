@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "Apt-mark版本锁定",
+      "paragraphs": [
+        {
+          "context": "在执行系统更新时，Debian系统下可以使用apt-mark命令来阻止某些包的升级。阻止包的具体命令是sudo apt-mark hold <pkg>。例如，阻止升级Perl，执行apt-mark hold perl。取消阻止包的命令是sudo apt-mark unhold <pkg>。查看已阻止包的命令是sudo apt-mark showhold。",
+          "qas": [
+            {
+              "id": "5-412-1",
+              "question": "在Debian系统上，可以使用什么命令来阻止包的升级？",
+              "answers": [
+                {
+                  "text": "apt-mark命令",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "5-412-2",
+              "question": "阻止一个包的具体命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-mark hold <pkg>",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "id": "5-412-3",
+              "question": "如何阻止Perl升级？",
+              "answers": [
+                {
+                  "text": "执行apt-mark hold perl",
+                  "answer_start": 90
+                }
+              ]
+            },
+            {
+              "id": "5-412-4",
+              "question": "取消阻止包的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-mark unhold <pkg>",
+                  "answer_start": 118
+                }
+              ]
+            },
+            {
+              "id": "5-412-5",
+              "question": "查看已阻止包的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-mark showhold",
+                  "answer_start": 156
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "title": "Room_Arranger",
+      "paragraphs": [
+        {
+          "context": "Room Arranger是一款实时的模拟房屋设计布局的软件。",
+          "qas": [
+            {
+              "question": "Room Arranger是什么类型的软件？",
+              "id": "5-259-1",
+              "answers": [
+                {
+                  "text": "实时的模拟房屋设计布局的软件",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Room Arranger可以新建工程布置一个房间或者套房，可自由添加、调整或移动对象。",
+          "qas": [
+            {
+              "question": "Room Arranger能新建工程布置什么？",
+              "id": "5-259-2",
+              "answers": [
+                {
+                  "text": "一个房间或者套房",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "在Room Arranger中可以对对象进行哪些操作？",
+              "id": "5-259-3",
+              "answers": [
+                {
+                  "text": "自由添加、调整或移动",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Room Arranger可添加多种对象，包括门口和窗户、橱柜、桌子和椅子等。",
+          "qas": [
+            {
+              "question": "Room Arranger可以添加哪些对象？",
+              "id": "5-259-4",
+              "answers": [
+                {
+                  "text": "门口和窗户、橱柜、桌子和椅子等",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Room Arranger可对已有设计以3D方式进行预览。",
+          "qas": [
+            {
+              "question": "Room Arranger如何预览已有设计？",
+              "id": "5-259-5",
+              "answers": [
+                {
+                  "text": "以3D方式进行预览",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Room Arranger的命令是sudo apt-get install rooarr。",
+          "qas": [
+            {
+              "question": "安装Room Arranger的命令是什么？",
+              "id": "5-259-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get install rooarr",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Room Arranger的命令是sudo apt-get remove rooarr。",
+          "qas": [
+            {
+              "question": "卸载Room Arranger的命令是什么？",
+              "id": "5-259-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove rooarr",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Room Arranger的仓库地址是http://packages.deepin.com/deepin/pool/non-free/r/rooarr/。",
+          "qas": [
+            {
+              "question": "Room Arranger的仓库地址是什么？",
+              "id": "5-259-8",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/r/rooarr/",
+                  "answer_start": 28
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

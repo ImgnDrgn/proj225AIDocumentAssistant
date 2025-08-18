@@ -1,0 +1,140 @@
+{
+  "title": "OBS Studio",
+  "paragraphs": [
+    {
+      "context": "OBS Studio（Open Broadcaster Software）是一个优秀的开源免费的录屏以及直播串流软件，是跨平台的开源直播录屏软件，也是Linux系统上最受欢迎的录屏软件。安装时可使用命令：sudo apt update 和 sudo apt install ffmpeg obs-studio。使用时，打开软件按照向导配置，录屏时需要添加源，直播需要配置直播服务器。",
+      "qas": [
+        {
+          "id": "1-71-1",
+          "question": "OBS Studio的全称是什么？",
+          "answers": [
+            {
+              "text": "Open Broadcaster Software",
+              "answer_start": 11
+            }
+          ]
+        },
+        {
+          "id": "1-71-2",
+          "question": "OBS Studio是开源免费的吗？",
+          "answers": [
+            {
+              "text": "是",
+              "answer_start": 37
+            }
+          ]
+        },
+        {
+          "id": "1-71-3",
+          "question": "OBS Studio支持哪些主要功能？",
+          "answers": [
+            {
+              "text": "录屏以及直播串流",
+              "answer_start": 48
+            }
+          ]
+        },
+        {
+          "id": "1-71-4",
+          "question": "OBS Studio是否为跨平台软件？",
+          "answers": [
+            {
+              "text": "是",
+              "answer_start": 57
+            }
+          ]
+        },
+        {
+          "id": "1-71-5",
+          "question": "OBS Studio在哪个操作系统上最受欢迎？",
+          "answers": [
+            {
+              "text": "Linux系统",
+              "answer_start": 73
+            }
+          ]
+        },
+        {
+          "id": "1-71-6",
+          "question": "安装OBS Studio需要执行哪些命令？",
+          "answers": [
+            {
+              "text": "sudo apt update 和 sudo apt install ffmpeg obs-studio",
+              "answer_start": 100
+            }
+          ]
+        },
+        {
+          "id": "1-71-7",
+          "question": "使用OBS Studio录屏时需要进行什么操作？",
+          "answers": [
+            {
+              "text": "添加源",
+              "answer_start": 164
+            }
+          ]
+        },
+        {
+          "id": "1-71-8",
+          "question": "使用OBS Studio直播时需要配置什么？",
+          "answers": [
+            {
+              "text": "直播服务器",
+              "answer_start": 174
+            }
+          ]
+        },
+        {
+          "id": "1-71-9",
+          "question": "OBS Studio的主要功能是什么？",
+          "answers": [
+            {
+              "text": "录屏以及直播串流软件",
+              "answer_start": 48
+            }
+          ]
+        },
+        {
+          "id": "1-71-10",
+          "question": "安装前需要执行什么命令更新软件源？",
+          "answers": [
+            {
+              "text": "sudo apt update",
+              "answer_start": 100
+            }
+          ]
+        },
+        {
+          "id": "1-71-11",
+          "question": "安装OBS需要同时安装什么依赖软件？",
+          "answers": [
+            {
+              "text": "ffmpeg",
+              "answer_start": 134
+            }
+          ]
+        },
+        {
+          "id": "1-71-12",
+          "question": "完整的OBS安装命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt install ffmpeg obs-studio",
+              "answer_start": 119
+            }
+          ]
+        },
+        {
+          "id": "1-71-13",
+          "question": "首次使用OBS应如何进行初始设置？",
+          "answers": [
+            {
+              "text": "按照向导配置",
+              "answer_start": 153
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

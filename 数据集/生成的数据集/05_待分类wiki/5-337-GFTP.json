@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "GFTP-已合并",
+      "paragraphs": [
+        {
+          "context": "gFTP是一个FTP客户端工具，它支持多个线程同时下载、断点续传、支持FTP、HTTP和SSH协议、支持FTP和HTTP代理，还可以下载整个目录、支持文件队列、缓存、拖拽等操作。安装命令是 `sudo apt-get install gftp`。卸载命令是 `sudo apt-get remove gftp`。仓库地址是 http://packages.deepin.com/deepin/pool/main/g/gftp/。",
+          "qas": [
+            {
+              "id": "5-337-1",
+              "question": "gFTP是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "FTP客户端工具",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-337-2",
+              "question": "gFTP支持哪些协议？",
+              "answers": [
+                {
+                  "text": "FTP、HTTP和SSH协议",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "id": "5-337-3",
+              "question": "gFTP是否支持断点续传？",
+              "answers": [
+                {
+                  "text": "断点续传",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "5-337-4",
+              "question": "gFTP能否下载整个目录？",
+              "answers": [
+                {
+                  "text": "可以下载整个目录",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "id": "5-337-5",
+              "question": "gFTP支持FTP和HTTP代理吗？",
+              "answers": [
+                {
+                  "text": "支持FTP和HTTP代理",
+                  "answer_start": 50
+                }
+              ]
+            },
+            {
+              "id": "5-337-6",
+              "question": "如何安装gFTP？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gftp",
+                  "answer_start": 106
+                }
+              ]
+            },
+            {
+              "id": "5-337-7",
+              "question": "如何卸载gFTP？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gftp",
+                  "answer_start": 138
+                }
+              ]
+            },
+            {
+              "id": "5-337-8",
+              "question": "gFTP的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gftp/",
+                  "answer_start": 163
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

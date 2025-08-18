@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "Smallpdf",
+      "paragraphs": [
+        {
+          "context": "Smallpdf是一款在线PDF处理工具，不用下载或安装软件，您就可以在浏览器上轻松处理各种PDF文件。Smallpdf支持 Word、Excel、PPT、JPG格式的文件转PDF。除此之外，Smallpdf还具有PDF分割、PDF合并、PDF压缩以及PDF解密等功能。安装命令为sudo apt-get install apps.com.smallpdf，卸载命令为sudo apt-get remove apps.com.smallpdf，其仓库地址为http://packages.deepin.com/deepin/pool/main/d/deepin-webapps/",
+          "qas": [
+            {
+              "id": "5-226-1",
+              "question": "Smallpdf是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "在线PDF处理工具",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-226-2",
+              "question": "使用Smallpdf需要下载安装软件吗？",
+              "answers": [
+                {
+                  "text": "不用下载或安装软件，您就可以在浏览器上轻松处理各种PDF文件",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-226-3",
+              "question": "Smallpdf支持哪些格式的文件转PDF？",
+              "answers": [
+                {
+                  "text": "Word、Excel、PPT、JPG",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "5-226-4",
+              "question": "Smallpdf的安装命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install apps.com.smallpdf",
+                  "answer_start": 107
+                }
+              ]
+            },
+            {
+              "id": "5-226-5",
+              "question": "Smallpdf的卸载命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove apps.com.smallpdf",
+                  "answer_start": 145
+                }
+              ]
+            },
+            {
+              "id": "5-226-6",
+              "question": "Smallpdf的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/d/deepin-webapps/",
+                  "answer_start": 185
+                }
+              ]
+            },
+            {
+              "id": "5-226-7",
+              "question": "除了格式转换，Smallpdf还有哪些功能？",
+              "answers": [
+                {
+                  "text": "PDF分割、PDF合并、PDF压缩以及PDF解密",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

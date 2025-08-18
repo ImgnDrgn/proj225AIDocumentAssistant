@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "title": "双系统安装时为什么要先安装windows再安装linux",
+      "paragraphs": [
+        {
+          "context": "个人计算机架设的Linux主机开机过程：1. 加载BIOS硬件信息，进行硬件系统的自我测试，取得第一个可开机的装置（BIOS决定）；2. 读取并执行MBR的开机管理程序（Boot loader）；3. 开机管理程序指定使用哪个核心来开机，kernel开始侦测硬件与加载驱动程序；4. kernel呼叫systemd程序，开机。",
+          "qas": [
+            {
+              "question": "个人计算机架设的Linux主机开机第一步是什么？",
+              "id": "3-133-1",
+              "answers": [
+                {
+                  "text": "加载BIOS硬件信息，进行硬件系统的自我测试，取得第一个可开机的装置（BIOS决定）",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "Linux主机开机时，MBR中执行的是什么？",
+              "id": "3-133-2",
+              "answers": [
+                {
+                  "text": "开机管理程序（Boot loader）",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "question": "Linux主机中，kernel在开机过程中会做什么？",
+              "id": "3-133-3",
+              "answers": [
+                {
+                  "text": "侦测硬件与加载驱动程序，呼叫systemd程序",
+                  "answer_start": 171
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Boot loader的功能：提供选单，用户可选择不同开机项目；载入核心文件，识别操作系统文件格式以加载核心到主存储器执行；转交其他loader，将开机管理功能转交给其他loader。",
+          "qas": [
+            {
+              "question": "Boot loader的功能有哪些？",
+              "id": "3-133-4",
+              "answers": [
+                {
+                  "text": "提供选单，用户可选择不同开机项目；载入核心文件，识别操作系统文件格式以加载核心到主存储器执行；转交其他loader，将开机管理功能转交给其他loader。",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "Boot loader如何实现多重引导？",
+              "id": "3-133-5",
+              "answers": [
+                {
+                  "text": "提供选单，用户可以选择不同的开机项目",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "Boot loader载入核心文件时需要做什么？",
+              "id": "3-133-6",
+              "answers": [
+                {
+                  "text": "识别操作系统的文件格式据以加载核心到主存储器中执行",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "主机安装不同操作系统：必须使用自己的loader加载自身操作系统核心；系统的MBR只有一个，需合理安排windows与Linux的安装。每个文件系统会保留启动扇区提供操作系统安装boot loader。",
+          "qas": [
+            {
+              "question": "主机安装不同操作系统时，加载自身核心需要什么？",
+              "id": "3-133-7",
+              "answers": [
+                {
+                  "text": "自己的loader",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "系统的MBR数量是多少？",
+              "id": "3-133-8",
+              "answers": [
+                {
+                  "text": "一个",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "question": "文件系统中哪个部分用于安装boot loader？",
+              "id": "3-133-9",
+              "answers": [
+                {
+                  "text": "启动扇区（boot sector）",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "双系统安装顺序原因：Windows的loader不具有控制权转交功能，不能加载Linux的loader。先装windows再装linux，MBR中windows的loader会被Linux的loader覆盖，Linux的loader选单功能可启动双系统。",
+          "qas": [
+            {
+              "question": "为什么双系统要先安装windows再安装linux？",
+              "id": "3-133-10",
+              "answers": [
+                {
+                  "text": "Windows的loader不具有控制权转交功能，不能加载Linux的loader。先装windows再装linux，MBR中windows的loader会被Linux的loader覆盖，Linux的loader选单功能可启动双系统。",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "Windows的loader能否加载Linux的loader？",
+              "id": "3-133-11",
+              "answers": [
+                {
+                  "text": "不能，Windows的loader不具有控制权转交功能",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "先装windows再装linux后，MBR中的loader会怎样？",
+              "id": "3-133-12",
+              "answers": [
+                {
+                  "text": "windows的loader会被Linux的loader覆盖",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

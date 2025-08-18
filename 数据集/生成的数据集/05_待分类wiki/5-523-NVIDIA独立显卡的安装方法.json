@@ -1,0 +1,229 @@
+{
+  "data": [
+    {
+      "title": "NVIDIA独立显卡的安装方法",
+      "paragraphs": [
+        {
+          "context": "安装NVIDIA独立显卡第一步需停用相关服务：编辑/etc/modprobe.d/blacklist.conf，添加blacklist vga16fb、nouveau、rivafb、nvidiafb、rivatv，然后执行sudo update-initramfs -u。",
+          "qas": [
+            {
+              "question": "安装NVIDIA独立显卡第一步需要编辑哪个文件？",
+              "id": "5-523-1",
+              "answers": [
+                {
+                  "text": "/etc/modprobe.d/blacklist.conf",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "第一步中向blacklist.conf添加的条目有哪些？",
+              "id": "5-523-2",
+              "answers": [
+                {
+                  "text": "blacklist vga16fb、nouveau、rivafb、nvidiafb、rivatv",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "question": "编辑blacklist.conf后需要执行什么命令？",
+              "id": "5-523-3",
+              "answers": [
+                {
+                  "text": "sudo update-initramfs -u",
+                  "answer_start": 126
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "第二步需从NVIDIA官网下载对应Linux驱动包，保存后在所在文件夹打开终端，执行sudo chmod +x ./*.run赋予权限，再用sudo apt-get remove --purge nvidia*卸载遗留驱动。",
+          "qas": [
+            {
+              "question": "在哪里下载NVIDIA显卡的Linux驱动？",
+              "id": "5-523-4",
+              "answers": [
+                {
+                  "text": "NVIDIA官网",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "如何给下载的NVIDIA驱动文件赋予执行权限？",
+              "id": "5-523-5",
+              "answers": [
+                {
+                  "text": "在驱动文件所在文件夹打开终端，执行sudo chmod +x ./*.run",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "question": "卸载遗留NVIDIA驱动的命令是什么？",
+              "id": "5-523-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove --purge nvidia*",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "第三步需暂时关闭X服务：执行sudo service lightdm stop，按Ctrl + Alt + F2进入tty，输入账户名、密码，su后进入Downloads，执行sudo sh ./*.run，一路yes后reboot。",
+          "qas": [
+            {
+              "question": "如何暂时关闭X服务？",
+              "id": "5-523-7",
+              "answers": [
+                {
+                  "text": "执行sudo service lightdm stop",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "关闭X服务后如何进入tty？",
+              "id": "5-523-8",
+              "answers": [
+                {
+                  "text": "键盘按下Ctrl + Alt + F2",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "在tty中如何执行NVIDIA驱动安装？",
+              "id": "5-523-9",
+              "answers": [
+                {
+                  "text": "输入账户名、密码，su后进入Downloads，执行sudo sh ./*.run，一路yes后reboot",
+                  "answer_start": 80
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "第四步配置显卡：用lspci | egrep 'VGA|3D'获取BusID，修改/etc/X11/xorg.conf，有方案A（双显卡，集显默认）、B（独显，屏蔽集显）、C（集显，屏蔽独显）三种方案。",
+          "qas": [
+            {
+              "question": "如何获取显卡的BusID？",
+              "id": "5-523-10",
+              "answers": [
+                {
+                  "text": "执行lspci | egrep 'VGA|3D'",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "配置显卡需要修改哪个文件？",
+              "id": "5-523-11",
+              "answers": [
+                {
+                  "text": "/etc/X11/xorg.conf",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "question": "方案A的配置是什么？",
+              "id": "5-523-12",
+              "answers": [
+                {
+                  "text": "启用双显卡，集显为默认显卡",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "question": "方案B的配置是什么？",
+              "id": "5-523-13",
+              "answers": [
+                {
+                  "text": "启用独显，屏蔽集显",
+                  "answer_start": 99
+                }
+              ]
+            },
+            {
+              "question": "方案C的配置是什么？",
+              "id": "5-523-14",
+              "answers": [
+                {
+                  "text": "启用集显，屏蔽独显",
+                  "answer_start": 116
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "第四步还需修改/etc/lightdm/display_setup.sh，写入#!/bin/sh、xrandr --setprovideroutputsource modesetting NVIDIA-0、xrandr --auto，赋予执行权限，再修改lightdm.conf，将#display-setup-script=改为display-setup-script=/etc/lightdm/display_setup.sh。",
+          "qas": [
+            {
+              "question": "display_setup.sh需要写入哪些内容？",
+              "id": "5-523-15",
+              "answers": [
+                {
+                  "text": "#!/bin/sh、xrandr --setprovideroutputsource modesetting NVIDIA-0、xrandr --auto",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "question": "如何给display_setup.sh赋予执行权限？",
+              "id": "5-523-16",
+              "answers": [
+                {
+                  "text": "sudo chmod +x /etc/lightdm/display_setup.sh",
+                  "answer_start": 135
+                }
+              ]
+            },
+            {
+              "question": "修改lightdm.conf时需要做什么？",
+              "id": "5-523-17",
+              "answers": [
+                {
+                  "text": "将#display-setup-script=改为display-setup-script=/etc/lightdm/display_setup.sh",
+                  "answer_start": 176
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "第五步检测：解决屏幕撕裂需编辑/etc/modprobe.d/nvidia-graphics-drivers.conf，添加options nvidia_drm modeset=1，执行sudo update-initramfs -u后reboot；用nvidia-smi查看显卡信息。",
+          "qas": [
+            {
+              "question": "如何解决笔记本屏幕窗口撕裂问题？",
+              "id": "5-523-18",
+              "answers": [
+                {
+                  "text": "编辑/etc/modprobe.d/nvidia-graphics-drivers.conf，添加options nvidia_drm modeset=1，执行sudo update-initramfs -u后reboot",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "安装完成后用什么命令查看显卡使用信息？",
+              "id": "5-523-19",
+              "answers": [
+                {
+                  "text": "nvidia-smi",
+                  "answer_start": 165
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

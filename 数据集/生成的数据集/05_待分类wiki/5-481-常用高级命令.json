@@ -1,0 +1,309 @@
+{
+  "data": [
+    {
+      "title": "常用高级命令",
+      "paragraphs": [
+        {
+          "context": "top命令的功能是用于实时显示系统运行状态，包含处理器、内存、服务、进程等重要资源信息。",
+          "qas": [
+            {
+              "question": "top命令的功能是什么？",
+              "id": "5-481-1",
+              "answers": [
+                {
+                  "text": "实时显示系统运行状态，包含处理器、内存、服务、进程等重要资源信息。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "top命令常用参数中，-d <秒>用于改变显示的更新速度。",
+          "qas": [
+            {
+              "question": "top命令的-d参数有什么作用？",
+              "id": "5-481-2",
+              "answers": [
+                {
+                  "text": "改变显示的更新速度",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "top命令的常用交互参数中，P表示以CPU的使用资源排序显示。",
+          "qas": [
+            {
+              "question": "在top命令的交互参数中，如何以CPU使用资源排序显示？",
+              "id": "5-481-3",
+              "answers": [
+                {
+                  "text": "使用P参数",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "执行top -c命令可以以默认格式显示系统运行信息，并提供完整的进程路径及名称。",
+          "qas": [
+            {
+              "question": "如何让top命令显示完整的进程路径及名称？",
+              "id": "5-481-4",
+              "answers": [
+                {
+                  "text": "执行top -c命令",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "top命令输出中的load average: 0.00, 0.01, 0.05表示系统1分钟，5分钟，15分钟平均负载。",
+          "qas": [
+            {
+              "question": "top命令输出中的load average字段表示什么？",
+              "id": "5-481-5",
+              "answers": [
+                {
+                  "text": "系统1分钟，5分钟，15分钟平均负载",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "htop是linux系统中的一个互动的进程查看器，相比较top的优势有可以横向或纵向滚动浏览进程列表，启动更快，杀进程时不需要输入进程号，支持鼠标选中操作，top已不再维护。",
+          "qas": [
+            {
+              "question": "htop相比top有哪些优势？",
+              "id": "5-481-6",
+              "answers": [
+                {
+                  "text": "可以横向或纵向滚动浏览进程列表，启动更快，杀进程时不需要输入进程号，支持鼠标选中操作，top已不再维护。",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "htop非交互式参数中，-C表示使用单色配色方案。",
+          "qas": [
+            {
+              "question": "htop的-C参数有什么作用？",
+              "id": "5-481-7",
+              "answers": [
+                {
+                  "text": "使用单色配色方案",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "执行htop -u linuxcool_user命令可以显示指定用户linuxcool_user的进程。",
+          "qas": [
+            {
+              "question": "如何使用htop显示指定用户的进程？",
+              "id": "5-481-8",
+              "answers": [
+                {
+                  "text": "执行htop -u 用户名命令，如htop -u linuxcool_user",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "vmstat命令的含义为显示虚拟内存状态，但可以报告关于进程、内存、I/O等系统整体运行状态。",
+          "qas": [
+            {
+              "question": "vmstat命令的作用是什么？",
+              "id": "5-481-9",
+              "answers": [
+                {
+                  "text": "显示虚拟内存状态，报告关于进程、内存、I/O等系统整体运行状态。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "vmstat -a参数用于显示活动内页。",
+          "qas": [
+            {
+              "question": "vmstat的-a参数有什么作用？",
+              "id": "5-481-10",
+              "answers": [
+                {
+                  "text": "显示活动内页",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "vmstat 2 3命令表示指定状态信息刷新的时间间隔为2秒，刷新3次。",
+          "qas": [
+            {
+              "question": "vmstat 2 3命令的含义是什么？",
+              "id": "5-481-11",
+              "answers": [
+                {
+                  "text": "指定状态信息刷新的时间间隔为2秒，刷新3次。",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "vmstat输出中，procs部分的r表示等待执行的任务数，b表示等待IO的进程数量。",
+          "qas": [
+            {
+              "question": "vmstat输出中procs部分的r和b分别表示什么？",
+              "id": "5-481-12",
+              "answers": [
+                {
+                  "text": "r表示等待执行的任务数，b表示等待IO的进程数量。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dstat命令是一个用来替换vmstat、iostat、netstat、nfsstat和ifstat这些命令的全能系统信息统计工具。",
+          "qas": [
+            {
+              "question": "dstat命令可以替换哪些命令？",
+              "id": "5-481-13",
+              "answers": [
+                {
+                  "text": "vmstat、iostat、netstat、nfsstat和ifstat",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dstat -c参数用于显示CPU系统占用，用户占用，空闲，等待，中断，软件中断等信息。",
+          "qas": [
+            {
+              "question": "dstat的-c参数能显示哪些信息？",
+              "id": "5-481-14",
+              "answers": [
+                {
+                  "text": "CPU系统占用，用户占用，空闲，等待，中断，软件中断等信息",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "执行dstat 3命令可以每三秒收集一次cpu、disk、net、page、system信息。",
+          "qas": [
+            {
+              "question": "如何让dstat每三秒收集一次系统信息？",
+              "id": "5-481-15",
+              "answers": [
+                {
+                  "text": "执行dstat 3命令",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Glances是一个用Python编写的系统监控工具，使用psutil库从系统获取信息，可监控CPU、平均负载、内存等。",
+          "qas": [
+            {
+              "question": "Glances是用什么语言编写的？依赖哪个库？",
+              "id": "5-481-16",
+              "answers": [
+                {
+                  "text": "Python，psutil库",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "glances -s -B 192.168.10.2 &命令可在192.168.10.2主机启动glances服务。",
+          "qas": [
+            {
+              "question": "如何在192.168.10.2主机启动glances服务？",
+              "id": "5-481-17",
+              "answers": [
+                {
+                  "text": "执行glances -s -B 192.168.10.2 &命令",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "glances -t 6命令用于设置屏幕刷新的时间间隔为6秒。",
+          "qas": [
+            {
+              "question": "如何设置glances的屏幕刷新时间间隔为6秒？",
+              "id": "5-481-18",
+              "answers": [
+                {
+                  "text": "执行glances -t 6命令",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sar命令是Linux下系统运行状态统计工具，可从多方面报告系统活动，包括文件读写、系统调用、磁盘I/O等。",
+          "qas": [
+            {
+              "question": "sar命令的作用是什么？",
+              "id": "5-481-19",
+              "answers": [
+                {
+                  "text": "Linux下系统运行状态统计工具，可从多方面报告系统活动，包括文件读写、系统调用、磁盘I/O等。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sar -u参数用于输出cpu使用情况和统计信息。",
+          "qas": [
+            {
+              "question": "sar的-u参数有什么作用？",
+              "id": "5-481-20",
+              "answers": [
+                {
+                  "text": "输出cpu使用情况和统计信息",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

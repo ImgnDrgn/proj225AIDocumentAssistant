@@ -1,0 +1,244 @@
+{
+  "data": [
+    {
+      "title": "nftables相比iptables到底改变了什么",
+      "paragraphs": [
+        {
+          "context": "nftables统一了iptables、ip6tables、arptables、ebtables等工具族，基于Netfilter框架。",
+          "qas": [
+            {
+              "question": "nftables统一了哪些工具族？",
+              "id": "5-134-1",
+              "answers": [
+                {
+                  "text": "iptables、ip6tables、arptables、ebtables等",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptables规则无真正语法，是命令行参数组合；nftables有语法，规则类似编程语句，如iptables的'iptables -A OUTPUT -p tcp --dport 80 -j DROP'对应nftables的'nft add rule ip filter output tcp dport 80 drop'。",
+          "qas": [
+            {
+              "question": "与iptables的'iptables -A OUTPUT -p tcp --dport 80 -j DROP'规则对应的nftables规则是什么？",
+              "id": "5-134-2",
+              "answers": [
+                {
+                  "text": "nft add rule ip filter output tcp dport 80 drop",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "question": "iptables和nftables在语法上有何不同？",
+              "id": "5-134-3",
+              "answers": [
+                {
+                  "text": "iptables规则无真正语法，是命令行参数组合；nftables有语法，规则类似编程语句。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptables规则布局是数组式，删除元素需移动后续元素；nftables是链表式，删除只需修改指针。",
+          "qas": [
+            {
+              "question": "iptables和nftables的规则布局有何不同？",
+              "id": "5-134-4",
+              "answers": [
+                {
+                  "text": "iptables规则布局是数组式，nftables是链表式。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "iptables删除规则时存在什么问题？",
+              "id": "5-134-5",
+              "answers": [
+                {
+                  "text": "删除元素需移动后续元素。",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptables内核机制是固定机械装置，规则由matches和target组成，行为固定；nftables在Netfilter的5个HOOK点各有虚拟机，规则即程序，可组合基础动作实现各种操作。",
+          "qas": [
+            {
+              "question": "nftables的内核机制有何特点？",
+              "id": "5-134-6",
+              "answers": [
+                {
+                  "text": "在Netfilter的5个HOOK点各有虚拟机，规则即程序，可组合基础动作实现各种操作。",
+                  "answer_start": 77
+                }
+              ]
+            },
+            {
+              "question": "iptables的内核机制有何特点？",
+              "id": "5-134-7",
+              "answers": [
+                {
+                  "text": "是固定机械装置，规则由matches和target组成，行为固定。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nftables引入运算符、变量和数据结构，规则编写是编程过程，管理员成“编程者”；内核执行其编制的程序，无假定。",
+          "qas": [
+            {
+              "question": "nftables为何让管理员成为“编程者”？",
+              "id": "5-134-8",
+              "answers": [
+                {
+                  "text": "nftables引入运算符、变量和数据结构，规则编写是编程过程。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptables规则集需遍历所有关联规则，性能受固定结构限制；nftables性能与编程者相关，可优化为多维树匹配。",
+          "qas": [
+            {
+              "question": "iptables和nftables在性能方面有何不同？",
+              "id": "5-134-9",
+              "answers": [
+                {
+                  "text": "iptables性能受固定结构限制，需遍历所有关联规则；nftables性能与编程者相关，可优化为多维树匹配。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptables有5条链，对应PREROUTING、INPUT、OUTPUT、FORWARD、POSTROUTING五个钩子函数，数据包到达时检查链中规则。",
+          "qas": [
+            {
+              "question": "iptables的5条链对应哪些钩子函数？",
+              "id": "5-134-10",
+              "answers": [
+                {
+                  "text": "PREROUTING、INPUT、OUTPUT、FORWARD、POSTROUTING",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptables的表包括filter（包过滤）、nat（地址转换）、mangle（包修改）、raw（数据跟踪），优先级：raw-->mangle-->nat-->filter。",
+          "qas": [
+            {
+              "question": "iptables有哪些表？各自功能是什么？",
+              "id": "5-134-11",
+              "answers": [
+                {
+                  "text": "filter（包过滤）、nat（地址转换）、mangle（包修改）、raw（数据跟踪）",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "iptables各表的优先级顺序是什么？",
+              "id": "5-134-12",
+              "answers": [
+                {
+                  "text": "raw-->mangle-->nat-->filter",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptables常用操作命令：-A（链尾添加规则）、-D（删除匹配规则）、-I（插入规则）、-L/S（列出规则）、-F（删除所有规则）。",
+          "qas": [
+            {
+              "question": "iptables中在链尾添加规则使用哪个命令？",
+              "id": "5-134-13",
+              "answers": [
+                {
+                  "text": "-A",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "iptables中删除所有规则的命令是什么？",
+              "id": "5-134-14",
+              "answers": [
+                {
+                  "text": "-F",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptables目标动作：ACCEPT（允许通过）、DROP（丢弃）、REJECT（丢弃并发信息）、SNAT（源地址转换）、DNAT（目标地址转换）。",
+          "qas": [
+            {
+              "question": "iptables中表示允许数据包通过的目标动作是什么？",
+              "id": "5-134-15",
+              "answers": [
+                {
+                  "text": "ACCEPT",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "iptables中实现源地址转换的目标动作是什么？",
+              "id": "5-134-16",
+              "answers": [
+                {
+                  "text": "SNAT",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptables保存规则用iptables-save > 文件名，恢复用iptables-restore < 文件名。",
+          "qas": [
+            {
+              "question": "如何保存iptables规则？",
+              "id": "5-134-17",
+              "answers": [
+                {
+                  "text": "iptables-save > 文件名",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "如何恢复iptables规则？",
+              "id": "5-134-18",
+              "answers": [
+                {
+                  "text": "iptables-restore < 文件名",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

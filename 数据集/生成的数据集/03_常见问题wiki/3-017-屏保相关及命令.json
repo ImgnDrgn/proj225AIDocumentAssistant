@@ -1,0 +1,234 @@
+{
+  "data": [
+    {
+      "title": "屏保相关操作及命令",
+      "paragraphs": [
+        {
+          "context": "屏幕保护是为了保护显示器而设计的一种专门的程序。",
+          "qas": [
+            {
+              "question": "屏幕保护的设计目的是什么？",
+              "id": "3-17-1",
+              "answers": [
+                {
+                  "text": "保护显示器",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过Dbus com.deepin.ScreenSaver服务的下的属性currentScreenSaver保存了当前屏保的名字。执行命令：qdbus com.deepin.ScreenSaver /com/deepin/ScreenSaver com.deepin.ScreenSaver.currentScreenSaver 若出现报错，可在终端中下载qdbus，使用命令sudo apt install qdbus。",
+          "qas": [
+            {
+              "question": "哪个Dbus服务的哪个属性保存了当前屏保的名字？",
+              "id": "3-17-2",
+              "answers": [
+                {
+                  "text": "com.deepin.ScreenSaver服务的currentScreenSaver属性",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "查询当前屏保的命令是什么？",
+              "id": "3-17-3",
+              "answers": [
+                {
+                  "text": "qdbus com.deepin.ScreenSaver /com/deepin/ScreenSaver com.deepin.ScreenSaver.currentScreenSaver",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "question": "若查询当前屏保的命令报错，如何安装qdbus？",
+              "id": "3-17-4",
+              "answers": [
+                {
+                  "text": "使用命令sudo apt install qdbus",
+                  "answer_start": 165
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过Dbus com.deepin.ScreenSaver服务的下的属性 allScreenSaver 这个链表中保存了屏保名。使用 GetScreenSaverCover (String name) 方法，传入屏保名，可获取屏保路径。DBus服务：服务名：com.deepin.ScreenSaver 地址：/com/deepin/ScreenSaver 接口：com.deepin.ScreenSaver DBus方法：GetScreenSaverCover (String name) ↦ (String imagePath) 参数：@name 为屏保名字，如“flurry” 命令行：dbus-send --session --type=method_call --print-reply --dest=com.deepin.ScreenSaver /com/deepin/ScreenSaver com.deepin.ScreenSaver.GetScreenSaverCover string:'@name'",
+          "qas": [
+            {
+              "question": "哪个属性保存了所有屏保名的链表？",
+              "id": "3-17-5",
+              "answers": [
+                {
+                  "text": "allScreenSaver",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "如何获取某个屏保的路径？",
+              "id": "3-17-6",
+              "answers": [
+                {
+                  "text": "使用GetScreenSaverCover (String name)方法，传入屏保名",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "question": "GetScreenSaverCover方法的参数是什么？",
+              "id": "3-17-7",
+              "answers": [
+                {
+                  "text": "@name 为屏保名字，如“flurry”",
+                  "answer_start": 265
+                }
+              ]
+            },
+            {
+              "question": "获取屏保路径的dbus-send命令是什么？",
+              "id": "3-17-8",
+              "answers": [
+                {
+                  "text": "dbus-send --session --type=method_call --print-reply --dest=com.deepin.ScreenSaver /com/deepin/ScreenSaver com.deepin.ScreenSaver.GetScreenSaverCover string:'@name'",
+                  "answer_start": 300
+                }
+              ]
+            },
+            {
+              "question": "DBus服务的接口名称是什么？",
+              "id": "3-17-9",
+              "answers": [
+                {
+                  "text": "com.deepin.ScreenSaver",
+                  "answer_start": 151
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过Dbus org.freedesktop.DBus服务下的ListActivatableNames方法可以获得当前可用的服务列表 当服务列表中不存在屏保服务com.deepin.ScreenSave时 需要屏蔽屏保功能显示。注意是Session Bus下的org.freedesktop.DBus服务。DBus服务：服务名：org.freedesktop.DBus 地址：/org/freedesktop/DBus 接口：org.freedesktop.DBus DBus方法：ListActivatableNames () ↦ (Array of [String] arg_0) 命令行：dbus-send --session --type=method_call --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.ListActivatableNames",
+          "qas": [
+            {
+              "question": "用什么方法可以获得当前可用的服务列表？",
+              "id": "3-17-10",
+              "answers": [
+                {
+                  "text": "org.freedesktop.DBus服务下的ListActivatableNames方法",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "检测屏保服务时，需要关注哪个Bus？",
+              "id": "3-17-11",
+              "answers": [
+                {
+                  "text": "Session Bus",
+                  "answer_start": 131
+                }
+              ]
+            },
+            {
+              "question": "当服务列表中不存在com.deepin.ScreenSave时，需要做什么？",
+              "id": "3-17-12",
+              "answers": [
+                {
+                  "text": "屏蔽屏保功能显示",
+                  "answer_start": 112
+                }
+              ]
+            },
+            {
+              "question": "检测可用服务列表的dbus-send命令是什么？",
+              "id": "3-17-13",
+              "answers": [
+                {
+                  "text": "dbus-send --session --type=method_call --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.ListActivatableNames",
+                  "answer_start": 407
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "桌面提供三种方式禁用屏保：环境变量，卸载屏保，gsetting配置。三种方式中任意一种设置为禁用屏保就会使得屏保被禁用。1. 环境变量配置：在系统环境变量中添加下述值即可禁用屏保：DESKTOP_CAN_SCREENSAVER=N 2. 卸载屏保：sudo apt remove deepin-screensaver 3. 通过gsetting配置：使用gsettings设置show-screen-saver的值为false则禁用屏保，为true则为不禁用，命令：gsettings set com.deepin.dde.filemanager.desktop show-screen-saver false",
+          "qas": [
+            {
+              "question": "桌面提供了几种禁用屏保的方式？",
+              "id": "3-17-14",
+              "answers": [
+                {
+                  "text": "三种",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "禁用屏保的三种方式是什么？",
+              "id": "3-17-15",
+              "answers": [
+                {
+                  "text": "环境变量，卸载屏保，gsetting配置",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "如何通过环境变量禁用屏保？",
+              "id": "3-17-16",
+              "answers": [
+                {
+                  "text": "在系统环境变量中添加DESKTOP_CAN_SCREENSAVER=N",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "卸载屏保的命令是什么？",
+              "id": "3-17-17",
+              "answers": [
+                {
+                  "text": "sudo apt remove deepin-screensaver",
+                  "answer_start": 125
+                }
+              ]
+            },
+            {
+              "question": "如何通过gsetting配置禁用屏保？",
+              "id": "3-17-18",
+              "answers": [
+                {
+                  "text": "使用gsettings设置show-screen-saver的值为false，命令：gsettings set com.deepin.dde.filemanager.desktop show-screen-saver false",
+                  "answer_start": 161
+                }
+              ]
+            },
+            {
+              "question": "禁用屏保的几种方式需要同时设置吗？",
+              "id": "3-17-19",
+              "answers": [
+                {
+                  "text": "不需要，任意一种设置为禁用屏保就会使得屏保被禁用",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "禁用屏保需要设置什么key值为false？",
+              "id": "3-17-20",
+              "answers": [
+                {
+                  "text": "show-screen-saver",
+                  "answer_start": 188
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

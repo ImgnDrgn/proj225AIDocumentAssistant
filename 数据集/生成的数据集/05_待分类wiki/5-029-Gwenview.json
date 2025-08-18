@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "Gwenview",
+      "paragraphs": [
+        {
+          "context": "Gwenview是一个图片浏览和管理软件，以文件夹方式管理图片，有图片编辑、修改、重命名、移动等功能，可通过缩略图、幻灯片查看图片，能读取tar/zip压缩包中图像文件，可通过插件扩展功能。",
+          "qas": [
+            {
+              "question": "Gwenview是什么软件？",
+              "id": "5-29-1",
+              "answers": [
+                {
+                  "text": "图片浏览和管理软件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Gwenview主要以什么方式管理图片？",
+              "id": "5-29-2",
+              "answers": [
+                {
+                  "text": "文件夹的方式",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "Gwenview有哪些功能？",
+              "id": "5-29-3",
+              "answers": [
+                {
+                  "text": "图片编辑、修改、重命名、移动等功能以及通过缩略图、幻灯片的方式查看图片信息，还可以读取tar/zip压缩包中图像文件以及通过插件来扩展功能。",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "Gwenview能读取哪些压缩包中的图像文件？",
+              "id": "5-29-4",
+              "answers": [
+                {
+                  "text": "tar/zip压缩包",
+                  "answer_start": 101
+                }
+              ]
+            },
+            {
+              "question": "Gwenview如何扩展功能？",
+              "id": "5-29-5",
+              "answers": [
+                {
+                  "text": "通过插件来扩展功能",
+                  "answer_start": 123
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Gwenview的命令是sudo apt-get install gwenview。",
+          "qas": [
+            {
+              "question": "如何安装Gwenview？",
+              "id": "5-29-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gwenview",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Gwenview的命令是sudo apt-get remove gwenview。",
+          "qas": [
+            {
+              "question": "如何卸载Gwenview？",
+              "id": "5-29-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gwenview",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Gwenview的仓库地址是http://packages.deepin.com/deepin/pool/main/g/gwenview/。",
+          "qas": [
+            {
+              "question": "Gwenview的仓库地址是什么？",
+              "id": "5-29-8",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gwenview/",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

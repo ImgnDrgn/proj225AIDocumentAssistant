@@ -1,0 +1,95 @@
+{
+  "title": "VNC-Client",
+  "paragraphs": [
+    {
+      "context": "VNC-Client是一款远程连接应用，通过该软件可以远程控制计算机，还可以将远程连接保存为书签，对远程计算机进行截屏；支持显示模式和背景主题设置。",
+      "qas": [
+        {
+          "question": "VNC-Client是什么类型的应用？",
+          "id": "5-129-1",
+          "answers": [
+            {
+              "text": "远程连接应用",
+              "answer_start": 13
+            }
+          ]
+        },
+        {
+          "question": "VNC-Client支持哪些核心功能？",
+          "id": "5-129-2",
+          "answers": [
+            {
+              "text": "远程控制计算机，将远程连接保存为书签，对远程计算机进行截屏",
+              "answer_start": 19
+            }
+          ]
+        },
+        {
+          "question": "VNC-Client支持哪些界面设置？",
+          "id": "5-129-3",
+          "answers": [
+            {
+              "text": "显示模式和背景主题设置",
+              "answer_start": 52
+            }
+          ]
+        },
+        {
+          "question": "VNC-Client可以实现哪些功能？",
+          "id": "5-129-4",
+          "answers": [
+            {
+              "text": "远程控制计算机，将远程连接保存为书签，对远程计算机进行截屏；支持显示模式和背景主题设置",
+              "answer_start": 27
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "sudo apt-get install evnc",
+      "qas": [
+        {
+          "question": "如何安装VNC-Client？",
+          "id": "5-129-5",
+          "answers": [
+            {
+              "text": "sudo apt-get install evnc",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "sudo apt-get remove evnc",
+      "qas": [
+        {
+          "question": "如何卸载VNC-Client？",
+          "id": "5-129-6",
+          "answers": [
+            {
+              "text": "sudo apt-get remove evnc",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "http://packages.deepin.com/deepin/pool/main/e/evnc/",
+      "qas": [
+        {
+          "question": "VNC-Client的软件仓库地址是什么？",
+          "id": "5-129-7",
+          "answers": [
+            {
+              "text": "http://packages.deepin.com/deepin/pool/main/e/evnc/",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

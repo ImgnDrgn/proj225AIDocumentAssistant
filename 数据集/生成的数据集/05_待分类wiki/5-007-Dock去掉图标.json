@@ -1,0 +1,144 @@
+{
+  "data": [
+    {
+      "title": "Dock去掉图标",
+      "paragraphs": [
+        {
+          "context": "解决deepin15.4无法去除dock上的关机、音量、网络、时间等图标问题，可通过重命名/usr/lib/dde-dock/plugins目录下的链接库实现。",
+          "qas": [
+            {
+              "question": "如何解决deepin15.4无法去除dock上特定图标的问题？",
+              "id": "5-7-1",
+              "answers": [
+                {
+                  "text": "通过重命名/usr/lib/dde-dock/plugins目录下的链接库实现。",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "去掉声音图标可执行命令：mv libsound.so libsound.so.bak。",
+          "qas": [
+            {
+              "question": "如何去掉Dock上的声音图标？",
+              "id": "5-7-2",
+              "answers": [
+                {
+                  "text": "执行命令：mv libsound.so libsound.so.bak。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "libdatetime.so对应日期时间图标。",
+          "qas": [
+            {
+              "question": "哪个链接库对应日期时间图标？",
+              "id": "5-7-3",
+              "answers": [
+                {
+                  "text": "libdatetime.so",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "libdde-trash-plugin.so对应垃圾箱图标。",
+          "qas": [
+            {
+              "question": "垃圾箱图标对应的链接库是什么？",
+              "id": "5-7-4",
+              "answers": [
+                {
+                  "text": "libdde-trash-plugin.so",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "libnetwork.so对应网络连接图标。",
+          "qas": [
+            {
+              "question": "网络连接图标对应的链接库是哪个？",
+              "id": "5-7-5",
+              "answers": [
+                {
+                  "text": "libnetwork.so",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "libshutdown.so对应关机电源图标。",
+          "qas": [
+            {
+              "question": "关机电源图标对应的链接库是什么？",
+              "id": "5-7-6",
+              "answers": [
+                {
+                  "text": "libshutdown.so",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "libdde-disk-mount-plugins.so对应插入硬盘时的挂载图标。",
+          "qas": [
+            {
+              "question": "插入硬盘时的挂载图标对应哪个链接库？",
+              "id": "5-7-7",
+              "answers": [
+                {
+                  "text": "libdde-disk-mount-plugins.so",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "libsystem-tray.so对应系统托盘图标。",
+          "qas": [
+            {
+              "question": "系统托盘图标对应的链接库是哪个？",
+              "id": "5-7-8",
+              "answers": [
+                {
+                  "text": "libsystem-tray.so",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "要去掉Dock上的图标，需操作/usr/lib/dde-dock/plugins目录下的链接库。",
+          "qas": [
+            {
+              "question": "去掉Dock上的图标需要操作哪个目录下的文件？",
+              "id": "5-7-9",
+              "answers": [
+                {
+                  "text": "/usr/lib/dde-dock/plugins",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

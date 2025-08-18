@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "CodeLite",
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "id": "5-169-1",
+              "question": "CodeLite是用于哪种编程语言的IDE？",
+              "answers": [
+                {
+                  "text": "C/C++",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "5-169-2",
+              "question": "CodeLite支持哪些操作系统？",
+              "answers": [
+                {
+                  "text": "Windows、Ubuntu和MacOSX",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-169-3",
+              "question": "在Linux系统中如何安装CodeLite？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install codelite",
+                  "answer_start": 88
+                }
+              ]
+            },
+            {
+              "id": "5-169-4",
+              "question": "如何卸载CodeLite？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove codelite",
+                  "answer_start": 126
+                }
+              ]
+            },
+            {
+              "id": "5-169-5",
+              "question": "CodeLite的源代码遵循什么许可证？",
+              "answers": [
+                {
+                  "text": "GPL v2",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-169-6",
+              "question": "CodeLite的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/c/codelite/",
+                  "answer_start": 168
+                }
+              ]
+            }
+          ],
+          "context": "CodeLite是一个C/C++编程语言的跨平台IDE，在Windows、Ubuntu和MacOSX各操作系统上均被测试。同时CodeLite的源代码使用是遵循GPL v2许可证的。安装命令为sudo apt-get install codelite。卸载命令为sudo apt-get remove codelite。仓库地址是http://packages.deepin.com/deepin/pool/main/c/codelite/"
+        }
+      ]
+    }
+  ]
+}

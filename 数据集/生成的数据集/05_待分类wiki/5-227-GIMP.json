@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "GIMP",
+      "paragraphs": [
+        {
+          "context": "GIMP是一款跨平台的图像处理软件，支持BMP、GIF、JPG、PNG等格式的图像处理。GIMP支持绝大多数的PhotoShop插件，既可以作为简单的画图工具，又可以作为专业的照片处理工具，包括照片润饰、图像合成、图像格式转换等。",
+          "qas": [
+            {
+              "id": "5-227-1",
+              "question": "GIMP是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "跨平台的图像处理软件",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-227-2",
+              "question": "GIMP支持哪些图像格式的处理？",
+              "answers": [
+                {
+                  "text": "BMP、GIF、JPG、PNG等",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "5-227-3",
+              "question": "GIMP是否支持PhotoShop插件？",
+              "answers": [
+                {
+                  "text": "支持绝大多数的PhotoShop插件",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装命令：sudo apt-get install gimp；卸载命令：sudo apt-get remove gimp",
+          "qas": [
+            {
+              "id": "5-227-4",
+              "question": "如何安装GIMP？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gimp",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-227-5",
+              "question": "如何卸载GIMP？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gimp",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GIMP的仓库地址是http://packages.deepin.com/deepin/pool/main/g/gimp/",
+          "qas": [
+            {
+              "id": "5-227-6",
+              "question": "GIMP的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gimp/",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

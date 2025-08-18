@@ -1,0 +1,304 @@
+{
+  "data": [
+    {
+      "title": "GPG",
+      "paragraphs": [
+        {
+          "context": "GPG由自由基金会开发，因PGP是商业软件，GPG遵循OpenPGP标准，与PGP兼容。",
+          "qas": [
+            {
+              "question": "GPG是由哪个机构开发的？",
+              "id": "5-135-1",
+              "answers": [
+                {
+                  "text": "自由基金会",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "question": "GPG和PGP遵循什么标准？",
+              "id": "5-135-2",
+              "answers": [
+                {
+                  "text": "OpenPGP",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Mac系统安装GPG的命令：brew install gpg。",
+          "qas": [
+            {
+              "question": "Mac系统如何安装GPG？",
+              "id": "5-135-3",
+              "answers": [
+                {
+                  "text": "brew install gpg",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Arch/Manjaro系统安装GPG的命令：sudo pacman -S gnupg。",
+          "qas": [
+            {
+              "question": "Arch/Manjaro系统安装GPG的命令是什么？",
+              "id": "5-135-4",
+              "answers": [
+                {
+                  "text": "sudo pacman -S gnupg",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Debian系统安装GPG的命令：sudo apt install gnupg。",
+          "qas": [
+            {
+              "question": "Debian系统如何安装GPG？",
+              "id": "5-135-5",
+              "answers": [
+                {
+                  "text": "sudo apt install gnupg",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "生成GPG密钥可使用gpg --full-gen-key，需选择加密算法、密钥长度、有效期等。",
+          "qas": [
+            {
+              "question": "生成GPG密钥的命令是什么？",
+              "id": "5-135-6",
+              "answers": [
+                {
+                  "text": "gpg --full-gen-key",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "生成GPG密钥需要选择哪些信息？",
+              "id": "5-135-7",
+              "answers": [
+                {
+                  "text": "加密算法、密钥长度、有效期等",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "快速生成GPG密钥可用gpg --gen-key，默认算法为RSA，有效期一年，comment为空。",
+          "qas": [
+            {
+              "question": "快速生成GPG密钥的命令是什么？",
+              "id": "5-135-8",
+              "answers": [
+                {
+                  "text": "gpg --gen-key",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "gpg --gen-key生成的密钥默认算法是什么？",
+              "id": "5-135-9",
+              "answers": [
+                {
+                  "text": "RSA",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "生成GPG撤销密钥的命令：gpg --gen-revoke [uid]，用于密钥不再使用时撤销。",
+          "qas": [
+            {
+              "question": "如何生成GPG撤销密钥？",
+              "id": "5-135-10",
+              "answers": [
+                {
+                  "text": "gpg --gen-revoke [uid]",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "生成GPG撤销密钥的用途是什么？",
+              "id": "5-135-11",
+              "answers": [
+                {
+                  "text": "用于密钥不再使用时撤销",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GPG加密文件命令：gpg -r [uid] -o file -e file，-r指定用户，-o指定输出文件。",
+          "qas": [
+            {
+              "question": "GPG加密文件的命令是什么？",
+              "id": "5-135-12",
+              "answers": [
+                {
+                  "text": "gpg -r [uid] -o file -e file",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "加密命令中-r参数的作用是什么？",
+              "id": "5-135-13",
+              "answers": [
+                {
+                  "text": "指定用户",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加-a选项可生成ASCII格式加密文件，如gpg -r test1 -a -e test.txt。",
+          "qas": [
+            {
+              "question": "如何生成ASCII格式的GPG加密文件？",
+              "id": "5-135-14",
+              "answers": [
+                {
+                  "text": "添加-a选项，如gpg -r test1 -a -e test.txt",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GPG解密文件命令：gpg -o file -d file，-o指定解密后输出文件，-d指定待解密文件。",
+          "qas": [
+            {
+              "question": "GPG解密文件的命令是什么？",
+              "id": "5-135-15",
+              "answers": [
+                {
+                  "text": "gpg -o file -d file",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "解密命令中-d参数的作用是什么？",
+              "id": "5-135-16",
+              "answers": [
+                {
+                  "text": "指定待解密文件",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GPG二进制签名命令：gpg --sign test.txt，生成test.txt.gpg。",
+          "qas": [
+            {
+              "question": "如何进行GPG二进制签名？",
+              "id": "5-135-17",
+              "answers": [
+                {
+                  "text": "gpg --sign test.txt，生成test.txt.gpg",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GPG ASCII签名用gpg --clearsign test.txt，生成test.txt.asc，含源文件内容和签名。",
+          "qas": [
+            {
+              "question": "如何进行GPG ASCII签名？",
+              "id": "5-135-18",
+              "answers": [
+                {
+                  "text": "gpg --clearsign test.txt，生成test.txt.asc",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "签名与加密同时进行的命令：gpg -u test1 -r test1 -se test.txt，-u指定签名用户。",
+          "qas": [
+            {
+              "question": "如何同时进行GPG签名和加密？",
+              "id": "5-135-19",
+              "answers": [
+                {
+                  "text": "gpg -u test1 -r test1 -se test.txt",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "-u参数在签名与加密命令中的作用是什么？",
+              "id": "5-135-20",
+              "answers": [
+                {
+                  "text": "指定签名用户",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "分离签名文件用gpg -b test.txt，生成test.txt.sig单独签名文件。",
+          "qas": [
+            {
+              "question": "如何生成分离的GPG签名文件？",
+              "id": "5-135-21",
+              "answers": [
+                {
+                  "text": "gpg -b test.txt，生成test.txt.sig",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "验证GPG签名的命令：gpg --verify test.txt.sig，可验证签名正确性。",
+          "qas": [
+            {
+              "question": "如何验证GPG签名？",
+              "id": "5-135-22",
+              "answers": [
+                {
+                  "text": "gpg --verify test.txt.sig",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

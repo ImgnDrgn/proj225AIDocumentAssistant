@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "title": "Canon_打印机驱动程序安装",
+      "paragraphs": [
+        {
+          "context": "本文经验由深度论坛用户(springxcs)分享，原文地址为https://bbs.deepin.org/forum.php?mod=viewthread&tid=44975。",
+          "qas": [
+            {
+              "question": "本文经验由谁分享？",
+              "id": "5-542-1",
+              "answers": [
+                {
+                  "text": "深度论坛用户(springxcs)",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "本文经验的原文地址是什么？",
+              "id": "5-542-2",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/forum.php?mod=viewthread&tid=44975",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin 15.3版本对部分Canon打印机尚不支持，可自行安装驱动。",
+          "qas": [
+            {
+              "question": "Deepin 15.3版本对Canon打印机的支持情况如何？",
+              "id": "5-542-3",
+              "answers": [
+                {
+                  "text": "对部分Canon打印机尚不支持",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Deepin 15.3版本中不支持的Canon打印机该如何处理？",
+              "id": "5-542-4",
+              "answers": [
+                {
+                  "text": "可自行安装驱动",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装驱动可参考链接：Installing a Printer Driver for Canon UFR II printers. https://wiki.debian.org/PrinterDriver/Canon/UFR-II，该链接对不同类型Canon打印机选择打印程序有详细说明。",
+          "qas": [
+            {
+              "question": "关于不同类型Canon打印机选择打印程序的详细说明在哪里可以找到？",
+              "id": "5-542-5",
+              "answers": [
+                {
+                  "text": "https://wiki.debian.org/PrinterDriver/Canon/UFR-II",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UFR II/UFR II LT Printer Driver for Linux V3.20的下载地址为http://support-asia.canon-asia.com/contents/ASIA/EN/0100270810.html，包含V290版。",
+          "qas": [
+            {
+              "question": "UFR II/UFR II LT Printer Driver for Linux V3.20的下载地址是什么？",
+              "id": "5-542-6",
+              "answers": [
+                {
+                  "text": "http://support-asia.canon-asia.com/contents/ASIA/EN/0100270810.html",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "UFR II/UFR II LT Printer Driver for Linux V3.20包含哪个版本？",
+              "id": "5-542-7",
+              "answers": [
+                {
+                  "text": "V290版",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin 15.3版本已具备Canon UFR II LT 120和130版。",
+          "qas": [
+            {
+              "question": "Deepin 15.3版本已具备哪些Canon驱动版本？",
+              "id": "5-542-8",
+              "answers": [
+                {
+                  "text": "Canon UFR II LT 120和130版",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

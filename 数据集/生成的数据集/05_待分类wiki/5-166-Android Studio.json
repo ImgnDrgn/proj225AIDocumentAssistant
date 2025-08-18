@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "title": "Android Studio",
+      "paragraphs": [
+        {
+          "context": "Android Studio是一个基于IntelliJ IDEA的Android集成开发环境，它提供了集成的Android开发工具用于开发和调试，同时支持Android特定重构和快速修复，对程序性能、可用性、版本兼容和其他问题进行控制捕捉，支持ProGuard和应用签名功能，自带布局编辑器等功能。安装命令为sudo apt-get install android-studio，卸载命令为sudo apt-get remove android-studio，其仓库地址为http://packages.deepin.com/deepin/pool/main/a/android-studio/",
+          "qas": [
+            {
+              "id": "5-166-1",
+              "question": "Android Studio基于什么开发?",
+              "answers": [
+                {
+                  "text": "IntelliJ IDEA",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-166-2",
+              "question": "Android Studio的安装命令是什么?",
+              "answers": [
+                {
+                  "text": "sudo apt-get install android-studio",
+                  "answer_start": 152
+                }
+              ]
+            },
+            {
+              "id": "5-166-3",
+              "question": "如何卸载Android Studio?",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove android-studio",
+                  "answer_start": 188
+                }
+              ]
+            },
+            {
+              "id": "5-166-4",
+              "question": "Android Studio的仓库地址是什么?",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/a/android-studio/",
+                  "answer_start": 226
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

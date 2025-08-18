@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "文档查看器",
+      "paragraphs": [
+        {
+          "context": "Evince（文档查看器）是一个支持多种格式的文件浏览器，可以用来阅读如PDF、Postscript、djvu、tiff、dvi等格式的文件。evince还具有文档的索引支持、加密文档的查看和打印支持等功能。通过evince的书签和缩略图功能，您可以很方便的查看页面。",
+          "qas": [
+            {
+              "id": "5-53-1",
+              "question": "Evince是什么？",
+              "answers": [
+                {
+                  "text": "一个支持多种格式的文件浏览器",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "5-53-2",
+              "question": "Evince支持哪些格式的文件？",
+              "answers": [
+                {
+                  "text": "PDF、Postscript、djvu、tiff、dvi等",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-53-3",
+              "question": "Evince具有哪些功能？",
+              "answers": [
+                {
+                  "text": "文档的索引支持、加密文档的查看和打印支持、书签和缩略图功能等",
+                  "answer_start": 81
+                }
+              ]
+            },
+            {
+              "id": "5-53-4",
+              "question": "通过Evince的什么功能可以方便地查看页面？",
+              "answers": [
+                {
+                  "text": "书签和缩略图功能",
+                  "answer_start": 112
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Evince的命令是`sudo apt-get install evince`",
+          "qas": [
+            {
+              "id": "5-53-5",
+              "question": "安装Evince的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install evince",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Evince的命令是`sudo apt-get remove evince`",
+          "qas": [
+            {
+              "id": "5-53-6",
+              "question": "卸载Evince的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove evince",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Evince的仓库地址是http://packages.deepin.com/deepin/pool/main/e/evince/",
+          "qas": [
+            {
+              "id": "5-53-7",
+              "question": "Evince的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/e/evince/",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

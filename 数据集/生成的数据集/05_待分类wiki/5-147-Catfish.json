@@ -1,0 +1,54 @@
+{
+  "data": [
+    {
+      "title": "Catfish",
+      "paragraphs": [
+        {
+          "context": "Catfish是一个文件搜索工具，它支持搜索文档、图像、音乐、视频等文件类型，同时还可以选择搜索方法，设定不同的搜索条件并对搜索结果执行相应操作。安装命令为sudo apt-get install catfish，卸载命令为sudo apt-get remove catfish，仓库地址是http://packages.deepin.com/deepin/pool/main/c/catfish/",
+          "qas": [
+            {
+              "id": "5-147-1",
+              "question": "Catfish是什么工具？",
+              "answers": [
+                {
+                  "text": "Catfish是一个文件搜索工具，它支持搜索文档、图像、音乐、视频等文件类型，同时还可以选择搜索方法，设定不同的搜索条件并对搜索结果执行相应操作。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-147-2",
+              "question": "如何安装Catfish？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install catfish",
+                  "answer_start": 78
+                }
+              ]
+            },
+            {
+              "id": "5-147-3",
+              "question": "卸载Catfish的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove catfish",
+                  "answer_start": 107
+                }
+              ]
+            },
+            {
+              "id": "5-147-4",
+              "question": "Catfish的仓库地址在哪里？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/c/catfish/",
+                  "answer_start": 139
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

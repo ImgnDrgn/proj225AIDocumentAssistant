@@ -1,0 +1,584 @@
+{
+  "data": [
+    {
+      "title": "Linux标准规范",
+      "paragraphs": [
+        {
+          "context": "目前 Linux 的发行版非常繁多，为了促进 Linux 不同发行版间的兼容性，LSB（Linux Standards Base）开发了一系列标准，使各种软件可以很好地在兼容 LSB 标准的系统上运行，从而可以帮助软件供应商更好地在 Linux 系统上开发产品，或将已有的产品移植到 Linux 系统上。",
+          "qas": [
+            {
+              "id": "5-372-1",
+              "question": "LSB的全称是什么？",
+              "answers": [
+                {
+                  "text": "Linux Standards Base",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "5-372-2",
+              "question": "开发LSB标准的目的是什么？",
+              "answers": [
+                {
+                  "text": "为了促进Linux不同发行版间的兼容性，使各种软件可以很好地在兼容LSB标准的系统上运行，帮助软件供应商更好地在Linux系统上开发产品，或将已有的产品移植到Linux系统上。",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "5-372-3",
+              "question": "LSB标准对软件供应商有何帮助？",
+              "answers": [
+                {
+                  "text": "帮助软件供应商更好地在 Linux 系统上开发产品，或将已有的产品移植到 Linux 系统上",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "标准化目前已经成为 Linux 系统上的一个热门话题。实际上，在 Linux 诞生之初，这个问题就得到了重视。当 Linus 在开发 0.01 版本的 Linux 内核时，就开始关注 POSIX 标准的发展，他在 /include/unistd.h 文件中定义了几个与 POSIX 有关的宏，以下内容就节选自 0.01 版本内核的 /include/unistd.h 文件：",
+          "qas": [
+            {
+              "id": "5-372-4",
+              "question": "Linux内核开发初期关注了什么标准？",
+              "answers": [
+                {
+                  "text": "POSIX 标准",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "id": "5-372-5",
+              "question": "Linus 在哪个文件中定义了与POSIX相关的宏？",
+              "answers": [
+                {
+                  "text": "/include/unistd.h 文件",
+                  "answer_start": 125
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Unix 1969 年诞生于 AT&T 贝尔实验室，并在 1973 年使用 C 语言进行了重写，从此就具有了很好的可移植性。但是当 AT&T 在 1984 年由于分拆而得以进入计算机领域的市场之后，却引发了 Unix 业界的一场大战。当时最为主要的两个版本是 AT&T 的 System V 和伯克利的 BSD。二者在技术方面（例如终端）和文化方面都存在很多分歧，导致应用程序很难在不同的系统上平滑地进行移植，为了解决这个问题，IEEE 的 1003 委员会着手开发了一系列标准，这就是后来的 POSIX（Portable Operating System Interface for UNIX）标准。其目的是为那些兼容各种 UNIX 变种的应用程序制定应用程序编程接口（API）规范，从而确保这些应用程序的兼容性。这些标准后来被 ISO/IEC 采纳，成为 ISO/IEC 9945 标准。",
+          "qas": [
+            {
+              "id": "5-372-6",
+              "question": "Unix诞生于哪一年？由哪个机构开发？",
+              "answers": [
+                {
+                  "text": "1969年，AT&T贝尔实验室",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-372-7",
+              "question": "Unix 在哪一年被用C语言重写？",
+              "answers": [
+                {
+                  "text": "1973 年",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "5-372-8",
+              "question": "1984年AT&T分拆后引发了什么事件？",
+              "answers": [
+                {
+                  "text": "引发了 Unix 业界的一场大战",
+                  "answer_start": 82
+                }
+              ]
+            },
+            {
+              "id": "5-372-9",
+              "question": "POSIX标准是由哪个组织开发的？",
+              "answers": [
+                {
+                  "text": "IEEE的1003委员会",
+                  "answer_start": 308
+                }
+              ]
+            },
+            {
+              "id": "5-372-10",
+              "question": "POSIX的全称是什么？",
+              "answers": [
+                {
+                  "text": "Portable Operating System Interface for UNIX",
+                  "answer_start": 345
+                }
+              ]
+            },
+            {
+              "id": "5-372-11",
+              "question": "POSIX标准的目的是什么？",
+              "answers": [
+                {
+                  "text": "为那些兼容各种UNIX变种的应用程序制定应用程序编程接口（API）规范，从而确保这些应用程序的兼容性。",
+                  "answer_start": 377
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Open Group 是现在 Unix 商标的拥有者，其前身是 X/Open。X/Open 是 Unix 厂商在 1984 年成立的一个联盟，它试图为众多 Unix 变种定义一个安全公共子集，因此即使在 Unix 混战的年代，也得到了比较好的发展。在 1993 年，包括主要 Unix 公司在内的75 家系统和软件供应商委托 X/Open 为 Unix 制定一个统一的规范。X/Open在现有标准基础上，增加了对终端进行处理的 API 和 X11 API，并全面兼容 1989 ANSI C 标准，最终诞生了第一版本的单一 Unix规范（Single Unix Specification，简称 SUS）。X/Open在 1996 年与 OSF（开放软件基金会）进行合并，成立了 Open Group 组织，专门从事开放标准的制定和推广工作，并对很多领域提供了认证，包括 Unix 操作系统、Motif 和 CDE（Common Desktop Environment）用户界面。",
+          "qas": [
+            {
+              "id": "5-372-12",
+              "question": "Open Group的前身是什么？",
+              "answers": [
+                {
+                  "text": "X/Open",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "5-372-13",
+              "question": "X/Open成立于哪一年？",
+              "answers": [
+                {
+                  "text": "1984年",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-372-14",
+              "question": "第一版本的单一Unix规范（SUS）是如何诞生的？",
+              "answers": [
+                {
+                  "text": "1993年，75家系统和软件供应商委托X/Open为Unix制定统一规范，X/Open在现有标准基础上，增加了对终端进行处理的API和X11 API，并全面兼容1989 ANSI C标准，最终诞生了第一版本的SUS。",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "id": "5-372-15",
+              "question": "Open Group成立于哪一年？由哪些组织合并而成？",
+              "answers": [
+                {
+                  "text": "1996年，由X/Open和OSF（开放软件基金会）合并而成",
+                  "answer_start": 406
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Austin Group 是在 1998 年成立的一个合作技术工作组，其使命是开发并维护 POSIX.1 和 SUS 规范。Austin Group 开发规范的方法是\"write once, adopt everywhere\"，即由 Austin Group 制定的规范既会成为 IEEE POSIX 规范，又会成为 Open Group 的 技术标准规范，以后又会被采纳为 ISO/IEC 的标准。新开发的规范后来就被标准化为 ISO/IEC 9945 和IEEE Std 1003.1，并成为 SUSV3 的核心部分。这种独特的开发模式最大限度地利用了业界领先的工作成果，将正式的标准化工作转化成了一个唯一的行为，并且吸引了广泛的参与者。Austin Group 目前有 500 多个参与者，工作组的主席是 Open Group 的 Andrew Josey。",
+          "qas": [
+            {
+              "id": "5-372-16",
+              "question": "Austin Group成立于哪一年？",
+              "answers": [
+                {
+                  "text": "1998年",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "5-372-17",
+              "question": "Austin Group的使命是什么？",
+              "answers": [
+                {
+                  "text": "开发并维护POSIX.1和SUS规范",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "id": "5-372-18",
+              "question": "Austin Group开发规范的方法是什么？",
+              "answers": [
+                {
+                  "text": "write once, adopt everywhere",
+                  "answer_start": 69
+                }
+              ]
+            },
+            {
+              "id": "5-372-19",
+              "question": "Austin Group制定的规范会成为哪些组织的标准？",
+              "answers": [
+                {
+                  "text": "IEEE POSIX规范、Open Group的技术标准规范、ISO/IEC的标准",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在90年代中期，Linux也开始了自己的标准化努力。实际上，Linux一直都试图遵守POSIX标准，因此在源代码级上具有很好的兼容性，然而对于Linux来说，仅仅保证源码级的兼容性还不能完全满足要求：在Unix时代，大部分系统都使用的是专有的硬件，软件开发商必须负责将自己的应用程序从一个平台移植到其他平台上；每个系统的生命周期也很长，软件开发商可以投入足够的资源为各个平台发布二进制文件。然而Linux使用的最广泛的x86通用平台，其发行版是如此众多，而发展却如此之快，软件开发商不可能为每个发行版都发布一个二进制文件，因此就为Linux上的标准化提出了一个新的要求：二进制兼容性，即二进制程序不需要重新编译，就可以在其他发行版上运行。实际上，在Linux社区中第一个标准化努力是文件系统层次标准（Filesystem Hierarchy Standard，FHS），用来规范系统文件、工具和程序的存放位置和系统中的目录层次结构，例如ifconfig命令应该放在/usr/bin还是/usr/sbin目录中，光驱应该挂载到/mnt/cdrom中还是/media/cdrom中。这些需求最终共同促进了Linux Standard Base（LSB）项目的诞生。",
+          "qas": [
+            {
+              "id": "5-372-20",
+              "question": "Linux在标准化方面最初遵守的是什么标准？",
+              "answers": [
+                {
+                  "text": "POSIX标准",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-372-21",
+              "question": "Linux的标准化提出了什么新要求？原因是什么？",
+              "answers": [
+                {
+                  "text": "二进制兼容性，即二进制程序不需要重新编译，就可以在其他发行版上运行。原因是Linux使用的x86通用平台发行版众多且发展快，软件开发商不可能为每个发行版发布二进制文件。",
+                  "answer_start": 140
+                }
+              ]
+            },
+            {
+              "id": "5-372-22",
+              "question": "Linux社区中第一个标准化努力是什么？",
+              "answers": [
+                {
+                  "text": "文件系统层次标准（Filesystem Hierarchy Standard，FHS）",
+                  "answer_start": 400
+                }
+              ]
+            },
+            {
+              "id": "5-372-23",
+              "question": "FHS的作用是什么？",
+              "answers": [
+                {
+                  "text": "用来规范系统文件、工具和程序的存放位置和系统中的目录层次结构",
+                  "answer_start": 462
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "为了保证 LSB 项目的良好运行，LSB 采用了自己的完整组织架构来负责整个项目的运行，包括主席、选举委员会、执行委员会：主席：由选举委员会选举产生，任期两年，负责 LSB 项目的整体运作，并对 FSG 和社区代表 LSB项目。目前的主席是 Debian 的创始人 Ian Murdock.。选举委员会：由所有对 LSB 作出贡献的人组成，负责在主席任期期满时选举下一任主席。执行委员会：由主席和各个子项目的领导人以及对 LSB项目有重大贡献的人组成，可以对外作为 LSB 项目的发言人。",
+          "qas": [
+            {
+              "id": "5-372-24",
+              "question": "LSB的组织架构包括哪些部分？",
+              "answers": [
+                {
+                  "text": "主席、选举委员会、执行委员会",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-372-25",
+              "question": "LSB主席的任期是多久？由谁选举产生？",
+              "answers": [
+                {
+                  "text": "两年，由选举委员会选举产生",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-372-26",
+              "question": "选举委员会的组成和职责是什么？",
+              "answers": [
+                {
+                  "text": "由所有对LSB作出贡献的人组成，负责在主席任期期满时选举下一任主席。",
+                  "answer_start": 134
+                }
+              ]
+            },
+            {
+              "id": "5-372-27",
+              "question": "执行委员会的组成和职责是什么？",
+              "answers": [
+                {
+                  "text": "由主席和各个子项目的领导人以及对LSB项目有重大贡献的人组成，可以对外作为LSB项目的发言人。",
+                  "answer_start": 226
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LSB 项目包含几个子项目（也称为工作组），分别负责不同的职责范围，简介如下：Specification SubGroup：负责开 LSB 规范的开发与维护，还要负责 ISO/IEC 23360（即 ISO LSB 标准的维护）。具体职责如下：维护 LSB 规范数据库；编写 LSB 规范；开发并维护生成规范文档所需要的工具。LSB Tools SubGroup：负责以下子项目的开发和实现：SI（Sample Implementation）：遵守 LSB 规范的一个参考实现；Development Environment：开发符合 LSB 规范的应用程序的开发环境；Application Battery：符合 LSB 规范的样例应用程序，例如 lsb-apache。LSB Test SubGroup：负责按照 LSB 规范的定义，开发一些测试套件，来验证用户环境和应用程序是否符合 LSB 规范，主要包括：LSB Runtime Tests：包括ANSI、POSIX、LSB-OS、线程、用户和组、FHS、国际化、PAM（可插入认证模块）等测试套件；LSB VSW4/XTS5 Test：Xlib11及其扩展库的测试套件；LSB C++ Test：C++ 测试套件。LSB Desktop SubGroup：负责开发与桌面有关的规范的测试套件，用来验证用户环境和应用程序是否符合 LSB 规范，主要包括：GTK 库；OpenGL 库；PNG12库；JPEG 库；Fontconfig 库；GTK+ Stack 库；QT3/4 库；XML2 库。LSB Future SubGroup：负载开拓 LSB 的新领域，将已经发展比较成熟可以进行标准化但 LSB 尚未涉及的领域纳入 LSB 标准范围内。",
+          "qas": [
+            {
+              "id": "5-372-28",
+              "question": "LSB项目包含哪些工作组？",
+              "answers": [
+                {
+                  "text": "Specification SubGroup、LSB Tools SubGroup、LSB Test SubGroup、LSB Desktop SubGroup、LSB Future SubGroup",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-372-29",
+              "question": "Specification SubGroup的职责是什么？",
+              "answers": [
+                {
+                  "text": "负责LSB规范的开发与维护，负责ISO/IEC 23360（即ISO LSB标准的维护），维护LSB规范数据库，编写LSB规范，开发并维护生成规范文档所需要的工具。",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "id": "5-372-30",
+              "question": "Specification SubGroup 的核心职责是什么？",
+              "answers": [
+                {
+                  "text": "负责 LSB 规范的开发与维护，还要负责 ISO/IEC 23360（即 ISO LSB 标准的维护）",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "5-372-31",
+              "question": "ISO/IEC 23360 对应什么标准？",
+              "answers": [
+                {
+                  "text": "ISO LSB 标准",
+                  "answer_start": 105
+                }
+              ]
+            },
+            {
+              "id": "5-372-32",
+              "question": "LSB Tools SubGroup负责开发和实现哪些子项目？",
+              "answers": [
+                {
+                  "text": "SI（Sample Implementation）：遵守LSB规范的一个参考实现；Development Environment：开发符合LSB规范的应用程序的开发环境；Application Battery：符合LSB规范的样例应用程序，例如lsb-apache。",
+                  "answer_start": 236
+                }
+              ]
+            },
+            {
+              "id": "5-372-33",
+              "question": "LSB Test SubGroup开发的测试套件主要包括哪些？",
+              "answers": [
+                {
+                  "text": "LSB Runtime Tests：包括ANSI、POSIX、LSB-OS、线程、用户和组、FHS、国际化、PAM（可插入认证模块）等测试套件；LSB VSW4/XTS5 Test：Xlib11及其扩展库的测试套件；LSB C++ Test：C++测试套件。",
+                  "answer_start": 435
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LSB 对于标准的制定和推广遵循务实的原则，它自己不会自行制定标准然后强行要求业界接受，而是把业界中已经成熟的技术和规范采用标准化的形式固定下来，然后大力加以推广，这样可以更广泛地为软件供应商和用户接受。一个新领域要想纳入 LSB 标准的范畴，必须经过以下 3 个步骤：1. 鉴定：确认这个领域是否已经足够成熟，是否具有稳定的 ABI/API，是否需要进行标准化，以及是否依赖于尚未标准化的领域。 2. 调研：调查上游软件维护者是否还在积极维护，软件是否稳定，是否具有很好的向后兼容性。 3. 实现：将该领域加入 LSB 数据库、编写规范、编写测试套件、并将其加入开发环境、SI 和 APPBAT。 经过这 3 个步骤之后，LSB Future SubGroup 就会将其提交给 LSB 工作组，将其包含到 LSB 的下一个版本中进行发布，并对外提供认证服务。",
+          "qas": [
+            {
+              "id": "5-372-34",
+              "question": "LSB制定和推广标准遵循什么原则？",
+              "answers": [
+                {
+                  "text": "务实的原则，不自行制定标准强行要求业界接受，而是把业界中已经成熟的技术和规范采用标准化的形式固定下来，然后大力加以推广。",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "5-372-35",
+              "question": "一个新领域纳入LSB标准范畴需要经过哪三个步骤？",
+              "answers": [
+                {
+                  "text": "1. 鉴定：确认领域是否足够成熟，是否有稳定的ABI/API，是否需要标准化，是否依赖未标准化领域。2. 调研：调查上游软件维护者是否积极维护，软件是否稳定，是否有很好的向后兼容性。3. 实现：将该领域加入LSB数据库、编写规范、编写测试套件、并加入开发环境、SI和APPBAT。",
+                  "answer_start": 165
+                }
+              ]
+            },
+            {
+              "id": "5-372-36",
+              "question": "新领域经过三个步骤后会如何处理？",
+              "answers": [
+                {
+                  "text": "LSB Future SubGroup将其提交给LSB工作组，包含到LSB的下一个版本中发布，并对外提供认证服务。",
+                  "answer_start": 576
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在制定好标准并开发出测试套件之后，为了区分系统或应用程序是否兼容 LSB 标准， FSG 提供了 LSB 标准认证服务。任何 Linux 发行版厂商和应用程序开发商都可以进行 Linux 认证，目前提供的认证有两种：LSB 运行环境：为平台供应商提供的 LSB 标准认证；LSB 应用程序：为应用程序开发商提供的 LSB 标准认证。对于平台供应商来说，经过 LSB 认证之后，就可以确保自己的系统所提供的服务都是标准的，任何遵守 LSB 标准的应用程序都可以很好地在自己的系统上运行；而对于应用程序开发商来说，其意义则刚好相反：不需要担心自己的应用程序在遵守 LSB 标准的系统上的可移植性问题。LSB 认证过程包含以下步骤：注册：要进行 LSB 认证的第一个步骤是在 [https://www.freestandards.org/index.php?title=Special:Userlogin] 上先创建一个帐号，并注册您的公司和产品。测试和验证：使用 LSB 提供的测试工具，在您的测试系统上运行，并对结果进行分析，确保您的系统或应用程序遵守 LSB 规范。最终审计：在准备好正式提交测试结果之后，需要先签署 LSB 认证协议和 LSB 商标许可协议，并向 FSG 支付认证所需要的费用。然后 FSG 会有专人对测试结果进行审计，如果一切正常，就通过了 LSB 认证。通过 LSB 认证的产品都会在 [http://www.freestandards.org/en/Products] 公开发布。",
+          "qas": [
+            {
+              "id": "5-372-37",
+              "question": "谁提供LSB标准认证服务？",
+              "answers": [
+                {
+                  "text": "FSG",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "id": "5-372-38",
+              "question": "LSB提供的认证有哪两种？分别针对什么对象？",
+              "answers": [
+                {
+                  "text": "LSB运行环境：为平台供应商提供；LSB应用程序：为应用程序开发商提供。",
+                  "answer_start": 142
+                }
+              ]
+            },
+            {
+              "id": "5-372-39",
+              "question": "平台供应商经过LSB认证有什么意义？",
+              "answers": [
+                {
+                  "text": "可以确保自己的系统所提供的服务都是标准的，任何遵守LSB标准的应用程序都可以很好地在自己的系统上运行。",
+                  "answer_start": 225
+                }
+              ]
+            },
+            {
+              "id": "5-372-40",
+              "question": "LSB认证过程包含哪几个步骤？",
+              "answers": [
+                {
+                  "text": "注册：在指定网站创建帐号，注册公司和产品；测试和验证：使用LSB测试工具运行并分析结果；最终审计：签署协议、支付费用，FSG审计测试结果，通过后公开发布。",
+                  "answer_start": 382
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LSB 项目最初发起于 1998 年 5 月，其项目启动宣言得到了 Linus Torvalds、Bruce Perens、Eric Raymond 等人的签名支持，当时的目标是建立一系列构建 Linux 发行版所采用的源代码应该遵循的标准，并提供一个参考平台。2000 年 5 月，LSB 成为 Free Standards Group（FSG） 的一个工作组。FSG 是一个独立的非盈利组织，专注于通过开发和促进标准来加速开源软件的发展。从 2001 年 6 月发布第一个正式版本的规范以后，LSB 规范几乎每 6 个月都会进行一次更新。截止到 2005 年 7 月发布的 3.0 版本为止，LSB 重点关注的是服务器端的使用，这与 Linux 在服务器端得到了广泛的应用是一致的。这个规范已经被 ISO 采纳为国际标准 23360。目前最新的版本规范是 2005 年 10 月发布的 LSB 3.1，目前它可以支持 7 种体系结构：IA32、IA64、X86_64、PPC32、PPC64、S390、S390x。",
+          "qas": [
+            {
+              "id": "5-372-41",
+              "question": "LSB项目最初发起于何时？",
+              "answers": [
+                {
+                  "text": "1998年5月",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "5-372-42",
+              "question": "LSB成为FSG的一个工作组是在什么时候？",
+              "answers": [
+                {
+                  "text": "2000年5月",
+                  "answer_start": 156
+                }
+              ]
+            },
+            {
+              "id": "5-372-43",
+              "question": "LSB第一个正式版本的规范发布于何时？",
+              "answers": [
+                {
+                  "text": "2001年6月",
+                  "answer_start": 247
+                }
+              ]
+            },
+            {
+              "id": "5-372-44",
+              "question": "LSB 3.0版本发布于何时？被ISO采纳为哪个国际标准？",
+              "answers": [
+                {
+                  "text": "2005年7月，ISO 23360",
+                  "answer_start": 315
+                }
+              ]
+            },
+            {
+              "id": "5-372-45",
+              "question": "LSB 3.1版本发布于何时？支持多少种体系结构？",
+              "answers": [
+                {
+                  "text": "2005年10月，7种",
+                  "answer_start": 432
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "为了解决不同Linux发行版中版本信息文件不一致的问题，LSB规范中增加了对lsb_release接口及其输出格式的定义：lsb_release的功能是打印与发行版本相关的信息，必须实现特定选项。在通过LSB认证的系统上，存在包含lsb_release接口实现的包，例如RHEL4U3上的redhat-lsb包和SLES9SP3上的lsb包，两者都包含/usr/bin/lsb_release和/lib/ld-lsb.so.3文件。/lib/ld-lsb.so.3是指向ld-linux.so.2的符号链接，/usr/bin/lsb_release是shell脚本，执行lsb_release -a可获取发行版本信息，不同系统的输出格式一致。",
+          "qas": [
+            {
+              "id": "5-372-46",
+              "question": "lsb_release的功能是什么？",
+              "answers": [
+                {
+                  "text": "打印与发行版本相关的信息",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-372-47",
+              "question": "RHEL4U3和SLES9SP3中包含lsb_release接口实现的包分别是什么？",
+              "answers": [
+                {
+                  "text": "redhat-lsb包和lsb包",
+                  "answer_start": 145
+                }
+              ]
+            },
+            {
+              "id": "5-372-48",
+              "question": "RHEL4U3和SLES9SP3中与lsb_release相关的共同文件有哪些？",
+              "answers": [
+                {
+                  "text": "/usr/bin/lsb_release和/lib/ld-lsb.so.3",
+                  "answer_start": 189
+                }
+              ]
+            },
+            {
+              "id": "5-372-49",
+              "question": "/lib/ld-lsb.so.3是什么？",
+              "answers": [
+                {
+                  "text": "指向ld-linux.so.2的符号链接",
+                  "answer_start": 245
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LSB目前是 FSG（Free Standards Group）中最为活跃的一个工作组，其使命是开发一系列标准来增强 Linux 发行版的兼容性，使各种软件可以很好地在兼容 LSB 标准的系统上运行，从而可以帮助软件供应商更好地在 Linux 系统上开发产品，或将已有的产品移植到 Linux 系统上。",
+          "qas": [
+            {
+              "id": "5-372-50",
+              "question": "LSB属于哪个组织的工作组？",
+              "answers": [
+                {
+                  "text": "FSG（Free Standards Group）",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-372-51",
+              "question": "LSB的核心使命是什么？",
+              "answers": [
+                {
+                  "text": "开发一系列标准来增强 Linux 发行版的兼容性",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

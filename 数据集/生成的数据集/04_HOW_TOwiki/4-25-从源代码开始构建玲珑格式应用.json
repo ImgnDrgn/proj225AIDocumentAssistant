@@ -1,0 +1,214 @@
+{
+  "data": [
+    {
+      "title": "从源代码开始构建玲珑格式应用",
+      "paragraphs": [
+        {
+          "context": "安装ll-builder工具的命令是sudo apt install linglong-builder --no-install-recommends，可去除--no-install-recommends安装推荐依赖。",
+          "qas": [
+            {
+              "question": "如何安装ll-builder工具？",
+              "id": "4-25-1",
+              "answers": [
+                {
+                  "text": "在终端中执行sudo apt install linglong-builder --no-install-recommends",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "怎样安装ll-builder的推荐依赖？",
+              "id": "4-25-2",
+              "answers": [
+                {
+                  "text": "去除命令中--no-install-recommends参数，执行sudo apt install linglong-builder",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "从源代码构建玲珑应用可跳过ll-builder create操作，直接在工程源代码顶层目录编写linglong.yaml文件。",
+          "qas": [
+            {
+              "question": "从源代码构建玲珑格式应用是否需要执行ll-builder create操作？",
+              "id": "4-25-3",
+              "answers": [
+                {
+                  "text": "不需要，可以跳过",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "linglong.yaml文件应在哪个目录编写？",
+              "id": "4-25-4",
+              "answers": [
+                {
+                  "text": "工程源代码顶层目录",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "linglong.yaml中package下的id是软件包appid，类似deb包名，用于区分不同玲珑软件包。",
+          "qas": [
+            {
+              "question": "linglong.yaml中package下的id有什么作用？",
+              "id": "4-25-5",
+              "answers": [
+                {
+                  "text": "类似deb格式软件包包名，区分不同玲珑格式软件包",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "玲珑容器启动时，将容器内容files文件夹挂载至/opt/apps/${appid}文件夹下，前缀近似为/opt/apps/${appid}/files。",
+          "qas": [
+            {
+              "question": "玲珑容器启动时，files文件夹挂载到哪个位置？",
+              "id": "4-25-6",
+              "answers": [
+                {
+                  "text": "/opt/apps/${appid}文件夹下",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "玲珑应用的安装位置前缀近似是什么？",
+              "id": "4-25-7",
+              "answers": [
+                {
+                  "text": "/opt/apps/${appid}/files",
+                  "answer_start": 69
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "构建玲珑应用时，在工程源代码顶层目录执行ll-builder build命令。",
+          "qas": [
+            {
+              "question": "如何构建玲珑格式应用？",
+              "id": "4-25-8",
+              "answers": [
+                {
+                  "text": "在工程源代码顶层目录（linglong.yaml同级目录）打开终端，执行ll-builder build命令",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "首次构建玲珑应用需下载指定的base和runtime，耗时较长。",
+          "qas": [
+            {
+              "question": "首次构建玲珑应用为什么耗时较长？",
+              "id": "4-25-9",
+              "answers": [
+                {
+                  "text": "需要下载指定的base和runtime",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "测试运行玲珑应用可执行ll-builder run --exec 可执行程序名称命令。",
+          "qas": [
+            {
+              "question": "如何测试运行玲珑容器环境内的应用？",
+              "id": "4-25-10",
+              "answers": [
+                {
+                  "text": "在工程源代码顶层目录打开终端，执行ll-builder run --exec 可执行程序名称",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "导出layer文件执行ll-builder export命令，会生成${appid}_${version}_${arch}_develop.layer和${appid}_${version}_${arch}runtime.layer文件。",
+          "qas": [
+            {
+              "question": "如何导出layer文件？",
+              "id": "4-25-11",
+              "answers": [
+                {
+                  "text": "在工程源代码顶层目录打开终端，执行ll-builder export命令",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "执行ll-builder export会生成哪些文件？",
+              "id": "4-25-12",
+              "answers": [
+                {
+                  "text": "${appid}_${version}_${arch}_develop.layer和${appid}_${version}_${arch}runtime.layer文件",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装layer文件使用ll-cli install命令，将runtime.layer文件拖入终端执行。",
+          "qas": [
+            {
+              "question": "如何安装layer文件到本地玲珑环境？",
+              "id": "4-25-13",
+              "answers": [
+                {
+                  "text": "在工程源代码顶层目录打开终端，输入ll-cli install并输入空格分隔后，将文件夹中的runtime.layer文件拖入终端，按回车执行",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若启动器中找不到应用，可查看linglong/output/runtime/entries/share/applications文件夹是否有.desktop文件。",
+          "qas": [
+            {
+              "question": "启动器中无法找到应用时，应检查哪个文件夹？",
+              "id": "4-25-14",
+              "answers": [
+                {
+                  "text": "linglong/output/runtime/entries/share/applications",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "qmake工程中，可通过修改.pro文件或在linglong.yaml构建部分传入参数设置安装前缀。",
+          "qas": [
+            {
+              "question": "qmake工程如何设置安装前缀？",
+              "id": "4-25-15",
+              "answers": [
+                {
+                  "text": "修改.pro文件，或将前缀通过qmake参数从外部传入并在.pro文件中解析${PREFIX}",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

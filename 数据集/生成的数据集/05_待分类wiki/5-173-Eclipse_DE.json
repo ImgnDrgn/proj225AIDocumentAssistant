@@ -1,0 +1,129 @@
+{
+  "data": [
+    {
+      "title": "Eclipse_IDE",
+      "paragraphs": [
+        {
+          "context": "Eclipse是一个开放源代码的、基于Java的可扩展开发平台。就其本身而言，它只是一个框架和一组服务，用于通过插件组件构建开发环境。幸运的是，Eclipse 附带了一个标准的插件集，包括Java开发工具（Java Development Kit，JDK）。",
+          "qas": [
+            {
+              "id": "5-173-1",
+              "question": "Eclipse是什么类型的开发平台？",
+              "answers": [
+                {
+                  "text": "开放源代码的、基于Java的可扩展开发平台",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-173-2",
+              "question": "Eclipse本身是什么？",
+              "answers": [
+                {
+                  "text": "一个框架和一组服务，用于通过插件组件构建开发环境",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "5-173-3",
+              "question": "Eclipse附带的标准插件集包括什么？",
+              "answers": [
+                {
+                  "text": "Java开发工具（Java Development Kit，JDK）",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装命令：sudo apt-get install eclipse-java（Eclipse IDE for Java EE Developers）；sudo apt-get install eclipse-jee（Eclipse IDE for Java Developers）；sudo apt-get install eclipse-cpp（Eclipse IDE for C/C++ Developers）；sudo apt-get install eclipse-php（Eclipse for PHP Developers）；sudo apt-get install eclipse-android（Eclipse for Android Developers）；sudo apt-get install eclipse-committers（Eclipse IDE for Eclipse Committers）；sudo apt-get install eclipse-javascript（Eclipse IDE for JavaScript and Web Developers）；sudo apt-get install eclipse-reporting（Eclipse IDE for Java and Report Developers）；sudo apt-get install eclipse-dsl（Eclipse IDE for Java and DSL Developers）；sudo apt-get install eclipse-rcp（Eclipse for RCP and RAP Developers）；sudo apt-get install eclipse-modeling（Eclipse Modeling Tools）；sudo apt-get install eclipse-parallel（Eclipse for Parallel Application Developers）；sudo apt-get install eclipse-testing（Eclipse for Testers）；sudo apt-get install eclipse-scout（Eclipse for Scout Developers）",
+          "qas": [
+            {
+              "id": "5-173-4",
+              "question": "安装Eclipse IDE for Java EE Developers的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install eclipse-java",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-173-5",
+              "question": "安装Eclipse IDE for C/C++ Developers的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install eclipse-cpp",
+                  "answer_start": 132
+                }
+              ]
+            },
+            {
+              "id": "5-173-6",
+              "question": "安装Eclipse for PHP Developers的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install eclipse-php",
+                  "answer_start": 196
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载命令：sudo apt-get remove eclipse-java；sudo apt-get remove eclipse-jee；sudo apt-get remove eclipse-cpp；sudo apt-get remove eclipse-php；sudo apt-get remove eclipse-android；sudo apt-get remove eclipse-committers；sudo apt-get remove eclipse-javascript；sudo apt-get remove eclipse-reporting；sudo apt-get remove eclipse-dsl；sudo apt-get remove eclipse-rcp；sudo apt-get remove eclipse-modeling；sudo apt-get remove eclipse-parallel；sudo apt-get remove eclipse-testing；sudo apt-get remove eclipse-scout",
+          "qas": [
+            {
+              "id": "5-173-7",
+              "question": "卸载eclipse-java的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove eclipse-java",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-173-8",
+              "question": "卸载eclipse-cpp的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove eclipse-cpp",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址：http://packages.deepin.com/deepin/pool/main/e/eclipse-java/；http://packages.deepin.com/deepin/pool/main/e/eclipse-jee/；http://packages.deepin.com/deepin/pool/main/e/eclipse-cpp/；http://packages.deepin.com/deepin/pool/main/e/eclipse-php/；http://packages.deepin.com/deepin/pool/main/e/eclipse-android/；http://packages.deepin.com/deepin/pool/main/e/eclipse-committers/；http://packages.deepin.com/deepin/pool/main/e/eclipse-javascript/；http://packages.deepin.com/deepin/pool/main/e/eclipse-reporting/；http://packages.deepin.com/deepin/pool/main/e/eclipse-dsl/；http://packages.deepin.com/deepin/pool/main/e/eclipse-rcp/；http://packages.deepin.com/deepin/pool/main/e/eclipse-modeling/；http://packages.deepin.com/deepin/pool/main/e/eclipse-parallel/；http://packages.deepin.com/deepin/pool/main/e/eclipse-testing/；http://packages.deepin.com/deepin/pool/main/e/eclipse-scout/",
+          "qas": [
+            {
+              "id": "5-173-9",
+              "question": "eclipse-java的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/e/eclipse-java/",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-173-10",
+              "question": "eclipse-cpp的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/e/eclipse-cpp/",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "WordMark",
+      "paragraphs": [
+        {
+          "context": "WordMark是一款MarkDown编辑器，支持Markdown语法，具有图片上传，同步滚动预览，自动保存，主题切换，多种格式导出等功能。可以直接使用在线图床插入配图，支持发布到Wordpress、GitHub、Evernote等平台。",
+          "qas": [
+            {
+              "id": "5-67-1",
+              "question": "WordMark是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "WordMark是一款MarkDown编辑器",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-67-2",
+              "question": "WordMark支持哪些主要功能？",
+              "answers": [
+                {
+                  "text": "支持Markdown语法，具有图片上传，同步滚动预览，自动保存，主题切换，多种格式导出等功能。",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "5-67-3",
+              "question": "如何在使用WordMark时插入配图？",
+              "answers": [
+                {
+                  "text": "可以直接使用在线图床插入配图",
+                  "answer_start": 100
+                }
+              ]
+            },
+            {
+              "id": "5-67-4",
+              "question": "WordMark支持发布到哪些平台？",
+              "answers": [
+                {
+                  "text": "支持发布到Wordpress、GitHub、Evernote等平台。",
+                  "answer_start": 125
+                }
+              ]
+            },
+            {
+              "id": "5-67-5",
+              "question": "WordMark是否支持Markdown语法？",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "要安装WordMark，请运行命令：sudo apt-get install wordmark。",
+          "qas": [
+            {
+              "id": "5-67-6",
+              "question": "如何在系统中安装WordMark？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install wordmark",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "要卸载WordMark，请运行命令：sudo apt-get remove wordmark。",
+          "qas": [
+            {
+              "id": "5-67-7",
+              "question": "如何在系统中卸载WordMark？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove wordmark",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "WordMark的仓库地址是：http://packages.deepin.com/deepin/pool/non-free/w/wordmark/。",
+          "qas": [
+            {
+              "id": "5-67-8",
+              "question": "WordMark的官方仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/w/wordmark/",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "data": [
+    {
+      "title": "GVim",
+      "paragraphs": [
+        {
+          "context": "Vim是从vi发展而来的一个文本编辑器，GVim是Vim的图形前端，它是跨平台的编辑器。它具有代码自动完成、编译及快捷键操作，错误跳转、切换输入模式等功能。除多了些图形界面的功能外，其他功能是一样的。详情参考[Vim](/zh/03_按知识点等级划分/01_中阶/Vim)",
+          "qas": [
+            {
+              "id": "5-68-1",
+              "question": "GVim是什么的图形前端？",
+              "answers": [
+                {
+                  "text": "Vim",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "5-68-2",
+              "question": "GVim是跨平台的编辑器吗？",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "id": "5-68-3",
+              "question": "GVim具有哪些功能？",
+              "answers": [
+                {
+                  "text": "代码自动完成、编译及快捷键操作，错误跳转、切换输入模式等功能",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-68-4",
+              "question": "GVim与Vim在功能上有什么不同？",
+              "answers": [
+                {
+                  "text": "多了些图形界面的功能",
+                  "answer_start": 82
+                }
+              ]
+            },
+            {
+              "id": "5-68-5",
+              "question": "GVim是什么？",
+              "answers": [
+                {
+                  "text": "GVim是Vim的图形前端，它是跨平台的编辑器。",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装：sudo apt-get install vim-gtk",
+          "qas": [
+            {
+              "id": "5-68-6",
+              "question": "安装GVim的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install vim-gtk",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载：sudo apt-get remove vim-gtk",
+          "qas": [
+            {
+              "id": "5-68-7",
+              "question": "卸载GVim的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove vim-gtk",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址：http://packages.deepin.com/deepin/pool/main/v/vim/",
+          "qas": [
+            {
+              "id": "5-68-8",
+              "question": "GVim的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/v/vim/",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Vim是从vi发展而来的一个文本编辑器，GVim是Vim的图形前端，它是跨平台的编辑器。它具有代码自动完成、编译及快捷键操作，错误跳转、切换输入模式等功能。除多了些图形界面的功能外，其他功能是一样的。详情参考Vim。",
+          "qas": []
+        },
+        {
+          "context": "sudo apt-get install vim-gtk",
+          "qas": []
+        },
+        {
+          "context": "sudo apt-get remove vim-gtk",
+          "qas": []
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/v/vim/",
+          "qas": []
+        }
+      ]
+    }
+  ]
+}

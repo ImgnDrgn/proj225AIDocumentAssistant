@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "华为AMD笔记本，无显卡驱动解决方法",
+      "paragraphs": [
+        {
+          "context": "用户反馈华为AMD笔记本显卡驱动看不到，待机唤醒有问题，显示适配器无内容，设备管理器中无法展示具体显卡信息。",
+          "qas": [
+            {
+              "question": "华为AMD笔记本无显卡驱动有哪些现象？",
+              "id": "4-5-1",
+              "answers": [
+                {
+                  "text": "显卡驱动看不到，待机唤醒有问题，显示适配器无内容，设备管理器中无法展示具体显卡信息。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户安装时选择5.15版本内核，切换回5.10版本内核仍未解决华为AMD笔记本无显卡驱动问题。",
+          "qas": [
+            {
+              "question": "用户尝试过哪些方法解决华为AMD笔记本无显卡驱动问题但未成功？",
+              "id": "4-5-2",
+              "answers": [
+                {
+                  "text": "安装时选择5.15版本内核，切换回5.10版本内核。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解决华为AMD笔记本无显卡驱动问题，需编辑grub启动目录，在GRUB_CMDLINE_LINUX_DEFAULT一行末尾添加amdgpu.exp_hw_support=1，保存退出并更新grub，最后重启。",
+          "qas": [
+            {
+              "question": "解决华为AMD笔记本无显卡驱动问题的第一步是什么？",
+              "id": "4-5-3",
+              "answers": [
+                {
+                  "text": "编辑grub启动目录。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "在grub配置中需要添加什么内容来解决华为AMD笔记本无显卡驱动问题？",
+              "id": "4-5-4",
+              "answers": [
+                {
+                  "text": "amdgpu.exp_hw_support=1",
+                  "answer_start": 74
+                }
+              ]
+            },
+            {
+              "question": "编辑grub配置后需要进行哪些操作？",
+              "id": "4-5-5",
+              "answers": [
+                {
+                  "text": "保存退出并更新grub，最后重启。",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "question": "更新grub的命令是什么？",
+              "id": "4-5-6",
+              "answers": [
+                {
+                  "text": "sudo update-grub",
+                  "answer_start": 121
+                }
+              ]
+            },
+            {
+              "question": "编辑grub启动目录的命令是什么？",
+              "id": "4-5-7",
+              "answers": [
+                {
+                  "text": "sudo vi /etc/default/grub",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

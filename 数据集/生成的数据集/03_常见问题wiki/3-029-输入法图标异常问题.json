@@ -1,0 +1,139 @@
+{
+  "data": [
+    {
+      "title": "输入法图标异常问题",
+      "paragraphs": [
+        {
+          "context": "输入法图标异常的可能原因是输入法安装包版本集成错误或是依赖包集成时遗漏。在切换五笔拼音输入法后，任务栏图标正常时应显示一个'五'的图标，图标异常时有对应的异常显示。",
+          "qas": [
+            {
+              "id": "3-29-1",
+              "question": "输入法图标异常的可能原因是什么？",
+              "answers": [
+                {
+                  "text": "输入法安装包版本集成错误或是依赖包集成时遗漏",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "3-29-2",
+              "question": "切换五笔拼音输入法后，正常的任务栏图标显示什么？",
+              "answers": [
+                {
+                  "text": "一个'五'的图标",
+                  "answer_start": 60
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解决输入法图标异常可按以下步骤操作：1. 删除已安装输入法，命令为sudo apt-get remove fcitx*；删除依赖库，命令为sudo apt-get autoremove；检测是否删除fcitx，命令为dpkg --get-selections | grep fcitx。",
+          "qas": [
+            {
+              "id": "3-29-3",
+              "question": "删除已安装输入法的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove fcitx*",
+                  "answer_start": 50
+                }
+              ]
+            },
+            {
+              "id": "3-29-4",
+              "question": "删除依赖库使用的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get autoremove",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "id": "3-29-5",
+              "question": "如何检测是否删除了fcitx？",
+              "answers": [
+                {
+                  "text": "dpkg --get-selections | grep fcitx",
+                  "answer_start": 116
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "2. 依次安装下列包，安装命令为sudo apt-get install ****，需安装的包包括：fcitx、fcitx-bin、fcitx-config-common、fcitx-config-gtk、fcitx-data、fcitx-frontend-gtk2、fcitx-frontend-gtk3、fcitx-frontend-qt4、fcitx-libs、fcitx-module-dbus、fcitx-module-x11、fcitx-modules、fcitx-table、fcitx-table-wbpy、fcitx-ui-classic。",
+          "qas": [
+            {
+              "id": "3-29-6",
+              "question": "安装相关包时使用的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install ****",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "3-29-7",
+              "question": "需要安装的包包含fcitx-bin吗？",
+              "answers": [
+                {
+                  "text": "包含",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "3-29-8",
+              "question": "需要安装的包有哪些？",
+              "answers": [
+                {
+                  "text": "fcitx、fcitx-bin、fcitx-config-common、fcitx-config-gtk、fcitx-data、fcitx-frontend-gtk2、fcitx-frontend-gtk3、fcitx-frontend-qt4、fcitx-libs、fcitx-module-dbus、fcitx-module-x11、fcitx-modules、fcitx-table、fcitx-table-wbpy、fcitx-ui-classic",
+                  "answer_start": 60
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "3. 重启。若重启后输入法图标恢复正常，即说明安装包集成有问题，可以对应上面的包名在系统中查询版本号，若显示未安装或对应版本号不匹配，重新集成时更正为相应的版本即可修复。",
+          "qas": [
+            {
+              "id": "3-29-9",
+              "question": "完成删除和安装步骤后需要做什么？",
+              "answers": [
+                {
+                  "text": "重启",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "3-29-10",
+              "question": "重启后输入法图标恢复正常说明什么？",
+              "answers": [
+                {
+                  "text": "安装包集成有问题",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "3-29-11",
+              "question": "若系统中对应包未安装或版本号不匹配，如何修复？",
+              "answers": [
+                {
+                  "text": "重新集成时更正为相应的版本",
+                  "answer_start": 89
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "data": [
+    {
+      "title": "docker-ce代理",
+      "paragraphs": [
+        {
+          "context": "dockerd是Docker守护进程，管理和运行容器，docker pull由其执行。",
+          "qas": [
+            {
+              "question": "什么是dockerd？",
+              "id": "5-308-1",
+              "answers": [
+                {
+                  "text": "Docker守护进程，负责管理和运行容器。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "docker pull命令由哪个进程执行？",
+              "id": "5-308-2",
+              "answers": [
+                {
+                  "text": "dockerd",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "为dockerd设置代理需创建/etc/systemd/system/docker.service.d文件夹，再创建proxy.conf文件并配置代理，最后重载systemd并重启Docker。",
+          "qas": [
+            {
+              "question": "为dockerd设置代理首先需要创建什么文件夹？",
+              "id": "5-308-3",
+              "answers": [
+                {
+                  "text": "/etc/systemd/system/docker.service.d",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "dockerd代理配置文件的名称是什么？",
+              "id": "5-308-4",
+              "answers": [
+                {
+                  "text": "proxy.conf",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "question": "配置dockerd代理后如何使其生效？",
+              "id": "5-308-5",
+              "answers": [
+                {
+                  "text": "重新加载systemd守护进程的配置，并重启Docker服务。",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "proxy.conf文件中配置代理的内容为[Service]及HTTP_PROXY、HTTPS_PROXY、NO_PROXY的环境变量。",
+          "qas": [
+            {
+              "question": "proxy.conf文件中配置代理包含哪些内容？",
+              "id": "5-308-6",
+              "answers": [
+                {
+                  "text": "[Service] Environment=\"HTTP_PROXY=http://127.0.0.1:7890\" Environment=\"HTTPS_PROXY=http://127.0.0.1:7890\" Environment=\"NO_PROXY=localhost,127.0.0.1\"",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看dockerd环境变量配置可用sudo systemctl show --property=Environment docker命令。",
+          "qas": [
+            {
+              "question": "如何查看dockerd的环境变量配置？",
+              "id": "5-308-7",
+              "answers": [
+                {
+                  "text": "sudo systemctl show --property=Environment docker",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "容器代理可在~/.docker/config.json中添加proxies字段配置，或运行时用-e注入环境变量。",
+          "qas": [
+            {
+              "question": "如何在用户级别为容器设置代理？",
+              "id": "5-308-8",
+              "answers": [
+                {
+                  "text": "编辑~/.docker/config.json文件，添加proxies字段并指定代理配置。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "容器运行时如何注入代理环境变量？",
+              "id": "5-308-9",
+              "answers": [
+                {
+                  "text": "通过-e注入http_proxy等环境变量。",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "~/.docker/config.json中代理配置包含proxies.default下的httpProxy、httpsProxy、noProxy。",
+          "qas": [
+            {
+              "question": "~/.docker/config.json中代理配置的结构是怎样的？",
+              "id": "5-308-10",
+              "answers": [
+                {
+                  "text": "包含proxies字段，其中default下有httpProxy、httpsProxy、noProxy。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看容器中代理环境变量可用sudo docker run --rm alpine sh -c 'env | grep -i _PROXY'命令。",
+          "qas": [
+            {
+              "question": "如何在容器中查看代理环境变量？",
+              "id": "5-308-11",
+              "answers": [
+                {
+                  "text": "sudo docker run --rm alpine sh -c 'env | grep -i _PROXY'",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "docker build可通过--build-arg传递HTTP_PROXY、HTTPS_PROXY、NO_PROXY设置代理，仅对该次构建有效。",
+          "qas": [
+            {
+              "question": "如何为docker build命令设置代理？",
+              "id": "5-308-12",
+              "answers": [
+                {
+                  "text": "使用--build-arg参数传递HTTP_PROXY、HTTPS_PROXY、NO_PROXY配置。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "docker build的代理设置对后续构建有效吗？",
+              "id": "5-308-13",
+              "answers": [
+                {
+                  "text": "只对该次构建有效。",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

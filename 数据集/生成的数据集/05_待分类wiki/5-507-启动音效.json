@@ -1,0 +1,179 @@
+{
+  "data": [
+    {
+      "title": "启动音效",
+      "paragraphs": [
+        {
+          "context": "开关机音乐是电脑开启瞬间的音乐，不同音乐带来不同感觉。",
+          "qas": [
+            {
+              "question": "什么是开关机音乐？",
+              "id": "5-507-1",
+              "answers": [
+                {
+                  "text": "电脑在开启的那一瞬间的音乐",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在深度操作系统中可加入优美的开机启动音乐。",
+          "qas": [
+            {
+              "question": "在哪种操作系统中可以加入开机启动音乐？",
+              "id": "5-507-2",
+              "answers": [
+                {
+                  "text": "深度操作系统",
+                  "answer_start": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "实现桌面环境启动可在~/.config/autostart（特定用户）或/etc/xdg/autostart（全局用户）目录下创建.desktop文件。",
+          "qas": [
+            {
+              "question": "实现桌面环境启动的方法是什么？",
+              "id": "5-507-3",
+              "answers": [
+                {
+                  "text": "在~/.config/autostart（特定用户）或 /etc/xdg/autostart（全局用户）目录下创建一个 .desktop 文件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "特定用户的.desktop文件应放在哪个目录？",
+              "id": "5-507-4",
+              "answers": [
+                {
+                  "text": "~/.config/autostart",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "全局用户的.desktop文件应放在哪个目录？",
+              "id": "5-507-5",
+              "answers": [
+                {
+                  "text": "/etc/xdg/autostart",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "首先要安装软件包gnome-session-canberra，可通过sudo apt install gnome-session-canberra命令。",
+          "qas": [
+            {
+              "question": "加入开机启动音乐首先需要安装什么软件包？",
+              "id": "5-507-6",
+              "answers": [
+                {
+                  "text": "gnome-session-canberra",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "安装gnome-session-canberra的命令是什么？",
+              "id": "5-507-7",
+              "answers": [
+                {
+                  "text": "sudo apt install gnome-session-canberra",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在～/.config/autostart（推荐）或/etc/xdg/autostart目录下新建与编辑名为loginsound.desktop的文件，可用gedit $HOME/.config/autostart/loginsound.desktop命令。",
+          "qas": [
+            {
+              "question": "应新建与编辑的文件名为是什么？",
+              "id": "5-507-8",
+              "answers": [
+                {
+                  "text": "loginsound.desktop",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "question": "推荐在哪个目录下新建loginsound.desktop文件？",
+              "id": "5-507-9",
+              "answers": [
+                {
+                  "text": "～/.config/autostart",
+                  "answer_start": 1
+                }
+              ]
+            },
+            {
+              "question": "编辑～/.config/autostart目录下的loginsound.desktop文件的命令是什么？",
+              "id": "5-507-10",
+              "answers": [
+                {
+                  "text": "gedit $HOME/.config/autostart/loginsound.desktop",
+                  "answer_start": 88
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "loginsound.desktop文件内容为[Desktop Entry]、Name=GNOME Login Sound、Type=Application、Exec=/usr/bin/canberra-gtk-play --file=\"XXX\" --description=\"GNOME Login sound\"、Comment=Startup Sound，XXX需换为音频文件路径。",
+          "qas": [
+            {
+              "question": "loginsound.desktop文件中Type的值是什么？",
+              "id": "5-507-11",
+              "answers": [
+                {
+                  "text": "Application",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "loginsound.desktop文件中Comment的值是什么？",
+              "id": "5-507-12",
+              "answers": [
+                {
+                  "text": "Startup Sound",
+                  "answer_start": 200
+                }
+              ]
+            },
+            {
+              "question": "loginsound.desktop文件中Exec行里的XXX需要替换成什么？",
+              "id": "5-507-13",
+              "answers": [
+                {
+                  "text": "需要播放的音频文件的路径",
+                  "answer_start": 219
+                }
+              ]
+            },
+            {
+              "question": "loginsound.desktop文件中Name的值是什么？",
+              "id": "5-507-14",
+              "answers": [
+                {
+                  "text": "GNOME Login Sound",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

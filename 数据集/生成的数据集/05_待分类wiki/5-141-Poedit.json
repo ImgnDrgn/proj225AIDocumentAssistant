@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "Poedit",
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "id": "5-141-1",
+              "question": "Poedit 是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "一款基于多语言的本地化工具",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-141-2",
+              "question": "Poedit 支持哪些主流平台？",
+              "answers": [
+                {
+                  "text": "Win/Mac/Linux 三大主流平台",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "5-141-3",
+              "question": "Poedit 常被用于什么场景？",
+              "answers": [
+                {
+                  "text": "本地化各种计算机软件，以及翻译 WordPress 主题或插件",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-141-4",
+              "question": "Poedit 支持哪种格式？",
+              "answers": [
+                {
+                  "text": "gettext类（.po 格式，使用 gettext 作为程序的本地化）",
+                  "answer_start": 96
+                }
+              ]
+            },
+            {
+              "id": "5-141-5",
+              "question": "如何安装 Poedit？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install poedit",
+                  "answer_start": 192
+                }
+              ]
+            },
+            {
+              "id": "5-141-6",
+              "question": "如何卸载 Poedit？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove poedit",
+                  "answer_start": 223
+                }
+              ]
+            },
+            {
+              "id": "5-141-7",
+              "question": "Poedit 的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/p/poedit/",
+                  "answer_start": 257
+                }
+              ]
+            }
+          ],
+          "context": "Poedit 是一款基于多语言的本地化工具，支持 Win/Mac/Linux 三大主流平台，经常被用于本地化各种计算机软件，以及翻译 WordPress 主题或插件。Poedit 支持开源及跨平台的 gettext类（.po 格式，使用 gettext 作为程序的本地化），以及可以直接对接世界范围内最主流的翻译服务平台 Crowin，是目前同类软件中使用最为广泛的优秀工具。安装命令：sudo apt-get install poedit。卸载命令：sudo apt-get remove poedit。仓库地址：http://packages.deepin.com/deepin/pool/main/p/poedit/"
+        }
+      ]
+    }
+  ]
+}

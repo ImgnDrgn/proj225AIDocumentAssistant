@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "Konqueror",
+      "paragraphs": [
+        {
+          "context": "Konqueror 是 KDE 默认的网页浏览器，以及文件管理和预览的全能利器。",
+          "qas": [
+            {
+              "question": "Konqueror 是什么？",
+              "id": "1-55-1",
+              "answers": [
+                {
+                  "text": "KDE 默认的网页浏览器，以及文件管理和预览的全能利器。",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "Konqueror 是哪个桌面环境的默认网页浏览器？",
+              "id": "1-55-2",
+              "answers": [
+                {
+                  "text": "KDE",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "Konqueror 除了作为网页浏览器，还有什么功能？",
+              "id": "1-55-3",
+              "answers": [
+                {
+                  "text": "文件管理和预览",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install konqueror",
+          "qas": [
+            {
+              "question": "如何安装 Konqueror？",
+              "id": "1-55-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install konqueror",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove konqueror",
+          "qas": [
+            {
+              "question": "怎样卸载 Konqueror？",
+              "id": "1-55-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove konqueror",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/k/konqueror/",
+          "qas": [
+            {
+              "question": "Konqueror 的仓库地址是什么？",
+              "id": "1-55-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/k/konqueror/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "https://apps.kde.org/zh-cn/konqueror/",
+          "qas": [
+            {
+              "question": "Konqueror 的官方网站是什么？",
+              "id": "1-55-7",
+              "answers": [
+                {
+                  "text": "https://apps.kde.org/zh-cn/konqueror/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

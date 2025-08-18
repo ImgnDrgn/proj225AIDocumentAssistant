@@ -1,0 +1,134 @@
+{
+  "data": [
+    {
+      "title": "SASM",
+      "paragraphs": [
+        {
+          "context": "SASM是SimpleASM的缩写，是免费开源跨平台IDE，用于NASM、MASM、GAS和FASM汇编语言，有语法高亮和调试器。",
+          "qas": [
+            {
+              "question": "SASM的全称是什么？",
+              "id": "5-331-1",
+              "answers": [
+                {
+                  "text": "SimpleASM",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "SASM是用于什么的工具？",
+              "id": "5-331-2",
+              "answers": [
+                {
+                  "text": "NASM、MASM、GAS和FASM汇编语言的集成开发环境",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "SASM有哪些功能？",
+              "id": "5-331-3",
+              "answers": [
+                {
+                  "text": "语法高亮显示功能，并包含一个调试器",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "SASM是免费的吗？",
+              "id": "5-331-4",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "SASM是开源的吗？",
+              "id": "5-331-5",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "SASM是否支持跨平台？",
+              "id": "5-331-6",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装SASM的命令是sudo apt install sasm。",
+          "qas": [
+            {
+              "question": "如何安装SASM？",
+              "id": "5-331-7",
+              "answers": [
+                {
+                  "text": "sudo apt install sasm",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载SASM的命令是sudo apt remove --purge sasm。",
+          "qas": [
+            {
+              "question": "如何卸载SASM？",
+              "id": "5-331-8",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge sasm",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SASM的维基百科（英文）链接是https://en.wikipedia.org/wiki/SASM。",
+          "qas": [
+            {
+              "question": "SASM的英文维基百科链接是什么？",
+              "id": "5-331-9",
+              "answers": [
+                {
+                  "text": "https://en.wikipedia.org/wiki/SASM",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SASM项目主页链接是https://dman95.github.io/SASM/english.html。",
+          "qas": [
+            {
+              "question": "SASM的项目主页链接是什么？",
+              "id": "5-331-10",
+              "answers": [
+                {
+                  "text": "https://dman95.github.io/SASM/english.html",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

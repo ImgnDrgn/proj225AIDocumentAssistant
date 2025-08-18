@@ -1,0 +1,239 @@
+{
+  "data": [
+    {
+      "title": "Systemd",
+      "paragraphs": [
+        {
+          "context": "Systemd是用户级应用程序，包含完整软件包，配置文件在/etc/systemd，配置工具命令在/bin、/sbin，备用配置文件在/lib/systemd。",
+          "qas": [
+            {
+              "question": "Systemd的配置文件位于哪个目录？",
+              "id": "5-444-1",
+              "answers": [
+                {
+                  "text": "/etc/systemd",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "Systemd的配置工具命令在哪些目录下？",
+              "id": "5-444-2",
+              "answers": [
+                {
+                  "text": "/bin、/sbin",
+                  "answer_start": 63
+                }
+              ]
+            },
+            {
+              "question": "Systemd的备用配置文件位于哪里？",
+              "id": "5-444-3",
+              "answers": [
+                {
+                  "text": "/lib/systemd",
+                  "answer_start": 81
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Systemd提供强大命令行工具systemctl，也提供service、chkconfig命令，本质重定向至systemctl。",
+          "qas": [
+            {
+              "question": "Systemd提供的强大命令行工具是什么？",
+              "id": "5-444-4",
+              "answers": [
+                {
+                  "text": "systemctl",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "service、chkconfig命令本质上会被重定向至哪个命令？",
+              "id": "5-444-5",
+              "answers": [
+                {
+                  "text": "systemctl",
+                  "answer_start": 64
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过systemctl启动服务用start选项，.service后缀可省略，如systemctl start lightdm。",
+          "qas": [
+            {
+              "question": "如何通过systemctl启动服务？",
+              "id": "5-444-6",
+              "answers": [
+                {
+                  "text": "使用start选项，如systemctl start 服务名（.service后缀可省略）",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "启动lightdm服务的命令是什么？",
+              "id": "5-444-7",
+              "answers": [
+                {
+                  "text": "systemctl start lightdm",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重启服务可用restart（运行则重启，未运行则启动）、try-start（仅运行时重启）、reload（重新加载配置文件）选项。",
+          "qas": [
+            {
+              "question": "systemctl的restart选项有什么作用？",
+              "id": "5-444-8",
+              "answers": [
+                {
+                  "text": "若服务正在运行中，则重启服务，若服务不在运行中，则会启动",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "哪个选项只会在服务已经运行的情况下重启服务？",
+              "id": "5-444-9",
+              "answers": [
+                {
+                  "text": "try-start",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "如何重新加载服务的配置文件？",
+              "id": "5-444-10",
+              "answers": [
+                {
+                  "text": "使用systemctl的reload选项",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "停止正在启动的服务使用systemctl的stop选项，如systemctl stop lightdm。",
+          "qas": [
+            {
+              "question": "如何停止正在启动状态的服务？",
+              "id": "5-444-11",
+              "answers": [
+                {
+                  "text": "使用systemctl的stop选项",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启用服务（开机自启动）用enable，禁用用disable，不改变当前状态，重启后生效。",
+          "qas": [
+            {
+              "question": "如何设置服务开机自启动？",
+              "id": "5-444-12",
+              "answers": [
+                {
+                  "text": "使用systemctl的enable选项",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "启用或禁用服务后，服务当前状态会改变吗？",
+              "id": "5-444-13",
+              "answers": [
+                {
+                  "text": "不会，将会在系统重新启动时发挥作用",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看服务运行状态使用systemctl的status选项，如systemctl status lightdm。",
+          "qas": [
+            {
+              "question": "如何观察一个服务的运行状态？",
+              "id": "5-444-14",
+              "answers": [
+                {
+                  "text": "使用systemctl的status选项",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "systemctl可管理电源：poweroff（关机）、reboot（重启）、suspend（待机）、hibernate（休眠）、hybrid-sleep（混合休眠）。",
+          "qas": [
+            {
+              "question": "关闭系统的命令是什么？",
+              "id": "5-444-15",
+              "answers": [
+                {
+                  "text": "systemctl poweroff",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "如何重启系统？",
+              "id": "5-444-16",
+              "answers": [
+                {
+                  "text": "使用systemctl reboot命令",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "question": "进入待机模式的命令是什么？",
+              "id": "5-444-17",
+              "answers": [
+                {
+                  "text": "systemctl suspend",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "question": "哪个命令可以进入休眠模式？",
+              "id": "5-444-18",
+              "answers": [
+                {
+                  "text": "systemctl hibernate",
+                  "answer_start": 77
+                }
+              ]
+            },
+            {
+              "question": "如何进入混合休眠模式？",
+              "id": "5-444-19",
+              "answers": [
+                {
+                  "text": "使用systemctl hybrid-sleep命令",
+                  "answer_start": 96
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

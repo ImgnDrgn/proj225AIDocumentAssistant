@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "Transmission-1",
+      "paragraphs": [
+        {
+          "context": "Transmission是一个BitTorrent客户端软件，它支持速度限制、制作种子、远程控制、磁力链接、数据加密、损坏修复、数据来源交换等功能。",
+          "qas": [
+            {
+              "id": "5-83-1",
+              "question": "Transmission是什么？",
+              "answers": [
+                {
+                  "text": "Transmission是一个BitTorrent客户端软件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-83-2",
+              "question": "Transmission属于什么类型的软件？",
+              "answers": [
+                {
+                  "text": "BitTorrent客户端软件",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-83-3",
+              "question": "Transmission支持哪些功能？",
+              "answers": [
+                {
+                  "text": "速度限制、制作种子、远程控制、磁力链接、数据加密、损坏修复、数据来源交换等功能",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install transmission",
+          "qas": [
+            {
+              "id": "5-83-4",
+              "question": "如何安装Transmission？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install transmission",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove transmission",
+          "qas": [
+            {
+              "id": "5-83-5",
+              "question": "如何卸载Transmission？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove transmission",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/t/transmission/",
+          "qas": [
+            {
+              "id": "5-83-6",
+              "question": "Transmission的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/t/transmission/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

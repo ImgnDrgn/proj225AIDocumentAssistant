@@ -1,0 +1,399 @@
+{
+  "data": [
+    {
+      "title": "软件通用配置",
+      "paragraphs": [
+        {
+          "context": "本条目简单的介绍Linux下通用的软件配置文件知识。",
+          "qas": [
+            {
+              "id": "5-419-1",
+              "question": "本条目介绍了什么内容？",
+              "answers": [
+                {
+                  "text": "Linux下通用的软件配置文件知识",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-419-2",
+              "question": "本条目简单介绍了什么系统下的通用软件配置文件知识？",
+              "answers": [
+                {
+                  "text": "Linux",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件配置主要分用户设置（特定用户配置）和全局设置（系统全局配置），其中用户设置对应的目录为 ~/ 、~/.config ；注释：~/ 等于 /home/你的账户名字/。",
+          "qas": [
+            {
+              "id": "5-419-3",
+              "question": "软件配置主要分为哪两类？",
+              "answers": [
+                {
+                  "text": "用户设置（特定用户配置）和全局设置（系统全局配置）",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-419-4",
+              "question": "软件配置中用户设置（特定用户配置）对应的目录有哪些？",
+              "answers": [
+                {
+                  "text": "~/ 、~/.config",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "5-419-5",
+              "question": "~/ 等于什么路径？",
+              "answers": [
+                {
+                  "text": "/home/你的账户名字/",
+                  "answer_start": 48
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件配置的全局设置（系统全局配置）对应的目录为 /usr/share 。",
+          "qas": [
+            {
+              "id": "5-419-6",
+              "question": "软件配置中全局设置（系统全局配置）对应的目录是什么？",
+              "answers": [
+                {
+                  "text": "/usr/share",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "备份amule程序的用户配置，只需备份~/.amule文件即可；部分程序配置在~/.config下，例如备份chromium程序的用户配置需备份~/.config/.chromium 文件。",
+          "qas": [
+            {
+              "id": "5-419-7",
+              "question": "备份amule程序的用户配置需要备份哪个文件？",
+              "answers": [
+                {
+                  "text": "~/.amule文件",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-419-8",
+              "question": "备份chromium程序的用户配置需要备份哪个文件？",
+              "answers": [
+                {
+                  "text": "~/.config/.chromium 文件",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "部分程序配置出问题导致程序无法运行时，只需删除其配置使其恢复到初始状态；需在~/.下的隐藏文件和~/.config下的文件中寻找该程序的配置文件目录。",
+          "qas": [
+            {
+              "id": "5-419-9",
+              "question": "部分程序配置出问题导致无法运行时，如何使其恢复到初始状态？",
+              "answers": [
+                {
+                  "text": "删除其配置",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-419-10",
+              "question": "程序配置出问题时，需在哪些位置寻找该程序的配置文件目录？",
+              "answers": [
+                {
+                  "text": "~/.下的隐藏文件和~/.config下的文件",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户主目录下的隐藏文件夹类配置文件中，*.cache* 是程序缓存，*.config* 是绝大部分配置文件的存放地，*.dbus* 是dbus服务的文件。",
+          "qas": [
+            {
+              "id": "5-419-11",
+              "question": "用户主目录下的隐藏文件夹类配置文件中，*.cache* 是什么？",
+              "answers": [
+                {
+                  "text": "程序缓存",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "5-419-12",
+              "question": "用户主目录下的隐藏文件夹类配置文件中，*.config* 是哪里的存放地？",
+              "answers": [
+                {
+                  "text": "绝大部分配置文件",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-419-13",
+              "question": "用户主目录下的隐藏文件夹类配置文件中，*.dbus* 是什么文件？",
+              "answers": [
+                {
+                  "text": "dbus服务的文件",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "id": "5-419-14",
+              "question": "哪个文件夹存放绝大多数配置文件？",
+              "answers": [
+                {
+                  "text": ".config",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户主目录下的隐藏文件夹类配置文件中，*.gconf* 是gnome环境的配置，*.gnome2* 是gnome2的配置文件，*.gvfs* 是GNOME桌面系统的虚拟文件系统配置。",
+          "qas": [
+            {
+              "id": "5-419-15",
+              "question": "用户主目录下的隐藏文件夹类配置文件中，*.gconf* 是什么的配置？",
+              "answers": [
+                {
+                  "text": "gnome环境",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "5-419-16",
+              "question": "用户主目录下的隐藏文件夹类配置文件中，*.gnome2* 是什么的配置文件？",
+              "answers": [
+                {
+                  "text": "gnome2",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-419-17",
+              "question": "用户主目录下的隐藏文件夹类配置文件中，*.gvfs* 是什么的配置？",
+              "answers": [
+                {
+                  "text": "GNOME桌面系统的虚拟文件系统",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户主目录下的隐藏文件类配置文件中，*.bash_logout* 是用户注销后读取的shell配置文件（默认bash shell），*.bashrc* 是包含用户专用shell信息的文件，用户登录及每次打开新shell时会被读取（默认bash shell）。",
+          "qas": [
+            {
+              "id": "5-419-18",
+              "question": "用户主目录下的隐藏文件类配置文件中，*.bash_logout* 是什么文件？",
+              "answers": [
+                {
+                  "text": "用户注销后读取的shell配置文件（默认bash shell）",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "5-419-19",
+              "question": "用户主目录下的隐藏文件类配置文件中，*.bashrc* 包含什么信息？",
+              "answers": [
+                {
+                  "text": "用户的专用shell信息",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "5-419-20",
+              "question": "用户主目录下的*.bashrc* 文件在什么情况下会被读取？",
+              "answers": [
+                {
+                  "text": "当用户登录时以及每次打开新的shell时",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户主目录下的隐藏文件类配置文件中，*.dlockpid* 用于锁定个人识别装置（personal identification device），*.dmrc* 是GDM会话语言配置文件，记录GDM/KDM登入桌面时的语言。",
+          "qas": [
+            {
+              "id": "5-419-21",
+              "question": "用户主目录下的*.dlockpid* 文件有什么作用？",
+              "answers": [
+                {
+                  "text": "锁定个人识别装置（personal identification device）",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "5-419-22",
+              "question": "用户主目录下的*.dmrc* 是什么配置文件？",
+              "answers": [
+                {
+                  "text": "GDM会话语言配置文件",
+                  "answer_start": 58
+                }
+              ]
+            },
+            {
+              "id": "5-419-23",
+              "question": "用户主目录下的*.dmrc* 文件记录了什么内容？",
+              "answers": [
+                {
+                  "text": "GDM/KDM登入桌面时的语言",
+                  "answer_start": 74
+                }
+              ]
+            },
+            {
+              "id": "5-419-24",
+              "question": ".dmrc文件的功能是什么？",
+              "answers": [
+                {
+                  "text": "记录GDM/KDM登入桌面时的语言配置",
+                  "answer_start": 58
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户主目录下的隐藏文件类配置文件中，*.ICEauthority* 和.dmrc一起属于GDM会话语言配置文件，*.profile* 在用户登录时会被读取以设置用户环境变量。",
+          "qas": [
+            {
+              "id": "5-419-25",
+              "question": "用户主目录下的*.ICEauthority* 文件属于什么类型的配置文件？",
+              "answers": [
+                {
+                  "text": "GDM会话语言配置文件（和.dmrc一起）",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "5-419-26",
+              "question": "用户主目录下的*.profile* 文件在什么情况下会被读取？",
+              "answers": [
+                {
+                  "text": "当用户登录时",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "id": "5-419-27",
+              "question": "用户主目录下的*.profile* 文件的作用是什么？",
+              "answers": [
+                {
+                  "text": "设置用户环境变量",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户主目录下的隐藏文件类配置文件中，*.Xauthority* 是startx的记录文件，*.xinputrc* 和用户环境变量相关，*.xsession-errors* 是X会话的错误日志。",
+          "qas": [
+            {
+              "id": "5-419-28",
+              "question": "用户主目录下的*.Xauthority* 文件是什么的记录文件？",
+              "answers": [
+                {
+                  "text": "startx",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "5-419-29",
+              "question": "用户主目录下的*.xinputrc* 文件与什么相关？",
+              "answers": [
+                {
+                  "text": "用户环境变量",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "5-419-30",
+              "question": "用户主目录下的*.xsession-errors* 文件是什么？",
+              "answers": [
+                {
+                  "text": "X会话的错误日志",
+                  "answer_start": 58
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "清除残余配置文件可在终端执行命令：dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P ；若执行后报错‘dpkg: error: --purge 需要至少一个软件包名作为参数...’，证明系统中没有残留配置文件。",
+          "qas": [
+            {
+              "id": "5-419-31",
+              "question": "清除残余配置文件需在终端执行什么命令？",
+              "answers": [
+                {
+                  "text": "dpkg -l |grep ^rc|awk '{print $2}' |sudo xargs dpkg -P",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "5-419-32",
+              "question": "执行清除残余配置文件的命令后出现‘dpkg: error: --purge 需要至少一个软件包名作为参数...’的错误，说明什么？",
+              "answers": [
+                {
+                  "text": "系统中没有残留配置文件",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "id": "5-419-33",
+              "question": "执行命令后未报错说明什么？",
+              "answers": [
+                {
+                  "text": "系统中没有残留配置文件了",
+                  "answer_start": 64
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

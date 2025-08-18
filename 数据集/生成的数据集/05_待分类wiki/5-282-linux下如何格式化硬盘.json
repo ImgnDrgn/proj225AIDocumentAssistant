@@ -1,0 +1,229 @@
+{
+  "data": [
+    {
+      "title": "linux下如何格式化硬盘",
+      "paragraphs": [
+        {
+          "context": "硬盘是块设备，可划分为多个分区，分区格式化后在我的电脑可见。",
+          "qas": [
+            {
+              "question": "硬盘在电脑中属于什么设备类型？",
+              "id": "5-282-1",
+              "answers": [
+                {
+                  "text": "块设备",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "question": "硬盘的分区经过什么操作后可在我的电脑中看到？",
+              "id": "5-282-2",
+              "answers": [
+                {
+                  "text": "格式化",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "插入硬盘后，用lsblk命令查看系统识别的块设备。",
+          "qas": [
+            {
+              "question": "插入硬盘后，如何查看系统是否识别了硬盘？",
+              "id": "5-282-3",
+              "answers": [
+                {
+                  "text": "使用lsblk命令",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fdisk /dev/sda可对sda块设备进行分区，m查看帮助，F看剩余未分区空间，p查看现有分区。",
+          "qas": [
+            {
+              "question": "如何对/dev/sda块设备进行分区？",
+              "id": "5-282-4",
+              "answers": [
+                {
+                  "text": "使用fdisk /dev/sda命令",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "在fdisk命令中，按哪个键可以查看帮助菜单？",
+              "id": "5-282-5",
+              "answers": [
+                {
+                  "text": "m",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "在fdisk命令中，如何查看硬盘剩余的未分区空间大小？",
+              "id": "5-282-6",
+              "answers": [
+                {
+                  "text": "按F键",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "在fdisk命令中，用什么命令查看现在有几个分区？",
+              "id": "5-282-7",
+              "answers": [
+                {
+                  "text": "p",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在fdisk中，g命令创建新的GPT分区表，n命令添加新分区，w命令保存修改。",
+          "qas": [
+            {
+              "question": "在fdisk中，如何创建新的GPT分区表？",
+              "id": "5-282-8",
+              "answers": [
+                {
+                  "text": "使用g命令",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "在fdisk中，添加新分区使用什么命令？",
+              "id": "5-282-9",
+              "answers": [
+                {
+                  "text": "n",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "在fdisk中，如何保存所有修改？",
+              "id": "5-282-10",
+              "answers": [
+                {
+                  "text": "输入w命令",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "分区需制作文件系统才能挂载，Linux常用ext4，用mkfs.ext4 /dev/sda1格式化。",
+          "qas": [
+            {
+              "question": "分区需要经过什么操作才能被操作系统挂载？",
+              "id": "5-282-11",
+              "answers": [
+                {
+                  "text": "制作文件系统",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "question": "Linux最新版本上特性比较均衡的文件系统是什么？",
+              "id": "5-282-12",
+              "answers": [
+                {
+                  "text": "ext4",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "如何格式化/dev/sda1为ext4文件系统？",
+              "id": "5-282-13",
+              "answers": [
+                {
+                  "text": "使用sudo mkfs.ext4 /dev/sda1命令",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建空目录后用mount挂载分区，如mount /dev/sda1 /home/pi/data/，df -h查看挂载情况。",
+          "qas": [
+            {
+              "question": "如何挂载格式化好的分区？",
+              "id": "5-282-14",
+              "answers": [
+                {
+                  "text": "创建空目录后使用mount命令，如mount /dev/sda1 /home/pi/data/",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "用什么命令可以查看挂载情况？",
+              "id": "5-282-15",
+              "answers": [
+                {
+                  "text": "df -h",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在/etc/fstab文件追加配置实现开机自动挂载，格式为/dev/sda1 /home/pi/data ext4 defaults 0 1，修改前3个参数。",
+          "qas": [
+            {
+              "question": "如何实现分区开机自动挂载？",
+              "id": "5-282-16",
+              "answers": [
+                {
+                  "text": "在/etc/fstab文件末尾追加一行配置",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "fstab文件中自动挂载配置需要修改哪几个参数？",
+              "id": "5-282-17",
+              "answers": [
+                {
+                  "text": "前3个参数，分别是分区、挂载目录、文件系统类型",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改fstab后，执行sudo mount -a检查配置是否正确，无报错则正常。",
+          "qas": [
+            {
+              "question": "修改fstab配置后，如何检查配置是否正确？",
+              "id": "5-282-18",
+              "answers": [
+                {
+                  "text": "执行sudo mount -a重新挂载所有目录，无报错则正确",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

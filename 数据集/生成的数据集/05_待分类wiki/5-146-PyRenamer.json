@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "PyRenamer",
+      "paragraphs": [
+        {
+          "context": "pyRenamer是一款文件批量改名工具。支持匹配模式、查找替换、插入删除等方式修改名称。还可以根据照片的 EXIF信息和音乐的ID3标签来更改文件名。安装命令为sudo apt-get install pyrenamer，卸载命令为sudo apt-get remove pyrenamer，其仓库地址为http://packages.deepin.com/deepin/pool/main/p/pyrenamer/",
+          "qas": [
+            {
+              "id": "5-146-1",
+              "question": "pyRenamer是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "文件批量改名工具",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-146-2",
+              "question": "pyRenamer支持哪些改名方式？",
+              "answers": [
+                {
+                  "text": "匹配模式、查找替换、插入删除等方式，还可以根据照片的 EXIF信息和音乐的ID3标签来更改文件名",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "5-146-3",
+              "question": "如何安装pyRenamer？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install pyrenamer",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "5-146-4",
+              "question": "卸载pyRenamer的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove pyrenamer",
+                  "answer_start": 119
+                }
+              ]
+            },
+            {
+              "id": "5-146-5",
+              "question": "pyRenamer的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/p/pyrenamer/",
+                  "answer_start": 154
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

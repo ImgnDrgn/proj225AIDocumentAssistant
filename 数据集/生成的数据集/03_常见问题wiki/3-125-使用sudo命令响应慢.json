@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "使用sudo命令响应慢",
+      "paragraphs": [
+        {
+          "context": "终端使用sudo命令时，输入密码的提示出现速度变慢。",
+          "qas": [
+            {
+              "question": "sudo命令出现什么问题？",
+              "id": "3-125-1",
+              "answers": [
+                {
+                  "text": "输入密码的提示出现的速度变慢",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解决sudo命令响应慢的办法：修改/etc/hosts文件，添加127.0.1.1 host_name（host_name为用户名）。",
+          "qas": [
+            {
+              "question": "如何解决sudo命令响应慢的问题？",
+              "id": "3-125-2",
+              "answers": [
+                {
+                  "text": "修改/etc/hosts文件，添加127.0.1.1 host_name（host_name为用户名）",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "解决sudo命令响应慢需要修改哪个文件？",
+              "id": "3-125-3",
+              "answers": [
+                {
+                  "text": "/etc/hosts",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "question": "在/etc/hosts文件中需要添加什么内容？",
+              "id": "3-125-4",
+              "answers": [
+                {
+                  "text": "127.0.1.1 host_name（其中host_name为用户名）",
+                  "answer_start": 44
+                }
+              ]
+            },
+            {
+              "question": "添加内容中的host_name指的是什么？",
+              "id": "3-125-5",
+              "answers": [
+                {
+                  "text": "用户名",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改/etc/hosts文件可使用命令sudo vi /etc/hosts。",
+          "qas": [
+            {
+              "question": "使用什么命令修改/etc/hosts文件？",
+              "id": "3-125-6",
+              "answers": [
+                {
+                  "text": "sudo vi /etc/hosts",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

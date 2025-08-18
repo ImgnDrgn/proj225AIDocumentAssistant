@@ -1,0 +1,144 @@
+{
+  "data": [
+    {
+      "title": "YEd_Graph_Editor",
+      "paragraphs": [
+        {
+          "context": "yEd Graph Editor是一款流程图绘制工具，可以很方便的创建流程图， UML 图表，意向图以及其它类型的图表，图形和网络结构图。内置丰富的素材和工具，支持自动布局功能，可以轻松导入XML、GEDCOM、GML等格式文件，也可以将内容保存，打印或者导出为多种主流格式。",
+          "qas": [
+            {
+              "id": "5-102-1",
+              "question": "yEd Graph Editor是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "流程图绘制工具",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "5-102-2",
+              "question": "yEd Graph Editor可以创建哪些类型的图表？",
+              "answers": [
+                {
+                  "text": "流程图， UML 图表，意向图以及其它类型的图表，图形和网络结构图",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "id": "5-102-3",
+              "question": "yEd Graph Editor内置了什么？",
+              "answers": [
+                {
+                  "text": "丰富的素材和工具",
+                  "answer_start": 101
+                }
+              ]
+            },
+            {
+              "id": "5-102-4",
+              "question": "yEd Graph Editor支持什么功能？",
+              "answers": [
+                {
+                  "text": "自动布局功能",
+                  "answer_start": 113
+                }
+              ]
+            },
+            {
+              "id": "5-102-5",
+              "question": "yEd Graph Editor可以导入哪些格式的文件？",
+              "answers": [
+                {
+                  "text": "XML、GEDCOM、GML等格式文件",
+                  "answer_start": 130
+                }
+              ]
+            },
+            {
+              "id": "5-102-6",
+              "question": "yEd Graph Editor可以对内容进行哪些处理？",
+              "answers": [
+                {
+                  "text": "保存，打印或者导出为多种主流格式",
+                  "answer_start": 156
+                }
+              ]
+            },
+            {
+              "id": "5-102-7",
+              "question": "yEd Graph Editor提供哪些内置功能？",
+              "answers": [
+                {
+                  "text": "内置丰富的素材和工具，支持自动布局功能，可以轻松导入XML、GEDCOM、GML等格式文件，也可以将内容保存，打印或者导出为多种主流格式",
+                  "answer_start": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install yed",
+          "qas": [
+            {
+              "id": "5-102-8",
+              "question": "安装yEd Graph Editor的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install yed",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove yed",
+          "qas": [
+            {
+              "id": "5-102-9",
+              "question": "卸载yEd Graph Editor的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove yed",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/contrib/y/yed/",
+          "qas": [
+            {
+              "id": "5-102-10",
+              "question": "yEd Graph Editor的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/contrib/y/yed/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "相关链接: 维基百科",
+          "qas": [
+            {
+              "id": "5-102-11",
+              "question": "yEd Graph Editor的相关链接包括哪些？",
+              "answers": [
+                {
+                  "text": "维基百科",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

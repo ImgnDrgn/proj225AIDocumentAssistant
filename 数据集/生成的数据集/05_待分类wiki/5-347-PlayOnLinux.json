@@ -1,0 +1,95 @@
+{
+  "title": "PlayOnLinux",
+  "paragraphs": [
+    {
+      "context": "PlayOnLinux是一款Wine的前端程序，它可以实现在Linux和Mac OS X上运行Windows应用程序，支持使用Dosbox来安装基于Dos的程序和游戏。",
+      "qas": [
+        {
+          "question": "PlayOnLinux是什么程序的前端？",
+          "id": "5-347-1",
+          "answers": [
+            {
+              "text": "Wine",
+              "answer_start": 11
+            }
+          ]
+        },
+        {
+          "question": "PlayOnLinux可以在哪些系统上运行Windows应用程序？",
+          "id": "5-347-2",
+          "answers": [
+            {
+              "text": "Linux和Mac OS X",
+              "answer_start": 26
+            }
+          ]
+        },
+        {
+          "question": "PlayOnLinux支持使用什么来安装基于Dos的程序和游戏？",
+          "id": "5-347-3",
+          "answers": [
+            {
+              "text": "Dosbox",
+              "answer_start": 62
+            }
+          ]
+        },
+        {
+          "question": "PlayOnLinux支持安装哪种基础的程序和游戏？",
+          "id": "5-347-4",
+          "answers": [
+            {
+              "text": "基于Dos的程序和游戏",
+              "answer_start": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "安装PlayOnLinux的命令是`sudo apt-get install playonlinux`",
+      "qas": [
+        {
+          "question": "安装PlayOnLinux的命令是什么？",
+          "id": "5-347-5",
+          "answers": [
+            {
+              "text": "sudo apt-get install playonlinux",
+              "answer_start": 17
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "卸载PlayOnLinux的命令是`sudo apt-get remove playonlinux`",
+      "qas": [
+        {
+          "question": "卸载PlayOnLinux的命令是什么？",
+          "id": "5-347-6",
+          "answers": [
+            {
+              "text": "sudo apt-get remove playonlinux",
+              "answer_start": 17
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "PlayOnLinux的仓库地址是http://packages.deepin.com/deepin/pool/contrib/p/playonlinux/",
+      "qas": [
+        {
+          "question": "PlayOnLinux的仓库地址是什么？",
+          "id": "5-347-7",
+          "answers": [
+            {
+              "text": "http://packages.deepin.com/deepin/pool/contrib/p/playonlinux/",
+              "answer_start": 22
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

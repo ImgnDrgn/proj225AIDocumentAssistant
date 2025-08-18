@@ -1,0 +1,354 @@
+{
+  "data": [
+    {
+      "title": "Firefox浏览器",
+      "paragraphs": [
+        {
+          "context": "Firefox火狐浏览器是安全高效的浏览器，有速度快、隐私保护等特性。",
+          "qas": [
+            {
+              "question": "Firefox浏览器有哪些特性？",
+              "id": "4-24-1",
+              "answers": [
+                {
+                  "text": "速度快、隐私保护、丰富的插件资源、不同设备之间同步数据、分页浏览、个性化定制",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Firefox深度桌面版的命令是sudo apt-get install firefox-dde。",
+          "qas": [
+            {
+              "question": "如何安装Firefox深度桌面版？",
+              "id": "4-24-2",
+              "answers": [
+                {
+                  "text": "sudo apt-get install firefox-dde",
+                  "answer_start": 28
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Firefox延长支持版用sudo apt-get remove firefox-esr。",
+          "qas": [
+            {
+              "question": "卸载Firefox延长支持版的命令是什么？",
+              "id": "4-24-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove firefox-esr",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Firefox中文语言包的命令为sudo apt-get install firefox-l10n-zh-cn。",
+          "qas": [
+            {
+              "question": "怎样安装Firefox中文语言包？",
+              "id": "4-24-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install firefox-l10n-zh-cn",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chrome浏览器",
+      "paragraphs": [
+        {
+          "context": "Chrome谷歌浏览器有稳定版、开发版、测试版及其他版本，Stable供普通用户使用。",
+          "qas": [
+            {
+              "question": "Chrome浏览器有哪些版本？",
+              "id": "4-24-5",
+              "answers": [
+                {
+                  "text": "稳定版(Stable)、开发版(Dev)、测试版(Beta)以及其他版本",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Chrome测试版的命令是sudo apt-get install google-chrome-beta。",
+          "qas": [
+            {
+              "question": "如何安装Chrome测试版？",
+              "id": "4-24-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get install google-chrome-beta",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载chrome-dde的命令为sudo apt-get remove chrome-dde。",
+          "qas": [
+            {
+              "question": "卸载chrome-dde用什么命令？",
+              "id": "4-24-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove chrome-dde",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "TeamViewer",
+      "paragraphs": [
+        {
+          "context": "TeamViewer用于远程控制、桌面共享和文件传输，有即时远程控制等功能。",
+          "qas": [
+            {
+              "question": "TeamViewer的功能有哪些？",
+              "id": "4-24-8",
+              "answers": [
+                {
+                  "text": "即时远程控制、远程维护、远程访问、家庭办公、在线会议/演示",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装TeamViewer的命令是sudo apt-get install teamviewer。",
+          "qas": [
+            {
+              "question": "如何安装TeamViewer？",
+              "id": "4-24-9",
+              "answers": [
+                {
+                  "text": "sudo apt-get install teamviewer",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装官网下载的TeamViewer deb包用sudo dpkg -i xxx.deb命令。",
+          "qas": [
+            {
+              "question": "安装官网下载的TeamViewer deb包用什么命令？",
+              "id": "4-24-10",
+              "answers": [
+                {
+                  "text": "sudo dpkg -i xxx.deb",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "QQ",
+      "paragraphs": [
+        {
+          "context": "QQ是腾讯开发的即时通信软件，支持在线聊天、视频电话等功能。",
+          "qas": [
+            {
+              "question": "QQ支持哪些功能？",
+              "id": "4-24-11",
+              "answers": [
+                {
+                  "text": "在线聊天、视频电话、点对点断点续传文件、网络硬盘",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装QQ的命令为sudo apt-get install deepin.com.qq.im。",
+          "qas": [
+            {
+              "question": "如何安装QQ？",
+              "id": "4-24-12",
+              "answers": [
+                {
+                  "text": "sudo apt-get install deepin.com.qq.im",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "FileZilla",
+      "paragraphs": [
+        {
+          "context": "FileZilla是跨平台的FTP、FTPS和SFTP客户端，有断点续传等功能。",
+          "qas": [
+            {
+              "question": "FileZilla支持哪些协议？",
+              "id": "4-24-13",
+              "answers": [
+                {
+                  "text": "FTP、FTPS和SFTP",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装FileZilla的命令是sudo apt-get install filezilla。",
+          "qas": [
+            {
+              "question": "安装FileZilla用什么命令？",
+              "id": "4-24-14",
+              "answers": [
+                {
+                  "text": "sudo apt-get install filezilla",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "雷鸟邮件",
+      "paragraphs": [
+        {
+          "context": "雷鸟邮件是邮件客户端，支持IMAP、POP协议及HTML邮件格式。",
+          "qas": [
+            {
+              "question": "雷鸟邮件支持哪些协议？",
+              "id": "4-24-15",
+              "answers": [
+                {
+                  "text": "IMAP 、POP邮件协议",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载雷鸟邮件的命令为sudo apt-get remove thunderbird。",
+          "qas": [
+            {
+              "question": "如何卸载雷鸟邮件？",
+              "id": "4-24-16",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove thunderbird",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Transmission",
+      "paragraphs": [
+        {
+          "context": "Transmission是BitTorrent客户端，支持速度限制、制作种子等功能。",
+          "qas": [
+            {
+              "question": "Transmission有哪些功能？",
+              "id": "4-24-17",
+              "answers": [
+                {
+                  "text": "速度限制、制作种子、远程控制、磁力链接、数据加密、损坏修复、数据来源交换",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "qBittorrent",
+      "paragraphs": [
+        {
+          "context": "qBittorrent是轻量级BitTorrent客户端，支持文件上传下载等功能。",
+          "qas": [
+            {
+              "question": "qBittorrent支持什么功能？",
+              "id": "4-24-18",
+              "answers": [
+                {
+                  "text": "文件上传/下载、支持DHT网络、数据交换、文件选择性下载、预览媒体文件、支持Unicode、支持代理连接、远程控制",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "BearyChat",
+      "paragraphs": [
+        {
+          "context": "BearyChat是团队沟通工具，支持创建讨论组、消息搜索等功能。",
+          "qas": [
+            {
+              "question": "BearyChat有哪些功能？",
+              "id": "4-24-19",
+              "answers": [
+                {
+                  "text": "自主创建公开或私密讨论组、历史消息全局搜索、文件存储管理、重要信息收藏、第三方服务集成",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "安司密信",
+      "paragraphs": [
+        {
+          "context": "安司密信是社交应用，支持即时信息发送、网络通话，有绝密会话等功能。",
+          "qas": [
+            {
+              "question": "安司密信有什么功能？",
+              "id": "4-24-20",
+              "answers": [
+                {
+                  "text": "即时信息发送以及网络通话功能，所有数据都经过安司密盾的高强度加密，支持绝密会话、阅后即焚、远程销毁",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

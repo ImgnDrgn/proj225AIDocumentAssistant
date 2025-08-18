@@ -1,0 +1,184 @@
+{
+  "data": [
+    {
+      "title": "Crossover运行Windows程序",
+      "paragraphs": [
+        {
+          "context": "Crossover是一款可以在Linux中运行Windows软件和游戏的工具。Crossover已经内置了常用的Windows程序，如Microsoft Office系列、Adobe Photoshop系列、魔兽世界等。使用Crossover，您不再需要Windows授权，不再需要双系统重启动，不再需要虚拟机，Windows程序就能与您的Linux系统无缝整合。",
+          "qas": [
+            {
+              "id": "5-344-1",
+              "question": "Crossover的主要功能是什么？",
+              "answers": [
+                {
+                  "text": "在Linux中运行Windows软件和游戏",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "5-344-2",
+              "question": "使用Crossover需要Windows授权吗？",
+              "answers": [
+                {
+                  "text": "不需要",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "id": "5-344-3",
+              "question": "Crossover支持哪些常用Windows程序？",
+              "answers": [
+                {
+                  "text": "Microsoft Office系列、Adobe Photoshop系列、魔兽世界",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "id": "5-344-4",
+              "question": "使用Crossover的三个主要优势是什么？",
+              "answers": [
+                {
+                  "text": "不再需要Windows授权，不再需要双系统重启动，不再需要虚拟机",
+                  "answer_start": 88
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install crossover\nsudo apt-get install crossover-15\nsudo apt-get install crossover-deepin",
+          "qas": [
+            {
+              "id": "5-344-5",
+              "question": "如何安装Crossover基础版？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install crossover",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-344-6",
+              "question": "Crossover-15的安装命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install crossover-15",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "5-344-7",
+              "question": "深度定制版Crossover如何安装？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install crossover-deepin",
+                  "answer_start": 64
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove crossover\nsudo apt-get remove crossover-15\nsudo apt-get remove crossover-deepin",
+          "qas": [
+            {
+              "id": "5-344-8",
+              "question": "卸载Crossover的通用命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove crossover",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-344-9",
+              "question": "卸载旧版本crossover-15的命令是？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove crossover-15",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "5-344-10",
+              "question": "卸载crossover-deepin的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove crossover-deepin",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/non-free/c/crossover/\nhttp://packages.deepin.com/deepin/pool/non-free/c/crossover-15/\nhttp://packages.deepin.com/deepin/pool/non-free/c/crossover-deepin/",
+          "qas": [
+            {
+              "id": "5-344-11",
+              "question": "Crossover基础版的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/c/crossover/",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-344-12",
+              "question": "在哪里可以找到crossover-15的安装包？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/c/crossover-15/",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "5-344-13",
+              "question": "crossover-deepin的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/c/crossover-deepin/",
+                  "answer_start": 126
+                }
+              ]
+            },
+            {
+              "id": "5-344-14",
+              "question": "深度定制版的仓库路径包含哪个关键词？",
+              "answers": [
+                {
+                  "text": "crossover-deepin",
+                  "answer_start": 176
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "求如何创建crossover的desktop文件",
+          "qas": [
+            {
+              "id": "5-344-15",
+              "question": "社区中哪个讨论主题涉及创建crossover的桌面文件？",
+              "answers": [
+                {
+                  "text": "求如何创建crossover的desktop文件",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

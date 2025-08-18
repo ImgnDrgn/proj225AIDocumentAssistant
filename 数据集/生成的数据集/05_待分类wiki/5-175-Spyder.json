@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "Spyder",
+      "paragraphs": [
+        {
+          "context": "Spyder是一个强大的交互式Python集成开发环境，它提供高级的代码编辑、交互测试、调试等特性，同时还可以模仿Matlab的“工作空间”的功能，根据自己的喜好调整它们的位置和大小。安装命令为sudo apt-get install spyder，卸载命令为sudo apt-get remove spyder，其仓库地址为http://packages.deepin.com/deepin/pool/main/s/spyder/",
+          "qas": [
+            {
+              "id": "5-175-1",
+              "question": "Spyder是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "强大的交互式Python集成开发环境",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-175-2",
+              "question": "Spyder提供哪些特性？",
+              "answers": [
+                {
+                  "text": "高级的代码编辑、交互测试、调试等特性，同时还可以模仿Matlab的“工作空间”的功能，根据自己的喜好调整它们的位置和大小",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "5-175-3",
+              "question": "安装Spyder的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install spyder",
+                  "answer_start": 96
+                }
+              ]
+            },
+            {
+              "id": "5-175-4",
+              "question": "卸载Spyder的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove spyder",
+                  "answer_start": 125
+                }
+              ]
+            },
+            {
+              "id": "5-175-5",
+              "question": "Spyder的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/spyder/",
+                  "answer_start": 154
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

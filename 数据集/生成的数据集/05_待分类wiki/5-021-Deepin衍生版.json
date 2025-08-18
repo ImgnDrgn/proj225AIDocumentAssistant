@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "Deepin衍生版",
+      "paragraphs": [
+        {
+          "context": "深度操作系统是注重易用体验和美观设计的Linux发行版，有深度商店等特色应用，支持30多种语言，下载量超4000万次，全球关注度前10。",
+          "qas": [
+            {
+              "question": "深度操作系统注重什么？",
+              "id": "5-21-1",
+              "answers": [
+                {
+                  "text": "易用的体验和美观的设计",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "深度操作系统有哪些特色应用？",
+              "id": "5-21-2",
+              "answers": [
+                {
+                  "text": "深度商店、深度文件管理器、深度终端、深度看图等",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "深度操作系统支持多少种语言？",
+              "id": "5-21-3",
+              "answers": [
+                {
+                  "text": "30多种",
+                  "answer_start": 55
+                }
+              ]
+            },
+            {
+              "question": "深度操作系统累计下载量超过多少次？",
+              "id": "5-21-4",
+              "answers": [
+                {
+                  "text": "4000万次",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "question": "深度操作系统在全球关注度排行榜位列第几？",
+              "id": "5-21-5",
+              "answers": [
+                {
+                  "text": "前10名",
+                  "answer_start": 80
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "部分主流Linux发行版集成深度桌面环境和应用，社区爱好者也将其移植到不同发行版。",
+          "qas": [
+            {
+              "question": "部分主流Linux发行版对深度桌面环境和应用做了什么？",
+              "id": "5-21-6",
+              "answers": [
+                {
+                  "text": "直接集成",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "谁协助移植深度桌面环境和应用到不同发行版？",
+              "id": "5-21-7",
+              "answers": [
+                {
+                  "text": "全球的社区爱好者",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "基于DDE的发行版有Manjaro Deepin、BigLinux、UbuntuDDE。",
+          "qas": [
+            {
+              "question": "有哪些基于DDE的发行版？",
+              "id": "5-21-8",
+              "answers": [
+                {
+                  "text": "Manjaro Deepin、BigLinux、UbuntuDDE",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "相关链接有《Deepin家族又添新成员，中国开源操作系统回馈世界》。",
+          "qas": [
+            {
+              "question": "关于Deepin的相关链接是什么？",
+              "id": "5-21-9",
+              "answers": [
+                {
+                  "text": "《Deepin家族又添新成员，中国开源操作系统回馈世界》",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

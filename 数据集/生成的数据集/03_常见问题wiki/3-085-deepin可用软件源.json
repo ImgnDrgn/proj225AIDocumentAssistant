@@ -1,0 +1,304 @@
+{
+  "data": [
+    {
+      "title": "deepin可用软件源",
+      "paragraphs": [
+        {
+          "context": "deepin系统源：deb https://community-packages.deepin.com/deepin/ apricot main contrib non-free，#deb-src开头的被注释未启用，是源代码仓库。",
+          "qas": [
+            {
+              "question": "deepin系统源的地址是什么？",
+              "id": "3-85-1",
+              "answers": [
+                {
+                  "text": "https://community-packages.deepin.com/deepin/",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "#deb-src开头的deepin系统源为何未启用？",
+              "id": "3-85-2",
+              "answers": [
+                {
+                  "text": "是源代码仓库，通常我们不需要源代码，所以默认不启用。",
+                  "answer_start": 69
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin nightly（不稳定版）系统源包含多个deb地址，如https://proposed-packages.deepin.com/dde-nightly/ bullseye main contrib non-free等。",
+          "qas": [
+            {
+              "question": "deepin nightly系统源的其中一个地址是什么？",
+              "id": "3-85-3",
+              "answers": [
+                {
+                  "text": "https://proposed-packages.deepin.com/dde-nightly/ bullseye main contrib non-free",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin应用商店源：deb https://com-store-packages.uniontech.com/appstore deepin appstore，内含微信等。",
+          "qas": [
+            {
+              "question": "deepin应用商店源的地址是什么？",
+              "id": "3-85-4",
+              "answers": [
+                {
+                  "text": "https://com-store-packages.uniontech.com/appstore",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "deepin应用商店源内含什么软件？",
+              "id": "3-85-5",
+              "answers": [
+                {
+                  "text": "微信等",
+                  "answer_start": 73
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "星火应用商店源：deb [by-hash=force] https://sucdn.jerrywang.top /，内含星火应用商店打包的微信等。",
+          "qas": [
+            {
+              "question": "星火应用商店源的地址是什么？",
+              "id": "3-85-6",
+              "answers": [
+                {
+                  "text": "https://sucdn.jerrywang.top",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "星火应用商店源包含什么？",
+              "id": "3-85-7",
+              "answers": [
+                {
+                  "text": "星火应用商店打包的微信等",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin打印机驱动源：deb https://community-packages.deepin.com/printer eagle non-free。",
+          "qas": [
+            {
+              "question": "deepin打印机驱动源的地址是什么？",
+              "id": "3-85-8",
+              "answers": [
+                {
+                  "text": "https://community-packages.deepin.com/printer",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启用i386架构命令：sudo dpkg --add-architecture i386，因很多wine应用是32位的。",
+          "qas": [
+            {
+              "question": "如何启用i386架构？",
+              "id": "3-85-9",
+              "answers": [
+                {
+                  "text": "sudo dpkg --add-architecture i386",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "为什么要启用i386架构？",
+              "id": "3-85-10",
+              "answers": [
+                {
+                  "text": "因为很多wine应用都是32位的，不启用i386架构就看不到。",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件源添加位置：/etc/apt/sources.list文件的末尾。",
+          "qas": [
+            {
+              "question": "软件源应添加到哪个文件的什么位置？",
+              "id": "3-85-11",
+              "answers": [
+                {
+                  "text": "/etc/apt/sources.list文件的末尾",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "导入缺失公钥命令：sudo apt-get update 2>&1 | tee /tmp/apt.tmp; cat /tmp/apt.tmp | grep 'NO_PUBKEY' | awk -F'NO_PUBKEY' '{print $2}' | sort | uniq | xargs sudo apt-key adv --keyserver keyserver.ubuntu.com --recv，需反复运行至无“NO_PUBKEY”提示。",
+          "qas": [
+            {
+              "question": "如何导入缺失的公钥？",
+              "id": "3-85-12",
+              "answers": [
+                {
+                  "text": "sudo apt-get update 2>&1 | tee /tmp/apt.tmp; cat /tmp/apt.tmp | grep 'NO_PUBKEY' | awk -F'NO_PUBKEY' '{print $2}' | sort | uniq | xargs sudo apt-key adv --keyserver keyserver.ubuntu.com --recv",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "导入公钥的命令需要运行到什么状态为止？",
+              "id": "3-85-13",
+              "answers": [
+                {
+                  "text": "直到“由于没有公钥，无法验证下列签名： NO_PUBKEY”不再出现。",
+                  "answer_start": 265
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更新软件包列表命令：sudo apt update，安装软件用sudo apt install。",
+          "qas": [
+            {
+              "question": "如何更新软件包列表？",
+              "id": "3-85-14",
+              "answers": [
+                {
+                  "text": "sudo apt update",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "用什么命令安装软件？",
+              "id": "3-85-15",
+              "answers": [
+                {
+                  "text": "sudo apt install",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "依赖问题可用aptitude，安装命令sudo apt install aptitude，32位软件包用sudo aptitude install 包名:i386，需注意方案是否删除软件包等。",
+          "qas": [
+            {
+              "question": "依赖关系问题可用什么命令解决？",
+              "id": "3-85-16",
+              "answers": [
+                {
+                  "text": "aptitude",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "如何安装aptitude？",
+              "id": "3-85-17",
+              "answers": [
+                {
+                  "text": "sudo apt install aptitude",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "question": "用aptitude安装32位软件包的命令格式是什么？",
+              "id": "3-85-18",
+              "answers": [
+                {
+                  "text": "sudo aptitude install 包名:i386",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "非deepin系统添加deepin源建议“用完就注释”，启用时不进行系统升级，或直接下载依赖包安装。",
+          "qas": [
+            {
+              "question": "非deepin系统添加deepin系统源的原则是什么？",
+              "id": "3-85-19",
+              "answers": [
+                {
+                  "text": "用完就注释",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "非deepin系统启用deepin系统源期间应避免什么操作？",
+              "id": "3-85-20",
+              "answers": [
+                {
+                  "text": "进行sudo apt upgrade或者任何形式的系统升级、系统更新。",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "新立得软件包管理器安装命令：sudo apt install synaptic，可在启动器找到并打开，选“源自”查看应用商店源软件包。",
+          "qas": [
+            {
+              "question": "如何安装新立得软件包管理器？",
+              "id": "3-85-21",
+              "answers": [
+                {
+                  "text": "sudo apt install synaptic",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "如何在新立得中查看应用商店源的软件包？",
+              "id": "3-85-22",
+              "answers": [
+                {
+                  "text": "在启动器找到“新立得软件包管理器”图标并打开，在左下角选择“源自”，然后选择应用商店源的地址。",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UOS家庭版软件源包含多个deb地址，如https://home-packages.chinauos.com/home plum main contrib non-free等。",
+          "qas": [
+            {
+              "question": "UOS家庭版软件源的其中一个地址是什么？",
+              "id": "3-85-23",
+              "answers": [
+                {
+                  "text": "https://home-packages.chinauos.com/home plum main contrib non-free",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

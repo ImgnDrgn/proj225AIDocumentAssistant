@@ -1,0 +1,264 @@
+{
+  "data": [
+    {
+      "title": "DDE-Dock插件",
+      "paragraphs": [
+        {
+          "context": "本页面收集了用于DDE-Dock的插件。dde-top-panel等由dde-dock衍生的dock/panel同样支持这些插件。",
+          "qas": [
+            {
+              "id": "3-2-1",
+              "question": "本页面收集了用于什么的插件？",
+              "answers": [
+                {
+                  "text": "DDE-Dock",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "3-2-2",
+              "question": "这个页面的内容是什么？",
+              "answers": [
+                {
+                  "text": "收集了用于DDE-Dock的插件",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "3-2-3",
+              "question": "哪些由dde-dock衍生的dock/panel支持这些插件？",
+              "answers": [
+                {
+                  "text": "dde-top-panel等",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用方法：下载、解压后，将.so文件拷贝至~/.local/lib/dde-top-panel/plugins或者~/.local/lib/dde-dock/plugins，后重启panel或dock即可。",
+          "qas": [
+            {
+              "id": "3-2-4",
+              "question": "DDE-Dock插件的使用步骤是什么？",
+              "answers": [
+                {
+                  "text": "下载、解压后，将.so文件拷贝至~/.local/lib/dde-top-panel/plugins或者~/.local/lib/dde-dock/plugins，后重启panel或dock即可",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "3-2-5",
+              "question": ".so文件需要拷贝到哪些目录？",
+              "answers": [
+                {
+                  "text": "~/.local/lib/dde-top-panel/plugins或者~/.local/lib/dde-dock/plugins",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "3-2-6",
+              "question": "拷贝.so文件后需要做什么操作？",
+              "answers": [
+                {
+                  "text": "重启panel或dock",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开发文档：官方文档链接为https://github.com/linuxdeepin/dde-dock/blob/master/plugins/plugin-guide/plugins-developer-guide.md。",
+          "qas": [
+            {
+              "id": "3-2-7",
+              "question": "DDE-Dock插件的官方开发文档链接是什么？",
+              "answers": [
+                {
+                  "text": "https://github.com/linuxdeepin/dde-dock/blob/master/plugins/plugin-guide/plugins-developer-guide.md",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dde-mpris2-plugin：支持音乐控制及歌词显示。论坛链接：https://bbs.deepin.org/zh/post/220429；repo链接：https://github.com/SeptemberHX/dde-mpris2-plugin。",
+          "qas": [
+            {
+              "id": "3-2-8",
+              "question": "dde-mpris2-plugin支持什么功能？",
+              "answers": [
+                {
+                  "text": "音乐控制及歌词显示",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "3-2-9",
+              "question": "dde-mpris2-plugin的论坛链接是什么？",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/zh/post/220429",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "3-2-10",
+              "question": "dde-mpris2-plugin的代码仓库链接是什么？",
+              "answers": [
+                {
+                  "text": "https://github.com/SeptemberHX/dde-mpris2-plugin",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dde-sys-monitor-plugin：deepin系统监控dock插件，可监控CPU使用率、内存使用率、swap使用率、上传下载总量、实时网速和电池放电功率，有文字模式和图表模式可选。论坛链接：https://bbs.deepin.org/zh/post/179425；repo链接：https://gitee.com/q77190858/dde-sys-monitor-plugin/。",
+          "qas": [
+            {
+              "id": "3-2-11",
+              "question": "dde-sys-monitor-plugin是什么类型的插件？",
+              "answers": [
+                {
+                  "text": "deepin系统监控dock插件",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "3-2-12",
+              "question": "dde-sys-monitor-plugin可以监控哪些内容？",
+              "answers": [
+                {
+                  "text": "CPU使用率、内存使用率、swap使用率、上传下载总量、实时网速和电池放电功率",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "3-2-13",
+              "question": "dde-sys-monitor-plugin有哪些显示模式？",
+              "answers": [
+                {
+                  "text": "文字模式和图表模式",
+                  "answer_start": 101
+                }
+              ]
+            },
+            {
+              "id": "3-2-14",
+              "question": "dde-sys-monitor-plugin的论坛链接是什么？",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/zh/post/179425",
+                  "answer_start": 122
+                }
+              ]
+            },
+            {
+              "id": "3-2-15",
+              "question": "dde-sys-monitor-plugin的代码仓库链接是什么？",
+              "answers": [
+                {
+                  "text": "https://gitee.com/q77190858/dde-sys-monitor-plugin/",
+                  "answer_start": 152
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lfxspeed：网速插件。论坛链接：https://bbs.deepin.org/zh/post/206895；repo链接：https://github.com/xmuli/lfxspeed。",
+          "qas": [
+            {
+              "id": "3-2-16",
+              "question": "lfxspeed是什么类型的插件？",
+              "answers": [
+                {
+                  "text": "网速插件",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "3-2-17",
+              "question": "lfxspeed的论坛链接是什么？",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/zh/post/206895",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "3-2-18",
+              "question": "lfxspeed的代码仓库链接是什么？",
+              "answers": [
+                {
+                  "text": "https://github.com/xmuli/lfxspeed",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NetPlugin：网速插件，lfxspeed的重构版本。blog链接：https://xmuli.blog.csdn.net/article/details/113573870；论坛链接：https://github.com/xmuli/NetSpeed。",
+          "qas": [
+            {
+              "id": "3-2-19",
+              "question": "NetPlugin是什么类型的插件？",
+              "answers": [
+                {
+                  "text": "网速插件",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "3-2-20",
+              "question": "NetPlugin与lfxspeed有什么关系？",
+              "answers": [
+                {
+                  "text": "lfxspeed的重构版本",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "3-2-21",
+              "question": "NetPlugin的blog链接是什么？",
+              "answers": [
+                {
+                  "text": "https://xmuli.blog.csdn.net/article/details/113573870",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "3-2-22",
+              "question": "NetPlugin的论坛链接是什么？",
+              "answers": [
+                {
+                  "text": "https://github.com/xmuli/NetSpeed",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

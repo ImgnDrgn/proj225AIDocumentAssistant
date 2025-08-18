@@ -1,0 +1,639 @@
+{
+  "data": [
+    {
+      "title": "TCP/IP 寻址",
+      "paragraphs": [
+        {
+          "context": "TCP/IP 使用 32 个比特或者 4 组 0 到 255 之间的数字来为计算机编址。",
+          "qas": [
+            {
+              "id": "5-427-1",
+              "question": "TCP/IP 使用什么来为计算机编址？",
+              "answers": [
+                {
+                  "text": "32 个比特或者 4 组 0 到 255 之间的数字",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-427-2",
+              "question": "TCP/IP 使用多少比特为计算机编址？",
+              "answers": [
+                {
+                  "text": "32 个比特",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-427-3",
+              "question": "TCP/IP 编址使用的数字范围是多少？",
+              "answers": [
+                {
+                  "text": "0 到 255",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "每个计算机必须有一个 IP 地址才能够连入因特网。每个 IP 包必须有一个地址才能够发送到另一台计算机。",
+          "qas": [
+            {
+              "id": "5-427-4",
+              "question": "计算机连入因特网必须具备什么？",
+              "answers": [
+                {
+                  "text": "一个 IP 地址",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-427-5",
+              "question": "IP 包要发送到另一台计算机必须具备什么？",
+              "answers": [
+                {
+                  "text": "一个地址",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "TCP/IP 使用 4 组数字来为计算机编址。每个计算机必须有一个唯一的 4 组数字的地址。每组数字必须在 0 到 255 之间，并由点号隔开，比如：192.168.1.60。",
+          "qas": [
+            {
+              "id": "5-427-6",
+              "question": "TCP/IP 用于编址的 4 组数字每组的取值范围是什么？",
+              "answers": [
+                {
+                  "text": "0 到 255 之间",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-427-7",
+              "question": "TCP/IP 的 4 组数字地址用什么符号隔开？",
+              "answers": [
+                {
+                  "text": "点号",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "id": "5-427-8",
+              "question": "TCP/IP 的 4 组数字地址有什么例子？",
+              "answers": [
+                {
+                  "text": "192.168.1.60",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "TCP/IP 使用 32 个比特来编址。一个计算机字节是 8 比特。所以 TCP/IP 使用了 4 个字节。32比特 = 4字节。一个计算机字节可以包含 256 个不同的值。",
+          "qas": [
+            {
+              "id": "5-427-9",
+              "question": "TCP/IP 编址使用多少个比特？",
+              "answers": [
+                {
+                  "text": "32 个",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-427-10",
+              "question": "一个计算机字节等于多少比特？",
+              "answers": [
+                {
+                  "text": "8 比特",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "5-427-11",
+              "question": "TCP/IP 编址为什么使用 4 个字节？",
+              "answers": [
+                {
+                  "text": "TCP/IP 使用 32 个比特编址，一个计算机字节是 8 比特，32比特 = 4字节",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-427-12",
+              "question": "一个计算机字节可包含多少个不同的值？",
+              "answers": [
+                {
+                  "text": "256 个",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "IPv6 是 'Internet Protocol Version 6' 的缩写，也被称作下一代互联网协议，它是由 IETF 小组（Internet 工程任务组Internet Engineering Task Force）设计的用来替代现行的 IPv4（现行的）协议的一种新的 IP 协议。",
+          "qas": [
+            {
+              "id": "5-427-13",
+              "question": "IPv6 的全称是什么？",
+              "answers": [
+                {
+                  "text": "Internet Protocol Version 6",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-427-14",
+              "question": "IPv6 又被称为什么？",
+              "answers": [
+                {
+                  "text": "下一代互联网协议",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-427-15",
+              "question": "IPv6 是由哪个小组设计的？",
+              "answers": [
+                {
+                  "text": "IETF 小组（Internet 工程任务组Internet Engineering Task Force）",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "id": "5-427-16",
+              "question": "IPv6 设计的目的是什么？",
+              "answers": [
+                {
+                  "text": "替代现行的 IPv4 协议",
+                  "answer_start": 95
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Internet 的主机都有一个唯一的 IP 地址，IP 地址用一个 32 位二进制的数表示一个主机号码，但 32 位地址资源有限，已经不能满足用户的需求了，因此 Internet 研究组织发布新的主机标识方法，即 IPv6。",
+          "qas": [
+            {
+              "id": "5-427-17",
+              "question": "IPv4 地址用多少位二进制数表示主机号码？",
+              "answers": [
+                {
+                  "text": "32 位",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "id": "5-427-18",
+              "question": "IPv4 地址存在的主要问题是什么？",
+              "answers": [
+                {
+                  "text": "32 位地址资源有限，已经不能满足用户的需求",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "5-427-19",
+              "question": "Internet 研究组织为解决 IPv4 地址问题发布的新主机标识方法是什么？",
+              "answers": [
+                {
+                  "text": "IPv6",
+                  "answer_start": 84
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在 RFC1884 中（RFC 是 Request for Comments document 的缩写。RFC 实际上就是 Internet 有关服务的一些标准），规定的标准语法建议把 IPv6 地址的 128 位（16 个字节）写成 8 个 16 位的无符号整数，每个整数用 4 个十六进制位表示，这些数之间用冒号（:）分开，例如：686E：8C64：FFFF：FFFF：0：1180：96A：FFFF",
+          "qas": [
+            {
+              "id": "5-427-20",
+              "question": "RFC 的全称是什么？",
+              "answers": [
+                {
+                  "text": "Request for Comments document",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-427-21",
+              "question": "RFC 实际上是什么？",
+              "answers": [
+                {
+                  "text": "Internet 有关服务的一些标准",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "id": "5-427-22",
+              "question": "IPv6 地址有多少位？对应多少个字节？",
+              "answers": [
+                {
+                  "text": "128 位（16 个字节）",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "5-427-23",
+              "question": "RFC1884 中规定的 IPv6 地址标准语法是怎样的？",
+              "answers": [
+                {
+                  "text": "把 IPv6 地址写成 8 个 16 位的无符号整数，每个整数用 4 个十六进制位表示，这些数之间用冒号（:）分开",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "id": "5-427-24",
+              "question": "IPv6 地址标准语法的例子是什么？",
+              "answers": [
+                {
+                  "text": "686E：8C64：FFFF：FFFF：0：1180：96A：FFFF",
+                  "answer_start": 156
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "冒号十六进制记法允许零压缩，即一串连续的0可以用一对冒号取代，例如：FF05：0：0：0：0：0：0：B3可以定成：FF05：：B3。为了保证零压缩有一个清晰的解释，建议中规定，在任一地址中，只能使用一次零压缩。",
+          "qas": [
+            {
+              "id": "5-427-25",
+              "question": "IPv6 冒号十六进制记法中的零压缩是指什么？",
+              "answers": [
+                {
+                  "text": "一串连续的0可以用一对冒号取代",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "5-427-26",
+              "question": "IPv6 地址使用零压缩的例子是什么？",
+              "answers": [
+                {
+                  "text": "FF05：0：0：0：0：0：0：B3可以定成FF05：：B3",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-427-27",
+              "question": "IPv6 地址的零压缩有什么使用限制？",
+              "answers": [
+                {
+                  "text": "在任一地址中，只能使用一次零压缩",
+                  "answer_start": 81
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "冒号十六进制记法结合有点十进制记法的后缀。这种结合在IPv4向IPv6换阶段特别有用。例如，下面的串是一个合法的冒号十六进制记法：0：0：0：0：0：0：128.10.1.1。",
+          "qas": [
+            {
+              "id": "5-427-28",
+              "question": "IPv6 冒号十六进制记法结合点十进制记法后缀有什么作用？",
+              "answers": [
+                {
+                  "text": "在IPv4向IPv6换阶段特别有用",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-427-29",
+              "question": "IPv6 冒号十六进制记法结合点十进制记法后缀的例子是什么？",
+              "answers": [
+                {
+                  "text": "0：0：0：0：0：0：128.10.1.1",
+                  "answer_start": 64
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "冒号十六进制记法结合点十进制记法的后缀中，虽然冒号所分隔的每一个值是一个16位的量，但每个分点十进制部分的值则指明一个字节的值。再使用零压缩即可得出：：：128.10.1.1。",
+          "qas": [
+            {
+              "id": "5-427-30",
+              "question": "在 IPv6 冒号十六进制记法结合点十进制记法的后缀中，分点十进制部分的值指明什么？",
+              "answers": [
+                {
+                  "text": "一个字节的值",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "id": "5-427-31",
+              "question": "0：0：0：0：0：0：128.10.1.1 使用零压缩后是什么？",
+              "answers": [
+                {
+                  "text": "：：128.10.1.1",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "12 个阿拉伯数字很难记忆。使用一个名称更容易。用于 TCP/IP 地址的名字被称为域名。runoob.com 就是一个域名。",
+          "qas": [
+            {
+              "id": "5-427-32",
+              "question": "为什么需要域名？",
+              "answers": [
+                {
+                  "text": "12 个阿拉伯数字很难记忆，使用一个名称更容易",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-427-33",
+              "question": "用于 TCP/IP 地址的名字被称为什么？",
+              "answers": [
+                {
+                  "text": "域名",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "id": "5-427-34",
+              "question": "域名的例子是什么？",
+              "answers": [
+                {
+                  "text": "runoob.com",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "当你键入一个像 http://www.runoob.com 这样的域名，域名会被一种 DNS 程序翻译为数字。在全世界，数量庞大的 DNS 服务器被连入因特网。",
+          "qas": [
+            {
+              "id": "5-427-35",
+              "question": "域名是通过什么程序翻译为数字的？",
+              "answers": [
+                {
+                  "text": "DNS 程序",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-427-36",
+              "question": "用户键入域名的例子是什么？",
+              "answers": [
+                {
+                  "text": "http://www.runoob.com",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-427-37",
+              "question": "DNS 服务器在全球的连接情况是怎样的？",
+              "answers": [
+                {
+                  "text": "数量庞大的 DNS 服务器被连入因特网",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DNS 服务器负责将域名翻译为 TCP/IP 地址，同时负责使用新的域名信息更新彼此的系统。当一个新的域名连同其 TCP/IP 地址一起注册后，全世界的 DNS 服务器都会对此信息进行更新。",
+          "qas": [
+            {
+              "id": "5-427-38",
+              "question": "DNS 服务器负责什么？",
+              "answers": [
+                {
+                  "text": "将域名翻译为 TCP/IP 地址，同时负责使用新的域名信息更新彼此的系统",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "5-427-39",
+              "question": "当一个新的域名连同其 TCP/IP 地址注册后，全世界的 DNS 服务器会做什么？",
+              "answers": [
+                {
+                  "text": "对此信息进行更新",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "TCP/IP 使用 4 组数字来为计算机编址。每个计算机必须有一个唯一的 4 组数字的地址。每组数字必须在 0 到 255 之间，并由点号隔开，比如：192.168.1.60。TCP/IP 使用 32 个比特来编址。一个计算机字节是 8 比特。所以 TCP/IP 使用了 4 个字节。32比特 = 4字节。",
+          "qas": [
+            {
+              "id": "5-427-40",
+              "question": "TCP/IP 编址使用几组数字？",
+              "answers": [
+                {
+                  "text": "4 组数字",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-427-41",
+              "question": "每组数字的范围是什么？",
+              "answers": [
+                {
+                  "text": "0 到 255",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "5-427-42",
+              "question": "组与组之间如何隔开？",
+              "answers": [
+                {
+                  "text": "由点号隔开",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "id": "5-427-43",
+              "question": "TCP/IP 编址使用的总比特数是多少？",
+              "answers": [
+                {
+                  "text": "32 个比特",
+                  "answer_start": 108
+                }
+              ]
+            },
+            {
+              "id": "5-427-44",
+              "question": "TCP/IP 使用了几个字节进行编址？",
+              "answers": [
+                {
+                  "text": "4 个字节",
+                  "answer_start": 159
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "IPv6 是 'Internet Protocol Version 6' 的缩写，也被称作下一代互联网协议，它是由 IETF 小组（Internet 工程任务组 Internet Engineering Task Force）设计的用来替代现行的 IPv4 协议的一种新的 IP 协议。IP 地址用一个 32 位二进制的数表示一个主机号码，但 32 位地址资源有限，已经不能满足用户的需求了，因此发布新的主机标识方法，即 IPv6。IPv6 地址的 128 位写成 8 个 16 位的无符号整数，每个整数用 4 个十六进制位表示，这些数之间用冒号（:）分开。冒号十六进制记法允许零压缩，即一串连续的0可以用一对冒号取代。",
+          "qas": [
+            {
+              "id": "5-427-45",
+              "question": "IPv6 是什么的缩写？",
+              "answers": [
+                {
+                  "text": "'Internet Protocol Version 6'",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-427-46",
+              "question": "IPv6 被称为什么？",
+              "answers": [
+                {
+                  "text": "下一代互联网协议",
+                  "answer_start": 43
+                }
+              ]
+            },
+            {
+              "id": "5-427-47",
+              "question": "谁设计了 IPv6？",
+              "answers": [
+                {
+                  "text": "IETF 小组（Internet 工程任务组 Internet Engineering Task Force）",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "id": "5-427-48",
+              "question": "为什么需要 IPv6？",
+              "answers": [
+                {
+                  "text": "32 位地址资源有限，已经不能满足用户的需求了",
+                  "answer_start": 146
+                }
+              ]
+            },
+            {
+              "id": "5-427-49",
+              "question": "IPv6 地址有多少位？",
+              "answers": [
+                {
+                  "text": "128 位",
+                  "answer_start": 218
+                }
+              ]
+            },
+            {
+              "id": "5-427-50",
+              "question": "IPv6 地址写成多少个16位无符号整数？",
+              "answers": [
+                {
+                  "text": "8 个 16 位的无符号整数",
+                  "answer_start": 226
+                }
+              ]
+            },
+            {
+              "id": "5-427-51",
+              "question": "每个整数如何表示？",
+              "answers": [
+                {
+                  "text": "用 4 个十六进制位表示",
+                  "answer_start": 248
+                }
+              ]
+            },
+            {
+              "id": "5-427-52",
+              "question": "数之间用什么分开？",
+              "answers": [
+                {
+                  "text": "冒号（:）",
+                  "answer_start": 275
+                }
+              ]
+            },
+            {
+              "id": "5-427-53",
+              "question": "零压缩是什么？",
+              "answers": [
+                {
+                  "text": "一串连续的0可以用一对冒号取代",
+                  "answer_start": 290
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "12 个阿拉伯数字很难记忆。使用一个名称更容易。用于 TCP/IP 地址的名字被称为域名。runoob.com 就是一个域名。当你键入一个像 http://www.runoob.com 这样的域名，域名会被一种 DNS 程序翻译为数字。DNS 服务器负责将域名翻译为 TCP/IP 地址，同时负责使用新的域名信息更新彼此的系统。当一个新的域名连同其 TCP/IP 地址一起注册后，全世界的 DNS 服务器都会对此信息进行更新。",
+          "qas": [
+            {
+              "id": "5-427-54",
+              "question": "域名如何被翻译为数字？",
+              "answers": [
+                {
+                  "text": "被一种 DNS 程序翻译为数字",
+                  "answer_start": 111
+                }
+              ]
+            },
+            {
+              "id": "5-427-55",
+              "question": "当新域名注册后，DNS 服务器会做什么？",
+              "answers": [
+                {
+                  "text": "全世界的 DNS 服务器都会对此信息进行更新",
+                  "answer_start": 226
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

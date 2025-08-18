@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "live系统修改密码",
+      "paragraphs": [
+        {
+          "context": "进入deepin的live系统需准备装有deepin镜像的启动U盘，启动到安装界面，在grub安装界面按“E”键（非EFI启动按TAB键），删除“cd-installer”内容，按F10进入。",
+          "qas": [
+            {
+              "question": "如何进入deepin的live系统？",
+              "id": "5-22-1",
+              "answers": [
+                {
+                  "text": "准备装有deepin镜像的启动U盘，启动到安装界面，在grub安装界面按“E”键（非EFI启动按TAB键），删除“cd-installer”内容，按F10进入。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "进入live系统在grub安装界面非EFI启动时按什么键？",
+              "id": "5-22-2",
+              "answers": [
+                {
+                  "text": "TAB键",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "live系统下长时间自动锁屏且无密码，可按ctrl+alt+F2进入TTY，输入sudo passwd uos设置密码，再切回登录。",
+          "qas": [
+            {
+              "question": "live系统下自动锁屏且无密码无法进入怎么办？",
+              "id": "5-22-3",
+              "answers": [
+                {
+                  "text": "按ctrl+alt+F2进入TTY，输入sudo passwd uos设置密码，再切回登录。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "切换chroot目录步骤：在live系统打开文件管理器，找到根目录分区，进入后右键空白处打开终端，输入sudo chroot ./。",
+          "qas": [
+            {
+              "question": "如何切换到原系统的根目录？",
+              "id": "5-22-4",
+              "answers": [
+                {
+                  "text": "在live系统打开文件管理器，找到根目录分区，进入后右键空白处打开终端，输入sudo chroot ./。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改用户密码需确认用户名，在终端执行passwd 用户名，按提示设置新密码。",
+          "qas": [
+            {
+              "question": "如何修改用户密码？",
+              "id": "5-22-5",
+              "answers": [
+                {
+                  "text": "确认用户名，在终端执行passwd 用户名，按提示设置新密码。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "完成密码修改后，重启系统即可用新密码登录。",
+          "qas": [
+            {
+              "question": "修改密码后如何登录系统？",
+              "id": "5-22-6",
+              "answers": [
+                {
+                  "text": "重启系统，使用新密码登录。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

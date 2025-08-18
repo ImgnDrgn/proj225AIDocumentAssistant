@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "title": "使用显卡对视频加速编解码",
+      "paragraphs": [
+        {
+          "context": "硬件视频加速使显卡可以对视频进行解码/编码，减轻CPU负担并节省电力。",
+          "qas": [
+            {
+              "question": "硬件视频加速的作用是什么？",
+              "id": "5-529-1",
+              "answers": [
+                {
+                  "text": "使显卡可以对视频进行解码/编码，减轻CPU的负担并节省电力。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用显卡对视频加速编解码要求硬件性能较好且为双显卡设备，使用独显（切换为N卡）。",
+          "qas": [
+            {
+              "question": "使用显卡对视频加速编解码有什么要求？",
+              "id": "5-529-2",
+              "answers": [
+                {
+                  "text": "硬件性能较好且为双显卡设备，使用的是独显（即切换为N卡）。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "检测显卡视频加速可使用nvidia-settings，安装命令为sudo apt install nvidia-settings，启动后播放视频查看显存占用。",
+          "qas": [
+            {
+              "question": "如何安装nvidia-settings工具？",
+              "id": "5-529-3",
+              "answers": [
+                {
+                  "text": "sudo apt install nvidia-settings",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "nvidia-settings工具如何检测硬件解码是否启用？",
+              "id": "5-529-4",
+              "answers": [
+                {
+                  "text": "启动nvidia-settings，播放视频时查看显存占用，若未启用硬件解码，显存占用量较小；反之则较大。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nvidia-smi是检测工具，安装用sudo apt install nvidia-smi，播放视频时输入命令查看显存占用。",
+          "qas": [
+            {
+              "question": "nvidia-smi的安装命令是什么？",
+              "id": "5-529-5",
+              "answers": [
+                {
+                  "text": "sudo apt install nvidia-smi",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "如何用nvidia-smi检测硬件解码？",
+              "id": "5-529-6",
+              "answers": [
+                {
+                  "text": "播放视频时，在终端中输入命令nvidia-smi查看显存占用。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo htop可在播放视频时查看CPU占用，启用硬件解码则CPU占用率较低，软件解码则较高可能达100%。",
+          "qas": [
+            {
+              "question": "如何通过CPU占用判断是否启用硬件解码？",
+              "id": "5-529-7",
+              "answers": [
+                {
+                  "text": "播放视频时用sudo htop查看，启用硬件解码则CPU占用率较低，软件解码则较高可能达100%。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "使用什么命令查看播放视频时的CPU占用？",
+              "id": "5-529-8",
+              "answers": [
+                {
+                  "text": "sudo htop",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

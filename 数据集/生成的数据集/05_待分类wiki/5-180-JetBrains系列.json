@@ -1,0 +1,364 @@
+{
+  "data": [
+    {
+      "title": "JetBrains系列",
+      "paragraphs": [
+        {
+          "context": "JetBrains 是一家专注于创建智能开发工具的前沿软件公司，包括：行业中领头的 Java IDE – IntelliJ IDEA，以及 Kotlin 编程语言。",
+          "qas": [
+            {
+              "id": "5-180-1",
+              "question": "JetBrains公司专注于什么？",
+              "answers": [
+                {
+                  "text": "创建智能开发工具",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-180-2",
+              "question": "JetBrains公司包括哪些产品？",
+              "answers": [
+                {
+                  "text": "行业中领头的 Java IDE – IntelliJ IDEA，以及 Kotlin 编程语言",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "IntelliJ IDEA 是功能强大，符合人体工程学的 JVM IDE。",
+          "qas": [
+            {
+              "id": "5-180-3",
+              "question": "IntelliJ IDEA 是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "JVM IDE",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PyCharm 是面向专业开发者的Python IDE。",
+          "qas": [
+            {
+              "id": "5-180-4",
+              "question": "PyCharm 面向的用户群体是谁？",
+              "answers": [
+                {
+                  "text": "专业开发者",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "WebStorm 是最智能的 JavaScript IDE。",
+          "qas": [
+            {
+              "id": "5-180-5",
+              "question": "WebStorm 主要用于哪种编程语言？",
+              "answers": [
+                {
+                  "text": "JavaScript",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PhpStorm 是高效智能的PHP IDE。",
+          "qas": [
+            {
+              "id": "5-180-6",
+              "question": "PhpStorm 是什么类型的IDE？",
+              "answers": [
+                {
+                  "text": "PHP IDE",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CLion 是 C 和 C++ 跨平台 IDE。",
+          "qas": [
+            {
+              "id": "5-180-7",
+              "question": "CLion 支持哪些编程语言？",
+              "answers": [
+                {
+                  "text": "C 和 C++",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Datalore 是适用于 Jupyter Notebooks 的强大而安全的环境。",
+          "qas": [
+            {
+              "id": "5-180-8",
+              "question": "Datalore 适用于什么？",
+              "answers": [
+                {
+                  "text": "Jupyter Notebooks",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DataSpell 是专业数据科学家的 IDE。",
+          "qas": [
+            {
+              "id": "5-180-9",
+              "question": "DataSpell 面向的用户是谁？",
+              "answers": [
+                {
+                  "text": "专业数据科学家",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DataGrip 是多种数据库，一个工具。",
+          "qas": [
+            {
+              "id": "5-180-10",
+              "question": "DataGrip 可以处理什么？",
+              "answers": [
+                {
+                  "text": "多种数据库",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "RubyMine 是最智能的 Ruby 与 Rails IDE。",
+          "qas": [
+            {
+              "id": "5-180-11",
+              "question": "RubyMine 主要用于什么开发？",
+              "answers": [
+                {
+                  "text": "Ruby 与 Rails",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "AppCode 是适用于 iOS/macOS 开发的智能 IDE。",
+          "qas": [
+            {
+              "id": "5-180-12",
+              "question": "AppCode 适用于哪些系统的开发？",
+              "answers": [
+                {
+                  "text": "iOS/macOS",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GoLand 是功能强大、符合人体工程学的 Go IDE。",
+          "qas": [
+            {
+              "id": "5-180-13",
+              "question": "GoLand 用于哪种编程语言的开发？",
+              "answers": [
+                {
+                  "text": "Go",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PyCharm Edu 是学习和教授 Python 编程的专业工具。",
+          "qas": [
+            {
+              "id": "5-180-14",
+              "question": "PyCharm Edu 的用途是什么？",
+              "answers": [
+                {
+                  "text": "学习和教授 Python 编程",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "IntelliJ IDEA Edu 是学习和教授编程的专业工具。",
+          "qas": [
+            {
+              "id": "5-180-15",
+              "question": "IntelliJ IDEA Edu 用于什么？",
+              "answers": [
+                {
+                  "text": "学习和教授编程",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Code With Me 是协作开发和结对编程服务。",
+          "qas": [
+            {
+              "id": "5-180-16",
+              "question": "Code With Me 是什么类型的服务？",
+              "answers": [
+                {
+                  "text": "协作开发和结对编程服务",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dotUltimate 在一个包中提供所有 .NET 工具、ReSharper C++ 和 JetBrains Rider。",
+          "qas": [
+            {
+              "id": "5-180-17",
+              "question": "dotUltimate 包含哪些内容？",
+              "answers": [
+                {
+                  "text": "所有 .NET 工具、ReSharper C++ 和 JetBrains Rider",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ReSharper 是适用于 .NET 开发者的 Visual Studio 扩展。",
+          "qas": [
+            {
+              "id": "5-180-18",
+              "question": "ReSharper 适用于谁？",
+              "answers": [
+                {
+                  "text": ".NET 开发者",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Rider 是快速且强大的跨平台 .NET IDE。",
+          "qas": [
+            {
+              "id": "5-180-19",
+              "question": "Rider 是什么类型的IDE？",
+              "answers": [
+                {
+                  "text": ".NET IDE",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ReSharper C++ 是适用于 C++ 开发者的 Visual Studio 扩展。",
+          "qas": [
+            {
+              "id": "5-180-20",
+              "question": "ReSharper C++ 适用于哪种开发者？",
+              "answers": [
+                {
+                  "text": "C++ 开发者",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dotTrace 是 .NET 性能分析器。",
+          "qas": [
+            {
+              "id": "5-180-21",
+              "question": "dotTrace 是什么工具？",
+              "answers": [
+                {
+                  "text": ".NET 性能分析器",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dotMemory 是 .NET 内存分析器。",
+          "qas": [
+            {
+              "id": "5-180-22",
+              "question": "dotMemory 用于什么？",
+              "answers": [
+                {
+                  "text": ".NET 内存分析",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dotCover 是 .NET 单元测试运行程序和代码覆盖率工具。",
+          "qas": [
+            {
+              "id": "5-180-23",
+              "question": "dotCover 是什么工具？",
+              "answers": [
+                {
+                  "text": ".NET 单元测试运行程序和代码覆盖率工具",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dotPeek 是 .NET 反编译器和程序集浏览器。",
+          "qas": [
+            {
+              "id": "5-180-24",
+              "question": "dotPeek 有什么功能？",
+              "answers": [
+                {
+                  "text": ".NET 反编译和程序集浏览",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

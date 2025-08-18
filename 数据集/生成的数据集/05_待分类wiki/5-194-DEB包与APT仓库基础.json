@@ -1,0 +1,284 @@
+{
+  "data": [
+    {
+      "title": "DEB包与APT仓库基础",
+      "paragraphs": [
+        {
+          "context": "准备DEB包开发环境需安装：build-essential、dpkg-dev、dh-make、debhelper、dpkg-sign等，包含gcc、g++、make等工具。",
+          "qas": [
+            {
+              "question": "准备DEB包开发环境需要安装哪些工具？",
+              "id": "5-194-1",
+              "answers": [
+                {
+                  "text": "build-essential、dpkg-dev、dh-make、debhelper、dpkg-sign等，包含gcc、g++、make等",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改上游仓库软件包示例：apt-get source zip；cd zip-3.0；apt-get build-dep zip -y；dpkg-buildpackage -a。",
+          "qas": [
+            {
+              "question": "修改来自上游仓库的zip软件包的简要步骤是什么？",
+              "id": "5-194-2",
+              "answers": [
+                {
+                  "text": "apt-get source zip；cd zip-3.0；apt-get build-dep zip -y；dpkg-buildpackage -a",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "debian目录重要文件：control（定义包信息、依赖等）、changelog（记录修订及版本）、compat（debhelper最低版本）等。",
+          "qas": [
+            {
+              "question": "debian/control文件的作用是什么？",
+              "id": "5-194-3",
+              "answers": [
+                {
+                  "text": "定义包信息、依赖等",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "debian/changelog文件记录什么内容？",
+              "id": "5-194-4",
+              "answers": [
+                {
+                  "text": "记录修订及版本",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "debian/rules是Makefile，定义创建deb包规则，包含binary-arch、binary-indep、build、clean等targets。",
+          "qas": [
+            {
+              "question": "debian/rules文件本质是什么？",
+              "id": "5-194-5",
+              "answers": [
+                {
+                  "text": "Makefile文件",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "debian/rules通常包含哪些targets？",
+              "id": "5-194-6",
+              "answers": [
+                {
+                  "text": "binary-arch、binary-indep、build、clean等",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dh命令简化rules编写：dh_auto_clean对应make distclean；dh_auto_configure对应./configure ...；dh_auto_build对应make。",
+          "qas": [
+            {
+              "question": "dh_auto_clean命令对应什么操作？",
+              "id": "5-194-7",
+              "answers": [
+                {
+                  "text": "make distclean",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "dh_auto_build对应什么操作？",
+              "id": "5-194-8",
+              "answers": [
+                {
+                  "text": "make",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deb包执行脚本：preinst（安装前）、postinst（安装后）、prerm（卸载前）、postrm（卸载后）。",
+          "qas": [
+            {
+              "question": "deb包安装前执行的脚本是什么？",
+              "id": "5-194-9",
+              "answers": [
+                {
+                  "text": "preinst",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "deb包卸载后执行的脚本是什么？",
+              "id": "5-194-10",
+              "answers": [
+                {
+                  "text": "postrm",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "基于autotools的源码安装步骤：./configure ...；make；make install；make clean。",
+          "qas": [
+            {
+              "question": "基于autotools的源码包编译安装步骤是什么？",
+              "id": "5-194-11",
+              "answers": [
+                {
+                  "text": "./configure ...；make；make install；make clean",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "从源码包制作deb包：wget获取tar包；tar解压；cd目录；dh_make生成模板；编辑rules等；dpkg-buildpackage -a。",
+          "qas": [
+            {
+              "question": "从源码包制作deb包的起始步骤是什么？",
+              "id": "5-194-12",
+              "answers": [
+                {
+                  "text": "wget获取tar包；tar解压；cd目录",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "简化的debian/rules用debhelper：binary:build install 后接dh_gencontrol等；build用dh_auto_configure等。",
+          "qas": [
+            {
+              "question": "使用debhelper命令集的debian/rules中，build目标通常用什么命令？",
+              "id": "5-194-13",
+              "answers": [
+                {
+                  "text": "dh_auto_configure等",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "默认rules用%: dh $@，可通过override_重定义dh命令，如override_dh_install指定安装路径。",
+          "qas": [
+            {
+              "question": "新版本中dh_make使用的默认rules指令是什么？",
+              "id": "5-194-14",
+              "answers": [
+                {
+                  "text": "%: dh $@",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "如何重定义dh命令？",
+              "id": "5-194-15",
+              "answers": [
+                {
+                  "text": "通过override_重定义，如override_dh_install",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "生成签名密钥：gpg --gen-key；gpg --list-keys；gpg --export -a 密钥ID > key.pub；apt-key add key.pub。",
+          "qas": [
+            {
+              "question": "如何生成deb包签名所需的公钥？",
+              "id": "5-194-16",
+              "answers": [
+                {
+                  "text": "gpg --gen-key；gpg --list-keys；gpg --export -a 密钥ID > key.pub",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "给deb包签名：dpkg-sig -k keyid --sign builder 包路径 -f passwdfile，需输入密钥密码。",
+          "qas": [
+            {
+              "question": "给deb软件包签名的指令是什么？",
+              "id": "5-194-17",
+              "answers": [
+                {
+                  "text": "dpkg-sig -k keyid --sign builder 包路径 -f passwdfile",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装reprepro：apt-get install reprepro -y，用于搭建deb仓库，需创建conf/distributions配置文件。",
+          "qas": [
+            {
+              "question": "安装reprepro的命令是什么？",
+              "id": "5-194-18",
+              "answers": [
+                {
+                  "text": "apt-get install reprepro -y",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更新reprepro仓库：reprepro includedeb 版本 包路径；includeudeb、includedsc类似。",
+          "qas": [
+            {
+              "question": "如何用reprepro更新deb仓库中的deb包？",
+              "id": "5-194-19",
+              "answers": [
+                {
+                  "text": "reprepro includedeb 版本 包路径",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建ISO可用debootstrap：sudo debootstrap --arch 平台 发行版代号 目录，如i386 trusty /mnt。",
+          "qas": [
+            {
+              "question": "使用debootstrap创建环境的命令格式是什么？",
+              "id": "5-194-20",
+              "answers": [
+                {
+                  "text": "sudo debootstrap --arch 平台 发行版代号 目录",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

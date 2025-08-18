@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "title": "thinkbook_14双显卡切换",
+      "paragraphs": [
+        {
+          "context": "本文只针对thinkbook 14双显卡机型，其它机器使用该方法存在风险。",
+          "qas": [
+            {
+              "question": "本文的显卡切换方法适用于哪些机型？",
+              "id": "5-524-1",
+              "answers": [
+                {
+                  "text": "thinkbook 14双显卡机型",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "其它机器使用本文方法进行显卡切换有什么风险？",
+              "id": "5-524-2",
+              "answers": [
+                {
+                  "text": "存在风险",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解压files.zip工具包后，初始化需运行脚本：sudo sh Initialize.sh。",
+          "qas": [
+            {
+              "question": "解压工具包后，如何进行初始化？",
+              "id": "5-524-3",
+              "answers": [
+                {
+                  "text": "运行脚本：sudo sh Initialize.sh",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "切换为独显的命令是运行脚本：sudo sh NVIDIA.sh。",
+          "qas": [
+            {
+              "question": "切换为独显需要运行什么脚本命令？",
+              "id": "5-524-4",
+              "answers": [
+                {
+                  "text": "sudo sh NVIDIA.sh",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "出现黑屏、切换不成功或切回A卡驱动时，可运行脚本sudo sh Rescue.sh还原。",
+          "qas": [
+            {
+              "question": "出现黑屏时如何还原显卡设置？",
+              "id": "5-524-5",
+              "answers": [
+                {
+                  "text": "运行脚本sudo sh Rescue.sh",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "切换显卡不成功时可以用什么方法还原？",
+              "id": "5-524-6",
+              "answers": [
+                {
+                  "text": "运行脚本sudo sh Rescue.sh",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "切换显卡后，用glxinfo | grep -i opengl命令查看当前显卡，通过OpenGL vendor string字段判定。",
+          "qas": [
+            {
+              "question": "切换显卡后，用什么命令查看当前使用的显卡？",
+              "id": "5-524-7",
+              "answers": [
+                {
+                  "text": "glxinfo | grep -i opengl",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "通过哪个字段可以判定当前使用的显卡？",
+              "id": "5-524-8",
+              "answers": [
+                {
+                  "text": "OpenGL vendor string",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

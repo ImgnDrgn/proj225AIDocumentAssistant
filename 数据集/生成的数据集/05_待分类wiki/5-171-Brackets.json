@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "Brackets",
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "id": "5-171-1",
+              "question": "Brackets是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "HTML/CSS/JavaScript前端WEB集成开发环境",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-171-2",
+              "question": "如何安装Brackets？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install brackets",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-171-3",
+              "question": "怎样卸载Brackets？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove brackets",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-171-4",
+              "question": "Brackets的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/b/brackets/",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-171-5",
+              "question": "Brackets提供了哪些功能？",
+              "answers": [
+                {
+                  "text": "快捷键设置、快速编辑、实时预览、代码隐藏与搜索、界面优化、内建取色器、代码/样式扩展等功能",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ],
+          "context": "Brackets是一个HTML/CSS/JavaScript前端WEB集成开发环境，它提供了快捷键设置、快速编辑、实时预览、代码隐藏与搜索、界面优化、内建取色器、代码/样式扩展等功能。安装命令为sudo apt-get install brackets，卸载命令为sudo apt-get remove brackets，仓库地址是http://packages.deepin.com/deepin/pool/non-free/b/brackets/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "如何隐藏文件管理器中特定磁盘",
+      "paragraphs": [
+        {
+          "context": "UOS 文件管理器，使用 udisks 管理接入系统中的磁盘。在计算机页面中的每一个磁盘，对应系统中的每一个分区。很多时候，文件管理器计算机页面显示了许多额外的分区，比如低版本上会显示 loop 设备，升级到高版本后显示了 EFI 分区等等。要隐藏设备，首先要知道设备描述符。通过命令 lsblk 可得到设备描述符：例如 sdb1。udev 规则可以改变设备在 udisks 中的属性。当通过 udisksctl info -b /dev/sda1 查询到的属性列表中，HintIgnore 字段值为 true 时，文件管理器将不会显示该设备。而该字段的值由 udev 规则控制。在系统中，通常由 /lib/udev/rules.d/80-udisks2.rules 规则指定。打开该文件，向文件后追加一行：KERNEL==\"sdb1\", ENV{UDISKS_IGNORE}=\"1\"然后保存文件，关闭。文件保存后，在终端中执行命令：sudo udevadm trigger 即可刷新当前的 udev 规则。此后，杀掉文管进程，重新启动，文管将不会再显示 sdb1 分区。同时，文管的 dock 插件将不会对 hintIgnore 字段值为 1 的可移动块设备执行自动挂载。",
+          "qas": [
+            {
+              "id": "3-57-1",
+              "question": "UOS 文件管理器用什么管理接入系统的磁盘？",
+              "answers": [
+                {
+                  "text": "udisks",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "3-57-2",
+              "question": "如何获取设备描述符？",
+              "answers": [
+                {
+                  "text": "通过命令 lsblk 可得到设备描述符",
+                  "answer_start": 145
+                }
+              ]
+            },
+            {
+              "id": "3-57-3",
+              "question": "当哪个字段值为 true 时，文件管理器不会显示该设备？",
+              "answers": [
+                {
+                  "text": "HintIgnore",
+                  "answer_start": 275
+                }
+              ]
+            },
+            {
+              "id": "3-57-4",
+              "question": "控制 HintIgnore 字段值的是什么？",
+              "answers": [
+                {
+                  "text": "udev 规则",
+                  "answer_start": 315
+                }
+              ]
+            },
+            {
+              "id": "3-57-5",
+              "question": "系统中通常由哪个文件指定相关 udev 规则？",
+              "answers": [
+                {
+                  "text": "/lib/udev/rules.d/80-udisks2.rules",
+                  "answer_start": 336
+                }
+              ]
+            },
+            {
+              "id": "3-57-6",
+              "question": "在规则文件中追加什么内容可以隐藏 sdb1 分区？",
+              "answers": [
+                {
+                  "text": "KERNEL==\"sdb1\", ENV{UDISKS_IGNORE}=\"1\"",
+                  "answer_start": 395
+                }
+              ]
+            },
+            {
+              "id": "3-57-7",
+              "question": "如何让 udev 规则生效？",
+              "answers": [
+                {
+                  "text": "在终端中执行命令：sudo udevadm trigger",
+                  "answer_start": 457
+                }
+              ]
+            },
+            {
+              "id": "3-57-8",
+              "question": "规则生效后，还需要做什么才能让文件管理器不显示 sdb1 分区？",
+              "answers": [
+                {
+                  "text": "杀掉文管进程，重新启动",
+                  "answer_start": 512
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "data": [
+    {
+      "title": "根目录扩容",
+      "paragraphs": [
+        {
+          "context": "deepin全盘安装时，根分区空间默认15G，可能不足，需扩容。操作前要备份数据，知晓系统损坏或数据丢失风险。",
+          "qas": [
+            {
+              "question": "deepin全盘安装时根分区默认空间是多少？",
+              "id": "5-294-1",
+              "answers": [
+                {
+                  "text": "15G",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "根目录扩容操作前需要做什么？",
+              "id": "5-294-2",
+              "answers": [
+                {
+                  "text": "提前备份好自己的个人数据，知晓可能存在的系统损坏或者数据丢失风险。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进入live系统方案一：用含deepin镜像的启动U盘，启动到安装界面，grub界面按E（非EFI启动按TAB），删除“cd-installer”，按F10进入。live系统锁屏无密码，可通过Ctrl+Alt+F2进TTY，用sudo passwd uos设密码。",
+          "qas": [
+            {
+              "question": "如何通过方案一进入deepin的live系统？",
+              "id": "5-294-3",
+              "answers": [
+                {
+                  "text": "1. 准备装有deepin镜像的启动U盘；2. 启动到系统安装界面；3. 在grub安装界面按E键（非EFI启动按TAB键）；4. 删除“cd-installer”内容；5. 按F10按键进入live系统。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "live系统锁屏且无密码时如何处理？",
+              "id": "5-294-4",
+              "answers": [
+                {
+                  "text": "通过Ctrl + Alt + F2进入TTY，然后在TTY界面设置密码：sudo passwd uos，再切回来用设置的密码登录。",
+                  "answer_start": 117
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进入live系统后要连接网络，以便安装工具。live系统无系统仓库，需手动添加：编辑/etc/apt/sources.list，添加deb https://community-packages.deepin.com/deepin/ apricot main contrib non-free。",
+          "qas": [
+            {
+              "question": "进入live系统后首先要做什么？",
+              "id": "5-294-5",
+              "answers": [
+                {
+                  "text": "连接好网络，确认网络正常。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何给live系统添加系统仓库？",
+              "id": "5-294-6",
+              "answers": [
+                {
+                  "text": "编辑源文件：sudo vim /etc/apt/sources.list，敲入源地址deb https://community-packages.deepin.com/deepin/ apricot main contrib non-free。",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装gparted应用：先sudo apt update更新源，再sudo apt install gparted安装。",
+          "qas": [
+            {
+              "question": "如何安装gparted工具？",
+              "id": "5-294-7",
+              "answers": [
+                {
+                  "text": "1. 先通过sudo apt update更新源信息；2. 然后通过sudo apt install gparted命令来安装。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "gparted扩容第一步：压缩data分区，选中后右键“更改大小/移动”，“之前的空余空间”填20480MB（20G），“之后的空余空间”为0，点击“调整大小”。",
+          "qas": [
+            {
+              "question": "使用gparted扩容时，如何压缩data分区？",
+              "id": "5-294-8",
+              "answers": [
+                {
+                  "text": "选中data分区，右键选择【更改大小/移动】选项，在“之前的空余空间”设置项中填写20480MB，“之后的空余空间”为0，最后点击【调整大小】按钮。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "压缩data分区后，将20G空间与Rootb合并，再压缩Rootb 10G，最后将这10G与Roota合并。",
+          "qas": [
+            {
+              "question": "压缩data分区后，如何分配空余空间给Roota和Rootb？",
+              "id": "5-294-9",
+              "answers": [
+                {
+                  "text": "将20G空间与Rootb合并，再压缩Rootb 10G，最后将这10G与Roota合并。",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "应用最终数据变更前可后悔，执行后可能有意外，需确认。根据机器性能和数据量等待完成，会有成功提示。完成后应用按钮置灰，分区大小符合预期。",
+          "qas": [
+            {
+              "question": "应用最终数据变更时有什么注意事项？",
+              "id": "5-294-10",
+              "answers": [
+                {
+                  "text": "执行前可后悔，执行后可能有意外导致数据不可恢复，需确认，根据机器性能和数据量耐心等待，完成后有成功提示。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何判断分区调整完成？",
+              "id": "5-294-11",
+              "answers": [
+                {
+                  "text": "应用按钮置灰，分区大小与预期一致。",
+                  "answer_start": 102
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "扩容完成后重启系统，检查系统盘容量验证成果。新版本安装器在全盘安装时可自定义根分区大小，V20.6镜像可体验。此方案适用于任何分区安装方式的后期调整。",
+          "qas": [
+            {
+              "question": "如何验证根目录扩容成果？",
+              "id": "5-294-12",
+              "answers": [
+                {
+                  "text": "重启系统，检查系统盘容量。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "哪个版本的deepin安装器可以自定义根分区大小？",
+              "id": "5-294-13",
+              "answers": [
+                {
+                  "text": "V20.6新版本镜像",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "question": "根目录扩容方案适用于哪些情况？",
+              "id": "5-294-14",
+              "answers": [
+                {
+                  "text": "不仅仅适用于全盘分区的情况，适用于任何分区安装方式的后期调整。",
+                  "answer_start": 94
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

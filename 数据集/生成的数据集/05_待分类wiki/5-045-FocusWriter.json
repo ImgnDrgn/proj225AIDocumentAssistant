@@ -1,0 +1,204 @@
+{
+  "data": [
+    {
+      "title": "FocusWriter",
+      "paragraphs": [
+        {
+          "context": "FocusWriter是一款写作软件，为了让您的写作空间尽可能的多且不受打扰，FocusWriter将几乎所有的工具栏都自动隐藏在屏幕边缘。利用FocusWriter写作便利流畅，您还可以设置闹钟和每日任务，非常适合撰稿人、小说写手、剧本作家使用。",
+          "qas": [
+            {
+              "id": "5-45-1",
+              "question": "FocusWriter是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "写作软件",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "5-45-2",
+              "question": "FocusWriter为什么要隐藏几乎所有的工具栏？",
+              "answers": [
+                {
+                  "text": "为了让您的写作空间尽可能的多且不受打扰",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "5-45-3",
+              "question": "FocusWriter的工具栏隐藏在什么位置？",
+              "answers": [
+                {
+                  "text": "屏幕边缘",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "id": "5-45-4",
+              "question": "使用FocusWriter写作有什么特点？",
+              "answers": [
+                {
+                  "text": "便利流畅",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "5-45-5",
+              "question": "FocusWriter可以设置哪些功能？",
+              "answers": [
+                {
+                  "text": "闹钟和每日任务",
+                  "answer_start": 97
+                }
+              ]
+            },
+            {
+              "id": "5-45-6",
+              "question": "FocusWriter适合哪些人使用？",
+              "answers": [
+                {
+                  "text": "撰稿人、小说写手、剧本作家",
+                  "answer_start": 117
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`sudo apt-get install focuswriter`",
+          "qas": [
+            {
+              "id": "5-45-7",
+              "question": "安装FocusWriter的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install focuswriter",
+                  "answer_start": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`sudo apt-get remove focuswriter`",
+          "qas": [
+            {
+              "id": "5-45-8",
+              "question": "卸载FocusWriter的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove focuswriter",
+                  "answer_start": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "[http://packages.deepin.com/deepin/pool/main/f/focuswriter/](http://packages.deepin.com/deepin/pool/main/f/focuswriter/)",
+          "qas": [
+            {
+              "id": "5-45-9",
+              "question": "FocusWriter的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/f/focuswriter/",
+                  "answer_start": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "FocusWriter是一款写作软件，为了让您的写作空间尽可能的多且不受打扰，FocusWriter将几乎所有的工具栏都自动隐藏在屏幕边缘。",
+          "qas": [
+            {
+              "id": "5-45-10",
+              "question": "FocusWriter如何最大化用户写作空间？",
+              "answers": [
+                {
+                  "text": "将几乎所有的工具栏都自动隐藏在屏幕边缘",
+                  "answer_start": 46
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "利用FocusWriter写作便利流畅，您还可以设置闹钟和每日任务，非常适合撰稿人、小说写手、剧本作家使用。",
+          "qas": [
+            {
+              "id": "5-45-11",
+              "question": "FocusWriter提供哪些辅助功能？",
+              "answers": [
+                {
+                  "text": "设置闹钟和每日任务",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "id": "5-45-12",
+              "question": "哪些人群特别适合使用FocusWriter？",
+              "answers": [
+                {
+                  "text": "撰稿人、小说写手、剧本作家",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装\n\nsudo apt-get install focuswriter",
+          "qas": [
+            {
+              "id": "5-45-13",
+              "question": "在Deepin系统上如何安装FocusWriter？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install focuswriter",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载\n\nsudo apt-get remove focuswriter",
+          "qas": [
+            {
+              "id": "5-45-14",
+              "question": "如何从Deepin系统卸载FocusWriter？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove focuswriter",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址\n\nhttp://packages.deepin.com/deepin/pool/main/f/focuswriter/",
+          "qas": [
+            {
+              "id": "5-45-15",
+              "question": "FocusWriter的Deepin仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/f/focuswriter/",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

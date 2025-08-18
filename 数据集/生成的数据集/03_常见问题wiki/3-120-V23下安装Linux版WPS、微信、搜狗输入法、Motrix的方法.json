@@ -1,0 +1,179 @@
+{
+  "data": [
+    {
+      "title": "V23下安装Linux版WPS、微信、搜狗输入法、Motrix的方法",
+      "paragraphs": [
+        {
+          "context": "在V23下安装WPS Linux版，终端输入ll-cli install cn.wps.wps-office。",
+          "qas": [
+            {
+              "question": "在V23下如何安装WPS Linux版？",
+              "id": "3-120-1",
+              "answers": [
+                {
+                  "text": "终端输入ll-cli install cn.wps.wps-office。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装搜狗拼音Linux版，需从搜狗拼音官网下载Linux-x86_64版本的deb包，双击运行deb包即可。",
+          "qas": [
+            {
+              "question": "如何安装搜狗拼音Linux版？",
+              "id": "3-120-2",
+              "answers": [
+                {
+                  "text": "从搜狗拼音官网下载Linux-x86_64版本的deb包，双击运行deb包即可。",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "安装搜狗拼音Linux版需要下载什么版本的deb包？",
+              "id": "3-120-3",
+              "answers": [
+                {
+                  "text": "Linux-x86_64版本",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "向日葵远程需从官网下载Linux-UOS版-amd64版的deb包，双击运行完成安装。安装后若在启动器和桌面看不到图标，需到/opt/apps/com.oray.sunlogin.client/entries/applications找到图标，复制到~/Desktop和/usr/share/applications。",
+          "qas": [
+            {
+              "question": "如何安装向日葵远程？",
+              "id": "3-120-4",
+              "answers": [
+                {
+                  "text": "从官网下载Linux-UOS版-amd64版的deb包，双击运行完成安装。",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "向日葵远程安装后在启动器和桌面看不到图标怎么办？",
+              "id": "3-120-5",
+              "answers": [
+                {
+                  "text": "到/opt/apps/com.oray.sunlogin.client/entries/applications找到图标，复制到~/Desktop和/usr/share/applications。",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "question": "向日葵远程的deb包应下载什么版本？",
+              "id": "3-120-6",
+              "answers": [
+                {
+                  "text": "Linux-UOS版-amd64版",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装微信Linux版，先下载星火商店里的Linux版微信的deb包，双击运行安装。安装后若启动器和桌面无图标，到/opt/apps/store.spark-app.wechat-linux-spark/entries/applications找到图标文件，复制到~/Desktop和/usr/share/applications。微信图标显示不正常，需将/opt/apps/store.spark-app.wechat-linux-spark/entries/icons/hicolor里相应尺寸的png文件复制到/persistent/linglong/entries/share/icons/hicolor对应尺寸的文件夹下的apps文件夹下，重启系统即可。",
+          "qas": [
+            {
+              "question": "如何安装微信Linux版？",
+              "id": "3-120-7",
+              "answers": [
+                {
+                  "text": "先下载星火商店里的Linux版微信的deb包，双击运行安装。",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "微信Linux版安装后启动器和桌面无图标怎么办？",
+              "id": "3-120-8",
+              "answers": [
+                {
+                  "text": "到/opt/apps/store.spark-app.wechat-linux-spark/entries/applications找到图标文件，复制到~/Desktop和/usr/share/applications。",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "question": "微信Linux版图标显示不正常如何修复？",
+              "id": "3-120-9",
+              "answers": [
+                {
+                  "text": "将/opt/apps/store.spark-app.wechat-linux-spark/entries/icons/hicolor里相应尺寸的png文件复制到/persistent/linglong/entries/share/icons/hicolor对应尺寸的文件夹下的apps文件夹下，重启系统即可。",
+                  "answer_start": 165
+                }
+              ]
+            },
+            {
+              "question": "微信Linux版的deb包从哪里下载？",
+              "id": "3-120-10",
+              "answers": [
+                {
+                  "text": "星火商店",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Motrix下载器，需在官网下载其deb包，双击安装时若提示缺依赖，需先安装缺失的依赖，最后安装Motrix的deb包。相关依赖包可通过链接https://cowtransfer.com/s/34dd3f4062804d或输入传输口令5g51sk获取。",
+          "qas": [
+            {
+              "question": "如何安装Motrix下载器？",
+              "id": "3-120-11",
+              "answers": [
+                {
+                  "text": "在官网下载其deb包，双击安装时若提示缺依赖，需先安装缺失的依赖，最后安装Motrix的deb包。",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "安装Motrix下载器时缺依赖怎么办？",
+              "id": "3-120-12",
+              "answers": [
+                {
+                  "text": "先安装缺失的依赖，最后安装Motrix的deb包，相关依赖包可通过链接https://cowtransfer.com/s/34dd3f4062804d或输入传输口令5g51sk获取。",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "question": "哪里可以获取Motrix下载器的依赖包？",
+              "id": "3-120-13",
+              "answers": [
+                {
+                  "text": "通过链接https://cowtransfer.com/s/34dd3f4062804d或输入传输口令5g51sk获取。",
+                  "answer_start": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "大部分deb格式安装包在v23下安装不显示桌面和启动器图标的问题，可按找到图标复制到~/Desktop和/usr/share/applications的方法解决。",
+          "qas": [
+            {
+              "question": "大部分deb格式安装包在v23下安装不显示桌面和启动器图标怎么办？",
+              "id": "3-120-14",
+              "answers": [
+                {
+                  "text": "找到图标复制到~/Desktop和/usr/share/applications。",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

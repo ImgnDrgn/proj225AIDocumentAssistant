@@ -1,0 +1,80 @@
+{
+  "title": "samba常见问题",
+  "paragraphs": [
+    {
+      "context": "## 网络邻居中不能查看设备\n初步分析为访问网络领居需要samba低版本的协议，现在默认是高版本。可以手动降低协议，但不建议；\n1.降低后不能访问windows的共享，协议不匹配；\n2.低版本协议有严重的安全漏洞.试下在`/etc/samba/smb.conf`配置文件中的加入一行代码，如下：\n`【workgroup = WORKGROUP】`\n`client max protocol = NT1`\n\n## 挂载samba后图标显示齿轮\n可能的原因：\n1.gvfs包没有安全完全。特别是`gvfs-fuse`、`gvfs-backends`；\n2.系统没有 fuse 驱动。通过`lsmod | grep \"fuse\"`，命令可以查看是否安装驱动；\n\n## samba 无法记住密码\n`/efc/profile`文件中包含删除`~/.local/share/keyrings/`的脚本，这样也是无法记住密码的；\n\n## samba 共享中文件权限问题\n1.首先查看`samba`服务器中`/etc/smb.conf`文件中的配置是否是如下:\n`create mode = 0766`\n`force create mode = 0766`\n`directory mode = 0777`\n`force directory mode = 0777`\n\n2.用户默认创建的文件夹带有`acl`控制权限,匿名访问对应当前用户是`other`的,就没有读写权限了,通过终端创建文件夹也是带了`acl`权限的;",
+      "qas": [
+        {
+          "id": "5-338-1",
+          "question": "网络邻居中为什么不能查看设备？",
+          "answers": [
+            {
+              "text": "初步分析为访问网络领居需要samba低版本的协议，现在默认是高版本。可以手动降低协议，但不建议；\n1.降低后不能访问windows的共享，协议不匹配；\n2.低版本协议有严重的安全漏洞",
+              "answer_start": 19
+            }
+          ]
+        },
+        {
+          "id": "5-338-2",
+          "question": "如何临时解决网络邻居查看问题？",
+          "answers": [
+            {
+              "text": "试下在`/etc/samba/smb.conf`配置文件中的加入一行代码，如下：\n`【workgroup = WORKGROUP】`\n`client max protocol = NT1`",
+              "answer_start": 153
+            }
+          ]
+        },
+        {
+          "id": "5-338-3",
+          "question": "挂载samba后图标为什么显示齿轮？",
+          "answers": [
+            {
+              "text": "可能的原因：\n1.gvfs包没有安全完全。特别是`gvfs-fuse`、`gvfs-backends`；\n2.系统没有 fuse 驱动。通过`lsmod | grep \"fuse\"`，命令可以查看是否安装驱动；",
+              "answer_start": 225
+            }
+          ]
+        },
+        {
+          "id": "5-338-4",
+          "question": "如何查看系统是否安装了fuse驱动？",
+          "answers": [
+            {
+              "text": "通过`lsmod | grep \"fuse\"`，命令可以查看是否安装驱动",
+              "answer_start": 288
+            }
+          ]
+        },
+        {
+          "id": "5-338-5",
+          "question": "为什么samba无法记住密码？",
+          "answers": [
+            {
+              "text": "`/efc/profile`文件中包含删除`~/.local/share/keyrings/`的脚本，这样也是无法记住密码的；",
+              "answer_start": 358
+            }
+          ]
+        },
+        {
+          "id": "5-338-6",
+          "question": "如何检查samba文件权限配置？",
+          "answers": [
+            {
+              "text": "1.首先查看`samba`服务器中`/etc/smb.conf`文件中的配置是否是如下:\n`create mode = 0766`\n`force create mode = 0766`\n`directory mode = 0777`\n`force directory mode = 0777`",
+              "answer_start": 450
+            }
+          ]
+        },
+        {
+          "id": "5-338-7",
+          "question": "为什么匿名用户没有读写权限？",
+          "answers": [
+            {
+              "text": "2.用户默认创建的文件夹带有`acl`控制权限,匿名访问对应当前用户是`other`的,就没有读写权限了,通过终端创建文件夹也是带了`acl`权限的;",
+              "answer_start": 592
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

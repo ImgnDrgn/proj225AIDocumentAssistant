@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "Polarr",
+      "paragraphs": [
+        {
+          "context": "Polarr（泼辣修图）是一个智能图片处理工具，具有色温调整、区域色调系数等功能。",
+          "qas": [
+            {
+              "question": "Polarr是什么？",
+              "id": "5-233-1",
+              "answers": [
+                {
+                  "text": "一个智能图片处理工具",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "Polarr有哪些功能？",
+              "id": "5-233-2",
+              "answers": [
+                {
+                  "text": "色温调整、区域色调系数等",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Polarr的命令是sudo apt-get install polarr。",
+          "qas": [
+            {
+              "question": "如何安装Polarr？",
+              "id": "5-233-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install polarr",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Polarr的命令是sudo apt-get remove polarr。",
+          "qas": [
+            {
+              "question": "怎样卸载Polarr？",
+              "id": "5-233-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove polarr",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Polarr的仓库地址是http://packages.deepin.com/deepin/pool/main/p/polarr/。",
+          "qas": [
+            {
+              "question": "Polarr的仓库地址是什么？",
+              "id": "5-233-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/p/polarr/",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Polarr的目的是打造专业级的图片处理引擎，创作最佳图片效果，让图片有独特艺术风格。",
+          "qas": [
+            {
+              "question": "Polarr的目的是什么？",
+              "id": "5-233-6",
+              "answers": [
+                {
+                  "text": "打造专业级的图片处理引擎，通过该工具来创作最佳的图片效果，让你拍摄的图片拥有独特的艺术风格。",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

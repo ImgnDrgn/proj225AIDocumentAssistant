@@ -1,0 +1,209 @@
+{
+  "data": [
+    {
+      "title": "QOwnNotes",
+      "paragraphs": [
+        {
+          "context": "QOwnNotes是一款支持Markdown和ownCloud同步的文本编辑器。可以对文本添加注释，支持文字和字符串搜索，搜索结果高亮显示，可以对文件进行加密。笔记和ownCloud服务器同步，可以从ownCloud服务器恢复旧版本和已删除版本。",
+          "qas": [
+            {
+              "id": "5-65-1",
+              "question": "QOwnNotes是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "支持Markdown和ownCloud同步的文本编辑器",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "5-65-2",
+              "question": "QOwnNotes支持对文本进行哪些操作？",
+              "answers": [
+                {
+                  "text": "添加注释，支持文字和字符串搜索，搜索结果高亮显示，可以对文件进行加密",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-65-3",
+              "question": "QOwnNotes的笔记可以与什么进行同步？",
+              "answers": [
+                {
+                  "text": "ownCloud服务器",
+                  "answer_start": 78
+                }
+              ]
+            },
+            {
+              "id": "5-65-4",
+              "question": "从ownCloud服务器可以恢复QOwnNotes的哪些版本？",
+              "answers": [
+                {
+                  "text": "旧版本和已删除版本",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "id": "5-65-5",
+              "question": "QOwnNotes支持什么标记语言？",
+              "answers": [
+                {
+                  "text": "Markdown",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-65-6",
+              "question": "QOwnNotes的同步功能支持什么云服务？",
+              "answers": [
+                {
+                  "text": "ownCloud",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "5-65-7",
+              "question": "QOwnNotes提供什么文本操作功能？",
+              "answers": [
+                {
+                  "text": "对文本添加注释",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "id": "5-65-8",
+              "question": "QOwnNotes的搜索功能有什么特点？",
+              "answers": [
+                {
+                  "text": "支持文字和字符串搜索，搜索结果高亮显示",
+                  "answer_start": 49
+                }
+              ]
+            },
+            {
+              "id": "5-65-9",
+              "question": "QOwnNotes在文件安全方面提供什么功能？",
+              "answers": [
+                {
+                  "text": "对文件进行加密",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "5-65-10",
+              "question": "笔记同步到什么服务器？",
+              "answers": [
+                {
+                  "text": "ownCloud服务器",
+                  "answer_start": 102
+                }
+              ]
+            },
+            {
+              "id": "5-65-11",
+              "question": "能从服务器恢复什么内容？",
+              "answers": [
+                {
+                  "text": "恢复旧版本和已删除版本",
+                  "answer_start": 121
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install qownnotes",
+          "qas": [
+            {
+              "id": "5-65-12",
+              "question": "安装QOwnNotes的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install qownnotes",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove qownnotes",
+          "qas": [
+            {
+              "id": "5-65-13",
+              "question": "卸载QOwnNotes的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove qownnotes",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/q/qownnotes/",
+          "qas": [
+            {
+              "id": "5-65-14",
+              "question": "QOwnNotes的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/q/qownnotes/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装\n`sudo apt-get install qownnotes`\n卸载\n`sudo apt-get remove qownnotes`",
+          "qas": [
+            {
+              "id": "5-65-15",
+              "question": "安装QOwnNotes的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install qownnotes",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-65-16",
+              "question": "卸载QOwnNotes的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove qownnotes",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址\nhttp://packages.deepin.com/deepin/pool/main/q/qownnotes/",
+          "qas": [
+            {
+              "id": "5-65-17",
+              "question": "QOwnNotes的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/q/qownnotes/",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

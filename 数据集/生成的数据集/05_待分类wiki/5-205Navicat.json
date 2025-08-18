@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "Navicat",
+      "paragraphs": [
+        {
+          "context": "Navicat是一个数据库管理工具，专为简化数据库的管理及降低系统管理成本。以直觉化的图形用户界面而建，可安全简单地创建、组织、访问并共用信息，支持管理MySQL、MariaDB、SQL Server、SQLite、Oracle和PostgreSQL的数据库。",
+          "qas": [
+            {
+              "question": "Navicat是什么类型的工具？",
+              "id": "5-205-1",
+              "answers": [
+                {
+                  "text": "数据库管理工具",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "Navicat的主要作用是什么？",
+              "id": "5-205-2",
+              "answers": [
+                {
+                  "text": "简化数据库的管理及降低系统管理成本",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "Navicat支持管理哪些数据库？",
+              "id": "5-205-3",
+              "answers": [
+                {
+                  "text": "MySQL、MariaDB、SQL Server、SQLite、Oracle和PostgreSQL",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Navicat的命令是sudo apt-get install navicat。",
+          "qas": [
+            {
+              "question": "如何安装Navicat？",
+              "id": "5-205-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install navicat",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Navicat的命令是sudo apt-get remove navicat。",
+          "qas": [
+            {
+              "question": "怎样卸载Navicat？",
+              "id": "5-205-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove navicat",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Navicat的仓库地址是http://packages.deepin.com/deepin/pool/non-free/n/navicat/。",
+          "qas": [
+            {
+              "question": "Navicat的仓库地址是什么？",
+              "id": "5-205-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/n/navicat/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

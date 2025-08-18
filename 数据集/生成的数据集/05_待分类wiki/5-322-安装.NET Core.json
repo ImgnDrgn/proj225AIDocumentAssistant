@@ -1,0 +1,209 @@
+{
+  "data": [
+    {
+      "title": "安装.NET Core",
+      "paragraphs": [
+        {
+          "context": "安装.NET Core SDK前，需卸载以前安装的.Net Core版本。",
+          "qas": [
+            {
+              "question": "安装.NET Core SDK前需要做什么？",
+              "id": "5-322-1",
+              "answers": [
+                {
+                  "text": "卸载以前安装的.Net Core版本。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装.NET Core SDK第一步：sudo apt-get install curl libunwind8 gettext libicu52，用于下载工具和依赖库，deepin系统需安装libicu52。",
+          "qas": [
+            {
+              "question": "安装.NET Core SDK的第一步命令是什么？",
+              "id": "5-322-2",
+              "answers": [
+                {
+                  "text": "sudo apt-get install curl libunwind8 gettext libicu52",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "为什么deepin系统需要安装libicu52？",
+              "id": "5-322-3",
+              "answers": [
+                {
+                  "text": "因为deepin系统不存在libicu52库。",
+                  "answer_start": 69
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装.NET Core SDK第二步：curl -sSL -o dotnet.tar.gz https://go.microsoft.com/fwlink/?linkid=848826，下载SDK文件到dotnet.tar.gz，文件较大下载耗时。",
+          "qas": [
+            {
+              "question": "安装.NET Core SDK第二步的命令有什么作用？",
+              "id": "5-322-4",
+              "answers": [
+                {
+                  "text": "下载SDK文件到dotnet.tar.gz。",
+                  "answer_start": 63
+                }
+              ]
+            },
+            {
+              "question": "为什么下载SDK文件需要很长时间？",
+              "id": "5-322-5",
+              "answers": [
+                {
+                  "text": "因为该SDK文件较大。",
+                  "answer_start": 87
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装.NET Core SDK第三步：sudo mkdir -p /opt/dotnet && sudo tar zxf dotnet.tar.gz -C /opt/dotnet，创建文件夹并解压SDK到/opt/dotnet目录。",
+          "qas": [
+            {
+              "question": "安装.NET Core SDK第三步的命令会完成什么操作？",
+              "id": "5-322-6",
+              "answers": [
+                {
+                  "text": "创建存放文件夹，并解压下载的SDK压缩文件到/opt/dotnet目录。",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装.NET Core SDK第四步：sudo ln -s /opt/dotnet/dotnet /usr/local/bin，将dotnet工具链接到/usr/local/bin目录方便使用。",
+          "qas": [
+            {
+              "question": "安装.NET Core SDK第四步的目的是什么？",
+              "id": "5-322-7",
+              "answers": [
+                {
+                  "text": "将dotnet工具链接到/usr/local/bin目录，方便直接在命令中使用该命令。",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解决dotnet报段错误异常需下载libcurl3_7.38.0-4+deb8u11_amd64.deb，安装该deb包，卸载curl并锁定libcurl3。",
+          "qas": [
+            {
+              "question": "解决dotnet报段错误异常首先需要做什么？",
+              "id": "5-322-8",
+              "answers": [
+                {
+                  "text": "下载libcurl3_7.38.0-4+deb8u11_amd64.deb。",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "question": "安装libcurl3的deb包后还需要进行哪些操作？",
+              "id": "5-322-9",
+              "answers": [
+                {
+                  "text": "卸载 curl，锁定lock libcurl3，防止以后在线升级该库。",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "question": "安装libcurl3的deb包使用什么命令？",
+              "id": "5-322-10",
+              "answers": [
+                {
+                  "text": "sudo dpkg -i libcurl3_7.38.0-4+deb8u3_amd64.deb",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "初始化hello world程序：dotnet new console -o hwapp，然后cd hwapp。",
+          "qas": [
+            {
+              "question": "如何初始化一个hello world程序？",
+              "id": "5-322-11",
+              "answers": [
+                {
+                  "text": "dotnet new console -o hwapp，然后cd hwapp。",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行示例程序需先执行dotnet restore恢复包，再执行dotnet run运行程序。",
+          "qas": [
+            {
+              "question": "运行示例程序的两个命令分别是什么，各有什么作用？",
+              "id": "5-322-12",
+              "answers": [
+                {
+                  "text": "第一个命令dotnet restore将恢复项目文件中指定的包，第二个命令dotnet run将运行实际的示例。",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "推荐的.NET Core开发工具包括Visual Studio Code（需安装C#扩展）、OmniSharp、JetBrains Rider。",
+          "qas": [
+            {
+              "question": "有哪些推荐的.NET Core开发工具？",
+              "id": "5-322-13",
+              "answers": [
+                {
+                  "text": "Visual Studio Code、OmniSharp、JetBrains Rider。",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "使用Visual Studio Code进行.NET Core开发需要安装什么？",
+              "id": "5-322-14",
+              "answers": [
+                {
+                  "text": "C#扩展",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "官方debian安装教程链接：https://www.microsoft.com/net/core#linuxdebian。",
+          "qas": [
+            {
+              "question": "官方debian安装教程的链接是什么？",
+              "id": "5-322-15",
+              "answers": [
+                {
+                  "text": "https://www.microsoft.com/net/core#linuxdebian",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

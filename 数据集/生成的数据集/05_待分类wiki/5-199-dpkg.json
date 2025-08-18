@@ -1,0 +1,79 @@
+{
+  "data": [
+    {
+      "title": "dpkg",
+      "paragraphs": [
+        {
+          "context": "打包debian软件需要了解其结构，包含/DEBIAN，/etc，/usr，/opt等目录。",
+          "qas": [
+            {
+              "question": "打包debian软件需要了解哪些目录结构？",
+              "id": "5-199-1",
+              "answers": [
+                {
+                  "text": "/DEBIAN，/etc，/usr，/opt等目录",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打包deb包的命令是dpkg -b 目录 -xxx.deb。",
+          "qas": [
+            {
+              "question": "打包deb包的命令是什么？",
+              "id": "5-199-2",
+              "answers": [
+                {
+                  "text": "dpkg -b 目录 -xxx.deb",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装deb包可以使用dpkg -i xxx.deb命令，也可以使用深度包管理器。",
+          "qas": [
+            {
+              "question": "如何安装deb包？",
+              "id": "5-199-3",
+              "answers": [
+                {
+                  "text": "使用dpkg -i xxx.deb命令，也可以使用深度包管理器",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deb包安装不顺利可能是依赖问题，需查看/DEBIAN/control中填写的依赖。",
+          "qas": [
+            {
+              "question": "deb包安装不顺利可能是什么原因？",
+              "id": "5-199-4",
+              "answers": [
+                {
+                  "text": "存在依赖问题",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "deb包安装有依赖问题时应查看哪里的信息？",
+              "id": "5-199-5",
+              "answers": [
+                {
+                  "text": "/DEBIAN/control中填写的依赖",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

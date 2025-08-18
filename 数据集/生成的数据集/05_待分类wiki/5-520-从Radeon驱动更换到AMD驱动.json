@@ -1,0 +1,189 @@
+{
+  "data": [
+    {
+      "title": "从Radeon驱动更换到AMD驱动",
+      "paragraphs": [
+        {
+          "context": "从Radeon驱动更换到AMD驱动的方法已在显卡“Radeon HD 8570 /R7 240/340 /R520 OEM”上验证可用。",
+          "qas": [
+            {
+              "question": "哪种显卡验证了从Radeon驱动更换到AMD驱动的方法可用？",
+              "id": "5-517-1",
+              "answers": [
+                {
+                  "text": "Radeon HD 8570 /R7 240/340 /R520 OEM",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装相关驱动可执行命令：sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386，若依赖有问题，可不安装。",
+          "qas": [
+            {
+              "question": "安装相关驱动的命令是什么？",
+              "id": "5-517-2",
+              "answers": [
+                {
+                  "text": "sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "如果安装驱动时依赖有问题该怎么办？",
+              "id": "5-517-3",
+              "answers": [
+                {
+                  "text": "可不安装",
+                  "answer_start": 69
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加黑名单屏蔽radeon驱动的步骤：touch /etc/modprobe.d/blacklist-radeon.conf；echo blacklist radeon >> /etc/modprobe.d/blacklist-radeon.conf。",
+          "qas": [
+            {
+              "question": "如何添加黑名单屏蔽radeon驱动？",
+              "id": "5-517-4",
+              "answers": [
+                {
+                  "text": "touch /etc/modprobe.d/blacklist-radeon.conf；echo blacklist radeon >> /etc/modprobe.d/blacklist-radeon.conf",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改grub需编辑/etc/default/grub文件，将GRUB_CMDLINE_LINUX_DEFAULT设置为\"amdgpu.si_support=1 amdgpu.cik_support=1 amdgpu.dc=1 amdgpu.dpm=1 amdgpu.modeset=1\"。",
+          "qas": [
+            {
+              "question": "修改grub需要编辑哪个文件？",
+              "id": "5-517-5",
+              "answers": [
+                {
+                  "text": "/etc/default/grub",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "修改grub时，GRUB_CMDLINE_LINUX_DEFAULT应设置为什么？",
+              "id": "5-517-6",
+              "answers": [
+                {
+                  "text": "\"amdgpu.si_support=1 amdgpu.cik_support=1 amdgpu.dc=1 amdgpu.dpm=1 amdgpu.modeset=1\"",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更新grub的命令为：sudo update-grub2 && sudo update-initramfs -u -k all。",
+          "qas": [
+            {
+              "question": "更新grub的命令是什么？",
+              "id": "5-517-7",
+              "answers": [
+                {
+                  "text": "sudo update-grub2 && sudo update-initramfs -u -k all",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更新initramfs可能提示缺少固件，需手动下载，下载地址：http://anduin.linuxfromscratch.org/sources/linux-firmware/amdgpu/。",
+          "qas": [
+            {
+              "question": "更新initramfs提示缺少固件该怎么办？",
+              "id": "5-517-8",
+              "answers": [
+                {
+                  "text": "需手动下载，下载地址：http://anduin.linuxfromscratch.org/sources/linux-firmware/amdgpu/",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "question": "缺少的固件在哪里下载？",
+              "id": "5-517-9",
+              "answers": [
+                {
+                  "text": "http://anduin.linuxfromscratch.org/sources/linux-firmware/amdgpu/",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "完成相关操作后需重启，命令为reboot。",
+          "qas": [
+            {
+              "question": "完成操作后需要做什么？",
+              "id": "5-517-10",
+              "answers": [
+                {
+                  "text": "重启，命令为reboot",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "重启的命令是什么？",
+              "id": "5-517-11",
+              "answers": [
+                {
+                  "text": "reboot",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看驱动是否更换成功，可执行sudo lspci -v | grep amdgpu -B 19，应有\"Kernel driver in use: amdgpu\"；或执行sudo lshw -c video | grep amdgpu -B 10 -A 1，应有\"configuration: driver=amdgpu\"。",
+          "qas": [
+            {
+              "question": "如何通过命令查看驱动是否更换成功，成功的标志是什么？",
+              "id": "5-517-12",
+              "answers": [
+                {
+                  "text": "执行sudo lspci -v | grep amdgpu -B 19，应有\"Kernel driver in use: amdgpu\"；或执行sudo lshw -c video | grep amdgpu -B 10 -A 1，应有\"configuration: driver=amdgpu\"",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "执行sudo lspci -v | grep amdgpu -B 19命令，驱动更换成功会显示什么？",
+              "id": "5-517-13",
+              "answers": [
+                {
+                  "text": "Kernel driver in use: amdgpu",
+                  "answer_start": 78
+                }
+              ]
+            },
+            {
+              "question": "执行sudo lshw -c video | grep amdgpu -B 10 -A 1命令，驱动更换成功会显示什么？",
+              "id": "5-517-14",
+              "answers": [
+                {
+                  "text": "configuration: driver=amdgpu",
+                  "answer_start": 179
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

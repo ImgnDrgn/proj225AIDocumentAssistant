@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "电源",
+      "paragraphs": [
+        {
+          "context": "电源供应器（英语：Power supply unit，简称PSU或电源），是电脑之中的一个组件，负责将交流电转成稳定的直流电12V与5V，给电脑内其它的组件所使用的电源。常见分类: AT, ATX。",
+          "qas": [
+            {
+              "id": "2-12-1",
+              "question": "电源供应器的英语名称是什么？",
+              "answers": [
+                {
+                  "text": "Power supply unit",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "2-12-2",
+              "question": "电源供应器的简称是什么？",
+              "answers": [
+                {
+                  "text": "PSU或电源",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "id": "2-12-3",
+              "question": "电源供应器在计算机中的角色是什么？",
+              "answers": [
+                {
+                  "text": "电脑之中的一个组件",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "2-12-4",
+              "question": "电源供应器在电脑中的作用是什么？",
+              "answers": [
+                {
+                  "text": "负责将交流电转成稳定的直流电12V与5V，给电脑内其它的组件所使用的电源",
+                  "answer_start": 48
+                }
+              ]
+            },
+            {
+              "id": "2-12-5",
+              "question": "电源供应器的常见分类有哪些？",
+              "answers": [
+                {
+                  "text": "AT, ATX",
+                  "answer_start": 91
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

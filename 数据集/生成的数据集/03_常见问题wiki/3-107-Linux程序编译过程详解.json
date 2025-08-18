@@ -1,0 +1,309 @@
+{
+  "data": [
+    {
+      "title": "Linux程序编译过程详解",
+      "paragraphs": [
+        {
+          "context": "GCC是GNU Compiler Collection的简称，是Linux系统上常用的编译工具。",
+          "qas": [
+            {
+              "question": "GCC的全称是什么？",
+              "id": "3-107-1",
+              "answers": [
+                {
+                  "text": "GNU Compiler Collection",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GCC工具链软件包括GCC、Binutils、C运行库等。",
+          "qas": [
+            {
+              "question": "GCC工具链包括哪些部分？",
+              "id": "3-107-2",
+              "answers": [
+                {
+                  "text": "GCC、Binutils、C运行库等",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Binutils中的as主要用于汇编。",
+          "qas": [
+            {
+              "question": "Binutils中的as工具的作用是什么？",
+              "id": "3-107-3",
+              "answers": [
+                {
+                  "text": "主要用于汇编",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Binutils中的ld主要用于链接。",
+          "qas": [
+            {
+              "question": "Binutils中的ld工具的作用是什么？",
+              "id": "3-107-4",
+              "answers": [
+                {
+                  "text": "主要用于链接",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在linux中静态库是以.a为后缀的文件，共享库是以.so为后缀的文件。",
+          "qas": [
+            {
+              "question": "Linux中静态库和共享库的后缀分别是什么？",
+              "id": "3-107-5",
+              "answers": [
+                {
+                  "text": "静态库以.a为后缀，共享库以.so为后缀",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "静态库的代码在编译过程中已经被载入可执行程序，共享库的代码是在可执行程序运行时才载入内存的。",
+          "qas": [
+            {
+              "question": "静态库和共享库的代码在何时被载入？",
+              "id": "3-107-6",
+              "answers": [
+                {
+                  "text": "静态库在编译过程中载入可执行程序，共享库在程序运行时载入内存",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用gcc进行预处理的命令为：gcc -E hello.c -o hello.i，选项-E使GCC在进行完预处理后即停止。",
+          "qas": [
+            {
+              "question": "使用gcc进行预处理的命令是什么？",
+              "id": "3-107-7",
+              "answers": [
+                {
+                  "text": "gcc -E hello.c -o hello.i",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "预处理过程包括：删除所有的#define，展开所有宏定义，处理#include预编译指令，删除所有注释，添加行号和文件标识，保留#pragma指令。",
+          "qas": [
+            {
+              "question": "预处理过程包括哪些步骤？",
+              "id": "3-107-8",
+              "answers": [
+                {
+                  "text": "删除所有的#define，展开所有宏定义，处理#include预编译指令，删除所有注释，添加行号和文件标识，保留#pragma指令",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用gcc进行编译的命令为：gcc -S hello.i -o hello.s，选项-S使GCC在执行完编译后停止，生成汇编程序。",
+          "qas": [
+            {
+              "question": "使用gcc将预处理文件编译生成汇编程序的命令是什么？",
+              "id": "3-107-9",
+              "answers": [
+                {
+                  "text": "gcc -S hello.i -o hello.s",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编译过程是对预处理完的文件进行词法分析、语法分析、语义分析及优化后生成相应的汇编代码。",
+          "qas": [
+            {
+              "question": "编译过程的作用是什么？",
+              "id": "3-107-10",
+              "answers": [
+                {
+                  "text": "对预处理完的文件进行词法分析、语法分析、语义分析及优化后生成相应的汇编代码",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用gcc进行汇编的命令为：gcc -c hello.s -o hello.o，选项-c使GCC在执行完汇编后停止，生成目标文件。",
+          "qas": [
+            {
+              "question": "使用gcc将汇编程序生成目标文件的命令是什么？",
+              "id": "3-107-11",
+              "answers": [
+                {
+                  "text": "gcc -c hello.s -o hello.o",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "汇编过程将汇编代码处理生成处理器能识别的指令，保存在后缀为.o的目标文件中。",
+          "qas": [
+            {
+              "question": "汇编过程的作用是什么？",
+              "id": "3-107-12",
+              "answers": [
+                {
+                  "text": "将汇编代码处理生成处理器能识别的指令，保存在后缀为.o的目标文件中",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "静态链接是指在编译阶段直接把静态库加入到可执行文件中去，这样可执行文件会比较大。",
+          "qas": [
+            {
+              "question": "静态链接的特点是什么？",
+              "id": "3-107-13",
+              "answers": [
+                {
+                  "text": "在编译阶段直接把静态库加入到可执行文件中去，可执行文件会比较大",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "动态链接是指链接阶段仅仅只加入一些描述信息，而程序执行时再从系统中把相应动态库加载到内存中去。",
+          "qas": [
+            {
+              "question": "动态链接的特点是什么？",
+              "id": "3-107-14",
+              "answers": [
+                {
+                  "text": "链接阶段仅仅只加入一些描述信息，程序执行时再从系统中把相应动态库加载到内存中去",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在Linux系统中，可以用ldd命令查看一个可执行程序依赖的共享库。",
+          "qas": [
+            {
+              "question": "在Linux中，用什么命令查看可执行程序依赖的共享库？",
+              "id": "3-107-15",
+              "answers": [
+                {
+                  "text": "ldd命令",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ELF文件的.text段是已编译程序的指令代码段。",
+          "qas": [
+            {
+              "question": "ELF文件的.text段是什么？",
+              "id": "3-107-16",
+              "answers": [
+                {
+                  "text": "已编译程序的指令代码段",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ELF文件的.data段是已初始化的C程序全局变量和静态局部变量。",
+          "qas": [
+            {
+              "question": "ELF文件的.data段包含什么？",
+              "id": "3-107-17",
+              "answers": [
+                {
+                  "text": "已初始化的C程序全局变量和静态局部变量",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "可以使用readelf -S查看ELF文件各个section的信息。",
+          "qas": [
+            {
+              "question": "如何查看ELF文件各个section的信息？",
+              "id": "3-107-18",
+              "answers": [
+                {
+                  "text": "使用readelf -S",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用objdump -D可以对ELF文件进行反汇编。",
+          "qas": [
+            {
+              "question": "用什么命令可以对ELF文件进行反汇编？",
+              "id": "3-107-19",
+              "answers": [
+                {
+                  "text": "objdump -D",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用objdump -S将ELF文件反汇编并混合显示C语言源代码，需要编译时加上-g选项。",
+          "qas": [
+            {
+              "question": "使用objdump -S需要什么编译选项？",
+              "id": "3-107-20",
+              "answers": [
+                {
+                  "text": "-g选项",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

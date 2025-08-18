@@ -1,0 +1,144 @@
+{
+  "data": [
+    {
+      "title": "Deepin上使用惠普打印机",
+      "paragraphs": [
+        {
+          "context": "在Deepin系统上使用打印机需简单配置，先在启动菜单找到打印设置，可搜索【打印】，打开后点击添加按钮。",
+          "qas": [
+            {
+              "question": "在Deepin系统上使用打印机首先要做什么？",
+              "id": "5-544-1",
+              "answers": [
+                {
+                  "text": "在启动菜单里找到打印设置，若图标多可搜索【打印】，打开后点击添加按钮。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "第一次连接网络打印机，可查找网络打印机并输入ip地址，找到后选打印机，右侧用HPLIP连接，正常识别后点击应用添加。",
+          "qas": [
+            {
+              "question": "第一次连接网络打印机如何操作？",
+              "id": "5-544-2",
+              "answers": [
+                {
+                  "text": "通过查找网络打印机，输入打印机的ip地址进行查找，查找到后选择该打印机，在右边选择使用HPLIP进行连接，正常识别后点击应用添加。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加打印机后可打印测试页，若失败，因Deepin默认安装hplip组件但缺少hp-plugin，需安装该插件。",
+          "qas": [
+            {
+              "question": "打印测试页失败可能的原因是什么？",
+              "id": "5-544-3",
+              "answers": [
+                {
+                  "text": "Deepin系统默认安装hplip的组件，但缺少hp-plugin。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装hp-plugin可打开终端输入`hp-plugin`，终端会显示版本号，在线安装可能因网络问题失败，建议手动下载。",
+          "qas": [
+            {
+              "question": "如何查看hp-plugin的版本号？",
+              "id": "5-544-4",
+              "answers": [
+                {
+                  "text": "打开终端（DeepinTerminal），输入`hp-plugin`，在终端的输出中会显示版本号。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "为什么不建议在线安装hp-plugin？",
+              "id": "5-544-5",
+              "answers": [
+                {
+                  "text": "往往会因为网络问题，下载失败。",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "hp-plugin手动下载地址为https://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/，需根据终端显示的版本下载对应文件，如3.16.10版本的hplip-3.16.10-plugin.run和hplip-3.16.10-plugin.run.asc。",
+          "qas": [
+            {
+              "question": "hp-plugin的手动下载地址是什么？",
+              "id": "5-544-6",
+              "answers": [
+                {
+                  "text": "https://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "下载hp-plugin时如何选择版本？",
+              "id": "5-544-7",
+              "answers": [
+                {
+                  "text": "根据终端输入`hp-plugin`后显示的版本号，下载对应版本。",
+                  "answer_start": 78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用谷歌浏览器打开下载页面，找到正确文件后右键---链接另存为，选择保存位置即可下载hp-plugin。",
+          "qas": [
+            {
+              "question": "如何下载hp-plugin文件？",
+              "id": "5-544-8",
+              "answers": [
+                {
+                  "text": "用系统默认的谷歌浏览器打开下载页面，找到正确的文件后右键---链接另存为，然后选择下载后保存的位置。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "hp-plugin离线安装可执行`hp-plugin`命令选本地文件，或用`hp-setup`命令选文件路径，需root密码，Deepin默认无root密码，需用`sudo passwd`设置。",
+          "qas": [
+            {
+              "question": "如何进行hp-plugin的离线安装？",
+              "id": "5-544-9",
+              "answers": [
+                {
+                  "text": "在终端中，执行hp-plugin命令，根据提示选择要使用本地文件；或者在终端中执行`hp-setup`命令，根据提示选择你下载的plugin文件路径。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Deepin系统中如何设置root密码？",
+              "id": "5-544-10",
+              "answers": [
+                {
+                  "text": "重新开一个新的终端，输入`sudo passwd`，提示输入当前账户密码，正确输入后提示输入unix密码（即root密码），输入后即可设置。",
+                  "answer_start": 87
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

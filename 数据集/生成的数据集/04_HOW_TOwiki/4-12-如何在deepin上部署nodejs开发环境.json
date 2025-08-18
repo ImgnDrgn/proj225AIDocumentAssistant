@@ -1,0 +1,199 @@
+{
+  "data": [
+    {
+      "title": "如何在deepin上部署nodejs开发环境",
+      "paragraphs": [
+        {
+          "context": "Node.js是基于Chrome V8引擎的JavaScript运行环境，使用事件驱动、非阻塞式I/O模型，让JavaScript运行在服务端。",
+          "qas": [
+            {
+              "question": "Node.js是基于什么引擎的？",
+              "id": "4-12-1",
+              "answers": [
+                {
+                  "text": "Chrome V8引擎",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "Node.js的I/O模型有什么特点？",
+              "id": "4-12-2",
+              "answers": [
+                {
+                  "text": "事件驱动、非阻塞式",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在deepin上可通过sudo apt install nodejs命令从源里安装nodejs，安装后用node -v验证，成功会输出版本号如v10.21.0。",
+          "qas": [
+            {
+              "question": "在deepin上从源里安装nodejs的命令是什么？",
+              "id": "4-12-3",
+              "answers": [
+                {
+                  "text": "sudo apt install nodejs",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "如何验证nodejs安装是否成功？",
+              "id": "4-12-4",
+              "answers": [
+                {
+                  "text": "使用命令node -v，成功会输出版本号",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "从源安装的nodejs版本较低，可下载安装包安装，下载地址为https://nodejs.org/zh-cn/download/，选择Linux二进制文件及对应系统架构。",
+          "qas": [
+            {
+              "question": "为什么要通过安装包安装nodejs？",
+              "id": "4-12-5",
+              "answers": [
+                {
+                  "text": "从源安装的版本较低",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "nodejs安装包的下载地址是什么？",
+              "id": "4-12-6",
+              "answers": [
+                {
+                  "text": "https://nodejs.org/zh-cn/download/",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用wget下载nodejs安装包，如wget https://nodejs.org/dist/v18.14.2/node-v18.14.2-linux-x64.tar.xz，再解压到/usr/local/。",
+          "qas": [
+            {
+              "question": "如何下载nodejs安装包？",
+              "id": "4-12-7",
+              "answers": [
+                {
+                  "text": "用wget命令，如wget https://nodejs.org/dist/v18.14.2/node-v18.14.2-linux-x64.tar.xz",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "nodejs安装包解压到哪个目录？",
+              "id": "4-12-8",
+              "answers": [
+                {
+                  "text": "/usr/local/",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解压后将文件夹重命名为node，命令为sudo mv /usr/local/node-v18.14.2-linux-x64 /usr/local/node。",
+          "qas": [
+            {
+              "question": "解压后的nodejs文件夹如何重命名？",
+              "id": "4-12-9",
+              "answers": [
+                {
+                  "text": "使用命令sudo mv /usr/local/node-v18.14.2-linux-x64 /usr/local/node",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "需添加环境变量，编辑~/.bashrc（zsh用.zshrc，全局用/etc/profile），添加export NODE_HOME=/usr/local/node等内容。",
+          "qas": [
+            {
+              "question": "添加nodejs环境变量需要编辑哪个文件？",
+              "id": "4-12-10",
+              "answers": [
+                {
+                  "text": "~/.bashrc（zsh用.zshrc，全局用/etc/profile）",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "NODE_HOME的环境变量值是什么？",
+              "id": "4-12-11",
+              "answers": [
+                {
+                  "text": "/usr/local/node",
+                  "answer_start": 69
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建node_global和node_cache文件夹，命令为mkdir /usr/local/node/node_{global,cache}，并设置npm前缀和缓存路径。",
+          "qas": [
+            {
+              "question": "如何创建node的全局目录和缓存文件夹？",
+              "id": "4-12-12",
+              "answers": [
+                {
+                  "text": "使用命令mkdir /usr/local/node/node_{global,cache}",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "如何设置npm的前缀路径？",
+              "id": "4-12-13",
+              "answers": [
+                {
+                  "text": "npm config set prefix \"/usr/local/node/node_global\"",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "可用npm config list查看配置列表，添加环境变量后用source ~/.bashrc刷新shell环境。",
+          "qas": [
+            {
+              "question": "如何查看npm的配置列表？",
+              "id": "4-12-14",
+              "answers": [
+                {
+                  "text": "使用命令npm config list",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "添加环境变量后如何刷新shell环境？",
+              "id": "4-12-15",
+              "answers": [
+                {
+                  "text": "使用命令source ~/.bashrc",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

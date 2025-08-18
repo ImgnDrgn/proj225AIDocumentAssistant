@@ -1,0 +1,144 @@
+{
+  "data": [
+    {
+      "title": "常规 Pull Request 代码贡献流程",
+      "paragraphs": [
+        {
+          "context": "向GitHub项目贡献代码通常使用Fork + Pull Request流程：先派生仓库，在复刻仓库修改，再发起拉取请求，经评审后合并。",
+          "qas": [
+            {
+              "question": "向GitHub项目贡献代码常用的流程是什么？",
+              "id": "5-454-1",
+              "answers": [
+                {
+                  "text": "Fork + Pull Request流程",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "上游仓库指希望贡献代码的原始仓库，如linuxdeepin组织下的dde-file-manager仓库。",
+          "qas": [
+            {
+              "question": "什么是上游仓库？",
+              "id": "5-454-2",
+              "answers": [
+                {
+                  "text": "希望贡献代码的原始仓库，如linuxdeepin组织下的dde-file-manager仓库。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建派生复刻仓库需通过GitHub的Fork功能，在自己账户下生成关联仓库，如username的dde-file-manager仓库。",
+          "qas": [
+            {
+              "question": "如何创建派生复刻仓库？",
+              "id": "5-454-3",
+              "answers": [
+                {
+                  "text": "通过GitHub的Fork功能，在自己账户下生成关联仓库。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "应克隆自己的派生仓库到本地，在其中修改代码，修改后推送到派生仓库会看到创建PR的提示。",
+          "qas": [
+            {
+              "question": "应该克隆哪个仓库到本地进行修改？",
+              "id": "5-454-4",
+              "answers": [
+                {
+                  "text": "自己的派生仓库",
+                  "answer_start": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "建议将上游仓库添加为remote以便更新代码，如git remote add upstream [上游仓库地址]。",
+          "qas": [
+            {
+              "question": "如何方便更新上游仓库代码？",
+              "id": "5-454-5",
+              "answers": [
+                {
+                  "text": "将上游仓库添加为remote，如git remote add upstream [上游仓库地址]。",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "强烈建议在新的本地分支进行代码变更，方便主线分支更新。",
+          "qas": [
+            {
+              "question": "进行代码变更时建议在什么地方操作？",
+              "id": "5-454-6",
+              "answers": [
+                {
+                  "text": "新的本地分支",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "推送本地修改分支到origin后，在GitHub会看到创建PR的提示，点击可进入创建界面填写信息提交。",
+          "qas": [
+            {
+              "question": "推送本地修改后如何创建PR？",
+              "id": "5-454-7",
+              "answers": [
+                {
+                  "text": "在GitHub看到创建PR的提示，点击进入创建界面填写信息提交。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PR创建后，可在页面查看评论、CI检查和review状态，邀请有maintain权限的组员评审，获Approve后可合入。",
+          "qas": [
+            {
+              "question": "PR创建后需要做什么？",
+              "id": "5-454-8",
+              "answers": [
+                {
+                  "text": "查看评论、CI检查和review状态，邀请有maintain权限的组员评审，获Approve后可合入。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "代码有问题无需关闭PR，可在原分支推送新提交或覆盖原有提交，会自动更新PR并重新触发检查。",
+          "qas": [
+            {
+              "question": "代码存在问题时如何处理PR？",
+              "id": "5-454-9",
+              "answers": [
+                {
+                  "text": "无需关闭PR，在原分支推送新提交或覆盖原有提交，会自动更新PR并重新触发检查。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

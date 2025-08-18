@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "Comix",
+      "paragraphs": [
+        {
+          "context": "Comix是一款优秀的连环画电子阅读器。如果您有很多精美的电子连环画，需要一个功能强大的工具来阅读的话，那么Comix是您的不二选择。Comix也可以作为一般的图像查看器来使用，它支持从zip、rar、tar等压缩包中直接读取图像文件。",
+          "qas": [
+            {
+              "id": "5-50-1",
+              "question": "Comix是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "一款优秀的连环画电子阅读器",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-50-2",
+              "question": "Comix可以作为什么来使用？",
+              "answers": [
+                {
+                  "text": "一般的图像查看器",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-50-3",
+              "question": "Comix支持从哪些压缩包中直接读取图像文件？",
+              "answers": [
+                {
+                  "text": "zip、rar、tar等压缩包",
+                  "answer_start": 95
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install comix",
+          "qas": [
+            {
+              "id": "5-50-4",
+              "question": "安装Comix的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install comix",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove comix",
+          "qas": [
+            {
+              "id": "5-50-5",
+              "question": "卸载Comix的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove comix",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/c/comix/",
+          "qas": [
+            {
+              "id": "5-50-6",
+              "question": "Comix的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/c/comix/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

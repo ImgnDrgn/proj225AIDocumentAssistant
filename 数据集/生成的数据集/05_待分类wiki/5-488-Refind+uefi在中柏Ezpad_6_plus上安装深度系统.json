@@ -1,0 +1,199 @@
+{
+  "data": [
+    {
+      "title": "Refind+uefi在中柏Ezpad_6_plus上安装深度系统",
+      "paragraphs": [
+        {
+          "context": "中柏Ezpad 6 plus是一款二合一平板电脑，CPU为英特尔Apollo Lake N3450 1.1~2.2GHz，内存6G，SSD 60G，eMMC 58G，有DC电源接口等，尺寸11.6，屏幕为电容屏1920×1080。",
+          "qas": [
+            {
+              "question": "中柏Ezpad 6 plus的CPU型号是什么？",
+              "id": "5-488-1",
+              "answers": [
+                {
+                  "text": "英特尔Apollo Lake N3450",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "中柏Ezpad 6 plus的屏幕分辨率是多少？",
+              "id": "5-488-2",
+              "answers": [
+                {
+                  "text": "1920×1080",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装深度系统需要deepin系统镜像、深度启动盘制作工具、refind文件，refind可在其官网下载。",
+          "qas": [
+            {
+              "question": "安装深度系统需要哪些软件？",
+              "id": "5-488-3",
+              "answers": [
+                {
+                  "text": "deepin 系统镜像、deepin 系统启动盘制作工具、refind 文件",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "在哪里可以下载refind文件？",
+              "id": "5-488-4",
+              "answers": [
+                {
+                  "text": "refind的官网（http://www.rodsbooks.com/refind/）",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "制作启动盘时，需用深度启动盘制作工具制作安装盘，解压refind文件，将refind_x64.efi重命名为BOOTX64.EFI，复制refind目录下所有文件到启动盘EFI/boot目录，将refind.conf-sample命名为refind.conf，编辑refind.conf添加menuentry等内容。",
+          "qas": [
+            {
+              "question": "制作启动盘时，如何处理refind_x64.efi文件？",
+              "id": "5-488-5",
+              "answers": [
+                {
+                  "text": "将refind_x64.efi重命名为BOOTX64.EFI",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "question": "refind.conf-sample文件在制作启动盘时需要如何处理？",
+              "id": "5-488-6",
+              "answers": [
+                {
+                  "text": "将refind.conf-sample文件命名为refind.conf",
+                  "answer_start": 147
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "menuentry \"Try deepin\" 中，loader指定加载的内核引导文件路径为/live/vmlinuz.efi，options参数为\"file=/cdrom/pressed/deepin.seed boot=live quiet splash ---\"，initrd指定临时根文件系统路径为/live/initrd.lz。",
+          "qas": [
+            {
+              "question": "menuentry \"Try deepin\" 中，loader指定的内核引导文件路径是什么？",
+              "id": "5-488-7",
+              "answers": [
+                {
+                  "text": "/live/vmlinuz.efi",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "menuentry \"Try deepin\" 的options参数内容是什么？",
+              "id": "5-488-8",
+              "answers": [
+                {
+                  "text": "file=/cdrom/pressed/deepin.seed boot=live quiet splash ---",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统分区需删除要安装的分区留出空白空间，要有efi分区，示例分区方案为efi, /, /home, swap。",
+          "qas": [
+            {
+              "question": "系统安装前分区需要注意什么？",
+              "id": "5-488-9",
+              "answers": [
+                {
+                  "text": "要将要安装的分区删除，留出空白空间，需要一个efi分区",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "示例的分区方案有哪些？",
+              "id": "5-488-10",
+              "answers": [
+                {
+                  "text": "efi, /, /home, swap",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装系统后，需重启进入live CD系统，挂载efi分区，如sudo mount /dev/sda1 ~/Music，再复制U盘/EFI/boot/下所有文件到efi分区boot文件夹，删除refind.conf。",
+          "qas": [
+            {
+              "question": "安装系统后，如何挂载efi分区？",
+              "id": "5-488-11",
+              "answers": [
+                {
+                  "text": "sudo mount /dev/sda1 ~/Music",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "question": "安装系统后，为什么要删除refind.conf？",
+              "id": "5-488-12",
+              "answers": [
+                {
+                  "text": "如果/efi/boot/下没有refind.conf，则将自动寻找并引导vmlinuz-linux文件，故删除refind.conf才能成功引导系统",
+                  "answer_start": 162
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重启后进入BIOS，将UEFI OS项设置为第一启动项，启动系统进入deepin。",
+          "qas": [
+            {
+              "question": "重启后进入BIOS需要设置什么？",
+              "id": "5-488-13",
+              "answers": [
+                {
+                  "text": "将UEFI OS项设置为第一启动项",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装refind引导的另一种方法：插入U盘引导进入refind选择界面，找到vmlinuz开头的引导项进入系统，联网后更新软件列表并安装refind，切换显卡驱动为Intel兼容模式。",
+          "qas": [
+            {
+              "question": "安装refind引导的另一种方法中，如何进入安装在SSD上的系统？",
+              "id": "5-488-14",
+              "answers": [
+                {
+                  "text": "插入U盘引导，进入refind选择界面，找到vmlinuz开头的引导项，进入即可",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "进入系统后如何安装refind？",
+              "id": "5-488-15",
+              "answers": [
+                {
+                  "text": "联网更新软件列表，安装refind：sudo apt-get update；sudo apt-get install refind",
+                  "answer_start": 100
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

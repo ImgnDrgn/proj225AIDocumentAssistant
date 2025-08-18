@@ -1,0 +1,144 @@
+{
+  "data": [
+    {
+      "title": "系统升级后如何回退",
+      "paragraphs": [
+        {
+          "context": "全盘安装时，系统会自动生成AB镜像，即相互备份的两个根分区，具备回滚功能。勾选“创建初始化备份”则有恢复出厂设置功能。",
+          "qas": [
+            {
+              "question": "全盘安装系统有什么回退相关的特性？",
+              "id": "3-166-1",
+              "answers": [
+                {
+                  "text": "会自动生成AB镜像，即相互备份的两个根分区，具备回滚功能；勾选“创建初始化备份”则有恢复出厂设置功能。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "全盘安装时，使用终端进行系统更新不会有回滚功能，终端不触发备份；仅控制中心更新才有回滚功能，建议日常用控制中心更新。",
+          "qas": [
+            {
+              "question": "全盘安装系统时，哪种更新方式有回滚功能？",
+              "id": "3-166-2",
+              "answers": [
+                {
+                  "text": "使用控制中心更新",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "为什么终端更新系统没有回滚功能？",
+              "id": "3-166-3",
+              "answers": [
+                {
+                  "text": "终端不会触发备份功能",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "手动分区安装时，没有AB镜像，系统不触发备份功能，无法使用自带备份功能。",
+          "qas": [
+            {
+              "question": "手动分区安装系统有自带的备份回退功能吗？",
+              "id": "3-166-4",
+              "answers": [
+                {
+                  "text": "没有，手动分区安装时，没有AB镜像，系统不触发备份功能，无法使用自带备份功能。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "手动分区安装时，可借助第三方工具实现系统备份还原，推荐timeshift工具，参考帖子：[点我直达](https://bbs.deepin.org/post/203799)。",
+          "qas": [
+            {
+              "question": "手动分区安装系统时，如何实现备份还原？",
+              "id": "3-166-5",
+              "answers": [
+                {
+                  "text": "借助第三方工具，如timeshift工具，参考帖子：[点我直达](https://bbs.deepin.org/post/203799)。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "可通过查看更新日志文件了解更新详情，命令为tail -n 30 /var/log/apt/history.log，30可调整，能查看上一次所有更新信息。",
+          "qas": [
+            {
+              "question": "如何查看系统更新详情？",
+              "id": "3-166-6",
+              "answers": [
+                {
+                  "text": "通过查看更新日志文件，命令为tail -n 30 /var/log/apt/history.log，30可调整，能查看上一次所有更新信息。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "从更新日志可看到更新时间、具体更新的包名及更新前后的版本号，据此可重装降级回退，如sudo apt reinstall dde-file-manager=5.6.3-1。",
+          "qas": [
+            {
+              "question": "从更新日志中能获取哪些信息？",
+              "id": "3-166-7",
+              "answers": [
+                {
+                  "text": "更新时间、具体更新的包名及更新前后的版本号。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何根据更新日志进行应用降级回退？",
+              "id": "3-166-8",
+              "answers": [
+                {
+                  "text": "使用命令sudo apt reinstall 包名=版本号，如sudo apt reinstall dde-file-manager=5.6.3-1，依次对需要回滚降级的应用操作。",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若有不想被升级的应用，可手动锁定，如sudo apt-mark hold dde-file-manager；想升级时解锁，命令为sudo apt-mark unhold dde-file-manager。",
+          "qas": [
+            {
+              "question": "如何锁定不想被升级的应用？",
+              "id": "3-166-9",
+              "answers": [
+                {
+                  "text": "使用命令sudo apt-mark hold 应用名，如sudo apt-mark hold dde-file-manager。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何解锁已锁定的应用使其可以升级？",
+              "id": "3-166-10",
+              "answers": [
+                {
+                  "text": "使用命令sudo apt-mark unhold 应用名，如sudo apt-mark unhold dde-file-manager。",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

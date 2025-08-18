@@ -1,0 +1,224 @@
+{
+  "data": [
+    {
+      "title": "创建wifi热点",
+      "paragraphs": [
+        {
+          "context": "采用github上的create_ap项目创建wifi热点简单省事。",
+          "qas": [
+            {
+              "question": "采用什么项目创建wifi热点简单省事？",
+              "id": "5-467-1",
+              "answers": [
+                {
+                  "text": "github上的create_ap项目",
+                  "answer_start": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装create_ap：若有git，克隆安装；若无git，先安装git。",
+          "qas": [
+            {
+              "question": "有git时如何安装create_ap？",
+              "id": "5-467-2",
+              "answers": [
+                {
+                  "text": "克隆安装",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "没有git时安装create_ap前需要做什么？",
+              "id": "5-467-3",
+              "answers": [
+                {
+                  "text": "先安装git",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装git的命令：sudo apt-get install git",
+          "qas": [
+            {
+              "question": "安装git的命令是什么？",
+              "id": "5-467-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install git",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "create_ap依赖hostapd、iptables、dnsmasq，需先安装。",
+          "qas": [
+            {
+              "question": "create_ap依赖哪些程序？",
+              "id": "5-467-5",
+              "answers": [
+                {
+                  "text": "hostapd、iptables、dnsmasq",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装create_ap依赖程序的命令：sudo apt-get install hostapd iptables dnsmasq",
+          "qas": [
+            {
+              "question": "安装create_ap依赖程序的命令是什么？",
+              "id": "5-467-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get install hostapd iptables dnsmasq",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "无线网卡wlan0、有线网卡eth0时，创建名为myhost、密码12345678的热点，可直接运行或后台运行create_ap命令。",
+          "qas": [
+            {
+              "question": "无线网卡wlan0、有线网卡eth0时，如何创建名为myhost、密码12345678的热点并依赖终端运行？",
+              "id": "5-467-7",
+              "answers": [
+                {
+                  "text": "sudo create_ap wlan0 eth0 myhost 12345678",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "无线网卡wlan0、有线网卡eth0时，如何创建名为myhost、密码12345678的热点并后台运行？",
+              "id": "5-467-8",
+              "answers": [
+                {
+                  "text": "sudo nohup create_ap wlan0 eth0 myhost 12345678 &",
+                  "answer_start": 113
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看网卡名可用ifconfig或特定awk命令。",
+          "qas": [
+            {
+              "question": "如何查看网卡名？",
+              "id": "5-467-9",
+              "answers": [
+                {
+                  "text": "ifconfig 或 cat /proc/net/dev | awk '{if($2>0 && NR > 2) print substr($1, 0, index($1, \":\") - 1)}'",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载create_ap：需有项目文件或Makefile，执行make uninstall。",
+          "qas": [
+            {
+              "question": "如何卸载create_ap？",
+              "id": "5-467-10",
+              "answers": [
+                {
+                  "text": "需有项目文件或Makefile，执行make uninstall",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用ap-hotspot需添加ppa源：sudo add-apt-repository ppa:nilarimogard/webupd8",
+          "qas": [
+            {
+              "question": "使用ap-hotspot需要添加什么ppa源？",
+              "id": "5-467-11",
+              "answers": [
+                {
+                  "text": "ppa:nilarimogard/webupd8",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "无add-apt-repository命令时，先安装python-software-properties和software-properties-common。",
+          "qas": [
+            {
+              "question": "没有add-apt-repository命令时该怎么做？",
+              "id": "5-467-12",
+              "answers": [
+                {
+                  "text": "先安装python-software-properties和software-properties-common",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装ap-hotspot：添加ppa源后更新并安装。",
+          "qas": [
+            {
+              "question": "如何安装ap-hotspot？",
+              "id": "5-467-13",
+              "answers": [
+                {
+                  "text": "添加ppa源后，执行sudo apt-get update和sudo apt-get install ap-hotspot",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用ap-hotspot：先配置，再开启。",
+          "qas": [
+            {
+              "question": "使用ap-hotspot的步骤是什么？",
+              "id": "5-467-14",
+              "answers": [
+                {
+                  "text": "先执行sudo ap-hotspot configure配置，再执行sudo ap-hotspot start开启",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载ap-hotspot：卸载程序并删除ppa源，不建议删除python软件配置。",
+          "qas": [
+            {
+              "question": "如何卸载ap-hotspot？",
+              "id": "5-467-15",
+              "answers": [
+                {
+                  "text": "执行sudo apt-get autoremove ap-hotspot卸载程序，sudo add-apt-repository -r ppa:nilarimogard/webupd8删除ppa源，不建议删除python软件配置",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

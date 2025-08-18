@@ -1,0 +1,360 @@
+
+{
+  "data": [
+    {
+      "title": "适配wsl的deepin根文件系统的配置和使用",
+      "paragraphs": [
+        {
+          "context": "在应用商店（Microsoft store）中可下载安装Windows Subsystem for Linux。",
+          "qas": [
+            {
+              "question": "如何安装Windows Subsystem for Linux？",
+              "id": "3-78-1",
+              "answers": [
+                {
+                  "text": "在应用商店（Microsoft store）中下载安装。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "将制作deepin根文件系统目录下的deepin.zip下载至本地，解压后在文件夹下打开终端，使用命令`./deepin.exe install .\\deepin-rootfs.tar`生成ext4硬盘映像文件。",
+          "qas": [
+            {
+              "question": "如何生成ext4硬盘映像文件？",
+              "id": "3-78-2",
+              "answers": [
+                {
+                  "text": "将deepin.zip下载至本地，解压后在文件夹下打开终端，使用命令`./deepin.exe install .\\deepin-rootfs.tar`。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用命令`wsl -l`可验证是否成功安装deepin根文件系统。",
+          "qas": [
+            {
+              "question": "用什么命令验证deepin根文件系统是否安装成功？",
+              "id": "3-78-3",
+              "answers": [
+                {
+                  "text": "wsl -l",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用`wsl -d deepin`或`./deepin.exe`可启用wsl，当前为root用户权限；用`exit`命令退出，`wsl -s deepin`可将其设为默认发行版。",
+          "qas": [
+            {
+              "question": "如何启用wsl的deepin根文件系统？",
+              "id": "3-78-4",
+              "answers": [
+                {
+                  "text": "使用`wsl -d deepin`或`./deepin.exe`。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何退出deepin根文件系统？",
+              "id": "3-78-5",
+              "answers": [
+                {
+                  "text": "使用`exit`命令。",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "question": "怎样将deepin根文件系统设为默认发行版？",
+              "id": "3-78-6",
+              "answers": [
+                {
+                  "text": "使用`wsl -s deepin`命令。",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建deepin帐户并设为bash shell：`useradd -m deepin -s /usr/bin/bash`；设密码：`passwd deepin`；添加到sudo组：`usermod -aG sudo deepin`；设为默认用户：`./deepin.exe config --default-user deepin`。",
+          "qas": [
+            {
+              "question": "如何创建deepin帐户并设置默认shell为bash？",
+              "id": "3-78-7",
+              "answers": [
+                {
+                  "text": "使用命令`useradd -m deepin -s /usr/bin/bash`。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "怎样给deepin用户设置密码？",
+              "id": "3-78-8",
+              "answers": [
+                {
+                  "text": "使用`passwd deepin`命令。",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "question": "如何将deepin用户添加到sudo用户组？",
+              "id": "3-78-9",
+              "answers": [
+                {
+                  "text": "使用`usermod -aG sudo deepin`命令。",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "question": "如何将deepin设置为wsl的默认用户？",
+              "id": "3-78-10",
+              "answers": [
+                {
+                  "text": "使用`./deepin.exe config --default-user deepin`命令。",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开启systemd支持：在deepin根文件系统中输入`cat >> /etc/wsl.conf << EOF [boot] systemd=true EOF`，保存后exit退出，用`wsl -t deepin`停止wsl，再`wsl -d deepin`启用生效。",
+          "qas": [
+            {
+              "question": "如何开启deepin根文件系统的systemd支持？",
+              "id": "3-78-11",
+              "answers": [
+                {
+                  "text": "在deepin根文件系统中输入`cat >> /etc/wsl.conf << EOF [boot] systemd=true EOF`，保存后exit退出，用`wsl -t deepin`停止wsl，再`wsl -d deepin`启用。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置语言环境用`sudo dpkg-reconfigure locales`，回车三次，输入312选zh_CN.UTF-8，再输入3确认，重启wsl生效。",
+          "qas": [
+            {
+              "question": "如何配置deepin根文件系统的语言环境？",
+              "id": "3-78-12",
+              "answers": [
+                {
+                  "text": "使用`sudo dpkg-reconfigure locales`，回车三次，输入312选zh_CN.UTF-8，再输入3确认，重启wsl生效。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用自研应用前需安装`sudo apt install fonts-noto-cjk dde-qt5integration dde-qt5wayland-plugin`，重启wsl后使用。",
+          "qas": [
+            {
+              "question": "使用自研应用前需要安装哪些包？",
+              "id": "3-78-13",
+              "answers": [
+                {
+                  "text": "fonts-noto-cjk dde-qt5integration dde-qt5wayland-plugin",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装深度终端：`sudo apt install deepin-terminal`，重启wsl后用`deepin-terminal`启用。",
+          "qas": [
+            {
+              "question": "如何安装并启用深度终端？",
+              "id": "3-78-14",
+              "answers": [
+                {
+                  "text": "安装：`sudo apt install deepin-terminal`，重启wsl后用`deepin-terminal`启用。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装看图应用：`sudo apt install deepin-image-viewer`，启用输入`deepin-image-viewer`。",
+          "qas": [
+            {
+              "question": "怎样安装和启用看图应用？",
+              "id": "3-78-15",
+              "answers": [
+                {
+                  "text": "安装：`sudo apt install deepin-image-viewer`，启用：`deepin-image-viewer`。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装浏览器：`sudo apt install org.deepin.browser`，启用输入`browser`。",
+          "qas": [
+            {
+              "question": "如何安装并打开浏览器？",
+              "id": "3-78-16",
+              "answers": [
+                {
+                  "text": "安装：`sudo apt install org.deepin.browser`，启用：`browser`。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装文件管理器：`sudo apt install dde-file-manager`，启用输入`dde-file-manager`。",
+          "qas": [
+            {
+              "question": "文件管理器的安装和启用命令分别是什么？",
+              "id": "3-78-17",
+              "answers": [
+                {
+                  "text": "安装：`sudo apt install dde-file-manager`，启用：`dde-file-manager`。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装深度音乐：`sudo apt install deepin-music`，启用输入`deepin-music`，存在闪退情况。",
+          "qas": [
+            {
+              "question": "深度音乐有什么使用问题？",
+              "id": "3-78-18",
+              "answers": [
+                {
+                  "text": "启用音乐出现闪退的情况。",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装深度影院：`sudo apt install deepin-movie`，启用输入`deepin-movie`。",
+          "qas": [
+            {
+              "question": "如何安装深度影院？",
+              "id": "3-78-19",
+              "answers": [
+                {
+                  "text": "使用`sudo apt install deepin-movie`命令。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装深度相册：`sudo apt install deepin-album`，启用输入`deepin-album`。",
+          "qas": [
+            {
+              "question": "启用深度相册的命令是什么？",
+              "id": "3-78-20",
+              "answers": [
+                {
+                  "text": "deepin-album",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装深度画板：`sudo apt install deepin-draw`，启用后无法使用。",
+          "qas": [
+            {
+              "question": "深度画板存在什么问题？",
+              "id": "3-78-21",
+              "answers": [
+                {
+                  "text": "启用后无法使用。",
+                  "answer_start": 46
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装java：`sudo apt install openjdk-8-jdk`，用`java -version`查看，安装vim：`sudo apt install vim`，编辑`~/.profile`添加`export JAVA_HOME=\"usr/bin/java\"`，`source ~/.profile`生效，`echo $JAVA_HOME`查看。",
+          "qas": [
+            {
+              "question": "如何安装java并查看是否安装正确？",
+              "id": "3-78-22",
+              "answers": [
+                {
+                  "text": "安装：`sudo apt install openjdk-8-jdk`，查看：`java -version`。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何配置JAVA_HOME环境变量？",
+              "id": "3-78-23",
+              "answers": [
+                {
+                  "text": "安装vim后，编辑`~/.profile`添加`export JAVA_HOME=\"usr/bin/java\"`，用`source ~/.profile`生效。",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装玲珑包：`sudo apt install linglong-bin`，安装依赖`sudo apt install org.deepin.browser`（有异常），查看仓库地址`cat /persistent/linglong/config.json`，正确地址为https://mirror-repo-linglong.deepin.com，修改用`ll-cli repo modify https://mirror-repo-linglong.deepin.com --name repo`，出现start ll-service failed可手动`ll-service`启用。",
+          "qas": [
+            {
+              "question": "如何安装玲珑包？",
+              "id": "3-78-24",
+              "answers": [
+                {
+                  "text": "使用`sudo apt install linglong-bin`命令。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "正确的玲珑仓库地址是什么？",
+              "id": "3-78-25",
+              "answers": [
+                {
+                  "text": "https://mirror-repo-linglong.deepin.com",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "question": "出现start ll-service failed如何解决？",
+              "id": "3-78-26",
+              "answers": [
+                {
+                  "text": "可尝试手动启用，输入命令`ll-service`。",
+                  "answer_start": 210
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

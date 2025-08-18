@@ -1,0 +1,485 @@
+{
+  "title": "Linux发行版",
+  "paragraphs": [
+    {
+      "context": "Linux内核（英语：Linux kernel），使用于类Unix操作系统，Linux家族的操作系统内核，以C语言写成，符合POSIX标准，采用GNU通用公共许可证释出，是目前最受欢迎的自由电脑操作系统内核。Linux最早是由芬兰黑客林纳斯·托瓦兹（Linus B. Torvalds）为尝试在英特尔x86架构上提供自由免费的类Unix操作系统而开发的。该计划开始于1991年，林纳斯·托瓦兹当时在Usenet新闻组comp.os.minix登载帖子，这份著名的帖子标示着Linux计划的正式开始。在计划的早期有一些Minix黑客提供了协助，而今天全球无数程序员正在为该计划无偿提供帮助。技术上说Linux是一个内核。“内核”指的是一个提供硬件抽象层、磁盘及文件系统控制、多任务等功能的系统软件。",
+      "qas": [
+        {
+          "id": "5-369-1",
+          "question": "Linux内核使用于什么操作系统？",
+          "answers": [
+            {
+              "text": "类Unix操作系统，Linux家族的操作系统",
+              "answer_start": 24
+            }
+          ]
+        },
+        {
+          "id": "5-369-2",
+          "question": "Linux内核以什么语言写成？",
+          "answers": [
+            {
+              "text": "C语言",
+              "answer_start": 72
+            }
+          ]
+        },
+        {
+          "id": "5-369-3",
+          "question": "Linux内核采用什么许可证释出？",
+          "answers": [
+            {
+              "text": "GNU通用公共许可证",
+              "answer_start": 90
+            }
+          ]
+        },
+        {
+          "id": "5-369-4",
+          "question": "Linux内核符合什么标准？",
+          "answers": [
+            {
+              "text": "符合POSIX标准",
+              "answer_start": 54
+            }
+          ]
+        },
+        {
+          "id": "5-369-5",
+          "question": "Linux内核的开发者是谁？",
+          "answers": [
+            {
+              "text": "芬兰黑客林纳斯·托瓦兹（Linus B. Torvalds）",
+              "answer_start": 147
+            }
+          ]
+        },
+        {
+          "id": "5-369-6",
+          "question": "Linux计划开始于哪一年？",
+          "answers": [
+            {
+              "text": "1991年",
+              "answer_start": 233
+            }
+          ]
+        },
+        {
+          "id": "5-369-7",
+          "question": "标示Linux计划正式开始的事件是什么？",
+          "answers": [
+            {
+              "text": "林纳斯·托瓦兹在Usenet新闻组comp.os.minix登载帖子",
+              "answer_start": 252
+            }
+          ]
+        },
+        {
+          "id": "5-369-8",
+          "question": "技术上，Linux是什么？",
+          "answers": [
+            {
+              "text": "一个内核",
+              "answer_start": 357
+            }
+          ]
+        },
+        {
+          "id": "5-369-9",
+          "question": "内核指的是什么？",
+          "answers": [
+            {
+              "text": "一个提供硬件抽象层、磁盘及文件系统控制、多任务等功能的系统软件",
+              "answer_start": 381
+            }
+          ]
+        },
+        {
+          "id": "5-369-10",
+          "question": "谁在1991年开始了Linux开发计划？",
+          "answers": [
+            {
+              "text": "芬兰黑客林纳斯·托瓦兹（Linus B. Torvalds）",
+              "answer_start": 105
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Linux 发行版 (也被叫做 GNU/Linux 发行版) 是基于Linux内核的类Unix操作系统。Linux发行版通常包含了包括桌面环境、办公包、媒体播放器、数据库等应用软件。这些操作系统通常由Linux内核、以及来自GNU计划的大量的函数库，和基于X Window的图形界面。有些发行版考虑到容量大小而没有预装 X Window，而使用更加轻量级的软件，如：busybox, uclibc 或 dietlibc。现在有超过300个Linux发行版。大部分都正处于活跃的开发中，不断地改进。由于大多数软件包是自由软件和开源软件，所以Linux发行版的形式多种多样——从功能齐全的桌面系统以及服务器系统到小型系统 (通常在嵌入式设备，或者启动软盘)。除了一些定制软件 (如安装和配置工具)，发行版通常只是将特定的应用软件安装在一堆函数库和内核上，以满足特定用户的需求。",
+      "qas": [
+        {
+          "id": "5-369-11",
+          "question": "Linux发行版也被叫做什么？",
+          "answers": [
+            {
+              "text": "GNU/Linux 发行版",
+              "answer_start": 21
+            }
+          ]
+        },
+        {
+          "id": "5-369-12",
+          "question": "Linux发行版基于什么？",
+          "answers": [
+            {
+              "text": "Linux内核",
+              "answer_start": 47
+            }
+          ]
+        },
+        {
+          "id": "5-369-13",
+          "question": "Linux发行版通常包含哪些应用软件？",
+          "answers": [
+            {
+              "text": "桌面环境、办公包、媒体播放器、数据库等",
+              "answer_start": 76
+            }
+          ]
+        },
+        {
+          "id": "5-369-14",
+          "question": "Linux发行版通常由哪些部分组成（除应用软件外）？",
+          "answers": [
+            {
+              "text": "Linux内核、以及来自GNU计划的大量的函数库，和基于X Window的图形界面",
+              "answer_start": 121
+            }
+          ]
+        },
+        {
+          "id": "5-369-15",
+          "question": "有些发行版为节省容量没有预装X Window，会使用哪些轻量级软件？",
+          "answers": [
+            {
+              "text": "busybox, uclibc 或 dietlibc",
+              "answer_start": 246
+            }
+          ]
+        },
+        {
+          "id": "5-369-16",
+          "question": "现在有多少个Linux发行版？",
+          "answers": [
+            {
+              "text": "超过300个",
+              "answer_start": 278
+            }
+          ]
+        },
+        {
+          "id": "5-369-17",
+          "question": "Linux发行版的形式多种多样，包括哪些？",
+          "answers": [
+            {
+              "text": "功能齐全的桌面系统以及服务器系统到小型系统 (通常在嵌入式设备，或者启动软盘)",
+              "answer_start": 345
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "一个典型的Linux桌面发行版包括一个Linux 内核，来自GNU的工具和库，和附加的软件、文档，还有一个窗口系统，窗口管理器，和一个桌面环境。大部分包括的软件是自由软件/开源软件，它们同时以二进制可执行文件和源代码形式发布，只要用户愿意，还允许修改和重新编译源代码。还有一些可能是专有软件而不提供源代码。许多发行版像其他现代操作系统一样提供了一个安装系统定制的发行版像Gentoo Linux, T2 和 Linux From Scratch 提供所有软件的源代码以及最基本的内核、编译器、定制工具、安装工具等的可执行文件。安装程序针对用户不同的CPU编译成不同的文件。",
+      "qas": [
+        {
+          "id": "5-369-18",
+          "question": "典型的Linux桌面发行版包括哪些部分？",
+          "answers": [
+            {
+              "text": "一个Linux 内核，来自GNU的工具和库，和附加的软件、文档，还有一个窗口系统，窗口管理器，和一个桌面环境",
+              "answer_start": 5
+            }
+          ]
+        },
+        {
+          "id": "5-369-19",
+          "question": "大部分Linux发行版包括的软件是什么类型？",
+          "answers": [
+            {
+              "text": "自由软件/开源软件",
+              "answer_start": 110
+            }
+          ]
+        },
+        {
+          "id": "5-369-20",
+          "question": "自由软件/开源软件以什么形式发布？",
+          "answers": [
+            {
+              "text": "二进制可执行文件和源代码形式",
+              "answer_start": 143
+            }
+          ]
+        },
+        {
+          "id": "5-369-21",
+          "question": "哪些发行版提供所有软件的源代码以及基本的可执行文件？",
+          "answers": [
+            {
+              "text": "Gentoo Linux, T2 和 Linux From Scratch",
+              "answer_start": 275
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "深度操作系统基于Debian，Ubuntu也基于Debian，同属于Debian派系。Debian GNU / Linux是一种强调使用自由软件的发行版。它支持多种硬件平台。Debian及其派生发行版使用deb软件包格式，并使用dpkg及其前端作为包管理器。Red Hat Linux和SUSE Linux是最早使用RPM格式软件包的发行版，如今RPM格式已广泛运用于众多的发行版。这两种发行版后来都分为商业版本和社区支持版本。Red Hat Linux的社区支持版本现称为Fedora，商业版本则称为Red Hat Enterprise Linux。",
+      "qas": [
+        {
+          "id": "5-369-22",
+          "question": "深度操作系统和Ubuntu属于哪个派系？",
+          "answers": [
+            {
+              "text": "Debian派系",
+              "answer_start": 56
+            }
+          ]
+        },
+        {
+          "id": "5-369-23",
+          "question": "Debian GNU / Linux强调使用什么软件？",
+          "answers": [
+            {
+              "text": "自由软件",
+              "answer_start": 87
+            }
+          ]
+        },
+        {
+          "id": "5-369-24",
+          "question": "Debian及其派生发行版使用什么软件包格式和包管理器？",
+          "answers": [
+            {
+              "text": "deb软件包格式，并使用dpkg及其前端作为包管理器",
+              "answer_start": 130
+            }
+          ]
+        },
+        {
+          "id": "5-369-25",
+          "question": "最早使用RPM格式软件包的发行版是什么？",
+          "answers": [
+            {
+              "text": "Red Hat Linux和SUSE Linux",
+              "answer_start": 207
+            }
+          ]
+        },
+        {
+          "id": "5-369-26",
+          "question": "Red Hat Linux的社区支持版本和商业版本分别是什么？",
+          "answers": [
+            {
+              "text": "社区支持版本现称为Fedora，商业版本则称为Red Hat Enterprise Linux",
+              "answer_start": 337
+            }
+          ]
+        },
+        {
+          "id": "5-369-27",
+          "question": "哪些操作系统基于Debian？",
+          "answers": [
+            {
+              "text": "深度操作系统，Ubuntu",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "id": "5-369-28",
+          "question": "Debian使用什么作为核心包管理器？",
+          "answers": [
+            {
+              "text": "dpkg及其前端",
+              "answer_start": 81
+            }
+          ]
+        },
+        {
+          "id": "5-369-29",
+          "question": "Red Hat Linux的商业版本现在称为什么？",
+          "answers": [
+            {
+              "text": "Red Hat Enterprise Linux",
+              "answer_start": 115
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Slackware 走了一条同其他的发布版本（Red Hat、Debian、Gentoo、SuSE、 Mandriva、Ubuntu等）不同的道路，它力图成为“UNIX风格”的Linux发布版本。它的方针是只吸收稳定版本的应用程序，并且缺少其他linux版本中那些为发布版本定制的配置工具。使用源代码 、Portage包管理系统(Gentoo发行版) 和Pacman包管理系统(Arch发行版)等其他发行版本。一般的迷你包，除了可以硬盘安装，也可以安装在闪存盘上。商业发行版比如Fedora (Red Hat), openSUSE (Novell), Ubuntu (Canonical公司), 和 Mandriva Linux,Slackware。社区发行版由自由软件社区提供支持，如Debian和Gentoo。",
+      "qas": [
+        {
+          "id": "5-369-30",
+          "question": "Slackware力图成为什么样的Linux发布版本？",
+          "answers": [
+            {
+              "text": "“UNIX风格”的Linux发布版本",
+              "answer_start": 115
+            }
+          ]
+        },
+        {
+          "id": "5-369-31",
+          "question": "Slackware的方针是什么？",
+          "answers": [
+            {
+              "text": "只吸收稳定版本的应用程序，并且缺少其他linux版本中那些为发布版本定制的配置工具",
+              "answer_start": 152
+            }
+          ]
+        },
+        {
+          "id": "5-369-32",
+          "question": "哪些发行版使用Portage和Pacman包管理系统？",
+          "answers": [
+            {
+              "text": "Gentoo发行版使用Portage包管理系统，Arch发行版使用Pacman包管理系统",
+              "answer_start": 245
+            }
+          ]
+        },
+        {
+          "id": "5-369-33",
+          "question": "迷你包可以安装在哪里？",
+          "answers": [
+            {
+              "text": "硬盘和闪存盘上",
+              "answer_start": 336
+            }
+          ]
+        },
+        {
+          "id": "5-369-34",
+          "question": "举例说明商业发行版有哪些？",
+          "answers": [
+            {
+              "text": "Fedora (Red Hat), openSUSE (Novell), Ubuntu (Canonical公司), 和 Mandriva Linux,Slackware",
+              "answer_start": 365
+            }
+          ]
+        },
+        {
+          "id": "5-369-35",
+          "question": "社区发行版由谁提供支持？举例说明。",
+          "answers": [
+            {
+              "text": "由自由软件社区提供支持，如Debian和Gentoo",
+              "answer_start": 489
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Linux原本指代的是GNU系统内部的一个核心部件（称为内核）。准确地说，现在用户运行的是 GNU/Linux 系统的发行版。实际上，“Linux”这个词要流行得多，今天对整个系统，人们就简单地称其为“Linux”。这引发了极大的争议。技术上，最终用户大量使用“GNU”，“Linux”只占少许，哲学上：自由软件运动的强势和动力都始自GNU项目，并一直为其所承载。因此称系统为 GNU/Linux 更加意味深长。称这个系统为 Linux 对那些常认为除了Windows还是Windows的计算机用户来说则更具有吸引力。我们两个名称都用，希望你不会介意。",
+      "qas": [
+        {
+          "id": "5-369-36",
+          "question": "Linux原本指代的是什么？",
+          "answers": [
+            {
+              "text": "GNU系统内部的一个核心部件（称为内核）",
+              "answer_start": 10
+            }
+          ]
+        },
+        {
+          "id": "5-369-37",
+          "question": "现在用户运行的准确来说是什么系统的发行版？",
+          "answers": [
+            {
+              "text": "GNU/Linux 系统",
+              "answer_start": 72
+            }
+          ]
+        },
+        {
+          "id": "5-369-38",
+          "question": "人们通常简单称整个系统为什么？",
+          "answers": [
+            {
+              "text": "Linux",
+              "answer_start": 145
+            }
+          ]
+        },
+        {
+          "id": "5-369-39",
+          "question": "称系统为GNU/Linux更意味深长的原因是什么？",
+          "answers": [
+            {
+              "text": "技术上，最终用户大量使用“GNU”，“Linux”只占少许，哲学上：自由软件运动的强势和动力都始自GNU项目，并一直为其所承载",
+              "answer_start": 177
+            }
+          ]
+        },
+        {
+          "id": "5-369-40",
+          "question": "称系统为Linux的吸引力在于什么？",
+          "answers": [
+            {
+              "text": "对那些常认为除了Windows还是Windows的计算机用户来说更具有吸引力",
+              "answer_start": 345
+            }
+          ]
+        },
+        {
+          "id": "5-369-41",
+          "question": "从技术角度看，GNU和Linux在系统中的占比如何？",
+          "answers": [
+            {
+              "text": "最终用户大量使用'GNU'，'Linux'只占少许",
+              "answer_start": 181
+            }
+          ]
+        },
+        {
+          "id": "5-369-42",
+          "question": "为什么自由软件运动更支持GNU/Linux这个称呼？",
+          "answers": [
+            {
+              "text": "自由软件运动的强势和动力都始自GNU项目，并一直为其所承载",
+              "answer_start": 189
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "由于大多数软件包是自由软件和开源软件，所以Linux发行版的形式多种多样——从功能齐全的桌面系统以及服务器系统到小型系统 (通常在嵌入式设备，或者启动软盘)。除了一些定制软件 (如安装和配置工具)，发行版通常只是将特定的应用软件安装在一堆函数库和内核上，以满足特定用户的需求。",
+      "qas": [
+        {
+          "id": "5-369-43",
+          "question": "小型系统通常部署在什么设备上？",
+          "answers": [
+            {
+              "text": "嵌入式设备，或者启动软盘",
+              "answer_start": 59
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Slackware 走了一条同其他的发布版本不同的道路，它力图成为“UNIX风格”的Linux发布版本。它的方针是只吸收稳定版本的应用程序，并且缺少其他linux版本中 those为发布版本定制的配置工具。",
+      "qas": [
+        {
+          "id": "5-369-44",
+          "question": "Slackware的应用程序采用原则是什么？",
+          "answers": [
+            {
+              "text": "只吸收稳定版本的应用程序",
+              "answer_start": 66
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

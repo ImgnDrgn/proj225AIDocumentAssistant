@@ -1,0 +1,269 @@
+{
+  "data": [
+    {
+      "title": "Fcitx5",
+      "paragraphs": [
+        {
+          "context": "Fcitx (Flexible Input Method Framework)即小企鹅输入法，是一个以GPL方式发布的输入法平台，可通过安装引擎支持多种输入法，支持简入繁出，是Linux操作系统中常用的中文输入法。其优点是短小精悍、跟程序的兼容性较好。下一代版本为Fcitx5。Fcitx5是继Fcitx后的新一代输入法框架。自20.2.3后被集成到仓库中，系统预装版本仍为fcitx4。",
+          "qas": [
+            {
+              "id": "1-18-1",
+              "question": "Fcitx是什么？",
+              "answers": [
+                {
+                  "text": "Fcitx (Flexible Input Method Framework)即小企鹅输入法，是一个以GPL方式发布的输入法平台，可通过安装引擎支持多种输入法，支持简入繁出，是Linux操作系统中常用的中文输入法。其优点是短小精悍、跟程序的兼容性较好。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "1-18-2",
+              "question": "Fcitx5是什么？",
+              "answers": [
+                {
+                  "text": "Fcitx5是继Fcitx后的新一代输入法框架",
+                  "answer_start": 139
+                }
+              ]
+            },
+            {
+              "id": "1-18-3",
+              "question": "Fcitx5何时被集成到仓库中？",
+              "answers": [
+                {
+                  "text": "自20.2.3后",
+                  "answer_start": 165
+                }
+              ]
+            },
+            {
+              "id": "1-18-4",
+              "question": "系统预装的输入法版本是什么？",
+              "answers": [
+                {
+                  "text": "fcitx4",
+                  "answer_start": 189
+                }
+              ]
+            },
+            {
+              "id": "1-18-5",
+              "question": "Fcitx5 是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "以GPL方式发布的输入法平台",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "id": "1-18-6",
+              "question": "Fcitx5 支持什么特殊功能？",
+              "answers": [
+                {
+                  "text": "支持简入繁出",
+                  "answer_start": 78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "讯飞输入法、搜狗输入法等是在fcitx4框架的基础上，因此此类输入法将无法在 fcitx5 下使用。要在 deepin 上安装 fcitx5，首先应当先卸载现有的 fcitx4 输入法，命令为sudo apt purge *fcitx*。然后安装fcitx5框架，命令为sudo apt install fcitx5。安装成功后需配置环境变量，编辑/etc/environment，写入GTK_IM_MODULE=fcitx、QT_IM_MODULE=fcitx、XMODIFIERS=@im=fcitx、SDL_IM_MODULE=fcitx，写入后注销并重新登入即可。",
+          "qas": [
+            {
+              "id": "1-18-7",
+              "question": "为什么搜狗输入法不能在 Fcitx5 下使用？",
+              "answers": [
+                {
+                  "text": "讯飞输入法、搜狗输入法等是在fcitx4框架的基础上",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "1-18-8",
+              "question": "卸载现有fcitx4输入法的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt purge *fcitx*",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "1-18-9",
+              "question": "安装fcitx5框架的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt install fcitx5",
+                  "answer_start": 122
+                }
+              ]
+            },
+            {
+              "id": "1-18-10",
+              "question": "安装fcitx5后需要配置哪些环境变量？",
+              "answers": [
+                {
+                  "text": "GTK_IM_MODULE=fcitx、QT_IM_MODULE=fcitx、XMODIFIERS=@im=fcitx、SDL_IM_MODULE=fcitx",
+                  "answer_start": 167
+                }
+              ]
+            },
+            {
+              "id": "1-18-11",
+              "question": "配置环境变量后需要做什么？",
+              "answers": [
+                {
+                  "text": "注销并重新登入",
+                  "answer_start": 262
+                }
+              ]
+            },
+            {
+              "id": "1-18-12",
+              "question": "在deepin上安装fcitx5前需要做什么？",
+              "answers": [
+                {
+                  "text": "先卸载现有的fcitx4输入法",
+                  "answer_start": 69
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装中文输入法最简单的命令是sudo apt install fcitx5-chinese-addons，这会同时安装拼音、五笔、双拼等所有的中文输入法。也可单独安装：fcitx5-pinyin包含拼音和双拼；fcitx5-table包含自然码、五笔、晚风、双拼、二笔、电报码、仓颉等。安装完成后需在托盘右键，重新启动输入法框架。",
+          "qas": [
+            {
+              "id": "1-18-13",
+              "question": "安装中文输入法最简单的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt install fcitx5-chinese-addons",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "1-18-14",
+              "question": "安装所有中文输入法的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt install fcitx5-chinese-addons",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "1-18-15",
+              "question": "fcitx5-chinese-addons会安装哪些中文输入法？",
+              "answers": [
+                {
+                  "text": "拼音、五笔、双拼等所有的中文输入法",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "id": "1-18-16",
+              "question": "fcitx5-pinyin包含哪些输入法？",
+              "answers": [
+                {
+                  "text": "拼音和双拼",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "id": "1-18-17",
+              "question": "fcitx5-table包含哪些输入法？",
+              "answers": [
+                {
+                  "text": "自然码、五笔、晚风、双拼、二笔、电报码、仓颉等",
+                  "answer_start": 140
+                }
+              ]
+            },
+            {
+              "id": "1-18-18",
+              "question": "中文输入法安装完成后需要做什么？",
+              "answers": [
+                {
+                  "text": "在托盘右键，重新启动输入法框架",
+                  "answer_start": 195
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在fcitx5-pinyin输入法中添加词库，可将词库文件放置在~/.local/share/fcitx5/pinyin/dictionaries/中。如维基百科词库fcitx5-pinyin-zhwiki，需从https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases下载最新版本的zhwiki.dict，复制到~/.local/share/fcitx5/pinyin/dictionaries/（若文件夹不存在则创建）。",
+          "qas": [
+            {
+              "id": "1-18-19",
+              "question": "在fcitx5-pinyin中如何添加词库？",
+              "answers": [
+                {
+                  "text": "将词库文件放置在~/.local/share/fcitx5/pinyin/dictionaries/中",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "1-18-20",
+              "question": "维基百科词库fcitx5-pinyin-zhwiki的最新版本zhwiki.dict从哪里下载？",
+              "answers": [
+                {
+                  "text": "https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "1-18-21",
+              "question": "复制维基百科词库文件到哪个目录？",
+              "answers": [
+                {
+                  "text": "~/.local/share/fcitx5/pinyin/dictionaries/",
+                  "answer_start": 166
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改拼音输入法的中括号为简体中文样式，需将/usr/share/fcitx5/punctuation/punc.mb.zh_CN的[ ·和] 「」改成[ [和] ]，重启fcitx5即可。",
+          "qas": [
+            {
+              "id": "1-18-22",
+              "question": "如何修改拼音输入法的中括号为简体中文样式？",
+              "answers": [
+                {
+                  "text": "将/usr/share/fcitx5/punctuation/punc.mb.zh_CN的[ ·和] 「」改成[ [和] ]，重启fcitx5即可",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开启没有拼音的单行模式，需勾选上fcitx5设置中的在程序中显示预编辑文本和在预编辑中显示完整的拼音。",
+          "qas": [
+            {
+              "id": "1-18-23",
+              "question": "如何开启没有拼音的单行模式？",
+              "answers": [
+                {
+                  "text": "勾选上fcitx5设置中的在程序中显示预编辑文本和在预编辑中显示完整的拼音",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

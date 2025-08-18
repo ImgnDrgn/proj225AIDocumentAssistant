@@ -1,0 +1,899 @@
+{
+  "data": [
+    {
+      "title": "Linux文件和目录操作命令",
+      "paragraphs": [
+        {
+          "context": "pwd命令是“print working directory”的首字母缩写，功能是显示当前工作目录的绝对路径。其语法为pwd [option]，注意命令与选项间至少有一个空格，通常执行pwd命令不需要带任何参数。PWD是系统环境变量，可用“$”符号输出其值，示例代码：[root@iZ8vb11v8r15ng6q0eb8dzZ ~]# echo $PWD，输出为/root。",
+          "qas": [
+            {
+              "id": "5-399-1",
+              "question": "pwd命令的全称是什么？",
+              "answers": [
+                {
+                  "text": "print working directory",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-399-2",
+              "question": "pwd命令的功能是什么？",
+              "answers": [
+                {
+                  "text": "显示当前工作目录的绝对路径",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "5-399-3",
+              "question": "执行pwd命令通常是否需要带参数？",
+              "answers": [
+                {
+                  "text": "不需要",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "id": "5-399-4",
+              "question": "如何输出PWD系统环境变量的值？",
+              "answers": [
+                {
+                  "text": "用“$”符号输出，示例代码：[root@iZ8vb11v8r15ng6q0eb8dzZ ~]# echo $PWD",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "5-399-5",
+              "question": "pwd命令的语法是什么？",
+              "answers": [
+                {
+                  "text": "pwd [option]",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cd命令是“change directory”的首字母缩写，功能是从当前工作目录切换到指定目录。语法为cd [option] [dir]，命令、选项、目录间至少有一个空格；选项和目录可省略，单独执行cd命令默认切换到当前登录用户的家目录（由HOME环境变量定义）。cd是bash shell内置命令，查看帮助需用help cd，执行不带参数的cd命令与“cd~”结果一致。",
+          "qas": [
+            {
+              "id": "5-399-6",
+              "question": "cd命令的全称是什么？",
+              "answers": [
+                {
+                  "text": "change directory",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-399-7",
+              "question": "单独执行cd命令会切换到哪个目录？",
+              "answers": [
+                {
+                  "text": "当前登录用户的家目录（由HOME环境变量定义）",
+                  "answer_start": 101
+                }
+              ]
+            },
+            {
+              "id": "5-399-8",
+              "question": "如何查看cd命令的系统帮助？",
+              "answers": [
+                {
+                  "text": "使用help cd",
+                  "answer_start": 145
+                }
+              ]
+            },
+            {
+              "id": "5-399-9",
+              "question": "执行不带参数的cd命令与什么命令结果一致？",
+              "answers": [
+                {
+                  "text": "cd~",
+                  "answer_start": 163
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "tree命令功能是以树形结构列出指定目录下的所有内容（含文件、子目录及子目录内内容）。语法为tree [option] [directory]，命令、选项、目录间至少有一个空格；不接选项和目录时，默认显示当前路径的目录结构。查询tree是否安装用“rpm -qa tree”，安装用“yum -y install tree”，调整字符集防乱码用“LANG=en_US.UTF-8”。",
+          "qas": [
+            {
+              "id": "5-399-10",
+              "question": "tree命令的功能是什么？",
+              "answers": [
+                {
+                  "text": "以树形结构列出指定目录下的所有内容（含文件、子目录及子目录内内容）",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "5-399-11",
+              "question": "tree命令不接选项和目录时，默认显示什么内容？",
+              "answers": [
+                {
+                  "text": "当前路径的目录结构",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "id": "5-399-12",
+              "question": "如何查询tree命令是否安装？",
+              "answers": [
+                {
+                  "text": "rpm -qa tree",
+                  "answer_start": 129
+                }
+              ]
+            },
+            {
+              "id": "5-399-13",
+              "question": "如何安装tree命令？",
+              "answers": [
+                {
+                  "text": "yum -y install tree",
+                  "answer_start": 148
+                }
+              ]
+            },
+            {
+              "id": "5-399-14",
+              "question": "tree命令中显示目录层数的选项是什么？",
+              "answers": [
+                {
+                  "text": "-L level",
+                  "answer_start": 136
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mkdir命令是“make directories”的字母组合，功能是创建目录；默认若目录已存在，会提示文件已存在且不重复创建。语法为mkdir [option] [directory]，命令、选项、目录间至少有一个空格，可同时创建多个目录（格式：mkdir dir1 dir2…）。利用大括号{}可批量创建目录，示例：mkdir A{B,C}会创建AB和AC两个目录。",
+          "qas": [
+            {
+              "id": "5-399-15",
+              "question": "mkdir命令的全称来源是什么？",
+              "answers": [
+                {
+                  "text": "make directories",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "5-399-16",
+              "question": "mkdir命令默认情况下，若要创建的目录已存在会怎样？",
+              "answers": [
+                {
+                  "text": "会提示此文件已存在，而不会继续创建目录",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "id": "5-399-17",
+              "question": "mkdir命令如何同时创建多个目录？",
+              "answers": [
+                {
+                  "text": "格式为mkdir dir1 dir2…",
+                  "answer_start": 102
+                }
+              ]
+            },
+            {
+              "id": "5-399-18",
+              "question": "如何用mkdir命令批量创建AB和AC目录？",
+              "answers": [
+                {
+                  "text": "mkdir A{B,C}",
+                  "answer_start": 143
+                }
+              ]
+            },
+            {
+              "id": "5-399-19",
+              "question": "创建多级目录应使用哪个选项？",
+              "answers": [
+                {
+                  "text": "-p",
+                  "answer_start": 144
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "touch命令有两个功能：一是创建新的空文件，二是改变已有文件的时间戳属性。语法为touch [option] [file]，需区分与mkdir的差异：mkdir创建空目录，touch创建空文件；Linux中touch不能创建目录，但可修改目录时间戳。GNU/Linux文件有3种时间戳：Access（最后访问时间）、Modify（最后修改时间）、Change（最后改变文件状态时间），对应ls查看选项分别为ls -lu、ls -lt、ls -lc。",
+          "qas": [
+            {
+              "id": "5-399-20",
+              "question": "touch命令的两个功能是什么？",
+              "answers": [
+                {
+                  "text": "一是创建新的空文件，二是改变已有文件的时间戳属性",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "5-399-21",
+              "question": "touch命令与mkdir命令的功能差异是什么？",
+              "answers": [
+                {
+                  "text": "mkdir创建空目录，touch创建空文件；Linux中touch不能创建目录，但可修改目录时间戳",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-399-22",
+              "question": "GNU/Linux文件的3种时间戳分别是什么？",
+              "answers": [
+                {
+                  "text": "Access（最后访问时间）、Modify（最后修改时间）、Change（最后改变文件状态时间）",
+                  "answer_start": 135
+                }
+              ]
+            },
+            {
+              "id": "5-399-23",
+              "question": "查看文件最后访问时间（Access）的ls命令选项是什么？",
+              "answers": [
+                {
+                  "text": "ls -lu",
+                  "answer_start": 215
+                }
+              ]
+            },
+            {
+              "id": "5-399-24",
+              "question": "文件的状态改变时间对应哪个字段？",
+              "answers": [
+                {
+                  "text": "状态改变时间（Change）",
+                  "answer_start": 175
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ls命令是list的缩写，功能是列出目录内容及内容属性信息（list directory contents）。语法为ls [option] [file]，命令、选项、文件间至少有一个空格；选项和目录文件可省略，默认查看当前路径文件信息。ls -lhi输出中，各列含义依次为：inode索引节点编号、文件类型及权限、硬链接个数、所属用户、所属组、大小、修改时间、实际文件名或目录名。",
+          "qas": [
+            {
+              "id": "5-399-25",
+              "question": "ls命令的全称是什么？",
+              "answers": [
+                {
+                  "text": "list",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-399-26",
+              "question": "ls命令的功能是什么？",
+              "answers": [
+                {
+                  "text": "列出目录的内容及其内容属性信息（list directory contents）",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-399-27",
+              "question": "ls命令默认情况下查看什么路径的文件信息？",
+              "answers": [
+                {
+                  "text": "当前路径",
+                  "answer_start": 100
+                }
+              ]
+            },
+            {
+              "id": "5-399-28",
+              "question": "ls -lhi输出结果中，第一列和第二列分别代表什么？",
+              "answers": [
+                {
+                  "text": "第一列是inode索引节点编号，第二列是文件类型及权限",
+                  "answer_start": 126
+                }
+              ]
+            },
+            {
+              "id": "5-399-29",
+              "question": "如何显示文件的详细属性？",
+              "answers": [
+                {
+                  "text": "-l",
+                  "answer_start": 116
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "rm命令是remove的缩写，功能是删除一个或多个文件或目录（remove files or directories），是Linux系统中最危险的命令之一，需慎重使用。语法为rm [option] [file]，删除前建议用mv替代rm移至/tmp回收站、备份（最好异机备份）；若用rm，推荐用“rm文件名”，禁止用“rm -rf文件名”（误删目录无提示），最多用“rm -f文件名”。",
+          "qas": [
+            {
+              "id": "5-399-30",
+              "question": "rm命令的全称是什么？",
+              "answers": [
+                {
+                  "text": "remove",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-399-31",
+              "question": "为什么说rm命令是Linux系统中最危险的命令之一？",
+              "answers": [
+                {
+                  "text": "因为误删目录时（如用“rm -rf”）并不会有提示，容易造成数据丢失",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "id": "5-399-32",
+              "question": "删除文件前，推荐用什么命令替代rm以降低风险？",
+              "answers": [
+                {
+                  "text": "mv，将文件移动到回收站/tmp",
+                  "answer_start": 94
+                }
+              ]
+            },
+            {
+              "id": "5-399-33",
+              "question": "使用rm命令删除文件时，推荐的命令格式是什么？禁止使用的格式是什么？",
+              "answers": [
+                {
+                  "text": "推荐用“rm文件名”，禁止用“rm -rf文件名”",
+                  "answer_start": 136
+                }
+              ]
+            },
+            {
+              "id": "5-399-34",
+              "question": "递归删除目录应使用哪个选项？",
+              "answers": [
+                {
+                  "text": "-r",
+                  "answer_start": 113
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ln命令是link的缩写，功能是创建文件间的链接（make links between files），链接类型包括硬链接（hard link）和软链接（符号链接，symbolic link）。语法为ln [option] [source] [target]，创建硬链接用“ln源文件目标文件”，生成普通文件（-字符）；创建软链接用“ln -s源文件目标文件”（目标文件不能事先存在），生成符号链接文件（l类型）。硬链接与源文件inode相同，删除任意一个不删除文件实体；软链接类似Windows快捷方式，删除源文件后软链接失效。",
+          "qas": [
+            {
+              "id": "5-399-35",
+              "question": "ln命令支持哪两种链接类型？",
+              "answers": [
+                {
+                  "text": "硬链接（hard link）和软链接（符号链接，symbolic link）",
+                  "answer_start": 48
+                }
+              ]
+            },
+            {
+              "id": "5-399-36",
+              "question": "创建硬链接的命令格式是什么？生成的文件类型是什么？",
+              "answers": [
+                {
+                  "text": "命令格式为“ln源文件目标文件”，生成的是普通文件（-字符）",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "id": "5-399-37",
+              "question": "创建软链接时，目标文件有什么要求？",
+              "answers": [
+                {
+                  "text": "目标文件不能事先存在",
+                  "answer_start": 153
+                }
+              ]
+            },
+            {
+              "id": "5-399-38",
+              "question": "硬链接与源文件的inode编号有什么关系？",
+              "answers": [
+                {
+                  "text": "硬链接与源文件的inode编号相同",
+                  "answer_start": 189
+                }
+              ]
+            },
+            {
+              "id": "5-399-39",
+              "question": "创建软链接应使用哪个选项？",
+              "answers": [
+                {
+                  "text": "-s",
+                  "answer_start": 121
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "chown命令用于改变文件或目录的用户和用户组。语法为chown [option] [OWNER][:[GROUP]] [file]，常用格式有三种：chown 用户 文件或目录（仅授权用户）、chown :组 文件或目录（仅授权组）、chown 用户:组 文件或目录（授权用户和组），其中“:”可用“.”代替；授权的用户和组必须是系统实际存在的。示例：chown testuser file.txt可将file.txt的所属用户改为testuser。",
+          "qas": [
+            {
+              "id": "5-399-40",
+              "question": "chown命令的功能是什么？",
+              "answers": [
+                {
+                  "text": "改变文件或目录的用户和用户组",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "5-399-41",
+              "question": "chown命令中，仅授权文件所属组的命令格式是什么？",
+              "answers": [
+                {
+                  "text": "chown :组 文件或目录",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "5-399-42",
+              "question": "chown命令中，“:”可以用什么符号代替？",
+              "answers": [
+                {
+                  "text": ".（点）",
+                  "answer_start": 121
+                }
+              ]
+            },
+            {
+              "id": "5-399-43",
+              "question": "如何将file.txt的所属用户改为testuser？",
+              "answers": [
+                {
+                  "text": "chown testuser file.txt",
+                  "answer_start": 165
+                }
+              ]
+            },
+            {
+              "id": "5-399-44",
+              "question": "递归修改目录下的所有文件用户组的选项是什么？",
+              "answers": [
+                {
+                  "text": "-R",
+                  "answer_start": 137
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "umask通过八进制数值定义用户创建文件或目录的默认权限。创建文件默认最大权限为666（-rw-rw-rw-），无执行权限；文件权限计算为666减umask，若结果有奇数位则加1（最终为全偶数）。示例：umask 022时，文件权限为666-022=644；umask 045时，666-045=621，因最后一位是奇数，加1后为622。创建目录默认最大权限为777（-rwxrwx-rwx），目录权限计算为777减umask（无奇偶之分）。",
+          "qas": [
+            {
+              "id": "5-399-45",
+              "question": "umask的作用是什么？",
+              "answers": [
+                {
+                  "text": "通过八进制的数值来定义用户创建文件或目录的默认权限",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-399-46",
+              "question": "创建文件的默认最大权限是什么？",
+              "answers": [
+                {
+                  "text": "666（-rw-rw-rw-）",
+                  "answer_start": 48
+                }
+              ]
+            },
+            {
+              "id": "5-399-47",
+              "question": "umask为022时，创建的文件权限是多少？",
+              "answers": [
+                {
+                  "text": "644",
+                  "answer_start": 113
+                }
+              ]
+            },
+            {
+              "id": "5-399-48",
+              "question": "创建目录的默认最大权限是什么？目录权限如何计算？",
+              "answers": [
+                {
+                  "text": "默认最大权限为777（-rwxrwx-rwx），目录权限计算为777减umask（无奇偶之分）",
+                  "answer_start": 152
+                }
+              ]
+            },
+            {
+              "id": "5-399-49",
+              "question": "目录的默认权限如何计算？",
+              "answers": [
+                {
+                  "text": "777减umask",
+                  "answer_start": 144
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "cp命令是“copy”的缩写，功能是复制文件或目录。语法为cp [option] [source] [dest]。选项-r用于递归复制目录。",
+          "qas": [
+            {
+              "id": "5-399-50",
+              "question": "cp命令的作用是什么？",
+              "answers": [
+                {
+                  "text": "复制文件或目录",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-399-51",
+              "question": "复制目录时需要哪个选项？",
+              "answers": [
+                {
+                  "text": "-r",
+                  "answer_start": 121
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mv命令是“move”的缩写，功能是移动或重命名文件。语法为mv [option] [source] [dest]。选项-i用于覆盖前提示用户。",
+          "qas": [
+            {
+              "id": "5-399-52",
+              "question": "mv命令的功能是什么？",
+              "answers": [
+                {
+                  "text": "移动或重命名文件",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-399-53",
+              "question": "覆盖文件前提示用户的选项是什么？",
+              "answers": [
+                {
+                  "text": "-i",
+                  "answer_start": 118
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "rmdir命令用于删除空目录，语法为rmdir [option] [directory]。当目录不为空时，命令不起作用。选项-p用于删除多级空目录。",
+          "qas": [
+            {
+              "id": "5-399-54",
+              "question": "rmdir命令适用于删除什么类型的目录？",
+              "answers": [
+                {
+                  "text": "删除空目录",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-399-55",
+              "question": "删除多级空目录的选项是什么？",
+              "answers": [
+                {
+                  "text": "-p",
+                  "answer_start": 141
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "readlink命令用于查看符号链接文件的真实内容。语法为readlink [option] [file]。选项-f用于显示绝对路径。",
+          "qas": [
+            {
+              "id": "5-399-56",
+              "question": "readlink命令的功能是什么？",
+              "answers": [
+                {
+                  "text": "查看符号链接文件的真实内容",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-399-57",
+              "question": "显示符号链接绝对路径的选项是什么？",
+              "answers": [
+                {
+                  "text": "-f",
+                  "answer_start": 119
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "find命令用于查找目录下的文件，并可调用其他操作。语法为find [pathname] [expression]。选项-name用于按文件名搜索。",
+          "qas": [
+            {
+              "id": "5-399-58",
+              "question": "find命令的主要功能是什么？",
+              "answers": [
+                {
+                  "text": "查找目录下的文件，并可调用其他操作",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-399-59",
+              "question": "按文件名搜索文件的选项是什么？",
+              "answers": [
+                {
+                  "text": "-name",
+                  "answer_start": 122
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "xargs命令将标准输入转换成命令行参数。语法为xargs [option]。选项-I用于指定替换字符串。常用于管道操作。",
+          "qas": [
+            {
+              "id": "5-399-60",
+              "question": "xargs命令的作用是什么？",
+              "answers": [
+                {
+                  "text": "将标准输入转换成命令行参数",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-399-61",
+              "question": "指定替换字符串的选项是什么？",
+              "answers": [
+                {
+                  "text": "-I",
+                  "answer_start": 112
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "rename命令通过字符串替换批量修改文件名。语法为rename from to file。例如，rename .jpg .png *.jpg将.jpg文件重命名为.png。",
+          "qas": [
+            {
+              "id": "5-399-62",
+              "question": "rename命令的功能是什么？",
+              "answers": [
+                {
+                  "text": "通过字符串替换批量修改文件名",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-399-63",
+              "question": "将所有.jpg文件重命名为.png的命令是什么？",
+              "answers": [
+                {
+                  "text": "rename .jpg .png *.jpg",
+                  "answer_start": 101
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "basename命令用于显示去除路径和后缀的文件名。语法为basename [name] [suffix]。后缀参数可选，用于去除指定后缀。",
+          "qas": [
+            {
+              "id": "5-399-64",
+              "question": "basename命令的功能是什么？",
+              "answers": [
+                {
+                  "text": "显示去除路径和后缀的文件名",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-399-65",
+              "question": "basename中的后缀参数是否可选？",
+              "answers": [
+                {
+                  "text": "可选",
+                  "answer_start": 119
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dirname命令用于显示文件或目录的路径。语法为dirname [name]。输出为去除文件名的路径部分。",
+          "qas": [
+            {
+              "id": "5-399-66",
+              "question": "dirname命令的作用是什么？",
+              "answers": [
+                {
+                  "text": "显示文件或目录的路径",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-399-67",
+              "question": "dirname命令输出什么？",
+              "answers": [
+                {
+                  "text": "去除文件名的路径部分",
+                  "answer_start": 90
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "chattr命令改变文件的扩展属性。语法为chattr [option] [mode] [files]。选项+a设置文件只能追加内容。",
+          "qas": [
+            {
+              "id": "5-399-68",
+              "question": "chattr命令的功能是什么？",
+              "answers": [
+                {
+                  "text": "改变文件的扩展属性",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-399-69",
+              "question": "设置文件只能追加内容的选项是什么？",
+              "answers": [
+                {
+                  "text": "+a",
+                  "answer_start": 122
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsattr命令查看文件扩展属性。语法为lsattr [options] [files]。选项-R用于递归查看子目录属性。",
+          "qas": [
+            {
+              "id": "5-399-70",
+              "question": "lsattr命令的功能是什么？",
+              "answers": [
+                {
+                  "text": "查看文件扩展属性",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-399-71",
+              "question": "递归查看子目录属性的选项是什么？",
+              "answers": [
+                {
+                  "text": "-R",
+                  "answer_start": 114
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "file命令显示文件类型。语法为file [option] [file]。可识别文本、二进制等文件类型，例如识别ASCII文本。",
+          "qas": [
+            {
+              "id": "5-399-72",
+              "question": "file命令的功能是什么？",
+              "answers": [
+                {
+                  "text": "显示文件类型",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-399-73",
+              "question": "file命令能识别的文件类型示例是什么？",
+              "answers": [
+                {
+                  "text": "ASCII文本",
+                  "answer_start": 122
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "md5sum命令计算和校验文件的MD5值，用于数据完整性验证。语法为md5sum [option] [file]。选项-c用于校验MD5值。",
+          "qas": [
+            {
+              "id": "5-399-74",
+              "question": "md5sum命令的主要功能是什么？",
+              "answers": [
+                {
+                  "text": "计算和校验文件的MD5值，用于数据完整性验证",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-399-75",
+              "question": "校验MD5值的选项是什么？",
+              "answers": [
+                {
+                  "text": "-c",
+                  "answer_start": 148
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "chmod命令改变文件或目录权限，只有属主或root可执行。语法为chmod [option] [mode] [file]。模式可以是数字（如755）或字母（如u+w）。",
+          "qas": [
+            {
+              "id": "5-399-76",
+              "question": "chmod命令的功能是什么？",
+              "answers": [
+                {
+                  "text": "改变文件或目录权限",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-399-77",
+              "question": "chmod支持哪两种权限模式？",
+              "answers": [
+                {
+                  "text": "数字（如755）或字母（如u+w）",
+                  "answer_start": 127
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

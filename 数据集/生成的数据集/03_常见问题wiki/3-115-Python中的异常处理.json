@@ -1,0 +1,244 @@
+{
+  "data": [
+    {
+      "title": "Python中的异常处理",
+      "paragraphs": [
+        {
+          "context": "程序运行时的错误如用户输入不合规或文件不存在称为异常，好的程序需处理异常避免中断。",
+          "qas": [
+            {
+              "question": "什么是程序运行中的异常？",
+              "id": "3-115-1",
+              "answers": [
+                {
+                  "text": "程序运行时，用户输入不合规定的数据或者需要打开的文件不存在等情况。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "BaseException是所有异常的基类，Exception是常规错误的基类，还有AttributeError、IOError等多种具体异常类型。",
+          "qas": [
+            {
+              "question": "所有异常的基类是什么？",
+              "id": "3-115-2",
+              "answers": [
+                {
+                  "text": "BaseException",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "常规错误的基类是什么？",
+              "id": "3-115-3",
+              "answers": [
+                {
+                  "text": "Exception",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Python用try...except语句处理异常，将可能引发异常的语句放try块，发生异常时执行except块。",
+          "qas": [
+            {
+              "question": "Python中用什么语句处理异常？",
+              "id": "3-115-4",
+              "answers": [
+                {
+                  "text": "try...except语句",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "try...except可捕获所有异常，也可在except后跟异常名称捕获指定异常，还能处理多个异常。",
+          "qas": [
+            {
+              "question": "如何让try...except捕获指定异常？",
+              "id": "3-115-5",
+              "answers": [
+                {
+                  "text": "在except语句后跟异常名称。",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过except 异常名 as e，打印e可获取异常详细信息，e是异常对象存储具体错误信息。",
+          "qas": [
+            {
+              "question": "怎样打印异常的详细信息？",
+              "id": "3-115-6",
+              "answers": [
+                {
+                  "text": "通过except 异常名 as e，打印e。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "try...except可结合else，当try语句中没有错误时执行else里的代码。",
+          "qas": [
+            {
+              "question": "try...except中else的作用是什么？",
+              "id": "3-115-7",
+              "answers": [
+                {
+                  "text": "当try语句中没有错误时执行else里的代码。",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "try...finally...语句中，无论是否发生异常，finally里的代码都会执行。",
+          "qas": [
+            {
+              "question": "try...finally...中finally的特点是什么？",
+              "id": "3-115-8",
+              "answers": [
+                {
+                  "text": "无论是否发生异常，finally里的代码都会执行。",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用raise语句可主动抛出异常，将相关错误信息发送出去，处理用户错误操作和输入问题。",
+          "qas": [
+            {
+              "question": "如何主动抛出异常？",
+              "id": "3-115-9",
+              "answers": [
+                {
+                  "text": "使用raise语句。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "自定义异常类型需继承Exception类，类的主题内容可自定义。",
+          "qas": [
+            {
+              "question": "如何自定义异常类型？",
+              "id": "3-115-10",
+              "answers": [
+                {
+                  "text": "自定义异常类型需继承Exception类，类的主题内容可自定义。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "AttributeError在特性引用或赋值失败时引发，IOError在试图打开不存在文件时引发。",
+          "qas": [
+            {
+              "question": "试图打开不存在文件时会引发什么异常？",
+              "id": "3-115-11",
+              "answers": [
+                {
+                  "text": "IOError",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "IndexError在使用系列中不存在的索引时引发，KeyError是映射中没有这个键时引发。",
+          "qas": [
+            {
+              "question": "映射中没有某个键时会引发什么异常？",
+              "id": "3-115-12",
+              "answers": [
+                {
+                  "text": "KeyError",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NameError在找不到名字时引发，SyntaxError在代码为错误形式时引发。",
+          "qas": [
+            {
+              "question": "代码形式错误时会引发什么异常？",
+              "id": "3-115-13",
+              "answers": [
+                {
+                  "text": "SyntaxError",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "TypeError是函数或方法接受不适当类型参数时引发，如sum('nick')。",
+          "qas": [
+            {
+              "question": "sum('nick')会引发什么异常？",
+              "id": "3-115-14",
+              "answers": [
+                {
+                  "text": "TypeError",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ValueError是函数接受正确类型但值不适当的参数时引发，如int('nick')。",
+          "qas": [
+            {
+              "question": "int('nick')会引发什么异常？",
+              "id": "3-115-15",
+              "answers": [
+                {
+                  "text": "ValueError",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ZeroDivisionError在除法或模除操作的第二个参数为0时引发。",
+          "qas": [
+            {
+              "question": "除法时第二个参数为0会引发什么异常？",
+              "id": "3-115-16",
+              "answers": [
+                {
+                  "text": "ZeroDivisionError",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "data": [
+    {
+      "title": "从deepin迁移到其他Linux",
+      "paragraphs": [
+        {
+          "context": "UOS是Deepin的商业版本，更稳定，功能更多，有官方技术支持，付费激活（有免费活动），有30天试用期。",
+          "qas": [
+            {
+              "question": "UOS与Deepin是什么关系？",
+              "id": "3-124-1",
+              "answers": [
+                {
+                  "text": "UOS是Deepin的商业版本",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "UOS有试用期吗？",
+              "id": "3-124-2",
+              "answers": [
+                {
+                  "text": "有30天的试用期",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Manjaro Deepin是Manjaro Linux的社区版本，DDE更新较及时，2022-06时似乎无人维护。",
+          "qas": [
+            {
+              "question": "Manjaro Deepin属于哪个发行版的社区版本？",
+              "id": "3-124-3",
+              "answers": [
+                {
+                  "text": "Manjaro Linux",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "2022年6月时Manjaro Deepin的维护状态如何？",
+              "id": "3-124-4",
+              "answers": [
+                {
+                  "text": "似乎无人维护",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ExTix Deepin基于deepin，有少量修改优化。",
+          "qas": [
+            {
+              "question": "ExTix Deepin基于什么发行版？",
+              "id": "3-124-5",
+              "answers": [
+                {
+                  "text": "deepin",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UbuntuDDE基于Ubuntu，有应用商店。",
+          "qas": [
+            {
+              "question": "UbuntuDDE基于哪个发行版？",
+              "id": "3-124-6",
+              "answers": [
+                {
+                  "text": "Ubuntu",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "国内易上手的Linux发行版有Ubuntu Kylin，CutefishOS（社区版可用），JingOS（停更，适合触屏）等。",
+          "qas": [
+            {
+              "question": "国内有哪些容易上手的Linux发行版？",
+              "id": "3-124-7",
+              "answers": [
+                {
+                  "text": "Ubuntu Kylin，CutefishOS（社区版可用），JingOS（停更，适合触屏）等",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "JingOS适合什么设备？",
+              "id": "3-124-8",
+              "answers": [
+                {
+                  "text": "触屏设备",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "国际易上手的Linux发行版有Ubuntu及其风味版本，Linux Mint，Manjaro，openSUSE，Fedora，elementary OS，KDE Neon等。",
+          "qas": [
+            {
+              "question": "国际上有哪些容易上手的Linux发行版？",
+              "id": "3-124-9",
+              "answers": [
+                {
+                  "text": "Ubuntu及其风味版本，Linux Mint，Manjaro，openSUSE，Fedora，elementary OS，KDE Neon等",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Linux系统需下载iso镜像，用Ventoy制作启动盘，备份文件，建分区，从U盘启动按提示安装，挂载点设为/。",
+          "qas": [
+            {
+              "question": "安装Linux系统需要使用什么软件制作启动盘？",
+              "id": "3-124-10",
+              "answers": [
+                {
+                  "text": "Ventoy",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "安装Linux时挂载点通常设置为什么？",
+              "id": "3-124-11",
+              "answers": [
+                {
+                  "text": "/",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux安装后可能需安装驱动、换国内源、更新系统、调整设置、安装输入法及应用等。",
+          "qas": [
+            {
+              "question": "Linux安装完成后可能需要进行哪些操作？",
+              "id": "3-124-12",
+              "answers": [
+                {
+                  "text": "安装缺少的驱动、换国内源、更新系统、调整设置、安装输入法及需要用的应用等",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux Mint安装deepin-wine需在/etc/apt/sources.list.d/建deepin.conf，添加源，在/etc/apt/preferences.d/建deepin文件，设优先级，更新源后安装。",
+          "qas": [
+            {
+              "question": "在Linux Mint上安装deepin-wine需要在哪个目录下新建deepin.conf文件？",
+              "id": "3-124-13",
+              "answers": [
+                {
+                  "text": "/etc/apt/sources.list.d/",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "Linux Mint安装deepin-wine前需要更新源吗？",
+              "id": "3-124-14",
+              "answers": [
+                {
+                  "text": "需要，执行命令sudo apt update以刷新源",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Manjaro用yay安装deepin-wine应用，微信包名有deepin-wine-wechat、com.qq.weixin.spark，QQ有com.qq.im.deepin (TIM)、com.qq.tim.spark。",
+          "qas": [
+            {
+              "question": "Manjaro上安装deepin-wine应用可以使用什么工具？",
+              "id": "3-124-15",
+              "answers": [
+                {
+                  "text": "yay",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "Manjaro上微信的deepin-wine包名有哪些？",
+              "id": "3-124-16",
+              "answers": [
+                {
+                  "text": "deepin-wine-wechat、com.qq.weixin.spark",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "星火商店支持多数Debian系发行版，在非deepin/UOS的Debian系上需先装依赖，再装商店客户端。",
+          "qas": [
+            {
+              "question": "星火商店支持哪些发行版？",
+              "id": "3-124-17",
+              "answers": [
+                {
+                  "text": "大多数Debian系发行版",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "在非deepin/UOS的Debian系发行版上安装星火商店的步骤是什么？",
+              "id": "3-124-18",
+              "answers": [
+                {
+                  "text": "先安装依赖包，再安装商店客户端",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Vek可安装配置Wine/deepin-wine，管理Windows应用，在Linux Mint上因缺libicui18n.so.63报错，安装特定deb包可解决。",
+          "qas": [
+            {
+              "question": "Vek有什么功能？",
+              "id": "3-124-19",
+              "answers": [
+                {
+                  "text": "安装和配置Wine/deepin-wine，运行和管理Windows应用等",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "Linux Mint上运行Vek报错缺少libicui18n.so.63怎么办？",
+              "id": "3-124-20",
+              "answers": [
+                {
+                  "text": "下载安装deb包：https://community-packages.deepin.com/deepin/pool/main/i/icu/libicu63_63.1-6%2Bdeb10u1_amd64.deb",
+                  "answer_start": 73
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Manjaro装软件时报有效性检查错误，可下载deb包，修改/home/用户名/.cache/yay/软件包名/下PKGBUILD文件，将校验项改为SKIP，再执行makepkg -i。",
+          "qas": [
+            {
+              "question": "Manjaro安装软件时出现一个或多个文件没有通过有效性检查的错误，如何解决？",
+              "id": "3-124-21",
+              "answers": [
+                {
+                  "text": "1. 下载要编译安装的deb包；2. 打开/home/用户名/.cache/yay/软件包名/，修改PKGBUILD文件，将md5sums，sha1sums等项改为SKIP；3. 执行makepkg -i",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

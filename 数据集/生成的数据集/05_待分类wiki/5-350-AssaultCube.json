@@ -1,0 +1,115 @@
+{
+  "title": "AssaultCube",
+  "paragraphs": [
+    {
+      "context": "AssaultCube是一款第一视角射击游戏，其目的在于创作一个崭新融入Cube简单风格但更加现实的游戏。它具有20多种游戏模式，支持在线网络双人对战、多人游戏、预安装了26个不同的地图，在游戏中，可以通过地图编辑器来帮助玩家创建自己的地图。",
+      "qas": [
+        {
+          "id": "5-350-1",
+          "question": "AssaultCube属于什么类型的游戏？",
+          "answers": [
+            {
+              "text": "第一视角射击游戏",
+              "answer_start": 14
+            }
+          ]
+        },
+        {
+          "id": "5-350-2",
+          "question": "AssaultCube的创作目的是什么？",
+          "answers": [
+            {
+              "text": "创作一个崭新融入Cube简单风格但更加现实的游戏",
+              "answer_start": 33
+            }
+          ]
+        },
+        {
+          "id": "5-350-3",
+          "question": "AssaultCube有多少种游戏模式？",
+          "answers": [
+            {
+              "text": "20多种",
+              "answer_start": 26
+            }
+          ]
+        },
+        {
+          "id": "5-350-4",
+          "question": "AssaultCube支持哪些对战形式？",
+          "answers": [
+            {
+              "text": "在线网络双人对战、多人游戏",
+              "answer_start": 38
+            }
+          ]
+        },
+        {
+          "id": "5-350-5",
+          "question": "AssaultCube预安装了多少个不同的地图？",
+          "answers": [
+            {
+              "text": "26个",
+              "answer_start": 56
+            }
+          ]
+        },
+        {
+          "id": "5-350-6",
+          "question": "玩家在AssaultCube中可通过什么创建自己的地图？",
+          "answers": [
+            {
+              "text": "地图编辑器",
+              "answer_start": 74
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "sudo apt-get install assaultcube",
+      "qas": [
+        {
+          "id": "5-350-7",
+          "question": "安装AssaultCube的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt-get install assaultcube",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "sudo apt-get remove assaultcube",
+      "qas": [
+        {
+          "id": "5-350-8",
+          "question": "卸载AssaultCube的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt-get remove assaultcube",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "http://packages.deepin.com/deepin/pool/contrib/a/assaultcube/",
+      "qas": [
+        {
+          "id": "5-350-9",
+          "question": "AssaultCube的仓库地址是什么？",
+          "answers": [
+            {
+              "text": "http://packages.deepin.com/deepin/pool/contrib/a/assaultcube/",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

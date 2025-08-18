@@ -1,0 +1,254 @@
+{
+  "data": [
+    {
+      "title": "Linux 内存泄露案例分析和内存管理分享",
+      "paragraphs": [
+        {
+          "context": "线上LB服务内存报警，部分机器内存使用率超80%，甚至90%，且持续增长。LB服务是多业务流量入口，影响大。",
+          "qas": [
+            {
+              "question": "线上LB服务出现了什么问题？",
+              "id": "4-10-1",
+              "answers": [
+                {
+                  "text": "内存报警，部分机器内存使用率超80%，甚至90%，且持续增长。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "LB服务的重要性是什么？",
+              "id": "4-10-2",
+              "answers": [
+                {
+                  "text": "是零售、物流、科技等业务服务的流量入口，承接上万个服务的流量转发，一旦有故障影响业务服务比较多。",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过cat /proc/meminfo查看Slab的内核内存可能有泄漏，slabtop命令发现dentry对象占比高，怀疑与socket文件有关，排查发现LB服务上的curl发送HTTPS探测脚本存在dentry对象泄漏，curl-7.19.7版本依赖的NSS库有此bug。",
+          "qas": [
+            {
+              "question": "初步检查内存泄漏用了什么命令？",
+              "id": "4-10-3",
+              "answers": [
+                {
+                  "text": "cat /proc/meminfo",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "用什么命令发现dentry对象占比高？",
+              "id": "4-10-4",
+              "answers": [
+                {
+                  "text": "slabtop",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "question": "内存泄漏的原因是什么？",
+              "id": "4-10-5",
+              "answers": [
+                {
+                  "text": "curl-7.19.7版本依赖的NSS库存在dentry泄漏的bug，LB服务上的curl发送HTTPS探测脚本导致该问题暴露。",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "临时措施：停止探测脚本，业务低峰时用drop_caches清理缓存。永久解决方案：大促后在探测脚本中设置环境变量NSS_SDB_USE_CACHE。",
+          "qas": [
+            {
+              "question": "内存泄漏的临时措施有哪些？",
+              "id": "4-10-6",
+              "answers": [
+                {
+                  "text": "停止探测脚本，在业务流量低峰时通过drop_caches清理缓存。",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "内存泄漏的永久解决方案是什么？",
+              "id": "4-10-7",
+              "answers": [
+                {
+                  "text": "等大促过后，在探测脚本中设置环境变量NSS_SDB_USE_CACHE。",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux内存寻址有逻辑地址、线性地址（虚拟地址）、物理地址。MMU通过分段单元将逻辑地址转线性地址，分页单元将线性地址转物理地址。",
+          "qas": [
+            {
+              "question": "Linux内核中有哪三种地址？",
+              "id": "4-10-8",
+              "answers": [
+                {
+                  "text": "逻辑地址、线性地址、物理地址。",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "逻辑地址如何转换为物理地址？",
+              "id": "4-10-9",
+              "answers": [
+                {
+                  "text": "内存控制单元(MMU)通过分段单元把逻辑地址转换成线性地址，再通过分页单元把线性地址转换成物理地址。",
+                  "answer_start": 46
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux分页机制中，线性地址分页，RAM分成页框，页表用于映射线性地址与物理地址。x86_64 Linux采用4级分页模型，一页4K，有页全局目录、页上级目录、页中间目录、页表。",
+          "qas": [
+            {
+              "question": "Linux分页机制中，什么用于映射线性地址与物理地址？",
+              "id": "4-10-10",
+              "answers": [
+                {
+                  "text": "页表",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "question": "x86_64的Linux内核采用几级分页模型？",
+              "id": "4-10-11",
+              "answers": [
+                {
+                  "text": "4级",
+                  "answer_start": 80
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NUMA架构即非一致性内存架构，物理内存划分为节点，每个节点绑定不同CPU核，本地CPU核访问本地内存节点延迟最小。可用lscpu命令查看NUMA与CPU核关系。",
+          "qas": [
+            {
+              "question": "NUMA架构的全称是什么？",
+              "id": "4-10-12",
+              "answers": [
+                {
+                  "text": "非一致性内存架构",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "用什么命令可以查看NUMA与CPU核的关系？",
+              "id": "4-10-13",
+              "answers": [
+                {
+                  "text": "lscpu",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux内存检测工具包括free、top、smaps文件、vmstat、meminfo文件，分别用于监控系统内存、查看系统及进程内存、查看进程虚拟内存分布、实时监视系统活动、记录系统内存使用详情。",
+          "qas": [
+            {
+              "question": "哪些工具可用于Linux内存检测？",
+              "id": "4-10-14",
+              "answers": [
+                {
+                  "text": "free命令、top命令、smaps文件、vmstat命令、meminfo文件。",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "free命令的作用是什么？",
+              "id": "4-10-15",
+              "answers": [
+                {
+                  "text": "监控系统内存。",
+                  "answer_start": 55
+                }
+              ]
+            },
+            {
+              "question": "meminfo文件的作用是什么？",
+              "id": "4-10-16",
+              "answers": [
+                {
+                  "text": "记录系统内存使用的详细情况。",
+                  "answer_start": 145
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux内核推迟给用户态进程动态分配内存，采用请求调页（访问页不在RAM时引发缺页异常）和写时复制（父子进程共享页框，改写时复制新页框）机制。",
+          "qas": [
+            {
+              "question": "Linux内核对用户态进程动态分配内存的态度是什么？",
+              "id": "4-10-17",
+              "answers": [
+                {
+                  "text": "尽量推迟给用户态的进程动态分配内存。",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "什么是写时复制机制？",
+              "id": "4-10-18",
+              "answers": [
+                {
+                  "text": "父、子进程共享页框而不是复制页框，但是共享页框不能被修改，只有当父/子进程试图改写共享页框时，内核才将共享页框复制一个新的页框并标记为可写。",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "top命令中，VIRT是进程使用的所有虚拟内存，RES是进程占用的实体内存，不包括换出部分，SHR是进程可读的全部共享内存。",
+          "qas": [
+            {
+              "question": "top命令中VIRT代表什么？",
+              "id": "4-10-19",
+              "answers": [
+                {
+                  "text": "进程使用的所有虚拟内存，包括代码、数据、共享库，以及被换出到交换区和映射了但尚未使用的部分。",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "top命令中RES的含义是什么？",
+              "id": "4-10-20",
+              "answers": [
+                {
+                  "text": "进程所占用的所有实体内存，不包括被换出到交换区的部分。",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

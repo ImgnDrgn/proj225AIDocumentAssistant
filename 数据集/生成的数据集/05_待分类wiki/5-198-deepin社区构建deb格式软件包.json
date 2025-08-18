@@ -1,0 +1,234 @@
+{
+  "data": [
+    {
+      "title": "deepin社区构建deb格式软件包",
+      "paragraphs": [
+        {
+          "context": "源码包包含dsc文件、orig.tar包、debian.tar包。dsc是描述文件，orig.tar是上游源码重命名的tar包，debian.tar是debian目录的压缩包。",
+          "qas": [
+            {
+              "question": "源码包包含哪些文件？",
+              "id": "5-198-1",
+              "answers": [
+                {
+                  "text": "dsc文件、orig.tar包、debian.tar包",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "orig.tar包命名规则：<packagename>_<version>.orig.tar.<xz|gz|bz2>，<packagename>是软件包源码名称，<version>是版本。",
+          "qas": [
+            {
+              "question": "orig.tar包的命名规则是什么？",
+              "id": "5-198-2",
+              "answers": [
+                {
+                  "text": "<packagename>_<version>.orig.tar.<xz|gz|bz2>",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载源代码前需创建目录：mkdir ~/SRC，cd ~/SRC。可通过git clone或wget下载。",
+          "qas": [
+            {
+              "question": "下载源代码前需要做什么？",
+              "id": "5-198-3",
+              "answers": [
+                {
+                  "text": "创建目录：mkdir ~/SRC，cd ~/SRC",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用dh_make生成debian目录需在命名为<packagename>-<version>的源码目录中，命令如dh_make -e email --createorig -sy。",
+          "qas": [
+            {
+              "question": "如何使用dh_make生成debian目录？",
+              "id": "5-198-4",
+              "answers": [
+                {
+                  "text": "在命名为<packagename>-<version>的源码目录中执行命令：dh_make -e email --createorig -sy",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "changelog文件首行包含软件包名、版本号、发行版和紧急程度，如deepin-music (6.2.17-1) unstable; urgency=medium。",
+          "qas": [
+            {
+              "question": "changelog文件首行包含哪些信息？",
+              "id": "5-198-5",
+              "answers": [
+                {
+                  "text": "软件包名、版本号、发行版和紧急程度",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "control文件中Source字段表示源码包的名称，建议与项目名称相同。",
+          "qas": [
+            {
+              "question": "control文件中Source字段的作用是什么？",
+              "id": "5-198-6",
+              "answers": [
+                {
+                  "text": "表示源码包的名称",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "rules文件是用于构建Debian软件包的可执行脚本，本质是Makefile，包含多个target如clean、build等。",
+          "qas": [
+            {
+              "question": "rules文件的作用是什么？",
+              "id": "5-198-7",
+              "answers": [
+                {
+                  "text": "用于构建Debian软件包的可执行脚本",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "source/format文件内容可为3.0 (quilt)或3.0 (native)，3.0(quilt)用于非本土软件，3.0(native)用于Deepin本土软件。",
+          "qas": [
+            {
+              "question": "source/format文件的可能值有哪些？",
+              "id": "5-198-8",
+              "answers": [
+                {
+                  "text": "3.0 (quilt)、3.0 (native)",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用dpkg-buildpackage构建的命令如dpkg-buildpackage -us -nc，会完成清理、构建源码包、编译、生成二进制包等工作。",
+          "qas": [
+            {
+              "question": "dpkg-buildpackage构建的命令是什么？",
+              "id": "5-198-9",
+              "answers": [
+                {
+                  "text": "dpkg-buildpackage -us -nc",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "构建时若提示缺少编译依赖，可执行sudo apt build-dep .自动安装所需依赖。",
+          "qas": [
+            {
+              "question": "构建时缺少编译依赖如何解决？",
+              "id": "5-198-10",
+              "answers": [
+                {
+                  "text": "执行sudo apt build-dep .自动安装所需依赖",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "debian/compat文件定义debhelper的兼容级别，报错提示需指定时，可执行echo 9 > debian/compat生成。",
+          "qas": [
+            {
+              "question": "debian/compat文件的作用是什么？",
+              "id": "5-198-11",
+              "answers": [
+                {
+                  "text": "定义debhelper的兼容级别",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改代码后可使用dpkg-source --commit生成patch，需输入补丁名，生成的patch放在debian/patches目录，名称写入series文件。",
+          "qas": [
+            {
+              "question": "如何制作patch？",
+              "id": "5-198-12",
+              "answers": [
+                {
+                  "text": "使用dpkg-source --commit生成，输入补丁名，patch放在debian/patches目录，名称写入series文件",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用debuild构建需先安装devscripts，命令为debuild，会执行lintian静态检查，可通过~/.devscripts定制选项。",
+          "qas": [
+            {
+              "question": "如何使用debuild构建软件包？",
+              "id": "5-198-13",
+              "answers": [
+                {
+                  "text": "先安装devscripts，执行命令debuild",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装pbuilder的命令为sudo apt install pbuilder，用于净室编译环境验证编译依赖。",
+          "qas": [
+            {
+              "question": "如何安装pbuilder？",
+              "id": "5-198-14",
+              "answers": [
+                {
+                  "text": "sudo apt install pbuilder",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "生成的.deb二进制包可使用sudo dpkg -i 包名.deb命令安装。",
+          "qas": [
+            {
+              "question": "如何安装生成的二进制包？",
+              "id": "5-198-15",
+              "answers": [
+                {
+                  "text": "sudo dpkg -i 包名.deb",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

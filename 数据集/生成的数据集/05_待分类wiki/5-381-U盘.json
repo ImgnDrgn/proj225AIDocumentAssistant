@@ -1,0 +1,395 @@
+{
+    "title": "U盘",
+    "paragraphs": [
+        {
+            "context": "闪存盘（又称快闪随身碟、USB记忆体、优盘、U盘、电子盘、随身碟、记忆棒、手指），是一种使用USB接口连接计算机，并通常通过闪存来进行数据存储的小型便携存储设备。一般U盘体积极小、重量轻、可重复写入，面世后迅速普及并取代传统的软盘及软盘驱动器。有时读卡器也会被归类为闪存盘。这类设备的记忆芯片并不是内置的，而是可以抽换的存储卡。",
+            "qas": [
+                {
+                    "id": "5-381-1",
+                    "question": "闪存盘通过什么接口连接计算机？",
+                    "answers": [
+                        {
+                            "text": "USB接口",
+                            "answer_start": 45
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-2",
+                    "question": "U盘通常通过什么进行数据存储？",
+                    "answers": [
+                        {
+                            "text": "闪存",
+                            "answer_start": 63
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-3",
+                    "question": "U盘的体积和重量特点是什么？",
+                    "answers": [
+                        {
+                            "text": "体积极小、重量轻",
+                            "answer_start": 96
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-4",
+                    "question": "U盘取代了哪些传统存储设备？",
+                    "answers": [
+                        {
+                            "text": "传统的软盘及软盘驱动器",
+                            "answer_start": 112
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-5",
+                    "question": "哪种设备有时也被归类为闪存盘？",
+                    "answers": [
+                        {
+                            "text": "读卡器",
+                            "answer_start": 131
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-6",
+                    "question": "这类设备的记忆芯片有什么特性？",
+                    "answers": [
+                        {
+                            "text": "记忆芯片并不是内置的，而是可以抽换的存储卡",
+                            "answer_start": 146
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "context": "目前市面上的主板都支持很多U盘的引导模式，但是有些只支持部分引导模式，U盘也并不是都可以制作成一下各种引导模式，这个与该U盘的芯片有关。遇到制作的U盘启动怕无法启动，我们可以换个引导模式制作。目前主要的引导模式有一下几种: USB-HDD、USB-ZIP、USB-HDD+、USB-ZIP+、USB-CDROM。",
+            "qas": [
+                {
+                    "id": "5-381-7",
+                    "question": "U盘引导模式的支持与什么有关？",
+                    "answers": [
+                        {
+                            "text": "与该U盘的芯片有关",
+                            "answer_start": 64
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-8",
+                    "question": "如果制作的U盘无法启动，该怎么办？",
+                    "answers": [
+                        {
+                            "text": "换个引导模式制作",
+                            "answer_start": 84
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-9",
+                    "question": "目前主要的U盘引导模式有哪几种？",
+                    "answers": [
+                        {
+                            "text": "USB-HDD、USB-ZIP、USB-HDD+、USB-ZIP+、USB-CDROM",
+                            "answer_start": 115
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "context": "- USB-HDD 硬盘仿真模式，DOS启动后显示C:盘，HP U盘格式化工具制作的U盘即采用此启动模式。此模式兼容性很高，但对于一些只支持USB-ZIP模式的电脑则无法启动。",
+            "qas": [
+                {
+                    "id": "5-381-10",
+                    "question": "USB-HDD是什么模式？",
+                    "answers": [
+                        {
+                            "text": "硬盘仿真模式",
+                            "answer_start": 10
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-11",
+                    "question": "USB-HDD模式下，DOS启动后显示什么盘符？",
+                    "answers": [
+                        {
+                            "text": "C:盘",
+                            "answer_start": 21
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-12",
+                    "question": "哪种工具制作的U盘采用USB-HDD启动模式？",
+                    "answers": [
+                        {
+                            "text": "HP U盘格式化工具",
+                            "answer_start": 28
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-13",
+                    "question": "USB-HDD模式的兼容性如何？",
+                    "answers": [
+                        {
+                            "text": "兼容性很高，但对于一些只支持USB-ZIP模式的电脑则无法启动",
+                            "answer_start": 57
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "context": "USB-ZIP是大容量软盘仿真模式，DOS启动后显示A盘，FlashBoot制作的USB-ZIP启动U盘即采用此模式。此模式在一些比较老的电脑上是唯一可选的模式，但对大部分新电脑来说兼容性不好，特别是大容量U盘。",
+            "qas": [
+                {
+                    "id": "5-381-14",
+                    "question": "USB-ZIP是什么模式？",
+                    "answers": [
+                        {
+                            "text": "大容量软盘仿真模式",
+                            "answer_start": 10
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-15",
+                    "question": "USB-ZIP模式启动后显示什么盘符？",
+                    "answers": [
+                        {
+                            "text": "A盘",
+                            "answer_start": 23
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-16",
+                    "question": "哪种工具制作的U盘使用USB-ZIP模式？",
+                    "answers": [
+                        {
+                            "text": "FlashBoot",
+                            "answer_start": 35
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-17",
+                    "question": "USB-ZIP模式的兼容性有什么特点？",
+                    "answers": [
+                        {
+                            "text": "在一些比较老的电脑上是唯一可选的模式，但对大部分新电脑来说兼容性不好，特别是大容量U盘",
+                            "answer_start": 60
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "context": "- USB-HDD+ 增强的USB-HDD模式，DOS启动后显示C:盘.兼容性极高。其缺点在于对仅支持USB-ZIP的电脑无法启动。",
+            "qas": [
+                {
+                    "id": "5-381-18",
+                    "question": "USB-HDD+是什么模式？",
+                    "answers": [
+                        {
+                            "text": "增强的USB-HDD模式",
+                            "answer_start": 11
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-19",
+                    "question": "USB-HDD+模式下，DOS启动后显示什么盘符？",
+                    "answers": [
+                        {
+                            "text": "C:盘",
+                            "answer_start": 30
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-20",
+                    "question": "USB-HDD+模式的兼容性如何？",
+                    "answers": [
+                        {
+                            "text": "兼容性极高",
+                            "answer_start": 35
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-21",
+                    "question": "USB-HDD+模式的缺点是什么？",
+                    "answers": [
+                        {
+                            "text": "对仅支持USB-ZIP的电脑无法启动",
+                            "answer_start": 47
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "context": "- USB-ZIP+ 增强的USB-ZIP模式，支持USB-HDD/USB-ZIP双模式启动(根据电脑的不同，有些BIOS在DOS启动后可能显示C:盘，有些BIOS在DOS启动后可能显示A:盘)，从而达到很高的兼容性。其缺点在于有些支持USB-HDD的电脑会将此模式的U盘认为是USB-ZIP来启动，从而导致4GB以上大容量U盘的兼容性有所降低。",
+            "qas": [
+                {
+                    "id": "5-381-22",
+                    "question": "USB-ZIP+是什么模式？",
+                    "answers": [
+                        {
+                            "text": "增强的USB-ZIP模式",
+                            "answer_start": 11
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-23",
+                    "question": "USB-ZIP+支持什么启动模式？",
+                    "answers": [
+                        {
+                            "text": "USB-HDD/USB-ZIP双模式启动",
+                            "answer_start": 28
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-24",
+                    "question": "USB-ZIP+模式下，DOS启动后可能显示什么盘符？",
+                    "answers": [
+                        {
+                            "text": "C:盘或A:盘",
+                            "answer_start": 75
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-25",
+                    "question": "USB-ZIP+模式的优点是什么？",
+                    "answers": [
+                        {
+                            "text": "达到很高的兼容性",
+                            "answer_start": 130
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-26",
+                    "question": "USB-ZIP+模式的缺点是什么？",
+                    "answers": [
+                        {
+                            "text": "有些支持USB-HDD的电脑会将此模式的U盘认为是USB-ZIP来启动，从而导致4GB以上大容量U盘的兼容性有所降低",
+                            "answer_start": 151
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "context": "- USB-CDROM 光盘仿真模式，DOS启动后可以不占盘符，兼容性一般。其优点在于可以像光盘一样进行XP/2003安装。制作时一般需要具体U盘型号/批号所对应的量产工具来制作，对于U3盘网上有通用的量产工具。",
+            "qas": [
+                {
+                    "id": "5-381-27",
+                    "question": "USB-CDROM是什么模式？",
+                    "answers": [
+                        {
+                            "text": "光盘仿真模式",
+                            "answer_start": 12
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-28",
+                    "question": "USB-CDROM模式下，DOS启动后有什么特点？",
+                    "answers": [
+                        {
+                            "text": "可以不占盘符",
+                            "answer_start": 25
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-29",
+                    "question": "USB-CDROM模式的兼容性如何？",
+                    "answers": [
+                        {
+                            "text": "兼容性一般",
+                            "answer_start": 35
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-30",
+                    "question": "USB-CDROM模式的优点是什么？",
+                    "answers": [
+                        {
+                            "text": "可以像光盘一样进行XP/2003安装",
+                            "answer_start": 48
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-31",
+                    "question": "制作USB-CDROM模式的U盘一般需要什么工具？",
+                    "answers": [
+                        {
+                            "text": "具体U盘型号/批号所对应的量产工具，对于U3盘网上有通用的量产工具",
+                            "answer_start": 79
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "context": "系统无法识别U盘。此类现象常见于用户使用dd命令将iso文件写入U盘。linux会将这样的u盘识别为光盘，所以不会自动挂载，并且提示出现归递分区，彻底解决方法需要格式化u盘。",
+            "qas": [
+                {
+                    "id": "5-381-32",
+                    "question": "系统无法识别U盘的常见原因是什么？",
+                    "answers": [
+                        {
+                            "text": "用户使用dd命令将iso文件写入U盘",
+                            "answer_start": 23
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-33",
+                    "question": "Linux会如何识别使用dd命令写入iso文件的U盘？",
+                    "answers": [
+                        {
+                            "text": "识别为光盘",
+                            "answer_start": 57
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-34",
+                    "question": "系统无法识别U盘时，Linux有什么表现？",
+                    "answers": [
+                        {
+                            "text": "不会自动挂载，并且提示出现归递分区",
+                            "answer_start": 66
+                        }
+                    ]
+                },
+                {
+                    "id": "5-381-35",
+                    "question": "系统无法识别U盘的彻底解决方法是什么？",
+                    "answers": [
+                        {
+                            "text": "需要格式化u盘",
+                            "answer_start": 99
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

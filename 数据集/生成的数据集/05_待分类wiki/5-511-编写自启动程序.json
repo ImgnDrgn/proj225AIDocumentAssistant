@@ -1,0 +1,159 @@
+{
+  "data": [
+    {
+      "title": "编写自启动程序",
+      "paragraphs": [
+        {
+          "context": "Linux下可通过图形管理设置自启动程序：打开启动器，右键选中需要开机启动的程序——添加至开机启动项。",
+          "qas": [
+            {
+              "question": "如何通过图形管理设置Linux程序开机启动？",
+              "id": "5-511-1",
+              "answers": [
+                {
+                  "text": "打开启动器，右键选中需要开机启动的程序——添加至开机启动项。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux加载后运行init进程，init根据配置文件启动其它进程，修改/etc/rc、/etc/rc.d、/etc/rc?.d目录下的脚本文件可实现程序自启动。",
+          "qas": [
+            {
+              "question": "Linux中init进程如何启动其他进程？",
+              "id": "5-511-2",
+              "answers": [
+                {
+                  "text": "init根据配置文件启动其它进程。",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "修改哪些目录下的脚本文件可实现程序自启动？",
+              "id": "5-511-3",
+              "answers": [
+                {
+                  "text": "/etc/rc、/etc/rc.d、/etc/rc?.d",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编辑/etc/rc.local文件（系统最后启动的脚本），在文件最末加“xinit”或“startx”，可在开机后直接进入X-Window。",
+          "qas": [
+            {
+              "question": "如何设置开机后直接进入X-Window？",
+              "id": "5-511-4",
+              "answers": [
+                {
+                  "text": "编辑/etc/rc.local文件，在文件最末加“xinit”或“startx”。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "/etc/rc.local文件有什么特点？",
+              "id": "5-511-5",
+              "answers": [
+                {
+                  "text": "系统最后启动的脚本",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用systemd的系统默认不含rc.local文件，需在/etc目录创建rc.local纯文本文件，写入命令后赋予可执行权限：sudo chmod +x /etc/rc.local。",
+          "qas": [
+            {
+              "question": "使用systemd的系统如何让rc.local生效？",
+              "id": "5-511-6",
+              "answers": [
+                {
+                  "text": "在/etc目录创建rc.local纯文本文件，写入命令后赋予可执行权限：sudo chmod +x /etc/rc.local。",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "使用systemd的系统默认有rc.local文件吗？",
+              "id": "5-511-7",
+              "answers": [
+                {
+                  "text": "默认不含rc.local文件",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在~/.config/autostart目录添加.desktop文件可设置自启动，如XX-Net.desktop，其中Exec指定启动命令。",
+          "qas": [
+            {
+              "question": "如何通过~/.config/autostart目录设置程序自启动？",
+              "id": "5-511-8",
+              "answers": [
+                {
+                  "text": "在~/.config/autostart目录添加.desktop文件，其中Exec指定启动命令。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": ".desktop文件中哪个字段指定启动命令？",
+              "id": "5-511-9",
+              "answers": [
+                {
+                  "text": "Exec",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户登录时，bash先执行全局登录脚本/etc/profile，再按顺序查找~/.bash_profile、~/.bash_login、~/.profile，只执行最先找到的一个。",
+          "qas": [
+            {
+              "question": "用户登录时，bash首先执行哪个登录脚本？",
+              "id": "5-511-10",
+              "answers": [
+                {
+                  "text": "/etc/profile",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "用户登录时，bash在用户起始目录下查找哪些文件？",
+              "id": "5-511-11",
+              "answers": [
+                {
+                  "text": "~/.bash_profile、~/.bash_login、~/.profile",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "用户登录时，bash对找到的多个起始目录下的文件如何处理？",
+              "id": "5-511-12",
+              "answers": [
+                {
+                  "text": "只执行最先找到的一个。",
+                  "answer_start": 89
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

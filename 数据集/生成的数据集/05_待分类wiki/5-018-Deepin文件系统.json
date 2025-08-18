@@ -1,0 +1,334 @@
+{
+  "data": [
+    {
+      "title": "Deepin文件系统",
+      "paragraphs": [
+        {
+          "context": "deepin的默认文件系统是ext4，大多数linux系统均采用ext格式的磁盘文件系统。ext4是linux下的日志文件系统。",
+          "qas": [
+            {
+              "question": "deepin的默认文件系统是什么？",
+              "id": "5-18-1",
+              "answers": [
+                {
+                  "text": "ext4",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "ext4属于什么类型的文件系统？",
+              "id": "5-18-2",
+              "answers": [
+                {
+                  "text": "linux下的日志文件系统",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看磁盘文件类型的命令是df -Th。",
+          "qas": [
+            {
+              "question": "查看磁盘文件类型的命令是什么？",
+              "id": "5-18-3",
+              "answers": [
+                {
+                  "text": "df -Th",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/boot分区的磁盘文件类型是ext4，是引导分区。",
+          "qas": [
+            {
+              "question": "/boot分区的磁盘文件类型是什么？",
+              "id": "5-18-4",
+              "answers": [
+                {
+                  "text": "ext4",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "question": "/boot分区的备注是什么？",
+              "id": "5-18-5",
+              "answers": [
+                {
+                  "text": "引导分区",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/boot/efi分区的磁盘文件类型是vfat(fat32)，是efi引导分区。",
+          "qas": [
+            {
+              "question": "/boot/efi分区的磁盘文件类型是什么？",
+              "id": "5-18-6",
+              "answers": [
+                {
+                  "text": "vfat(fat32)",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "/boot/efi分区的备注是什么？",
+              "id": "5-18-7",
+              "answers": [
+                {
+                  "text": "efi引导分区",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/(根分区)的磁盘文件类型是ext4，是整个linux磁盘分区。",
+          "qas": [
+            {
+              "question": "/(根分区)的磁盘文件类型是什么？",
+              "id": "5-18-8",
+              "answers": [
+                {
+                  "text": "ext4",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "/(根分区)的备注是什么？",
+              "id": "5-18-9",
+              "answers": [
+                {
+                  "text": "整个linux磁盘分区",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/dev分区的磁盘文件类型是udev，是设备管理分区。udev是设备节点。",
+          "qas": [
+            {
+              "question": "/dev分区的磁盘文件类型是什么？",
+              "id": "5-18-10",
+              "answers": [
+                {
+                  "text": "udev",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "/dev分区的备注是什么？",
+              "id": "5-18-11",
+              "answers": [
+                {
+                  "text": "设备管理分区",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "udev是什么？",
+              "id": "5-18-12",
+              "answers": [
+                {
+                  "text": "设备节点",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/dev/shm分区的磁盘文件类型是tmpfs，用于管理磁盘、内存等设备。tmpfs是基于内存的暂时文件系统。",
+          "qas": [
+            {
+              "question": "/dev/shm分区的磁盘文件类型是什么？",
+              "id": "5-18-13",
+              "answers": [
+                {
+                  "text": "tmpfs",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "/dev/shm分区的作用是什么？",
+              "id": "5-18-14",
+              "answers": [
+                {
+                  "text": "管理磁盘、内存等设备",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/run分区的磁盘文件类型是tmpfs，是以前的/dev/run，用于正在运行线程和设备。",
+          "qas": [
+            {
+              "question": "/run分区的磁盘文件类型是什么？",
+              "id": "5-18-15",
+              "answers": [
+                {
+                  "text": "tmpfs",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "/run分区以前叫什么？",
+              "id": "5-18-16",
+              "answers": [
+                {
+                  "text": "/dev/run",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "/run分区用于什么？",
+              "id": "5-18-17",
+              "answers": [
+                {
+                  "text": "正在运行线程和设备",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/run/lock分区的磁盘文件类型是tmpfs，用于部分线程锁文件。",
+          "qas": [
+            {
+              "question": "/run/lock分区的磁盘文件类型是什么？",
+              "id": "5-18-18",
+              "answers": [
+                {
+                  "text": "tmpfs",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "/run/lock分区用于什么？",
+              "id": "5-18-19",
+              "answers": [
+                {
+                  "text": "部分线程锁文件",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/run/user/1000分区的磁盘文件类型是tmpfs，用于正在运行的设备。",
+          "qas": [
+            {
+              "question": "/run/user/1000分区的磁盘文件类型是什么？",
+              "id": "5-18-20",
+              "answers": [
+                {
+                  "text": "tmpfs",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "/run/user/1000分区用于什么？",
+              "id": "5-18-21",
+              "answers": [
+                {
+                  "text": "正在运行的设备",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sys/fs/cgroup分区的磁盘文件类型是tmpfs，用于分组线程进行管理。",
+          "qas": [
+            {
+              "question": "sys/fs/cgroup分区的磁盘文件类型是什么？",
+              "id": "5-18-22",
+              "answers": [
+                {
+                  "text": "tmpfs",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "sys/fs/cgroup分区用于什么？",
+              "id": "5-18-23",
+              "answers": [
+                {
+                  "text": "分组线程进行管理",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "tmpfs是基于内存的暂时文件系统。",
+          "qas": [
+            {
+              "question": "tmpfs是什么类型的文件系统？",
+              "id": "5-18-24",
+              "answers": [
+                {
+                  "text": "基于内存的暂时文件系统",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin linux是自动挂载U盘或者移动硬盘的，命令行下操作的挂载点在/media/(用户名)/(U盘名字或者U盘的uuid)。",
+          "qas": [
+            {
+              "question": "deepin linux如何挂载U盘或移动硬盘？",
+              "id": "5-18-25",
+              "answers": [
+                {
+                  "text": "自动挂载",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "在命令行下操作U盘/移动硬盘的挂载点在哪里？",
+              "id": "5-18-26",
+              "answers": [
+                {
+                  "text": "/media/(用户名)/(U盘名字或者U盘的uuid)",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

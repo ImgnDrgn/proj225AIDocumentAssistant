@@ -1,0 +1,295 @@
+{
+  "title": "虚拟化",
+  "paragraphs": [
+    {
+      "context": "虚拟化能够将单个计算机的硬件元素（包括处理器、内存、存储器等）拆分成多个虚拟硬件,以组成虚拟机(Virtual Machine) 每个虚拟机都运行不同的操作系统或程序 ，在数据中心,企业服务器较为常用",
+      "qas": [
+        {
+          "id": "5-395-1",
+          "question": "虚拟化能将单个计算机的哪些硬件元素拆分成多个虚拟硬件？",
+          "answers": [
+            {
+              "text": "处理器、内存、存储器等",
+              "answer_start": 20
+            }
+          ]
+        },
+        {
+          "id": "5-395-2",
+          "question": "虚拟化拆分硬件后组成什么？",
+          "answers": [
+            {
+              "text": "虚拟机(Virtual Machine)",
+              "answer_start": 49
+            }
+          ]
+        },
+        {
+          "id": "5-395-3",
+          "question": "每个虚拟机运行什么？",
+          "answers": [
+            {
+              "text": "不同的操作系统或程序",
+              "answer_start": 76
+            }
+          ]
+        },
+        {
+          "id": "5-395-4",
+          "question": "在数据中心，虚拟化较为常用在哪些设备中？",
+          "answers": [
+            {
+              "text": "企业服务器",
+              "answer_start": 100
+            }
+          ]
+        },
+        {
+          "id": "5-395-5",
+          "question": "虚拟化的核心功能是什么？",
+          "answers": [
+            {
+              "text": "将单个计算机的硬件元素拆分成多个虚拟硬件",
+              "answer_start": 3
+            }
+          ]
+        },
+        {
+          "id": "5-395-6",
+          "question": "虚拟机主要应用在哪些领域？",
+          "answers": [
+            {
+              "text": "数据中心,企业服务器",
+              "answer_start": 109
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "AMD-V技术（AMD虚拟化技术）是对x86处理器系统架构的一组硬件扩展和硬件辅助虚拟化技术，可以简化纯软件的虚拟化解决方案，改进VMM（虚拟机监视器）的设计，更充分地利用硬件资源，提高服务器和数据中心的虚拟化效率。目前AMD提供的所有处理器均具备AMD-V虚拟化功能，不论是笔记本电脑还是刀片服务器，均可为其提供强大的虚拟化性能、安全性及可靠性。虚拟化 (AMD-V™) 技术是一系列芯片集成功能，可帮助您更好地利用和提高虚拟化资源的性能",
+      "qas": [
+        {
+          "id": "5-395-7",
+          "question": "AMD-V技术是什么？",
+          "answers": [
+            {
+              "text": "对x86处理器系统架构的一组硬件扩展和硬件辅助虚拟化技术",
+              "answer_start": 13
+            }
+          ]
+        },
+        {
+          "id": "5-395-8",
+          "question": "AMD-V技术可以实现什么？",
+          "answers": [
+            {
+              "text": "简化纯软件的虚拟化解决方案，改进VMM（虚拟机监视器）的设计，更充分地利用硬件资源，提高服务器和数据中心的虚拟化效率",
+              "answer_start": 63
+            }
+          ]
+        },
+        {
+          "id": "5-395-9",
+          "question": "目前哪些AMD处理器具备AMD-V虚拟化功能？",
+          "answers": [
+            {
+              "text": "AMD提供的所有处理器",
+              "answer_start": 156
+            }
+          ]
+        },
+        {
+          "id": "5-395-10",
+          "question": "AMD-V技术能为哪些设备提供强大的虚拟化性能、安全性及可靠性？",
+          "answers": [
+            {
+              "text": "笔记本电脑还是刀片服务器",
+              "answer_start": 186
+            }
+          ]
+        },
+        {
+          "id": "5-395-11",
+          "question": "AMD-V技术作为芯片集成功能有什么作用？",
+          "answers": [
+            {
+              "text": "帮助更好地利用和提高虚拟化资源的性能",
+              "answer_start": 240
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Intel VT可以让一个CPU工作起来像多个CPU在并行运行，从而使得在一部电脑内同时运行多个操作系统成为可能。这种VT技术并不是一个新鲜事物，市面上已经有一些软件可以达到虚拟多系统的目的，比如VMware workstation、Virtual PC等，使用这种技术就可以单CPU模拟多CPU并行，可以实现单机同时运行多操作系统。",
+      "qas": [
+        {
+          "id": "5-395-12",
+          "question": "Intel VT技术能让CPU实现什么效果？",
+          "answers": [
+            {
+              "text": "一个CPU工作起来像多个CPU在并行运行",
+              "answer_start": 8
+            }
+          ]
+        },
+        {
+          "id": "5-395-13",
+          "question": "Intel VT技术使什么成为可能？",
+          "answers": [
+            {
+              "text": "在一部电脑内同时运行多个操作系统",
+              "answer_start": 45
+            }
+          ]
+        },
+        {
+          "id": "5-395-14",
+          "question": "市面上有哪些软件可以达到虚拟多系统的目的，类似Intel VT技术？",
+          "answers": [
+            {
+              "text": "VMware workstation、Virtual PC等",
+              "answer_start": 119
+            }
+          ]
+        },
+        {
+          "id": "5-395-15",
+          "question": "使用Intel VT技术可以实现什么？",
+          "answers": [
+            {
+              "text": "单CPU模拟多CPU并行，实现单机同时运行多操作系统",
+              "answer_start": 157
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "ARM Hyperviosr",
+      "qas": [
+        {
+          "id": "5-395-16",
+          "question": "文中提到的虚拟化相关技术包括ARM的什么？",
+          "answers": [
+            {
+              "text": "ARM Hyperviosr",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "LoongArch KVM虚拟化是基于龙芯 LoongArch 处理器的虚拟化解决方案. 龙芯平台 KVM 虚拟化技术已随操作系统发布正式版本，可满足演示验证及相关云厂商进行适配、二次开发工作",
+      "qas": [
+        {
+          "id": "5-395-17",
+          "question": "LoongArch KVM虚拟化基于什么处理器？",
+          "answers": [
+            {
+              "text": "龙芯 LoongArch 处理器",
+              "answer_start": 18
+            }
+          ]
+        },
+        {
+          "id": "5-395-18",
+          "question": "龙芯平台KVM虚拟化技术的版本情况如何？",
+          "answers": [
+            {
+              "text": "已随操作系统发布正式版本",
+              "answer_start": 46
+            }
+          ]
+        },
+        {
+          "id": "5-395-19",
+          "question": "龙芯平台KVM虚拟化技术可满足哪些需求？",
+          "answers": [
+            {
+              "text": "演示验证及相关云厂商进行适配、二次开发工作",
+              "answer_start": 70
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "AMD-V技术是对x86处理器系统架构的一组硬件扩展和硬件辅助虚拟化技术，可以简化纯软件的虚拟化解决方案，改进VMM（虚拟机监视器）的设计。目前AMD提供的所有处理器均具备AMD-V虚拟化功能",
+      "qas": [
+        {
+          "id": "5-395-20",
+          "question": "AMD-V技术的主要作用是什么？",
+          "answers": [
+            {
+              "text": "简化纯软件的虚拟化解决方案，改进VMM（虚拟机监视器）的设计",
+              "answer_start": 54
+            }
+          ]
+        },
+        {
+          "id": "5-395-21",
+          "question": "哪些AMD处理器支持AMD-V技术？",
+          "answers": [
+            {
+              "text": "目前AMD提供的所有处理器",
+              "answer_start": 101
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Intel VT可以让一个CPU工作起来像多个CPU在并行运行，从而使得在一部电脑内同时运行多个操作系统成为可能。市面上已经有一些软件可以达到虚拟多系统的目的，比如VMware workstation、Virtual PC等",
+      "qas": [
+        {
+          "id": "5-395-22",
+          "question": "Intel VT技术如何改变CPU工作模式？",
+          "answers": [
+            {
+              "text": "让一个CPU工作起来像多个CPU在并行运行",
+              "answer_start": 9
+            }
+          ]
+        },
+        {
+          "id": "5-395-23",
+          "question": "列举两个支持虚拟多系统的软件",
+          "answers": [
+            {
+              "text": "VMware workstation、Virtual PC",
+              "answer_start": 84
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "LoongArch KVM虚拟化是基于龙芯 LoongArch 处理器的虚拟化解决方案.龙芯平台 KVM 虚拟化技术已随操作系统发布正式版本",
+      "qas": [
+        {
+          "id": "5-395-24",
+          "question": "LoongArch KVM是针对哪种处理器的解决方案？",
+          "answers": [
+            {
+              "text": "龙芯 LoongArch 处理器",
+              "answer_start": 14
+            }
+          ]
+        },
+        {
+          "id": "5-395-25",
+          "question": "龙芯KVM技术的当前发展状态如何？",
+          "answers": [
+            {
+              "text": "已随操作系统发布正式版本",
+              "answer_start": 53
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

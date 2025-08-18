@@ -1,0 +1,229 @@
+{
+  "data": [
+    {
+      "title": "如何安装显卡驱动",
+      "paragraphs": [
+        {
+          "context": "显卡是个人计算机基础组成部分之一，承担输出显示图形的任务，将计算机系统需要的显示信息转换驱动显示器，向显示器提供扫描信号，控制显示器正确显示，是连接显示器和主板的重要组件，其并行计算能力用于深度学习等运算。",
+          "qas": [
+            {
+              "question": "显卡的作用是什么？",
+              "id": "5-527-1",
+              "answers": [
+                {
+                  "text": "承担输出显示图形的任务，将计算机系统需要的显示信息进行转换驱动显示器，并向显示器提供逐行或隔行扫描信号，控制显示器的正确显示，是连接显示器和个人计算机主板的重要组件，其内置的并行计算能力现阶段也用于深度学习等运算。",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "独立显卡是将显示芯片、显存及相关电路单独做在一块电路板上，需主板扩展插槽，有独立显存，不占用系统内存，技术先进，性能较好，易升级，但功耗和发热量较大。",
+          "qas": [
+            {
+              "question": "独立显卡的优点是什么？",
+              "id": "5-527-2",
+              "answers": [
+                {
+                  "text": "单独安装有显存，一般不占用系统内存，在技术上也较集成显卡先进得多，性能不差于集成显卡，容易进行显卡的硬件升级。",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "独立显卡的缺点是什么？",
+              "id": "5-527-3",
+              "answers": [
+                {
+                  "text": "系统功耗有所加大，发热量也较大。",
+                  "answer_start": 139
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "集成显卡将显示芯片、显存及相关电路集成在主板上，功耗低、发热量小，部分性能可媲美入门级独立显卡，但性能相对较低，固化在主板或CPU上，无法更换。",
+          "qas": [
+            {
+              "question": "集成显卡的特点有哪些？",
+              "id": "5-527-4",
+              "answers": [
+                {
+                  "text": "将显示芯片、显存及其相关电路都集成在主板上，与其融为一体的元件，显示效果与处理性能相对较弱，优点是功耗低、发热量小，部分集成显卡的性能已经可以媲美入门级的独立显卡，缺点是性能相对略低，且固化在主板或CPU上，本身无法更换，如果必须换，就只能换主板。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "核芯显卡是Intel新一代图形处理核心，将图形核心与处理核心整合在同一块基板上，构成完整处理器，低功耗是其最主要优势，对整体能耗控制更优异。",
+          "qas": [
+            {
+              "question": "核芯显卡的主要优势是什么？",
+              "id": "5-527-5",
+              "answers": [
+                {
+                  "text": "低功耗，由于新的精简架构及整合设计，核芯显卡对整体能耗的控制更加优异。",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "主流显卡显示芯片由NVIDIA和AMD制造，采用NVIDIA的称为N卡，采用AMD的称为A卡。NVIDIA代表型号有GeForce RTX3090等，AMD有RX6800等，国产有景嘉微的JM5、JM7、JM9。",
+          "qas": [
+            {
+              "question": "主流显卡的显示芯片由哪些厂商制造？",
+              "id": "5-527-6",
+              "answers": [
+                {
+                  "text": "NVIDIA（英伟达）和AMD（超威半导体）。",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "国产显卡有哪些？",
+              "id": "5-527-7",
+              "answers": [
+                {
+                  "text": "长沙景嘉微电子推出的景嘉微显卡：JM5、JM7、JM9。",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装NVIDIA驱动需先禁用Nouveau驱动，步骤为：打开终端输入sudo vim /etc/modprobe.d/blacklist-nouveau.conf，添加blacklist nouveau options nouveau modeset=0，更新sudo update-initramfs -u，重启，用lspci | grep nouveau检查是否成功。",
+          "qas": [
+            {
+              "question": "安装NVIDIA驱动前为何要禁用Nouveau驱动？",
+              "id": "5-527-8",
+              "answers": [
+                {
+                  "text": "Nouveau是第三方为NVIDIA显卡开发的开源3D驱动，不禁用会导致冲突，出现报错。",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "如何禁用Nouveau驱动？",
+              "id": "5-527-9",
+              "answers": [
+                {
+                  "text": "1. 打开终端，输入sudo vim /etc/modprobe.d/blacklist-nouveau.conf；2. 在文件内容加入blacklist nouveau options nouveau modeset=0；3. 更新使其生效sudo update-initramfs -u；4. 重启机器reboot；5. 检查是否禁用成功lspci | grep nouveau。",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装NVIDIA驱动前需安装gcc/cmake，通过sudo apt-get install build-essential和sudo apt-get install cmake安装，用gcc --version和cmake --version检查是否成功。",
+          "qas": [
+            {
+              "question": "安装NVIDIA驱动前需要安装哪些工具？",
+              "id": "5-527-10",
+              "answers": [
+                {
+                  "text": "gcc、cmake。",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "如何检查gcc和cmake是否安装成功？",
+              "id": "5-527-11",
+              "answers": [
+                {
+                  "text": "gcc --version、cmake --version，有版本号说明安装成功。",
+                  "answer_start": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "NVIDIA官网下载对应系统驱动，按住Ctrl+Alt+F1进入tty1终端，关闭显示管理sudo service lightdm stop，运行下载的驱动sudo ./NVIDIA-Linux-x86_64-440.82.run --no-opengl-files，重启后用nvidia-smi检查是否成功。",
+          "qas": [
+            {
+              "question": "如何安装NVIDIA官方驱动？",
+              "id": "5-527-12",
+              "answers": [
+                {
+                  "text": "1. nvidia官网下载驱动；2. 同时按住Ctrl+Alt+F1进入tty1终端模式，输入命令关闭显示管理：sudo service lightdm stop；3. 在终端运行刚才下载的驱动：sudo ./NVIDIA-Linux-x86_64-440.82.run --no-opengl-files，按步骤选择；4. 重启机器后，输入nvidia-smi查看输出结果。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何检查NVIDIA官方驱动是否安装成功？",
+              "id": "5-527-13",
+              "answers": [
+                {
+                  "text": "重启机器后，输入nvidia-smi查看输出结果，出现相关信息说明安装成功。",
+                  "answer_start": 192
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "自研方式安装N卡驱动可通过sudo apt install nvidia-driver命令，用lsmod|grep nvidia查询是否成功；也可安装显卡驱动管理器，在应用商店搜索下载，支持GT730以上显卡，可进行驱动安装和切换等操作。",
+          "qas": [
+            {
+              "question": "如何通过命令安装N卡自研驱动？",
+              "id": "5-527-14",
+              "answers": [
+                {
+                  "text": "sudo apt install nvidia-driver。",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "显卡驱动管理器有哪些功能？",
+              "id": "5-527-15",
+              "answers": [
+                {
+                  "text": "包括显卡硬件探测、显卡驱动安装、显卡驱动方案切换、显卡驱动自动恢复等功能。",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "question": "显卡驱动管理器支持哪些显卡？",
+              "id": "5-527-16",
+              "answers": [
+                {
+                  "text": "目前支持GT730以上显卡，支持台式机N卡和笔记本I+N卡的驱动模式切换，暂不支持A卡驱动切换，只做显示。",
+                  "answer_start": 139
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "景嘉微显卡驱动安装简单，可在应用商店搜索下载安装景美JM72XXGPU驱动。",
+          "qas": [
+            {
+              "question": "如何安装景嘉微显卡驱动？",
+              "id": "5-527-17",
+              "answers": [
+                {
+                  "text": "在应用商店搜索下载安装景美JM72XXGPU驱动。",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

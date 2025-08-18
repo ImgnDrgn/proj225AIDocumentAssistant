@@ -1,0 +1,289 @@
+{
+  "data": [
+    {
+      "title": "Dkms安装无线网卡驱动",
+      "paragraphs": [
+        {
+          "context": "DKMS全称是Dynamic Kernel Module Support，可维护内核维护内核外的驱动程序，在内核版本变动后自动重新生成新模块。",
+          "qas": [
+            {
+              "question": "DKMS的全称是什么？",
+              "id": "5-538-1",
+              "answers": [
+                {
+                  "text": "Dynamic Kernel Module Support",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "DKMS的作用是什么？",
+              "id": "5-538-2",
+              "answers": [
+                {
+                  "text": "维护内核外的驱动程序，在内核版本变动后自动重新生成新模块。",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "以RTL8812BU软件包为例，准备工作：1.解压压缩包，fixed-ok文件夹是arm架构的，RTL8812BU-master支持x86架构。",
+          "qas": [
+            {
+              "question": "RTL8812BU软件包中，哪个文件夹对应arm架构？",
+              "id": "5-538-3",
+              "answers": [
+                {
+                  "text": "fixed-ok文件夹",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "RTL8812BU-master文件夹支持什么架构？",
+              "id": "5-538-4",
+              "answers": [
+                {
+                  "text": "x86架构",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "准备工作：2.找到对应文件夹，修改dkms.conf文件前两行，PACKAGE_NAME=\"rtl88x2bu\"，PACKAGE_VERSION=\"5.6.1\"，将文件名改为rtl88x2bu-5.6.1。",
+          "qas": [
+            {
+              "question": "准备工作中，dkms.conf文件前两行的内容是什么？",
+              "id": "5-538-5",
+              "answers": [
+                {
+                  "text": "PACKAGE_NAME=\"rtl88x2bu\"，PACKAGE_VERSION=\"5.6.1\"",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "修改后文件夹的名称是什么？",
+              "id": "5-538-6",
+              "answers": [
+                {
+                  "text": "rtl88x2bu-5.6.1",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "准备工作：3.把文件夹复制到/usr/src，命令为$sudo cp -r rtl88x2bu-5.6.1 /usr/src。4.安装dkms，命令为$sudo apt-get install dkms。",
+          "qas": [
+            {
+              "question": "如何将文件夹复制到/usr/src？",
+              "id": "5-538-7",
+              "answers": [
+                {
+                  "text": "$sudo cp -r rtl88x2bu-5.6.1 /usr/src",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "安装dkms的命令是什么？",
+              "id": "5-538-8",
+              "answers": [
+                {
+                  "text": "$sudo apt-get install dkms",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用dkms：1.添加模块，执行“sudo dkms add rtl88x2bu/5.6.1”来添加rtl88x2bu-5.6.1。2.查看添加状态，命令为dkms status，显示rtl88x2bu, 5.6.1: added即模块处于added状态。",
+          "qas": [
+            {
+              "question": "如何添加rtl88x2bu模块？",
+              "id": "5-538-9",
+              "answers": [
+                {
+                  "text": "执行“sudo dkms add rtl88x2bu/5.6.1”",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "查看模块添加状态的命令是什么？",
+              "id": "5-538-10",
+              "answers": [
+                {
+                  "text": "dkms status",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "question": "模块处于added状态时，dkms status显示什么？",
+              "id": "5-538-11",
+              "answers": [
+                {
+                  "text": "rtl88x2bu, 5.6.1: added",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用dkms：3.编译模块，执行sudo dkms build rtl8812xu/5.6.1，看到build completed即build成功，模块处于built状态。",
+          "qas": [
+            {
+              "question": "如何编译模块？",
+              "id": "5-538-12",
+              "answers": [
+                {
+                  "text": "执行sudo dkms build rtl8812xu/5.6.1",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "怎样判断模块编译成功？",
+              "id": "5-538-13",
+              "answers": [
+                {
+                  "text": "看到build completed",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "模块编译成功后处于什么状态？",
+              "id": "5-538-14",
+              "answers": [
+                {
+                  "text": "built状态",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用dkms：4.安装模块，执行sudo dkms install rtl8812xu/5.6.1来安装88x2bu.ko，显示DKMS: install completed.即模块处于installed状态。",
+          "qas": [
+            {
+              "question": "如何安装模块？",
+              "id": "5-538-15",
+              "answers": [
+                {
+                  "text": "执行sudo dkms install rtl8812xu/5.6.1",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "模块安装成功的提示是什么？",
+              "id": "5-538-16",
+              "answers": [
+                {
+                  "text": "DKMS: install completed.",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "question": "模块安装成功后处于什么状态？",
+              "id": "5-538-17",
+              "answers": [
+                {
+                  "text": "installed状态",
+                  "answer_start": 88
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "基于DKMS制作驱动程序的DEB安装包：2.安装所需工具，命令为sudo apt-get install dh-make libdigest-md5-file-perl。",
+          "qas": [
+            {
+              "question": "制作DEB安装包需要安装哪些工具？",
+              "id": "5-538-18",
+              "answers": [
+                {
+                  "text": "dh-make libdigest-md5-file-perl",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "question": "安装制作DEB包所需工具的命令是什么？",
+              "id": "5-538-19",
+              "answers": [
+                {
+                  "text": "sudo apt-get install dh-make libdigest-md5-file-perl",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "基于DKMS制作驱动程序的DEB安装包：3.制作deb包，模块必须处于built状态，命令为sudo dkms mkdeb rtl88x2bu/5.6.1。",
+          "qas": [
+            {
+              "question": "制作deb包的前提是什么？",
+              "id": "5-538-20",
+              "answers": [
+                {
+                  "text": "模块必须处于built状态",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "制作deb包的命令是什么？",
+              "id": "5-538-21",
+              "answers": [
+                {
+                  "text": "sudo dkms mkdeb rtl88x2bu/5.6.1",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "应用：如果电脑本来就装有相应网卡，或插入外部网卡，即可在“设备管理器“里的“网络适配器”中看到新加入的接口信息，实现无线上网。",
+          "qas": [
+            {
+              "question": "如何确认网卡驱动安装成功？",
+              "id": "5-538-22",
+              "answers": [
+                {
+                  "text": "在“设备管理器“里的“网络适配器”中看到新加入的接口信息",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "安装好网卡驱动后能实现什么功能？",
+              "id": "5-538-23",
+              "answers": [
+                {
+                  "text": "无线上网",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

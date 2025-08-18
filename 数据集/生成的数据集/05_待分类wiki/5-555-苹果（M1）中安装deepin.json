@@ -1,0 +1,294 @@
+{
+  "data": [
+    {
+      "title": "苹果（M1）中安装deepin",
+      "paragraphs": [
+        {
+          "context": "苹果（M1）安装deepin的重要参考资料：Asahi Linux: https://asahilinux.org/；Asahi Linux Wiki: https://github.com/AsahiLinux/docs/wiki/；Asahi Linux Debian installer: https://git.zerfleddert.de/cgi-bin/gitweb.cgi/m1-debian。",
+          "qas": [
+            {
+              "question": "苹果（M1）安装deepin的重要参考资料有哪些？",
+              "id": "5-555-1",
+              "answers": [
+                {
+                  "text": "Asahi Linux: https://asahilinux.org/；Asahi Linux Wiki: https://github.com/AsahiLinux/docs/wiki/；Asahi Linux Debian installer: https://git.zerfleddert.de/cgi-bin/gitweb.cgi/m1-debian。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在苹果（M1）设备上安装并使用deepin需要准备：deepin rootfs、m1n1、打包可支持M1 GPU的Mesa修改版、启动DDE桌面、ARM仓库。",
+          "qas": [
+            {
+              "question": "在苹果（M1）设备上安装并使用deepin需要准备什么？",
+              "id": "5-555-2",
+              "answers": [
+                {
+                  "text": "deepin rootfs、m1n1、打包可支持M1 GPU的Mesa修改版、启动DDE桌面、ARM仓库。",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用deepin的安装仓库时，在MacOS的Terminal中运行命令：curl https://ci.deepin.com/repo/deepin/deepin-ports/deepin-m1/deepin.install | sh。",
+          "qas": [
+            {
+              "question": "如何通过deepin的安装仓库在MacOS上安装deepin？",
+              "id": "5-555-3",
+              "answers": [
+                {
+                  "text": "在MacOS的Terminal中运行命令：curl https://ci.deepin.com/repo/deepin/deepin-ports/deepin-m1/deepin.install | sh。",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行deepin安装脚本后，需关机；Mac Mini开机时长摁开机键直至出现启动菜单，选择deepin，按脚本设置为默认启动项。",
+          "qas": [
+            {
+              "question": "运行deepin安装脚本后需要进行哪些操作？",
+              "id": "5-555-4",
+              "answers": [
+                {
+                  "text": "需关机；Mac Mini开机时长摁开机键直至出现启动菜单，选择deepin，按脚本设置为默认启动项。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin系统默认用户为hiweed，密码为1。",
+          "qas": [
+            {
+              "question": "deepin系统的默认用户和密码是什么？",
+              "id": "5-555-5",
+              "answers": [
+                {
+                  "text": "默认用户为hiweed，密码为1。",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "自行搭建安装仓库时，打rootfs包需安装的依赖：debootstrap、eatmydata、pigz、qemu-user-static（非ARM机器需要）。",
+          "qas": [
+            {
+              "question": "自行搭建安装仓库时，打rootfs包需要安装哪些依赖？",
+              "id": "5-555-6",
+              "answers": [
+                {
+                  "text": "debootstrap、eatmydata、pigz、qemu-user-static（非ARM机器需要）。",
+                  "answer_start": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "自行搭建安装仓库需创建链接：sudo ln -s /usr/share/debootstrap/scripts/buster /usr/share/debootstrap/scripts/beige。",
+          "qas": [
+            {
+              "question": "自行搭建安装仓库时需要创建什么链接？",
+              "id": "5-555-7",
+              "answers": [
+                {
+                  "text": "sudo ln -s /usr/share/debootstrap/scripts/buster /usr/share/debootstrap/scripts/beige。",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "非deepin发行版搭建仓库需获取keyring：/usr/share/keyrings/deepin-archive-camel-keyring.gpg，可通过解包deepin-keyring包获得。",
+          "qas": [
+            {
+              "question": "非deepin发行版搭建仓库需要获取什么keyring？如何获得？",
+              "id": "5-555-8",
+              "answers": [
+                {
+                  "text": "/usr/share/keyrings/deepin-archive-camel-keyring.gpg，可通过解包deepin-keyring包获得。",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "自行搭建的deepin安装仓库结构：/path/to/repo下有asahilinux.install（可选）、installer_data.json，os目录下有deepin-base.zip和deepin-desktop.zip。",
+          "qas": [
+            {
+              "question": "自行搭建的deepin安装仓库结构是怎样的？",
+              "id": "5-555-9",
+              "answers": [
+                {
+                  "text": "/path/to/repo下有asahilinux.install（可选）、installer_data.json，os目录下有deepin-base.zip和deepin-desktop.zip。",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用deepin 23 for (M1)安装盘时，需在U盘创建FAT分区，命令为：DEVICE=/dev/sdX；sudo parted -a optimal $DEVICE mklabel msdos；sudo parted -a optimal $DEVICE mkpart primary fat32 2048s 100%；sudo mkfs.vfat ${DEVICE}1；sudo mount ${DEVICE}1 /mnt。",
+          "qas": [
+            {
+              "question": "使用deepin 23 for (M1)安装盘时，如何在U盘创建FAT分区？",
+              "id": "5-555-10",
+              "answers": [
+                {
+                  "text": "DEVICE=/dev/sdX；sudo parted -a optimal $DEVICE mklabel msdos；sudo parted -a optimal $DEVICE mkpart primary fat32 2048s 100%；sudo mkfs.vfat ${DEVICE}1；sudo mount ${DEVICE}1 /mnt。",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin 23 for (M1)安装盘压缩包需下载后解压到U盘FAT分区的根目录，下载地址：https://ci.deepin.com/repo/deepin/deepin-ports/deepin-m1/deepin-m1-usb-installer.zip。",
+          "qas": [
+            {
+              "question": "deepin 23 for (M1)安装盘压缩包如何处理？",
+              "id": "5-555-11",
+              "answers": [
+                {
+                  "text": "需下载后解压到U盘FAT分区的根目录，下载地址：https://ci.deepin.com/repo/deepin/deepin-ports/deepin-m1/deepin-m1-usb-installer.zip。",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在Mac上安装m1n1+uboot引导的命令：curl https://alx.sh/ | sh，需选第三项UEFI environment only, m1n1+uboot+esp。",
+          "qas": [
+            {
+              "question": "在Mac上如何安装m1n1+uboot引导？",
+              "id": "5-555-12",
+              "answers": [
+                {
+                  "text": "运行命令：curl https://alx.sh/ | sh，需选第三项UEFI environment only, m1n1+uboot+esp。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用deepin安装盘安装时，需选择自定义安装，选择空闲磁盘空间；不可选全盘安装或高级安装，否则可能抹除MacOS系统和引导导致机器变砖。",
+          "qas": [
+            {
+              "question": "使用deepin安装盘安装时需注意什么？",
+              "id": "5-555-13",
+              "answers": [
+                {
+                  "text": "需选择自定义安装，选择空闲磁盘空间；不可选全盘安装或高级安装，否则可能抹除MacOS系统和引导导致机器变砖。",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DDE桌面环境已知问题：系统GPU加速无法使用，可能导致Chromium无法正常启动。",
+          "qas": [
+            {
+              "question": "DDE桌面环境中GPU加速有什么问题？",
+              "id": "5-555-14",
+              "answers": [
+                {
+                  "text": "系统GPU加速无法使用，可能导致Chromium无法正常启动。",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DDE桌面环境已知问题：系统无法识别任何声音设备，导致无声音播放功能，仅小概率刚安装完成时有声音。",
+          "qas": [
+            {
+              "question": "DDE桌面环境中声音设备有什么问题？",
+              "id": "5-555-15",
+              "answers": [
+                {
+                  "text": "系统无法识别任何声音设备，导致无声音播放功能，仅小概率刚安装完成时有声音。",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DDE桌面环境已知问题：长时间不动鼠标会导致其被休眠而无法使用，需点击鼠标按键重新使用。",
+          "qas": [
+            {
+              "question": "DDE桌面环境中鼠标有什么问题？",
+              "id": "5-555-16",
+              "answers": [
+                {
+                  "text": "长时间不动鼠标会导致其被休眠而无法使用，需点击鼠标按键重新使用。",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DDE桌面环境已知问题：重启后桌面无壁纸。",
+          "qas": [
+            {
+              "question": "DDE桌面环境重启后壁纸有什么问题？",
+              "id": "5-555-17",
+              "answers": [
+                {
+                  "text": "重启后桌面无壁纸。",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载deepin系统可使用脚本：https://github.com/AsahiLinux/asahi-installer/blob/main/tools/wipe-linux.sh。",
+          "qas": [
+            {
+              "question": "如何卸载deepin系统？",
+              "id": "5-555-18",
+              "answers": [
+                {
+                  "text": "可使用脚本：https://github.com/AsahiLinux/asahi-installer/blob/main/tools/wipe-linux.sh。",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重启后local policy update没跑完就黑屏重启，需在recoveryOS或禁用SIP的情况下，跑官方的cleanbp.sh脚本清启动策略；recoveryOS呼出terminal方法：shift+win+t（普通en_US键盘）。",
+          "qas": [
+            {
+              "question": "重启后local policy update没跑完就黑屏重启怎么办？",
+              "id": "5-555-19",
+              "answers": [
+                {
+                  "text": "需在recoveryOS或禁用SIP的情况下，跑官方的cleanbp.sh脚本清启动策略；recoveryOS呼出terminal方法：shift+win+t（普通en_US键盘）。",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "Falkon",
+      "paragraphs": [
+        {
+          "context": "Falkon是一个基于QtWebEngine的网页浏览器。",
+          "qas": [
+            {
+              "question": "Falkon是什么类型的软件？",
+              "id": "1-53-1",
+              "answers": [
+                {
+                  "text": "网页浏览器",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "Falkon基于什么开发？",
+              "id": "1-53-2",
+              "answers": [
+                {
+                  "text": "QtWebEngine",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Falkon的命令是sudo apt-get install falkon。",
+          "qas": [
+            {
+              "question": "如何安装Falkon？",
+              "id": "1-53-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install falkon",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Falkon的命令是sudo apt-get remove falkon。",
+          "qas": [
+            {
+              "question": "怎样卸载Falkon？",
+              "id": "1-53-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove falkon",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Falkon的仓库地址是http://packages.deepin.com/deepin/pool/main/f/falkon/。",
+          "qas": [
+            {
+              "question": "Falkon的仓库地址是什么？",
+              "id": "1-53-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/f/falkon/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Falkon的官方网站是https://apps.kde.org/falkon/。",
+          "qas": [
+            {
+              "question": "Falkon的官方网站在哪里？",
+              "id": "1-53-6",
+              "answers": [
+                {
+                  "text": "https://apps.kde.org/falkon/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

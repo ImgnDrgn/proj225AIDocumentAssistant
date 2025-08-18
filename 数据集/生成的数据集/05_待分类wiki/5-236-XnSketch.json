@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "XnSketch",
+      "paragraphs": [
+        {
+          "context": "XnSketch是一款能将图片转换成卡通或素描风格的图片处理应用，有多种特效，可设置多项参数，支持一键分享。",
+          "qas": [
+            {
+              "question": "XnSketch是什么类型的应用？",
+              "id": "5-236-1",
+              "answers": [
+                {
+                  "text": "图片处理应用",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "XnSketch能将图片转换成哪些风格？",
+              "id": "5-236-2",
+              "answers": [
+                {
+                  "text": "卡通或素描风格",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "XnSketch包含哪些特效？",
+              "id": "5-236-3",
+              "answers": [
+                {
+                  "text": "水粉，素描，水彩，油画，炭笔等多种精选特效",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "XnSketch支持用户设置哪些效果？",
+              "id": "5-236-4",
+              "answers": [
+                {
+                  "text": "边缘强度、透明度、亮度、饱和度、对比度等",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "XnSketch支持一键分享成果到哪里？",
+              "id": "5-236-5",
+              "answers": [
+                {
+                  "text": "社交软件",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装XnSketch的命令是sudo apt-get install xnsketch。",
+          "qas": [
+            {
+              "question": "如何安装XnSketch？",
+              "id": "5-236-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get install xnsketch",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载XnSketch的命令是sudo apt-get remove xnsketch。",
+          "qas": [
+            {
+              "question": "如何卸载XnSketch？",
+              "id": "5-236-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove xnsketch",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "XnSketch的仓库地址是http://packages.deepin.com/deepin/pool/non-free/x/xnsketch/。",
+          "qas": [
+            {
+              "question": "XnSketch的仓库地址是什么？",
+              "id": "5-236-8",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/x/xnsketch/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

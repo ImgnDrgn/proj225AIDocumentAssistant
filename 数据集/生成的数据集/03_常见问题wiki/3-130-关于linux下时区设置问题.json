@@ -1,0 +1,179 @@
+{
+  "data": [
+    {
+      "title": "关于linux下时区设置问题",
+      "paragraphs": [
+        {
+          "context": "中国标准时间（北京时间）由中国官方确定，互联网上时区由IANA管理，IANA曾属美国政府，后让渡给ICANN。",
+          "qas": [
+            {
+              "question": "中国标准时间由谁确定？",
+              "id": "3-130-1",
+              "answers": [
+                {
+                  "text": "中国官方",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "互联网上的时区由哪个机构管理？",
+              "id": "3-130-2",
+              "answers": [
+                {
+                  "text": "IANA",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "IANA创建的时区规范是tz database（tzdata），在GNU/Linux系统中存于/usr/share/zoneinfo/目录，含二进制时区文件及辅助文本文件。",
+          "qas": [
+            {
+              "question": "IANA创建的时区规范是什么？",
+              "id": "3-130-3",
+              "answers": [
+                {
+                  "text": "tz database（tzdata）",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "GNU/Linux系统中tzdata存放在哪个目录？",
+              "id": "3-130-4",
+              "answers": [
+                {
+                  "text": "/usr/share/zoneinfo/",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/usr/share/zoneinfo/zone.tab文件存放时区的国家或地区代码、坐标、时区名称和注释，其中定义的是主要（Canonical）时区，未定义但有文件的是链接（Link）时区，用于向后兼容。",
+          "qas": [
+            {
+              "question": "/usr/share/zoneinfo/zone.tab文件包含哪些内容？",
+              "id": "3-130-5",
+              "answers": [
+                {
+                  "text": "时区的国家或地区代码、坐标、时区名称和注释",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "什么是链接（Link）时区？",
+              "id": "3-130-6",
+              "answers": [
+                {
+                  "text": "在zone.tab文件中没有定义，但是存在相应的时区文件，一般是曾经有用但后来被废弃或者改名的，作为向后兼容使用",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "tzdata的时区名称常用城市命名，/usr/share/zoneinfo/Asia/目录下有5个中国大陆城市对应民国时代五个时区：昆仑时区（Asia/Kashgar喀什）、新藏时区（Asia/Urumqi乌鲁木齐）、陇蜀时区（Asia/Chongqing、Asia/Chungking重庆）、中原标准时区（Asia/Shanghai上海）、长白时区（Asia/Harbin哈尔滨）。",
+          "qas": [
+            {
+              "question": "tzdata的时区名称通常以什么命名？",
+              "id": "3-130-7",
+              "answers": [
+                {
+                  "text": "一个城市",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "question": "/usr/share/zoneinfo/Asia/目录下有几个中国大陆城市对应的时区？",
+              "id": "3-130-8",
+              "answers": [
+                {
+                  "text": "5个",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "中原标准时区对应的城市及时区名称是什么？",
+              "id": "3-130-9",
+              "answers": [
+                {
+                  "text": "上海，Asia/Shanghai",
+                  "answer_start": 200
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Asia/Kashgar、Asia/Chongqing、Asia/Chungking、Asia/Harbin已被弃用，Asia/Kashgar被Asia/Urumqi替换，其他替换为Asia/Shanghai。zone.tab中Asia/Shanghai注释为Beijing Time（北京时间），Asia/Urumqi注释为Xinjiang Time（新疆时间）。",
+          "qas": [
+            {
+              "question": "哪些中国大陆城市对应的时区已被弃用？",
+              "id": "3-130-10",
+              "answers": [
+                {
+                  "text": "Asia/Kashgar、Asia/Chongqing、Asia/Chungking、Asia/Harbin",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Asia/Kashgar被哪个时区替换？",
+              "id": "3-130-11",
+              "answers": [
+                {
+                  "text": "Asia/Urumqi",
+                  "answer_start": 74
+                }
+              ]
+            },
+            {
+              "question": "zone.tab中Asia/Shanghai的注释是什么？",
+              "id": "3-130-12",
+              "answers": [
+                {
+                  "text": "Beijing Time（北京时间，中国标准时间）",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "BSD系列和GNU系列系统内置时区标准为tzdata，Windows系统时间不采用tzdata，但互联网应用程序需使用。浏览器控制台可执行Intl.DateTimeFormat().resolvedOptions().timeZone查看本机时区。",
+          "qas": [
+            {
+              "question": "BSD系列和GNU系列系统内置的时区标准是什么？",
+              "id": "3-130-13",
+              "answers": [
+                {
+                  "text": "tzdata",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "如何在浏览器中查看本机时区？",
+              "id": "3-130-14",
+              "answers": [
+                {
+                  "text": "在浏览器控制台执行代码：Intl.DateTimeFormat().resolvedOptions().timeZone;",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

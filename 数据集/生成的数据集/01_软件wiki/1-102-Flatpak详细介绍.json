@@ -1,0 +1,385 @@
+{
+  "title": "Flatpak详细介绍",
+  "paragraphs": [
+    {
+      "context": "Flatpak是一种构建、发布、安装和运行应用程序的技术。它主要的目标是Linux桌面系统，同时也可以适用于嵌入式等系统中。Flatpak的设计目标是：使应用程序可以安装在任何一个发行版上；为应用程序提供固定的环境，实施测试和减少缺陷；实现应用程序和操作系统的解耦和，使应用程序可以不依赖于特定的发行版本；使应用程序可以自带依赖，能够使用linux发行版没有提供的依赖，避免其对特定发行版本甚至特定库的依赖；在沙箱中独立运行应用程序，提升安全性。Flatpak使这些特性易于实现。如果你对flatpak还不了解，建议尝试一下hello workd的例子。更多信息可查看 flatpak.org。",
+      "qas": [
+        {
+          "question": "Flatpak是什么？",
+          "id": "1-102-1",
+          "answers": [
+            {
+              "text": "一种构建、发布、安装和运行应用程序的技术",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "question": "Flatpak的主要目标系统是什么？",
+          "id": "1-102-2",
+          "answers": [
+            {
+              "text": "Linux桌面系统，同时也可以适用于嵌入式等系统中",
+              "answer_start": 36
+            }
+          ]
+        },
+        {
+          "question": "Flatpak的设计目标之一是什么？",
+          "id": "1-102-3",
+          "answers": [
+            {
+              "text": "使应用程序可以安装在任何一个发行版上",
+              "answer_start": 84
+            }
+          ]
+        },
+        {
+          "question": "Flatpak如何解决应用程序对特定发行版的依赖问题？",
+          "id": "1-102-4",
+          "answers": [
+            {
+              "text": "实现应用程序和操作系统的解耦和，使应用程序可以不依赖于特定的发行版本",
+              "answer_start": 151
+            }
+          ]
+        },
+        {
+          "question": "Flatpak如何提升安全性？",
+          "id": "1-102-5",
+          "answers": [
+            {
+              "text": "在沙箱中独立运行应用程序",
+              "answer_start": 362
+            }
+          ]
+        },
+        {
+          "question": "哪里可以获取Flatpak的更多信息？",
+          "id": "1-102-6",
+          "answers": [
+            {
+              "text": "flatpak.org",
+              "answer_start": 445
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "我们可以通过几个关键概念来了解flatpak，这同时也可以解释flatpak和传统包管理器的差异。Runtimes：运行时提供应用程序所须的基本依赖。有多种不同的运行时，从小（但是非常稳定）的freedesktop运行时，到大的桌面环境运行时例如KDE、Gnome等。每一个应用程序都必须基于一个运行时进行构建，运行时需要安装在宿主系统中老保证应用的运行。用户可以同时安装多种不同的运行时，包括同一运行时的不同版本。Tips:每个运行时都可以被认为是一个/usr文件系统。事实上，当一个程序运行的时候，他的运行时会挂载到/usr。Bundled libraries：如果一个应用程序需要依赖一些运行时没有提供的库，这些库就需要随应用程序绑定发布。这使应用程序可以使用系统中没有提供的依赖，或者使用与安装在宿主系统中的版本不同的依赖。",
+      "qas": [
+        {
+          "question": "什么是Runtimes？",
+          "id": "1-102-7",
+          "answers": [
+            {
+              "text": "运行时提供应用程序所须的基本依赖。有多种不同的运行时，从小（但是非常稳定）的freedesktop运行时，到大的桌面环境运行时例如KDE、Gnome等。每一个应用程序都必须基于一个运行时进行构建，运行时需要安装在宿主系统中老保证应用的运行。用户可以同时安装多种不同的运行时，包括同一运行时的不同版本",
+              "answer_start": 78
+            }
+          ]
+        },
+        {
+          "question": "运行时的主要作用是什么？",
+          "id": "1-102-8",
+          "answers": [
+            {
+              "text": "提供应用程序所须的基本依赖",
+              "answer_start": 85
+            }
+          ]
+        },
+        {
+          "question": "为什么应用程序需要基于运行时构建？",
+          "id": "1-102-9",
+          "answers": [
+            {
+              "text": "运行时需要安装在宿主系统中来保证应用的运行",
+              "answer_start": 188
+            }
+          ]
+        },
+        {
+          "question": "运行时可以被认为是什么？",
+          "id": "1-102-10",
+          "answers": [
+            {
+              "text": "一个/usr文件系统",
+              "answer_start": 346
+            }
+          ]
+        },
+        {
+          "question": "什么是Bundled libraries？",
+          "id": "1-102-11",
+          "answers": [
+            {
+              "text": "如果一个应用程序需要依赖一些运行时没有提供的库，这些库就需要随应用程序绑定发布。这使应用程序可以使用系统中没有提供的依赖，或者使用与安装在宿主系统中的版本不同的依赖",
+              "answer_start": 435
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "SDKs（Software Developer Kits）：SDK是一个包含了“devel”模块的运行时，他们不会在应用运行的时候被用到。这些工具包含打包工具、头文件、编译器以及调试器。每一个应用程序都基于其运行时对应的SDK构建。Extensions：extension是一个运行时或者应用的可选项。通常是分离自运行时的翻译、调试信息等。例如org.freedesktop.Platform.Locale可以添加到org.freedesktop.Platform运行时实现翻译。Sandboxs：通过Flatpak，每一个应用都构建和运行在独立的环境中。默认情况下，应用程序只能看到它自己和它的运行时。访问用户文件、网络、图形套接字、bus子系统和设备都需要显示的授权。而其他的访问，例如访问其他进程等是不可能的。",
+      "qas": [
+        {
+          "question": "什么是SDKs？",
+          "id": "1-102-12",
+          "answers": [
+            {
+              "text": "SDK是一个包含了“devel”模块的运行时，他们不会在应用运行的时候被用到。这些工具包含打包工具、头文件、编译器以及调试器。每一个应用程序都基于其运行时对应的SDK构建",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "question": "SDK包含哪些开发工具？",
+          "id": "1-102-13",
+          "answers": [
+            {
+              "text": "打包工具、头文件、编译器以及调试器",
+              "answer_start": 66
+            }
+          ]
+        },
+        {
+          "question": "应用程序构建时与SDK的关系是什么？",
+          "id": "1-102-14",
+          "answers": [
+            {
+              "text": "每一个应用程序都基于其运行时对应的SDK构建",
+              "answer_start": 104
+            }
+          ]
+        },
+        {
+          "question": "什么是Extensions？",
+          "id": "1-102-15",
+          "answers": [
+            {
+              "text": "extension是一个运行时或者应用的可选项。通常是分离自运行时的翻译、调试信息等。例如org.freedesktop.Platform.Locale可以添加到org.freedesktop.Platform运行时实现翻译",
+              "answer_start": 207
+            }
+          ]
+        },
+        {
+          "question": "Flatpak的Sandboxs有什么特点？",
+          "id": "1-102-16",
+          "answers": [
+            {
+              "text": "通过Flatpak，每一个应用都构建和运行在独立的环境中。默认情况下，应用程序只能看到它自己和它的运行时。访问用户文件、网络、图形套接字、bus子系统和设备都需要显示的授权。而其他的访问，例如访问其他进程等是不可能的",
+              "answer_start": 434
+            }
+          ]
+        },
+        {
+          "question": "Flatpak应用程序默认能访问哪些资源？",
+          "id": "1-102-17",
+          "answers": [
+            {
+              "text": "只能看到它自己和它的运行时",
+              "answer_start": 480
+            }
+          ]
+        },
+        {
+          "question": "访问用户文件需要什么条件？",
+          "id": "1-102-18",
+          "answers": [
+            {
+              "text": "需要显示的授权",
+              "answer_start": 553
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "flatpak命令用于安装、删除、更新应用程序和运行时。同时也可用于浏览当前已经安装应用，并提供命令来构建和发布应用绑定。可通过flatpak –help获得帮助。大部分的flatpak命令都是系统级的。如果要执行一个仅限于当前用户的命令，可以使用–user选项，这会使运行时和应用程序与当前用户绑定（仅运行在当前用户下）。关于flatpak的更多信息可见Command Reference。",
+      "qas": [
+        {
+          "question": "flatpak命令的用途有哪些？",
+          "id": "1-102-19",
+          "answers": [
+            {
+              "text": "用于安装、删除、更新应用程序和运行时。同时也可用于浏览当前已经安装应用，并提供命令来构建和发布应用绑定",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "question": "flatpak命令的主要功能有哪些？",
+          "id": "1-102-20",
+          "answers": [
+            {
+              "text": "安装、删除、更新应用程序和运行时",
+              "answer_start": 11
+            }
+          ]
+        },
+        {
+          "question": "如何获取flatpak命令的帮助？",
+          "id": "1-102-21",
+          "answers": [
+            {
+              "text": "可通过flatpak –help获得帮助",
+              "answer_start": 110
+            }
+          ]
+        },
+        {
+          "question": "执行仅限于当前用户的flatpak命令需要使用什么选项？",
+          "id": "1-102-22",
+          "answers": [
+            {
+              "text": "--user",
+              "answer_start": 200
+            }
+          ]
+        },
+        {
+          "question": "如何将flatpak命令限定为当前用户操作？",
+          "id": "1-102-23",
+          "answers": [
+            {
+              "text": "使用–user选项",
+              "answer_start": 200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Flatpak使用一个唯一的名称标记每一个应用、运行时和SDK。有时候这回作为name/arch/branch的一部分。Flatpak的命名方式采用的是与DNS地址相关的方式，例如com.company.App。地址的最后一部分是对象的名字，前面的部分则是其所属的域。为了防止命名冲突，域应当与DNS注册地址一致。这表示域可以来自某个网站、某个应用或者某个组织。例如，如果一个应用的网站是app.com，则它的flatpak名称应当是com.app.App。多个应用可以属于同一个域，例如org.organization.App1 和org.organization.App2。如果你没有为你的应用注册域，可以使用第三方网站表示，例如Github上就允许创建私人包，在这里，可以使用个人的名空间name.github.io，相应的应用则可命名为io.github.name.App。如果一个应用提供了D-Bus服务，一般要求D-Bus服务的名字和应用的名字一致。",
+      "qas": [
+        {
+          "question": "Flatpak如何标记每一个应用、运行时和SDK？",
+          "id": "1-102-24",
+          "answers": [
+            {
+              "text": "使用一个唯一的名称",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "question": "Flatpak的命名方式采用什么方式？",
+          "id": "1-102-25",
+          "answers": [
+            {
+              "text": "与DNS地址相关的方式，例如com.company.App",
+              "answer_start": 73
+            }
+          ]
+        },
+        {
+          "question": "Flatpak命名如何防止冲突？",
+          "id": "1-102-26",
+          "answers": [
+            {
+              "text": "使用DNS风格的命名",
+              "answer_start": 73
+            }
+          ]
+        },
+        {
+          "question": "为防止命名冲突，域应当与什么一致？",
+          "id": "1-102-27",
+          "answers": [
+            {
+              "text": "DNS注册地址",
+              "answer_start": 185
+            }
+          ]
+        },
+        {
+          "question": "如果应用提供了D-Bus服务，一般要求什么？",
+          "id": "1-102-28",
+          "answers": [
+            {
+              "text": "D-Bus服务的名字和应用的名字一致",
+              "answer_start": 567
+            }
+          ]
+        },
+        {
+          "question": "什么情况下需要D-Bus服务名与应用名一致？",
+          "id": "1-102-29",
+          "answers": [
+            {
+              "text": "当应用程序需要提供D-Bus服务时",
+              "answer_start": 538
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "很多Flatpak命令仅仅需要应用的名字、运行时或SDK。但是某些环境中也需要去指定架构和分支（通过分支可以指定特定的版本）。这可以通过name/arch/branch三元组实现。例如org.gnome.Sdk/x86_64/3.14 或者 org.gnome.Builder/i386/master。Flatpak使用了许多现有的技术。使用Flatpak并不需要对其非常了解，当然有些时候了解这些技术也是很有用的。这些技术包含：来自Atomic项目的bubblewrap应用，它通过下列内核特性，可以让普通用户设置和运行容器：Cgroups、Namespaces、Bind mounts、Seccomp规则、systemd为沙箱设置cgroups；D-Bus，一种为应用程序提供高级API的成熟方法；Open Container Initiative的OCI格式，作为单文件包的便捷传输格式；用于版本控制和分发文件系统的OSTree系统；Appstream元数据，允许Flatpak应用程序在软件中心应用程序中很好地显示。",
+      "qas": [
+        {
+          "question": "标识符三元组由哪些部分组成？",
+          "id": "1-102-30",
+          "answers": [
+            {
+              "text": "name/arch/branch",
+              "answer_start": 165
+            }
+          ]
+        },
+        {
+          "question": "Flatpak使用了哪些现有的技术？",
+          "id": "1-102-31",
+          "answers": [
+            {
+              "text": "来自Atomic项目的bubblewrap应用、D-Bus、Open Container Initiative的OCI格式、用于版本控制和分发文件系统的OSTree系统、Appstream元数据",
+              "answer_start": 275
+            }
+          ]
+        },
+        {
+          "question": "bubblewrap应用来自哪个项目？",
+          "id": "1-102-32",
+          "answers": [
+            {
+              "text": "Atomic项目",
+              "answer_start": 359
+            }
+          ]
+        },
+        {
+          "question": "Flatpak使用什么工具设置容器？",
+          "id": "1-102-33",
+          "answers": [
+            {
+              "text": "bubblewrap",
+              "answer_start": 359
+            }
+          ]
+        },
+        {
+          "question": "OCI格式的作用是什么？",
+          "id": "1-102-34",
+          "answers": [
+            {
+              "text": "作为单文件包的便捷传输格式",
+              "answer_start": 546
+            }
+          ]
+        },
+        {
+          "question": "什么技术让Flatpak应用能在软件中心显示？",
+          "id": "1-102-35",
+          "answers": [
+            {
+              "text": "Appstream元数据",
+              "answer_start": 643
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

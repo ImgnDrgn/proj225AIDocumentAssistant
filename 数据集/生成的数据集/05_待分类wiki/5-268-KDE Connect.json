@@ -1,0 +1,274 @@
+{
+  "data": [
+    {
+      "title": "KDE Connect",
+      "paragraphs": [
+        {
+          "context": "KDE Connect是KDE出品的联动智能手机、平板和PC的软件。",
+          "qas": [
+            {
+              "question": "KDE Connect是什么出品的软件？",
+              "id": "5-268-1",
+              "answers": [
+                {
+                  "text": "KDE",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "KDE Connect能联动哪些设备？",
+              "id": "5-268-2",
+              "answers": [
+                {
+                  "text": "智能手机、平板和PC",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "KDE Connect可共享剪贴板，实现设备间复制和粘贴。",
+          "qas": [
+            {
+              "question": "KDE Connect的共享剪贴板功能有什么用？",
+              "id": "5-268-3",
+              "answers": [
+                {
+                  "text": "实现设备间复制和粘贴。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "KDE Connect支持从任何应用程序将文件和URL共享到计算机。",
+          "qas": [
+            {
+              "question": "KDE Connect能从哪里将文件和URL共享到计算机？",
+              "id": "5-268-4",
+              "answers": [
+                {
+                  "text": "任何应用程序",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "KDE Connect可在电脑上获取来电和短信通知。",
+          "qas": [
+            {
+              "question": "KDE Connect能在电脑上获取什么通知？",
+              "id": "5-268-5",
+              "answers": [
+                {
+                  "text": "来电和短信通知",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "KDE Connect的虚拟触摸板功能可将手机屏幕用作电脑的触摸板。",
+          "qas": [
+            {
+              "question": "KDE Connect的虚拟触摸板功能有什么作用？",
+              "id": "5-268-6",
+              "answers": [
+                {
+                  "text": "将手机屏幕用作电脑的触摸板。",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "KDE Connect支持通知同步，可从桌面读取Android通知。",
+          "qas": [
+            {
+              "question": "KDE Connect的通知同步功能能做什么？",
+              "id": "5-268-7",
+              "answers": [
+                {
+                  "text": "从桌面读取Android通知。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "KDE Connect的多媒体遥控器功能可将手机用作Linux媒体播放器的遥控器。",
+          "qas": [
+            {
+              "question": "KDE Connect的多媒体遥控器功能能将手机用作什么的遥控器？",
+              "id": "5-268-8",
+              "answers": [
+                {
+                  "text": "Linux媒体播放器",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "KDE Connect通过WiFi连接，无需USB线或蓝牙。",
+          "qas": [
+            {
+              "question": "KDE Connect通过什么连接？",
+              "id": "5-268-9",
+              "answers": [
+                {
+                  "text": "WiFi",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "KDE Connect需要USB线或蓝牙吗？",
+              "id": "5-268-10",
+              "answers": [
+                {
+                  "text": "不需要",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "KDE Connect采用端到端TLS加密，保障信息安全。",
+          "qas": [
+            {
+              "question": "KDE Connect采用什么加密方式保障信息安全？",
+              "id": "5-268-11",
+              "answers": [
+                {
+                  "text": "端到端TLS加密",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装KDE Connect的命令是sudo apt install kdeconnect。",
+          "qas": [
+            {
+              "question": "安装KDE Connect的命令是什么？",
+              "id": "5-268-12",
+              "answers": [
+                {
+                  "text": "sudo apt install kdeconnect",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载KDE Connect的命令是sudo apt remove --purge kdeconnect。",
+          "qas": [
+            {
+              "question": "卸载KDE Connect的命令是什么？",
+              "id": "5-268-13",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge kdeconnect",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "KDE Connect的仓库地址是http://packages.deepin.com/deepin/pool/main/k/kdeconnect/。",
+          "qas": [
+            {
+              "question": "KDE Connect的仓库地址是什么？",
+              "id": "5-268-14",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/k/kdeconnect/",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置KDE Connect需在智能手机/平板上安装该软件，并使PC和其在同一局域网下。",
+          "qas": [
+            {
+              "question": "配置KDE Connect需要满足什么条件？",
+              "id": "5-268-15",
+              "answers": [
+                {
+                  "text": "在智能手机/平板上安装KDE Connect，并使PC和智能手机/平板在同一局域网下",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Android设备可在Google Play、华为应用市场或F-Droid上搜索安装KDE Connect，也可通过链接https://f-droid.org/repo/org.kde.kdeconnect_tp_11910.apk下载APK。",
+          "qas": [
+            {
+              "question": "Android设备在哪里可以安装KDE Connect？",
+              "id": "5-268-16",
+              "answers": [
+                {
+                  "text": "Google Play、华为应用市场或F-Droid上搜索安装，也可通过链接https://f-droid.org/repo/org.kde.kdeconnect_tp_11910.apk下载APK",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "Android设备下载KDE Connect APK的链接是什么？",
+              "id": "5-268-17",
+              "answers": [
+                {
+                  "text": "https://f-droid.org/repo/org.kde.kdeconnect_tp_11910.apk",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iOS/iPadOS设备可在App Store上搜索安装KDE Connect，链接为https://apps.apple.com/app/kde-connect/id1580245991。",
+          "qas": [
+            {
+              "question": "iOS/iPadOS设备在哪里可以安装KDE Connect？",
+              "id": "5-268-18",
+              "answers": [
+                {
+                  "text": "App Store上搜索安装，链接为https://apps.apple.com/app/kde-connect/id1580245991",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "iOS/iPadOS设备安装KDE Connect的App Store链接是什么？",
+              "id": "5-268-19",
+              "answers": [
+                {
+                  "text": "https://apps.apple.com/app/kde-connect/id1580245991",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,349 @@
+{
+  "data": [
+    {
+      "title": "Matrix",
+      "paragraphs": [
+        {
+          "context": "Matrix 是一个开源、开放、轻量级、去中心化的即时聊天通讯协议，它是包括 deepin、Mozilla、Fedora、KDE、Archlinux、Debian 等开源社区均在广泛使用的即时聊天协议。",
+          "qas": [
+            {
+              "id": "5-114-1",
+              "question": "Matrix是什么类型的协议？",
+              "answers": [
+                {
+                  "text": "开源、开放、轻量级、去中心化的即时聊天通讯协议",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-114-2",
+              "question": "哪些开源社区在使用Matrix协议？",
+              "answers": [
+                {
+                  "text": "deepin、Mozilla、Fedora、KDE、Archlinux、Debian",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "任何社区均可以搭建自己的 Matrix 实例，您可以在任何社区的 Matrix 实例中注册帐号，并登录其实例，并且您可以使用同一个帐号即可加入不同实例之中的聊天室。",
+          "qas": [
+            {
+              "id": "5-114-3",
+              "question": "任何社区可以对Matrix做什么？",
+              "answers": [
+                {
+                  "text": "搭建自己的 Matrix 实例",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-114-4",
+              "question": "Matrix中同一个帐号可以实现什么功能？",
+              "answers": [
+                {
+                  "text": "加入不同实例之中的聊天室",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如果您还没有在任何实例注册过 Matrix 帐号，您可以考虑在下面列表中的任意一个实例中注册帐号：- deepin (推荐)：[账号申请](mailto:support@deepin.org) | [登录地址](https://chat.getdeepin.org)- Mozilla（推荐）：https://chat.mozilla.org/#/welcome- Fedora Project：https://chat.fedoraproject.org/- openSuSE：https://chat.opensuse.org/- Open Desktop：https://chat.opendesktop.org/- Element (即 matrix.org 实例)：https://app.element.io/",
+          "qas": [
+            {
+              "id": "5-114-5",
+              "question": "推荐的Matrix注册实例有哪些？",
+              "answers": [
+                {
+                  "text": "deepin、Mozilla",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "5-114-6",
+              "question": "Element实例对应的网址是什么？",
+              "answers": [
+                {
+                  "text": "https://app.element.io/",
+                  "answer_start": 366
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "注册后即可登录其对应的网页版在线聊天了。deepin实例的账号申请需要写名申请理由和要申请的matrix账户ID。",
+          "qas": [
+            {
+              "id": "5-114-7",
+              "question": "注册Matrix帐号后可以做什么？",
+              "answers": [
+                {
+                  "text": "登录其对应的网页版在线聊天",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "5-114-8",
+              "question": "deepin实例的账号申请需要提供什么？",
+              "answers": [
+                {
+                  "text": "写名申请理由和要申请的matrix账户ID",
+                  "answer_start": 28
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Element 是 Matrix 官方性质的，基于 Web 技术的 Matrix 客户端实现，除了网页环境外，也有桌面客户端可用。可以在你所使用的发行版的应用商店或包管理工具中搜索 `element-desktop` 或近似名称来检索和安装此客户端，然后即可运行并登录你的帐号。",
+          "qas": [
+            {
+              "id": "5-114-9",
+              "question": "Element客户端的性质是什么？",
+              "answers": [
+                {
+                  "text": "Matrix 官方性质的，基于 Web 技术的 Matrix 客户端实现",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-114-10",
+              "question": "如何安装Element桌面客户端？",
+              "answers": [
+                {
+                  "text": "在你所使用的发行版的应用商店或包管理工具中搜索 `element-desktop` 或近似名称来检索和安装",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若您所使用发行版未做任何额外配置，则 Element 客户端默认会尝试连接 `matrix.org` 实例。若您所处的环境无法直接连接 matrix.org，则可能在打开 Element 后看到 `Your Element is misconfigured` 的提示。此时，可通过在 ~/.config/Element/config.json 创建内容如下的文件，然后尝试重新启动 Element 客户端即可：{\"default_server_name\": \"deepin.org\"} 值得注意的是，在登录前，您可能需要编辑 Home Server 到您所注册时所使用的实例所对应的位置。例如假设您使用了 Mozilla 的实例，则需要编辑修改为 `mozilla.modular.im`。",
+          "qas": [
+            {
+              "id": "5-114-11",
+              "question": "Element客户端默认连接哪个实例？",
+              "answers": [
+                {
+                  "text": "matrix.org",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-114-12",
+              "question": "使用Mozilla实例时，Home Server需要修改为什么？",
+              "answers": [
+                {
+                  "text": "mozilla.modular.im",
+                  "answer_start": 415
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Nheko Reborn 是一个基于 Qt/QML 技术的 Matrix 客户端，包含了包括 E2EE 在内的广泛的 Matrix 已有特性的支持，且支持主流平台。NeoChat 是 KDE 社区提供的，基于 Qt/QML 技术的 Matrix 客户端，包含了社区常用的大部分 Matrix 特性，以及实验性的 E2EE 支持。",
+          "qas": [
+            {
+              "id": "5-114-13",
+              "question": "Nheko Reborn基于什么技术？",
+              "answers": [
+                {
+                  "text": "Qt/QML 技术",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-114-14",
+              "question": "NeoChat由哪个社区提供？",
+              "answers": [
+                {
+                  "text": "KDE 社区",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "你可以访问 [Clients](https://matrix.org/clients/) 页面了解已知的 Matrix 客户端列表。如果你推荐使用某个客户端，也可以编辑此 Wiki 页面，将客户端的名字加到这个列表中来，来进行详细的介绍。",
+          "qas": [
+            {
+              "id": "5-114-15",
+              "question": "在哪里可以了解已知的Matrix客户端列表？",
+              "answers": [
+                {
+                  "text": "[Clients](https://matrix.org/clients/) 页面",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "社区通常通过“Space（空间）”索引自己社区所包含的聊天室列表，您可以加入对应的 Space 来检索感兴趣的聊天室，也可以直接检索并加入感兴趣的聊天室。下面是一些推荐的空间与聊天室，可供参考：- [deepin 社区空间](https://matrix.to/#/#deepin-space:matrix.org)：`#deepin-space:matrix.org`- [Fedora 社区空间](https://matrix.to/#/#fedora-space:fedoraproject.org)：`#fedora-space:fedoraproject.org`- [KDE 社区空间](https://matrix.to/#/#kde-community:kde.org)：`#kde-community:kde.org`",
+          "qas": [
+            {
+              "id": "5-114-16",
+              "question": "社区通常通过什么索引自己社区的聊天室列表？",
+              "answers": [
+                {
+                  "text": "“Space（空间）”",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-114-17",
+              "question": "Fedora社区空间的标识是什么？",
+              "answers": [
+                {
+                  "text": "`#fedora-space:fedoraproject.org`",
+                  "answer_start": 235
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Matrix 原生支持将已有的 Matrix 聊天室桥接到 IRC/Telegram/Discord 等的群聊之中，以供 Matrix 用户可以直接和现有平台的用户进行沟通。您可以使用公开的桥接服务，也可以自己编写桥接服务来桥接已有的聊天室。",
+          "qas": [
+            {
+              "id": "5-114-18",
+              "question": "Matrix原生支持将聊天室桥接到哪些平台的群聊？",
+              "answers": [
+                {
+                  "text": "IRC/Telegram/Discord 等",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "主流的 IRC 聊天平台，包括 libera.chat 与 OFTC 等，均提供了现有的桥接服务可用，可参见 [这个页面](https://matrix-org.github.io/matrix-appservice-irc/latest/bridged_networks.html) 了解详细的说明。",
+          "qas": [
+            {
+              "id": "5-114-19",
+              "question": "哪些主流IRC聊天平台提供了桥接服务？",
+              "answers": [
+                {
+                  "text": "libera.chat 与 OFTC 等",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "[t2bot.io](https://t2bot.io/) 提供了将 Matrix 聊天室桥接到 Telegram 群聊与 Discord 群聊的公开服务，可前往其网站进行了解。手动的桥接操作通常需要聊天室的管理员进行操作。",
+          "qas": [
+            {
+              "id": "5-114-20",
+              "question": "哪个网站提供了将Matrix聊天室桥接到Telegram和Discord群聊的公开服务？",
+              "answers": [
+                {
+                  "text": "[t2bot.io](https://t2bot.io/)",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-114-21",
+              "question": "手动的桥接操作通常需要谁进行？",
+              "answers": [
+                {
+                  "text": "聊天室的管理员",
+                  "answer_start": 130
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "任何社区均可以搭建自己的 Matrix 实例，您可以在任何社区的 Matrix 实例中注册帐号，并登录其实例，并且您可以使用同一个帐号即可加入不同实例之中的聊天室。如果您还没有在任何实例注册过 Matrix 帐号，您可以考虑在下面列表中的任意一个实例中注册帐号：- deepin (推荐)：[账号申请](mailto:support@deepin.org) | [登录地址](https://chat.getdeepin.org) - Mozilla（推荐）：https://chat.mozilla.org/#/welcome - Fedora Project：https://chat.fedoraproject.org/ - openSuSE：https://chat.opensuse.org/ - Open Desktop：https://chat.opendesktop.org/ - Element (即 matrix.org 实例)：https://app.element.io/",
+          "qas": [
+            {
+              "id": "5-114-22",
+              "question": "同一个Matrix账号能做什么？",
+              "answers": [
+                {
+                  "text": "使用同一个帐号即可加入不同实例之中的聊天室",
+                  "answer_start": 63
+                }
+              ]
+            },
+            {
+              "id": "5-114-23",
+              "question": "推荐在哪些实例注册账号？",
+              "answers": [
+                {
+                  "text": "deepin (推荐), Mozilla（推荐）",
+                  "answer_start": 168
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Element 是 Matrix 官方性质的，基于 Web 技术的 Matrix 客户端实现，除了网页环境外，也有桌面客户端可用。可以在你所使用的发行版的应用商店或包管理工具中搜索 `element-desktop` 或近似名称来检索和安装此客户端，然后即可运行并登录你的帐号。若您所使用发行版未做任何额外配置，则 Element 客户端默认会尝试连接 `matrix.org` 实例。若您所处的环境无法直接连接 matrix.org，则可能在打开 Element 后看到 `Your Element is misconfigured` 的提示。此时，可通过在 ~/.config/Element/config.json 创建内容如下的文件，然后尝试重新启动 Element 客户端即可： {\"default_server_name\": \"deepin.org\"}",
+          "qas": [
+            {
+              "id": "5-114-24",
+              "question": "无法连接matrix.org时如何配置Element？",
+              "answers": [
+                {
+                  "text": "在 ~/.config/Element/config.json 创建内容如下的文件，然后尝试重新启动 Element 客户端即可： {\"default_server_name\": \"deepin.org\"}",
+                  "answer_start": 219
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "社区通常通过“Space（空间）”索引自己社区所包含的聊天室列表，您可以加入对应的 Space 来检索感兴趣的聊天室，也可以直接检索并加入感兴趣的聊天室。下面是一些推荐的空间与聊天室，可供参考：- [deepin 社区空间](https://matrix.to/#/#deepin-space:matrix.org)：`#deepin-space:matrix.org` - [Fedora 社区空间](https://matrix.to/#/#fedora-space:fedoraproject.org)：`#fedora-space:fedoraproject.org` - [KDE 社区空间](https://matrix.to/#/#kde-community:kde.org)：`#kde-community:kde.org`",
+          "qas": [
+            {
+              "id": "5-114-25",
+              "question": "如何检索Matrix聊天室？",
+              "answers": [
+                {
+                  "text": "加入对应的 Space 来检索感兴趣的聊天室，也可以直接检索并加入感兴趣的聊天室",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Matrix 原生支持将已有的 Matrix 聊天室桥接到 IRC/Telegram/Discord 等的群聊之中，以供 Matrix 用户可以直接和现有平台的用户进行沟通。您可以使用公开的桥接服务，也可以自己编写桥接服务来桥接已有的聊天室。主流的 IRC 聊天平台，包括 libera.chat 与 OFTC 等，均提供了现有的桥接服务可用。t2bot.io 提供了将 Matrix 聊天室桥接到 Telegram 群聊与 Discord 群聊的公开服务。",
+          "qas": [
+            {
+              "id": "5-114-26",
+              "question": "谁提供Telegram/Discord的公开桥接服务？",
+              "answers": [
+                {
+                  "text": "t2bot.io",
+                  "answer_start": 168
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

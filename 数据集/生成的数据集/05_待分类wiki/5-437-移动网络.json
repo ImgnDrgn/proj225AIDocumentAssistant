@@ -1,0 +1,334 @@
+{
+  "data": [
+    {
+      "title": "移动网络",
+      "paragraphs": [
+        {
+          "context": "我国移动网络环境一般为3G、4G上网。",
+          "qas": [
+            {
+              "question": "我国移动网络环境一般是什么？",
+              "id": "5-437-1",
+              "answers": [
+                {
+                  "text": "3G、4G上网",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文中提及的移动网络设置方法可能不适合新版deepin，需用其他网络管理器（如Gnome network manager）配置。",
+          "qas": [
+            {
+              "question": "文中的移动网络设置方法可能不适合什么系统？",
+              "id": "5-437-2",
+              "answers": [
+                {
+                  "text": "新版deepin",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "新版deepin如需配置移动网络，可使用什么网络管理器？",
+              "id": "5-437-3",
+              "answers": [
+                {
+                  "text": "Gnome network manager",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置移动网络第一步：打开“网络连接”，切换到“移动宽带”标签页，单击添加新的移动网络连接。",
+          "qas": [
+            {
+              "question": "设置移动网络的第一步是什么？",
+              "id": "5-437-4",
+              "answers": [
+                {
+                  "text": "打开“网络连接”，切换到“移动宽带”标签页，单击添加新的移动网络连接。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "移动网络手动设置需选择国家地区（中国）、提供商，以及用户名和密码（询问销售商）。",
+          "qas": [
+            {
+              "question": "移动网络手动设置需要选择哪些内容？",
+              "id": "5-437-5",
+              "answers": [
+                {
+                  "text": "国家地区（中国）、提供商，以及用户名和密码（询问销售商）。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置完成移动网络后，点击右上角的宽带网络名称即可连接网络。",
+          "qas": [
+            {
+              "question": "移动网络配置完成后如何连接网络？",
+              "id": "5-437-6",
+              "answers": [
+                {
+                  "text": "点击右上角的宽带网络名称。",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "提示：China Moblile-中国移动，China Telecom-中国电信，China Unicom-中国联通。",
+          "qas": [
+            {
+              "question": "China Moblile对应的运营商是什么？",
+              "id": "5-437-7",
+              "answers": [
+                {
+                  "text": "中国移动",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "China Telecom指的是哪家运营商？",
+              "id": "5-437-8",
+              "answers": [
+                {
+                  "text": "中国电信",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "China Unicom对应的运营商名称是什么？",
+              "id": "5-437-9",
+              "answers": [
+                {
+                  "text": "中国联通",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若无法连接网络，需查看所购买的无线网卡是否支持Linux平台，不支持可咨询销售商或官方服务人员。",
+          "qas": [
+            {
+              "question": "如果无法连接移动网络，首先需要查看什么？",
+              "id": "5-437-10",
+              "answers": [
+                {
+                  "text": "所购买的无线网卡是否支持Linux平台",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "question": "无线网卡不支持Linux平台时该怎么办？",
+              "id": "5-437-11",
+              "answers": [
+                {
+                  "text": "咨询销售商或官方服务人员。",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "华为et127 3G网卡第一种情况：深度操作系统可以直接识别，无需设置。",
+          "qas": [
+            {
+              "question": "华为et127 3G网卡在什么情况下无需设置？",
+              "id": "5-437-12",
+              "answers": [
+                {
+                  "text": "深度操作系统可以直接识别时。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "华为et127 3G网卡第二种情况：需用usb-modeswitch和wvdial/gnome-ppp/网卡自带拨号程序，或不用usb-modeswitch（系统可识别3g网卡为modem时），wvdial/gnome-ppp为拨号程序。",
+          "qas": [
+            {
+              "question": "华为et127 3G网卡第二种情况可能需要用到哪些程序？",
+              "id": "5-437-13",
+              "answers": [
+                {
+                  "text": "usb-modeswitch和wvdial/gnome-ppp/网卡自带拨号程序",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "什么情况下华为et127 3G网卡不需要使用usb-modeswitch？",
+              "id": "5-437-14",
+              "answers": [
+                {
+                  "text": "系统可识别3g网卡为modem时",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "3g网卡链接上移动网络后不能上网，需先断开有线网，终端执行：sudo ifconfig eth0 down。",
+          "qas": [
+            {
+              "question": "3g网卡连接移动网络后不能上网，首先要做什么？",
+              "id": "5-437-15",
+              "answers": [
+                {
+                  "text": "断开有线网，终端执行：sudo ifconfig eth0 down。",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置默认网关为使用sudo wvdial获取的local IP address，如sudo route add default gw 10.150.129.135。",
+          "qas": [
+            {
+              "question": "如何设置默认网关？",
+              "id": "5-437-16",
+              "answers": [
+                {
+                  "text": "设置默认网关为使用sudo wvdial获取的local IP address，如sudo route add default gw 10.150.129.135。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重启网络可在终端执行：sudo /etc/init.d/networking restart。",
+          "qas": [
+            {
+              "question": "如何重启网络？",
+              "id": "5-437-17",
+              "answers": [
+                {
+                  "text": "在终端执行：sudo /etc/init.d/networking restart。",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "检查dns文件：ls -l /etc/resolv.conf，若指向/run/resolvconf/resolv.conf则跳过，否则执行sudo rm /etc/resolv.conf和sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf建立软链接。",
+          "qas": [
+            {
+              "question": "如何检查dns文件？",
+              "id": "5-437-18",
+              "answers": [
+                {
+                  "text": "ls -l /etc/resolv.conf",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "/etc/resolv.conf不指向/run/resolvconf/resolv.conf时该怎么做？",
+              "id": "5-437-19",
+              "answers": [
+                {
+                  "text": "执行sudo rm /etc/resolv.conf和sudo ln -s /run/resolvconf/resolv.conf /etc/resolv.conf建立软链接。",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编辑dns文件：sudo gedit /etc/resolv.conf，添加nameserver 221.130.33.60和nameserver 221.130.33.52（为sudo wvdial获取的primary和secondary DNS address）。",
+          "qas": [
+            {
+              "question": "如何编辑dns文件？",
+              "id": "5-437-20",
+              "answers": [
+                {
+                  "text": "sudo gedit /etc/resolv.conf，添加nameserver 221.130.33.60和nameserver 221.130.33.52。",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "dns文件中添加的nameserver地址来自哪里？",
+              "id": "5-437-21",
+              "answers": [
+                {
+                  "text": "sudo wvdial获取的primary DNS address 和secondary DNS address",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编辑dns文件后执行sudo /etc/init.d/resolvconf restart，再重启网络。",
+          "qas": [
+            {
+              "question": "编辑dns文件后需要执行什么命令？",
+              "id": "5-437-22",
+              "answers": [
+                {
+                  "text": "sudo /etc/init.d/resolvconf restart",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "以后使用3g网卡时，需执行sudo wvdial（拨号）、sudo ifconfig eth0 down（断开有线）、sudo route add default gw x.x.x.x（设置网关）。",
+          "qas": [
+            {
+              "question": "以后使用3g网卡时需要执行哪些命令？",
+              "id": "5-437-23",
+              "answers": [
+                {
+                  "text": "sudo wvdial（拨号）、sudo ifconfig eth0 down（断开有线）、sudo route add default gw x.x.x.x（设置网关）。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若深度操作系统未识别3g网卡为modem，需一开始用sudo usb_modeswitch -W切换模式。",
+          "qas": [
+            {
+              "question": "深度操作系统未识别3g网卡为modem时该怎么办？",
+              "id": "5-437-24",
+              "answers": [
+                {
+                  "text": "一开始用sudo usb_modeswitch -W切换模式。",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

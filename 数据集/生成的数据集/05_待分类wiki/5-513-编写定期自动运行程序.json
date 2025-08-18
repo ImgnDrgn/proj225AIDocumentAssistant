@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "编写定期自动运行程序",
+      "paragraphs": [
+        {
+          "context": "Linux的crond守护程序能周期性检查/var/spool/cron目录下命令文件，按设定时间执行命令，用户可通过crontab命令管理这些文件。",
+          "qas": [
+            {
+              "question": "Linux中crond守护程序的主要功能是什么？",
+              "id": "5-513-1",
+              "answers": [
+                {
+                  "text": "周期性地检查/var/spool/cron目录下的一组命令文件的内容，并在设定的时间执行这些文件中的命令。",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "用户通过什么命令管理crond相关的命令文件？",
+              "id": "5-513-2",
+              "answers": [
+                {
+                  "text": "crontab",
+                  "answer_start": 78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "建立crondFile文件，内容为“00 9 23 Jan *HappyBirthday”，运行`crontab cronFile`后，元月23日上午9:00会自动执行“HappyBirthday”程序。",
+          "qas": [
+            {
+              "question": "如何设置让系统在元月23日上午9:00自动执行“HappyBirthday”程序？",
+              "id": "5-513-3",
+              "answers": [
+                {
+                  "text": "建立文件crondFile，内容为“00 9 23 Jan *HappyBirthday”，运行`crontab cronFile`。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "“00 9 23 Jan *HappyBirthday”这条命令的执行时间是什么时候？",
+              "id": "5-513-4",
+              "answers": [
+                {
+                  "text": "元月23日上午9:00",
+                  "answer_start": 82
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "at命令与crond类似，但只执行一次，一般格式为at [ -f file ] time，可执行file文件命令或直接输入命令。",
+          "qas": [
+            {
+              "question": "at命令与crond有什么不同？",
+              "id": "5-513-5",
+              "answers": [
+                {
+                  "text": "at命令只执行一次，crond是周期性执行。",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "at命令的一般格式是什么？",
+              "id": "5-513-6",
+              "answers": [
+                {
+                  "text": "at [ -f file ] time",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "输入$ at 12:00，再输入mailto Roger －s ″Have a lunch″ < plan.txt，按Ctrl+D，会在2000－11－09 12:00给Roger发指定邮件。",
+          "qas": [
+            {
+              "question": "如何用at命令在2000－11－09 12:00给Roger发标题为“Have a lunch”、内容为plan.txt的邮件？",
+              "id": "5-513-7",
+              "answers": [
+                {
+                  "text": "$ at 12:00，at> mailto Roger －s ″Have a lunch″ < plan.txt，按Ctrl+D。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "上述at命令执行的内容是什么？",
+              "id": "5-513-8",
+              "answers": [
+                {
+                  "text": "2000-11-09 12:00时候自动发一标题为“Have a lunch”，内容为plan.txt文件内容的邮件给Roger。",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

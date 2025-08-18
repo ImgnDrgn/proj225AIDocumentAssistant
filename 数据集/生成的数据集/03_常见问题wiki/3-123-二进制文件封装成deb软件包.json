@@ -1,0 +1,224 @@
+{
+  "data": [
+    {
+      "title": "二进制文件封装成deb软件包",
+      "paragraphs": [
+        {
+          "context": "创建 Debian 软件包需安装 dpkg-dev 包，命令为 sudo apt-get update 和 sudo apt-get install dpkg-dev。",
+          "qas": [
+            {
+              "question": "创建 Debian 软件包需要安装什么工具包？",
+              "id": "3-123-1",
+              "answers": [
+                {
+                  "text": "dpkg-dev 包",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "安装 dpkg-dev 包的命令是什么？",
+              "id": "3-123-2",
+              "answers": [
+                {
+                  "text": "sudo apt-get update 和 sudo apt-get install dpkg-dev",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建软件包需先建目录，命令为 mkdir mypackage 和 cd mypackage。",
+          "qas": [
+            {
+              "question": "创建软件包目录的命令是什么？",
+              "id": "3-123-3",
+              "answers": [
+                {
+                  "text": "mkdir mypackage 和 cd mypackage",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DEBIAN 子目录存放控制文件，control 文件含软件包元数据，如名称、版本等。",
+          "qas": [
+            {
+              "question": "DEBIAN 子目录的作用是什么？",
+              "id": "3-123-4",
+              "answers": [
+                {
+                  "text": "存放软件包的控制文件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "control 文件包含什么内容？",
+              "id": "3-123-5",
+              "answers": [
+                {
+                  "text": "软件包的元数据，如软件名称、版本、描述等",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "二进制文件通常放在 /usr/bin 或 /usr/local/bin 目录下，需在 control 文件指定架构。",
+          "qas": [
+            {
+              "question": "二进制文件通常放在哪些目录下？",
+              "id": "3-123-6",
+              "answers": [
+                {
+                  "text": "/usr/bin 或 /usr/local/bin",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "放置二进制文件时需要在 control 文件中做什么？",
+              "id": "3-123-7",
+              "answers": [
+                {
+                  "text": "正确指定适当的架构",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装或卸载时的特定操作可通过 DEBIAN 目录中的 postinst 和 postrm 脚本实现。",
+          "qas": [
+            {
+              "question": "哪些脚本用于实现安装或卸载时的特定操作？",
+              "id": "3-123-8",
+              "answers": [
+                {
+                  "text": "postinst（安装后脚本）和 postrm（卸载后脚本）",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "构建软件包的命令是在软件包目录上层执行 sudo dpkg-deb --build mypackage，会生成 .deb 文件。",
+          "qas": [
+            {
+              "question": "构建软件包的命令是什么？",
+              "id": "3-123-9",
+              "answers": [
+                {
+                  "text": "sudo dpkg-deb --build mypackage",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "构建软件包会生成什么文件？",
+              "id": "3-123-10",
+              "answers": [
+                {
+                  "text": ".deb 文件",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装软件包测试用 sudo dpkg -i mypackage.deb 命令，可运行二进制文件检查是否正常。",
+          "qas": [
+            {
+              "question": "安装软件包进行测试的命令是什么？",
+              "id": "3-123-11",
+              "answers": [
+                {
+                  "text": "sudo dpkg -i mypackage.deb",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过 apt install 安装需制作 APT 软件仓库，需设置仓库服务器和发布软件包。",
+          "qas": [
+            {
+              "question": "如何让他人通过 apt install 安装软件包？",
+              "id": "3-123-12",
+              "answers": [
+                {
+                  "text": "将软件包上传到一个 APT 软件仓库，包括设置一个仓库服务器和发布软件包",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编译 helloworld.c 为二进制文件用 gcc helloworld.c -o helloworld 命令。",
+          "qas": [
+            {
+              "question": "如何将 helloworld.c 编译成二进制文件？",
+              "id": "3-123-13",
+              "answers": [
+                {
+                  "text": "gcc helloworld.c -o helloworld",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "二进制文件复制到 mypackage/usr/bin/ 目录，命令为 cp ./helloworld ./mypackage/usr/bin/mypackage。",
+          "qas": [
+            {
+              "question": "二进制文件应复制到哪个目录？",
+              "id": "3-123-14",
+              "answers": [
+                {
+                  "text": "mypackage/usr/bin/",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "复制二进制文件的命令是什么？",
+              "id": "3-123-15",
+              "answers": [
+                {
+                  "text": "cp ./helloworld ./mypackage/usr/bin/mypackage",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装 mypackage.deb 后，二进制文件会被复制到系统目录 /usr/bin/mypackage 中。",
+          "qas": [
+            {
+              "question": "安装 mypackage.deb 后，二进制文件被复制到系统的哪个目录？",
+              "id": "3-123-16",
+              "answers": [
+                {
+                  "text": "/usr/bin/mypackage",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

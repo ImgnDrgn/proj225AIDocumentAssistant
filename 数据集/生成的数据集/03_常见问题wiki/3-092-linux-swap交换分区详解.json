@@ -1,0 +1,214 @@
+{
+  "data": [
+    {
+      "title": "linux-swap交换分区详解",
+      "paragraphs": [
+        {
+          "context": "交换分区主要是在内存不够用的时候，将部分内存上的数据交换到swap空间上，避免系统因内存不足出现oom或更致命情况。当内存使用有压力，触发内存回收时，可能会使用swap空间。",
+          "qas": [
+            {
+              "question": "什么是SWAP？",
+              "id": "3-92-1",
+              "answers": [
+                {
+                  "text": "交换分区主要是在内存不够用的时候，将部分内存上的数据交换到swap空间上，以便让系统不会因内存不够用而导致oom或者更致命的情况出现。当内存使用存在压力，开始触发内存回收的行为时，就可能会使用swap空间",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/proc/sys/vm/swappiness文件用于调整与swap相关的参数，默认值60，取值范围0-100。值越高，内核使用swap越积极；值越低，使用积极性越低。0表示内存在free和file-backed使用的页面总量小于高水位标记前不交换，尽量清缓存回收内存；100表示回收时从cache回收和swap交换优先级一样。",
+          "qas": [
+            {
+              "question": "/proc/sys/vm/swappiness文件的作用是什么？",
+              "id": "3-92-2",
+              "answers": [
+                {
+                  "text": "用于调整跟swap相关的参数",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "/proc/sys/vm/swappiness的默认值是多少？",
+              "id": "3-92-3",
+              "answers": [
+                {
+                  "text": "60",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "question": "/proc/sys/vm/swappiness的取值范围是多少？",
+              "id": "3-92-4",
+              "answers": [
+                {
+                  "text": "0-100",
+                  "answer_start": 44
+                }
+              ]
+            },
+            {
+              "question": "swappiness值为0时意味着什么？",
+              "id": "3-92-5",
+              "answers": [
+                {
+                  "text": "内存在free和file-backed使用的页面总量小于高水位标记之前，不会发生交换。调整为0意味着，尽量通过清缓存来回收内存。",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "question": "swappiness值为100时表示什么？",
+              "id": "3-92-6",
+              "answers": [
+                {
+                  "text": "内存发生回收时，从cache回收内存和swap交换的优先级一样。",
+                  "answer_start": 165
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改swappiness值可临时用sysctl vm.swappiness=值，持久化需编辑/etc/sysctl.conf，添加vm.swappiness=值，重启生效。",
+          "qas": [
+            {
+              "question": "如何临时修改swappiness的值？",
+              "id": "3-92-7",
+              "answers": [
+                {
+                  "text": "sysctl vm.swappiness=10",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "如何持久化修改swappiness的值？",
+              "id": "3-92-8",
+              "answers": [
+                {
+                  "text": "1、vim /etc/sysctl.conf；2、vm.swappiness=10（到末行，需要重启生效）",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "swap操作在kswapd周期检查和直接内存回收两种机制下进行。申请内存大于剩余内存触发直接回收。kswapd周期检测内存，当达到low阈值开始回收，回收到剩余内存达high阈值为止。可通过cat /proc/zoneinfo查看内存水位标记。",
+          "qas": [
+            {
+              "question": "什么时候会进行swap操作？",
+              "id": "3-92-9",
+              "answers": [
+                {
+                  "text": "kswapd周期检查和直接内存回收的两种内存回收机制。当申请的内存大于剩余内存的时候，就会触发直接回收。kswapd进程在周期检查的时候，当内存达到一定阈值（low标记）时开始回收，回收到剩余内存达到high标记为止。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何查看当前系统的内存水位标记？",
+              "id": "3-92-10",
+              "answers": [
+                {
+                  "text": "cat /proc/zoneinfo",
+                  "answer_start": 176
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "swap分区优先级可用-p参数指定，值越大优先级越高，范围-1到32767。可通过swapoff /dev/sdc1; swapon -p 0 /dev/sdc1修改，在/etc/fstab添加条目/dev/sdc1 swap swap pri=0 0 0可使重启生效。",
+          "qas": [
+            {
+              "question": "如何指定swap空间的优先级？",
+              "id": "3-92-11",
+              "answers": [
+                {
+                  "text": "使用-p参数指定，值越大优先级越高，范围是－1到32767。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何让swap分区优先级设置在每次Linux重启时生效？",
+              "id": "3-92-12",
+              "answers": [
+                {
+                  "text": "/etc/fstab放入一个条目：/dev/sdc1 swap swap pri=0 0 0",
+                  "answer_start": 114
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启停swap可使用swapoff -a停止，swapon -a启动。",
+          "qas": [
+            {
+              "question": "如何停止swap？",
+              "id": "3-92-13",
+              "answers": [
+                {
+                  "text": "swapoff -a",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "如何启动swap？",
+              "id": "3-92-14",
+              "answers": [
+                {
+                  "text": "swapon -a",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建swap空间：制作swap文件用dd if=/dev/sda3 of=./swapfile bs=1M count=1G和mkswap ./swapfile，启用用swapon swapfile，关闭用swapoff swapfile。",
+          "qas": [
+            {
+              "question": "如何制作swap文件？",
+              "id": "3-92-15",
+              "answers": [
+                {
+                  "text": "dd if=/dev/sda3 of=./swapfile bs=1M count=1G; mkswap ./swapfile",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "如何启用swap文件？",
+              "id": "3-92-16",
+              "answers": [
+                {
+                  "text": "swapon swapfile",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "如何关闭swap文件？",
+              "id": "3-92-17",
+              "answers": [
+                {
+                  "text": "swapoff swapfile",
+                  "answer_start": 109
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

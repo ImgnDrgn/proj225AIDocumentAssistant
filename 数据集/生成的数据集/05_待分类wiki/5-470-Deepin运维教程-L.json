@@ -1,0 +1,399 @@
+{
+  "data": [
+    {
+      "title": "Deepin运维教程-L2",
+      "paragraphs": [
+        {
+          "context": "命令是实现某功能的指令或程序，依赖解释器（如/bin/bash），/etc/shells存可用shell。which命令用于搜索命令的绝对路径。",
+          "qas": [
+            {
+              "question": "命令的执行依赖什么？",
+              "id": "5-470-1",
+              "answers": [
+                {
+                  "text": "解释器（如/bin/bash）",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "哪个文件存放系统可用的shell？",
+              "id": "5-470-2",
+              "answers": [
+                {
+                  "text": "/etc/shells",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "如何搜索命令所在的绝对路径？",
+              "id": "5-470-3",
+              "answers": [
+                {
+                  "text": "使用which命令",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux命令分内部命令（shell自带）和外部命令（独立可执行文件）。type用于区分两者，which查找外部命令位置。$PATH存shell查找路径，hash记录外部命令路径缓存。",
+          "qas": [
+            {
+              "question": "Linux命令分为哪两类？",
+              "id": "5-470-4",
+              "answers": [
+                {
+                  "text": "内部命令（shell自带）和外部命令（独立可执行文件）",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "用什么命令区分内部命令与外部命令？",
+              "id": "5-470-5",
+              "answers": [
+                {
+                  "text": "type",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "shell查找可执行程序文件的路径定义在哪个环境变量中？",
+              "id": "5-470-6",
+              "answers": [
+                {
+                  "text": "$PATH",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "help命令查看shell内部命令帮助，格式为help [选项] 命令，无法获取外部命令帮助。外部命令可用--help查看帮助。",
+          "qas": [
+            {
+              "question": "help命令的作用是什么？",
+              "id": "5-470-7",
+              "answers": [
+                {
+                  "text": "查看shell内部命令的帮助信息，包括使用方法、选项等",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "help命令能否获取外部命令的帮助信息？",
+              "id": "5-470-8",
+              "answers": [
+                {
+                  "text": "不能",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "外部命令如何查看帮助信息？",
+              "id": "5-470-9",
+              "answers": [
+                {
+                  "text": "使用--help",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "man命令查看系统命令详细帮助，格式为man [-选项] 命令。常用操作：上下键移行，Page Down/Up翻页，/关键字搜索（n向下，N向上），q退出。",
+          "qas": [
+            {
+              "question": "man命令的作用是什么？",
+              "id": "5-470-10",
+              "answers": [
+                {
+                  "text": "查看系统命令的帮助信息，包括使用方法、选项、使用例子等，输出信息更详细",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "在man手册中如何搜索关键字？",
+              "id": "5-470-11",
+              "answers": [
+                {
+                  "text": "/关键字，配合n（向下查询）、N（向上查询）",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "question": "如何退出man手册？",
+              "id": "5-470-12",
+              "answers": [
+                {
+                  "text": "按q键",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux有7个运行级别：0关机，1单用户模式，2多用户（无NFS），3完全多用户，4未使用，5带GUI，6重启。runlevel查看当前级别，systemctl get-default看默认级别，set-default修改默认。",
+          "qas": [
+            {
+              "question": "Linux系统运行级别0代表什么？",
+              "id": "5-470-13",
+              "answers": [
+                {
+                  "text": "关机",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "哪个运行级别是带GUI的图形化界面？",
+              "id": "5-470-14",
+              "answers": [
+                {
+                  "text": "运行级别5",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "question": "如何查看当前系统运行级别？",
+              "id": "5-470-15",
+              "answers": [
+                {
+                  "text": "使用runlevel命令",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "question": "如何修改系统默认运行级别？",
+              "id": "5-470-16",
+              "answers": [
+                {
+                  "text": "使用systemctl set-default TARGET.target命令",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "关机命令：init 0、halt、poweroff、shutdown -h now（立刻）、shutdown -h 10（10分钟后）。重启命令：reboot、shutdown -r now、shutdown -r 10。",
+          "qas": [
+            {
+              "question": "请列举至少两个Linux关机命令？",
+              "id": "5-470-17",
+              "answers": [
+                {
+                  "text": "init 0、halt、poweroff、shutdown -h now",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何立刻重启Linux系统？",
+              "id": "5-470-18",
+              "answers": [
+                {
+                  "text": "reboot、shutdown -r now",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "question": "如何让系统10分钟后自动关机？",
+              "id": "5-470-19",
+              "answers": [
+                {
+                  "text": "shutdown -h 10",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软连接特点：可跨分区，可链接目录，源文件删除后不可用。硬连接：不可跨分区，不可链接目录，源文件删除后仍可用。ln -s创建软连接，ln创建硬连接。",
+          "qas": [
+            {
+              "question": "软连接有哪些特点？",
+              "id": "5-470-20",
+              "answers": [
+                {
+                  "text": "可以跨分区，可以对目录链接，源文件删除后链接文件不可用",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何创建软连接？",
+              "id": "5-470-21",
+              "answers": [
+                {
+                  "text": "使用ln -s命令",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "question": "硬连接与软连接的主要区别是什么？",
+              "id": "5-470-22",
+              "answers": [
+                {
+                  "text": "软连接可跨分区、链接目录，源文件删除后不可用；硬连接不可跨分区、链接目录，源文件删除后仍可用",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/是根目录，所有数据存放于此。/bin存必备可执行程序，/boot存内核及引导文件，/etc存配置文件，/root是管理员家目录，/home是普通用户家目录。",
+          "qas": [
+            {
+              "question": "Linux系统的根目录是什么？",
+              "id": "5-470-23",
+              "answers": [
+                {
+                  "text": "/",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "/etc目录存放什么内容？",
+              "id": "5-470-24",
+              "answers": [
+                {
+                  "text": "服务的配置文件，用户信息文件",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "question": "管理员的家目录是什么？",
+              "id": "5-470-25",
+              "answers": [
+                {
+                  "text": "/root",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "uname命令显示内核信息，-s显示内核名称，-r显示内核版本。/proc/cpuinfo存CPU信息，lscpu显示CPU架构信息。",
+          "qas": [
+            {
+              "question": "如何查看Linux内核名称？",
+              "id": "5-470-26",
+              "answers": [
+                {
+                  "text": "使用uname -s命令",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "哪些方式可以查看CPU信息？",
+              "id": "5-470-27",
+              "answers": [
+                {
+                  "text": "查看/proc/cpuinfo文件内容，使用lscpu命令",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/proc/meminfo存内存信息，free命令查看内存使用，-h选项以人类易读方式显示（KB、MB、GB）。",
+          "qas": [
+            {
+              "question": "如何以人类易读方式查看内存使用情况？",
+              "id": "5-470-28",
+              "answers": [
+                {
+                  "text": "使用free -h命令",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "系统内存信息存放在哪个文件中？",
+              "id": "5-470-29",
+              "answers": [
+                {
+                  "text": "/proc/meminfo",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "网卡配置文件在/etc/sysconfig/network-scripts/网卡名，ifconfig命令显示和设置网卡参数，可指定网卡名查看其信息。",
+          "qas": [
+            {
+              "question": "网卡配置文件通常存放在哪里？",
+              "id": "5-470-30",
+              "answers": [
+                {
+                  "text": "/etc/sysconfig/network-scripts/网卡名",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "用什么命令可以显示网卡参数？",
+              "id": "5-470-31",
+              "answers": [
+                {
+                  "text": "ifconfig",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/etc/hostname存主机名，hostname命令显示和设置主机名，hostnamectl set-hostname可永久修改主机名（立即生效）。",
+          "qas": [
+            {
+              "question": "主机名存放在哪个文件中？",
+              "id": "5-470-32",
+              "answers": [
+                {
+                  "text": "/etc/hostname",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何永久修改主机名并立即生效？",
+              "id": "5-470-33",
+              "answers": [
+                {
+                  "text": "使用hostnamectl set-hostname命令",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

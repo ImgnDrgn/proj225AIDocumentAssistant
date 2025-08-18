@@ -1,0 +1,1149 @@
+{
+  "data": [
+    {
+      "title": "Deepin系统管理整合",
+      "paragraphs": [
+        {
+          "context": "系统启动流程：简述Linux系统的启动流程。",
+          "qas": [
+            {
+              "question": "系统启动流程部分介绍了什么内容？",
+              "id": "5-2-1",
+              "answers": [
+                {
+                  "text": "简述Linux系统的启动流程。",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统引导器：系统引导器的简单介绍。参考 Debian、Arch wiki。",
+          "qas": [
+            {
+              "question": "系统引导器部分有什么内容？",
+              "id": "5-2-2",
+              "answers": [
+                {
+                  "text": "系统引导器的简单介绍。参考 Debian、Arch wiki。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux内核：简述Linux内核构成与安装。参考 Arch wiki。",
+          "qas": [
+            {
+              "question": "Linux内核部分介绍了什么？",
+              "id": "5-2-3",
+              "answers": [
+                {
+                  "text": "简述Linux内核构成与安装。参考 Arch wiki。",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux内核错误：Linux内核错误(内核恐慌)的介绍与处理。",
+          "qas": [
+            {
+              "question": "Linux内核错误部分包含什么内容？",
+              "id": "5-2-4",
+              "answers": [
+                {
+                  "text": "Linux内核错误(内核恐慌)的介绍与处理。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "初始化：Linux系统初始化过程简述。",
+          "qas": [
+            {
+              "question": "初始化部分介绍了什么？",
+              "id": "5-2-5",
+              "answers": [
+                {
+                  "text": "Linux系统初始化过程简述。",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开机动画：简述开机动画的作用和程序类型。",
+          "qas": [
+            {
+              "question": "开机动画部分讲了什么？",
+              "id": "5-2-6",
+              "answers": [
+                {
+                  "text": "简述开机动画的作用和程序类型。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "电源管理：简单介绍Linux下的电源管理与类型。",
+          "qas": [
+            {
+              "question": "电源管理部分的内容是什么？",
+              "id": "5-2-7",
+              "answers": [
+                {
+                  "text": "简单介绍Linux下的电源管理与类型。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户与群组：简单介绍Linux系统用户与群组的定义。",
+          "qas": [
+            {
+              "question": "用户与群组部分介绍了什么？",
+              "id": "5-2-8",
+              "answers": [
+                {
+                  "text": "简单介绍Linux系统用户与群组的定义。",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户与任务：简单介绍Linux系统的用户与任务的关系。",
+          "qas": [
+            {
+              "question": "用户与任务部分包含什么内容？",
+              "id": "5-2-9",
+              "answers": [
+                {
+                  "text": "简单介绍Linux系统的用户与任务的关系。",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件与目录：简单介绍Linux系统文件的定义和常见管理。",
+          "qas": [
+            {
+              "question": "文件与目录部分讲了什么？",
+              "id": "5-2-10",
+              "answers": [
+                {
+                  "text": "简单介绍Linux系统文件的定义和常见管理。",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件与目录权限：简单介绍Linux系统的文件权限管理。",
+          "qas": [
+            {
+              "question": "文件与目录权限部分的内容是什么？",
+              "id": "5-2-11",
+              "answers": [
+                {
+                  "text": "简单介绍Linux系统的文件权限管理。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件系统：常见的本地/网络文件系统介绍。",
+          "qas": [
+            {
+              "question": "文件系统部分介绍了什么？",
+              "id": "5-2-12",
+              "answers": [
+                {
+                  "text": "常见的本地/网络文件系统介绍。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "挂载：Linux挂载点定义与管理。",
+          "qas": [
+            {
+              "question": "挂载部分的内容是什么？",
+              "id": "5-2-13",
+              "answers": [
+                {
+                  "text": "Linux挂载点定义与管理。",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "磁盘管理：简单介绍磁盘分割、删除和格式化等各种管理。",
+          "qas": [
+            {
+              "question": "磁盘管理部分讲了什么？",
+              "id": "5-2-14",
+              "answers": [
+                {
+                  "text": "简单介绍磁盘分割、删除和格式化等各种管理。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "程序与进程：简单介绍程序与进程的概念与关系。",
+          "qas": [
+            {
+              "question": "程序与进程部分介绍了什么？",
+              "id": "5-2-15",
+              "answers": [
+                {
+                  "text": "简单介绍程序与进程的概念与关系。",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进程管理：Linux系统下的进程管理。",
+          "qas": [
+            {
+              "question": "进程管理部分的内容是什么？",
+              "id": "5-2-16",
+              "answers": [
+                {
+                  "text": "Linux系统下的进程管理。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件通用配置：简单介绍Linux下的通用软件配置文件。",
+          "qas": [
+            {
+              "question": "软件通用配置部分讲了什么？",
+              "id": "5-2-17",
+              "answers": [
+                {
+                  "text": "简单介绍Linux下的通用软件配置文件。",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "自启动程序：Linux下自启动程序的设置。",
+          "qas": [
+            {
+              "question": "自启动程序部分介绍了什么？",
+              "id": "5-2-18",
+              "answers": [
+                {
+                  "text": "Linux下自启动程序的设置。",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Desktop Entry 文件：Linux下通用的Desktop文件配置详解。",
+          "qas": [
+            {
+              "question": "Desktop Entry 文件部分的内容是什么？",
+              "id": "5-2-19",
+              "answers": [
+                {
+                  "text": "Linux下通用的Desktop文件配置详解。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件源：简单介绍Linux系统软件源的定义和修改。",
+          "qas": [
+            {
+              "question": "软件源部分讲了什么？",
+              "id": "5-2-20",
+              "answers": [
+                {
+                  "text": "简单介绍Linux系统软件源的定义和修改。",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "源代码包：简单的介绍源代码包的编译安装与卸载。",
+          "qas": [
+            {
+              "question": "源代码包部分介绍了什么？",
+              "id": "5-2-21",
+              "answers": [
+                {
+                  "text": "简单的介绍源代码包的编译安装与卸载。",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "二进制包：简单介绍Linux下各种二进制包的安装与卸载。",
+          "qas": [
+            {
+              "question": "二进制包部分的内容是什么？",
+              "id": "5-2-22",
+              "answers": [
+                {
+                  "text": "简单介绍Linux下各种二进制包的安装与卸载。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包：Linux系统软件包系统的简单介绍。",
+          "qas": [
+            {
+              "question": "软件包部分讲了什么？",
+              "id": "5-2-23",
+              "answers": [
+                {
+                  "text": "Linux系统软件包系统的简单介绍。",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包管理：dpkg包管理工具的使用与常见问题处理。",
+          "qas": [
+            {
+              "question": "软件包管理部分介绍了什么？",
+              "id": "5-2-24",
+              "answers": [
+                {
+                  "text": "dpkg包管理工具的使用与常见问题处理。",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统服务：简单介绍Linux系统默认的系统服务和管理。",
+          "qas": [
+            {
+              "question": "系统服务部分的内容是什么？",
+              "id": "5-2-25",
+              "answers": [
+                {
+                  "text": "简单介绍Linux系统默认的系统服务和管理。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统服务配置：简单介绍Linux下的系统内置服务的配置。",
+          "qas": [
+            {
+              "question": "系统服务配置部分讲了什么？",
+              "id": "5-2-26",
+              "answers": [
+                {
+                  "text": "简单介绍Linux下的系统内置服务的配置。",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Samba服务：简单介绍Linux下Samba服务与配置。",
+          "qas": [
+            {
+              "question": "Samba服务部分介绍了什么？",
+              "id": "5-2-27",
+              "answers": [
+                {
+                  "text": "简单介绍Linux下Samba服务与配置。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SSH服务：简单介绍Linux下SSH(安全壳协议)服务与配置。",
+          "qas": [
+            {
+              "question": "SSH服务部分的内容是什么？",
+              "id": "5-2-28",
+              "answers": [
+                {
+                  "text": "简单介绍Linux下SSH(安全壳协议)服务与配置。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "FTP服务：简单介绍Linux下FTP(文件传输协议)服务与配置。",
+          "qas": [
+            {
+              "question": "FTP服务部分讲了什么？",
+              "id": "5-2-29",
+              "answers": [
+                {
+                  "text": "简单介绍Linux下FTP(文件传输协议)服务与配置。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DHCP服务：简单介绍Linux下DHCP(动态主机设置协议)服务与配置。",
+          "qas": [
+            {
+              "question": "DHCP服务部分介绍了什么？",
+              "id": "5-2-30",
+              "answers": [
+                {
+                  "text": "简单介绍Linux下DHCP(动态主机设置协议)服务与配置。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DNS服务：简单介绍Linux下DNS(域名系统)服务与配置。",
+          "qas": [
+            {
+              "question": "DNS服务部分的内容是什么？",
+              "id": "5-2-31",
+              "answers": [
+                {
+                  "text": "简单介绍Linux下DNS(域名系统)服务与配置。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "VPN服务：简单介绍Linux下VPN(虚拟专用网)服务与配置。",
+          "qas": [
+            {
+              "question": "VPN服务部分讲了什么？",
+              "id": "5-2-32",
+              "answers": [
+                {
+                  "text": "简单介绍Linux下VPN(虚拟专用网)服务与配置。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "LAMP服务：Linux WEB服务器组合套装(Linux+Apache+MySQL+PHP)。",
+          "qas": [
+            {
+              "question": "LAMP服务指的是什么？",
+              "id": "5-2-33",
+              "answers": [
+                {
+                  "text": "Linux WEB服务器组合套装(Linux+Apache+MySQL+PHP)。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "登录管理器：简单介绍Linux系统下登录管理器介绍与常见设置。",
+          "qas": [
+            {
+              "question": "登录管理器部分介绍了什么？",
+              "id": "5-2-34",
+              "answers": [
+                {
+                  "text": "简单介绍Linux系统下登录管理器介绍与常见设置。",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Shell：简单介绍Shell的分类——命令Shell和图形Shell。",
+          "qas": [
+            {
+              "question": "Shell部分讲了什么分类？",
+              "id": "5-2-35",
+              "answers": [
+                {
+                  "text": "命令Shell和图形Shell。",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "图形服务器：简单介绍Linux下常见的图形服务器。",
+          "qas": [
+            {
+              "question": "图形服务器部分的内容是什么？",
+              "id": "5-2-36",
+              "answers": [
+                {
+                  "text": "简单介绍Linux下常见的图形服务器。",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "桌面环境：简单介绍桌面环境的构成和类型。",
+          "qas": [
+            {
+              "question": "桌面环境部分介绍了什么？",
+              "id": "5-2-37",
+              "answers": [
+                {
+                  "text": "简单介绍桌面环境的构成和类型。",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "窗口管理器：简单介绍窗口管理器的构成和类型。",
+          "qas": [
+            {
+              "question": "窗口管理器部分讲了什么？",
+              "id": "5-2-38",
+              "answers": [
+                {
+                  "text": "简单介绍窗口管理器的构成和类型。",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令shell：简单介绍命令Shell。",
+          "qas": [
+            {
+              "question": "命令shell部分的内容是什么？",
+              "id": "5-2-39",
+              "answers": [
+                {
+                  "text": "简单介绍命令Shell。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "窗口主题：简单介绍如何安装与设置窗口主题。",
+          "qas": [
+            {
+              "question": "窗口主题部分介绍了什么？",
+              "id": "5-2-40",
+              "answers": [
+                {
+                  "text": "简单介绍如何安装与设置窗口主题。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "图标主题：简单介绍如何安装与设置图标主题。",
+          "qas": [
+            {
+              "question": "图标主题部分讲了什么？",
+              "id": "5-2-41",
+              "answers": [
+                {
+                  "text": "简单介绍如何安装与设置图标主题。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "光标主题：简单介绍如何安装与设置光标主题。",
+          "qas": [
+            {
+              "question": "光标主题部分的内容是什么？",
+              "id": "5-2-42",
+              "answers": [
+                {
+                  "text": "简单介绍如何安装与设置光标主题。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "音效主题：简单介绍如何设置开机音乐。",
+          "qas": [
+            {
+              "question": "音效主题部分介绍了什么？",
+              "id": "5-2-43",
+              "answers": [
+                {
+                  "text": "简单介绍如何设置开机音乐。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "壁纸：简单介绍如何设置壁纸。",
+          "qas": [
+            {
+              "question": "壁纸部分讲了什么？",
+              "id": "5-2-44",
+              "answers": [
+                {
+                  "text": "简单介绍如何设置壁纸。",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "字体：简单介绍如何管理字体。参考 Arch wiki。",
+          "qas": [
+            {
+              "question": "字体部分的内容是什么？",
+              "id": "5-2-45",
+              "answers": [
+                {
+                  "text": "简单介绍如何管理字体。参考 Arch wiki。",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统语言：调整系统语言，以适应不同语言需求。参考 Arch wiki:Locale。",
+          "qas": [
+            {
+              "question": "系统语言部分介绍了什么？",
+              "id": "5-2-46",
+              "answers": [
+                {
+                  "text": "调整系统语言，以适应不同语言需求。参考 Arch wiki:Locale。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "时间和时区：系统时间和时区的设置。",
+          "qas": [
+            {
+              "question": "时间和时区部分讲了什么？",
+              "id": "5-2-47",
+              "answers": [
+                {
+                  "text": "系统时间和时区的设置。",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "网络基础：网络基础知识介绍。",
+          "qas": [
+            {
+              "question": "网络基础部分的内容是什么？",
+              "id": "5-2-48",
+              "answers": [
+                {
+                  "text": "网络基础知识介绍。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "网络管理：常见的网络相关管理。",
+          "qas": [
+            {
+              "question": "网络管理部分介绍了什么？",
+              "id": "5-2-49",
+              "answers": [
+                {
+                  "text": "常见的网络相关管理。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "有线网络：有线网络的设置与管理。",
+          "qas": [
+            {
+              "question": "有线网络部分讲了什么？",
+              "id": "5-2-50",
+              "answers": [
+                {
+                  "text": "有线网络的设置与管理。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "拨号网络：拨号网络的设置与管理。",
+          "qas": [
+            {
+              "question": "拨号网络部分的内容是什么？",
+              "id": "5-2-51",
+              "answers": [
+                {
+                  "text": "拨号网络的设置与管理。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "移动网络：移动网络的设置与管理。",
+          "qas": [
+            {
+              "question": "移动网络部分介绍了什么？",
+              "id": "5-2-52",
+              "answers": [
+                {
+                  "text": "移动网络的设置与管理。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "VPN：VPN的设置与管理。",
+          "qas": [
+            {
+              "question": "VPN部分讲了什么？",
+              "id": "5-2-53",
+              "answers": [
+                {
+                  "text": "VPN的设置与管理。",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "代理：代理的设置与管理。",
+          "qas": [
+            {
+              "question": "代理部分的内容是什么？",
+              "id": "5-2-54",
+              "answers": [
+                {
+                  "text": "代理的设置与管理。",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "认证客户端：常见的认证客户端解决方案。",
+          "qas": [
+            {
+              "question": "认证客户端部分介绍了什么？",
+              "id": "5-2-55",
+              "answers": [
+                {
+                  "text": "常见的认证客户端解决方案。",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统日志：系统日志的介绍与管理。",
+          "qas": [
+            {
+              "question": "系统日志部分讲了什么？",
+              "id": "5-2-56",
+              "answers": [
+                {
+                  "text": "系统日志的介绍与管理。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统死机：系统死机的处理。",
+          "qas": [
+            {
+              "question": "系统死机部分的内容是什么？",
+              "id": "5-2-57",
+              "answers": [
+                {
+                  "text": "系统死机的处理。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "基础硬件：计算机基础硬件的组成介绍。",
+          "qas": [
+            {
+              "question": "基础硬件部分介绍了什么？",
+              "id": "5-2-58",
+              "answers": [
+                {
+                  "text": "计算机基础硬件的组成介绍。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "处理器：处理器的介绍与信息查询。",
+          "qas": [
+            {
+              "question": "处理器部分讲了什么？",
+              "id": "5-2-59",
+              "answers": [
+                {
+                  "text": "处理器的介绍与信息查询。",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "硬盘：硬盘的介绍与管理。",
+          "qas": [
+            {
+              "question": "硬盘部分的内容是什么？",
+              "id": "5-2-60",
+              "answers": [
+                {
+                  "text": "硬盘的介绍与管理。",
+                  "answer_start": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "内存：内存的介绍与信息查询。",
+          "qas": [
+            {
+              "question": "内存部分介绍了什么？",
+              "id": "5-2-61",
+              "answers": [
+                {
+                  "text": "内存的介绍与信息查询。",
+                  "answer_start": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "主板：主板的介绍与信息查询。",
+          "qas": [
+            {
+              "question": "主板部分讲了什么？",
+              "id": "5-2-62",
+              "answers": [
+                {
+                  "text": "主板的介绍与信息查询。",
+                  "answer_start": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "显卡：显卡的介绍与驱动管理。",
+          "qas": [
+            {
+              "question": "显卡部分的内容是什么？",
+              "id": "5-2-63",
+              "answers": [
+                {
+                  "text": "显卡的介绍与驱动管理。",
+                  "answer_start": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "声卡：声卡的介绍与常见问题的解决。",
+          "qas": [
+            {
+              "question": "声卡部分介绍了什么？",
+              "id": "5-2-64",
+              "answers": [
+                {
+                  "text": "声卡的介绍与常见问题的解决。",
+                  "answer_start": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "网卡：有线/无线网卡的介绍与常见问题的解决。",
+          "qas": [
+            {
+              "question": "网卡部分讲了什么？",
+              "id": "5-2-65",
+              "answers": [
+                {
+                  "text": "有线/无线网卡的介绍与常见问题的解决。",
+                  "answer_start": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "显示器：显示器的介绍与多屏管理。",
+          "qas": [
+            {
+              "question": "显示器部分的内容是什么？",
+              "id": "5-2-66",
+              "answers": [
+                {
+                  "text": "显示器的介绍与多屏管理。",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "触摸板：触摸板的介绍与控制。",
+          "qas": [
+            {
+              "question": "触摸板部分介绍了什么？",
+              "id": "5-2-67",
+              "answers": [
+                {
+                  "text": "触摸板的介绍与控制。",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "电池/电源：电源的介绍。",
+          "qas": [
+            {
+              "question": "电池/电源部分讲了什么？",
+              "id": "5-2-68",
+              "answers": [
+                {
+                  "text": "电源的介绍。",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "蓝牙：蓝牙的介绍与管理。",
+          "qas": [
+            {
+              "question": "蓝牙部分的内容是什么？",
+              "id": "5-2-69",
+              "answers": [
+                {
+                  "text": "蓝牙的介绍与管理。",
+                  "answer_start": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "光驱：光驱的介绍与信息查询。",
+          "qas": [
+            {
+              "question": "光驱部分介绍了什么？",
+              "id": "5-2-70",
+              "answers": [
+                {
+                  "text": "光驱的介绍与信息查询。",
+                  "answer_start": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "USB设备：Linux下USB设备的介绍与通用管理。",
+          "qas": [
+            {
+              "question": "USB设备部分讲了什么？",
+              "id": "5-2-71",
+              "answers": [
+                {
+                  "text": "Linux下USB设备的介绍与通用管理。",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "鼠标：鼠标的介绍与调节。",
+          "qas": [
+            {
+              "question": "鼠标部分的内容是什么？",
+              "id": "5-2-72",
+              "answers": [
+                {
+                  "text": "鼠标的介绍与调节。",
+                  "answer_start": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "小红帽：小红帽的介绍与调节。",
+          "qas": [
+            {
+              "question": "小红帽部分介绍了什么？",
+              "id": "5-2-73",
+              "answers": [
+                {
+                  "text": "小红帽的介绍与调节。",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "键盘：键盘的介绍与调节。",
+          "qas": [
+            {
+              "question": "键盘部分讲了什么？",
+              "id": "5-2-74",
+              "answers": [
+                {
+                  "text": "键盘的介绍与调节。",
+                  "answer_start": 2
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打印机：打印机的介绍与配置。",
+          "qas": [
+            {
+              "question": "打印机部分的内容是什么？",
+              "id": "5-2-75",
+              "answers": [
+                {
+                  "text": "打印机的介绍与配置。",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "U盘：U盘的介绍与管理。",
+          "qas": [
+            {
+              "question": "U盘部分介绍了什么？",
+              "id": "5-2-76",
+              "answers": [
+                {
+                  "text": "U盘的介绍与管理。",
+                  "answer_start": 2
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "主板内的蜂鸣器",
+      "paragraphs": [
+        {
+          "context": "蜂鸣器是主板上基本的硬件提示设备，从嵌入式到大型机，都会具备。都有直接的控制接口。在终端中，可以使用命令 xset -b off 或 xset -b on 来关闭或打开蜂鸣器。更多设置可以查看 man xset 帮助或参考 IBM 的 xset命令文档。",
+          "qas": [
+            {
+              "id": "2-9-1",
+              "question": "什么是主板上的蜂鸣器？",
+              "answers": [
+                {
+                  "text": "主板上基本的硬件提示设备",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "2-9-2",
+              "question": "蜂鸣器在哪些类型的计算设备上常见？",
+              "answers": [
+                {
+                  "text": "从嵌入式到大型机",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "2-9-3",
+              "question": "蜂鸣器是否有直接的控制接口？",
+              "answers": [
+                {
+                  "text": "都有直接的控制接口",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "2-9-4",
+              "question": "在终端中如何关闭蜂鸣器？",
+              "answers": [
+                {
+                  "text": "xset -b off",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "id": "2-9-5",
+              "question": "在终端中如何打开蜂鸣器？",
+              "answers": [
+                {
+                  "text": "xset -b on",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "id": "2-9-6",
+              "question": "如何获取更多关于蜂鸣器设置的信息？",
+              "answers": [
+                {
+                  "text": "查看 man xset 帮助或参考 IBM 的 xset命令文档",
+                  "answer_start": 97
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

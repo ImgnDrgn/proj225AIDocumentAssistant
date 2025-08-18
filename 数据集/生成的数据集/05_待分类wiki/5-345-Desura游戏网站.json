@@ -1,0 +1,95 @@
+{
+  "title": "Desura游戏网站",
+  "paragraphs": [
+    {
+      "context": "Desura是一个正版游戏网站，游戏玩家只要登录，即可实现在任何PC上的即时游戏下载和购买。除此之外，Desura还提供游戏玩家社区和开发者社区的交流平台，为游戏开发者提供新闻分享、论坛及图片视频分享服务等。",
+      "qas": [
+        {
+          "id": "5-345-1",
+          "question": "Desura是什么类型的网站？",
+          "answers": [
+            {
+              "text": "正版游戏网站",
+              "answer_start": 6
+            }
+          ]
+        },
+        {
+          "id": "5-345-2",
+          "question": "游戏玩家登录Desura后可以实现什么操作？",
+          "answers": [
+            {
+              "text": "在任何PC上的即时游戏下载和购买",
+              "answer_start": 31
+            }
+          ]
+        },
+        {
+          "id": "5-345-3",
+          "question": "Desura提供了哪些社区的交流平台？",
+          "answers": [
+            {
+              "text": "游戏玩家社区和开发者社区",
+              "answer_start": 54
+            }
+          ]
+        },
+        {
+          "id": "5-345-4",
+          "question": "Desura为游戏开发者提供哪些服务？",
+          "answers": [
+            {
+              "text": "新闻分享、论坛及图片视频分享服务等",
+              "answer_start": 83
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "安装Desura的命令是：sudo apt-get install desura",
+      "qas": [
+        {
+          "id": "5-345-5",
+          "question": "安装Desura的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt-get install desura",
+              "answer_start": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "卸载Desura的命令是：sudo apt-get remove desura",
+      "qas": [
+        {
+          "id": "5-345-6",
+          "question": "卸载Desura的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt-get remove desura",
+              "answer_start": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Desura的仓库地址是：http://packages.deepin.com/deepin/pool/non-free/d/desura/",
+      "qas": [
+        {
+          "id": "5-345-7",
+          "question": "Desura的仓库地址是什么？",
+          "answers": [
+            {
+              "text": "http://packages.deepin.com/deepin/pool/non-free/d/desura/",
+              "answer_start": 15
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "title": "BOINC",
+  "paragraphs": [
+    {
+      "context": "简介\n\nBOINC是一款用来贡献计算资源的应用。你可以通过BOINC应用贡献你计算机的闲置时间，来帮助如疾病治疗、全球变暖、发现脉冲星等多种类型的科学研究项目，研究人员可以方便地获得分布在世界各地的志愿者的计算资源。\n\n安装\n\n`sudo apt-get install boinc`\n\n卸载\n\n`sudo apt-get remove boinc`\n\n仓库地址\n\n`http://packages.deepin.com/deepin/pool/main/b/boinc/`",
+      "qas": [
+        {
+          "id": "5-366-1",
+          "question": "BOINC是什么应用？",
+          "answers": [
+            {
+              "text": "BOINC是一款用来贡献计算资源的应用",
+              "answer_start": 4
+            }
+          ]
+        },
+        {
+          "id": "5-366-2",
+          "question": "通过BOINC应用可以贡献计算机的什么时间？",
+          "answers": [
+            {
+              "text": "闲置时间",
+              "answer_start": 43
+            }
+          ]
+        },
+        {
+          "id": "5-366-3",
+          "question": "BOINC能帮助哪些类型的项目？",
+          "answers": [
+            {
+              "text": "如疾病治疗、全球变暖、发现脉冲星等多种类型的科学研究项目",
+              "answer_start": 51
+            }
+          ]
+        },
+        {
+          "id": "5-366-4",
+          "question": "研究人员通过BOINC可获得什么？",
+          "answers": [
+            {
+              "text": "分布在世界各地的志愿者的计算资源",
+              "answer_start": 91
+            }
+          ]
+        },
+        {
+          "id": "5-366-5",
+          "question": "如何安装BOINC？",
+          "answers": [
+            {
+              "text": "`sudo apt-get install boinc`",
+              "answer_start": 146
+            }
+          ]
+        },
+        {
+          "id": "5-366-6",
+          "question": "卸载BOINC的命令是什么？",
+          "answers": [
+            {
+              "text": "`sudo apt-get remove boinc`",
+              "answer_start": 180
+            }
+          ]
+        },
+        {
+          "id": "5-366-7",
+          "question": "BOINC的仓库地址在哪里？",
+          "answers": [
+            {
+              "text": "`http://packages.deepin.com/deepin/pool/main/b/boinc/`",
+              "answer_start": 214
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

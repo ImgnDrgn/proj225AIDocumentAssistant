@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "HexChat-已合并",
+      "paragraphs": [
+        {
+          "context": "HexChat是基于XChat的一款聊天工具，支持多种网络连接模式，可以自动连接、自动加入频道和自动生成ID，支持拼写检查和DCC文件传输等。",
+          "qas": [
+            {
+              "question": "HexChat是基于什么的聊天工具？",
+              "id": "5-112-1",
+              "answers": [
+                {
+                  "text": "XChat",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "HexChat是什么？",
+              "id": "5-112-2",
+              "answers": [
+                {
+                  "text": "HexChat是基于XChat的一款聊天工具",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "HexChat支持哪些网络功能？",
+              "id": "5-112-3",
+              "answers": [
+                {
+                  "text": "支持多种网络连接模式，可以自动连接、自动加入频道和自动生成ID",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "HexChat支持哪些附加功能？",
+              "id": "5-112-4",
+              "answers": [
+                {
+                  "text": "拼写检查和DCC文件传输等",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install hexchat",
+          "qas": [
+            {
+              "question": "安装HexChat的命令是什么？",
+              "id": "5-112-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install hexchat",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove hexchat",
+          "qas": [
+            {
+              "question": "卸载HexChat的命令是什么？",
+              "id": "5-112-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove hexchat",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/h/hexchat/",
+          "qas": [
+            {
+              "question": "HexChat的仓库地址是什么？",
+              "id": "5-112-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/h/hexchat/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

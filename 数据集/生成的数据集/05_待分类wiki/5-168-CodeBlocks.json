@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "Code::Blocks",
+      "paragraphs": [
+        {
+          "qas": [
+            {
+              "id": "5-168-1",
+              "question": "Code::Blocks是什么类型的IDE？",
+              "answers": [
+                {
+                  "text": "开源、免费、跨平台的C++ IDE",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "5-168-2",
+              "question": "Code::Blocks具有什么特殊功能？",
+              "answers": [
+                {
+                  "text": "可扩展插件向导功能，让你很方便的创建自己的插件",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "5-168-3",
+              "question": "Code::Blocks是用什么编写的？",
+              "answers": [
+                {
+                  "text": "C++（用wxWidgets库）",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "id": "5-168-4",
+              "question": "安装Code::Blocks的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install codeblocks",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "id": "5-168-5",
+              "question": "卸载Code::Blocks的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove codeblocks",
+                  "answer_start": 145
+                }
+              ]
+            },
+            {
+              "id": "5-168-6",
+              "question": "Code::Blocks的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/c/codeblocks/",
+                  "answer_start": 184
+                }
+              ]
+            }
+          ],
+          "context": "Code::Blocks是一个开源、免费、跨平台的C++ IDE，具有可扩展插件向导功能，让你很方便的创建自己的插件。Code::Blocks是用C++编写的（用wxWidgets库），捆绑了MinGW编译器。安装命令：sudo apt-get install codeblocks。卸载命令：sudo apt-get remove codeblocks。仓库地址：http://packages.deepin.com/deepin/pool/main/c/codeblocks/"
+        }
+      ]
+    }
+  ]
+}

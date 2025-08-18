@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "Wine 运行器小白使用方式",
+      "paragraphs": [
+        {
+          "context": "下面是送给小白的 wine 运行器简单使用方法，先声明，wine 并不能完美的运行所有 exe 文件，利用此 wine 运行器简易安装可执行文件的方法如下：1. 安装本程序2. 在应用商店里随便安装一个 QQ 或者微信等基于 deepin-wine6-stable 打包的应用   ![image.png](https://storage.deepin.org/thread/202207061542433333_image.png)3. 找到需要安装的 exe，双击或者右键=》打开方式=》wine 运行器打开   ![image.png](https://storage.deepin.org/thread/202207061543443740_image.png)4. 点击“运行程序”即可   ![image.png](https://storage.deepin.org/thread/202207191920282406_image.png)",
+          "qas": [
+            {
+              "id": "3-41-1",
+              "question": "wine 运行器指南的目标用户是谁？",
+              "answers": [
+                {
+                  "text": "小白",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "3-41-2",
+              "question": "Wine 能完美运行所有 exe 文件吗？",
+              "answers": [
+                {
+                  "text": "不能完美的运行所有 exe 文件",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "id": "3-41-3",
+              "question": "使用 Wine 运行器简易安装可执行文件的第一步是什么？",
+              "answers": [
+                {
+                  "text": "安装本程序",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "3-41-4",
+              "question": "使用 Wine 运行器时，第二步需要在应用商店安装什么类型的应用？",
+              "answers": [
+                {
+                  "text": "基于 deepin-wine6-stable 打包的应用（如QQ或者微信等）",
+                  "answer_start": 100
+                }
+              ]
+            },
+            {
+              "id": "3-41-5",
+              "question": "第二步骤对应的图像链接是什么？",
+              "answers": [
+                {
+                  "text": "https://storage.deepin.org/thread/202207061542433333_image.png",
+                  "answer_start": 154
+                }
+              ]
+            },
+            {
+              "id": "3-41-6",
+              "question": "找到需要安装的 exe 后，用 Wine 运行器打开的方式有哪些？",
+              "answers": [
+                {
+                  "text": "双击或者右键=》打开方式=》wine 运行器打开",
+                  "answer_start": 186
+                }
+              ]
+            },
+            {
+              "id": "3-41-7",
+              "question": "第三步骤对应的图像链接是什么？",
+              "answers": [
+                {
+                  "text": "https://storage.deepin.org/thread/202207061543443740_image.png",
+                  "answer_start": 252
+                }
+              ]
+            },
+            {
+              "id": "3-41-8",
+              "question": "使用 Wine 运行器的最后一步是什么？",
+              "answers": [
+                {
+                  "text": "点击“运行程序”即可",
+                  "answer_start": 256
+                }
+              ]
+            },
+            {
+              "id": "3-41-9",
+              "question": "第四步骤对应的图像链接是什么？",
+              "answers": [
+                {
+                  "text": "https://storage.deepin.org/thread/202207191920282406_image.png",
+                  "answer_start": 306
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

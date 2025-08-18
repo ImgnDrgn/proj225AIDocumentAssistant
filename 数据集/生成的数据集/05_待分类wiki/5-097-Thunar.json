@@ -1,0 +1,269 @@
+{
+  "data": [
+    {
+      "title": "Thunar",
+      "paragraphs": [
+        {
+          "context": "Thunar is a modern file manager for the Xfce Desktop Environment. Thunar has been designed from the ground up to be fast and easy to use. Its user interface is clean and intuitive and does not include any confusing or useless options by default. Thunar starts up quickly and navigating through files and folders is fast and responsive.",
+          "qas": [
+            {
+              "question": "What is Thunar?",
+              "id": "5-97-1",
+              "answers": [
+                {
+                  "text": "a modern file manager for the Xfce Desktop Environment",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "What are the design features of Thunar?",
+              "id": "5-97-2",
+              "answers": [
+                {
+                  "text": "fast and easy to use, clean and intuitive user interface without confusing or useless options by default, starts up quickly and navigating through files and folders is fast and responsive",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Thunar plugins can be installed as separate, additional packages in order to extend the functionality of Thunar. Most Thunar plugins offer additional options on files in the context menu or via shortcut. The interface which is used by thunar plugins is the thunarx API. Since thunar version 4.17.8 it is possibly to define a list of plugin directories via the environment variable THUNARX_DIRS (separated by colon)",
+          "qas": [
+            {
+              "question": "How can Thunar's functionality be extended?",
+              "id": "5-97-3",
+              "answers": [
+                {
+                  "text": "by installing Thunar plugins as separate, additional packages",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "What interface do Thunar plugins use?",
+              "id": "5-97-4",
+              "answers": [
+                {
+                  "text": "the thunarx API",
+                  "answer_start": 149
+                }
+              ]
+            },
+            {
+              "question": "Since which Thunar version can plugin directories be defined via THUNARX_DIRS?",
+              "id": "5-97-5",
+              "answers": [
+                {
+                  "text": "4.17.8",
+                  "answer_start": 185
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Bulk Renamer – rename multiple files at once; Custom Actions – custom commands associated with common mime-types or extensions; Archive Plugin (thunar-archive-plugin) – allows to create and extract archive files; Media Tags Plugin (thunar-media-tags-plugin) – improved support for ID3 tags; Shares Plugin (thunar-shares-plugin) – Quickly share folders using Samba without requiring root access; Volume Manager (thunar-volman) – Automatic management of removable devices in Thunar; VCS Plugin (thunar-vcs-plugin) – adds Subversion and GIT actions to the context menu; Unofficial plugins: thunar-gtkhash – desktop utility for computing message digests or checksums; rabbitvcs-thunar – svn/git version control",
+          "qas": [
+            {
+              "question": "What does the Bulk Renamer plugin do?",
+              "id": "5-97-6",
+              "answers": [
+                {
+                  "text": "rename multiple files at once",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "What is the function of the Archive Plugin (thunar-archive-plugin)?",
+              "id": "5-97-7",
+              "answers": [
+                {
+                  "text": "allows to create and extract archive files",
+                  "answer_start": 105
+                }
+              ]
+            },
+            {
+              "question": "What does thunar-gtkhash do?",
+              "id": "5-97-8",
+              "answers": [
+                {
+                  "text": "desktop utility for computing message digests or checksums",
+                  "answer_start": 464
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Thunar currently supports four different levels of debugging support, which can be setup using the configure flag –enable-debug (check the output of configure –help). The levels are: full (for debugging to locate a bug, slow build, recommended for developers), yes (adds checks, slower, for developing extensions), minimum (default for release builds, recommended), no (disables all sanity checks, use carefully)",
+          "qas": [
+            {
+              "question": "How many levels of debugging support does Thunar have?",
+              "id": "5-97-9",
+              "answers": [
+                {
+                  "text": "four",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "Which configure flag is used to setup debugging support in Thunar?",
+              "id": "5-97-10",
+              "answers": [
+                {
+                  "text": "–enable-debug",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "question": "What is the default debugging level for release builds of Thunar?",
+              "id": "5-97-11",
+              "answers": [
+                {
+                  "text": "minimum",
+                  "answer_start": 230
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Thunar supports the following standards/specifications: XDG Base Directory Specification, Shared MIME Database Specification, X Direct Save (XDS) Protocol for the X Window System, Icon Theme Specification, Thumbnail Managing Standard, File URI Specification, Desktop Trash Can Specification",
+          "qas": [
+            {
+              "question": "What standards does Thunar support?",
+              "id": "5-97-12",
+              "answers": [
+                {
+                  "text": "XDG Base Directory Specification, Shared MIME Database Specification, X Direct Save (XDS) Protocol for the X Window System, Icon Theme Specification, Thumbnail Managing Standard, File URI Specification, Desktop Trash Can Specification",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Thunar depends on the following packages: perl, GTK+, GLib, exo, libxfce4util, libxfce4ui, xfconf, intltool. It can optionally be built with: D-Bus (strongly suggested, for inter process communication), xfce-panel (required for trash panel applet), gudev (required for thunar-volman), libnotify (required for mount notification support)",
+          "qas": [
+            {
+              "question": "What are the required packages for Thunar?",
+              "id": "5-97-13",
+              "answers": [
+                {
+                  "text": "perl, GTK+, GLib, exo, libxfce4util, libxfce4ui, xfconf, intltool",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "Which optional package is strongly suggested for Thunar and why?",
+              "id": "5-97-14",
+              "answers": [
+                {
+                  "text": "D-Bus, required for inter process communication",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Latest Release: thunar 4.20.4 released (2025/07/18 17:39). Source Code Repository: https://gitlab.xfce.org/xfce/thunar. Reporting Bugs: List of currently open bugs and instructions on how to submit new bug reports",
+          "qas": [
+            {
+              "question": "What is the latest release version of Thunar and when was it released?",
+              "id": "5-97-15",
+              "answers": [
+                {
+                  "text": "thunar 4.20.4 released (2025/07/18 17:39)",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "What is the source code repository of Thunar?",
+              "id": "5-97-16",
+              "answers": [
+                {
+                  "text": "https://gitlab.xfce.org/xfce/thunar",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "question": "Where can one find instructions on submitting new bug reports for Thunar?",
+              "id": "5-97-17",
+              "answers": [
+                {
+                  "text": "Reporting Bugs section which includes instructions on how to submit new bug reports",
+                  "answer_start": 112
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Thunar 是 Xfce桌面默认的文件管理器，用户可以使用它来浏览硬盘、U 盘、SD 卡和其他存储设备，以及创建、移动、删除文件和文件夹。安装Thunar的命令为 sudo apt-get install thunar。卸载命令为 sudo apt-get remove thunar。仓库地址为 http://packages.deepin.com/deepin/pool/main/t/thunar/，官方网站为 https://docs.xfce.org/xfce/thunar/start。",
+          "qas": [
+            {
+              "question": "Thunar可以用来做什么？",
+              "id": "5-97-18",
+              "answers": [
+                {
+                  "text": "浏览硬盘、U 盘、SD 卡和其他存储设备，以及创建、移动、删除文件和文件夹",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "如何安装Thunar？",
+              "id": "5-97-19",
+              "answers": [
+                {
+                  "text": "sudo apt-get install thunar",
+                  "answer_start": 83
+                }
+              ]
+            },
+            {
+              "question": "如何卸载Thunar？",
+              "id": "5-97-20",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove thunar",
+                  "answer_start": 117
+                }
+              ]
+            },
+            {
+              "question": "Thunar的仓库地址是什么？",
+              "id": "5-97-21",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/t/thunar/",
+                  "answer_start": 150
+                }
+              ]
+            },
+            {
+              "question": "Thunar的官方网站是什么？",
+              "id": "5-97-22",
+              "answers": [
+                {
+                  "text": "https://docs.xfce.org/xfce/thunar/start",
+                  "answer_start": 210
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

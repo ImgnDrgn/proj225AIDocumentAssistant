@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "Vokoscreen",
+      "paragraphs": [
+        {
+          "context": "Vokoscreen是一款有效的强大屏幕录制工具，提供全屏，窗口，自定义区域等多个录制模式。Vokoscreen有一个易用的图形化界面，只要点击鼠标就可以进行录制。同时，Vokoscreen可以同步捕获摄像头，支持 mkv 和 avi等格式。安装Vokoscreen需执行命令：`sudo apt-get install vokoscreen`，卸载则使用命令：`sudo apt-get remove vokoscreen`。软件仓库地址为[http://packages.deepin.com/deepin/pool/main/v/vokoscreen/](http://packages.deepin.com/deepin/pool/main/v/vokoscreen/)。",
+          "qas": [
+            {
+              "question": "Vokoscreen的主要功能是什么？",
+              "id": "1-77-1",
+              "answers": [
+                {
+                  "text": "屏幕录制工具，提供全屏，窗口，自定义区域等多个录制模式",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "Vokoscreen是什么工具？",
+              "id": "1-77-2",
+              "answers": [
+                {
+                  "text": "屏幕录制工具",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "Vokoscreen支持哪些录制模式？",
+              "id": "1-77-3",
+              "answers": [
+                {
+                  "text": "全屏，窗口，自定义区域等多个录制模式",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "Vokoscreen的图形化界面有什么特点？",
+              "id": "1-77-4",
+              "answers": [
+                {
+                  "text": "易用的图形化界面，只要点击鼠标就可以进行录制",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "question": "Vokoscreen能同步捕获什么？",
+              "id": "1-77-5",
+              "answers": [
+                {
+                  "text": "摄像头",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "question": "Vokoscreen支持哪些视频格式？",
+              "id": "1-77-6",
+              "answers": [
+                {
+                  "text": "支持 mkv 和 avi等格式",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "question": "如何安装Vokoscreen？",
+              "id": "1-77-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get install vokoscreen",
+                  "answer_start": 103
+                }
+              ]
+            },
+            {
+              "question": "卸载Vokoscreen的命令是什么？",
+              "id": "1-77-8",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove vokoscreen",
+                  "answer_start": 144
+                }
+              ]
+            },
+            {
+              "question": "Vokoscreen的软件仓库地址在哪里？",
+              "id": "1-77-9",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/v/vokoscreen/",
+                  "answer_start": 181
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

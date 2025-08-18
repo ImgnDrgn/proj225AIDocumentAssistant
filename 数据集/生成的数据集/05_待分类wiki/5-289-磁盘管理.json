@@ -1,0 +1,404 @@
+{
+  "data": [
+    {
+      "title": "磁盘管理",
+      "paragraphs": [
+        {
+          "context": "Linux系统中磁盘管理常见操作：分区、删除、格式化、挂载。",
+          "qas": [
+            {
+              "question": "Linux系统中磁盘管理的常见操作有哪些？",
+              "id": "5-289-1",
+              "answers": [
+                {
+                  "text": "分区、删除、格式化、挂载。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "分区是在空闲磁盘上新建固定容量（可能不固定）区域以存储数据。",
+          "qas": [
+            {
+              "question": "什么是磁盘分区？",
+              "id": "5-289-2",
+              "answers": [
+                {
+                  "text": "在空闲磁盘上新建固定容量（可能不固定）区域以存储数据。",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除指删除现有磁盘分区，亦可理解为删除磁盘上所有分区。",
+          "qas": [
+            {
+              "question": "磁盘管理中的删除操作指什么？",
+              "id": "5-289-3",
+              "answers": [
+                {
+                  "text": "删除现有磁盘分区，亦可理解为删除磁盘上所有分区。",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "格式化是对现有磁盘分区或磁盘进行初始化操作，会清除所有文件。",
+          "qas": [
+            {
+              "question": "格式化操作会导致什么结果？",
+              "id": "5-289-4",
+              "answers": [
+                {
+                  "text": "现有的磁盘分区或磁盘中所有的文件被清除。",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "挂载指将一个设备或者磁盘分区挂接到一个已存在的目录上。",
+          "qas": [
+            {
+              "question": "什么是挂载？",
+              "id": "5-289-5",
+              "answers": [
+                {
+                  "text": "将一个设备或者磁盘分区挂接到一个已存在的目录上。",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度操作系统可使用自带的分区编辑器软件进行图形化磁盘管理。",
+          "qas": [
+            {
+              "question": "深度操作系统中如何进行图形化磁盘管理？",
+              "id": "5-289-6",
+              "answers": [
+                {
+                  "text": "使用自带的分区编辑器软件。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "df命令用于列出磁盘相关信息，如df列出各文件系统磁盘空间使用情况。",
+          "qas": [
+            {
+              "question": "df命令的作用是什么？",
+              "id": "5-289-7",
+              "answers": [
+                {
+                  "text": "列出磁盘相关信息。",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "df命令不加参数时显示什么？",
+              "id": "5-289-8",
+              "answers": [
+                {
+                  "text": "各文件系统的磁盘空间使用情况。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "df -ia列出各文件系统的i节点使用情况，df -T列出文件系统的类型。",
+          "qas": [
+            {
+              "question": "如何查看各文件系统的i节点使用情况？",
+              "id": "5-289-9",
+              "answers": [
+                {
+                  "text": "df -ia",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "df -T的作用是什么？",
+              "id": "5-289-10",
+              "answers": [
+                {
+                  "text": "列出文件系统的类型。",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "du命令评估文件系统的磁盘使用量，du -h --max-depth=1显示当前目录下各文件夹大小。",
+          "qas": [
+            {
+              "question": "du命令的作用是什么？",
+              "id": "5-289-11",
+              "answers": [
+                {
+                  "text": "评估文件系统的磁盘使用量。",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "du -h --max-depth=1的作用是什么？",
+              "id": "5-289-12",
+              "answers": [
+                {
+                  "text": "显示当前目录下的各文件夹大小（并不显示单个文件的大小），最后一行显示的是当前目录的总大小",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "du -h --max-depth=1 work/testing显示该目录下的目录大小，du -h --max-depth=1 work/testing/*显示其下所有文件和目录大小。",
+          "qas": [
+            {
+              "question": "如何显示work/testing下的目录大小？",
+              "id": "5-289-13",
+              "answers": [
+                {
+                  "text": "du -h --max-depth=1 work/testing",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "du -h --max-depth=1 work/testing/*的作用是什么？",
+              "id": "5-289-14",
+              "answers": [
+                {
+                  "text": "显示 work/testing/下面所有文件和目录大小",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "du -ha遍历显示子目录及子文件的大小。",
+          "qas": [
+            {
+              "question": "如何遍历显示子目录及子文件的大小？",
+              "id": "5-289-15",
+              "answers": [
+                {
+                  "text": "du -ha",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fdisk -l查看机器所挂硬盘个数及分区。",
+          "qas": [
+            {
+              "question": "如何查看机器所挂硬盘个数及分区？",
+              "id": "5-289-16",
+              "answers": [
+                {
+                  "text": "fdisk -l",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mkfs用于磁盘格式化，如mkfs -t ext3 /dev/sda6将sda6格式化为ext3格式。",
+          "qas": [
+            {
+              "question": "mkfs命令的作用是什么？",
+              "id": "5-289-17",
+              "answers": [
+                {
+                  "text": "磁盘格式化。",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "如何将sda6分区格式化为ext3格式？",
+              "id": "5-289-18",
+              "answers": [
+                {
+                  "text": "mkfs -t ext3 /dev/sda6",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "mkfs -t ext2 /dev/sda7将sda7分区格式化为ext2格式。",
+          "qas": [
+            {
+              "question": "如何将sda7分区格式化为ext2格式？",
+              "id": "5-289-19",
+              "answers": [
+                {
+                  "text": "mkfs -t ext2 /dev/sda7",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fsck用于检查和维护文件系统，如fsck -t msdos -a /dev/hda5检查msdos档案系统的/dev/hda5并自动修复。",
+          "qas": [
+            {
+              "question": "fsck命令的作用是什么？",
+              "id": "5-289-20",
+              "answers": [
+                {
+                  "text": "检查和维护文件系统。",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "fsck -t msdos -a /dev/hda5的作用是什么？",
+              "id": "5-289-21",
+              "answers": [
+                {
+                  "text": "检查msdos档案系统的 /dev/hda5 是否正常，如果有异常便自动修复",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "badblocks检查磁盘坏道，选项-s在屏幕上列出进度，-v显示进度，-w用写入方式测试（不建议用于有文件的装置）。",
+          "qas": [
+            {
+              "question": "badblocks命令的作用是什么？",
+              "id": "5-289-22",
+              "answers": [
+                {
+                  "text": "检查磁盘坏道。",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "badblocks命令的-s选项有什么作用？",
+              "id": "5-289-23",
+              "answers": [
+                {
+                  "text": "在屏幕上列出进度。",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "使用badblocks的-w选项需要注意什么？",
+              "id": "5-289-24",
+              "answers": [
+                {
+                  "text": "建议不要使用此一参数，尤其是待检查的装置已有文件时！",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sync命令将内存数据写入硬盘。",
+          "qas": [
+            {
+              "question": "sync命令的作用是什么？",
+              "id": "5-289-25",
+              "answers": [
+                {
+                  "text": "将内存数据写入硬盘。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dd用于转换和拷贝文件，如sudo dd if=/home/cxbii/deepin.iso of=/dev/sdb bs=8M conv=fsync将指定iso写入/dev/sdb。",
+          "qas": [
+            {
+              "question": "dd命令的作用是什么？",
+              "id": "5-289-26",
+              "answers": [
+                {
+                  "text": "转换和拷贝文件。",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "如何将/home/cxbii/下的deepin.iso文件写入/dev/sdb？",
+              "id": "5-289-27",
+              "answers": [
+                {
+                  "text": "sudo dd if=/home/cxbii/deepin.iso of=/dev/sdb bs=8M conv=fsync",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "磁盘配额防止用户使用超量空间，分软限制（可超出提示，以硬限制为界）和硬限制（容量边界），可设为on或off。",
+          "qas": [
+            {
+              "question": "磁盘配额的作用是什么？",
+              "id": "5-289-28",
+              "answers": [
+                {
+                  "text": "防止个体用户使用超过允许范围的空间，避免造成整个文件系统的意外拥堵。",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "磁盘配额的软限制是什么？",
+              "id": "5-289-29",
+              "answers": [
+                {
+                  "text": "文件占用磁盘容量可以超出软限制值,系统会提示超出,但以硬限制为边界。",
+                  "answer_start": 49
+                }
+              ]
+            },
+            {
+              "question": "磁盘配额的状态可以设置为什么？",
+              "id": "5-289-30",
+              "answers": [
+                {
+                  "text": "on或off状态。",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

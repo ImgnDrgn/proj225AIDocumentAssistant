@@ -1,0 +1,219 @@
+{
+  "data": [
+    {
+      "title": "wine使用教程安装MicrosoftVisio2013",
+      "paragraphs": [
+        {
+          "context": "之前分享了关于在Deepin/UOS家庭版上安装Microsoft Office 2013的教程。有人说需要Visio，今天楼主开一帖介绍一下。楼主开帖重在介绍利用wine安装运行exe软件的方法，并不在于介绍个别软件。楼主在教程7里面把方法都介绍得十分清楚，学会举一反三，稍微变通一下，我相信每个人都会用同样的方法安装运行exe程序。本帖用的是教程7的容器和wine版本，学习本帖前，请先学习：[wine使用教程7-借用容器和wine版本安装Microsoft Office2013](https://bbs.deepin.org/post/239589)",
+          "qas": [
+            {
+              "question": "wine使用教程安装MicrosoftVisio2013本教程的主要目的是什么？",
+              "id": "3-43-1",
+              "answers": [
+                {
+                  "text": "介绍利用wine安装运行exe软件的方法",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "question": "学习本帖前需要先学习哪个教程？",
+              "id": "3-43-2",
+              "answers": [
+                {
+                  "text": "wine使用教程7-借用容器和wine版本安装Microsoft Office2013",
+                  "answer_start": 195
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "一、下载Microsoft Visio 2013安装镜像并解压。Microsoft Visio 2013安装文件cn_visio_professional_2013_x86_1138439.exe放在下载文件夹（~/Downloads）",
+          "qas": [
+            {
+              "question": "Microsoft Visio 2013安装文件应放在哪个文件夹？",
+              "id": "3-43-3",
+              "answers": [
+                {
+                  "text": "~/Downloads",
+                  "answer_start": 104
+                }
+              ]
+            },
+            {
+              "question": "第一步需要做什么？",
+              "id": "3-43-4",
+              "answers": [
+                {
+                  "text": "下载Microsoft Visio 2013安装镜像并解压",
+                  "answer_start": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "七、安装Microsoft Visio 2013。终端命令：WINEPREFIX=~/.deepinwine/Spark-Office ~/.deepinwine/Lwine7.1-my/bin/wine ~/Downloads/cn_visio_professional_2013_x86_1138439.exe。上述命令结构解析：（1）字段1：WINEPREFIX=是指定的容器路径（2）字段2：~/.deepinwine/Lwine7.1-my/bin/wine是你所调用的wine的路径（3）字段3：最后接你要运行的exe程序的路径。注意：不同字段之间有一个空格（英文输入法）。弹出Visio的安装引导界面后，按提示操作安装即可。",
+          "qas": [
+            {
+              "question": "安装Microsoft Visio 2013的终端命令是什么？",
+              "id": "3-43-5",
+              "answers": [
+                {
+                  "text": "WINEPREFIX=~/.deepinwine/Spark-Office ~/.deepinwine/Lwine7.1-my/bin/wine ~/Downloads/cn_visio_professional_2013_x86_1138439.exe",
+                  "answer_start": 37
+                }
+              ]
+            },
+            {
+              "question": "安装命令中WINEPREFIX=的作用是什么？",
+              "id": "3-43-6",
+              "answers": [
+                {
+                  "text": "指定的容器路径",
+                  "answer_start": 194
+                }
+              ]
+            },
+            {
+              "question": "安装命令中字段2表示什么？",
+              "id": "3-43-7",
+              "answers": [
+                {
+                  "text": "所调用的wine的路径",
+                  "answer_start": 235
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "八、测试运行。终端命令：WINEPREFIX=~/.deepinwine/Spark-Office ~/.deepinwine/Lwine7.1-my/bin/wine \"c:/Program Files (x86)/Microsoft Office/Office15/VISIO.EXE\"。上述命令结构解析：（1）字段1：WINEPREFIX=是指定的容器路径（2）字段2：~/.deepinwine/Lwine7.1-my/bin/wine是你所调用的wine的路径（3）字段3：最后接英文双引号，双引号内是你要运行的exe程序在容器drive_c（即模拟的c盘）中的路径。",
+          "qas": [
+            {
+              "question": "测试运行Visio的终端命令是什么？",
+              "id": "3-43-8",
+              "answers": [
+                {
+                  "text": "WINEPREFIX=~/.deepinwine/Spark-Office ~/.deepinwine/Lwine7.1-my/bin/wine \"c:/Program Files (x86)/Microsoft Office/Office15/VISIO.EXE\"",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "测试运行命令中字段3的内容是什么？",
+              "id": "3-43-9",
+              "answers": [
+                {
+                  "text": "英文双引号，双引号内是你要运行的exe程序在容器drive_c（即模拟的c盘）中的路径",
+                  "answer_start": 217
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "九、制作桌面图标。在桌面新建一个txt文件，命名为MSVISIO.txt，复制以下内容到txt文件里：[Desktop Entry] Categories=Application Exec=sh -c 'WINEPREFIX=/home/$USER/.deepinwine/Spark-Office /home/$USER/.deepinwine/Lwine7.1-my/bin/wine \"c:/Program Files (x86)/Microsoft Office/Office15/VISIO.EXE\"' Icon=MSVISIO MimeType= Name=Visio StartupNotify=true Type=Application X-Deepin-Vendor=user-custom。保存退出txt，右键重命名，把这个txt文件的后缀改为desktop，最终文件名为：MSVISIO.desktop。注：Exec= ————sh -c '字段1：用WINEPREFIX指定容器路径 字段2：wine的路径 \"字段3：exe程序在虚拟C盘里的路径\"' 注意这里有一个单引号和一个双引号（英文输入法）。Icon= ————指图标路径，如果图标在/usr/share/icons/hicolor/scalable/apps文件夹，就不用写完整路径，只需要写图标文件的文件名（不写文件后缀）。楼主把svg图标已经制作好了，你可以直接下载使用[MSVISIO.zip](https://storage.deepin.org/thread/202207051846463421_MSVISIO.zip)。下载解压，然后里面的svg图标复制到/usr/share/icons/hicolor/scalable/apps下。（注意，需要在apps文件夹里右键——以管理员身份打开）Name= ————图标文件显示的名称。特别说明，Exec=后面不能用~来代替/home/$USER。桌面图标如果显示不出来，可以注销系统再重新登录进入系统，图标就显示正常了。",
+          "qas": [
+            {
+              "question": "如何制作Visio的桌面图标？",
+              "id": "3-43-10",
+              "answers": [
+                {
+                  "text": "在桌面新建一个txt文件，命名为MSVISIO.txt，复制指定内容到txt文件里，保存退出txt，右键重命名，把这个txt文件的后缀改为desktop，最终文件名为：MSVISIO.desktop",
+                  "answer_start": 1
+                }
+              ]
+            },
+            {
+              "question": "桌面图标文件的最终名称是什么？",
+              "id": "3-43-11",
+              "answers": [
+                {
+                  "text": "MSVISIO.desktop",
+                  "answer_start": 497
+                }
+              ]
+            },
+            {
+              "question": "Icon=的含义是什么？",
+              "id": "3-43-12",
+              "answers": [
+                {
+                  "text": "指图标路径，如果图标在/usr/share/icons/hicolor/scalable/apps文件夹，就不用写完整路径，只需要写图标文件的文件名（不写文件后缀）",
+                  "answer_start": 576
+                }
+              ]
+            },
+            {
+              "question": "哪里可以下载Visio的svg图标？",
+              "id": "3-43-13",
+              "answers": [
+                {
+                  "text": "[MSVISIO.zip](https://storage.deepin.org/thread/202207051846463421_MSVISIO.zip)",
+                  "answer_start": 715
+                }
+              ]
+            },
+            {
+              "question": "svg图标应复制到哪个文件夹？",
+              "id": "3-43-14",
+              "answers": [
+                {
+                  "text": "/usr/share/icons/hicolor/scalable/apps",
+                  "answer_start": 792
+                }
+              ]
+            },
+            {
+              "question": "Exec=后面不能用什么来代替/home/$USER？",
+              "id": "3-43-15",
+              "answers": [
+                {
+                  "text": "~",
+                  "answer_start": 907
+                }
+              ]
+            },
+            {
+              "question": "桌面图标显示不出来怎么办？",
+              "id": "3-43-16",
+              "answers": [
+                {
+                  "text": "可以注销系统再重新登录进入系统，图标就显示正常了",
+                  "answer_start": 936
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "另外，补充一下。如果安装了这个帖子[Microsoft Office 2013首次打包-限时体验](https://bbs.deepin.org/post/239932)的deb包的话，本帖第二至第六步、第十二步可以省略，但注意要将本帖第七至第九步里面的Lwine7.1-my替换为Lwine-7.1。",
+          "qas": [
+            {
+              "question": "安装了特定deb包后，哪些步骤可以省略？",
+              "id": "3-43-17",
+              "answers": [
+                {
+                  "text": "本帖第二至第六步、第十二步",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "安装了特定deb包后，第七至第九步需要做什么修改？",
+              "id": "3-43-18",
+              "answers": [
+                {
+                  "text": "将本帖第七至第九步里面的Lwine7.1-my替换为Lwine-7.1",
+                  "answer_start": 125
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "title": "w3m",
+  "paragraphs": [
+    {
+      "context": "w3m是一个文本模式的网页浏览器，支持显示网页表格、框架元素，并具有分页功能。安装w3m的命令是 sudo apt-get install w3m，卸载命令是 sudo apt-get remove w3m。安装图像支持插件使用 sudo apt-get install w3m-img，卸载该插件使用 sudo apt-get remove w3m-img。仓库地址为 http://packages.deepin.com/deepin/pool/main/w/w3m/。官方网站为 http://w3m.sourceforge.net。",
+      "qas": [
+        {
+          "id": "1-96-1",
+          "question": "w3m是什么？",
+          "answers": [
+            {
+              "text": "w3m是一个文本模式的网页浏览器，支持显示网页表格、框架元素，并具有分页功能。",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "id": "1-96-2",
+          "question": "w3m属于什么模式的网页浏览器？",
+          "answers": [
+            {
+              "text": "文本模式",
+              "answer_start": 6
+            }
+          ]
+        },
+        {
+          "id": "1-96-3",
+          "question": "w3m支持显示哪些网页元素？",
+          "answers": [
+            {
+              "text": "网页表格、框架元素",
+              "answer_start": 21
+            }
+          ]
+        },
+        {
+          "id": "1-96-4",
+          "question": "w3m具有什么功能？",
+          "answers": [
+            {
+              "text": "分页功能",
+              "answer_start": 34
+            }
+          ]
+        },
+        {
+          "id": "1-96-5",
+          "question": "如何安装w3m？",
+          "answers": [
+            {
+              "text": "sudo apt-get install w3m",
+              "answer_start": 49
+            }
+          ]
+        },
+        {
+          "id": "1-96-6",
+          "question": "如何卸载w3m？",
+          "answers": [
+            {
+              "text": "sudo apt-get remove w3m",
+              "answer_start": 80
+            }
+          ]
+        },
+        {
+          "id": "1-96-7",
+          "question": "如何安装w3m的图像支持插件？",
+          "answers": [
+            {
+              "text": "sudo apt-get install w3m-img",
+              "answer_start": 115
+            }
+          ]
+        },
+        {
+          "id": "1-96-8",
+          "question": "如何卸载w3m的图像支持插件？",
+          "answers": [
+            {
+              "text": "sudo apt-get remove w3m-img",
+              "answer_start": 152
+            }
+          ]
+        },
+        {
+          "id": "1-96-9",
+          "question": "w3m的仓库地址是什么？",
+          "answers": [
+            {
+              "text": "http://packages.deepin.com/deepin/pool/main/w/w3m/",
+              "answer_start": 186
+            }
+          ]
+        },
+        {
+          "id": "1-96-10",
+          "question": "w3m的官方网站是什么？",
+          "answers": [
+            {
+              "text": "http://w3m.sourceforge.net",
+              "answer_start": 209
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

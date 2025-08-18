@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "Okteta",
+      "paragraphs": [
+        {
+          "context": "Okteta是一款十六进制编辑器，打开文件后数值和字符分别通过两列显示内容。可以在数值和字符列进行编辑和操作。安装命令为sudo apt-get install okteta，卸载命令为sudo apt-get remove okteta，其仓库地址为http://packages.deepin.com/deepin/pool/main/o/okteta/。",
+          "qas": [
+            {
+              "question": "Okteta是什么？",
+              "id": "1-78-1",
+              "answers": [
+                {
+                  "text": "一款十六进制编辑器",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "Okteta打开文件后，数值和字符如何显示内容？",
+              "id": "1-78-2",
+              "answers": [
+                {
+                  "text": "分别通过两列显示内容",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "在Okteta中，可以对哪些列进行编辑和操作？",
+              "id": "1-78-3",
+              "answers": [
+                {
+                  "text": "数值和字符列",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "安装Okteta的命令是什么？",
+              "id": "1-78-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install okteta",
+                  "answer_start": 60
+                }
+              ]
+            },
+            {
+              "question": "卸载Okteta的命令是什么？",
+              "id": "1-78-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove okteta",
+                  "answer_start": 93
+                }
+              ]
+            },
+            {
+              "question": "Okteta的仓库地址是什么？",
+              "id": "1-78-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/o/okteta/",
+                  "answer_start": 126
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

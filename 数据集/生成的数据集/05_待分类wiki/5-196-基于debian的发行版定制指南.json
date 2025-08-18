@@ -1,0 +1,279 @@
+{
+  "data": [
+    {
+      "title": "基于debian的发行版定制指南",
+      "paragraphs": [
+        {
+          "context": "基于debian的发行版定制必备技能包括：熟悉常见开发工具、deb格式包的制作、仓库的管理和维护、ISO版本的制作流程、CI自动编译系统。",
+          "qas": [
+            {
+              "question": "基于debian的发行版定制需要哪些必备技能？",
+              "id": "5-196-1",
+              "answers": [
+                {
+                  "text": "熟悉常见开发工具、deb格式包的制作、仓库的管理和维护、ISO版本的制作流程、CI自动编译系统。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "debian发行版定制常用维护工具包括git、dpkg-dev、dh-make、devscripts、quilt、dput、reprepro、debootstrap、debian-installer、debian-cd、isobuilder。",
+          "qas": [
+            {
+              "question": "debian发行版定制常用的维护工具有哪些？",
+              "id": "5-196-2",
+              "answers": [
+                {
+                  "text": "git、dpkg-dev、dh-make、devscripts、quilt、dput、reprepro、debootstrap、debian-installer、debian-cd、isobuilder。",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改来自上游仓库的软件包步骤：apt-get source zip；apt-get build-dep zip -y；cd zip-3.0；...；dpkg-buildpackage -a。",
+          "qas": [
+            {
+              "question": "如何修改来自上游仓库的软件包？",
+              "id": "5-196-3",
+              "answers": [
+                {
+                  "text": "apt-get source zip；apt-get build-dep zip -y；cd zip-3.0；...；dpkg-buildpackage -a。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "获取上游源码包制作新的deb包步骤：wget http://ftp.gnu.org/pub/gnu/ed/ed-1.9.tar.gz；tar -xvpf ed-1.9.tar.gz；cd ed-1.9；dh_make -s -y -e panhaitao@deepin.com -f ../ed-1.9.tar.gz；apt install autotools-dev -y；dpkg-buildpackage -a。",
+          "qas": [
+            {
+              "question": "如何获取上游源码包制作新的deb包？",
+              "id": "5-196-4",
+              "answers": [
+                {
+                  "text": "wget http://ftp.gnu.org/pub/gnu/ed/ed-1.9.tar.gz；tar -xvpf ed-1.9.tar.gz；cd ed-1.9；dh_make -s -y -e panhaitao@deepin.com -f ../ed-1.9.tar.gz；apt install autotools-dev -y；dpkg-buildpackage -a。",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库推送流程为：开发版本仓库 -> 内网正式仓库 -> 公网正式仓库(CDN加速)。",
+          "qas": [
+            {
+              "question": "仓库推送流程是怎样的？",
+              "id": "5-196-5",
+              "answers": [
+                {
+                  "text": "开发版本仓库 -> 内网正式仓库 -> 公网正式仓库(CDN加速)。",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "日常仓库管理操作：ssh deepin-repo@10.1.10.21；cd /data/deepin-server/repo/deepin-repo-tools；./reprepro.sh include <codename> pkg_name.changes；./reprepro.sh remove  <codename> pkg_name。",
+          "qas": [
+            {
+              "question": "日常仓库管理有哪些操作命令？",
+              "id": "5-196-6",
+              "answers": [
+                {
+                  "text": "ssh deepin-repo@10.1.10.21；cd /data/deepin-server/repo/deepin-repo-tools；./reprepro.sh include <codename> pkg_name.changes；./reprepro.sh remove  <codename> pkg_name。",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "同步上游安全更新步骤：ssh deepin-repo@10.1.10.21；cd /data/deepin-server/repo/deepin-repo-tools；./reprepro.sh -V update kui-security。",
+          "qas": [
+            {
+              "question": "如何同步上游安全更新？",
+              "id": "5-196-7",
+              "answers": [
+                {
+                  "text": "ssh deepin-repo@10.1.10.21；cd /data/deepin-server/repo/deepin-repo-tools；./reprepro.sh -V update kui-security。",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建仓库快照命令：ssh root@10.1.10.21；cd /data/deepin-server/repo；TIMESTAMP=$(date +%Y%m%dT%H%M%S)；btrfs sub snapshot ./dev/ ./snapshots/$TIMESTAMP；cd ./snapshots/；ln -snf $TIMESTAMP latest；ln -snf $TIMESTAMP lates。",
+          "qas": [
+            {
+              "question": "如何创建仓库快照？",
+              "id": "5-196-8",
+              "answers": [
+                {
+                  "text": "ssh root@10.1.10.21；cd /data/deepin-server/repo；TIMESTAMP=$(date +%Y%m%dT%H%M%S)；btrfs sub snapshot ./dev/ ./snapshots/$TIMESTAMP；cd ./snapshots/；ln -snf $TIMESTAMP latest；ln -snf $TIMESTAMP lates。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "构建debian-installer需先安装编译依赖包 apt-get build-dep debian-installer -y，再克隆仓库编译等。",
+          "qas": [
+            {
+              "question": "构建debian-installer首先要做什么？",
+              "id": "5-196-9",
+              "answers": [
+                {
+                  "text": "安装编译依赖包 apt-get build-dep debian-installer -y",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "isobuilder使用前需安装编译依赖包 apt-get build-dep debian-cd -y 和运行依赖包 apt-get install isobuilder -y。",
+          "qas": [
+            {
+              "question": "使用isobuilder前需要安装哪些依赖包？",
+              "id": "5-196-10",
+              "answers": [
+                {
+                  "text": "编译依赖包 apt-get build-dep debian-cd -y 和运行依赖包 apt-get install isobuilder -y。",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "isobuilder制作ISO的命令：isobuilder --download_pkg；isobuilder --create_repo；isobuilder --create_iso。",
+          "qas": [
+            {
+              "question": "isobuilder制作ISO需要执行哪些命令？",
+              "id": "5-196-11",
+              "answers": [
+                {
+                  "text": "isobuilder --download_pkg；isobuilder --create_repo；isobuilder --create_iso。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "内部开发仓库地址：deb http://10.1.10.21/server-dev kui main non-free contrib；deb http://10.1.10.21/server-dev kui-security main non-free contrib。",
+          "qas": [
+            {
+              "question": "内部开发仓库的地址是什么？",
+              "id": "5-196-12",
+              "answers": [
+                {
+                  "text": "deb http://10.1.10.21/server-dev kui main non-free contrib；deb http://10.1.10.21/server-dev kui-security main non-free contrib。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "公网仓库地址：deb http://packages.deepin.com/deepin-server/ kui main non-free contrib；deb http://packages.deepin.com/deepin-server/ kui-security main non-free contrib。",
+          "qas": [
+            {
+              "question": "公网仓库的地址是什么？",
+              "id": "5-196-13",
+              "answers": [
+                {
+                  "text": "deb http://packages.deepin.com/deepin-server/ kui main non-free contrib；deb http://packages.deepin.com/deepin-server/ kui-security main non-free contrib。",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "公网ISO下载地址：http://dl.sndu.cn/。",
+          "qas": [
+            {
+              "question": "公网ISO的下载地址是什么？",
+              "id": "5-196-14",
+              "answers": [
+                {
+                  "text": "http://dl.sndu.cn/",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "内部参考文档包括debian-installer详解、deepin-cd详解、deb打包详解、自动编译系统详解。",
+          "qas": [
+            {
+              "question": "内部参考文档有哪些？",
+              "id": "5-196-15",
+              "answers": [
+                {
+                  "text": "debian-installer详解、deepin-cd详解、deb打包详解、自动编译系统详解。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "上游参考文档包括Debian新维护人员手册、Debian开发者参考文档、Debian政策文档、Debian PKG。",
+          "qas": [
+            {
+              "question": "上游参考文档有哪些？",
+              "id": "5-196-16",
+              "answers": [
+                {
+                  "text": "Debian新维护人员手册、Debian开发者参考文档、Debian政策文档、Debian PKG。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安全更新相关网址：https://www.debian.org/security/；https://www.debian.org/security/crossreferences。",
+          "qas": [
+            {
+              "question": "安全更新的相关网址是什么？",
+              "id": "5-196-17",
+              "answers": [
+                {
+                  "text": "https://www.debian.org/security/；https://www.debian.org/security/crossreferences。",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安全更新相关邮件列表：debian-security-announce@lists.debian.org；debian-security-announce-request@lists.debian.org。",
+          "qas": [
+            {
+              "question": "安全更新的相关邮件列表有哪些？",
+              "id": "5-196-18",
+              "answers": [
+                {
+                  "text": "debian-security-announce@lists.debian.org；debian-security-announce-request@lists.debian.org。",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

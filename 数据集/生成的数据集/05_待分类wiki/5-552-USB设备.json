@@ -1,0 +1,129 @@
+{
+  "data": [
+    {
+      "title": "USB设备",
+      "paragraphs": [
+        {
+          "context": "USB设备指与USB接口连接的设备，此页面介绍鼠标、键盘、打印机以外的USB设备。",
+          "qas": [
+            {
+              "question": "此页面介绍的USB设备不包括哪些？",
+              "id": "5-552-1",
+              "answers": [
+                {
+                  "text": "鼠标、键盘、打印机",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "图形查看USB设备：通知区-存储设备即可查看。",
+          "qas": [
+            {
+              "question": "如何通过图形方式查看USB设备？",
+              "id": "5-552-2",
+              "answers": [
+                {
+                  "text": "通知区-存储设备即可查看",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令查看USB设备：终端执行lsusb可查看系统当前USB设备。",
+          "qas": [
+            {
+              "question": "在终端中用什么命令可以查看系统当前USB设备？",
+              "id": "5-552-3",
+              "answers": [
+                {
+                  "text": "lsusb",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsusb命令的参数-D：不扫描/proc/bus/usb，而以指定的设备路径取代。",
+          "qas": [
+            {
+              "question": "lsusb命令的-D参数有什么作用？",
+              "id": "5-552-4",
+              "answers": [
+                {
+                  "text": "不扫描/proc/bus/usb，而以指定的设备路径取代",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsusb命令的参数-p：使用其他USB设备在内核的路径，默认为/proc/bus/usb。",
+          "qas": [
+            {
+              "question": "lsusb命令的-p参数的默认路径是什么？",
+              "id": "5-552-5",
+              "answers": [
+                {
+                  "text": "/proc/bus/usb",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsusb命令的参数-t：将USB设备以树状架构输出。",
+          "qas": [
+            {
+              "question": "lsusb命令的-t参数有什么功能？",
+              "id": "5-552-6",
+              "answers": [
+                {
+                  "text": "将USB设备以树状架构输出",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsusb命令的参数-v：列出较详细的运行过程。",
+          "qas": [
+            {
+              "question": "lsusb命令的-v参数能列出什么样的信息？",
+              "id": "5-552-7",
+              "answers": [
+                {
+                  "text": "较详细的运行过程",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lsusb命令的参数-vv：列出完整的运行过程。",
+          "qas": [
+            {
+              "question": "lsusb命令的-vv参数的作用是什么？",
+              "id": "5-552-8",
+              "answers": [
+                {
+                  "text": "列出完整的运行过程",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

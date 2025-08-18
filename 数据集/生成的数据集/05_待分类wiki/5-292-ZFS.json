@@ -1,0 +1,464 @@
+{
+  "data": [
+    {
+      "title": "ZFS",
+      "paragraphs": [
+        {
+          "context": "ZFS是一款128bit文件系统，总容量是现有64bit文件系统的1.84x10^19倍，支持单个存储卷容量达16EiB，一个zpool可拥有2^64个卷，总容量最大256ZiB，系统可拥有2^64个存储池，具有自优化、自动校验数据完整性等优点，较ext3速率提高约30%-40%。",
+          "qas": [
+            {
+              "question": "ZFS是多少位的文件系统？",
+              "id": "5-292-1",
+              "answers": [
+                {
+                  "text": "128bit",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "ZFS较ext3系统运行速率提高约多少？",
+              "id": "5-292-2",
+              "answers": [
+                {
+                  "text": "30%-40%",
+                  "answer_start": 167
+                }
+              ]
+            },
+            {
+              "question": "ZFS支持的单个存储卷容量达到多少？",
+              "id": "5-292-3",
+              "answers": [
+                {
+                  "text": "16EiB",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ZFS基于存储池，与传统文件系统不同，存储池中的所有文件系统可使用存储池资源。",
+          "qas": [
+            {
+              "question": "ZFS与传统文件系统的主要区别是什么？",
+              "id": "5-292-4",
+              "answers": [
+                {
+                  "text": "ZFS基于存储池，存储池中的所有文件系统可使用存储池资源，而传统文件系统典型映射物理存储设备。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ZFS基于的CDDL协议与Linux内核的GPL授权不相容，故一直未在Linux推广，后因OpenZFS、ZFS on Linux等项目发展，已可在Linux上正常使用。",
+          "qas": [
+            {
+              "question": "ZFS最初未在Linux推广的原因是什么？",
+              "id": "5-292-5",
+              "answers": [
+                {
+                  "text": "ZFS基于的CDDL协议与Linux内核的GPL授权不相容。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "哪些项目的发展使ZFS能在Linux上正常使用？",
+              "id": "5-292-6",
+              "answers": [
+                {
+                  "text": "OpenZFS、ZFS on Linux等项目。",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "制作LiveCD时，需修改启动U盘根目录下boot\\grub文件夹中的grub.cfg，将第十四行的livecd-installer改为livecd；再修改根目录syslinux文件夹下的live.cfg，同样将livecd-installer改为livecd。",
+          "qas": [
+            {
+              "question": "制作LiveCD时，如何修改grub.cfg文件？",
+              "id": "5-292-7",
+              "answers": [
+                {
+                  "text": "定位到启动U盘根目录下boot\\grub文件夹，打开grub.cfg，将第十四行的livecd-installer改为livecd。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "制作LiveCD时，live.cfg文件需要做什么修改？",
+              "id": "5-292-8",
+              "answers": [
+                {
+                  "text": "将其中的livecd-installer改为livecd。",
+                  "answer_start": 139
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "为livecd环境配置zfs，需先通过sudo -i成为Root用户，再添加debian jessie-backports源，更新并安装zfs-dkms、gdisk，安装后运行modprobe zfs防止模块未加载。",
+          "qas": [
+            {
+              "question": "在livecd环境中如何成为Root用户？",
+              "id": "5-292-9",
+              "answers": [
+                {
+                  "text": "打开终端，输入sudo -i。",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "安装zfs相关包后，为防止模块未加载需运行什么命令？",
+              "id": "5-292-10",
+              "answers": [
+                {
+                  "text": "modprobe zfs",
+                  "answer_start": 126
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看硬盘id可使用ls -la /dev/disk/by-id指令，查看硬盘分区uuid可使用ls -la /dev/disk/by-partuuid指令。",
+          "qas": [
+            {
+              "question": "如何按照硬盘id列举硬盘？",
+              "id": "5-292-11",
+              "answers": [
+                {
+                  "text": "使用ls -la /dev/disk/by-id指令。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "修改fstab时，用什么指令查看硬盘分区uuid？",
+              "id": "5-292-12",
+              "answers": [
+                {
+                  "text": "ls -la /dev/disk/by-partuuid",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若之前用mdadm创建了阵列，需用mdadm --zero-superblock --force /dev/disk/by-id/scsi-SATA_disk1清除superblock。",
+          "qas": [
+            {
+              "question": "如何清除用mdadm创建的阵列的superblock？",
+              "id": "5-292-13",
+              "answers": [
+                {
+                  "text": "使用mdadm --zero-superblock --force /dev/disk/by-id/scsi-SATA_disk1指令。",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "BIOS用户用gdisk分区的指令：sgdisk -a1 -n2:34:2047  -t2:EF02 /dev/disk/by-id/scsi-SATA_disk1；sgdisk     -n9:-8M:0    -t9:BF07 /dev/disk/by-id/scsi-SATA_disk1；sgdisk     -n1:0:0      -t1:BF01 /dev/disk/by-id/scsi-SATA_disk1。",
+          "qas": [
+            {
+              "question": "BIOS用户使用gdisk进行分区的指令有哪些？",
+              "id": "5-292-14",
+              "answers": [
+                {
+                  "text": "sgdisk -a1 -n2:34:2047  -t2:EF02 /dev/disk/by-id/scsi-SATA_disk1；sgdisk     -n9:-8M:0    -t9:BF07 /dev/disk/by-id/scsi-SATA_disk1；sgdisk     -n1:0:0      -t1:BF01 /dev/disk/by-id/scsi-SATA_disk1。",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI用户用gdisk分区的指令：sgdisk     -n3:1M:+512M -t3:EF00 /dev/disk/by-id/scsi-SATA_disk1；sgdisk     -n9:-8M:0    -t9:BF07 /dev/disk/by-id/scsi-SATA_disk1；sgdisk     -n1:0:0      -t1:BF01 /dev/disk/by-id/scsi-SATA_disk1。",
+          "qas": [
+            {
+              "question": "UEFI用户使用gdisk进行分区的指令是什么？",
+              "id": "5-292-15",
+              "answers": [
+                {
+                  "text": "sgdisk     -n3:1M:+512M -t3:EF00 /dev/disk/by-id/scsi-SATA_disk1；sgdisk     -n9:-8M:0    -t9:BF07 /dev/disk/by-id/scsi-SATA_disk1；sgdisk     -n1:0:0      -t1:BF01 /dev/disk/by-id/scsi-SATA_disk1。",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建zpool的指令：zpool create -o ashift=12 -O atime=off -O canmount=off -O compression=lz4 -O normalization=formD -O mountpoint=/ -R /mnt rpool /dev/disk/by-id/scsi-SATA_disk1-part1。",
+          "qas": [
+            {
+              "question": "创建zpool的推荐指令是什么？",
+              "id": "5-292-16",
+              "answers": [
+                {
+                  "text": "zpool create -o ashift=12 -O atime=off -O canmount=off -O compression=lz4 -O normalization=formD -O mountpoint=/ -R /mnt rpool /dev/disk/by-id/scsi-SATA_disk1-part1。",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "需创建的dataset包括：zfs create -o mountpoint=none rpool/ROOT；zfs create -o mountpoint=/ rpool/ROOT/deepin；zfs create -o mountpoint=/home rpool/HOME；zfs create -o mountpoint=none rpool/DEEPIN；zfs create -o mountpoint=/usr/src rpool/DEEPIN/src；zfs create -o mountpoint=/srv rpool/DEEPIN/srv。",
+          "qas": [
+            {
+              "question": "如何创建挂载点为/的dataset？",
+              "id": "5-292-17",
+              "answers": [
+                {
+                  "text": "zfs create -o mountpoint=/ rpool/ROOT/deepin",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "挂载点为/home的dataset如何创建？",
+              "id": "5-292-18",
+              "answers": [
+                {
+                  "text": "zfs create -o mountpoint=/home rpool/HOME",
+                  "answer_start": 107
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置分区属性的指令：zpool set bootfs=rpool/ROOT/deepin rpool。",
+          "qas": [
+            {
+              "question": "如何设置zpool的bootfs属性？",
+              "id": "5-292-19",
+              "answers": [
+                {
+                  "text": "使用zpool set bootfs=rpool/ROOT/deepin rpool指令。",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建swap分区：zfs create -o sync=always -o primarycache=metadata -o secondarycache=none -V [VOL] rpool/swap；mkswap -f /dev/zvol/rpool/swap。",
+          "qas": [
+            {
+              "question": "创建swap分区的步骤是什么？",
+              "id": "5-292-20",
+              "answers": [
+                {
+                  "text": "zfs create -o sync=always -o primarycache=metadata -o secondarycache=none -V [VOL] rpool/swap；mkswap -f /dev/zvol/rpool/swap。",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装系统时需解压squashfs文件：unsquashfs -f -d /mnt /lib/live/mount/medium/live/filesystem.squashfs；unsquashfs -f -d /mnt /lib/live/mount/medium/overlay/overlay-language-pack-zh-hans.squashfs；unsquashfs -f -d /mnt /lib/live/mount/medium/overlay/overlay-chinese-special-framework.squashfs。",
+          "qas": [
+            {
+              "question": "安装系统时，解压filesystem.squashfs的指令是什么？",
+              "id": "5-292-21",
+              "answers": [
+                {
+                  "text": "unsquashfs -f -d /mnt /lib/live/mount/medium/live/filesystem.squashfs",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "chroot进入安装目录前需执行：cd /mnt；mount --rbind /dev dev；mount --rbind /dev/pts dev/pts；mount --rbind /proc proc；mount --rbind /sys sys；cp /etc/resolv.conf /mnt/etc/；chroot /mnt /bin/bash。",
+          "qas": [
+            {
+              "question": "chroot进入安装目录前，如何挂载dev目录？",
+              "id": "5-292-22",
+              "answers": [
+                {
+                  "text": "mount --rbind /dev dev",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "chroot进入安装目录的指令是什么？",
+              "id": "5-292-23",
+              "answers": [
+                {
+                  "text": "chroot /mnt /bin/bash",
+                  "answer_start": 179
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在新系统中安装ZFS后，需修改/usr/share/initramfs-tools/conf.d/zfs，添加针对root=ZFS=*的判断代码。",
+          "qas": [
+            {
+              "question": "在新系统中安装ZFS后，需要修改哪个文件？",
+              "id": "5-292-24",
+              "answers": [
+                {
+                  "text": "/usr/share/initramfs-tools/conf.d/zfs",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Legacy GRUB安装：apt install --yes grub-pc；格式化引导分区为ext4，在fstab添加相关内容；mount /dev/sda2 /mnt/boot。",
+          "qas": [
+            {
+              "question": "安装Legacy GRUB的指令是什么？",
+              "id": "5-292-25",
+              "answers": [
+                {
+                  "text": "apt install --yes grub-pc",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI GRUB安装：apt install dosfstools；mkdosfs -F 32 -n EFI /dev/disk/by-id/scsi-SATA_disk1-part3；mkdir /boot/efi；修改fstab；mount /boot/efi；apt install --yes grub-efi-amd64；apt install --yes -t testing grub-efi-amd64。",
+          "qas": [
+            {
+              "question": "UEFI GRUB安装时，如何格式化512M分区？",
+              "id": "5-292-26",
+              "answers": [
+                {
+                  "text": "mkdosfs -F 32 -n EFI /dev/disk/by-id/scsi-SATA_disk1-part3",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "swap分区信息加入fstab的内容：/dev/zvol/rpool/swap none swap sw 0 0。",
+          "qas": [
+            {
+              "question": "如何在fstab中添加swap分区信息？",
+              "id": "5-292-27",
+              "answers": [
+                {
+                  "text": "/dev/zvol/rpool/swap none swap sw 0 0",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加新用户的指令：useradd -s /bin/bash -m -G users,cdrom,disk,audio,video,games,plugdev,bluetooth,netdev USERNAME。",
+          "qas": [
+            {
+              "question": "如何添加新用户并指定所属组？",
+              "id": "5-292-28",
+              "answers": [
+                {
+                  "text": "useradd -s /bin/bash -m -G users,cdrom,disk,audio,video,games,plugdev,bluetooth,netdev USERNAME",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置root和用户密码用passwd root和passwd USERNAME指令。",
+          "qas": [
+            {
+              "question": "如何设置root密码？",
+              "id": "5-292-29",
+              "answers": [
+                {
+                  "text": "passwd root",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "将用户加入sudoer列表需通过visudo，在root ALL=(ALL:ALL) ALL下添加USERNAME ALL=(ALL:ALL) ALL。",
+          "qas": [
+            {
+              "question": "如何将用户加入sudoer列表？",
+              "id": "5-292-30",
+              "answers": [
+                {
+                  "text": "通过visudo命令，在root ALL=(ALL:ALL) ALL下面添加USERNAME ALL=(ALL:ALL) ALL。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Legacy GRUB安装到硬盘的指令：grub-install /dev/sda。",
+          "qas": [
+            {
+              "question": "Legacy GRUB如何安装到硬盘？",
+              "id": "5-292-31",
+              "answers": [
+                {
+                  "text": "grub-install /dev/sda",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI GRUB安装指令：grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=debian --recheck --no-floppy。",
+          "qas": [
+            {
+              "question": "UEFI GRUB的安装指令是什么？",
+              "id": "5-292-32",
+              "answers": [
+                {
+                  "text": "grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=debian --recheck --no-floppy",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解除挂载并重启的步骤：mount | grep -v zfs | tac | awk '/\\/mnt/ {print $3}' | xargs -i{} umount -lf {}；zpool export rpool；reboot。",
+          "qas": [
+            {
+              "question": "解除挂载后，导出zpool的指令是什么？",
+              "id": "5-292-33",
+              "answers": [
+                {
+                  "text": "zpool export rpool",
+                  "answer_start": 94
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "Anjuta",
+      "paragraphs": [
+        {
+          "context": "Anjuta是一个C、C++的集成开发环境。它具有很好的编程属性，其中包括项目管理、应用开发、交互调试以及强大的代码编辑和语法高亮显示等功能。安装命令为sudo apt-get install anjuta，卸载命令为sudo apt-get remove anjuta，其仓库地址为http://packages.deepin.com/deepin/pool/main/a/anjuta/",
+          "qas": [
+            {
+              "id": "5-167-1",
+              "question": "Anjuta是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "Anjuta是一个C、C++的集成开发环境。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-167-2",
+              "question": "Anjuta具有哪些编程属性？",
+              "answers": [
+                {
+                  "text": "项目管理、应用开发、交互调试以及强大的代码编辑和语法高亮显示等功能。",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "5-167-3",
+              "question": "如何安装Anjuta？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install anjuta",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "id": "5-167-4",
+              "question": "卸载Anjuta的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove anjuta",
+                  "answer_start": 104
+                }
+              ]
+            },
+            {
+              "id": "5-167-5",
+              "question": "Anjuta的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/a/anjuta/",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

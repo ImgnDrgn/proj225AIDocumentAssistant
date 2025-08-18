@@ -1,0 +1,364 @@
+{
+  "data": [
+    {
+      "title": "用archinstall自动化脚本安装Arch Linux",
+      "paragraphs": [
+        {
+          "context": "archinstall是一个用于安装 Arch Linux 的帮助库。它和其它的预配置安装程序一起打包。archinstall以纯文本形式存储所有用户和（辅助）磁盘加密的密码。archinstall的默认配置与安装指南不同。如使用 archinstall 安装系统出现问题的话，请在反馈中注明，并提供/var/log/archinstall/install.log。",
+          "qas": [
+            {
+              "id": "3-24-1",
+              "question": "archinstall是什么？",
+              "answers": [
+                {
+                  "text": "一个用于安装 Arch Linux 的帮助库",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "3-24-2",
+              "question": "archinstall与哪些程序一起打包？",
+              "answers": [
+                {
+                  "text": "其它的预配置安装程序",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "id": "3-24-3",
+              "question": "archinstall如何存储密码？",
+              "answers": [
+                {
+                  "text": "以纯文本形式存储所有用户和（辅助）磁盘加密的密码",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "3-24-4",
+              "question": "archinstall的默认配置与什么不同？",
+              "answers": [
+                {
+                  "text": "安装指南",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "id": "3-24-5",
+              "question": "使用archinstall出现问题反馈时需要提供什么？",
+              "answers": [
+                {
+                  "text": "/var/log/archinstall/install.log",
+                  "answer_start": 182
+                }
+              ]
+            },
+            {
+              "id": "3-24-6",
+              "question": "archinstall是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "安装 Arch Linux 的帮助库",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-24-7",
+              "question": "安装出问题需要提供什么日志文件？",
+              "answers": [
+                {
+                  "text": "/var/log/archinstall/install.log",
+                  "answer_start": 146
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "以UEFI方式启动为例运行安装程序时，首先需按照安装指南#安装前的准备中的启动到 Live 环境操作。archinstall 包是 live 镜像的一部分，可以直接运行。",
+          "qas": [
+            {
+              "id": "3-24-8",
+              "question": "以UEFI方式启动运行安装程序前需要做什么？",
+              "answers": [
+                {
+                  "text": "按照安装指南#安装前的准备中的启动到 Live 环境操作",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "3-24-9",
+              "question": "archinstall包在live镜像中是否需要额外安装？",
+              "answers": [
+                {
+                  "text": "不需要，archinstall 包是 live 镜像的一部分，可以直接运行",
+                  "answer_start": 77
+                }
+              ]
+            },
+            {
+              "id": "3-24-10",
+              "question": "安装程序需要以什么方式启动？",
+              "answers": [
+                {
+                  "text": "以UEFI方式启动",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-24-11",
+              "question": "archinstall包位于哪里？",
+              "answers": [
+                {
+                  "text": "live 镜像的一部分",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "指导程序将执行（或查询）以下步骤：配置区域、选择镜像、分区磁盘、格式化分区、设置 root 密码、安装引导加载程序。",
+          "qas": [
+            {
+              "id": "3-24-12",
+              "question": "指导程序会执行或查询哪些步骤？",
+              "answers": [
+                {
+                  "text": "配置区域、选择镜像、分区磁盘、格式化分区、设置 root 密码、安装引导加载程序",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "3-24-13",
+              "question": "archinstall包含哪些主要安装步骤？",
+              "answers": [
+                {
+                  "text": "配置区域、选择镜像、分区磁盘、格式化分区、设置 root 密码、安装引导加载程序",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "磁盘分区及格式化配置时，选择Drive(s)选项后进入，选择/dev/sda磁盘选项；然后选择Disk layout选项后进入，可以直接选择系统建议分区方式；接着选择磁盘格式，配置完成后保存退出。",
+          "qas": [
+            {
+              "id": "3-24-14",
+              "question": "磁盘分区时选择的磁盘是什么？",
+              "answers": [
+                {
+                  "text": "/dev/sda",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "id": "3-24-15",
+              "question": "磁盘分区时如何选择分区方式？",
+              "answers": [
+                {
+                  "text": "选择Disk layout选项后进入，可以直接选择系统建议分区方式",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "id": "3-24-16",
+              "question": "磁盘分区及格式化配置完成后需要做什么？",
+              "answers": [
+                {
+                  "text": "保存退出",
+                  "answer_start": 116
+                }
+              ]
+            },
+            {
+              "id": "3-24-17",
+              "question": "分区时选择的磁盘设备是什么？",
+              "answers": [
+                {
+                  "text": "/dev/sda",
+                  "answer_start": 106
+                }
+              ]
+            },
+            {
+              "id": "3-24-18",
+              "question": "分区布局建议采用什么方式？",
+              "answers": [
+                {
+                  "text": "系统建议分区方式",
+                  "answer_start": 154
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "其他相关参数选项配置中，演示安装的是DDE桌面环境，添加的安装包也是deepin相关。具体包括：1. Mirror region配置为China；2. Root password设置root账户的密码；3. Audio配置为pulseaudio；4. Additional packages配置增加额外的安装包有：grub efibootmgr sudo vim ttf-dejavu deepin deepin-extra lightdm xorg-server deepin-kwin networkmanager；5. Network configuration配置为Use NetworkManager；6. Timezone配置为Asia/Shanghai。",
+          "qas": [
+            {
+              "id": "3-24-19",
+              "question": "演示中安装的是哪种桌面环境？",
+              "answers": [
+                {
+                  "text": "DDE桌面环境",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "3-24-20",
+              "question": "Mirror region配置为哪里？",
+              "answers": [
+                {
+                  "text": "China",
+                  "answer_start": 75
+                }
+              ]
+            },
+            {
+              "id": "3-24-21",
+              "question": "Root password需要设置什么？",
+              "answers": [
+                {
+                  "text": "root账户的密码",
+                  "answer_start": 94
+                }
+              ]
+            },
+            {
+              "id": "3-24-22",
+              "question": "Audio配置为什么？",
+              "answers": [
+                {
+                  "text": "pulseaudio",
+                  "answer_start": 123
+                }
+              ]
+            },
+            {
+              "id": "3-24-23",
+              "question": "Additional packages包含哪些额外安装包？",
+              "answers": [
+                {
+                  "text": "grub efibootmgr sudo vim ttf-dejavu deepin deepin-extra lightdm xorg-server deepin-kwin networkmanager",
+                  "answer_start": 165
+                }
+              ]
+            },
+            {
+              "id": "3-24-24",
+              "question": "Network configuration配置为什么？",
+              "answers": [
+                {
+                  "text": "Use NetworkManager",
+                  "answer_start": 265
+                }
+              ]
+            },
+            {
+              "id": "3-24-25",
+              "question": "Timezone配置为哪里？",
+              "answers": [
+                {
+                  "text": "Asia/Shanghai",
+                  "answer_start": 299
+                }
+              ]
+            },
+            {
+              "id": "3-24-26",
+              "question": "镜像区域设置为什么？",
+              "answers": [
+                {
+                  "text": "China",
+                  "answer_start": 70
+                }
+              ]
+            },
+            {
+              "id": "3-24-27",
+              "question": "音频服务配置为什么？",
+              "answers": [
+                {
+                  "text": "pulseaudio",
+                  "answer_start": 111
+                }
+              ]
+            },
+            {
+              "id": "3-24-28",
+              "question": "添加了哪些deepin相关安装包？",
+              "answers": [
+                {
+                  "text": "deepin deepin-extra lightdm xorg-server deepin-kwin",
+                  "answer_start": 242
+                }
+              ]
+            },
+            {
+              "id": "3-24-29",
+              "question": "时区设置为什么？",
+              "answers": [
+                {
+                  "text": "Asia/Shanghai",
+                  "answer_start": 180
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置完成后开始安装即可。",
+          "qas": [
+            {
+              "id": "3-24-30",
+              "question": "配置完成后下一步做什么？",
+              "answers": [
+                {
+                  "text": "开始安装",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "3-24-31",
+              "question": "所有配置完成后应该执行什么操作？",
+              "answers": [
+                {
+                  "text": "开始安装即可",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置完成后开始安装即可。安装过程包含多个阶段，系统会显示安装进度。",
+          "qas": [
+            {
+              "id": "3-24-32",
+              "question": "所有配置完成后应该执行什么操作？",
+              "answers": [
+                {
+                  "text": "开始安装即可",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

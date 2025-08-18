@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "title": "11代酷睿花屏的解决方案",
+      "paragraphs": [
+        {
+          "context": "小新 Pro-14 2021（Intel平台：IHU版，第十一代智能英特尔酷睿I5-11320H，16GB LPDDR4X 4266MHz，英特尔锐炬 Xe 显卡）安装deepin系统，会产生花屏，运行卡顿，鼠标按键柱偏移等情况。",
+          "qas": [
+            {
+              "question": "哪些设备安装deepin系统会出现花屏等情况？",
+              "id": "4-4-1",
+              "answers": [
+                {
+                  "text": "小新 Pro-14 2021（Intel平台：IHU版，第十一代智能英特尔酷睿I5-11320H，16GB LPDDR4X 4266MHz，英特尔锐炬 Xe 显卡）",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "小新 Pro-14 2021安装deepin系统会出现哪些问题？",
+              "id": "4-4-2",
+              "answers": [
+                {
+                  "text": "花屏，运行卡顿，鼠标按键柱偏移",
+                  "answer_start": 130
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解决11代酷睿在deepin系统花屏问题，需打开终端，输入命令：sudo sed -i 's/GRUB_CMDLINE_LINUX=\"\"/GRUB_CMDLINE_LINUX=\"i915.enable_psr=0\"/' /etc/defalutl/grub 和 sudo update-grub。",
+          "qas": [
+            {
+              "question": "如何解决11代酷睿在deepin系统的花屏问题？",
+              "id": "4-4-3",
+              "answers": [
+                {
+                  "text": "打开终端，输入命令：sudo sed -i 's/GRUB_CMDLINE_LINUX=\"\"/GRUB_CMDLINE_LINUX=\"i915.enable_psr=0\"/' /etc/defalutl/grub 和 sudo update-grub。",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "解决花屏问题需要在终端输入哪些命令？",
+              "id": "4-4-4",
+              "answers": [
+                {
+                  "text": "sudo sed -i 's/GRUB_CMDLINE_LINUX=\"\"/GRUB_CMDLINE_LINUX=\"i915.enable_psr=0\"/' /etc/defalutl/grub 和 sudo update-grub",
+                  "answer_start": 50
+                }
+              ]
+            },
+            {
+              "question": "打开终端可以使用什么方法？",
+              "id": "4-4-5",
+              "answers": [
+                {
+                  "text": "在菜单栏中找到终端或使用快捷键Ctrl + Alt + t",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

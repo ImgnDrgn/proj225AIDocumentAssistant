@@ -1,0 +1,204 @@
+{
+  "data": [
+    {
+      "title": "安装指南",
+      "paragraphs": [
+        {
+          "context": "深度操作系统官方安装指南可参考https://www.deepin.org/zh/installation/",
+          "qas": [
+            {
+              "question": "哪里可以找到深度操作系统的官方安装指南？",
+              "id": "5-499-1",
+              "answers": [
+                {
+                  "text": "https://www.deepin.org/zh/installation/",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度操作系统要求处理器为2.0GHz多核或主频更高的处理器，内存8GB以上，硬盘64GB以上可用空间且推荐固态硬盘，显示器推荐1920*1080或更高分辨率",
+          "qas": [
+            {
+              "question": "深度操作系统对处理器的要求是什么？",
+              "id": "5-499-2",
+              "answers": [
+                {
+                  "text": "2.0GHz多核或主频更高的处理器",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "深度操作系统推荐安装在什么类型的硬盘中？",
+              "id": "5-499-3",
+              "answers": [
+                {
+                  "text": "固态硬盘",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "question": "深度操作系统要求的内存最低是多少？",
+              "id": "5-499-4",
+              "answers": [
+                {
+                  "text": "8GB以上",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "question": "深度操作系统推荐的显示器分辨率是多少？",
+              "id": "5-499-5",
+              "answers": [
+                {
+                  "text": "1920*1080或更高",
+                  "answer_start": 90
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "制作深度操作系统启动盘需要至少8G的U盘或移动硬盘，会丢失U盘上所有内容，需备份",
+          "qas": [
+            {
+              "question": "制作深度操作系统启动盘需要多大容量的U盘？",
+              "id": "5-499-6",
+              "answers": [
+                {
+                  "text": "至少8G",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "制作启动盘前需要对U盘做什么准备？",
+              "id": "5-499-7",
+              "answers": [
+                {
+                  "text": "备份U盘上的所有内容，因为会丢失",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "可从官网https://www.deepin.org/zh/download/或镜像仓库https://www.deepin.org/zh/mirrors/releases/下载深度操作系统安装镜像",
+          "qas": [
+            {
+              "question": "在哪里可以下载深度操作系统的安装镜像？",
+              "id": "5-499-8",
+              "answers": [
+                {
+                  "text": "官网https://www.deepin.org/zh/download/或镜像仓库https://www.deepin.org/zh/mirrors/releases/",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "推荐验证深度操作系统安装镜像的校验码，防止下载损坏或劫持，尤其是HTTP下载源",
+          "qas": [
+            {
+              "question": "为什么要验证深度操作系统安装镜像的校验码？",
+              "id": "5-499-9",
+              "answers": [
+                {
+                  "text": "防止镜像下载损坏或遭到劫持，尤其是HTTP的下载源",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "制作深度操作系统启动盘可用深度启动盘制作工具，也可用Ventoy、rufus、UltraISO等工具",
+          "qas": [
+            {
+              "question": "制作深度操作系统启动盘可以使用哪些工具？",
+              "id": "5-499-10",
+              "answers": [
+                {
+                  "text": "深度启动盘制作工具、Ventoy、rufus、UltraISO等",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启动盘制作失败时，可先格式化U盘增加成功几率",
+          "qas": [
+            {
+              "question": "启动盘制作失败时可以尝试什么方法？",
+              "id": "5-499-11",
+              "answers": [
+                {
+                  "text": "先格式化U盘",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度论坛有深度操作系统下载与安装教程、双系统安装及手动分区方法、linux文件系统对比等经验分享",
+          "qas": [
+            {
+              "question": "深度论坛有哪些关于深度操作系统的经验分享？",
+              "id": "5-499-12",
+              "answers": [
+                {
+                  "text": "深度操作系统下载与安装教程、双系统安装及手动分区方法、linux有关文件系统的对比",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Safe Graphics模式用于显卡不兼容导致无法正常安装的设备，通过禁用部分驱动、用CPU模拟GPU让系统能安装，但体验有问题，正常情况不建议选",
+          "qas": [
+            {
+              "question": "Safe Graphics模式适用于什么情况？",
+              "id": "5-499-13",
+              "answers": [
+                {
+                  "text": "显卡不兼容导致无法正常安装的设备",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "Safe Graphics模式的工作原理是什么？",
+              "id": "5-499-14",
+              "answers": [
+                {
+                  "text": "禁用部分驱动，用CPU来模拟GPU的活",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "question": "正常情况下是否建议选择Safe Graphics模式安装？",
+              "id": "5-499-15",
+              "answers": [
+                {
+                  "text": "不建议",
+                  "answer_start": 99
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

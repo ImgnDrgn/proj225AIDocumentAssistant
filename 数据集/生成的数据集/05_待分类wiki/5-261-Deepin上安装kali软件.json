@@ -1,0 +1,204 @@
+{
+  "data": [
+    {
+      "title": "Deepin上安装kali软件",
+      "paragraphs": [
+        {
+          "context": "katoolin是一个为debian或ubuntu安装kali软件的项目，由LionSec维护更新。",
+          "qas": [
+            {
+              "question": "katoolin是什么？",
+              "id": "5-261-1",
+              "answers": [
+                {
+                  "text": "一个为debian或ubuntu安装kali软件的项目，由LionSec维护更新。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "geange用bash重写了katoolin项目，加入bash的whiptail，界面更美观，项目地址为https://github.com/geange/kaliTools，在deepin linux上进行。",
+          "qas": [
+            {
+              "question": "geange对katoolin项目做了什么改进？",
+              "id": "5-261-2",
+              "answers": [
+                {
+                  "text": "用bash重写，加入bash的whiptail，界面更美观。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "geange重写的项目地址是什么？",
+              "id": "5-261-3",
+              "answers": [
+                {
+                  "text": "https://github.com/geange/kaliTools",
+                  "answer_start": 63
+                }
+              ]
+            },
+            {
+              "question": "geange的项目是在哪个系统上进行的？",
+              "id": "5-261-4",
+              "answers": [
+                {
+                  "text": "deepin linux",
+                  "answer_start": 98
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用geange的kaliTools步骤：git clone git@github.com:geange/kaliTools.git，cd kaliTools/，chmod +x index.sh，sudo ./index.sh。",
+          "qas": [
+            {
+              "question": "如何使用geange的kaliTools？",
+              "id": "5-261-5",
+              "answers": [
+                {
+                  "text": "git clone git@github.com:geange/kaliTools.git，cd kaliTools/，chmod +x index.sh，sudo ./index.sh。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "kaliTools初始界面第一个选项是添加kali的源到本机系统。",
+          "qas": [
+            {
+              "question": "kaliTools初始界面第一个选项的功能是什么？",
+              "id": "5-261-6",
+              "answers": [
+                {
+                  "text": "添加kali的源到本机系统。",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "kaliTools初始界面第二个选项是删除kali的源，建议更新系统时删除以避免依赖冲突。",
+          "qas": [
+            {
+              "question": "kaliTools初始界面第二个选项有什么作用？",
+              "id": "5-261-7",
+              "answers": [
+                {
+                  "text": "删除kali的源。",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "为什么建议更新系统时删除kali的源？",
+              "id": "5-261-8",
+              "answers": [
+                {
+                  "text": "避免出现依赖冲突的问题。",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "kaliTools初始界面第三个选项是批量安装kali分类的软件，进入后可单选或多选，按空格键勾选或取消。",
+          "qas": [
+            {
+              "question": "kaliTools初始界面第三个选项的功能是什么？",
+              "id": "5-261-9",
+              "answers": [
+                {
+                  "text": "批量安装kali分类的软件。",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "在kaliTools第三个选项中如何勾选或取消软件？",
+              "id": "5-261-10",
+              "answers": [
+                {
+                  "text": "按下空格键可以勾选或者取消勾选。",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "kaliTools初始界面第四个选项是按需要安装kali的软件，需要哪个安装哪个。",
+          "qas": [
+            {
+              "question": "kaliTools初始界面第四个选项的作用是什么？",
+              "id": "5-261-11",
+              "answers": [
+                {
+                  "text": "按需要安装kali的软件，需要哪一个就安装哪一个。",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "kaliTools初始界面第五个选项是退出软件，进入第三或第四个选项时按ESC键可退出。",
+          "qas": [
+            {
+              "question": "kaliTools初始界面第五个选项是什么？",
+              "id": "5-261-12",
+              "answers": [
+                {
+                  "text": "退出软件。",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "进入kaliTools的第三或第四个选项后如何退出？",
+              "id": "5-261-13",
+              "answers": [
+                {
+                  "text": "按下ESC键即可。",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若觉得kaliTools不错，可在github点星，有BUG可联系geange，邮箱geange@outlook.com。",
+          "qas": [
+            {
+              "question": "如果觉得kaliTools不错可以做什么？",
+              "id": "5-261-14",
+              "answers": [
+                {
+                  "text": "在github点个星。",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "发现kaliTools的BUG可以联系谁？如何联系？",
+              "id": "5-261-15",
+              "answers": [
+                {
+                  "text": "可以联系geange，邮箱geange@outlook.com。",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

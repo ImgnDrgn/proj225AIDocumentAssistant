@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "KeePassX",
+      "paragraphs": [
+        {
+          "context": "KeePassX是一个密码管理工具，能存储登录网站、电子邮件、FTP传输等密码信息，还有方便的密码生成器。",
+          "qas": [
+            {
+              "question": "KeePassX是什么工具？",
+              "id": "5-133-1",
+              "answers": [
+                {
+                  "text": "密码管理工具",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "KeePassX能存储哪些密码信息？",
+              "id": "5-133-2",
+              "answers": [
+                {
+                  "text": "登录网站、电子邮件、FTP传输等密码信息",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "KeePassX有什么附加功能？",
+              "id": "5-133-3",
+              "answers": [
+                {
+                  "text": "带有方便的密码生成器",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装KeePassX的命令是sudo apt-get install keepassx。",
+          "qas": [
+            {
+              "question": "如何安装KeePassX？",
+              "id": "5-133-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install keepassx",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载KeePassX的命令是sudo apt-get remove keepassx。",
+          "qas": [
+            {
+              "question": "如何卸载KeePassX？",
+              "id": "5-133-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove keepassx",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "KeePassX的仓库地址是http://packages.deepin.com/deepin/pool/main/k/keepassx/。",
+          "qas": [
+            {
+              "question": "KeePassX的仓库地址是什么？",
+              "id": "5-133-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/k/keepassx/",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

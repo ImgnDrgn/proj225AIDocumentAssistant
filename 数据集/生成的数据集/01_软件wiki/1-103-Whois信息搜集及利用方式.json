@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "Whois信息收集及利用方式",
+      "paragraphs": [
+        {
+          "context": "'Whois'是一个用于查询域名或IP地址注册信息的服务，它允许用户了解域名的详细信息，如注册者、注册机构等。使用'Whois'的步骤如下：1.安装'Whois'工具：在命令行中输入'rpm -qa | grep whois'检查是否已安装，未安装可通过'wget'、'yum'或'rpm包'安装，或直接执行'sudo apt install whois'。2.查询域名信息：在命令行中输入'whois 域名'查询，例如查询'baidu.com'可输入'whois baidu.com'；也可通过网页接口，在浏览器中输入'whois+域名'查询。",
+          "qas": [
+            {
+              "id": "1-103-1",
+              "question": "Whois是什么服务？",
+              "answers": [
+                {
+                  "text": "一个用于查询域名或IP地址注册信息的服务，它允许用户了解域名的详细信息，如注册者、注册机构等",
+                  "answer_start": 1
+                }
+              ]
+            },
+            {
+              "id": "1-103-2",
+              "question": "如何检查系统是否已安装Whois工具？",
+              "answers": [
+                {
+                  "text": "在命令行中输入'rpm -qa | grep whois'",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "1-103-3",
+              "question": "若未安装Whois工具，有哪些安装方式？",
+              "answers": [
+                {
+                  "text": "通过'wget'、'yum'或'rpm包'的方式安装，或直接执行'sudo apt install whois'",
+                  "answer_start": 123
+                }
+              ]
+            },
+            {
+              "id": "1-103-4",
+              "question": "在命令行中如何查询特定域名的Whois信息？",
+              "answers": [
+                {
+                  "text": "输入'whois 域名'查询，例如查询'baidu.com'可输入'whois baidu.com'",
+                  "answer_start": 199
+                }
+              ]
+            },
+            {
+              "id": "1-103-5",
+              "question": "如何通过网页接口查询Whois信息？",
+              "answers": [
+                {
+                  "text": "在浏览器中输入'whois+域名'",
+                  "answer_start": 277
+                }
+              ]
+            },
+            {
+              "id": "1-103-6",
+              "question": "查询baidu.com的Whois信息需输入什么命令？",
+              "answers": [
+                {
+                  "text": "可输入'whois baidu.com'",
+                  "answer_start": 238
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

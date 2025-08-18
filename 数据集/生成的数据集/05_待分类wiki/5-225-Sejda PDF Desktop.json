@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "Sejda PDF Desktop",
+      "paragraphs": [
+        {
+          "context": "Sejda PDF Desktop 是一款免费且易于使用的 PDF 编辑软件，拥有合并、拆分、转换、压缩、编辑、加密 PDF 文件等多种功能。安装命令为 wget https://sejda-cdn.com/downloads/sejda-desktop_7.5.3_amd64.deb 然后 sudo apt install ./sejda-desktop_7.5.3_amd64.deb。卸载命令是 sudo apt remove --purge sejda-desktop。其免费版功能有一定限制，官方网站为 https://www.sejda.com/desktop。",
+          "qas": [
+            {
+              "id": "5-225-1",
+              "question": "Sejda PDF Desktop 是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "PDF 编辑软件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-225-2",
+              "question": "Sejda PDF Desktop 有哪些功能？",
+              "answers": [
+                {
+                  "text": "合并、拆分、转换、压缩、编辑、加密 PDF 文件等多种功能",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "5-225-3",
+              "question": "如何安装 Sejda PDF Desktop？",
+              "answers": [
+                {
+                  "text": "wget https://sejda-cdn.com/downloads/sejda-desktop_7.5.3_amd64.deb sudo apt install ./sejda-desktop_7.5.3_amd64.deb",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-225-4",
+              "question": "卸载 Sejda PDF Desktop 的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge sejda-desktop",
+                  "answer_start": 175
+                }
+              ]
+            },
+            {
+              "id": "5-225-5",
+              "question": "Sejda PDF Desktop 免费版有什么限制？",
+              "answers": [
+                {
+                  "text": "功能有一定限制",
+                  "answer_start": 217
+                }
+              ]
+            },
+            {
+              "id": "5-225-6",
+              "question": "Sejda PDF Desktop 的官方网站是什么？",
+              "answers": [
+                {
+                  "text": "https://www.sejda.com/desktop",
+                  "answer_start": 232
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

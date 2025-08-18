@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "Rox-Filer",
+      "paragraphs": [
+        {
+          "context": "Rox-Filer 是一个文件管理器，您可以使用它来浏览硬盘、U 盘、SD 卡和其他存储设备中的内容，也可以方便快捷地创建、移动、删除文件和文件夹。安装命令为：sudo apt-get install rox-filer。卸载命令为：sudo apt-get remove rox-filer。仓库地址为：http://packages.deepin.com/deepin/pool/main/r/rox/。官方网站为：http://rox.sourceforge.net/desktop/ROX-Filer/。",
+          "qas": [
+            {
+              "question": "Rox-Filer是什么？",
+              "id": "5-96-1",
+              "answers": [
+                {
+                  "text": "一个文件管理器",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "Rox-Filer可以用来做什么？",
+              "id": "5-96-2",
+              "answers": [
+                {
+                  "text": "浏览硬盘、U 盘、SD 卡和其他存储设备中的内容，也可以方便快捷地创建、移动、删除文件和文件夹",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "如何安装Rox-Filer？",
+              "id": "5-96-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install rox-filer",
+                  "answer_start": 82
+                }
+              ]
+            },
+            {
+              "question": "如何卸载Rox-Filer？",
+              "id": "5-96-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove rox-filer",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "question": "Rox-Filer的仓库地址是什么？",
+              "id": "5-96-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/r/rox/",
+                  "answer_start": 149
+                }
+              ]
+            },
+            {
+              "question": "Rox-Filer的官方网站是什么？",
+              "id": "5-96-6",
+              "answers": [
+                {
+                  "text": "http://rox.sourceforge.net/desktop/ROX-Filer/",
+                  "answer_start": 198
+                }
+              ]
+            },
+            {
+              "question": "Rox-Filer是什么类型的软件？",
+              "id": "5-96-7",
+              "answers": [
+                {
+                  "text": "文件管理器",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "用户可以通过Rox-Filer操作哪些存储设备？",
+              "id": "5-96-8",
+              "answers": [
+                {
+                  "text": "硬盘、U 盘、SD 卡和其他存储设备",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "Rox-Filer能执行哪些文件操作？",
+              "id": "5-96-9",
+              "answers": [
+                {
+                  "text": "创建、移动、删除文件和文件夹",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

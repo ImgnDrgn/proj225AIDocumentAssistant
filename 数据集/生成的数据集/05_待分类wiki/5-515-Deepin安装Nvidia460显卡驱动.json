@@ -1,0 +1,264 @@
+{
+  "data": [
+    {
+      "title": "Deepin安装Nvidia460显卡驱动",
+      "paragraphs": [
+        {
+          "context": "用Nvidia官网的.run安装程序安装过驱动的卸载方法：找到.run安装包，打开终端，运行cd ~/Downloads和sudo bash NVIDIA-Linux-x86_64-460.27.04.run --uninstall，所有选项选Yes和OK。",
+          "qas": [
+            {
+              "question": "如何卸载用Nvidia官网.run安装程序安装的驱动？",
+              "id": "5-515-1",
+              "answers": [
+                {
+                  "text": "找到.run安装包，打开终端，运行cd ~/Downloads和sudo bash NVIDIA-Linux-x86_64-460.27.04.run --uninstall，所有选项选Yes和OK。",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载通过软件包管理器安装的旧版nvidia驱动：终端执行sudo apt purge --autoremove '*nvidia*'，所有选项回复y，弹窗选Yes和OK。",
+          "qas": [
+            {
+              "question": "如何卸载通过软件包管理器安装的旧版nvidia驱动？",
+              "id": "5-515-2",
+              "answers": [
+                {
+                  "text": "终端执行sudo apt purge --autoremove '*nvidia*'，所有选项回复y，弹窗选Yes和OK。",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加Debian的buster-backports软件源：终端执行echo 'deb http://mirrors.aliyun.com/debian buster-backports main contrib non-free' | sudo tee /etc/apt/sources.list.d/debian-buster-backports.list。",
+          "qas": [
+            {
+              "question": "如何添加Debian的buster-backports软件源？",
+              "id": "5-515-3",
+              "answers": [
+                {
+                  "text": "终端执行echo 'deb http://mirrors.aliyun.com/debian buster-backports main contrib non-free' | sudo tee /etc/apt/sources.list.d/debian-buster-backports.list。",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启用32位架构并更新软件包列表：终端执行sudo dpkg --add-architecture i386和sudo apt update。",
+          "qas": [
+            {
+              "question": "如何启用32位架构并更新软件包列表？",
+              "id": "5-515-4",
+              "answers": [
+                {
+                  "text": "终端执行sudo dpkg --add-architecture i386和sudo apt update。",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "处理“由于没有公钥，无法验证下列签名：NO_PUBKEY”错误：执行sudo apt-get update 2>&1 | tee /tmp/apt.tmp; cat /tmp/apt.tmp | grep 'NO_PUBKEY' | awk -F'NO_PUBKEY' '{print $2}' | sort | uniq | xargs sudo apt-key adv --keyserver keyserver.ubuntu.com --recv，反复运行至错误消失。",
+          "qas": [
+            {
+              "question": "遇到“由于没有公钥，无法验证下列签名：NO_PUBKEY”错误时如何处理？",
+              "id": "5-515-5",
+              "answers": [
+                {
+                  "text": "执行sudo apt-get update 2>&1 | tee /tmp/apt.tmp; cat /tmp/apt.tmp | grep 'NO_PUBKEY' | awk -F'NO_PUBKEY' '{print $2}' | sort | uniq | xargs sudo apt-key adv --keyserver keyserver.ubuntu.com --recv，反复运行至错误消失。",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装aptitude：终端执行sudo apt install aptitude。",
+          "qas": [
+            {
+              "question": "如何安装aptitude？",
+              "id": "5-515-6",
+              "answers": [
+                {
+                  "text": "终端执行sudo apt install aptitude。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用aptitude安装460驱动：终端执行sudo aptitude install 'nvidia-driver/buster-backports'，先回复n拒绝未安装方案，再回复y接受正确方案，确保删除软件包数量为0后回复y。",
+          "qas": [
+            {
+              "question": "如何用aptitude安装460驱动？",
+              "id": "5-515-7",
+              "answers": [
+                {
+                  "text": "终端执行sudo aptitude install 'nvidia-driver/buster-backports'，先回复n拒绝未安装方案，再回复y接受正确方案，确保删除软件包数量为0后回复y。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装460驱动的64位附加组件：终端执行sudo aptitude install 'nvidia-vulkan-icd/buster-backports' 'nvidia-smi/buster-backports' 'nvidia-settings/buster-backports'，先回复n再回复y。",
+          "qas": [
+            {
+              "question": "如何安装460驱动的64位附加组件？",
+              "id": "5-515-8",
+              "answers": [
+                {
+                  "text": "终端执行sudo aptitude install 'nvidia-vulkan-icd/buster-backports' 'nvidia-smi/buster-backports' 'nvidia-settings/buster-backports'，先回复n再回复y。",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装驱动的32位附加组件：终端执行sudo aptitude install 'libnvidia-glcore:i386/buster-backports' 'libnvidia-eglcore:i386/buster-backports' 'nvidia-driver-libs:i386/buster-backports' 'libnvidia-glvkspirv:i386/buster-backports' 'libnvidia-ml1:i386/buster-backports'，先回复n再回复y。",
+          "qas": [
+            {
+              "question": "如何安装驱动的32位附加组件？",
+              "id": "5-515-9",
+              "answers": [
+                {
+                  "text": "终端执行sudo aptitude install 'libnvidia-glcore:i386/buster-backports' 'libnvidia-eglcore:i386/buster-backports' 'nvidia-driver-libs:i386/buster-backports' 'libnvidia-glvkspirv:i386/buster-backports' 'libnvidia-ml1:i386/buster-backports'，先回复n再回复y。",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Vulkan支持库：终端执行sudo aptitude install libvulkan1 libvulkan1:i386 vulkan-tools 'vulkan-utils|vulkan-tools'。",
+          "qas": [
+            {
+              "question": "如何安装Vulkan支持库？",
+              "id": "5-515-10",
+              "answers": [
+                {
+                  "text": "终端执行sudo aptitude install libvulkan1 libvulkan1:i386 vulkan-tools 'vulkan-utils|vulkan-tools'。",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "将新装的显卡驱动用于所有内核版本：执行sudo update-initramfs -k all -u。",
+          "qas": [
+            {
+              "question": "如何将新装的显卡驱动用于所有内核版本？",
+              "id": "5-515-11",
+              "answers": [
+                {
+                  "text": "执行sudo update-initramfs -k all -u。",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "笔记本安装双显卡支持包：wget https://file.winegame.net/packages/deepin/mgpu/mgpu-prime_0.2.0_amd64.deb，sudo apt install -y ./mgpu-prime_0.2.0_amd64.deb，打开Wine游戏助手的“Nvidia Prime渲染卸载”选项。双显卡支持包仅适用于LightDM显示管理器。",
+          "qas": [
+            {
+              "question": "笔记本如何安装双显卡支持包？",
+              "id": "5-515-12",
+              "answers": [
+                {
+                  "text": "wget https://file.winegame.net/packages/deepin/mgpu/mgpu-prime_0.2.0_amd64.deb，sudo apt install -y ./mgpu-prime_0.2.0_amd64.deb，打开Wine游戏助手的“Nvidia Prime渲染卸载”选项。",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "双显卡支持包适用于哪种显示管理器？",
+              "id": "5-515-13",
+              "answers": [
+                {
+                  "text": "LightDM",
+                  "answer_start": 215
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "验证Nvidia驱动安装成功：重启后打开“NVIDIA X 服务器设置”，查看版本为460.32。",
+          "qas": [
+            {
+              "question": "如何验证Nvidia驱动安装成功？",
+              "id": "5-515-14",
+              "answers": [
+                {
+                  "text": "重启后打开“NVIDIA X 服务器设置”，查看版本为460.32。",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装CUDA功能：运行aptitude install libcuda1/buster-backports nvidia-cuda-dev/buster-backports nvidia-cuda-toolkit/buster-backports，先回n再回y，版本为CUDA 11。",
+          "qas": [
+            {
+              "question": "如何安装CUDA功能？",
+              "id": "5-515-15",
+              "answers": [
+                {
+                  "text": "运行aptitude install libcuda1/buster-backports nvidia-cuda-dev/buster-backports nvidia-cuda-toolkit/buster-backports，先回n再回y。",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "安装的CUDA版本是什么？",
+              "id": "5-515-16",
+              "answers": [
+                {
+                  "text": "CUDA 11",
+                  "answer_start": 185
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "该教程适用于基于Debian 10的发行版，如Deepin v20、UOS 20，不适用于Ubuntu 20.04。",
+          "qas": [
+            {
+              "question": "该教程适用于哪些发行版？",
+              "id": "5-515-17",
+              "answers": [
+                {
+                  "text": "基于Debian 10的发行版，如Deepin v20、UOS 20。",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "该教程不适用于哪个发行版？",
+              "id": "5-515-18",
+              "answers": [
+                {
+                  "text": "Ubuntu 20.04",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

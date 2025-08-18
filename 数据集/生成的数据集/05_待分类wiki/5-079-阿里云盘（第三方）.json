@@ -1,0 +1,164 @@
+{
+  "data": [
+    {
+      "title": "阿里云盘（第三方）",
+      "paragraphs": [
+        {
+          "context": "阿里云盘是一款速度快、不打扰、够安全、易于分享的网盘，你可以在这里存储、管理和探索内容，尽情打造丰富的数字世界。虽然阿里云盘目前没有推出官方的 Linux 的客户端，但第三方开发者 @liupan1890 开发了阿里云盘小白羊版，支持 Linux 操作系统，非常好用。",
+          "qas": [
+            {
+              "id": "5-79-1",
+              "question": "阿里云盘有哪些特点？",
+              "answers": [
+                {
+                  "text": "速度快、不打扰、够安全、易于分享",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-79-2",
+              "question": "用户能在阿里云盘中执行哪些操作？",
+              "answers": [
+                {
+                  "text": "存储、管理和探索内容，尽情打造丰富的数字世界",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-79-3",
+              "question": "阿里云盘官方有Linux客户端吗？",
+              "answers": [
+                {
+                  "text": "没有",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "id": "5-79-4",
+              "question": "阿里云盘小白羊版的开发者是谁？",
+              "answers": [
+                {
+                  "text": "@liupan1890",
+                  "answer_start": 87
+                }
+              ]
+            },
+            {
+              "id": "5-79-5",
+              "question": "阿里云盘小白羊版支持什么操作系统？",
+              "answers": [
+                {
+                  "text": "Linux 操作系统",
+                  "answer_start": 114
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用浏览器打开 https://wwe.lanzoui.com/iKGsL037ieha 选择一个运营商点击下载 然后右击下载的压缩包，解压到当前文件夹 打开解压的文件夹，双击“阿里云盘小白羊版”，点击运行即可。",
+          "qas": [
+            {
+              "id": "5-79-6",
+              "question": "如何下载阿里云盘小白羊版？",
+              "answers": [
+                {
+                  "text": "用浏览器打开 https://wwe.lanzoui.com/iKGsL037ieha 选择一个运营商点击下载",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-79-7",
+              "question": "下载阿里云盘小白羊版的压缩包后，下一步该怎么做？",
+              "answers": [
+                {
+                  "text": "右击下载的压缩包，解压到当前文件夹",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "5-79-8",
+              "question": "如何运行阿里云盘小白羊版？",
+              "answers": [
+                {
+                  "text": "打开解压的文件夹，双击“阿里云盘小白羊版”，点击运行即可",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除解压的文件夹即可",
+          "qas": [
+            {
+              "id": "5-79-9",
+              "question": "如何卸载阿里云盘小白羊版？",
+              "answers": [
+                {
+                  "text": "删除解压的文件夹即可",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在终端执行命令安装MPV：sudo apt install mpv",
+          "qas": [
+            {
+              "id": "5-79-10",
+              "question": "如何实现在线预览视频的功能？",
+              "answers": [
+                {
+                  "text": "在终端执行命令安装MPV：sudo apt install mpv",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-79-11",
+              "question": "安装什么软件可实现视频预览？",
+              "answers": [
+                {
+                  "text": "MPV",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "阿里云盘官网：https://www.aliyundrive.com/ 阿里云盘小白羊版 Github 主页：https://github.com/liupan1890/aliyunpan",
+          "qas": [
+            {
+              "id": "5-79-12",
+              "question": "阿里云盘官网的链接是什么？",
+              "answers": [
+                {
+                  "text": "https://www.aliyundrive.com/",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-79-13",
+              "question": "阿里云盘小白羊版的Github主页链接是什么？",
+              "answers": [
+                {
+                  "text": "https://github.com/liupan1890/aliyunpan",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

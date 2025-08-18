@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "Arora",
+      "paragraphs": [
+        {
+          "context": "Arora是一个基于QtWebKit开发的跨平台浏览器。",
+          "qas": [
+            {
+              "question": "Arora是基于什么开发的浏览器？",
+              "id": "1-51-1",
+              "answers": [
+                {
+                  "text": "QtWebKit",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "Arora是一款什么类型的软件？",
+              "id": "1-51-2",
+              "answers": [
+                {
+                  "text": "跨平台浏览器",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install arora",
+          "qas": [
+            {
+              "question": "如何安装Arora浏览器？",
+              "id": "1-51-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install arora",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove arora",
+          "qas": [
+            {
+              "question": "怎样卸载Arora浏览器？",
+              "id": "1-51-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove arora",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/a/arora/",
+          "qas": [
+            {
+              "question": "Arora的仓库地址是什么？",
+              "id": "1-51-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/a/arora/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "https://github.com/Arora/arora",
+          "qas": [
+            {
+              "question": "Arora的官方网站是什么？",
+              "id": "1-51-6",
+              "answers": [
+                {
+                  "text": "https://github.com/Arora/arora",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

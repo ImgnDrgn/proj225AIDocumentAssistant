@@ -1,0 +1,155 @@
+{
+  "title": "ToDesk",
+  "paragraphs": [
+    {
+      "context": "ToDesk 是一款安全实用且流畅的远程控制软件，可以轻松实现远程控制、文件传输等一系列操作，提升工作生活的效率，为远程客户提供技术支援。",
+      "qas": [
+        {
+          "id": "5-128-1",
+          "question": "ToDesk是什么类型的软件？",
+          "answers": [
+            {
+              "text": "远程控制软件",
+              "answer_start": 19
+            }
+          ]
+        },
+        {
+          "id": "5-128-2",
+          "question": "ToDesk可以实现哪些操作？",
+          "answers": [
+            {
+              "text": "远程控制、文件传输等一系列操作",
+              "answer_start": 32
+            }
+          ]
+        },
+        {
+          "id": "5-128-3",
+          "question": "ToDesk能提升什么？",
+          "answers": [
+            {
+              "text": "工作生活的效率",
+              "answer_start": 49
+            }
+          ]
+        },
+        {
+          "id": "5-128-4",
+          "question": "ToDesk可以为远程客户提供什么？",
+          "answers": [
+            {
+              "text": "技术支援",
+              "answer_start": 69
+            }
+          ]
+        },
+        {
+          "id": "5-128-5",
+          "question": "ToDesk的主要功能是什么？",
+          "answers": [
+            {
+              "text": "实现远程控制、文件传输等一系列操作",
+              "answer_start": 30
+            }
+          ]
+        },
+        {
+          "id": "5-128-6",
+          "question": "ToDesk的主要用户群体是？",
+          "answers": [
+            {
+              "text": "需要提供技术支援的远程客户",
+              "answer_start": 62
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "wget https://dl.todesk.com/linux/todesk_4.1.0_amd64.deb\nsudo apt install ./todesk_4.1.0_amd64.deb",
+      "qas": [
+        {
+          "id": "5-128-7",
+          "question": "安装ToDesk的第一步命令是什么？",
+          "answers": [
+            {
+              "text": "wget https://dl.todesk.com/linux/todesk_4.1.0_amd64.deb",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "id": "5-128-8",
+          "question": "安装ToDesk的第二步命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt install ./todesk_4.1.0_amd64.deb",
+              "answer_start": 56
+            }
+          ]
+        },
+        {
+          "id": "5-128-9",
+          "question": "在Linux系统安装ToDesk的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt install ./todesk_4.1.0_amd64.deb",
+              "answer_start": 56
+            }
+          ]
+        },
+        {
+          "id": "5-128-10",
+          "question": "如何下载ToDesk的安装包？",
+          "answers": [
+            {
+              "text": "wget https://dl.todesk.com/linux/todesk_4.1.0_amd64.deb",
+              "answer_start": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "sudo apt remove --purge todesk",
+      "qas": [
+        {
+          "id": "5-128-11",
+          "question": "卸载ToDesk的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt remove --purge todesk",
+              "answer_start": 0
+            }
+          ]
+        },
+        {
+          "id": "5-128-12",
+          "question": "卸载ToDesk的完整命令参数是什么？",
+          "answers": [
+            {
+              "text": "remove --purge",
+              "answer_start": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Todesk 官方网站：https://www.todesk.com/",
+      "qas": [
+        {
+          "id": "5-128-13",
+          "question": "ToDesk的官方网站是什么？",
+          "answers": [
+            {
+              "text": "https://www.todesk.com/",
+              "answer_start": 11
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "data": [
+    {
+      "title": "Xtreme_Download_Manager-已合并",
+      "paragraphs": [
+        {
+          "context": "Xtreme Download Manager是一个P2P文件下载软件，它具有带宽控制系统、上传下载传输速度控制、下载管理智能化、积分系统、强力分享能力、支持DLP、支持多线程和队列管理、自动调节路由器设置等功能。",
+          "qas": [
+            {
+              "id": "5-86-1",
+              "question": "Xtreme Download Manager是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "P2P文件下载软件",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-86-2",
+              "question": "Xtreme Download Manager具有哪些功能？",
+              "answers": [
+                {
+                  "text": "带宽控制系统、上传下载传输速度控制、下载管理智能化、积分系统、强力分享能力、支持DLP、支持多线程和队列管理、自动调节路由器设置等功能",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-86-3",
+              "question": "Xtreme Download Manager是否支持多线程？",
+              "answers": [
+                {
+                  "text": "支持多线程",
+                  "answer_start": 90
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Xtreme Download Manager的命令是：sudo apt-get install xdm",
+          "qas": [
+            {
+              "id": "5-86-4",
+              "question": "安装Xtreme Download Manager需要使用什么命令？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install xdm",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Xtreme Download Manager的命令是：sudo apt-get remove xdm",
+          "qas": [
+            {
+              "id": "5-86-5",
+              "question": "卸载Xtreme Download Manager需要使用什么命令？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove xdm",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Xtreme Download Manager的仓库地址是：http://packages.deepin.com/deepin/pool/main/x/xdm/",
+          "qas": [
+            {
+              "id": "5-86-6",
+              "question": "Xtreme Download Manager的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/x/xdm/",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`sudo apt-get install xdm`",
+          "qas": [
+            {
+              "id": "5-86-7",
+              "question": "在Linux系统中如何安装Xtreme Download Manager？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install xdm",
+                  "answer_start": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`sudo apt-get remove xdm`",
+          "qas": [
+            {
+              "id": "5-86-8",
+              "question": "如何在Linux系统中卸载Xtreme Download Manager？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove xdm",
+                  "answer_start": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "[http://packages.deepin.com/deepin/pool/main/x/xdm/](http://packages.deepin.com/deepin/pool/main/x/xdm/)",
+          "qas": [
+            {
+              "id": "5-86-9",
+              "question": "Xtreme Download Manager在Deepin系统的软件仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/x/xdm/",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

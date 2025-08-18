@@ -1,0 +1,139 @@
+{
+  "data": [
+    {
+      "title": "自研应用实用功能点分享",
+      "paragraphs": [
+        {
+          "context": "快速启动截图/录屏的快捷键：Ctrl+Alt+A / Ctrl+Alt+R",
+          "qas": [
+            {
+              "question": "快速启动截图的快捷键是什么？",
+              "id": "3-169-1",
+              "answers": [
+                {
+                  "text": "Ctrl+Alt+A",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "快速启动录屏的快捷键是什么？",
+              "id": "3-169-2",
+              "answers": [
+                {
+                  "text": "Ctrl+Alt+R",
+                  "answer_start": 28
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "向上扩大选区高度的快捷键：Ctrl+Up",
+          "qas": [
+            {
+              "question": "向上扩大选区高度的快捷键是什么？",
+              "id": "3-169-3",
+              "answers": [
+                {
+                  "text": "Ctrl+Up",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "向下扩大选区高度的快捷键：Ctrl+Down",
+          "qas": [
+            {
+              "question": "向下扩大选区高度的快捷键是什么？",
+              "id": "3-169-4",
+              "answers": [
+                {
+                  "text": "Ctrl+Down",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "向左扩大选区高度的快捷键：Ctrl+Left",
+          "qas": [
+            {
+              "question": "向左扩大选区高度的快捷键是什么？",
+              "id": "3-169-5",
+              "answers": [
+                {
+                  "text": "Ctrl+Left",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "向右扩大选区高度的快捷键：Ctrl+Right",
+          "qas": [
+            {
+              "question": "向右扩大选区高度的快捷键是什么？",
+              "id": "3-169-6",
+              "answers": [
+                {
+                  "text": "Ctrl+Right",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "延时五秒截屏的快捷键：Alt+PrintScreen",
+          "qas": [
+            {
+              "question": "延时五秒截屏的快捷键是什么？",
+              "id": "3-169-7",
+              "answers": [
+                {
+                  "text": "Alt+PrintScreen",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "快速启动剪切板的快捷键：Ctrl+Alt+V",
+          "qas": [
+            {
+              "question": "快速启动剪切板的快捷键是什么？",
+              "id": "3-169-8",
+              "answers": [
+                {
+                  "text": "Ctrl+Alt+V",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "调整剪切板历史文件到最新复制的方法：打开剪切板，找到前面复制的历史纪录，双击该历史复制纪录，该纪录就会置顶成为最新的纪录。",
+          "qas": [
+            {
+              "question": "如何将剪切板历史文件调整为最新复制的内容？",
+              "id": "3-169-9",
+              "answers": [
+                {
+                  "text": "打开剪切板，找到前面复制的历史纪录，双击该历史复制纪录，该纪录就会置顶成为最新的纪录。",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

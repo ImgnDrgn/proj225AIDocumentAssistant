@@ -1,0 +1,70 @@
+{
+  "data": [
+    {
+      "title": "自定义文件角标的命令",
+      "paragraphs": [
+        {
+          "context": "在终端输入以下命令，该命令默认在文件（夹）右下角添加角标。gio set xxx(文件路径) -t stringv metadata::emblems \"xxx(图标路径)\"。注意：系统已定义的特殊角标，不支持被替换。",
+          "qas": [
+            {
+              "id": "3-62-1",
+              "question": "如何在文件右下角添加单个角标？",
+              "answers": [
+                {
+                  "text": "在终端输入命令：gio set xxx(文件路径) -t stringv metadata::emblems \"xxx(图标路径)\"，该命令默认在文件（夹）右下角添加角标。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "您也可以在上述命令中加入位置参数，将角标添加在文件（夹）的左上角（lu）、左下角（ld）、右上角（ru）或右下角（rd）。例如：在文件（夹）左上角添加角标：gio set xxx(文件路径) -t stringv metadata::emblems \"xxx(图标路径);lu\"。",
+          "qas": [
+            {
+              "id": "3-62-2",
+              "question": "如何在文件左上角添加角标？",
+              "answers": [
+                {
+                  "text": "在终端输入命令：gio set xxx(文件路径) -t stringv metadata::emblems \"xxx(图标路径);lu\"，即可在文件（夹）左上角添加角标。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在命令行中加入“|”符号将角标文件路径链接起来，为文件（夹）添加2~4个角标。文件（夹）同一个位置不支持叠加角标，仅支持替换。例如：在文件（夹）四个角都添加角标：gio set xxx(文件路径) -t stringv metadata::emblems \"xxx(图标路径);lu|xxx(图标路径);ld|xxx(图标路径);ru|xxx(图标路径);rd\"。",
+          "qas": [
+            {
+              "id": "3-62-3",
+              "question": "如何为文件添加多个角标？",
+              "answers": [
+                {
+                  "text": "在命令行中加入“|”符号将角标文件路径链接起来，例如输入命令：gio set xxx(文件路径) -t stringv metadata::emblems \"xxx(图标路径);lu|xxx(图标路径);ld|xxx(图标路径);ru|xxx(图标路径);rd\"，可在文件（夹）四个角添加角标，支持添加2~4个角标，且同一个位置不支持叠加仅支持替换。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在终端中输入以下命令，撤销文件（夹）上所有的角标：gio set xxx(文件路径) -t stringv metadata::emblems \"\" 。",
+          "qas": [
+            {
+              "id": "3-62-4",
+              "question": "怎样撤销文件上的所有角标？",
+              "answers": [
+                {
+                  "text": "在终端中输入命令：gio set xxx(文件路径) -t stringv metadata::emblems \"\" ，即可撤销文件（夹）上所有的角标。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+    

@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "Bluefish",
+      "paragraphs": [
+        {
+          "context": "Bluefish是一款为熟练的Web设计员和程序员而设的编辑器，UI设计很直观，任何初学者都能够很快上手，Bluefish提供了很多常用的HTML任务选项，例如字体、表格、链接等。安装命令为sudo apt-get install bluefish。卸载命令为sudo apt-get remove bluefish。仓库地址是http://packages.deepin.com/deepin/pool/main/b/bluefish/",
+          "qas": [
+            {
+              "id": "5-186-1",
+              "question": "Bluefish是为哪些人群设计的编辑器？",
+              "answers": [
+                {
+                  "text": "熟练的Web设计员和程序员",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-186-2",
+              "question": "Bluefish的UI设计有什么特点？",
+              "answers": [
+                {
+                  "text": "很直观，任何初学者都能够很快上手",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-186-3",
+              "question": "Bluefish提供了哪些常用的HTML任务选项？",
+              "answers": [
+                {
+                  "text": "字体、表格、链接等",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "id": "5-186-4",
+              "question": "安装Bluefish的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install bluefish",
+                  "answer_start": 80
+                }
+              ]
+            },
+            {
+              "id": "5-186-5",
+              "question": "卸载Bluefish的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove bluefish",
+                  "answer_start": 107
+                }
+              ]
+            },
+            {
+              "id": "5-186-6",
+              "question": "Bluefish的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/b/bluefish/",
+                  "answer_start": 136
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

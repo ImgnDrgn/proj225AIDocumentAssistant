@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "man帮助命令",
+      "paragraphs": [
+        {
+          "context": "linux中有很多命令，包括但不限于ls、cd、mv、cp、vim等。作为使用人员，不可能每个命令都熟练记住里面的参数功能和用法，这时候就需要使用man命令，格式为'man 要寻求帮助的命令名称'，以显示对应命令的帮助文档。例如，查看vim命令的帮助文档可执行'man vim'。帮助文档可能会新开一个显示页面，按Q键退出即可回到Shell界面。",
+          "qas": [
+            {
+              "question": "linux中有哪些常见命令？",
+              "id": "5-375-1",
+              "answers": [
+                {
+                  "text": "ls、cd、mv、cp、vim等",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "不记得命令的参数功能和用法时，应使用什么命令？",
+              "id": "5-375-2",
+              "answers": [
+                {
+                  "text": "man命令",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "man命令的格式是什么？",
+              "id": "5-375-3",
+              "answers": [
+                {
+                  "text": "man 要寻求帮助的命令名称",
+                  "answer_start": 100
+                }
+              ]
+            },
+            {
+              "question": "如何查看vim命令的帮助文档？",
+              "id": "5-375-4",
+              "answers": [
+                {
+                  "text": "执行man vim命令",
+                  "answer_start": 176
+                }
+              ]
+            },
+            {
+              "question": "帮助文档新开页面后，如何退出回到Shell界面？",
+              "id": "5-375-5",
+              "answers": [
+                {
+                  "text": "按Q键",
+                  "answer_start": 222
+                }
+              ]
+            },
+            {
+              "question": "为什么用户需要man命令？",
+              "id": "5-375-6",
+              "answers": [
+                {
+                  "text": "作为使用人员，不可能每个命令都熟练记住里面的参数功能和用法",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "question": "帮助文档通常以什么形式显示？",
+              "id": "5-375-7",
+              "answers": [
+                {
+                  "text": "新开一个显示页面",
+                  "answer_start": 188
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

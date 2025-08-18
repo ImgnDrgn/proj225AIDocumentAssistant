@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "FileZilla客户端",
+      "paragraphs": [
+        {
+          "context": "FileZilla是一个快速可靠的、跨平台的FTP、FTPS和SFTP客户端。它具有断点续传、超时侦测、SSL加密、多国语言、多标签界面、多协议支持、远程查找文件、站点管理和传输队列管理等功能。安装命令为`sudo apt-get install filezilla`，卸载命令为`sudo apt-get remove filezilla`。其仓库地址为http://packages.deepin.com/deepin/pool/main/f/filezilla/，相关链接的维基百科地址为https://zh.wikipedia.org/wiki/FileZilla。",
+          "qas": [
+            {
+              "id": "5-336-1",
+              "question": "FileZilla是什么？",
+              "answers": [
+                {
+                  "text": "FileZilla是一个快速可靠的、跨平台的FTP、FTPS和SFTP客户端。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-336-2",
+              "question": "FileZilla是跨平台的什么客户端？",
+              "answers": [
+                {
+                  "text": "FTP、FTPS和SFTP客户端",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "5-336-3",
+              "question": "FileZilla有哪些功能？",
+              "answers": [
+                {
+                  "text": "断点续传、超时侦测、SSL加密、多国语言、多标签界面、多协议支持、远程查找文件、站点管理和传输队列管理等功能",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "id": "5-336-4",
+              "question": "如何安装FileZilla？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install filezilla",
+                  "answer_start": 165
+                }
+              ]
+            },
+            {
+              "id": "5-336-5",
+              "question": "如何卸载FileZilla？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove filezilla",
+                  "answer_start": 199
+                }
+              ]
+            },
+            {
+              "id": "5-336-6",
+              "question": "FileZilla的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/f/filezilla/",
+                  "answer_start": 233
+                }
+              ]
+            },
+            {
+              "id": "5-336-7",
+              "question": "FileZilla的维基百科链接是什么？",
+              "answers": [
+                {
+                  "text": "https://zh.wikipedia.org/wiki/FileZilla",
+                  "answer_start": 297
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

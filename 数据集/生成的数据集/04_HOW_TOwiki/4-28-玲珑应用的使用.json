@@ -1,0 +1,414 @@
+{
+  "data": [
+    {
+      "title": "玲珑应用的使用",
+      "paragraphs": [
+        {
+          "context": "玲珑的用户命令为：`ll-cli`，是一个包管理器前端，用于管理玲珑应用的安装、卸载、查看、启动、关闭、调试、更新等操作。",
+          "qas": [
+            {
+              "question": "玲珑的用户命令是什么？",
+              "id": "4-28-1",
+              "answers": [
+                {
+                  "text": "ll-cli",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "ll-cli的作用是什么？",
+              "id": "4-28-2",
+              "answers": [
+                {
+                  "text": "是一个包管理器前端，用于管理玲珑应用的安装、卸载、查看、启动、关闭、调试、更新等操作。",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看`ll-cli`命令的帮助信息，在终端中输入：`ll-cli`。",
+          "qas": [
+            {
+              "question": "如何查看ll-cli命令的帮助信息？",
+              "id": "4-28-3",
+              "answers": [
+                {
+                  "text": "在终端中输入：ll-cli",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`ll-cli install`命令用来安装玲珑应用，在终端中输入：`ll-cli install <package name>`，请不要使用root/sudo。",
+          "qas": [
+            {
+              "question": "安装玲珑应用使用什么命令？",
+              "id": "4-28-4",
+              "answers": [
+                {
+                  "text": "ll-cli install",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "安装玲珑应用的终端命令格式是什么？",
+              "id": "4-28-5",
+              "answers": [
+                {
+                  "text": "ll-cli install <package name>",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "安装玲珑应用能否使用root/sudo？",
+              "id": "4-28-6",
+              "answers": [
+                {
+                  "text": "请不要使用root/sudo",
+                  "answer_start": 63
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`ll-cli uninstall`命令可以卸载玲珑应用，在终端中输入：`ll-cli uninstall <package name>`，请不要使用root/sudo。",
+          "qas": [
+            {
+              "question": "卸载玲珑应用使用什么命令？",
+              "id": "4-28-7",
+              "answers": [
+                {
+                  "text": "ll-cli uninstall",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "卸载玲珑应用的终端命令格式是什么？",
+              "id": "4-28-8",
+              "answers": [
+                {
+                  "text": "ll-cli uninstall <package name>",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "卸载玲珑应用能否使用root/sudo？",
+              "id": "4-28-9",
+              "answers": [
+                {
+                  "text": "请不要使用root/sudo",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`ll-cli update`命令可以更新玲珑应用，在终端中输入：`ll-cli update <package name>`，请不要使用root/sudo。",
+          "qas": [
+            {
+              "question": "更新玲珑应用使用什么命令？",
+              "id": "4-28-10",
+              "answers": [
+                {
+                  "text": "ll-cli update",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "更新玲珑应用的终端命令格式是什么？",
+              "id": "4-28-11",
+              "answers": [
+                {
+                  "text": "ll-cli update <package name>",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "更新玲珑应用能否使用root/sudo？",
+              "id": "4-28-12",
+              "answers": [
+                {
+                  "text": "请不要使用root/sudo",
+                  "answer_start": 64
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`ll-cli list`命令可以查看已安装的玲珑应用，在终端中输入：`ll-cli list`，请不要使用root/sudo。",
+          "qas": [
+            {
+              "question": "查看已安装的玲珑应用使用什么命令？",
+              "id": "4-28-13",
+              "answers": [
+                {
+                  "text": "ll-cli list",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "查看已安装的玲珑应用的终端命令是什么？",
+              "id": "4-28-14",
+              "answers": [
+                {
+                  "text": "ll-cli list",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "question": "查看已安装的玲珑应用能否使用root/sudo？",
+              "id": "4-28-15",
+              "answers": [
+                {
+                  "text": "请不要使用root/sudo",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ll-cli的subcommand包括run、ps、exec、kill、download、install、uninstall、update、query、list。",
+          "qas": [
+            {
+              "question": "ll-cli的subcommand有哪些？",
+              "id": "4-28-16",
+              "answers": [
+                {
+                  "text": "run、ps、exec、kill、download、install、uninstall、update、query、list",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "typora编辑器的玲珑应用包名是io.typora。",
+          "qas": [
+            {
+              "question": "typora编辑器的玲珑应用包名是什么？",
+              "id": "4-28-17",
+              "answers": [
+                {
+                  "text": "io.typora",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "中望CAD的玲珑应用包名是com.zwsoft.zwcad。",
+          "qas": [
+            {
+              "question": "中望CAD的玲珑应用包名是什么？",
+              "id": "4-28-18",
+              "answers": [
+                {
+                  "text": "com.zwsoft.zwcad",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "brave浏览器的玲珑应用包名是com.brave.brave-browser。",
+          "qas": [
+            {
+              "question": "brave浏览器的玲珑应用包名是什么？",
+              "id": "4-28-19",
+              "answers": [
+                {
+                  "text": "com.brave.brave-browser",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "360浏览器的玲珑应用包名是com.360.browser-stable。",
+          "qas": [
+            {
+              "question": "360浏览器的玲珑应用包名是什么？",
+              "id": "4-28-20",
+              "answers": [
+                {
+                  "text": "com.360.browser-stable",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "xmind的玲珑应用包名是net.xmind.xmind-vana。",
+          "qas": [
+            {
+              "question": "xmind的玲珑应用包名是什么？",
+              "id": "4-28-21",
+              "answers": [
+                {
+                  "text": "net.xmind.xmind-vana",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "postman的玲珑应用包名是com.postman.postman。",
+          "qas": [
+            {
+              "question": "postman的玲珑应用包名是什么？",
+              "id": "4-28-22",
+              "answers": [
+                {
+                  "text": "com.postman.postman",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "wps的玲珑应用包名是cn.wps.wps-office。",
+          "qas": [
+            {
+              "question": "wps的玲珑应用包名是什么？",
+              "id": "4-28-23",
+              "answers": [
+                {
+                  "text": "cn.wps.wps-office",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "谷歌浏览器的玲珑应用包名是cn.google.chrome。",
+          "qas": [
+            {
+              "question": "谷歌浏览器的玲珑应用包名是什么？",
+              "id": "4-28-24",
+              "answers": [
+                {
+                  "text": "cn.google.chrome",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "网易云音乐的玲珑应用包名是com.163.music。",
+          "qas": [
+            {
+              "question": "网易云音乐的玲珑应用包名是什么？",
+              "id": "4-28-25",
+              "answers": [
+                {
+                  "text": "com.163.music",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "vscode的玲珑应用包名是com.visualstudio.code。",
+          "qas": [
+            {
+              "question": "vscode的玲珑应用包名是什么？",
+              "id": "4-28-26",
+              "answers": [
+                {
+                  "text": "com.visualstudio.code",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "百度网盘的玲珑应用包名是com.baidu.baidunetdisk。",
+          "qas": [
+            {
+              "question": "百度网盘的玲珑应用包名是什么？",
+              "id": "4-28-27",
+              "answers": [
+                {
+                  "text": "com.baidu.baidunetdisk",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "微信(wine)的玲珑应用包名是com.qq.weixin.deepin。",
+          "qas": [
+            {
+              "question": "微信(wine)的玲珑应用包名是什么？",
+              "id": "4-28-28",
+              "answers": [
+                {
+                  "text": "com.qq.weixin.deepin",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "QQ（wine）的玲珑应用包名是com.qq.im.deepin。",
+          "qas": [
+            {
+              "question": "QQ（wine）的玲珑应用包名是什么？",
+              "id": "4-28-29",
+              "answers": [
+                {
+                  "text": "com.qq.im.deepin",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "企业微信（wine）的玲珑应用包名是com.qq.weixin.work.deepin。",
+          "qas": [
+            {
+              "question": "企业微信（wine）的玲珑应用包名是什么？",
+              "id": "4-28-30",
+              "answers": [
+                {
+                  "text": "com.qq.weixin.work.deepin",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

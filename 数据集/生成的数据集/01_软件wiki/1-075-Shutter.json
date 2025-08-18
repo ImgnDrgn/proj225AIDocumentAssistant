@@ -1,0 +1,90 @@
+{
+  "title": "Shutter",
+  "paragraphs": [
+    {
+      "context": "Shutter是一款广受欢迎的截屏软件，功能十分强大。Shutter可以让您选择桌面的任意区域、指定应用窗口或者整个屏幕区域来进行截屏，同时选定区域之后依然可以通过上下左右拖动来改变选区大小。此外，Shutter也提供了图片的编辑功能，包括基本的选定，添加文字注释等。安装命令为`sudo apt-get install shutter`。卸载命令为`sudo apt-get remove shutter`。其仓库地址为[http://packages.deepin.com/deepin/pool/main/s/shutter/](http://packages.deepin.com/deepin/pool/main/s/shutter/)。相关链接包括维基百科。",
+      "qas": [
+        {
+          "id": "1-75-1",
+          "question": "Shutter是什么类型的软件？",
+          "answers": [
+            {
+              "text": "截屏软件",
+              "answer_start": 15
+            }
+          ]
+        },
+        {
+          "id": "1-75-2",
+          "question": "Shutter可以选择哪些区域进行截屏？",
+          "answers": [
+            {
+              "text": "桌面的任意区域、指定应用窗口或者整个屏幕区域",
+              "answer_start": 40
+            }
+          ]
+        },
+        {
+          "id": "1-75-3",
+          "question": "选定区域后，Shutter可通过什么方式改变选区大小？",
+          "answers": [
+            {
+              "text": "上下左右拖动",
+              "answer_start": 82
+            }
+          ]
+        },
+        {
+          "id": "1-75-4",
+          "question": "Shutter提供的图片编辑功能包括哪些？",
+          "answers": [
+            {
+              "text": "基本的选定，添加文字注释等",
+              "answer_start": 120
+            }
+          ]
+        },
+        {
+          "id": "1-75-5",
+          "question": "安装Shutter的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt-get install shutter",
+              "answer_start": 140
+            }
+          ]
+        },
+        {
+          "id": "1-75-6",
+          "question": "卸载Shutter的命令是什么？",
+          "answers": [
+            {
+              "text": "sudo apt-get remove shutter",
+              "answer_start": 176
+            }
+          ]
+        },
+        {
+          "id": "1-75-7",
+          "question": "Shutter的仓库地址是什么？",
+          "answers": [
+            {
+              "text": "http://packages.deepin.com/deepin/pool/main/s/shutter/",
+              "answer_start": 212
+            }
+          ]
+        },
+        {
+          "id": "1-75-8",
+          "question": "Shutter的相关链接包括什么？",
+          "answers": [
+            {
+              "text": "维基百科",
+              "answer_start": 326
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

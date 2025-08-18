@@ -1,0 +1,339 @@
+{
+  "data": [
+    {
+      "title": "linux apt 源系统介绍",
+      "paragraphs": [
+        {
+          "context": "linux用户安装程序的方式：一、下载独立安装程序如.deb包；二、使用在线软件仓库，debian系中为apt工具。",
+          "qas": [
+            {
+              "question": "linux用户安装程序有哪些方式？",
+              "id": "5-474-1",
+              "answers": [
+                {
+                  "text": "一、下载独立安装程序如.deb包；二、使用在线软件仓库，debian系中为apt工具。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt使用gpg验证源的安全和稳定，基于公钥私钥体系。第三方源需下载对应key并安装进apt系统。",
+          "qas": [
+            {
+              "question": "apt用什么验证源的安全和稳定？",
+              "id": "5-474-2",
+              "answers": [
+                {
+                  "text": "gpg",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "第三方源使用前需要做什么？",
+              "id": "5-474-3",
+              "answers": [
+                {
+                  "text": "下载对应key并安装进apt系统",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装gpg的命令：sudo apt install gnupg；安装key的命令：sudo apt-key add this.key。",
+          "qas": [
+            {
+              "question": "如何安装gpg？",
+              "id": "5-474-4",
+              "answers": [
+                {
+                  "text": "sudo apt install gnupg",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "安装key的命令是什么？",
+              "id": "5-474-5",
+              "answers": [
+                {
+                  "text": "sudo apt-key add this.key",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编辑源地址可通过：sudo nano -w /etc/apt/sources.list 或在/etc/apt/sources.list.d/添加新.list文件。",
+          "qas": [
+            {
+              "question": "如何编辑源地址？",
+              "id": "5-474-6",
+              "answers": [
+                {
+                  "text": "sudo nano -w /etc/apt/sources.list 或在/etc/apt/sources.list.d/添加新.list文件",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址deb http://mirrors.tuna.tsinghua.edu.cn/deepin panda main contrib non-free中，deb表示二进制包，panda是发行版，main等是子仓库。",
+          "qas": [
+            {
+              "question": "仓库地址中deb表示什么？",
+              "id": "5-474-7",
+              "answers": [
+                {
+                  "text": "二进制包",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "上述仓库地址中的发行版是什么？",
+              "id": "5-474-8",
+              "answers": [
+                {
+                  "text": "panda",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库信息在/dists/发行版/Release文件中，可用apt policy获取，包括origin、label、suite等信息。",
+          "qas": [
+            {
+              "question": "仓库信息保存在哪个文件中？",
+              "id": "5-474-9",
+              "answers": [
+                {
+                  "text": "/dists/发行版/Release文件",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "用什么命令可以获取仓库信息？",
+              "id": "5-474-10",
+              "answers": [
+                {
+                  "text": "apt policy",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin基于debian，其unstable（panda）对应debian的unstable，stable（lion）对应debian的stable，无testing版。",
+          "qas": [
+            {
+              "question": "deepin基于什么系统？",
+              "id": "5-474-11",
+              "answers": [
+                {
+                  "text": "debian",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "deepin的stable版本对应debian的哪个版本？",
+              "id": "5-474-12",
+              "answers": [
+                {
+                  "text": "stable",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt工作流程：读取源地址处理依赖，下载包到/var/cache/apt/archives/，仓库软件信息在/var/lib/apt/lists/。",
+          "qas": [
+            {
+              "question": "apt下载的包存放在哪里？",
+              "id": "5-474-13",
+              "answers": [
+                {
+                  "text": "/var/cache/apt/archives/",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "仓库软件信息存储在哪个目录？",
+              "id": "5-474-14",
+              "answers": [
+                {
+                  "text": "/var/lib/apt/lists/",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt autoclean可删除缓存的包；apt -d install xxx仅下载包；apt -s install xxx模拟安装过程。",
+          "qas": [
+            {
+              "question": "如何删除缓存的包？",
+              "id": "5-474-15",
+              "answers": [
+                {
+                  "text": "apt autoclean",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "仅下载包的命令是什么？",
+              "id": "5-474-16",
+              "answers": [
+                {
+                  "text": "apt -d install xxx",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "question": "如何模拟安装过程？",
+              "id": "5-474-17",
+              "answers": [
+                {
+                  "text": "apt -s install xxx",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "可用包信息在/var/lib/dpkg/available；包安装状态信息在/var/lib/dpkg/status；dpkg --list查看包安装状态。",
+          "qas": [
+            {
+              "question": "可用包信息存放在哪里？",
+              "id": "5-474-18",
+              "answers": [
+                {
+                  "text": "/var/lib/dpkg/available",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "查看包安装状态的命令是什么？",
+              "id": "5-474-19",
+              "answers": [
+                {
+                  "text": "dpkg --list",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpkg -L xxx查看已安装包的文件分布；dpkg -S /bin/ls查询特定文件所属包。",
+          "qas": [
+            {
+              "question": "如何查看已安装包的文件分布？",
+              "id": "5-474-20",
+              "answers": [
+                {
+                  "text": "dpkg -L xxx",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "查询特定文件所属包的命令是什么？",
+              "id": "5-474-21",
+              "answers": [
+                {
+                  "text": "dpkg -S",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "远程仓库http://deb.debian.org/debian/dists/unstable下有Release、Release.gpg、Contents-<架构>文件。",
+          "qas": [
+            {
+              "question": "远程仓库unstable目录下有哪些文件？",
+              "id": "5-474-22",
+              "answers": [
+                {
+                  "text": "Release、Release.gpg、Contents-<架构>文件",
+                  "answer_start": 51
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "远程仓库binary-amd64目录下有Release、Packages、Sources文件；本地对应文件在/var/lib/apt/lists/下。",
+          "qas": [
+            {
+              "question": "远程仓库binary-amd64目录下有什么文件？",
+              "id": "5-474-23",
+              "answers": [
+                {
+                  "text": "Release、Packages、Sources文件",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "本地对应远程仓库的文件存放在哪里？",
+              "id": "5-474-24",
+              "answers": [
+                {
+                  "text": "/var/lib/apt/lists/",
+                  "answer_start": 62
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/var/lib/apt/extended_states存储自动安装包信息；/var/cache/apt/archives是包缓存目录。",
+          "qas": [
+            {
+              "question": "自动安装包信息存在哪里？",
+              "id": "5-474-25",
+              "answers": [
+                {
+                  "text": "/var/lib/apt/extended_states",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "包缓存目录是什么？",
+              "id": "5-474-26",
+              "answers": [
+                {
+                  "text": "/var/cache/apt/archives",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

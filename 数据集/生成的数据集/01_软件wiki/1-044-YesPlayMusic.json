@@ -1,0 +1,154 @@
+{
+  "data": [
+    {
+      "title": "YesPlayMusic",
+      "paragraphs": [
+        {
+          "context": "YesPlayMusic 是一款高颜值的第三方网易云播放器，支持 MV 播放、歌词显示、私人 FM / 每日推荐歌曲、UnblockNeteaseMusic、自动使用各类音源替换变灰歌曲链接、每日自动签到（手机端和电脑端同时签到）、深色模式、Last.fm Scrobble、音乐云盘、自定义快捷键和全局快捷键、Mpris 等功能。",
+          "qas": [
+            {
+              "question": "YesPlayMusic 是什么类型的软件？",
+              "id": "1-44-1",
+              "answers": [
+                {
+                  "text": "第三方网易云播放器",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "YesPlayMusic 支持 MV 播放功能吗？",
+              "id": "1-44-2",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "YesPlayMusic 能实现每日自动签到吗？",
+              "id": "1-44-3",
+              "answers": [
+                {
+                  "text": "能，支持手机端和电脑端同时签到",
+                  "answer_start": 146
+                }
+              ]
+            },
+            {
+              "question": "YesPlayMusic 有深色模式吗？",
+              "id": "1-44-4",
+              "answers": [
+                {
+                  "text": "有",
+                  "answer_start": 182
+                }
+              ]
+            },
+            {
+              "question": "YesPlayMusic 支持自定义快捷键吗？",
+              "id": "1-44-5",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 211
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装命令：wget https://github.com/qier222/YesPlayMusic/releases/download/v0.4.5/yesplaymusic_0.4.5_amd64.deb；sudo apt install ./yesplaymusic_0.4.5_amd64.deb",
+          "qas": [
+            {
+              "question": "如何安装 YesPlayMusic？",
+              "id": "1-44-6",
+              "answers": [
+                {
+                  "text": "wget https://github.com/qier222/YesPlayMusic/releases/download/v0.4.5/yesplaymusic_0.4.5_amd64.deb；sudo apt install ./yesplaymusic_0.4.5_amd64.deb",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "安装 YesPlayMusic 时需要下载的安装包版本是什么？",
+              "id": "1-44-7",
+              "answers": [
+                {
+                  "text": "v0.4.5",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载命令：sudo apt remove --purge yesplaymusic",
+          "qas": [
+            {
+              "question": "如何卸载 YesPlayMusic？",
+              "id": "1-44-8",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge yesplaymusic",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装时下载安装包速度太慢？国内访问 Github 速度过慢，可通过安装 FastGithub 解决；或者下载我分享的 YesPlayMusic 安装包：https://wwi.lanzoup.com/iyEfI07rocvc",
+          "qas": [
+            {
+              "question": "安装 YesPlayMusic 时下载安装包速度太慢怎么办？",
+              "id": "1-44-9",
+              "answers": [
+                {
+                  "text": "国内访问 Github 速度过慢，可通过安装 FastGithub 解决；或者下载我分享的 YesPlayMusic 安装包：https://wwi.lanzoup.com/iyEfI07rocvc",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "除了安装 FastGithub，还有什么方法解决安装包下载慢的问题？",
+              "id": "1-44-10",
+              "answers": [
+                {
+                  "text": "下载分享的 YesPlayMusic 安装包：https://wwi.lanzoup.com/iyEfI07rocvc",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "YesPlayMusic Github 主页：https://github.com/qier222/YesPlayMusic；YesPlayMusic 在线版：https://music.qier222.com/",
+          "qas": [
+            {
+              "question": "YesPlayMusic 的 Github 主页是什么？",
+              "id": "1-44-11",
+              "answers": [
+                {
+                  "text": "https://github.com/qier222/YesPlayMusic",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "YesPlayMusic 有在线版吗？在线版的网址是什么？",
+              "id": "1-44-12",
+              "answers": [
+                {
+                  "text": "有，在线版网址是 https://music.qier222.com/",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

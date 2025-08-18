@@ -1,0 +1,337 @@
+{
+  "data": [
+    {
+      "title": "桌面常见问题及解决方法",
+      "paragraphs": [
+        {
+          "context": "如何查看系统的基本操作（深度帮助手册系列） 方法一：在桌面、控制中心、启动器、或者各个应用按 <kbd>F1</kbd> 快捷键（也可以单击主菜单中的帮助），打开帮助手册，查看系统的基本操作。 方法二：在终端执行命令 `dman /usr/share/dman/dde/zh_CN/` 查看系统的基本操作。",
+          "qas": [
+            {
+              "question": "如何查看系统的基本操作（深度帮助手册系列）",
+              "id": "3-22-1",
+              "answers": [
+                {
+                  "text": "在桌面、控制中心、启动器、或者各个应用按 <kbd>F1</kbd> 快捷键（也可以单击主菜单中的帮助），打开帮助手册，查看系统的基本操作。",
+                  "answer_start": 24
+                },
+                {
+                  "text": "在终端执行命令 `dman /usr/share/dman/dde/zh_CN/` 查看系统的基本操作。",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如何了解deepin相关的命令操作？ deepin系统相关命令操作请参考： http://list.youku.com/albumlist/show/id_51250083",
+          "qas": [
+            {
+              "question": "如何了解deepin相关的命令操作？",
+              "id": "3-22-2",
+              "answers": [
+                {
+                  "text": "deepin系统相关命令操作请参考： http://list.youku.com/albumlist/show/id_51250083",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如何使用命令行安装应用和依赖，更新升级和卸载应用？ 相关命令如下： `sudo apt install packagename` `sudo apt install -f` `sudo apt update` `sudo apt dist-upgrade` `sudo apt remove packagename`",
+          "qas": [
+            {
+              "question": "如何使用命令行安装应用和依赖，更新升级和卸载应用？",
+              "id": "3-22-3",
+              "answers": [
+                {
+                  "text": "sudo apt install packagename",
+                  "answer_start": 41
+                },
+                {
+                  "text": "sudo apt install -f",
+                  "answer_start": 65
+                },
+                {
+                  "text": "sudo apt update",
+                  "answer_start": 83
+                },
+                {
+                  "text": "sudo apt dist-upgrade",
+                  "answer_start": 99
+                },
+                {
+                  "text": "sudo apt remove packagename",
+                  "answer_start": 122
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如何查看系统默认的壁纸存放路径？ 进入系统默认的壁纸存放路径 “/usr/share/wallpapers/deepin” 即可查看壁纸。 `cd /usr/share/wallpapers/deepin`",
+          "qas": [
+            {
+              "question": "如何查看系统默认的壁纸存放路径？",
+              "id": "3-22-4",
+              "answers": [
+                {
+                  "text": "进入系统默认的壁纸存放路径 “/usr/share/wallpapers/deepin” 即可查看壁纸。",
+                  "answer_start": 23
+                },
+                {
+                  "text": "cd /usr/share/wallpapers/deepin",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度截图录屏如何设置超过10s的延时截图？ （1）按下快捷键 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> （2）打开终端，执行命令 `deepin-screen-recorder -d 10`",
+          "qas": [
+            {
+              "question": "深度截图录屏如何设置超过10s的延时截图？",
+              "id": "3-22-5",
+              "answers": [
+                {
+                  "text": "（1）按下快捷键 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> （2）打开终端，执行命令 `deepin-screen-recorder -d 10`",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "亮度无法调节 进入 “控制中心 > 显示 > 亮度”， 关闭 自动调节色温。 （1）按下快捷键 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> （2）打开终端，执行命令 `xrandr --output eDP --brightness 0.5` `--ouput` 后面为你的显示器 ,输入 xrandr 可以看到 `--brightness` 后面为你要调的亮度 [0,1]",
+          "qas": [
+            {
+              "question": "亮度无法调节怎么办？",
+              "id": "3-22-6",
+              "answers": [
+                {
+                  "text": "进入 “控制中心 > 显示 > 亮度”， 关闭 自动调节色温。",
+                  "answer_start": 7
+                },
+                {
+                  "text": "（1）按下快捷键 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> （2）打开终端，执行命令 `xrandr --output eDP --brightness 0.5` `--ouput` 后面为你的显示器 ,输入 xrandr 可以看到 `--brightness` 后面为你要调的亮度 [0,1]",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "窗口默认居中如何设置 只需要修改 ~/.config/kwinrc 文件，在里面加上这一行： [Windows] Placement=Centered",
+          "qas": [
+            {
+              "question": "窗口默认居中如何设置？",
+              "id": "3-22-7",
+              "answers": [
+                {
+                  "text": "只需要修改 ~/.config/kwinrc 文件，在里面加上这一行： [Windows] Placement=Centered",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如何使用系统命令？ https://github.com/jaywcjlove/linux-command",
+          "qas": [
+            {
+              "question": "如何使用系统命令？",
+              "id": "3-22-8",
+              "answers": [
+                {
+                  "text": "https://github.com/jaywcjlove/linux-command",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用截图录屏功能的时候不能录制视频，无录屏功能 请确认是否开启窗口高效模式，没开高效模式是无法录制，只能截图; 如果是集成显卡，没有窗口特效开关，无法打开窗口特效开关，便不能录屏。",
+          "qas": [
+            {
+              "question": "使用截图录屏功能的时候不能录制视频，无录屏功能怎么办？",
+              "id": "3-22-9",
+              "answers": [
+                {
+                  "text": "请确认是否开启窗口高效模式，没开高效模式是无法录制，只能截图; 如果是集成显卡，没有窗口特效开关，无法打开窗口特效开关，便不能录屏。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统密码登录桌面自动闪退 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd> 进入终端，安装 `apt install startdde=5.2.1-1`； `sudo service lightdm restart`",
+          "qas": [
+            {
+              "question": "系统密码登录桌面自动闪退怎么办？",
+              "id": "3-22-10",
+              "answers": [
+                {
+                  "text": "<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F2</kbd> 进入终端，安装 `apt install startdde=5.2.1-1`； `sudo service lightdm restart`",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在使用过程中桌面鼠标卡死 1. 为图形界面卡死，内核未卡死； 2. 进入tty模式后，top查看系列性能，发现swap分区已被全部使用，发现browser360进程占用内存为77.8%； 3. 在kill browser360后，图形界面任然存在卡顿情况； 4. Kill tty1以重启dde-desktop命令，重启完成后图形界面回复正常。",
+          "qas": [
+            {
+              "question": "在使用过程中桌面鼠标卡死怎么办？",
+              "id": "3-22-11",
+              "answers": [
+                {
+                  "text": "1. 为图形界面卡死，内核未卡死； 2. 进入tty模式后，top查看系列性能，发现swap分区已被全部使用，发现browser360进程占用内存为77.8%； 3. 在kill browser360后，图形界面任然存在卡顿情况； 4. Kill tty1以重启dde-desktop命令，重启完成后图形界面回复正常。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "v20如何关闭电脑的屏幕的触摸功能 打开终端输入 `xinput --list` 看list中pointer前面的名字，使用命令 `xinput disable [id]`  来禁用对应的设备",
+          "qas": [
+            {
+              "question": "v20如何关闭电脑的屏幕的触摸功能？",
+              "id": "3-22-12",
+              "answers": [
+                {
+                  "text": "打开终端输入 `xinput --list` 看list中pointer前面的名字，使用命令 `xinput disable [id]`  来禁用对应的设备",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装软件应用后，桌面不显示图标 打开路径 计算机/date/opt/apps/软件名称 找到该应用图标，右健发送到桌面",
+          "qas": [
+            {
+              "question": "安装软件应用后，桌面不显示图标怎么办？",
+              "id": "3-22-13",
+              "answers": [
+                {
+                  "text": "打开路径 计算机/date/opt/apps/软件名称 找到该应用图标，右健发送到桌面",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加新的字体到deepin系统里 查看系统自带字体  `cat /etc/issuefc-lista`  例子：目前系统中没有微软雅黑字体。我们现在需要把（微软雅黑.TTF）文件安装到deepin终端。如下： 打开微软雅黑字体所在文件夹右击打开终端把 微软雅黑.TTF 复制到 /usr/share/fonts/fonts-cesi 目录下，使用如下命令： `cp 微软雅黑.TTF /usr/share/fonts/fonts-cesi`  然后建立字体索引信息，更新字体缓存，使用如下命令： `cd /usr/share/fonts/fonts-cesi` `chmod a+r 微软雅黑.TTF` `mkfontscale` `mkfontdir` `fc-cachefonts-cesi`",
+          "qas": [
+            {
+              "question": "如何添加新的字体到deepin系统里？",
+              "id": "3-22-14",
+              "answers": [
+                {
+                  "text": "查看系统自带字体  `cat /etc/issuefc-lista`  例子：目前系统中没有微软雅黑字体。我们现在需要把（微软雅黑.TTF）文件安装到deepin终端。如下： 打开微软雅黑字体所在文件夹右击打开终端把 微软雅黑.TTF 复制到 /usr/share/fonts/fonts-cesi 目录下，使用如下命令： `cp 微软雅黑.TTF /usr/share/fonts/fonts-cesi`  然后建立字体索引信息，更新字体缓存，使用如下命令： `cd /usr/share/fonts/fonts-cesi` `chmod a+r 微软雅黑.TTF` `mkfontscale` `mkfontdir` `fc-cachefonts-cesi`",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "密码锁定次数配置文件 `cat var/lib/deepin/authenticate/config.json` 里面的 maxtries 属性值",
+          "qas": [
+            {
+              "question": "密码锁定次数配置文件在哪里？",
+              "id": "3-22-15",
+              "answers": [
+                {
+                  "text": "cat var/lib/deepin/authenticate/config.json 里面的 maxtries 属性值",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "清除已卸载软件遗留配置 `dpkg --get-selections | grep deinstall | sed 's/deinstall/\\lpurge/' | sudo dpkg --set-selections; sudo dpkg -Pa`",
+          "qas": [
+            {
+              "question": "如何清除已卸载软件遗留配置？",
+              "id": "3-22-16",
+              "answers": [
+                {
+                  "text": "dpkg --get-selections | grep deinstall | sed 's/deinstall/\\lpurge/' | sudo dpkg --set-selections; sudo dpkg -Pa",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "输入法消失，右下角输入法图标消失 点击start 打开“输入法配置” 右下角图标就可恢复",
+          "qas": [
+            {
+              "question": "输入法消失，右下角输入法图标消失怎么办？",
+              "id": "3-22-17",
+              "answers": [
+                {
+                  "text": "点击start 打开“输入法配置” 右下角图标就可恢复",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "右下角网络图标如何关闭 执行 `systemctl stop network-manager`",
+          "qas": [
+            {
+              "question": "右下角网络图标如何关闭？",
+              "id": "3-22-18",
+              "answers": [
+                {
+                  "text": "执行 `systemctl stop network-manager`",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Dock使用屏幕缩放后隐藏功能异常 https://bbs.deepin.org/post/196967",
+          "qas": [
+            {
+              "question": "Dock使用屏幕缩放后隐藏功能异常怎么办？",
+              "id": "3-22-19",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/post/196967",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如何安装windows字体 从win10里拷贝出来，然后deepin下用字体安装器就可以了",
+          "qas": [
+            {
+              "question": "如何安装windows字体？",
+              "id": "3-22-20",
+              "answers": [
+                {
+                  "text": "从win10里拷贝出来，然后deepin下用字体安装器就可以了",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

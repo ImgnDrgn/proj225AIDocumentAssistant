@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "title": "KRDC",
+      "paragraphs": [
+        {
+          "context": "KRDC 是 KDE 的远程控制软件客户端。在2007年的Google夏日代码大赛（SoC）中，Urs Wolfer 和其他开发者对 KRDC 进行了重大调整。支持Virtual Network Computing（VNC）和远程桌面协议（RDP），因此可以使用这个软件对 Unix-like 和 Windows 个人电脑进行访问。",
+          "qas": [
+            {
+              "id": "5-125-1",
+              "question": "KRDC是什么？",
+              "answers": [
+                {
+                  "text": "KDE 的远程控制软件客户端",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-125-2",
+              "question": "在2007年，谁对KRDC进行了重大调整？",
+              "answers": [
+                {
+                  "text": "Urs Wolfer 和其他开发者",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "id": "5-125-3",
+              "question": "KRDC在什么活动中进行了调整？",
+              "answers": [
+                {
+                  "text": "Google夏日代码大赛（SoC）",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "5-125-4",
+              "question": "KRDC支持哪些协议？",
+              "answers": [
+                {
+                  "text": "Virtual Network Computing（VNC）和远程桌面协议（RDP）",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "5-125-5",
+              "question": "KRDC可以用于访问什么系统？",
+              "answers": [
+                {
+                  "text": "Unix-like 和 Windows 个人电脑",
+                  "answer_start": 139
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装：sudo apt install krdc",
+          "qas": [
+            {
+              "id": "5-125-6",
+              "question": "如何安装KRDC？",
+              "answers": [
+                {
+                  "text": "sudo apt install krdc",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载：sudo apt remove --purge krdc",
+          "qas": [
+            {
+              "id": "5-125-7",
+              "question": "如何卸载KRDC？",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge krdc",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址：http://packages.deepin.com/deepin/pool/main/k/krdc/",
+          "qas": [
+            {
+              "id": "5-125-8",
+              "question": "KRDC的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/k/krdc/",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "相关链接：维基百科：https://zh.wikipedia.org/zh-cn/KRDC",
+          "qas": [
+            {
+              "id": "5-125-9",
+              "question": "KRDC的维基百科链接是什么？",
+              "answers": [
+                {
+                  "text": "https://zh.wikipedia.org/zh-cn/KRDC",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "title": "CuteMarkEd",
+      "paragraphs": [
+        {
+          "context": "CuteMarkEd是一款Markdown编辑器，它在两侧分别显示代码编辑窗口和预览窗口，预览窗口提供实时的HTML效果展示，支持代码语法高亮显示，带有字数统计和拼写检查功能，可以将文档导出为HTML和PDF。\n安装：sudo apt-get install cutemarked\n卸载：sudo apt-get remove cutemarked\n仓库地址：http://packages.deepin.com/deepin/pool/main/c/cutemarked/",
+          "qas": [
+            {
+              "id": "5-60-1",
+              "question": "CuteMarkEd是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "Markdown编辑器",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-60-2",
+              "question": "CuteMarkEd的窗口布局有什么特点？",
+              "answers": [
+                {
+                  "text": "在两侧分别显示代码编辑窗口和预览窗口",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-60-3",
+              "question": "CuteMarkEd的预览窗口能提供什么功能？",
+              "answers": [
+                {
+                  "text": "实时的HTML效果展示",
+                  "answer_start": 50
+                }
+              ]
+            },
+            {
+              "id": "5-60-4",
+              "question": "CuteMarkEd是否支持代码语法高亮显示？",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 63
+                }
+              ]
+            },
+            {
+              "id": "5-60-5",
+              "question": "CuteMarkEd有哪些辅助功能？",
+              "answers": [
+                {
+                  "text": "字数统计和拼写检查功能",
+                  "answer_start": 77
+                }
+              ]
+            },
+            {
+              "id": "5-60-6",
+              "question": "CuteMarkEd可以将文档导出为哪些格式？",
+              "answers": [
+                {
+                  "text": "HTML和PDF",
+                  "answer_start": 96
+                }
+              ]
+            },
+            {
+              "id": "5-60-7",
+              "question": "如何安装CuteMarkEd？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install cutemarked",
+                  "answer_start": 109
+                }
+              ]
+            },
+            {
+              "id": "5-60-8",
+              "question": "如何卸载CuteMarkEd？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove cutemarked",
+                  "answer_start": 144
+                }
+              ]
+            },
+            {
+              "id": "5-60-9",
+              "question": "CuteMarkEd的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/c/cutemarked/",
+                  "answer_start": 180
+                }
+              ]
+            },
+            {
+              "id": "5-60-10",
+              "question": "CuteMarkEd是什么？",
+              "answers": [
+                {
+                  "text": "CuteMarkEd是一款Markdown编辑器，它在两侧分别显示代码编辑窗口和预览窗口，预览窗口提供实时的HTML效果展示，支持代码语法高亮显示，带有字数统计和拼写检查功能，可以将文档导出为HTML和PDF。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

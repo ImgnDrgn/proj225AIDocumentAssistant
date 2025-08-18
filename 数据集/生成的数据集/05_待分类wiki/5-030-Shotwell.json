@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Shotwell",
+      "paragraphs": [
+        {
+          "context": "Shotwell是一款轻量级的图片管理软件，可从数码相机导入相片，能管理图片、提供基本编辑功能，可剪裁图片并分享。",
+          "qas": [
+            {
+              "question": "Shotwell是什么类型的软件？",
+              "id": "5-30-1",
+              "answers": [
+                {
+                  "text": "轻量级的图片管理软件",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "Shotwell可以从哪里导入相片？",
+              "id": "5-30-2",
+              "answers": [
+                {
+                  "text": "数码相机",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "Shotwell能对图片进行剪裁吗？",
+              "id": "5-30-3",
+              "answers": [
+                {
+                  "text": "可以",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "question": "Shotwell提供基本的编辑功能吗？",
+              "id": "5-30-4",
+              "answers": [
+                {
+                  "text": "提供",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Shotwell的命令是sudo apt-get install shotwell。",
+          "qas": [
+            {
+              "question": "如何安装Shotwell？",
+              "id": "5-30-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install shotwell",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Shotwell的命令是sudo apt-get remove shotwell。",
+          "qas": [
+            {
+              "question": "怎样卸载Shotwell？",
+              "id": "5-30-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove shotwell",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Shotwell的仓库地址是http://packages.deepin.com/deepin/pool/main/s/shotwell/。",
+          "qas": [
+            {
+              "question": "Shotwell的仓库地址是什么？",
+              "id": "5-30-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/shotwell/",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

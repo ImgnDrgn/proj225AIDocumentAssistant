@@ -1,0 +1,175 @@
+
+{
+  "data": [
+    {
+      "title": "apt命令前端——nala",
+      "paragraphs": [
+        {
+          "context": "Nala相比APT的一大优势是并行下载，可一次下载多个包，每个唯一镜像最多下载16个包，理论速度快16倍，且限制每个镜像两个线程，在可用镜像间交替下载，一个失败则继续下一个。",
+          "qas": [
+            {
+              "question": "Nala相比APT的一大优势是什么？",
+              "id": "3-80-1",
+              "answers": [
+                {
+                  "text": "并行下载，可一次下载多个包",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Nala每个唯一镜像最多能下载多少个包？",
+              "id": "3-80-2",
+              "answers": [
+                {
+                  "text": "16个",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "Nala对每个镜像的线程限制是多少？",
+              "id": "3-80-3",
+              "answers": [
+                {
+                  "text": "两个",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nala fetch命令类似netselect和netselect-apt，会检查发行版是Debian还是Ubuntu，获取所有镜像后进行延迟测试和评分，选择三个最快的写入/etc/apt/sources.list.d/nala-sources.list。",
+          "qas": [
+            {
+              "question": "nala fetch命令会检查发行版的哪些信息？",
+              "id": "3-80-4",
+              "answers": [
+                {
+                  "text": "检查发行版是Debian还是Ubuntu",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "nala fetch命令会选择几个最快的镜像？",
+              "id": "3-80-5",
+              "answers": [
+                {
+                  "text": "三个",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "question": "nala fetch命令选择的最快镜像会写入哪个文件？",
+              "id": "3-80-6",
+              "answers": [
+                {
+                  "text": "/etc/apt/sources.list.d/nala-sources.list",
+                  "answer_start": 93
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nala history工作方式类似dnf命令，用唯一ID保存每个操作到/var/lib/nala/history.json，可调用nala history查看摘要，也可用nala history undo ID或redo ID操作包。",
+          "qas": [
+            {
+              "question": "nala history的工作方式类似哪个命令？",
+              "id": "3-80-7",
+              "answers": [
+                {
+                  "text": "dnf命令",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "nala history用什么保存每个操作？",
+              "id": "3-80-8",
+              "answers": [
+                {
+                  "text": "唯一ID编号",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "nala history保存操作的文件路径是什么？",
+              "id": "3-80-9",
+              "answers": [
+                {
+                  "text": "/var/lib/nala/history.json",
+                  "answer_start": 43
+                }
+              ]
+            },
+            {
+              "question": "如何查看nala命令执行的事务摘要？",
+              "id": "3-80-10",
+              "answers": [
+                {
+                  "text": "调用nala history命令",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Ubuntu和Debian用户安装Nala需执行：添加源列表、获取密钥、更新并安装这几步命令。",
+          "qas": [
+            {
+              "question": "哪些用户可以安装Nala？",
+              "id": "3-80-11",
+              "answers": [
+                {
+                  "text": "Ubuntu和Debian用户",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Nala后，首先用nala update命令更新包数据库本地副本，之后可用nala install安装软件包，多数apt命令需sudo特权。",
+          "qas": [
+            {
+              "question": "安装Nala后首先要做什么？",
+              "id": "3-80-12",
+              "answers": [
+                {
+                  "text": "用nala update命令更新包数据库的本地副本",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "如何安装软件包？",
+              "id": "3-80-13",
+              "answers": [
+                {
+                  "text": "使用nala install命令",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "question": "多数apt命令需要什么权限？",
+              "id": "3-80-14",
+              "answers": [
+                {
+                  "text": "sudo特权",
+                  "answer_start": 87
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

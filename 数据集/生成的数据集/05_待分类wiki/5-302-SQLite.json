@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "title": "SQLite",
+      "paragraphs": [
+        {
+          "context": "SQLite是遵守ACID的关联式数据库管理系统，包含在一个相对小的C库中。",
+          "qas": [
+            {
+              "question": "SQLite是什么类型的数据库管理系统？",
+              "id": "5-302-1",
+              "answers": [
+                {
+                  "text": "遵守ACID的关联式数据库管理系统",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "SQLite包含在什么中？",
+              "id": "5-302-2",
+              "answers": [
+                {
+                  "text": "一个相对小的C库中",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装SQLite版命令：sudo apt-get install sqlite；安装SQLite3版命令：sudo apt-get install sqlite3。",
+          "qas": [
+            {
+              "question": "如何安装SQLite版？",
+              "id": "5-302-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install sqlite",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "安装SQLite3版的命令是什么？",
+              "id": "5-302-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install sqlite3",
+                  "answer_start": 46
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载SQLite版命令：sudo apt-get remove sqlite；卸载SQLite3版命令：sudo apt-get remove sqlite3。",
+          "qas": [
+            {
+              "question": "卸载SQLite版的命令是什么？",
+              "id": "5-302-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove sqlite",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "如何卸载SQLite3版？",
+              "id": "5-302-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove sqlite3",
+                  "answer_start": 46
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SQLite仓库地址：http://packages.deepin.com/deepin/pool/main/s/sqlite/；SQLite3仓库地址：http://packages.deepin.com/deepin/pool/main/s/sqlite3/。",
+          "qas": [
+            {
+              "question": "SQLite的仓库地址是什么？",
+              "id": "5-302-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/sqlite/",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "SQLite3的仓库地址在哪里？",
+              "id": "5-302-8",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/sqlite3/",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "SQLite官方网站：https://www.sqlite.org/。",
+          "qas": [
+            {
+              "question": "SQLite的官方网站是什么？",
+              "id": "5-302-9",
+              "answers": [
+                {
+                  "text": "https://www.sqlite.org/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

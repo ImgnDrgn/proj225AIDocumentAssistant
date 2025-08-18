@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "Arduino",
+      "paragraphs": [
+        {
+          "context": "Arduino是一个软硬件平台，构建于开放原始码simpleI/O介面版，包含电路板和IDE软件平台。",
+          "qas": [
+            {
+              "question": "Arduino是什么？",
+              "id": "5-250-1",
+              "answers": [
+                {
+                  "text": "一个软硬件平台，构建于开放原始码simpleI/O介面版，包含电路板和IDE软件平台。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Arduino硬件部分是可做电路连接的Arduino电路板。",
+          "qas": [
+            {
+              "question": "Arduino的硬件部分是什么？",
+              "id": "5-250-2",
+              "answers": [
+                {
+                  "text": "可做电路连接的Arduino电路板。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Arduino软件平台是IDE，可在其中编写程序代码并上传到电路板执行。",
+          "qas": [
+            {
+              "question": "Arduino的软件平台是什么？",
+              "id": "5-250-3",
+              "answers": [
+                {
+                  "text": "IDE",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "在Arduino软件平台中可以做什么？",
+              "id": "5-250-4",
+              "answers": [
+                {
+                  "text": "编写程序代码并上传到电路板执行。",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Arduino的命令是sudo apt-get install arduino。",
+          "qas": [
+            {
+              "question": "如何安装Arduino？",
+              "id": "5-250-5",
+              "answers": [
+                {
+                  "text": "使用命令sudo apt-get install arduino。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Arduino的命令是sudo apt-get remove arduino。",
+          "qas": [
+            {
+              "question": "如何卸载Arduino？",
+              "id": "5-250-6",
+              "answers": [
+                {
+                  "text": "使用命令sudo apt-get remove arduino。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Arduino的仓库地址是http://packages.deepin.com/deepin/pool/main/a/arduino/。",
+          "qas": [
+            {
+              "question": "Arduino的仓库地址是什么？",
+              "id": "5-250-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/a/arduino/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "data": [
+    {
+      "title": "浅谈DDE桌面运行机制",
+      "paragraphs": [
+        {
+          "context": "桌面环境是一些组件的组合体，为你提供图形用户界面，通俗点讲，就是在内核和显示服务器上，写一批程序让用户登录后就可以像在 Windows 中一样使用鼠标和键盘来使用 Linux系统。如果没有桌面环境，你就只能用命令与你的 Linux 系统进行交互。桌面环境决定了你的 Linux 系统的样子以及你与它的交互方式。常见桌面环境有：DDE，KDE，GNOME，Xfce、Unity、Cinnamon、MATE、Lxde等。",
+          "qas": [
+            {
+              "question": "桌面环境是什么？",
+              "id": "3-23-1",
+              "answers": [
+                {
+                  "text": "一些组件的组合体，为你提供图形用户界面，通俗点讲，就是在内核和显示服务器上，写一批程序让用户登录后就可以像在 Windows 中一样使用鼠标和键盘来使用 Linux系统",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "没有桌面环境时，如何与Linux系统交互？",
+              "id": "3-23-2",
+              "answers": [
+                {
+                  "text": "用命令与你的 Linux 系统进行交互",
+                  "answer_start": 133
+                }
+              ]
+            },
+            {
+              "question": "桌面环境决定了Linux系统的什么？",
+              "id": "3-23-3",
+              "answers": [
+                {
+                  "text": "你的 Linux 系统的样子以及你与它的交互方式",
+                  "answer_start": 165
+                }
+              ]
+            },
+            {
+              "question": "常见的桌面环境有哪些？",
+              "id": "3-23-4",
+              "answers": [
+                {
+                  "text": "DDE，KDE，GNOME，Xfce、Unity、Cinnamon、MATE、Lxde等",
+                  "answer_start": 213
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "固定区域，托盘区域和插件区域的代码都在dock项目里，功能由dock直接维护。应用程序的加载主要依赖后台服务: com.deepin.daemon.Dock，其中右键菜单，打开，激活等功能都是调用后台服务接口实现。打开d-feet，在Session Bus中搜索daemon.dock。",
+          "qas": [
+            {
+              "question": "任务栏的固定区域、托盘区域和插件区域的代码在哪里？",
+              "id": "3-23-5",
+              "answers": [
+                {
+                  "text": "在dock项目里",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "任务栏应用程序的加载主要依赖哪个后台服务？",
+              "id": "3-23-6",
+              "answers": [
+                {
+                  "text": "com.deepin.daemon.Dock",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "任务栏应用程序的右键菜单、打开、激活等功能如何实现？",
+              "id": "3-23-7",
+              "answers": [
+                {
+                  "text": "调用后台服务接口实现",
+                  "answer_start": 95
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "以启动“控制中心”为例，我们先来看看有几种方法：1. 在任务栏左键点击或右键打开；2. 桌面打开终端后，在终端中输入命令：dde-control-center -s；3. 桌面打开终端后，在终端中输入命令：dbus-send --session --type=method_call --print-reply --dest=com.deepin.dde.ControlCenter /com/deepin/dde/ControlCenter com.deepin.dde.ControlCenter.Show；4. 打开d-feet，搜索ControlCenter，打开com.deepin.dde.ControlCenter。",
+          "qas": [
+            {
+              "question": "启动“控制中心”有哪些方法？",
+              "id": "3-23-8",
+              "answers": [
+                {
+                  "text": "1. 在任务栏左键点击或右键打开；2. 桌面打开终端后，在终端中输入命令：dde-control-center -s；3. 桌面打开终端后，在终端中输入命令：dbus-send --session --type=method_call --print-reply --dest=com.deepin.dde.ControlCenter /com/deepin/dde/ControlCenter com.deepin.dde.ControlCenter.Show；4. 打开d-feet，搜索ControlCenter，打开com.deepin.dde.ControlCenter",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "在终端中通过命令启动控制中心的其中一个命令是什么？",
+              "id": "3-23-9",
+              "answers": [
+                {
+                  "text": "dde-control-center -s",
+                  "answer_start": 105
+                }
+              ]
+            },
+            {
+              "question": "如何通过d-feet启动控制中心？",
+              "id": "3-23-10",
+              "answers": [
+                {
+                  "text": "打开d-feet，搜索ControlCenter，打开com.deepin.dde.ControlCenter",
+                  "answer_start": 296
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启动器软件列表的加载主要依赖后台服务: com.deepin.daemon.Launcher。所有安装的软件都会有一个.desktop文件，记录了软件基本的信息，该文件在安装后会放在目录/usr/share/applications下，后台服务通过扫描该目录下所有的.desktop文件，来提供安装软件列表给启动器展示。通过pstree查看，可发现所有由Launcher启动的程序，父进程都是startdde，可以得知道启动器都是由startdde调用接口启动软件的。任务栏点击启动器，launcher的父进程总是为systemd，并不是startdde？因为在代码中，启动launcher的方式就是直接通过launcher注册的dbus服务，调用show函数，类似与dbus-send的方式。",
+          "qas": [
+            {
+              "question": "启动器软件列表的加载主要依赖哪个后台服务？",
+              "id": "3-23-11",
+              "answers": [
+                {
+                  "text": "com.deepin.daemon.Launcher",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "安装的软件的.desktop文件存放在哪个目录？",
+              "id": "3-23-12",
+              "answers": [
+                {
+                  "text": "/usr/share/applications",
+                  "answer_start": 145
+                }
+              ]
+            },
+            {
+              "question": "由Launcher启动的程序的父进程是什么？",
+              "id": "3-23-13",
+              "answers": [
+                {
+                  "text": "startdde",
+                  "answer_start": 236
+                }
+              ]
+            },
+            {
+              "question": "为什么任务栏点击启动器时，launcher的父进程是systemd而不是startdde？",
+              "id": "3-23-14",
+              "answers": [
+                {
+                  "text": "因为在代码中，启动launcher的方式就是直接通过launcher注册的dbus服务，调用show函数，类似与dbus-send的方式",
+                  "answer_start": 322
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Lightdm: /var/log/lightdm/lightdm.log；lightdm-deepin-greeter: /var/log/lightdm/seat0-greeter.log；startdde: journalctl –b /usr/bin/startdde；dde-session-daemon: journalctl –b /usr/bin/dde-session-daemon；dde-dock: ~/.cache/deepin/dde-dock/dde-dock.log；dde-control-center: ~/.cache/deepin/dde-control-center/dde-control-center.log；dde-launcher: ~/.cache/deepin/dde-launcher/dde-launcher.log；dde-lock: ~/.cache/deepin/dde-lock/dde-lock.log；dde-shutdown: ~/.cache/deepin/dde-shutdown/dde-shutdown.log；dde-kwin:~/.kwin.log",
+          "qas": [
+            {
+              "question": "Lightdm的日志路径是什么？",
+              "id": "3-23-15",
+              "answers": [
+                {
+                  "text": "/var/log/lightdm/lightdm.log",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "如何查看startdde的日志？",
+              "id": "3-23-16",
+              "answers": [
+                {
+                  "text": "journalctl –b /usr/bin/startdde",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "question": "dde-dock的日志路径是什么？",
+              "id": "3-23-17",
+              "answers": [
+                {
+                  "text": "~/.cache/deepin/dde-dock/dde-dock.log",
+                  "answer_start": 135
+                }
+              ]
+            },
+            {
+              "question": "dde-control-center的日志存放在哪里？",
+              "id": "3-23-18",
+              "answers": [
+                {
+                  "text": "~/.cache/deepin/dde-control-center/dde-control-center.log",
+                  "answer_start": 177
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DDE桌面组件包括前后端组件，前端有任务栏、启动器等，后端有Dock和Launcher服务。任务栏加载应用程序依赖后台服务com.deepin.daemon.Dock，该服务处理右键菜单、打开、激活等功能接口。启动任务栏应用程序的方法包括：任务栏点击、终端命令（dde-control-center -s）、DBus调用（dbus-send...ControlCenter.Show）、以及d-feet工具操作。启动器软件列表加载依赖com.deepin.daemon.Launcher服务，它扫描/usr/share/applications下的.desktop文件获取软件信息。",
+          "qas": [
+            {
+              "question": "启动器从哪里获取软件信息？",
+              "id": "3-23-19",
+              "answers": [
+                {
+                  "text": "扫描/usr/share/applications下的.desktop文件",
+                  "answer_start": 259
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DDE组件运行机制中，任务栏和启动器组件加载代码位于dock项目，后台服务提供功能接口。通过pstree可见Launcher启动的程序父进程是startdde，但任务栏点击启动器时父进程为systemd，因实际通过DBus调用launcher的show函数启动（类似dbus-send方式）。日志查看路径包括：Lightdm(/var/log/lightdm/)、startdde(journalctl)、dde-dock(~/.cache/deepin/)等组件专用日志位置。",
+          "qas": [
+            {
+              "question": "为什么Launcher实际启动方式不同？",
+              "id": "3-23-20",
+              "answers": [
+                {
+                  "text": "通过DBus调用launcher的show函数启动",
+                  "answer_start": 139
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

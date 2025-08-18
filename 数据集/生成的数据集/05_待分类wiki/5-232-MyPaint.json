@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "MyPaint",
+      "paragraphs": [
+        {
+          "context": "MyPaint是一个图像绘画工具，操作简单，内置57个笔刷，支持手绘板，有无限尺寸画布，可保存为PNG等格式。",
+          "qas": [
+            {
+              "question": "MyPaint是什么类型的工具？",
+              "id": "5-232-1",
+              "answers": [
+                {
+                  "text": "图像绘画工具",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "MyPaint操作难度如何？",
+              "id": "5-232-2",
+              "answers": [
+                {
+                  "text": "非常简单",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "MyPaint内置多少个笔刷？",
+              "id": "5-232-3",
+              "answers": [
+                {
+                  "text": "57个",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "MyPaint支持手绘板吗？",
+              "id": "5-232-4",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "MyPaint的画布有尺寸限制吗？",
+              "id": "5-232-5",
+              "answers": [
+                {
+                  "text": "无限尺寸",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "question": "MyPaint可以保存为哪些图片格式？",
+              "id": "5-232-6",
+              "answers": [
+                {
+                  "text": "PNG等",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装MyPaint的命令是sudo apt-get install mypaint。",
+          "qas": [
+            {
+              "question": "如何安装MyPaint？",
+              "id": "5-232-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get install mypaint",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载MyPaint的命令是sudo apt-get remove mypaint。",
+          "qas": [
+            {
+              "question": "如何卸载MyPaint？",
+              "id": "5-232-8",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove mypaint",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MyPaint的仓库地址是http://packages.deepin.com/deepin/pool/main/m/mypaint/。",
+          "qas": [
+            {
+              "question": "MyPaint的仓库地址是什么？",
+              "id": "5-232-9",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/m/mypaint/",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

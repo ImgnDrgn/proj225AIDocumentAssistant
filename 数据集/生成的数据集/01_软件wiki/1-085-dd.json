@@ -1,0 +1,304 @@
+{
+  "data": [
+    {
+      "title": "dd",
+      "paragraphs": [
+        {
+          "context": "Linux dd 命令用于读取、转换并输出数据。dd 可从标准输入或文件中读取数据，根据指定的格式来转换数据，再输出到文件、设备或标准输出。",
+          "qas": [
+            {
+              "id": "1-85-1",
+              "question": "Linux dd命令的主要功能是什么？",
+              "answers": [
+                {
+                  "text": "用于读取、转换并输出数据。",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "1-85-2",
+              "question": "dd命令可以从哪里读取数据？",
+              "answers": [
+                {
+                  "text": "标准输入或文件",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "1-85-3",
+              "question": "dd命令处理后的数据能输出到哪些地方？",
+              "answers": [
+                {
+                  "text": "文件、设备或标准输出",
+                  "answer_start": 69
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dd命令支持的选项包括：if=文件名：输入文件名，默认为标准输入，即指定源文件；of=文件名：输出文件名，默认为标准输出，即指定目的文件；ibs=bytes：一次读入bytes个字节，即指定一个块大小为bytes个字节；obs=bytes：一次输出bytes个字节，即指定一个块大小为bytes个字节；bs=bytes：同时设置读入/输出的块大小为bytes个字节。",
+          "qas": [
+            {
+              "id": "1-85-4",
+              "question": "dd命令中if选项的作用是什么？",
+              "answers": [
+                {
+                  "text": "输入文件名，默认为标准输入，即指定源文件",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "1-85-5",
+              "question": "哪个选项用于指定dd命令的输出文件名？",
+              "answers": [
+                {
+                  "text": "of=文件名：输出文件名，默认为标准输出，即指定目的文件",
+                  "answer_start": 49
+                }
+              ]
+            },
+            {
+              "id": "1-85-6",
+              "question": "bs=bytes选项的功能是什么？",
+              "answers": [
+                {
+                  "text": "同时设置读入/输出的块大小为bytes个字节",
+                  "answer_start": 196
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dd命令支持的其他选项：cbs=bytes：一次转换bytes个字节，即指定转换缓冲区大小；skip=blocks：从输入文件开头跳过blocks个块后再开始复制；seek=blocks：从输出文件开头跳过blocks个块后再开始复制；count=blocks：仅拷贝blocks个块，块大小等于ibs指定的字节数。",
+          "qas": [
+            {
+              "id": "1-85-7",
+              "question": "cbs=bytes选项的作用是什么？",
+              "answers": [
+                {
+                  "text": "一次转换bytes个字节，即指定转换缓冲区大小",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "1-85-8",
+              "question": "如何让dd命令从输入文件开头跳过一定块数后再复制？",
+              "answers": [
+                {
+                  "text": "使用skip=blocks选项，从输入文件开头跳过blocks个块后再开始复制",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "1-85-9",
+              "question": "count=blocks选项的含义是什么？",
+              "answers": [
+                {
+                  "text": "仅拷贝blocks个块，块大小等于ibs指定的字节数",
+                  "answer_start": 136
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dd命令的conv选项支持多种关键字，包括：ascii（转换ebcdic为ascii）、ebcdic（转换ascii为ebcdic）、lcase（把大写字符转换为小写字符）、ucase（把小写字符转换为大写字符）、noerror（出错时不停止）、notrunc（不截短输出文件）等。",
+          "qas": [
+            {
+              "id": "1-85-10",
+              "question": "conv选项中的ascii关键字有什么功能？",
+              "answers": [
+                {
+                  "text": "转换ebcdic为ascii",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "1-85-11",
+              "question": "哪个关键字能让dd命令在出错时不停止？",
+              "answers": [
+                {
+                  "text": "noerror",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "id": "1-85-12",
+              "question": "ucase关键字的作用是什么？",
+              "answers": [
+                {
+                  "text": "把小写字符转换为大写字符",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dd指令是简单的复制指令，不管源和目标的编码、格式、数据结构，直接复制二进制数据从A到B。恢复的目标硬盘无需提前分区，因dd会写入分区信息。dd会占用与数据量相当的空间，可使用gzip压缩。实际使用中，因读取所有数据（包括垃圾数据），即使SSD，读盘速度也较慢。",
+          "qas": [
+            {
+              "id": "1-85-13",
+              "question": "为什么dd恢复的目标硬盘不需要提前分区？",
+              "answers": [
+                {
+                  "text": "因dd会写入分区信息",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "1-85-14",
+              "question": "dd指令为什么可以用gzip压缩？",
+              "answers": [
+                {
+                  "text": "因为dd会占用与数据量相当的空间",
+                  "answer_start": 96
+                }
+              ]
+            },
+            {
+              "id": "1-85-15",
+              "question": "dd命令读盘速度慢的原因是什么？",
+              "answers": [
+                {
+                  "text": "因读取所有数据（包括垃圾数据）",
+                  "answer_start": 136
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DD备份命令示例：dd if=/dev/sda of=/dev/sdb（备份整个磁盘到另一个磁盘）；dd if=/dev/sdb of=sda.img（备份整个磁盘为img文件）；dd if=/dev/sda | gzip > sda.img（备份并且压缩）；dd if=/dev/sda bs=1M | gzip > sda.img（指定块大小，备份并压缩，据说能提速）。",
+          "qas": [
+            {
+              "id": "1-85-16",
+              "question": "如何用dd命令将整个磁盘备份到另一个磁盘？",
+              "answers": [
+                {
+                  "text": "dd if=/dev/sda of=/dev/sdb",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "1-85-17",
+              "question": "怎样用dd命令将磁盘备份为img文件？",
+              "answers": [
+                {
+                  "text": "dd if=/dev/sdb of=sda.img",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "id": "1-85-18",
+              "question": "dd备份时如何同时进行压缩？",
+              "answers": [
+                {
+                  "text": "dd if=/dev/sda | gzip > sda.img",
+                  "answer_start": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "DD复原命令示例：dd if=/dev/sdb of=/dev/sda（从另一个磁盘恢复）；gzip -dc sda.img | dd of=/dev/sda（从压缩的文件恢复）；gzip -dc sda.img | dd of=/dev/sda bs=1M（前面指定块大小，这里也需要）。",
+          "qas": [
+            {
+              "id": "1-85-19",
+              "question": "如何从另一个磁盘用dd命令恢复数据？",
+              "answers": [
+                {
+                  "text": "dd if=/dev/sdb of=/dev/sda",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "1-85-20",
+              "question": "从压缩的img文件恢复数据的dd命令是什么？",
+              "answers": [
+                {
+                  "text": "gzip -dc sda.img | dd of=/dev/sda",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "id": "1-85-21",
+              "question": "若备份时指定了块大小，恢复时需注意什么？",
+              "answers": [
+                {
+                  "text": "恢复时也需要指定相同的块大小，如gzip -dc sda.img | dd of=/dev/sda bs=1M",
+                  "answer_start": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dd的优点：可简单粗暴地将整个磁盘或文件夹打包成img文件（如做安卓镜像时常用）；直接复制文件，较安全，不用担心权限丢失等问题。缺点：日常备份、复制速度不如rsync、cp快。",
+          "qas": [
+            {
+              "id": "1-85-22",
+              "question": "dd命令的优点有哪些？",
+              "answers": [
+                {
+                  "text": "可简单粗暴地将整个磁盘或文件夹打包成img文件（如做安卓镜像时常用）；直接复制文件，较安全，不用担心权限丢失等问题",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "1-85-23",
+              "question": "dd命令的缺点是什么？",
+              "answers": [
+                {
+                  "text": "日常备份、复制速度不如rsync、cp快",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "id": "1-85-24",
+              "question": "dd命令在什么场景下比较实用？",
+              "answers": [
+                {
+                  "text": "做安卓镜像时，可将整个磁盘或文件夹打包成img文件",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dd指令通过简单复制二进制数据实现磁盘备份，目标硬盘无需提前分区。因需读取所有数据（包括垃圾数据），即便使用SSD，速度仍较慢。可通过gzip压缩节省空间。",
+          "qas": [
+            {
+              "id": "1-85-25",
+              "question": "dd备份磁盘的主要特点是什么？",
+              "answers": [
+                {
+                  "text": "简单复制二进制数据",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

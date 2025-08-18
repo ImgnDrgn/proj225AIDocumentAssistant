@@ -1,0 +1,154 @@
+{
+  "data": [
+    {
+      "title": "Remarkable",
+      "paragraphs": [
+        {
+          "context": "Remarkable是一款Markdown编辑器。可以在线预览，有着简洁的用户界面。支持实时预览，支持定义CSS，语法高亮，而且字数实时统计，支持键盘快捷键，可以导出为PDF和HTML。",
+          "qas": [
+            {
+              "id": "5-66-1",
+              "question": "Remarkable是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "Markdown编辑器",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-66-2",
+              "question": "Remarkable是否支持在线预览？",
+              "answers": [
+                {
+                  "text": "可以在线预览",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-66-3",
+              "question": "Remarkable的用户界面有什么特点？",
+              "answers": [
+                {
+                  "text": "简洁",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-66-4",
+              "question": "Remarkable支持实时预览吗？",
+              "answers": [
+                {
+                  "text": "支持实时预览",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-66-5",
+              "question": "Remarkable是否支持定义CSS？",
+              "answers": [
+                {
+                  "text": "支持定义CSS",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "id": "5-66-6",
+              "question": "Remarkable有语法高亮功能吗？",
+              "answers": [
+                {
+                  "text": "语法高亮",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "id": "5-66-7",
+              "question": "Remarkable是否支持字数实时统计？",
+              "answers": [
+                {
+                  "text": "字数实时统计",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "id": "5-66-8",
+              "question": "Remarkable支持键盘快捷键吗？",
+              "answers": [
+                {
+                  "text": "支持键盘快捷键",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "id": "5-66-9",
+              "question": "Remarkable支持哪些导出格式？",
+              "answers": [
+                {
+                  "text": "PDF和HTML",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "id": "5-66-10",
+              "question": "Remarkable具备哪些核心功能？",
+              "answers": [
+                {
+                  "text": "可以在线预览，有着简洁的用户界面。支持实时预览，支持定义CSS，语法高亮，而且字数实时统计，支持键盘快捷键",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装: sudo apt-get install remarkable 卸载: sudo apt-get remove remarkable",
+          "qas": [
+            {
+              "id": "5-66-11",
+              "question": "如何安装Remarkable？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install remarkable",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "5-66-12",
+              "question": "卸载Remarkable的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove remarkable",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址: http://packages.deepin.com/deepin/pool/non-free/r/remarkable/",
+          "qas": [
+            {
+              "id": "5-66-13",
+              "question": "Remarkable的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/r/remarkable/",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "data": [
+    {
+      "title": "FTP服务",
+      "paragraphs": [
+        {
+          "context": "FTP是File Transfer Protocol（文件传输协议）的英文简称，中文简称为“文传协议”，用于Internet上的控制文件的双向传输，也是一个应用程序。",
+          "qas": [
+            {
+              "question": "FTP的英文全称是什么？",
+              "id": "5-275-1",
+              "answers": [
+                {
+                  "text": "File Transfer Protocol",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "FTP的中文简称是什么？",
+              "id": "5-275-2",
+              "answers": [
+                {
+                  "text": "文传协议",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "question": "FTP用于什么？",
+              "id": "5-275-3",
+              "answers": [
+                {
+                  "text": "Internet上的控制文件的双向传输",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "“下载”文件是从远程主机拷贝文件至自己的计算机上；“上传”文件是将文件从自己的计算机中拷贝至远程主机上。",
+          "qas": [
+            {
+              "question": "什么是“下载”文件？",
+              "id": "5-275-4",
+              "answers": [
+                {
+                  "text": "从远程主机拷贝文件至自己的计算机上",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "什么是“上传”文件？",
+              "id": "5-275-5",
+              "answers": [
+                {
+                  "text": "将文件从自己的计算机中拷贝至远程主机上",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装vsftpd，终端执行：sudo apt-get install vsftpd。",
+          "qas": [
+            {
+              "question": "如何安装vsftpd？",
+              "id": "5-275-6",
+              "answers": [
+                {
+                  "text": "终端执行：sudo apt-get install vsftpd",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载vsftpd，终端执行：sudo apt-get remove vsftpd。",
+          "qas": [
+            {
+              "question": "如何卸载vsftpd？",
+              "id": "5-275-7",
+              "answers": [
+                {
+                  "text": "终端执行：sudo apt-get remove vsftpd",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启动ftp：service vsftpd start；停止ftp：service vsftpd stop；重启ftp：service vsftpd restart。",
+          "qas": [
+            {
+              "question": "如何启动ftp服务？",
+              "id": "5-275-8",
+              "answers": [
+                {
+                  "text": "service vsftpd start",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "如何停止ftp服务？",
+              "id": "5-275-9",
+              "answers": [
+                {
+                  "text": "service vsftpd stop",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "如何重启ftp服务？",
+              "id": "5-275-10",
+              "answers": [
+                {
+                  "text": "service vsftpd restart",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ftp的配置文件主要有三个，位于/etc/vsftpd/目录下：ftpusers（指定不能访问ftp服务器的用户）、user_list（ftp登录的白名单或黑名单）、vsftpd.conf（vsftpd的主配置文件）。",
+          "qas": [
+            {
+              "question": "ftp的配置文件位于哪个目录下？",
+              "id": "5-275-11",
+              "answers": [
+                {
+                  "text": "/etc/vsftpd/",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "ftp有哪些主要配置文件？",
+              "id": "5-275-12",
+              "answers": [
+                {
+                  "text": "ftpusers、user_list、vsftpd.conf",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "ftpusers文件的作用是什么？",
+              "id": "5-275-13",
+              "answers": [
+                {
+                  "text": "指定那些用户不能访问ftp服务器",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "user_list文件的作用是什么？",
+              "id": "5-275-14",
+              "answers": [
+                {
+                  "text": "ftp登录的白名单（或者黑名单）",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "vsftpd.conf文件是什么？",
+              "id": "5-275-15",
+              "answers": [
+                {
+                  "text": "vsftpd的主配置文件",
+                  "answer_start": 113
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改vsftpd配置文件的命令：sudo gedit /etc/vsftpd.conf。",
+          "qas": [
+            {
+              "question": "如何修改vsftpd的配置文件？",
+              "id": "5-275-16",
+              "answers": [
+                {
+                  "text": "终端执行：sudo gedit /etc/vsftpd.conf",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "anonymous_enable=YES 允许匿名用户登录；no_anon_password=YES 匿名用户登录时不需要输入密码；local_enable=YES 允许本地用户登录。",
+          "qas": [
+            {
+              "question": "哪个配置项允许匿名用户登录？",
+              "id": "5-275-17",
+              "answers": [
+                {
+                  "text": "anonymous_enable=YES",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "哪个配置项设置匿名用户登录不需要输入密码？",
+              "id": "5-275-18",
+              "answers": [
+                {
+                  "text": "no_anon_password=YES",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "哪个配置项允许本地用户登录？",
+              "id": "5-275-19",
+              "answers": [
+                {
+                  "text": "local_enable=YES",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "write_enable=YES 开启全局上传；local_umask=022 本地文件上传的umask设置为022；anon_upload_enable=YES 允许匿名用户上传（需write_enable=YES且建立可读写目录）。",
+          "qas": [
+            {
+              "question": "如何开启全局上传？",
+              "id": "5-275-20",
+              "answers": [
+                {
+                  "text": "write_enable=YES",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "local_umask=022表示什么？",
+              "id": "5-275-21",
+              "answers": [
+                {
+                  "text": "本地文件上传的umask设置为022",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "允许匿名用户上传需要满足哪些条件？",
+              "id": "5-275-22",
+              "answers": [
+                {
+                  "text": "write_enable=YES，且建立一个允许ftp用户读写的目录，同时设置anon_upload_enable=YES",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "idle_session_timeout=600 是默认的超时时间；data_connection_timeout=120 设置默认数据连接的超时时间。",
+          "qas": [
+            {
+              "question": "默认的超时时间是多少？",
+              "id": "5-275-23",
+              "answers": [
+                {
+                  "text": "600",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "默认数据连接的超时时间是多少？",
+              "id": "5-275-24",
+              "answers": [
+                {
+                  "text": "120",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "xferlog_enable=YES 打开日志记录功能；xferlog_file=/var/log/xferlog 是日志记录文件的位置。",
+          "qas": [
+            {
+              "question": "如何打开日志记录功能？",
+              "id": "5-275-25",
+              "answers": [
+                {
+                  "text": "xferlog_enable=YES",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "日志记录文件的位置在哪里？",
+              "id": "5-275-26",
+              "answers": [
+                {
+                  "text": "/var/log/xferlog",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

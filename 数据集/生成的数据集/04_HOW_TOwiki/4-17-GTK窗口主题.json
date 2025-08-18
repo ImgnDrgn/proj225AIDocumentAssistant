@@ -1,0 +1,169 @@
+{
+  "data": [
+    {
+      "title": "GTK窗口主题",
+      "paragraphs": [
+        {
+          "context": "本小节介绍深度操作系统默认桌面环境下设置GTK主题和窗口主题的方法。DTK程序用无边框窗口加类似标题栏控件实现，标题栏主题修改不影响其样式，其他非传统标题栏应用同理。",
+          "qas": [
+            {
+              "question": "本小节主要介绍什么内容？",
+              "id": "4-17-1",
+              "answers": [
+                {
+                  "text": "深度操作系统默认桌面环境下设置GTK主题和窗口主题的方法。",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "DTK程序的标题栏有何特点？",
+              "id": "4-17-2",
+              "answers": [
+                {
+                  "text": "DTK程序并未使用传统的标题栏，其本质上是在一个无边框窗口中加入一个类似标题栏的控件实现的。",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "标题栏主题修改对DTK窗口样式有影响吗？",
+              "id": "4-17-3",
+              "answers": [
+                {
+                  "text": "没有影响。",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GTK主题和窗口主题的配置文件存放目录有~/.themes（用户自定义配置）和/usr/share/themes（全局配置）。",
+          "qas": [
+            {
+              "question": "GTK主题和窗口主题的配置文件存放目录有哪些？",
+              "id": "4-17-4",
+              "answers": [
+                {
+                  "text": "~/.themes（用户自定义配置）和/usr/share/themes（全局配置）。",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "~/.themes目录用于存放什么配置？",
+              "id": "4-17-5",
+              "answers": [
+                {
+                  "text": "用户自定义配置",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "question": "/usr/share/themes目录是用于存放什么配置的？",
+              "id": "4-17-6",
+              "answers": [
+                {
+                  "text": "全局配置",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "便捷安装窗口主题：下载并安装Deb文件后，打开控制中心——个性化——窗口，设置喜欢的主题。",
+          "qas": [
+            {
+              "question": "如何便捷安装窗口主题？",
+              "id": "4-17-7",
+              "answers": [
+                {
+                  "text": "在网上下载并安装窗口主题的Deb文件后，打开控制中心——个性化——窗口，设置喜欢的窗口主题即可。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "手动安装窗口主题：用带Root权限的文件管理器进入目录，终端执行sudo dde-file-manager /usr/share/themes，再打开控制中心——个性化——窗口设置。",
+          "qas": [
+            {
+              "question": "手动安装窗口主题的步骤是什么？",
+              "id": "4-17-8",
+              "answers": [
+                {
+                  "text": "打开带Root权限的文件管理器进入窗口主题的目录，终端执行：sudo dde-file-manager /usr/share/themes，最后打开控制中心——个性化——窗口，设置喜欢的窗口主题即可。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "手动安装窗口主题时，终端需要执行什么命令？",
+              "id": "4-17-9",
+              "answers": [
+                {
+                  "text": "sudo dde-file-manager /usr/share/themes",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载窗口主题：用带Root权限的文件管理器进入/usr/share/themes目录，删除不需要的主题。",
+          "qas": [
+            {
+              "question": "如何卸载窗口主题？",
+              "id": "4-17-10",
+              "answers": [
+                {
+                  "text": "打开带Root权限的文件管理器进入窗口主题的目录，终端执行：sudo dde-file-manager /usr/share/themes，删除不需要的窗口主题即可。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "卸载窗口主题时，需要进入哪个目录？",
+              "id": "4-17-11",
+              "answers": [
+                {
+                  "text": "/usr/share/themes",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GTK3.X主题资源可在http://gnome-look.org/index.php?xcontentmode=167下载，GTK2/3主题推荐见http://planet.linuxdeepin.com/2012/04/12/gtk-2-and-gtk-3-theme-for-linux-deepin/。",
+          "qas": [
+            {
+              "question": "哪里可以下载GTK3.X主题资源？",
+              "id": "4-17-12",
+              "answers": [
+                {
+                  "text": "http://gnome-look.org/index.php?xcontentmode=167",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "GTK2/3主题推荐的相关链接是什么？",
+              "id": "4-17-13",
+              "answers": [
+                {
+                  "text": "http://planet.linuxdeepin.com/2012/04/12/gtk-2-and-gtk-3-theme-for-linux-deepin/",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

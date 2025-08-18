@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "Peek",
+      "paragraphs": [
+        {
+          "context": "Peek是一款屏幕录制工具，可以将屏幕指定区域录制成GIF动态图，录制，停止，保存三步操作就是它的全部操作了，非常简洁实用。",
+          "qas": [
+            {
+              "question": "Peek的主要功能是什么？",
+              "id": "1-73-1",
+              "answers": [
+                {
+                  "text": "屏幕录制工具",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "Peek能将屏幕的什么区域录制成GIF动态图？",
+              "id": "1-73-2",
+              "answers": [
+                {
+                  "text": "指定区域",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "Peek的操作流程包含哪些步骤？",
+              "id": "1-73-3",
+              "answers": [
+                {
+                  "text": "录制，停止，保存三步操作",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "question": "Peek具有什么特点？",
+              "id": "1-73-4",
+              "answers": [
+                {
+                  "text": "非常简洁实用",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "Peek可以将屏幕录制保存为什么格式？",
+              "id": "1-73-5",
+              "answers": [
+                {
+                  "text": "GIF动态图",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Peek的命令是：sudo apt-get install peek",
+          "qas": [
+            {
+              "question": "安装Peek需要使用什么命令？",
+              "id": "1-73-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get install peek",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Peek的命令是：sudo apt-get remove peek",
+          "qas": [
+            {
+              "question": "卸载Peek的命令是什么？",
+              "id": "1-73-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove peek",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Peek的仓库地址为http://packages.deepin.com/deepin/pool/main/p/peek/",
+          "qas": [
+            {
+              "question": "Peek的仓库地址是什么？",
+              "id": "1-73-8",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/p/peek/",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

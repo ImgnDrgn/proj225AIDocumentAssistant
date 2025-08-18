@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "Qpdfview",
+      "paragraphs": [
+        {
+          "context": "qpdfview是一个小巧的PDF阅读器，它能浏览各种PDF格式的文件，并且可以对PDF文件进行标注、打印和管理。qpdfview可以随意切换到全屏阅读模式，其精准的搜索文本功能，将让您的阅读更轻松、更省事。",
+          "qas": [
+            {
+              "question": "qpdfview是什么类型的软件？",
+              "id": "5-52-1",
+              "answers": [
+                {
+                  "text": "小巧的PDF阅读器",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "qpdfview能浏览什么格式的文件？",
+              "id": "5-52-2",
+              "answers": [
+                {
+                  "text": "各种PDF格式的文件",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "qpdfview可以对PDF文件进行哪些操作？",
+              "id": "5-52-3",
+              "answers": [
+                {
+                  "text": "标注、打印和管理",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "qpdfview是否支持全屏阅读模式？",
+              "id": "5-52-4",
+              "answers": [
+                {
+                  "text": "可以随意切换到全屏阅读模式",
+                  "answer_start": 70
+                }
+              ]
+            },
+            {
+              "question": "qpdfview有什么功能能让阅读更轻松？",
+              "id": "5-52-5",
+              "answers": [
+                {
+                  "text": "精准的搜索文本功能",
+                  "answer_start": 92
+                }
+              ]
+            },
+            {
+              "question": "qpdfview的主要功能是什么？",
+              "id": "5-52-6",
+              "answers": [
+                {
+                  "text": "浏览各种PDF格式的文件，并且可以对PDF文件进行标注、打印和管理",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install qpdfview",
+          "qas": [
+            {
+              "question": "如何安装qpdfview？",
+              "id": "5-52-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get install qpdfview",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove qpdfview",
+          "qas": [
+            {
+              "question": "如何卸载qpdfview？",
+              "id": "5-52-8",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove qpdfview",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/q/qpdfview/",
+          "qas": [
+            {
+              "question": "qpdfview的仓库地址是什么？",
+              "id": "5-52-9",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/q/qpdfview/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

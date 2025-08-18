@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "title": "RawTherapee",
+      "paragraphs": [
+        {
+          "context": "RawTherapee是处理数码相机RAW图像的软件，可批量处理，跨平台支持Windows、macOS和Linux。",
+          "qas": [
+            {
+              "question": "RawTherapee是什么软件？",
+              "id": "5-234-1",
+              "answers": [
+                {
+                  "text": "处理数码相机RAW图像的软件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "RawTherapee支持哪些操作系统？",
+              "id": "5-234-2",
+              "answers": [
+                {
+                  "text": "Microsoft Windows、macOS和Linux",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "RawTherapee能进行批量处理吗？",
+              "id": "5-234-3",
+              "answers": [
+                {
+                  "text": "能，方便批量处理RAW图像",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装RawTherapee的命令是sudo apt install com.pic.rawtherapee。",
+          "qas": [
+            {
+              "question": "如何安装RawTherapee？",
+              "id": "5-234-4",
+              "answers": [
+                {
+                  "text": "sudo apt install com.pic.rawtherapee",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载RawTherapee的命令是sudo apt remove --purge com.pic.rawtherapee。",
+          "qas": [
+            {
+              "question": "如何卸载RawTherapee？",
+              "id": "5-234-5",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge com.pic.rawtherapee",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "RawTherapee的仓库地址是http://packages.deepin.com/deepin/pool/main/r/rawtherapee/。",
+          "qas": [
+            {
+              "question": "RawTherapee的仓库地址是什么？",
+              "id": "5-234-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/r/rawtherapee/",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "RawTherapee的维基百科（英文）链接是https://en.wikipedia.org/wiki/RawTherapee，官方网站是https://www.rawtherapee.com/。",
+          "qas": [
+            {
+              "question": "RawTherapee的英文维基百科链接是什么？",
+              "id": "5-234-7",
+              "answers": [
+                {
+                  "text": "https://en.wikipedia.org/wiki/RawTherapee",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "RawTherapee的官方网站是什么？",
+              "id": "5-234-8",
+              "answers": [
+                {
+                  "text": "https://www.rawtherapee.com/",
+                  "answer_start": 77
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

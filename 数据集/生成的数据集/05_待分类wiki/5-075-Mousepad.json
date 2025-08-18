@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "title": "Mousepad",
+      "paragraphs": [
+        {
+          "context": "Mousepad是一个的简单的基于GTK+3的文本编辑器，一般Xfce桌面环境都带有。",
+          "qas": [
+            {
+              "id": "5-75-1",
+              "question": "Mousepad是什么？",
+              "answers": [
+                {
+                  "text": "一个的简单的基于GTK+3的文本编辑器",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "5-75-2",
+              "question": "Mousepad是基于什么的文本编辑器？",
+              "answers": [
+                {
+                  "text": "GTK+3",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "5-75-3",
+              "question": "Mousepad通常与哪个桌面环境一起提供？",
+              "answers": [
+                {
+                  "text": "Xfce桌面环境",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install mousepad",
+          "qas": [
+            {
+              "id": "5-75-4",
+              "question": "如何安装Mousepad？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install mousepad",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove mousepad",
+          "qas": [
+            {
+              "id": "5-75-5",
+              "question": "如何卸载Mousepad？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove mousepad",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/m/mousepad/",
+          "qas": [
+            {
+              "id": "5-75-6",
+              "question": "Mousepad的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/m/mousepad/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "官方网站：https://docs.xfce.org/apps/mousepad/start 维基百科：",
+          "qas": [
+            {
+              "id": "5-75-7",
+              "question": "Mousepad的官方网站是什么？",
+              "answers": [
+                {
+                  "text": "https://docs.xfce.org/apps/mousepad/start",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-75-8",
+              "question": "文中提到的与Mousepad相关的另一个链接是什么？",
+              "answers": [
+                {
+                  "text": "维基百科",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

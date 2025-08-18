@@ -1,0 +1,109 @@
+{
+  "data": [
+    {
+      "title": "MarkMyWords",
+      "paragraphs": [
+        {
+          "context": "MarkMyWords是一款markdown编辑器，支持所有markdown基础功能，支持实时预览，语法高亮，支持语法检查，可以检测文件的修改，可以将文件导出为HTML和PDF格式。",
+          "qas": [
+            {
+              "id": "5-62-1",
+              "question": "MarkMyWords是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "markdown编辑器",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "5-62-2",
+              "question": "MarkMyWords支持哪些功能？",
+              "answers": [
+                {
+                  "text": "所有markdown基础功能，支持实时预览，语法高亮，支持语法检查，可以检测文件的修改，可以将文件导出为HTML和PDF格式",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "5-62-3",
+              "question": "支持哪些markdown功能？",
+              "answers": [
+                {
+                  "text": "所有markdown基础功能",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "id": "5-62-4",
+              "question": "支持哪些额外特性？",
+              "answers": [
+                {
+                  "text": "实时预览，语法高亮，支持语法检查",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-62-5",
+              "question": "支持导出什么格式？",
+              "answers": [
+                {
+                  "text": "HTML和PDF格式",
+                  "answer_start": 77
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install mark-my-words",
+          "qas": [
+            {
+              "id": "5-62-6",
+              "question": "如何安装MarkMyWords？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install mark-my-words",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove mark-my-words",
+          "qas": [
+            {
+              "id": "5-62-7",
+              "question": "如何卸载MarkMyWords？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove mark-my-words",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/m/mark-my-words/",
+          "qas": [
+            {
+              "id": "5-62-8",
+              "question": "MarkMyWords的软件仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/m/mark-my-words/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

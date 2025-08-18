@@ -1,0 +1,409 @@
+{
+  "data": [
+    {
+      "title": "Linux系统压力测试工具",
+      "paragraphs": [
+        {
+          "context": "Linux命令行压力测试工具用于基准测试，可了解系统最大性能指标，作为性能比较和优化评估的参考。",
+          "qas": [
+            {
+              "question": "Linux命令行压力测试工具的作用是什么？",
+              "id": "4-11-1",
+              "answers": [
+                {
+                  "text": "用于基准测试，可了解系统最大性能指标，作为性能比较和优化评估的参考。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "stress命令可模拟CPU高负载，-c选项指定CPU核心数，如stress -c 4让4个CPU核心高负载运算。",
+          "qas": [
+            {
+              "question": "如何使用stress命令让4个CPU核心处于高负载运算状态？",
+              "id": "4-11-2",
+              "answers": [
+                {
+                  "text": "stress -c 4",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "stress命令中-c选项的作用是什么？",
+              "id": "4-11-3",
+              "answers": [
+                {
+                  "text": "指定CPU核心数",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "模拟CPU打满可用命令：stress -c 1 -t 100，-t选项用于指定运行N秒后停止。",
+          "qas": [
+            {
+              "question": "模拟CPU打满的命令是什么？",
+              "id": "4-11-4",
+              "answers": [
+                {
+                  "text": "stress -c 1 -t 100",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "stress命令中-t选项的作用是什么？",
+              "id": "4-11-5",
+              "answers": [
+                {
+                  "text": "指定运行N秒后停止",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "stress命令的-v选项显示版本号，-q选项不显示运行信息，-n选项显示已完成的指令情况。",
+          "qas": [
+            {
+              "question": "stress命令中-v选项的作用是什么？",
+              "id": "4-11-6",
+              "answers": [
+                {
+                  "text": "显示版本号",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "如何让stress命令不显示运行信息？",
+              "id": "4-11-7",
+              "answers": [
+                {
+                  "text": "使用-q选项",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "stress命令中-n选项的作用是什么？",
+              "id": "4-11-8",
+              "answers": [
+                {
+                  "text": "显示已完成的指令情况",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "stress命令的--backoff N选项表示等待N微妙后开始运行，-i选项产生n个进程，每个反复调用sync()。",
+          "qas": [
+            {
+              "question": "stress命令中--backoff N选项的作用是什么？",
+              "id": "4-11-9",
+              "answers": [
+                {
+                  "text": "等待N微妙后开始运行",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "stress命令中-i选项的作用是什么？",
+              "id": "4-11-10",
+              "answers": [
+                {
+                  "text": "产生n个进程，每个进程反复调用sync()",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fio是灵活的Linux I/O性能测试工具，可测试磁盘、SSD、网络存储等，支持多种I/O操作测试。",
+          "qas": [
+            {
+              "question": "fio工具的作用是什么？",
+              "id": "4-11-11",
+              "answers": [
+                {
+                  "text": "是灵活的Linux I/O性能测试工具，可测试磁盘、SSD、网络存储等，支持多种I/O操作测试。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fio随机读命令：fio -name=randread -direct=1 -iodepth=64 -rw=randread -ioengine=libaio -bs=4k -size=1G -numjobs=1 - runtime=1000 -group_reporting -filename=/dev/sdb",
+          "qas": [
+            {
+              "question": "fio的随机读命令是什么？",
+              "id": "4-11-12",
+              "answers": [
+                {
+                  "text": "fio -name=randread -direct=1 -iodepth=64 -rw=randread -ioengine=libaio -bs=4k -size=1G -numjobs=1 - runtime=1000 -group_reporting -filename=/dev/sdb",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fio随机写命令：fio -name=randwrite -direct=1 -iodepth=64 -rw=randwrite -ioengine=libaio -bs=4k -size=1G -numjobs=1 - runtime=1000 -group_reporting -filename=/dev/sdb",
+          "qas": [
+            {
+              "question": "fio的随机写命令是什么？",
+              "id": "4-11-13",
+              "answers": [
+                {
+                  "text": "fio -name=randwrite -direct=1 -iodepth=64 -rw=randwrite -ioengine=libaio -bs=4k -size=1G -numjobs=1 - runtime=1000 -group_reporting -filename=/dev/sdb",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fio顺序读命令：fio -name=read -direct=1 -iodepth=64 -rw=read -ioengine=libaio -bs=4k -size=1G -numjobs=1 - runtime=1000 -group_reporting -filename=/dev/sdb",
+          "qas": [
+            {
+              "question": "fio的顺序读命令是什么？",
+              "id": "4-11-14",
+              "answers": [
+                {
+                  "text": "fio -name=read -direct=1 -iodepth=64 -rw=read -ioengine=libaio -bs=4k -size=1G -numjobs=1 - runtime=1000 -group_reporting -filename=/dev/sdb",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "fio顺序写命令：fio -name=write -direct=1 -iodepth=64 -rw=write -ioengine=libaio -bs=4k -size=1G",
+          "qas": [
+            {
+              "question": "fio的顺序写命令是什么？",
+              "id": "4-11-15",
+              "answers": [
+                {
+                  "text": "fio -name=write -direct=1 -iodepth=64 -rw=write -ioengine=libaio -bs=4k -size=1G",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sysbench创建初始化fileio文件：sysbench --test=fileio --file-num=16 --file-totalsize=2G prepare",
+          "qas": [
+            {
+              "question": "如何使用sysbench创建初始化fileio文件？",
+              "id": "4-11-16",
+              "answers": [
+                {
+                  "text": "sysbench --test=fileio --file-num=16 --file-totalsize=2G prepare",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sysbench测试文件：sysbench --test=fileio --file-total-size=2G --file-testmode=rndrd --max-time=180 --maxrequests=100000000 --num-threads=16 --init-rng=on --file-num=16 --file-extra-flags=direct --file-fsync-freq=0 -file-block-size=16384 run",
+          "qas": [
+            {
+              "question": "使用sysbench对文件进行测试的命令是什么？",
+              "id": "4-11-17",
+              "answers": [
+                {
+                  "text": "sysbench --test=fileio --file-total-size=2G --file-testmode=rndrd --max-time=180 --maxrequests=100000000 --num-threads=16 --init-rng=on --file-num=16 --file-extra-flags=direct --file-fsync-freq=0 -file-block-size=16384 run",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sysbench测试后清理：sysbench --test=fileio --file-num=16 --file-totalsize=2G cleanup",
+          "qas": [
+            {
+              "question": "sysbench测试结束后如何清理文件？",
+              "id": "4-11-18",
+              "answers": [
+                {
+                  "text": "sysbench --test=fileio --file-num=16 --file-totalsize=2G cleanup",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iperf3用于网络吞吐量测量，可测试TCP、UDP或SCTP的吞吐量。",
+          "qas": [
+            {
+              "question": "iperf3工具的作用是什么？",
+              "id": "4-11-19",
+              "answers": [
+                {
+                  "text": "用于网络吞吐量测量，可测试TCP、UDP或SCTP的吞吐量。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iperf3客户端命令：iperf3 -c 10.20.81.33 -p 5002 -i 2 -t 1000，向指定地址和端口发TCP流。",
+          "qas": [
+            {
+              "question": "iperf3客户端向10.20.81.33、5002号TCP端口发TCP流的命令是什么？",
+              "id": "4-11-20",
+              "answers": [
+                {
+                  "text": "iperf3 -c 10.20.81.33 -p 5002 -i 2 -t 1000",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iperf3服务端命令：iperf3 -s -p 5002 -i 2",
+          "qas": [
+            {
+              "question": "iperf3服务端在5002端口运行的命令是什么？",
+              "id": "4-11-21",
+              "answers": [
+                {
+                  "text": "iperf3 -s -p 5002 -i 2",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看端口禁用列表：iptables -L -n --line-number",
+          "qas": [
+            {
+              "question": "如何查看端口禁用列表？",
+              "id": "4-11-22",
+              "answers": [
+                {
+                  "text": "iptables -L -n --line-number",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "禁用出口端口：iptables -A OUTPUT -p tcp --sport 18004 -j DROP",
+          "qas": [
+            {
+              "question": "如何禁用出口端口18004？",
+              "id": "4-11-23",
+              "answers": [
+                {
+                  "text": "iptables -A OUTPUT -p tcp --sport 18004 -j DROP",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "禁用入口端口：iptables -A INPUT -p tcp --dport 18004 -j DROP",
+          "qas": [
+            {
+              "question": "如何禁用入口端口18004？",
+              "id": "4-11-24",
+              "answers": [
+                {
+                  "text": "iptables -A INPUT -p tcp --dport 18004 -j DROP",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除入口端口规则：iptables -D INPUT 1，删除出口端口规则：iptables -D OUTPUT 1",
+          "qas": [
+            {
+              "question": "如何删除编号为1的入口端口规则？",
+              "id": "4-11-25",
+              "answers": [
+                {
+                  "text": "iptables -D INPUT 1",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "如何删除编号为1的出口端口规则？",
+              "id": "4-11-26",
+              "answers": [
+                {
+                  "text": "iptables -D OUTPUT 1",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Stress工具可对内存、磁盘I/O做压力测试，Stress-ng是其增强版。",
+          "qas": [
+            {
+              "question": "Stress工具除了CPU，还能对哪些进行压力测试？",
+              "id": "4-11-27",
+              "answers": [
+                {
+                  "text": "内存、磁盘I/O",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "Stress-ng与Stress是什么关系？",
+              "id": "4-11-28",
+              "answers": [
+                {
+                  "text": "Stress-ng是Stress的增强版",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Sysbench主要用于数据库服务器性能测试，也可测试系统的CPU、内存和磁盘I/O性能。",
+          "qas": [
+            {
+              "question": "Sysbench主要用于什么测试？还能测试系统的哪些性能？",
+              "id": "4-11-29",
+              "answers": [
+                {
+                  "text": "主要用于数据库服务器（如MySQL）的性能测试，还可以用于测试系统的CPU、内存和磁盘I/O性能。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

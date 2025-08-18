@@ -1,0 +1,349 @@
+{
+  "data": [
+    {
+      "title": "deepin安装N卡驱动教程",
+      "paragraphs": [
+        {
+          "context": "deepin 20.6仓库内的N卡驱动已更新到510版本，多数用户无需用run文件安装，通过apt安装更简单，无需手动禁用nouveau、更改配置文件和使用显卡驱动管理器。",
+          "qas": [
+            {
+              "question": "deepin 20.6仓库内的N卡驱动更新到了哪个版本？",
+              "id": "5-516-1",
+              "answers": [
+                {
+                  "text": "510版本",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "多数用户在deepin上安装N卡驱动无需使用什么文件？",
+              "id": "5-516-2",
+              "answers": [
+                {
+                  "text": "run文件",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "在deepin上通过apt安装N卡驱动有哪些优势？",
+              "id": "5-516-3",
+              "answers": [
+                {
+                  "text": "不需要手动禁用nouveau、不需要更改配置文件、不需要显卡驱动管理器",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装N卡驱动第一步是卸载原有驱动，指令为sudo apt autoremove nvidia-*。",
+          "qas": [
+            {
+              "question": "安装N卡驱动的第一步是什么？",
+              "id": "5-516-4",
+              "answers": [
+                {
+                  "text": "卸载原有驱动",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "卸载原有N卡驱动的指令是什么？",
+              "id": "5-516-5",
+              "answers": [
+                {
+                  "text": "sudo apt autoremove nvidia-*",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装N卡驱动第二步是添加32位架构并刷新源，指令为sudo dpkg --add-architecture i386和sudo apt update。",
+          "qas": [
+            {
+              "question": "安装N卡驱动的第二步是什么？",
+              "id": "5-516-6",
+              "answers": [
+                {
+                  "text": "添加32位架构并刷新源",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "添加32位架构的指令是什么？",
+              "id": "5-516-7",
+              "answers": [
+                {
+                  "text": "sudo dpkg --add-architecture i386",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "刷新源的指令是什么？",
+              "id": "5-516-8",
+              "answers": [
+                {
+                  "text": "sudo apt update",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装N卡驱动第三步是安装nvidia-detect，指令为sudo apt install nvidia-detect。",
+          "qas": [
+            {
+              "question": "安装N卡驱动的第三步是什么？",
+              "id": "5-516-9",
+              "answers": [
+                {
+                  "text": "安装nvidia-detect",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "安装nvidia-detect的指令是什么？",
+              "id": "5-516-10",
+              "answers": [
+                {
+                  "text": "sudo apt install nvidia-detect",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装N卡驱动第四步是执行nvidia-detect，指令为nvidia-detect。",
+          "qas": [
+            {
+              "question": "安装N卡驱动的第四步是什么？",
+              "id": "5-516-11",
+              "answers": [
+                {
+                  "text": "执行nvidia-detect",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "执行nvidia-detect的指令是什么？",
+              "id": "5-516-12",
+              "answers": [
+                {
+                  "text": "nvidia-detect",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装N卡驱动第五步，若nvidia-detect显示绿色部分为nvidia-driver，指令为sudo apt install nvidia-driver nvidia-settings nvidia-smi；若是其它内容如nvidia-legacy-390xx-driver，指令为sudo apt install nvidia-legacy-390xx-driver，安装中有提示直接回车，安装完需重启。",
+          "qas": [
+            {
+              "question": "当nvidia-detect显示绿色部分为nvidia-driver时，安装N卡驱动的指令是什么？",
+              "id": "5-516-13",
+              "answers": [
+                {
+                  "text": "sudo apt install nvidia-driver nvidia-settings nvidia-smi",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "当nvidia-detect显示绿色部分为nvidia-legacy-390xx-driver时，安装N卡驱动的指令是什么？",
+              "id": "5-516-14",
+              "answers": [
+                {
+                  "text": "sudo apt install nvidia-legacy-390xx-driver",
+                  "answer_start": 145
+                }
+              ]
+            },
+            {
+              "question": "N卡驱动安装完成后需要做什么？",
+              "id": "5-516-15",
+              "answers": [
+                {
+                  "text": "重启",
+                  "answer_start": 201
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "检查N卡驱动是否安装成功，重启后终端输入nvidia-smi，如图中两处有内容即装好；较老的390系列驱动可能无nvidia-smi，可打开浏览器输入chrome://gpu，Driver vendor为nvidia即装好。",
+          "qas": [
+            {
+              "question": "重启后如何检查N卡驱动是否安装成功？",
+              "id": "5-516-16",
+              "answers": [
+                {
+                  "text": "终端输入nvidia-smi，如图中两处有内容即装好",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "对于较老的390系列N卡驱动，如何检查是否安装成功？",
+              "id": "5-516-17",
+              "answers": [
+                {
+                  "text": "打开浏览器输入chrome://gpu，Driver vendor为nvidia即装好",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "intel和nvidia双显卡切换，可去星火应用商店下载显卡插件，安装后注销重新登录，在状态栏右下角找到切换图标，切换时卡住或没反应可重启。",
+          "qas": [
+            {
+              "question": "如何进行intel和nvidia双显卡切换？",
+              "id": "5-516-18",
+              "answers": [
+                {
+                  "text": "去星火应用商店下载显卡插件，安装后注销重新登录，在状态栏右下角找到切换图标",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "双显卡切换时出现卡住或没反应怎么办？",
+              "id": "5-516-19",
+              "answers": [
+                {
+                  "text": "直接重启",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开N卡同步功能的第一种方法：适用于intel和nvidia双显卡，安装好显卡切换插件，切换成intel，终端输入sudo rm /etc/X11/xorg.conf，再切换成nvidia。",
+          "qas": [
+            {
+              "question": "打开N卡同步功能的第一种方法适用于哪种情况？",
+              "id": "5-516-20",
+              "answers": [
+                {
+                  "text": "intel和nvidia双显卡",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "打开N卡同步功能的第一种方法步骤是什么？",
+              "id": "5-516-21",
+              "answers": [
+                {
+                  "text": "安装好显卡切换插件，切换成intel，终端输入sudo rm /etc/X11/xorg.conf，再切换成nvidia",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开N卡同步功能的第二种方法：编辑/etc/default/grub，若没有GRUB_CMDLINE_LINUX=，在末尾加GRUB_CMDLINE_LINUX=\"nvidia-drm.modeset=1\"，否则直接在后面加内容，然后sudo update-grub，重启电脑；未解决可添加两步：1. 找到nvidia设置里显示器界面NAME:后的字符；2. sudo xrandr --output 复制的字符 --set \"PRIME Synchronization\" 1。",
+          "qas": [
+            {
+              "question": "打开N卡同步功能的第二种方法中，编辑/etc/default/grub时，若没有GRUB_CMDLINE_LINUX=该怎么做？",
+              "id": "5-516-22",
+              "answers": [
+                {
+                  "text": "在末尾加上一行：GRUB_CMDLINE_LINUX=\"nvidia-drm.modeset=1\"",
+                  "answer_start": 43
+                }
+              ]
+            },
+            {
+              "question": "打开N卡同步功能的第二种方法中，编辑完/etc/default/grub后需要执行什么指令？",
+              "id": "5-516-23",
+              "answers": [
+                {
+                  "text": "sudo update-grub",
+                  "answer_start": 165
+                }
+              ]
+            },
+            {
+              "question": "若第二种方法未解决N卡同步问题，还可添加哪两步？",
+              "id": "5-516-24",
+              "answers": [
+                {
+                  "text": "1. 找到nvidia设置里的显示器界面，复制NAME:后面的那串字符；2. sudo xrandr --output 刚刚复制的字符 --set \"PRIME Synchronization\" 1",
+                  "answer_start": 189
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nvidia-detect给部分老显卡推荐nvidia-driver但安装不可用，解决办法：1. 卸载以前的驱动，指令sudo apt autoremove nvidia-*；2. 安装390驱动再重启，指令sudo apt install nvidia-legacy-390xx-driver。",
+          "qas": [
+            {
+              "question": "当nvidia-detect给部分老显卡推荐nvidia-driver但安装不可用时，第一步解决办法是什么？",
+              "id": "5-516-25",
+              "answers": [
+                {
+                  "text": "卸载以前的驱动，指令sudo apt autoremove nvidia-*",
+                  "answer_start": 63
+                }
+              ]
+            },
+            {
+              "question": "当nvidia-detect给部分老显卡推荐nvidia-driver但安装不可用时，第二步解决办法是什么？",
+              "id": "5-516-26",
+              "answers": [
+                {
+                  "text": "安装390驱动再重启，指令sudo apt install nvidia-legacy-390xx-driver",
+                  "answer_start": 114
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "装了显卡切换插件出现开机黑屏无法进入桌面，解决方法：1. 按Ctrl + Alt ( + Fn ) + F2进入超级终端登录，卸载插件sudo apt purge dde-dock-graphics-plugin，删除配置文件sudo rm /etc/X11/xorg.conf，重启；仍黑屏则重新进入超级终端，卸载驱动sudo apt autoremove nvidia-*，删除配置文件，再重启。",
+          "qas": [
+            {
+              "question": "装了显卡切换插件出现开机黑屏无法进入桌面，第一步如何操作？",
+              "id": "5-516-27",
+              "answers": [
+                {
+                  "text": "按住Ctrl + Alt ( + Fn ) + F2进入超级终端输入帐号密码登录，卸载显卡驱动插件sudo apt purge dde-dock-graphics-plugin，删除配置文件sudo rm /etc/X11/xorg.conf，然后重启",
+                  "answer_start": 55
+                }
+              ]
+            },
+            {
+              "question": "若第一步操作后仍黑屏，该怎么办？",
+              "id": "5-516-28",
+              "answers": [
+                {
+                  "text": "重新进入超级终端，卸载显卡驱动sudo apt autoremove nvidia-*，再删除配置文件sudo rm /etc/X11/xorg.conf，再重启",
+                  "answer_start": 208
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

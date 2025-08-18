@@ -1,0 +1,229 @@
+{
+  "data": [
+    {
+      "title": "升级到Nvidia最新闭源驱动450.66教程",
+      "paragraphs": [
+        {
+          "context": "按照这个教程安装的版本目前是450.66，以后可能会是更新的版本。文中出现的版本号450.66仅供参考。",
+          "qas": [
+            {
+              "question": "教程中安装的Nvidia驱动参考版本是多少？",
+              "id": "5-518-1",
+              "answers": [
+                {
+                  "text": "450.66",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "操作不慎可能会导致系统完全无法启动！即使完全按照教程进行操作，也不一定会成功！如果失败，你将无法进入图形界面，只能进入Linux控制台。最坏情况下，系统会完全没有图像显示，需启动到另一个系统修复或重装。没有Linux命令行经验者，需备份数据并做好重装准备。",
+          "qas": [
+            {
+              "question": "操作不慎升级Nvidia驱动可能导致什么严重后果？",
+              "id": "5-518-2",
+              "answers": [
+                {
+                  "text": "系统完全无法启动，失败时无法进入图形界面，最坏情况系统无图像显示，需启动到另一个系统修复或重装。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "没有Linux命令行经验尝试升级驱动需要做什么？",
+              "id": "5-518-3",
+              "answers": [
+                {
+                  "text": "立即备份数据，并做好系统无法恢复、必须重装的准备！",
+                  "answer_start": 196
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UOS 20自带的Nvidia闭源驱动是450.51，可通过添加Debian sid不稳定版软件源升级到450.66。buster-backports源比sid源更可靠，因UOS和deepin v20基于debian 10，陷入依赖地狱风险更小。",
+          "qas": [
+            {
+              "question": "UOS 20自带的Nvidia闭源驱动版本是多少？",
+              "id": "5-518-4",
+              "answers": [
+                {
+                  "text": "450.51",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "升级到Nvidia 450.66驱动可添加哪个发行版的软件源？",
+              "id": "5-518-5",
+              "answers": [
+                {
+                  "text": "Debian sid 不稳定版",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "question": "为什么buster-backports源比sid源更可靠？",
+              "id": "5-518-6",
+              "answers": [
+                {
+                  "text": "因为UOS和deepin v20就是基于debian 10，所以陷入依赖地狱的风险更小，甚至可以长期启用。",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "升级第一步：打开开发者模式（控制中心 > 通用 > 开发者模式）。然后在终端粘贴命令安装旧版Nvidia组件：sudo apt install -y nvidia-driver nvidia-smi ... 若找不到deepin-nvidia-prime，需先下载mgpu-prime_0.2.0_amd64.deb再安装。",
+          "qas": [
+            {
+              "question": "升级Nvidia驱动的第一步操作是什么？",
+              "id": "5-518-7",
+              "answers": [
+                {
+                  "text": "打开开发者模式（控制中心 > 通用 > 开发者模式）。",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "若找不到deepin-nvidia-prime，需要先做什么？",
+              "id": "5-518-8",
+              "answers": [
+                {
+                  "text": "wget https://file.winegame.net/packages/deepin/mgpu/mgpu-prime_0.2.0_amd64.deb",
+                  "answer_start": 136
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "完成教程第4步前，不要运行apt upgrade或其他升级命令，系统自动更新提示也不要安装。不建议升级nvidia-settings，因其依赖多，可能陷入依赖包地狱，不升级不影响使用。",
+          "qas": [
+            {
+              "question": "完成教程第4步前，为何不能运行apt upgrade命令？",
+              "id": "5-518-9",
+              "answers": [
+                {
+                  "text": "否则系统肯定会出问题。",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "为什么不建议升级nvidia-settings软件包？",
+              "id": "5-518-10",
+              "answers": [
+                {
+                  "text": "因为它的依赖太多，升级后恐怕会陷入依赖包地狱，以后安装UOS官方源的软件会异常困难。",
+                  "answer_start": 90
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加Nvidia 450.66驱动软件源的命令：echo 'deb http://mirrors.aliyun.com/debian sid main contrib non-free' | sudo tee /etc/apt/sources.list.d/debian-sid.list。更新列表：sudo apt update。安装新版驱动：sudo apt install nvidia-driver libnvcuvid1 ... 若升级几百个软件包，需拒绝并执行清理。",
+          "qas": [
+            {
+              "question": "添加包含Nvidia 450.66驱动的软件源的命令是什么？",
+              "id": "5-518-11",
+              "answers": [
+                {
+                  "text": "echo 'deb http://mirrors.aliyun.com/debian sid main contrib non-free' | sudo tee /etc/apt/sources.list.d/debian-sid.list",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "安装新版Nvidia驱动时，若提示升级几百个软件包该怎么做？",
+              "id": "5-518-12",
+              "answers": [
+                {
+                  "text": "输入n拒绝安装，然后直接执行第4步的清理工作。",
+                  "answer_start": 232
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "升级后清理工作：删除软件源sudo rm /etc/apt/sources.list.d/debian-sid.list，清理缓存sudo apt clean，清理多余包sudo apt autoclean。",
+          "qas": [
+            {
+              "question": "升级Nvidia驱动后，如何清理新加的软件源？",
+              "id": "5-518-13",
+              "answers": [
+                {
+                  "text": "sudo rm /etc/apt/sources.list.d/debian-sid.list",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重启后若顺利进入图形界面，打开“NVIDIA X 服务器设置”，若显示“NVIDIA Driver Version: 450.66”则升级成功。",
+          "qas": [
+            {
+              "question": "如何确认Nvidia驱动升级成功？",
+              "id": "5-518-14",
+              "answers": [
+                {
+                  "text": "打开“NVIDIA X 服务器设置”，界面上显示“NVIDIA Driver Version:  450.66”。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "笔记本需打开“Nvidia Prime渲染卸载”选项，否则部分游戏打不开，提示无可用显卡驱动。",
+          "qas": [
+            {
+              "question": "笔记本升级Nvidia驱动后，为避免游戏打不开需要做什么？",
+              "id": "5-518-15",
+              "answers": [
+                {
+                  "text": "打开“Nvidia Prime渲染卸载”选项。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装失败且显示器有显示时，按Ctrl + Alt + F2进入文本命令行，输入用户名和密码，运行export LANGUAGE=en切换英文，再执行命令卸载新版并安装旧版驱动。",
+          "qas": [
+            {
+              "question": "安装Nvidia驱动失败且能进入文本命令行时，如何切换为英文显示？",
+              "id": "5-518-16",
+              "answers": [
+                {
+                  "text": "运行命令：export LANGUAGE=en",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "question": "进入文本命令行界面需要按什么组合键？",
+              "id": "5-518-17",
+              "answers": [
+                {
+                  "text": "Ctrl + Alt + F2",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

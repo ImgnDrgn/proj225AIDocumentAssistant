@@ -1,0 +1,134 @@
+{
+  "data": [
+    {
+      "title": "man指令",
+      "paragraphs": [
+        {
+          "context": "man指令的数字代号含义：1代表用户在shell环境中可以操作的指令或可执行文件，2代表系统核心可呼叫的函数与工具等，3代表一些常用的函数（function）与函式库（library），大部分为C的函式库（libc)，4代表装置文件的说明，通常在/dev下的文件，5代表配置文件或者是某些文件的格式，6代表游戏（games），7代表惯例与协议等，例如Linux文件系统，网络协议，ascii code等等的说明，8代表系统管理员可用的管理指令，9代表跟kernel有关的文件。例如查看ls命令的相关信息使用：man ls",
+          "qas": [
+            {
+              "question": "man指令的数字代号1代表什么含义？",
+              "id": "5-380-1",
+              "answers": [
+                {
+                  "text": "用户在shell环境中可以操作的指令或可执行文件",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "man指令中，数字2代表什么含义？",
+              "id": "5-380-2",
+              "answers": [
+                {
+                  "text": "系统核心可呼叫的函数与工具等",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "man指令里，数字3对应的内容是什么？",
+              "id": "5-380-3",
+              "answers": [
+                {
+                  "text": "一些常用的函数（function）与函式库（library），大部分为C的函式库（libc)",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "question": "数字代号4对应什么类型的文件说明？",
+              "id": "5-380-4",
+              "answers": [
+                {
+                  "text": "装置文件的说明，通常在/dev下的文件",
+                  "answer_start": 149
+                }
+              ]
+            },
+            {
+              "question": "man指令里数字5对应的含义是什么？",
+              "id": "5-380-5",
+              "answers": [
+                {
+                  "text": "配置文件或者是某些文件的格式",
+                  "answer_start": 182
+                }
+              ]
+            },
+            {
+              "question": "man指令中数字6代表什么内容？",
+              "id": "5-380-6",
+              "answers": [
+                {
+                  "text": "游戏（games）",
+                  "answer_start": 208
+                }
+              ]
+            },
+            {
+              "question": "数字代号7主要包含哪些类型的说明？",
+              "id": "5-380-7",
+              "answers": [
+                {
+                  "text": "惯例与协议等，例如Linux文件系统，网络协议，ascii code等等的说明",
+                  "answer_start": 220
+                }
+              ]
+            },
+            {
+              "question": "man指令中数字8表示什么含义？",
+              "id": "5-380-8",
+              "answers": [
+                {
+                  "text": "系统管理员可用的管理指令",
+                  "answer_start": 275
+                }
+              ]
+            },
+            {
+              "question": "man指令里数字9对应的内容是什么？",
+              "id": "5-380-9",
+              "answers": [
+                {
+                  "text": "跟kernel有关的文件",
+                  "answer_start": 299
+                }
+              ]
+            },
+            {
+              "question": "查看ls命令的相关信息应该输入什么指令？",
+              "id": "5-380-10",
+              "answers": [
+                {
+                  "text": "man ls",
+                  "answer_start": 323
+                }
+              ]
+            },
+            {
+              "question": "哪个数字代号表示系统管理员可用的管理指令？",
+              "id": "5-380-11",
+              "answers": [
+                {
+                  "text": "8",
+                  "answer_start": 269
+                }
+              ]
+            },
+            {
+              "question": "哪个数字代号用于查看游戏的说明？",
+              "id": "5-380-12",
+              "answers": [
+                {
+                  "text": "6",
+                  "answer_start": 206
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

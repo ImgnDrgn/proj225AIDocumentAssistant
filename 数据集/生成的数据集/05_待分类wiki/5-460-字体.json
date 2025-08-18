@@ -1,0 +1,334 @@
+{
+  "data": [
+    {
+      "title": "字体",
+      "paragraphs": [
+        {
+          "context": "计算机字体（英语：computer font），简称字体（font），是包含有一套字形与字符的电子数据文件。",
+          "qas": [
+            {
+              "question": "什么是计算机字体？",
+              "id": "5-460-1",
+              "answers": [
+                {
+                  "text": "包含有一套字形与字符的电子数据文件。",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "font是指某套具有同样样式、尺寸的字形；typeface则是一或多个font在一或多个尺寸的集合。",
+          "qas": [
+            {
+              "question": "font指的是什么？",
+              "id": "5-460-2",
+              "answers": [
+                {
+                  "text": "某套具有同样样式、尺寸的字形",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "typeface指的是什么？",
+              "id": "5-460-3",
+              "answers": [
+                {
+                  "text": "一或多个font在一或多个尺寸的集合",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "目前的字体大体可分为两类:点阵字体和矢量字体。点阵字体每种字形的每种形式和每种尺寸的图像都由点或者像素组成的矩阵构成，很难进行缩放，特定的点阵字体只能清晰地显示在相应的字号下，12-16px小汉字显示效果好，常见格式有bdf，pcf，fnt，hbf等。矢量字体使用贝塞尔曲线、绘图指令和数学公式描述每种字形，可适应各种尺寸。",
+          "qas": [
+            {
+              "question": "字体大体可分为哪两类？",
+              "id": "5-460-4",
+              "answers": [
+                {
+                  "text": "点阵字体和矢量字体",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "点阵字体由什么构成？",
+              "id": "5-460-5",
+              "answers": [
+                {
+                  "text": "点或者像素组成的矩阵",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "为什么点阵字体很难缩放？",
+              "id": "5-460-6",
+              "answers": [
+                {
+                  "text": "每种字形的每种形式和每种尺寸的图像都由点或者像素组成的矩阵构成",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "矢量字体用什么描述字形？",
+              "id": "5-460-7",
+              "answers": [
+                {
+                  "text": "贝塞尔曲线、绘图指令和数学公式",
+                  "answer_start": 175
+                }
+              ]
+            },
+            {
+              "question": "点阵字体常见格式有哪些？",
+              "id": "5-460-8",
+              "answers": [
+                {
+                  "text": "bdf，pcf，fnt，hbf等",
+                  "answer_start": 157
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Sans-serif=无衬线体=黑体；Serif=衬线体=白体；Monospace=等宽字体，字符宽度相同。以上均为字体类别，非具体字体。",
+          "qas": [
+            {
+              "question": "Sans-serif对应的中文名称是什么？",
+              "id": "5-460-9",
+              "answers": [
+                {
+                  "text": "无衬线体、黑体",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "等宽字体的英文是什么？",
+              "id": "5-460-10",
+              "answers": [
+                {
+                  "text": "Monospace",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "Serif指的是哪类字体？",
+              "id": "5-460-11",
+              "answers": [
+                {
+                  "text": "衬线体、白体",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "常见字体类型：bdf和bdf.gz是点阵字体，“b”代表点阵，“d”代表布局，“f”代表形式，gzip压缩bdf；pcf和pcf.gz是点阵字体，“p”代表可移植，“c”代表编译，“f”代表字体，gzip压缩pcf；psf，psfu，psf.gz和psfu.gz是点阵字体，“s”代表屏幕，“f”代表字体，“U”代表Unicode，gzip压缩(不适用于X.Org)；pfa和pfb是矢量字体，“P”代表PostScript，“f”代表字体，“A”代表ASCII，“b”代表二进制，含内嵌打印令；ttf是outline，TrueType字体，PostScript字体替代；otf是outline，OpenType字体，带PostScript打印指令的TrueType字体。多数情况下TrueType和OpenType技术差异可忽略，部分ttf扩展字体实际是OpenType字体。",
+          "qas": [
+            {
+              "question": "bdf字体中“b”代表什么？",
+              "id": "5-460-12",
+              "answers": [
+                {
+                  "text": "点阵",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "pcf.gz字体的压缩方式是什么？",
+              "id": "5-460-13",
+              "answers": [
+                {
+                  "text": "gzip压缩",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "question": "psfu字体中“U”代表什么？",
+              "id": "5-460-14",
+              "answers": [
+                {
+                  "text": "Unicode",
+                  "answer_start": 200
+                }
+              ]
+            },
+            {
+              "question": "pfa字体中“P”代表什么？",
+              "id": "5-460-15",
+              "answers": [
+                {
+                  "text": "PostScript",
+                  "answer_start": 257
+                }
+              ]
+            },
+            {
+              "question": "ttf是什么类型的字体？",
+              "id": "5-460-16",
+              "answers": [
+                {
+                  "text": "outline，TrueType字体，作为PostScript字体的替代",
+                  "answer_start": 331
+                }
+              ]
+            },
+            {
+              "question": "otf字体有什么特点？",
+              "id": "5-460-17",
+              "answers": [
+                {
+                  "text": "outline，OpenType字体，带有PostScript打印指令的TrueType字体",
+                  "answer_start": 375
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装字体方法一：深度操作系统直接双击要安装的字体文件，出现预览和安装界面，双击“安装字体”(Install Font)即可。方法二：复制字体文件到/usr/share/fonts目录，终端执行sudo nautilus /usr/share/fonts，在弹出的文件管理器操作。方法三：终端安装文泉驿字体，执行sudo apt-get install xfonts-wqy。",
+          "qas": [
+            {
+              "question": "深度操作系统中，安装字体的方法一是什么？",
+              "id": "5-460-18",
+              "answers": [
+                {
+                  "text": "直接双击要安装的字体文件，出现预览和安装界面，双击“安装字体”(Install Font)即可。",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "安装字体的方法二中，需要将字体文件复制到哪个目录？",
+              "id": "5-460-19",
+              "answers": [
+                {
+                  "text": "/usr/share/fonts",
+                  "answer_start": 96
+                }
+              ]
+            },
+            {
+              "question": "终端安装文泉驿字体的命令是什么？",
+              "id": "5-460-20",
+              "answers": [
+                {
+                  "text": "sudo apt-get install xfonts-wqy",
+                  "answer_start": 185
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "字体文件存放路径：系统字体在/usr/share/fonts；用户字体在~/.local/share/fonts（~/.fonts已过时废弃）。字体配置文件路径：系统配置在/etc/fonts/fonts.conf；用户配置在~/.config/fontconfig/fonts.conf。用户配置优先级高于系统配置，建议用用户配置。",
+          "qas": [
+            {
+              "question": "系统字体存放在哪个路径？",
+              "id": "5-460-21",
+              "answers": [
+                {
+                  "text": "/usr/share/fonts",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "用户字体的存放路径是什么？",
+              "id": "5-460-22",
+              "answers": [
+                {
+                  "text": "~/.local/share/fonts",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "哪个字体配置文件路径已过时废弃？",
+              "id": "5-460-23",
+              "answers": [
+                {
+                  "text": "~/.fonts",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "question": "系统字体配置文件在哪里？",
+              "id": "5-460-24",
+              "answers": [
+                {
+                  "text": "/etc/fonts/fonts.conf",
+                  "answer_start": 101
+                }
+              ]
+            },
+            {
+              "question": "用户字体配置和系统字体配置哪个优先级高？",
+              "id": "5-460-25",
+              "answers": [
+                {
+                  "text": "用户配置优先级高于系统配置",
+                  "answer_start": 147
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "图形配置可安装gnome tweak tool，也可直接修改配置文件（文泉驿在线字体配置文件生成）。恢复默认字体设置可删除用户配置文件，终端执行rm -rf ~/.fonts.conf。",
+          "qas": [
+            {
+              "question": "图形配置字体可以安装什么工具？",
+              "id": "5-460-26",
+              "answers": [
+                {
+                  "text": "gnome tweak tool",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "如何恢复默认字体设置？",
+              "id": "5-460-27",
+              "answers": [
+                {
+                  "text": "删除用户配置文件，终端执行rm -rf ~/.fonts.conf。",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除字体可直接到字体配置文件处删除不需要的字体。",
+          "qas": [
+            {
+              "question": "如何删除字体？",
+              "id": "5-460-28",
+              "answers": [
+                {
+                  "text": "直接到字体配置文件处删除不需要的字体。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

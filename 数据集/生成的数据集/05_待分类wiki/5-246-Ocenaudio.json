@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "Ocenaudio",
+      "paragraphs": [
+        {
+          "context": "ocenaudio是跨平台、易于使用、快速且功能强大的音频编辑软件，适合普通和专业用户。",
+          "qas": [
+            {
+              "question": "ocenaudio是什么类型的软件？",
+              "id": "5-246-1",
+              "answers": [
+                {
+                  "text": "音频编辑软件",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "ocenaudio适合哪些用户使用？",
+              "id": "5-246-2",
+              "answers": [
+                {
+                  "text": "普通用户和专业用户",
+                  "answer_start": 46
+                }
+              ]
+            },
+            {
+              "question": "ocenaudio有哪些特点？",
+              "id": "5-246-3",
+              "answers": [
+                {
+                  "text": "跨平台、易于使用、快速且功能强大",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装ocenaudio的命令是sudo apt install com.ocenaudio.ocenaudio。",
+          "qas": [
+            {
+              "question": "如何安装ocenaudio？",
+              "id": "5-246-4",
+              "answers": [
+                {
+                  "text": "sudo apt install com.ocenaudio.ocenaudio",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载ocenaudio的命令是sudo apt remove --purge com.ocenaudio.ocenaudio。",
+          "qas": [
+            {
+              "question": "如何卸载ocenaudio？",
+              "id": "5-246-5",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge com.ocenaudio.ocenaudio",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ocenaudio的仓库地址是http://packages.deepin.com/deepin/pool/non-free/o/ocenaudio/。",
+          "qas": [
+            {
+              "question": "ocenaudio的仓库地址是什么？",
+              "id": "5-246-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/o/ocenaudio/",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Ocenaudio官方网站是https://www.ocenaudio.com/。",
+          "qas": [
+            {
+              "question": "Ocenaudio的官方网站是什么？",
+              "id": "5-246-7",
+              "answers": [
+                {
+                  "text": "https://www.ocenaudio.com/",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

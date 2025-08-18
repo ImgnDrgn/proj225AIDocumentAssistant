@@ -1,0 +1,164 @@
+{
+  "data": [
+    {
+      "title": "VYM",
+      "paragraphs": [
+        {
+          "context": "VYM是一款思维导图软件，安装非常简单，而且VYM的兼容性很好。目前，VYM作为FreeMind 的最佳替代品，可以用来帮助您整理思绪，透过将思路图形化、结构化，来使您的办公效率得到大大提高。",
+          "qas": [
+            {
+              "question": "VYM是什么类型的软件？",
+              "id": "5-100-1",
+              "answers": [
+                {
+                  "text": "思维导图软件",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "VYM的安装有什么特点？",
+              "id": "5-100-2",
+              "answers": [
+                {
+                  "text": "非常简单",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "VYM的兼容性怎么样？",
+              "id": "5-100-3",
+              "answers": [
+                {
+                  "text": "很好",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "VYM是哪个软件的最佳替代品？",
+              "id": "5-100-4",
+              "answers": [
+                {
+                  "text": "FreeMind",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "VYM可以用来做什么？",
+              "id": "5-100-5",
+              "answers": [
+                {
+                  "text": "帮助整理思绪，透过将思路图形化、结构化，来使办公效率得到大大提高",
+                  "answer_start": 46
+                }
+              ]
+            },
+            {
+              "question": "使用VYM能提高哪方面效率？",
+              "id": "5-100-6",
+              "answers": [
+                {
+                  "text": "办公效率",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装VYM的命令是：sudo apt-get install vym",
+          "qas": [
+            {
+              "question": "安装VYM需要使用什么命令？",
+              "id": "5-100-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get install vym",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载VYM的命令是：sudo apt-get remove vym",
+          "qas": [
+            {
+              "question": "卸载VYM需要使用什么命令？",
+              "id": "5-100-8",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove vym",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "VYM的仓库地址是：http://packages.deepin.com/deepin/pool/main/v/vym/",
+          "qas": [
+            {
+              "question": "VYM的仓库地址是什么？",
+              "id": "5-100-9",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/v/vym/",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`sudo apt-get install vym`",
+          "qas": [
+            {
+              "question": "如何安装VYM？",
+              "id": "5-100-10",
+              "answers": [
+                {
+                  "text": "sudo apt-get install vym",
+                  "answer_start": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`sudo apt-get remove vym`",
+          "qas": [
+            {
+              "question": "如何卸载VYM？",
+              "id": "5-100-11",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove vym",
+                  "answer_start": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "[http://packages.deepin.com/deepin/pool/main/v/vym/](http://packages.deepin.com/deepin/pool/main/v/vym/)",
+          "qas": [
+            {
+              "question": "VYM的软件仓库地址是什么？",
+              "id": "5-100-12",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/v/vym/",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

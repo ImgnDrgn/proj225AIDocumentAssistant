@@ -1,0 +1,164 @@
+{
+  "data": [
+    {
+      "title": "UEFI 安装15.4 RC 踩坑记",
+      "paragraphs": [
+        {
+          "context": "用户用U盘启动ISO镜像安装15.4RC，legacy BIOS电脑顺利安装，UEFI BIOS电脑多次失败，记录了关键问题。",
+          "qas": [
+            {
+              "question": "用户安装15.4RC时，哪种BIOS的电脑顺利安装了？",
+              "id": "5-489-1",
+              "answers": [
+                {
+                  "text": "legacy BIOS",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "用户安装15.4RC时，哪种BIOS的电脑安装失败了？",
+              "id": "5-489-2",
+              "answers": [
+                {
+                  "text": "UEFI BIOS",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin安装器不识别非标准ESP分区，也不能手动指定，需在启动安装器前将ESP分区标志设为esp，安装器即可识别。",
+          "qas": [
+            {
+              "question": "Deepin安装器不识别非标准ESP分区时该怎么办？",
+              "id": "5-489-3",
+              "answers": [
+                {
+                  "text": "在启动安装器之前，将ESP分区标志设置为esp",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "Deepin安装器能否手动指定ESP分区？",
+              "id": "5-489-4",
+              "answers": [
+                {
+                  "text": "不能",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户覆盖安装15.4RC（格式化分区）时，在67%卡死，多次尝试后，删除ESP分区中15.3留下的(EPS)/EFI/deepin和(ESP)/EFI/ubuntu文件夹后成功。",
+          "qas": [
+            {
+              "question": "用户覆盖安装15.4RC时在什么进度卡死？",
+              "id": "5-489-5",
+              "answers": [
+                {
+                  "text": "67%",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "question": "用户如何解决覆盖安装15.4RC时的卡死问题？",
+              "id": "5-489-6",
+              "answers": [
+                {
+                  "text": "删除原来15.3留在ESP分区的引导文件，也就是(EPS)/EFI/deepin 和 (ESP)/EFI/ubuntu 两个文件夹",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装后重启，未出现登录界面，提示cannot open access to console,the root account is locked，经排查是分区挂载问题，删除/etc/fstab文件中多余内容后解决。",
+          "qas": [
+            {
+              "question": "安装后重启未出现登录界面的提示是什么？",
+              "id": "5-489-7",
+              "answers": [
+                {
+                  "text": "cannot open access to console,the root account is locked",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "如何解决安装后分区挂载导致的登录界面问题？",
+              "id": "5-489-8",
+              "answers": [
+                {
+                  "text": "进live挂载系统分区找到/etc/fstab文件，删掉多余的东西后重启",
+                  "answer_start": 89
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户安装前UEFI启动序列有一个grub2启动项，与Deepin的grub2启动文件不冲突，却被删除了。",
+          "qas": [
+            {
+              "question": "用户安装前UEFI启动序列中的什么启动项被删除了？",
+              "id": "5-489-9",
+              "answers": [
+                {
+                  "text": "grub2启动项",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装成功时，物理光驱突然弹出，用户质疑不能检测是否为物理光驱启动。",
+          "qas": [
+            {
+              "question": "安装成功时发生了什么意外情况？",
+              "id": "5-489-10",
+              "answers": [
+                {
+                  "text": "光驱突然弹出",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户建议UEFI启动项名由“deepin”改为“Deepin Linux”。",
+          "qas": [
+            {
+              "question": "用户对UEFI启动项名有什么建议？",
+              "id": "5-489-11",
+              "answers": [
+                {
+                  "text": "由“deepin”弄成“Deepin Linux”",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "当前UEFI启动项名是什么？",
+              "id": "5-489-12",
+              "answers": [
+                {
+                  "text": "deepin",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

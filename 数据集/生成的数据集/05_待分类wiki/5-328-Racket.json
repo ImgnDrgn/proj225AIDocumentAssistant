@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Racket",
+      "paragraphs": [
+        {
+          "context": "Racket是在Lisp和Scheme基础上增加了对象、类型、惰性求值等的计算机程序设计语言，也是程序设计环境，可设计自己的程序语言，自带丰富第三方库。",
+          "qas": [
+            {
+              "question": "Racket是什么？",
+              "id": "5-328-1",
+              "answers": [
+                {
+                  "text": "Racket是在Lisp和Scheme基础上增加了对象、类型、惰性求值等的计算机程序设计语言，也是程序设计环境，可设计自己的程序语言，自带丰富第三方库。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Racket基于哪些语言发展而来？",
+              "id": "5-328-2",
+              "answers": [
+                {
+                  "text": "Lisp和Scheme",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "Racket作为程序设计环境有什么功能？",
+              "id": "5-328-3",
+              "answers": [
+                {
+                  "text": "可以让人们设计自己的程序语言",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "Racket自带的第三方库有哪些类型？",
+              "id": "5-328-4",
+              "answers": [
+                {
+                  "text": "web服务器、数据库、GUI、图像处理等",
+                  "answer_start": 69
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Racket的命令是sudo apt-get install racket。",
+          "qas": [
+            {
+              "question": "如何安装Racket？",
+              "id": "5-328-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install racket",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Racket的命令是sudo apt-get remove racket。",
+          "qas": [
+            {
+              "question": "如何卸载Racket？",
+              "id": "5-328-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove racket",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Racket的仓库地址是http://packages.deepin.com/deepin/pool/main/r/racket/。",
+          "qas": [
+            {
+              "question": "Racket的仓库地址是什么？",
+              "id": "5-328-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/r/racket/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

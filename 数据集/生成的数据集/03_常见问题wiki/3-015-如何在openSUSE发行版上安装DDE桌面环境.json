@@ -1,0 +1,234 @@
+{
+  "data": [
+    {
+      "title": "如何在openSUSE发行版上安装DDE桌面环境",
+      "paragraphs": [
+        {
+          "context": "DDE桌面环境在openSUSE leap 15.3及以上版本是有较好适配的。警告！Deepin Desktop 有一些安全问题，请不要在重要的地方部署 Deepin Desktop 。",
+          "qas": [
+            {
+              "question": "DDE桌面环境在openSUSE的哪些版本有较好适配？",
+              "id": "3-15-1",
+              "answers": [
+                {
+                  "text": "openSUSE leap 15.3及以上版本",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "Deepin Desktop存在什么问题，不建议在何处部署？",
+              "id": "3-15-2",
+              "answers": [
+                {
+                  "text": "有一些安全问题，不要在重要的地方部署",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "openSUSE镜像下载地址：https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-3-DVD-x86_64-Build38.1-Media.iso。安装镜像时，可先选择GNOME桌面版系统（建议不要安装KDE桌面版系统，防止与DDE桌面环境冲突）。",
+          "qas": [
+            {
+              "question": "openSUSE Leap 15.3的镜像下载地址是什么？",
+              "id": "3-15-3",
+              "answers": [
+                {
+                  "text": "https://download.opensuse.org/distribution/leap/15.3/iso/openSUSE-Leap-15.3-3-DVD-x86_64-Build38.1-Media.iso",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "安装openSUSE镜像时，建议选择什么桌面版系统，不建议选择哪个？",
+              "id": "3-15-4",
+              "answers": [
+                {
+                  "text": "建议选择GNOME桌面版系统，不建议安装KDE桌面版系统",
+                  "answer_start": 69
+                }
+              ]
+            },
+            {
+              "question": "安装前建议选择什么桌面系统作为基础？",
+              "id": "3-15-5",
+              "answers": [
+                {
+                  "text": "GNOME桌面版系统",
+                  "answer_start": 104
+                }
+              ]
+            },
+            {
+              "question": "哪个桌面系统可能与DDE冲突？",
+              "id": "3-15-6",
+              "answers": [
+                {
+                  "text": "KDE桌面版系统",
+                  "answer_start": 120
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin Desktop 已经被 openSUSE 官方所支持，你可以先在 Leap 上配置好仓库。终端中使用命令：sudo zypper ar -f https://download.opensuse.org/repositories/X11:/Deepin/openSUSE_Leap_15.3/X11:Deepin.repo。openSUSE Tumbleweed 的用户可以使用下述命令，注意，新的 DDE 移植尚未完成，不适合普通用户使用：sudo zypper ar -f https://download.opensuse.org/repositories/X11:/Deepin:/Factory/openSUSE_Tumbleweed/X11:Deepin:Factory.repo。",
+          "qas": [
+            {
+              "question": "在openSUSE Leap上配置DDE仓库的终端命令是什么？",
+              "id": "3-15-7",
+              "answers": [
+                {
+                  "text": "sudo zypper ar -f https://download.opensuse.org/repositories/X11:/Deepin/openSUSE_Leap_15.3/X11:Deepin.repo",
+                  "answer_start": 60
+                }
+              ]
+            },
+            {
+              "question": "openSUSE Tumbleweed用户配置DDE仓库的命令是什么？",
+              "id": "3-15-8",
+              "answers": [
+                {
+                  "text": "sudo zypper ar -f https://download.opensuse.org/repositories/X11:/Deepin:/Factory/openSUSE_Tumbleweed/X11:Deepin:Factory.repo",
+                  "answer_start": 179
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装DDE桌面环境，终端中使用命令：sudo zypper in -t pattern deepin。安装完成后，重启，进入登录界面，点击设置按钮，选择deepin桌面环境。默认的显示管理器是SDDM ，你可以在菜单中选择 \"Deepin\" 来登录Deepin桌面。此外，你也可以使用其他显示管理器。lightdm是上游的默认显示管理器，但它不能在Leap 15.3和更高版本上启动Deepin Desktop。SDDM和GDM在 Deepin Desktop上则可以正常启动Deepin桌面。",
+          "qas": [
+            {
+              "question": "安装DDE桌面环境的终端命令是什么？",
+              "id": "3-15-9",
+              "answers": [
+                {
+                  "text": "sudo zypper in -t pattern deepin",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "安装DDE后，如何进入deepin桌面环境？",
+              "id": "3-15-10",
+              "answers": [
+                {
+                  "text": "重启，进入登录界面，点击设置按钮，选择deepin桌面环境",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "question": "openSUSE上默认的显示管理器是什么？",
+              "id": "3-15-11",
+              "answers": [
+                {
+                  "text": "SDDM",
+                  "answer_start": 125
+                }
+              ]
+            },
+            {
+              "question": "哪些显示管理器可以在Leap 15.3及更高版本上启动Deepin Desktop？",
+              "id": "3-15-12",
+              "answers": [
+                {
+                  "text": "SDDM和GDM",
+                  "answer_start": 275
+                }
+              ]
+            },
+            {
+              "question": "lightdm在Leap 15.3及更高版本上能启动Deepin Desktop吗？",
+              "id": "3-15-13",
+              "answers": [
+                {
+                  "text": "不能",
+                  "answer_start": 232
+                }
+              ]
+            },
+            {
+              "question": "哪个显示管理器无法启动DDE？",
+              "id": "3-15-14",
+              "answers": [
+                {
+                  "text": "lightdm",
+                  "answer_start": 202
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "为了确保你的 openSUSE 处于安全状态，我们默认禁用了 deepin-api 和 deepin-daemon 的所有 dbus 和 policykit 特性，以及 deepin-file-manager。这导致 Deepin Desktop 不能完整地正常工作，一些功能会失效：deepin-lock 上的壁纸是无效的；初始屏幕上的壁纸是无效的；lightdm-deepin-greeter 是无效的；deepin-lock无法启动，无法通过gui关机重启；无法通过控制中心管理用户和网络。如果你想启用 Dbus 和 Policykit ，并且不关心安全问题，你可以用 root 权限手动运行 deepin-daemon-dbus-installer 和 deepin-daemon-polkit-installer或安装deepin-feature-enable来启用这些功能。具体终端命令参考如下：sudo deepin-daemon-dbus-installer；sudo deepin-daemon-polkit-installer；sudo zypper in deepin-feature-enable。",
+          "qas": [
+            {
+              "question": "默认情况下，哪些组件的dbus和policykit特性被禁用了？",
+              "id": "3-15-15",
+              "answers": [
+                {
+                  "text": "deepin-api 和 deepin-daemon，以及 deepin-file-manager",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "默认禁用dbus和policykit特性会导致哪些功能失效？",
+              "id": "3-15-16",
+              "answers": [
+                {
+                  "text": "deepin-lock 上的壁纸是无效的；初始屏幕上的壁纸是无效的；lightdm-deepin-greeter 是无效的；deepin-lock无法启动，无法通过gui关机重启；无法通过控制中心管理用户和网络",
+                  "answer_start": 132
+                }
+              ]
+            },
+            {
+              "question": "如何启用Dbus和Policykit特性？",
+              "id": "3-15-17",
+              "answers": [
+                {
+                  "text": "用 root 权限手动运行 deepin-daemon-dbus-installer 和 deepin-daemon-polkit-installer或安装deepin-feature-enable",
+                  "answer_start": 297
+                }
+              ]
+            },
+            {
+              "question": "启用Dbus特性的终端命令是什么？",
+              "id": "3-15-18",
+              "answers": [
+                {
+                  "text": "sudo deepin-daemon-dbus-installer",
+                  "answer_start": 435
+                }
+              ]
+            },
+            {
+              "question": "启用Policykit特性的终端命令是什么？",
+              "id": "3-15-19",
+              "answers": [
+                {
+                  "text": "sudo deepin-daemon-polkit-installer",
+                  "answer_start": 473
+                }
+              ]
+            },
+            {
+              "question": "通过安装软件启用Dbus和Policykit特性的命令是什么？",
+              "id": "3-15-20",
+              "answers": [
+                {
+                  "text": "sudo zypper in deepin-feature-enable",
+                  "answer_start": 511
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "title": "Deepin安装苹果编程语言swift 3",
+      "paragraphs": [
+        {
+          "context": "在Deepin安装苹果编程语言swift 3。",
+          "qas": [
+            {
+              "question": "本文介绍的是什么内容？",
+              "id": "5-329-1",
+              "answers": [
+                {
+                  "text": "在Deepin安装苹果编程语言swift 3。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载swift3.0，地址为https://swift.org/download/#releases，选择Ubuntu 16.04版本。也可用wget工具下载，命令为wget https://swift.org/builds/swift-3.0.2-release/ubuntu1604/swift-3.0.2-RELEASE/swift-3.0.2-RELEASE-ubuntu16.04.tar.gz。",
+          "qas": [
+            {
+              "question": "swift3.0的下载地址是什么？",
+              "id": "5-329-2",
+              "answers": [
+                {
+                  "text": "https://swift.org/download/#releases",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "用wget工具下载swift3.0的命令是什么？",
+              "id": "5-329-3",
+              "answers": [
+                {
+                  "text": "wget https://swift.org/builds/swift-3.0.2-release/ubuntu1604/swift-3.0.2-RELEASE/swift-3.0.2-RELEASE-ubuntu16.04.tar.gz",
+                  "answer_start": 87
+                }
+              ]
+            },
+            {
+              "question": "应选择哪个版本的swift3.0下载？",
+              "id": "5-329-4",
+              "answers": [
+                {
+                  "text": "Ubuntu 16.04版本",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装swift3.0首先需要安装clang及相关库，命令为sudo apt-get install clang libicu-dev。",
+          "qas": [
+            {
+              "question": "安装swift3.0首先需要安装什么？",
+              "id": "5-329-5",
+              "answers": [
+                {
+                  "text": "clang及相关库",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "安装clang及相关库的命令是什么？",
+              "id": "5-329-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get install clang libicu-dev",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "需要导入PGP密匙到密匙环，命令为wget -q -O - https://swift.org/keys/all-keys.asc |  gpg --import -。",
+          "qas": [
+            {
+              "question": "如何导入PGP密匙到密匙环？",
+              "id": "5-329-7",
+              "answers": [
+                {
+                  "text": "使用命令wget -q -O - https://swift.org/keys/all-keys.asc |  gpg --import -",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解压下载的swift文件可用命令tar xzf swift-3.0.2-RELEASE-ubuntu16.04.tar.gz，可重命名文件夹为swift-3.0.2，可选移动到/opt目录。",
+          "qas": [
+            {
+              "question": "解压下载的swift文件的命令是什么？",
+              "id": "5-329-8",
+              "answers": [
+                {
+                  "text": "tar xzf swift-3.0.2-RELEASE-ubuntu16.04.tar.gz",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "解压后可对文件夹进行什么操作？",
+              "id": "5-329-9",
+              "answers": [
+                {
+                  "text": "重命名为swift-3.0.2，可选移动到/opt目录",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置命令path需进入cd，用vim .bashrc，在文件底部添加export PATH= /opt/swift-3.0.2/usr/bin:\"${PATH}\"，保存退出后，输入swift --version可查看版本。",
+          "qas": [
+            {
+              "question": "如何配置swift3.0的命令path？",
+              "id": "5-329-10",
+              "answers": [
+                {
+                  "text": "进入cd，用vim .bashrc，在文件底部添加export PATH= /opt/swift-3.0.2/usr/bin:\"${PATH}\"，保存退出",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "如何查看swift的版本信息？",
+              "id": "5-329-11",
+              "answers": [
+                {
+                  "text": "输入swift --version",
+                  "answer_start": 125
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

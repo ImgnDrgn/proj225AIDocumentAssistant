@@ -1,0 +1,309 @@
+{
+  "data": [
+    {
+      "title": "黑客000的Python简易教程",
+      "paragraphs": [
+        {
+          "context": "Python由荷兰人Guido van Rossum于1989年发明，第一个公开发行版发行于1991年。",
+          "qas": [
+            {
+              "question": "Python的发明者是谁？发明于哪一年？",
+              "id": "5-478-1",
+              "answers": [
+                {
+                  "text": "荷兰人Guido van Rossum，1989年",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Unix & Linux平台安装Python步骤：下载源码压缩包，解压（tar -zxvf Python-3.8.5.tgz），进入目录（cd Python-3.8.5），配置（./configure），编译安装（make && make install）。",
+          "qas": [
+            {
+              "question": "在Unix & Linux平台安装Python的步骤是什么？",
+              "id": "5-478-2",
+              "answers": [
+                {
+                  "text": "下载源码压缩包，解压（tar -zxvf Python-3.8.5.tgz），进入目录（cd Python-3.8.5），配置（./configure），编译安装（make && make install）。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Windows平台安装Python步骤：访问Windows版下载地址，选择python-3.8.5-amd64.exe等安装包，双击后按默认设置点击“下一步”完成安装。",
+          "qas": [
+            {
+              "question": "Windows平台安装Python的步骤是什么？",
+              "id": "5-478-3",
+              "answers": [
+                {
+                  "text": "访问Windows版下载地址，选择python-3.8.5-amd64.exe等安装包，双击后按默认设置点击“下一步”完成安装。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "第一个Python程序：右键桌面新建1.py文件，写入相关内容。",
+          "qas": [
+            {
+              "question": "如何创建第一个Python程序？",
+              "id": "5-478-4",
+              "answers": [
+                {
+                  "text": "右键桌面新建1.py文件，写入相关内容。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行1.py的命令：在终端输入chmod a+x ./1.py&&./1.py。",
+          "qas": [
+            {
+              "question": "如何运行1.py程序？",
+              "id": "5-478-5",
+              "answers": [
+                {
+                  "text": "在终端输入chmod a+x ./1.py&&./1.py。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Python保留字可通过import keyword; print(keyword.kwlist)查看，不能用作标识符名称。",
+          "qas": [
+            {
+              "question": "如何查看Python的保留字？",
+              "id": "5-478-6",
+              "answers": [
+                {
+                  "text": "import keyword; print(keyword.kwlist)",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Python单行注释以#开头，如#这是单行注释。",
+          "qas": [
+            {
+              "question": "Python中单行注释如何表示？",
+              "id": "5-478-7",
+              "answers": [
+                {
+                  "text": "以#开头",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Python多行注释用三对单引号（'''）或三对双引号（\\\"\\\"\\\"）括起来。",
+          "qas": [
+            {
+              "question": "Python中多行注释如何表示？",
+              "id": "5-478-8",
+              "answers": [
+                {
+                  "text": "用三对单引号（'''）或三对双引号（\\\"\\\"\\\"）括起来",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Python用缩进来表示代码块，同一代码块需相同缩进空格数，可用Tab键。",
+          "qas": [
+            {
+              "question": "Python中如何表示代码块？",
+              "id": "5-478-9",
+              "answers": [
+                {
+                  "text": "用缩进来表示代码块，同一代码块需相同缩进空格数，可用Tab键",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Python有7个标准数据类型：int（整数）、float（小数）、str（字符串）、list（列表）、tuple（元组）、set（集合）、dict（字典）。",
+          "qas": [
+            {
+              "question": "Python的7个标准数据类型是什么？",
+              "id": "5-478-10",
+              "answers": [
+                {
+                  "text": "int（整数）、float（小数）、str（字符串）、list（列表）、tuple（元组）、set（集合）、dict（字典）",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Python不可变数据类型有int、float、str、tuple。",
+          "qas": [
+            {
+              "question": "Python的不可变数据类型有哪些？",
+              "id": "5-478-11",
+              "answers": [
+                {
+                  "text": "int、float、str、tuple",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Python可变数据类型有list、set、dict。",
+          "qas": [
+            {
+              "question": "Python的可变数据类型有哪些？",
+              "id": "5-478-12",
+              "answers": [
+                {
+                  "text": "list、set、dict",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Python用type()函数检查变量类型，如print(type(str0))。",
+          "qas": [
+            {
+              "question": "如何在Python中判断一个变量的类型？",
+              "id": "5-478-13",
+              "answers": [
+                {
+                  "text": "用type()函数，如print(type(str0))",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Python字符串可用单引号或双引号，不能混合匹配；三对引号可表示多行字符串。",
+          "qas": [
+            {
+              "question": "Python中字符串可以使用哪些引号表示？",
+              "id": "5-478-14",
+              "answers": [
+                {
+                  "text": "单引号、双引号、三对引号（表示多行字符串）",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Python用'\\'作为转义字符，如换行符为\\n，反斜杠为\\\\。",
+          "qas": [
+            {
+              "question": "Python中使用什么作为转义字符？举例说明。",
+              "id": "5-478-15",
+              "answers": [
+                {
+                  "text": "'\\'，如换行符为\\n，反斜杠为\\\\",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Python字符串用+连接，用*重复，如str0 * 2表示重复两次。",
+          "qas": [
+            {
+              "question": "如何在Python中连接和重复字符串？",
+              "id": "5-478-16",
+              "answers": [
+                {
+                  "text": "用+连接，用*重复，如str0 * 2表示重复两次",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "字符串切片str0[n]表示第n+1个字符，如str0[0]是第一个字符。",
+          "qas": [
+            {
+              "question": "str0[n]在Python字符串切片中表示什么？",
+              "id": "5-478-17",
+              "answers": [
+                {
+                  "text": "第n+1个字符，如str0[0]是第一个字符",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "字符串切片str0[start:stop]表示从第start+1个字符到stop截止的字符。",
+          "qas": [
+            {
+              "question": "str0[start:stop]表示什么？",
+              "id": "5-478-18",
+              "answers": [
+                {
+                  "text": "从第start+1个字符到stop截止的字符",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "format()方法格式化字符串，可用命名索引、编号索引或空占位符，如\"字{}串{}式{}\".format(\"符\",\"格\",\"化\")。",
+          "qas": [
+            {
+              "question": "Python中format()方法如何格式化字符串？",
+              "id": "5-478-19",
+              "answers": [
+                {
+                  "text": "可用命名索引、编号索引或空占位符，如\"字{}串{}式{}\".format(\"符\",\"格\",\"化\")",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "f-string是Python3.6引入的，形式为f\"{content:format}\"，如f'python is {var}'。",
+          "qas": [
+            {
+              "question": "什么是f-string？其形式是什么？",
+              "id": "5-478-20",
+              "answers": [
+                {
+                  "text": "是Python3.6引入的字符串格式化方法，形式为f\"{content:format}\"，如f'python is {var}'",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

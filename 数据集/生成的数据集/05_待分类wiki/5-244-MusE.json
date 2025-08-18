@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "title": "MusE",
+      "paragraphs": [
+        {
+          "context": "MusE是一个MIDI/音频的音序器，具有两个全自动化的MIDI和音频。",
+          "qas": [
+            {
+              "question": "MusE是什么？",
+              "id": "5-244-1",
+              "answers": [
+                {
+                  "text": "一个MIDI/音频的音序器",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "MusE具有什么特点？",
+              "id": "5-244-2",
+              "answers": [
+                {
+                  "text": "具有两个全自动化的MIDI和音频",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MusE拥有众多的MIDI编辑器，包括钢琴卷，评分编辑器和鼓等，支持LADSPA和DSSI插件，并且可以实时编辑MIDI和音频。",
+          "qas": [
+            {
+              "question": "MusE有哪些MIDI编辑器？",
+              "id": "5-244-3",
+              "answers": [
+                {
+                  "text": "钢琴卷，评分编辑器和鼓等",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "MusE支持哪些插件？",
+              "id": "5-244-4",
+              "answers": [
+                {
+                  "text": "LADSPA和DSSI插件",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "question": "MusE可以实时编辑什么？",
+              "id": "5-244-5",
+              "answers": [
+                {
+                  "text": "MIDI和音频",
+                  "answer_start": 80
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装MusE的命令是sudo apt-get install muse。",
+          "qas": [
+            {
+              "question": "如何安装MusE？",
+              "id": "5-244-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get install muse",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载MusE的命令是sudo apt-get remove muse。",
+          "qas": [
+            {
+              "question": "如何卸载MusE？",
+              "id": "5-244-7",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove muse",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MusE的仓库地址是http://packages.deepin.com/deepin/pool/main/m/muse/。",
+          "qas": [
+            {
+              "question": "MusE的仓库地址是什么？",
+              "id": "5-244-8",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/m/muse/",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

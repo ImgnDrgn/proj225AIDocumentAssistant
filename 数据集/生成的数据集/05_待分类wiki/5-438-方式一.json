@@ -1,0 +1,144 @@
+{
+  "data": [
+    {
+      "title": "方式一",
+      "paragraphs": [
+        {
+          "context": "Hardinfo是一款Linux系统信息查看软件，推荐使用。",
+          "qas": [
+            {
+              "question": "推荐的Linux系统信息查看软件是什么？",
+              "id": "5-438-1",
+              "answers": [
+                {
+                  "text": "Hardinfo",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CPU-G是一款linux下查看硬件信息的小软件，是Windows平台上CPU-Z的复刻版。",
+          "qas": [
+            {
+              "question": "CPU-G是什么软件？",
+              "id": "5-438-2",
+              "answers": [
+                {
+                  "text": "一款linux下查看硬件信息的小软件，是Windows平台上CPU-Z的复刻版。",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dmesg命令可查看所有启动时检测到的硬件信息。",
+          "qas": [
+            {
+              "question": "哪个命令能查看所有启动时检测到的硬件信息？",
+              "id": "5-438-3",
+              "answers": [
+                {
+                  "text": "dmesg",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "lspci命令用于显示外设信息，如usb，网卡等信息。",
+          "qas": [
+            {
+              "question": "lspci命令的作用是什么？",
+              "id": "5-438-4",
+              "answers": [
+                {
+                  "text": "显示外设信息，如usb，网卡等信息。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "uptime命令能给出当前时间、系统运行时间、当前登陆的用户数量、前1、5和15分钟系统的平均负载的一行显示。",
+          "qas": [
+            {
+              "question": "uptime命令能显示哪些信息？",
+              "id": "5-438-5",
+              "answers": [
+                {
+                  "text": "当前时间、系统运行时间、当前登陆的用户数量、前1、5和15分钟系统的平均负载。",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "inxi -F命令可列出所有硬件信息。",
+          "qas": [
+            {
+              "question": "哪个命令可以列出所有硬件信息？",
+              "id": "5-438-6",
+              "answers": [
+                {
+                  "text": "inxi -F",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "neofetch命令能在终端中显示系统Logo和信息。",
+          "qas": [
+            {
+              "question": "neofetch命令的功能是什么？",
+              "id": "5-438-7",
+              "answers": [
+                {
+                  "text": "在终端中显示系统Logo和信息。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "screenfetch命令可在终端中显示系统Logo和信息。",
+          "qas": [
+            {
+              "question": "screenfetch命令有什么作用？",
+              "id": "5-438-8",
+              "answers": [
+                {
+                  "text": "在终端中显示系统Logo和信息。",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Psensor是一款Linux下用于监控硬件温度的小软件。",
+          "qas": [
+            {
+              "question": "Psensor是什么软件？",
+              "id": "5-438-9",
+              "answers": [
+                {
+                  "text": "一款Linux下用于监控硬件温度的小软件。",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "data": [
+    {
+      "title": "文件下载",
+      "paragraphs": [
+        {
+          "context": "GUI界面下，可使用系统自带下载器和浏览器进行文件下载，更多工具可查看应用商店。",
+          "qas": [
+            {
+              "question": "GUI界面下可以使用哪些工具进行文件下载？",
+              "id": "5-492-1",
+              "answers": [
+                {
+                  "text": "系统自带的下载器和浏览器，更多工具可看应用商店",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装curl的命令为：sudo apt install curl。",
+          "qas": [
+            {
+              "question": "如何安装curl？",
+              "id": "5-492-2",
+              "answers": [
+                {
+                  "text": "sudo apt install curl",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用curl测试网站连接的命令为：curl 域名，执行后可查看网页HTML源码。",
+          "qas": [
+            {
+              "question": "如何用curl测试是否能连接一个网站？",
+              "id": "5-492-3",
+              "answers": [
+                {
+                  "text": "输入命令：curl 域名",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "curl下载文件到当前目录的命令为：curl -O URL地址。",
+          "qas": [
+            {
+              "question": "用curl如何将文件下载到当前目录？",
+              "id": "5-492-4",
+              "answers": [
+                {
+                  "text": "curl -O URL地址",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "curl将文件保存为指定文件名的命令为：curl -o 文件名 -O URL地址。",
+          "qas": [
+            {
+              "question": "如何用curl将文件保存为指定文件名？",
+              "id": "5-492-5",
+              "answers": [
+                {
+                  "text": "curl -o 文件名 -O URL地址",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装wget的命令为：sudo apt install wget。",
+          "qas": [
+            {
+              "question": "如何安装wget？",
+              "id": "5-492-6",
+              "answers": [
+                {
+                  "text": "sudo apt install wget",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "wget下载文件到当前目录的命令为：wget URL地址。",
+          "qas": [
+            {
+              "question": "用wget如何将文件下载到当前目录？",
+              "id": "5-492-7",
+              "answers": [
+                {
+                  "text": "wget URL地址",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "wget下载文件到指定目录的命令为：wget -P 需要下载到的文件目录 URL地址。",
+          "qas": [
+            {
+              "question": "如何用wget将文件下载到指定目录？",
+              "id": "5-492-8",
+              "answers": [
+                {
+                  "text": "wget -P 需要下载到的文件目录 URL地址",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "wget将文件设置为指定文件名的命令为：wget -O 文件名 URL地址。",
+          "qas": [
+            {
+              "question": "如何用wget将文件设置为指定文件名？",
+              "id": "5-492-9",
+              "answers": [
+                {
+                  "text": "wget -O 文件名 URL地址",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "wget下载文件到指定目录并设置指定文件名的命令为：wget -P 目录 -O 文件名 URL地址。",
+          "qas": [
+            {
+              "question": "如何用wget将文件下载到指定目录并设置为指定文件名？",
+              "id": "5-492-10",
+              "answers": [
+                {
+                  "text": "wget -P 目录 -O 文件名 URL地址",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装aria2的命令为：sudo apt install aria2。",
+          "qas": [
+            {
+              "question": "如何安装aria2？",
+              "id": "5-492-11",
+              "answers": [
+                {
+                  "text": "sudo apt install aria2",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "aria2下载文件到当前目录的命令为：aria2c URL地址。",
+          "qas": [
+            {
+              "question": "用aria2如何将文件下载到当前目录？",
+              "id": "5-492-12",
+              "answers": [
+                {
+                  "text": "aria2c URL地址",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "aria2支持断点续传，使用参数-c，命令格式：aria2c -c URL地址。",
+          "qas": [
+            {
+              "question": "aria2如何实现断点续传？",
+              "id": "5-492-13",
+              "answers": [
+                {
+                  "text": "使用参数-c，命令：aria2c -c URL地址",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "aria2可通过-s参数设置下载线程数，命令格式：aria2c -s 线程数 URL地址。",
+          "qas": [
+            {
+              "question": "如何用aria2设置下载线程数？",
+              "id": "5-492-14",
+              "answers": [
+                {
+                  "text": "通过-s参数，命令：aria2c -s 线程数 URL地址",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "aria2通过-d参数设置文件保存目录，命令格式：aria2c -d 保存目录 URL地址。",
+          "qas": [
+            {
+              "question": "如何用aria2设置文件的保存目录？",
+              "id": "5-492-15",
+              "answers": [
+                {
+                  "text": "通过-d参数，命令：aria2c -d 保存目录 URL地址",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "aria2通过-o参数设置文件保存的文件名，命令格式：aria2c -o 文件名 URL地址。",
+          "qas": [
+            {
+              "question": "如何用aria2设置文件保存的文件名？",
+              "id": "5-492-16",
+              "answers": [
+                {
+                  "text": "通过-o参数，命令：aria2c -o 文件名 URL地址",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加星火应用商店源后，可通过sudo apt install apt-fast安装apt-fast。",
+          "qas": [
+            {
+              "question": "如何安装apt-fast？",
+              "id": "5-492-17",
+              "answers": [
+                {
+                  "text": "添加星火应用商店的应用源后，输入命令：sudo apt install apt-fast",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ss-apt-fast集成于星火应用商店的主程序包，安装命令：sudo apt install spark-store（需先安装apt-fast）。",
+          "qas": [
+            {
+              "question": "如何安装ss-apt-fast？",
+              "id": "5-492-18",
+              "answers": [
+                {
+                  "text": "安装星火应用商店主程序和apt-fast后，输入命令：sudo apt install spark-store",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

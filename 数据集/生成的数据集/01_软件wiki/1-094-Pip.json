@@ -1,0 +1,329 @@
+{
+  "data": [
+    {
+      "title": "Pip",
+      "paragraphs": [
+        {
+          "context": "pip是python包管理工具，提供python包搜索、下载、安装、卸载、更新等操作。如果你在python官网下载了windows的python安装包，安装时会默认勾选安装pip。在近几年更新的linux发行版中，python3已默认集成，如果没有自带pip，可以通过以下方式安装：apt install -y python3-pip。验证是否已安装：pip3 --version。",
+          "qas": [
+            {
+              "id": "1-94-1",
+              "question": "pip是什么工具？",
+              "answers": [
+                {
+                  "text": "pip是python包管理工具",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "1-94-2",
+              "question": "pip提供哪些操作？",
+              "answers": [
+                {
+                  "text": "python包搜索、下载、安装、卸载、更新等操作",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "id": "1-94-3",
+              "question": "Windows系统中如何安装pip？",
+              "answers": [
+                {
+                  "text": "在python官网下载了windows的python安装包，安装时会默认勾选安装pip",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "id": "1-94-4",
+              "question": "Windows安装Python时会默认安装pip吗？",
+              "answers": [
+                {
+                  "text": "安装时会默认勾选安装pip",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "id": "1-94-5",
+              "question": "近几年更新的Linux发行版中，python3是否默认集成？",
+              "answers": [
+                {
+                  "text": "是",
+                  "answer_start": 119
+                }
+              ]
+            },
+            {
+              "id": "1-94-6",
+              "question": "Linux系统中没有自带pip时，如何安装？",
+              "answers": [
+                {
+                  "text": "apt install -y python3-pip",
+                  "answer_start": 156
+                }
+              ]
+            },
+            {
+              "id": "1-94-7",
+              "question": "如何验证pip是否已安装？",
+              "answers": [
+                {
+                  "text": "pip3 --version",
+                  "answer_start": 185
+                }
+              ]
+            },
+            {
+              "id": "1-94-8",
+              "question": "pip是什么？",
+              "answers": [
+                {
+                  "text": "python包管理工具",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "pip常用命令（以pandas为例）：查看帮助：pip3 --help；搜索pandas包：pip3 search pandas；安装pandas包（默认最新版）：pip3 install pandas；安装或更新pandas包：pip3 install -U pandas；查看pandas包的信息：pip3 show pandas；列出已安装的python包：pip3 list；卸载pandas：pip3 uninstall pandas。",
+          "qas": [
+            {
+              "id": "1-94-9",
+              "question": "如何查看pip3的帮助信息？",
+              "answers": [
+                {
+                  "text": "pip3 --help",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "1-94-10",
+              "question": "如何搜索pandas包？",
+              "answers": [
+                {
+                  "text": "pip3 search pandas",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "id": "1-94-11",
+              "question": "如何安装pandas包（默认最新版）？",
+              "answers": [
+                {
+                  "text": "pip3 install pandas",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "id": "1-94-12",
+              "question": "如何安装或更新pandas包？",
+              "answers": [
+                {
+                  "text": "pip3 install -U pandas",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "1-94-13",
+              "question": "如何查看pandas包的信息？",
+              "answers": [
+                {
+                  "text": "pip3 show pandas",
+                  "answer_start": 111
+                }
+              ]
+            },
+            {
+              "id": "1-94-14",
+              "question": "如何列出已安装的python包？",
+              "answers": [
+                {
+                  "text": "pip3 list",
+                  "answer_start": 132
+                }
+              ]
+            },
+            {
+              "id": "1-94-15",
+              "question": "如何卸载pandas？",
+              "answers": [
+                {
+                  "text": "pip3 uninstall pandas",
+                  "answer_start": 146
+                }
+              ]
+            },
+            {
+              "id": "1-94-16",
+              "question": "如何查看pip帮助？",
+              "answers": [
+                {
+                  "text": "pip3 --help",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "1-94-17",
+              "question": "如何安装最新版pandas？",
+              "answers": [
+                {
+                  "text": "pip3 install pandas",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "id": "1-94-18",
+              "question": "如何更新pandas包？",
+              "answers": [
+                {
+                  "text": "pip3 install -U pandas",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "id": "1-94-19",
+              "question": "如何查看包信息？",
+              "answers": [
+                {
+                  "text": "pip3 show pandas",
+                  "answer_start": 111
+                }
+              ]
+            },
+            {
+              "id": "1-94-20",
+              "question": "如何列出已安装包？",
+              "answers": [
+                {
+                  "text": "pip3 list",
+                  "answer_start": 132
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "pip默认通过官方源下载安装包，官方服务器在境外，中国大陆用户访问速度慢，建议配置国内镜像源。临时使用：pip3 install pandas -i https://mirrors.aliyun.com/pypip/simple。永久使用：1. 新建目录：mkdir -p ~/.pip；2. 新建配置文件并编辑：vim ~/.pip/pip.conf，内容为[global] index-url = https://mirrors.aliyun.com/pypi/simple/ [install] trusted-host=mirrors.aliyun.com。",
+          "qas": [
+            {
+              "id": "1-94-21",
+              "question": "中国大陆用户为什么建议配置国内pip镜像源？",
+              "answers": [
+                {
+                  "text": "pip默认通过官方源下载安装包，官方服务器在境外，中国大陆用户访问速度慢",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "1-94-22",
+              "question": "如何临时使用国内镜像源安装pandas？",
+              "answers": [
+                {
+                  "text": "pip3 install pandas -i https://mirrors.aliyun.com/pypip/simple",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "id": "1-94-23",
+              "question": "永久配置国内镜像源的第一步是什么？",
+              "answers": [
+                {
+                  "text": "新建目录：mkdir -p ~/.pip",
+                  "answer_start": 145
+                }
+              ]
+            },
+            {
+              "id": "1-94-24",
+              "question": "永久配置国内镜像源时，需要新建的配置文件路径是什么？",
+              "answers": [
+                {
+                  "text": "~/.pip/pip.conf",
+                  "answer_start": 179
+                }
+              ]
+            },
+            {
+              "id": "1-94-25",
+              "question": "永久配置国内镜像源的配置文件内容是什么？",
+              "answers": [
+                {
+                  "text": "[global] index-url = https://mirrors.aliyun.com/pypi/simple/ [install] trusted-host=mirrors.aliyun.com",
+                  "answer_start": 200
+                }
+              ]
+            },
+            {
+              "id": "1-94-26",
+              "question": "为什么建议大陆用户换源？",
+              "answers": [
+                {
+                  "text": "官方服务器在境外，中国大陆用户访问速度慢",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "1-94-27",
+              "question": "配置文件中如何设置源地址？",
+              "answers": [
+                {
+                  "text": "index-url = https://mirrors.aliyun.com/pypi/simple/",
+                  "answer_start": 209
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "常见问题：执行pip install -U pip时权限错误导致pip被卸载，无法安装其他库。解决方法：使用python -m ensurepip恢复pip。",
+          "qas": [
+            {
+              "id": "1-94-28",
+              "question": "执行pip install -U pip时权限错误导致pip被卸载，无法安装其他库，如何解决？",
+              "answers": [
+                {
+                  "text": "使用python -m ensurepip恢复pip",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "id": "1-94-29",
+              "question": "pip意外卸载后如何恢复？",
+              "answers": [
+                {
+                  "text": "使用python -m ensurepip恢复pip",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "id": "1-94-30",
+              "question": "什么操作可能导致pip被卸载？",
+              "answers": [
+                {
+                  "text": "执行pip install -U pip时权限错误",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

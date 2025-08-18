@@ -1,0 +1,244 @@
+{
+  "data": [
+    {
+      "title": "Linux进程管理之四大名捕",
+      "paragraphs": [
+        {
+          "context": "Linux进程管理四大名捕由ps、dstat、top、htop命令出演，分别对应无情、铁手、追命、冷血。",
+          "qas": [
+            {
+              "question": "Linux进程管理的四大名捕分别对应哪些命令？",
+              "id": "3-110-1",
+              "answers": [
+                {
+                  "text": "ps（无情）、dstat（铁手）、top（追命）、htop（冷血）",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ps用于显示当前进程的状态（非动态），选项有UNIX、BSD、GNU三种风格，UNIX风格选项前加“-”，BSD风格不加，GNU风格加两个“-”。",
+          "qas": [
+            {
+              "question": "ps命令的作用是什么？",
+              "id": "3-110-2",
+              "answers": [
+                {
+                  "text": "显示当前进程的状态（非动态）",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "question": "ps命令的选项有哪几种风格及特点？",
+              "id": "3-110-3",
+              "answers": [
+                {
+                  "text": "UNIX风格，选项前加“-”；BSD风格，选项前不加；GNU风格，选项前加两个“-”",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ps常用组合aux中，a显示所有与终端相关的进程，x显示所有与终端无关的进程，u以用户为中心组织进程状态信息。",
+          "qas": [
+            {
+              "question": "ps aux组合中各选项的含义是什么？",
+              "id": "3-110-4",
+              "answers": [
+                {
+                  "text": "a：所有与终端相关的进程；x：所有与终端无关的进程；u：以用户为中心组织进程状态信息显示",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ps输出中STAT字段含义：R为运行，S为可中断睡眠，D为不可中断睡眠，T为停止，Z为僵死态，+为前台进程，l为多线程进程等。",
+          "qas": [
+            {
+              "question": "ps输出中STAT字段的R、S、Z分别表示什么？",
+              "id": "3-110-5",
+              "answers": [
+                {
+                  "text": "R：running 运行；S：interruptable sleeping 可中断睡眠；Z：zombie 僵死态",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ps常用组合-ef中，-e显示所有进程，-f显示完整格式的进程信息。",
+          "qas": [
+            {
+              "question": "ps -ef组合的作用是什么？",
+              "id": "3-110-6",
+              "answers": [
+                {
+                  "text": "-e：显示所有进程；-f：显示完整格式的进程信息",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dstat是系统资源统计命令（动态），常用选项-c显示cpu相关信息，-d显示磁盘相关信息，-m显示Memory相关统计数据。",
+          "qas": [
+            {
+              "question": "dstat命令的作用是什么？",
+              "id": "3-110-7",
+              "answers": [
+                {
+                  "text": "系统资源统计命令（动态）",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "dstat的-c、-d、-m选项分别表示什么？",
+              "id": "3-110-8",
+              "answers": [
+                {
+                  "text": "-c：显示cpu相关信息；-d：显示磁盘的相关信息；-m：Memory的相关统计数据",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dstat的--top-cpu显示最占用CPU的进程，--top-io显示最占用io的进程，--top-mem显示最占用内存的进程。",
+          "qas": [
+            {
+              "question": "dstat中查看最占用CPU、io、内存的进程分别用什么选项？",
+              "id": "3-110-9",
+              "answers": [
+                {
+                  "text": "--top-cpu：最占用CPU的进程；--top-io：最占用io的进程；--top-mem：最占用内存的进程",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "top命令动态列出Linux进程，其首部信息中load average表示平均负载（等待运行的队列长度的负载）。",
+          "qas": [
+            {
+              "question": "top命令的特点是什么？",
+              "id": "3-110-10",
+              "answers": [
+                {
+                  "text": "动态显示进程",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "question": "top命令中load average的含义是什么？",
+              "id": "3-110-11",
+              "answers": [
+                {
+                  "text": "平均负载（等待运行的队列长度的负载）",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "top中%Cpu(s)字段里，us是用户空间占用百分比，sy是内核空间占用百分比，id是空闲百分比，wa是等待IO完成所消耗的百分比。",
+          "qas": [
+            {
+              "question": "top中%Cpu(s)里us、sy、id、wa分别代表什么？",
+              "id": "3-110-12",
+              "answers": [
+                {
+                  "text": "us：用户空间占用的百分比；sy：内核空间占用时间的百分比；id：空闲百分比；wa：等待IO完成所消耗的百分比",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "top内排序：P以占据CPU百分比排序，M以占据内存百分比排序，T以累积占用CPU时间排序。",
+          "qas": [
+            {
+              "question": "在top中如何分别按CPU百分比、内存百分比、累积CPU时间排序？",
+              "id": "3-110-13",
+              "answers": [
+                {
+                  "text": "P：以占据CPU百分比排序；M：以占据内存百分比排序；T：累积占用CPU时间排序",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "top命令选项：-d #指定刷新时间间隔（默认3秒），-b以批次方式显示，-n #显示多少批次。",
+          "qas": [
+            {
+              "question": "top命令中-d、-b、-n选项的作用是什么？",
+              "id": "3-110-14",
+              "answers": [
+                {
+                  "text": "-d #：指定刷新时间间隔，默认为3秒；-b：以批次方式显示；-n #：显示多少批次",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "htop是交互式进程查看器，选项-d #指定延迟时间间隔，-u UserName仅显示指定用户的进程，-s COLUME以指定字段排序。",
+          "qas": [
+            {
+              "question": "htop的作用是什么？",
+              "id": "3-110-15",
+              "answers": [
+                {
+                  "text": "交互式进程查看器",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "htop的-d、-u、-s选项分别有什么作用？",
+              "id": "3-110-16",
+              "answers": [
+                {
+                  "text": "-d #：指定延迟时间间隔；-u UserName：仅显示指定用户的进程；-s COLUME：以指定字段进行排序",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "htop常用子命令：l显示选定进程打开的文件列表，s跟踪选定进程的系统调用，t以层级关系显示各进程状态。",
+          "qas": [
+            {
+              "question": "htop中l、s、t子命令分别有什么功能？",
+              "id": "3-110-17",
+              "answers": [
+                {
+                  "text": "l：显示选定的进程打开的文件列表；s：跟踪选定的进程的系统调用；t：以层级关系显示各进程状态",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

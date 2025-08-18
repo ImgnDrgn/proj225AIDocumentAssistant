@@ -1,0 +1,174 @@
+{
+  "data": [
+    {
+      "title": "Deepin-wine适配知识库&工具包（最新）",
+      "paragraphs": [
+        {
+          "context": "【腾讯文档】统信UOS：Deepin-Wine适配知识库 https://docs.qq.com/mind/DWFBpbmpjd0RtV2Z0\n统信UOS：Deepin-Wine工具包下载链接 https://docs.deepin.com/f/a4b0acc862/?raw=1\n这里整理汇编了关于Deepin-wine适配过程中所遇到的问题和解决办法，以及统信UOS个人版第一批wine应用上架应用列表，目前Deep-wine工具包还在由研发的同学进行调整，后续我们会第一时间提供工具包链接，并且持续更新知识库，如有问题可留言，欢迎大家提出建议。\n感谢所有小伙伴们对统信UOS适配活动的参与和支持，以下是第一期众测适配活动参与的用户：JackLee_CN、邹永赫、江户川_柯北、张林峰、清越、冯世龙、谦言谦语、Geek-dreams、毛线、青山绿水、潮鸣、Then...、亲，别抽风、Arron Guo、金子食客、英特纳雄耐尔、狼毒花13997235254、Bryson、qxqzx、S-Dream、安稳也逍遥、林凌儿、黄西子、暮色、项升、左翼苦13、maicss@126.com、.(･ิϖ･ิ)っ-、@月、A张昊远ᵀᴱᴸ₈₀₂₃、CHONG.CHEN、Clay、DCTXX、Dont't Panic、H.H.、linux-prog、Marlon、Nam楠、shayneX、Ziggy、常淇昱、超热血的年青人、栋、琥珀、槐树镇8号、姜久奔、李若贤、林森、龙强、罗俊森、拟世、奇异天空、清风、人与自然 key→1%、若灮、施以勒、水源、汤.YongXiao、天、王文瑞、忘记、过去、未雨绸缪的妙磊、香当红烧烤、效果春、杨man_、一念为云 mantianlvye、张工、阵阵小语、蒸小肉包。\n后续，我们马上会迎来第二期的统信UOS众测适配活动，还有丰富的奖品等着大家，欢迎小伙伴们扫码加入我们的生态互动群，发挥linux极客精神，在国产操作系统生态建设的道路刻上你的名字吧。\n生态互动社群权益：加入UOS生态交流群，你将：1.参与国产操作系统生态共建，与linux技术同好者一起交流，共同学习成长；2.与官方技术支持人员在线交流，不定期邀请神秘大咖进行分享活动，干货多多；3.生态交流群囊括Deepwine众测、安卓模拟器测试和硬件适配等官方活动，奖励多多。\n最后，我们再次衷心的感谢大家对活动的积极参与和支持，未来，我们会继续努力，打造完善优秀的统信UOS系统应用生态圈，统信UOS系统生态建设也因你们的存在变得更有意义！",
+          "qas": [
+            {
+              "id": "3-40-1",
+              "question": "统信UOS：Deepin-Wine适配知识库的腾讯文档链接是什么？",
+              "answers": [
+                {
+                  "text": "https://docs.qq.com/mind/DWFBpbmpjd0RtV2Z0",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "3-40-2",
+              "question": "统信UOS：Deepin-Wine工具包的下载链接是什么？",
+              "answers": [
+                {
+                  "text": "https://docs.deepin.com/f/a4b0acc862/?raw=1",
+                  "answer_start": 116
+                }
+              ]
+            },
+            {
+              "id": "3-40-3",
+              "question": "文中整理了关于Deepin-wine适配的哪些内容？",
+              "answers": [
+                {
+                  "text": "适配过程中所遇到的问题和解决办法，以及统信UOS个人版第一批wine应用上架应用列表",
+                  "answer_start": 201
+                }
+              ]
+            },
+            {
+              "id": "3-40-4",
+              "question": "目前Deep-wine工具包的状态如何？",
+              "answers": [
+                {
+                  "text": "还在由研发的同学进行调整",
+                  "answer_start": 282
+                }
+              ]
+            },
+            {
+              "id": "3-40-5",
+              "question": "后续会对知识库做什么操作？",
+              "answers": [
+                {
+                  "text": "持续更新知识库",
+                  "answer_start": 342
+                }
+              ]
+            },
+            {
+              "id": "3-40-6",
+              "question": "第一期众测适配活动的参与用户有哪些？",
+              "answers": [
+                {
+                  "text": "JackLee_CN、邹永赫、江户川_柯北、张林峰、清越、冯世龙、谦言谦语、Geek-dreams、毛线、青山绿水、潮鸣、Then...、亲，别抽风、Arron Guo、金子食客、英特纳雄耐尔、狼毒花13997235254、Bryson、qxqzx、S-Dream、安稳也逍遥、林凌儿、黄西子、暮色、项升、左翼苦13、maicss@126.com、.(･ิϖ･ิ)っ-、@月、A张昊远ᵀᴱᴸ₈₀₂₃、CHONG.CHEN、Clay、DCTXX、Dont't Panic、H.H.、linux-prog、Marlon、Nam楠、shayneX、Ziggy、常淇昱、超热血的年青人、栋、琥珀、槐树镇8号、姜久奔、李若贤、林森、龙强、罗俊森、拟世、奇异天空、清风、人与自然 key→1%、若灮、施以勒、水源、汤.YongXiao、天、王文瑞、忘记、过去、未雨绸缪的妙磊、香当红烧烤、效果春、杨man_、一念为云 mantianlvye、张工、阵阵小语、蒸小肉包",
+                  "answer_start": 436
+                }
+              ]
+            },
+            {
+              "id": "3-40-7",
+              "question": "后续会有第几期统信UOS众测适配活动？",
+              "answers": [
+                {
+                  "text": "第二期",
+                  "answer_start": 1180
+                }
+              ]
+            },
+            {
+              "id": "3-40-8",
+              "question": "第二期统信UOS众测适配活动有什么奖励？",
+              "answers": [
+                {
+                  "text": "丰富的奖品",
+                  "answer_start": 1194
+                }
+              ]
+            },
+            {
+              "id": "3-40-9",
+              "question": "如何加入生态互动群？",
+              "answers": [
+                {
+                  "text": "扫码加入",
+                  "answer_start": 1245
+                }
+              ]
+            },
+            {
+              "id": "3-40-10",
+              "question": "加入UOS生态交流群能参与什么？",
+              "answers": [
+                {
+                  "text": "参与国产操作系统生态共建，与linux技术同好者一起交流，共同学习成长",
+                  "answer_start": 1325
+                }
+              ]
+            },
+            {
+              "id": "3-40-11",
+              "question": "加入UOS生态交流群能与谁交流？",
+              "answers": [
+                {
+                  "text": "与官方技术支持人员在线交流，不定期邀请神秘大咖进行分享活动",
+                  "answer_start": 1420
+                }
+              ]
+            },
+            {
+              "id": "3-40-12",
+              "question": "生态交流群包含哪些官方活动？",
+              "answers": [
+                {
+                  "text": "Deepwine众测、安卓模拟器测试和硬件适配等",
+                  "answer_start": 1510
+                }
+              ]
+            },
+            {
+              "id": "3-40-13",
+              "question": "未来会如何打造统信UOS系统？",
+              "answers": [
+                {
+                  "text": "继续努力，打造完善优秀的统信UOS系统应用生态圈",
+                  "answer_start": 1633
+                }
+              ]
+            },
+            {
+              "id": "3-40-14",
+              "question": "统信UOS系统生态建设因什么变得更有意义？",
+              "answers": [
+                {
+                  "text": "你们的存在",
+                  "answer_start": 1705
+                }
+              ]
+            },
+            {
+              "id": "3-40-15",
+              "question": "用户如何为知识库提供反馈或建议？",
+              "answers": [
+                {
+                  "text": "如有问题可留言，欢迎大家提出建议",
+                  "answer_start": 342
+                }
+              ]
+            },
+            {
+              "id": "3-40-16",
+              "question": "文章的结论强调了什么？",
+              "answers": [
+                {
+                  "text": "最后，我们再次衷心的感谢大家对活动的积极参与和支持，未来，我们会继续努力，打造完善优秀的统信UOS系统应用生态圈，统信UOS系统生态建设也因你们的存在变得更有意义！",
+                  "answer_start": 1750
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

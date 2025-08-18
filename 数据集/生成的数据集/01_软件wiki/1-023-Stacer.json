@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "Stacer",
+      "paragraphs": [
+        {
+          "context": "Stacer 是一款开源的系统优化、应用程序监视软件，能从各方面管理整个系统，拥有管理启动项、清理垃圾、服务管理、进程管理、卸载软件、资源管理等功能。",
+          "qas": [
+            {
+              "question": "Stacer 是什么类型的软件？",
+              "id": "1-23-1",
+              "answers": [
+                {
+                  "text": "开源的系统优化、应用程序监视软件",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "Stacer 拥有哪些功能？",
+              "id": "1-23-2",
+              "answers": [
+                {
+                  "text": "管理启动项、清理垃圾、服务管理、进程管理、卸载软件、资源管理等功能",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装命令：sudo apt install com.github.stacer",
+          "qas": [
+            {
+              "question": "如何安装 Stacer？",
+              "id": "1-23-3",
+              "answers": [
+                {
+                  "text": "sudo apt install com.github.stacer",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载命令：sudo apt remove --purge com.github.stacer",
+          "qas": [
+            {
+              "question": "如何卸载 Stacer？",
+              "id": "1-23-4",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge com.github.stacer",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Stacer 的仓库地址是 http://packages.deepin.com/deepin/pool/main/s/stacer/",
+          "qas": [
+            {
+              "question": "Stacer 的仓库地址是什么？",
+              "id": "1-23-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/stacer/",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Stacer 官方网站：https://oguzhaninan.github.io/Stacer-Web/",
+          "qas": [
+            {
+              "question": "Stacer 的官方网站是什么？",
+              "id": "1-23-6",
+              "answers": [
+                {
+                  "text": "https://oguzhaninan.github.io/Stacer-Web/",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

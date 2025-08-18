@@ -1,0 +1,144 @@
+{
+  "data": [
+    {
+      "title": "多系统环境下，deepin中无法访问windows分区",
+      "paragraphs": [
+        {
+          "context": "多系统环境下，deepin系统中可能无法访问windows系统文件，无权限创建文件和文件夹。",
+          "qas": [
+            {
+              "question": "多系统环境下，deepin系统可能遇到什么问题？",
+              "id": "3-138-1",
+              "answers": [
+                {
+                  "text": "无法访问windows系统文件，无权限创建文件和文件夹。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin下访问Windows系统盘时文件上锁，无法创建文件或文件夹的问题，有用户在论坛反馈。",
+          "qas": [
+            {
+              "question": "哪些用户反馈了deepin访问Windows系统盘的问题？",
+              "id": "3-138-2",
+              "answers": [
+                {
+                  "text": "论坛中多位用户",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "快速启动模式下，关机时windows会将硬盘分区写保护，导致linux无法向这些分区写入数据。",
+          "qas": [
+            {
+              "question": "为什么开启快速启动会导致deepin无法访问windows分区？",
+              "id": "3-138-3",
+              "answers": [
+                {
+                  "text": "快速启动模式下，关机时windows会将硬盘分区写保护，导致linux无法向这些分区写入数据。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解决deepin无法访问windows分区的方法之一是在windows系统中关闭“快速启动”。",
+          "qas": [
+            {
+              "question": "如何解决deepin无法访问windows分区的问题？",
+              "id": "3-138-4",
+              "answers": [
+                {
+                  "text": "在windows系统中关闭“快速启动”。",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "windows系统中关闭快速启动，可先按win+x，弹出常用菜单，选择“电源选项”。",
+          "qas": [
+            {
+              "question": "windows系统中关闭快速启动的第一步是什么？",
+              "id": "3-138-5",
+              "answers": [
+                {
+                  "text": "按win+x，弹出常用菜单，选择“电源选项”。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在设置-电源和睡眠界面，需选择“其它电源设置”项以继续关闭快速启动。",
+          "qas": [
+            {
+              "question": "在设置-电源和睡眠界面，关闭快速启动需选择什么？",
+              "id": "3-138-6",
+              "answers": [
+                {
+                  "text": "其它电源设置",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过“电源按钮的功能”项可进入系统设置界面，以便关闭快速启动。",
+          "qas": [
+            {
+              "question": "如何进入关闭快速启动的系统设置界面？",
+              "id": "3-138-7",
+              "answers": [
+                {
+                  "text": "通过“电源按钮的功能”项进入。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "需通过“更改当前不可用的设置”项，取消“快速启动”设置，然后保存修改。",
+          "qas": [
+            {
+              "question": "如何取消“快速启动”设置？",
+              "id": "3-138-8",
+              "answers": [
+                {
+                  "text": "通过“更改当前不可用的设置”项，取消“快速启动”设置。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "保存修改后关机，开机进入deepin系统，即可向windows系统分区写入数据。",
+          "qas": [
+            {
+              "question": "关闭快速启动并保存修改后，如何操作才能在deepin中向windows分区写入数据？",
+              "id": "3-138-9",
+              "answers": [
+                {
+                  "text": "关机，开机进入deepin系统。",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "XnConvert",
+      "paragraphs": [
+        {
+          "context": "XnConvert是一款多功能图像批处理工具，可实现图像格式转换、缩放、添加滤镜等功能，支持多种图片格式。",
+          "qas": [
+            {
+              "question": "XnConvert是什么类型的工具？",
+              "id": "5-31-1",
+              "answers": [
+                {
+                  "text": "多功能图像批处理工具",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "XnConvert能实现哪些功能？",
+              "id": "5-31-2",
+              "answers": [
+                {
+                  "text": "图像格式转换、缩放图像比例、添加滤镜特效、水印、重命名等",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "XnConvert支持哪些图片格式？",
+              "id": "5-31-3",
+              "answers": [
+                {
+                  "text": "JPG、PNG、TIFF、GIF、RAW等",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装XnConvert的命令为：sudo apt-get install xnconvert。",
+          "qas": [
+            {
+              "question": "如何安装XnConvert？",
+              "id": "5-31-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install xnconvert",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载XnConvert的命令是：sudo apt-get remove xnconvert。",
+          "qas": [
+            {
+              "question": "怎样卸载XnConvert？",
+              "id": "5-31-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove xnconvert",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "XnConvert的仓库地址为http://packages.deepin.com/deepin/pool/main/x/xnconvert/。",
+          "qas": [
+            {
+              "question": "XnConvert的仓库地址是什么？",
+              "id": "5-31-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/x/xnconvert/",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

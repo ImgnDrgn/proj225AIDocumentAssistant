@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "title": "系统安装后无法进入桌面",
+      "paragraphs": [
+        {
+          "context": "安装完毕，进入界面为空白界面（仅有壁纸），鼠标右键无法使用，左键无法框选，类似双屏的副屏。",
+          "qas": [
+            {
+              "question": "系统安装完毕进入界面后出现了哪些问题？",
+              "id": "3-167-1",
+              "answers": [
+                {
+                  "text": "空白界面（仅有壁纸），鼠标右键无法使用，左键无法框选，类似双屏的副屏。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "鼠标放当前界面按ctrl+alt+t唤出终端；鼠标移到屏幕左边外点击后按快捷键，当前界面看不到终端。",
+          "qas": [
+            {
+              "question": "如何通过操作判断当前屏幕类似双屏的副屏？",
+              "id": "3-167-2",
+              "answers": [
+                {
+                  "text": "鼠标放当前界面按ctrl+alt+t唤出终端；鼠标移到屏幕左边外点击后按快捷键，当前界面看不到终端。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "鼠标移到屏幕左边外点击，按win+e，再按alt+空格，方向键下三次按enter，方向键右按住，文件管理器窗口从左边移出，证明当前屏幕是副屏。",
+          "qas": [
+            {
+              "question": "怎样操作能证明当前屏幕被作为了副屏？",
+              "id": "3-167-3",
+              "answers": [
+                {
+                  "text": "鼠标移到屏幕左边外点击，按win+e，再按alt+空格，方向键下三次按enter，方向键右按住，文件管理器窗口从左边移出。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "问题因工控主板内置双显卡，默认主屏为内置显卡输出，外置显卡输出为副屏，显示器用外置显卡输出，deepin初始双屏策略为扩展分屏。",
+          "qas": [
+            {
+              "question": "系统安装后无法正常进入桌面的问题原因是什么？",
+              "id": "3-167-4",
+              "answers": [
+                {
+                  "text": "工控主板内置双显卡，默认主屏为内置显卡输出，外置显卡输出为副屏，显示器用外置显卡输出，deepin初始双屏策略为扩展分屏。",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "windows双显卡初始双屏策略是复制分屏，故无此问题，在win7、win10中已确认。",
+          "qas": [
+            {
+              "question": "windows系统的双显卡初始双屏策略是什么？",
+              "id": "3-167-5",
+              "answers": [
+                {
+                  "text": "复制分屏",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解决步骤：ctrl+alt+t唤出终端，执行xrandr查看显示输出端口；xrandr --output 当前屏幕 --auto --primary设为主屏；xrandr --output 内置显卡输出端口 --off关掉内置端口。",
+          "qas": [
+            {
+              "question": "解决系统安装后无法进入桌面问题的第一步操作是什么？",
+              "id": "3-167-6",
+              "answers": [
+                {
+                  "text": "ctrl+alt+t唤出终端，执行xrandr查看显示输出端口。",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "如何将当前屏幕设置为主屏？",
+              "id": "3-167-7",
+              "answers": [
+                {
+                  "text": "在终端执行xrandr --output 当前屏幕 --auto --primary。",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "怎样关掉内置显卡的输出端口？",
+              "id": "3-167-8",
+              "answers": [
+                {
+                  "text": "在终端执行xrandr --output 内置显卡的输出端口 --off。",
+                  "answer_start": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "示例：内置显卡输出端口是eDP-1，当前屏幕端口是DP-1，执行xrandr --output DP-1 --auto --primary和xrandr --output eDP-1 --off。",
+          "qas": [
+            {
+              "question": "若内置显卡输出端口是eDP-1，当前屏幕端口是DP-1，具体执行哪些命令？",
+              "id": "3-167-9",
+              "answers": [
+                {
+                  "text": "xrandr --output DP-1 --auto --primary和xrandr --output eDP-1 --off。",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "最后需在控制中心将显示输出设置为“只在当前显示器上显示”，否则下次开机仍会识别为副屏。",
+          "qas": [
+            {
+              "question": "为避免下次开机仍识别为副屏，最后需要做什么？",
+              "id": "3-167-10",
+              "answers": [
+                {
+                  "text": "在控制中心将显示输出设置为“只在当前显示器上显示”。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

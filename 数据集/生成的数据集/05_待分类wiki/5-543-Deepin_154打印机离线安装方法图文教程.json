@@ -1,0 +1,234 @@
+{
+  "data": [
+    {
+      "title": "Deepin_154打印机离线安装方法图文教程",
+      "paragraphs": [
+        {
+          "context": "本经验由深度论坛用户(zpu198)分享，原文地址为https://bbs.deepin.org/forum.php?mod=viewthread&tid=138794&extra=",
+          "qas": [
+            {
+              "question": "该打印机安装方法经验由谁分享？",
+              "id": "5-543-1",
+              "answers": [
+                {
+                  "text": "深度论坛用户(zpu198)",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "该经验的原文地址是什么？",
+              "id": "5-543-2",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/forum.php?mod=viewthread&tid=138794&extra=",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "本文以hp p1008为例介绍打印机离线安装方法，参考帖子为https://bbs.deepin.org/post/138493",
+          "qas": [
+            {
+              "question": "本文以哪种打印机为例介绍安装方法？",
+              "id": "5-543-3",
+              "answers": [
+                {
+                  "text": "hp p1008",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "本文参考的帖子地址是什么？",
+              "id": "5-543-4",
+              "answers": [
+                {
+                  "text": "https://bbs.deepin.org/post/138493",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "准备工作需手动下载plugin，下载地址为https://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/，需下载两个文件放到易找到的地方，复制到其他机子可在别的机子上安装",
+          "qas": [
+            {
+              "question": "准备工作中需要手动下载什么？",
+              "id": "5-543-5",
+              "answers": [
+                {
+                  "text": "plugin",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "plugin的下载地址是什么？",
+              "id": "5-543-6",
+              "answers": [
+                {
+                  "text": "https://www.openprinting.org/download/printdriver/auxfiles/HP/plugins/",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "下载的plugin文件需要放多少个？放哪里？",
+              "id": "5-543-7",
+              "answers": [
+                {
+                  "text": "两个，放到任意自己找得到的地方",
+                  "answer_start": 94
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置root密码：打开“深度终端”，输入sudo passwd，然后输入自己用户密码（即登陆密码），重新设置（root、unix)密码，已设置可跳过",
+          "qas": [
+            {
+              "question": "如何设置root密码？",
+              "id": "5-543-8",
+              "answers": [
+                {
+                  "text": "打开“深度终端”，输入sudo passwd，然后输入自己用户密码（即登陆密码），重新设置（root、unix)密码",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "如果已经设置过root密码，需要做什么？",
+              "id": "5-543-9",
+              "answers": [
+                {
+                  "text": "跳过",
+                  "answer_start": 104
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开终端（DeepinTerminal），输入hp-plugin，终端输出中会显示版本号，如HP Linux Imaging and Printing System (ver. 3.16.10)",
+          "qas": [
+            {
+              "question": "如何查看驱动版本号？",
+              "id": "5-543-10",
+              "answers": [
+                {
+                  "text": "打开终端（DeepinTerminal），输入hp-plugin，终端的输出中会显示版本号",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "示例中的驱动版本号是什么？",
+              "id": "5-543-11",
+              "answers": [
+                {
+                  "text": "3.16.10",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装步骤：3.点yes；4.选择手动下载plugin 2个文件所在位置；5.选定hplip-3.16.10-plugin.run；6.点next；7.点yes；8.在i agree前打勾；9.点next；10.输入第一步设置的root密码；11.点ok；12.点OK完成安装",
+          "qas": [
+            {
+              "question": "步骤3需要做什么？",
+              "id": "5-543-12",
+              "answers": [
+                {
+                  "text": "点yes",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "步骤4需要进行什么操作？",
+              "id": "5-543-13",
+              "answers": [
+                {
+                  "text": "选择手动下载plugin 2个文件所在位置",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "步骤5要选定哪个文件？",
+              "id": "5-543-14",
+              "answers": [
+                {
+                  "text": "hplip-3.16.10-plugin.run",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "question": "步骤8需要做什么？",
+              "id": "5-543-15",
+              "answers": [
+                {
+                  "text": "在i agree前打勾",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "question": "步骤10需要输入什么？",
+              "id": "5-543-16",
+              "answers": [
+                {
+                  "text": "第一步设置的root密码",
+                  "answer_start": 104
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装完成后添加打印机步骤：13.点添加；14.点forward；15.点apply后；16.点打印测试页",
+          "qas": [
+            {
+              "question": "安装完成后，步骤13需要做什么？",
+              "id": "5-543-17",
+              "answers": [
+                {
+                  "text": "点添加",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "question": "步骤14的操作是什么？",
+              "id": "5-543-18",
+              "answers": [
+                {
+                  "text": "点forward",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "步骤16需要进行什么操作？",
+              "id": "5-543-19",
+              "answers": [
+                {
+                  "text": "点打印测试页",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

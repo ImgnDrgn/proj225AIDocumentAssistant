@@ -1,0 +1,499 @@
+{
+  "data": [
+    {
+      "title": "Cmd_Markdown",
+      "paragraphs": [
+        {
+          "context": "Cmd Markdown是一款MarkDown编辑器，同时也是一个阅读工具，支持实时同步预览，区分写作和阅读模式，支持在线存储和分享文稿网址。可以编辑工具栏，可以实时保存数据到云端，支持离线模式，支持标签/分类/搜索等操作。",
+          "qas": [
+            {
+              "id": "5-59-1",
+              "question": "Cmd Markdown属于什么类型的工具？",
+              "answers": [
+                {
+                  "text": "一款MarkDown编辑器，同时也是一个阅读工具",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-59-2",
+              "question": "Cmd Markdown支持哪些功能？",
+              "answers": [
+                {
+                  "text": "实时同步预览，区分写作和阅读模式，支持在线存储和分享文稿网址，编辑工具栏，实时保存数据到云端，支持离线模式，支持标签/分类/搜索等操作",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install cmd-markdown",
+          "qas": [
+            {
+              "id": "5-59-3",
+              "question": "安装Cmd Markdown的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install cmd-markdown",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove cmd-markdown",
+          "qas": [
+            {
+              "id": "5-59-4",
+              "question": "卸载Cmd Markdown的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove cmd-markdown",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/non-free/c/cmd-markdown/",
+          "qas": [
+            {
+              "id": "5-59-5",
+              "question": "Cmd Markdown的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/c/cmd-markdown/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "您可以使用Cmd Markdown：整理知识，学习笔记；发布日记，杂文，所见所想；撰写发布技术文稿（代码支持）；撰写发布学术论文（LaTeX 公式支持）",
+          "qas": [
+            {
+              "id": "5-59-6",
+              "question": "使用Cmd Markdown可以完成哪些事情？",
+              "answers": [
+                {
+                  "text": "整理知识，学习笔记；发布日记，杂文，所见所想；撰写发布技术文稿（代码支持）；撰写发布学术论文（LaTeX 公式支持）",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Markdown是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，**粗体** 或者 *斜体* 某些文字",
+          "qas": [
+            {
+              "id": "5-59-7",
+              "question": "Markdown是什么？",
+              "answers": [
+                {
+                  "text": "一种方便记忆、书写的纯文本标记语言",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-59-8",
+              "question": "Markdown的符号可以实现哪些功能？",
+              "answers": [
+                {
+                  "text": "标记不同的标题，分割不同的段落，**粗体** 或者 *斜体* 某些文字",
+                  "answer_start": 116
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Markdown可以制作待办事宜Todo列表：支持以PDF格式导出文稿；改进Cmd渲染算法，使用局部渲染技术提高渲染效率；新增Todo列表功能；修复LaTex公式渲染问题；新增LaTex公式编号功能",
+          "qas": [
+            {
+              "id": "5-59-9",
+              "question": "Markdown的Todo列表包含哪些待办事项示例？",
+              "answers": [
+                {
+                  "text": "支持以PDF格式导出文稿；改进Cmd渲染算法，使用局部渲染技术提高渲染效率；新增Todo列表功能；修复LaTex公式渲染问题；新增LaTex公式编号功能",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Cmd Markdown的主界面一分为二，左边为编辑区，右边为预览区，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，另一个区的滚动条会同步到等价的位置。",
+          "qas": [
+            {
+              "id": "5-59-10",
+              "question": "Cmd Markdown的实时同步预览功能如何实现？",
+              "answers": [
+                {
+                  "text": "主界面一分为二，左边为编辑区，右边为预览区，在编辑区的操作会实时地渲染到预览区，且一个区拖动滚动条时，另一个区的滚动条会同步到等价位置",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Cmd Markdown的编辑工具栏位于编辑区顶部，新手可使用鼠标调整格式，同时鼓励使用键盘标记格式以提高书写流畅度。",
+          "qas": [
+            {
+              "id": "5-59-11",
+              "question": "Cmd Markdown的编辑工具栏在哪里？",
+              "answers": [
+                {
+                  "text": "编辑区顶部",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编辑模式可通过点击编辑工具栏最右侧的拉伸按钮或按下Ctrl + M切换，是极度简洁的写作环境，挪除了所有可能引起分心的元素。",
+          "qas": [
+            {
+              "id": "5-59-12",
+              "question": "如何切换到Cmd Markdown的编辑模式？",
+              "answers": [
+                {
+                  "text": "点击编辑工具栏最右侧的拉伸按钮或按下Ctrl + M",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Cmd Markdown会将用户每一次击键的内容保存至云端，编辑工具栏最右侧会提示“已保存”，无需担心浏览器崩溃、机器掉电等情况，下次可继续写作。",
+          "qas": [
+            {
+              "id": "5-59-13",
+              "question": "Cmd Markdown如何保障文稿数据安全？",
+              "answers": [
+                {
+                  "text": "将用户每一次击键的内容保存至云端，编辑工具栏最右侧会提示“已保存”",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "离线模式下，Cmd Markdown会在电脑失去网络连接时智能切换，将后续键入的文字保存在本地，网络恢复后传送至云端，即使网络恢复前关闭浏览器或电脑，下次开启时会提醒传送离线保存的文字。",
+          "qas": [
+            {
+              "id": "5-59-14",
+              "question": "Cmd Markdown的离线模式有什么作用？",
+              "answers": [
+                {
+                  "text": "在电脑失去网络连接时将后续键入的文字保存在本地，网络恢复后传送至云端，关闭浏览器或电脑后下次开启会提醒传送离线文字",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Cmd Markdown的阅读模式可通过阅读工具栏点击图标或按下Ctrl+Alt+M进入，在版面渲染的字体、字号、行间距、前背景色等细节上提升阅读体验和品质。",
+          "qas": [
+            {
+              "id": "5-59-15",
+              "question": "如何进入Cmd Markdown的阅读模式？",
+              "answers": [
+                {
+                  "text": "通过阅读工具栏点击图标或按下Ctrl+Alt+M",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Cmd Markdown支持标签、分类和搜索，在编辑区任意行首输入“标签： 未分类”可标签文档，标签后的文稿在文件列表（Ctrl+Alt+F）中按标签分类，用户可浏览或搜索标题关键字过滤文稿。",
+          "qas": [
+            {
+              "id": "5-59-16",
+              "question": "如何在Cmd Markdown中标签文档？",
+              "answers": [
+                {
+                  "text": "在编辑区任意行首输入“标签： 未分类”",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Cmd Markdown的文稿发布和分享可通过点击图标（Ctrl+Alt+P）将当前文稿生成固定链接，在网络上发布、分享给有相同志趣的人。",
+          "qas": [
+            {
+              "id": "5-59-17",
+              "question": "如何发布和分享Cmd Markdown的文稿？",
+              "answers": [
+                {
+                  "text": "点击图标（Ctrl+Alt+P）将当前文稿生成固定链接，在网络上发布、分享",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "## 简介\n\nCmd Markdown是一款MarkDown编辑器，同时也是一个阅读工具，支持实时同步预览，区分写作和阅读模式，支持在线存储和分享文稿网址。可以编辑工具栏，可以实时保存数据到云端，支持离线模式，支持标签/分类/搜索等操作。",
+          "qas": [
+            {
+              "id": "5-59-18",
+              "question": "Cmd Markdown是什么？",
+              "answers": [
+                {
+                  "text": "Cmd Markdown是一款MarkDown编辑器，同时也是一个阅读工具，支持实时同步预览，区分写作和阅读模式，支持在线存储和分享文稿网址。可以编辑工具栏，可以实时保存数据到云端，支持离线模式，支持标签/分类/搜索等操作。",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "5-59-19",
+              "question": "Cmd Markdown支持哪些基本功能？",
+              "answers": [
+                {
+                  "text": "支持实时同步预览，区分写作和阅读模式，支持在线存储和分享文稿网址",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "## 安装\n\n`sudo apt-get install cmd-markdown`\n\n## 卸载\n\n`sudo apt-get remove cmd-markdown`\n\n## 仓库地址\n\nhttp://packages.deepin.com/deepin/pool/non-free/c/cmd-markdown/",
+          "qas": [
+            {
+              "id": "5-59-20",
+              "question": "如何安装Cmd Markdown？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install cmd-markdown",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "5-59-21",
+              "question": "如何卸载Cmd Markdown？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove cmd-markdown",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，**Cmd Markdown** 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：\n> * 整理知识，学习笔记\n> * 发布日记，杂文，所见所想\n> * 撰写发布技术文稿（代码支持）\n> * 撰写发布学术论文（LaTeX 公式支持）",
+          "qas": [
+            {
+              "id": "5-59-22",
+              "question": "为什么需要使用Cmd Markdown？",
+              "answers": [
+                {
+                  "text": "我们为记录思想和分享知识提供更专业的工具",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "id": "5-59-23",
+              "question": "Cmd Markdown可以用于哪些目的？",
+              "answers": [
+                {
+                  "text": "整理知识，学习笔记\n> * 发布日记，杂文，所见所想\n> * 撰写发布技术文稿（代码支持）\n> * 撰写发布学术论文（LaTeX 公式支持）",
+                  "answer_start": 105
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载：\n\n### [Windows/Mac/Linux 全平台客户端](https://www.zybuluo.com/cmd/)",
+          "qas": [
+            {
+              "id": "5-59-24",
+              "question": "Cmd Markdown有哪些版本？",
+              "answers": [
+                {
+                  "text": "除了您现在看到的这个 Cmd Markdown 在线版本，您还可以前往以下网址下载",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-59-25",
+              "question": "如何下载Cmd Markdown的全平台客户端？",
+              "answers": [
+                {
+                  "text": "https://www.zybuluo.com/cmd/",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "## 什么是 Markdown\n\nMarkdown 是一种方便记忆、书写的纯文本标记语言，用户可以使用这些标记符号以最小的输入代价生成极富表现力的文档：譬如您正在阅读的这份文档。它使用简单的符号标记不同的标题，分割不同的段落，**粗体** 或者 *斜体* 某些文字，更棒的是，它还可以",
+          "qas": [
+            {
+              "id": "5-59-26",
+              "question": "什么是Markdown？",
+              "answers": [
+                {
+                  "text": "Markdown 是一种方便记忆、书写的纯文本标记语言",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "id": "5-59-27",
+              "question": "Markdown的优点是什么？",
+              "answers": [
+                {
+                  "text": "使用简单的符号标记不同的标题，分割不同的段落，**粗体** 或者 *斜体* 某些文字",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "总而言之，不同于其它 *所见即所得* 的编辑器：你只需使用键盘专注于书写文本内容，就可以生成印刷级的排版格式，省却在键盘和工具栏之间来回切换，调整内容和格式的麻烦。**Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。** 目前它已经成为世界上最大的技术分享网站 GitHub 和 技术问答网站 StackOverFlow 的御用书写格式。",
+          "qas": [
+            {
+              "id": "5-59-28",
+              "question": "Markdown如何在书写和阅读体验之间取得平衡？",
+              "answers": [
+                {
+                  "text": "Markdown 在流畅的书写和印刷级的阅读体验之间找到了平衡。",
+                  "answer_start": 74
+                }
+              ]
+            },
+            {
+              "id": "5-59-29",
+              "question": "哪些网站使用Markdown作为书写格式？",
+              "answers": [
+                {
+                  "text": "GitHub 和 技术问答网站 StackOverFlow",
+                  "answer_start": 136
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "## 什么是 Cmd Markdown\n\n您可以使用很多工具书写 Markdown，但是 Cmd Markdown 是这个星球上我们已知的、最好的 Markdown 工具——没有之一 ：）因为深信文字的力量，所以我们和你一样，对流畅书写，分享思想和知识，以及阅读体验有极致的追求，我们把对于这些诉求的回应整合在 Cmd Markdown，并且一次，两次，三次，乃至无数次地提升这个工具的体验，最终将它演化成一个 **编辑/发布/阅读** Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。",
+          "qas": [
+            {
+              "id": "5-59-30",
+              "question": "Cmd Markdown为什么是最好的Markdown工具？",
+              "answers": [
+                {
+                  "text": "Cmd Markdown 是这个星球上我们已知的、最好的 Markdown 工具——没有之一",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "5-59-31",
+              "question": "Cmd Markdown的最终演化形式是什么？",
+              "answers": [
+                {
+                  "text": "一个 **编辑/发布/阅读** Markdown 的在线平台——您可以在任何地方，任何系统/设备上管理这里的文字。",
+                  "answer_start": 152
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "### 1. 实时同步预览\n\n我们将 Cmd Markdown 的主界面一分为二，左边为**编辑区**，右边为**预览区**，在编辑区的操作会实时地渲染到预览区方便查看最终的版面效果，并且如果你在其中一个区拖动滚动条，我们有一个巧妙的算法把另一个区的滚动条同步到等价的位置，超酷！",
+          "qas": [
+            {
+              "id": "5-59-32",
+              "question": "Cmd Markdown的实时同步预览功能如何工作？",
+              "answers": [
+                {
+                  "text": "我们将 Cmd Markdown 的主界面一分为二，左边为**编辑区**，右边为**预览区**，在编辑区的操作会实时地渲染到预览区",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "### 4. 实时的云端文稿\n\n为了保障数据安全，Cmd Markdown 会将您每一次击键的内容保存至云端，同时在 **编辑工具栏** 的最右侧提示 `已保存` 的字样。无需担心浏览器崩溃，机器掉电或者地震，海啸——在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。",
+          "qas": [
+            {
+              "id": "5-59-33",
+              "question": "云端文稿功能允许用户做什么？",
+              "answers": [
+                {
+                  "text": "在编辑的过程中随时关闭浏览器或者机器，下一次回到 Cmd Markdown 的时候继续写作。",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "### 10. 文稿发布和分享\n\n在您使用 Cmd Markdown 记录，创作，整理，阅读文稿的同时，我们不仅希望它是一个有力的工具，更希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识，尝试点击 <i class=\"icon-share\"></i> (Ctrl+Alt+P) 发布这份文档给好友吧！",
+          "qas": [
+            {
+              "id": "5-59-34",
+              "question": "Cmd Markdown的文稿发布功能目的是什么？",
+              "answers": [
+                {
+                  "text": "希望您的思想和知识通过这个平台，连同优质的阅读体验，将他们分享给有相同志趣的人，进而鼓励更多的人来到这里记录分享他们的思想和知识",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "再一次感谢您花费时间阅读这份欢迎稿，点击 <i class=\"icon-file\"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！祝您在这里记录、阅读、分享愉快！\n\n作者 [@ghosert][3]\n2016 年 07月 07日",
+          "qas": [
+            {
+              "id": "5-59-35",
+              "question": "如何开始撰写新文稿？",
+              "answers": [
+                {
+                  "text": "点击 <i class=\"icon-file\"></i> (Ctrl+Alt+N) 开始撰写新的文稿吧！",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "5-59-36",
+              "question": "Cmd Markdown的欢迎稿作者是谁？",
+              "answers": [
+                {
+                  "text": "作者 [@ghosert][3]",
+                  "answer_start": 78
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

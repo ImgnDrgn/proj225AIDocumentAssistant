@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "I-Nex",
+      "paragraphs": [
+        {
+          "context": "I-Nex是一款系统信息查询工具，窗口界面由多个标签面板组成，显示驱动、内核等计算机和操作系统信息。",
+          "qas": [
+            {
+              "question": "I-Nex是什么类型的工具？",
+              "id": "5-274-1",
+              "answers": [
+                {
+                  "text": "系统信息查询工具",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "I-Nex的窗口界面由什么组成？",
+              "id": "5-274-2",
+              "answers": [
+                {
+                  "text": "多个标签面板",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "I-Nex显示哪些方面的信息？",
+              "id": "5-274-3",
+              "answers": [
+                {
+                  "text": "驱动，内核，RAM，网络，USB，CPU，GPU，主板，音频等计算机和操作系统信息",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装I-Nex的命令是sudo apt-get install i-nex。",
+          "qas": [
+            {
+              "question": "如何安装I-Nex？",
+              "id": "5-274-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install i-nex",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载I-Nex的命令是sudo apt-get remove i-nex。",
+          "qas": [
+            {
+              "question": "怎样卸载I-Nex？",
+              "id": "5-274-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove i-nex",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "I-Nex的仓库地址是http://packages.deepin.com/deepin/pool/contrib/i/i-nex/。",
+          "qas": [
+            {
+              "question": "I-Nex的仓库地址是什么？",
+              "id": "5-274-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/contrib/i/i-nex/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

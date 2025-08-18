@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "du查看空间",
+      "paragraphs": [
+        {
+          "context": "查看文件大小可以使用du -ha 文件名命令。",
+          "qas": [
+            {
+              "question": "查看一个文件所占大小用什么命令？",
+              "id": "5-448-1",
+              "answers": [
+                {
+                  "text": "du -ha 文件名",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查看目录总大小可执行du -hs 目录名命令。",
+          "qas": [
+            {
+              "question": "查看一个目录所占的全部大小，不显示子目录空间用什么命令？",
+              "id": "5-448-2",
+              "answers": [
+                {
+                  "text": "du -hs 目录名",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "du -hs *命令可查看当前目录下所有内容的大小。",
+          "qas": [
+            {
+              "question": "查看当前目录下所有内容的大小用什么命令？",
+              "id": "5-448-3",
+              "answers": [
+                {
+                  "text": "du -hs *",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "du命令中-h参数表示人类可读。",
+          "qas": [
+            {
+              "question": "du命令中-h参数的含义是什么？",
+              "id": "5-448-4",
+              "answers": [
+                {
+                  "text": "人类可读",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "du命令的-s参数用于展示当前目录所占全部大小，不显示子目录空间。",
+          "qas": [
+            {
+              "question": "du命令中-s参数的作用是什么？",
+              "id": "5-448-5",
+              "answers": [
+                {
+                  "text": "展示当前目录所占全部大小，但不显示子目录所占空间",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "du命令的-a参数能展示一个文件所占大小。",
+          "qas": [
+            {
+              "question": "du命令中-a参数有什么作用？",
+              "id": "5-448-6",
+              "answers": [
+                {
+                  "text": "展示一个文件所占大小",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

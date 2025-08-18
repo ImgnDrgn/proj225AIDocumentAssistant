@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "title": "Evolution-已合并",
+      "paragraphs": [
+        {
+          "context": "Evolution是一款电子邮件和日程安排工具，为用户提供了一整套高效的个人和工作组信息管理方案，多年来一直深受Linux用户的好评。通过它您可以阅读和发送E-Mail，管理个人联系簿，在线创建和确认群组会议等。",
+          "qas": [
+            {
+              "id": "5-119-1",
+              "question": "What kind of tool is Evolution?",
+              "answers": [
+                {
+                  "text": "一款电子邮件和日程安排工具",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "5-119-2",
+              "question": "What management solutions does Evolution provide?",
+              "answers": [
+                {
+                  "text": "一整套高效的个人和工作组信息管理方案",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-119-3",
+              "question": "Which users have praised Evolution for years?",
+              "answers": [
+                {
+                  "text": "Linux用户",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-119-4",
+              "question": "What can users do with Evolution?",
+              "answers": [
+                {
+                  "text": "阅读和发送E-Mail，管理个人联系簿，在线创建和确认群组会议等",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install evolution",
+          "qas": [
+            {
+              "id": "5-119-5",
+              "question": "What is the command to install Evolution?",
+              "answers": [
+                {
+                  "text": "sudo apt-get install evolution",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove evolution",
+          "qas": [
+            {
+              "id": "5-119-6",
+              "question": "What is the command to uninstall Evolution?",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove evolution",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/e/evolution/",
+          "qas": [
+            {
+              "id": "5-119-7",
+              "question": "What is the repository address of Evolution?",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/e/evolution/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "维基百科：",
+          "qas": [
+            {
+              "id": "5-119-8",
+              "question": "相关链接部分提到了哪个网站？",
+              "answers": [
+                {
+                  "text": "维基百科",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

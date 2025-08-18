@@ -1,0 +1,154 @@
+{
+  "data": [
+    {
+      "title": "判断BIOS的启动模式和磁盘分区格式",
+      "paragraphs": [
+        {
+          "context": "BIOS启动模式分为UEFI引导和Legacy引导：UEFI对应GPT磁盘，启动快，新机型常用；Legacy对应MBR磁盘，旧电脑常用。",
+          "qas": [
+            {
+              "question": "BIOS启动模式有哪几种？",
+              "id": "5-501-1",
+              "answers": [
+                {
+                  "text": "UEFI引导和Legacy引导",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "UEFI引导对应的磁盘分区格式是什么？",
+              "id": "5-501-2",
+              "answers": [
+                {
+                  "text": "GPT",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "Legacy引导对应的磁盘分区格式是什么？",
+              "id": "5-501-3",
+              "answers": [
+                {
+                  "text": "MBR",
+                  "answer_start": 46
+                }
+              ]
+            },
+            {
+              "question": "为什么新机型多使用UEFI启动？",
+              "id": "5-501-4",
+              "answers": [
+                {
+                  "text": "它可以跳过BIOS自检，启动速度更快",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "BIOS启动模式和硬盘分区格式不一致会导致安装报错，需确保UEFI对应GPT，Legacy对应MBR。",
+          "qas": [
+            {
+              "question": "BIOS启动模式和硬盘分区格式不一致会有什么问题？",
+              "id": "5-501-5",
+              "answers": [
+                {
+                  "text": "安装的时候会出现报错",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "安装系统时，BIOS启动模式和磁盘分区格式需要满足什么条件？",
+              "id": "5-501-6",
+              "answers": [
+                {
+                  "text": "UEFI引导对应GPT磁盘，Legacy引导对应MBR磁盘",
+                  "answer_start": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "按Win+R，输入msinfo32可查看电脑BIOS的启动模式。",
+          "qas": [
+            {
+              "question": "如何查看电脑BIOS的启动模式？",
+              "id": "5-501-7",
+              "answers": [
+                {
+                  "text": "同时按下“Win+R”组合快捷键，输入命令“msinfo32”按下回车，在系统信息表中可以查看",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "按Win+R输入cmd，再输入diskpart和list disk，GPT下方有星号则是GPT磁盘。",
+          "qas": [
+            {
+              "question": "如何查看电脑的磁盘分区格式？",
+              "id": "5-501-8",
+              "answers": [
+                {
+                  "text": "用同样的方法输入命令“cmd”按下回车，在弹出的窗口界面输入命令“diskpart”按下回车，继续输入“list disk”按下回车。在这里可以查看电脑的磁盘分区格式，GPT下方有星号则是GPT磁盘",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "怎样判断磁盘是GPT格式？",
+              "id": "5-501-9",
+              "answers": [
+                {
+                  "text": "GPT下方有星号则是GPT磁盘",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI启动但磁盘是MBR时，输入select disk 1和convert gpt可将编号1的MBR磁盘转GPT。",
+          "qas": [
+            {
+              "question": "当UEFI启动但磁盘分区格式是MBR时，如何将其转换成GPT磁盘？",
+              "id": "5-501-10",
+              "answers": [
+                {
+                  "text": "输入以下命令：select disk 1，convert gpt",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "命令select disk 1的作用是什么？",
+              "id": "5-501-11",
+              "answers": [
+                {
+                  "text": "选择编号为1的磁盘",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "convert gpt命令的作用是什么？",
+              "id": "5-501-12",
+              "answers": [
+                {
+                  "text": "将MBR磁盘转换成GPT磁盘",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

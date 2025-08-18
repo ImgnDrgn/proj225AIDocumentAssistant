@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "BirdFont",
+      "paragraphs": [
+        {
+          "context": "BirdFont是一个免费的字体编辑器，可创建矢量图形及TTF、EOT和SVG字体，还能创建专属个性字体。",
+          "qas": [
+            {
+              "question": "BirdFont是什么？",
+              "id": "5-33-1",
+              "answers": [
+                {
+                  "text": "一个免费的字体编辑器",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "BirdFont可以创建哪些类型的字体？",
+              "id": "5-33-2",
+              "answers": [
+                {
+                  "text": "TTF、EOT和SVG字体",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "BirdFont除了创建字体还能做什么？",
+              "id": "5-33-3",
+              "answers": [
+                {
+                  "text": "创建矢量图形，创建专属个性字体",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装BirdFont的命令是sudo apt-get install birdfont。",
+          "qas": [
+            {
+              "question": "如何安装BirdFont？",
+              "id": "5-33-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install birdfont",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载BirdFont的命令是sudo apt-get remove birdfont。",
+          "qas": [
+            {
+              "question": "如何卸载BirdFont？",
+              "id": "5-33-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove birdfont",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "BirdFont的仓库地址是http://packages.deepin.com/deepin/pool/main/b/birdfont/。",
+          "qas": [
+            {
+              "question": "BirdFont的仓库地址是什么？",
+              "id": "5-33-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/b/birdfont/",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

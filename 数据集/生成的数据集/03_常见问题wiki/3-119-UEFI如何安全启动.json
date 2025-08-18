@@ -1,0 +1,309 @@
+{
+  "data": [
+    {
+      "title": "UEFI如何安全启动",
+      "paragraphs": [
+        {
+          "context": "CSM是UEFI的兼容性支持模块，用于兼容老BIOS，应关闭，否则可能出现问题。",
+          "qas": [
+            {
+              "question": "什么是CSM？为什么应关闭？",
+              "id": "3-119-1",
+              "answers": [
+                {
+                  "text": "CSM是UEFI的兼容性支持模块，用于兼容老BIOS，应关闭，否则可能出现问题。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI相比BIOS的改进包括：简单的引导菜单、无512字节引导扇区限制、突破MBR分区限制、从不限大小的文件启动等。",
+          "qas": [
+            {
+              "question": "UEFI比BIOS有哪些进步？",
+              "id": "3-119-2",
+              "answers": [
+                {
+                  "text": "简单的引导菜单、无512字节引导扇区限制、突破MBR分区限制、从不限大小的文件启动等。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI启动管理器功能包括控制操作系统引导顺序、管理EFI驱动程序、维护NVRAM等。",
+          "qas": [
+            {
+              "question": "UEFI启动管理器有哪些功能？",
+              "id": "3-119-3",
+              "answers": [
+                {
+                  "text": "控制操作系统引导顺序、管理EFI驱动程序、维护NVRAM等。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI启动步骤：1.主板读取设备引导文件；2.无则读bootx64.efi；3.无则通过网络读PXE服务器引导；4.无则启动efi shell（如有）。",
+          "qas": [
+            {
+              "question": "UEFI的启动步骤是什么？",
+              "id": "3-119-4",
+              "answers": [
+                {
+                  "text": "1.主板读取设备引导文件；2.无则读bootx64.efi；3.无则通过网络读PXE服务器引导；4.无则启动efi shell（如有）。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Windows从Win7开始支持UEFI，且需选64位版本。",
+          "qas": [
+            {
+              "question": "Windows从哪个版本开始支持UEFI？有什么要求？",
+              "id": "3-119-5",
+              "answers": [
+                {
+                  "text": "Windows从Win7开始支持UEFI，且需选64位版本。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "bcdboot.exe可设定主板引导菜单，复制引导文件到esp引导区，推荐使用。",
+          "qas": [
+            {
+              "question": "bcdboot.exe的作用是什么？",
+              "id": "3-119-6",
+              "answers": [
+                {
+                  "text": "可设定主板引导菜单，复制引导文件到esp引导区。",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "bootmgfw.efi是Windows的核心引导程序，位于\\Windows\\Boot\\EFI目录。",
+          "qas": [
+            {
+              "question": "Windows的核心引导程序是什么？位于哪里？",
+              "id": "3-119-7",
+              "answers": [
+                {
+                  "text": "bootmgfw.efi，位于\\Windows\\Boot\\EFI目录。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI引导Windows的基本策略：在主板建立启动菜单，避免争夺bootx64.efi使用权；建立uefi shell工具。",
+          "qas": [
+            {
+              "question": "UEFI引导Windows的基本策略有哪些？",
+              "id": "3-119-8",
+              "answers": [
+                {
+                  "text": "在主板建立启动菜单，避免争夺bootx64.efi使用权；建立uefi shell工具。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "确认主板是否支持UEFI：全新安装可进BIOS选UEFI模式，关CSM和安全启动；已安装可查启动模式，MBR需转换为UEFI。",
+          "qas": [
+            {
+              "question": "如何确认主板是否支持UEFI？",
+              "id": "3-119-9",
+              "answers": [
+                {
+                  "text": "全新安装可进BIOS选UEFI模式，关CSM和安全启动；已安装可查启动模式，MBR需转换为UEFI。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用diskpart将磁盘转为GPT：进入diskpart，list disk选磁盘，用convert gpt命令。",
+          "qas": [
+            {
+              "question": "如何用diskpart将磁盘转为GPT格式？",
+              "id": "3-119-10",
+              "answers": [
+                {
+                  "text": "进入diskpart，list disk选磁盘，用convert gpt命令。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ESP分区格式为FAT，是存放引导文件的专门分区，让UEFI能找到引导程序。",
+          "qas": [
+            {
+              "question": "ESP分区的格式是什么？作用是什么？",
+              "id": "3-119-11",
+              "answers": [
+                {
+                  "text": "ESP分区格式为FAT，是存放引导文件的专门分区，让UEFI能找到引导程序。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "bcdboot命令基本格式：bcdboot 系统 /l 语言 /s esp分区 /f UEFI 等，用于配置启动文件。",
+          "qas": [
+            {
+              "question": "bcdboot命令的基本格式是什么？",
+              "id": "3-119-12",
+              "answers": [
+                {
+                  "text": "bcdboot 系统 /l 语言 /s esp分区 /f UEFI 等。",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI引导Linux需进入BIOS设为UEFI启动，关CSM和安全启动，磁盘为GPT格式，用新镜像安装。",
+          "qas": [
+            {
+              "question": "UEFI引导Linux的注意事项有哪些？",
+              "id": "3-119-13",
+              "answers": [
+                {
+                  "text": "进入BIOS设为UEFI启动，关CSM和安全启动，磁盘为GPT格式，用新镜像安装。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI shell的常用命令有ls、cp、rm、cd、help等，可执行文件管理等操作。",
+          "qas": [
+            {
+              "question": "UEFI shell有哪些常用命令？",
+              "id": "3-119-14",
+              "answers": [
+                {
+                  "text": "ls、cp、rm、cd、help等。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GRUB是开源引导管理器，支持多种系统和文件系统，主文件夹有/boot/grub/等。",
+          "qas": [
+            {
+              "question": "GRUB是什么？其主文件夹有哪些？",
+              "id": "3-119-15",
+              "answers": [
+                {
+                  "text": "GRUB是开源引导管理器，支持多种系统和文件系统，主文件夹有/boot/grub/等。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "grub-install命令用于安装GRUB，可指定目标设备、启动目录等参数。",
+          "qas": [
+            {
+              "question": "grub-install命令的作用是什么？",
+              "id": "3-119-16",
+              "answers": [
+                {
+                  "text": "用于安装GRUB，可指定目标设备、启动目录等参数。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "grub-mkconfig -o /boot/grub/grub.cfg用于生成GRUB配置文件。",
+          "qas": [
+            {
+              "question": "如何生成GRUB配置文件？",
+              "id": "3-119-17",
+              "answers": [
+                {
+                  "text": "grub-mkconfig -o /boot/grub/grub.cfg",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GRUB配置文件中的GRUB_TIMEOUT变量用于设置选择倒计时时间。",
+          "qas": [
+            {
+              "question": "GRUB配置文件中GRUB_TIMEOUT变量的作用是什么？",
+              "id": "3-119-18",
+              "answers": [
+                {
+                  "text": "设置选择倒计时时间。",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在GRUB命令行中，boot命令用于启动Linux系统映像。",
+          "qas": [
+            {
+              "question": "GRUB命令行中boot命令的作用是什么？",
+              "id": "3-119-19",
+              "answers": [
+                {
+                  "text": "启动Linux系统映像。",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "UEFI做引导盘时，可直接操作U盘，或先做镜像再写入，需确保引导文件位置正确。",
+          "qas": [
+            {
+              "question": "UEFI如何做引导盘？",
+              "id": "3-119-20",
+              "answers": [
+                {
+                  "text": "可直接操作U盘，或先做镜像再写入，需确保引导文件位置正确。",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

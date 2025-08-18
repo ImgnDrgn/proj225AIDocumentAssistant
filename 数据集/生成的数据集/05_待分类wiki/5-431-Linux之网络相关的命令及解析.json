@@ -1,0 +1,669 @@
+{
+  "data": [
+    {
+      "title": "Linux之网络相关的命令及解析",
+      "paragraphs": [
+        {
+          "context": "ethtool命令用于查询ethX网口基本设置、及设置网卡的参数。其语法格式为：ethtool [参数]",
+          "qas": [
+            {
+              "id": "5-431-1",
+              "question": "ethtool命令的用途是什么？",
+              "answers": [
+                {
+                  "text": "查询ethX网口基本设置、及设置网卡的参数",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-431-2",
+              "question": "ethtool命令的语法格式是什么？",
+              "answers": [
+                {
+                  "text": "ethtool [参数]",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ethtool命令的常用参数及解析如下：-i：显示网卡驱动的信息；-E：修改网卡只读存储器字节；-K：修改网卡 Offload 的状态；ethx：查询ethx网口基本设置，其中 x 是对应网卡的编号，如eth0、eth1等；-s：修改网卡的部分配置；-t：让网卡执行自我检测",
+          "qas": [
+            {
+              "id": "5-431-3",
+              "question": "ethtool命令中-i参数的作用是什么？",
+              "answers": [
+                {
+                  "text": "显示网卡驱动的信息",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-431-4",
+              "question": "ethtool命令中用于修改网卡只读存储器字节的参数是什么？",
+              "answers": [
+                {
+                  "text": "-E",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-431-5",
+              "question": "ethtool命令中ethx参数的作用是什么？",
+              "answers": [
+                {
+                  "text": "查询ethx网口基本设置，其中 x 是对应网卡的编号，如eth0、eth1等",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-431-6",
+              "question": "ethtool命令中用于让网卡执行自我检测的参数是什么？",
+              "answers": [
+                {
+                  "text": "-t",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ethtool命令的参考实例：查询网口基本设置的命令为[root@root ~]# ethtool eth0；查询网口的驱动相关信息的命令为[root@root ~]# ethtool -i eth0；设置网口工作方式的命令为[root@root ~]# ethtool -s eth0 autoneg off speed 100 duplex full",
+          "qas": [
+            {
+              "id": "5-431-7",
+              "question": "查询eth0网口基本设置的ethtool命令是什么？",
+              "answers": [
+                {
+                  "text": "[root@root ~]# ethtool eth0",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "5-431-8",
+              "question": "查询网口驱动相关信息的ethtool命令是什么？",
+              "answers": [
+                {
+                  "text": "[root@root ~]# ethtool -i eth0",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "id": "5-431-9",
+              "question": "设置网口工作方式的ethtool命令是什么？",
+              "answers": [
+                {
+                  "text": "[root@root ~]# ethtool -s eth0 autoneg off speed 100 duplex full",
+                  "answer_start": 106
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ethtool命令用于查询ethX网口基本设置、及设置网卡的参数。语法格式：ethtool [参数]。常用参数：-i 显示网卡驱动的信息，-E 修改网卡只读存储器字节，-K 修改网卡 Offload 的状态，ethx 查询ethx网口基本设置，其中 x 是对应网卡的编号，-s 修改网卡的部分配置，-t 让网卡执行自我检测。",
+          "qas": [
+            {
+              "id": "5-431-10",
+              "question": "ethtool命令中用于显示网卡驱动信息的参数是什么？",
+              "answers": [
+                {
+                  "text": "-i",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "id": "5-431-11",
+              "question": "如何修改网卡的只读存储器字节？",
+              "answers": [
+                {
+                  "text": "-E",
+                  "answer_start": 95
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nload是实时统计网卡带宽使用率的工具，其语法格式为：nload [网卡]",
+          "qas": [
+            {
+              "id": "5-431-12",
+              "question": "nload工具的用途是什么？",
+              "answers": [
+                {
+                  "text": "实时统计网卡带宽使用率",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-431-13",
+              "question": "nload命令的语法格式是什么？",
+              "answers": [
+                {
+                  "text": "nload [网卡]",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nload命令的参考实例：指定监测eno1网卡流量的命令为[root@root ~]# nload eno1；监测所有网卡流量的命令为[root@root ~]# nload；在nload监测界面中，按【回车键】可查看下一个网卡监测情况",
+          "qas": [
+            {
+              "id": "5-431-14",
+              "question": "指定监测eno1网卡流量的nload命令是什么？",
+              "answers": [
+                {
+                  "text": "[root@root ~]# nload eno1",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-431-15",
+              "question": "监测所有网卡流量的nload命令是什么？",
+              "answers": [
+                {
+                  "text": "[root@root ~]# nload",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-431-16",
+              "question": "如何在nload监测界面中查看下一个网卡的监测情况？",
+              "answers": [
+                {
+                  "text": "按【回车键】",
+                  "answer_start": 94
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nload监测界面的字段解析：Curr表示当前流量，Avg表示平均流量，Min表示最小流量，Max表示最大流量，Ttl表示总流量",
+          "qas": [
+            {
+              "id": "5-431-17",
+              "question": "nload监测界面中Curr字段表示什么？",
+              "answers": [
+                {
+                  "text": "当前流量",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-431-18",
+              "question": "nload监测界面中Ttl字段的含义是什么？",
+              "answers": [
+                {
+                  "text": "总流量",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nload命令实时统计网卡带宽使用率，语法格式：nload [网卡]。指定监测网卡：nload eno1，监测所有网卡：nload。输出字段：Curr当前流量，Avg平均流量，Min最小流量，Max最大流量，Ttl总流量。",
+          "qas": [
+            {
+              "id": "5-431-19",
+              "question": "如何监测指定网卡eno1的流量？",
+              "answers": [
+                {
+                  "text": "nload eno1",
+                  "answer_start": 48
+                }
+              ]
+            },
+            {
+              "id": "5-431-20",
+              "question": "nload输出中的Avg字段表示什么？",
+              "answers": [
+                {
+                  "text": "平均流量",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nethogs是一个小型的net top工具，按进程进行带宽分组，无需依赖特殊内核模块，可找出占用带宽的进程PID。其语法格式为：nethogs [参数] [设备]",
+          "qas": [
+            {
+              "id": "5-431-21",
+              "question": "nethogs工具的特点是什么？",
+              "answers": [
+                {
+                  "text": "小型的net top工具，按进程进行带宽分组，无需依赖特殊内核模块，可找出占用带宽的进程PID",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "5-431-22",
+              "question": "nethogs命令的语法格式是什么？",
+              "answers": [
+                {
+                  "text": "nethogs [参数] [设备]",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nethogs命令的常用参数及解析：设备：要监控的设备，默认“eth0”；-d：以秒为单位的界面刷新频率，默认为一秒；-v：选择查看模式，mode取值为0（KB/s）、1（total KB）、2（total B）、3（total MB），默认为0；-t：追踪模式",
+          "qas": [
+            {
+              "id": "5-431-23",
+              "question": "nethogs命令默认监控的设备是什么？",
+              "answers": [
+                {
+                  "text": "eth0",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "5-431-24",
+              "question": "nethogs命令中-d参数的默认刷新频率是多少？",
+              "answers": [
+                {
+                  "text": "一秒",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "id": "5-431-25",
+              "question": "nethogs命令中-v参数的默认查看模式（mode）是什么？",
+              "answers": [
+                {
+                  "text": "0（KB/s）",
+                  "answer_start": 133
+                }
+              ]
+            },
+            {
+              "id": "5-431-26",
+              "question": "nethogs命令中用于追踪模式的参数是什么？",
+              "answers": [
+                {
+                  "text": "-t",
+                  "answer_start": 146
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nethogs命令的参考实例：设置5秒刷新一次的命令为[root@root ~]# nethogs -d 5；监视eth0设备网络带宽的命令为[root@root ~]# nethogs eth0",
+          "qas": [
+            {
+              "id": "5-431-27",
+              "question": "设置nethogs界面5秒刷新一次的命令是什么？",
+              "answers": [
+                {
+                  "text": "[root@root ~]# nethogs -d 5",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "id": "5-431-28",
+              "question": "监视eth0设备网络带宽的nethogs命令是什么？",
+              "answers": [
+                {
+                  "text": "[root@root ~]# nethogs eth0",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nethogs按进程进行带宽分组监测，语法格式：nethogs [参数] [设备]。常用参数：-d 秒为单位的刷新频率，-v 选择查看模式（0=KB/s,1=KB等），-t 追踪模式。示例：nethogs -d 5 设置5秒刷新。",
+          "qas": [
+            {
+              "id": "5-431-29",
+              "question": "nethogs与其他网络监控工具的主要区别是什么？",
+              "answers": [
+                {
+                  "text": "按进程进行带宽分组",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-431-30",
+              "question": "如何设置nethogs的刷新频率为5秒？",
+              "answers": [
+                {
+                  "text": "-d 5",
+                  "answer_start": 111
+                }
+              ]
+            },
+            {
+              "id": "5-431-31",
+              "question": "nethogs的-v参数有什么作用？",
+              "answers": [
+                {
+                  "text": "选择查看模式",
+                  "answer_start": 81
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iftop是实时流量监控工具，监控TCP/IP连接，无报表功能，需以root身份运行；其语法格式为：iftop [参数]",
+          "qas": [
+            {
+              "id": "5-431-32",
+              "question": "iftop工具的用途是什么？",
+              "answers": [
+                {
+                  "text": "实时流量监控，监控TCP/IP连接",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-431-33",
+              "question": "使用iftop工具需要什么身份？",
+              "answers": [
+                {
+                  "text": "root身份",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "id": "5-431-34",
+              "question": "iftop命令的语法格式是什么？",
+              "answers": [
+                {
+                  "text": "iftop [参数]",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iftop命令的常用参数及解析：-i：指定要监控的网卡；-n：直接显示IP，不进行DNS反解析",
+          "qas": [
+            {
+              "id": "5-431-35",
+              "question": "iftop命令中用于指定监控网卡的参数是什么？",
+              "answers": [
+                {
+                  "text": "-i",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-431-36",
+              "question": "iftop命令中如何设置直接显示IP而不进行DNS反解析？",
+              "answers": [
+                {
+                  "text": "使用-n参数",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iftop命令的参考实例：默认监控第一块网卡流量的命令为[root@root ~]# iftop；监控eth1网卡流量的命令为[root@root ~]# iftop -i eth1",
+          "qas": [
+            {
+              "id": "5-431-37",
+              "question": "默认监控第一块网卡流量的iftop命令是什么？",
+              "answers": [
+                {
+                  "text": "[root@root ~]# iftop",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-431-38",
+              "question": "监控eth1网卡流量的iftop命令是什么？",
+              "answers": [
+                {
+                  "text": "[root@root ~]# iftop -i eth1",
+                  "answer_start": 66
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iftop监控TCP/IP连接，实时流量监控工具。语法格式：iftop [参数]。常用参数：-i 指定监控网卡，-n 直接显示IP不进行DNS解析。必须root身份运行，使用pcap库捕获数据包。",
+          "qas": [
+            {
+              "id": "5-431-39",
+              "question": "iftop命令的主要功能是什么？",
+              "answers": [
+                {
+                  "text": "实时流量监控",
+                  "answer_start": 31
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptraf是交互式、色彩鲜艳的IP局域网监控工具，全拼为IP traffic monitor，支持命令行和菜单操作（不带参数进入菜单）。其语法格式为：iptraf [参数] [网卡]",
+          "qas": [
+            {
+              "id": "5-431-40",
+              "question": "iptraf工具的全拼是什么？",
+              "answers": [
+                {
+                  "text": "IP traffic monitor",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "id": "5-431-41",
+              "question": "iptraf工具支持哪两种操作方式？",
+              "answers": [
+                {
+                  "text": "命令行和菜单操作（不带参数进入菜单）",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "id": "5-431-42",
+              "question": "iptraf命令的语法格式是什么？",
+              "answers": [
+                {
+                  "text": "iptraf [参数] [网卡]",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptraf命令的常用参数及解析：-i：立即在指定网络接口上开启IP流量监视；-g：立即开始生成网络接口的概要状态信息；-h：显示帮助信息",
+          "qas": [
+            {
+              "id": "5-431-43",
+              "question": "iptraf命令中用于开启指定网络接口IP流量监视的参数是什么？",
+              "answers": [
+                {
+                  "text": "-i",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-431-44",
+              "question": "iptraf命令中用于生成网络接口概要状态信息的参数是什么？",
+              "answers": [
+                {
+                  "text": "-g",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "id": "5-431-45",
+              "question": "iptraf命令中-h参数的作用是什么？",
+              "answers": [
+                {
+                  "text": "显示帮助信息",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptraf命令的参考实例：监视eth0网卡详细流量的命令为[root@root ~]# iptraf -d eth0；监视eth0网卡TCP/UDP流量的命令为[root@root ~]# iptraf -s eth0",
+          "qas": [
+            {
+              "id": "5-431-46",
+              "question": "监视eth0网卡详细流量的iptraf命令是什么？",
+              "answers": [
+                {
+                  "text": "[root@root ~]# iptraf -d eth0",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-431-47",
+              "question": "监视eth0网卡TCP/UDP流量的iptraf命令是什么？",
+              "answers": [
+                {
+                  "text": "[root@root ~]# iptraf -s eth0",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "iptraf是一款交互式IP局域网监控工具，显示连接数据量。语法格式：iptraf [参数] [网卡]。常用参数：-i 在指定接口开启IP流量监视，-d 监视明细网络流量，-s 监视TCP/UDP流量。",
+          "qas": [
+            {
+              "id": "5-431-48",
+              "question": "iptraf的主要监控维度是什么？",
+              "answers": [
+                {
+                  "text": "连接数据量",
+                  "answer_start": 48
+                }
+              ]
+            },
+            {
+              "id": "5-431-49",
+              "question": "如何监视指定接口的TCP/UDP流量？",
+              "answers": [
+                {
+                  "text": "-s",
+                  "answer_start": 137
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ifstat是统计网络接口活动状态的工具，系统默认不安装，需下载源码包编译安装。其语法格式为：ifstat [参数]",
+          "qas": [
+            {
+              "id": "5-431-50",
+              "question": "ifstat工具的用途是什么？",
+              "answers": [
+                {
+                  "text": "统计网络接口活动状态",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-431-51",
+              "question": "ifstat工具是否默认安装在系统中？",
+              "answers": [
+                {
+                  "text": "否，系统默认不安装，需下载源码包编译安装",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "5-431-52",
+              "question": "ifstat命令的语法格式是什么？",
+              "answers": [
+                {
+                  "text": "ifstat [参数]",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ifstat命令的常用参数及解析：-p：优化打印；-a：忽略历史记录；-e：显示错误信息。参考实例：使用-e参数显示网络接口错误信息的命令为[root@root ~]# ifstat -e",
+          "qas": [
+            {
+              "id": "5-431-53",
+              "question": "ifstat命令中-p参数的作用是什么？",
+              "answers": [
+                {
+                  "text": "优化打印",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-431-54",
+              "question": "ifstat命令中用于忽略历史记录的参数是什么？",
+              "answers": [
+                {
+                  "text": "-a",
+                  "answer_start": 39
+                }
+              ]
+            },
+            {
+              "id": "5-431-55",
+              "question": "显示网络接口错误信息的ifstat命令是什么？",
+              "answers": [
+                {
+                  "text": "[root@root ~]# ifstat -e",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

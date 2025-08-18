@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "title": "使用工具调节系统缩放率",
+      "paragraphs": [
+        {
+          "context": "在系统设定之外可通过软件调节缩放率，介绍简单方法。",
+          "qas": [
+            {
+              "question": "除了系统设定，还可以通过什么方式调节系统缩放率？",
+              "id": "3-127-1",
+              "answers": [
+                {
+                  "text": "通过软件调节",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "v20下在终端执行命令安装：sudo apt install dconf-editor",
+          "qas": [
+            {
+              "question": "在v20系统中，如何安装调节缩放率的工具？",
+              "id": "3-127-2",
+              "answers": [
+                {
+                  "text": "在终端执行命令：sudo apt install dconf-editor",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "v23在终端下执行命令安装：sudo apt install org.gnome.wiki.projects.dconf",
+          "qas": [
+            {
+              "question": "v23系统中安装调节缩放率工具的终端命令是什么？",
+              "id": "3-127-3",
+              "answers": [
+                {
+                  "text": "sudo apt install org.gnome.wiki.projects.dconf",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "通过软件调节系统缩放率的方法简单高效。",
+          "qas": [
+            {
+              "question": "通过软件调节系统缩放率的方法有什么特点？",
+              "id": "3-127-4",
+              "answers": [
+                {
+                  "text": "简单高效",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

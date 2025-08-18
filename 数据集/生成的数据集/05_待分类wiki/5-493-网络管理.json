@@ -1,0 +1,389 @@
+{
+  "data": [
+    {
+      "title": "网络管理",
+      "paragraphs": [
+        {
+          "context": "/etc/hosts是主机地址配置文件，也叫本地主机文件，内容为IP地址与其对应的主机名，用于将主机名称解析为IP地址，包含IP与主机名的映射及主机名别名。",
+          "qas": [
+            {
+              "question": "/etc/hosts文件的作用是什么？",
+              "id": "5-493-1",
+              "answers": [
+                {
+                  "text": "将主机名称解析为IP地址，包含IP与主机名的映射及主机名别名。",
+                  "answer_start": 47
+                }
+              ]
+            },
+            {
+              "question": "/etc/hosts又称什么文件？",
+              "id": "5-493-2",
+              "answers": [
+                {
+                  "text": "本地主机文件",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/etc/services是Internet网络服务文件，记录网络服务名及其对应的端口号和协议，每行格式为服务名 端口号/协议 [别名] [#注释]。",
+          "qas": [
+            {
+              "question": "/etc/services文件记录了什么内容？",
+              "id": "5-493-3",
+              "answers": [
+                {
+                  "text": "网络服务名及其对应的端口号和协议",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "/etc/services文件每行的格式是什么？",
+              "id": "5-493-4",
+              "answers": [
+                {
+                  "text": "服务名 端口号/协议 [别名] [#注释]",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/etc/hosts.allow和/etc/hosts.deny是tcpd服务器的配置文件，控制外部IP对本机服务的访问，格式为server_name:hosts-list[:command]，allow控制允许访问的IP，deny控制禁止访问的，冲突时以deny为准。",
+          "qas": [
+            {
+              "question": "/etc/hosts.allow和/etc/hosts.deny的作用是什么？",
+              "id": "5-493-5",
+              "answers": [
+                {
+                  "text": "控制外部IP对本机服务的访问",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "当/etc/hosts.allow和/etc/hosts.deny配置冲突时，以哪个为准？",
+              "id": "5-493-6",
+              "answers": [
+                {
+                  "text": "/etc/hosts.deny",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/etc/network/interfaces是网络配置文件，可设置动态ip（dhcp）或静态ip，静态配置需指定address、netmask、gateway，修改后需重启网卡生效（sudo /etc/init.d/networking restart或sudo systemctl restart networking.service）。",
+          "qas": [
+            {
+              "question": "/etc/network/interfaces可配置哪种类型的IP？",
+              "id": "5-493-7",
+              "answers": [
+                {
+                  "text": "动态ip（dhcp）或静态ip",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "修改/etc/network/interfaces后如何生效？",
+              "id": "5-493-8",
+              "answers": [
+                {
+                  "text": "重启网卡，执行sudo /etc/init.d/networking restart或sudo systemctl restart networking.service",
+                  "answer_start": 77
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/etc/host.conf确定主机名解释顺序，当同时存在DNS和/etc/hosts时生效，示例有order hosts,bind（先hosts后DNS）、multi on（允许多IP）等。",
+          "qas": [
+            {
+              "question": "/etc/host.conf的作用是什么？",
+              "id": "5-493-9",
+              "answers": [
+                {
+                  "text": "确定主机名解释顺序，当同时存在DNS和/etc/hosts时生效",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "order hosts,bind在/etc/host.conf中表示什么？",
+              "id": "5-493-10",
+              "answers": [
+                {
+                  "text": "名称解释顺序为先使用本机hosts主机表，再搜索bind名称服务器（DNS）",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "/etc/resolv.conf是DNS域名解析配置文件，决定dns服务器的优先级，主要关键字有nameserver（定义DNS服务器IP）、domain（本地域名）等，最主要的是nameserver。",
+          "qas": [
+            {
+              "question": "/etc/resolv.conf的作用是什么？",
+              "id": "5-493-11",
+              "answers": [
+                {
+                  "text": "DNS域名解析的配置文件，决定dns服务器的优先级",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "question": "/etc/resolv.conf中最主要的关键字是什么？",
+              "id": "5-493-12",
+              "answers": [
+                {
+                  "text": "nameserver",
+                  "answer_start": 102
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ifconfig用于查看和更改网络接口的地址和参数（如IP、子网掩码等），超级用户可使用，参数包括-up（激活接口）、-down（关闭接口）等，如ifconfig eth0 192.168.4.1 netmask 255.255.255.0 up配置IP并激活。",
+          "qas": [
+            {
+              "question": "ifconfig命令的用途是什么？",
+              "id": "5-493-13",
+              "answers": [
+                {
+                  "text": "查看和更改网络接口的地址和参数（如IP、子网掩码等）",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "如何用ifconfig配置eth0的IP为192.168.4.1并激活？",
+              "id": "5-493-14",
+              "answers": [
+                {
+                  "text": "ifconfig eth0 192.168.4.1 netmask 255.255.255.0 up",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ip是iproute2软件包中的网络配置工具，可替代ifconfig、route等，支持添加、删除IP等操作，如ip addr add 192.168.1.1/24 dev eth0添加IP到eth0。",
+          "qas": [
+            {
+              "question": "ip命令属于哪个软件包？",
+              "id": "5-493-15",
+              "answers": [
+                {
+                  "text": "iproute2",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "如何用ip命令给eth0添加IP地址192.168.1.1/24？",
+              "id": "5-493-16",
+              "answers": [
+                {
+                  "text": "ip addr add 192.168.1.1/24 dev eth0",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ping用于检测主机网络接口状态，使用ICMP协议，参数包括-c（指定回应次数）、-i（间隔秒数）等，如ping -c 5 www.google.com.hk指定ping 5次。",
+          "qas": [
+            {
+              "question": "ping命令使用什么协议？",
+              "id": "5-493-17",
+              "answers": [
+                {
+                  "text": "ICMP协议",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "如何指定ping命令的回应次数为5次？",
+              "id": "5-493-18",
+              "answers": [
+                {
+                  "text": "使用-c参数，如ping -c 5 目标地址",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "netstat用于检查Linux网络状态，显示开启的端口、服务状态等，-a参数显示所有连线中的Socket，包括监听状态的端口。",
+          "qas": [
+            {
+              "question": "netstat命令的作用是什么？",
+              "id": "5-493-19",
+              "answers": [
+                {
+                  "text": "检查整个Linux网络状态，显示开启的端口、服务状态等",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "netstat的-a参数有什么作用？",
+              "id": "5-493-20",
+              "answers": [
+                {
+                  "text": "显示所有连线中的Socket，包括监听状态的端口",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "telnet是远程登录协议和命令，用于开启终端机阶段作业并登入远端主机，需知道远程主机的合法用户名和口令，不支持X-Window图形环境。",
+          "qas": [
+            {
+              "question": "telnet命令的用途是什么？",
+              "id": "5-493-21",
+              "answers": [
+                {
+                  "text": "开启终端机阶段作业，并登入远端主机",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "telnet支持X-Window图形环境吗？",
+              "id": "5-493-22",
+              "answers": [
+                {
+                  "text": "不支持",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ftp是文件传输协议和命令，用于远程文件传输，支持ASCII和二进制文件传输，内部命令包括ls（列远程目录）、get（下载文件）、put（上传文件）等。",
+          "qas": [
+            {
+              "question": "ftp命令支持传输哪种类型的文件？",
+              "id": "5-493-23",
+              "answers": [
+                {
+                  "text": "ASCII文件和二进制文件",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "ftp的get命令有什么作用？",
+              "id": "5-493-24",
+              "answers": [
+                {
+                  "text": "从远程机传送指定文件到本地机",
+                  "answer_start": 70
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "route用于手工产生、修改和查看路由表，-add添加路由，-delete删除路由，如route add 0.0.0.0 192.168.1.1添加默认路由。",
+          "qas": [
+            {
+              "question": "route命令的用途是什么？",
+              "id": "5-493-25",
+              "answers": [
+                {
+                  "text": "手工产生、修改和查看路由表",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "如何用route命令添加默认路由为192.168.1.1？",
+              "id": "5-493-26",
+              "answers": [
+                {
+                  "text": "route add 0.0.0.0 192.168.1.1",
+                  "answer_start": 61
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux Deepin中更改主机名称需修改/etc/hostname文件（输入新主机名）和/etc/hosts文件（替换原主机名）。",
+          "qas": [
+            {
+              "question": "在Linux Deepin中如何更改主机名称？",
+              "id": "5-493-27",
+              "answers": [
+                {
+                  "text": "修改/etc/hostname文件（输入新主机名）和/etc/hosts文件（替换原主机名）",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "检测IPv6可通过ifconfig查看inet6地址或访问http://www.kame.net/（乌龟爬行则支持），深度系统可安装miredo（sudo apt-get install miredo）并修改hosts，重启网络生效。",
+          "qas": [
+            {
+              "question": "如何检测网络是否支持IPv6？",
+              "id": "5-493-28",
+              "answers": [
+                {
+                  "text": "方法一：ifconfig查看是否显示inet6地址；方法二：访问http://www.kame.net/，乌龟爬行则支持",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "深度操作系统如何启用IPv6？",
+              "id": "5-493-29",
+              "answers": [
+                {
+                  "text": "安装miredo（sudo apt-get install miredo），修改hosts，重启网络服务（sudo /etc/init.d/networking restart）",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "telnet玩中文mud乱码可使用luit转码，命令为luit -encoding gbk telnet 目标地址 端口。",
+          "qas": [
+            {
+              "question": "如何解决telnet玩中文mud的乱码问题？",
+              "id": "5-493-30",
+              "answers": [
+                {
+                  "text": "使用luit转码，命令为luit -encoding gbk telnet 目标地址 端口",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

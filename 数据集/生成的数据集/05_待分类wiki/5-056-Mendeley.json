@@ -1,0 +1,119 @@
+{
+  "data": [
+    {
+      "title": "Mendeley",
+      "paragraphs": [
+        {
+          "context": "Mendeley是一款文献管理软件，可以一键抓取网页上的文献信息添加到个人的library中。您还可安装Microsoft Word和Open Office插件，方便在文字编辑器中插入和管理参考文献。Mendeley还免费提供各500M的文献存储和共享空间。",
+          "qas": [
+            {
+              "id": "5-56-1",
+              "question": "Mendeley是什么类型的软件？",
+              "answers": [
+                {
+                  "text": "文献管理软件",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-56-2",
+              "question": "Mendeley如何添加网页文献信息？",
+              "answers": [
+                {
+                  "text": "一键抓取网页上的文献信息添加到个人的library中",
+                  "answer_start": 18
+                }
+              ]
+            },
+            {
+              "id": "5-56-3",
+              "question": "Mendeley支持哪些插件？",
+              "answers": [
+                {
+                  "text": "Microsoft Word和Open Office插件",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "id": "5-56-4",
+              "question": "Mendeley免费提供什么服务？",
+              "answers": [
+                {
+                  "text": "各500M的文献存储和共享空间",
+                  "answer_start": 113
+                }
+              ]
+            },
+            {
+              "id": "5-56-5",
+              "question": "安装这些插件有什么作用？",
+              "answers": [
+                {
+                  "text": "方便在文字编辑器中插入和管理参考文献",
+                  "answer_start": 79
+                }
+              ]
+            },
+            {
+              "id": "5-56-6",
+              "question": "Mendeley免费提供的文献存储和共享空间各是多少？",
+              "answers": [
+                {
+                  "text": "各500M",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install mendeleydesktop",
+          "qas": [
+            {
+              "id": "5-56-7",
+              "question": "如何在系统上安装Mendeley？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install mendeleydesktop",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove mendeleydesktop",
+          "qas": [
+            {
+              "id": "5-56-8",
+              "question": "如何卸载Mendeley？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove mendeleydesktop",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/non-free/m/mendeleydesktop/",
+          "qas": [
+            {
+              "id": "5-56-9",
+              "question": "Mendeley的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/m/mendeleydesktop/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

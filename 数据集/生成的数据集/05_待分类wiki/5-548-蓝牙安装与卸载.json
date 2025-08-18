@@ -1,0 +1,104 @@
+{
+  "data": [
+    {
+      "title": "蓝牙安装与卸载",
+      "paragraphs": [
+        {
+          "context": "蓝牙是一种无线个人局域网，射频频率是2.45GHZ，使带电子端口的设备能在小范围内无线通信。",
+          "qas": [
+            {
+              "question": "蓝牙属于什么类型的网络？",
+              "id": "5-548-1",
+              "answers": [
+                {
+                  "text": "无线个人局域网（Wireless PAN）",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "蓝牙的射频频率是多少？",
+              "id": "5-548-2",
+              "answers": [
+                {
+                  "text": "2.45GHZ",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "question": "蓝牙能让设备实现什么功能？",
+              "id": "5-548-3",
+              "answers": [
+                {
+                  "text": "在小范围内进行无线通信",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Blueman提供常见的蓝牙管理功能，可通过命令安装和卸载。",
+          "qas": [
+            {
+              "question": "Blueman的作用是什么？",
+              "id": "5-548-4",
+              "answers": [
+                {
+                  "text": "提供最为常见的蓝牙管理功能",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Blueman的命令：sudo apt-get install blueman。",
+          "qas": [
+            {
+              "question": "如何通过命令安装Blueman？",
+              "id": "5-548-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install blueman",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Blueman的命令：sudo apt-get remove blueman。",
+          "qas": [
+            {
+              "question": "如何通过命令卸载Blueman？",
+              "id": "5-548-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove blueman",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "蓝牙名称来源于10世纪丹麦和挪威国王蓝牙哈拉尔的绰号“Blåtand”。",
+          "qas": [
+            {
+              "question": "蓝牙名称的来源是什么？",
+              "id": "5-548-7",
+              "answers": [
+                {
+                  "text": "10世纪丹麦和挪威国王蓝牙哈拉尔的绰号“Blåtand”",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+  "data": [
+    {
+      "title": "原生安装",
+      "paragraphs": [
+        {
+          "context": "深度操作系统安装过程参考官方社区网站介绍：[如何安装](https://www.deepin.org/installation/)及[深度安装器](https://www.deepin.org/original/deepin-installer/)项目。虚拟机安装客户机类型选Windows7 x64。",
+          "qas": [
+            {
+              "question": "深度操作系统安装过程可参考哪些官方资源？",
+              "id": "5-504-1",
+              "answers": [
+                {
+                  "text": "官方社区网站的[如何安装](https://www.deepin.org/installation/)及[深度安装器](https://www.deepin.org/original/deepin-installer/)项目",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "虚拟机安装深度操作系统时，客户机类型选什么？",
+              "id": "5-504-2",
+              "answers": [
+                {
+                  "text": "Windows7 x64",
+                  "answer_start": 116
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度操作系统官方镜像可访问deepin社区[下载页面](https://www.deepin.org/download/)获取，deepin 15.4版本起不再提供32位官方iso镜像。",
+          "qas": [
+            {
+              "question": "在哪里可以下载深度操作系统官方镜像？",
+              "id": "5-504-3",
+              "answers": [
+                {
+                  "text": "deepin社区[下载页面](https://www.deepin.org/download/)",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "从哪个版本开始，deepin不再提供32位官方iso镜像？",
+              "id": "5-504-4",
+              "answers": [
+                {
+                  "text": "deepin 15.4版本",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Windows系统校验深度操作系统镜像MD5值可使用http://www.keir.net/download/hash.zip等工具，Linux系统可执行`md5sum 镜像文件名`命令，MD5值在下载页面“立即下载”按钮下方。",
+          "qas": [
+            {
+              "question": "Windows系统用什么工具校验深度操作系统镜像的MD5值？",
+              "id": "5-504-5",
+              "answers": [
+                {
+                  "text": "http://www.keir.net/download/hash.zip等工具",
+                  "answer_start": 33
+                }
+              ]
+            },
+            {
+              "question": "Linux系统如何校验深度操作系统镜像的MD5值？",
+              "id": "5-504-6",
+              "answers": [
+                {
+                  "text": "在对应的镜像文件下，打开深度终端，执行`md5sum 镜像文件名`命令",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "深度操作系统镜像的MD5值在哪里可以找到？",
+              "id": "5-504-7",
+              "answers": [
+                {
+                  "text": "下载页面“立即下载”按钮下方",
+                  "answer_start": 146
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "制作深度操作系统启动盘可使用[深度启动盘制作工具](https://www.deepin.org/original/deepin-boot-maker/)、[通用Windows工具](https://github.com/pbatard/rufus)或[通用全平台工具](https://github.com/balena-io/etcher)。",
+          "qas": [
+            {
+              "question": "制作深度操作系统启动盘有哪些工具可选？",
+              "id": "5-504-8",
+              "answers": [
+                {
+                  "text": "[深度启动盘制作工具](https://www.deepin.org/original/deepin-boot-maker/)、[通用Windows工具](https://github.com/pbatard/rufus)、[通用全平台工具](https://github.com/balena-io/etcher)",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "制作启动盘前需转移U盘中重要数据，建议格式化为FAT32格式，U盘容量不小于2G，制作时不要触碰U盘，部分移动硬盘可能无法识别。",
+          "qas": [
+            {
+              "question": "制作启动盘前有哪些注意事项？",
+              "id": "5-504-9",
+              "answers": [
+                {
+                  "text": "转移U盘中重要数据，建议格式化为FAT32格式，U盘容量不小于2G，部分移动硬盘可能无法识别",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "制作启动盘时U盘容量不得小于多少？",
+              "id": "5-504-10",
+              "answers": [
+                {
+                  "text": "2 G",
+                  "answer_start": 72
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "电脑主板为UEFI模式时，需在主板设置中关闭安全启动，重启后在BIOS/UEFI界面按特定键改变启动顺序，台式机一般按Delete键，笔记本一般按F2键等。",
+          "qas": [
+            {
+              "question": "电脑主板为UEFI模式时，安装前需要做什么？",
+              "id": "5-504-11",
+              "answers": [
+                {
+                  "text": "在主板设置中关闭安全启动",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "台式机改变启动顺序一般按什么键？",
+              "id": "5-504-12",
+              "answers": [
+                {
+                  "text": "Delete 键",
+                  "answer_start": 96
+                }
+              ]
+            },
+            {
+              "question": "笔记本改变启动顺序一般按什么键？",
+              "id": "5-504-13",
+              "answers": [
+                {
+                  "text": "F2 键",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度操作系统安装过程参见[如何安装](https://www.deepin.org/installation/)，安装完成后按提示重启即可进入系统，安装失败可扫描二维码反馈日志。",
+          "qas": [
+            {
+              "question": "深度操作系统的安装过程在哪里可以查看？",
+              "id": "5-504-14",
+              "answers": [
+                {
+                  "text": "[如何安装](https://www.deepin.org/installation/)",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "安装深度操作系统失败后如何反馈？",
+              "id": "5-504-15",
+              "answers": [
+                {
+                  "text": "通过手机端扫描失败的二维码，会自动将失败日志反馈到服务器",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "多硬盘用Legacy BIOS引导时，安装deepin后可能无法引导，可修改硬盘启动优先级或重新安装时修改grub安装位置到第一个硬盘。",
+          "qas": [
+            {
+              "question": "多硬盘用Legacy BIOS引导时，安装deepin后无法引导怎么办？",
+              "id": "5-504-16",
+              "answers": [
+                {
+                  "text": "在BIOS中修改硬盘的启动优先级，优先启动安装deepin的硬盘；或重新安装deepin系统，在安装时的分区页面切换到“高级”模式，修改grub的安装位置为第一个硬盘",
+                  "answer_start": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "新买预装Windows 10的品牌机多为UEFI模式启动，硬盘是GPT格式，安装deepin前需关闭Secure Boot。",
+          "qas": [
+            {
+              "question": "新买预装Windows 10的品牌机安装deepin前需要关闭什么？",
+              "id": "5-504-17",
+              "answers": [
+                {
+                  "text": "Secure Boot (安全启动)",
+                  "answer_start": 82
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "支持UEFI的旧电脑，硬盘为MBR格式，用UEFI启动U盘安装deepin可能失败，可选择非UEFI方式启动U盘或设置主板仅Legacy boot。",
+          "qas": [
+            {
+              "question": "支持UEFI的旧电脑，硬盘为MBR格式，用UEFI启动U盘安装deepin失败怎么办？",
+              "id": "5-504-18",
+              "answers": [
+                {
+                  "text": "选择以非UEFI方式启动U盘，或主板设置成仅Legacy boot（如可能）",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "新组装机器用旧硬盘（MBR格式），新主板默认UEFI ONLY启动时，需进入主板设置开启Legacy boot或CSM Support。",
+          "qas": [
+            {
+              "question": "新组装机器用旧硬盘（MBR格式），新主板默认UEFI ONLY启动时该怎么做？",
+              "id": "5-504-19",
+              "answers": [
+                {
+                  "text": "进入主板设置，开启Legacy boot（或CSM Support）",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "成功安装后在登录界面输入密码无法进入桌面，多为图形驱动问题，可按Ctrl+Alt+F2切换到字符界面，登录后执行删除nouveau驱动模块等指令。",
+          "qas": [
+            {
+              "question": "成功安装后在登录界面输入密码无法进入桌面怎么办？",
+              "id": "5-504-20",
+              "answers": [
+                {
+                  "text": "在登录界面按组合键Ctrl + Alt + F2切换到字符界面，进入字符界面后进行字符界面登录系统，输入指令：sudo rmmod nouveau；sudo echo \"blacklist nouveau\" > /etc/modprobe.d/blacklist.nouveau.conf；sudo update-initramfs -u；sudo reboot",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "启动菜单分辨率不正确的解决方法参见<https://bbs.deepin.org/forum.php?mod=redirect&goto=findpost&ptid=133875&pid=361813&fromuid=4870>。",
+          "qas": [
+            {
+              "question": "启动菜单分辨率不正确怎么办？",
+              "id": "5-504-21",
+              "answers": [
+                {
+                  "text": "参见<https://bbs.deepin.org/forum.php?mod=redirect&goto=findpost&ptid=133875&pid=361813&fromuid=4870>",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

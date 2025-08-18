@@ -1,0 +1,259 @@
+{
+  "data": [
+    {
+      "title": "开源免费的终端工具WindTerm的使用介绍",
+      "paragraphs": [
+        {
+          "context": "WindTerm是完全开源的终端工具，在GitHub上收获6.6k的star，地址为https://github.com/kingToolbox/WindTerm。",
+          "qas": [
+            {
+              "question": "WindTerm是开源的吗？",
+              "id": "3-153-1",
+              "answers": [
+                {
+                  "text": "是，完全开源",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "WindTerm在GitHub上有多少star？",
+              "id": "3-153-2",
+              "answers": [
+                {
+                  "text": "6.6k",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "WindTerm的GitHub地址是什么？",
+              "id": "3-153-3",
+              "answers": [
+                {
+                  "text": "https://github.com/kingToolbox/WindTerm",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "WindTerm跨平台，支持Windows、Linux和macOS，可到release页面选择适合的安装包，地址为https://github.com/kingToolbox/WindTerm/releases。",
+          "qas": [
+            {
+              "question": "WindTerm支持哪些操作系统？",
+              "id": "3-153-4",
+              "answers": [
+                {
+                  "text": "Windows、Linux和macOS",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "在哪里可以下载WindTerm的安装包？",
+              "id": "3-153-5",
+              "answers": [
+                {
+                  "text": "https://github.com/kingToolbox/WindTerm/releases",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "WindTerm界面像IDE布局，左边是资源管理器+文件管理器，中间默认打开zsh终端窗口，右边是会话窗口+历史命令窗口，底部是发送窗口+Shell窗口。",
+          "qas": [
+            {
+              "question": "WindTerm的界面布局是怎样的？",
+              "id": "3-153-6",
+              "answers": [
+                {
+                  "text": "左边是资源管理器+文件管理器，中间默认打开zsh终端窗口，右边是会话窗口+历史命令窗口，底部是发送窗口+Shell窗口。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用WindTerm进行SSH连接，点击新建会话按钮，添加主机名，点击“连接”，输入用户名和密码即可。按住「command+」可放大字体，有折叠功能和智能提示。",
+          "qas": [
+            {
+              "question": "如何用WindTerm进行SSH连接？",
+              "id": "3-153-7",
+              "answers": [
+                {
+                  "text": "点击新建会话按钮，添加主机名，点击“连接”，输入用户名和密码即可。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "在WindTerm中如何放大字体？",
+              "id": "3-153-8",
+              "answers": [
+                {
+                  "text": "按住「command+」",
+                  "answer_start": 60
+                }
+              ]
+            },
+            {
+              "question": "WindTerm的SSH功能有哪些特点？",
+              "id": "3-153-9",
+              "answers": [
+                {
+                  "text": "有折叠功能和智能提示。",
+                  "answer_start": 83
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "WindTerm的SFTP功能与SSH集成，可通过文件管理器上传或拖拽文件，上传有进度条。需安装lrzsz才能在SSH窗口上传，还提供高速传输模式。",
+          "qas": [
+            {
+              "question": "WindTerm的SFTP功能如何使用？",
+              "id": "3-153-10",
+              "answers": [
+                {
+                  "text": "通过文件管理器上传或拖拽文件。",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "在SSH窗口上传文件需要安装什么？",
+              "id": "3-153-11",
+              "answers": [
+                {
+                  "text": "lrzsz",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "question": "WindTerm的SFTP有什么特殊模式？",
+              "id": "3-153-12",
+              "answers": [
+                {
+                  "text": "高速传输模式",
+                  "answer_start": 94
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "WindTerm自动补全功能强大，行首键入!可调出历史命令，支持Linux Shell、MacOS Shell、Windows Cmd、PowerShell及Git等命令行程序的命令。",
+          "qas": [
+            {
+              "question": "如何在WindTerm中调出历史命令？",
+              "id": "3-153-13",
+              "answers": [
+                {
+                  "text": "在行首键入!",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "WindTerm的自动补全支持哪些命令？",
+              "id": "3-153-14",
+              "answers": [
+                {
+                  "text": "Linux Shell命令、MacOS Shell命令、Windows Cmd命令、PowerShell命令、任何命令行程序的命令（例如Git）。",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重置WindTerm锁屏密码：找到user.config文件，删除application.fingerprint和application.masterPassword，删除.wind/profiles/default.v10/terminal/user.sessions文件中的session.autoLogin，再修改主密码。",
+          "qas": [
+            {
+              "question": "如何重置WindTerm的锁屏密码？",
+              "id": "3-153-15",
+              "answers": [
+                {
+                  "text": "找到user.config文件，删除application.fingerprint和application.masterPassword，删除.wind/profiles/default.v10/terminal/user.sessions文件中的session.autoLogin，再修改主密码。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "WindTerm支持亮白模式、暗黑模式、黑白相间模式三种主题切换。",
+          "qas": [
+            {
+              "question": "WindTerm支持哪些主题？",
+              "id": "3-153-16",
+              "answers": [
+                {
+                  "text": "亮白模式、暗黑模式、黑白相间模式",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "WindTerm的自动复制功能：在设置的文本一栏勾选“自动复制选定内容”，选中内容即可直接复制。",
+          "qas": [
+            {
+              "question": "如何开启WindTerm的自动复制功能？",
+              "id": "3-153-17",
+              "answers": [
+                {
+                  "text": "在设置的文本一栏勾选“自动复制选定内容”。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "WindTerm有分屏、转接端口等功能，在Windows下的体验比macOS更酷，使用技巧可参考https://kingtoolbox.github.io/。",
+          "qas": [
+            {
+              "question": "WindTerm有哪些额外功能？",
+              "id": "3-153-18",
+              "answers": [
+                {
+                  "text": "分屏、转接端口等。",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "question": "哪里可以找到WindTerm的使用技巧？",
+              "id": "3-153-19",
+              "answers": [
+                {
+                  "text": "https://kingtoolbox.github.io/",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "WindTerm在哪个系统下体验更酷？",
+              "id": "3-153-20",
+              "answers": [
+                {
+                  "text": "Windows",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

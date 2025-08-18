@@ -1,0 +1,394 @@
+{
+  "data": [
+    {
+      "title": "Deepin15.4安装Filezilla FTP Server",
+      "paragraphs": [
+        {
+          "context": "Deepin15.4安装FTP服务器--FileZilla Server。安装方法：1. 下载 FileZilla Server 的exe安装程序：<https://filezilla-project.org/> 2. 使用 Deepin 15.4 下的 CrossOver 安装上面的软件，默认XP-32容器即可。",
+          "qas": [
+            {
+              "id": "5-335-1",
+              "question": "Deepin15.4中安装的FTP服务器是什么？",
+              "answers": [
+                {
+                  "text": "FileZilla Server",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-335-2",
+              "question": "在哪里可以下载FileZilla Server的exe安装程序？",
+              "answers": [
+                {
+                  "text": "https://filezilla-project.org/",
+                  "answer_start": 77
+                }
+              ]
+            },
+            {
+              "id": "5-335-3",
+              "question": "在Deepin15.4中使用什么工具安装FileZilla Server？",
+              "answers": [
+                {
+                  "text": "CrossOver",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "id": "5-335-4",
+              "question": "安装FileZilla Server时默认使用什么容器？",
+              "answers": [
+                {
+                  "text": "XP-32容器",
+                  "answer_start": 152
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "3. 安装完成后，在启动器中点击图标可以启动管理界面 4. 像在 Windows 下的那样，配置服务器的组，用户，以及共享文件夹。",
+          "qas": [
+            {
+              "id": "5-335-5",
+              "question": "安装完成后如何启动FileZilla Server的管理界面？",
+              "answers": [
+                {
+                  "text": "在启动器中点击图标",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-335-6",
+              "question": "需要配置FileZilla Server的哪些内容？",
+              "answers": [
+                {
+                  "text": "组，用户，以及共享文件夹",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "5. 在菜单栏的 Server 下，点击 Active，观察是否可以激活，若是激活的，前面有对号。6. 如果有对号，说明服务器正常，客户端直接连接即可；否则可能会出现如下的错误：Failed to create listen socket on port 21 Failed to create a listen socket on any of the specified ports. Server is not online! 出现这个结果，说明监听21端口失败。",
+          "qas": [
+            {
+              "id": "5-335-7",
+              "question": "如何检查FileZilla Server是否激活？",
+              "answers": [
+                {
+                  "text": "在菜单栏的 Server 下，点击 Active，观察是否可以激活",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "5-335-8",
+              "question": "FileZilla Server激活的标志是什么？",
+              "answers": [
+                {
+                  "text": "前面有对号",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "id": "5-335-9",
+              "question": "FileZilla Server未激活时可能会出现什么错误？",
+              "answers": [
+                {
+                  "text": "Failed to create listen socket on port 21 Failed to create a listen socket on any of the specified ports. Server is not online!",
+                  "answer_start": 116
+                }
+              ]
+            },
+            {
+              "id": "5-335-10",
+              "question": "错误提示“Failed to create listen socket on port 21”说明什么？",
+              "answers": [
+                {
+                  "text": "监听21端口失败",
+                  "answer_start": 275
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "7. 更改默认的21端口为其他没有使用的端口，我的是改为2121。点击，菜单栏 Edit → Settings 或者界面上的齿轮图标，打开配置界面：general settings → connection settings → listen on these ports 将值由21改为2121或者其他没有使用的端口。",
+          "qas": [
+            {
+              "id": "5-335-11",
+              "question": "监听21端口失败时该怎么办？",
+              "answers": [
+                {
+                  "text": "更改默认的21端口为其他没有使用的端口",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "5-335-12",
+              "question": "示例中把FileZilla Server的端口改为了多少？",
+              "answers": [
+                {
+                  "text": "2121",
+                  "answer_start": 52
+                }
+              ]
+            },
+            {
+              "id": "5-335-13",
+              "question": "如何打开FileZilla Server的配置界面？",
+              "answers": [
+                {
+                  "text": "点击菜单栏 Edit → Settings 或者界面上的齿轮图标",
+                  "answer_start": 60
+                }
+              ]
+            },
+            {
+              "id": "5-335-14",
+              "question": "在配置界面的哪个路径下可以更改监听端口？",
+              "answers": [
+                {
+                  "text": "general settings → connection settings → listen on these ports",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "8. 在菜单栏的 Server 下，点击 Active，观察是否可以激活，结果正常了：Creating listen socket on port 2121... Server online 9. 接下来使用客户端连接即可。目前木有发现其他的问题。",
+          "qas": [
+            {
+              "id": "5-335-15",
+              "question": "更改端口后如何确认FileZilla Server已正常激活？",
+              "answers": [
+                {
+                  "text": "在菜单栏的 Server 下，点击 Active，观察是否可以激活",
+                  "answer_start": 3
+                }
+              ]
+            },
+            {
+              "id": "5-335-16",
+              "question": "FileZilla Server正常激活后会显示什么信息？",
+              "answers": [
+                {
+                  "text": "Creating listen socket on port 2121... Server online",
+                  "answer_start": 63
+                }
+              ]
+            },
+            {
+              "id": "5-335-17",
+              "question": "FileZilla Server正常后接下来可以做什么？",
+              "answers": [
+                {
+                  "text": "使用客户端连接",
+                  "answer_start": 116
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Deepin15.4安装FTP服务器--FileZilla Server",
+          "qas": [
+            {
+              "id": "5-335-18",
+              "question": "本文介绍的主要内容是什么？",
+              "answers": [
+                {
+                  "text": "Deepin15.4安装FTP服务器--FileZilla Server",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载 FileZilla Server 的exe安装程序：<https://filezilla-project.org/>",
+          "qas": [
+            {
+              "id": "5-335-19",
+              "question": "从哪里下载FileZilla Server安装程序？",
+              "answers": [
+                {
+                  "text": "<https://filezilla-project.org/>",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "使用 Deepin 15.4 下的 CrossOver 安装上面的软件，默认XP-32容器即可。",
+          "qas": [
+            {
+              "id": "5-335-20",
+              "question": "在Deepin系统中通过什么工具安装FileZilla？",
+              "answers": [
+                {
+                  "text": "CrossOver",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-335-21",
+              "question": "安装时推荐使用什么容器？",
+              "answers": [
+                {
+                  "text": "默认XP-32容器",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装完成后，在启动器中点击图标可以启动管理界面",
+          "qas": [
+            {
+              "id": "5-335-22",
+              "question": "如何启动FileZilla管理界面？",
+              "answers": [
+                {
+                  "text": "在启动器中点击图标",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "像在 Windows 下的那样，配置服务器的组，用户，以及共享文件夹。",
+          "qas": [
+            {
+              "id": "5-335-23",
+              "question": "需要配置服务器的哪些内容？",
+              "answers": [
+                {
+                  "text": "组，用户，以及共享文件夹",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在菜单栏的 Server 下，点击 Active，观察是否可以激活，若是激活的，前面有对号。",
+          "qas": [
+            {
+              "id": "5-335-24",
+              "question": "如何激活FileZilla服务器？",
+              "answers": [
+                {
+                  "text": "在菜单栏的 Server 下，点击 Active",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-335-25",
+              "question": "如何判断服务器已激活？",
+              "answers": [
+                {
+                  "text": "前面有对号",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "如果有对号，说明服务器正常，客户端直接连接即可；否则可能会出现如下的错误：Failed to create listen socket on port 21 Failed to create a listen socket on any of the specified ports. Server is not online!",
+          "qas": [
+            {
+              "id": "5-335-26",
+              "question": "端口监听失败会出现什么错误提示？",
+              "answers": [
+                {
+                  "text": "Failed to create listen socket on port 21 Failed to create a listen socket on any of the specified ports. Server is not online!",
+                  "answer_start": 46
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更改默认的21端口为其他没有使用的端口，我的是改为2121 点击，菜单栏 Edit → Settings 或者界面上的齿轮图标，打开配置界面： general settings → connection settings → listen on these ports 将值由21改为2121或者其他没有使用的端口。",
+          "qas": [
+            {
+              "id": "5-335-27",
+              "question": "如何解决端口监听失败的问题？",
+              "answers": [
+                {
+                  "text": "更改默认的21端口为其他没有使用的端口",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-335-28",
+              "question": "如何打开FileZilla配置界面？",
+              "answers": [
+                {
+                  "text": "点击，菜单栏 Edit → Settings 或者界面上的齿轮图标",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "id": "5-335-29",
+              "question": "在配置界面如何修改监听端口？",
+              "answers": [
+                {
+                  "text": "general settings → connection settings → listen on these ports 将值由21改为2121或者其他没有使用的端口",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在菜单栏的 Server 下，点击 Active，观察是否可以激活，结果正常了：Creating listen socket on port 2121... Server online",
+          "qas": [
+            {
+              "id": "5-335-30",
+              "question": "端口修改成功后显示什么状态信息？",
+              "answers": [
+                {
+                  "text": "Creating listen socket on port 2121... Server online",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "接下来使用客户端连接即可。目前木有发现其他的问题。",
+          "qas": [
+            {
+              "id": "5-335-31",
+              "question": "服务器激活后应该做什么？",
+              "answers": [
+                {
+                  "text": "使用客户端连接",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

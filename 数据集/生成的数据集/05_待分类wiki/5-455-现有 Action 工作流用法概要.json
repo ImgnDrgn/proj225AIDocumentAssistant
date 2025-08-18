@@ -1,0 +1,209 @@
+{
+  "data": [
+    {
+      "title": "现有 Action 工作流用法概要",
+      "paragraphs": [
+        {
+          "context": "GitHub Action 是 GitHub 开发流程中提供自动化 CI/CD 的组件之一，开源项目会配置工作流辅助开发，如自动打包构建等。",
+          "qas": [
+            {
+              "question": "GitHub Action 是什么？",
+              "id": "5-455-1",
+              "answers": [
+                {
+                  "text": "GitHub 开发流程中提供自动化 CI/CD 的组件之一",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "开源项目配置工作流可辅助哪些开发过程？",
+              "id": "5-455-2",
+              "answers": [
+                {
+                  "text": "自动打包构建、自动化测试、代码质量检查等",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "拉取请求（PR）中的 PR 状态显示在拉取请求最下方，每一行对应不同 Job 检查，点击右侧 Details 可进入详情页面查看日志。",
+          "qas": [
+            {
+              "question": "拉取请求（PR）中的 Action 检查状态在哪里显示？",
+              "id": "5-455-3",
+              "answers": [
+                {
+                  "text": "拉取请求的最下方",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "如何查看拉取请求中对应 Job 检查的日志？",
+              "id": "5-455-4",
+              "answers": [
+                {
+                  "text": "点击对应行右侧的 Details 进入检查的详情页面，查看所对应检查的相关状态，点击会直接跳转到日志内容页面。",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "已推送的提交的 Action 检查，可通过点击 commit 旁的对号或错号展开详情，点击 Details 进入检查详情页面。",
+          "qas": [
+            {
+              "question": "如何查看已推送的提交的 Action 检查详情？",
+              "id": "5-455-5",
+              "answers": [
+                {
+                  "text": "通过点击 commit 旁的对号或错号来以展开相关的详情，同样的，可以通过点击 Details 进入检查的详情页面。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "从上述位置点击 Details 进入对应 Job 的日志页面，每个 Job 分多个步骤执行，步骤在右侧显示为一组，可展开查看日志输出。",
+          "qas": [
+            {
+              "question": "如何进入对应 Job 的日志页面？",
+              "id": "5-455-6",
+              "answers": [
+                {
+                  "text": "从上述位置直接点击 Details 会进入对应 Job 的日志页面。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "日志页面中每个 Job 的步骤如何显示？",
+              "id": "5-455-7",
+              "answers": [
+                {
+                  "text": "每个 Job 会被分为多个不同的步骤按顺序进行执行，每个步骤会在右侧显示为一组，可以展开查看对应步骤的日志输出。",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在日志页面左侧上半部分有 Summary 链接，点击进入概览页面，展示工作流执行状况、汇总信息及产生的资产（Artifacts）。",
+          "qas": [
+            {
+              "question": "如何进入 Action 的概览页面？",
+              "id": "5-455-8",
+              "answers": [
+                {
+                  "text": "在日志页面的左侧上半部分，会看到左侧栏的 Summary 链接，点击即可进入对应 Action 的概览页面。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "概览页面展示哪些内容？",
+              "id": "5-455-9",
+              "answers": [
+                {
+                  "text": "工作流的执行状况，汇总信息（如果有），以及工作流所产生的资产（Artifacts，如果有）。",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在仓库的 Actions 标签中可查看所有已执行的 Action 工作流，有助于故障排查，仓库管理人员可在此手动触发工作流。",
+          "qas": [
+            {
+              "question": "在哪里可以查看所有已执行的 Action 工作流？",
+              "id": "5-455-10",
+              "answers": [
+                {
+                  "text": "仓库的 Actions 标签中",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "查看所有已执行的 Action 工作流有什么用？",
+              "id": "5-455-11",
+              "answers": [
+                {
+                  "text": "对于故障排查很有用。对于仓库管理人员，也可以在此进行工作流的手动触发操作。",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "question": "仓库管理人员可以在哪里手动触发工作流？",
+              "id": "5-455-12",
+              "answers": [
+                {
+                  "text": "仓库的 Actions 标签中",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在日志中搜索内容时，请使用页面提供的搜索框，而不是 Ctrl+F。",
+          "qas": [
+            {
+              "question": "在日志中搜索内容时应使用什么？",
+              "id": "5-455-13",
+              "answers": [
+                {
+                  "text": "此页面提供的搜索框",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "在日志中搜索内容时不应使用什么？",
+              "id": "5-455-14",
+              "answers": [
+                {
+                  "text": "Ctrl+F",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "登录状态下，可在包含资产的 Action 概览页面下载对应的资产以供使用。",
+          "qas": [
+            {
+              "question": "在什么状态下可以下载 Action 概览页面的资产？",
+              "id": "5-455-15",
+              "answers": [
+                {
+                  "text": "登录状态下",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "在哪里可以下载 Action 工作流产生的资产？",
+              "id": "5-455-16",
+              "answers": [
+                {
+                  "text": "包含了资产的 Action 概览页面",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

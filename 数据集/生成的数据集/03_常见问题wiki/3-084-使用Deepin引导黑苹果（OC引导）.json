@@ -1,0 +1,194 @@
+{
+  "data": [
+    {
+      "title": "使用Deepin引导黑苹果（OC引导）",
+      "paragraphs": [
+        {
+          "context": "同时使用windows、苹果、deepin系统时，可修改deepin引导以引导黑苹果。",
+          "qas": [
+            {
+              "question": "同时使用windows、苹果、deepin系统时，如何引导黑苹果？",
+              "id": "3-84-1",
+              "answers": [
+                {
+                  "text": "修改deepin引导。",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "操作步骤第一步：文件管理器打开/boot，右键-以管理员身份打开。",
+          "qas": [
+            {
+              "question": "修改deepin引导以引导黑苹果的第一步操作是什么？",
+              "id": "3-84-2",
+              "answers": [
+                {
+                  "text": "文件管理器打开/boot，右键-以管理员身份打开。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "操作步骤第二步：打开grub文件夹，备份grub.cfg，用文本编辑软件打开grub.cfg。",
+          "qas": [
+            {
+              "question": "修改deepin引导的第二步需要对grub.cfg做什么？",
+              "id": "3-84-3",
+              "answers": [
+                {
+                  "text": "备份grub.cfg，用文本编辑软件打开grub.cfg。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "操作步骤第三步：找到windows引导项并复制，包括注释，粘贴到下方准备修改为黑苹果引导。",
+          "qas": [
+            {
+              "question": "修改deepin引导的第三步需要复制什么？",
+              "id": "3-84-4",
+              "answers": [
+                {
+                  "text": "windows引导项，包括注释。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Windows引导项文本包含menuentry、insmod、search、chainloader等内容，有特定格式。",
+          "qas": [
+            {
+              "question": "Windows引导项文本包含哪些内容？",
+              "id": "3-84-5",
+              "answers": [
+                {
+                  "text": "menuentry、insmod、search、chainloader等内容。",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查找黑苹果安装位置：终端输入sudo fdisk -l，重点关注安装硬盘的分区，如sda1。",
+          "qas": [
+            {
+              "question": "如何查找黑苹果的安装位置？",
+              "id": "3-84-6",
+              "answers": [
+                {
+                  "text": "终端输入sudo fdisk -l，重点关注安装硬盘的分区。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查找硬盘uuid：终端输入ls -al /dev/disk/by-uuid。",
+          "qas": [
+            {
+              "question": "怎样查找硬盘的uuid？",
+              "id": "3-84-7",
+              "answers": [
+                {
+                  "text": "终端输入ls -al /dev/disk/by-uuid。",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改引导参数时，用黑苹果硬盘的uuid替换复制文本中Windows的uuid，共3处。",
+          "qas": [
+            {
+              "question": "修改引导参数时，需要替换多少处uuid？",
+              "id": "3-84-8",
+              "answers": [
+                {
+                  "text": "3处。",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "黑苹果启动文件位置：OC引导为/EFI/OC/OpenCore.efi，CLOVER可能为/EFI/CLOVER/CLOVERX64.efi。",
+          "qas": [
+            {
+              "question": "OC引导的黑苹果启动文件位置在哪里？",
+              "id": "3-84-9",
+              "answers": [
+                {
+                  "text": "/EFI/OC/OpenCore.efi",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "CLOVER引导的黑苹果启动文件可能在哪里？",
+              "id": "3-84-10",
+              "answers": [
+                {
+                  "text": "/EFI/CLOVER/CLOVERX64.efi",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改名称参数时，将Windows Boot Manager相关名称替换为macOS或其他喜欢的名字。",
+          "qas": [
+            {
+              "question": "修改引导项名称时，可将原名称替换成什么？",
+              "id": "3-84-11",
+              "answers": [
+                {
+                  "text": "macOS或其他喜欢的名字。",
+                  "answer_start": 46
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "完成修改后，在启动设置-通用中可看到修改后的引导项，也能修改默认启动项。",
+          "qas": [
+            {
+              "question": "完成引导项修改后，在哪里可以看到修改结果？",
+              "id": "3-84-12",
+              "answers": [
+                {
+                  "text": "启动设置-通用。",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "在哪里可以修改默认启动项？",
+              "id": "3-84-13",
+              "answers": [
+                {
+                  "text": "启动设置-通用。",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

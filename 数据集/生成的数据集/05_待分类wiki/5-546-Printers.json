@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "Printers",
+      "paragraphs": [
+        {
+          "context": "Printers是用于配置系统打印机服务器的工具，支持大多数打印机，可自动检测网络打印机。",
+          "qas": [
+            {
+              "question": "Printers是什么工具？",
+              "id": "5-546-1",
+              "answers": [
+                {
+                  "text": "用于配置系统打印机服务器的工具。",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "question": "Printers支持大多数打印机吗？",
+              "id": "5-546-2",
+              "answers": [
+                {
+                  "text": "支持大多数打印机的使用。",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "question": "Printers能自动检测网络打印机吗？",
+              "id": "5-546-3",
+              "answers": [
+                {
+                  "text": "可以自动检测当前网络上的打印机。",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Printers的命令是sudo apt-get install system-config-printer。",
+          "qas": [
+            {
+              "question": "如何安装Printers？",
+              "id": "5-546-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install system-config-printer",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Printers的命令是sudo apt-get remove system-config-printer。",
+          "qas": [
+            {
+              "question": "怎样卸载Printers？",
+              "id": "5-546-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove system-config-printer",
+                  "answer_start": 20
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Printers的仓库地址是http://packages.deepin.com/deepin/pool/main/s/system-config-printer/。",
+          "qas": [
+            {
+              "question": "Printers的仓库地址是什么？",
+              "id": "5-546-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/system-config-printer/",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

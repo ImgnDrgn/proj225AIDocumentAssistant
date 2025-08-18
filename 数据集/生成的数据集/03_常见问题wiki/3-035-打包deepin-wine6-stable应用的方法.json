@@ -1,0 +1,394 @@
+{
+  "data": [
+    {
+      "title": "3-打包deepin-wine6-stable应用的方法",
+      "paragraphs": [
+        {
+          "context": "准备deb的基本信息包括以下6点，建议写到一个txt文件中备用：1、容器名，建议格式为投稿平台名称-应用名称，案例：Spark-7zip，对应BOTTLENAME=\"Spark-7zip\"；2、版本号，建议格式为该exe软件的windows版本号+投保平台名称+投稿版本，案例：21.7.0.0spark0（其中21.7.0.0是windows版本号，spark是星火应用商店，0是初始版本），对应APPVER=\"21.7.0.0spark0\"；3、exe的主执行程序路径，案例：C:/Program Files/7-Zip/7zFM.exe，对应EXEC_PATH=\"c:/Program Files/7-Zip/7zFM.exe\"；4、包名（应用标识），建议格式为软件官网网址倒着写，www替换为投稿的应用商店平台名称（深度应用商店为deepin，星火应用商店为spark），案例：org.7-zip.spark；5、图标Exce执行路径，格式：\"/opt/apps/包名/files/run.sh\" -f %f，案例：\"/opt/apps/org.7-zip.spark/files/run.sh\" -f %f；6、短述：一句话介绍打包的软件，案例：7-Zip是一款高压缩比的压缩软件。",
+          "qas": [
+            {
+              "question": "准备deb的基本信息包括哪几点？",
+              "id": "3-35-1",
+              "answers": [
+                {
+                  "text": "1、容器名；2、版本号；3、exe的主执行程序路径；4、包名（应用标识）；5、图标Exce执行路径；6、短述：一句话介绍你打包的软件",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "容器名的建议格式是什么？",
+              "id": "3-35-2",
+              "answers": [
+                {
+                  "text": "投稿平台名称-应用名称",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "版本号的案例是什么？其中各部分分别代表什么？",
+              "id": "3-35-3",
+              "answers": [
+                {
+                  "text": "21.7.0.0spark0（其中21.7.0.0是windows版本号，spark是星火应用商店，0是初始版本）",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "建议在下载文件下创建package文件夹；在package文件夹创建files、entries、build三个文件夹。",
+          "qas": [
+            {
+              "question": "创建空白文件夹时，首先建议在哪个位置创建package文件夹？",
+              "id": "3-35-4",
+              "answers": [
+                {
+                  "text": "下载文件下",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "package文件夹下需要创建哪些子文件夹？",
+              "id": "3-35-5",
+              "answers": [
+                {
+                  "text": "files、entries、build三个文件夹",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "制作桌面图标步骤：1、下载或提取图标文件（通常格式是png、ico、svg）；2、将图标文件格式转为svg格式（可使用在线转格式网址https://convertio.co/zh/ico-svg/或应用商店里的Inkscape另存为svg格式）；3、将svg图标文件存入entries文件夹，并重命名为包名.svg，案例：org.7-zip.spark.svg。",
+          "qas": [
+            {
+              "question": "制作桌面图标时，首先需要做什么？",
+              "id": "3-35-6",
+              "answers": [
+                {
+                  "text": "下载或提取图标文件（通常格式是png、ico、svg）",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "如何将图标文件转为svg格式？",
+              "id": "3-35-7",
+              "answers": [
+                {
+                  "text": "可使用在线转格式网址https://convertio.co/zh/ico-svg/或应用商店里的Inkscape另存为svg格式",
+                  "answer_start": 76
+                }
+              ]
+            },
+            {
+              "question": "svg图标文件需要存入哪个文件夹？如何命名？",
+              "id": "3-35-8",
+              "answers": [
+                {
+                  "text": "存入entries文件夹，并重命名为包名.svg，案例：org.7-zip.spark.svg",
+                  "answer_start": 198
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "压缩容器步骤：1、将目标容器C盘（即drive_c）下面的users文件下面的当前用户名文件夹改为@current_user@；2、在目标容器里右键——在终端中打开，输入命令sed -i \"s#$USER#@current_user@#\" ./*.reg批量修改注册表里的当前用户名；3、在目标容器里右键——在终端中打开，输入命令7z a -t7z -r files.7z 容器路径/*（案例：7z a -t7z -r files.7z ~/.deepinwine/Wine-7zip/*）压缩目标容器为files.7z；4、将压缩好的files.7z移动到files文件夹。",
+          "qas": [
+            {
+              "question": "压缩容器的第一步是什么？",
+              "id": "3-35-9",
+              "answers": [
+                {
+                  "text": "将目标容器C盘（即drive_c）下面的users文件下面的当前用户名文件夹改为@current_user@",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "如何批量修改注册表里的当前用户名？",
+              "id": "3-35-10",
+              "answers": [
+                {
+                  "text": "在目标容器里右键——在终端中打开，输入命令sed -i \"s#$USER#@current_user@#\" ./*.reg",
+                  "answer_start": 89
+                }
+              ]
+            },
+            {
+              "question": "压缩目标容器为files.7z的命令是什么？案例是什么？",
+              "id": "3-35-11",
+              "answers": [
+                {
+                  "text": "命令：7z a -t7z -r files.7z 容器路径/*；案例：7z a -t7z -r files.7z ~/.deepinwine/Wine-7zip/*",
+                  "answer_start": 213
+                }
+              ]
+            },
+            {
+              "question": "压缩好的files.7z需要移动到哪个文件夹？",
+              "id": "3-35-12",
+              "answers": [
+                {
+                  "text": "files文件夹",
+                  "answer_start": 356
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "由于deepin-wine6-stable是Deepin/UOS系统自带的，无需压缩deepin-wine6-stable。",
+          "qas": [
+            {
+              "question": "是否需要压缩deepin-wine6-stable？为什么？",
+              "id": "3-35-13",
+              "answers": [
+                {
+                  "text": "不需要，因为deepin-wine6-stable是Deepin/UOS系统自带的",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "制作执行程序run.sh步骤：将wine版微信的run.sh文件和dlls文件夹复制到files文件夹（路径：/opt/apps/com.qq.weixin.deepin/files/）；右键用文本编辑器打开run.sh，将准备deb基本信息中的1-4点信息替换run.sh里原有的信息，保存退出。",
+          "qas": [
+            {
+              "question": "制作run.sh时，需要复制哪些文件到files文件夹？这些文件的路径在哪里？",
+              "id": "3-35-14",
+              "answers": [
+                {
+                  "text": "需要复制wine版微信的run.sh文件和dlls文件夹；路径在/opt/apps/com.qq.weixin.deepin/files/",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "如何修改run.sh文件？",
+              "id": "3-35-15",
+              "answers": [
+                {
+                  "text": "右键用文本编辑器打开run.sh，将准备deb基本信息中的1-4点信息替换run.sh里原有的信息，保存退出",
+                  "answer_start": 116
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用UOS打包工具（Debreate）打包步骤：1、control：架构选择amd64或i386；2、依赖和冲突：依赖项填写deepin-wine6-stable和deepin-wine-helper（参考：deepin-wine6-stable:amd64 (>= 6.0.0.19-1)、deepin-wine-helper (>= 5.1.30-1)）；3、info文件：根据软件实际需要勾选应用权限；4、desktop文件：图标填写包名，分类根据实际情况选择；5、icon文件：添加entries文件夹里的图标文件；6、files目录文件：添加files文件夹里的files.7z、run.sh、dlls文件夹；7、添加脚本：添加Post-Remove脚本以在卸载时删除容器（案例脚本针对Spark-7zip容器，需替换为自己的容器名）；8、更新日志（非必须）；9、版权文件（非必须）；10、构建：点击开始构建图标，选择build文件夹，打包好的deb在build文件夹，可双击安装，安装后在启动器看到图标。",
+          "qas": [
+            {
+              "question": "用UOS打包工具打包时，control部分需要选择什么架构？",
+              "id": "3-35-16",
+              "answers": [
+                {
+                  "text": "amd64或i386",
+                  "answer_start": 44
+                }
+              ]
+            },
+            {
+              "question": "打包时的依赖项是什么？参考的依赖项版本是怎样的？",
+              "id": "3-35-17",
+              "answers": [
+                {
+                  "text": "依赖项是deepin-wine6-stable和deepin-wine-helper；参考：deepin-wine6-stable:amd64 (>= 6.0.0.19-1)、deepin-wine-helper (>= 5.1.30-1)",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "desktop文件中，图标需要填写什么？",
+              "id": "3-35-18",
+              "answers": [
+                {
+                  "text": "包名",
+                  "answer_start": 240
+                }
+              ]
+            },
+            {
+              "question": "files目录文件需要添加哪些内容？",
+              "id": "3-35-19",
+              "answers": [
+                {
+                  "text": "files文件夹里的files.7z、run.sh、dlls文件夹",
+                  "answer_start": 345
+                }
+              ]
+            },
+            {
+              "question": "添加Post-Remove脚本的目的是什么？",
+              "id": "3-35-20",
+              "answers": [
+                {
+                  "text": "在卸载该软件时自动删除它的容器",
+                  "answer_start": 412
+                }
+              ]
+            },
+            {
+              "question": "构建deb包时，需要选择哪个文件夹作为构建位置？打包好的deb文件在哪里？",
+              "id": "3-35-21",
+              "answers": [
+                {
+                  "text": "选择build文件夹作为构建位置；打包好的deb文件在build文件夹",
+                  "answer_start": 568
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "本文衔接上一帖内容，将已安装的windows软件7-zip（版本21.7.0.0）打包为deb格式。",
+          "qas": [
+            {
+              "question": "本文要打包的软件名称和版本是什么？",
+              "id": "3-35-22",
+              "answers": [
+                {
+                  "text": "7-zip（版本21.7.0.0）",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "准备deb基本信息包含6项：容器名格式为投稿平台-应用名（如Spark-7zip），版本号格式为软件版本+平台+投稿版（如21.7.0.0spark0），需设置EXEC_PATH主程序路径、包名（如org.7-zip.spark）等。",
+          "qas": [
+            {
+              "question": "版本号格式应包含哪些要素？",
+              "id": "3-35-23",
+              "answers": [
+                {
+                  "text": "该exe软件的windows版本号+投稿平台名称+投稿版本",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建打包目录：在下载文件夹下新建package目录，其中必须包含files、entries、build三个子文件夹。",
+          "qas": [
+            {
+              "question": "需要创建哪三个关键文件夹？",
+              "id": "3-35-24",
+              "answers": [
+                {
+                  "text": "files、entries、build",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "桌面图标制作：下载软件图标→转换为svg格式→重命名为包名.svg存放到entries文件夹（如org.7-zip.spark.svg）。",
+          "qas": [
+            {
+              "question": "图标文件需要转换成什么格式？",
+              "id": "3-35-25",
+              "answers": [
+                {
+                  "text": "svg格式",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "容器处理：1）将C盘users目录下当前用户名改为@current_user@；2）终端执行sed -i命令批量替换注册表用户名；3）用7z压缩容器至files.7z。",
+          "qas": [
+            {
+              "question": "修改注册表的终端命令是什么？",
+              "id": "3-35-26",
+              "answers": [
+                {
+                  "text": "sed -i \"s#$USER#@current_user@#\" ./*.reg",
+                  "answer_start": 46
+                }
+              ]
+            },
+            {
+              "question": "压缩容器使用的命令参数是什么？",
+              "id": "3-35-27",
+              "answers": [
+                {
+                  "text": "7z a -t7z -r files.7z 容器路径/*",
+                  "answer_start": 67
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "制作run.sh：从/opt/apps/com.qq.weixin.deepin/files/复制run.sh和dlls文件夹，修改其中容器名、版本号等4项参数。",
+          "qas": [
+            {
+              "question": "run.sh需要修改哪几项参数？",
+              "id": "3-35-28",
+              "answers": [
+                {
+                  "text": "容器名、版本号、EXEC_PATH主程序路径、包名",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用Debreate打包：1）control选择架构；2）填写依赖项deepin-wine6-stable和deepin-wine-helper；3）添加Post-Remove脚本自动卸载容器。",
+          "qas": [
+            {
+              "question": "必须包含哪些依赖项？",
+              "id": "3-35-29",
+              "answers": [
+                {
+                  "text": "deepin-wine6-stable和deepin-wine-helper",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "卸载脚本的作用是什么？",
+              "id": "3-35-30",
+              "answers": [
+                {
+                  "text": "卸载时自动删除容器",
+                  "answer_start": 53
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Post-Remove脚本示例：遍历/home目录删除容器文件夹，核心命令rm -rf /home/$username/.deepinwine/容器名",
+          "qas": [
+            {
+              "question": "卸载脚本如何定位用户容器？",
+              "id": "3-35-31",
+              "answers": [
+                {
+                  "text": "遍历/home目录查找.deepinwine/容器名",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

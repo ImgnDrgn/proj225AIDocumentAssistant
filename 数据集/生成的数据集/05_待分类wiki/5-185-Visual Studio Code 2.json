@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "Visual Studio Code 2",
+      "paragraphs": [
+        {
+          "context": "Visual Studio Code（简称 VS Code）是一款由微软开发且跨平台的免费源代码编辑器。该软件支持语法高亮、代码自动补全（又称 IntelliSense）、代码重构功能，并且内置了命令行工具和 Git 版本控制系统。用户可以更改主题和键盘快捷方式实现个性化设置，也可以通过内置的扩展程序商店安装扩展以拓展软件功能。安装命令为sudo apt install com.visualstudio.code。卸载命令为sudo apt remove --purge com.visualstudio.code。仓库地址是http://packages.deepin.com/deepin/pool/main/v/vscode/。相关链接包括维基百科：https://zh.wikipedia.org/zh-cn/Visual_Studio_Code 和 Visual Studio Code 官方网站：https://code.visualstudio.com/",
+          "qas": [
+            {
+              "id": "5-185-1",
+              "question": "Visual Studio Code 的简称是什么？",
+              "answers": [
+                {
+                  "text": "VS Code",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "5-185-2",
+              "question": "Visual Studio Code 是由哪家公司开发的？",
+              "answers": [
+                {
+                  "text": "微软",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "id": "5-185-3",
+              "question": "Visual Studio Code 支持哪些功能？",
+              "answers": [
+                {
+                  "text": "语法高亮、代码自动补全（又称 IntelliSense）、代码重构功能，并且内置了命令行工具和 Git 版本控制系统。用户可以更改主题和键盘快捷方式实现个性化设置，也可以通过内置的扩展程序商店安装扩展以拓展软件功能",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "id": "5-185-4",
+              "question": "安装 Visual Studio Code 的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt install com.visualstudio.code",
+                  "answer_start": 275
+                }
+              ]
+            },
+            {
+              "id": "5-185-5",
+              "question": "卸载 Visual Studio Code 的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt remove --purge com.visualstudio.code",
+                  "answer_start": 315
+                }
+              ]
+            },
+            {
+              "id": "5-185-6",
+              "question": "Visual Studio Code 的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/v/vscode/",
+                  "answer_start": 365
+                }
+              ]
+            },
+            {
+              "id": "5-185-7",
+              "question": "Visual Studio Code 的官方网站地址是什么？",
+              "answers": [
+                {
+                  "text": "https://code.visualstudio.com/",
+                  "answer_start": 468
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

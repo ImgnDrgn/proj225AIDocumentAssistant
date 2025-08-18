@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "Links",
+      "paragraphs": [
+        {
+          "context": "links是一个支持图形和文本模式的网页浏览器。安装Links仅支持文本模式版本的命令为：sudo apt-get install links。卸载该版本的命令为：sudo apt-get remove links。安装支持图形和文本模式的Links版本的命令为：sudo apt-get install links2。卸载该版本的命令为：sudo apt-get remove links2。Links的仓库地址是http://packages.deepin.com/deepin/pool/main/l/links2/。官方网站是http://links.twibright.com。",
+          "qas": [
+            {
+              "id": "1-88-1",
+              "question": "links是什么？",
+              "answers": [
+                {
+                  "text": "一个支持图形和文本模式的网页浏览器。",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "1-88-2",
+              "question": "如何安装仅支持文本模式的links？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install links",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "1-88-3",
+              "question": "如何卸载文本模式的links？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove links",
+                  "answer_start": 82
+                }
+              ]
+            },
+            {
+              "id": "1-88-4",
+              "question": "如何安装支持图形和文本模式的links2？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install links2",
+                  "answer_start": 132
+                }
+              ]
+            },
+            {
+              "id": "1-88-5",
+              "question": "如何卸载links2？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove links2",
+                  "answer_start": 170
+                }
+              ]
+            },
+            {
+              "id": "1-88-6",
+              "question": "Links的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/l/links2/",
+                  "answer_start": 201
+                }
+              ]
+            },
+            {
+              "id": "1-88-7",
+              "question": "Links的官方网站是什么？",
+              "answers": [
+                {
+                  "text": "http://links.twibright.com",
+                  "answer_start": 262
+                }
+              ]
+            },
+            {
+              "id": "1-88-8",
+              "question": "links支持哪些显示模式？",
+              "answers": [
+                {
+                  "text": "图形和文本模式",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

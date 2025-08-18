@@ -1,0 +1,464 @@
+{
+  "data": [
+    {
+      "title": "软件包",
+      "paragraphs": [
+        {
+          "context": "本条目简单介绍debian包管理下的软件包基本知识。",
+          "qas": [
+            {
+              "id": "5-416-1",
+              "question": "本条目简单介绍了哪个包管理下的软件包基本知识？",
+              "answers": [
+                {
+                  "text": "debian",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "5-416-2",
+              "question": "本文介绍的主要内容是什么？",
+              "answers": [
+                {
+                  "text": "debian包管理下的软件包基本知识",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Debian包文件包含了二进制可执行文件、库文件、配置文件和man/info帮助页面等文档。通常Debian包文件的后缀为.deb，因此称为\"Deb软件包\"。",
+          "qas": [
+            {
+              "id": "5-416-3",
+              "question": "Debian包文件包含哪些内容？",
+              "answers": [
+                {
+                  "text": "二进制可执行文件、库文件、配置文件和man/info帮助页面等文档",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-416-4",
+              "question": "Debian包文件通常的后缀是什么？",
+              "answers": [
+                {
+                  "text": ".deb",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-416-5",
+              "question": "Debian包文件因后缀而被称为什么？",
+              "answers": [
+                {
+                  "text": "Deb软件包",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Debian有两种类型的软件包：二进制软件包（deb）和源码包（deb-src）。二进制软件包（Binary Packages）：包含可执行文件、库文件、配置文件、man/info页面、版权声明和其他文档。",
+          "qas": [
+            {
+              "id": "5-416-6",
+              "question": "Debian有哪两种类型的软件包？",
+              "answers": [
+                {
+                  "text": "二进制软件包（deb）和源码包（deb-src）",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-416-7",
+              "question": "二进制软件包（Binary Packages）包含哪些内容？",
+              "answers": [
+                {
+                  "text": "可执行文件、库文件、配置文件、man/info页面、版权声明和其他文档",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "源码包（Source Packages）：包含软件源代码、版本修改说明、构建指令以及编译工具等。先由tar工具归档为.tar.gz文件，然后再打包成.dsc文件。",
+          "qas": [
+            {
+              "id": "5-416-8",
+              "question": "源码包（Source Packages）包含哪些内容？",
+              "answers": [
+                {
+                  "text": "软件源代码、版本修改说明、构建指令以及编译工具等",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "id": "5-416-9",
+              "question": "源码包先由什么工具归档为.tar.gz文件？再打包成什么文件？",
+              "answers": [
+                {
+                  "text": "tar工具，.dsc文件",
+                  "answer_start": 48
+                }
+              ]
+            },
+            {
+              "id": "5-416-10",
+              "question": "源码包如何处理源代码？",
+              "answers": [
+                {
+                  "text": "先由tar工具归档为.tar.gz文件，然后再打包成.dsc文件",
+                  "answer_start": 48
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用户不确定一个软件包具体类型时，可以使用file命令查看文件类型。例如终端执行\"file  g++_4.1.2-9ubuntu2_i386.deb\"，输出为\"g++_4.1.2-9ubuntu2_i386: Debian binary package (format 2.0)\"。",
+          "qas": [
+            {
+              "id": "5-416-11",
+              "question": "用户不确定软件包具体类型时，可使用什么命令查看？",
+              "answers": [
+                {
+                  "text": "file命令",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "5-416-12",
+              "question": "执行\"file  g++_4.1.2-9ubuntu2_i386.deb\"的输出结果是什么？",
+              "answers": [
+                {
+                  "text": "g++_4.1.2-9ubuntu2_i386: Debian binary package (format 2.0)",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在Ubuntu Linux中，虚拟软件包是将系统中具有相同或相近功能的多个软件包作为一个集合，指定其中一个为默认首选项，意图是防止软件安装冲突。例如exim、sendmail和postfix的虚拟软件包是\"mail-transport-agent\"。",
+          "qas": [
+            {
+              "id": "5-416-13",
+              "question": "Ubuntu Linux中虚拟软件包的定义是什么？",
+              "answers": [
+                {
+                  "text": "将系统中具有相同或相近功能的多个软件包作为一个集合，指定其中一个为默认首选项",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-416-14",
+              "question": "提出虚拟软件包的意图是什么？",
+              "answers": [
+                {
+                  "text": "防止软件安装过程中发生冲突",
+                  "answer_start": 59
+                }
+              ]
+            },
+            {
+              "id": "5-416-15",
+              "question": "exim、sendmail和postfix的虚拟软件包是什么？",
+              "answers": [
+                {
+                  "text": "mail-transport-agent",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Ubuntu软件包命名约定为Filename_Version-Reversion_Architecture.deb，其中Filename是软件包名，Version是软件版本号，Reversion是修订版本号（由开发者指定，修改后加1），Architecture是适用架构。",
+          "qas": [
+            {
+              "id": "5-416-16",
+              "question": "Ubuntu软件包的命名约定是什么？",
+              "answers": [
+                {
+                  "text": "Filename_Version-Reversion_Architecture.deb",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-416-17",
+              "question": "Ubuntu软件包命名中，Reversion（修订版本号）由谁指定？修改后如何处理？",
+              "answers": [
+                {
+                  "text": "由Ubuntu开发者或创建软件包的人指定，修改后将修订版本号加1",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-416-18",
+              "question": "软件包命名中的Version字段表示什么？",
+              "answers": [
+                {
+                  "text": "软件版本号",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-416-19",
+              "question": "Architecture在软件包命名中表示什么？",
+              "answers": [
+                {
+                  "text": "适用计算机架构",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "以g++_4.1.2-9ubuntu2_i386.deb为例，g++是软件包名，4.1.2是软件版本号，9ubuntu2是修订版本号，i386是适用架构。",
+          "qas": [
+            {
+              "id": "5-416-20",
+              "question": "g++_4.1.2-9ubuntu2_i386.deb中，软件版本号、修订版本号、适用架构分别是什么？",
+              "answers": [
+                {
+                  "text": "4.1.2，9ubuntu2，i386",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Ubuntu为软件包指定优先级，作为包管理器安装卸载的依据，且高优先级包不能依赖低优先级包。基本系统由Required级和Important级组成，新版本准备时先冻结这两类，再冻结Standard级，最后冻结Optional级和Extra级。",
+          "qas": [
+            {
+              "id": "5-416-21",
+              "question": "Ubuntu软件包优先级的作用是什么？",
+              "answers": [
+                {
+                  "text": "作为软件包管理器选择安装和卸载的一个依据",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-416-22",
+              "question": "Ubuntu中软件包优先级的依赖规则是什么？",
+              "answers": [
+                {
+                  "text": "任何高优先级的软件包都不能依赖于低优先级的软件包",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "id": "5-416-23",
+              "question": "Ubuntu基本系统由哪些优先级的软件包组成？",
+              "answers": [
+                {
+                  "text": "Required级和Important级",
+                  "answer_start": 62
+                }
+              ]
+            },
+            {
+              "id": "5-416-24",
+              "question": "Ubuntu新版本准备时，软件包优先级的冻结顺序是什么？",
+              "answers": [
+                {
+                  "text": "先冻结Required级和Important级，再冻结Standard级，最后冻结Optional级和Extra级",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Ubuntu定义软件包的两种状态：期望状态（标记用户希望软件包处于的状态）和当前状态（标记用户操作后的最终状态），用于记录用户安装行为。",
+          "qas": [
+            {
+              "id": "5-416-25",
+              "question": "Ubuntu定义的软件包两种状态是什么？",
+              "answers": [
+                {
+                  "text": "期望状态和当前状态",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-416-26",
+              "question": "软件包的期望状态和当前状态分别指什么？",
+              "answers": [
+                {
+                  "text": "期望状态是标记用户希望将某个软件包处于的状态，当前状态是标记用户操作该软件包后的最终状态",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux最初设计理念是提高软件系统内部耦合度，好处是使系统致密紧凑、减少中间错误，缺点是软件组件依赖和冲突。Debian提出程序依赖性机制解决该问题，其描述独立运行程序与系统中程序的关联程度。",
+          "qas": [
+            {
+              "id": "5-416-27",
+              "question": "Linux操作系统最初的设计理念是什么？",
+              "answers": [
+                {
+                  "text": "尽可能提高软件系统内部的耦合度",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-416-28",
+              "question": "提高软件系统内部耦合度的好处和缺点分别是什么？",
+              "answers": [
+                {
+                  "text": "好处是使系统更加致密、紧凑，减少中间环节可能引发的错误；缺点是软件组件依赖和软件组件冲突问题",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "5-416-29",
+              "question": "Debian提出什么机制解决软件组件依赖和冲突问题？该机制的定义是什么？",
+              "answers": [
+                {
+                  "text": "程序依赖性机制，用来描述独立运行程序与当前系统中程序之间存在的关联程度",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-416-30",
+              "question": "程序依赖性机制的主要优点是什么？",
+              "answers": [
+                {
+                  "text": "使系统更加致密、紧凑，减少中间环节可能引发的错误",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包管理器依据依赖关系安装卸载组件，例如gcc包依赖binutils包（含链接器和汇编器），无binutils时安装gcc会被中止并提示先装binutils。",
+          "qas": [
+            {
+              "id": "5-416-31",
+              "question": "软件包管理器依据什么完成组件的安装或卸载？",
+              "answers": [
+                {
+                  "text": "软件包'依赖关系'",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-416-32",
+              "question": "gcc包依赖哪个软件包？无该包时安装gcc会怎样？",
+              "answers": [
+                {
+                  "text": "binutils包（包含链接器和汇编器），软件包管理器将会中止安装，并出现错误提示，要求用户事先安装binutils",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度操作系统源提供几乎所有Deb格式软件，不推荐使用RPM转换的DEB包，因易存在依赖问题。转换需先执行\"apt-get install alien\"安装alien，再用\"alien xxx.rpm\"格式命令转换。",
+          "qas": [
+            {
+              "id": "5-416-33",
+              "question": "深度操作系统源提供什么格式的软件？",
+              "answers": [
+                {
+                  "text": "Deb格式",
+                  "answer_start": 15
+                }
+              ]
+            },
+            {
+              "id": "5-416-34",
+              "question": "为什么不推荐在深度操作系统中使用RPM转换的DEB包？",
+              "answers": [
+                {
+                  "text": "因为这样转换成的DEB包很大程度存在软件依赖的问题",
+                  "answer_start": 35
+                }
+              ]
+            },
+            {
+              "id": "5-416-35",
+              "question": "转换RPM包为DEB包，需先执行什么命令安装工具？转换命令格式是什么？",
+              "answers": [
+                {
+                  "text": "apt-get install alien，alien xxx.rpm",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "转换xine-skins-1.8-1.lvn5.noarch.rpm为DEB包，终端执行\"sudo alien xine-skins-1.8-1.lvn5.noarch.rpm\"，生成xine-skins_1.8-2_all.deb，输出在原rpm包相同目录。",
+          "qas": [
+            {
+              "id": "5-416-36",
+              "question": "转换xine-skins-1.8-1.lvn5.noarch.rpm为DEB包的终端命令是什么？生成的DEB包文件名是什么？",
+              "answers": [
+                {
+                  "text": "sudo alien xine-skins-1.8-1.lvn5.noarch.rpm，xine-skins_1.8-2_all.deb",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "id": "5-416-37",
+              "question": "转换后的DEB包输出在哪个目录？",
+              "answers": [
+                {
+                  "text": "与xine-skins-1.8-1.lvn5.noarch.rpm包相同的目录",
+                  "answer_start": 95
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包相关内容的来源链接为Ubuntu标准教程，网址是http://book.51cto.com/art/200811/96247.htm。",
+          "qas": [
+            {
+              "id": "5-416-38",
+              "question": "软件包相关内容的来源链接对应的教程名称和网址是什么？",
+              "answers": [
+                {
+                  "text": "Ubuntu标准教程，http://book.51cto.com/art/200811/96247.htm",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

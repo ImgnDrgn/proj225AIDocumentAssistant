@@ -1,0 +1,354 @@
+{
+  "data": [
+    {
+      "title": "iproute2 vs net-tools",
+      "paragraphs": [
+        {
+          "context": "# iproute2 vs net-tools\n本文来自于 https://linoxide.com/iproute2-vs-net-tools/\n\nLinux查询网络相关的命令工具主要有两个包，iproute2和net-tools。\n\niproute2在Linux基金会的百科网址：https://wiki.linuxfoundation.org/networking/iproute2\nnet-tools的官网：https://net-tools.sourceforge.io/\n\n\n|  iproute2   | net-tools  |  功能 |\n|  ----  | ----  | ---- |\n| ip link show  | ifconfig -a | 显示所有接口 |\n| ip link set down/up eth0  | ifconfig eth0 up/down | 启用 (UP)/禁用 (DOWN) 网络接口 |\n| ip addr add 192.168.0.10/24 dev eth0 | ifconfig eth0 192.168.0.10/24 | 为网络接口分配 IPv4 地址 |\n| ip addr del 192.168.0.10/24 dev eth0 | ifconfig eth0 0 | 从网络接口中删除 IPv4 地址 |\n| ip addr show dev eth0 | ifconfig eth0 | 显示网络接口的 IPv4 地址 |\n| ip -6 addr add fe80::f0b7:57ff:fe2f:5f0d/64 dev eth1 | ifconfig eth1 inet6 add fe80::f0b7:57ff:fe2f:5f0d/64 | 将 IPv6 地址分配给网络接口 |\n| ip -6 addr show dev eth0 | ifconfig eth0 | 显示网络接口的 IPv6 地址 |\n| ip link set dev eth0 address 02:42:20:d2:28:36 | ifconfig eth0 hw ether 02:42:20:d2:28:36 | 更改网络接口的 MAC 地址 |\n| ip route show | route -n | 显示 IP 路由表 |\n| ip route add default via 192.168.0.1 dev eth0 | route add default gw 192.168.0.1 eth0 | 添加默认路由 |\n| ip route replace default via 192.168.0.1 dev enp0s3 | route del default gw 192.168.0.1 enp0s3 | 删除默认路由 |\n| ip route add 10.24.32.0/24 via 192.168.0.1 dev enp0s3 | route add -net 10.24.32.0/24 gw 192.168.0.1 dev enp0s3 | 添加静态路由 |\n| ip route del 192.168.10.0/24 | route del -net 192.168.10.0/24 | 删除静态路由 |\n| ss | netstat | 显示套接字 - 监听 tcp/udp |\n| arp -an  | ip neigh | 显示 ARP 表 |\n| bridge  | \tbrctl | 管理网桥地址和设备 |",
+          "qas": [
+            {
+              "id": "5-430-1",
+              "question": "Linux中有哪两个主要的网络命令工具包？",
+              "answers": [
+                {
+                  "text": "iproute2和net-tools",
+                  "answer_start": 73
+                }
+              ]
+            },
+            {
+              "id": "5-430-2",
+              "question": "iproute2的文档可以在哪里找到？",
+              "answers": [
+                {
+                  "text": "https://wiki.linuxfoundation.org/networking/iproute2",
+                  "answer_start": 122
+                }
+              ]
+            },
+            {
+              "id": "5-430-3",
+              "question": "net-tools的官方网站是什么？",
+              "answers": [
+                {
+                  "text": "https://net-tools.sourceforge.io/",
+                  "answer_start": 185
+                }
+              ]
+            },
+            {
+              "id": "5-430-4",
+              "question": "在iproute2中，显示所有接口的命令是什么？",
+              "answers": [
+                {
+                  "text": "ip link show",
+                  "answer_start": 253
+                }
+              ]
+            },
+            {
+              "id": "5-430-5",
+              "question": "在net-tools中，显示所有接口的命令是什么？",
+              "answers": [
+                {
+                  "text": "ifconfig -a",
+                  "answer_start": 269
+                }
+              ]
+            },
+            {
+              "id": "5-430-6",
+              "question": "启用或禁用网络接口的功能在iproute2中如何实现？",
+              "answers": [
+                {
+                  "text": "ip link set down/up eth0",
+                  "answer_start": 306
+                }
+              ]
+            },
+            {
+              "id": "5-430-7",
+              "question": "在net-tools中，如何启用或禁用eth0接口？",
+              "answers": [
+                {
+                  "text": "ifconfig eth0 up/down",
+                  "answer_start": 333
+                }
+              ]
+            },
+            {
+              "id": "5-430-8",
+              "question": "在iproute2中，为网络接口分配IPv4地址的命令是什么？",
+              "answers": [
+                {
+                  "text": "ip addr add 192.168.0.10/24 dev eth0",
+                  "answer_start": 390
+                }
+              ]
+            },
+            {
+              "id": "5-430-9",
+              "question": "在net-tools中，如何为eth0接口分配IPv4地址192.168.0.10/24？",
+              "answers": [
+                {
+                  "text": "ifconfig eth0 192.168.0.10/24",
+                  "answer_start": 426
+                }
+              ]
+            },
+            {
+              "id": "5-430-10",
+              "question": "从网络接口删除IPv4地址的功能在iproute2中如何操作？",
+              "answers": [
+                {
+                  "text": "ip addr del 192.168.0.10/24 dev eth0",
+                  "answer_start": 483
+                }
+              ]
+            },
+            {
+              "id": "5-430-11",
+              "question": "在net-tools中，如何删除eth0接口的IPv4地址？",
+              "answers": [
+                {
+                  "text": "ifconfig eth0 0",
+                  "answer_start": 520
+                }
+              ]
+            },
+            {
+              "id": "5-430-12",
+              "question": "在iproute2中，显示网络接口的IPv4地址的命令是什么？",
+              "answers": [
+                {
+                  "text": "ip addr show dev eth0",
+                  "answer_start": 557
+                }
+              ]
+            },
+            {
+              "id": "5-430-13",
+              "question": "在net-tools中，如何显示eth0接口的IPv4地址？",
+              "answers": [
+                {
+                  "text": "ifconfig eth0",
+                  "answer_start": 581
+                }
+              ]
+            },
+            {
+              "id": "5-430-14",
+              "question": "为eth1接口分配IPv6地址fe80::f0b7:57ff:fe2f:5f0d/64的iproute2命令是什么？",
+              "answers": [
+                {
+                  "text": "ip -6 addr add fe80::f0b7:57ff:fe2f:5f0d/64 dev eth1",
+                  "answer_start": 619
+                }
+              ]
+            },
+            {
+              "id": "5-430-15",
+              "question": "在net-tools中，如何为eth1接口添加IPv6地址fe80::f0b7:57ff:fe2f:5f0d/64？",
+              "answers": [
+                {
+                  "text": "ifconfig eth1 inet6 add fe80::f0b7:57ff:fe2f:5f0d/64",
+                  "answer_start": 668
+                }
+              ]
+            },
+            {
+              "id": "5-430-16",
+              "question": "在iproute2中，如何显示eth0接口的IPv6地址？",
+              "answers": [
+                {
+                  "text": "ip -6 addr show dev eth0",
+                  "answer_start": 735
+                }
+              ]
+            },
+            {
+              "id": "5-430-17",
+              "question": "更改网络接口的MAC地址在iproute2中如何实现？",
+              "answers": [
+                {
+                  "text": "ip link set dev eth0 address 02:42:20:d2:28:36",
+                  "answer_start": 783
+                }
+              ]
+            },
+            {
+              "id": "5-430-18",
+              "question": "在net-tools中，如何将eth0接口的MAC地址更改为02:42:20:d2:28:36？",
+              "answers": [
+                {
+                  "text": "ifconfig eth0 hw ether 02:42:20:d2:28:36",
+                  "answer_start": 828
+                }
+              ]
+            },
+            {
+              "id": "5-430-19",
+              "question": "在iproute2中，显示IP路由表的命令是什么？",
+              "answers": [
+                {
+                  "text": "ip route show",
+                  "answer_start": 891
+                }
+              ]
+            },
+            {
+              "id": "5-430-20",
+              "question": "在net-tools中，如何显示IP路由表？",
+              "answers": [
+                {
+                  "text": "route -n",
+                  "answer_start": 907
+                }
+              ]
+            },
+            {
+              "id": "5-430-21",
+              "question": "添加默认路由的功能在iproute2中如何操作？",
+              "answers": [
+                {
+                  "text": "ip route add default via 192.168.0.1 dev eth0",
+                  "answer_start": 956
+                }
+              ]
+            },
+            {
+              "id": "5-430-22",
+              "question": "在net-tools中，如何添加默认网关192.168.0.1到eth0接口？",
+              "answers": [
+                {
+                  "text": "route add default gw 192.168.0.1 eth0",
+                  "answer_start": 1001
+                }
+              ]
+            },
+            {
+              "id": "5-430-23",
+              "question": "在iproute2中，删除默认路由的命令是什么？",
+              "answers": [
+                {
+                  "text": "ip route replace default via 192.168.0.1 dev enp0s3",
+                  "answer_start": 1063
+                }
+              ]
+            },
+            {
+              "id": "5-430-24",
+              "question": "在net-tools中，如何删除默认网关192.168.0.1？",
+              "answers": [
+                {
+                  "text": "route del default gw 192.168.0.1 enp0s3",
+                  "answer_start": 1116
+                }
+              ]
+            },
+            {
+              "id": "5-430-25",
+              "question": "添加静态路由的功能在iproute2中如何实现？",
+              "answers": [
+                {
+                  "text": "ip route add 10.24.32.0/24 via 192.168.0.1 dev enp0s3",
+                  "answer_start": 1180
+                }
+              ]
+            },
+            {
+              "id": "5-430-26",
+              "question": "在net-tools中，如何添加10.24.32.0/24网络的静态路由？",
+              "answers": [
+                {
+                  "text": "route add -net 10.24.32.0/24 gw 192.168.0.1 dev enp0s3",
+                  "answer_start": 1233
+                }
+              ]
+            },
+            {
+              "id": "5-430-27",
+              "question": "在iproute2中，删除192.168.10.0/24网络路由的命令是什么？",
+              "answers": [
+                {
+                  "text": "ip route del 192.168.10.0/24",
+                  "answer_start": 1311
+                }
+              ]
+            },
+            {
+              "id": "5-430-28",
+              "question": "在net-tools中，如何删除192.168.10.0/24网络的静态路由？",
+              "answers": [
+                {
+                  "text": "route del -net 192.168.10.0/24",
+                  "answer_start": 1340
+                }
+              ]
+            },
+            {
+              "id": "5-430-29",
+              "question": "在iproute2中，显示监听TCP/UDP套接字的命令是什么？",
+              "answers": [
+                {
+                  "text": "ss",
+                  "answer_start": 1392
+                }
+              ]
+            },
+            {
+              "id": "5-430-30",
+              "question": "在net-tools中，如何显示套接字监听状态？",
+              "answers": [
+                {
+                  "text": "netstat",
+                  "answer_start": 1398
+                }
+              ]
+            },
+            {
+              "id": "5-430-31",
+              "question": "在iproute2中，显示ARP表的命令是什么？",
+              "answers": [
+                {
+                  "text": "ip neigh",
+                  "answer_start": 1465
+                }
+              ]
+            },
+            {
+              "id": "5-430-32",
+              "question": "在net-tools中，如何显示ARP表？",
+              "answers": [
+                {
+                  "text": "arp -an",
+                  "answer_start": 1453
+                }
+              ]
+            },
+            {
+              "id": "5-430-33",
+              "question": "在iproute2中，管理网桥地址和设备的命令是什么？",
+              "answers": [
+                {
+                  "text": "bridge",
+                  "answer_start": 1510
+                }
+              ]
+            },
+            {
+              "id": "5-430-34",
+              "question": "在net-tools中，如何管理网桥？",
+              "answers": [
+                {
+                  "text": "brctl",
+                  "answer_start": 1520
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "data": [
+    {
+      "title": "文件管理器共享原理",
+      "paragraphs": [
+        {
+          "context": "文件管理器实现共享文件是使用samba协议实现不同文件系统之间的共享。",
+          "qas": [
+            {
+              "id": "3-59-1",
+              "question": "文件管理器实现共享文件使用的是什么协议？",
+              "answers": [
+                {
+                  "text": "samba协议",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件管理器共享一个文件夹，实际上是使用dbus去调用文件管理器的守护进程使用QProccess去执行名net usershare系列命令执行的。",
+          "qas": [
+            {
+              "id": "3-59-2",
+              "question": "文件管理器共享文件夹时，通过什么调用守护进程执行net usershare系列命令？",
+              "answers": [
+                {
+                  "text": "dbus",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装samba（samba,python-samba,samba-common,client,server,smb-tool）包",
+          "qas": [
+            {
+              "id": "3-59-3",
+              "question": "使用共享需要安装哪些samba相关包？",
+              "answers": [
+                {
+                  "text": "samba,python-samba,samba-common,client,server,smb-tool",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "新建文件夹usershares：命令 `mkdir /var/lib/samba/usershares`",
+          "qas": [
+            {
+              "id": "3-59-4",
+              "question": "新建usershares文件夹的命令是什么？",
+              "answers": [
+                {
+                  "text": "mkdir /var/lib/samba/usershares",
+                  "answer_start": 26
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加组，输入命令 `groupadd -r sambashare`",
+          "qas": [
+            {
+              "id": "3-59-5",
+              "question": "添加sambashare组的命令是什么？",
+              "answers": [
+                {
+                  "text": "groupadd -r sambashare",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改usershares的组和用户：命令 `chown root:sambashare /var/lib/samba/usershares`",
+          "qas": [
+            {
+              "id": "3-59-6",
+              "question": "修改usershares的组和用户的命令是什么？",
+              "answers": [
+                {
+                  "text": "chown root:sambashare /var/lib/samba/usershares",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "对usershares目录加权：命令 `chmod 1770 /var/lib/samba/usershares`",
+          "qas": [
+            {
+              "id": "3-59-7",
+              "question": "对usershares目录加权的命令是什么？",
+              "answers": [
+                {
+                  "text": "chmod 1770 /var/lib/samba/usershares",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "`chmod 0755 /var/lib/samba/private`",
+          "qas": [
+            {
+              "id": "3-59-8",
+              "question": "修改/var/lib/samba/private权限的命令是什么？",
+              "answers": [
+                {
+                  "text": "chmod 0755 /var/lib/samba/private",
+                  "answer_start": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "(1)在[global]项中添加```linux  usershare path = /var/lib/samba/usershares  usershare max shares = 100  usershare allow guests = yes  usershare owner only = yes  map to guest = bad user ```",
+          "qas": [
+            {
+              "id": "3-59-9",
+              "question": "在/etc/samba/smb.conf的[global]项中需要添加哪些内容？",
+              "answers": [
+                {
+                  "text": "usershare path = /var/lib/samba/usershares\nusershare max shares = 100\nusershare allow guests = yes\nusershare owner only = yes\nmap to guest = bad user",
+                  "answer_start": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置用户映射：命令 `gpasswd sambashare -a 用户名`",
+          "qas": [
+            {
+              "id": "3-59-10",
+              "question": "设置用户映射的命令是什么？",
+              "answers": [
+                {
+                  "text": "gpasswd sambashare -a 用户名",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在共享一个目录时，对当前共享目录做了加权处理提权为0777，这个目录的下子目录没有加权还是0755",
+          "qas": [
+            {
+              "id": "3-59-11",
+              "question": "文件管理器共享目录时，对当前共享目录的加权处理权限是多少？",
+              "answers": [
+                {
+                  "text": "0777",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在/etc/samba/smb.conf的配置文件中 directory mode = 0777 create mode = 0766",
+          "qas": [
+            {
+              "id": "3-59-12",
+              "question": "在/etc/samba/smb.conf配置文件中，directory mode和create mode分别设置为多少？",
+              "answers": [
+                {
+                  "text": "directory mode = 0777，create mode = 0766",
+                  "answer_start": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件管理器访问网络挂载使用的是gio的gvfs库，执行的访问和挂载",
+          "qas": [
+            {
+              "id": "3-59-13",
+              "question": "文件管理器访问网络挂载使用的是什么库？",
+              "answers": [
+                {
+                  "text": "gio的gvfs库",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "需要访问和挂载就必须安装gvfs的这些库（gvfs、gvfs-backens、gvfs-bin、gvfs-common、gvfs-daemons、gvfs-fuse、gvfs-libs等，安装后必须重启gvfs库，最后重启计算机）",
+          "qas": [
+            {
+              "id": "3-59-14",
+              "question": "访问和挂载网络文件需要安装哪些gvfs相关库？",
+              "answers": [
+                {
+                  "text": "gvfs、gvfs-backens、gvfs-bin、gvfs-common、gvfs-daemons、gvfs-fuse、gvfs-libs等",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "需要访问网上邻居，需要配置/etc/samba/smb.conf（smb的配置文件），设置domain master = yes（设置自己为组），设置server max protocol = NT1（samba1协议才能在局域网中被发现），设置完成后重启smbd和nmbd服务。",
+          "qas": [
+            {
+              "id": "3-59-15",
+              "question": "要访问网上邻居，在/etc/samba/smb.conf中需要设置哪些内容？",
+              "answers": [
+                {
+                  "text": "domain master = yes，server max protocol = NT1",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

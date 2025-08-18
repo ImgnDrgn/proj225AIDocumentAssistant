@@ -1,0 +1,199 @@
+{
+  "data": [
+    {
+      "title": "Samba服务",
+      "paragraphs": [
+        {
+          "context": "Samba，是种用来让UNIX系列的操作系统与微软Windows操作系统的SMB/CIFS（Server Message Block/Common Internet File System）网络协定做连结的自由软件。\n\n目前的版本（v3）不仅可存取及分享SMB的资料夹及打印机，本身还可以整合入Windows Server的网域，扮演为网域控制站（Domain Controller）以及加入Active Directory成员。简而言之，此软件在Windows与UNIX系列OS之间搭起一座桥梁，让两者的资源可互通有无。",
+          "qas": [
+            {
+              "id": "5-432-1",
+              "question": "什么是Samba？",
+              "answers": [
+                {
+                  "text": "Samba，是种用来让UNIX系列的操作系统与微软Windows操作系统的SMB/CIFS（Server Message Block/Common Internet File System）网络协定做连结的自由软件。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-432-2",
+              "question": "目前Samba版本（v3）具备哪些功能？",
+              "answers": [
+                {
+                  "text": "目前的版本（v3）不仅可存取及分享SMB的资料夹及打印机，本身还可以整合入Windows Server的网域，扮演为网域控制站（Domain Controller）以及加入Active Directory成员。",
+                  "answer_start": 102
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安德鲁·垂鸠（Andrew Tridgell）于1992年在澳洲国立大学（ANU）开发了第一版的Samba Unix软件。",
+          "qas": [
+            {
+              "id": "5-432-3",
+              "question": "第一版Samba Unix软件由谁、于何时、在何处开发？",
+              "answers": [
+                {
+                  "text": "安德鲁·垂鸠（Andrew Tridgell）于1992年在澳洲国立大学（ANU）开发了第一版的Samba Unix软件",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Samba是许多服务以及协议的实现，其包括TCP/IP上的NetBIOS（NBT）、SMB、CIFS（SMB的增强版本）、 DCE/RPC或者更具体来说MSRPC（網絡鄰居协议套件）、一种 WINS服务器（也被称作NetBIOS Name Server（NBNS））、NT 域协议套件（包括NT Domain Logons、Secure Accounts Manager（SAM）数据库、Local Security Authority（LSA）服务、NT-style打印服务（SPOOLSS）、NTLM以及近来出现的包括一种改进的Kerberos协议与改进的轻型目录访问协议（LDAP）在内的Active Directory Logon服务）。以上这些服务以及协议经常被错误地归类为NetBIOS或者SMB。",
+          "qas": [
+            {
+              "id": "5-432-4",
+              "question": "Samba实现的协议包括哪些？",
+              "answers": [
+                {
+                  "text": "TCP/IP上的NetBIOS（NBT）、SMB、CIFS（SMB的增强版本）、 DCE/RPC或者更具体来说MSRPC（網絡鄰居协议套件）、一种 WINS服务器（也被称作NetBIOS Name Server（NBNS））、NT 域协议套件（包括NT Domain Logons、Secure Accounts Manager（SAM）数据库、Local Security Authority（LSA）服务、NT-style打印服务（SPOOLSS）、NTLM以及近来出现的包括一种改进的Kerberos协议与改进的轻型目录访问协议（LDAP）在内的Active Directory Logon服务）。",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Samba也能够用于共享打印机；还能够为选定的Unix目录（包括所有子目录）建立网络共享，该功能使得Windows用户可以像访问普通Windows下的文件夹那样来通过网络访问这些Unix目录。",
+          "qas": [
+            {
+              "id": "5-432-5",
+              "question": "Samba在资源共享方面有什么功能？",
+              "answers": [
+                {
+                  "text": "Samba也能够用于共享打印机；还能够为选定的Unix目录（包括所有子目录）建立网络共享，使Windows用户可像访问普通Windows下的文件夹那样通过网络访问这些Unix目录",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Samba的相关软件包括：Samba TNG（Samba的一个分支，其在NT域服务关键部分的结构及实现具有明显的不同）、LinNeighborhood、LDAP Account Manager、Kerberos protocol、Smb4K（KDE 环境下的 SMB/CIFS 共享资源浏览器）、Smbldap-Tools（用户和群组管理工具）。",
+          "qas": [
+            {
+              "id": "5-432-6",
+              "question": "Samba的相关软件有哪些？各软件有什么特点或用途？",
+              "answers": [
+                {
+                  "text": "Samba的相关软件及特点/用途：1. Samba TNG：Samba的分支，在NT域服务关键部分的结构及实现有明显不同；2. LinNeighborhood：Samba相关软件；3. LDAP Account Manager：Samba相关软件；4. Kerberos protocol：Samba相关软件；5. Smb4K：KDE环境下的SMB/CIFS共享资源浏览器；6. Smbldap-Tools：用户和群组管理工具",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Samba服务的第一步：在终端输入命令‘sudo apt-get install samba’来安装Samba服务。",
+          "qas": [
+            {
+              "id": "5-432-7",
+              "question": "安装Samba服务的第一步需要在终端输入什么命令？",
+              "answers": [
+                {
+                  "text": "安装Samba服务第一步在终端输入的命令是‘sudo apt-get install samba’",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Samba服务后，需安装nautilus扩展：终端输入‘sudo apt-get install nautilus-share’；该扩展作用是在nautilus文件管理器中，可在需要共享的文件夹上右键选择‘本地网络共享’；红色框内的选项最好不要选择，因存在风险。",
+          "qas": [
+            {
+              "id": "5-432-8",
+              "question": "安装Samba服务后，安装nautilus扩展的命令是什么？该扩展有什么作用？有什么风险提示？",
+              "answers": [
+                {
+                  "text": "安装nautilus扩展的命令是‘sudo apt-get install nautilus-share’；该扩展作用是在nautilus文件管理器中，可在需要共享的文件夹上右键选择‘本地网络共享’；风险提示是红色框内的选项最好不要选择，因存在风险",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "直接创建Samba共享可能出现错误：‘net usershare returned error 255: net usershare: cannot open usershare directory /var/lib/samba/usershares. Error Permission denied You do not have permission to create a usershare. Ask your administrator to grant you permissions to create a share.’；解决办法是把用户名加入sambashare组，执行命令‘sudo adduser 你的用户名 sambashare’（‘你的用户名’替换为实际用户名）。",
+          "qas": [
+            {
+              "id": "5-432-9",
+              "question": "直接创建Samba共享可能出现什么错误？如何解决该错误？",
+              "answers": [
+                {
+                  "text": "直接创建Samba共享可能出现的错误是‘net usershare returned error 255: net usershare: cannot open usershare directory /var/lib/samba/usershares. Error Permission denied You do not have permission to create a usershare. Ask your administrator to grant you permissions to create a share.’；解决办法是把用户名加入sambashare组，执行命令‘sudo adduser 你的用户名 sambashare’（‘你的用户名’替换为实际用户名）",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "将用户名加入sambashare组后，另一台机器仍无法访问共享，需设置密码：执行命令‘sudo smbpasswd -a 你的用户名’（‘你的用户名’替换为实际用户名）。",
+          "qas": [
+            {
+              "id": "5-432-10",
+              "question": "将用户名加入sambashare组后，另一台机器无法访问共享的解决办法是什么？对应的命令是什么？",
+              "answers": [
+                {
+                  "text": "解决办法是设置密码，对应的命令是‘sudo smbpasswd -a 你的用户名’（‘你的用户名’替换为实际用户名）",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在另一台电脑上访问Samba共享：会提示输入用户名和密码，输入加入sambashare组的用户名及设置的密码即可。",
+          "qas": [
+            {
+              "id": "5-432-11",
+              "question": "在另一台电脑上访问Samba共享时，需要输入什么信息？",
+              "answers": [
+                {
+                  "text": "在另一台电脑上访问Samba共享时，需要输入加入sambashare组的用户名及设置的密码",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "检查Samba服务是否正常启用的步骤：1. 查看当前电脑IP地址，终端输入命令‘ifconfig’；2. 打开局域网内Windows系统电脑（虚拟机需为局域网模式），在‘我的电脑’地址栏输入‘file://xxx.xxx.xxx.xxx’（xxx.xxx.xxx.xxx为查到的IP地址）；3. 若能看到主机内的共享文件，说明Samba服务成功启用。",
+          "qas": [
+            {
+              "id": "5-432-12",
+              "question": "如何检查Samba服务是否正常启用？",
+              "answers": [
+                {
+                  "text": "检查Samba服务是否正常启用的步骤：1. 查看当前电脑IP地址，终端输入命令‘ifconfig’；2. 打开局域网内Windows系统电脑（虚拟机需为局域网模式），在‘我的电脑’地址栏输入‘file://xxx.xxx.xxx.xxx’（xxx.xxx.xxx.xxx为查到的IP地址）；3. 若能看到主机内的共享文件，说明Samba服务成功启用",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Samba的相关链接包括：官方文档（http://www.samba.org/samba/docs/）、维基百科:Samba（http://zh.wikipedia.org/zh-cn/Samba）、IMCN:怎样在 Ubuntu 12.04 中安装和设置 Samba 实现网上邻居共享（http://imcn.me/html/y2012/10717.html）。",
+          "qas": [
+            {
+              "id": "5-432-13",
+              "question": "Samba的相关链接有哪些？分别对应什么内容？",
+              "answers": [
+                {
+                  "text": "Samba的相关链接及对应内容：1. 官方文档：链接http://www.samba.org/samba/docs/；2. 维基百科:Samba：链接http://zh.wikipedia.org/zh-cn/Samba；3. IMCN相关内容：链接http://imcn.me/html/y2012/10717.html，内容是怎样在 Ubuntu 12.04 中安装和设置 Samba 实现网上邻居共享",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

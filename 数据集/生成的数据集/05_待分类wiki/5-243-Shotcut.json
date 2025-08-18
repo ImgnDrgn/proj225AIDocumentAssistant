@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "title": "Shotcut",
+      "paragraphs": [
+        {
+          "context": "Shotcut是一款跨平台的视频编辑器软件，支持视频特效滤镜、直接拖曳视频处理等功能。",
+          "qas": [
+            {
+              "question": "Shotcut是什么类型的软件？",
+              "id": "5-243-1",
+              "answers": [
+                {
+                  "text": "跨平台的视频编辑器软件",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "Shotcut支持视频特效滤镜吗？",
+              "id": "5-243-2",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 28
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Shotcut的命令是sudo apt-get install shotcut。",
+          "qas": [
+            {
+              "question": "如何安装Shotcut？",
+              "id": "5-243-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install shotcut",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Shotcut的命令是sudo apt-get remove shotcut。",
+          "qas": [
+            {
+              "question": "怎样卸载Shotcut？",
+              "id": "5-243-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove shotcut",
+                  "answer_start": 16
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Shotcut的仓库地址是http://packages.deepin.com/deepin/pool/main/s/shotcut/。",
+          "qas": [
+            {
+              "question": "Shotcut的仓库地址是什么？",
+              "id": "5-243-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/shotcut/",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Shotcut支持GPU硬件加速、主流图片处理、音频/视频处理功能。",
+          "qas": [
+            {
+              "question": "Shotcut是否支持GPU硬件加速？",
+              "id": "5-243-6",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "Shotcut能进行主流图片处理吗？",
+              "id": "5-243-7",
+              "answers": [
+                {
+                  "text": "能",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "Shotcut支持音频/视频处理吗？",
+              "id": "5-243-8",
+              "answers": [
+                {
+                  "text": "支持",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

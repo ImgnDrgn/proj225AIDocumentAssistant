@@ -1,0 +1,144 @@
+{
+  "data": [
+    {
+      "title": "GTK",
+      "paragraphs": [
+        {
+          "context": "GTK，即 GIMP Toolkit，最初由 GNU项目为 GIMP 开发，现在是流行工具包，绑定多种语言。",
+          "qas": [
+            {
+              "question": "GTK的全称是什么？",
+              "id": "5-473-1",
+              "answers": [
+                {
+                  "text": "GIMP Toolkit",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "GTK最初是为哪个项目开发的？",
+              "id": "5-473-2",
+              "answers": [
+                {
+                  "text": "GIMP",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "GTK 3 和 GTK 4 的默认主题是 Adwaita，还有 HighContrast 和 HighContrastInverse 主题。GTK 2 的默认主题是 Raleigh。",
+          "qas": [
+            {
+              "question": "GTK 3的默认主题是什么？",
+              "id": "5-473-3",
+              "answers": [
+                {
+                  "text": "Adwaita",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "question": "GTK 2的默认主题是什么？",
+              "id": "5-473-4",
+              "answers": [
+                {
+                  "text": "Raleigh",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "question": "GTK 4包含哪些主题？",
+              "id": "5-473-5",
+              "answers": [
+                {
+                  "text": "Adwaita、HighContrast、HighContrastInverse",
+                  "answer_start": 24
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "强制使用特殊主题可设置环境变量：GTK 3 和 4 用 GTK_THEME，如 GTK_THEME=Adwaita:dark gnome-calculator；GTK 2 用 GTK2_RC_FILES，如 GTK2_RC_FILES=/usr/share/themes/Raleigh/gtk-2.0/gtkrc gimp。",
+          "qas": [
+            {
+              "question": "强制GTK 3使用特殊主题需设置哪个环境变量？",
+              "id": "5-473-6",
+              "answers": [
+                {
+                  "text": "GTK_THEME",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "question": "如何用Adwaita的深色版本启动GNOME计算器？",
+              "id": "5-473-7",
+              "answers": [
+                {
+                  "text": "GTK_THEME=Adwaita:dark gnome-calculator",
+                  "answer_start": 66
+                }
+              ]
+            },
+            {
+              "question": "强制GTK 2使用特殊主题的环境变量是什么？",
+              "id": "5-473-8",
+              "answers": [
+                {
+                  "text": "GTK2_RC_FILES",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "question": "使用Raleigh主题启动GIMP的命令是什么？",
+              "id": "5-473-9",
+              "answers": [
+                {
+                  "text": "GTK2_RC_FILES=/usr/share/themes/Raleigh/gtk-2.0/gtkrc gimp",
+                  "answer_start": 128
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "主题文件一般解压在 ~/.themes/ 或 ~/.local/share/themes/ 目录。",
+          "qas": [
+            {
+              "question": "主题文件通常解压在哪些目录？",
+              "id": "5-473-10",
+              "answers": [
+                {
+                  "text": "~/.themes/ 或 ~/.local/share/themes/",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "同时安装GTK和QT程序，外观不协调，可参考Uniform look for Qt and GTK applications。",
+          "qas": [
+            {
+              "question": "同时安装GTK和QT程序外观不协调怎么办？",
+              "id": "5-473-11",
+              "answers": [
+                {
+                  "text": "参考Uniform look for Qt and GTK applications",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

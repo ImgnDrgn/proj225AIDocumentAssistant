@@ -1,0 +1,224 @@
+{
+  "data": [
+    {
+      "title": "硬件信息获取",
+      "paragraphs": [
+        {
+          "context": "内核默认加载的dmi sysfs保存在/sys/class/dmi文件夹中，含bios、board、product等信息。",
+          "qas": [
+            {
+              "question": "内核默认加载的dmi sysfs保存在哪个文件夹？",
+              "id": "5-440-1",
+              "answers": [
+                {
+                  "text": "/sys/class/dmi",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "dmi sysfs包含哪些信息？",
+              "id": "5-440-2",
+              "answers": [
+                {
+                  "text": "bios、board、product等信息",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "执行ls -l /sys/class/dmi/id/bios_*可查看支持的bios字段，包括bios_date,bios_vendor,bios_version，用cat命令查看，部分需root权限。",
+          "qas": [
+            {
+              "question": "如何查看支持的bios字段？",
+              "id": "5-440-3",
+              "answers": [
+                {
+                  "text": "执行ls -l /sys/class/dmi/id/bios_*",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "bios字段包括哪些信息？",
+              "id": "5-440-4",
+              "answers": [
+                {
+                  "text": "bios_date,bios_vendor,bios_version",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "查看bios信息用什么命令？",
+              "id": "5-440-5",
+              "answers": [
+                {
+                  "text": "cat命令",
+                  "answer_start": 89
+                }
+              ]
+            },
+            {
+              "question": "查看某些bios信息需要什么权限？",
+              "id": "5-440-6",
+              "answers": [
+                {
+                  "text": "root权限",
+                  "answer_start": 103
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "执行ls -l /sys/class/dmi/id/board*可查看支持的board字段，包括board_asset_tag,board_serial,board_version,board_name,board_vendor。",
+          "qas": [
+            {
+              "question": "如何查看支持的board字段？",
+              "id": "5-440-7",
+              "answers": [
+                {
+                  "text": "执行ls -l /sys/class/dmi/id/board*",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "board字段包含哪些信息？",
+              "id": "5-440-8",
+              "answers": [
+                {
+                  "text": "board_asset_tag,board_serial,board_version,board_name,board_vendor",
+                  "answer_start": 54
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "执行ls -l /sys/class/dmi/id/product*可查看支持的product字段，包括product_family，product_serial，product_uuid，product_name，product_sku，product_version。",
+          "qas": [
+            {
+              "question": "如何查看支持的product字段？",
+              "id": "5-440-9",
+              "answers": [
+                {
+                  "text": "执行ls -l /sys/class/dmi/id/product*",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "product字段有哪些？",
+              "id": "5-440-10",
+              "answers": [
+                {
+                  "text": "product_family，product_serial，product_uuid，product_name，product_sku，product_version",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "执行cat /proc/cpuinfo可获取cpu信息，model name字段为cpu名称，如cat /proc/cpuinfo | grep 'model name'。",
+          "qas": [
+            {
+              "question": "如何获取cpu信息？",
+              "id": "5-440-11",
+              "answers": [
+                {
+                  "text": "执行cat /proc/cpuinfo",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "cpu名称在哪个字段？",
+              "id": "5-440-12",
+              "answers": [
+                {
+                  "text": "model name",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "如何获取cpu名称？",
+              "id": "5-440-13",
+              "answers": [
+                {
+                  "text": "cat /proc/cpuinfo | grep 'model name'",
+                  "answer_start": 57
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "执行cat /proc/meminfo可获取内存信息，如cat /proc/meminfo | grep MemTotal获取总大小。",
+          "qas": [
+            {
+              "question": "如何获取内存信息？",
+              "id": "5-440-14",
+              "answers": [
+                {
+                  "text": "执行cat /proc/meminfo",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何获取内存总大小？",
+              "id": "5-440-15",
+              "answers": [
+                {
+                  "text": "cat /proc/meminfo | grep MemTotal",
+                  "answer_start": 36
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "硬盘信息用lsblk获取，可指定参数，如lsblk -J -bno NAME,SERIAL,TYPE,SIZE,VENDOR,MODEL,MOUNTPOINT,UUID，参数看lsblk -h。",
+          "qas": [
+            {
+              "question": "用什么命令获取硬盘信息？",
+              "id": "5-440-16",
+              "answers": [
+                {
+                  "text": "lsblk",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "获取硬盘信息时如何指定参数？",
+              "id": "5-440-17",
+              "answers": [
+                {
+                  "text": "通过指定参数，如lsblk -J -bno NAME,SERIAL,TYPE,SIZE,VENDOR,MODEL,MOUNTPOINT,UUID",
+                  "answer_start": 21
+                }
+              ]
+            },
+            {
+              "question": "如何查看lsblk的具体参数？",
+              "id": "5-440-18",
+              "answers": [
+                {
+                  "text": "lsblk -h",
+                  "answer_start": 112
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

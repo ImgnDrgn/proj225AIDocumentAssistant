@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "BricsCAD",
+      "paragraphs": [
+        {
+          "context": "BricsCAD是功能强大的CAD平台，可快速创建技术图纸、平面图等，支持实体建模，保留导入设计意图，能云端查看、修改DWG，供各行业使用或开发第三方应用。",
+          "qas": [
+            {
+              "question": "BricsCAD是什么类型的平台？",
+              "id": "5-251-1",
+              "answers": [
+                {
+                  "text": "功能强大的CAD平台",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "BricsCAD能创建哪些内容？",
+              "id": "5-251-2",
+              "answers": [
+                {
+                  "text": "技术图纸、平面图和布局、标注设计",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "BricsCAD在云端可对DWG做什么操作？",
+              "id": "5-251-3",
+              "answers": [
+                {
+                  "text": "实时查看、标注和修改",
+                  "answer_start": 63
+                }
+              ]
+            },
+            {
+              "question": "BricsCAD适用于哪些行业？",
+              "id": "5-251-4",
+              "answers": [
+                {
+                  "text": "所有不同行业",
+                  "answer_start": 86
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装BricsCAD的命令为：sudo apt-get install bricscadv16",
+          "qas": [
+            {
+              "question": "如何安装BricsCAD？",
+              "id": "5-251-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install bricscadv16",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载BricsCAD的命令是：sudo apt-get remove bricscadv16",
+          "qas": [
+            {
+              "question": "怎样卸载BricsCAD？",
+              "id": "5-251-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove bricscadv16",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "BricsCAD的仓库地址为http://packages.deepin.com/deepin/pool/non-free/b/bricscadv16/",
+          "qas": [
+            {
+              "question": "BricsCAD的仓库地址是什么？",
+              "id": "5-251-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/b/bricscadv16/",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

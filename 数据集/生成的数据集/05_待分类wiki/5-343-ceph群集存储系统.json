@@ -1,0 +1,333 @@
+{
+  "data": [
+    {
+      "title": "ceph群集存储系统",
+      "paragraphs": [
+        {
+          "context": "ceph集群的架构包含以下组件：1. osd ： 存储数据的节点，其中包含pg（归置组），pg包含object（存储单元对象）；2. monitor ： 维护网络；3. mds ： ceph file system的元数据。",
+          "qas": [
+            {
+              "id": "5-343-1",
+              "question": "ceph集群中存储数据的节点是什么？",
+              "answers": [
+                {
+                  "text": "osd",
+                  "answer_start": 19
+                }
+              ]
+            },
+            {
+              "id": "5-343-2",
+              "question": "ceph集群中归置组的英文缩写是什么？",
+              "answers": [
+                {
+                  "text": "pg",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "5-343-3",
+              "question": "负责ceph文件系统元数据的组件是什么？",
+              "answers": [
+                {
+                  "text": "mds",
+                  "answer_start": 96
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建虚拟机节点时，首先创建磁盘：qemu-img create -f qcow2 -o preallocation=full osd.qcow2 10g；然后通过virt-manager图形化配置虚拟机，安装debian testing cd。",
+          "qas": [
+            {
+              "id": "5-343-4",
+              "question": "创建ceph集群节点的虚拟机磁盘时，使用qemu-img命令指定的磁盘大小是多少？",
+              "answers": [
+                {
+                  "text": "10g",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "id": "5-343-5",
+              "question": "创建虚拟机磁盘后，使用什么工具进行图形化配置并安装系统？",
+              "answers": [
+                {
+                  "text": "virt-manager",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建磁盘快照以让虚拟机共享基础映像，命令为：qemu-img create -f qcow2 -o backing_file=osd.qcow2 osd1.qcow2，以此类推创建osd2.qcow2和osd3.qcow2。克隆虚拟机时，需复制UEFI启动资料：sudo cp /var/lib/libvirt/qemu/nvram/osd_VARS.fd /var/lib/libvirt/qemu/nvram/osd1_VARS.fd；再用virt-clone克隆：virt-clone --connect qemu:///system -o osd -n osd1 -f osd1.qcow2 --preserve-data。",
+          "qas": [
+            {
+              "id": "5-343-6",
+              "question": "创建磁盘快照时，qemu-img命令中-o backing_file=osd.qcow2的作用是什么？",
+              "answers": [
+                {
+                  "text": "让虚拟机共享基础映像osd.qcow2",
+                  "answer_start": 38
+                }
+              ]
+            },
+            {
+              "id": "5-343-7",
+              "question": "克隆虚拟机前，复制UEFI启动资料的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo cp /var/lib/libvirt/qemu/nvram/osd_VARS.fd /var/lib/libvirt/qemu/nvram/osd1_VARS.fd",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "设置SSH服务器和帐号时，使用ssh-copy-id -i ~/.ssh/htqxgit_rsa htqx@192.168.122.131将公钥添加到节点的htqx账户；并配置sudo免密码：htqx ALL=(ALL) NOPASSWD:ALL。设置NTP时间同步：登录节点安装ntpdate，编辑/etc/default/ntpdate添加ntp1.aliyun.com，执行sudo ntpdate-debian同步时间。",
+          "qas": [
+            {
+              "id": "5-343-8",
+              "question": "如何配置ceph节点的sudo免密码访问？",
+              "answers": [
+                {
+                  "text": "htqx ALL=(ALL) NOPASSWD:ALL",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "id": "5-343-9",
+              "question": "NTP时间同步时，使用什么命令同步时间？",
+              "answers": [
+                {
+                  "text": "sudo ntpdate-debian",
+                  "answer_start": 208
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加ceph-deploy工具：安装包的key：wget -q -O- 'https://download.ceph.com/keys/release.asc' | sudo apt-key add -；添加apt源：echo deb http://download.ceph.com/debian-luminous/ stretch main | sudo tee /etc/apt/sources.list.d/ceph.list；安装ceph-deploy：sudo apt install ceph-deploy；然后删除源：sudo rm /etc/apt/sources.list.d/ceph.list，避免与debian testing自带源冲突。",
+          "qas": [
+            {
+              "id": "5-343-10",
+              "question": "添加ceph-deploy工具时，安装包的key使用什么命令获取并添加？",
+              "answers": [
+                {
+                  "text": "wget -q -O- 'https://download.ceph.com/keys/release.asc' | sudo apt-key add -",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "id": "5-343-11",
+              "question": "为什么安装ceph-deploy后要删除ceph的apt源？",
+              "answers": [
+                {
+                  "text": "避免与debian testing自带源冲突",
+                  "answer_start": 236
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "块设备RBD使用：ceph osd pool create mypool 8创建存储池；rbd create foo --size 1024 --pool mypool分配1G存储块；rbd info foo -p mypool查看信息；sudo rbd map mypool/foo --name client.admin -k /etc/ceph/ceph.client.admin.keyring -m osd1.ceph绑定设备；mkfs.ext4 -m0 /dev/rbd0格式化；挂载到/mnt/cephbd。",
+          "qas": [
+            {
+              "id": "5-343-12",
+              "question": "创建名为mypool的ceph存储池的命令是什么？",
+              "answers": [
+                {
+                  "text": "ceph osd pool create mypool 8",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-343-13",
+              "question": "如何将mypool中的foo块设备绑定为本地设备？",
+              "answers": [
+                {
+                  "text": "sudo rbd map mypool/foo --name client.admin -k /etc/ceph/ceph.client.admin.keyring -m osd1.ceph",
+                  "answer_start": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文件系统使用：ceph osd pool create cephfs_data 8和ceph osd pool create cephfs_metadata 8创建两个池；ceph fs new cephfs cephfs_metadata cephfs_data创建名为cephfs的文件系统；内核驱动挂载：sudo mount -t ceph osd1.ceph:6789:/ /mnt/ceph；用户空间fuse挂载：sudo ceph-fuse -m osd1.ceph:6789 /mnt/ceph。",
+          "qas": [
+            {
+              "id": "5-343-14",
+              "question": "创建ceph文件系统cephfs需要使用哪两个存储池？",
+              "answers": [
+                {
+                  "text": "cephfs_data和cephfs_metadata",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-343-15",
+              "question": "使用内核驱动挂载ceph文件系统的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo mount -t ceph osd1.ceph:6789:/ /mnt/ceph",
+                  "answer_start": 130
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "对象存储使用：rados put my-obj-1 1.txt --pool mypool添加对象到mypool，命名为my-obj-1，内容为1.txt；rados -p mypool ls列出对象；ceph osd map mypool my-obj-1查看对象在服务器中的位置。",
+          "qas": [
+            {
+              "id": "5-343-16",
+              "question": "向mypool存储池添加内容为1.txt的对象my-obj-1的命令是什么？",
+              "answers": [
+                {
+                  "text": "rados put my-obj-1 1.txt --pool mypool",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "id": "5-343-17",
+              "question": "如何查看mypool存储池中my-obj-1对象在服务器中的位置？",
+              "answers": [
+                {
+                  "text": "ceph osd map mypool my-obj-1",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ceph是一个群集网络存储的系统，听上去很重量级，实际也是重量级，不过这篇文章目的是用它来做共享文件夹。",
+          "qas": [
+            {
+              "id": "5-343-18",
+              "question": "Ceph是什么类型的存储系统？",
+              "answers": [
+                {
+                  "text": "群集网络存储的系统",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-343-19",
+              "question": "本文主要想用Ceph实现什么功能？",
+              "answers": [
+                {
+                  "text": "做共享文件夹",
+                  "answer_start": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "1. osd ： 存储数据的节点\n   1. pg ：归置组\n      1. object : 存储单元对象\n2. monitor ： 维护网络\n3. mds ： ceph file system的元数据",
+          "qas": [
+            {
+              "id": "5-343-20",
+              "question": "OSD的主要功能是什么？",
+              "answers": [
+                {
+                  "text": "存储数据的节点",
+                  "answer_start": 9
+                }
+              ]
+            },
+            {
+              "id": "5-343-21",
+              "question": "PG在Ceph架构中的作用是什么？",
+              "answers": [
+                {
+                  "text": "归置组",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "id": "5-343-22",
+              "question": "Ceph中最基础的存储单元是什么？",
+              "answers": [
+                {
+                  "text": "存储单元对象",
+                  "answer_start": 50
+                }
+              ]
+            },
+            {
+              "id": "5-343-23",
+              "question": "Monitor在Ceph群集中负责什么？",
+              "answers": [
+                {
+                  "text": "维护网络",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "id": "5-343-24",
+              "question": "MDS在Ceph文件系统中处理什么数据？",
+              "answers": [
+                {
+                  "text": "元数据",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ceph osd pool create mypool 8 #创建一个存储池叫mypool",
+          "qas": []  // 此段落的问答对意思与第一个数据集第5段落的第一个问答对相同，已去重，因此qas为空
+        },
+        {
+          "context": "存储方式：1. 文件系统cephfs 2. 块设备 rbd 3. 对象网关 rgw",
+          "qas": [
+            {
+              "id": "5-343-25",
+              "question": "Ceph支持的三种存储方式是什么？",
+              "answers": [
+                {
+                  "text": "文件系统cephfs, 块设备 rbd, 对象网关 rgw",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "群集：1. 监视器mon：维护fsid标识、群集名称、监视器名字和地图 2. 全局配置：包括网络设置、认证要求和OSD参数",
+          "qas": [
+            {
+              "id": "5-343-26",
+              "question": "监视器(mon)主要负责维护哪些群集信息？",
+              "answers": [
+                {
+                  "text": "维护fsid标识、群集名称、监视器名字和地图",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

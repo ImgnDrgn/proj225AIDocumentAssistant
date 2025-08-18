@@ -1,0 +1,270 @@
+{
+  "version": "v1.1",
+  "data": [
+    {
+      "title": "深度云打印",
+      "paragraphs": [
+        {
+          "context": "深度云打印是由武汉深之度科技有限公司开发的一种新型打印解决方案，它可以将您的打印机连接到网络，借助深度云打印，您可以通过日常使用的应用程序进行网络打印。同时深度云打印适用于台式机、笔记本电脑、部分平板电脑以及其他所有您已授权打印的联网设备。深度云打印由服务器端（Windows操作系统）和客户端（深度操作系统）组成，服务器端和客户端需要分别进行配置。",
+          "qas": [
+            {
+              "id": "context1_q1",
+              "question": "什么是深度云打印？",
+              "answers": [
+                {
+                  "text": "一种新型打印解决方案",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "id": "context1_q2",
+              "question": "谁开发了深度云打印？",
+              "answers": [
+                {
+                  "text": "武汉深之度科技有限公司",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "id": "context1_q3",
+              "question": "深度云打印支持哪些设备？",
+              "answers": [
+                {
+                  "text": "台式机、笔记本电脑、部分平板电脑以及其他所有您已授权打印的联网设备",
+                  "answer_start": 88
+                }
+              ]
+            },
+            {
+              "id": "context1_q4",
+              "question": "深度云打印由哪两部分组成？",
+              "answers": [
+                {
+                  "text": "服务器端（Windows操作系统）和客户端（深度操作系统）",
+                  "answer_start": 144
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "获取服务器安装程序：深度云打印的服务器安装程序集成在深度操作系统的镜像文件中，您只需要使用压缩软件解压即可进行安装。notes: 在深度操作系统的镜像文件中，深度云打印的服务器安装程序命名格式为DeepinCloudPrintServerInstaller_*.exe。您也可以从百度网盘直接下载。在Windows操作系统中进行安装。根据安装向导的提示，完成程序安装。",
+          "qas": [
+            {
+              "id": "context2_q1",
+              "question": "如何获取深度云打印的服务器安装程序？",
+              "answers": [
+                {
+                  "text": "深度云打印的服务器安装程序集成在深度操作系统的镜像文件中，您只需要使用压缩软件解压即可进行安装",
+                  "answer_start": 10
+                }
+              ]
+            },
+            {
+              "id": "context2_q2",
+              "question": "服务器安装程序的命名格式是什么？",
+              "answers": [
+                {
+                  "text": "DeepinCloudPrintServerInstaller_*.exe",
+                  "answer_start": 112
+                }
+              ]
+            },
+            {
+              "id": "context2_q3",
+              "question": "除了镜像文件，还能从哪里下载服务器安装程序？",
+              "answers": [
+                {
+                  "text": "从百度网盘直接下载",
+                  "answer_start": 173
+                }
+              ]
+            },
+            {
+              "id": "context2_q4",
+              "question": "安装服务器程序需要什么操作系统？",
+              "answers": [
+                {
+                  "text": "Windows操作系统",
+                  "answer_start": 193
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "当您安装完成后，系统默认获取Windows操作系统中的IP地址，您只需要设置授权码即可。notes: 如果您需要更改授权码，直接在授权码文本框中输入新的授权码，点击更新后即可生效。在Windows操作系统中，点击开始菜单，打开云打印机程序。自动获取系统中IP地址。在云打印机设置界面，输入授权码。点击更新，在界面上显示spinner状态。当授权码更新成功后，在界面上显示 √ 状态。",
+          "qas": [
+            {
+              "id": "context3_q1",
+              "question": "设置授权码前需要什么系统操作？",
+              "answers": [
+                {
+                  "text": "系统默认获取Windows操作系统中的IP地址",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "context3_q2",
+              "question": "如何更改深度云打印的授权码？",
+              "answers": [
+                {
+                  "text": "直接在授权码文本框中输入新的授权码，点击更新后即可生效",
+                  "answer_start": 78
+                }
+              ]
+            },
+            {
+              "id": "context3_q3",
+              "question": "从哪里打开云打印机程序？",
+              "answers": [
+                {
+                  "text": "点击开始菜单",
+                  "answer_start": 168
+                }
+              ]
+            },
+            {
+              "id": "context3_q4",
+              "question": "授权码更新成功的标志是什么？",
+              "answers": [
+                {
+                  "text": "在界面上显示 √ 状态",
+                  "answer_start": 270
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "点击任务栏上的launcher进入启动器界面。通过浏览找到printer进行点击，进入深度云打印界面。",
+          "qas": [
+            {
+              "id": "context4_q1",
+              "question": "如何在深度操作系统中打开深度云打印？",
+              "answers": [
+                {
+                  "text": "点击任务栏上的launcher进入启动器界面。通过浏览找到printer进行点击",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "context4_q2",
+              "question": "深度云打印的入口图标是什么？",
+              "answers": [
+                {
+                  "text": "printer",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在深度云打印界面，输入打印机在Windows操作系统中的IP地址和授权码。点击下一步，显示所有Windows操作系统中的打印机列表。在对应的打印机列表后点击 ＋，该打印机名称后显示为“已添加”状态。点击setting，进入打印设置界面。查看已添加的打印机是否添加成功。notes: 如果您需要删除打印机，进入打印设置界面中选择打印机，点击鼠标右键 > 删除。",
+          "qas": [
+            {
+              "id": "context5_q1",
+              "question": "客户端设置深度云打印需要输入什么信息？",
+              "answers": [
+                {
+                  "text": "打印机在Windows操作系统中的IP地址和授权码",
+                  "answer_start": 14
+                }
+              ]
+            },
+            {
+              "id": "context5_q2",
+              "question": "如何添加云打印机？",
+              "answers": [
+                {
+                  "text": "在对应的打印机列表后点击 ＋",
+                  "answer_start": 101
+                }
+              ]
+            },
+            {
+              "id": "context5_q3",
+              "question": "添加成功后打印机状态显示什么？",
+              "answers": [
+                {
+                  "text": "已添加",
+                  "answer_start": 132
+                }
+              ]
+            },
+            {
+              "id": "context5_q4",
+              "question": "如何删除已添加的打印机？",
+              "answers": [
+                {
+                  "text": "进入打印设置界面中选择打印机，点击鼠标右键 > 删除",
+                  "answer_start": 191
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "您可以在客户端（深度操作系统）打开文件，选择云打印机进行打印，以下测试以.doc文件为例。attention: 如果Windows操作系统更新了深度云打印的授权码，当您在打印文件时，系统自动弹出“云打印服务器授权码已被更新，请输入新的授权码”对话框，请联系管理员获取新的授权码后输入继续打印。打印过程中如果出现错误，请根据错误提示，重新进行设置。使用WPS文字打开.doc文件。点击左上角的WPS文字。选择打印，进入打印设置界面。在名称下拉选项中，选择打印机并设置其他打印参数。点击确定。",
+          "qas": [
+            {
+              "id": "context6_q1",
+              "question": "云打印测试以什么文件类型为例？",
+              "answers": [
+                {
+                  "text": ".doc文件",
+                  "answer_start": 65
+                }
+              ]
+            },
+            {
+              "id": "context6_q2",
+              "question": "授权码更新后打印时会遇到什么情况？",
+              "answers": [
+                {
+                  "text": "系统自动弹出“云打印服务器授权码已被更新，请输入新的授权码”对话框",
+                  "answer_start": 121
+                }
+              ]
+            },
+            {
+              "id": "context6_q3",
+              "question": "如何解决授权码更新导致的打印问题？",
+              "answers": [
+                {
+                  "text": "请联系管理员获取新的授权码后输入继续打印",
+                  "answer_start": 195
+                }
+              ]
+            },
+            {
+              "id": "context6_q4",
+              "question": "测试打印.doc文件时使用什么软件？",
+              "answers": [
+                {
+                  "text": "WPS文字",
+                  "answer_start": 264
+                }
+              ]
+            },
+            {
+              "id": "context6_q5",
+              "question": "如何进入打印设置界面？",
+              "answers": [
+                {
+                  "text": "点击左上角的WPS文字。选择打印",
+                  "answer_start": 282
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

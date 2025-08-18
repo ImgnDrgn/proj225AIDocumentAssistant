@@ -1,0 +1,169 @@
+{
+  "data": [
+    {
+      "title": "键盘",
+      "paragraphs": [
+        {
+          "context": "键盘是经过系统安排操作机器或设备的一组键，主要功能是输入资料，由打字机键盘发展而来，可输入字符和控制电脑运行。",
+          "qas": [
+            {
+              "question": "键盘的主要功能是什么？",
+              "id": "5-554-1",
+              "answers": [
+                {
+                  "text": "输入资料",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "键盘由什么发展而来？",
+              "id": "5-554-2",
+              "answers": [
+                {
+                  "text": "打字机键盘",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "快捷键又名热键，是通过特定按键、顺序或组合完成操作的全局按键；加速键是鼠标+键盘实现操作的按键，快捷键可自定义，加速键一般不可修改。",
+          "qas": [
+            {
+              "question": "什么是快捷键？",
+              "id": "5-554-3",
+              "answers": [
+                {
+                  "text": "又名热键，指通过某些特定的按键、按键顺序或按键组合来完成一个操作，一般为全局按键。",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "快捷键和加速键的区别是什么？",
+              "id": "5-554-4",
+              "answers": [
+                {
+                  "text": "快捷键可以由用户自定义，而加速键一般不能修改。",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统级快捷键可全局响应，无论焦点和程序运行情况；应用程序级快捷键仅在当前活动程序中起作用，程序不活动时失效；快捷键冲突指同一快捷键对应两个功能且都启用，导致失效。",
+          "qas": [
+            {
+              "question": "系统级快捷键有什么特点？",
+              "id": "5-554-5",
+              "answers": [
+                {
+                  "text": "可以全局响应，不论当前焦点在哪里、运行什么程序，按下时都能起作用。",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "什么是快捷键冲突？",
+              "id": "5-554-6",
+              "answers": [
+                {
+                  "text": "一个快捷键一般只能对应一个功能，如果两个不同的功能定义了同一个快捷键，并且快捷键都启用了，则会发生快捷键冲突，导致快捷键失效。",
+                  "answer_start": 130
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "终端执行cat /proc/bus/input/devices可查看当前USB设备信息。",
+          "qas": [
+            {
+              "question": "如何通过终端查看当前USB设备信息？",
+              "id": "5-554-7",
+              "answers": [
+                {
+                  "text": "执行cat /proc/bus/input/devices",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "键盘调整可使用深度系统设置修改，也可终端执行sudo dpkg-reconfigure keyboard-configuration命令修改。",
+          "qas": [
+            {
+              "question": "如何调整键盘设置？",
+              "id": "5-554-8",
+              "answers": [
+                {
+                  "text": "使用深度系统设置修改，或终端执行sudo dpkg-reconfigure keyboard-configuration命令修改。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "USB键盘无法使用时，可插入usb2.0接口，若不行尝试使用PS/2键盘。",
+          "qas": [
+            {
+              "question": "USB键盘无法使用怎么办？",
+              "id": "5-554-9",
+              "answers": [
+                {
+                  "text": "插入usb2.0接口，若依然不行，尝试使用PS/2键盘。",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开启键盘背光需新建含特定内容的beiguang.sh文件，加可执行属性，终端运行sudo sh beiguang.sh后重新登录。",
+          "qas": [
+            {
+              "question": "如何开启键盘背光？",
+              "id": "5-554-10",
+              "answers": [
+                {
+                  "text": "新建一个文件，内容包含特定LED mask及脚本，命名为beiguang.sh，加上可执行属性，终端运行sudo sh beiguang.sh，最后退出重新登录。",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "开启键盘背光的文件需要命名为什么？",
+              "id": "5-554-11",
+              "answers": [
+                {
+                  "text": "beiguang.sh",
+                  "answer_start": 38
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "super键就是徽标键，一般在Ctrl和Alt之间。",
+          "qas": [
+            {
+              "question": "什么是super键？",
+              "id": "5-554-12",
+              "answers": [
+                {
+                  "text": "就是徽标键，一般在Ctrl和Alt之间。",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "窗口显示常见问题",
+      "paragraphs": [
+        {
+          "context": "应用图标异常可能是系统主题图标缺失或qt5ct包导致，可安装qtxdg-dev-tools-tools，用qtxdg-iconfinder\"computer\"排查，dde-qt5integration、dde-qt5xcb-plugin也可能影响。",
+          "qas": [
+            {
+              "question": "应用图标异常可能的原因有哪些？",
+              "id": "3-164-1",
+              "answers": [
+                {
+                  "text": "系统主题图标缺失；qt5ct这个包会导致无法找到图标。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何排查应用图标异常问题？",
+              "id": "3-164-2",
+              "answers": [
+                {
+                  "text": "安装qtxdg-dev-tools，使用qtxdg-iconfinder\"computer\"（查找名称为computer）。",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "哪些包会影响图标查找失败？",
+              "id": "3-164-3",
+              "answers": [
+                {
+                  "text": "dde-qt5integration，dde-qt5xcb-plugin",
+                  "answer_start": 85
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "标题栏右键菜单背景色与应用窗口颜色不一致，因菜单颜色跟随系统，应用主题未设置跟随系统或不一致导致，可设置应用主题跟随系统或与系统主题颜色一致。",
+          "qas": [
+            {
+              "question": "标题栏右键菜单的背景色与应用窗口颜色不一致的原因是什么？",
+              "id": "3-164-4",
+              "answers": [
+                {
+                  "text": "右键应用窗口标题栏显示的菜单颜色是跟随系统的，如果应用主题没有设置跟随系统就可能会存在这种情况。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何解决标题栏右键菜单背景色与应用窗口颜色不一致的问题？",
+              "id": "3-164-5",
+              "answers": [
+                {
+                  "text": "1、设置应用主题颜色跟随系统。2、设置应用主题与系统主题颜色一致。",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "标题栏拖动鼠标无法拖动窗口，因DTitlebar修改了mousePressEvent等三个函数，拖动依赖其处理，解决方法是DTitlebar内控件重写这三个函数时需调用父类对应函数。",
+          "qas": [
+            {
+              "question": "在标题栏拖动鼠标出现无法拖动窗口的问题与哪些函数有关？",
+              "id": "3-164-6",
+              "answers": [
+                {
+                  "text": "mousePressEvent、mouseReleaseEvent、mouseMoveEvent",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "如何解决标题栏拖动鼠标无法拖动窗口的问题？",
+              "id": "3-164-7",
+              "answers": [
+                {
+                  "text": "在使用DTitlebar时，如果放在DTitlebar里边的控件重写了mousePressEvent、mouseReleaseEvent以及mouseMoveEvent三个函数，该控件需要调用父类（即DTitlebar）类对应的函数，保证相应的事件可以传递到DTitlebar，窗口可以正常拖动。",
+                  "answer_start": 88
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

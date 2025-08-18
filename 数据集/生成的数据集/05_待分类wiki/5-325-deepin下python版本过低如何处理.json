@@ -1,0 +1,164 @@
+{
+  "data": [
+    {
+      "title": "deepin下python版本过低如何处理",
+      "paragraphs": [
+        {
+          "context": "安装Python 3.9.0需先安装相关组件，执行命令：sudo apt update，sudo apt install make build-essential libssl-dev zlib1g-dev liblzma-dev，sudo apt install libbz2-dev libreadline-dev libsqlite3-dev llvm，sudo apt install libncurses5-dev libncursesw5-dev xz-utils tk-dev。",
+          "qas": [
+            {
+              "question": "在deepin下安装Python 3.9.0前，需要安装哪些组件？",
+              "id": "5-325-1",
+              "answers": [
+                {
+                  "text": "make build-essential libssl-dev zlib1g-dev liblzma-dev，libbz2-dev libreadline-dev libsqlite3-dev llvm，libncurses5-dev libncursesw5-dev xz-utils tk-dev",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "安装相关组件前需要执行什么命令？",
+              "id": "5-325-2",
+              "answers": [
+                {
+                  "text": "sudo apt update",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Python安装包需从官网https://www.python.org/downloads/下载。",
+          "qas": [
+            {
+              "question": "在哪里可以下载Python安装包？",
+              "id": "5-325-3",
+              "answers": [
+                {
+                  "text": "Python官网https://www.python.org/downloads/",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "下载后解压缩安装包，命令为tar -xvf Python-3.9.0.tar.xz。",
+          "qas": [
+            {
+              "question": "如何解压缩Python-3.9.0安装包？",
+              "id": "5-325-4",
+              "answers": [
+                {
+                  "text": "执行命令tar -xvf Python-3.9.0.tar.xz",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解压缩后进入安装目录，命令为cd Python-3.9.0。",
+          "qas": [
+            {
+              "question": "解压缩Python-3.9.0安装包后，如何进入安装目录？",
+              "id": "5-325-5",
+              "answers": [
+                {
+                  "text": "执行命令cd Python-3.9.0",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "进入安装目录后，执行configure配置构件文件，命令为./configure --enable-optimizations --with-ssl。",
+          "qas": [
+            {
+              "question": "进入Python-3.9.0安装目录后，如何配置构件文件？",
+              "id": "5-325-6",
+              "answers": [
+                {
+                  "text": "执行命令./configure --enable-optimizations --with-ssl",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "配置完成后进行编译，命令为make -j8。",
+          "qas": [
+            {
+              "question": "Python-3.9.0配置完成后，如何进行编译？",
+              "id": "5-325-7",
+              "answers": [
+                {
+                  "text": "执行命令make -j8",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编译后进行安装，命令为sudo make altinstall。",
+          "qas": [
+            {
+              "question": "Python-3.9.0编译完成后，如何安装？",
+              "id": "5-325-8",
+              "answers": [
+                {
+                  "text": "执行命令sudo make altinstall",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装后需要清理，命令为sudo make clean和sudo apt autoremove。",
+          "qas": [
+            {
+              "question": "Python-3.9.0安装后如何清理？",
+              "id": "5-325-9",
+              "answers": [
+                {
+                  "text": "执行命令sudo make clean和sudo apt autoremove",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装完成后，用python3.9 -V命令检查版本是否正确。",
+          "qas": [
+            {
+              "question": "如何检查Python 3.9.0是否安装正确？",
+              "id": "5-325-10",
+              "answers": [
+                {
+                  "text": "执行命令python3.9 -V",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "Python 3.9.0安装正确时，执行检查命令会显示什么？",
+              "id": "5-325-11",
+              "answers": [
+                {
+                  "text": "Python 3.9.0",
+                  "answer_start": 40
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

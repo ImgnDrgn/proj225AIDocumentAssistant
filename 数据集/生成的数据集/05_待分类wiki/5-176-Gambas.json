@@ -1,0 +1,74 @@
+{
+  "data": [
+    {
+      "title": "Gambas",
+      "paragraphs": [
+        {
+          "context": "Gambas是一个开发Visual Basic的集成开发环境，其操作和语法几乎与Windows平台下的Visual Basic一致，它具有代码自动提示、语法高亮、组件扩展等功能，同时支持常见的MySQL、PostgreSQL数据库连接，并带有一个专门的数据库管理工具。安装命令为sudo apt-get install gambas3，卸载命令为sudo apt-get remove gambas3，其仓库地址为http://packages.deepin.com/deepin/pool/main/g/gambas3/",
+          "qas": [
+            {
+              "id": "5-176-1",
+              "question": "Gambas是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "开发Visual Basic的集成开发环境",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "id": "5-176-2",
+              "question": "Gambas的操作和语法与什么几乎一致？",
+              "answers": [
+                {
+                  "text": "Windows平台下的Visual Basic",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "id": "5-176-3",
+              "question": "Gambas具有哪些功能？",
+              "answers": [
+                {
+                  "text": "代码自动提示、语法高亮、组件扩展等功能，同时支持常见的MySQL、PostgreSQL数据库连接，并带有一个专门的数据库管理工具",
+                  "answer_start": 67
+                }
+              ]
+            },
+            {
+              "id": "5-176-4",
+              "question": "安装Gambas的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install gambas3",
+                  "answer_start": 176
+                }
+              ]
+            },
+            {
+              "id": "5-176-5",
+              "question": "卸载Gambas的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove gambas3",
+                  "answer_start": 205
+                }
+              ]
+            },
+            {
+              "id": "5-176-6",
+              "question": "Gambas的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/g/gambas3/",
+                  "answer_start": 234
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "BearyChat-已合并",
+      "paragraphs": [
+        {
+          "context": "BearyChat是一款为工作场景设计的团队沟通工具，它支持自主创建公开或私密讨论组、历史消息全局搜索、文件存储管理、重要信息收藏、第三方服务集成等功能。",
+          "qas": [
+            {
+              "question": "BearyChat是为哪种场景设计的团队沟通工具？",
+              "id": "5-111-1",
+              "answers": [
+                {
+                  "text": "工作场景",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "BearyChat支持哪些功能？",
+              "id": "5-111-2",
+              "answers": [
+                {
+                  "text": "自主创建公开或私密讨论组、历史消息全局搜索、文件存储管理、重要信息收藏、第三方服务集成等功能",
+                  "answer_start": 25
+                }
+              ]
+            },
+            {
+              "question": "BearyChat是什么？",
+              "id": "5-111-3",
+              "answers": [
+                {
+                  "text": "一款为工作场景设计的团队沟通工具",
+                  "answer_start": 9
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install bearychat",
+          "qas": [
+            {
+              "question": "如何安装BearyChat？",
+              "id": "5-111-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get install bearychat",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove bearychat",
+          "qas": [
+            {
+              "question": "如何卸载BearyChat？",
+              "id": "5-111-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove bearychat",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/main/b/bearychat/",
+          "qas": [
+            {
+              "question": "BearyChat的仓库地址是什么？",
+              "id": "5-111-6",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/b/bearychat/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

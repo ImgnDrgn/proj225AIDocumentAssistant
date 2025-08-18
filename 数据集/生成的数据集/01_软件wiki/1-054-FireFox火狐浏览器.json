@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "title": "FireFox火狐浏览器",
+      "paragraphs": [
+        {
+          "context": "FireFox是一个兼容Linux，Windows,Mac,Android以及iOS的浏览器",
+          "qas": [
+            {
+              "question": "FireFox浏览器浏览器兼容哪些操作系统？",
+              "id": "1-54-1",
+              "answers": [
+                {
+                  "text": "Linux，Windows,Mac,Android以及iOS",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "FireFox是什么类型的软件？",
+              "id": "1-54-2",
+              "answers": [
+                {
+                  "text": "浏览器",
+                  "answer_start": 29
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "[进入下载页面](https://www.firefox.com.cn/download/#product-desktop-release)",
+          "qas": [
+            {
+              "question": "在哪里可以下载FireFox浏览器？",
+              "id": "1-54-3",
+              "answers": [
+                {
+                  "text": "https://www.firefox.com.cn/download/#product-desktop-release",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

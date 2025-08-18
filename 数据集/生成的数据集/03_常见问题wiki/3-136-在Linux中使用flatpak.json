@@ -1,0 +1,294 @@
+{
+  "data": [
+    {
+      "title": "在Linux中使用flatpak",
+      "paragraphs": [
+        {
+          "context": "Flatpak是一种构建、发布、安装和运行应用程序的工具。",
+          "qas": [
+            {
+              "question": "Flatpak是什么？",
+              "id": "3-136-1",
+              "answers": [
+                {
+                  "text": "一种构建、发布、安装和运行应用程序的工具。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Flatpak的设计目标包括使应用程序可安装在任何发行版上。",
+          "qas": [
+            {
+              "question": "Flatpak的设计目标之一是什么？",
+              "id": "3-136-2",
+              "answers": [
+                {
+                  "text": "使应用程序可安装在任何发行版上。",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Flatpak能为应用程序提供固定环境，实施测试和减少缺陷。",
+          "qas": [
+            {
+              "question": "Flatpak如何帮助应用程序减少缺陷？",
+              "id": "3-136-3",
+              "answers": [
+                {
+                  "text": "为应用程序提供固定的环境，实施测试。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Flatpak可实现应用程序和操作系统的解耦，不依赖特定发行版本。",
+          "qas": [
+            {
+              "question": "Flatpak如何使应用程序不依赖特定发行版本？",
+              "id": "3-136-4",
+              "answers": [
+                {
+                  "text": "实现应用程序和操作系统的解耦。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Flatpak让应用程序可自带依赖，避免对特定发行版或库的依赖。",
+          "qas": [
+            {
+              "question": "Flatpak如何解决应用程序对特定库的依赖问题？",
+              "id": "3-136-5",
+              "answers": [
+                {
+                  "text": "让应用程序可自带依赖。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Flatpak使应用程序在沙箱中独立运行，提升安全性。",
+          "qas": [
+            {
+              "question": "Flatpak如何提升应用程序的安全性？",
+              "id": "3-136-6",
+              "answers": [
+                {
+                  "text": "使应用程序在沙箱中独立运行。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Flatpak的命令是sudo apt install flatpak。",
+          "qas": [
+            {
+              "question": "如何安装Flatpak？",
+              "id": "3-136-7",
+              "answers": [
+                {
+                  "text": "sudo apt install flatpak",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加Flathub仓库的命令是flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo。",
+          "qas": [
+            {
+              "question": "怎样添加Flathub仓库？",
+              "id": "3-136-8",
+              "answers": [
+                {
+                  "text": "flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "移除Flathub仓库使用flatpak remote-delete flathub命令。",
+          "qas": [
+            {
+              "question": "如何移除Flathub仓库？",
+              "id": "3-136-9",
+              "answers": [
+                {
+                  "text": "flatpak remote-delete flathub",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "镜像Flathub仓库的命令是sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub。",
+          "qas": [
+            {
+              "question": "如何镜像Flathub仓库？",
+              "id": "3-136-10",
+              "answers": [
+                {
+                  "text": "sudo flatpak remote-modify flathub --url=https://mirror.sjtu.edu.cn/flathub",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "查找应用使用flatpak search xxx命令。",
+          "qas": [
+            {
+              "question": "Flatpak中如何查找应用？",
+              "id": "3-136-11",
+              "answers": [
+                {
+                  "text": "flatpak search xxx",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装应用的Flatpak命令是flatpak install xxx。",
+          "qas": [
+            {
+              "question": "用Flatpak安装应用的命令是什么？",
+              "id": "3-136-12",
+              "answers": [
+                {
+                  "text": "flatpak install xxx",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除应用使用flatpak uninstall xxx命令。",
+          "qas": [
+            {
+              "question": "如何用Flatpak删除应用？",
+              "id": "3-136-13",
+              "answers": [
+                {
+                  "text": "flatpak uninstall xxx",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "更新应用的Flatpak命令是flatpak update xxx。",
+          "qas": [
+            {
+              "question": "Flatpak中更新应用的命令是什么？",
+              "id": "3-136-14",
+              "answers": [
+                {
+                  "text": "flatpak update xxx",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行应用使用flatpak run xxx命令。",
+          "qas": [
+            {
+              "question": "如何用Flatpak运行应用？",
+              "id": "3-136-15",
+              "answers": [
+                {
+                  "text": "flatpak run xxx",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Flatpak安装包可从https://flatpak.org/setup/下载。",
+          "qas": [
+            {
+              "question": "哪里可以下载Flatpak安装包？",
+              "id": "3-136-16",
+              "answers": [
+                {
+                  "text": "https://flatpak.org/setup/",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Flathub仓库的网址是https://www.flathub.org/apps。",
+          "qas": [
+            {
+              "question": "Flathub仓库的网址是什么？",
+              "id": "3-136-17",
+              "answers": [
+                {
+                  "text": "https://www.flathub.org/apps",
+                  "answer_start": 18
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "上海交大镜像的地址是https://mirrors.sjtug.sjtu.edu.cn/docs/flathub。",
+          "qas": [
+            {
+              "question": "上海交大镜像的地址是什么？",
+              "id": "3-136-18",
+              "answers": [
+                {
+                  "text": "https://mirrors.sjtug.sjtu.edu.cn/docs/flathub",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Flatpak文档的网址是https://docs.flatpak.org/zh_CN/latest/。",
+          "qas": [
+            {
+              "question": "Flatpak文档的网址是什么？",
+              "id": "3-136-19",
+              "answers": [
+                {
+                  "text": "https://docs.flatpak.org/zh_CN/latest/",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

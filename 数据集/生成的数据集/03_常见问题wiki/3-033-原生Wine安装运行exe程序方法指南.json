@@ -1,0 +1,369 @@
+{
+  "data": [
+    {
+      "title": "原生Wine安装/运行exe程序方法指南",
+      "paragraphs": [
+        {
+          "context": "以下教学以32位7-Zip的安装程序7z2107.exe（版本21.7.0.0）为案例软件，该exe程序放在系统下载（Downloads）文件夹，即/home/$USER/Downloads/7z2107.exe，或者写作~/Downloads/7z2107.exe。多数情况下，/home/$USER与~可以相互替代。Wine对32位的exe程序支持较好，所以尽量选择32位的软件。查看系统上原生Wine的版本，终端输入：\n```bash\nwine --version\n```原生Wine的默认容器路径：/home/$USER/.wine 或~/.wine。",
+          "qas": [
+            {
+              "id": "3-33-1",
+              "question": "案例软件7z2107.exe在Linux系统中的存放路径是什么？",
+              "answers": [
+                {
+                  "text": "~/Downloads/7z2107.exe（或写作/home/$USER/Downloads/7z2107.exe）",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "3-33-2",
+              "question": "为什么建议优先选择32位Windows软件来使用原生Wine安装？",
+              "answers": [
+                {
+                  "text": "Wine对32位的exe程序支持更好",
+                  "answer_start": 147
+                }
+              ]
+            },
+            {
+              "id": "3-33-3",
+              "question": "如何查看当前系统中原生Wine的版本信息？",
+              "answers": [
+                {
+                  "text": "在终端输入wine --version命令查看",
+                  "answer_start": 235
+                }
+              ]
+            },
+            {
+              "id": "3-33-4",
+              "question": "原生Wine的默认容器存储路径是什么？",
+              "answers": [
+                {
+                  "text": "/home/$USER/.wine 或~/.wine",
+                  "answer_start": 330
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "用原生Wine安装/运行Windows软件的方法：\n### 方法1：安装程序到默认容器（方法1不推荐，推荐方法2）\n终端输入：\n```bash\nwine /exe文件路径\n```案例：\n```bash\nwine ~/Downloads/7z2107.exe\n```安装好后，就可以在/home/$USER/.wine/drive_c/Program Files里看到7-Zip的程序文件了。\n### 方法2：安装程序到一个新建的容器\n终端命令：\n```bash\nWINEARCH=win32或者wine64 WINEPREFIX=容器路径 wine 需安装/运行的exe软件的路径\n```案例：\n```bash\nWINEARCH=win32 WINEPREFIX=~/.deepinwine/Wine-7zip wine ~/Downloads/7z2107.exe\n```（注：如果提示安装mono，可点取消。mono模拟的.NET Framework，不是所有exe软件都需要这个。需要的时候你再手动安装即可）\n上述命令结构解析：\n1. `WINEARCH=`后面写win32，表示新建32位容器；写win64则为64位容器。\n2. `WINEPREFIX=`指定容器路径（不存在时自动新建）。\n3. wine即原生Wine执行程序。（若用Deepin-Wine可替换执行程序名）",
+          "qas": [
+            {
+              "id": "3-33-5",
+              "question": "用原生Wine安装Windows软件到默认容器的命令格式是什么？",
+              "answers": [
+                {
+                  "text": "wine /exe文件路径",
+                  "answer_start": 245
+                }
+              ]
+            },
+            {
+              "id": "3-33-6",
+              "question": "为什么不推荐使用方法1（默认容器安装）？",
+              "answers": [
+                {
+                  "text": "因为推荐方法2新建专用容器进行安装管理",
+                  "answer_start": 167
+                }
+              ]
+            },
+            {
+              "id": "3-33-7",
+              "question": "用原生Wine安装Windows软件到新建容器的命令结构如何构成？",
+              "answers": [
+                {
+                  "text": "由WINEARCH指定容器位数（win32/64）、WINEPREFIX指定容器路径、wine及exe路径构成完整命令",
+                  "answer_start": 370
+                }
+              ]
+            },
+            {
+              "id": "3-33-8",
+              "question": "案例安装7z2107.exe时WINEARCH参数为什么设为win32？",
+              "answers": [
+                {
+                  "text": "因为新建32位容器适配Wine对32位程序更好的支持特性",
+                  "answer_start": 507
+                }
+              ]
+            },
+            {
+              "id": "3-33-9",
+              "question": "安装程序时提示安装mono该如何处理？",
+              "answers": [
+                {
+                  "text": "点取消跳过安装，后续需要时再手动安装",
+                  "answer_start": 740
+                }
+              ]
+            },
+            {
+              "id": "3-33-10",
+              "question": "以7z2107.exe为例，安装到默认容器的具体命令是什么？",
+              "answers": [
+                {
+                  "text": "wine ~/Downloads/7z2107.exe",
+                  "answer_start": 77
+                }
+              ]
+            },
+            {
+              "id": "3-33-11",
+              "question": "如何新建32位容器并安装7z2107.exe？",
+              "answers": [
+                {
+                  "text": "WINEARCH=win32 WINEPREFIX=~/.deepinwine/Wine-7zip wine ~/Downloads/7z2107.exe",
+                  "answer_start": 74
+                }
+              ]
+            },
+            {
+              "id": "3-33-12",
+              "question": "WINEPREFIX参数的作用是什么？",
+              "answers": [
+                {
+                  "text": "WINEPREFIX=容器路径",
+                  "answer_start": 37
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "运行已安装到容器内的exe主程序：终端命令：\n```bash\nWINEPREFIX=容器路径 wine “c:/exe主程序虚拟C盘（即drive_c）里的路径”\n```案例：\n```bash\nWINEPREFIX=~/.deepinwine/Wine-7zip wine \"c:/Program Files/7-Zip/7zFM.exe\"\n```",
+          "qas": [
+            {
+              "id": "3-33-13",
+              "question": "如何运行已安装到指定容器中的exe主程序？",
+              "answers": [
+                {
+                  "text": "使用WINEPREFIX指定容器路径后执行wine及虚拟C盘中主程序路径命令",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "id": "3-33-14",
+              "question": "案例中7zFM.exe在虚拟C盘的完整路径是什么？",
+              "answers": [
+                {
+                  "text": "c:/Program Files/7-Zip/7zFM.exe",
+                  "answer_start": 284
+                }
+              ]
+            },
+            {
+              "id": "3-33-15",
+              "question": "如何运行已安装的7zFM.exe程序？",
+              "answers": [
+                {
+                  "text": "WINEPREFIX=~/.deepinwine/Wine-7zip wine \"c:/Program Files/7-Zip/7zFM.exe\"",
+                  "answer_start": 81
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "可设置虚拟Windows版本、替换dll函数、窗口修饰、显示分辨率等。\n1. 修改Windows版本\n默认Windows版本是Windows 7，若exe安装提示系统版本太低，需利用winecfg修改为Windows 10；若软件在XP表现更好则改XP。打开winecfg的终端命令：\n```bash\nWINEPREFIX=容器路径 winecfg\n```案例：\n```bash\nWINEPREFIX=~/.deepinwine/Wine-7zip winecfg\n```\n上述命令结构解析：`WINEPREFIX=`指定容器路径后空格输入winecfg\n案例软件7-Zip无需修改版本即可运行。\n2. 函数库函数顶替\n多数软件无需新增函数顶替；常见新增函数顶替包括atl100、mlang、msls31、riched20、usp10；个别软件需额外添加msvcp60、riched32等函数。案例软件7-Zip无需新增顶替函数即可运行。",
+          "qas": [
+            {
+              "id": "3-33-16",
+              "question": "winecfg工具可进行哪些关键设置？",
+              "answers": [
+                {
+                  "text": "可设置虚拟Windows版本、替换dll函数、窗口修饰及显示分辨率等",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-33-17",
+              "question": "winecfg修改虚拟Windows版本的触发条件是什么？",
+              "answers": [
+                {
+                  "text": "当exe安装提示系统版本过低或需要适配软件最佳运行环境时（如XP兼容性更好）",
+                  "answer_start": 98
+                }
+              ]
+            },
+            {
+              "id": "3-33-18",
+              "question": "如何正确执行打开winecfg工具的终端命令？",
+              "answers": [
+                {
+                  "text": "使用WINEPREFIX指定容器路径后空格输入winecfg命令",
+                  "answer_start": 350
+                }
+              ]
+            },
+            {
+              "id": "3-33-19",
+              "question": "常见需新增函数顶替的dll有哪些？",
+              "answers": [
+                {
+                  "text": "atl100、mlang、msls31、riched20、usp10等",
+                  "answer_start": 585
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "由于Linux系统默认缺少Arial、微软雅黑、宋体等Windows常用字体，Wine安装软件可能出现乱码/方块字/字体缺失问题。字体设置方法有三种：\n### 第一种：直接安装“Win字体”应用\n到星火应用商店下载安装。安装后调出winecfg，字体选项下勾选“允许加载系统字体”和“允许加载Windows Fonts目录字体”（新版本可能默认此设置）。\n### 第二种：复制字体文件到虚拟C盘字体文件夹\n将所需字体文件（如宋体simsun.ttf）复制到容器字体路径：`~/.deepinwine/容器名称/drive_c/windows/Fonts`。案例路径：`~/.deepinwine/Wine-7zip/drive_c/windows/Fonts`\n调出winecfg后勾选相同字体加载选项。\n### 第三种：修改字体注册表\n不安装字体，通过注册表替换字体映射。打开注册表命令：\n```bash\nWINEPREFIX=容器路径 regedit\n```案例：\n```bash\nWINEPREFIX=~/.deepinwine/Wine-7zip regedit\n```找到HKEY_CURRENT_USER\\Software\\Wine\\Fonts\\Replacements（无则新建项），添加字符串值项（如SimSun→Noto Serif CJK SC替换）。可使用预制reg文件批量导入。",
+          "qas": [
+            {
+              "id": "3-33-20",
+              "question": "导致Wine运行Windows软件字体显示异常的根本原因是什么？",
+              "answers": [
+                {
+                  "text": "Linux系统默认缺少Arial、微软雅黑、宋体等Windows常用字体",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "3-33-21",
+              "question": "处理Wine字体显示问题的三种主要方法是什么？",
+              "answers": [
+                {
+                  "text": "安装Win字体应用、复制字体文件到容器Fonts目录、修改字体注册表替换映射",
+                  "answer_start": 234
+                }
+              ]
+            },
+            {
+              "id": "3-33-22",
+              "question": "复制字体文件处理方案的具体操作路径是哪里？",
+              "answers": [
+                {
+                  "text": "容器虚拟C盘的Fonts目录：~/.deepinwine/容器名/drive_c/windows/Fonts",
+                  "answer_start": 505
+                }
+              ]
+            },
+            {
+              "id": "3-33-23",
+              "question": "第三种注册表字体修改方案的关键操作路径在哪里？",
+              "answers": [
+                {
+                  "text": "注册表项HKEY_CURRENT_USER\\Software\\Wine\\Fonts\\Replacements下新建字符串值项",
+                  "answer_start": 780
+                }
+              ]
+            },
+            {
+              "id": "3-33-24",
+              "question": "如何解决字体乱码问题？",
+              "answers": [
+                {
+                  "text": "到星火应用商店里下载安装“Win字体”",
+                  "answer_start": 17
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装winetricks的终端命令：\n```bash\nsudo apt install winetricks\n```运行winetricks的终端命令：\n```bash\nWINEPREFIX=~/.deepinwine/Wine-7zip winetricks\n```选择默认容器后按需安装运行时、组件、dll。案例软件7-Zip无需设置winetricks。",
+          "qas": [
+            {
+              "id": "3-33-25",
+              "question": "如何在系统中安装winetricks工具？",
+              "answers": [
+                {
+                  "text": "通过终端命令sudo apt install winetricks进行安装",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "id": "3-33-26",
+              "question": "如何针对特定容器使用winetricks工具进行配置？",
+              "answers": [
+                {
+                  "text": "使用WINEPREFIX指定容器路径后运行winetricks命令进行安装管理",
+                  "answer_start": 175
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在桌面新建txt文件复制以下内容：\n```ini\n[Desktop Entry]\nCategories=Application\nExec=sh -c 'WINEPREFIX=/home/$USER/.deepinwine/Wine-7zip wine \"c:/Program Files/7-Zip/7zFM.exe\"'\nIcon=/usr/share/icons/Default/devices/64/media-optical.svg\nMimeType=\nName=7-zip\nStartupNotify=true\nType=Application\nX-Deepin-Vendor=user-custom\n```保存txt后右键重命名，将后缀改为desktop。\n注：Exec=部分需完整写容器路径；Icon=指定64×64尺寸svg/png图标路径；Name=自定义桌面图标显示名称。",
+          "qas": [
+            {
+              "id": "3-33-27",
+              "question": "如何为Wine运行的exe软件制作桌面启动图标？",
+              "answers": [
+                {
+                  "text": "创建Desktop Entry格式文件，指定容器路径Exec、图标Icon及名称Name后保存为.desktop文件",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "3-33-28",
+              "question": "Exec参数在制作桌面图标文件时需特别注意什么？",
+              "answers": [
+                {
+                  "text": "Exec参数必须完整书写容器路径，不可用~符号替代/home/$USER",
+                  "answer_start": 342
+                }
+              ]
+            },
+            {
+              "id": "3-33-29",
+              "question": "桌面图标的Exec参数应该怎么写？",
+              "answers": [
+                {
+                  "text": "Exec=sh -c 'WINEPREFIX=/home/$USER/.deepinwine/Wine-7zip wine \"c:/Program Files/7-Zip/7zFM.exe\"'",
+                  "answer_start": 78
+                }
+              ]
+            },
+            {
+              "id": "3-33-30",
+              "question": "桌面图标中Name参数的作用是什么？",
+              "answers": [
+                {
+                  "text": "Name=7-zip",
+                  "answer_start": 168
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "终端命令：\n```bash\nWINEPREFIX=容器路径 wine \"c:/exe软件的卸载程序uninstall.exe的路径\"\n```案例：\n```bash\nWINEPREFIX=~/.deepinwine/Wine-7zip wine \"c:/Program Files/7-Zip/Uninstall.exe\"\n```",
+          "qas": [
+            {
+              "id": "3-33-31",
+              "question": "如何卸载已安装到Wine容器中的Windows软件？",
+              "answers": [
+                {
+                  "text": "使用WINEPREFIX指定容器路径后运行uninstall.exe卸载程序路径命令",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "3-33-32",
+              "question": "如何卸载7-Zip程序？",
+              "answers": [
+                {
+                  "text": "WINEPREFIX=~/.deepinwine/Wine-7zip wine \"c:/Program Files/7-Zip/Uninstall.exe\"",
+                  "answer_start": 71
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

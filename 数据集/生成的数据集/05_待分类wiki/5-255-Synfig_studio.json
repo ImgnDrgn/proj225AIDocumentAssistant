@@ -1,0 +1,99 @@
+{
+  "data": [
+    {
+      "title": "Synfig_studio",
+      "paragraphs": [
+        {
+          "context": "Synfig Studio是一套功能强大的2D矢量动画制作软件，可制作高质量动画，支持软件渲染，有大量即时特效可用于图层或图层群组，能满足工业强度创作及制作电影质量级别动画。",
+          "qas": [
+            {
+              "question": "Synfig Studio是什么类型的软件？",
+              "id": "5-255-1",
+              "answers": [
+                {
+                  "text": "2D矢量动画制作软件",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "Synfig Studio能制作出什么样的动画？",
+              "id": "5-255-2",
+              "answers": [
+                {
+                  "text": "高质量的动画作品，电影质量级别的动画",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "question": "Synfig Studio有什么渲染方式？",
+              "id": "5-255-3",
+              "answers": [
+                {
+                  "text": "软件渲染",
+                  "answer_start": 54
+                }
+              ]
+            },
+            {
+              "question": "Synfig Studio的即时特效可应用于哪里？",
+              "id": "5-255-4",
+              "answers": [
+                {
+                  "text": "图层或图层群组",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装Synfig Studio的命令是sudo apt-get install synfigstudio。",
+          "qas": [
+            {
+              "question": "如何安装Synfig Studio？",
+              "id": "5-255-5",
+              "answers": [
+                {
+                  "text": "sudo apt-get install synfigstudio",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载Synfig Studio的命令是sudo apt-get remove synfigstudio。",
+          "qas": [
+            {
+              "question": "怎样卸载Synfig Studio？",
+              "id": "5-255-6",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove synfigstudio",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Synfig Studio的仓库地址是http://packages.deepin.com/deepin/pool/main/s/synfigstudio/。",
+          "qas": [
+            {
+              "question": "Synfig Studio的仓库地址是什么？",
+              "id": "5-255-7",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/s/synfigstudio/",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

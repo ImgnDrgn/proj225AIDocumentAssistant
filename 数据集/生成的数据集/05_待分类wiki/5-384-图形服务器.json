@@ -1,0 +1,145 @@
+{
+  "title": "图形服务器",
+  "paragraphs": [
+    {
+      "context": "图形服务器是显示服务器或窗口服务器是一个程序，其主要任务是协调客户的输入和输出，并从操作系统，硬件，以及彼此的其余部分。显示服务器与其客户端在显示服务器协议的通信协议，其可以是网络透明的或简单网络能够进行通信。显示服务器中的任何图形用户界面，特别是窗口系统的关键部件。",
+      "qas": [
+        {
+          "id": "5-384-1",
+          "question": "图形服务器又被称为什么？",
+          "answers": [
+            {
+              "text": "显示服务器或窗口服务器",
+              "answer_start": 6
+            }
+          ]
+        },
+        {
+          "id": "5-384-2",
+          "question": "什么是图形服务器？",
+          "answers": [
+            {
+              "text": "显示服务器或窗口服务器是一个程序",
+              "answer_start": 5
+            }
+          ]
+        },
+        {
+          "id": "5-384-3",
+          "question": "图形服务器的主要任务是什么？",
+          "answers": [
+            {
+              "text": "协调客户的输入和输出，并从操作系统，硬件，以及彼此的其余部分",
+              "answer_start": 29
+            }
+          ]
+        },
+        {
+          "id": "5-384-4",
+          "question": "显示服务器与其客户端通过什么进行通信？",
+          "answers": [
+            {
+              "text": "显示服务器协议的通信协议",
+              "answer_start": 89
+            }
+          ]
+        },
+        {
+          "id": "5-384-5",
+          "question": "显示服务器在什么中是关键部件？",
+          "answers": [
+            {
+              "text": "任何图形用户界面，特别是窗口系统",
+              "answer_start": 132
+            }
+          ]
+        },
+        {
+          "id": "5-384-6",
+          "question": "显示服务器在图形用户界面中的作用是什么？",
+          "answers": [
+            {
+              "text": "窗口系统的关键部件",
+              "answer_start": 145
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "[X Window System](https://wiki.deepin.org/index.php?title=X_Window_System)：影响重大的X Server简介。[Wayland](https://wiki.deepin.org/index.php?title=Wayland)：X Server的替代者Wayland简介。",
+      "qas": [
+        {
+          "id": "5-384-7",
+          "question": "图形服务器的分类包括哪些？",
+          "answers": [
+            {
+              "text": "X Window System、Wayland",
+              "answer_start": 1
+            }
+          ]
+        },
+        {
+          "id": "5-384-8",
+          "question": "X Window System是什么的简介？",
+          "answers": [
+            {
+              "text": "影响重大的X Server",
+              "answer_start": 60
+            }
+          ]
+        },
+        {
+          "id": "5-384-9",
+          "question": "Wayland是什么的简介？",
+          "answers": [
+            {
+              "text": "X Server的替代者Wayland",
+              "answer_start": 116
+            }
+          ]
+        },
+        {
+          "id": "5-384-10",
+          "question": "X Window System的主要影响是什么？",
+          "answers": [
+            {
+              "text": "影响重大的X Server简介",
+              "answer_start": 12
+            }
+          ]
+        },
+        {
+          "id": "5-384-11",
+          "question": "Wayland与X Window System的关系是什么？",
+          "answers": [
+            {
+              "text": "X Server的替代者",
+              "answer_start": 98
+            }
+          ]
+        },
+        {
+          "id": "5-384-12",
+          "question": "哪种技术是X Server的替代者？",
+          "answers": [
+            {
+              "text": "Wayland",
+              "answer_start": 86
+            }
+          ]
+        },
+        {
+          "id": "5-384-13",
+          "question": "哪项技术提供了X Server简介？",
+          "answers": [
+            {
+              "text": "X Window System",
+              "answer_start": 4
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

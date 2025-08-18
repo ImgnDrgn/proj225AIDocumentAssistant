@@ -1,0 +1,89 @@
+{
+  "data": [
+    {
+      "title": "社区版仓库",
+      "paragraphs": [
+        {
+          "context": "普通用户外网仓库地址：deb https://community-packages.deepin.com/deepin apricot main contrib non-free",
+          "qas": [
+            {
+              "question": "普通用户外网仓库地址是什么？",
+              "id": "3-162-1",
+              "answers": [
+                {
+                  "text": "deb https://community-packages.deepin.com/deepin apricot main contrib non-free",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "普通用户内网仓库地址：deb http://pools.uniontech.com/deepin apricot main contrib non-free",
+          "qas": [
+            {
+              "question": "普通用户内网仓库地址是什么？",
+              "id": "3-162-2",
+              "answers": [
+                {
+                  "text": "deb http://pools.uniontech.com/deepin apricot main contrib non-free",
+                  "answer_start": 13
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开发者用户内网仓库地址：deb http://pools.uniontech.com/deepin apricot main contrib non-free；deb http://pools.uniontech.com/ppa/dde-apricot apricot main contrib non-free",
+          "qas": [
+            {
+              "question": "开发者用户内网仓库地址有哪些？",
+              "id": "3-162-3",
+              "answers": [
+                {
+                  "text": "deb http://pools.uniontech.com/deepin apricot main contrib non-free；deb http://pools.uniontech.com/ppa/dde-apricot apricot main contrib non-free",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "内网仓库用http访问，外网仓库可用https访问，各版本不兼容。",
+          "qas": [
+            {
+              "question": "内网仓库使用什么协议访问？",
+              "id": "3-162-4",
+              "answers": [
+                {
+                  "text": "http",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "外网仓库可以用什么协议访问？",
+              "id": "3-162-5",
+              "answers": [
+                {
+                  "text": "https",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "各个版本之间是否兼容？",
+              "id": "3-162-6",
+              "answers": [
+                {
+                  "text": "不兼容",
+                  "answer_start": 39
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

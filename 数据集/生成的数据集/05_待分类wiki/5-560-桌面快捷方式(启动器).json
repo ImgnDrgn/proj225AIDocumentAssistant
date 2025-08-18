@@ -1,0 +1,254 @@
+{
+  "data": [
+    {
+      "title": "桌面快捷方式(启动器)",
+      "paragraphs": [
+        {
+          "context": "linux的桌面快捷方式是具有特定格式的文本文件，也叫启动器，后缀为.desktop。",
+          "qas": [
+            {
+              "question": "Linux的桌面快捷方式是什么？其文件后缀是什么？",
+              "id": "5-560-1",
+              "answers": [
+                {
+                  "text": "是具有特定格式的文本文件，也叫启动器，后缀为.desktop。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建和管理Linux桌面快捷方式的工具包括：exo-desktop-item-edit（适用于xfce和deepin桌面环境）、desktop-file-validate（验证格式）、desktop-file-install（安装到系统菜单）、exo-open和dex（命令行打开启动器）。",
+          "qas": [
+            {
+              "question": "创建和管理Linux桌面快捷方式的工具有哪些？各自的作用是什么？",
+              "id": "5-560-2",
+              "answers": [
+                {
+                  "text": "exo-desktop-item-edit（适用于xfce和deepin）、desktop-file-validate（验证格式）、desktop-file-install（安装到系统菜单）、exo-open和dex（命令行打开启动器）。",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "创建启动器时，普通账户目录下的命令需用绝对路径（因root账户的$PATH可能无法访问），常见路径（如/usr/bin）的命令可简写；可用which命令查命令位置，或通过任务管理器找运行程序的命令路径。",
+          "qas": [
+            {
+              "question": "创建启动器时，普通账户目录下的命令如何填写？为什么？",
+              "id": "5-560-3",
+              "answers": [
+                {
+                  "text": "需用绝对路径，因root账户的$PATH可能无法访问普通账户目录下的命令。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何查找命令的位置？",
+              "id": "5-560-4",
+              "answers": [
+                {
+                  "text": "可用which命令查找，或通过任务管理器（如deepin的系统监视器）查看当前运行程序的命令路径。",
+                  "answer_start": 94
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在命令行执行.desktop启动器的命令有：exo-open test.desktop 或 dex test.desktop。",
+          "qas": [
+            {
+              "question": "如何在命令行执行.desktop启动器？",
+              "id": "5-560-5",
+              "answers": [
+                {
+                  "text": "使用命令exo-open test.desktop 或 dex test.desktop。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "将启动器加入系统菜单：先安装desktop-file-utils，用desktop-file-validate验证格式，再用desktop-file-install安装（--dir指定用户菜单路径~/.local/share/applications，不指定则为系统菜单需管理员权限），最后update-desktop-database更新菜单。",
+          "qas": [
+            {
+              "question": "如何将启动器加入系统菜单？",
+              "id": "5-560-6",
+              "answers": [
+                {
+                  "text": "先安装desktop-file-utils，用desktop-file-validate验证格式，再用desktop-file-install安装（--dir指定用户菜单路径，不指定为系统菜单需管理员权限），最后update-desktop-database更新菜单。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "用户的菜单文件夹路径是什么？系统菜单文件夹路径是什么？",
+              "id": "5-560-7",
+              "answers": [
+                {
+                  "text": "用户的菜单文件夹路径是~/.local/share/applications，系统菜单文件夹路径是/usr/share/applications/。",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "将启动器加入自动启动，只需拷贝到~/.config/autostart/目录。",
+          "qas": [
+            {
+              "question": "如何将启动器加入自动启动？",
+              "id": "5-560-8",
+              "answers": [
+                {
+                  "text": "拷贝到~/.config/autostart/目录。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": ".desktop文件是ini格式，包含[组名]和键=值，[Desktop Entry]是必须的组，井号开头为注释，注意大小写。",
+          "qas": [
+            {
+              "question": ".desktop文件是什么格式？必须包含哪个组？",
+              "id": "5-560-9",
+              "answers": [
+                {
+                  "text": "是ini格式，必须包含[Desktop Entry]组。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": ".desktop文件中如何表示注释？",
+              "id": "5-560-10",
+              "answers": [
+                {
+                  "text": "井号开头的行表示注释。",
+                  "answer_start": 55
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Type键的可能值为Application（程序）、Link（链接）、Directory（目录）；Version是.desktop规范的版本；Name是启动器名称；GenericName是通用名；Comment是提示说明。",
+          "qas": [
+            {
+              "question": "Type键的可能值有哪些，分别表示什么？",
+              "id": "5-560-11",
+              "answers": [
+                {
+                  "text": "Application（程序）、Link（链接）、Directory（目录）。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Name和Comment在.desktop文件中分别表示什么？",
+              "id": "5-560-12",
+              "answers": [
+                {
+                  "text": "Name是启动器名称，Comment是提示说明的信息。",
+                  "answer_start": 104
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Exec键定义实际执行的程序，可包含环境变量和参数，如%f（单个选定文件路径）、%F（多个选定文件路径）、%u（单个url）、%U（多个url）等，由桌面环境传递给程序。",
+          "qas": [
+            {
+              "question": "Exec键的作用是什么？有哪些常用参数？",
+              "id": "5-560-13",
+              "answers": [
+                {
+                  "text": "定义实际执行的程序，常用参数有%f（单个文件路径）、%F（多个文件路径）、%u（单个url）、%U（多个url）等。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Actions键用于定义非默认动作（如不同参数或命令），需在[Desktop Action 动作名]组中指定Exec、Name、Icon等。",
+          "qas": [
+            {
+              "question": "如何在.desktop文件中定义非默认动作？",
+              "id": "5-560-14",
+              "answers": [
+                {
+                  "text": "通过Actions键定义，在[Desktop Action 动作名]组中指定Exec、Name、Icon等。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Categories的常见类名及描述：AudioVideo（多媒体）、Audio（音频）、Video（视频）、Development（开发）、Education（教育）、Game（游戏）、Graphics（图像处理）等。",
+          "qas": [
+            {
+              "question": "Categories有哪些常见类名及对应的描述？",
+              "id": "5-560-15",
+              "answers": [
+                {
+                  "text": "AudioVideo（多媒体）、Audio（音频）、Video（视频）、Development（开发）、Education（教育）、Game（游戏）、Graphics（图像处理）等。",
+                  "answer_start": 22
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "MimeType格式为“主类/子类”，如text/plain（纯文本）、image/jpeg（jpg）、video/mp4（mp4）、application/zip（zip压缩）等。",
+          "qas": [
+            {
+              "question": "MimeType的格式是什么？请举例说明。",
+              "id": "5-560-16",
+              "answers": [
+                {
+                  "text": "格式为“主类/子类”，如text/plain（纯文本）、image/jpeg（jpg）等。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Icon支持png和svg格式，常用大小有16*16、24*24、32*32等；存放于$XDG_DATA_DIRS/icons或/usr/share/pixmaps时无需绝对路径，默认主题为hicolor。",
+          "qas": [
+            {
+              "question": "Icon图标支持哪些格式？常用大小有哪些？",
+              "id": "5-560-17",
+              "answers": [
+                {
+                  "text": "支持png和svg格式，常用大小有16*16、24*24、32*32等。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "Icon图标存放于哪些路径时无需写绝对路径？",
+              "id": "5-560-18",
+              "answers": [
+                {
+                  "text": "$XDG_DATA_DIRS/icons或/usr/share/pixmaps。",
+                  "answer_start": 76
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

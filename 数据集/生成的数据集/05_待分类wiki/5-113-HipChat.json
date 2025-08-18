@@ -1,0 +1,169 @@
+{
+  "data": [
+    {
+      "title": "HipChat-已合并",
+      "paragraphs": [
+        {
+          "context": "HipChat是一款专为团队内部群聊设计的聊天工具，您可以创建群组或一对一聊天，同时还提供视频聊天、屏幕共享等功能。HipChat还整合了团队文件管理和分享以及拖拽完成保存等相关操作。",
+          "qas": [
+            {
+              "id": "5-113-1",
+              "question": "HipChat是专为什么设计的聊天工具？",
+              "answers": [
+                {
+                  "text": "团队内部群聊",
+                  "answer_start": 12
+                }
+              ]
+            },
+            {
+              "id": "5-113-2",
+              "question": "HipChat可以创建哪种类型的聊天？",
+              "answers": [
+                {
+                  "text": "群组或一对一聊天",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "5-113-3",
+              "question": "HipChat提供哪些除聊天外的功能？",
+              "answers": [
+                {
+                  "text": "视频聊天、屏幕共享等功能",
+                  "answer_start": 45
+                }
+              ]
+            },
+            {
+              "id": "5-113-4",
+              "question": "HipChat整合了哪些相关操作？",
+              "answers": [
+                {
+                  "text": "团队文件管理和分享以及拖拽完成保存等相关操作",
+                  "answer_start": 80
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get install hipchat",
+          "qas": [
+            {
+              "id": "5-113-5",
+              "question": "安装HipChat的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install hipchat",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "sudo apt-get remove hipchat",
+          "qas": [
+            {
+              "id": "5-113-6",
+              "question": "卸载HipChat的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove hipchat",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "http://packages.deepin.com/deepin/pool/non-free/h/hipchat/",
+          "qas": [
+            {
+              "id": "5-113-7",
+              "question": "HipChat的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/h/hipchat/",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "HipChat是一款专为团队内部群聊设计的聊天工具，提供创建群组或一对一聊天，视频聊天、屏幕共享等功能，并整合了团队文件管理和分享操作。",
+          "qas": [
+            {
+              "id": "5-113-8",
+              "question": "HipChat的主要设计用途是什么？",
+              "answers": [
+                {
+                  "text": "团队内部群聊",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "id": "5-113-9",
+              "question": "HipChat支持哪些实时协作功能？",
+              "answers": [
+                {
+                  "text": "视频聊天、屏幕共享",
+                  "answer_start": 34
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "在Deepin系统安装命令：sudo apt-get install hipchat",
+          "qas": [
+            {
+              "id": "5-113-10",
+              "question": "如何在Deepin系统安装HipChat？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install hipchat",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载命令：sudo apt-get remove hipchat",
+          "qas": [
+            {
+              "id": "5-113-11",
+              "question": "如何从Deepin系统卸载HipChat？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove hipchat",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包仓库地址：http://packages.deepin.com/deepin/pool/non-free/h/hipchat/",
+          "qas": [
+            {
+              "id": "5-113-12",
+              "question": "HipChat在Deepin的软件包存储位置是？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/non-free/h/hipchat/",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

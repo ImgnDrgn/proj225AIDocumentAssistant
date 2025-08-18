@@ -1,0 +1,409 @@
+{
+  "data": [
+    {
+      "title": "Linux性能测试之性能测试指标详解",
+      "paragraphs": [
+        {
+          "context": "性能测试指标包括响应时间、并发用户/并发、点击率、吞吐量、TPS/QPS、PV/UV；Linux服务器指标包括CPU使用率、内存占用率、磁盘IO、系统平均负载等。",
+          "qas": [
+            {
+              "question": "常用的系统性能测试指标有哪些？",
+              "id": "5-477-1",
+              "answers": [
+                {
+                  "text": "响应时间、并发用户/并发、点击率、吞吐量、TPS/QPS、PV/UV",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "Linux服务器常用的性能指标包括什么？",
+              "id": "5-477-2",
+              "answers": [
+                {
+                  "text": "CPU使用率、内存占用率、磁盘IO、系统平均负载等",
+                  "answer_start": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "响应时间是请求或操作从发出到接收到反馈的时间，包括应用服务器处理、网络传输、数据库服务器处理时间。公式：响应时间=A+B1+B2+B3+C（A为客户端处理时间，B1-B3为网络节点传输时间，C为服务器响应时间）。",
+          "qas": [
+            {
+              "question": "什么是响应时间？",
+              "id": "5-477-3",
+              "answers": [
+                {
+                  "text": "响应时间是请求或操作从发出到接收到反馈的时间，包括应用服务器处理、网络传输、数据库服务器处理时间。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "响应时间的计算公式是什么？",
+              "id": "5-477-4",
+              "answers": [
+                {
+                  "text": "响应时间=A+B1+B2+B3+C（A为客户端处理时间，B1-B3为网络节点传输时间，C为服务器响应时间）",
+                  "answer_start": 79
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "并发指多个用户同一时期进行相同事务处理。分绝对并发（同一时间点同时发请求）和相对并发（同一时间区间发请求）。系统/模块并发多为相对并发，接口并发倾向绝对并发。",
+          "qas": [
+            {
+              "question": "什么是并发？",
+              "id": "5-477-5",
+              "answers": [
+                {
+                  "text": "并发指多个用户同一时期进行相同事务处理。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "绝对并发和相对并发有何区别？",
+              "id": "5-477-6",
+              "answers": [
+                {
+                  "text": "绝对并发是指同一时刻（即同一时间点）并发用户对服务器同时发送请求。相对并发是指一段时间内（即同一时间区间）并发用户对服务器发送请求。",
+                  "answer_start": 26
+                }
+              ]
+            },
+            {
+              "question": "系统或模块的并发通常指什么类型？接口的并发呢？",
+              "id": "5-477-7",
+              "answers": [
+                {
+                  "text": "系统、模块的并发更多是指相对并发，而接口的并发更倾向于绝对并发。",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "点击量是网站点击数统计。点击率在性能测试中常指每秒页面点击数（http请求数），越大服务器压力越大。",
+          "qas": [
+            {
+              "question": "什么是点击量？",
+              "id": "5-477-8",
+              "answers": [
+                {
+                  "text": "点击量是网站点击数统计。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "性能测试领域中点击率指什么？",
+              "id": "5-477-9",
+              "answers": [
+                {
+                  "text": "性能测试领域中，点击率（hit rate）常指单位时间内（每秒钟）页面的点击数，即每秒钟发送的http请求数量。",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "吞吐量是系统处理客户请求数量总和。吞吐率是单位时间处理的请求数，可从业务（请求数/秒等）、网络（字节数/秒等）、系统角度衡量。",
+          "qas": [
+            {
+              "question": "什么是吞吐量？",
+              "id": "5-477-10",
+              "answers": [
+                {
+                  "text": "吞吐量是系统处理客户请求数量的总和。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "吞吐率可以从哪些维度衡量？",
+              "id": "5-477-11",
+              "answers": [
+                {
+                  "text": "①业务角度：单位时间（每秒）的请求数或页面数，即请求数/秒或页面数/秒；②网络角度：单位时间（每秒）网络中传输的数据包大小，即字节数/秒等；③系统角度，单位时间内服务器所承受的压力，即系统的负载能力。",
+                  "answer_start": 42
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "TPS是每秒系统处理的事务量，事务是自定义操作集合。QPS是每秒查询或访问服务器次数。区别：一事务可含多次查询，此时1TPS等于多QPS；仅一次则等价。",
+          "qas": [
+            {
+              "question": "什么是TPS？",
+              "id": "5-477-12",
+              "answers": [
+                {
+                  "text": "TPS（Transaction Per Second）是指单位时间（每秒）系统处理的事务量。事务可以是用户自定义的一系列操作或者动作的集合。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "QPS的定义是什么？",
+              "id": "5-477-13",
+              "answers": [
+                {
+                  "text": "QPS（Query Per Second）是指单位时间内查询或访问服务器的次数。",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "question": "TPS和QPS的区别是什么？",
+              "id": "5-477-14",
+              "answers": [
+                {
+                  "text": "TPS和QPS的区别在于一个事务可以包含多次查询或访问服务器，也可以只查询或访问一次服务器。当多次查询或访问时，一个TPS相当于多个QPS；当只查询或访问一次时，一个TPS则等价于一个QPS。",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PV是页面浏览量/点击量，多次访问同页面累计。UV是独立访客，一段时间内相同客户端访问只记一次。可按周期统计，如全天PV、峰值UV等。",
+          "qas": [
+            {
+              "question": "什么是PV？",
+              "id": "5-477-15",
+              "answers": [
+                {
+                  "text": "PV（Page View）是页面的浏览量或点击量，用户对系统或者网站任何页面的每一次点击或者访问都会被记录一次浏览量或点击量，对相同页面进行多次访问浏览量或点击量也会进行累计。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "UV指的是什么？",
+              "id": "5-477-16",
+              "answers": [
+                {
+                  "text": "UV（Unique Vistor）是系统或者网站的独立访客，一段时间内相同客户端（或PC）访问系统或者网站只会被记录一次，连续重复访问或者浏览多个系统页面次数不会进行累计。",
+                  "answer_start": 59
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "CPU使用率=1-CPU空闲时间/总CPU时间。top命令查看，字段有us（用户态）、sy（内核态）、ni（低优先级用户态）、id（空闲）等。us高需优化用户代码，sy高需优化系统调用等，us+sy≤70%状态良好。",
+          "qas": [
+            {
+              "question": "CPU使用率的计算公式是什么？",
+              "id": "5-477-17",
+              "answers": [
+                {
+                  "text": "CPU使用率=1-CPU空闲时间/总CPU时间",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "用什么命令可以查看CPU使用率？",
+              "id": "5-477-18",
+              "answers": [
+                {
+                  "text": "top",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "CPU使用率中us和sy分别代表什么？",
+              "id": "5-477-19",
+              "answers": [
+                {
+                  "text": "us (user)：用户态的CPU使用时间比例；sy (system): 内核态的CPU使用时间比例。",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "当us很高时应如何考虑优化性能？",
+              "id": "5-477-20",
+              "answers": [
+                {
+                  "text": "当us很高时，说明CPU时间主要消耗在用户代码上，可以从用户代码角度考虑优化性能。",
+                  "answer_start": 115
+                }
+              ]
+            },
+            {
+              "question": "系统CPU运行状态良好的判断标准是什么？",
+              "id": "5-477-21",
+              "answers": [
+                {
+                  "text": "一般情况下，如果%us+%sy<=70%，我们可以认为系统的运行状态良好。",
+                  "answer_start": 207
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux内存管理最大化利用率，空余内存划分为cached。cached缓冲文件内容，buffers缓冲块设备metadata等。top和free -h查看内存。系统已用内存=MemTotal-MemFree，物理已用内存=MemTotal-MemFree-MemBuffers-MemCached。系统内存占用率≤70%状态良好。",
+          "qas": [
+            {
+              "question": "Linux系统中cached和buffers有何区别？",
+              "id": "5-477-22",
+              "answers": [
+                {
+                  "text": "cached主要用来缓冲频繁读取的文件，它可以直接记忆我们打开的文件内容；而buffers主要用来给块设备做的缓冲大小，只记录文件系统的metadata以及tracking in-flight pages信息，比如存储目录里面的内容，权限等。",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "question": "查看内存使用情况可以用哪些命令？",
+              "id": "5-477-23",
+              "answers": [
+                {
+                  "text": "top、free -h",
+                  "answer_start": 199
+                }
+              ]
+            },
+            {
+              "question": "系统已用内存的计算公式是什么？",
+              "id": "5-477-24",
+              "answers": [
+                {
+                  "text": "系统已用内存MemUsed=MemTotal-MemFree",
+                  "answer_start": 214
+                }
+              ]
+            },
+            {
+              "question": "系统内存使用状态良好的判断标准是什么？",
+              "id": "5-477-25",
+              "answers": [
+                {
+                  "text": "一般情况下，系统内存占用率<=70%，我们可以认为系统的内存使用情况良好。",
+                  "answer_start": 297
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "系统平均负载用uptime、top、w命令查看，是1、5、15分钟内平均活跃进程数（可运行和不可中断状态）。值超过CPU数量可能有性能瓶颈。1min值大于5、15min值说明负载增加，反之则减小。",
+          "qas": [
+            {
+              "question": "查看系统平均负载可以使用哪些命令？",
+              "id": "5-477-26",
+              "answers": [
+                {
+                  "text": "uptime、top、w",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "系统平均负载指的是什么？",
+              "id": "5-477-27",
+              "answers": [
+                {
+                  "text": "Linux的load average表示系统负载的平均值，显示的三个数值分别表示1分钟、5分钟和15分钟内的平均负载情况。这里的平均负载是指单位时间内，系统处于可运行状态和不可中断状态的平均进程数，可以简单的理解为平均负载就是系统平均活跃进程数。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "如何通过1min、5min、15min的平均负载值判断负载变化情况？",
+              "id": "5-477-28",
+              "answers": [
+                {
+                  "text": "如果1min的值大于5min或者15min的值，说明负载在增加；如果1min的值小于5min或者15min的值，说明负载在减小。",
+                  "answer_start": 196
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "磁盘IO用iostat -x -k 2 3查看，关注iowait%和%util。iowait%超过50%或大于其他CPU指标可能有IO问题；%util≤70%状态良好。",
+          "qas": [
+            {
+              "question": "查看磁盘IO使用情况可以用什么命令？",
+              "id": "5-477-29",
+              "answers": [
+                {
+                  "text": "iostat –x –k 2 3",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "磁盘IO性能测试中应重点关注哪些参数？",
+              "id": "5-477-30",
+              "answers": [
+                {
+                  "text": "iowait%和%util",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "磁盘IO使用状态良好的判断标准是什么？",
+              "id": "5-477-31",
+              "answers": [
+                {
+                  "text": "%util<=70%表示该磁盘IO使用状态良好。",
+                  "answer_start": 104
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Linux常用性能命令：CPU用cat /proc/cpuinfo、top；内存用free -h、top；负载用uptime、top、w；磁盘用fdisk -l、df -h；整体用vmstat 3 2。",
+          "qas": [
+            {
+              "question": "查看CPU详情可以用什么命令？",
+              "id": "5-477-32",
+              "answers": [
+                {
+                  "text": "cat /proc/cpuinfo",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "查看文件系统的磁盘空间使用情况用什么命令？",
+              "id": "5-477-33",
+              "answers": [
+                {
+                  "text": "df –h",
+                  "answer_start": 95
+                }
+              ]
+            },
+            {
+              "question": "查看系统整体性能可以用什么命令？",
+              "id": "5-477-34",
+              "answers": [
+                {
+                  "text": "vmstat 3 2",
+                  "answer_start": 116
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

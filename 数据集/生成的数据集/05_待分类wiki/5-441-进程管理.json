@@ -1,0 +1,349 @@
+{
+  "data": [
+    {
+      "title": "进程管理",
+      "paragraphs": [
+        {
+          "context": "在Linux系统上，用户工作、系统监控程序等都以进程形式运行，进程管理是Linux系统管理的重要方面。",
+          "qas": [
+            {
+              "question": "Linux系统中，用户工作和系统监控程序以什么形式运行？",
+              "id": "5-441-1",
+              "answers": [
+                {
+                  "text": "进程",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "question": "进程管理在Linux系统管理中处于什么地位？",
+              "id": "5-441-2",
+              "answers": [
+                {
+                  "text": "非常重要的一个方面",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度操作系统自带系统监视器，可方便管理进程。",
+          "qas": [
+            {
+              "question": "深度操作系统中，用什么图形工具管理进程？",
+              "id": "5-441-3",
+              "answers": [
+                {
+                  "text": "系统监视器",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ps命令用于显示瞬间进程动态，语法为ps [options] [--help]，常用参数有-A（列出所有进程）、-w（显示加宽）、-au（显示详细资讯）、-aux（显示所有包含其他使用者的进程）。",
+          "qas": [
+            {
+              "question": "ps命令的作用是什么？",
+              "id": "5-441-4",
+              "answers": [
+                {
+                  "text": "显示瞬间进程的动态",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "ps命令中，哪个参数可以列出所有进程？",
+              "id": "5-441-5",
+              "answers": [
+                {
+                  "text": "-A",
+                  "answer_start": 56
+                }
+              ]
+            },
+            {
+              "question": "ps -aux参数的作用是什么？",
+              "id": "5-441-6",
+              "answers": [
+                {
+                  "text": "显示所有包含其他使用者的进程",
+                  "answer_start": 84
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "pstree将所有进程以树状图显示，以pid或init为根，指定用户id则只显示该用户进程，语法为pstree [-a] [-c] [-h|-Hpid] [-l] [-n] [-p] [-u] [-G|-U] [pid|user] 等，-a参数显示进程完整指令及参数。",
+          "qas": [
+            {
+              "question": "pstree命令的作用是什么？",
+              "id": "5-441-7",
+              "answers": [
+                {
+                  "text": "将所有进程以树状图显示",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "pstree命令中，-a参数的作用是什么？",
+              "id": "5-441-8",
+              "answers": [
+                {
+                  "text": "显示该进程的完整指令及参数, 如果是被记忆体置换出去的进程则会加上括号",
+                  "answer_start": 104
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "top命令实时显示进程动态，语法为top [-] [d delay] [q] [c] [S] [s] [i] [n] [b]，d参数改变显示更新速度，q参数无延迟显示。",
+          "qas": [
+            {
+              "question": "top命令的作用是什么？",
+              "id": "5-441-9",
+              "answers": [
+                {
+                  "text": "实时显示 process 的动态",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "top命令中，哪个参数可以改变显示的更新速度？",
+              "id": "5-441-10",
+              "answers": [
+                {
+                  "text": "d",
+                  "answer_start": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "kill命令杀死执行中的程序或工作，默认信息为SIGTERM(15)，可强制用SIGKILL(9)，语法为kill [-s <信息名称或编号>][程序] 或 kill [-l <信息编号>]，-l参数列出全部信息名称。",
+          "qas": [
+            {
+              "question": "kill命令的作用是什么？",
+              "id": "5-441-11",
+              "answers": [
+                {
+                  "text": "杀死执行中的程序或工作",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "kill命令的默认信息是什么？",
+              "id": "5-441-12",
+              "answers": [
+                {
+                  "text": "SIGTERM(15)",
+                  "answer_start": 31
+                }
+              ]
+            },
+            {
+              "question": "kill命令中，哪个参数可以列出全部的信息名称？",
+              "id": "5-441-13",
+              "answers": [
+                {
+                  "text": "-l",
+                  "answer_start": 86
+                }
+              ]
+            },
+            {
+              "question": "强制终止进程常用的信号代码是什么？",
+              "id": "5-441-14",
+              "answers": [
+                {
+                  "text": "-9",
+                  "answer_start": 115
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "killall向所有运行指定命令的进程发送信号，默认SIGTERM，语法为killall [-egiqvw] [-signal] name ... 等，-i参数为交互方式，杀死前征求确认。",
+          "qas": [
+            {
+              "question": "killall命令的作用是什么？",
+              "id": "5-441-15",
+              "answers": [
+                {
+                  "text": "发送一条信号给所有运行任意指定命令的进程",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "killall命令中，-i参数的作用是什么？",
+              "id": "5-441-16",
+              "answers": [
+                {
+                  "text": "交互方式，在杀死进程之前征求确认信息",
+                  "answer_start": 78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "pkill可杀死运行中的程序，能杀死指定用户所有进程，应用方法为pkill正在运行的程序名。",
+          "qas": [
+            {
+              "question": "pkill命令的作用是什么？",
+              "id": "5-441-17",
+              "answers": [
+                {
+                  "text": "直接杀死运行中的程序，也可以杀死指定用户的所有进程",
+                  "answer_start": 6
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "xkill用于杀死桌面图形界面程序，终端执行xkill后，图标点击崩溃程序即可，右键取消。",
+          "qas": [
+            {
+              "question": "xkill命令的作用是什么？",
+              "id": "5-441-18",
+              "answers": [
+                {
+                  "text": "杀死桌面图形界面的程序",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "如何取消xkill命令的执行？",
+              "id": "5-441-19",
+              "answers": [
+                {
+                  "text": "按右键取消",
+                  "answer_start": 65
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "nice以更改过的优先序执行程序，默认调整值10，范围-20（最高）到19（最低），语法为nice [-n adjustment] [-adjustment] [--adjustment=adjustment] [--help] [--version] [command [arg...]]。",
+          "qas": [
+            {
+              "question": "nice命令的作用是什么？",
+              "id": "5-441-20",
+              "answers": [
+                {
+                  "text": "以更改过的优先序来执进程序",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "nice命令的默认调整值是多少？",
+              "id": "5-441-21",
+              "answers": [
+                {
+                  "text": "10",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "nice命令优先序的范围是多少？",
+              "id": "5-441-22",
+              "answers": [
+                {
+                  "text": "-20（最高优先序）到 19（最低优先序）",
+                  "answer_start": 44
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "crontab用于定期执行Linux程序，语法为crontab [ -u user ] file 或 crontab [ -u user ] { -l | -r | -e }，-e参数执行文字编辑器设定时程表，-r删除时程表，-l列出时程表。时程表格式为f1（分钟）f2（小时）f3（日）f4（月）f5（星期）program。",
+          "qas": [
+            {
+              "question": "crontab命令的作用是什么？",
+              "id": "5-441-23",
+              "answers": [
+                {
+                  "text": "让使用者在固定时间或固定间隔执进程序",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "crontab命令中，-e参数的作用是什么？",
+              "id": "5-441-24",
+              "answers": [
+                {
+                  "text": "执行文字编辑器来设定时程表",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "question": "crontab时程表格式中，f1代表什么？",
+              "id": "5-441-25",
+              "answers": [
+                {
+                  "text": "分钟",
+                  "answer_start": 185
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "at让用户指定在特定时刻执行程序或指令，TIME格式为HH:MM等，可指定am、pm等，输入完指令按ctrl+D完成，语法为at -V [-q queue] [-f file] [-mldbv] TIME，-f参数读入预先写好的命令档。",
+          "qas": [
+            {
+              "question": "at命令的作用是什么？",
+              "id": "5-441-26",
+              "answers": [
+                {
+                  "text": "让使用者指定在 TIME 这个特定时刻执行某个程序或指令",
+                  "answer_start": 6
+                }
+              ]
+            },
+            {
+              "question": "at命令中，-f参数的作用是什么？",
+              "id": "5-441-27",
+              "answers": [
+                {
+                  "text": "读入预先写好的命令档",
+                  "answer_start": 131
+                }
+              ]
+            },
+            {
+              "question": "使用at命令输入完指令后，如何完成设置？",
+              "id": "5-441-28",
+              "answers": [
+                {
+                  "text": "按下 ctrl+D 即可完成所有动作",
+                  "answer_start": 107
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "data": [
+    {
+      "title": "鼠标",
+      "paragraphs": [
+        {
+          "context": "鼠标是常用电脑输入设备，可定位光标，通过按键和滚轮操作屏幕元素。",
+          "qas": [
+            {
+              "question": "鼠标是什么设备？",
+              "id": "5-558-1",
+              "answers": [
+                {
+                  "text": "电脑输入设备",
+                  "answer_start": 5
+                }
+              ]
+            },
+            {
+              "question": "鼠标能进行哪些操作？",
+              "id": "5-558-2",
+              "answers": [
+                {
+                  "text": "对当前屏幕上的光标进行定位，并通过按键和滚轮装置对光标所经过位置的屏幕元素进行操作。",
+                  "answer_start": 11
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "依据移动感应技术，鼠标分为机械鼠标、早期光电鼠标、光电机械鼠标、现代光电鼠标、激光鼠标、蓝光鼠标。",
+          "qas": [
+            {
+              "question": "依据移动感应技术，鼠标有哪些分类？",
+              "id": "5-558-3",
+              "answers": [
+                {
+                  "text": "机械鼠标、早期光电鼠标(需要印有特定条纹的鼠标垫)、光电机械鼠标、光电鼠标(现代的，无需特定条纹的鼠标垫)、激光鼠标、蓝光鼠标",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "早期光电鼠标有什么特点？",
+              "id": "5-558-4",
+              "answers": [
+                {
+                  "text": "需要印有特定条纹的鼠标垫",
+                  "answer_start": 28
+                }
+              ]
+            },
+            {
+              "question": "现代光电鼠标与早期光电鼠标相比有什么不同？",
+              "id": "5-558-5",
+              "answers": [
+                {
+                  "text": "无需特定条纹的鼠标垫",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "终端执行lspci | grep Mouse可查看PCI设备上的鼠标，执行lsusb | grep Mouse可查看USB设备上的鼠标。",
+          "qas": [
+            {
+              "question": "如何查看PCI设备上的鼠标？",
+              "id": "5-558-6",
+              "answers": [
+                {
+                  "text": "终端执行：lspci | grep Mouse",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "查看USB设备上的鼠标的终端命令是什么？",
+              "id": "5-558-7",
+              "answers": [
+                {
+                  "text": "lsusb | grep Mouse",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "鼠标设置方法一：使用Natural scrolling软件。方法二：修改家目录下的.Xmodmap文件，添加pointer = 1 2 3 5 4 7 6 8 9 10 11 12，注销再登录生效，此方法会同时设置触摸板。",
+          "qas": [
+            {
+              "question": "鼠标设置的方法一是什么？",
+              "id": "5-558-8",
+              "answers": [
+                {
+                  "text": "使用Natural scrolling软件。",
+                  "answer_start": 7
+                }
+              ]
+            },
+            {
+              "question": "鼠标设置方法二中，需要修改哪个文件？",
+              "id": "5-558-9",
+              "answers": [
+                {
+                  "text": ".Xmodmap 文件",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "方法二中，.Xmodmap文件需要添加什么内容？",
+              "id": "5-558-10",
+              "answers": [
+                {
+                  "text": "pointer = 1 2 3 5 4 7 6 8 9 10 11 12",
+                  "answer_start": 57
+                }
+              ]
+            },
+            {
+              "question": "方法二设置后如何生效？",
+              "id": "5-558-11",
+              "answers": [
+                {
+                  "text": "注销当前用户再登录即可生效。",
+                  "answer_start": 94
+                }
+              ]
+            },
+            {
+              "question": "方法二有什么副作用？",
+              "id": "5-558-12",
+              "answers": [
+                {
+                  "text": "会同时设置触摸板也使用自然滚动。",
+                  "answer_start": 121
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "常见问题：USB鼠标键盘无法使用，可插入usb2.0接口，不行则尝试PS/2鼠标。",
+          "qas": [
+            {
+              "question": "USB鼠标键盘无法使用时，首先可以尝试什么？",
+              "id": "5-558-13",
+              "answers": [
+                {
+                  "text": "插入usb2.0接口",
+                  "answer_start": 20
+                }
+              ]
+            },
+            {
+              "question": "USB鼠标插入usb2.0接口仍无法使用，该怎么办？",
+              "id": "5-558-14",
+              "answers": [
+                {
+                  "text": "尝试使用PS/2鼠标",
+                  "answer_start": 35
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "相关链接有维基百科:鼠标和更改 Ubuntu 触摸板滚动为自然滚动。",
+          "qas": [
+            {
+              "question": "关于鼠标的相关链接有哪些？",
+              "id": "5-558-15",
+              "answers": [
+                {
+                  "text": "[维基百科:鼠标](http://zh.wikipedia.org/wiki/%E9%BC%A0%E6%A0%87)、[更改 Ubuntu 触摸板滚动为自然滚动](http://liunian.info/add-natural-scrolling-to-ubuntu.html)",
+                  "answer_start": 7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

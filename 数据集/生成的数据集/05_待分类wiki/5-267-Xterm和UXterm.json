@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "title": "Xterm和UXterm",
+      "paragraphs": [
+        {
+          "context": "Xterm和UXterm的安装命令为sudo apt install xterm。",
+          "qas": [
+            {
+              "question": "Xterm和UXterm的安装命令是什么？",
+              "id": "5-267-1",
+              "answers": [
+                {
+                  "text": "sudo apt install xterm",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "文中提及了Xterm和UXterm这两个工具。",
+          "qas": [
+            {
+              "question": "文中提到了哪两个工具？",
+              "id": "5-267-2",
+              "answers": [
+                {
+                  "text": "Xterm和UXterm",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

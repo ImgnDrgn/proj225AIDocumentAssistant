@@ -1,0 +1,129 @@
+{
+  "data": [
+    {
+      "title": "登录管理器",
+      "paragraphs": [
+        {
+          "context": "显示管理器也叫登录管理器，提供登录界面，提示输入用户名和密码，成功后启动会话（窗口管理器或桌面环境）。一个图形服务器只能由一个登录管理器管理，系统可安装多个。",
+          "qas": [
+            {
+              "question": "什么是登录管理器？",
+              "id": "5-509-1",
+              "answers": [
+                {
+                  "text": "显示管理器也叫登录管理器，提供登录界面，提示输入用户名和密码，成功后启动会话（窗口管理器或桌面环境）。",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "一个图形服务器能由多个登录管理器管理吗？",
+              "id": "5-509-2",
+              "answers": [
+                {
+                  "text": "不能，一个图形服务器只能由一个登录管理器来管理。",
+                  "answer_start": 78
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "常见登录管理器有LightDM（深度默认）、GDM（Gnome默认）、KDM（KDE默认）。",
+          "qas": [
+            {
+              "question": "深度操作系统的默认登录管理器是什么？",
+              "id": "5-509-3",
+              "answers": [
+                {
+                  "text": "LightDM",
+                  "answer_start": 4
+                }
+              ]
+            },
+            {
+              "question": "Gnome桌面环境的默认登录管理器是什么？",
+              "id": "5-509-4",
+              "answers": [
+                {
+                  "text": "GDM",
+                  "answer_start": 16
+                }
+              ]
+            },
+            {
+              "question": "KDE桌面环境的默认登录管理器是什么？",
+              "id": "5-509-5",
+              "answers": [
+                {
+                  "text": "KDM",
+                  "answer_start": 28
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "切换登录管理器方法一：安装时按Tab选择并回车。方法二：终端执行sudo dpkg-reconfigure 显示管理器名称，再选择默认。",
+          "qas": [
+            {
+              "question": "切换登录管理器的方法一是什么？",
+              "id": "5-509-6",
+              "answers": [
+                {
+                  "text": "安装时按Tab选择需要设置的登录管理器，回车即可完成设置。",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "question": "切换登录管理器的方法二是什么？",
+              "id": "5-509-7",
+              "answers": [
+                {
+                  "text": "打开终端，执行命令sudo dpkg-reconfigure 显示管理器名称，然后选择默认的显示管理器。",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "登录管理器出错（Checking Battery State ...无法登录）：ctrl+alt+F1进tty1，输用户名密码登录，终端执行sudo apt-get install gdm和sudo dpkg-reconfigure gdm，TAB选LightDM回车，Alt+F1切回图形界面。",
+          "qas": [
+            {
+              "question": "登录管理器出现Checking Battery State ...导致无法登录时，如何解决？",
+              "id": "5-509-8",
+              "answers": [
+                {
+                  "text": "ctrl + alt + F1进入tty1，输入用户名和密码登录，终端执行sudo apt-get install gdm、sudo dpkg-reconfigure gdm，用TAB键选中LightDM回车确认，Alt + F1切换回图形界面即可登录。",
+                  "answer_start": 29
+                }
+              ]
+            },
+            {
+              "question": "登录管理器出错时，如何进入tty1？",
+              "id": "5-509-9",
+              "answers": [
+                {
+                  "text": "ctrl + alt + F1",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "登录管理器出错修复后，如何切换回图形界面？",
+              "id": "5-509-10",
+              "answers": [
+                {
+                  "text": "Alt + F1",
+                  "answer_start": 216
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,464 @@
+{
+  "data": [
+    {
+      "title": "软件包管理（dpkg）",
+      "paragraphs": [
+        {
+          "context": "深度操作系统使用dpkg包管理。除通过深度商店、Synaptic等图形软件管理工具外，还可通过命令进行软件包安装、卸载与系统升级。dpkg是最底层的包管理命令，等同于RedHat中的rpm；apt是dpkg的智能化前端，能自动处理依赖关系；dselect是dpkg的ncurses图形界面，也处理简单依赖，但apt智能化更高；synaptic类似dselect的图形界面。",
+          "qas": [
+            {
+              "id": "5-418-1",
+              "question": "深度操作系统使用的包管理工具是什么？",
+              "answers": [
+                {
+                  "text": "dpkg",
+                  "answer_start": 8
+                }
+              ]
+            },
+            {
+              "id": "5-418-2",
+              "question": "dpkg等同于RedHat系统中的哪个命令？",
+              "answers": [
+                {
+                  "text": "rpm",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-418-3",
+              "question": "apt作为dpkg的前端，主要优势是什么？",
+              "answers": [
+                {
+                  "text": "能自动处理依赖关系，智能化程度更高",
+                  "answer_start": 72
+                }
+              ]
+            },
+            {
+              "id": "5-418-4",
+              "question": "synaptic属于什么类型的工具？",
+              "answers": [
+                {
+                  "text": "类似dselect的图形界面工具",
+                  "answer_start": 135
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "深度操作系统使用dpkg包管理。我们除了通过常用的深度商店、Synaptic等图形软件管理工具外，也可以通过命令对软件包进行安装、卸载与系统升级等日常管理。管理功能包括：安装/管理单个软件包、升级软件套件、安装应用安全补丁。",
+          "qas": [
+            {
+              "id": "5-418-5",
+              "question": "通过命令可管理的功能有哪些？",
+              "answers": [
+                {
+                  "text": "安装/管理单个软件包、升级软件套件、安装应用安全补丁",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpkg命令一般需root权限执行，常搭配sudo，例如sudo dpkg xxxx。其基本格式为dpkg [<选项> ...] <命令>。常用子命令：dpkg -s package | grep Status 查询软件包是否安装；dpkg -s package 查看安装状态及更多信息；dpkg -S filesname 查找文件所属安装包；dpkg -i <package.deb> 安装软件包；dpkg -r package 删除软件包保留配置；dpkg -P package 完全删除软件包（含配置）。",
+          "qas": [
+            {
+              "id": "5-418-6",
+              "question": "执行dpkg命令通常需要搭配什么命令以获取root权限？",
+              "answers": [
+                {
+                  "text": "sudo",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "id": "5-418-7",
+              "question": "dpkg命令的基本格式是什么？",
+              "answers": [
+                {
+                  "text": "dpkg [<选项> ...] <命令>",
+                  "answer_start": 42
+                }
+              ]
+            },
+            {
+              "id": "5-418-8",
+              "question": "安装.deb格式软件包的dpkg命令是什么？",
+              "answers": [
+                {
+                  "text": "dpkg -i <package.deb>",
+                  "answer_start": 133
+                }
+              ]
+            },
+            {
+              "id": "5-418-9",
+              "question": "完全删除已安装软件包（含配置文件）的dpkg命令是什么？",
+              "answers": [
+                {
+                  "text": "dpkg -P package",
+                  "answer_start": 175
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "dpkg命令一般需要root权限执行，格式：dpkg [<选项> ...] <命令>。常用命令：dpkg -s package 查看软件包是否安装；dpkg -i <package.deb> 安装软件包；dpkg -r package 删除软件包（保留配置）；dpkg -P package 完全删除软件包（含配置）。",
+          "qas": [
+            {
+              "id": "5-418-10",
+              "question": "如何查询软件包是否安装？",
+              "answers": [
+                {
+                  "text": "dpkg -s package",
+                  "answer_start": 68
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "APT主要由apt-get、apt-cache、apt-file构成。apt-get需root权限，常搭配sudo，最新版已简化为apt。apt-get update 用于更新软件包列表（修改sources.list后或定期执行）；apt-get install package_name 安装软件包；apt-get remove package_name 卸载保留配置；apt-get --purge remove package_name 卸载删除配置；apt-get upgrade 更新所有已安装包；apt-get dist-upgrade 升级系统至新版本。",
+          "qas": [
+            {
+              "id": "5-418-11",
+              "question": "APT的主要构成命令有哪些？",
+              "answers": [
+                {
+                  "text": "apt-get、apt-cache、apt-file",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "id": "5-418-12",
+              "question": "修改/etc/apt/sources.list后需执行的apt-get命令是什么？",
+              "answers": [
+                {
+                  "text": "apt-get update",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "id": "5-418-13",
+              "question": "卸载软件包并删除其配置文件的apt-get命令是什么？",
+              "answers": [
+                {
+                  "text": "apt-get --purge remove package_name",
+                  "answer_start": 136
+                }
+              ]
+            },
+            {
+              "id": "5-418-14",
+              "question": "将系统升级到新版本的apt-get命令是什么？",
+              "answers": [
+                {
+                  "text": "apt-get dist-upgrade",
+                  "answer_start": 182
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt与dpkg的关系：dpkg是最底层的包管理命令，apt是dpkg的智能化前端，能自动处理依赖关系。常用命令：apt update 更新软件包列表；apt install package_name 安装软件包；apt remove package_name 卸载软件包（保留配置）；apt purge package_name 完全卸载（删除配置）。",
+          "qas": [
+            {
+              "id": "5-418-15",
+              "question": "apt和dpkg的主要区别是什么？",
+              "answers": [
+                {
+                  "text": "apt能自动处理依赖关系",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "id": "5-418-16",
+              "question": "安装新软件包需要执行什么命令？",
+              "answers": [
+                {
+                  "text": "apt install package_name",
+                  "answer_start": 121
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "apt-cache命令用于查询APT缓存：apt-cache show package_name 显示软件包记录；apt-cache search package_name 搜索软件包列表；apt-cache depends package_name 显示指定包的依赖；apt-cache rdepends package_name 显示反向依赖；apt-cache policy package_name 显示安装状态与版本。apt-file需先通过apt install apt-file安装，apt-file update 更新文件库，apt-file search package_name 查找含特定文件的包，apt-file list package_name 显示包内文件。",
+          "qas": [
+            {
+              "id": "5-418-17",
+              "question": "查看软件包安装状态和版本信息的apt-cache命令是什么？",
+              "answers": [
+                {
+                  "text": "apt-cache policy package_name",
+                  "answer_start": 151
+                }
+              ]
+            },
+            {
+              "id": "5-418-18",
+              "question": "安装apt-file命令的方式是什么？",
+              "answers": [
+                {
+                  "text": "apt install apt-file",
+                  "answer_start": 195
+                }
+              ]
+            },
+            {
+              "id": "5-418-19",
+              "question": "apt-file search package_name的功能是什么？",
+              "answers": [
+                {
+                  "text": "查找包含特定文件的软件包（不一定是已安装的），文件名含指定字符串",
+                  "answer_start": 227
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "aptitude是强大的包管理工具，处理依赖优于apt-get，删除包时会同时删除其依赖以保持系统干净。需root权限，搭配sudo使用。命令包括：aptitude install <pkgname> 安装/升级；aptitude remove <pkgname> 卸载；aptitude purge <pkgname> 卸载删配置；aptitude safe-upgrade 安全升级；aptitude full-upgrade 升级（可安装/卸载包）；aptitude clean 删除已下载包文件。dselect使用频率低，缺失时可通过sudo apt-get install dselect安装。",
+          "qas": [
+            {
+              "id": "5-418-20",
+              "question": "aptitude相对于apt-get的主要优势是什么？",
+              "answers": [
+                {
+                  "text": "处理依赖问题更佳，删除一个包时会同时删除本身所依赖的包，保持系统干净",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "id": "5-418-21",
+              "question": "执行安全升级的aptitude命令是什么？",
+              "answers": [
+                {
+                  "text": "aptitude safe-upgrade",
+                  "answer_start": 133
+                }
+              ]
+            },
+            {
+              "id": "5-418-22",
+              "question": "安装dselect的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install dselect",
+                  "answer_start": 203
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除APT缓存：apt-get安装软件的下载文件存于/var/cache/apt/archives。sudo apt-get clean 删除该目录及partial子目录下所有包（锁定包除外）；sudo apt-get autoclean 仅删除该目录及partial子目录下旧版本和无用包（锁定包除外）。实例：若目录有gimp2.3、gimp2.6、chrome28、firefox15的deb包（无锁定），系统装gimp2.6和chrome28，clean会全部删除，autoclean删除gimp2.3和firefox15。",
+          "qas": [
+            {
+              "id": "5-418-23",
+              "question": "APT缓存文件默认存放在哪个目录？",
+              "answers": [
+                {
+                  "text": "/var/cache/apt/archives",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "id": "5-418-24",
+              "question": "sudo apt-get autoclean的功能是什么？",
+              "answers": [
+                {
+                  "text": "仅删除/var/cache/apt/archives和/var/cache/apt/archives/partial目录下旧版本的软件包和无用的软件包（锁定的软件包除外）",
+                  "answer_start": 64
+                }
+              ]
+            },
+            {
+              "id": "5-418-25",
+              "question": "在给定实例中，sudo apt-get clean会删除哪些deb包？",
+              "answers": [
+                {
+                  "text": "gimp2.3、gimp2.6、chrome28、firefox15版本的deb包（全部删除）",
+                  "answer_start": 186
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "缓存管理：apt安装的缓存文件位于/var/cache/apt/archives。sudo apt clean 删除所有缓存包；sudo apt autoclean 仅删除旧版本和无用包。卸载残留配置可在~/.config或/usr/share目录删除对应文件夹。",
+          "qas": [
+            {
+              "id": "5-418-26",
+              "question": "如何仅删除旧版本软件包缓存？",
+              "answers": [
+                {
+                  "text": "sudo apt autoclean",
+                  "answer_start": 84
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "删除软件配置：配置文件分用户设置（～/、～/.config，仅对特定用户有效）和全局设置（/usr/share，对所有用户有效）。删除软件时若需删配置，可加--purge参数，如sudo apt-get remove --purge package_name。实例：/home/cxbii/.config/deepin-music-player是cxbii用户的配置，/usr/share/deepin-music-player是全局配置。",
+          "qas": [
+            {
+              "id": "5-418-27",
+              "question": "软件的用户特定配置文件存放在哪些位置？",
+              "answers": [
+                {
+                  "text": "～/、～/.config",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "id": "5-418-28",
+              "question": "删除软件包同时删除其配置文件的apt-get命令格式是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove --purge package_name",
+                  "answer_start": 85
+                }
+              ]
+            },
+            {
+              "id": "5-418-29",
+              "question": "/usr/share目录下的软件配置文件有什么特点？",
+              "answers": [
+                {
+                  "text": "属于全局设置，对该系统下所有用户都有效",
+                  "answer_start": 49
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "升级软件包步骤：1. 执行sudo apt-get update刷新软件源，获取最新包列表；2. 执行sudo apt-get upgrade更新所有已安装包（不添加/删除包、不改配置含内核），或sudo apt-get dist-upgrade升级系统（可依依赖添加/删除包、改配置含内核）。upgrade适合正常软件及补丁更新，dist-upgrade适合跨版本更新（如深度11.12到12.06）。",
+          "qas": [
+            {
+              "id": "5-418-30",
+              "question": "升级软件包的第一步命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get update",
+                  "answer_start": 24
+                }
+              ]
+            },
+            {
+              "id": "5-418-31",
+              "question": "sudo apt-get upgrade为何不能用于跨版本系统更新？",
+              "answers": [
+                {
+                  "text": "仅简单更新包，不管依赖，不能添加新的软件包、删除软件包，且不更改相应软件的配置文件（包括内核）",
+                  "answer_start": 68
+                }
+              ]
+            },
+            {
+              "id": "5-418-32",
+              "question": "适合深度操作系统从11.12更新至12.06的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get dist-upgrade",
+                  "answer_start": 118
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "软件包升级流程：1. sudo apt update 刷新软件源；2. 选择执行 sudo apt upgrade（常规更新）或 sudo apt dist-upgrade（跨版本升级）。区别：upgrade不更改配置文件，dist-upgrade可添加/删除软件包并更改配置文件。",
+          "qas": [
+            {
+              "id": "5-418-33",
+              "question": "dist-upgrade和upgrade的核心区别是什么？",
+              "answers": [
+                {
+                  "text": "dist-upgrade可添加/删除软件包并更改配置文件",
+                  "answer_start": 130
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加PPA需先安装支持命令：sudo apt-get install python-software-properties；sudo apt-get install software-properties-common；sudo apt-get update。终端出现‘E:Sub-process /usr/bin/dpkg returned an error code (1)’时，解决步骤：cd /var/lib/dpkg；sudo mv info info.bak；sudo mkdir info；sudo dpkg --configure -a；sudo apt-get install -f；sudo mv /var/lib/dpkg/info/* /var/lib/dpkg/info.bak；sudo rm -rf /var/lib/dpkg/info；sudo mv /var/lib/dpkg/info.bak /var/lib/dpkg/info。",
+          "qas": [
+            {
+              "id": "5-418-34",
+              "question": "安装add-apt-repository命令支持的第一个apt-get命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install python-software-properties",
+                  "answer_start": 22
+                }
+              ]
+            },
+            {
+              "id": "5-418-35",
+              "question": "解决dpkg错误代码(1)时，用于配置dpkg的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo dpkg --configure -a",
+                  "answer_start": 156
+                }
+              ]
+            },
+            {
+              "id": "5-418-36",
+              "question": "处理dpkg错误代码(1)时，为何要执行sudo mv info info.bak？",
+              "answers": [
+                {
+                  "text": "备份原有的info目录，避免原有损坏信息影响后续修复",
+                  "answer_start": 125
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "常见问题处理：出现\"无法锁定管理目录\"错误时，可执行 sudo rm /var/lib/dpkg/lock 清除锁定文件。软件包配置错误时，执行 sudo dpkg --configure -a 修复。依赖关系错误可通过 sudo apt install -f 解决。",
+          "qas": [
+            {
+              "id": "5-418-37",
+              "question": "如何解决无法锁定管理目录的错误？",
+              "answers": [
+                {
+                  "text": "sudo rm /var/lib/dpkg/lock",
+                  "answer_start": 60
+                }
+              ]
+            },
+            {
+              "id": "5-418-38",
+              "question": "修复软件包配置错误的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo dpkg --configure -a",
+                  "answer_start": 88
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

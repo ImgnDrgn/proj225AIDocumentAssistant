@@ -1,0 +1,170 @@
+{
+  "title": "SSH隧道",
+  "paragraphs": [
+    {
+      "context": "启动代理服务器的命令为：master@neko:~$ ssh -D 1080 root@99.99.99.99，该命令将会连接服务器并在本机创建端口为1080的socks5代理服务器。",
+      "qas": [
+        {
+          "question": "启动SSH动态转发代理服务器的命令是什么？",
+          "id": "5-341-1",
+          "answers": [
+            {
+              "text": "ssh -D 1080 root@99.99.99.99",
+              "answer_start": 27
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "终端测试中，本机IP为1.1.1.1，服务器IP为99.99.99.99。未启用代理时，执行curl ip.sb显示1.1.1.1；启用代理的命令为export all_proxy=socks5h://0:1080（仅限当前终端窗口），启用后执行curl ip.sb显示99.99.99.99。",
+      "qas": [
+        {
+          "question": "终端测试中，本机IP是多少？",
+          "id": "5-341-2",
+          "answers": [
+            {
+              "text": "1.1.1.1",
+              "answer_start": 11
+            }
+          ]
+        },
+        {
+          "question": "终端测试中，服务器IP是多少？",
+          "id": "5-341-3",
+          "answers": [
+            {
+              "text": "99.99.99.99",
+              "answer_start": 24
+            }
+          ]
+        },
+        {
+          "question": "终端测试中，未启用代理时执行curl ip.sb显示的IP是多少？",
+          "id": "5-341-4",
+          "answers": [
+            {
+              "text": "1.1.1.1",
+              "answer_start": 57
+            }
+          ]
+        },
+        {
+          "question": "终端测试中，启用代理的命令是什么？",
+          "id": "5-341-5",
+          "answers": [
+            {
+              "text": "export all_proxy=socks5h://0:1080",
+              "answer_start": 71
+            }
+          ]
+        },
+        {
+          "question": "终端测试中，启用代理后执行curl ip.sb显示的IP是多少？",
+          "id": "5-341-6",
+          "answers": [
+            {
+              "text": "99.99.99.99",
+              "answer_start": 130
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "浏览器测试需安装Proxy SwitchyOmega插件，配置代理协议为socks5，服务器地址为127.0.0.1，端口为1080；插件设置为启用状态后，访问https://ip.sb显示的IP应为99.99.99.99。",
+      "qas": [
+        {
+          "question": "浏览器测试需要安装什么插件？",
+          "id": "5-341-7",
+          "answers": [
+            {
+              "text": "Proxy SwitchyOmega",
+              "answer_start": 9
+            }
+          ]
+        },
+        {
+          "question": "浏览器测试中，代理协议配置为什么？",
+          "id": "5-341-8",
+          "answers": [
+            {
+              "text": "socks5",
+              "answer_start": 34
+            }
+          ]
+        },
+        {
+          "question": "浏览器测试中，代理服务器地址是什么？",
+          "id": "5-341-9",
+          "answers": [
+            {
+              "text": "127.0.0.1",
+              "answer_start": 48
+            }
+          ]
+        },
+        {
+          "question": "浏览器测试中，代理端口是多少？",
+          "id": "5-341-10",
+          "answers": [
+            {
+              "text": "1080",
+              "answer_start": 61
+            }
+          ]
+        },
+        {
+          "question": "浏览器测试中，启用插件后访问https://ip.sb显示的IP应为多少？",
+          "id": "5-341-11",
+          "answers": [
+            {
+              "text": "99.99.99.99",
+              "answer_start": 112
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "SSH动态转发代理通过ssh -D命令启动，在本地1080端口创建socks5代理服务器。终端测试需设置环境变量export all_proxy=socks5h://0:1080启用代理。浏览器测试需安装Proxy SwitchyOmega插件，配置socks5协议和127.0.0.1:1080地址。",
+      "qas": [
+        {
+          "question": "SSH动态转发代理在本地哪个端口创建socks5服务器？",
+          "id": "5-341-12",
+          "answers": [
+            {
+              "text": "1080",
+              "answer_start": 36
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "本机初始IP为1.1.1.1，服务器IP为99.99.99.99。终端执行curl ip.sb显示原始IP，启用代理后显示服务器IP。浏览器启用插件访问https://ip.sb应显示99.99.99.99。",
+      "qas": [
+        {
+          "question": "未启用代理时curl ip.sb显示哪个IP地址？",
+          "id": "5-341-13",
+          "answers": [
+            {
+              "text": "1.1.1.1",
+              "answer_start": 6
+            }
+          ]
+        },
+        {
+          "question": "启用SSH代理后终端访问ip.sb显示什么IP？",
+          "id": "5-341-14",
+          "answers": [
+            {
+              "text": "99.99.99.99",
+              "answer_start": 45
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

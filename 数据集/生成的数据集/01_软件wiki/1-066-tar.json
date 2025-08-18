@@ -1,0 +1,370 @@
+{
+  "title": "tar",
+  "paragraphs": [
+    {
+      "context": "tar是一个用于储存或提取tar文件的命令行程序。 tar文件可放在磁盘中， 也可以存为普通文件。tar 的第一个参数必须是操作参数A、c、d、r、t、u、x 中的一个， 参数后面可跟着任意可选选项。tar的最后一个参数是你要处理的文件或目录的名字。 如果你指定了一个目录， 该目录的所有子目录都将被加入存档。",
+      "qas": [
+        {
+          "question": "tar是什么类型的程序？",
+          "id": "1-66-1",
+          "answers": [
+            {
+              "text": "用于储存或提取tar文件的命令行程序",
+              "answer_start": 5
+            }
+          ]
+        },
+        {
+          "question": "tar文件可以存放在哪里？",
+          "id": "1-66-2",
+          "answers": [
+            {
+              "text": "磁盘中，也可以存为普通文件",
+              "answer_start": 30
+            }
+          ]
+        },
+        {
+          "question": "tar的第一个参数必须是哪些操作参数中的一个？",
+          "id": "1-66-3",
+          "answers": [
+            {
+              "text": "A、c、d、r、t、u、x",
+              "answer_start": 72
+            }
+          ]
+        },
+        {
+          "question": "tar的最后一个参数是什么？",
+          "id": "1-66-4",
+          "answers": [
+            {
+              "text": "要处理的文件或目录的名字",
+              "answer_start": 115
+            }
+          ]
+        },
+        {
+          "question": "如果指定一个目录作为tar的处理对象，会发生什么？",
+          "id": "1-66-5",
+          "answers": [
+            {
+              "text": "该目录的所有子目录都将被加入存档",
+              "answer_start": 156
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "`tar -xvf foo.tar` 提取 foo.tar 文件并显示提取过程",
+      "qas": [
+        {
+          "question": "`tar -xvf foo.tar` 命令的作用是什么？",
+          "id": "1-66-6",
+          "answers": [
+            {
+              "text": "提取 foo.tar 文件并显示提取过程",
+              "answer_start": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "`tar -xzf foo.tar.gz` 提取用 gzip 压缩的文件 foo.tar.gz",
+      "qas": [
+        {
+          "question": "`tar -xzf foo.tar.gz` 命令的作用是什么？",
+          "id": "1-66-7",
+          "answers": [
+            {
+              "text": "提取用 gzip 压缩的文件 foo.tar.gz",
+              "answer_start": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "`tar -cjf foo.tar.bz2 bar/` 用 bzip 为目录 bar 创建一个叫做 foo.tar.bz2存档",
+      "qas": [
+        {
+          "question": "`tar -cjf foo.tar.bz2 bar/` 命令的作用是什么？",
+          "id": "1-66-8",
+          "answers": [
+            {
+              "text": "用 bzip 为目录 bar 创建一个叫做 foo.tar.bz2存档",
+              "answer_start": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "`tar -xjf foo.tar.bz2 -C bar/` 把用 bzip 压缩的文件 foo.tar.bz2 提取到 bar 目录",
+      "qas": [
+        {
+          "question": "`tar -xjf foo.tar.bz2 -C bar/` 命令的作用是什么？",
+          "id": "1-66-9",
+          "answers": [
+            {
+              "text": "把用 bzip 压缩的文件 foo.tar.bz2 提取到 bar 目录",
+              "answer_start": 26
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "`tar -xzf foo.tar.gz blah.txt` 把文件 blah.txt 从 foo.tar.gz 中提取出来",
+      "qas": [
+        {
+          "question": "`tar -xzf foo.tar.gz blah.txt` 命令的作用是什么？",
+          "id": "1-66-10",
+          "answers": [
+            {
+              "text": "把文件 blah.txt 从 foo.tar.gz 中提取出来",
+              "answer_start": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "注意: 当压缩或提取的时候， 压缩类型选项常常是不必需的， 因为tar会根据文件的后缀自动选择压缩类型。",
+      "qas": [
+        {
+          "question": "压缩或提取时，压缩类型选项是否必需？为什么？",
+          "id": "1-66-11",
+          "answers": [
+            {
+              "text": "不必需，因为tar会根据文件的后缀自动选择压缩类型",
+              "answer_start": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "下列参数中必须有至少一个被使用：`-A`, `--catenate`, `--concatenate` 将一存档与已有的存档合并；`-c`, `--create` 创建一个新的存档；`-d`, `--diff`, `--compare` 比较存档与相应的未存档文件的不同之处；`-r`, `--append` 将文件附加到存档结尾；`-t`, `--list` 列出存档中文件的目录；`-u`, `--update` 仅将较新的文件附加到存档中；`-x`, `--extract`, `--get` 从存档提取文件；`--delete` 把指定文件从存档中删除（不要用于磁带！）",
+      "qas": [
+        {
+          "question": "`-A`（`--catenate`, `--concatenate`）参数的作用是什么？",
+          "id": "1-66-12",
+          "answers": [
+            {
+              "text": "将一存档与已有的存档合并",
+              "answer_start": 56
+            }
+          ]
+        },
+        {
+          "question": "`-c`（`--create`）参数的作用是什么？",
+          "id": "1-66-13",
+          "answers": [
+            {
+              "text": "创建一个新的存档",
+              "answer_start": 99
+            }
+          ]
+        },
+        {
+          "question": "`-d`（`--diff`, `--compare`）参数的作用是什么？",
+          "id": "1-66-14",
+          "answers": [
+            {
+              "text": "比较存档与相应的未存档文件的不同之处",
+              "answer_start": 127
+            }
+          ]
+        },
+        {
+          "question": "`-r`（`--append`）参数的作用是什么？",
+          "id": "1-66-15",
+          "answers": [
+            {
+              "text": "将文件附加到存档结尾",
+              "answer_start": 178
+            }
+          ]
+        },
+        {
+          "question": "`-t`（`--list`）参数的作用是什么？",
+          "id": "1-66-16",
+          "answers": [
+            {
+              "text": "列出存档中文件的目录",
+              "answer_start": 207
+            }
+          ]
+        },
+        {
+          "question": "`-u`（`--update`）参数的作用是什么？",
+          "id": "1-66-17",
+          "answers": [
+            {
+              "text": "仅将较新的文件附加到存档中",
+              "answer_start": 238
+            }
+          ]
+        },
+        {
+          "question": "`-x`（`--extract`, `--get`）参数的作用是什么？",
+          "id": "1-66-18",
+          "answers": [
+            {
+              "text": "从存档提取文件",
+              "answer_start": 279
+            }
+          ]
+        },
+        {
+          "question": "`--delete` 参数的作用是什么？",
+          "id": "1-66-19",
+          "answers": [
+            {
+              "text": "把指定文件从存档中删除（不要用于磁带！）",
+              "answer_start": 317
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "`-C`, `--directory 目录` 提取存档到指定目录；`-f`, `--file [主机名:]文件` 指定存档或设备中的文件 (默认是 \"-\"， 表示 标准输入/输出)；`-j`, `--bzip2` 用 bzip2 处理存档; 用于 .bz2 文件；`-J`, `--xz` 用 xz 处理存档; 用于 .xz 文件；`-p`, `--preserve-permissions` 提取所有保护信息；`-v`, `--verbose` 显示文件处理过程；`-z`, `--gzip`, `--ungzip` 用 gzip 处理存档; 用于 .gz 文件",
+      "qas": [
+        {
+          "question": "`-C`（`--directory 目录`）选项的作用是什么？",
+          "id": "1-66-20",
+          "answers": [
+            {
+              "text": "提取存档到指定目录",
+              "answer_start": 30
+            }
+          ]
+        },
+        {
+          "question": "`-f`（`--file [主机名:]文件`）选项的作用是什么？",
+          "id": "1-66-21",
+          "answers": [
+            {
+              "text": "指定存档或设备中的文件 (默认是 \"-\"， 表示 标准输入/输出)",
+              "answer_start": 63
+            }
+          ]
+        },
+        {
+          "question": "`-j`（`--bzip2`）选项的作用是什么？",
+          "id": "1-66-22",
+          "answers": [
+            {
+              "text": "用 bzip2 处理存档; 用于 .bz2 文件",
+              "answer_start": 162
+            }
+          ]
+        },
+        {
+          "question": "`-J`（`--xz`）选项的作用是什么？",
+          "id": "1-66-23",
+          "answers": [
+            {
+              "text": "用 xz 处理存档; 用于 .xz 文件",
+              "answer_start": 199
+            }
+          ]
+        },
+        {
+          "question": "`-p`（`--preserve-permissions`）选项的作用是什么？",
+          "id": "1-66-24",
+          "answers": [
+            {
+              "text": "提取所有保护信息",
+              "answer_start": 232
+            }
+          ]
+        },
+        {
+          "question": "`-v`（`--verbose`）选项的作用是什么？",
+          "id": "1-66-25",
+          "answers": [
+            {
+              "text": "显示文件处理过程",
+              "answer_start": 274
+            }
+          ]
+        },
+        {
+          "question": "`-z`（`--gzip`, `--ungzip`）选项的作用是什么？",
+          "id": "1-66-26",
+          "answers": [
+            {
+              "text": "用 gzip 处理存档; 用于 .gz 文件",
+              "answer_start": 304
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "tar -xvf foo.tar\n    Extract foo.tar file and display the extraction process\n\ntar -xzf foo.tar.gz\n    Extract gzip-compressed file foo.tar.gz\n\ntar -cjf foo.tar.bz2 bar/\n    Create a bzip archive called foo.tar.bz2 for directory bar\n\ntar -xjf foo.tar.bz2 -C bar/\n    Extract bzip-compressed file foo.tar.bz2 to bar directory\n\ntar -xzf foo.tar.gz blah.txt\n    Extract file blah.txt from foo.tar.gz\n\nNote: When compressing or extracting, compression type options are often unnecessary because tar automatically selects the type based on the file extension.",
+      "qas": [
+        {
+          "question": "How do you extract a gzip-compressed tar file?",
+          "id": "1-66-27",
+          "answers": [
+            {
+              "text": "tar -xzf foo.tar.gz",
+              "answer_start": 93
+            }
+          ]
+        },
+        {
+          "question": "What command creates a bzip archive for a directory?",
+          "id": "1-66-28",
+          "answers": [
+            {
+              "text": "tar -cjf foo.tar.bz2 bar/",
+              "answer_start": 157
+            }
+          ]
+        },
+        {
+          "question": "How to extract a bzip-compressed file to a specific directory?",
+          "id": "1-66-29",
+          "answers": [
+            {
+              "text": "tar -xjf foo.tar.bz2 -C bar/",
+              "answer_start": 219
+            }
+          ]
+        },
+        {
+          "question": "What command extracts a specific file from a tar.gz archive?",
+          "id": "1-66-30",
+          "answers": [
+            {
+              "text": "tar -xzf foo.tar.gz blah.txt",
+              "answer_start": 287
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "context": "Common options:\n  -C, --directory directory\n      Extract to the specified directory\n\n  -f, --file [hostname:]file\n      Specify the file in the archive or device (default is \"-\", meaning stdin/stdout)\n\n  -j, --bzip2\n      Use bzip2 for the archive; for .bz2 files\n\n  -J, --xz\n      Use xz for the archive; for .xz files\n\n  -p, --preserve-permissions\n      Restore all permissions\n\n  -v, --verbose\n      Show the file processing process\n\n  -z, --gzip, --ungzip\n      Use gzip for the archive; for .gz files",
+      "qas": [
+        {
+          "question": "When should you use the -j option?",
+          "id": "1-66-31",
+          "answers": [
+            {
+              "text": "Use bzip2 for the archive; for .bz2 files",
+              "answer_start": 227
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

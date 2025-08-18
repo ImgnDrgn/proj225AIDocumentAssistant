@@ -1,0 +1,64 @@
+{
+  "data": [
+    {
+      "title": "Komodo IDE",
+      "paragraphs": [
+        {
+          "context": "Komodo IDE是一款支持多种动态编程语言的集成开发环境，它提供强大的工作空间用以编辑、调试和测试程序。支持Perl、Python及Javascript等的程序语言开发，同时还具备版本控制CVS、支持正则表达式等功能。安装命令为sudo apt-get install komodo-edit，卸载命令为sudo apt-get remove komodo-edit，其仓库地址为http://packages.deepin.com/deepin/pool/main/k/komodo-edit/",
+          "qas": [
+            {
+              "id": "5-181-1",
+              "question": "Komodo IDE是什么类型的工具？",
+              "answers": [
+                {
+                  "text": "一款支持多种动态编程语言的集成开发环境",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "id": "5-181-2",
+              "question": "Komodo IDE能提供哪些功能？",
+              "answers": [
+                {
+                  "text": "提供强大的工作空间用以编辑、调试和测试程序。支持Perl、Python及Javascript等的程序语言开发，同时还具备版本控制CVS、支持正则表达式等功能",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "id": "5-181-3",
+              "question": "如何安装Komodo IDE？",
+              "answers": [
+                {
+                  "text": "sudo apt-get install komodo-edit",
+                  "answer_start": 177
+                }
+              ]
+            },
+            {
+              "id": "5-181-4",
+              "question": "卸载Komodo IDE的命令是什么？",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove komodo-edit",
+                  "answer_start": 207
+                }
+              ]
+            },
+            {
+              "id": "5-181-5",
+              "question": "Komodo IDE的仓库地址是什么？",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/k/komodo-edit/",
+                  "answer_start": 243
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

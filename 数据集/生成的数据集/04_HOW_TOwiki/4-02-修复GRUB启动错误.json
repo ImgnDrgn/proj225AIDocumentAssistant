@@ -1,0 +1,199 @@
+{
+  "data": [
+    {
+      "title": "修复GRUB启动错误",
+      "paragraphs": [
+        {
+          "context": "GRUB安装分为三部分：第一部分一般在MBR上，第二部分是core.img嵌入MBR后的保留扇区，第三部分在/boot/grub或对应分区的/grub目录（针对GRUB2.0）。",
+          "qas": [
+            {
+              "question": "GRUB2.0安装分为哪几部分？",
+              "id": "4-2-1",
+              "answers": [
+                {
+                  "text": "第一部分一般在MBR上，第二部分是core.img嵌入MBR后的保留扇区，第三部分在/boot/grub或对应分区的/grub目录。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "一般GRUB菜单直接显示。用户若将等待时间设为0，开机时按住Shift键可临时显示，部分主板需多重启；也可进入深度操作系统的控制中心->启动菜单调整。",
+          "qas": [
+            {
+              "question": "GRUB等待时间设为0时，如何临时显示GRUB菜单？",
+              "id": "4-2-2",
+              "answers": [
+                {
+                  "text": "开机时，在GRUB加载前按住Shift键不放，部分主板可能需要多重启一次才会生效。",
+                  "answer_start": 30
+                }
+              ]
+            },
+            {
+              "question": "在深度操作系统中，如何调整GRUB相关选项？",
+              "id": "4-2-3",
+              "answers": [
+                {
+                  "text": "到控制中心->启动菜单调整相应选项。",
+                  "answer_start": 92
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "deepin15.3（UEFI）启动失败时，报错为grub>，因normal.mod出错，可能是easybcd与grub兼容问题或未清理efi分区等导致。",
+          "qas": [
+            {
+              "question": "deepin15.3（UEFI）启动失败时的报错标识符是什么？",
+              "id": "4-2-4",
+              "answers": [
+                {
+                  "text": "grub>",
+                  "answer_start": 36
+                }
+              ]
+            },
+            {
+              "question": "deepin15.3（UEFI）启动失败（报错grub>）的可能原因有哪些？",
+              "id": "4-2-5",
+              "answers": [
+                {
+                  "text": "easybcd与grub之间存在兼容性问题，之前重复安装其他操作系统后没有清理efi分区，直接在旧系统上安装deepin15.3。",
+                  "answer_start": 56
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解决deepin15.3（UEFI）启动失败：进入grub命令行输入set，查看prefix=行；加载内核输入linux (hd2,gpt1)/boot/vmlinuz补全后加root=/dev/sda1等；输入initrd补全；boot进入系统后sudo update-grub并在控制中心更新启动菜单。",
+          "qas": [
+            {
+              "question": "在deepin15.3（UEFI）启动失败的grub命令行中，如何查看系统所在分区？",
+              "id": "4-2-6",
+              "answers": [
+                {
+                  "text": "输入set然后回车，查看prefix=行的显示，例如(hd2,gpt1)代表系统所在分区。",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "进入deepin15.3系统后，如何完成GRUB修复的最后步骤？",
+              "id": "4-2-7",
+              "answers": [
+                {
+                  "text": "在终端下输入sudo update-grub，之后在控制中心打开启动菜单选项，等待它自动更新。",
+                  "answer_start": 225
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "旧版GRUB错误为error:unknow filesystem，grub rescue>，可能因删除/格式化Linux分区、调整磁盘分区、重装系统未装GRUB2、恢复老版本系统破坏GRUB2导致。",
+          "qas": [
+            {
+              "question": "旧版GRUB错误的报错信息是什么？",
+              "id": "4-2-8",
+              "answers": [
+                {
+                  "text": "GRUB loading error:unknow filesystem grub rescue>",
+                  "answer_start": 0
+                }
+              ]
+            },
+            {
+              "question": "哪些操作可能导致旧版GRUB错误（grub rescue>）？",
+              "id": "4-2-9",
+              "answers": [
+                {
+                  "text": "删除/格式化Linux分区、调整磁盘分区、重装系统未装GRUB2、恢复老版本系统破坏GRUB2。",
+                  "answer_start": 47
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "重装GRUB步骤：用深度启动盘引导，Ctrl+Alt+F1进入Live CD；挂载系统分区到/mnt，必要时挂载/boot和/dev等；chroot后，BIOS引导用grub-install /dev/sda等，UEFI引导需挂载EFI分区、重装grub-efi等。",
+          "qas": [
+            {
+              "question": "如何进入Live CD模式修复GRUB？",
+              "id": "4-2-10",
+              "answers": [
+                {
+                  "text": "使用深度操作系统启动盘引导电脑启动，待进入安装界面后，按下Ctrl+Alt+F1，执行sudo service lightdm stop和startx命令。",
+                  "answer_start": 23
+                }
+              ]
+            },
+            {
+              "question": "BIOS引导下，重装GRUB需要执行哪些关键命令？",
+              "id": "4-2-11",
+              "answers": [
+                {
+                  "text": "grub-probe -t device /boot/grub、sudo grub-install /dev/sda、sudo grub-install --recheck /dev/sda、sudo update-grub。",
+                  "answer_start": 177
+                }
+              ]
+            },
+            {
+              "question": "UEFI引导下，重装GRUB前需要挂载哪个分区？",
+              "id": "4-2-12",
+              "answers": [
+                {
+                  "text": "EFI系统分区（最可能/dev/sda1）到/boot/efi。",
+                  "answer_start": 265
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "EFI+GPT模式修复双系统引导：用Linux启动盘进入Live系统，创建文件夹并挂载Linux的/分区和EFI分区；用efibootmgr创建启动项，重启进入系统后重装GRUB2并刷新配置。",
+          "qas": [
+            {
+              "question": "EFI+GPT模式下，修复GRUB2双系统引导时，需要挂载哪些分区？",
+              "id": "4-2-13",
+              "answers": [
+                {
+                  "text": "Linux的/分区和EFI分区（即ESP分区）。",
+                  "answer_start": 53
+                }
+              ]
+            },
+            {
+              "question": "EFI+GPT模式下，进入本机Linux系统后，如何完成GRUB2修复？",
+              "id": "4-2-14",
+              "answers": [
+                {
+                  "text": "重新安装GRUB2到EFI分区，执行sudo grub-install /dev/sda1，然后刷新配置sudo update-grub2。",
+                  "answer_start": 130
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "解决开关机动画不显示：修改/boot/grub/grub.cfg，搜索当前核心，将最后面的ro  quiet改为ro splash quiet，重启即可。",
+          "qas": [
+            {
+              "question": "如何解决GRUB引导下开关机动画没有正常显示的问题？",
+              "id": "4-2-15",
+              "answers": [
+                {
+                  "text": "修改/boot/grub/grub.cfg，搜索当前核心，将最后面的ro  quiet改为ro splash quiet，重启即可。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

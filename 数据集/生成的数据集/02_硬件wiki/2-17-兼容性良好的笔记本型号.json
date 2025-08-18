@@ -1,0 +1,374 @@
+{
+  "data": [
+    {
+      "title": "兼容性良好的笔记本型号",
+      "paragraphs": [
+        {
+          "context": "收集来自用户社区中的用户反馈的情况确定以下机型对deepin兼容性良好：建议大家按照品牌归类填写，可在品牌后面用中括号注明机器的配置格式【CPU/内存/显卡/硬盘/网卡/WiFi/有无蓝牙/屏幕尺寸】，小括号内注明一些问题。Google PixelBook：1.PixelBook 2013 完美支持；2.PixelBook 2015 (耳机孔无输出、蓝牙无输入，其余功能完美）。",
+          "qas": [
+            {
+              "question": "PixelBook 2013对deepin的兼容性如何？",
+              "id": "2-17-1",
+              "answers": [
+                {
+                  "text": "完美支持",
+                  "answer_start": 213
+                }
+              ]
+            },
+            {
+              "question": "PixelBook 2015对deepin的兼容性存在哪些问题？",
+              "id": "2-17-2",
+              "answers": [
+                {
+                  "text": "耳机孔无输出、蓝牙无输入，其余功能完美",
+                  "answer_start": 240
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "华为 Huawei&荣耀：1.华为MateBook X Pro（指纹暂未支持）；2.荣耀MagicBook Intel版（指纹暂未支持）；3.荣耀MagicBook Amd R5版（亮度无法调节（会很暗），合盖后有几率无法启动，触摸板不太灵敏，RTL8822CE网卡驱动需要单独安装（https://github.com/alanfox2000/realtek-linux/tree/master/RTL8822CE））；4.华为MateBook 13 (八代i5, 8+256, 13寸)（指纹暂未支持，Huawei Share暂未支持，[更多优化及补丁](https://github.com/nekr0z/linux-on-huawei-matebook-13-2019)。）",
+          "qas": [
+            {
+              "question": "华为MateBook X Pro对deepin的兼容性有什么问题？",
+              "id": "2-17-3",
+              "answers": [
+                {
+                  "text": "指纹暂未支持",
+                  "answer_start": 32
+                }
+              ]
+            },
+            {
+              "question": "荣耀MagicBook Intel版对deepin的兼容性存在什么问题？",
+              "id": "2-17-4",
+              "answers": [
+                {
+                  "text": "指纹暂未支持",
+                  "answer_start": 71
+                }
+              ]
+            },
+            {
+              "question": "荣耀MagicBook Amd R5版的亮度调节存在什么问题？",
+              "id": "2-17-5",
+              "answers": [
+                {
+                  "text": "亮度无法调节（会很暗）",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "question": "华为MateBook 13 (八代i5, 8+256, 13寸)不支持哪些功能？",
+              "id": "2-17-6",
+              "answers": [
+                {
+                  "text": "指纹暂未支持，Huawei Share暂未支持",
+                  "answer_start": 267
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "联想 Lenovo & ThinkPad：注意!!! 联想部分型号无法使用WiFi,可能不一定是网卡驱动问题,也可能是联想的ideapad_laptop影响了deepin无线wifi硬件的开关,解决办法请自行搜索。联想系列：1.联想B460；2.联想B470；3.联想E4430a；4.联想G40（睡眠功能有一定机率睡死，其他正常）；5.联想G400S；6.联想G410；7.联想G480；8.联想G510（电池支持不太好有时开机充不进电关机可进行充电，双显卡不支持），配置【Intel I5 4210M 2.6GHz,集成显卡 Intel Graphics HD 4600 ,独立显卡 AMD Radeon R7 M265 ,硬盘 500GB 5400转,网卡 10/100Mbps自适应网卡,无线网卡 支持BGN协议的无线局域网,蓝牙 内置蓝牙模块,屏幕尺寸 15.6英寸,16:9,分辨率 1366×768,LED背光】。",
+          "qas": [
+            {
+              "question": "联想G40对deepin的兼容性有什么问题？",
+              "id": "2-17-7",
+              "answers": [
+                {
+                  "text": "睡眠功能有一定机率睡死，其他正常",
+                  "answer_start": 186
+                }
+              ]
+            },
+            {
+              "question": "联想G510的电池支持存在什么问题？",
+              "id": "2-17-8",
+              "answers": [
+                {
+                  "text": "电池支持不太好有时开机充不进电关机可进行充电",
+                  "answer_start": 246
+                }
+              ]
+            },
+            {
+              "question": "联想G510的显卡支持情况如何？",
+              "id": "2-17-9",
+              "answers": [
+                {
+                  "text": "双显卡不支持",
+                  "answer_start": 299
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "联想小新Air 12（Elantech的触摸板无多点，但通过在/etc/default/grub的“GRUB_CMDLINE_LINUX_DEFAULT=”中加入”i8042.reset i8042.nomux=1“这两个参数后重启即可完美使用；耳机插口无法自动切换，需要手动切换）。联想小新Air14 2021锐龙版：CPU: AMD 5500U；内存: 16G 双通道 DDR4；硬盘: 500G + 500G双nvme硬盘；无线网卡: Intel AX210；其它: Win11和Deepin双系统；问题: 指纹识别无法使用。",
+          "qas": [
+            {
+              "question": "联想小新Air 12的触摸板存在什么问题及解决办法？",
+              "id": "2-17-10",
+              "answers": [
+                {
+                  "text": "Elantech的触摸板无多点，但通过在/etc/default/grub的“GRUB_CMDLINE_LINUX_DEFAULT=”中加入”i8042.reset i8042.nomux=1“这两个参数后重启即可完美使用",
+                  "answer_start": 13
+                }
+              ]
+            },
+            {
+              "question": "联想小新Air14 2021锐龙版的无线网卡型号是什么？",
+              "id": "2-17-11",
+              "answers": [
+                {
+                  "text": "Intel AX210",
+                  "answer_start": 236
+                }
+              ]
+            },
+            {
+              "question": "联想小新Air14 2021锐龙版存在什么兼容性问题？",
+              "id": "2-17-12",
+              "answers": [
+                {
+                  "text": "指纹识别无法使用",
+                  "answer_start": 285
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ThinkPad 小黑系列：1.ThinkPad E431；2.ThinkPad E435；3.Thinkpad E450C；4.ThinkPad E455；5.ThinkPad E470；6.Thinkpad E540；7.ThinkPad E545；8.ThinkPad E570；9.ThinkPad E550（win10双系统进入win10会出现花屏并且进不去卡在花屏界面，使用深度修复工具可以修复）；10.Thinkpad T430；11.ThinkPad T430s；12.Thinkpad T440s；13.Thinkpad T460s；14.Thinkpad T470s；15.Thinkpad x230i；16.Thinkpad x240（安装后初始打开有wifi图标但是找不到网络，重启后就好了）；17.Thinkpad x270（不支持指纹登录，其余没有问题。建议装在固态硬盘上，启动会很快。）。",
+          "qas": [
+            {
+              "question": "ThinkPad E550在win10双系统下有什么问题及解决办法？",
+              "id": "2-17-13",
+              "answers": [
+                {
+                  "text": "win10双系统进入win10会出现花屏并且进不去卡在花屏界面，使用深度修复工具可以修复",
+                  "answer_start": 135
+                }
+              ]
+            },
+            {
+              "question": "Thinkpad x240的WiFi存在什么问题及解决办法？",
+              "id": "2-17-14",
+              "answers": [
+                {
+                  "text": "安装后初始打开有wifi图标但是找不到网络，重启后就好了",
+                  "answer_start": 285
+                }
+              ]
+            },
+            {
+              "question": "Thinkpad x270对指纹登录的支持情况如何？",
+              "id": "2-17-15",
+              "answers": [
+                {
+                  "text": "不支持指纹登录",
+                  "answer_start": 356
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "戴尔 Dell：1.Dell XPS15-9530；2.Dell XPS15-9550；3.Dell XPS15-9560-R1845【i7-7700HQ/ 16(8x2)GB DDR4/NVMe PM961 512GB SSD/nVidia GTX1050 4G/15存FHD非触屏】（因默认磁盘模式为raid，若安装deepin会出现检测不到硬盘的情况，需自行在bios把raid切换为achi，切换完毕后预装Win10无法正常进入，需启动安全模式进入系统，系统会自动修复更换模式后的硬盘驱动，之后重启恢复正常。使用过程没有发现什么问题，只是发热量较大以及耗电量较高。）；4.Dell 15R-5537；5.Dell 灵越14Z-5423；6.Dell 灵越15-7560（背光灯插电时不亮，4.12内核背光正常）。",
+          "qas": [
+            {
+              "question": "Dell XPS15-9560-R1845的默认磁盘模式是什么？安装deepin时因磁盘模式可能出现什么问题？",
+              "id": "2-17-16",
+              "answers": [
+                {
+                  "text": "默认磁盘模式为raid，若安装deepin会出现检测不到硬盘的情况",
+                  "answer_start": 110
+                }
+              ]
+            },
+            {
+              "question": "Dell 灵越15-7560的背光灯存在什么问题及解决办法？",
+              "id": "2-17-17",
+              "answers": [
+                {
+                  "text": "背光灯插电时不亮，4.12内核背光正常",
+                  "answer_start": 336
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "宏碁 Acer：1.Acer 4741G；2.Acer 4743G；3.Acer 4750G；4.Acer 4752G；5.Acer E1-471G；6.Acer TMP-258MG；7.Acer S7；8.Acer VN7-592G（麦克风有点问题）；9.Acer VN7-591G（声音人声有点远空洞、麦克风有杂音）；10.Acer E5-572G；11.Acer T5000；12.Acer E5-573G【i5-5200/8GB/240GB SSD】（关机问题：关机时会显示reboot: system halted错误，至今没有解决；开机问题：报ACPI错误；）。",
+          "qas": [
+            {
+              "question": "Acer VN7-592G的麦克风存在什么问题？",
+              "id": "2-17-18",
+              "answers": [
+                {
+                  "text": "麦克风有点问题",
+                  "answer_start": 78
+                }
+              ]
+            },
+            {
+              "question": "Acer VN7-591G的声音和麦克风存在什么问题？",
+              "id": "2-17-19",
+              "answers": [
+                {
+                  "text": "声音人声有点远空洞、麦克风有杂音",
+                  "answer_start": 104
+                }
+              ]
+            },
+            {
+              "question": "Acer E5-573G存在哪些开关机问题？",
+              "id": "2-17-20",
+              "answers": [
+                {
+                  "text": "关机时会显示reboot: system halted错误，至今没有解决；开机问题：报ACPI错误",
+                  "answer_start": 166
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "华硕 ASUS：1.ASUS A550VC-i5-3230；2.ASUS A550-JK4200（没测独立显卡）；3.ASUS K45VM；4.ASUS K555L；5.ASUS K43SV；6.ASUS K55D；7.ASUS N551JK；8.ASUS U303LB5200（各项驱动使用正常，续航有待提升）；9.ASUS U306U；10.ASUS U31J（风扇一直中速运转，发热厉害，其他正常）；11.ASUS VM590ZE；12.ASUS X556UB(FL5900U)（WIFI驱动貌似有点问题，不能切换独显，其他都完美使用）；13.ASUS A550L（除了蓝牙无法被系统识别，其他一切正常）。",
+          "qas": [
+            {
+              "question": "ASUS A550-JK4200的独立显卡测试情况如何？",
+              "id": "2-17-21",
+              "answers": [
+                {
+                  "text": "没测独立显卡",
+                  "answer_start": 41
+                }
+              ]
+            },
+            {
+              "question": "ASUS U31J的风扇和发热存在什么问题？",
+              "id": "2-17-22",
+              "answers": [
+                {
+                  "text": "风扇一直中速运转，发热厉害",
+                  "answer_start": 185
+                }
+              ]
+            },
+            {
+              "question": "ASUS A550L的蓝牙存在什么问题？",
+              "id": "2-17-23",
+              "answers": [
+                {
+                  "text": "蓝牙无法被系统识别",
+                  "answer_start": 326
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "小米 Xiao Mi：1.小米 Air13.3-6代cpu；2.小米 Air13.3 - i5 7200 - 指纹 - MX150；3.小米 AIr12.5；4.小米笔记本Air 13.3\" i7-7500U - 指纹 - MX150；5.小米笔记本Air 13.3\" i5-8250U - 指纹 - MX150（对指纹不支持）；6.小米笔记本Pro 15.6\" i5-8250U - 指纹 - MX150（对指纹不支持）；7.小米笔记本Pro 15.6\" i7-8550U - 指纹 - MX150。",
+          "qas": [
+            {
+              "question": "小米笔记本Air 13.3\" i5-8250U - 指纹 - MX150对指纹的支持情况如何？",
+              "id": "2-17-24",
+              "answers": [
+                {
+                  "text": "对指纹不支持",
+                  "answer_start": 209
+                }
+              ]
+            },
+            {
+              "question": "小米笔记本Pro 15.6\" i5-8250U - 指纹 - MX150是否支持指纹？",
+              "id": "2-17-25",
+              "answers": [
+                {
+                  "text": "对指纹不支持",
+                  "answer_start": 283
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "惠普 Hewlett-Packard：1.惠普dv4-5305tx；2.惠普 Pavilion dv1702TU(内存升级到2G后)；3.惠普ENVY 15-K222TX L；4.惠普ENVY 15-K215TX L；5.惠普ENVY 15-K221TX L；6.惠普Pavilion 15-P026NR (AMD CPU)；7.惠普Pavilion 15-R221TX（蓝牙和WiFi需要驱动，安装github上提供的即可。WiFi仅支持只连接无线网络或只开热点两种模式。具体步骤可参照相关帖子）；8.惠普OMEN 暗影精灵4 (I7+1060)（安全启动可安装deepin；网卡Intel9560无驱动，去官网下载，官网有说明。）。",
+          "qas": [
+            {
+              "question": "惠普Pavilion 15-R221TX的蓝牙和WiFi需要什么驱动？",
+              "id": "2-17-26",
+              "answers": [
+                {
+                  "text": "蓝牙和WiFi需要驱动，安装github上提供的即可",
+                  "answer_start": 156
+                }
+              ]
+            },
+            {
+              "question": "惠普OMEN 暗影精灵4 (I7+1060)的网卡Intel9560有什么问题及解决办法？",
+              "id": "2-17-27",
+              "answers": [
+                {
+                  "text": "网卡Intel9560无驱动，去官网下载，官网有说明",
+                  "answer_start": 289
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "联想笔记本特殊注意事项：",
+          "qas": [
+            {
+              "question": "联想部分型号WiFi问题的原因是什么？",
+              "id": "2-17-28",
+              "answers": [
+                {
+                  "text": "联想的ideapad_laptop影响了deepin无线wifi硬件的开关",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "联想常规型号兼容情况：",
+          "qas": [
+            {
+              "question": "如何解决联想小新Air 12的触摸板问题？",
+              "id": "2-17-29",
+              "answers": [
+                {
+                  "text": "在/etc/default/grub的\"GRUB_CMDLINE_LINUX_DEFAULT=\"中加入\"i8042.reset i8042.nomux=1\"参数后重启",
+                  "answer_start": 25
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "ThinkPad兼容性详情：",
+          "qas": [
+            {
+              "question": "ThinkPad T14的指纹识别是否可用？",
+              "id": "2-17-30",
+              "answers": [
+                {
+                  "text": "指纹识别无法使用，面部识别登录正常",
+                  "answer_start": 15
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

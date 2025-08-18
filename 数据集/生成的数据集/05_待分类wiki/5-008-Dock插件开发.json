@@ -1,0 +1,239 @@
+{
+  "data": [
+    {
+      "title": "Dock插件开发",
+      "paragraphs": [
+        {
+          "context": "深度桌面环境中Dock对外提供API文档，开发者可开发插件扩展其功能，一个插件由图标、Tooltip、Popup和菜单等组成。",
+          "qas": [
+            {
+              "question": "深度桌面环境中Dock提供了什么让开发者可以扩展其功能？",
+              "id": "5-8-1",
+              "answers": [
+                {
+                  "text": "API文档",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "一个Dock插件由哪些部分组成？",
+              "id": "5-8-2",
+              "answers": [
+                {
+                  "text": "图标、Tooltip、Popup和菜单等",
+                  "answer_start": 41
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "开发Dock插件前需安装必要包和工具，终端命令：sudo apt-get install dde-dock-dev build-essential qt5-qmake qt5-default qtcreator，qt5-default为可选。",
+          "qas": [
+            {
+              "question": "开发Dock插件前需要安装哪些工具？",
+              "id": "5-8-3",
+              "answers": [
+                {
+                  "text": "dde-dock-dev、build-essential、qt5-qmake、qt5-default、qtcreator",
+                  "answer_start": 51
+                }
+              ]
+            },
+            {
+              "question": "qt5-default包是必须安装的吗？",
+              "id": "5-8-4",
+              "answers": [
+                {
+                  "text": "不是，是可选的",
+                  "answer_start": 110
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "打开QtCreator创建“Qt Plugin”新项目，如“helloworld”，创建“HelloWorldPlugin”类作为入口，需修改类继承关系为QObject和PluginsItemInterface。",
+          "qas": [
+            {
+              "question": "开发Dock插件时，在QtCreator中创建的新项目类型是什么？",
+              "id": "5-8-5",
+              "answers": [
+                {
+                  "text": "Qt Plugin",
+                  "answer_start": 17
+                }
+              ]
+            },
+            {
+              "question": "插件入口类HelloWorldPlugin需要继承哪些类？",
+              "id": "5-8-6",
+              "answers": [
+                {
+                  "text": "QObject和PluginsItemInterface",
+                  "answer_start": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "修改项目模板时，需删除helloworld.pro中的DESTDIR一项，否则编译会报错。",
+          "qas": [
+            {
+              "question": "为什么要删除helloworld.pro中的DESTDIR一项？",
+              "id": "5-8-7",
+              "answers": [
+                {
+                  "text": "否则编译的时候会报错",
+                  "answer_start": 50
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "PluginItemInterface的pluginName方法返回插件名字，需保证唯一性；itemWidget提供图标，返回QWidget；itemTipsWidget提供Tooltip，一般是QLabel。",
+          "qas": [
+            {
+              "question": "PluginItemInterface的pluginName方法有什么要求？",
+              "id": "5-8-8",
+              "answers": [
+                {
+                  "text": "返回插件的名字，需要保证唯一性",
+                  "answer_start": 27
+                }
+              ]
+            },
+            {
+              "question": "itemWidget方法的作用是什么？",
+              "id": "5-8-9",
+              "answers": [
+                {
+                  "text": "提供Dock插件的图标，返回QWidget",
+                  "answer_start": 61
+                }
+              ]
+            },
+            {
+              "question": "itemTipsWidget方法通常返回什么类型的组件？",
+              "id": "5-8-10",
+              "answers": [
+                {
+                  "text": "QLabel",
+                  "answer_start": 101
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "init函数用于初始化Dock插件，通过PluginProxy的itemAdded方法告知Dock添加图标。",
+          "qas": [
+            {
+              "question": "init函数的作用是什么？",
+              "id": "5-8-11",
+              "answers": [
+                {
+                  "text": "用于初始化Dock的插件，通过PluginProxy告知Dock需要加上图标了",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "编译成功后，将生成的libhelloworld.so放到/usr/lib/dde-dock/plugins/目录，重新启动Dock即可看到新插件。",
+          "qas": [
+            {
+              "question": "编译成功后的Dock插件文件放在哪个目录？",
+              "id": "5-8-12",
+              "answers": [
+                {
+                  "text": "/usr/lib/dde-dock/plugins/",
+                  "answer_start": 40
+                }
+              ]
+            },
+            {
+              "question": "如何让新开发的Dock插件显示出来？",
+              "id": "5-8-13",
+              "answers": [
+                {
+                  "text": "将生成的libhelloworld.so放到/usr/lib/dde-dock/plugins/目录，重新启动Dock",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "添加Popup需新建继承自QWidget的类，如HelloPopup，创建其实例并在相应方法中返回。",
+          "qas": [
+            {
+              "question": "添加Popup时需要创建什么样的类？",
+              "id": "5-8-14",
+              "answers": [
+                {
+                  "text": "继承自QWidget的类",
+                  "answer_start": 19
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Dock插件添加右键菜单需实现itemContextMenu和invokedMenuItem函数，前者提供菜单项内容，后者处理触发事件，还需调用PluginProxy的requestContextMenu方法。",
+          "qas": [
+            {
+              "question": "添加右键菜单需要实现哪两个函数？",
+              "id": "5-8-15",
+              "answers": [
+                {
+                  "text": "itemContextMenu和invokedMenuItem",
+                  "answer_start": 34
+                }
+              ]
+            },
+            {
+              "question": "itemContextMenu函数的作用是什么？",
+              "id": "5-8-16",
+              "answers": [
+                {
+                  "text": "为菜单项提供内容",
+                  "answer_start": 70
+                }
+              ]
+            },
+            {
+              "question": "调用哪个方法可以注册插件的右键菜单？",
+              "id": "5-8-17",
+              "answers": [
+                {
+                  "text": "PluginProxy的requestContextMenu方法",
+                  "answer_start": 116
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "若没有xeyes程序，需在终端执行sudo apt-get install x11-apps命令安装。",
+          "qas": [
+            {
+              "question": "如何安装xeyes程序？",
+              "id": "5-8-18",
+              "answers": [
+                {
+                  "text": "在终端执行sudo apt-get install x11-apps命令",
+                  "answer_start": 27
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

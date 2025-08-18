@@ -1,0 +1,429 @@
+{
+  "data": [
+    {
+      "title": "Shell",
+      "paragraphs": [
+        {
+          "context": "Shell俗称壳，是提供使用者使用界面的软件（命令解析器），是UNIX/Linux系统与外部的主要接口。",
+          "qas": [
+            {
+              "question": "Shell是什么？",
+              "id": "5-458-1",
+              "answers": [
+                {
+                  "text": "Shell俗称壳，是提供使用者使用界面的软件（命令解析器），是UNIX/Linux系统与外部的主要接口。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Shell在UNIX/Linux下的双重角色：管理用户与操作系统的交互；提供用户与操作系统通讯的方式（交互或非交互）。",
+          "qas": [
+            {
+              "question": "Shell在UNIX/Linux下有哪些双重角色？",
+              "id": "5-458-2",
+              "answers": [
+                {
+                  "text": "管理用户与操作系统的交互；提供用户与操作系统通讯的方式（交互或非交互）。",
+                  "answer_start": 23
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Shell主要分为命令Shell和图形Shell。",
+          "qas": [
+            {
+              "question": "Shell主要分为哪两类？",
+              "id": "5-458-3",
+              "answers": [
+                {
+                  "text": "命令Shell和图形Shell",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "图形Shell全名为Graphical User Interface shell（GUI shell），如Windows Explorer、Linux shell。",
+          "qas": [
+            {
+              "question": "图形Shell的全名是什么？",
+              "id": "5-458-4",
+              "answers": [
+                {
+                  "text": "Graphical User Interface shell（GUI shell）",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "图形Shell分为窗口管理器和桌面环境。",
+          "qas": [
+            {
+              "question": "图形Shell分为哪两类？",
+              "id": "5-458-5",
+              "answers": [
+                {
+                  "text": "窗口管理器和桌面环境",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "常见窗口管理器有Compiz、KWin、I3、Xmonad等。",
+          "qas": [
+            {
+              "question": "请列举一些常见的窗口管理器？",
+              "id": "5-458-6",
+              "answers": [
+                {
+                  "text": "Compiz、KWin、I3、Xmonad等",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "桌面环境自带一系列组件，提供完善软件需求和系统管理设置，如深度桌面环境、Gnome Shell、KDE等。",
+          "qas": [
+            {
+              "question": "桌面环境有哪些特点？",
+              "id": "5-458-7",
+              "answers": [
+                {
+                  "text": "自带一系列组件，提供完善软件需求和系统管理设置",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "桌面环境必须使用窗口管理器，窗口管理器可单独运行。",
+          "qas": [
+            {
+              "question": "桌面环境和窗口管理器的关系是什么？",
+              "id": "5-458-8",
+              "answers": [
+                {
+                  "text": "桌面环境必须使用窗口管理器，窗口管理器可单独运行。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令Shell全名为Command Line Interface shell（CLI shell），是命令解释器，接收用户命令并调用应用程序。",
+          "qas": [
+            {
+              "question": "命令Shell的全名是什么？",
+              "id": "5-458-9",
+              "answers": [
+                {
+                  "text": "Command Line Interface shell（CLI shell）",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "常见命令Shell有bash、sh、ksh、csh（Unix/linux系统），COMMAND.COM（MS-DOS）等。",
+          "qas": [
+            {
+              "question": "Unix/linux系统下常见的命令Shell有哪些？",
+              "id": "5-458-10",
+              "answers": [
+                {
+                  "text": "bash、sh、ksh、csh",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "第一个Unix shell是肯·汤普逊仿效Multic上的shell实现的sh。",
+          "qas": [
+            {
+              "question": "第一个Unix shell是什么？由谁实现？",
+              "id": "5-458-11",
+              "answers": [
+                {
+                  "text": "第一个Unix shell是sh，由肯·汤普逊实现。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Bourne shell兼容的Shell包括Bourne shell (sh)、Almquist shell (ash)、Bash等。",
+          "qas": [
+            {
+              "question": "哪些Shell与Bourne shell兼容？",
+              "id": "5-458-12",
+              "answers": [
+                {
+                  "text": "Bourne shell (sh)、Almquist shell (ash)、Bash等",
+                  "answer_start": 21
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "命令Shell的命令补齐功能：输入命令前半部分，按Tab键自动补齐后半部分。",
+          "qas": [
+            {
+              "question": "命令Shell的命令补齐功能如何使用？",
+              "id": "5-458-13",
+              "answers": [
+                {
+                  "text": "输入命令前半部分，按Tab键自动补齐后半部分。",
+                  "answer_start": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "history命令格式：history [-c | -n]，-c清除全部历史，-n列出前n条命令。",
+          "qas": [
+            {
+              "question": "history命令的格式是什么？-c选项的作用是什么？",
+              "id": "5-458-14",
+              "answers": [
+                {
+                  "text": "格式：history [-c | -n]；-c清除全部历史。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "alias命令定义别名：alias 别名=“原命令”，等号两端无空格，原命令用引号括起。",
+          "qas": [
+            {
+              "question": "如何使用alias命令定义别名？",
+              "id": "5-458-15",
+              "answers": [
+                {
+                  "text": "alias 别名=“原命令”，等号两端无空格，原命令用引号括起。",
+                  "answer_start": 12
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "取消别名用unalias命令：unalias 命令别名。",
+          "qas": [
+            {
+              "question": "如何取消命令别名？",
+              "id": "5-458-16",
+              "answers": [
+                {
+                  "text": "使用unalias命令：unalias 命令别名。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "井号(#)在Shell中常作为注释，位于行首或指令后，后面文字不执行。",
+          "qas": [
+            {
+              "question": "Shell中井号(#)的作用是什么？",
+              "id": "5-458-17",
+              "answers": [
+                {
+                  "text": "常作为注释，位于行首或指令后，后面文字不执行。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "~代表使用者的home目录，~+代表当前工作目录，~-代表上次工作目录。",
+          "qas": [
+            {
+              "question": "Shell中~、~+、~-分别代表什么？",
+              "id": "5-458-18",
+              "answers": [
+                {
+                  "text": "~代表使用者的home目录，~+代表当前工作目录，~-代表上次工作目录。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "分号(;)在Shell中作为命令分隔符，可连续执行多个命令。",
+          "qas": [
+            {
+              "question": "Shell中分号(;)的作用是什么？",
+              "id": "5-458-19",
+              "answers": [
+                {
+                  "text": "作为命令分隔符，可连续执行多个命令。",
+                  "answer_start": 10
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "单引号('')括住的内容视为单一字符串，变量$无作用；双引号(\"\")允许变量扩展。",
+          "qas": [
+            {
+              "question": "Shell中单引号和双引号的区别是什么？",
+              "id": "5-458-20",
+              "answers": [
+                {
+                  "text": "单引号括住的内容视为单一字符串，变量$无作用；双引号允许变量扩展。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "倒引号(``)内的内容视为命令，执行结果会被带入变量。",
+          "qas": [
+            {
+              "question": "Shell中倒引号(``)的作用是什么？",
+              "id": "5-458-21",
+              "answers": [
+                {
+                  "text": "内的内容视为命令，执行结果会被带入变量。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "管道(|)连接上个指令的标准输出，作为下个指令的标准输入。",
+          "qas": [
+            {
+              "question": "Shell中管道(|)的作用是什么？",
+              "id": "5-458-22",
+              "answers": [
+                {
+                  "text": "连接上个指令的标准输出，作为下个指令的标准输入。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "$符号用于变量替换，如echo $vrs显示变量vrs的值。",
+          "qas": [
+            {
+              "question": "Shell中$符号的作用是什么？",
+              "id": "5-458-23",
+              "answers": [
+                {
+                  "text": "用于变量替换，如echo $vrs显示变量vrs的值。",
+                  "answer_start": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "Shell变量分为局部变量、环境变量、位置变量、特殊形式的变量。",
+          "qas": [
+            {
+              "question": "Shell变量分为哪几类？",
+              "id": "5-458-24",
+              "answers": [
+                {
+                  "text": "局部变量、环境变量、位置变量、特殊形式的变量。",
+                  "answer_start": 8
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "局部变量只在设定它的Shell中有效；环境变量在整个系统环境及子Shell中有效。",
+          "qas": [
+            {
+              "question": "局部变量和环境变量的有效范围有何不同？",
+              "id": "5-458-25",
+              "answers": [
+                {
+                  "text": "局部变量只在设定它的Shell中有效；环境变量在整个系统环境及子Shell中有效。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "位置变量$0表示执行的程序名，$1至$9代表传给程序的参数，大于9的用${数字}。",
+          "qas": [
+            {
+              "question": "位置变量$0的含义是什么？大于9的位置变量如何表示？",
+              "id": "5-458-26",
+              "answers": [
+                {
+                  "text": "$0表示执行的程序名；大于9的用${数字}。",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "$?表示最近一个执行过的命令的退出值，执行成功为0，失败为1。",
+          "qas": [
+            {
+              "question": "$?的含义是什么？执行成功和失败的退出值分别是多少？",
+              "id": "5-458-27",
+              "answers": [
+                {
+                  "text": "$?表示最近一个执行过的命令的退出值，执行成功为0，失败为1。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "&&表示前一个命令执行成功后才执行后一个命令；||表示前一个失败后执行后一个。",
+          "qas": [
+            {
+              "question": "&&和||在命令执行顺序中的作用是什么？",
+              "id": "5-458-28",
+              "answers": [
+                {
+                  "text": "&&表示前一个命令执行成功后才执行后一个命令；||表示前一个失败后执行后一个。",
+                  "answer_start": 0
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

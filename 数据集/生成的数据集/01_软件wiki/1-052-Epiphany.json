@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "title": "Epiphany",
+      "paragraphs": [
+        {
+          "context": "Epiphany是一个基于WebKitGTK的网页浏览器。一般是Gnome桌面环境下的浏览器。",
+          "qas": [
+            {
+              "question": "Epiphany是基于什么的网页浏览器？",
+              "id": "1-52-1",
+              "answers": [
+                {
+                  "text": "WebKitGTK",
+                  "answer_start": 11
+                }
+              ]
+            },
+            {
+              "question": "Epiphany通常用于哪个桌面环境？",
+              "id": "1-52-2",
+              "answers": [
+                {
+                  "text": "Gnome",
+                  "answer_start": 33
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "安装：sudo apt-get install epiphany",
+          "qas": [
+            {
+              "question": "如何安装Epiphany？",
+              "id": "1-52-3",
+              "answers": [
+                {
+                  "text": "sudo apt-get install epiphany",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "卸载：sudo apt-get remove epiphany",
+          "qas": [
+            {
+              "question": "如何卸载Epiphany？",
+              "id": "1-52-4",
+              "answers": [
+                {
+                  "text": "sudo apt-get remove epiphany",
+                  "answer_start": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "仓库地址：http://packages.deepin.com/deepin/pool/main/e/epiphany/",
+          "qas": [
+            {
+              "question": "Epiphany的仓库地址是什么？",
+              "id": "1-52-5",
+              "answers": [
+                {
+                  "text": "http://packages.deepin.com/deepin/pool/main/e/epiphany/",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "context": "官方网站：https://gitlab.gnome.org/GNOME/epiphany",
+          "qas": [
+            {
+              "question": "Epiphany的官方网站是什么？",
+              "id": "1-52-6",
+              "answers": [
+                {
+                  "text": "https://gitlab.gnome.org/GNOME/epiphany",
+                  "answer_start": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
