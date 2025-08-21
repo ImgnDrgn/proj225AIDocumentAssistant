@@ -1,0 +1,3 @@
+[submodule "qa_model"]
+	path = qa_model
+	url = https://github.com/SuperKUIKUI/qa_model
